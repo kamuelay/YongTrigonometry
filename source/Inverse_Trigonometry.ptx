@@ -1,0 +1,985 @@
+<section xml:id="Inverse_Trigonometry">
+  <title>Inverse Trigonometric Functions</title>
+  <introduction>
+    <p>
+      When Mau Pialug sailed to his home on the Makali`i in 1999,
+      the people of Satawal, Micronesia were impressed with such a large wa`a.
+      As a gift to the man who shared his knowledge of navigation, N\={a} K\={a}lai Wa`a at Kawaihae Harbor built a 56-foot long double-hulled voyaging canoe called the Alingano Maisu.
+      In 2007, the Alingano Maisu,
+      accompanied by the H&#333;k&#363;le`a, embarked on her maiden voyage to her new home in Satawal so Papa Mau can carry on his legacy of navigation in his home islands.
+      Leaving Hawai`i, H&#333;k&#363;le`a led the way to Johnston Atoll.
+      From there, the Alingano Maisu took the lead as they entered Micronesia by first stopping at Majuro, Marshall Islands before continuing on to her new home in Satawal.
+      It is known that the island of Majuro is 1,108 nautical miles to the east and 575 nautical miles to the south of Johnston Atoll.
+      What house do you need to sail towards and what distance will you need to sail?
+      If the wa`a travels at 5 knots,
+      how many days will it take to reach the destination?
+      Note that 1 knot = 1 nautical mile/hour.
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\node[below left, yshift=0.2cm] at (-11,-5.75) {Majuro};
+\node[below] at (2,-0.5) {Johnston Atoll};
+\draw[line width=2pt] (0,0) -- (-11,-5.75) node[midway,sloped,below,yshift=-0.1cm] {course};
+\draw[dashed] (-11,0) -- (0,0) node[midway,above,yshift=0.1cm] {1,108 NM};
+\draw[dashed] (-11,-5.75) -- (-11,0) node[midway,left,xshift=-0.1cm] {575 NM};
+\draw ([shift=(180:2)]0,0) arc (180:207.597295869:2) node[midway,right,xshift=-15,yshift=-1] {\(\theta\)};
+\draw (-10.25,0) -- (-10.25,-0.75);
+\draw (-11,-0.75) -- (-10.25,-0.75);
+\draw ([shift=(207.597295869:-1cm)]0,0) pic {waa1-top={waacolor}{117.597295869}{0.1}};\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      You may notice that for our given angle, <m>\theta</m>,
+      we have the opposite side, 575 NM, and the adjacent side, 1,100 NM, which are all related with the tangent function
+      <me>
+        \tan\theta=\frac{575}{1,100}
+      </me>
+    </p>
+    <p>
+      Up until now,
+      we were given the angles for the trigonometric problems we've encountered.
+      To solve for the angle <m>\theta</m>,
+      we cannot simply divide by
+      <q>tan</q>
+      because it is part of the tangent function where we input an angle and the output is a ratio of sides.
+      Instead, we will need to use the inverse function in which we input the ratio of sides and output an angle.
+    </p>
+  </introduction>
+  <subsection xml:id="core-standards-CCSS_MATH_CONTENT_HSF_TF_B_6">
+    <title>Inverse Trigonometric Functions</title>
+    <p>
+      Recall (from Unit 1) that for a function <m>f</m> and its inverse function <m>f^{-1}</m>
+      <ol>
+        <li>
+          <p>
+            The Domain of <m>f^{-1}=</m> Range of <m>f</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            The Range of <m>f^{-1}=</m> Domain of <m>f</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            If <m>f(a)=b</m> then <m>f^{-1}(b)=a</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+    <p>
+      In terms of trigonometric functions, for example,
+      if <m>f(x)=\sin x</m> then <m>f^{-1}(x)=\sin^{-1}x</m>.
+      Now consider <m>\sin\left(\frac{\pi}{4}\right)=\frac{\sqrt{2}}{2}</m>,
+      then <m>\frac{\pi}{4}=\sin^{-1}\left(\frac{\sqrt{2}}{2}\right)</m>. \begin{mybox}[Be Careful] Do not confuse the inverse trigonometric notations with an exponent,
+      in other words, <m>\sin^{-1}x\neq\frac{1}{\sin x}</m>.
+      To avoid this,
+      we will use parentheses around the trigonometric function to denote the power of negative one:
+      <m>(\sin x)^{-1}</m>. \end{mybox}
+    </p>
+    <p>
+      Also recall
+      (from Unit 1)
+      that for a function, <m>f</m>,
+      to have an inverse, <m>f^{-1}</m>, it must be one-to-one,
+      meaning no horizontal line intersects the graph more than once.
+      Since this is not true for trigonometric functions,
+      they do not have inverses.
+      We need functions to be one-to-one because both <m>\sin\frac{\pi}{4}=\frac{\sqrt{2}}{2}</m> and
+      <m>\sin\frac{3\pi}{4}=\frac{\sqrt{2}}{2}</m> but if we took the inverse of sine,
+      would we wouldn't know to use
+      <m>\sin^{-1}\left(\frac{\sqrt{2}}{2}\right)=\frac{\pi}{4}</m> or <m>\sin^{-1}\left(\frac{\sqrt{2}}{2}\right)=\frac{3\pi}{4}</m>.
+      To avoid this confusion and to ensure the function is one-to-one,
+      we can put restrictions on the domains of each trigonometric function so they attain all the values in the range only once,
+      making the function one-to-one, and thus have an inverse
+      (see <xref ref="fig_sine-not-one-to-one">Figure</xref>).
+    </p>
+    <figure xml:id="fig_sine-not-one-to-one">
+      <caption>The graph of <m>f(x)=\sin x</m> does not pass the horizontal line test and is not one-to-one. If we restrict the graph to <m>-\frac{\pi}{2}\leq x\leq\frac{\pi}{2}</m> so that each value in the range <m>[-1,1]</m> is attained only once, then the function is one-to-one and has an inverse.</caption>
+      <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\begin{axis}[
+axis lines=middle,clip=false,
+xmin=-3*pi/2-0.5,xmax=2*pi+0.5,ymin=-1.25,ymax=1.25,
+ytick={-1,1},
+xtick={-pi,-pi/2,0,pi/2,pi,-3*pi/2,2*pi},
+xticklabels={\(-\pi\),\(-\frac{\pi}{2}\),\(0\),\(\frac{\pi}{2}\),\(\pi\),\(\frac{3\pi}{2}\),\(2\pi\)},
+xticklabel style={black},
+xlabel=\(x\),
+ylabel=\(y\)]
+\draw [fill=orange, opacity=0.2] (-pi/2,-1) rectangle (pi/2,1);
+\addplot[domain=-3*pi/2:-pi/2,samples=200,orange]{sin(deg(x))};
+\addplot[domain=-pi/2:pi/2,samples=200,magenta,line width=1pt]{sin(deg(x))};
+\addplot[domain=pi/2:2*pi,samples=200,orange]{sin(deg(x))}
+node[right,pos=0.7,font=]{\(f(x)=\sin x\)};
+\filldraw[magenta] (pi/2,1) circle (2pt);
+\filldraw[magenta] (-pi/2,-1) circle (2pt);
+\draw[red](-3*pi/2,0.7) -- (2*pi,0.7);
+\end{axis}\end{tikzpicture}]]>
+</latex-image>
+      </image>
+    </figure>
+    <p>
+      We will restrict the domain of
+      <m>y=\sin x</m> to the interval <m>[-\frac{\pi}{2},\frac{\pi}{2}]</m>,
+      the domain of <m>y=\cos x</m> to <m>[0,\pi]</m>,
+      and the domain of <m>y=\tan x</m> to the interval <m>(-\frac{\pi}{2},\frac{\pi}{2})</m>.
+      Notice that the domain for each trigonometric function includes one quadrant where the function is positive and one quadrant where it is negative.
+    </p>
+    <p>
+      Domain of <m>y=\sin x</m>:
+      <me>
+        -\frac{\pi}{2}\leq x\leq\frac{\pi}{2}
+      </me>
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw [fill=orange, opacity=0.2] (0,-1.25) rectangle (1.25,1.25);
+\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\draw[<->] (0,-1.25)--(0,1.25) node[right,yshift=-5]{\(y\)};
+\draw (0,0) circle (1cm);
+\draw[<->,line width=1pt,blue] (-90:0.4cm) arc (-90:90:0.4cm);
+\node at (0.25,0.15) {\(\theta\)};\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      The graph of sine for the restricted domain
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\begin{axis}[
+axis lines=middle,clip=false,
+xmin=-pi/2-0.5,xmax=pi/2+0.5,ymin=-1.25,ymax=1.25,
+ytick={-1,1},
+xtick={-pi/2,0,pi/2},
+xticklabels={\(-\frac{\pi}{2}\),\(0\),\(\frac{\pi}{2}\)},
+xticklabel style={black},
+xlabel=\(x\),
+ylabel=\(y\)]
+\addplot[domain=-pi/2:pi/2,samples=200,magenta,line width=1pt]{sin(deg(x))}node[right,pos=0.7,font=]{\(f(x)=\sin x\)};
+\filldraw[magenta] (pi/2,1) circle (2pt);
+\filldraw[magenta] (-pi/2,-1) circle (2pt);
+\end{axis}\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      Domain of <m>y=\cos x</m>:
+      <me>
+        0\leq x\leq\pi
+      </me>
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw [fill=orange, opacity=0.2] (-1.25,0) rectangle (1.25,1.25);
+\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\draw[<->] (0,-1.25)--(0,1.25) node[right,yshift=-5]{\(y\)};
+\draw (0,0) circle (1cm);
+\draw[<->,line width=1pt,blue] (0:0.4cm) arc (0:180:0.4cm);
+\node at (0.25,0.15) {\(\theta\)};\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      The graph of cosine for the restricted domain
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\begin{axis}[
+axis lines=middle,clip=false,
+xmin=-0.5,xmax=pi+0.5,ymin=-1.25,ymax=1.25,
+ytick={-1,1},
+xtick={0,pi/2,pi},
+xticklabels={\(0\),\(\frac{\pi}{2}\),\(\pi\)},
+xticklabel style={black},
+xlabel=\(x\),
+ylabel=\(y\)]
+\addplot[domain=0:pi,samples=200,magenta,line width=1pt]{cos(deg(x))}node[right,pos=0.7,font=]{\(f(x)=\cos x\)};
+\filldraw[magenta] (0,1) circle (2pt);
+\filldraw[magenta] (pi,-1) circle (2pt);
+\end{axis}\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      Domain of <m>y=\tan x</m>:
+      <me>
+        -\frac{\pi}{2}\leq x\leq\frac{\pi}{2}
+      </me>
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw [fill=orange, opacity=0.2] (0,-1.25) rectangle (1.25,1.25);
+\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\draw[<->] (0,-1.25)--(0,1.25) node[right,yshift=-5]{\(y\)};
+\draw (0,0) circle (1cm);
+\draw[<->,line width=1pt,blue] (-90:0.4cm) arc (-90:90:0.4cm);
+\node at (0.25,0.15) {\(\theta\)};\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      The graph of tangent for the restricted domain
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\begin{axis}[
+axis lines=middle,clip=false,
+xmin=-pi/2-0.5,xmax=pi/2+0.5,ymin=-5,ymax=5,
+ytick={-5,5},
+xtick={-pi/2,0,pi/2},
+xticklabels={\(-\frac{\pi}{2}\),\(0\),\(\frac{\pi}{2}\)},
+xticklabel style={black},
+xlabel=\(x\),
+ylabel=\(y\)]
+\addplot[domain=-1.37:1.37,samples=200,magenta,line width=1pt,<->]{tan(deg(x))}node[left,pos=0.8,font=]{\(f(x)=\tan x\)};
+\end{axis}\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      With these new restrictions on the domains,
+      we now have trigonometric functions that are one-to-one and so we can define their inverse functions:
+    </p>
+    <p>
+      \begin{mybox}[Inverse Sine] The
+      <em>inverse sine function</em>
+          <idx><h>Inverse sine</h></idx>
+      is symbolized by
+      <md>
+        <mrow>y=\sin^{-1}x \amp \amp  \mbox{and means}  \amp \amp x=\sin y</mrow>
+      </md>.
+    </p>
+    <p>
+      The inverse sine function is also called the
+      <em>arcsine function</em>,
+          <idx><h>Arcsine function</h></idx>
+      and is denoted by <m>\arcsin x</m>. \end{mybox}
+    </p>
+    <p>
+      \begin{mybox}[Inverse Cosine] The
+      <em>inverse cosine function</em>
+          <idx><h>Inverse cosine</h></idx>
+      is symbolized by
+      <md>
+        <mrow>y=\cos^{-1}x \amp \amp  \mbox{and means}  \amp \amp  x=\cos y</mrow>
+      </md>.
+    </p>
+    <p>
+      The inverse cosine function is also called the
+      <em>arccosine function</em>,
+          <idx><h>Arccosine function</h></idx>
+      and is denoted by <m>\arccos x</m>. \end{mybox}
+    </p>
+    <p>
+      \begin{mybox}[Inverse Tangent] The
+      <em>inverse tangent function</em>
+          <idx><h>Inverse tangent</h></idx>
+      is symbolized by
+      <md>
+        <mrow>y=\tan^{-1}x \amp \amp  \mbox{and means}  \amp \amp  x=\tan y</mrow>
+      </md>.
+    </p>
+    <p>
+      The inverse tangent function is also called the
+      <em>arctangent function</em>,
+          <idx><h>Arctangent function</h></idx>
+      and is denoted by <m>\arctan x</m>. \end{mybox} \begin{mybox}[Inverse Cosecant, Secant,
+      and Cotangent] Inverse cosecant, inverse secant,
+      and inverse cotangent functions are not as common as the other trigonometric functions so we will just summarize them and not consider any examples in this book.
+      <md>
+        <mrow>y=\csc^{-1}x \amp \amp  \mbox{means}  \amp \amp  x=\csc y</mrow>
+        <mrow>y=\sec^{-1}x \amp \amp  \mbox{means}  \amp \amp  x=\sec y</mrow>
+        <mrow>y=\cot^{-1}x \amp \amp  \mbox{means}  \amp \amp  x=\cot y</mrow>
+      </md>
+    </p>
+    <p>
+      \end{mybox} \begin{mybox}[Domain and Range] The domain and range for each function is
+    </p>
+    <tabular>
+      <row>
+        <cell>Function</cell>
+        <cell>Domain</cell>
+        <cell>Range</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell><m>\sin^{-1}</m></cell>
+        <cell><m>[-1,1]</m></cell>
+        <cell><m>\left[-\frac{\pi}{2},\frac{\pi}{2}\right]</m></cell>
+      </row>
+      <row>
+        <cell><m>\cos^{-1}</m></cell>
+        <cell><m>[-1,1]</m></cell>
+        <cell><m>[0,\pi]</m></cell>
+      </row>
+      <row>
+        <cell><m>\tan^{-1}</m></cell>
+        <cell><m>[-\infty,\infty]</m></cell>
+        <cell><m>\left(-\frac{\pi}{2},\frac{\pi}{2}\right)</m></cell>
+      </row>
+      <row>
+        <cell><m>\csc^{-1}</m></cell>
+        <cell><m>(-\infty,-1]\cup[1,\infty)</m></cell>
+        <cell><m>\left[-\frac{\pi}{2},\frac{\pi}{2}\right],y\neq0</m></cell>
+      </row>
+      <row>
+        <cell><m>\sec^{-1}</m></cell>
+        <cell><m>(-\infty,-1]\cup[1,\infty)</m></cell>
+        <cell><m>[0,\pi],y\neq\frac{\pi}{2}</m></cell>
+      </row>
+      <row>
+        <cell><m>\cot^{-1}</m></cell>
+        <cell><m>(-\infty,\infty)</m></cell>
+        <cell><m>(0,\pi)</m></cell>
+      </row>
+    </tabular>
+    <p>
+      \end{mybox}
+    </p>
+  </subsection>
+  <subsection>
+    <title>Finding the Exact Value of an Inverse Trigonometric Function</title>
+    <example>
+      <statement>
+        <p>
+          Find the exact value.
+          <ol>
+            <li>
+              <p>
+                <m>\cos^{-1}\frac{1}{2}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\tan^{-1}\sqrt{3}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\sin^{-1}\left(-\frac{\sqrt{2}}{2}\right)</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Let <m>\theta=\cos^{-1}\frac{1}{2}</m>.
+                Then evaluating the problem is the same as determining the angle,
+                <m>\theta</m>,
+                for which
+                <me>
+                  \cos\theta=\frac{1}{2}
+                </me>.
+                Although there are infinite values of <m>\theta</m> that satisfy the equation,
+                such as <m>\theta=\frac{\pi}{3}</m> and <m>\theta=\frac{5\pi}{3}</m>,
+                there is only one value that lies in the interval <m>[0,\pi]</m>.
+                Thus, <m>\cos^{-1}\frac{1}{2}=\frac{\pi}{3}</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                Let <m>\theta=\tan^{-1}\sqrt{3}</m>.
+                Then we must find <m>\theta</m> that satisfies
+                <m>\tan\theta=\sqrt{3}</m> as well as satisfies the range of <m>\tan^{-1}</m>.
+                Because <m>\tan\frac{\pi}{3}=\sqrt{3}</m> and <m>-\frac{\pi}{2}\lt \frac{\pi}{3}\lt \frac{\pi}{2}</m>,
+                we conclude that <m>\tan^{-1}\sqrt{3}=\frac{\pi}{3}</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                The angle, <m>\theta</m>,
+                in the interval <m>[-\frac{\pi}{2},\frac{\pi}{2}]</m> that satisfies
+                <m>\sin\theta=-\frac{\sqrt{2}}{2}</m> is <m>\theta=\sin^{-1}\left(-\frac{\sqrt{2}}{2}\right)=-\frac{\pi}{4}</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+  <subsection>
+    <title>Approximations of Inverse Trigonometric Functions</title>
+    <p>
+      To evaluate inverse trigonometric functions that do not have special angles,
+      we will need to use a calculator. \begin{mybox}[Using a Calculator] Using a calculator for inverse trigonometric functions: Most calculators will have a special button for the inverse sine,
+      cosine, and tangent functions.
+      Depending on your calculator,
+      you may see the following keys for inverse the inverse trigonometric functions
+    </p>
+    <tabular>
+      <row>
+        <cell>Function</cell>
+        <cell>Calculator Key</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>inverse sine</cell>
+        <cell><em>SIN<m>^{-1}</m></em>, <em>ARCSIN</em>, or <em>ASIN</em></cell>
+      </row>
+      <row>
+        <cell>inverse cosine</cell>
+        <cell><em>COS<m>^{-1}</m></em>, <em>ARCCOS</em>, or <em>ACOS</em></cell>
+      </row>
+      <row>
+        <cell>inverse tangent</cell>
+        <cell><em>TAN<m>^{-1}</m></em>, <em>ARCTAN</em>, or <em>ATAN</em></cell>
+      </row>
+    </tabular>
+    <p>
+      \end{mybox}
+    </p>
+    <example>
+      <title>A gift for Mau</title>
+      <statement>
+        <p>
+          We are now ready to return to the example at the start of this section.
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\node[below left, yshift=0.2cm] at (-11,-5.75) {Majuro};
+\node[below] at (2,-0.5) {Johnston Atoll};
+\draw[line width=2pt] (0,0) -- (-11,-5.75) node[midway,sloped,below,yshift=-0.1cm] {course};
+\draw[dashed] (-11,0) -- (0,0) node[midway,above,yshift=0.1cm] {1,108 NM};
+\draw[dashed] (-11,-5.75) -- (-11,0) node[midway,left,xshift=-0.1cm] {575 NM};
+\draw ([shift=(180:2)]0,0) arc (180:207.597295869:2) node[midway,right,xshift=-15,yshift=-1] {\(\theta\)};
+\draw (-10.25,0) -- (-10.25,-0.75);
+\draw (-11,-0.75) -- (-10.25,-0.75);
+\draw ([shift=(207.597295869:-1cm)]0,0) pic {waa1-top={waacolor}{117.597295869}{0.1}};\end{tikzpicture}]]>
+</latex-image>
+        </image>
+        <p>
+          Since we were able to write <m>\tan\theta=\frac{575}{1,108}</m>,
+          we can use a calculator or other technology to evaluate the inverse tangent to find our angle:
+          <me>
+            \theta=\tan^{-1}\left(\frac{575}{1,108}\right)\approx27.4^{\circ}
+          </me>.
+        </p>
+        <p>
+          Because this angle is in Quadrant III, we find its value on the Unit Circle by adding <m>180^{\circ}+27.4^{\circ}=207.4^{\circ}</m>.
+          Next we refer to the Star Compass with angles
+          (<xref ref="fig_star-compass-with-angles">Figure</xref>
+          on <xref ref="fig_star-compass-with-angles">page</xref>)
+          to conclude we will need to sail towards the House `\=Aina Kona.
+        </p>
+        <p>
+          To determine the distance, <m>d</m>,
+          we use the Pythagorean Theorem:
+          <me>
+            d=\sqrt{575^2+1,108^2}\approx1,248 \mbox{NM}
+          </me>.
+        </p>
+        <p>
+          Finally, we note that since (speed) = (distance)/(duration),
+          we can rearrange the terms to get (duration) = (distance)/(speed).
+          If we travel at 5 knots (5 NM/hr),
+          we can calculate the duration as
+          <me>
+            \mbox{duration} =\frac{1,248.3\mbox{ NM} }{5\mbox{ kt} }=\frac{1,248.3\mbox{ NM} }{5\mbox{ NM/hr} }=249.7\mbox{ hours} =249.7\mbox{ hours} \cdot\frac{\mbox{day} }{24\mbox{ hours} }\approx10.4\mbox{ days}
+          </me>
+        </p>
+      </statement>
+    </example>
+    <example xml:id="core-standards-CCSS_MATH_CONTENT_HSF_TF_B_7">
+      <title>Finding Land</title>
+      <statement>
+        <p>
+          As H&#333;k&#363;le<sq>a is sailing towards Rapa Nui,
+          the navigator uses a process called dead reckoning to determine their position based on the latitude,
+          measured by the stars,
+          and other factors such as the estimated distance traveled, speed,
+          and direction.
+          Once the navigator has determined they are in the vicinity of land,
+          her attention is now focused on looking for signs of land.
+          One method navigators will use is to look for land-based seabirds such as the manu-o-k&#363;
+          (fairy tern)
+          and the noio
+          (noddy tern),
+          which go out to sea in the morning to fish and return to land at night.
+          However, Rapa Nui</sq>s seabird population has been reduced so she will look for other signs such as drifting land vegetation;
+          clouds that form over islands;
+          the loom of the island when white sand and still lagoons reflect the sun or moon upwards;
+          and distinctive patterns of swells bending (refracting) around and / or reflecting off islands.
+          Land will be spotted when the navigator first sees Maunga Terevaka,
+          the tallest point in Rapa Nui, which stands at 1,665 ft.
+          <ol>
+            <li>
+              <p>
+                On the deck of H&#333;k&#363;le`a, a navigator stands at 9 ft above sea level.
+                If she looks out to the sea, how far is she from horizon?
+                Assume the radius of the earth at Rapa Nui is 3,960.449 miles.
+              </p>
+            </li>
+            <li>
+              <p>
+                How far is H&#333;k&#363;le`a from Maunga Terevaka when it first becomes visible over the horizon to someone standing 9ft above sea level?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                We begin by assuming that the earth is a sphere with radius <m>R</m>.
+                Standing on H&#333;k&#363;le<sq>a,
+                the line from the navigator</sq>s eye to the horizon is tangent to the circle of radius <m>R</m>.
+                <image>
+                   <latex-image> <![CDATA[\begin{tikzpicture}\draw ([shift=(30:1)]0,0) arc (30:150:1); \draw[blue] (0,0) -- (0,1) node[midway, right] {\(R\)}; \draw (-0.363970234266,1 -- (0.839099631177,1); \draw pic at (-0.342020143326,0.939692620786) {waa-side={waacolor}{20}{0.1}}; \draw (0,0.9) -- (-0.1,0.9) -- (-0.1,1); \draw[blue] (0,0) -- (-0.342020143326,0.939692620786) node[midway, left,xshift=-2] {\(R\)}; \draw[red] (-0.342020143326,0.939692620786) -- (-0.363970234266,1) node[midway,left,xshift=-14,yshift=-4] {\(h\)}; \draw ([shift=(90:0.2)]0,0) arc (90:110:0.2) node[above, left] {\(\theta_1\)}; \node at (100:0.9) {\(s_1\)}; \draw[red] ([shift=(90:1)]0,0) arc (90:110:1);\end{tikzpicture}]]> </latex-image>
+                </image>
+                Here <m>h=9</m> ft,
+                represents the height of the navigator's eye above sea level,
+                <m>R=3,960.449</m> miles (20,911,171 ft) is the radius of the earth at Rapa Nui,
+                and <m>s_1</m> is the arc length or distance along the surface of the earth from the navigator to the horizon.
+                We have written the distances in feet since the height of the navigator is in feet.
+                Recall from <xref ref="thm_arc-length">Theorem</xref>
+                the formula for finding the arc length is <m>s_1=2\pi R\cdot\left(\frac{\theta_1}{360}\right)</m>.
+                Since we know <m>R</m>, we only need to find <m>\theta_1</m>.
+                Notice this forms a right triangle.
+                <image>
+                   <latex-image> <![CDATA[\begin{tikzpicture}\draw[blue] (0,0) -- (1,0) node[midway, below] {\(R\)}; \draw[blue](0,0) -- (20:1) node[midway,above,sloped] {\(R\){\color{black}+}{\color{red} \(h\)}}; \draw[red,line width=1.5] (20:1) -- (1,0.363970234266); \draw (1,0) -- (1,0.363970234266); \draw ([shift=(0:0.1)]0,0) arc (0:20:0.1) node[right,xshift=8,yshift=0.2] {\(\theta_1\)}; \draw (0.95,0) -- (0.95,0.05) -- (1,0.05);\end{tikzpicture}]]> </latex-image>
+                </image>
+                Since we know the adjacent side and hypotenuse of this triangle,
+                we can use cosine:
+                <me>
+                  \cos\theta_1=\frac{R}{R+h}=\frac{20,911,171}{20,911,171+9}=\frac{20,911,171}{20,911,180}
+                </me>.
+                To solve for <m>\theta_1</m>, we use the inverse cosine
+                <me>
+                  \theta_1=\cos^{-1}\left(\frac{20,911,171}{20,911,180}\right)\approx0.053^{\circ}
+                </me>.
+                Now we are ready to calculate the arc length, <m>s_1</m>.
+                To give our answer in miles,
+                we will use <m>R=3,960.449</m> miles and calculate the following
+                <me>
+                  s_1=2\pi\cdot\frac{0.053^{\circ}}{360^{\circ}}\cdot3,960.449\approx3.7\mbox{ miles}
+                </me>
+                So the horizon is 3.7 miles from the navigator.
+              </p>
+            </li>
+            <li>
+              <p>
+                Next, to determine how far the navigator is from Maunga Terevaka when it emerges over the horizon,
+                we need to align the top of the mountain with line from the navigator's eye to the horizon.
+                <image>
+                   <latex-image> <![CDATA[\begin{tikzpicture}\draw ([shift=(30:1)]0,0) arc (30:150:1); \draw[blue] (0,0) -- (0,1) node[midway, right] {\(R\)}; \draw[blue] (0,0) -- (0.642787609687,0.766044443119) node[midway, right,xshift=4] {\(R\)}; \fill[green,fill opacity=0.10000000149011612] (0.839099631177,1) -- (0.766044443119,0.642787609687) -- ([shift=(40:1)]0,0) arc (40:60:1) -- cycle; \draw[red] (0.642787609687,0.766044443119) -- (0.839099631177,1) node[midway,right] {\(H\)}; \draw (-0.363970234266,1) -- (0.839099631177,1); \draw pic at (-0.342020143326,0.939692620786) {waa-side={waacolor}{20}{0.1}}; \draw[green] (0.5,0.866025403784) -- (0.839099631177,1); \draw[green] (0.766044443119,0.642787609687) -- (0.839099631177,1); \fill[color=green,opacity=0.1] (0.839099631177,1) -- (0.766044443119,0.642787609687) arc(40:60:1); \draw (0,0.9) -- (0.1,0.9) -- (0.1,1); \draw ([shift=(50:0.2)]0,0) arc (50:90:0.2) node[above right] {\(\theta_2\)}; \draw[blue] (0,0) -- (-0.342020143326,0.939692620786) node[midway, left,xshift=-2] {\(R\)}; \draw[red] (-0.342020143326,0.939692620786) -- (-0.363970234266,1) node[midway,left,xshift=-14,yshift=-4] {\(h\)}; \draw ([shift=(90:0.2)]0,0) arc (90:110:0.2) node[above, left] {\(\theta_1\)}; \node at (70:0.9) {\(s_2\)}; \node at (100:0.9) {\(s_1\)};\end{tikzpicture}]]> </latex-image>
+                </image>
+                Here, <m>H=1,665</m> ft, is the height of Maunga Terevaka.
+                To find the distance from the top of the mountain to the horizon,
+                we will need to determine <m>s_2</m>.
+                We begin by redrawing the triangle.
+                <image>
+                   <latex-image> <![CDATA[\begin{tikzpicture}\draw[blue] (0,0) -- (1,0) node[midway, below] {\(R\)}; \draw[blue](0,0) -- (30:1) node[midway,above,sloped] {\(R\){\color{black}+}{\color{red} \(H\)}}; \draw[red,line width=1.5] (30:1) -- (1,0.57735026919); \draw (1,0) -- (1,0.57735026919); \draw ([shift=(0:0.1)]0,0) arc (0:30:0.1) node[right,xshift=8,yshift=0.2] {\(\theta_2\)}; \draw (0.95,0) -- (0.95,0.05) -- (1,0.05);\end{tikzpicture}]]> </latex-image>
+                </image>
+                The angle is then given by
+                <me>
+                  \theta_1=\cos^{-1}\left(\frac{R}{R+H}\right)=\cos^{-1}\left(\frac{20,911,171}{20,911,173+1,665}\right)=\cos^{-1}\left(\frac{20,911,171}{20,912,836}\right)\approx0.723^{\circ}
+                </me>
+                We conclude that the distance from Maunga Terevaka to the horizon is
+                <me>
+                  s_2=2\pi\cdot\frac{0.723^{\circ}}{360^{\circ}}\cdot3,960.449\approx50.0\mbox{ miles}
+                </me>
+                Therefore, the total distance between the navigator and Maunga Terevaka is <m>s_1+s_2=3.7+50.0=53.7</m> miles.
+                Please note that this is the distance when the island may first be seen, however,
+                weather conditions may reduce visibility.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+  <subsection>
+    <title>Graphs of Inverse Trigonometric Functions</title>
+    <p>
+      Recall from Unit 1 that
+      <ol>
+        <li>
+          <p>
+            The point <m>(a,b)</m> is on the graph of <m>f</m> if and only if the point <m>(b,a)</m> is on the graph of <m>f^{-1}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            The graphs of <m>f^{-1}</m> and <m>f</m> are reflections of each other about the line <m>y=x</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+    <p>
+      The graph of each inverse trigonometric function can be obtained by reflecting the graph of the original function about the line <m>y=x</m>.
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\begin{axis}[
+axis lines=middle,clip=false,
+xmin=-pi/2-0.5,xmax=pi/2+0.5,ymin=-pi/2-0.5,ymax=pi/2+0.5,
+ytick={-pi/2,-1,0,1,pi/2},
+xtick={-pi/2,-1,0,1,pi/2},
+xticklabels={\(-\frac{\pi}{2}\),\(-1\),\(0\),\(1\),\(\frac{\pi}{2}\)},
+xticklabel style={black},
+yticklabels={\(-\frac{\pi}{2}\),\(-1\),\(0\),\(1\),\(\frac{\pi}{2}\)},
+yticklabel style={black},
+xlabel=\(x\),
+ylabel=\(y\)]
+\addplot[domain=-pi/2:pi/2,samples=200,cyan,line width=1pt]{sin(deg(x))}node[right,pos=0.8,font=,yshift=-4]{\(y=\sin x\)};
+\filldraw[cyan] (pi/2,1) circle (2pt) node[right] {\(\left(\frac{\pi}{2},1\right)\)};
+\filldraw[cyan] (-pi/2,-1) circle (2pt) node[above,yshift=0.8] {\(\left(-\frac{\pi}{2},-1\right)\)};
+\draw[dashed] (-pi/2,-pi/2) -- (pi/2,pi/2);
+\addplot[domain=-1:1,samples=200,orange,line width=1pt]{asin(x)/180*pi}node[left,pos=0.95,xshift=0.75,font=]{\(y=\sin^{-1} x\)};
+\filldraw[orange] (1,pi/2) circle (2pt) node[above] {\(\left(1,\frac{\pi}{2}\right)\)};
+\filldraw[orange] (-1,-pi/2) circle (2pt) node[below] {\(\left(-1,-\frac{\pi}{2}\right)\)};
+\end{axis}\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\begin{axis}[
+axis lines=middle,clip=false,
+xmin=-1-0.5,xmax=pi+0.5,ymin=-1-0.5,ymax=pi+0.5,
+ytick={-1,pi/2,pi},
+xtick={-1,pi/2,pi},
+xticklabels={\(-1\),\(\frac{\pi}{2}\),\(\pi\)},
+xticklabel style={black},
+yticklabels={\(-1\),\(\frac{\pi}{2}\),\(\pi\)},
+yticklabel style={black},
+xlabel=\(x\),
+ylabel=\(y\)]
+\addplot[domain=0:pi,samples=200,cyan,line width=1pt]{cos(deg(x))}node[right,pos=0.7,xshift=4,font=]{\(f(x)=\cos x\)};
+\filldraw[cyan] (0,1) circle (2pt) node[left] {\((0,1)\)};
+\filldraw[cyan] (pi,-1) circle (2pt) node[below] {\((\pi,-1)\)};
+\addplot[domain=-1:1,samples=200,orange,line width=1pt]{acos(x)/180*pi}node[left,pos=0.4,font=,xshift=-4]{\(f(x)=\cos^{-1} x\)};
+\filldraw[orange] (1,0) circle (2pt)  node[below] {\((1,0)\)};
+\filldraw[orange] (-1,pi) circle (2pt)  node[left] {\((-1,\pi)\)};
+\draw[dashed] (-1.25,-1.25) -- (pi,pi);
+\end{axis}\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\begin{axis}[
+axis lines=middle,clip=false,
+xmin=-pi/2-1,xmax=pi/2+1,ymin=-pi/2-1,ymax=pi/2+1,
+ytick={-1,1},
+xtick={-1,1},
+xticklabels={\(-1\),\(1\)},
+xticklabel style={black},
+yticklabels={\(-1\),\(1\)},
+yticklabel style={black},
+xlabel=\(x\),
+ylabel=\(y\)]
+\addplot[domain=-1.164:1.164,samples=200,cyan,line width=1pt,<->]{tan(deg(x))}node[right,pos=1,font=,left,xshift=10,yshift=4]{\(f(x)=\tan x\)};
+\addplot[domain=-pi/2-0.75:pi/2+0.75,samples=200,orange,line width=1pt,<->]{atan(x)/180*pi}node[right,pos=0.9,yshift=-5,font=]{\(f(x)=\tan^{-1} x\)};
+\draw[dashed] (-pi/2-1,-pi/2) -- (pi/2+1,-pi/2) node[right] {\(y=-\frac{\pi}{2}\)};
+\draw[dashed] (-pi/2-1,pi/2) -- (pi/2+1,pi/2) node[right] {\(y=\frac{\pi}{2}\)};
+\draw[dashed] (-pi/2,pi/2+1) -- (-pi/2,-pi/2-1) node[below] {\(x=-\frac{\pi}{2}\)};
+\draw[dashed] (pi/2,pi/2+1) -- (pi/2,-pi/2-1) node[below] {\(x=\frac{\pi}{2}\)};
+\draw[dashed] (-pi/2-1,-pi/2-1) -- (pi/2+1,pi/2+1);
+\end{axis}\end{tikzpicture}]]>
+</latex-image>
+    </image>
+  </subsection>
+  <subsection>
+    <title>Composition of Inverse Trigonometric Functions</title>
+    <p>
+      Recall (from Unit 1) that if <m>f</m> is a one-to-one function with inverse <m>f^{-1}</m>, then
+      <ol>
+        <li>
+          <p>
+            <m>f(f^{-1}(y))=y</m> for every <m>y</m> in the domain of <m>f^{-1}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>f^{-1}(f(x))=x</m> for every <m>x</m> in the domain of <m>f</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+    <p>
+      In terms of trigonometric functions,
+      <m>f(f^{-1}(y))=y</m> will work for all <m>y</m> in the domain, however,
+      we need to be careful when evaluating
+      <m>f^{-1}(f(x))=x</m> because the domain of <m>f^{-1}</m> is restricted.
+    </p>
+    <p>
+      \begin{mybox}[Properties of Composition of Trigonometric Functions]
+      <me>
+        \sin(\sin^{-1}x)=x\mbox{ when } -1\leq x\leq1
+      </me>
+      <me>
+        \cos(\cos^{-1}x)=x\mbox{ when } -1\leq x\leq1
+      </me>
+      <me>
+        \tan(\tan^{-1}x)=x\mbox{ when } -\infty\leq x\leq\infty
+      </me>
+      <me>
+        \sin^{-1}(\sin x)=x\mathbf{{only} when }-\frac{\pi}{2}\leq x\leq\frac{\pi}{2}
+      </me>
+    </p>
+    <me>
+      \cos^{-1}(\cos x)=x\mathbf{{only} when }0\leq x\leq\pi
+    </me>
+    <me>
+      \tan^{-1}(\tan x)=x\mathbf{{only} when }-\frac{\pi}{2}\lt  x\lt \frac{\pi}{2}
+    </me>
+    <p>
+      \end{mybox} <nbsp/>
+    </p>
+    <example>
+      <statement>
+        <p>
+          Find the exact value of each expression
+          <ol>
+            <li>
+              <p>
+                <m>\cos^{-1}\left(\cos\frac{\pi}{8}\right)</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\tan(\tan^{-1}7)</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\sin^{-1}\left(\sin\left(-\frac{\pi}{7}\right)\right)</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\sin^{-1}\left(\sin\frac{4\pi}{5}\right)</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\cos(\cos^{-1}(-0.283))</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Since <m>\frac{\pi}{8}</m> is in the interval <m>[0,\pi]</m>,
+                then from the properties of compositions of inverse functions, we get
+                <me>
+                  \cos^{-1}\left(\cos\frac{\pi}{8}\right)=\frac{\pi}{8}
+                </me>
+              </p>
+            </li>
+            <li>
+              <p>
+                Since <m>7</m> is in the interval <m>(-\infty,\infty)</m>,
+                <me>
+                  \tan(\tan^{-1}7)=7
+                </me>
+              </p>
+            </li>
+            <li>
+              <p>
+                Since <m>-\frac{\pi}{7}</m> is in the interval <m>\left[-\frac{\pi}{2},\frac{\pi}{2}\right]</m>,
+                <me>
+                  \sin^{-1}\left(\sin\left(-\frac{\pi}{7}\right)\right)=-\frac{\pi}{7}
+                </me>
+              </p>
+            </li>
+            <li>
+              <p>
+                Note that <m>\frac{5\pi}{7}</m> is not in the interval <m>\left[-\frac{\pi}{2},\frac{\pi}{2}\right]</m>.
+                In order to evaluate the expression,
+                we first need to find an angle, <m>\theta</m>,
+                such that <m>-\frac{\pi}{2}\leq\theta\leq\frac{\pi}{2}</m> and <m>\sin\frac{5\pi}{7}=\sin\theta</m>.
+                Since <m>\frac{\pi}{2}\lt \frac{5\pi}{7}\lt \pi</m> means
+                <m>\frac{5\pi}{7}</m> is in Quadrant II. Recall from <xref ref="sec_unit-circle">Section</xref>
+                that our reference angle is <m>\theta=\pi-\frac{5\pi}{7}=\frac{2\pi}{7}</m>.
+                <image>
+                   <latex-image> <![CDATA[\begin{tikzpicture}\draw[<->] (-1.15,0)--(1.15,0) node[right]{\(x\)}; \draw[<->] (0,-1.15)--(0,1.15) node[above]{\(y\)}; \draw (0,0) circle (1); \draw[line width=0.5pt,blue] (0,0) -- (129:1); \draw[line width=0.5pt,blue] (0,0) -- (51:1); \draw[-stealth, line width=1pt,magenta] (0:0.2) arc (0:129:0.2) node[midway, above,xshift=3] {\(\frac{5\pi}{7}\)}; \draw[-stealth, line width=1pt] (180:0.2) arc (180:129:0.2) node[midway, left,xshift=-1,yshift=4] {\(\frac{2\pi}{7}\)}; \draw[-stealth, line width=1pt] (0:0.4) arc (0:51:0.4) node[midway, right,xshift=-0.1] {\(\frac{2\pi}{7}\)};\end{tikzpicture}]]> </latex-image>
+                </image>
+                Since <m>\frac{2\pi}{7}</m> is in the interval <m>\left[-\frac{\pi}{2},\frac{\pi}{2}\right]</m>,
+                <me>
+                  \sin^{-1}\left(\sin\frac{5\pi}{7}\right)=\sin^{-1}\left(\sin\frac{2\pi}{7}\right)=\frac{2\pi}{7}
+                </me>
+              </p>
+            </li>
+            <li>
+              <p>
+                Since <m>-0.283</m> is in the interval <m>[-1,1]</m>,
+                <me>
+                  \cos(\cos^{-1}(-0.283))=-0.283
+                </me>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+    <p>
+      Now we will look at what happens when we need to evaluate the composition of a trigonometric function and the inverse of a different trigonometric function.
+    </p>
+    <example>
+      <statement>
+        <p>
+          Find the exact value of
+          <ol>
+            <li>
+              <p>
+                <m>\cos\left(\tan^{-1}\frac{4}{3}\right)</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\sin\left(\cos^{-1}\left(-\frac{3}{8}\right)\right)</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Let <m>\theta</m> be an angle in the range of <m>\tan^{-1}</m>, that is,
+                let <m>\theta</m> be in the interval
+                <m>\left(-\frac{\pi}{2},\frac{\pi}{2}\right)</m> such that <m>\theta=\tan^{-1}\frac{4}{3}</m>.
+                This equation is equivalent to <m>\tan\theta=\frac{4}{3}</m>.
+                Since <m>\tan\theta>0</m>,
+                we know that <m>\theta</m> must be in Quadrant I <m>\left(0\lt \theta\lt \frac{\pi}{2}\right)</m>.
+                Let <m>(x,y)</m> be a point on the terminal side of <m>\theta</m>,
+                then by the trigonometric ratios,
+                <me>
+                  \tan\theta=\frac{\mbox{opposite} }{\mbox{adjacent} }=\frac{y}{x}
+                </me>
+                Since we have <m>\tan\theta=\frac{4}{3}</m>,
+                we get <m>x=3</m> and <m>y=4</m>,
+                as shown in the figure below.
+                <image>
+                   <latex-image> <![CDATA[\begin{tikzpicture}\draw[->] (-0.15,0)--(3.5,0) node[right]{\(x\)}; \draw[->] (0,-0.15)--(0,4.15) node[above]{\(y\)}; \draw[dashed] (3,0) -- (3,4); \draw[line width=1pt,blue] (0,0) -- (3,4); \draw[-stealth] (0:0.75) arc (0:53.1301023542:0.75) node[midway, right,xshift=-0.1] {\(\theta\)}; \filldraw[black] (3,4) circle (2pt) node[above] {\((x,y)=(3,4)\)}; \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0,yshift=0](0,0) -- (3,0) node[black,midway,below,yshift=-8] {\(x=3\)}; \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0,yshift=0](3,0) -- (3,4) node[black,midway,right,xshift=10] {\(y=4\)}; \draw [decorate,decoration={brace,amplitude=10pt},xshift=0,yshift=0](0,0) -- (3,4) node[black,midway,left,xshift=-8,yshift=9] {\(r\)};\end{tikzpicture}]]> </latex-image>
+                </image>
+                Evaluating <m>\cos\left(\tan^{-1}\frac{4}{3}\right)</m> is equivalent to evaluating
+                <me>
+                  \cos\theta=\frac{\mbox{adjacent} }{\mbox{hypotenuse} }=\frac{3}{r}
+                </me>,
+                where <m>r=\sqrt{x^2+y^2}=\sqrt{3^2+4^2}=\sqrt{9+16}=\sqrt{25}=5</m>.
+                So,
+                <me>
+                  \cos\left(\tan^{-1}\frac{4}{3}\right)=\cos\theta=\frac{3}{5}
+                </me>
+              </p>
+            </li>
+            <li>
+              <p>
+                Let <m>\theta</m> be an angle in the range of <m>\cos^{-1}</m>, that is,
+                let <m>\theta</m> be in the interval
+                <m>\left[0,\pi\right]</m> such that <m>\theta=\cos^{-1}\left(-\frac{3}{8}\right)</m>.
+                This equation is equivalent to <m>\cos\theta=-\frac{3}{8}</m>.
+                Since <m>\cos\theta\lt 0</m>,
+                we know that <m>\theta</m> must be in Quadrant II <m>\left(\frac{\pi}{2}\leq\theta\leq\pi\right)</m>.
+                Let <m>(x,y)</m> be a point on the terminal side of <m>\theta</m>,
+                then by the trigonometric ratios,
+                <me>
+                  \cos\theta=\frac{\mbox{adjacent} }{\mbox{hypotenuse} }=\frac{x}{r}
+                </me>
+                Since we have <m>\cos\theta=-\frac{3}{8}</m>,
+                we get <m>\frac{x}{r}=-\frac{3}{8}</m> which gives us either <m>x=-3</m> and <m>r=8</m> or <m>x=3</m> and <m>r=-8</m>.
+                Since <m>\theta</m> is in Quadrant II, we know that <m>x</m> is negative,
+                thus <m>x=-3</m> and <m>r=8</m>,
+                as shown in the figure below.
+                <image>
+                   <latex-image> <![CDATA[\begin{tikzpicture}\draw[->] (-3.5,0)--(1.15,0) node[right]{\(x\)}; \draw[->] (0,-0.15)--(0,8) node[above]{\(y\)}; \draw[dashed] (-3,0) -- (-3,7.4161984871); \draw[line width=1pt,blue] (0,0) -- (-3,{sqrt(55)}); \draw[-stealth] (0:0.75) arc (0:112.024312837:0.75) node[midway, right,xshift=5] {\(\theta\)}; \filldraw[black] (-3,7.4161984871) circle (2pt) node[above] {\((x,y)\)}; \draw [decorate,decoration={brace,amplitude=10pt},xshift=0,yshift=0](0,0) -- (-3,0) node[black,midway,below,yshift=-8] {\(x=-3\)}; \draw [decorate,decoration={brace,amplitude=10pt},xshift=0,yshift=0](-3,0) -- (-3,7.4161984871) node[black,midway,left,xshift=-10] {\(y\)}; \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0,yshift=0](0,0) -- (-3,7.4161984871) node[black,midway,right,xshift=8,yshift=7] {\(r=8\)};\end{tikzpicture}]]> </latex-image>
+                </image>
+                Evaluating <m>\sin\left(\cos^{-1}\left(-\frac{3}{8}\right)\right)</m> is equivalent to evaluating
+                <me>
+                  \sin\theta=\frac{\mbox{opposite} }{\mbox{hypotenuse} }=\frac{y}{8}
+                </me>,
+                where
+                <md>
+                  <mrow>r^2\amp =\amp x^2+y^2</mrow>
+                  <mrow>8^2\amp =\amp (-3)^2+y^2</mrow>
+                  <mrow>64\amp =\amp 9+y^2</mrow>
+                  <mrow>y^2\amp =\amp 55</mrow>
+                </md>
+                Thus <m>y=\sqrt{55}</m>.
+                So,
+                <me>
+                  \sin\left(\cos^{-1}\frac{-3}{8}\right)=\sin\theta=\frac{\sqrt{55}}{8}
+                </me>
+                Note this is positive since sine is positive in Quadrant II.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+    <exercise xml:id="ex-2_4">
+      <statement>
+        <p>
+          (Sunrise on Mauna Kea) The summit of Mauna Kea is the highest point in Hawai`i and sits 13,803 ft above the sea level.
+          If you stand at the summit,
+          you will be able to see the sun rise before someone standing at the sea level just north or south of Mauna Kea
+          (at the same latitude).
+          In fact, you will see the sunrise at the same time as someone at sea level sailing in a wa<sq>a to the east of Mauna Kea. \begin{tasks} \task How far is the horizon when someone 5 ft tall stands on the summit to watch the sun rise? \task How much faster will you see the sun rise than someone standing nearby at sea level?
+          Hint: the ratio of your previous answer to the circumference of the Earth is equal to the ratio of the time to the 24 hours in Earth</sq>s rotation. \end{tasks} It turns out you will see the sunrise 8.33 mins before someone at the sea level.
+        </p>
+        <p>
+          \Question <em>Sunrise on Haleakal\={a}</em>
+        </p>
+        <p>
+          According to mo`olelo, or legend,
+          the sun traveled very fast across the sky,
+          leaving people with days so short there was not enough time to carry on with their daily lives.
+          Determined to slow the sun,
+          the demigod Maui climbed to the summit of Haleakal\={a}, which stands at 10,023 feet,
+          to snare the sun.
+          Assume the radius of the earth is at Haleakal\={a} is 3961.527 miles.
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw ([shift=(30:1)]0,0) arc (30:150:1);
+\draw[blue] (0,0) -- (0,1) node[midway, right] {\(R\)};
+\draw (-0.839099631177,1) -- (1.66427948235,1);
+\draw (0,0.9) -- (-0.1,0.9) -- (-0.1,1);
+\draw[blue] (0,0) -- (-0.642787609687,0.766044443119) node[midway, left,xshift=-2] {\(R\)};
+\draw[red] (-0.642787609687,0.766044443119) -- (-0.839099631177,1) node[midway,left,xshift=-14,yshift=-4] {\(h\)};
+\draw ([shift=(90:0.2)]0,0) arc (90:130:0.2) node[above,xshift=4,yshift=3] {\(\theta\)};
+\node at (110:0.9) {\(s\)};
+\draw[red] ([shift=(90:1)]0,0) arc (90:110:1);
+\node[rotate=40] at (130:1.26){\Strichmaxerl[2][20][-20][-30][30]};
+\draw[green] (140:1) -- (130:1.2) -- (120:1);
+\fill[color=green,opacity=0.1] (130:1.2) -- (-0.5,0.866025403784) arc(120:140:1);
+\filldraw [yellow] (1.66427948235,1) circle (4pt);
+\node at (1.66427948235,1) {Sun};\end{tikzpicture}]]>
+</latex-image>
+        </image>
+        <p>
+          \begin{tasks} \task How far is the horizon when Maui stands at the summit?
+          Assume Maui's eyes are 5 ft from the ground. \task How much faster would Maui see the sun emerge over the horizon than someone 5 ft tall and standing at the seashore? \end{tasks}
+        </p>
+      </statement>
+    </exercise>
+    <p>
+      \setboolean{firstanswerofthechapter}{true}
+    </p>
+    <p>
+      \begin{Answer}[ref={ex-2.4}] \Question dafdf \begin{tasks} \task Answer 1a \task Answer 1b \end{tasks} \Question \begin{tasks} \task Answer 2a \task Answer 2b \end{tasks}
+    </p>
+    <p>
+      \end{Answer}
+    </p>
+    <p>
+      \setboolean{firstanswerofthechapter}{false}
+    </p>
+  </subsection>
+</section>

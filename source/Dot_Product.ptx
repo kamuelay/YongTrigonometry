@@ -1,0 +1,233 @@
+<section xml:id="Dot_Product">
+  <title>Dot Product</title>
+  <introduction>
+    <p>
+      *Good `ike examples but need to talk about the math
+      (definitions and theorems are there but they are given without context).
+      Also write intro/motivation*
+    </p>
+    <p>
+      Tacking
+    </p>
+    <p>
+      (<em>pinching</em> if you steer the wa<sq>a at too small of an angle at the upcoming wind,
+      you will point in the upwind direction but go slow,
+      <em>footing</em> if you move at a too large of an angle then you will move fast but won</sq>t make much upwind progress.
+    </p>
+    <p>
+      A voyage undertaken using modern wayfinding must design a course strategy,
+      which includes a reference course for reaching the vicinity of one's destination,
+      hopefully upwind,
+      so that the canoe can sail downwind to the destination rather than having to tack into the wind to get there.
+      (Tacking involves sailing back and forth as closely as possible into the wind to make progress against the wind;
+      it's very arduous and time-consuming,
+      something to be avoided if at all possible,
+      particularly at the end of a long, difficult voyage.)
+    </p>
+    <p>
+      "<url href="\1"/> Designing a Course Strategy
+    </p>
+    <p>
+      <q>Before a voyage by sail begins,
+      the wayfinder designs a course strategy and reference course for reaching the destination from the departure point,
+      given the capabilities of the vessel and the winds, currents,
+      and weather conditions anticipated along the way. (See ``Winds, Weather,
+      and Currents of the Pacific.</q>
+      ) The course strategy represents the most efficient way of getting to the destination.
+      The wayfinder also chooses the best time to go
+      (when the wind and weather conditions are the most favorable),
+      taking into account the timing of the return voyage as well."
+    </p>
+    <figure>
+      <caption>Sailing upwind</caption>
+      <image width="50%" source="Pictures/windward.jpg"/>
+    </figure>
+    <p>
+      ``Sailing vessels like Hokule‘a cannot sail directly in the direction of the wind.
+      If it needs to head toward the direction from which the wind is blowing,
+      a vessel will sail off to the side,
+      while remaining as close as possible to the wind direction (i.e., close-hauled),
+      then change tacks to the other side,
+      making forward progress in a tedious zigzagging pattern known as tacking:"
+    </p>
+    <figure>
+      <caption>Tacking. Try to use dot product.</caption>
+      <image width="25%" source="Pictures/tacking.jpg"/>
+    </figure>
+    <p>
+      <ndash/><ndash/>
+    </p>
+    <p>
+      Video with examples at the end "<url href="\1"/>
+    </p>
+    <p>
+      Stewart's "<url href="\1"/> Sailing Against the Wind
+    </p>
+    <figure>
+      <caption>From Stewart</caption>
+      <image width="25%" source="Pictures/sailing-into-the-wind.png"/>
+    </figure>
+    <p>
+      <ndash/>-
+    </p>
+    <p>
+      Another example of tacking is when Hokulea is sailing to Rapa Nui.
+      When it is When Hokulea is about 300 miles west of Rapa Nui , the navigators will begin a series of close tacks between <m>25^{\circ}</m> S and
+      <m>29^{\circ}</m> S to search for the island;
+      they will have to pass within about 30 miles of the island in daylight to see it from the canoe.
+    </p>
+    <p>
+      "<url href="\1"/>
+    </p>
+    <p>
+      "<url href="\1"/>
+    </p>
+    <p>
+      Do something along the lines of determine the angle to turn to ensure you don't miss the land.
+      See inverse trig to know the distance that can be seen
+    </p>
+    <p>
+      Sailing strategy good resource "<url href="\1"/> <ndash/>-
+    </p>
+    <p>
+      This is a great example that can be used as a project or exercise. "<url href="\1"/>
+    </p>
+    <p>
+      Determine angle to the wind given a distance traveled,
+      number of tacks, etc
+    </p>
+    <p>
+      <ndash/><ndash/><ndash/>-
+    </p>
+    <p>
+      <ndash/><ndash/><ndash/>-
+    </p>
+    <p>
+      <ndash/><ndash/><ndash/><ndash/>
+    </p>
+    <p>
+      examples for computing angle and decomposing a vector: "<url href="\1"/>
+    </p>
+    <p>
+      "<url href="\1"/>
+    </p>
+    <p>
+      May also consider adding/subtracting vectors for True wind velocity, Boat velocity,
+      and Apparent wind velocity.
+      Add this to the 8.1 sections or as a problem.
+    </p>
+    <p>
+      Also decompose a vector (wa`a velocity) into the north and south components.
+    </p>
+    <p>
+      Force on the mast and ropes?
+    </p>
+    <p>
+      Work done to hoist the sail?
+    </p>
+  </introduction>
+  <subsection>
+    <title>The Dot Product of Two Vectors</title>
+    <definition>
+      <statement>
+        <p>
+          If <m>\mathbf{u}=\langle u_1,u_2\rangle</m> and <m>\mathbf{v}=\langle v_1,v_2\rangle</m> are vectors,
+          then their <term>dot product</term>,
+              <idx><h>Dot Product</h></idx>
+          written <m>\mathbf{u}\cdot\mathbf{v}</m> is defined as
+          <me>
+            \mathbf{u}\cdot\mathbf{v}=u_1v_1+u_2v_2
+          </me>
+        </p>
+        <p>
+          In other words,
+          we compute the dot product by multiplying the corresponding components of the two vectors and adding the results.
+          Note: The dot product is <term>not</term> a vector,
+          but instead is a real number (a scalar)
+        </p>
+      </statement>
+    </definition>
+    <example>
+      <title>Finding Dot Products</title>
+      <statement>
+        <p>
+          Here we calculate some dot products.
+          Maybe we can calculate <m>\mathbf{u}\cdot\mathbf{v}</m>,
+          <m>\mathbf{u}\cdot\mathbf{v}</m>,
+          <m>\mathbf{u}\cdot\mathbf{u}</m>, <m>\|\mathbf{u}\|</m>
+        </p>
+      </statement>
+    </example>
+    <p>
+      \begin{mybox}[Properties of the Dot Product] Let <m>\mathbf{u}</m>,
+      <m>\mathbf{v}</m>,
+      and <m>\mathbf{w}</m> be vectors and let <m>c</m> be a scalar
+      (real number).
+      Then
+      <ol>
+        <li>
+          <p>
+            <m>\mathbf{u}\cdot\mathbf{v}=\mathbf{v}\cdot\mathbf{u}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>c(\mathbf{u}\cdot\mathbf{v})=(c\mathbf{u})\cdot\mathbf{v}=\mathbf{u}\cdot(c\mathbf{v})</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>(\mathbf{u}+\mathbf{v})\cdot\mathbf{w}=\mathbf{u}\cdot\mathbf{w}+\mathbf{v}\cdot\mathbf{w}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\mathbf{u}\cdot\mathbf{u}=\|\mathbf{u}\|^2</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\mathbf{0}\cdot\mathbf{v}=0</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+    <p>
+      The proof of many of these can be left as an exercise,
+      but I should probably problem one or two. \end{mybox}
+    </p>
+  </subsection>
+  <subsection>
+    <title>The Angle between Two Vectors</title>
+    <p>
+      \begin{mybox}[Angle Between Two Vectors] If <m>\theta</m> is the angle between two nonzero vectors
+      <m>\mathbf{u}</m> and <m>\mathbf{v}</m>, then
+      <me>
+        \cos\theta=\frac{\mathbf{u}\cdot\mathbf{v}}{\|\mathbf{u}\|\|\mathbf{v}\|}
+      </me>
+    </p>
+    <p>
+      \end{mybox}
+    </p>
+    <definition>
+      <statement>
+        <p>
+          The vectors <m>\mathbf{u}</m> and
+          <m>\mathbf{v}</m> are <term>orthogonal</term>
+              <idx><h>Orthogonal</h></idx>
+          if and only if <m>\mathbf{u}\cdot\mathbf{v}=0</m>.
+        </p>
+      </statement>
+    </definition>
+    <exercise>
+      <statement>
+        <p>
+          \Question first question
+        </p>
+        <p>
+          \Question Second question \begin{tasks}(2) \task Next \task another \end{tasks}
+        </p>
+      </statement>
+    </exercise>
+  </subsection>
+</section>

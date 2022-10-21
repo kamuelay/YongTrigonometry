@@ -1,0 +1,1441 @@
+<section xml:id="Angles_and_Their_Measure">
+  <title>Angles and Their Measure</title>
+  <introduction>
+    <p>
+      One method people use to identify their position is by looking at the <em>latitude</em>.
+          <idx><h>Latitude</h></idx>
+      These imaginary lines that form circles around the Earth run parallel to the Equator.
+      The latitude of a place is defined as the angle between a line drawn from the center of the earth to that point and the equatorial plane.
+      For any point in the Northern Hemisphere,
+      a navigator can measure their latitude by determining the angle
+      <em>H&#333;k&#363;pa`a</em>
+      (North Star) makes with the horizon.
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw (0,0)--(-0.5,0);
+\draw[line width=2pt] (0,0) -- (1.1,0) node[right,xshift=0.1cm] {Horizon};
+\draw[line width=2pt] (0,0) -- (30:1.2);
+\draw[line width=2pt] (0:0.3cm) arc (0:30:0.3cm) node[midway, right,xshift=0.05cm,yshift=0.1cm] {Angle of H\={o}k\={u}pa`a};
+\node [black,scale=1.5] at (30:1.27017059222) {\(\bigstar\)};
+\node [yellow] at (30:1.27017059222) {\(\bigstar\)};
+\node at (1.4,0.63) {H\={o}k\={u}pa`a};\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      When voyaging,
+      knowing correct angles can be the difference between finding and missing your destination.
+      Navigators pay close attention to angles on the Hawaiian Star Compass to determine where celestial bodies enter and exit the sky as well as where wind and current come from.
+      In this section,
+      we will examine the properties of angles and their measure.
+    </p>
+    <definition>
+      <statement>
+        <p>
+          A <term>ray</term>
+              <idx><h>Ray</h></idx>
+          is a part of a line that begins at a point <m>O</m> and extends in one direction.
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[<->] (-5,0) -- (5,0);
+\draw[->, line width=2pt,blue,-stealth](0,0) -- (5,0) node[black,midway,below]{Ray};
+\node[circle,fill=blue,inner sep=2pt,minimum size=2pt,label=below:{\(O\)}] (a) at (0,0) {};\end{tikzpicture}]]>
+</latex-image>
+        </image>
+      </statement>
+    </definition>
+    <definition>
+      <statement>
+        <p>
+          If two rays have a common vertex, <m>O</m>,
+          they form an <term>angle</term>,
+              <idx><h>Angle</h></idx>
+          <m>\theta</m>.
+          The starting ray of the angle is called the <term>initial side</term>
+              <idx><h>Initial side</h></idx>
+          and the second ray is called the
+          <term>terminal side</term>.
+              <idx><h>Terminal side</h></idx>
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[->, line width=2pt,blue,-stealth](0,0) -- (5,0) node[black,midway,below]{Initial Side};
+\draw[->, line width=2pt,blue,-stealth](0,0) -- (40:5) node[black,midway,left,xshift=-0.5cm]{Terminal Side};
+\node[circle,fill=blue,inner sep=2pt,minimum size=2pt,label=below:{\(O\)}] (a) at (0,0) {};
+\draw[red] ([shift=(0:0.8cm)]0,0) arc (0:40:0.8cm);
+\node at (1,0.35) {\(\theta\)};\end{tikzpicture}]]>
+</latex-image>
+        </image>
+      </statement>
+    </definition>
+    <notation>
+      <p>
+        Greek letters are often used to measure angles.
+        The Greek letters commonly used are <m>\theta</m>,
+        <m>\phi</m>, <m>\alpha</m>, <m>\beta</m>, and <m>\gamma</m>.
+      </p>
+    </notation>
+  </introduction>
+  <subsection>
+    <title>Degree</title>
+    <p>
+      The <term>measure</term>
+          <idx><h>Measure</h></idx>
+      of an angle is the amount of rotation from the initial side to the terminal side.
+      One unit of measuring angles is the degree.
+      One <term>degree</term>
+          <idx><h>Degree</h></idx>
+      is <m>\frac{1}{360}</m> of a complete revolution,
+      so one full revolution is <m>360^{\circ}</m>.
+    </p>
+    <p>
+      Today we often use decimals to represent the fractional parts of a degree.
+      However, fractional parts of a degree were traditionally represented in minutes and seconds.
+      One <term>minute</term>
+          <idx><h>Minute</h></idx>
+      or <em>arc minute</em>,
+          <idx><h>Arc Minute</h></idx>
+      denoted <m>1'</m>, is defined as
+      <m>\frac{1}{60}(1^{\circ})</m> and one <term>second</term>
+          <idx><h>Second</h></idx>
+      or <em>arc second</em>,
+          <idx><h>Arc Second</h></idx>
+      denoted <m>1''</m>, is defined as
+      <m>\frac{1}{60}(1')</m>. \begin{mybox}[Conversion Between Degree, Minutes,
+      and Seconds]
+      <md>
+        <mrow>1^{\circ}\amp =60' \amp  1'\amp =\left(\frac{1}{60}\right)^{\circ} \amp  1''\amp =\left(\frac{1}{3600}\right)^{\circ}</mrow>
+        <mrow>1^{\circ}\amp =3600'' \amp  1'\amp =60'' \amp  1''\amp =\left(\frac{1}{60}\right)'</mrow>
+      </md>
+    </p>
+    <p>
+      \end{mybox}
+    </p>
+    <example>
+      <statement>
+        <p>
+          In the Star Compass
+          (<xref ref="fig_star-compass-with-angles">Figure</xref>),
+          the angle that divides the houses Manu (northwest) and Noio
+          (northwest by west)
+          is <m>140.625^{\circ}</m>.
+          Represent <m>140.625^{\circ}</m> in degrees, minutes, and seconds.
+        </p>
+        <figure xml:id="fig_star-compass-with-angles">
+          <caption>The Star Compass with the angles indicating the boundaries for each House</caption>
+          <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[<-,dashed] (-1.2cm,0cm) -- (-0.97cm,0cm);
+\draw[dashed] (-0.49cm,0cm) -- (0.68cm,0cm);
+\draw[->,dashed] (0.98cm,0cm) -- (1.2cm,0cm);
+\draw[<-,dashed] (0cm,-1.2cm) -- (0cm,-0.98cm);
+\draw[dashed] (0cm,-0.72cm) -- (0cm,0.71cm);
+\draw[->,dashed] (0cm,0.98cm) -- (0cm,1.2cm);
+\draw[thick] (0cm,0cm) circle(1cm);
+\draw[left] (0:0.98) node{\large HIKINA};
+\draw[left] (90:0.98) node[rotate=90] {\large `\={A}KAU};
+\draw[right] (180:0.98cm) node{\large KOMOHANA};
+\draw[left] (270:0.98) node[rotate=-90] {\large HEMA};
+\foreach \x in {5.625,16.875,...,90} {
+\draw[gray] (0cm,0cm) -- (\x:1cm);
+\filldraw[black] (\x:1cm) circle(0.4pt);
+\draw (\x:1.2cm) node[rotate=\x] {\(\x^\circ\)};
+}
+\foreach \x in {95.625,106.875,...,270} {
+\draw[gray] (0cm,0cm) -- (\x:1cm);
+\filldraw[black] (\x:1cm) circle(0.4pt);
+\draw (\x:1.2cm) node[rotate=180+\x] {\(\x^\circ\)};
+}
+\foreach \x in {275.625,286.875,...,360} {
+\draw[gray] (0cm,0cm) -- (\x:1cm);
+\filldraw[black] (\x:1cm) circle(0.4pt);
+\draw (\x:1.2cm) node[rotate=\x] {\(\x^\circ\)};
+}
+\foreach \x/\xtext in {
+11.25/L\={a},
+22.5/`\={A}ina,
+33.75/Noio,
+45/Manu,
+56.25/N\={a}lani,
+67.5/N\={a} Leo,
+78.75/Haka,
+281.25/Haka,
+292.5/N\={a} Leo,
+303.75/N\={a}lani,
+315/Manu,
+326.25/Noio,
+337.5/`\={A}ina,
+348.75/L\={a}
+}
+\draw[left] (\x:0.98) node[rotate=\x] {\xtext};
+\foreach \x/\xtext in {
+101.25/Haka,
+112.5/N\={a} Leo,
+123.75/N\={a}lani,
+135/Manu,
+146.25/Noio,
+157.5/`\={A}ina,
+168.75/L\={a},
+191.25/L\={a},
+202.5/`\={A}ina,
+213.75/Noio,
+225/Manu,
+236.25/N\={a}lani,
+247.5/N\={a} Leo,
+258.75/Haka
+}
+\draw[right] (\x:0.98) node[rotate=180+\x] {\xtext};\end{tikzpicture}]]>
+</latex-image>
+          </image>
+        </figure>
+      </statement>
+      <solution>
+        <p>
+          First we will convert <m>0.625^{\circ}</m> to minutes using the conversion <m>1^{\circ}=60'</m>,
+          <me>
+            0.625^{\circ}=0.625^{\circ}\cdot\frac{60'}{1^{\circ}}=37.5'
+          </me>
+        </p>
+        <p>
+          Since <m>1'=60''</m>, we can convert <m>0.5'</m> to seconds:
+          <m>\displaystyle 0.5'=0.5'\cdot\frac{60''}{1'}=30''</m>.
+        </p>
+        <p>
+          So <m>140.625^{\circ}=140^{\circ}37'30''</m>.
+        </p>
+      </solution>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Convert <m>263^{\circ}24'45''</m> to decimal degrees.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We will first convert <m>24'</m> and <m>45''</m> to degrees.
+          <me>
+            24'=24\cdot1'=24\cdot\left(\frac{1}{60}\right)^{\circ}=0.4^{\circ}
+          </me>
+          and
+          <me>
+            45''=45\cdot1''=45\cdot\left(\frac{1}{3600}\right)^{\circ}=0.0125^{\circ}
+          </me>
+        </p>
+        <p>
+          So <m>263^{\circ}24'45''=263^{\circ}+24'+45''=263^{\circ}+0.4^{\circ}+0.0125=263.4125^{\circ}</m>
+        </p>
+      </solution>
+    </example>
+    <definition>
+      <statement>
+        <p>
+          If an angle is drawn on the <m>xy</m>-plane and the vertex is at the origin and the initial side is on the positive <m>x</m>-axis,
+          then that angle is said to be in
+          <term>standard position</term>.
+              <idx><h>standard position</h></idx>
+          If the angle is measured in a counterclockwise rotation,
+          the angle is said to be a <term>positive angle</term>
+              <idx><h>positive angle</h></idx>
+          and if the angle is measured in a clockwise rotation,
+          the angle is said to be a <term>negative angle</term>.
+              <idx><h>negative angle</h></idx>
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+\filldraw[blue] (1cm,0) circle(1pt);
+\filldraw[blue] (60:1.2cm) circle(1pt);
+\draw[line width=2pt,blue] (0,0) -- (1,0);
+\draw[line width=2pt,blue] (0,0) -- (60:1.2);
+\draw[->, line width=1.25pt] (0:0.7cm) arc (0:60:0.7cm) node[midway, right,xshift=0.05cm,yshift=0.2cm] {positive angle};\end{tikzpicture}]]>
+</latex-image>
+        </image>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+\filldraw[blue] (1cm,0) circle(1pt);
+\filldraw[blue] (-60:1.2cm) circle(1pt);
+\draw[line width=2pt,blue] (0,0) -- (1,0);
+\draw[line width=2pt,blue] (0,0) -- (-60:1.2);
+\draw[->, line width=1.25pt] (0:0.7cm) arc (0:-60:0.7cm) node[midway, right,xshift=0.05cm,yshift=-0.2cm] {negative angle};\end{tikzpicture}]]>
+</latex-image>
+        </image>
+      </statement>
+    </definition>
+    <definition>
+      <statement>
+        <p>
+          When an angle is in standard position,
+          the terminal side will either lie in a quadrant or it will lie on the <m>x</m>-axis or <m>y</m>-axis.
+          An angle is called a <term>quadrantal angle</term>
+              <idx><h>Quadrantal Angle</h></idx>
+          if the terminal side lies on <m>x</m>-axis or <m>y</m>-axis.
+          The two axes divide the plane into four <term>quadrants</term>.
+              <idx><h>Quadrants</h></idx>
+          In the Cartesian plane,
+          the four quadrants are Quadrant I, II, III, and IV. The corresponding quadrants of Star Compass are Ko`olau (NE), Ho`olua (NW), Kona (SE), and Malanai (SW).
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[<->] (-2,0)--(2,0) node[right]{\(x\)};
+\draw[<->] (0,-2)--(0,2) node[above]{\(y\)};
+\node at (1,1) [ align=center] {I \\ Ko`olau};
+\node at (-1,1) [ align=center]{II \\ Ho`olua};
+\node at (-1,-1) [ align=center] {III \\ Kona};
+\node at (1,-1) [ align=center] {IV \\ Malanai};\end{tikzpicture}]]>
+</latex-image>
+        </image>
+      </statement>
+    </definition>
+    <definition>
+      <statement>
+        <p>
+          <term>Coterminal angles</term>
+              <idx><h>Coterminal Angles</h></idx>
+          are angles in standard position that have the same initial side and the same terminal side.
+          Any angle has infinitely many coterminal angles because each time we add or subtract <m>360^{\circ}</m> from it,
+          the resulting angle has the same terminal side.
+        </p>
+      </statement>
+    </definition>
+    <example>
+      <statement>
+        <p>
+          <m>90^{\circ}</m> and <m>450^{\circ}</m> are coterminal angles since <m>450^{\circ}-360^{\circ}=90^{\circ}</m>
+        </p>
+      </statement>
+    </example>
+    <p>
+      To determine the quadrant in which an angle lies,
+      add or subtract one revolution (<m>360^{\circ}</m>) until you obtain a coterminal angle between
+      <m>0^{\circ}</m> ad <m>360^{\circ}</m>.
+      The quadrant that the terminal side lies is the quadrant of the angle.
+      Quadrantal angles do not lie in any quadrant.
+    </p>
+    <example>
+      <statement>
+        <p>
+          Determine the quadrant in which each angle lies and name the corresponding House and quadrant in the Star Compass
+          (<xref ref="fig_star-compass-with-angles">Figure</xref>).
+          <ol>
+            <li>
+              <p>
+                <m>140^{\circ}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>-770^{\circ}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>923^{\circ}</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Since <m>90^{\circ}\lt 140^{\circ}\lt 180^{\circ}</m>,
+                <m>140^{\circ}</m> lies in Quadrant II, or Manu Ho`olua.
+              </p>
+            </li>
+            <li>
+              <p>
+                Since <m>-770^{\circ}\lt 0</m>,
+                we first add <m>3\times360</m> to <m>-770^{\circ}</m> to obtain an angle
+                <m>0^{\circ}</m> and <m>360^{\circ}</m>,
+                <me>
+                  -770^{\circ}+3\times360^{\circ}=310^{\circ}
+                </me>
+                So <m>310^{\circ}</m> and <m>-770^{\circ}</m> are coterminal.
+                Since <m>270^{\circ}\lt 310^{\circ}\lt 360^{\circ}</m>,
+                <m>310^{\circ}</m> lies in Quadrant IV, or Manu Malanai.
+              </p>
+            </li>
+            <li>
+              <p>
+                Since <m>923^{\circ}>360</m> we begin by subtracting <m>2\times360^{\circ}</m>
+                <me>
+                  923^{\circ}-2\times360^{\circ}=203^{\circ}
+                </me>
+                So <m>203^{\circ}</m> and <m>923^{\circ }</m> are coterminal.
+                Since <m>180^{\circ}\lt 203^{\circ}\lt 270^{\circ}</m>,
+                <m>923^{\circ}</m> lies in Quadrant III or `\=Aina Kona.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+    <example>
+      <statement>
+        <p>
+          What is the corresponding quadrant for Nalani Kona?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Locating Nalani Kona in the Star Compass,
+          we see it is in Quadrant III.
+        </p>
+      </solution>
+    </example>
+    <definition>
+      <statement>
+        <p>
+          A <term>central angle</term>
+              <idx><h>Central Angle</h></idx>
+          is a positive angle formed at the center of a circle by two radii.
+        </p>
+      </statement>
+    </definition>
+  </subsection>
+  <subsection>
+    <title>Radian</title>
+    <p>
+      Another way to measure an angle is with <em>radians</em>
+      which measure the the arc of a circle that is formed from an angle.
+    </p>
+    <definition xml:id="core-standards-CCSS_MATH_CONTENT_HSF_TF_A_1">
+      <title>Definition of a Radian</title>
+      <statement>
+        <p>
+          The <term>radian measure</term><idx><h>Radian Measure,
+          of angles</h></idx> of a central angle in a circle is the ratio of the length of the arc on a circle subtended by the angle to the radius.
+          If <m>r</m> is the radius of the circle,
+          <m>\theta</m> is the angle,
+          and <m>s</m> is the arc length,
+          then we have the following
+          <me>
+            \theta=\frac{s}{r}
+          </me>
+        </p>
+        <p>
+          A radian is abbreviated by <term>rad</term>.
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+\draw (0,0) circle (1cm);
+\draw[blue] (45:0.95cm) -- (45:1.05cm);
+\draw[line width=2pt,blue] (0:1cm) arc (0:45:1cm) node[midway,above,yshift=0.15cm,xshift=0.2cm] {\(s\)};
+\filldraw[blue] (1cm,0) circle(1pt);
+\filldraw[blue] (45:1cm) circle(1pt);
+\draw[line width=2pt,blue] (0,0) -- (1,0) node[midway,below,yshift=-0.1cm]{r};
+\draw[line width=2pt,blue] (0,0) -- (45:1);
+\draw (0:0.3cm) arc (0:45:0.3cm) node[midway,above,xshift=0.2cm,yshift=-0.1cm]{\(\theta\)};\end{tikzpicture}]]>
+</latex-image>
+        </image>
+      </statement>
+    </definition>
+    <p>
+      The measure of a central angle obtained when the length of the arc is also equal to the radius,
+      <m>r</m>,
+      is called <em>one radian</em> (1 rad).
+      Similarly, if <m>\theta=2</m> rad,
+      then the arc length equals <m>2r</m>.
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+\draw (0,0) circle (1cm);
+\draw[blue] (57.3:0.95cm) -- (57.3:1.05cm);
+\draw[line width=2pt,blue] (0:1cm) arc (0:57.3:1cm) node[midway,above,yshift=0.15cm,xshift=0.2cm] {\(r\)};
+\filldraw[blue] (1cm,0) circle(1pt);
+\filldraw[blue] (57.3:1cm) circle(1pt);
+\draw[line width=2pt,blue] (0,0) -- (1,0) node[midway,below,yshift=-0.1cm]{r};
+\draw[line width=2pt,blue] (0,0) -- (57.3:1);
+\draw (0:0.3cm) arc (0:57.3:0.3cm) node[midway,above,xshift=0.2cm,yshift=-0.1cm]{\(\theta\)};\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+\draw (0,0) circle (1cm);
+\draw[blue] (57.3:0.95cm) -- (57.3:1.05cm);
+\draw[line width=2pt,blue] (0:1cm) arc (0:57.3:1cm) node[midway,above,yshift=0.15cm,xshift=0.2cm] {\(r\)};
+\draw[line width=2pt,blue] (57.3:1cm) arc (57.3:114.6:1cm) node[midway,above,xshift=0.15cm,yshift=0.1cm] {\(r\)};
+\filldraw[blue] (1cm,0) circle(1pt);
+\filldraw[blue] (57.3:1cm) circle(1pt);
+\filldraw[blue] (114.6:1cm) circle(1pt);
+\draw[line width=2pt,blue] (0,0) -- (1,0) node[midway,below,yshift=-0.1cm]{r};
+\draw[line width=2pt,blue] (0,0) -- (114.6:1);
+\draw (0:0.3cm) arc (0:114.6:0.3cm) node[midway,above,xshift=0.2cm,yshift=-0.1cm]{\(\theta\)};\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      The circumference of a circle is <m>C=2\pi r</m>.
+      This means that the circumference is <m>2\pi\approx6.28</m> times the radius.
+      This means that if we were to use a piece of string with the length of the radius,
+      we would use six pieces of string plus a fractional piece of the string.
+    </p>
+    <figure>
+      <caption>One rotation of the unit circle is <m>2\pi\approx6.28</m> radians.</caption>
+      <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+\draw (0,0) circle (1cm);
+\draw[blue] (57.3:0.95cm) -- (57.3:1.05cm);
+\draw[blue] (0:1cm) arc (0:57.3:1cm) node[midway,above,yshift=0.15cm] {\(r\)};
+\draw[blue] (57.3:1cm) arc (57.3:114.6:1cm) node[midway,above,xshift=0.15cm] {\(r\)};
+\draw[blue] (114.6:1cm) arc (114.6:171.9:1cm) node[midway,above,yshift=0.15cm] {\(r\)};
+\draw[blue] (171.9:1cm) arc (171.9:229.2:1cm) node[midway,left] {\(r\)};
+\draw[blue] (229.2:1cm) arc (229.2:286.5:1cm) node[midway,below] {\(r\)};
+\draw[blue] (286.5:1cm) arc (286.5:343.8:1cm) node[midway,below] {\(r\)};
+\filldraw[blue] (1cm,0) circle(1pt) node[black, above right,yshift=0.1cm] {0 radians, \(2\pi\approx6.28\) radians};
+\filldraw[blue] (57.3:1cm) circle(1pt) node[black, above right] {1 radian};
+\filldraw[blue] (114.6:1cm) circle(1pt) node[black, above left] {2 radians};
+\filldraw[blue] (171.9:1cm) circle(1pt) node[black, left] {3 radians};
+\filldraw[blue] (229.2:1cm) circle(1pt) node[black, below left] {4 radians};
+\filldraw[blue] (286.5:1cm) circle(1pt) node[black, below right] {5 radians};
+\filldraw[blue] (343.8:1cm) circle(1pt) node[black, below right] {6 radians};
+\node[blue, right] at (1,-0.15) {fractional piece};\end{tikzpicture}]]>
+</latex-image>
+      </image>
+    </figure>
+    <p>
+      \begin{mybox}[Relationships Between Degrees and Radians] If a circle with radius 1 is drawn,
+      there are <m>360^{\circ}</m> and the full arc length is the circumference,
+      which is <m>2\pi</m>.
+      Therefore, the relationship between degrees and radians is:
+      <me>
+        360^{\circ}=2\pi \mbox{ radian} , \mbox{or }  180^{\circ}=\pi\mbox{ radian}
+      </me>
+      <me>
+        1\mbox{ radian} =\frac{180^{\circ}}{\pi}
+      </me>
+      <me>
+        1^{\circ}=\frac{\pi}{180}\mbox{ radian}
+      </me>
+      <ol>
+        <li>
+          <p>
+            To convert degree to radians,
+            multiply by <m>\dfrac{2\pi\mbox{ radians} }{360^{\circ}}</m> or <m>\dfrac{\pi\mbox{ radian} }{180^{\circ}}</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            To convert radians to degrees,
+            multiply by <m>\dfrac{360^{\circ}}{2\pi\mbox{ radians} }</m> or <m>\dfrac{180^{\circ}}{\pi\mbox{ radian} }</m>
+          </p>
+        </li>
+      </ol>
+    </p>
+    <p>
+      \end{mybox}
+    </p>
+    <example>
+      <statement>
+        <p>
+          Express <m>45^{\circ}</m> in radians.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\displaystyle 45^{\circ}=45^{\circ}\left(\frac{2\pi\mbox{ radians} }{360^{\circ}}\right)=\frac{\pi}{4}\mbox{radians}</m>
+        </p>
+      </solution>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Express <m>\dfrac{5\pi}{6}</m> in degrees.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <m>\displaystyle \frac{5\pi}{6}\mbox{rad} =\frac{5\pi}{6}\mbox{rad} \left(\frac{360^{\circ}}{2\pi\mbox{ rad} }\right)=150^{\circ}</m>
+        </p>
+      </solution>
+    </example>
+    <p>
+      Using this method,
+      we can obtain the following table of common angles used in trigonometry and the corresponding radian and degree measures.
+    </p>
+    <table>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><em>Radians</em></cell>
+          <cell>0</cell>
+          <cell><m>\dfrac{\pi}{6}</m></cell>
+          <cell><m>\dfrac{\pi}{4}</m></cell>
+          <cell><m>\dfrac{\pi}{3}</m></cell>
+          <cell><m>\dfrac{\pi}{2}</m></cell>
+          <cell><m>\dfrac{2\pi}{3}</m></cell>
+          <cell><m>\dfrac{3\pi}{4}</m></cell>
+          <cell><m>\dfrac{5\pi}{6}</m></cell>
+          <cell><m>\pi</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><em>Degrees</em></cell>
+          <cell><m>0^{\circ}</m></cell>
+          <cell><m>30^{\circ}</m></cell>
+          <cell><m>45^{\circ}</m></cell>
+          <cell><m>60^{\circ}</m></cell>
+          <cell><m>90^{\circ}</m></cell>
+          <cell><m>120^{\circ}</m></cell>
+          <cell><m>135^{\circ}</m></cell>
+          <cell><m>150^{\circ}</m></cell>
+          <cell><m>180^{\circ}</m></cell>
+        </row>
+        <row bottom="medium">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell  ><em>Radians</em></cell>
+          <cell><m>\pi</m></cell>
+          <cell><m>\dfrac{7\pi}{6}</m></cell>
+          <cell><m>\dfrac{5\pi}{4}</m></cell>
+          <cell><m>\dfrac{4\pi}{3}</m></cell>
+          <cell><m>\dfrac{3\pi}{2}</m></cell>
+          <cell><m>\dfrac{5\pi}{3}</m></cell>
+          <cell><m>\dfrac{7\pi}{4}</m></cell>
+          <cell><m>\dfrac{11\pi}{6}</m></cell>
+          <cell><m>2\pi</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><em>Degrees</em></cell>
+          <cell><m>180^{\circ}</m></cell>
+          <cell><m>210^{\circ}</m></cell>
+          <cell><m>225^{\circ}</m></cell>
+          <cell><m>240^{\circ}</m></cell>
+          <cell><m>270^{\circ}</m></cell>
+          <cell><m>300^{\circ}</m></cell>
+          <cell><m>315^{\circ}</m></cell>
+          <cell><m>330^{\circ}</m></cell>
+          <cell><m>360^{\circ}</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+    </table>
+  </subsection>
+  <subsection>
+    <title>Arc Length</title>
+    <p>
+      Recall the definition of a radian is the ratio of the arc length to the radius of a circle,
+      <m>\theta=\frac{s}{r}</m>.
+      Rearranging this,
+      we can obtain a formula for the arc length of a circle.
+    </p>
+    <theorem xml:id="thm_arc-length">
+      <statement>
+        <p>
+              <idx><h>Arc Length</h></idx>
+          In a circle of radius <m>r</m>, the <em>arc length</em>, <m>s</m>, subtended by a central angle (in radians), <m>\theta</m>, is
+          <me>
+            s=r\theta
+          </me>
+        </p>
+        <p>
+          If <m>\theta</m> is given in degrees,
+          then <m>\displaystyle s=2\pi r\cdot\left(\frac{\theta}{360^{\circ}}\right)</m>.
+        </p>
+      </statement>
+    </theorem>
+    <example>
+      <statement>
+        <p>
+          Find the length of an arc of a circle with radius 10 cm subtended by an angle of <m>120^{\circ}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Using the arc formula we get <m>\displaystyle s=2\pi 10\mbox{cm} \cdot\left(\frac{120^{\circ}}{360^{\circ}}\right)=\frac{20\pi}{3}\mbox{cm}</m>.
+        </p>
+      </solution>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Kiritimati, also known as Christmas Island,
+          is an atoll in the Republic of Kiribati.
+          Kiritimati's location west of the International Date Line makes it one of the first places in the world to welcome the New Year,
+          while Hawai`i is one of the last places.
+          Although Kiritimati and Moloka`i share the same longitude at <m>157^{\circ}12'</m> west
+          (meaning Moloka`i is directly north of Kiritimati),
+          both islands are 24 hours apart.
+          For example, if the time on O`ahu is 3:00 pm on Thursday,
+          then at that same moment it is 3:00 pm on Friday in Kiritimati.
+          Find the distance between Kiritimati (<m>1^{\circ}45'</m> north latitude) and Moloka`i
+          (<m>21^{\circ}08'</m> north latitude).
+          Assume the radius of Earth is 3,960 miles and that the central angle between the two islands is the difference in their laititudes.
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\filldraw[ball color=white] (0,0) circle (\R);
+\filldraw[fill=white] (0,0) circle (\R);
+\shade[ball color = gray!40, opacity = 0.5] (0,0) circle (\R);
+\foreach \t in {1.75,21.1333333333} { \DrawLatitudeCircle[\R]{\t} }
+\foreach \t in {-120} { \DrawLongitudeCircle[\R]{\t} }
+\pgfmathsetmacro\H{\R*cos(\angEl)}
+\coordinate (O) at (0,0);
+\node[circle,draw,black,scale=0.3] at (0,0) {};
+\draw[right] node at (0,0){O};
+\coordinate[mark coordinate] (N) at (0,\H);
+\draw[left] node at (0,\H){N};
+\coordinate[mark coordinate] (S) at (0,-\H);
+\draw[left] node at (0,-\H){S};
+\draw[thick, dashed, black](N)--(S);
+\NewLatitudePlane[planeP]{\R}{\angEl}{21.4666666667}
+\path[planeP] (-120:\R) coordinate (P);
+\draw[left] node at (P){Moloka`i};
+\node[right] at (21.4666666667:\R) {\(21^{\circ}08'\)N};
+\node[right] at (1.75:\R) {\(1^{\circ}45'\)N};
+\node[right] at (-1.9,-2.5) {\(157^{\circ}12'\)W};
+\NewLatitudePlane[equator]{\R}{\angEl}{1.96666666667}
+\path[equator] (-120:\R) coordinate (Pprime);
+\draw[left] node at (Pprime){Kiritimati};
+\draw[-,dashed,blue,line width=2pt] (O)--(P) node[black,midway,above] {\(r\)};
+\draw[-,dashed,blue,line width=2pt] (O)--(Pprime) node[black,midway,below] {\(r\)};
+\LongitudePlane[angle]{\angEl}{-120}
+\draw[angle,-] (1.96666666667:1.25) arc (1.96666666667:21.4666666667:1.25) node[xshift=-0.25cm,yshift=-0.2cm] {\(\theta\)};
+\draw[angle,-,blue,line width=2pt] (1.96666666667:\R) arc (1.96666666667:21.4666666667:\R) node[midway,right,black] {\(s\)};\end{tikzpicture}]]>
+</latex-image>
+        </image>
+      </statement>
+      <solution>
+        <p>
+          The measure of the central angle between the two islands is
+          <md>
+            <mrow>\theta\amp =\amp 21^{\circ}08'-1^{\circ}45'</mrow>
+            <mrow>\amp =\amp 19^{\circ}23'</mrow>
+            <mrow>\amp =\amp 19^{\circ}+\frac{23}{60}^{\circ}</mrow>
+            <mrow>\amp \approx\amp 19.3833^{\circ}</mrow>
+          </md>
+        </p>
+        <p>
+          To find the distance,
+          we use <xref ref="thm_arc-length">Theorem</xref> to find the arc length:
+          <me>
+            s=2\pi r\cdot\left(\frac{\theta}{360^{\circ}}\right)\approx2\pi\cdot(3,960\mbox{ miles} )\frac{19.3833^{\circ}}{360^{\circ}}\approx1,340\mbox{ miles}
+          </me>
+        </p>
+        <p>
+          So the distance between Kiritimati and Moloka`i is approximately 1,340 miles.
+        </p>
+      </solution>
+    </example>
+  </subsection>
+  <subsection xml:id="core-standards-CCSS_MATH_CONTENT_HSG_C_B_5-c">
+    <title>Area of a Sector of a Circle</title>
+    <p>
+      \begin{mybox}[Area of a Sector]<idx><h>Area</h><h>of sector of circle</h></idx> The area of the sector of a circle of radius <m>r</m> formed by a central angle of <m>\theta</m> is
+      <md>
+        <mrow>A\amp =\frac{\theta}{360^{\circ}}\cdot\pi\cdot r^2,\mbox{ when \(\theta\) is in degrees}</mrow>
+        <mrow>A\amp =\frac{1}{2}r^2\theta,\mbox{ when \(\theta\) is in radians}</mrow>
+      </md>
+    </p>
+    <p>
+      \end{mybox} Notice the ratio
+      <m>\displaystyle\frac{\theta}{360^{\circ}}</m> is the proportion of the angle <m>\theta</m>
+      (in degrees)
+      to one complete circle.
+      Additionally,
+      the circumference of a circle is given by <m>2\pi r</m>.
+      Therefore, the arc length is simply the proportion of the central angle to the whole circle multiplied by the circumference of the circle.
+      <me>
+        s=\mbox{arc length} =\mbox{(proportion of circle)} \cdot\mbox{(circumference)} =\left(\frac{\theta}{360^{\circ}}\right)\cdot(2\pi r)
+      </me>
+    </p>
+    <p>
+      Similarly, the area of a circle is given by <m>\pi r^2</m>.
+      So the area of sector is the proportion of the central angle to the whole circle multiplied by the area of the circle.
+      <me>
+        A=\mbox{area of sector} =\mbox{(proportion of circle)} \cdot\mbox{(area of circle)} =\left(\frac{\theta}{360^{\circ}}\right)\cdot\left(\pi r^2\right)
+      </me>
+    </p>
+    <theorem>
+      <statement>
+        <p>
+          Given a circle of radius <m>r</m> formed by a central angle of <m>\theta</m>,
+          then the arc length and area of the sector formed by <m>\theta</m> can be expressed as the proportion of the angle to the full circle multiplied by the circumference and area of the circle,
+          respectively.
+          <me>
+            s=\mbox{(proportion of circle)} \cdot\mbox{(circumference)} =\left(\frac{\theta}{360^{\circ}}\right)\cdot(2\pi r)
+          </me>
+          and
+          <me>
+            A=\mbox{(proportion of circle)} \cdot\mbox{(area of circle)} =\left(\frac{\theta}{360^{\circ}}\right)\cdot\left(\pi r^2\right)
+          </me>
+        </p>
+      </statement>
+    </theorem>
+    <example>
+      <statement>
+        <p>
+          When sailing,
+          a wa`a (canoe) cannot make headway by sailing directly into the wind.
+          It can only sail beyond <m>67^{\circ}</m> in either direction from the wind
+          (<xref ref="fig_Sailing-upwind">Figure</xref>).
+          If H&#333;k&#363;le`a sails for 50 miles,
+          what is the area of the sector that cannot be sailed?
+          Round your answer to the nearest square mile.
+        </p>
+        <figure xml:id="fig_Sailing-upwind">
+          <caption>Voyaging canoes cannot sail within <m>67^{\circ}</m> into the direction of the wind.</caption>
+          <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw (0,0) circle (1cm);
+\draw[->] (0,0) -- (157:1.2cm);
+\draw[->] (0,0) -- (23:1.2cm);
+\fill[blue,fill opacity=0.1] (157:1cm) -- (0,0) -- (23:1cm) arc (23:157:1cm);
+\filldraw[blue] (0,0) circle(1pt);
+\draw[<->] (23:0.3cm) arc (23:90:0.3cm) node[midway,above,xshift=0.3cm,yshift=-0.cm]{\(67^{\circ}\)};
+\draw[<->] (90:0.3cm) arc (90:157:0.3cm) node[midway,above,xshift=-0.3cm,yshift=-0.cm]{\(67^{\circ}\)};
+\draw[<->] (-1.2,0) -- (1.2,0);
+\draw[<-] (0,-1.15) -- (0,1);
+\draw[->] (0,0) -- (-45:1.2);
+\draw[->] (0,0) -- (225:1.2);
+\draw[line width=2pt,->] (0,0.9) -- (0,0.5);
+\draw[line width=2pt,->] (0.2,0.9) -- (0.2,0.5);
+\draw[line width=2pt,->] (-0.2,0.9) -- (-0.2,0.5);
+\node at (0,-1.2) {Downwind};
+\node at (0,1.2) {Upwind};
+\draw ([shift=(23:0.6cm)]0,0) pic {waa1-top={waacolor}{-67}{0.1}};
+\draw ([shift=(157:0.6cm)]0,0) pic {waa1-top={waacolor}{67}{0.1}};
+\draw ([shift=(0:0.6cm)]0,0) pic {waa1-top={waacolor}{-90}{0.1}};
+\draw ([shift=(180:0.6cm)]0,0) pic {waa1-top={waacolor}{90}{0.1}};
+\draw ([shift=(-45:0.6cm)]0,0) pic {waa1-top={waacolor}{-135}{0.1}};
+\draw ([shift=(225:0.6cm)]0,0) pic {waa1-top={waacolor}{135}{0.1}};
+\draw ([shift=(-90:0.6cm)]0,0) pic {waa1-top={waacolor}{180}{0.1}};\end{tikzpicture}]]>
+</latex-image>
+          </image>
+        </figure>
+      </statement>
+      <solution>
+        <p>
+          The angle is <m>\theta=2\cdot67^{\circ}=134^{\circ}</m> and the radius is <m>r=50</m> miles.
+          So the area is given by
+          <me>
+            A=\frac{\theta}{360^{\circ}}\pi\cdot r^2=\frac{134}{360}\pi\cdot 50^2\approx2,923\mbox{ square miles}
+          </me>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+  <subsection xml:id="sec_angular_velocity_and_linear_speed">
+    <title>Angular Velocity and Linear Speed</title>
+    <p>
+      Consider an object moving along a circle as shown on the right.
+      There are two ways to describe the circular motion of this object:
+      <em>linear speed</em> which measures the distance traveled;
+      and <em>angular speed</em> which measures the rate at which the central angle changes.
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw (0,0) circle (1cm);
+\draw[blue] (45:0.95cm) -- (45:1.05cm);
+\draw[blue] (0:1cm) arc (0:45:1cm) node[midway,above,yshift=0.15cm,xshift=0.2cm] {\(s\)};
+\filldraw[blue] (1cm,0) circle(1pt);
+\filldraw[blue] (45:1cm) circle(1pt);
+\filldraw[blue] (0,0) circle(1pt);
+\draw[blue] (0,0) -- (1,0) node[midway,below,yshift=-0.1cm]{r};
+\draw[blue] (0,0) -- (45:1);
+\draw (0:0.3cm) arc (0:45:0.3cm) node[midway,above,xshift=0.2cm,yshift=-0.1cm]{\(\theta\)};
+\draw[->] (0:0.8cm) arc (0:45:0.8cm);\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <definition>
+      <title>Linear Speed</title>
+      <statement>
+        <p>
+              <idx><h>Speed</h><h>Linear</h></idx>
+              <idx><h>Linear Speed</h></idx>
+          Suppose an object moves along a circle with radius <m>r</m> and <m>\theta</m> (measured in radians) is the angle transversed in time <m>t</m>.
+          Let <m>s</m> be the distance the object traveled in time <m>t</m>.
+          Then the <term>linear speed</term>,
+          <m>v</m>, of the object is given by
+          <me>
+            v=\frac{s}{t}
+          </me>
+        </p>
+      </statement>
+    </definition>
+    <definition>
+      <title>Angular Speed</title>
+      <statement>
+        <p>
+              <idx><h>Speed</h><h>Angular</h></idx>
+              <idx><h>Angular Speed</h></idx>
+          Suppose an object moves along a circle.
+          Let <m>\theta</m>
+          (measured in radians)
+          be the angle transversed by the object in time <m>t</m>.
+          The <term>angular speed</term>,
+          <m>\omega</m>, of the object is given by
+          <me>
+            \omega=\frac{\theta}{t}
+          </me>
+        </p>
+      </statement>
+    </definition>
+    <p>
+      Notice that we can rearrange the angular speed to get <m>\theta=\omega t</m>.
+      Since <m>s</m> is an arc length,
+      we have <m>s=r\theta</m>, and thus we can write the linear speed as
+      <me>
+        v=\frac{s}{t}=\frac{r\theta}{t}=\frac{r\omega t}{t}=r\omega
+      </me>
+    </p>
+    <definition xml:id="def_linear-speed">
+      <title>Linear Speed</title>
+      <statement>
+        <p>
+              <idx><h>Speed</h><h>Linear</h></idx>
+              <idx><h>Linear Speed</h></idx>
+          Suppose an object moves along a circle with radius <m>r</m> and an angular speed <m>\omega</m> (measured in radians per unit time).
+          Then the <term>linear speed</term>,
+          <m>v</m>, of the object is given by
+          <me>
+            v=r\omega
+          </me>
+        </p>
+      </statement>
+    </definition>
+    <example>
+      <title>Une</title>
+      <statement>
+        <p>
+          One method a wa`a uses to change direction is with the
+          <em>hoe uli</em>, or the steering paddle.
+          When a sharp turn is needed for maneuvers such as tacking,
+          the steersperson will turn the handle of the hoe uli in a circular motion,
+          as a lever to scoop the paddle in the water and change the heading of a vessel.
+          This move is called <em>une</em>,
+          which literally translates to
+          <q>lever.</q>
+          If the steerperson is performing an une at a rate of 25 rotations per minute and the radius of the circular movement is 2 feet,
+          calculate
+          <ol>
+            <li>
+              <p>
+                the angular speed measured in radians per minute
+              </p>
+            </li>
+            <li>
+              <p>
+                the linear speed of the hoe uli in miles per hour (round your answer to two decimal places)
+              </p>
+            </li>
+          </ol>
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw pic {waa-single-side={waacolor}{0}{1}};
+\draw [color=waacolor] (-3.876609754200976,0.19897036596795284) -- (-4.431283335105596,0.2303260794507818) -- (-4.898394752926766,0.1524741764805878) -- (-5.040559097481035,-0.0946209938161149) -- (-4.826183093167583,-0.28733251913671576) -- (-4.373740624214583,-0.17924262747936925) -- (-3.85247136084893,0.09154660024304466) -- (-0.73043162509275,0.7961615849190451) -- (-0.7741285435525864,0.9054038810686352) -- cycle;
+\fill[color=brown,fill=brown,fill opacity=0.4] (-3.876609754200976,0.19897036596795284) -- (-4.431283335105596,0.2303260794507818) -- (-4.898394752926766,0.1524741764805878) -- (-5.040559097481035,-0.0946209938161149) -- (-4.826183093167583,-0.28733251913671576) -- (-4.373740624214583,-0.17924262747936925) -- (-3.85247136084893,0.09154660024304466) -- (-0.73043162509275,0.7961615849190451) -- (-0.7741285435525864,0.9054038810686352) -- cycle;
+\draw[->] ([shift=(131.4:1.13)]0.15,-0.3) arc (-60:120:0.3cm);\end{tikzpicture}]]>
+</latex-image>
+        </image>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                We are given the angular speed is
+                <m>\omega=25</m> revolutions per minute.
+                To convert our angular speed to radians per minute,
+                we use the fact that one revolution is <m>2\pi</m> radians to get
+                <me>
+                  \omega=25\frac{\mbox{revolution} }{\mbox{minute} }=25\frac{\mbox{rev} }{\mbox{minute} }\cdot2\pi\frac{\mbox{radians} }{\mbox{revolution} }=50\pi\frac{\mbox{radians} }{\mbox{minute} }
+                </me>
+                Thus the hoe uli is moving at an angular speed of <m>50\pi</m> radians per second.
+              </p>
+            </li>
+            <li>
+              <p>
+                Since the radius is <m>r=2</m> ft and the angular speed is
+                <m>\omega=180</m> is measure in radians per minute we can <xref ref="def_linear-speed">Definition</xref> to calculate the linear speed
+                <me>
+                  v=r\omega=2\mbox{ft} \cdot50\pi\frac{\mbox{rad} }{\mbox{min} }\cdot\frac{\mbox{mile} }{5280\mbox{ft} }\cdot\frac{60\mbox{min} }{\mbox{hr} }\approx3.57\frac{\mbox{miles} }{\mbox{hour} }
+                </me>
+                Thus the steersperson moving the hoe uli at a linear speed of 3.57 mph.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+    <exercise xml:id="ex-1_2">
+      <statement>
+        <p>
+          \begin{tasks}(3) \task <m>\theta=336^{\circ}</m> \task <m>\theta=240^{\circ}</m> \task <m>\theta=35^{\circ}</m> \task
+          <m>\theta=221^{\circ}</m> \task <m>\theta=108^{\circ}</m> \task
+          <m>\theta=190^{\circ}</m> \task <m>\theta=323^{\circ}</m> \task
+          <m>\theta=158^{\circ}</m> \task <m>\theta=172^{\circ}</m> \end{tasks}
+        </p>
+        <p>
+          \Question Convert the given angle <m>\theta</m> to a decimal in degrees rounded to two decimal places. \begin{tasks}(3) \task <m>\theta=20^{\circ}50'30''</m> \task <m>\theta=80^{\circ}25'16''</m> \task <m>\theta=7^{\circ}22'38''</m> \task
+          <m>\theta=330^{\circ}14'12''</m> \task <m>\theta=168^{\circ}22'26''</m> \task
+          <m>\theta=49^{\circ}27'12''</m> \task <m>\theta=327^{\circ}38'58''</m> \task
+          <m>\theta=281^{\circ}48'50''</m> \task <m>\theta=134^{\circ}53'47''</m> \end{tasks}
+        </p>
+        <p>
+          \Question
+        </p>
+        <p>
+          Recall the Star Compass with the boundaries for each House.
+          Write the angles for the boundaries between the following houses in the Ko`olau quadrant in terms of degrees, minutes,
+          and seconds: \begin{tasks} \task Between Hikina and L\={a} (<m>5.625^{\circ}</m>) \task Between L\={a} and `\=Aina (<m>16.875^{\circ}</m>) \task Between `\=Aina and Noio (<m>28.175^{\circ}</m>) \task Between Noio and Manu (<m>39.375^{\circ}</m>) \end{tasks}
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[dashed] (0cm,0cm) -- (0.68cm,0cm);
+\draw[->,dashed] (0.98cm,0cm) -- (1.1cm,0cm);
+\draw[dashed] (0cm,0cm) -- (0cm,0.71cm);
+\draw[->,dashed] (0cm,0.98cm) -- (0cm,1.1cm);
+\draw[thick] (0:1cm) arc (0:90:1cm);
+\draw[left] (0:0.98) node[rotate=0] {\large HIKINA};
+\draw[left] (90:0.98) node[rotate=90] {\large `\={A}KAU};
+\foreach \x in {5.625,16.875,...,90} {
+\draw[gray] (0cm,0cm) -- (\x:1cm);
+}
+\foreach \x in {5.625,16.875,...,39.375} {
+\filldraw[black] (\x:1cm) circle(0.4pt);
+\draw (\x:1.2cm) node[rotate=\x] {\(\x^\circ\)};
+}
+\foreach \x/\xtext in {
+11.25/L\={a},
+22.5/`\={A}ina,
+33.75/Noio,
+45/Manu,
+56.25/N\={a}lani,
+67.5/N\={a} Leo,
+78.75/Haka
+}
+\draw[left] (\x:0.98) node[rotate=\x] {\xtext};\end{tikzpicture}]]>
+</latex-image>
+        </image>
+        <p>
+          \Question Convert the given angle <m>\theta</m> to degrees/minutes/seconds rounded to the nearest second and identify the house and quadrant on the Hawaiian Star Compass. \begin{tasks}(3) \task <m>\theta=258.39111111111^{\circ}</m> \task <m>\theta=212.42583333333^{\circ}</m> \task <m>\theta=244.96638888889^{\circ}</m> \task
+          <m>\theta=93.95166666667^{\circ}</m> \task <m>\theta=135.625^{\circ}</m> \task
+          <m>\theta=132.99888888889^{\circ}</m> \task <m>\theta=328.2025^{\circ}</m> \task
+          <m>\theta=48.121388888889^{\circ}</m> \task <m>\theta=241.27083333333^{\circ}</m> \end{tasks}
+        </p>
+        <p>
+          \Question Convert the given angle <m>\theta</m> to radians and identify the house and quadrant on the Hawaiian Star Compass.
+          Keep your answers in terms of <m>\pi</m>. \begin{tasks}(3) \task <m>\theta=102^{\circ}</m> \task <m>\theta=96^{\circ}</m> \task <m>\theta=190^{\circ}</m> \task
+          <m>\theta=122^{\circ}</m> \task <m>\theta=32^{\circ}</m> \task
+          <m>\theta=236^{\circ}</m> \task <m>\theta=82^{\circ}</m> \task
+          <m>\theta=228^{\circ}</m> \task <m>\theta=332^{\circ}</m> \end{tasks}
+        </p>
+        <p>
+          \Question Draw the angle in standard position \begin{tasks}(4) \task <m>60^{\circ}</m> \task <m>135^{\circ}</m> \task <m>-30^{\circ}</m> \task <m>495^{\circ}</m> \task <m>-240^{\circ}</m> \task <m>800^{\circ}</m> \task
+          <m>\frac{\pi}{4}</m> \task <m>\frac{5\pi}{6}</m> \task
+          <m>-\frac{\pi}{3}</m> \task <m>\frac{10\pi}{3}</m> \task
+          <m>\frac{11\pi}{6}</m> \task <m>-\frac{2\pi}{3}</m> \end{tasks}
+        </p>
+        <p>
+          \Question Convert the given angle from degrees to radians.
+          Round your answer to two decimal places. \begin{tasks}(3) \task
+          <m>27^{\circ}</m> \task <m>63^{\circ}</m> \task
+          <m>-39^{\circ}</m> \task <m>200^{\circ}</m> \task
+          <m>415^{\circ}</m> \task <m>105^{\circ}</m> \end{tasks}
+        </p>
+        <p>
+          \Question Convert the given angle from radians to degrees.
+          Round your answer to two decimal places. \begin{tasks}(3) \task <m>\frac{3\pi}{5}</m> \task
+          <m>\frac{8\pi}{3}</m> \task <m>-\frac{4\pi}{7}</m> \task
+          <m>\frac{15\pi}{4}</m> \task <m>-1.5</m> \task <m>3</m> \end{tasks}
+        </p>
+        <p>
+          \Question Determine whether the two given angles in standard position are coterminal. \begin{tasks}(4) \task <m>50^{\circ}</m>,
+          <m>410^{\circ}</m> \task <m>-60^{\circ}</m>,
+          <m>330^{\circ}</m> \task <m>30^{\circ}</m>,
+          <m>1110^{\circ}</m> \task <m>-210^{\circ}</m>,
+          <m>150^{\circ}</m> \end{tasks}
+        </p>
+        <p>
+          \Question Find an angle between <m>0^{\circ}</m> and
+          <m>360^{\circ}</m> that is coterminal with the given angle \begin{tasks}(4) \task
+          <m>405^{\circ}</m> \task <m>600^{\circ}</m> \task
+          <m>1035^{\circ}</m> \task <m>-300^{\circ}</m> \end{tasks}
+        </p>
+        <p>
+          \Question Given a circle with radius <m>r</m>,
+          calculate i) the length of the arc subtended by a central angle <m>\theta</m>;
+          and ii) the area of a sector with central angle <m>\theta</m>.
+          Round your answer to four decimal places. \begin{tasks}(2) \task <m>r=10</m> in,
+          <m>\theta=45^{\circ}</m> \task <m>r=5</m> m, <m>\theta=120^{\circ}</m> \task <m>r=3</m> mi,
+          <m>\theta=\frac{\pi}{3}</m> radians \task <m>r=8</m> cm,
+          <m>\theta=2</m> radians \end{tasks}
+        </p>
+        <p>
+          \Question At the start of this section you learned that the <em>latitude</em>
+              <idx><h>Latitude</h></idx>
+          of a place is the angle between a line drawn from the center of the earth to that point and the equatorial plane.
+          If the radius of the earth is 3,959 miles,
+          calculate the arc length, <m>s</m>,
+          along the surface of the earth for \begin{tasks}(2) \task <m>1^{\circ}</m> of latitude
+          (in miles, rounded to 2 decimals)
+          \task <m>1'</m> of latitude
+          (in miles, rounded to 2 decimals). \task <m>1''</m> of latitude
+          (in feet, rounded to the nearest integer)
+          \end{tasks} A <em>nautical mile</em>,
+              <idx><h>Nautical Mile</h></idx>
+          frequently used in navigation,
+          is slightly longer than a mile on land.
+          One nautical mile was historically defined to be the arc length corresponding to one minute of latitude.
+          Check your answer in (b) with the value of one nautical mile.
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\filldraw[ball color=white] (0,0) circle (\R);
+\filldraw[fill=white] (0,0) circle (\R);
+\shade[ball color = blue!40, opacity = 0.5] (0,0) circle (\R);
+\foreach \t in {0,30} { \DrawLatitudeCircle[\R]{\t} }
+\pgfmathsetmacro\H{\R*cos(\angEl)}
+\coordinate (O) at (0,0);
+\node[circle,draw,black,scale=0.3] at (0,0) {};
+\draw[left] node at (0,0){O};
+\coordinate[mark coordinate] (N) at (0,\H);
+\draw[left] node at (0,\H){N};
+\coordinate[mark coordinate] (S) at (0,-\H);
+\draw[left] node at (0,-\H){S};
+\draw[thick, dashed, black](N)--(S);
+\NewLatitudePlane[planeP]{\R}{\angEl}{30};
+\path[planeP] (-60:\R) coordinate (P);
+\draw[right] node at (P){\(P\)};
+\NewLatitudePlane[equator]{\R}{\angEl}{00};
+\path[equator] (-60:\R) coordinate (Q);
+\draw[right] node at (Q){\(Q\)};
+\draw[-,blue,dashed] (O)--(P);
+\draw[-,blue,dashed] (O)--(Q);
+\node[right] at (0:\R) {Equator};
+\LongitudePlane[angle]{\angEl}{-60};
+\draw[angle,-] (0:1) arc (0:30:1) node[xshift=0.25cm,yshift=-0.2cm] {\(\theta\)};
+\draw[angle,-,blue,line width=2pt] (0:\R) arc (0:30:\R) node[midway,right,black] {\(s\)};\end{tikzpicture}]]>
+</latex-image>
+        </image>
+        <p>
+          \Question The <em>oeoe</em>, or Hawaiian bullroarer,
+          is made by drilling holes into a kamani seed or coconut shell,
+          then threading a long string through the holes to securing it.
+          When the oeoe is swung by the string,
+          a whistling sound is produced,
+          similar to the sound of the wind on the top of mountains.
+          If a girl is swinging an oeoe at the end of 3 foot long rope at a rate of 180 revolutions per minute,
+          calculate 1) the angular speed measured in radians per minute; 2) the linear speed of the shell in miles per hour
+          (round to two decimal places).
+        </p>
+        <p>
+          \Question Earth completes one rotation around the Sun approximately every 365.25 days.
+          Assume the orbit is a circle and that the Earth is <m>92.9</m> million miles from the Sun. \begin{tasks} \task How far does the Earth travel in one day,
+          expressed as millions of miles?
+          <em>Hint: First determine the angle or proportion of a rotation that Earth travels in one day,
+          then calculate the arc length of Earth's orbit.</em>
+          \task How for does the Earth travel in 30 days,
+          expressed as millions of miles? \task How far does the Earth travel in one rotation,
+          expressed as millions of miles? \task What is the linear speed of Earth as orbits the Sun?
+          Express your answer in miles per hour. \end{tasks}
+        </p>
+        <p>
+          \Question As the the moon orbits the Earth,
+          different parts of its surface become illuminated by the Sun which we call moon phases.
+              <idx><h>Moon Phases</h></idx>
+          The moon completes one rotation about Earth in approximately 27.3 days.
+          If we assume its orbit is circular and the moon is 239,000 miles from Earth,
+          calculate the linear speed of the moon,
+          expressed as miles per hour.
+        </p>
+        <p>
+          \Question At <m>17.7^{\circ}</m> S latitude,
+          the city of Nadi, Fiji is <m>6,071</m> km from the Earth's axis of rotation
+          (see <xref ref="ex-1_2">Exercise</xref>,
+          <xref ref="Earth_Angular_Velocity"></xref>).
+          In 24 hours, Nadi will have traveled one rotation around Earth or <m>2\pi(6, 071)</m> km.
+          The city of Port Vila, Vanuatu lies 967 km directly to the west of Nadi, Fiji.
+          As the Earth rotates,
+          how many minutes sooner will the people of Nadi see the Sun rise than the people in Port Vila,
+          rounded to one decimal?
+          <em>Hint: the proportion of distance between the two cities to the distance traveled in one rotation is the same as the proportion of the time it takes to see the sun between the two cities to time it takes to complete one rotation.</em>
+        </p>
+      </statement>
+    </exercise>
+    <p>
+      \begin{Answer}[ref={ex-1.2}]
+    </p>
+    <p>
+      \Question \begin{tasks} \task `\=Aina Malanai \task N\={a}lani Kona \task Noio Ko`olau \task Manu Kona \task N\={a} Leo Ho`olua \task L\={a} Kona \task Noio Malanai \task `\=Aina Ho`olua \task L\={a} Ho`olua \end{tasks} \Question \begin{tasks}(3) \task <m>20.84^{\circ}</m> \task <m>80.42^{\circ}</m> \task <m>7.38^{\circ}</m> \task <m>330.24^{\circ}</m> \task <m>168.37^{\circ}</m> \task <m>49.45^{\circ}</m> \task <m>327.65^{\circ}</m> \task <m>281.81^{\circ}</m> \task <m>134.90^{\circ}</m> \end{tasks} \Question \begin{tasks}(2) \task <m>5^{\circ}37'30''</m> \task <m>16^{\circ}52'30''</m> \task <m>28^{\circ}7'30''</m> \task <m>39^{\circ}22'30''</m> \end{tasks} \Question \begin{tasks}(2) \task <m>\theta=258^{\circ}23'28''</m> Haka Malanai \task <m>\theta=212^{\circ}25'33''</m> Noio Kona \task <m>\theta=244^{\circ}57'59''</m> N\={a} Leo Kona \task <m>\theta=93^{\circ}57'6''</m> Haka Ho`olua \task <m>\theta=135^{\circ}37'30''</m> Manu Ho`olua \task <m>\theta=132^{\circ}59'56''</m> Manu Ho`olua \task <m>\theta=328^{\circ}12'9''</m> Noio Malanai \task <m>\theta=48^{\circ}7'17''</m> Manu Ko`olau \task <m>\theta=241^{\circ}16'15''</m> N\={a} Lani Kona \end{tasks} \Question \begin{tasks}(2) \task <m>\theta=\frac{17\pi}{30}</m> Haka Ho`olua \task <m>\theta=\frac{8\pi}{15}</m> `\=Akau \task <m>\theta=\frac{19\pi}{18}</m> L\={a} Kona \task <m>\theta=\frac{61\pi}{90}</m> N\={a}lani Ho`olua \item <m>\theta=\frac{8\pi}{45}</m> Noio Ko`olau \task
+      <m>\theta=\frac{59\pi}{45}</m> N\={a}lani Kona \task
+      <m>\theta=\frac{41\pi}{90}</m> Haka Ko`olau \task <m>\theta=\frac{19\pi}{15}</m> Manu Kona \task
+      <m>\theta=\frac{83\pi}{45}</m> `\=Aina Ko`olau \end{tasks} \Question \begin{tasks}(2) \task
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+\filldraw[blue] (1cm,0) circle(1pt);
+\filldraw[blue] (60:1.2cm) circle(1pt);
+\draw[blue] (0,0) -- (1,0);
+\draw[blue] (0,0) -- (60:1.2);
+\draw[->] (0:0.7cm) arc (0:60:0.7cm);\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      \task
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+\filldraw[blue] (1cm,0) circle(1pt);
+\filldraw[blue] (135:1.2cm) circle(1pt);
+\draw[blue] (0,0) -- (1,0);
+\draw[blue] (0,0) -- (135:1.2);
+\draw[->] (0:0.7cm) arc (0:135:0.7cm);\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      \task
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+\filldraw[blue] (1cm,0) circle(1pt);
+\filldraw[blue] (-30:1.2cm) circle(1pt);
+\draw[blue] (0,0) -- (1,0);
+\draw[blue] (0,0) -- (-30:1.2);
+\draw[->] (0:0.7cm) arc (0:-30:0.7cm);\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      \task
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+\filldraw[blue] (1cm,0) circle(1pt);
+\filldraw[blue] (495:1.2cm) circle(1pt);
+\draw[blue] (0,0) -- (1,0);
+\draw[blue] (0,0) -- (495:1.2);
+\draw [->,domain=0:8.63937979737,variable=\t,smooth,samples=75]
+plot ({\t r}: {0.1+0.07*\t});\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      \task
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+\filldraw[blue] (1cm,0) circle(1pt);
+\filldraw[blue] (-240:1.2cm) circle(1pt);
+\draw[blue] (0,0) -- (1,0);
+\draw[blue] (0,0) -- (-240:1.2);
+\draw[->] (0:0.7cm) arc (0:-240:0.7cm);\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      \task
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+\filldraw[blue] (1cm,0) circle(1pt);
+\filldraw[blue] (800:1.2cm) circle(1pt);
+\draw[blue] (0,0) -- (1,0);
+\draw[blue] (0,0) -- (800:1.2);
+\draw [->,domain=0:13.962634016,variable=\t,smooth,samples=75]
+plot ({\t r}: {0.1+0.05*\t});\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      \task
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+\filldraw[blue] (1cm,0) circle(1pt);
+\filldraw[blue] (45:1.2cm) circle(1pt);
+\draw[blue] (0,0) -- (1,0);
+\draw[blue] (0,0) -- (45:1.2);
+\draw[->] (0:0.7cm) arc (0:45:0.7cm);\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      \task
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+\filldraw[blue] (1cm,0) circle(1pt);
+\filldraw[blue] (150:1.2cm) circle(1pt);
+\draw[blue] (0,0) -- (1,0);
+\draw[blue] (0,0) -- (150:1.2);
+\draw[->] (0:0.7cm) arc (0:150:0.7cm);\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      \task
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+\filldraw[blue] (1cm,0) circle(1pt);
+\filldraw[blue] (-60:1.2cm) circle(1pt);
+\draw[blue] (0,0) -- (1,0);
+\draw[blue] (0,0) -- (-60:1.2);
+\draw[->] (0:0.7cm) arc (0:-60:0.7cm);\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      \task
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+\filldraw[blue] (1cm,0) circle(1pt);
+\filldraw[blue] (600:1.2cm) circle(1pt);
+\draw[blue] (0,0) -- (1,0);
+\draw[blue] (0,0) -- (600:1.2);
+\draw [->,domain=0:10.471975512,variable=\t,smooth,samples=75]
+plot ({\t r}: {0.1+0.06*\t});\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      \task
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+\filldraw[blue] (1cm,0) circle(1pt);
+\filldraw[blue] (-120:1.2cm) circle(1pt);
+\draw[blue] (0,0) -- (1,0);
+\draw[blue] (0,0) -- (-120:1.2);
+\draw[->] (0:0.7cm) arc (0:-120:0.7cm);\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      \end{tasks} \Question \begin{tasks}(3) \task <m>0.47</m> \task <m>1.10</m> \task <m>-0.68</m> \task <m>3.49</m> \task <m>7.24</m> \task <m>1.83</m> \end{tasks} \Question \begin{tasks}(3) \task <m>108^{\circ}</m> \task <m>480^{\circ}</m> \task <m>-102.86^{\circ}</m> \task <m>675^{\circ}</m> \task <m>-85.94^{\circ}</m> \task
+      <m>171.89^{\circ}</m> \end{tasks} \Question \begin{tasks}(4) \task Yes \task Yes \task No \task Yes \end{tasks} \Question \begin{tasks}(2) \task <m>405^{\circ}</m> \task
+      <m>240^{\circ}</m> \task <m>315^{\circ}</m> \task
+      <m>60^{\circ}</m> \end{tasks} \Question \begin{tasks} \task i) <m>7.8540</m> in;
+      ii) <m>39.2699</m> in<m>^2</m> \task i) <m>2.0944</m> m;
+      ii) <m>26.1799</m> m<m>^2</m> \task i) <m>3.1416</m> mi;
+      ii) <m>4.7124</m> mi<m>^2</m> \task i) <m>16</m> cm;
+      ii) <m>64</m>cm<m>^2</m> \end{tasks} \Question \begin{tasks}(2) \task <m>69.10</m> miles \task <m>1.15</m> miles \task <m>101</m> feet \end{tasks} \Question \begin{tasks} \task <m>360\pi</m> radians/minute \task <m>38.56</m> miles/hour \end{tasks} \Question \begin{tasks} \task <m>1.6</m> million miles \task <m>47.9</m> million miles \task <m>583.7</m> million miles \task <m>66,588</m> miles per hour \end{tasks} \Question 2,292 miles per hour \Question 36.5 minutes \end{Answer}
+    </p>
+  </subsection>
+</section>

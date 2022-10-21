@@ -1,0 +1,67 @@
+<section xml:id="Cross_Product">
+  <title>Cross Product</title>
+  <p>
+    Maybe not include...only found in Sullivan and Stewart books and no other books.
+  </p>
+  <p>
+    For vector spaces, and only for vector spaces,
+    there is a second way to define a product of two vectors.
+    In this section,
+    we will discuss the cross-product of vectors which will allow us to find a vector that is perpendicular to the two given vectors.
+  </p>
+  <definition>
+    <statement>
+      <p>
+        If <m>\mathbf{u}=\langle a_1,a_2,a_3\rangle</m> and
+        <m>\mathbf{v}=\langle b_1,b_2,b_3\rangle</m> are three-dimensional vectors,
+        then the <term>cross product</term>
+            <idx><h>cross product</h></idx>
+        of <m>\mathbf{u}</m> and <m>\mathbf{v}</m> is defined to be the vector
+        <me>
+          \mathbf{u}\times\mathbf{v}=\langle a_2b_3-a_3b_2,a_3b_1-a_1b_3,a_1b_2-a_2b_1\rangle
+        </me>
+      </p>
+    </statement>
+  </definition>
+  <p>
+    Example: A boat is sailing on a bearing of
+    <m>89^{\circ}</m> east of north at 564 feet per min.
+    A tail wind is adding to the plane's velocity and blowing
+    <m>78^{\circ}</m> west of north at 25 feet per min.
+    Determine the actual speed of the plane in mph.
+  </p>
+  <p>
+    Ans: The boat is moving at 540 feet per min = 6.14mph
+  </p>
+  <p>
+    Source: "<url href="\1"/>
+  </p>
+  <p>
+    Another example "<url href="\1"/>
+  </p>
+  <p>
+    *Need to verify if this is correct* *Not sure if I want to keep this section in the book/class*
+  </p>
+  <p>
+    Let's revisit our sailing ship.
+    We have a vector for the direction of the mast M, going straight up (0,1,0),
+    and the direction of the north-north-east wind W (1,0,2),
+    and we want to find the direction the sail S should stick out in order to best catch the wind.
+    The sail has to be perpendicular to the mast,
+    and also perpendicular to the wind.
+    To solve this, we can use the cross product: S = M x W.
+  </p>
+  <p>
+    The cross product of A(a1,a2,a3)) and B(b1,b2,b3)) is:
+  </p>
+  <p>
+    (a2b3-a3b2, a3b1-a1b3, a1b2-a2b1) So now we can plug in our numbers and solve our problem:
+  </p>
+  <p>
+    S = MxW = (0,1,0)x(1,0,2) = ([1*2-0*0], [0*1-0*2], [0*0-1*1]) = (2,0,-1)
+  </p>
+  <figure>
+    <caption>Cross-product example from "<url href="\1"/></caption>
+    <image width="55%" source="Pictures/boat2.jpg"/>
+  </figure>
+</section>

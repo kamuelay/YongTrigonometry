@@ -1,0 +1,411 @@
+<section xml:id="Sum_and_Difference_Formulas">
+  <title>Sum and Difference Formulas</title>
+  <introduction>
+    <p>
+      *need intro/motivation, need examples, and expand on the math*
+    </p>
+    <p>
+      use example that introduces this section compute the angle for 15 degrees
+    </p>
+  </introduction>
+  <subsection>
+    <title>Sum and Difference Formulas</title>
+    <p>
+          <idx><h>Sum and Difference Formulas</h></idx> \begin{mybox}[Sum and Difference Formulas for Cosine]<idx><h>Sum and Difference Formulas</h><h>for Cosine</h></idx>
+      <md>
+        <mrow>\cos(\alpha+\beta)\amp =\amp \cos\alpha\cos\beta-\sin\alpha\sin\beta</mrow>
+        <mrow>\cos(\alpha-\beta)\amp =\amp \cos\alpha\cos\beta+\sin\alpha\sin\beta</mrow>
+      </md>
+    </p>
+    <p>
+      \end{mybox}
+    </p>
+    <proof>
+      <p>
+        First we will prove the Difference Formula for Cosine
+        <me>
+          \cos(\alpha-\beta)=\cos\alpha\cos\beta+\sin\alpha\sin\beta
+        </me>
+      </p>
+      <p>
+        We begin by considering two points on the unit circle.
+        Point <m>P</m> is at an angle of <m>\beta</m> in standard position with coordinates
+        <m>(\cos\beta,\sin\beta)</m> and point <m>Q</m> is at an angle of <m>\alpha</m> in standard position with coordinates <m>(\cos\alpha,\sin\alpha)</m>.
+      </p>
+      <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+\draw (0,0) circle (1cm);
+\node at (-0.1,-0.1) {\(O\)};
+\draw[line width=2pt,blue] (0,0) -- (115:1) node[black,above,xshift=-0.2cm]{\(Q\)};
+\draw[line width=2pt,blue] (0,0) -- (40:1) node[black,right,xshift=0.2cm]{\(P\)};
+\draw[line width=2pt,red] (115:1) -- (40:1);
+\filldraw (115:1cm) circle(1pt);
+\filldraw (40:1cm) circle(1pt);
+\filldraw (0,0) circle(1pt);
+\draw[->, line width=1.25pt] (0:0.2cm) arc (0:115:0.2cm) node[midway, above,yshift=0.1cm,xshift=-0.1cm] {\(\alpha\)};
+\draw[->, line width=1.25pt] (0:0.4cm) arc (0:40:0.4cm) node[midway, right,xshift=0.1cm] {\(\beta\)};
+\draw[->, line width=1.25pt] (40:0.5cm) arc (40:115:0.5cm) node[midway, above,xshift=0.2cm] {\(\alpha-\beta\)};\end{tikzpicture}]]>
+</latex-image>
+      </image>
+      <p>
+        We use the Distance Formula to calculate the distance between <m>P</m> and <m>Q</m> to get
+        <md>
+          <mrow>d(P,Q)\amp =\amp \sqrt{(\cos\alpha-\cos\beta)^2+(\sin\alpha-\sin\beta)^2}</mrow>
+          <mrow>\amp =\amp \sqrt{\cos^2\alpha-2\cos\alpha\cos\beta+\cos^2\beta+\sin^2\alpha-2\sin\alpha\sin\beta+\sin^2\beta}</mrow>
+          <mrow>\amp =\amp \sqrt{(\cos^2\alpha+\sin^2\alpha)+(\cos^2\beta+\sin^2\beta)-2\cos\alpha\cos\beta-2\sin\alpha\sin\beta}</mrow>
+        </md>
+      </p>
+      <p>
+        Then by the Pythagorean Identify,
+        <md>
+          <mrow>d(P,Q)\amp =\amp \sqrt{1+1-2\cos\alpha\cos\beta-2\sin\alpha\sin\beta}</mrow>
+          <mrow>\amp =\amp \sqrt{2-2\cos\alpha\cos\beta-2\sin\alpha\sin\beta}</mrow>
+        </md>
+      </p>
+      <p>
+        Next, consider two additional points on a second unit circle.
+        Point <m>A</m> has coordinates at <m>(1,0)</m> and Point <m>B</m> is at an angle of
+        <m>\alpha-\beta</m> in standard position with coordinates <m>(\cos(\alpha-\beta),\sin(\alpha-\beta))</m>.
+      </p>
+      <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+\draw (0,0) circle (1cm);
+\node at (-0.1,-0.1) {\(O\)};
+\draw[line width=2pt,blue] (0,0) -- (1,0) node[black,above,xshift=0.3cm,yshift=0.1cm]{\(A\)};
+\draw[line width=2pt,blue] (0,0) -- (75:1) node[black,above,xshift=0.2cm,yshift=0.1cm]{\(B\)};
+\draw[line width=2pt,red] (1,0) -- (75:1);
+\filldraw (1cm,0) circle(1pt);
+\filldraw (75:1cm) circle(1pt);
+\filldraw (0,0) circle(1pt);
+\draw[->, line width=1.25pt] (0:0.2cm) arc (0:75:0.2cm) node[midway, right,xshift=0.1cm] {\(\alpha-\beta\)};\end{tikzpicture}]]>
+</latex-image>
+      </image>
+      <p>
+        The distance between <m>A</m> and <m>B</m> is
+        <md>
+          <mrow>d(A,B)\amp =\amp \sqrt{(\cos(\alpha-\beta)-1)^2+(\sin(\alpha-\beta)-0)^2}</mrow>
+          <mrow>\amp =\amp \sqrt{\cos^2(\alpha-\beta)-2\cos(\alpha-\beta)+1+\sin^2(\alpha-\beta)}</mrow>
+          <mrow>\amp =\amp \sqrt{(\cos^2(\alpha-\beta)+\sin^2(\alpha-\beta))-2\cos(\alpha-\beta)+1}</mrow>
+          <mrow>\amp =\amp \sqrt{1-2\cos(\alpha-\beta)+1}</mrow>
+          <mrow>\amp =\amp \sqrt{2-2\cos(\alpha-\beta)}</mrow>
+        </md>
+      </p>
+      <p>
+        Note that since <m>OP</m>, <m>OQ</m>, <m>OA</m>,
+        and <m>OB</m> are lines from the center to points on the unit circle,
+        they are congruent and have length of 1.
+        Also note that <m>\angle POB=\angle AOB=\alpha-\beta</m>.
+        Then since two sides and the included angle of
+        <m>\Delta OPQ</m> and <m>\Delta OAB</m> are equivalent,
+        we can conclude by side-angle-side theorem (SAS) that the two triangles are congruent.
+        Thus, <m>d(PQ)=d(AB)</m>.
+        Substituting our results for <m>d(P,Q)</m> and <m>d(A,B)</m> we get
+        <md>
+          <mrow>d(PQ)\amp =\amp d(AB)</mrow>
+          <mrow>\sqrt{2-2\cos\alpha\cos\beta-2\sin\alpha\sin\beta}\amp =\amp \sqrt{2-2\cos(\alpha-\beta)}</mrow>
+          <mrow>2-2\cos\alpha\cos\beta-2\sin\alpha\sin\beta\amp =\amp 2-2\cos(\alpha-\beta)</mrow>
+          <mrow>-2\cos\alpha\cos\beta-2\sin\alpha\sin\beta\amp =\amp -2\cos(\alpha-\beta)</mrow>
+        </md>
+      </p>
+      <p>
+        Dividing both sides by -2 we arrive at the Difference Formula for Cosine
+        <me>
+          \cos\alpha\cos\beta+\sin\alpha\sin\beta=\cos(\alpha-\beta)
+        </me>
+      </p>
+      <p>
+        To prove the Sum Formula for Cosine,
+        replace <m>\beta</m> with <m>-\beta</m> in the Difference Formula and use the Even-Odd Identities where
+        <m>\sin(-\beta)=-\sin\beta</m> and <m>\cos(-\beta)=\cos\beta</m> to get
+        <md>
+          <mrow>\cos\alpha\cos(-\beta)+\sin\alpha\sin(-\beta)\amp =\amp \cos(\alpha-(-\beta))</mrow>
+          <mrow>\cos\alpha\cos(\beta)+\sin\alpha(-\sin\beta)\amp =\amp \cos(\alpha+\beta)</mrow>
+          <mrow>\cos\alpha\cos\beta-\sin\alpha\sin\beta\amp =\amp \cos(\alpha+\beta)</mrow>
+        </md>
+      </p>
+    </proof>
+    <example>
+      <statement>
+        <p>
+          Find the exact value of <m>\cos105^{\circ}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          First note that <m>105^{\circ}=60^{\circ}+45^{\circ}</m>.
+          Now, using the Sum Formula for Cosine,
+          <md>
+            <mrow>\cos105^{\circ}\amp =\amp \cos(60^{\circ}+45^{\circ})</mrow>
+            <mrow>\amp =\amp \cos60^{\circ}\cos45^{\circ}-\sin60^{\circ}\sin45^{\circ}</mrow>
+            <mrow>\amp =\amp \frac{1}{2}\cdot\frac{\sqrt{2}}{2}-\frac{\sqrt{3}}{2}\frac{\sqrt{2}}{2}</mrow>
+            <mrow>\amp =\amp \frac{1}{4}\left(\sqrt{2}-\sqrt{6}\right)</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Find the exact value of <m>\cos\left(\frac{\pi}{4}-\frac{\pi}{6}\right)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Using the Difference Formula for Cosine we get
+          <md>
+            <mrow>\cos\left(\frac{\pi}{4}-\frac{\pi}{6}\right)\amp =\amp \cos\frac{\pi}{4}\cos\frac{\pi}{6}+\sin\frac{\pi}{4}\sin\frac{\pi}{6}</mrow>
+            <mrow>\amp =\amp \frac{\sqrt{2}}{2}\cdot\frac{\sqrt{3}}{2}+\frac{\sqrt{2}}{2}\cdot\frac{1}{2}</mrow>
+            <mrow>\amp =\amp \frac{1}{4}\left(\sqrt{6}+\sqrt{2}\right)</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Find the exact value of the expression <m>\cos25^{\circ}\cos35^{\circ}-\sin25^{\circ}\sin35^{\circ}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Notice this expression is the Sum Formula for Cosine with
+          <m>\alpha=25^{\circ}</m> and <m>\beta=35^{\circ}</m>.
+          So
+          <me>
+            \cos25^{\circ}\cos35^{\circ}-\sin25^{\circ}\sin35^{\circ}=\cos(25^{\circ}+35^{\circ})=\cos60^{\circ}=\frac{1}{2}
+          </me>
+        </p>
+      </solution>
+    </example>
+    <p>
+      \begin{mybox}[Sum and Difference Formulas for Sine]<idx><h>Sum and Difference Formulas</h><h>for Sine</h></idx>
+      <md>
+        <mrow>\sin(\alpha+\beta)\amp =\amp \sin\alpha\cos\beta+\cos\alpha\sin\beta</mrow>
+        <mrow>\sin(\alpha-\beta)\amp =\amp \sin\alpha\cos\beta-\cos\alpha\sin\beta</mrow>
+      </md>
+    </p>
+    <p>
+      \end{mybox} We will prove the Sum Formula for Sine in <xref ref="sum-formula-sine-proof">Example</xref>
+      and the Difference Formula can be established using the Even-Odd Identities.
+    </p>
+    <example xml:id="ex-cofunction-identify-cos">
+      <statement>
+        <p>
+          Use the Difference Formula for Sine to establish the identity <m>\cos\theta=\sin\left(\frac{\pi}{2}-\theta\right)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          To establish an identity,
+          we will start from one side of the equality and use properties to end up with the expression on the other side of the equality.
+          So,
+          <me>
+            \sin\left(\frac{\pi}{2}-\theta\right)=\sin\frac{\pi}{2}\cos\theta-\cos\frac{\pi}{2}\sin\theta=1\cdot\cos\theta-0\cdot\sin\theta=\cos\theta
+          </me>
+        </p>
+        <p>
+          Visually, we have <m>\cos\theta=\frac{x}{r}=\sin\left(\frac{\pi}{2}-\theta\right)</m>:
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[line width=1pt] (0,0) -- (4,0) node[midway,below]{x};
+\draw[line width=1pt] (4,0) -- (4,3) node[midway,right]{y};
+\draw[line width=1pt] (4,3) -- (0,0) node[midway,above]{r};
+\draw (0:1) arc (0:36.8698976458:1) node[midway, left,xshift=12,yshift=4] {\(\theta\)};
+\draw (36.8698976458:4) arc (216.869897646:270:1) node[midway, left,xshift=8,yshift=-8] {\(\frac{\pi}{2}-\theta\)};
+\draw (3.4,0) -- (3.4,0.6) -- (4,0.6);\end{tikzpicture}]]>
+</latex-image>
+        </image>
+      </solution>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Given <m>\sin\alpha=-\frac{12}{13}</m>,
+          with <m>\frac{3\pi}{2}\lt \alpha\lt 2\pi</m> and <m>\cos\beta=-\frac{3}{5}</m>,
+          with <m>\frac{\pi}{2}\lt \beta\lt \pi</m>,
+          find the exact value of <m>\sin(\alpha+\beta)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The Sum Formula for Sine gives us
+          <me>
+            \sin(\alpha+\beta)=\sin\alpha\cos\beta+\cos\alpha\sin\beta
+          </me>
+        </p>
+        <p>
+          At this moment,
+          we do not know the exact values of <m>\cos\alpha</m> and
+          <m>\sin\beta</m> but we can compute them.
+        </p>
+        <p>
+          Given <m>\sin\alpha=-\frac{12}{13}</m> with <m>\frac{3\pi}{2}\lt \alpha\lt 2\pi</m> and
+          <m>\cos\beta=-\frac{3}{5}</m> with <m>\frac{\pi}{2}\lt \beta\lt \pi</m>,
+          we can draw the following triangles associated with <m>\alpha</m> and <m>\beta</m>,
+          respectively:
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[<->] (-0.5,0)--(5.5,0) node[right]{\(x\)};
+\draw[<->] (0,0.5)--(0,-13.5) node[below]{\(y\)};
+\draw[line width=1pt] (0,0) -- (5,0) node[midway,above]{x};
+\draw[line width=1pt] (5,0) -- (5,-12) node[midway,right]{-12};
+\draw[line width=1pt] (5,-12) -- (0,0) node[midway,above,xshift=5]{13};
+\draw (0:1) arc (0:-67.380135052:1) node[midway, right,xshift=3,yshift=-2] {\(\alpha\)};
+\draw (4.2,0) -- (4.2,-0.8) -- (5,-0.8);\end{tikzpicture}]]>
+</latex-image>
+        </image>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[<->] (-3.5,0)--(0.5,0) node[right]{\(x\)};
+\draw[<->] (0,-0.5)--(0,4.5) node[above]{\(y\)};
+\draw[line width=1pt] (0,0) -- (-3,0) node[midway,below]{-3};
+\draw[line width=1pt] (-3,0) -- (-3,4) node[midway,left]{y};
+\draw[line width=1pt] (-3,4) -- (0,0) node[midway,above,xshift=3]{5};
+\draw (126.869897646:1) arc (126.869897646:180:1) node[midway, left,xshift=-1,yshift=4] {\(\beta\)};
+\draw (-2.6,0) -- (-2.6,0.4) -- (-3,0.4);\end{tikzpicture}]]>
+</latex-image>
+        </image>
+        <p>
+          Next, using the Pythagorean Theorem,
+          we solve for the missing sides on the triangles
+          <md>
+            <mrow>x^2+(-12)^2\amp =\amp 13^2</mrow>
+            <mrow>x+144\amp =\amp 169</mrow>
+            <mrow>x^2\amp =\amp 25</mrow>
+            <mrow>x\amp =\amp 5</mrow>
+          </md>
+        </p>
+        <p>
+          Thus we get
+          <me>
+            \cos\alpha=\frac{5}{13}
+          </me>
+          <md>
+            <mrow>(-3)^2+y^2\amp =\amp 5^2</mrow>
+            <mrow>9+y^2\amp =\amp 25</mrow>
+            <mrow>y^2\amp =\amp 16</mrow>
+            <mrow>y\amp =\amp 4</mrow>
+          </md>
+        </p>
+        <p>
+          Thus we get
+          <me>
+            \sin\beta=-\frac{4}{5}
+          </me>
+        </p>
+        <p>
+          We now have all the information needed to proceed.
+          <md>
+            <mrow>\sin(\alpha+\beta)\amp =\amp \sin\alpha\cos\beta+\cos\alpha\sin\beta</mrow>
+            <mrow>\amp =\amp \left(-\frac{12}{13}\right)\left(-\frac{3}{5}\right)+\left(\frac{5}{13}\right)\left(\frac{4}{5}\right)</mrow>
+            <mrow>\amp =\amp \frac{36}{65}+\frac{20}{65}</mrow>
+            <mrow>\amp =\amp \frac{56}{65}</mrow>
+          </md>
+        </p>
+        <p>
+          Notice we did not have to know the values of <m>\alpha</m> or <m>\beta</m> to do this example.
+        </p>
+      </solution>
+    </example>
+    <p>
+      \begin{mybox}[Sum and Difference Formulas for Tangent]<idx><h>Sum and Difference Formulas</h><h>for Tangent</h></idx>
+      <md>
+        <mrow>\tan(\alpha+\beta)\amp =\amp \frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}</mrow>
+        <mrow>\tan(\alpha-\beta)\amp =\amp \frac{\tan\alpha-\tan\beta}{1-\tan\alpha\tan\beta}</mrow>
+      </md>
+    </p>
+    <p>
+      \end{mybox}
+    </p>
+    <proof>
+      <p>
+        Recall that <m>\tan\theta=\frac{\sin\theta}{\cos\theta}</m> as long as <m>\cos\theta\neq0</m>.
+        Using this fact,
+        and our new formulas for the sum of sine and cosine, we get
+        <md>
+          <mrow>\tan(\alpha+\beta)\amp =\amp \frac{\sin(\alpha+\beta)}{\cos(\alpha+\beta)}</mrow>
+          <mrow>\amp =\amp \frac{\sin\alpha\cos\beta+\cos\alpha\sin\beta}{\cos\alpha\cos\beta-\sin\alpha\sin\beta}</mrow>
+          <mrow>\amp =\amp \frac{\dfrac{\sin\alpha\cos\beta+\cos\alpha\sin\beta}{\cos\alpha\cos\beta}}{\dfrac{\cos\alpha\cos\beta-\sin\alpha\sin\beta}{\cos\alpha\cos\beta}}</mrow>
+          <mrow>\amp =\amp \frac{\sin\alpha\cos\beta+\cos\alpha\sin\beta}{\cancel{\cos\alpha\cos\beta}}\cdot\frac{\cancel{\cos\alpha\cos\beta}}{\cos\alpha\cos\beta-\sin\alpha\sin\beta}</mrow>
+          <mrow>\amp =\amp \frac{\dfrac{\sin\alpha\cancel{\cos\beta}}{\cos\alpha\cancel{\cos\beta}}+\dfrac{\cancel{\cos\alpha}\sin\beta}{\cancel{\cos\alpha}\cos\beta}}{\dfrac{\cancel{\cos\alpha\cos\beta}}{\cancel{\cos\alpha\cos\beta}}-\dfrac{\sin\alpha\sin\beta}{\cos\alpha\cos\beta}}</mrow>
+          <mrow>\amp =\amp \frac{\dfrac{\sin\alpha}{\cos\alpha}+\dfrac{\sin\beta}{\cos\beta}}{1-\dfrac{\sin\alpha}{\cos\alpha}\dfrac{\sin\beta}{\cos\beta}}</mrow>
+          <mrow>\amp =\amp \frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}</mrow>
+        </md>
+      </p>
+      <p>
+        The difference formula can be established using the Even-Odd Identities.
+      </p>
+    </proof>
+    <example>
+      <statement>
+        <p>
+          Find the exact value of <m>\tan\left(\frac{3\pi}{4}+\frac{\pi}{6}\right)</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Using the sum formula for tangent, we get
+          <me>
+            \tan\left(\frac{3\pi}{4}+\frac{\pi}{6}\right)=\frac{\tan\frac{3\pi}{4}+\tan\frac{\pi}{6}}{1-\tan\frac{3\pi}{4}\tan\frac{\pi}{6}}=\frac{(-1)+\frac{\sqrt{3}}{3}}{1-(-1)\cdot\frac{\sqrt{3}}{3}}=\frac{-1+\frac{\sqrt{3}}{3}}{1+\frac{\sqrt{3}}{3}}=\frac{\frac{-3+\sqrt{3}}{3}}{\frac{3+\sqrt{3}}{3}}=\frac{-3+\sqrt{3}}{3+\sqrt{3}}
+          </me>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+  <subsection>
+    <title>Cofunction Identities</title>
+    <p>
+      Another identity for trigonometric functions is the Cofunction Identities \begin{mybox}[Cofunction Identities]
+          <idx><h>Cofunction Identities</h></idx>
+      The <em>Cofunction Identities</em> are given below
+      <md>
+        <mrow>\sin\theta\amp =\cos\left(\frac{\pi}{2}-\theta\right) \amp \cos\theta\amp =\sin\left(\frac{\pi}{2}-\theta\right)</mrow>
+        <mrow>\tan\theta\amp =\cot\left(\frac{\pi}{2}-\theta\right) \amp \cot\theta\amp =\tan\left(\frac{\pi}{2}-\theta\right)</mrow>
+        <mrow>\sec\theta\amp =\csc\left(\frac{\pi}{2}-\theta\right) \amp \csc\theta\amp =\sec\left(\frac{\pi}{2}-\theta\right)</mrow>
+      </md>
+    </p>
+    <p>
+      \end{mybox}
+    </p>
+    <proof>
+      <p>
+        The proof for <m>\sin\theta</m> is given in <xref ref="ex-cofunction-identify-cos">Example</xref>
+        and the proof for <m>\cos\theta</m> is given as <xref ref="ex-cofunction-identify-sin">Exercise</xref>.
+        The Cofunction Identities for <m>\tan\theta</m> and
+        <m>\cot\theta</m> can be found using the Quotient and Cofunction Identities for <m>\csc\theta</m> and
+        <m>\sec\theta</m> can be found using the Reciprocal Identities.
+      </p>
+    </proof>
+    <p>
+      Talk about cofunctions and give triangle example. ***************
+    </p>
+    <example xml:id="sum-formula-sine-proof">
+      <statement>
+        <p>
+          Prove the Sum Formula for Sine
+          <me>
+            \sin(\alpha+\beta)=\sin\alpha\cos\beta+\cos\alpha\sin\beta
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We begin by using the cofunction identity
+          <md>
+            <mrow>\sin(\alpha+\beta)\amp =\cos\left(\frac{\pi}{2}-(\alpha+\beta)\right)\amp \amp \mbox{Cofunction Identity}</mrow>
+            <mrow>\amp =\cos\left(\left(\frac{\pi}{2}-\alpha\right)-\beta\right)</mrow>
+            <mrow>\amp =\cos\left(\frac{\pi}{2}-\alpha\right)\cos\beta+\sin\left(\frac{\pi}{2}-\alpha\right)\sin\beta\amp \amp \mbox{Difference Formula for Cosine}</mrow>
+            <mrow>\amp =\sin\alpha\cos\beta+\sin\alpha\sin\beta\amp \amp \mbox{Cofunction Identity}</mrow>
+            <mrow>\amp =\sin\alpha\cos\beta+\cos\alpha\sin\beta</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+</section>

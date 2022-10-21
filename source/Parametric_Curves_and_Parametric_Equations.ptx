@@ -1,0 +1,24 @@
+<section xml:id="Parametric_Curves_and_Parametric_Equations">
+  <title>Parametric Curves and Parametric Equations</title>
+  <p>
+    *needs a lot of work, I have one example that needs to be rewritten and don't have any intro/motivation and no math*
+  </p>
+  <p>
+    Trace the path of Hokulea.
+    This is position as well as time.
+  </p>
+  <p>
+    Something similar to "<url href="\1"/>
+  </p>
+  <p>
+    This would relate to the GPS locator and tracker.
+    Would have to make the path a straight line or some type of curve that is known.
+  </p>
+  <p>
+    maybe use example on p5 "<url href="\1"/>
+  </p>
+  <figure>
+    <caption>Example.</caption>
+    <image width="50%" source="Pictures/parametric-eq-example.png"/>
+  </figure>
+</section>

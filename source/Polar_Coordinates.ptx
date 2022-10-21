@@ -1,0 +1,57 @@
+<section xml:id="Polar_Coordinates">
+  <title>Polar Coordinates</title>
+  <p>
+    *Needs intro/motivation, needs more math, needs `ike examples*
+  </p>
+  <p>
+    Good way to introduce this topic is the section from the digtal book by Jay Abramson, Precalculus-OP mbNC8an.pdf
+  </p>
+  <p>
+    "<url href="\1"/>
+  </p>
+  <example>
+    <statement>
+      <p>
+        This about this Example on mapping from Stewart for polar and other examples: "<url href="\1"/>, Discovery Projects 25: Mapping the World
+      </p>
+    </statement>
+  </example>
+  <example>
+    <statement>
+      <p>
+        Search for drift and polar equations.
+        This may be an example but needs to be vetted or find a similar search with easier example: "<url href="\1"/>
+      </p>
+      <p>
+        "<url href="\1"/>
+      </p>
+      <p>
+        Polar alignment: "<url href="\1"/>
+      </p>
+    </statement>
+  </example>
+  <theorem>
+    <title>Conversion from Polar Coordinates to Rectangular Coordinates</title>
+    <statement>
+      <p>
+        Given a point <m>P</m> with polar coordinates <m>(r,\theta)</m>,
+        the rectangular coordinates <m>(x,y)</m> of <m>P</m> are given by
+        <me>
+          x=r\cos\theta y=r\sin\theta
+        </me>
+      </p>
+    </statement>
+  </theorem>
+  <theorem>
+    <title>Conversion from Polar Coordinates to Rectangular Coordinates</title>
+    <statement>
+      <p>
+        Given a point <m>P</m> with rectangular coordinates <m>(x,y)</m>,
+        the polar coordinates <m>(r,\theta)</m> of <m>P</m> are found by
+        <me>
+          r^2=x^2+y^2 \tan\theta=\frac{y}{x},\mbox{~if~} x\neq0
+        </me>
+      </p>
+    </statement>
+  </theorem>
+</section>

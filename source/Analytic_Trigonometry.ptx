@@ -1,0 +1,20 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="Analytic_Trigonometry">
+  <title>Analytic Trigonometry</title>
+  <introduction>
+    <p>
+      At this point we know how to calculate the values of functions at specials angles.
+      For example,
+      if we sail in the direction of the house of Manu Ko`olau (NW), the angle is <m>45^{\circ}</m>.
+      We can complete this triangle because we know the values of the right triangle for <m>45^{\circ}</m>.
+      However, we do not know the exact value for the house of L\={a}
+      (<m>22.5^{\circ}</m>).
+      In this chapter,
+      we will learn tools to help us further utilize the trigonometry in the previous chapters.
+    </p>
+  </introduction>
+  <xi:include  href="Trigonometric_Identities.ptx"/>
+  <xi:include  href="Sum_and_Difference_Formulas.ptx"/>
+  <xi:include  href="Double-Angle_and_Half-Angle_Formulas.ptx"/>
+  <xi:include  href="Product-to-Sum_and_Sum-to-Product_Formulas.ptx"/>
+  <xi:include  href="Trigonometric_Equations.ptx"/>
+</chapter>

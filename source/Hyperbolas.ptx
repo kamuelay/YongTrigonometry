@@ -1,0 +1,79 @@
+<section xml:id="Hyperbolas">
+  <title>Hyperbolas</title>
+  <p>
+        <idx><h>Hyperbolas</h></idx> *needs intro/motivation, math, `ike examples*
+  </p>
+  <example>
+    <statement>
+      <p>
+        parabolic, elliptic and hyperbolic ornits "<url href="\1"/>
+      </p>
+    </statement>
+  </example>
+  <p>
+    Example of real world hyperbola:
+  </p>
+  <p>
+    orbits of comets around the sun
+  </p>
+  <example>
+    <statement>
+      <p>
+        p609 of "<url href="\1"/>
+      </p>
+      <p>
+        ``Before GPS, the Long Range Navigation (LORAN) system was used to determine a ship's location.
+        Two radio stations A and B simultaneously sent out a signal to a ship.
+        The difference in time it took to receive the signal was computed as a distance locating the ship on the hyperbola with the A and B radio stations as the foci.
+        A second pair of radio stations C and D sent simultaneous signals to the ship and computed its location on the hyperbola with C and D as the foci.
+        The point P where the two hyperbolas intersected gave the location of the ship."
+      </p>
+    </statement>
+  </example>
+  <example>
+    <statement>
+      <p>
+        p896 "<url href="\1"/>
+      </p>
+      <p>
+        Hyperbolas have many applications.
+        When a jet flies at a speed greater than the speed of sound,
+        the shock wave that is created is heard as a sonic boom.
+        The wave has the shape of a cone.
+        The shape formed as the cone hits the ground is one branch of a hyperbola.
+        Halley's Comet, a permanent part of our solar system,
+        travels around the sun in an elliptical orbit.
+        Other comets pass through the solar system only once,
+        following a hyperbolic path with the sun as a focus.
+      </p>
+      <p>
+        Hyperbolas are of practical importance in fields ranging from architecture to navigation.
+        Cooling towers used in the design for nuclear power plants have cross sections that are both ellipses and hyperbolas.
+        Three-dimensional solids whose cross sections are hyperbolas are used in some rather unique architectural creations,
+        including the TWA building at Kennedy Airport in New York City and the St.
+        Louis Science Center Planetarium.
+      </p>
+    </statement>
+  </example>
+  <example>
+    <statement>
+      <p>
+        Also from the same book: p896 "<url href="\1"/>
+      </p>
+      <p>
+        An explosion is recorded by two microphones that are 2 miles apart.
+        Microphone M1 received the sound 4 seconds before microphone M2.
+        Assuming sound travels at 1100 feet per second,
+        determine the possible locations of the explosion relative to the location of the microphones.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We begin by putting the microphones in a coordinate system.
+        Because 1 mile = 5280 feet,
+        we place M1 5280 feet on a horizontal axis to the right of the origin and M2 5280 feet on a horizontal axis to the left of the origin.
+        Figure 9.28 illustrates that the two microphones are 2 miles apart.
+      </p>
+    </solution>
+  </example>
+</section>

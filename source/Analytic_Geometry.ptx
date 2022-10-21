@@ -1,0 +1,6 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="Analytic_Geometry">
+  <title>Analytic Geometry</title>
+  <xi:include  href="Parabols.ptx"/>
+  <xi:include  href="Ellipses.ptx"/>
+  <xi:include  href="Hyperbolas.ptx"/>
+</chapter>

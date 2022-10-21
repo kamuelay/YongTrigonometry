@@ -1,0 +1,419 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="Solutions">
+  <title>Solutions</title>
+  <p>
+    \subsection*{Solutions <xref ref="ex-1_2">for</xref>}
+  </p>
+  <solution>
+    <p>
+      <ol>
+        <li>
+          <p>
+            We are given the angular speed is
+            <m>\omega=180</m> revolutions per minute.
+            To convert our angular speed to radians per minute,
+            we use the fact that one revolution is <m>2\pi</m> radians to get
+            <me>
+              \omega=180\frac{\mbox{revolution} }{\mbox{minute} }=180\frac{\mbox{rev} }{\mbox{minute} }\cdot2\pi\frac{\mbox{radians} }{\mbox{revolution} }=360\pi\frac{\mbox{radians} }{\mbox{minute} }
+            </me>
+            Thus the oeoe is moving at an angular speed of <m>360\pi</m> radians per second.
+          </p>
+        </li>
+        <li>
+          <p>
+            Since the radius is <m>r=3</m> ft and the angular speed is
+            <m>\omega=180</m> is measure in radians per minute we can <xref ref="def_linear-speed">Definition</xref> to calculate the linear speed
+            <me>
+              v=r\omega=3\mbox{ft} \cdot360\pi\frac{\mbox{rad} }{\mbox{min} }\cdot\frac{\mbox{mile} }{5280\mbox{ft} }\cdot\frac{60\mbox{min} }{\mbox{hr} }\approx38.56\frac{\mbox{miles} }{\mbox{hour} }
+            </me>
+            Thus the girl swinging the oeoe is moving shell at a linear speed of 38.56 mph.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </solution>
+  <p>
+    \subsection*{Solutions <xref ref="ex-1_3">for</xref>}
+  </p>
+  <solution>
+    <p>
+      <ol>
+        <ol label="labelAlph">
+          <li>
+            <p>
+              In Quadrant II, the associated angle is
+              <m>t=\pi-\frac{\pi}{4}=\frac{4\pi}{4}-\frac{\pi}{4}=\frac{3\pi}{4}</m> Alternative solution: Since <m>t'=\frac{\pi}{4}=\frac{1\pi}{4}</m>,
+              then <m>t=\frac{(4-1)\pi}{4}=\frac{3\pi}{4}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              In Quadrant III, the associated angle is
+              <m>t=\pi+\frac{\pi}{4}=\frac{4\pi}{4}+\frac{\pi}{4}=\frac{5\pi}{4}</m> Alternative solution:
+              <m>t=\frac{(4+1)\pi}{4}=\frac{5\pi}{4}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              In Quadrant IV, the associated angle is
+              <m>t=2\pi-\frac{\pi}{4}=\frac{8\pi}{4}-\frac{\pi}{4}=\frac{7\pi}{4}</m> Alternative solution:
+              <m>t=\frac{(2\cdot4-1)\pi}{4}=\frac{7\pi}{4}</m>
+            </p>
+          </li>
+        </ol>
+        <li>
+          <ol label="labelAlph">
+            <li>
+              <p>
+                In Quadrant II, the associated angle is
+                <m>t=\pi-\frac{\pi}{3}=\frac{3\pi}{3}-\frac{\pi}{3}=\frac{2\pi}{3}</m> Alternative solution: Since <m>t'=\frac{\pi}{3}=\frac{1\pi}{3}</m>,
+                then <m>t=\frac{(3-1)\pi}{3}=\frac{2\pi}{3}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                In Quadrant III, the associated angle is
+                <m>t=\pi+\frac{\pi}{3}=\frac{3\pi}{3}+\frac{\pi}{3}=\frac{4\pi}{3}</m> Alternative solution:
+                <m>t=\frac{(3+1)\pi}{3}=\frac{4\pi}{3}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                In Quadrant IV, the associated angle is
+                <m>t=2\pi-\frac{\pi}{3}=\frac{6\pi}{3}-\frac{\pi}{3}=\frac{5\pi}{3}</m> Alternative solution:
+                <m>t=\frac{(2\cdot3-1)\pi}{3}=\frac{5\pi}{3}</m>
+              </p>
+            </li>
+          </ol>
+        </li>
+        <li>
+          <ol label="labelAlph">
+            <li>
+              <p>
+                In Quadrant II, the associated angle is <m>t=180^{\circ}-30^{\circ}=150^{\circ}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                In Quadrant III, the associated angle is <m>t=180^{\circ}+30^{\circ}=210^{\circ}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                In Quadrant IV, the associated angle is <m>t=360^{\circ}-30^{\circ}=330^{\circ}</m>
+              </p>
+            </li>
+          </ol>
+        </li>
+        <li>
+          <ol label="labelAlph">
+            <li>
+              <p>
+                In Quadrant II, the associated angle is <m>t=180^{\circ}-60^{\circ}=120^{\circ}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                In Quadrant III, the associated angle is <m>t=180^{\circ}+60^{\circ}=240^{\circ}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                In Quadrant IV, the associated angle is <m>t=360^{\circ}-60^{\circ}=300^{\circ}</m>
+              </p>
+            </li>
+          </ol>
+        </li>
+      </ol>
+    </p>
+  </solution>
+  <solution>
+    <p>
+      <ol>
+        <li>
+          <p>
+            When <m>\theta=\frac{\pi}{2}</m> radians (<m>90^{\circ}</m>),
+            the point on the circle is <m>P(0,1)</m>.
+            <image>
+               <latex-image> <![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \draw[blue,line width=2pt] (0,0) -- (0,1) node[black,above right,xshift=0.1cm] {P(0,1)}; \filldraw[blue,line width=2pt] (90:1cm) circle(1pt); \draw[->] (0:0.3cm) arc (0:90:0.3cm);\end{tikzpicture}]]> </latex-image>
+            </image>
+            Then <m>x=0</m> and <m>y=1</m> gives us
+            <md>
+              <mrow>\sin \frac{\pi}{2}=\sin 90^{\circ}\amp =1,\amp  \cos \frac{\pi}{2}=\cos 90^{\circ}\amp =0, \amp  \tan \frac{\pi}{2}=\tan 90^{\circ}\amp =\mbox{undef} ,</mrow>
+              <mrow>\csc \frac{\pi}{2}=\csc  90^{\circ}\amp =1, \amp  \sec \frac{\pi}{2}=\sec  90^{\circ}\amp =\mbox{undefined} , \amp  \cot \frac{\pi}{2}=\cot  90^{\circ}\amp =0</mrow>
+            </md>.
+            Note that <m>\tan\frac{\pi}{2}</m> is undefined since
+            <m>\tan\theta=\frac{y}{x}</m> only when <m>x\neq0</m> but at <m>P(0,1)</m> we have <m>x=0</m>,
+            resulting in <m>\tan\frac{\pi}{2}</m> being undefined.
+          </p>
+        </li>
+        <li>
+          <p>
+            When <m>\theta=\pi</m> radians (<m>180^{\circ}</m>),
+            the point on the circle is <m>P(-1,0)</m>.
+            <image>
+               <latex-image> <![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \draw[blue,line width=2pt] (0,0) -- (-1,0) node[black,above left,xshift=-0.1cm] {P(-1,0)}; \filldraw[blue,line width=2pt] (180:1cm) circle(1pt); \draw[->] (0:0.3cm) arc (0:180:0.3cm);\end{tikzpicture}]]> </latex-image>
+            </image>
+            Then <m>x=-1</m> and <m>y=0</m> gives us
+            <md>
+              <mrow>\sin \pi=\sin 180^{\circ}\amp =0, \amp  \cos \pi=\cos 180^{\circ}\amp =-1, \amp  \tan \pi=\tan 180^{\circ}\amp =0,</mrow>
+              <mrow>\csc \pi=\csc  180^{\circ}\amp =\mbox{undef} , \amp  \sec \pi=\sec  180^{\circ}\amp =-1, \amp  \cot \pi=\cot  180^{\circ}\amp =\mbox{undef}</mrow>
+            </md>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </solution>
+  <solution>
+    <p>
+      <ol>
+        <li>
+          <p>
+            From <xref ref="ex_reference-angle">Example</xref>,
+            we have <m>\theta'=\frac{\pi}{4}</m>.
+            The six trigonometric functions are
+            <md>
+              <mrow>\sin \frac{\pi}{4}\amp =\frac{\sqrt{2}}{2}, \amp  \cos \frac{\pi}{4}\amp =\frac{\sqrt{2}}{2}, \amp  \tan \frac{\pi}{4}\amp =1,</mrow>
+              <mrow>\csc \frac{\pi}{4}\amp =\sqrt{2}, \amp  \sec \frac{\pi}{4}\amp =\sqrt{2}, \amp  \cot \frac{\pi}{4}\amp =1</mrow>
+            </md>.
+            Since <m>\theta=-\frac{3\pi}{4}</m> is in Quadrant III, we have that the <m>x</m>-value is negative and the <m>y</m>-value is negative.
+            Thus we get
+            <md>
+              <mrow>\sin -\frac{3\pi}{4}\amp =-\frac{\sqrt{2}}{2}, \amp  \cos -\frac{3\pi}{4}\amp =-\frac{\sqrt{2}}{2}, \amp  \tan -\frac{3\pi}{4}\amp =1,</mrow>
+              <mrow>\csc -\frac{3\pi}{4}\amp =-\sqrt{2}, \amp  \sec -\frac{3\pi}{4}\amp =-\sqrt{2}, \amp  \cot -\frac{3\pi}{4}\amp =1</mrow>
+            </md>.
+          </p>
+        </li>
+        <li>
+          <p>
+            From <xref ref="ex_reference-angle">Example</xref>,
+            we have <m>\theta'=\frac{\pi}{3}</m>.
+            The six trigonometric functions are
+            <md>
+              <mrow>\sin \frac{\pi}{3}\amp =\frac{\sqrt{3}}{2}, \amp  \cos \frac{\pi}{3}\amp =\frac{1}{2}, \amp  \tan \frac{\pi}{3}\amp =\sqrt{3},</mrow>
+              <mrow>\csc \frac{\pi}{3}\amp =\frac{2\sqrt{3}}{3}, \amp  \sec \frac{\pi}{3}\amp =2, \amp  \cot \frac{\pi}{3}=\amp \frac{\sqrt{3}}{3}</mrow>
+            </md>.
+            Since <m>\theta=\frac{4\pi}{3}</m> is in Quadrant III, we have that the <m>x</m>-value is negative and the <m>y</m>-value is negative.
+            Thus we get
+            <md>
+              <mrow>\sin \frac{4\pi}{3}\amp =-\frac{\sqrt{3}}{2}, \amp  \cos \frac{4\pi}{3}\amp =-\frac{1}{2}, \amp  \tan \frac{4\pi}{3}\amp =\sqrt{3},</mrow>
+              <mrow>\csc \frac{4\pi}{3}\amp =-\frac{2\sqrt{3}}{3}, \amp  \sec \frac{4\pi}{3}\amp =-2, \amp  \cot \frac{4\pi}{3}\amp =\frac{\sqrt{3}}{3}</mrow>
+            </md>.
+          </p>
+        </li>
+        <li>
+          <p>
+            From <xref ref="ex_reference-angle">Example</xref>,
+            we have <m>\theta'=\frac{\pi}{6}</m>.
+            The six trigonometric functions are
+            <md>
+              <mrow>\sin \frac{\pi}{6}\amp =\frac{1}{2}, \amp  \cos \frac{\pi}{6}\amp =\frac{\sqrt{3}}{2}, \amp  \tan \frac{\pi}{6}\amp \frac{\sqrt{3}}{3},</mrow>
+              <mrow>\csc \frac{\pi}{6}\amp =2 \amp  \sec \frac{\pi}{6}\amp =\frac{2\sqrt{3}}{3}, \amp  \cot \frac{\pi}{6}\amp =\sqrt{3}</mrow>
+            </md>.
+            Since <m>\theta=\frac{11\pi}{6}</m> is in Quadrant IV, we have that the <m>x</m>-value is positive and the <m>y</m>-value is negative.
+            Thus we get
+            <md>
+              <mrow>\sin \frac{11\pi}{6}\amp =-\frac{1}{2}, \amp  \cos \frac{11\pi}{6}\amp =\frac{\sqrt{3}}{2}, \amp  \tan \frac{11\pi}{6}\amp -\frac{\sqrt{3}}{3},</mrow>
+              <mrow>\csc \frac{11\pi}{6}\amp =-2 \amp  \sec \frac{11\pi}{6}\amp =\frac{2\sqrt{3}}{3}, \amp  \cot \frac{11\pi}{6}\amp =-\sqrt{3}</mrow>
+            </md>.
+          </p>
+        </li>
+        <li>
+          <p>
+            From <xref ref="ex_reference-angle">Example</xref>,
+            we have <m>\theta'=60^{\circ}</m>.
+            The six trigonometric functions are
+            <md>
+              <mrow>\sin 60^{\circ}\amp =\frac{\sqrt{3}}{2}, \amp  \cos 60^{\circ}\amp =\frac{1}{2}, \amp  \tan 60^{\circ}\amp =\sqrt{3},</mrow>
+              <mrow>\csc 60^{\circ}\amp =\frac{2\sqrt{3}}{3}, \amp  \sec 60^{\circ}\amp =2, \amp  \cot 60^{\circ}=\amp \frac{\sqrt{3}}{3}</mrow>
+            </md>.
+            Since <m>\theta=120^{\circ}</m> is in Quadrant II, we have that the <m>x</m>-value is negative and the <m>y</m>-value is positive.
+            Thus we get
+            <md>
+              <mrow>\sin 120^{\circ}\amp =\frac{\sqrt{3}}{2}, \amp  \cos 120^{\circ}\amp =-\frac{1}{2}, \amp  \tan 120^{\circ}\amp =-\sqrt{3},</mrow>
+              <mrow>\csc 120^{\circ}\amp =\frac{2\sqrt{3}}{3}, \amp  \sec 120^{\circ}\amp =-2, \amp  \cot 120^{\circ}\amp =-\frac{\sqrt{3}}{3}</mrow>
+            </md>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Since <m>\theta=\frac{7\pi}{3}>2\pi</m>,
+            we find the coterminal angle by subtracting by <m>2\pi</m>:
+            <me>
+              \frac{7\pi}{3}-2\pi=\frac{7\pi}{3}-\frac{6\pi}{3}=\frac{\pi}{3}
+            </me>
+            Therefore, the values of the six trigonometric functions are equivalent to when <m>\theta=\frac{\pi}{3}</m>:
+            <md>
+              <mrow>\sin \frac{7\pi}{3}\amp =\frac{\sqrt{3}}{2}, \amp  \cos \frac{7\pi}{3}\amp =\frac{1}{2}, \amp  \tan \frac{7\pi}{3}\amp =\sqrt{3},</mrow>
+              <mrow>\csc \frac{7\pi}{3}\amp =\frac{2\sqrt{3}}{3}, \amp  \sec \frac{7\pi}{3}\amp =2, \amp  \cot \frac{7\pi}{3}\amp =\frac{\sqrt{3}}{3}</mrow>
+            </md>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Since <m>\theta=480^{\circ}>360^{\circ}</m>,
+            we find the coterminal angle by subtracting by <m>360^{\circ}</m>:
+            <me>
+              480^{\circ}-360^{\circ}=120^{\circ}
+            </me>
+            Therefore, the values of the six trigonometric functions are equivalent to when <m>\theta=120^{\circ}</m>:
+            <md>
+              <mrow>\sin 480^{\circ}\amp =\frac{\sqrt{3}}{2}, \amp  \cos 480^{\circ}\amp =-\frac{1}{2}, \amp  \tan 480^{\circ}\amp =-\sqrt{3},</mrow>
+              <mrow>\csc 480^{\circ}\amp =\frac{2\sqrt{3}}{3}, \amp  \sec 480^{\circ}\amp =-2, \amp  \cot 480^{\circ}\amp =-\frac{\sqrt{3}}{3}</mrow>
+            </md>.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </solution>
+  <p>
+    \subsection*{Solutions <xref ref="ex-1_4">for</xref>}
+  </p>
+  <solution>
+    <p>
+      <m>x_2=120\sin22.5^{\circ}=45.9</m> NM
+      <m>x_3=120\sin33.75^{\circ}=66.7</m> NM <m>x_4=120\sin45^{\circ}=84.5</m> NM
+      <m>x_5=120\sin56.25^{\circ}=99.8</m> NM <m>x_6=120\sin67.5^{\circ}=110.9</m> NM
+      <m>x_7=120\sin78.75^{\circ}=117.7</m> NM <m>x_8=120\sin90^{\circ}=120</m> NM
+    </p>
+  </solution>
+  <solution>
+    <p>
+      <m>y_1=120\cos11.25^{\circ}=117.7</m> NM
+      <m>y_2=120\cos22.5^{\circ}=110.9</m> NM <m>y_3=120\cos33.75^{\circ}=99.8</m> NM
+      <m>y_4=120\cos45^{\circ}=84.5</m> NM <m>y_5=120\cos56.25^{\circ}=66.7</m> NM
+      <m>y_6=120\cos67.5^{\circ}=45.9</m> NM <m>y_7=120\cos78.75^{\circ}=23.4</m> NM
+    </p>
+  </solution>
+  <solution>
+    <p>
+      To determine the movement of sand along the shore,
+      we first construct the triangle.
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[line width=2pt,-stealth] (0,0) -- (-60:1cm) node[midway,left,xshift=-0.2cm] {10 ft};
+\draw[line width=2pt, -stealth,dashed] (0,0) -- ({cos(-60)},0) node[midway,above,yshift=0.1cm] {\(x\)};
+\draw[line width=2pt,-stealth] ({cos(-60)},{sin(-60)}) -- ({cos(-60)},0);
+\draw ([shift=(0:0.2cm)]0,0) arc (0:-60:0.2cm) node[midway,right,xshift=0.04cm] {\(60^{\circ}\)};
+\draw ({cos(60)-0.1},0) -- ({cos(60)-0.1},-0.1) -- ({cos(60)},-0.1);\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      The since we want to find the adjacent side to the known angle of
+      <m>60^{\circ}</m> and we are given the hypotenuse,
+      the trigonometric function that we will use is cosine:
+      <me>
+        \cos60^{\circ}=\frac{\mbox{adjacent} }{\mbox{hypotenuse} }=\frac{x}{10}
+      </me>
+    </p>
+    <p>
+      Multiplying both sides by 10 and using the fact that <m>\cos60^{\circ}=\frac{1}{2}</m>,
+      <me>
+        x=10\cdot\cos60^{\circ}=10\cdot\frac{1}{2}=5\mbox{ ft}
+      </me>
+    </p>
+  </solution>
+  <solution>
+    <p>
+      The House N\={a}lani in the quadrant Ho`olua is three houses from `\=Akau (North).
+      Since each house is <m>11.25^{\circ}</m>,
+      the wa`a is <m>3\cdot11.25=33.75^{\circ}</m> west of due north.
+    </p>
+    <p>
+      Let <m>y</m> be the distance traveled north.
+      To calculate <m>y</m>,
+      we first determine which trigonometric function to use.
+      Since we need to use the side adjacent to our angle and the hypotenuse,
+      we will use cosine:
+      <me>
+        \cos33.75^{\circ}=\frac{y}{120\mbox{ NM} }
+      </me>
+    </p>
+    <p>
+      So
+      <me>
+        y=120\cdot\cos33.75^{\circ}\mbox{ NM} \approx99.8\mbox{ NM}
+      </me>
+    </p>
+    <p>
+      Let <m>x</m> be the distance traveled west.
+      Since we need to use the side opposite to our angle and the hypotenuse,
+      we will use sine:
+      <me>
+        \sin33.75^{\circ}=\frac{x}{120\mbox{ NM} }
+      </me>
+    </p>
+    <p>
+      So
+      <me>
+        x=120\cdot\sin33.75^{\circ}\mbox{ NM} \approx66.7\mbox{ NM}
+      </me>
+    </p>
+  </solution>
+  <p>
+    \subsection*{Solutions <xref ref="ex-3_3">for</xref>}
+  </p>
+  <solution>
+    <md>
+      <mrow>\cos2\theta \amp =\amp  \cos(\theta + \theta)</mrow>
+      <mrow>\amp  = \amp  \cos\theta \cdot \cos\theta - \sin\theta \cdot \sin\theta</mrow>
+      <mrow>\amp  = \amp  \cos^2\theta - \sin^2\theta</mrow>
+    </md>
+  </solution>
+  <solution>
+    <md>
+      <mrow>\cos2\theta \amp =\amp  \cos^2\theta - \sin^2\theta</mrow>
+      <mrow>\amp  = \amp  (1 - \sin^2\theta) - \sin^2\theta</mrow>
+      <mrow>\amp  = \amp  1 - 2\sin^2\theta</mrow>
+    </md>
+  </solution>
+  <solution>
+    <md>
+      <mrow>\cos2\theta \amp =\amp  \cos^2\theta - \sin^2\theta</mrow>
+      <mrow>\amp  = \amp  \cos^2\theta - (1-\cos^2\theta)</mrow>
+      <mrow>\amp  = \amp  \cos^2\theta - 1 + \cos^2\theta</mrow>
+      <mrow>\amp  = \amp  2\cos^2\theta - 1</mrow>
+    </md>
+  </solution>
+  <solution>
+    <md>
+      <mrow>\tan2\theta \amp =\amp  \tan(\theta + \theta)</mrow>
+      <mrow>\amp  = \amp  \frac{\tan\theta + \tan\theta}{1-\tan\theta \cdot \tan\theta}</mrow>
+      <mrow>\amp  = \amp  \frac{2\tan\theta}{1-\tan^2\theta}</mrow>
+    </md>
+  </solution>
+  <p>
+    \subsection*{Solutions <xref ref="ex-5_4">for</xref>}
+  </p>
+  <solution>
+    <p>
+      Since we were able to write <m>\tan\theta=\frac{839}{937}</m>,
+      we can use a calculator or other technology to evaluate the inverse tangent to find our angle:
+      <me>
+        \theta=\tan^{-1}\left(\frac{839}{937}\right)\approx41.8^{\circ}
+      </me>.
+    </p>
+    <p>
+      Next we refer to the Star Compass with angles
+      (<xref ref="fig_star-compass-with-angles">Figure</xref>
+      on <xref ref="fig_star-compass-with-angles">page</xref>)
+      to conclude we will need to sail towards the House Manu Ko`olau.
+    </p>
+    <p>
+      To determine the distance, <m>d</m>,
+      we use the Pythagorean Theorem:
+      <me>
+        d=\sqrt{937^2+839^2}\approx1,257.7 \mbox{NM}
+      </me>.
+    </p>
+    <p>
+      Finally, we note that since (speed) = (distance)/(duration),
+      we can rearrange the terms to get (duration) = (distance)/(speed).
+      If we travel at 5 knots (5 NM/hr),
+      we can calculate the duration as
+      <me>
+        \mbox{duration} =\frac{1,257.7\mbox{ NM} }{5\mbox{ kt} }=\frac{1,257.7\mbox{ NM} }{5\mbox{ NM/hr} }=251.4\mbox{ hours} =251.4\mbox{ hours} \cdot\frac{\mbox{day} }{24\mbox{ hours} }\approx10.5\mbox{ days}
+      </me>
+    </p>
+  </solution>
+</chapter>

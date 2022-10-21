@@ -1,0 +1,532 @@
+<section xml:id="Double-Angle_and_Half-Angle_Formulas">
+  <title>Double-Angle and Half-Angle Formulas</title>
+  <introduction>
+    <p>
+      In <xref ref="Right_Triangle_Trigonometry">Section</xref>
+      we learned about <em>deviation</em>
+      and how to calculate how far a wa`a has traveled off course.
+      For example,
+      if a wa`a traveled for one day of sailing at 5 knots or 120 nautical miles and was off course by 2 Houses or <m>22.5^{\circ}</m>,
+      how far have they deviated?
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\node[above,yshift=0.15cm] at (0,0) {start};
+\node[above right] at (22.5:1.2) {end};
+\draw[line width=2pt,-stealth] (0,0) -- (22.5:1.2cm) node[midway,sloped,above] {120 miles};
+\draw[dashed] (0,0) -- (1.10865543901,0);
+\draw[dashed] (1.10865543901,0) -- (1.10865543901,0.459220118838)
+node[midway,right,xshift=0.1cm] {\(y\)};
+\draw ([shift=(0:0.2cm)]0,0) arc (0:22.5:0.2cm) node[midway,right,xshift=0.5cm,yshift=0.07cm] {\(22.5^{\circ}\)};
+\draw ([shift=(22.5:-0.1cm)]0,0) pic {waa-top={waacolor}{-67.5}{0.1}};
+\draw (1.04865543901,0) -- (1.04865543901,0.06) -- (1.10865543901,0.06);\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      Using the methods of <xref ref="Right_Triangle_Trigonometry">Section</xref>,
+      we concluded that the deviation was <m>y=120\cdot\sin22.5^{\circ}</m>.
+      We then proceeded to obtain a numerical approximation because we could not obtain an exact value for <m>\sin22.5^{\circ}</m>.
+      We are familiar with the value of trigonometric functions at
+      <m>30, 45, 60^{\circ}</m> but not <m>22.5^{\circ}</m>.
+      In this section,
+      we will examine double and half angles and will be able to calculate the exact value of
+      <m>\sin22.5^{\circ}</m> since <m>22.5=\frac{1}{2}\cdot45</m>.
+    </p>
+  </introduction>
+  <subsection>
+    <title>Double-Angle Formulas</title>
+    <p>
+      Recall the sum formula for sine:
+      <men xml:id="eq_double-angle1">
+        \sin (\alpha+\beta)=\sin \alpha \cos \beta + \cos \alpha \sin \beta
+      </men>
+    </p>
+    <p>
+      Consider the case when the two angles are equal.
+      We will call this angle <m>\theta</m>,
+      so let <m>\alpha=\theta</m> and <m>\beta=\theta</m>.
+      Then <xref ref="eq_double-angle1">Eq</xref> becomes
+      <md>
+        <mrow>\sin(\theta+\theta)\amp =\amp \sin \theta \cos \theta + \cos \theta \sin \theta</mrow>
+        <mrow>\sin (2\theta)\amp =\amp 2\sin \theta \cos \theta</mrow>
+      </md>
+    </p>
+    <p>
+      Thus we obtain a formula for sine of twice the angle <m>\theta</m>.
+    </p>
+    <p>
+      \begin{mybox}[Double-Angle Formulas]
+          <idx><h>Double-Angle Formulas</h></idx>
+      <md>
+        <mrow>\sin 2\theta \amp =\amp  2\sin \theta \cos \theta</mrow>
+      </md>
+      <md>
+        <mrow>\cos 2\theta \amp  =\amp   \cos^2 \theta - \sin^2 \theta</mrow>
+        <mrow>\amp =\amp 1-2\sin^2 \theta</mrow>
+        <mrow>\amp =\amp 2\cos^2 \theta-1</mrow>
+      </md>
+      <md>
+        <mrow>\tan 2 \theta \amp =\amp  \frac{2\tan \theta}{1-\tan^2 \theta}</mrow>
+      </md>
+    </p>
+    <p>
+      \end{mybox} The proofs for the double-angle formulas for cosine and tangent are left as exercises.
+    </p>
+    <example>
+      <statement>
+        <p>
+          If <m>\cos\theta=-\frac{4}{5}</m> and <m>\frac{\pi}{2}\lt \theta\lt \pi</m>,
+          calculate <m>\sin2\theta</m>,
+          <m>\cos2\theta</m>, and <m>\tan2\theta</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          To compute <m>\cos2\theta</m>,
+          notice there are three different formulas:
+          <m>\cos2\theta=\cos^\theta-\sin^2\theta</m>,
+          <m>\cos2\theta=1-2\sin^2\theta</m>,
+          or <m>\cos2\theta=2\cos^2\theta-1</m>.
+          Using any of the three equations will give us the correct answer,
+          however, if we look at the information we are given,
+          we know that <m>\cos\theta=-\frac{4}{5}</m> so it may be easier to use
+          <m>\cos2\theta=2\cos^2\theta-1</m> since the first two equations require us to know <m>\sin\theta</m>.
+          Thus
+          <me>
+            \cos2\theta=2\cos^2\theta-1=2\left(-\frac{4}{5}\right)^2-1=2\left(\frac{16}{25}\right)-1=\frac{32}{25}-\frac{25}{25}=\frac{7}{25}
+          </me>
+        </p>
+        <p>
+          To compute <m>\sin2\theta</m>,
+          <m>\tan2\theta</m>,
+          or using the other equations for <m>\cos2\theta</m>,
+          we will need to compute <m>\sin\theta</m> and <m>\tan\theta</m>.
+          To do this, we will draw the triangle formed from
+          <m>\cos\theta=-\frac{4}{5}</m> where <m>-\frac{\pi}{2}\lt \theta\lt \pi</m>.
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[<->] (-4.5,0)--(0.5,0) node[right]{\(x\)};
+\draw[<->] (0,-0.5)--(0,3.5) node[above]{\(y\)};
+\draw[line width=1pt] (0,0) -- (-4,0) node[midway,below]{-4};
+\draw[line width=1pt] (-4,0) -- (-4,3) node[midway,left]{y};
+\draw[line width=1pt] (-4,3) -- (0,0) node[midway,above]{5};
+\draw (143.130102354:1) arc (143.130102354:180:1) node[midway, left,xshift=-1,yshift=4] {\(\theta\)};
+\draw (-3.6,0) -- (-3.6,0.4) -- (-4,0.4);\end{tikzpicture}]]>
+</latex-image>
+        </image>
+        <p>
+          Using the Pythagorean Theorem,
+          we can solve the triangle:
+          <md>
+            <mrow>(-4)^2+y^2\amp =\amp 5^2</mrow>
+            <mrow>16+y^2\amp =\amp 25</mrow>
+            <mrow>y^2\amp =\amp 9</mrow>
+            <mrow>y\amp =\amp 3</mrow>
+          </md>
+        </p>
+        <p>
+          Using the right triangle, we can now find an expression for
+          <me>
+            \sin\theta=\frac{\mbox{opposite} }{\mbox{hypotenuse} }=\frac{3}{5}
+          </me>
+          and
+          <me>
+            \tan\theta=\frac{\mbox{opposite} }{\mbox{adjacent} }=\frac{3}{-4}=-\frac{3}{4}
+          </me>
+        </p>
+        <p>
+          Using the Double-Angle Formula, we get
+          <me>
+            \sin2\theta=2\sin\theta\cos\theta=2\left(\frac{3}{5}\right)\left(-\frac{4}{5}\right)=-\frac{24}{25}
+          </me>
+          and
+          <me>
+            \tan2\theta=\frac{2\tan\theta}{1-\tan^2\theta}=\frac{2\left(-\frac{3}{4}\right)}{1-\left(-\frac{3}{4}\right)^2}=\frac{-\frac{6}{4}}{1-\frac{9}{16}}=\frac{-\frac{6}{4}}{\frac{16}{16}-\frac{9}{16}}=\frac{-\frac{6}{4}}{\frac{7}{16}}=-\frac{6}{4}\cdot\frac{16}{7}=-\frac{24}{7}
+          </me>
+        </p>
+      </solution>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Write <m>\cos(3\theta)</m> in terms of <m>\sin\theta</m>.
+        </p>
+      </statement>
+      <solution>
+        <md>
+          <mrow>\sin(3\theta)\amp =\sin(2\theta+\theta)</mrow>
+          <mrow>\amp =\sin(2\theta)\cos\theta+\cos(2\theta)\sin\theta\amp \amp \mbox{sum formula}</mrow>
+          <mrow>\amp =(2\sin\theta\cos\theta)\cos\theta+(\cos^2\theta-\sin^2\theta)\sin\theta\amp \amp \mbox{double-angle formula}</mrow>
+          <mrow>\amp =2\sin\theta\cos^2\theta+\sin\theta\cos^2\theta-\sin^3\theta</mrow>
+          <mrow>\amp =3\sin\theta\cos^2\theta-\sin^3\theta</mrow>
+          <mrow>\amp =3\sin\theta(1-\sin^2\theta)-\sin^3\theta\amp \amp \mbox{Pythagorean Identity}</mrow>
+          <mrow>\amp =3\sin\theta-3\sin^3\theta-\sin^3\theta</mrow>
+          <mrow>\amp =3\sin\theta-4\sin^3\theta</mrow>
+        </md>
+      </solution>
+    </example>
+  </subsection>
+  <subsection>
+    <title>Reducing Powers Formulas</title>
+    <p>
+      You may notice that the double angle formula for cosine takes a trigonometric function and expresses it in terms of the square of a trigonometric function.
+      If we rearrange the terms,
+      we can obtain formula for reducing the powers of sine, cosine,
+      and tangent expressions with even powers in terms of only cosine.
+      These formulas come in handy in calculus.
+    </p>
+    <p>
+      \begin{mybox}[Formulas for Reducing Powers]<idx><h>Reducing Powers Formulas</h></idx>
+      <me>
+        \sin^2\theta=\frac{1-\cos(2\theta)}{2}
+      </me>
+      <me>
+        \cos^2\theta=\frac{1+\cos(2\theta)}{2}
+      </me>
+      <me>
+        \tan^2\theta=\frac{1-\cos(2\theta)}{1+\cos(2\theta)}
+      </me>
+    </p>
+    <p>
+      \end{mybox}
+    </p>
+    <proof>
+      <p>
+        To prove the first formula,
+        solve for <m>\sin^2\theta</m> in the Double-Angle Formula <m>\cos2\theta=1-2\sin^2\theta</m>.
+        The second formula is obtained similarly by solving for
+        <m>\cos^2\theta</m> in the formula <m>\cos2\theta=2\cos^2\theta-1</m>.
+        The first two formula can be used to obtain the third formula
+        <me>
+          \tan^2\theta=\frac{\sin^2\theta}{\cos^2\theta}=\frac{\dfrac{1-\cos(2\theta)}{2}}{\dfrac{1+\cos(2\theta)}{2}}=\frac{1-\cos(2\theta)}{1+\cos(2\theta)}
+        </me>
+      </p>
+    </proof>
+    <example>
+      <statement>
+        <p>
+          Write <m>\sin^4\theta</m> as an expression that does not involve powers of sine or cosine greater than 1.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We will use the power reduction formula twice.
+          <md>
+            <mrow>\sin^2\theta \amp = (\sin^2\theta)^2</mrow>
+            <mrow>\amp =\left(\frac{1-\cos(2\theta)}{2}\right)^2\amp \amp \mbox{reducing powers}</mrow>
+            <mrow>\amp =\frac{1}{4}\left(1-2\cos(2\theta)+\cos^2(2\theta)\right)</mrow>
+            <mrow>\amp =\frac{1}{4}\left(1-2\cos(2\theta)+\frac{1+\cos(4\theta)}{2}\right)\amp \amp \mbox{reducing powers}</mrow>
+            <mrow>\amp =\frac{1}{4}\left(1-2\cos(2\theta)+\frac{1}{2}+\frac{\cos(4\theta)}{2}\right)</mrow>
+            <mrow>\amp =\frac{1}{4}\left(\frac{3}{2}-2\cos(2\theta)+\frac{\cos(4\theta)}{2}\right)</mrow>
+            <mrow>\amp =\frac{3}{8}-\frac{1}{2}\cos(2\theta)+\frac{\cos(4\theta)}{8}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+  <subsection>
+    <title>Half-Angle Formulas</title>
+    <p>
+      Another set of useful formulas are the half-angle formulas. \begin{mybox}[Half-Angle Formulas]<idx><h>Half-Angle Formulas</h><h>for Sine</h></idx>
+          <idx><h>Half-Angle Formulas</h><h>for Cosine</h></idx>
+          <idx><h>Half-Angle Formulas</h><h>for Tangent</h></idx>
+      <md>
+        <mrow>\sin\frac{\theta}{2}\amp =\pm\sqrt{\frac{1-\cos\theta}{2}},\amp \cos\frac{\theta}{2}\amp =\pm\sqrt{\frac{1+\cos\theta}{2}},\amp \tan\frac{\theta}{2}\amp =\pm\sqrt{\frac{1-\cos\theta}{1+\cos\theta}}</mrow>
+      </md>
+    </p>
+    <p>
+      The choice of the + or - sign depends on the Quadrant in which <m>\theta/2</m> lies. \end{mybox}
+    </p>
+    <proof>
+      <p>
+        We take the square root on both sides of the Formulas for Reducing Powers and halve the angle (<m>\theta</m> becomes
+        <m>\frac{\theta}{2}</m> and <m>2\theta</m> becomes <m>\theta</m>) to arrive at our formulas.
+      </p>
+    </proof>
+    <example>
+      <title>Deviation</title>
+      <statement>
+        <p>
+          We are now ready to revisit the problem posed at the start of this section when we were give that a wa`a traveling 120 NM deviates by
+          <m>22.5^{\circ}</m> and we asked to determine the exact value of how far it deviated.
+          Houses or <m>22.5^{\circ}</m>,
+          how far have they deviated?
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\node[above,yshift=0.15cm] at (0,0) {start};
+\node[above right] at (22.5:1.2) {end};
+\draw[line width=2pt,-stealth] (0,0) -- (22.5:1.2cm) node[midway,sloped,above] {120 miles};
+\draw[dashed] (0,0) -- (1.10865543901,0);
+\draw[dashed] (1.10865543901,0) -- (1.10865543901,0.459220118838)
+node[midway,right,xshift=0.1cm] {\(y\)};
+\draw ([shift=(0:0.2cm)]0,0) arc (0:22.5:0.2cm) node[midway,right,xshift=0.5cm,yshift=0.07cm] {\(22.5^{\circ}\)};
+\draw ([shift=(22.5:-0.1cm)]0,0) pic {waa-top={waacolor}{(-67.5)}{0.1}};
+\draw (1.04865543901,0) -- (1.04865543901,0.06) -- (1.10865543901,0.06);\end{tikzpicture}]]>
+</latex-image>
+        </image>
+      </statement>
+      <solution>
+        <p>
+          We know the deviation is
+          <me>
+            y=120\cdot\sin22.5^{\circ}=120\cdot\sin\left(\frac{45}{2}\right)^{\circ}=120\cdot\sqrt{\frac{1-\cos45^{\circ}}{2}}=120\cdot\sqrt{\frac{1-\frac{\sqrt{2}}{2}}{2}}
+          </me>
+          <me>
+            =120\cdot\sqrt{\frac{\frac{2}{2}-\frac{\sqrt{2}}{2}}{2}}=120\cdot\sqrt{\frac{2-\sqrt{2}}{4}}=\frac{120}{2}\cdot\sqrt{2-\sqrt{2}}=60\cdot\sqrt{2-\sqrt{2}}
+          </me>
+        </p>
+        <p>
+          Thus we have found the exact value of <m>120\cdot\sin22.5^{\circ}=60\cdot\sqrt{2-\sqrt{2}}\mbox{ NM}</m>.
+        </p>
+      </solution>
+    </example>
+    <example xml:id="ex_half-angle">
+      <statement>
+        <p>
+          Given <m>\sin\theta=-\frac{5}{13}</m> and <m>\theta</m> lies in Quadrant III, find the exact value of
+          <ol>
+            <li>
+              <p>
+                <m>\sin\frac{\theta}{2}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\cos\frac{\theta}{2}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\tan\frac{\theta}{2}</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Notice the Half-Angle Formulas all require us to know
+          <m>\cos\theta</m> so we begin by drawing the triangle formed from
+          <m>\sin\theta=-\frac{5}{13}</m> and <m>\theta</m> in Quadrant III.
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[<->] (-13,0)--(1,0) node[right]{\(x\)};
+\draw[<->] (0,-6)--(0,1) node[above]{\(y\)};
+\draw[line width=1pt] (0,0) -- (-12,0) node[midway,above]{-x};
+\draw[line width=1pt] (-12,0) -- (-12,-5) node[midway,left]{-5};
+\draw[line width=1pt] (-12,-5) -- (0,0) node[midway,below]{13};
+\draw (180:2) arc (180:202.619864948:2) node[midway, left,xshift=-4,yshift=-3] {\(\theta\)};
+\draw (-11,0) -- (-11,-1) -- (-12,-1);\end{tikzpicture}]]>
+</latex-image>
+        </image>
+        <p>
+          Using the Pythagorean Theorem,
+          we can solve the triangle:
+          <md>
+            <mrow>x^2+(-5)^2\amp =\amp 13^2</mrow>
+            <mrow>x^2+25\amp =\amp 169</mrow>
+            <mrow>x^2\amp =\amp 144</mrow>
+            <mrow>x\amp =\amp 12</mrow>
+          </md>
+        </p>
+        <p>
+          Thus we have
+          <me>
+            \cos\theta=-\frac{12}{13}
+          </me>
+        </p>
+        <p>
+          Next, since <m>\theta</m> is in Quadrant III, <m>180^{\circ}\lt \theta\lt 270^{\circ}</m>,
+          so dividing by 2 gives us <m>\frac{180^{\circ}}{2}\lt \frac{\theta}{2}\lt \frac{270^{\circ}}{2}</m> or <m>90^{\circ}\lt \frac{\theta}{2}\lt 135^{\circ}</m>.
+          Therefore, we conclude that <m>\frac{\theta}{2}</m> lies in Quadrant II.
+          <ol>
+            <li>
+              <p>
+                To calculate <m>\sin\frac{\theta}{2}</m>,
+                we first note that because <m>\frac{\theta}{2}</m> lies in Quadrant II,
+                <m>\sin\frac{\theta}{2}>0</m> so we will choose the positive (+) sign in the Half-Angle Formula:
+                <md>
+                  <mrow>\sin\frac{\theta}{2}\amp =\amp \sqrt{\frac{1-\cos\theta}{2}}</mrow>
+                  <mrow>\amp =\amp \sqrt{\frac{1-\left(-\frac{12}{13}\right)}{2}}</mrow>
+                  <mrow>\amp =\amp \sqrt{\frac{1+\frac{12}{13}}{2}}</mrow>
+                  <mrow>\amp =\amp \sqrt{\frac{\frac{13}{13}+\frac{12}{13}}{2}}</mrow>
+                  <mrow>\amp =\amp \sqrt{\frac{\frac{25}{13}}{2}}</mrow>
+                  <mrow>\amp =\amp \sqrt{\frac{25}{26}}</mrow>
+                </md>
+              </p>
+            </li>
+            <li>
+              <p>
+                Since <m>\frac{\theta}{2}</m> is in Quadrant II, we know that
+                <m>\cos\frac{\theta}{2}\lt 0</m> so we will choose the negative (-) sign in the Half-Angle Formula:
+                <md>
+                  <mrow>\cos\frac{\theta}{2}\amp =\amp -\sqrt{\frac{1+\cos\theta}{2}}</mrow>
+                  <mrow>\amp =\amp -\sqrt{\frac{1+\left(-\frac{12}{13}\right)}{2}}</mrow>
+                  <mrow>\amp =\amp -\sqrt{\frac{1-\frac{12}{13}}{2}}</mrow>
+                  <mrow>\amp =\amp -\sqrt{\frac{\frac{13}{13}-\frac{12}{13}}{2}}</mrow>
+                  <mrow>\amp =\amp -\sqrt{\frac{\frac{1}{13}}{2}}</mrow>
+                  <mrow>\amp =\amp -\sqrt{\frac{1}{26}}</mrow>
+                </md>
+              </p>
+            </li>
+            <li>
+              <p>
+                Since <m>\frac{\theta}{2}</m> is in Quadrant II, we know that
+                <m>\tan\frac{\theta}{2}\lt 0</m> so we will choose the negative (-) sign in the Half-Angle Formula:
+                <md>
+                  <mrow>\tan\frac{\theta}{2}\amp =\amp -\sqrt{\frac{1-\cos\theta}{1+\cos\theta}}</mrow>
+                  <mrow>\amp =\amp -\sqrt{\frac{1-\left(-\frac{12}{13}\right)}{1+\left(-\frac{12}{13}\right)}}</mrow>
+                  <mrow>\amp =\amp -\sqrt{\frac{1+\frac{12}{13}}{1-\frac{12}{13}}}</mrow>
+                  <mrow>\amp =\amp -\sqrt{\frac{\frac{13}{13}+\frac{12}{13}}{\frac{13}{13}-\frac{12}{13}}}</mrow>
+                  <mrow>\amp =\amp -\sqrt{\frac{\frac{25}{13}}{\frac{1}{13}}}</mrow>
+                  <mrow>\amp =\amp -\sqrt{\frac{25}{13}\cdot\frac{13}{1}}</mrow>
+                  <mrow>\amp =\amp -\sqrt{25}</mrow>
+                  <mrow>\amp =\amp -5</mrow>
+                </md>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+    <p>
+      We can derive another formula for
+      <m>\tan\frac{\theta}{2}</m> that does not involve <m>\pm</m>: \begin{mybox}[Half-Angle Formulas for Tangent]<idx><h>Half-Angle Formulas</h><h>for Tangent</h></idx>
+      <me>
+        \tan\frac{\theta}{2}=\pm\sqrt{\frac{1-\cos\theta}{1+\cos\theta}}=\frac{1-\cos\theta}{\sin\theta}=\frac{\sin\theta}{1+\cos\theta}
+      </me>
+    </p>
+    <p>
+      \end{mybox}
+    </p>
+    <proof>
+      <p>
+        We begin by first multiplying both sides of the Sine formula for Reducing Powers by 2 and halving the angle:
+        <me>
+          1-\cos\theta=2\sin^2\left(\frac{\theta}{2}\right)
+        </me>
+        and applying the double-angle formula to:
+        <me>
+          \sin\theta=\sin2\cdot\frac{\theta}{2}=2\sin\frac{\theta}{2}\cos\frac{\theta}{2}
+        </me>
+      </p>
+      <p>
+        Diving the two preceding results
+        <me>
+          \frac{1-\cos\theta}{\sin\theta}=\frac{2\sin^2\left(\frac{\theta}{2}\right)}{2\sin\frac{\theta}{2}\cos\frac{\theta}{2}}=\frac{\sin\frac{\theta}{2}}{\cos\frac{\theta}{2}}=\tan\frac{\theta}{2}
+        </me>
+      </p>
+      <p>
+        Thus
+        <me>
+          \tan\frac{\theta}{2}=\frac{1-\cos\theta}{\sin\theta}
+        </me>
+      </p>
+      <p>
+        Similarly, it can be shown that
+        <me>
+          \tan\frac{\theta}{2}=\frac{\sin\theta}{1+\cos\theta}
+        </me>
+      </p>
+    </proof>
+    <example>
+      <statement>
+        <p>
+          Calculate <m>\tan\frac{\theta}{2}</m> from <xref ref="ex_half-angle">Example</xref> using the above formula.
+        </p>
+      </statement>
+      <solution>
+        <me>
+          \tan\frac{\theta}{2}=\frac{1-\cos\theta}{\sin\theta}=\frac{1-\left(-\frac{12}{13}\right)}{-\frac{5}{13}}=\frac{\frac{25}{13}}{-\frac{5}{13}}=\frac{25}{13}\cdot\left(-\frac{13}{5}\right)=-5
+        </me>
+      </solution>
+    </example>
+    <p>
+      Note: We obtained the same result for
+      <m>\tan\frac{\theta}{2}</m> as we did in <xref ref="ex_half-angle">Example</xref>.
+      In this example, we did not have to determine if
+      <m>\tan\frac{\theta}{2}</m> was positive or negative, however,
+      we do need to know the values of both
+      <m>\sin\theta</m> and <m>\cos\theta</m>.
+    </p>
+    <exercise xml:id="ex-3_3">
+      <statement>
+        <me>
+          \cos2\theta=\cos^2\theta-\sin^2\theta
+        </me>
+        <p>
+          \Question Use the Pythagorean identity (<m>\sin^2\theta+\cos^2\theta=1</m>) and the result from <xref ref="x3_3-ex1">Exercise</xref> to prove
+          <me>
+            \cos2\theta=1-2\sin^2\theta
+          </me>
+        </p>
+        <p>
+          \Question Use the Pythagorean identify (<m>\sin^2\theta+\cos^2\theta=1</m>) and the result from <xref ref="x3_3-ex1">Exercise</xref> to prove
+          <me>
+            \cos2\theta=2\cos^2\theta-1
+          </me>
+        </p>
+        <p>
+          \Question Use the sum formula,
+          <m>\tan(\alpha+\beta)=\frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}</m>,
+          to prove the double angle formula for tangent:
+          <me>
+            \tan2\theta=\frac{2\tan\theta}{1-\tan^2\theta}
+          </me>
+        </p>
+        <p>
+          \Question Find the exact value of i)
+          <m>\sin2\theta</m>, ii) <m>\cos2\theta</m>,
+          and iii) <m>\tan2\theta</m> if \begin{tasks} \task
+          <m>\cos\theta=\frac{-3}{5}</m> and <m>\theta</m> is in Quadrant III
+        </p>
+        <p>
+          \task <m>\sin\theta=-\frac{8}{17}</m> and <m>270^{\circ}\lt \theta\lt 360^{\circ}</m>
+        </p>
+        <p>
+          \end{tasks}
+        </p>
+        <p>
+          \Question Using the Half-Angle Formula,
+          find the exact value of \begin{tasks}(2) \task <m>\tan315^{\circ}</m>
+        </p>
+        <p>
+          \task <m>\sin150^{\circ}</m>
+        </p>
+        <p>
+          \task <m>\tan225^{\circ}</m>
+        </p>
+        <p>
+          \task <m>\cos30^{\circ}</m>
+        </p>
+        <p>
+          \task <m>\cos\frac{\pi}{8}</m>
+        </p>
+        <p>
+          \task <m>\tan\frac{11\pi}{12}</m>
+        </p>
+        <p>
+          \task <m>\sin\frac{7\pi}{12}</m>
+        </p>
+        <p>
+          \task <m>\cos\frac{3\pi}{8}</m>
+        </p>
+        <p>
+          \end{tasks}
+        </p>
+        <p>
+          \Question Use the Half-Angle Formulas to find the exact values of i) <m>\sin\frac{\theta}{2}</m>,
+          ii) <m>\cos\frac{\theta}{2}</m>,
+          and iii) <m>\tan\frac{\theta}{2}</m> if \begin{tasks} \task
+          <m>\tan\theta=-\frac{4}{3}</m> and <m>\theta</m> is in Quadrant II
+        </p>
+        <p>
+          \task <m>\cos\theta=\frac{2}{3}</m> and <m>\frac{3\pi}{4}\lt \theta\lt 2\pi</m> \end{tasks}
+        </p>
+      </statement>
+    </exercise>
+  </subsection>
+</section>

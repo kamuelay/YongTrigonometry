@@ -1,0 +1,1335 @@
+<section xml:id="Right_Triangle_Trigonometry">
+  <title>Right Triangle Trigonometry</title>
+  <introduction>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\node[above,yshift=0.15cm] at (0,0) {start};
+\node[above right] at (11.25:1.2) {end};
+\draw[line width=2pt,-stealth] (0,0) -- (11.25:1.2cm) node[midway,sloped,above] {actual course};
+\draw[dashed] (0,0) -- (1.17694233648,0) node[midway,below,yshift=-0.1cm] {reference course};
+\draw[dashed] (1.17694233648,0) -- (1.17694233648,0.234108386419) node[midway,right,xshift=0.1cm] {deviation};
+\draw ([shift=(0:0.2cm)]0,0) arc (0:11.25:0.2cm) node[midway,right,xshift=0.5cm,yshift=0.07cm] {1 House};
+\draw ([shift=(11.25:-0.1cm)]0,0) pic {waa-top={waacolor}{-78.75}{0.1}};
+\draw (1.17694233648-0.06,0) -- (1.11694233648,0.06) -- (1.17694233648,0.06);\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      During a voyage, a navigator uses a
+      <em>reference course</em>
+          <idx><h>Reference Course</h></idx>
+      to keep track of their position.
+      This reference course is a line that runs between the starting point and the destination.
+      If the wa<sq>a (canoe) encounters winds that push it from its intended course,
+      the navigator can then mentally plot their position in relation to the reference course.
+      To ensure they don</sq>t miss their destination,
+      navigators must keep track of how far they <em>deviate</em>
+          <idx><h>Deviation</h></idx>
+      from the intended course.
+      They can do this by first measuring the angle of deviation from the intended reference course
+      (in units of houses)
+      and calculating the distance traveled.
+      In this section,
+      we will learn how to calculate the trigonometric functions with right triangles,
+      which will allow us to determine how far a wa<sq>a has deviated from it</sq>s intended reference course.
+    </p>
+  </introduction>
+  <subsection xml:id="core-standars-CCSS_MATH_CONTENT_HSG_SRT_C_6">
+    <title>Trigonometric Ratios</title>
+    <p>
+      \begin{mybox}[Trigonometric Ratios]<idx><h>Trigonometric Functions</h><h>ratios</h></idx> Consider a right triangle with <m>\theta</m> as one of its acute angles.
+      The trigonometric ratios are defined as follows:
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw (0,0) -- (5,0) node[midway, below] {adjacent};
+\draw(0,0) -- (5,3) node[midway,above,sloped] {hypotenuse};
+\draw(5,0) -- (5,3) node[midway, below,rotate=90] {opposite};
+\draw ([shift=(0:1cm)]0,0) arc (0:30.9637565321:1cm) node[midway,right,xshift=0.1cm] {\(\theta\)};\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <md>
+      <mrow>\sin\theta\amp =\frac{\mbox{opposite} }{\mbox{hypotenuse} }
+      \amp \cos\theta\amp =\frac{\mbox{adjacent} }{\mbox{hypotenuse} }
+      \amp \tan\theta\amp =\frac{\mbox{opposite} }{\mbox{adjacent} }</mrow>
+      <mrow>\csc\theta\amp =\frac{\mbox{hypotenuse} }{\mbox{opposite} }
+      \amp \sec\theta\amp =\frac{\mbox{hypotenuse} }{\mbox{adjacent} }
+      \amp \cot\theta\amp =\frac{\mbox{adjacent} }{\mbox{opposite} }</mrow>
+    </md>
+    <p>
+      A common mnemonic for remembering these relationships is SOHCAHTOA, formed from the first letters of
+      <q><em><em>S</em></em>ine is <em><em>O</em></em>pposite over
+      <em><em>H</em></em>ypotenuse,
+      <em><em>C</em></em>osine is <em><em>A</em></em>djacent over
+      <em><em>H</em></em>ypotenuse,
+      <em><em>T</em></em>angent is <em><em>O</em></em>pposite over
+      <em><em>A</em></em>djacent.</q>
+      \end{mybox}
+    </p>
+    <p>
+      Based on the definition of the six trigonometric functions,
+      we have the following trigonometric identities. \begin{mybox}[Reciprocal Identities]
+          <idx><h>Reciprocal Identities</h></idx>
+      <md>
+        <mrow>\sin\theta\amp =\dfrac{1}{\csc\theta} \amp  \cos\theta\amp =\dfrac{1}{\sec\theta} \amp  \tan\theta\amp =\dfrac{1}{\cot\theta}</mrow>
+        <mrow>\csc\theta\amp =\dfrac{1}{\sin\theta} \amp  \sec\theta\amp =\dfrac{1}{\cos\theta} \amp  \cot\theta\amp =\dfrac{1}{\tan\theta}</mrow>
+      </md>
+    </p>
+    <p>
+      \end{mybox}
+    </p>
+    <p>
+      \begin{mybox}[Quotient Identities]
+          <idx><h>Quotient Identities</h></idx>
+      <md>
+        <mrow>\tan\theta \amp =\dfrac{\sin\theta}{\cos\theta} \amp  \cot\theta\amp =\dfrac{\cos\theta}{\sin\theta}</mrow>
+      </md>
+    </p>
+    <p>
+      \end{mybox}
+    </p>
+    <example>
+      <statement>
+        <p>
+          Find the exact values of the six trigonometric ratios of the angle <m>\theta</m> in the given triangle.
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw (0,0) -- (4,0) node[midway, below] {4};
+\draw(0,0) -- (4,3) node[midway,above left] {5};
+\draw(4,0) -- (4,3) node[midway, right] {3};
+\draw ([shift=(0:0.5cm)]0,0) arc (0:36.8698976458:0.5cm) node[midway,right,xshift=0.1cm] {\(\theta\)};
+\draw (3.6,0) -- (3.6,0.4) -- (4,0.4);\end{tikzpicture}]]>
+</latex-image>
+        </image>
+      </statement>
+      <solution>
+        <p>
+          By the definition of the trigonometric ratios, we have
+          <md>
+            <mrow>\sin\theta\amp =\frac{3}{5} \amp \cos\theta\amp =\frac{4}{5} \amp \tan\theta\amp =\frac{3}{4}</mrow>
+            <mrow>\csc\theta\amp =\frac{5}{3} \amp \sec\theta\amp =\frac{5}{4} \amp \cot\theta\amp =\frac{4}{3}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Find the exact values of the six trigonometric ratios of the angle <m>\theta</m> in the given triangle.
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw (0,0) -- (5,0) node[midway, below] {5};
+\draw(0,0) -- (5,2);
+\draw(5,0) -- (5,2) node[midway, right] {2};
+\draw ([shift=(201.801409486:0.5cm)]5,2) arc (201.801409486:270:0.5cm) node[midway,left,yshift=-0.1cm] {\(\theta\)};
+\draw (4.6,0) -- (4.6,0.4) -- (5,0.4);\end{tikzpicture}]]>
+</latex-image>
+        </image>
+      </statement>
+      <solution>
+        <p>
+          Notice that <m>\theta</m> is in a different position.
+          Here, the adjacent side is 3 and the opposite side is 5.
+          If we let <m>h</m> denote the hypotenuse,
+          then we can use the Pythagorean Theorem to get
+          <me>
+            h=\sqrt{5^2+2^2}=\sqrt{29}
+          </me>
+        </p>
+        <p>
+          Then by the definition of the trigonometric ratios, we have
+          <md>
+            <mrow>\sin\theta\amp =\frac{5}{\sqrt{29}}=\frac{5\sqrt{29}}{29} \amp \cos\theta\amp =\frac{2}{\sqrt{29}}=\frac{2\sqrt{29}}{29} \amp \tan\theta\amp =\frac{5}{2}</mrow>
+            <mrow>\csc\theta\amp =\frac{\sqrt{29}}{5} \amp \sec\theta\amp =\frac{\sqrt{29}}{2} \amp \cot\theta\amp =\frac{2}{5}</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+  <subsection xml:id="core-standards-CCSS_MATH_CONTENT_HSF_TF_A_3">
+    <title>Special Triangles</title>
+    <p>
+      \begin{mybox}[Special values of trigonometric functions]<idx><h>Trigonometric Functions</h><h>special</h></idx> The angles
+      <m>30^{\circ}, 45^{\circ}, 60^{\circ}</m> (<m>\frac{\pi}{6}, \frac{\pi}{4}, \frac{\pi}{3}</m>) give special values for trigonometric functions.
+      The following figures are used to calculate trigonometric values.
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[red,line width=2pt] (0cm,0cm) -- (1cm,0cm) node[midway,below,black] {1};
+\draw[red,line width=2pt] (1cm,0cm) -- (1cm,1cm) node[midway,right,black] {1};
+\draw[blue] (1cm,1cm) -- (0cm,1cm);
+\draw[blue] (0cm,1cm) -- (0cm,0cm);
+\draw[red,line width=2pt] (0cm,0cm) -- (1cm,1cm) node[midway,above,xshift=-0.2cm,black] {\(\sqrt{2}\)};
+\draw ([shift=(0:0.2cm)]0,0) arc (0:45:0.2cm);
+\draw ([shift=(225:0.2cm)]1,1) arc (225:270:0.2cm);
+\node at (0.35cm,0.1cm) {\(45^{\circ}\)};
+\node at (0.88cm,0.7cm) {\(45^{\circ}\)};
+\draw (0.9cm,0cm) -- (0.9cm,0.1cm) -- (1cm,0.1cm);\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[red,line width=2pt] (0,0) -- (60:1cm) node[midway,above,yshift=0.2cm,black] {1};
+\draw[red,line width=2pt] (0,0) -- (0.5,0) node[midway, below,black] {\(\frac{1}{2}\)};
+\draw[blue] (0.5,0) -- (1,0) node[midway, below,black] {\(\frac{1}{2}\)};
+\draw[blue] (1,0) -- (0.5,0.866025403784) node[midway,right,yshift=0.2cm,black] {\(1\)};
+\draw[red,line width=2pt] (0.5,0) -- (0.5,0.866025403784) node[midway,right,yshift=0.0cm] {\(\frac{\sqrt{3}}{2}\)};
+\draw ([shift=(0:0.2cm)]0,0) arc (0:60:0.2cm) node[midway,right,xshift=0.04cm] {\(60^{\circ}\)};
+\draw ([shift=(120:0.2cm)]1,0) arc (120:180:0.2cm) node[midway,left,xshift=-0.04cm] {\(60^{\circ}\)};
+\draw ([shift=(240:0.2cm)]60:1cm) arc (240:270:0.2cm) node[midway,below,xshift=-0.1cm,yshift=-0.1cm] {\(30^{\circ}\)};
+\draw ([shift=(270:0.2cm)]60:1cm) arc (270:300:0.2cm) node[midway,below,xshift=0.1cm,yshift=-0.1cm] {\(30^{\circ}\)};
+\draw (0.4,0) -- (0.4,0.1);
+\draw (0.4,0.1) -- (0.5,0.1);\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      \end{mybox}
+    </p>
+    <p>
+      The trigonometric values for the special angles
+      <m>0, 30^{\circ}, 45^{\circ}, 60^{\circ}, 90^{\circ}</m> (<m>0, \frac{\pi}{6}, \frac{\pi}{4}, \frac{\pi}{3}, \frac{\pi}{2}</m>) are given in <xref ref="tab_basic-trig-Q1">Table</xref>
+    </p>
+    <table xml:id="tab_basic-trig-Q1">
+      <title>Values of the trigonometric functions in Quadrant I</title>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\theta</m></cell>
+          <cell><m>\theta</m></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>(degrees)</cell>
+          <cell>(radians)</cell>
+          <cell><m>\sin\theta</m></cell>
+          <cell><m>\cos\theta</m></cell>
+          <cell><m>\tan\theta</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>0^{\circ}</m></cell>
+          <cell>0</cell>
+          <cell>0</cell>
+          <cell>1</cell>
+          <cell>0</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>30^{\circ}</m></cell>
+          <cell><m>\dfrac{\pi}{6}</m></cell>
+          <cell><m>\dfrac{1}{2}</m></cell>
+          <cell><m>\dfrac{\sqrt{3}}{2}</m></cell>
+          <cell><m>\dfrac{\sqrt{3}}{3}</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>45^{\circ}</m></cell>
+          <cell><m>\dfrac{\pi}{4}</m></cell>
+          <cell><m>\dfrac{\sqrt{2}}{2}</m></cell>
+          <cell><m>\dfrac{\sqrt{2}}{2}</m></cell>
+          <cell>1</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>60^{\circ}</m></cell>
+          <cell><m>\dfrac{\pi}{3}</m></cell>
+          <cell><m>\dfrac{\sqrt{3}}{2}</m></cell>
+          <cell><m>\dfrac{1}{2}</m></cell>
+          <cell><m>\sqrt{3}</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>90^{\circ}</m></cell>
+          <cell><m>\dfrac{\pi}{2}</m></cell>
+          <cell>1</cell>
+          <cell>0</cell>
+          <cell>undefined</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+    </table>
+  </subsection>
+  <subsection xml:id="core-standars-CCSS_MATH_CONTENT_HSG_SRT_C_7">
+    <title>Cofunctions</title>
+    <p>
+          <idx><h>Cofunctions</h></idx>
+      You may recognize the symmetry of <m>\sin\theta</m> and <m>\cos\theta</m> if reverse order of the values of sine and cosine from <m>90^{\circ}</m> to <m>0^{\circ}</m>.
+      This symmetry gives us <m>\sin0^{\circ}=\cos90^{\circ}</m>,
+      <m>\sin30^{\circ}=\cos60^{\circ}</m>,
+      <m>\sin45^{\circ}=\cos45^{\circ}</m>,
+      <m>\sin60^{\circ}=\cos30^{\circ}</m>,
+      and <m>\sin90^{\circ}=\cos0^{\circ}</m>.
+    </p>
+    <p>
+      This pattern between sine and cosine is no coincidence.
+      The three angles in a triangle sum to
+      <m>180^{\circ}</m> or <m>\pi</m> radians.
+      If we look at a right triangle,
+      the two remaining angles will sum to
+      <m>90^{\circ}</m> or <m>\frac{\pi}{2}</m> radians,
+      meaning they are <em>complementary angles</em>.
+          <idx><h>Complementary Angles</h></idx>
+    </p>
+    <figure>
+      \vspace{-0.5cm}
+      <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw (0,0) -- (4,0) node[midway,below]{\(b\)};
+\draw(0,0) -- (4,3) node[midway,above left]{\(c\)};
+\draw(4,0) -- (4,3) node[midway,right]{\(a\)};
+\draw(3.7,0) -- (3.7,0.3) -- (4,0.3);
+\draw ([shift=(0:0.5cm)]0,0) arc (0:36.8698976458:0.5cm) node[midway,right,xshift=0.1cm] {\(\alpha\)};
+\draw ([shift=({180+atan(3/4)}:0.5cm)]4,3) arc (216.869897646:270:0.5cm) node[midway,below,xshift=-0.1cm] {\(\beta\)};\end{tikzpicture}]]>
+</latex-image>
+      </image>
+      \vspace{-0.1cm}
+    </figure>
+    <p>
+      Consider the right triangle in <xref ref="fig-cofunction">Figure</xref>,
+      where angles <m>\alpha</m> and <m>\beta</m> are complementary angles,
+      side <m>a</m> is opposite of angle <m>\alpha</m>,
+      and side <m>b</m> is opposite of angle <m>\beta</m>.
+      Notice that we can also describe side <m>b</m> as adjacent to angle <m>\alpha</m> and side <m>a</m> as adjacent to angle <m>\beta</m>.
+      Therefore,
+      <me>
+        \sin\alpha=\dfrac{\mbox{opposite} }{\mbox{hypotenuse} }=\dfrac{a}{c}\mbox{and} \cos\beta=\dfrac{\mbox{adjacent} }{\mbox{hypotenuse} }=\dfrac{a}{c}
+      </me>
+    </p>
+    <p>
+      Thus we can conclude that
+      <me>
+        \sin\alpha=\frac{a}{c}=\cos\beta
+      </me>
+    </p>
+    <p>
+      } Sine and cosine are called <term>cofunctions</term>
+          <idx><h>Cofunctions</h></idx>
+      because of this relationship between these functions and their complementary angles.
+      We can obtain similar relationships for all trigonometric functions:
+      <md>
+        <mrow>\sin\alpha=\frac{a}{c}\amp =\cos\beta \amp  \cos\alpha=\frac{b}{c}\amp =\sin\beta \amp  \tan\alpha=\frac{a}{b}\amp =\cot\beta</mrow>
+        <mrow>\csc\alpha=\frac{c}{a}\amp =\sec\beta \amp  \sec\alpha=\frac{c}{b}\amp =\csc\beta \amp  \cot\alpha=\frac{b}{a}\amp =\tan\beta</mrow>
+      </md>
+    </p>
+    <p>
+      Since <m>\alpha</m> and <m>\beta</m> are complementary angles,
+      <m>\alpha+\beta=90^{\circ}</m>.
+      Rearranging, we get <m>\beta=90^{\circ}-\alpha</m>.
+      Substituting this into our cofunctions and replacing <m>\alpha</m> with <m>\theta</m>,
+      we get our cofunction identities.
+    </p>
+    <p>
+      \begin{mybox}[Cofunction Identities]
+          <idx><h>Cofunctions Identities</h></idx>
+      The cofunction identities in degrees are
+      <md>
+        <mrow>\sin\theta\amp =\cos(90^{\circ}-\theta) \amp  \cos\theta\amp =\sin(90^{\circ}-\theta) \amp  \tan\theta\amp =\cot(90^{\circ}-\theta)</mrow>
+        <mrow>\csc\theta\amp =\sec(90^{\circ}-\theta) \amp  \sec\theta\amp =\csc(90^{\circ}-\theta) \amp  \cot\theta\amp =\tan(90^{\circ}-\theta)</mrow>
+      </md>
+    </p>
+    <p>
+      The cofunction identities in radians are
+      <md>
+        <mrow>\sin\theta\amp =\cos\left(\frac{\pi}{2}-\theta\right) \amp  \cos\theta\amp =\sin\left(\frac{\pi}{2}-\theta\right) \amp  \tan\theta\amp =\cot\left(\frac{\pi}{2}-\theta\right)</mrow>
+        <mrow>\csc\theta\amp =\sec\left(\frac{\pi}{2}-\theta\right) \amp  \sec\theta\amp =\csc\left(\frac{\pi}{2}-\theta\right) \amp  \cot\theta\amp =\tan\left(\frac{\pi}{2}-\theta\right)</mrow>
+      </md>
+    </p>
+    <p>
+      \end{mybox}
+    </p>
+    <example>
+      <statement>
+        <p>
+          The Cofunction Identities explains the symmetry in <xref ref="tab_basic-trig-Q1">Table</xref>.
+          <md>
+            <mrow>\sin0^{\circ}\amp =\cos(90^{\circ}-0^{\circ})=\cos90^{\circ}\amp \sin60^{\circ}\amp =\cos(90^{\circ}-60^{\circ})=\cos30^{\circ}</mrow>
+            <mrow>\sin30^{\circ}\amp =\cos(90^{\circ}-30^{\circ})=\cos60^{\circ}\amp \sin90^{\circ}\amp =\cos(90^{\circ}-90^{\circ})=\cos0^{\circ}</mrow>
+            <mrow>\sin45^{\circ}\amp =\cos(90^{\circ}-45^{\circ})=\cos45^{\circ}</mrow>
+          </md>
+        </p>
+      </statement>
+    </example>
+    <p>
+      \begin{mybox}[Patterns in the Trigonometric Table] Learning the values of the trigonometric functions in this table can increase your confidence and efficiency in trigonometry.
+      To help remember the values of sine and cosine,
+      we utilize cofunctions and also write them in the form <m>\sqrt{\cdot}/2</m>
+    </p>
+    <tabular>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell><m>\theta</m></cell>
+        <cell><m>\theta</m></cell>
+        <cell><m>\sin \theta</m></cell>
+        <cell><m>\cos \theta</m></cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell><m>0</m></cell>
+        <cell><m>0^{\circ}</m></cell>
+        <cell><m>\sqrt{0}/2</m></cell>
+        <cell><m>\sqrt{4}/2</m></cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell><m>\pi/6</m></cell>
+        <cell><m>30^{\circ}</m></cell>
+        <cell><m>\sqrt{1}/2</m></cell>
+        <cell><m>\sqrt{3}/2</m></cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell><m>\pi/4</m></cell>
+        <cell><m>45^{\circ}</m></cell>
+        <cell><m>\sqrt{2}/2</m></cell>
+        <cell><m>\sqrt{2}/2</m></cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell><m>\pi/3</m></cell>
+        <cell><m>60^{\circ}</m></cell>
+        <cell><m>\sqrt{3}/2</m></cell>
+        <cell><m>\sqrt{1}/2</m></cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell><m>\pi/2</m></cell>
+        <cell><m>90^{\circ}</m></cell>
+        <cell><m>\sqrt{4}/2</m></cell>
+        <cell><m>\sqrt{0}/2</m></cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+        <cell></cell>
+      </row>
+    </tabular>
+    <p>
+      which simplifies to the values in <xref ref="tab_basic-trig-Q1">Table</xref>. \end{mybox}
+    </p>
+  </subsection>
+  <subsection>
+    <title>Using a Calculator</title>
+    <p>
+      Sometimes you may encounter an angle other than the special angles described above.
+      In this case, you will have to use a calculator.
+    </p>
+    <p>
+      <em>First, be sure that your angle is either in degrees or radians,
+      depending on the problem</em>,
+      refer to your calculator's manual for instructions.
+      Most calculators will have a special button for the sine,
+      cosine, and tangent functions.
+      Depending on your calculator,
+      you may see the following keys for
+    </p>
+    <table>
+      <tabular>
+        <row>
+          <cell>Function</cell>
+          <cell>Calculator Key</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>sine</cell>
+          <cell><em>SIN</em></cell>
+        </row>
+        <row>
+          <cell>cosine</cell>
+          <cell><em>COS</em></cell>
+        </row>
+        <row>
+          <cell>tangent</cell>
+          <cell><em>TAN</em></cell>
+        </row>
+      </tabular>
+    </table>
+    <p>
+      To calculate cosecant, secant, and cotangent,
+      you will need to use the identity
+      <md>
+        <mrow>\csc\theta \amp = \frac{1}{\sin\theta}, \amp \sec\theta \amp = \frac{1}{\cos\theta}, \amp \cot\theta \amp = \frac{1}{\tan\theta}</mrow>
+      </md>
+    </p>
+    <p>
+      Answers produced by calculators are <em>estimates</em>
+      and you should pay close attention to see if the question is asking for the exact solution or a decimal approximation.
+      For example,
+      if you need to calculate <m>\sin45^{\circ}=\frac{\sqrt{2}}{2}</m>,
+      the calculator may give the answer as <m>\sin45^{\circ}\approx0.70710678</m>,
+      which is a decimal approximation since the actual solution goes on forever.
+      <em>Unless stated otherwise, answers in the book should be exact</em>, e.g.
+      <m>\frac{\sqrt{2}}{2}</m> and not 0.70710678.
+    </p>
+    <example>
+      <statement>
+        <p>
+          Use a calculator to evaluate
+          <ol>
+            <li>
+              <p>
+                <m>\sin22^{\circ}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\cos5^{\circ}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\cot53^{\circ}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\cos5\mbox{ rad}</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We make sure our calculator is in degree or radian mode.
+          For simplicity, we will round our answers to four decimals.
+          <ol>
+            <li>
+              <p>
+                Input: <em>SIN</em>(22); Output: <m>0.3746</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                Input: <em>COS</em>(5); Output: <m>0.9962</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                Since most calculators do not have a key for cotangent,
+                we Input: (1/<em>TAN</em>(53)); Output:
+                <m>\dfrac{1}{1.3270}\approx0.7536</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                Since this problem uses radians,
+                we must change the mode on our calculator then Input:
+                <em>COS</em>(5); Output: <m>0.2837</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+        <p>
+          Notice that <m>\cos5^{\circ}\neq\cos5\mbox{ rad}</m>.
+          This is why it is important to double check if your calculator is on degree or radian mode.
+        </p>
+      </solution>
+    </example>
+  </subsection>
+  <subsection>
+    <title>Solving Right Triangles</title>
+    <figure>
+      \vspace{-0.9cm}
+      <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw (0,0) -- (4,0) node[midway,below]{\(b\)};
+\draw(0,0) -- (4,3) node[midway,above left]{\(c\)};
+\draw(4,0) -- (4,3) node[midway,right]{\(a\)};
+\draw(3.7,0) -- (3.7,0.3) -- (4,0.3);
+\draw ([shift=(0:0.5cm)]0,0) arc (0:36.8698976458:0.5cm) node[midway,right,xshift=0.1cm] {\(\alpha\)};
+\draw ([shift=(216.869897646:0.5cm)]4,3) arc (216.86989:270:0.5cm) node[midway,below,xshift=-0.1cm] {\(\beta\)};\end{tikzpicture}]]>
+</latex-image>
+      </image>
+      \vspace{-0.3cm}
+    </figure>
+    <p>
+      Consider the following right triangle where side <m>a</m> is opposite angle <m>\alpha</m>,
+      side <m>b</m> is opposite angle <m>\beta</m>,
+      and side <m>c</m> is the hypotenuse.
+      Since <m>\alpha</m> and <m>\beta</m> are complementary angles, we have
+      <me>
+        \alpha+\beta=90^{\circ}
+      </me>
+    </p>
+    <p>
+      Additionally, by the Pythagorean Theorem, we have
+      <me>
+        a^2+b^2=c^2
+      </me>
+    </p>
+    <definition>
+      <statement>
+        <p>
+          To <term>solve a triangle</term>
+              <idx><h>Triangles</h><h>Solving</h></idx>
+          means to determine the values for all three lengths of its sides and the measures of all three angles given some information about the triangle.
+        </p>
+      </statement>
+    </definition>
+    <p>
+      \begin{mybox}[Solving Right Triangles] To solve a right triangle,
+      it is useful to use the following
+      <me>
+        \alpha+\beta=90^{\circ}, \qquad a^2+b^2=c^2
+      </me>
+    </p>
+    <p>
+      \end{mybox}
+    </p>
+    <example>
+      <statement>
+        <p>
+          Solve the right triangle.
+          Round your answer to two decimal places.
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw (0,0) -- (16,0) node[midway,below]{\(16\)};
+\draw(0,0) -- (16,19.0680574815) node[midway,above left]{\(c\)};
+\draw(16,0) -- (16,19.0680574815) node[midway,right]{\(a\)};
+\draw(14.5,0) -- (14.5,1.5) -- (16,1.5);
+\draw ([shift=(0:3)]0,0) arc (0:50:3) node[midway,right,xshift=0.1cm,yshift=0.1cm] {\(50^{\circ}\)};
+\draw ([shift=(230:3)]16,19.0680574815) arc (230:270:3) node[midway,below,xshift=-0.1cm] {\(\beta\)};\end{tikzpicture}]]>
+</latex-image>
+        </image>
+      </statement>
+      <solution>
+        <p>
+          Since this is a right triangle,
+          we know one angle is <m>90^{\circ}</m>,
+          we also know that the other angle is
+          <m>50^{\circ}</m> and the adjacent side is 16.
+          To solve this triangle, we will need to determine the values of <m>a</m>,
+          <m>c</m>, and <m>\beta</m>.
+          We begin by finding <m>\beta</m>.
+          Since <m>50^{\circ}+\beta=90^{\circ}</m> we have
+          <me>
+            \beta=90^{\circ}-50^{\circ}=40^{\circ}
+          </me>
+        </p>
+        <p>
+          Next, we will solve for <m>a</m>.
+          If we use the angle <m>50^{\circ}</m>,
+          the adjacent side is 16 and <m>a</m> is the opposite side to the angle.
+          The trigonometric function that relates these is tangent:
+          <me>
+            \tan50^{\circ}=\frac{a}{16}
+          </me>
+          multiplying both sides by 16 we get
+          <me>
+            a=16\cdot\tan50^{\circ}\approx19.07
+          </me>
+        </p>
+        <p>
+          Using the Pythagorean Theorem, we get
+          <me>
+            c^2=16^2+19.07^2\approx619.66
+          </me>
+        </p>
+        <p>
+          Thus
+          <me>
+            c\approx\sqrt{619.66}\approx24.89
+          </me>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+  <subsection xml:id="core-standars-CCSS_MATH_CONTENT_HSG_SRT_C_8">
+    <title>Solving Applied Problems</title>
+    <example xml:id="ex-deviation">
+      <title>Deviation</title>
+      <statement>
+        <p>
+          We are now ready to calculate the deviation example proposed at the start of this section.
+          In an average day of sailing,
+          a wa`a sails for 120 nautical miles (NM).
+          If Hikianalia is supposed to sail in the direction of Hikina (East),
+          but currents have deviated her course by one house so she actually sailed toward the house L\={a}, how far off the course has H&#333;k&#363;le`a deviated?
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\node[above,yshift=0.15cm] at (0,0) {start};
+\node[above right] at (11.25:1.2) {end};
+\draw[line width=2pt,-stealth] (0,0) -- (11.25:1.2cm) node[midway,sloped,above] {actual course};
+\draw[dashed] (0,0) -- (1.17694233648,0) node[midway,below,yshift=-0.1cm] {reference course};
+\draw[dashed] (1.17694233648,0) -- (1.17694233648,0.234108386419) node[midway,right,xshift=0.1cm] {deviation};
+\draw ([shift=(0:0.2cm)]0,0) arc (0:11.25:0.2cm) node[midway,right,xshift=0.5cm,yshift=0.07cm] {1 House};
+\draw ([shift=(11.25:-0.1cm)]0,0) pic {waa-top={waacolor}{-78.75}{0.1}};
+\draw (1.10694233648,0) -- (1.10694233648,0.07) -- (1.17694233648,0.07);\end{tikzpicture}]]>
+</latex-image>
+        </image>
+      </statement>
+      <solution>
+        <p>
+          From the Star Compass
+          (<xref ref="fig_star-compass">Figure</xref>),
+          the house L\={a} is one house (<m>11.25^{\circ}</m>) from Hikina.
+          If we let <m>y</m> denote the distance deviated from the reference course,
+          our right triangle becomes:
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\node[above,yshift=0.15cm] at (0,0) {start};
+\node[above right] at (11.25:1.2) {end};
+\draw[line width=2pt,-stealth] (0,0) -- (11.25:1.2cm) node[midway,sloped,above] {120 NM};
+\draw[dashed] (0,0) -- (1.17694233648,0);
+\draw[dashed] (1.17694233648,0) -- (1.17694233648,0.234108386419)
+node[midway,right,xshift=0.1cm] {\(y\)};
+\draw ([shift=(0:0.2cm)]0,0) arc (0:11.25:0.2cm) node[midway,right,xshift=0.5cm,yshift=0.07cm] {\(11.25^{\circ}\)};
+\draw ([shift=(11.25:-0.1cm)]0,0) pic {waa-top={waacolor}{(-90+11.25)}{0.1}};
+\draw (1.10694233648,0) -- (1.10694233648,0.07) -- (1.17694233648,0.07);\end{tikzpicture}]]>
+</latex-image>
+        </image>
+        <p>
+          Since we know the hypotenuse of the triangle and want to find the side opposite of the angle,
+          we will use the sine function:
+          <me>
+            \sin11.25^{\circ}=\frac{\mbox{opposite} }{\mbox{hypotenuse} }=\frac{y}{120\mbox{ NM} }
+          </me>
+          multiplying both sides by 120, we get
+          <me>
+            y=120\cdot\sin11.25^{\circ}\mbox{ NM} \approx23.4\mbox{ NM}
+          </me>
+        </p>
+        <p>
+          So Hikianalia has deviated 23.4 nautical miles north from the reference course.
+        </p>
+      </solution>
+    </example>
+    <example>
+      <title>Solar panels</title>
+      <statement>
+        <p>
+          Solar panels use the sun's energy to produce electricity.
+          In order to maximize the energy output,
+          solar panels should be installed perpendicular to the sun's light.
+          The angle of elevation of the sun varies by latitude and in Hawai<sq>i,
+          south facing solar panels should have a pitch of
+          <m>21^{\circ}</m> to be perpendicular to the sun</sq>s rays.
+          When installing a solar panel,
+          it may be difficult to determine the pitch,
+          so instead of measure the angle,
+          you can measure the height of the top of the panel.
+          What height should a south facing solar panel that is 65 in in length be installed to achieve the optimal angle of <m>21^{\circ}</m>?
+          Round your answer to the nearest tenth of an inch.
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[line width=2pt,red] (0,0) -- (159:6.5) node[black,sloped,midway,below] {Solar Panel};
+\draw (-6.5,0) -- (1,0);
+\draw[dashed] (-6.06827277223,0) -- (-6.06827277223,2.32939167204) node[sloped,midway,above] {Height};
+\draw[stealth-,line width=2pt,yellow] (159:6.5) -- ([shift=(159:6.5)]69:3);
+\draw[stealth-,line width=2pt,yellow] (159:4.875) -- ([shift=(159:4.875)]69:3);
+\draw[stealth-,line width=2pt,yellow] (159:3.25) -- ([shift=(159:3.25)]69:3) node[above,rotate=-21,black] {Sun's rays};
+\draw[stealth-,line width=2pt,yellow] (159:1.625) -- ([shift=(159:1.625)]69:3);
+\draw[stealth-,line width=2pt,yellow] (0,0) -- (69:3);
+\draw (69:0.4) -- ([shift=(159:0.4)]69:0.4) -- (159:0.4);
+\draw ([shift=(0:0.75)]0,0) arc (0:69:0.75) node[midway,right,xshift=0.1cm,yshift=0.3cm,text width=1.9cm,align=left] {Angle of elevation of Sun};
+\draw ([shift=(159:0.75)]0,0) arc (159:180:0.75) node[midway,right,xshift=-1.2cm,yshift=-0.5cm,text width=3cm,align=left] {Pitch angle};\end{tikzpicture}]]>
+</latex-image>
+        </image>
+      </statement>
+      <solution>
+        <p>
+          We begin by drawing the triangle.
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[line width=2pt] (0,0) -- (159:6.5) node[sloped,midway,above] {65 in};
+\draw (-6.06827277223,0) -- (0,0);
+\draw[dashed] (-6.06827277223,0) -- (-6.06827277223,2.32939167204) node[sloped,midway,above] {Height};
+\draw ([shift=(159:0.75)]0,0) arc (159:180:0.75) node[midway,left,xshift=-0.3cm,yshift=0.1cm] {\(21^{\circ}\)};
+\draw (-6.06827277223,0.4) -- (-5.66827277223,0.4) -- (-5.66827277223,0);\end{tikzpicture}]]>
+</latex-image>
+        </image>
+        <p>
+          Since we know the desired angle of pitch of the solar panel and the length of the panel,
+          we can set up the following equation
+          <md>
+            <mrow>\sin21^{\circ}\amp =\amp \frac{\mbox{opposite} }{\mbox{hypotenuse} }=\frac{\mbox{height} }{65\mbox{ in} }</mrow>
+            <mrow>\mbox{height} \amp =\amp 65\mbox{ in} \cdot\sin21^{\circ}\approx23.3\mbox{ in}</mrow>
+          </md>
+        </p>
+        <p>
+          So when installing the solar panel in Hawai`i, the top of the solar should should be 23.3 inches above the bottom in order to maximize the energy output.
+        </p>
+      </solution>
+    </example>
+    <exercise xml:id="ex-1_4">
+      <statement>
+        <p>
+          \begin{tasks}(4) \task
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw (0,0) -- (3,0) node[midway,below]{3};
+\draw(0,0) -- (3,4) node[midway,above left]{5};
+\draw(3,0) -- (3,4) node[midway,right]{4};
+\draw(2.7,0) -- (2.7,0.3) -- (3,0.3);
+\draw ([shift=(0:0.5)]0,0) arc (0:53.1301023542:0.5) node[midway,right,xshift=0.1,yshift=0.2] {\(\theta\)};\end{tikzpicture}]]>
+</latex-image>
+        </image>
+        <p>
+          \task
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw (0,0) -- (5,0) node[midway,below]{5};
+\draw(0,0) -- (5,7) node[midway,above left]{\(\sqrt{74}\)};
+\draw(5,0) -- (5,7) node[midway,right]{7};
+\draw(4.25,0) -- (4.25,0.75) -- (5,0.75);
+\draw ([shift=(234.462322208:1.75)]5,7) arc (234.462322208:270:1.75) node[midway,below,xshift=-0.2] {\(\theta\)};\end{tikzpicture}]]>
+</latex-image>
+        </image>
+        <p>
+          \task
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw (0,0) -- (-4,0) node[midway,below]{4};
+\draw(0,0) -- (-4,6);
+\draw(-4,0) -- (-4,6) node[midway,left]{6};
+\draw(-3.4,0) -- (-3.4,0.6) -- (-4,0.6);
+\draw ([shift=(180:1)]0,0) arc (180:123.690067526:1) node[midway,left,xshift=-0.1] {\(\theta\)};\end{tikzpicture}]]>
+</latex-image>
+        </image>
+        <p>
+          \task
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw (0,0) -- (-5,0);
+\draw(0,0) -- (-5,12) node[midway,above right]{13};
+\draw(-5,0) -- (-5,12) node[midway,left]{12};
+\draw(-4,0) -- (-4,1) -- (-5,1);
+\draw ([shift=(270:2.5)]-5,12) arc (270:292.619864948:2.5) node[midway,below,xshift=0.1,yshift=-0.1] {\(\theta\)};\end{tikzpicture}]]>
+</latex-image>
+        </image>
+        <p>
+          \task
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw (0,0) -- (-7,0) node[midway,below]{7};
+\draw(0,0) -- (-7,14);
+\draw(-7,0) -- (-7,14) node[midway,left]{14};
+\draw(-5.8,0) -- (-5.8,1.2) -- (-7,1.2);
+\draw ([shift=(180:2)]0,0) arc (180:116.565051177:2) node[midway,left,xshift=-0.1] {\(\theta\)};\end{tikzpicture}]]>
+</latex-image>
+        </image>
+        <p>
+          \task
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw (0,0) -- (4,0) node[midway,below]{4};
+\draw(0,0) -- (4,4);
+\draw(4,0) -- (4,4) node[midway,right]{4};
+\draw(3.5,0) -- (3.5,0.5) -- (4,0.5);
+\draw ([shift=(225:0.6)]4,4) arc (225:270:0.6) node[midway,below,xshift=-0.1,yshift=-0.1] {\(\theta\)};\end{tikzpicture}]]>
+</latex-image>
+        </image>
+        <p>
+          \task
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw (0,0) -- (-2,0) node[midway,below]{2};
+\draw(0,0) -- (-2,2.44948974278) node[midway,above right]{\(\sqrt{10}\)};
+\draw(-2,0) -- (-2,2.44948974278);
+\draw(-1.7,0) -- (-1.7,0.3) -- (-2,0.3);
+\draw ([shift=(180:0.5)]0,0) arc (180:129.231520484:0.5) node[midway,left,xshift=-0.1] {\(\theta\)};\end{tikzpicture}]]>
+</latex-image>
+        </image>
+        <p>
+          \task
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw (0,0) -- (2,0) node[midway,below]{2};
+\draw(0,0) -- (2,3);
+\draw(2,0) -- (2,3) node[midway,right]{3};
+\draw(1.7,0) -- (1.7,0.3) -- (2,0.3);
+\draw ([shift=(236.309932474:0.5)]2,3) arc (234.462322208:270:0.5) node[midway,below,xshift=-0.1] {\(\theta\)};\end{tikzpicture}]]>
+</latex-image>
+        </image>
+        <p>
+          \end{tasks}
+        </p>
+        <p>
+          \Question Calculate i) <m>\cos\alpha</m> and <m>\sin\beta</m>;
+          ii) <m>\tan\alpha</m> and <m>\cot\beta</m>;
+          iii) <m>\csc\alpha</m> and
+          <m>\sec\beta</m> \begin{tasks}(2) \task
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw (0,0) -- (5,0) node[midway,below]{5};
+\draw(0,0) -- (5,3);
+\draw(5,0) -- (5,3) node[midway,right]{3};
+\draw(4.6,0) -- (4.6,0.4) -- (5,0.4);
+\draw ([shift=(210.963756532:0.75)]5,3) arc (210.963756532:270:0.75) node[midway,below,xshift=-0.1] {\(\beta\)};
+\draw ([shift=(0:1)]0,0) arc (0:30.9637565321:1) node[midway,right,xshift=0.1,yshift=0.3] {\(\alpha\)};\end{tikzpicture}]]>
+</latex-image>
+        </image>
+        <p>
+          \task
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw (0,0) -- (-7,0) node[midway,below]{7};
+\draw(0,0) -- (-7,3.87298334621) node[midway,above right]{8};
+\draw(-7,0) -- (-7,3.87298334621);
+\draw(-6.5,0) -- (-6.5,0.5) -- (-7,0.5);
+\draw ([shift=(180:1)]0,0) arc (180:151.044975628:1) node[midway,left,xshift=-0.1] {\(\alpha\)};
+\draw ([shift=(270:1)]-7,3.87298334621) arc (270:331.044975628:1) node[midway,below,xshift=0.1,yshift=-0.1] {\(\beta\)};\end{tikzpicture}]]>
+</latex-image>
+        </image>
+        <p>
+          \end{tasks}
+        </p>
+        <p>
+          \Question Use the Cofunction Identities to determine the value of <m>\theta</m> \begin{tasks}(3) \task
+          <m>\sin28^{\circ}=\cos\theta</m> \task <m>\cos74^{\circ}=\sin\theta</m> \task
+          <m>\tan52^{\circ}=\cot\theta</m> \task <m>\sec87^{\circ}=\csc\theta</m> \task
+          <m>\sin\frac{3\pi}{8}=\cos\theta</m> \task <m>\cot\frac{2\pi}{5}=\tan\theta</m> \end{tasks}
+        </p>
+        <p>
+          \Question In <xref ref="ex-deviation">Example</xref>
+          we calculated when a wa`a sails for one day (120 nautical miles) and deviates from its course by 1 House,
+          the wa`a is <m>23.4</m> NM from its reference course.
+          Calculate the deviation, <m>x</m>,
+          for the remaining 7 angles.
+          Round your answer to the nearest tenth of a nautical mile.
+          Note that one house is <m>11.25^{\circ}</m>
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[line width=1pt,-stealth] (0,0) -- (0:1.2cm) node[pos=0.8,sloped,below] {\(x_8\)};
+\draw[line width=1pt,-stealth] (0,0) -- (11.25:1.2cm) node[right] {7 Houses};
+\draw[line width=1pt,-stealth] (0,0) -- (22.5:1.2cm) node[right] {6 Houses};
+\draw[line width=1pt,-stealth] (0,0) -- (33.75:1.2cm) node[right] {5 Houses};
+\draw[line width=1pt,-stealth] (0,0) -- (45:1.2cm) node[right] {4 Houses};
+\draw[line width=1pt,-stealth] (0,0) -- (56.65:1.2cm) node[right] {3 Houses};
+\draw[line width=1pt,-stealth] (0,0) -- (67.5:1.2cm) node[right] {2 Houses};
+\draw[line width=1pt,-stealth] (0,0) -- (78.75:1.2cm) node[above right] {1 House};
+\draw[line width=1pt,-stealth] (0,0) -- (90:1.2cm) node[midway,sloped,above] {Reference Course, 120 NM};
+\node[right] at (0:1.2cm) {8 Houses};
+\draw[dashed] (0,0.234108386419) -- (1.17694233648,0.234108386419)
+node[pos=0.8,above] {\(x_7\)};
+\draw[dashed] (0,0.459220118838) -- (1.10865543901,0.459220118838)
+node[pos=0.8,above] {\(x_6\)};
+\draw[dashed] (0,0.666684279624) -- (0.997763534763,0.666684279624)
+node[pos=0.8,above] {\(x_5\)};
+\draw[dashed] (0,0.848528137424) -- (0.848528137424,0.848528137424)
+node[pos=0.8,above] {\(x_4\)};
+\draw[dashed] (0,0.997763534763) -- (0.666684279624,0.997763534763)
+node[pos=0.8,above] {\(x_3\)};
+\draw[dashed] (0,1.10865543901) -- (0.459220118838,1.10865543901)
+node[pos=0.7,above] {\(x_2\)};
+\draw[dashed] (0,1.17694233648) -- (0.234108386419,1.17694233648)
+node[pos=0.5,above] {\(x_1\)};
+\draw ([shift=(45:-0.1cm)]0,0) pic {waa-top={waacolor}{(-45)}{0.1}};\end{tikzpicture}]]>
+</latex-image>
+        </image>
+        <p>
+          \begin{tasks}(2) \task 2 Houses (<m>11.25^{\circ}\times2=22.5^{\circ}</m>);
+          <m>x_2</m> \task 3 Houses (<m>11.25^{\circ}\times3=33.75^{\circ}</m>);
+          <m>x_3</m> \task 4 Houses (<m>11.25^{\circ}\times4=45^{\circ}</m>);
+          <m>x_4</m> \task 5 Houses (<m>11.25^{\circ}\times5=56.25^{\circ}</m>);
+          <m>x_5</m> \task 6 Houses (<m>11.25^{\circ}\times6=67.5^{\circ}</m>);
+          <m>x_6</m> \task 7 Houses (<m>11.25^{\circ}\times7=78.75^{\circ}</m>);
+          <m>x_7</m> \task 8 Houses (<m>11.25^{\circ}\times8=90^{\circ}</m>);
+          <m>x_8</m> \end{tasks}
+        </p>
+        <p>
+          \Question In <xref ref="ques-deviation">Question</xref>
+          we calculated the deviation of wa`a after sailing for one day (120 nautical miles).
+          Calculate how far along the reference course (north) the wa`a has traveled for each deviation,
+          <m>y</m>.
+          Round your answer to the nearest tenth of a nautical mile.
+          Note that one house is <m>11.25^{\circ}</m>
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[line width=1pt,-stealth] (0,0) -- (0:1.2cm) node[midway,sloped,below] {120 NM};
+\draw[line width=1pt,-stealth] (0,0) -- (11.25:1.2cm) node[right] {7 House};
+\draw[line width=1pt,-stealth] (0,0) -- (22.5:1.2cm) node[right] {6 Houses};
+\draw[line width=1pt,-stealth] (0,0) -- (33.75:1.2cm) node[right] {5 Houses};
+\draw[line width=1pt,-stealth] (0,0) -- (45:1.2cm) node[right] {4 Houses};
+\draw[line width=1pt,-stealth] (0,0) -- (56.65:1.2cm) node[right] {3 Houses};
+\draw[line width=1pt,-stealth] (0,0) -- (67.5:1.2cm) node[right] {2 Houses};
+\draw[line width=1pt,-stealth] (0,0) -- (78.75:1.2cm) node[right] {1 House};
+\draw[line width=1pt,-stealth] (0,0) -- (90:1.2cm) node[midway,sloped,above] {Reference Course, 120 NM};
+\draw[dashed] (1.17694233648,0) -- (1.17694233648,0.234108386419)
+node[midway,right] {\(y_7\)};
+\draw[dashed] (1.10865543901,0) -- (1.10865543901,0.459220118838)
+node[pos=0.7,right] {\(y_6\)};
+\draw[dashed] (0.997763534763,0) -- (0.997763534763,0.666684279624)
+node[pos=0.8,right] {\(y_5\)};
+\draw[dashed] (0.848528137424,0) -- (0.848528137424,0.848528137424)
+node[pos=0.8,right] {\(y_4\)};
+\draw[dashed] (0.666684279624,0) -- (0.666684279624,0.997763534763)
+node[pos=0.8,right] {\(y_3\)};
+\draw[dashed] (0.459220118838,0) -- (0.459220118838,1.10865543901)
+node[pos=0.8,right] {\(y_2\)};
+\draw[dashed] (0.234108386419,0) -- (0.234108386419,1.17694233648)
+node[pos=0.8,right] {\(y_1\)};
+\draw ([shift=(45:-0.1cm)]0,0) pic {waa-top={waacolor}{(-45)}{0.1}};\end{tikzpicture}]]>
+</latex-image>
+        </image>
+        <p>
+          \begin{tasks}(2) \task 1 House (<m>11.25^{\circ}\times1=11.25^{\circ}</m>);
+          <m>y_1</m> \task 2 Houses (<m>11.25^{\circ}\times2=22.5^{\circ}</m>);
+          <m>y_2</m> \task 3 Houses (<m>11.25^{\circ}\times3=33.75^{\circ}</m>);
+          <m>y_3</m> \task 4 Houses (<m>11.25^{\circ}\times4=45^{\circ}</m>);
+          <m>y_4</m> \task 5 Houses (<m>11.25^{\circ}\times5=56.25^{\circ}</m>);
+          <m>y_5</m> \task 6 Houses (<m>11.25^{\circ}\times6=67.5^{\circ}</m>);
+          <m>y_6</m> \task 7 Houses (<m>11.25^{\circ}\times7=78.75^{\circ}</m>);
+          <m>y_7</m> \end{tasks}
+        </p>
+        <p>
+          \Question Using the right triangle
+          (not drawn to scale)
+          shown below.
+          Solve the right triangle with the given information.
+          Round your answers to two decimal places.
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw (0,0) -- (4,0) node[midway,below]{\(b\)};
+\draw(0,0) -- (4,3) node[midway,above left]{\(c\)};
+\draw(4,0) -- (4,3) node[midway,right]{\(a\)};
+\draw(3.7,0) -- (3.7,0.3) -- (4,0.3);
+\draw ([shift=(0:0.5cm)]0,0) arc (0:36.8698976458:0.5cm) node[midway,right,xshift=0.1cm] {\(\alpha\)};
+\draw ([shift=(216.869897646:0.5cm)]4,3) arc (216.869897646:270:0.5cm) node[midway,below,xshift=-0.1cm] {\(\beta\)};\end{tikzpicture}]]>
+</latex-image>
+        </image>
+        <p>
+          \begin{tasks}(2) \task <m>a=5</m>, <m>\beta=35^{\circ}</m>.
+          Find <m>b</m>, <m>c</m>,
+          and <m>\alpha</m> \task <m>b=12</m>, <m>\beta=23^{\circ}</m>.
+          Find <m>a</m>, <m>c</m>,
+          and <m>\alpha</m> \task <m>b=7</m>, <m>\alpha=75^{\circ}</m>.
+          Find <m>a</m>, <m>c</m>,
+          and <m>\beta</m> \task <m>c=4</m>, <m>\beta=50^{\circ}</m>.
+          Find <m>a</m>, <m>b</m>,
+          and <m>\alpha</m> \task <m>c=10</m>, <m>\alpha=18^{\circ}</m>.
+          Find <m>a</m>, <m>b</m>,
+          and <m>\beta</m> \task <m>a=6</m>, <m>\alpha=38^{\circ}</m>.
+          Find <m>b</m>, <m>c</m>, and <m>\beta</m> \end{tasks}
+        </p>
+        <p>
+          \Question A wa`a sails in the direction of the house N\={a}lani Ho`olua for one day (120 nautical miles).
+          How many nautical miles has the wa`a traveled north?
+          How many miles has the wa`a traveled west?
+          To calculate the angle <m>\theta</m>,
+          refer to the Star Compass on <xref ref="fig_star-compass">Figure</xref>
+          on <xref ref="fig_star-compass">page</xref>
+          for help determining the number of houses and use the fact that one house is <m>11.25^{\circ}</m>.
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[line width=2pt,-stealth] (0,0) -- (123.75:1.2cm) node[midway,left,xshift=-0.2cm] {120 mi};
+\draw[line width=2pt,dashed] (0,0.997763534763) -- (-0.666684279624,0.997763534763) node[midway,above,yshift=0.1cm] {west};
+\draw[line width=2pt, dashed] (0,0) -- (0,0.997763534763) node[midway,right,xshift=0.1cm] {north};
+\draw ([shift=(90:0.2cm)]0,0) arc (90:123.75:0.2cm) node[midway,above,xshift=-1,yshift=3] {\(\theta\)};
+\draw ([shift=(123.75:-0.15cm)]0,0) pic {waa-top={waacolor}{(33.75)}{0.1}};
+\draw (-0.1,0.997763534763) -- (-0.1,0.897763534763) -- (0,0.897763534763);\end{tikzpicture}]]>
+</latex-image>
+        </image>
+        <p>
+          \Question <em>Movement of Sand</em>
+          The position of sand on a beach is constantly changing.
+          One of the ways sand moves is through waves.
+          In general, waves aren't perpendicular to the shore,
+          instead they come at an angle.
+          When the wave crashes on the shore in a process known as <em>swash</em>,
+              <idx><h>Swash</h></idx>
+          water as well as sediment move onto the beach as the same angle of the wave.
+          Gravity takes over and the water and sediment run straight into the ocean
+          (perpendicular to the shoreline),
+          a process known as <em>backwash</em>.
+              <idx><h>Backwash</h></idx>
+          This zig-zag motion of sand via the swash/backwash is called
+          <em>longshore drift</em>.
+              <idx><h>Longshore Drift</h></idx>
+          Some beaches experience seasonal changes were waves come from a single direction in one season but come from the other direction in the next season while other beaches where waves predominantly come from a single direction will have other sand pile up at one.
+        </p>
+        <p>
+          Calculate how far along the shore one grain of sand moves after a wave breaks on the shore at an angle of
+          <m>60^{\circ}</m> and washes on shore for 10 ft before falling back to the ocean?
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\fill[color={rgb:red,0;green,100;blue,100}] (-1,0) -- (1,0) -- (1,1) -- (-1,1);
+\fill[yellow,opacity=0.75] (-1,0) -- (1,0) -- (1,-1) -- (-1,-1);
+\fill[pattern=dots,opacity=0.1] (-1,0) -- (1,0) -- (1,-1) -- (-1,-1);
+\draw[line width=1pt,blue,decorate,decoration=snake](0,0) -- (1,0.57735026919);
+\draw[line width=1pt,blue,decorate,decoration=snake](-1,0) -- (0.732050807569,1) node[black,midway,above,sloped,yshift=2]{Waves};
+\draw[line width=1pt,blue,decorate,decoration=snake,shorten >= 5pt](-1,0.57735026919) -- (-0.267949192431,1);
+\draw[line width=2pt,-stealth,shorten >=3] (0,0) -- (-60:1) node[midway,sloped,below,xshift=-0.2] {10 ft};
+\draw[line width=2pt,-stealth,shorten >=3] ([shift=(0:0.5)]0,0) -- ([shift=(0:0.5)]-60:1);
+\draw[line width=2pt,-stealth,shorten >=3] ([shift=(0:-0.5)]0,0) -- ([shift=(0:-0.5)]-60:1);
+\draw[line width=2pt,-stealth,shorten >=3] ([shift=(0:-1)]0,0) -- ([shift=(0:-1)]-60:1) node[midway,below,sloped]{swash};
+\draw[line width=2pt, -stealth,dashed,shorten >=2] (0,0) -- (0.5,0) node[midway,below,xshift=4] {\(x\)};
+\draw[line width=2pt, -stealth,dashed,shorten >=2] (0:0.5) -- (0:1);
+\draw[line width=2pt, -stealth,dashed,shorten >=2] (0:-0.5) -- (0:0);
+\draw[line width=2pt, -stealth,dashed,shorten >=2] (0:-1) -- (0:-0.5) node[midway,below]{movement};
+\draw[line width=2pt,-stealth,shorten >=3] (0.5,-0.866025403784) -- (0.5,0);
+\draw[line width=2pt,-stealth,shorten >=3] ([shift=(0:0.5)]-60:1) -- (0:1);
+\draw[line width=2pt,-stealth,shorten >=3] ([shift=(0:-0.5)]-60:1) -- (0:0);
+\draw[line width=2pt,-stealth,shorten >=3] ([shift=(0:-1)]-60:1) -- (0:-0.5) node[midway,below,sloped,rotate=180]{backwash};
+\draw ([shift=(0:0.15)]0,0) arc (0:-60:0.15) node[midway,right,xshift=-4,yshift=-6] {\(60^{\circ}\)};
+\draw (0.4,0) -- (0.4,-0.1) -- (0.5,-0.1);
+\draw[line width=2pt,blue,-stealth,shorten >=3] (-0.5,0.866025403784) -- (-0.375,0.649519052838);
+\draw[line width=2pt,blue,-stealth,shorten >=3] ([shift=(120:1)]210:{sqrt(3)/4}) -- ([shift=(120:0.75)]210:{sqrt(3)/4});
+\draw[line width=2pt,blue,-stealth,shorten >=3] ({-0.25*cos(60)+(5*sqrt(3)/8-1)*sin(30)/cos(30)},1) -- ([shift=(120:0.75)]30:{sqrt(3)/4});
+\draw[line width=2pt,blue,-stealth,shorten >=3] ([shift=(120:0.5)]210:0.433012701892) -- ([shift=(120:0.25)]210:0.433012701892);
+\draw[line width=2pt,blue,-stealth,shorten >=3] (-0.25,0.433012701892) -- (-0.125,0.216506350946);
+\draw[line width=2pt,blue,-stealth,shorten >=3] ([shift=(120:0.5)]30:0.433012701892) -- ([shift=(120:0.25)]30:0.433012701892);
+\draw[line width=2pt,blue,-stealth,shorten >=3] ([shift=(120:0.5)]30:0.866025403784) -- ([shift=(120:0.25)]30:0.866025403784);
+\draw[line width=2pt,blue,-stealth,shorten >=3] (0.92264973081,1) -- (1,0.866025403784);
+\draw[line width=2pt,blue,-stealth,shorten >=3] (30:0.433012701892) -- ([shift=(30:0.433012701892)]-60:0.25);
+\draw[line width=2pt,blue,-stealth,shorten >=3] (30:0.866025403784) -- ([shift=(30:0.866025403784)]-60:0.25);\end{tikzpicture}]]>
+</latex-image>
+        </image>
+        <p>
+          \Question In 2013–2017, H&#333;k&#363;le`a circumnavigated the globe with a voyage mission to
+          <em>m\={a}lama honua</em> -
+          <q>care for Island Earth</q>
+          and all people and places as <em>`ohana</em> (
+          <q>family</q>).
+          The 40,000 nautical mile voyage stopped at more than 150 ports in 18 nations.
+          Throughout this voyage, Earth rotates on an axis that runs between the North Pole and the South Pole.
+          Every point on the Earth experiences this rotation through an angular speed and linear velocity (See <xref ref="sec_angular_velocity_and_linear_speed">Section</xref>).
+          If we assume the Earth completes one rotation in 24 hours and that the Earth is a perfect sphere,
+          with a radius of <m>R=4,000</m> miles,
+          then for each of the following ports of the M\={a}lama Honua voyage and it's given latitude,
+          <m>\phi</m>, calculate the following
+          <ol label="labelroman">
+            <li>
+              <p>
+                <m>r</m>, the distance from the port to the Earth's Axis of Rotation (in miles,
+                rounded to 1 decimal);
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\omega</m>,
+                the angular velocity (in radians per hour, rounded to 4 decimals)
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>v</m>, the linear speed (in miles per hour,
+                rounded to the nearest whole number)
+              </p>
+            </li>
+          </ol>
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw (0,0) circle (1cm);
+\draw[dashed] (0,-1.1) -- (0,1.1) node[right] {Earth's Axis};
+\draw (0,0)--(-1,0) node[left] {Equator};
+\draw[line width=2pt] (0,0) -- (1,0) node[midway,below] {\(R\)};
+\draw[line width=2pt] (0,0) -- (30:1) node[midway,below,yshift=-0.3] {\(R\)};
+\draw[line width=2pt] (0,0.5) -- (30:1) node[midway,above] {\(r\)};
+\draw (0:0.3cm) arc (0:30:0.3cm) node[midway, right,xshift=0.05cm] {\(\phi\)};
+\draw ([shift=(30:1)]180:0.3cm) arc (180:210:0.3cm) node[midway, left,xshift=-0.05cm] {\(\phi\)};
+\filldraw[black] (30:1) circle(1pt) node[right,xshift=4]{Port City};\end{tikzpicture}]]>
+</latex-image>
+        </image>
+        <p>
+          \begin{tasks}(2) \task Hilo, Hawai`i (<m>19.7216^{\circ}</m>N) \task Papeete, Tahiti (<m>17.5325^{\circ}</m>S) \task Apia, Samoa (<m>13.8507^{\circ}</m>S) \task Waitangi, Aotearoa (<m>35.2683^{\circ}</m>S) \task Sydney, Australia (<m>33.8688^{\circ}</m>S) \task Bali, Indonesia (<m>8.4095^{\circ}</m>S) \task Port Louis, Mauritius (<m>20.1609^{\circ}</m>S) \task Cape Town, South Africa (<m>33.9249^{\circ}</m>S) \task Natal, Brazil (<m>5.7842^{\circ}</m>S) \task Necker, British Virgin Islands (<m>18.5268^{\circ}</m>N) \task Yarmouth, Nova Scotia (<m>43.8379^{\circ}</m>N) \task Balboa, Panama (<m>8.9614^{\circ}</m>N) \task Galapagos Islands (<m>0.9538^{\circ}</m>S) \task Rapa Nui (<m>27.1127^{\circ}</m>S) \end{tasks}
+        </p>
+      </statement>
+    </exercise>
+    <p>
+      \begin{Answer}[ref={ex-1.4}] \Question \begin{tasks} \task <m>\sin\theta=\frac{4}{5}</m>, <m>\cos\theta=\frac{3}{5}</m>, <m>\tan\theta=\frac{4}{3}</m>, <m>\csc\theta=\frac{5}{4}</m>, <m>\sec\theta=\frac{5}{3}</m>,
+      <m>\cot\theta=\frac{3}{4}</m> \task <m>\sin\theta=\frac{5\sqrt{74}}{74}</m>,
+      <m>\cos\theta=\frac{7\sqrt{74}}{74}</m>, <m>\tan\theta=\frac{5}{7}</m>,
+      <m>\csc\theta=\frac{\sqrt{74}}{5}</m>,
+      <m>\sec\theta=\frac{\sqrt{74}}{7}</m>,
+      <m>\cot\theta=\frac{7}{5}</m> \task <m>\sin\theta=\frac{3\sqrt{13}}{13}</m>,
+      <m>\cos\theta=\frac{2\sqrt{13}}{13}</m>,
+      <m>\tan\theta=\frac{3}{2}</m>,
+      <m>\csc\theta=\frac{\sqrt{13}}{3}</m>,
+      <m>\sec\theta=\frac{\sqrt{13}}{2}</m>,
+      <m>\cot\theta=\frac{2}{3}</m> \task
+      <m>\sin\theta=\frac{5}{13}</m>,
+      <m>\cos\theta=\frac{12}{13}</m>,
+      <m>\tan\theta=\frac{5}{12}</m>,
+      <m>\csc\theta=\frac{13}{5}</m>,
+      <m>\sec\theta=\frac{13}{12}</m>,
+      <m>\cot\theta=\frac{12}{5}</m> \task <m>\sin\theta=\frac{2\sqrt{5}}{5}</m>,
+      <m>\cos\theta=\frac{\sqrt{5}}{5}</m>, <m>\tan\theta=2</m>,
+      <m>\csc\theta=\frac{\sqrt{5}}{2}</m>,
+      <m>\sec\theta=\sqrt{5}</m>,
+      <m>\cot\theta=\frac{1}{2}</m> \task <m>\sin\theta=\frac{\sqrt{2}}{2}</m>,
+      <m>\cos\theta=\frac{\sqrt{2}}{2}</m>, <m>\tan\theta=1</m>,
+      <m>\csc\theta=\sqrt{2}</m>, <m>\sec\theta=\sqrt{2}</m>,
+      <m>\cot\theta=1</m> \task <m>\sin\theta=\frac{\sqrt{15}}{5}</m>,
+      <m>\cos\theta=\frac{\sqrt{10}}{5}</m>,
+      <m>\tan\theta=\frac{\sqrt{6}}{2}</m>,
+      <m>\csc\theta=\frac{\sqrt{15}}{3}</m>,
+      <m>\sec\theta=\frac{\sqrt{10}}{2}</m>,
+      <m>\cot\theta=\frac{\sqrt{6}}{3}</m> \task <m>\sin\theta=\frac{2\sqrt{13}}{13}</m>,
+      <m>\cos\theta=\frac{3\sqrt{13}}{13}</m>,
+      <m>\tan\theta=\frac{2}{3}</m>,
+      <m>\csc\theta=\frac{\sqrt{13}}{2}</m>,
+      <m>\sec\theta=\frac{\sqrt{13}}{3}</m>,
+      <m>\cot\theta=\frac{3}{2}</m> \end{tasks}
+    </p>
+    <p>
+      \Question \begin{tasks} \task i) <m>\cos\alpha=\sin\beta=\frac{5\sqrt{34}}{34}</m>;
+      ii) <m>\tan\alpha=\cot\beta=\frac{3}{5}</m>;
+      iii) <m>\csc\alpha=\sec\beta=\frac{\sqrt{34}}{3}</m> \task i) <m>\cos\alpha=\sin\beta=\frac{7}{8}</m>;
+      ii) <m>\tan\alpha=\cot\beta=\frac{\sqrt{15}}{7}</m>;
+      iii) <m>\csc\alpha=\sec\beta=\frac{8\sqrt{15}}{15}</m> \end{tasks}
+    </p>
+    <p>
+      \Question \begin{tasks} \task
+      <m>\theta=62^{\circ}</m> \task <m>\theta=16^{\circ}</m> \task
+      <m>\theta=38^{\circ}</m> \task <m>\theta=3^{\circ}</m> \task
+      <m>\theta=\frac{\pi}{8}</m> \task<m>\theta=\frac{\pi}{10}</m> \end{tasks}
+    </p>
+    <p>
+      \Question \begin{tasks} \task <m>x_2=45.9</m> NM \task <m>x_3=66.7</m> NM \task <m>x_4=84.5</m> NM \task <m>x_5=99.8</m> NM \task <m>x_6=110.9</m> NM \task <m>x_7=117.7</m> NM \task <m>x_8=120</m> NM \end{tasks} \Question \begin{tasks} \task <m>y_1=117.7</m> NM \task
+      <m>y_2=110.9</m> NM \task <m>y_3=99.8</m> NM \task
+      <m>y_4=84.5</m> NM \task <m>y_5=66.7</m> NM \task
+      <m>y_6=45.9</m> NM \task <m>y_7=23.4</m> NM \end{tasks}
+    </p>
+    <p>
+      \Question \begin{tasks} \task <m>b=3.50</m>,
+      <m>c=6.10</m>, <m>\alpha=55^{\circ}</m> \task <m>a=28.27</m>,
+      <m>c=30.71</m>, <m>\alpha=67^{\circ}</m> \task <m>a=26.12</m>,
+      <m>c=27.05</m>, <m>\beta=15^{\circ}</m> \task <m>a=2.57</m>,
+      <m>b=3.06</m>,
+      <m>\alpha=40^{\circ}</m> \task <m>a=9.51</m>, <m>b=3.09</m>,
+      <m>\beta=72^{\circ}</m> \task <m>b=7.68</m>, <m>c=9.75</m>,
+      <m>\beta=52^{\circ}</m> \end{tasks}
+    </p>
+    <p>
+      \Question 66.7 NM west; 99.8 NM north
+    </p>
+    <p>
+      \Question 5ft
+    </p>
+    <p>
+      \Question \begin{tasks} \task
+      <m>r=3,765.4</m> miles; <m>\omega=0.2618</m> rad/hr;
+      <m>v=986</m> mi/hr \task <m>r=3,814.2</m> miles;
+      <m>\omega=0.2618</m> rad/hr;
+      <m>v=999</m> mi/hr \task <m>r=3,883.7</m> miles;
+      <m>\omega=0.2618</m> rad/hr;
+      <m>v=1,017</m> mi/hr \task <m>r32,65.8</m> miles;
+      <m>\omega=0.2618</m> rad/hr;
+      <m>v=855</m> mi/hr \task <m>r=3,321.3</m> miles;
+      <m>\omega=0.2618</m> rad/hr;
+      <m>v=870</m> mi/hr \task <m>r=3,957.0</m> miles;
+      <m>\omega=0.2618</m> rad/hr;
+      <m>v=1,036</m> mi/hr \task <m>r=3,754.9</m> miles;
+      <m>\omega=0.2618</m> rad/hr;
+      <m>v=983</m> mi/hr \task <m>r=3,319.1</m> miles;
+      <m>\omega=0.2618</m> rad/hr;
+      <m>v=869</m> mi/hr \task <m>r=3,979.6</m> miles;
+      <m>\omega=0.2618</m> rad/hr;
+      <m>v=1,042</m> mi/hr \task <m>r=3,792.7</m> miles;
+      <m>\omega=0.2618</m> rad/hr;
+      <m>v=993</m> mi/hr \task <m>r=3,792.7</m> miles;
+      <m>\omega=0.2618</m> rad/hr;
+      <m>v=755</m> mi/hr \task <m>r=3,951.2</m> miles;
+      <m>\omega=0.2618</m> rad/hr;
+      <m>v=1,034</m> mi/hr \task <m>r=3,999.5</m> miles;
+      <m>\omega=0.2618</m> rad/hr;
+      <m>v=1,047</m> mi/hr \task <m>r=3,560.5</m> miles;
+      <m>\omega=0.2618</m> rad/hr;
+      <m>v=932</m> mi/hr \end{tasks}
+    </p>
+    <p>
+      \end{Answer}
+    </p>
+  </subsection>
+</section>

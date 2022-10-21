@@ -1,0 +1,312 @@
+<section xml:id="The_Law_of_Cosines">
+  <title>The Law of Cosines</title>
+  <introduction>
+    <p>
+      The Fijian canoe Uto Ni Yalo is sailing from Fiji to Tonga.
+      The navigators know Tonga is 412 NM from Fiji in the House L\={a} Malanai
+      (<m>16.81^{\circ}</m>).
+      After sailing for one day and traveling 120 NM, the navigator determines they have gone off course by 2 houses
+      (<m>22.5^{\circ}</m>).
+      How far are they from Tonga and what is the angle that they will need to turn in order to reach their destination?
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\node[left] at (0,0) {Fiji};
+\draw (0,0) -- (-16.81:4.12) node[midway, above,xshift=5] {412};
+\draw (0,0) -- (-39.31:1.2) node[midway, below,xshift=-8] {120};
+\draw[dashed] (-39.31:1.2) -- (-16.81:4.12) node[right] {Tonga};
+\draw (-16.81:0.5) arc (-16.81:-39.31:0.5) node[midway,right,xshift=6,yshift=-8] {\(22.5^{\circ}\)};
+\draw pic at (-39.31:1.2) {waa-top={waacolor}{230.69}{0.1}};
+\draw[dashed] (-39.31:1.2) -- (-39.31:2);\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      This triangle,
+      where we know two sides and the angle between them,
+      is known as Side-Angle-Side (SAS).
+      Unfortunately,
+      the Law of Sines that we learned in <xref ref="The_Law_of_Sines">Section</xref>
+      only applies to ASA, AAS, and SSA. In this section,
+      we will learn how to solve SAS triangles as well as triangles where all three sides are known,
+      called Side-Side-Side (SSS) triangles.
+    </p>
+  </introduction>
+  <subsection>
+    <title>Law of Cosines</title>
+    <theorem xml:id="core-standards-CCSS_MATH_CONTENT_HSG_SRT_D_10-b">
+      <title>Law of Cosines</title>
+      <statement>
+        <p>
+              <idx><h>Law of Cosines</h></idx>
+          Given a triangle with sides <m>a</m>, <m>b</m>, <m>c</m> and opposite angles <m>A</m>, <m>B</m>, <m>C</m>, respectively,
+          <md>
+            <mrow>a^2\amp =\amp b^2+c^2-2bc\cos A</mrow>
+            <mrow>b^2\amp =\amp a^2+c^2-2ac\cos B</mrow>
+            <mrow>c^2\amp =\amp a^2+b^2-2ab\cos C</mrow>
+          </md>
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw(0,0) -- (8,0) node[midway,below,yshift=-2]{\(c\)};
+\draw(0,0) -- (2,4) node[midway,left,xshift=-2]{\(b\)};
+\draw(2,4) -- (8,0) node[midway,right,xshift=4]{\(a\)};
+\node[below] at (0,0) {\(A\)};
+\node[above] at (2,4) {\(C\)};
+\node[below] at (8,0) {\(B\)};\end{tikzpicture}]]>
+</latex-image>
+        </image>
+        <p>
+          Thus, in any triangle,
+          the square of one side equals the sum of the squares of the other two sides,
+          minus twice their product times the cosine of their included angle.
+        </p>
+      </statement>
+    </theorem>
+    <p>
+      Note: If the triangle is a right triangle,
+      say <m>C=90^{\circ}</m>, then since <m>\cos90^{\circ}=0</m>,
+      the Law of Cosines simplifies into the Pythagorean Theorem:
+      <m>c^2=a^2+b^2</m>.
+    </p>
+    <proof>
+      <p>
+        To prove the first part,
+        we will place a triangle with <m>A</m> at the origin and <m>C</m> on the <m>x</m>-axis,
+        as shown below.
+      </p>
+      <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[->] (-1,0)--(6,0) node[right]{\(x\)};
+\draw[->] (0,-1)--(0,3.5) node[above]{\(y\)};
+\draw[blue,line width=1] (0,0) -- (2.5,0) node[midway,below,yshift=-2] {\(c\)};
+\draw[blue,line width=1] (0,0) -- (5,3) node[midway,above,xshift=-3] {\(b\)};
+\draw[blue,line width=1] (2.5,0) -- (5,3) node[midway,below,xshift=4] {\(a\)};
+\filldraw[black] (5,3) circle (2pt) node[above right] at (5,3) {\(C\)};
+\filldraw[black] (0,0) circle (2pt) node[below left] {\(A(0,0)\)};
+\filldraw[black] (2.5,0) circle (2pt) node[below left] {\(B\)};
+\draw[blue] (0.5,0) arc (0:26.5650511771:0.5);
+\draw[dashed] (5,-0.7) -- (5,3);
+\draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](0,-0.7) -- (5,-0.7) node[black,midway,below,yshift=-10] {\(b\cos A\)};
+\draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](2.5,0) -- (5,0) node[black,midway,below,yshift=-10] {\(b\cos A-c\)};
+\draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](5,0) -- (5,3) node[black,midway,right,xshift=10] {\(b\sin A\)};\end{tikzpicture}]]>
+</latex-image>
+      </image>
+      <p>
+        Using right triangle trigonometry,
+        the coordinate of <m>C</m> can be written as <m>(b\cos A,b\sin A)</m>.
+        Using the Pythagorean Theorem, we get
+        <md>
+          <mrow>a^2\amp =\amp (b\cos A-c)^2+(b\sin A)^2</mrow>
+          <mrow>\amp =\amp b^2\cos^2A-2bc\cos A+c^2+b^2\sin^2A</mrow>
+          <mrow>\amp =\amp b^2(\cos^2A+\sin^2A)+c^2-2bc\cos A</mrow>
+          <mrow>\amp =\amp b^2(1)+c^2-2bc\cos A</mrow>
+          <mrow>\amp =\amp b^2+c^2-2bc\cos A</mrow>
+        </md>
+        where we used the identity <m>\cos^2A+\sin^2=1</m>.
+        The other two parts of the Law of Cosines can be proved using a similar argument.
+      </p>
+    </proof>
+    <example xml:id="core-standards-CCSS_MATH_CONTENT_HSG_SRT_D_11-c">
+      <title>Using Law of Cosines (SAS): Fiji to Tonga</title>
+      <statement>
+        <p>
+          We are now ready to return to our example where Uto Ni Yalo is sailing to Tonga,
+          described in the triangle below.
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\node[left] at (0,0) {\(A\)};
+\draw (0,0) -- (-16.81:4.12) node[midway, above,xshift=15] {\(b=412\)};
+\draw (0,0) -- (-39.31:1.2) node[midway, below,xshift=-15] {\(c=120\)};
+\draw (-39.31:1.2) -- (-16.81:4.12) node[midway,below] {\(a\)};
+\node[right] at (-16.81:4.12) {\(C\)};
+\draw (-16.81:0.5) arc (-16.81:-39.31:0.5) node[midway,right,xshift=6,yshift=-8] {\(22.5^{\circ}\)};
+\node[below left] at (-39.31:1.2) {\(B\)};
+\draw[dashed] (-39.31:1.2) -- (-39.31:2);\end{tikzpicture}]]>
+</latex-image>
+        </image>
+        <p>
+          How far are they from Tonga and what is the angle that they will need to turn in order to reach their destination?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The distance to Tonga can be found using the Law of Cosines
+          <md>
+            <mrow>a^2\amp =\amp b^2+c^2-2bc\cos A</mrow>
+            <mrow>\amp =\amp 412^2+120^2-2\cdot412\cdot120\cos22.5^{\circ}</mrow>
+            <mrow>\amp \approx\amp 92,790.79</mrow>
+          </md>
+        </p>
+        <p>
+          Taking the square root of both sides we get
+          <me>
+            a\approx\sqrt{92,790.79}\approx304.62
+          </me>
+        </p>
+        <p>
+          Thus they are approximately 305 NM from their destination.
+        </p>
+        <p>
+          To determine the angle needed to adjust their course,
+          we will first find <m>B</m> and subtract that from <m>180^{\circ}</m>.
+          We can use either the Law of Sines or the Law of Cosines.
+          If we use the Law of Sines
+          <me>
+            \frac{\sin A}{a}=\frac{\sin B}{b}
+          </me>
+          we know <m>a\approx304.62</m>,
+          <m>b=412</m>, and <m>A=22.5^{\circ}</m>.
+          Notice this is the case SSA for Law of Sines where we get two triangles.
+          Since we already know what the triangle looks like,
+          we want the measure for <m>B</m> that makes it obtuse.
+          However, to avoid this ambiguous case,
+          we can simply use the Law of Cosines
+          <me>
+            b^2=a^2+c^2-2ac\cos B
+          </me>
+        </p>
+        <p>
+          Rearranging we have
+          <me>
+            \cos B=\frac{a^2+c^2-b^2}{2ac}\approx\frac{304.62^2+120^2-412^2}{2\cdot304.62\cdot120}\approx-0.8556
+          </me>
+        </p>
+        <p>
+          So,
+          <me>
+            B\approx\cos^{-1}(-0.8556)\approx148.83^{\circ}
+          </me>
+        </p>
+        <p>
+          Thus the angle Uto Ni Yalo needs to turn to adjust its course is <m>180^{\circ}-148.83^{\circ}=31.17^{\circ}</m> to the left.
+        </p>
+      </solution>
+    </example>
+    <example>
+      <title>Using Law of Cosines (SSS)</title>
+      <statement>
+        <p>
+          If the sides of a triangle are <m>a=4</m>, <m>b=6</m>,
+          and <m>c=3</m>, find the angles.
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[blue,line width=1] (-3,0) -- (0,0) node[midway,below] {\(c=3\)};
+\draw[blue,line width=1] (-3,0) -- (60:5) node[midway,left,xshift=-5] {\(b=7\)};
+\draw[blue,line width=1] (0,0) -- (60:5) node[midway,right,xshift=4] {\(a=5\)};
+\node[blue,above right] at (60:5) {\(C\)};
+\node[blue,below right] at (0,0) {\(B\)};
+\node[blue,below left] at (-3,0) {\(A\)};\end{tikzpicture}]]>
+</latex-image>
+        </image>
+      </statement>
+      <solution>
+        <p>
+          To find <m>A</m>, we begin by using the Law of Cosines:
+          <me>
+            a^2=b^2+c^2-2ab\cos A
+          </me>
+        </p>
+        <p>
+          Isolating the term with angle <m>A</m> we get
+          <me>
+            \cos A=\frac{b^2+c^2-a^2}{2bc}=\frac{7^2+3^2-5^2}{2\cdot7\cdot3}=\frac{33}{42}
+          </me>
+        </p>
+        <p>
+          Taking the inverse cosine we get
+          <me>
+            A=\cos^{-1}\left(\frac{33}{42}\right)\approx38.21^{\circ}
+          </me>
+        </p>
+        <p>
+          To find <m>B</m>, we continue with the Law of Cosines to get:
+          <me>
+            \cos B=\frac{a^2+c^2-b^2}{2ac}=\frac{5^2+3^2-7^2}{2\cdot5\cdot3}=\frac{15}{30}=\frac{1}{2}
+          </me>
+        </p>
+        <p>
+          Taking the inverse cosine we get
+          <me>
+            B=\cos^{-1}\left(\frac{1}{2}\right)=120^{\circ}
+          </me>
+        </p>
+        <p>
+          To find the last angle, <m>C</m>,
+          we can use the fact that the angles in a triangle sum to <m>180^{\circ}</m>:
+          <me>
+            C=180^{\circ}-A-B\approx180^{\circ}-38.21^{\circ}-120^{\circ}=21.79^{\circ}
+          </me>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+  <subsection>
+    <title>Area of an oblique triangle</title>
+    <p>
+      The Greek mathematician, Heron of Alexandria,
+      derived a formula for the area of a triangle when all three sides are given.
+      Although a more modern derivation for this formula involves the Law of Cosines,
+      it is still known as Heron's Formula.
+    </p>
+    <theorem>
+      <title>Heron's Formula</title>
+      <statement>
+        <p>
+              <idx><h>Area</h><h>Triangle</h></idx>
+              <idx><h>Heron's Formula</h></idx>
+          The area
+          <me>
+            \mbox{Area} =\sqrt{s(s-a)(s-b)(s-c)}
+          </me>
+          where <m>s=\frac{1}{2}(a+b+c)</m> is half the perimeter of the triangle,
+          also known as the <term>semiperimeter</term>.
+              <idx><h>semiperimeter</h></idx>
+        </p>
+      </statement>
+    </theorem>
+    <example>
+      <title>Polynesian Triangle</title>
+      <statement>
+        <p>
+          The Polynesian Triangle is an area in the Pacific Ocean consisting of over 1,000 islands.
+          These islands are collectively known as Polynesia.
+          The northern corner of the Polynesian Triangle is made up of the Hawaiian Islands,
+          the southwestern corner is made up of Aotearoa,
+          and the southeastern corner is made up with Rapa Nui.
+          It is believed that the first inhabitants to the islands arrived at Ka Lae, Hawai`i; Hokianga, Aotearoa;
+          and Anakena, Rapa Nui, respectively.
+          The distance between Ka Lae, Hawai`i and Hokianga, Aotearoa is 4,250 miles,
+          the distance between Hokianga, Aotearoa and Anakena, Rapa Nui is 4,500 miles,
+          and the distance between Rapa Nui and Ka Lae, Hawai`i is 4,450 miles.
+          What is the area of the Polynesian Triangle rounded to the nearest square mile?
+        </p>
+        <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\node[above] at (2.5,1.9) {Ka Lae, Hawai`i};
+\node[left] at (-0.5,-3.5) {Hokianga, Aotearoa};
+\node[right] at (7.1,-2.7) {Anakena, Rapa Nui};
+\draw[sloped] (2.5,1.9) -- (-0.5,-3.5) node[midway, above] {\(4,250\)};
+\draw[sloped] (-0.5,-3.5) -- (7.1,-2.7) node[midway, below] {\(4,500\)};
+\draw[sloped] (2.5,1.9) -- (7.1,-2.7) node[midway, above] {\(4,450\)};\end{tikzpicture}]]>
+</latex-image>
+        </image>
+      </statement>
+      <solution>
+        <p>
+          Using Heron's Formula, we begin by calculating the semiperimeter
+          <me>
+            s=\frac{1}{2}(4,250+4,500+4,450)=6,600
+          </me>
+        </p>
+        <p>
+          Then the area created by the Polynesian Triangle is
+          <me>
+            \mbox{Area} =\sqrt{6,600(6,600-4,250)(6,600-4,500)(6,600-4,450)}\approx8,368,253\mbox{mi} ^2
+          </me>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+</section>

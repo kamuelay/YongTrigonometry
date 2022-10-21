@@ -1,0 +1,442 @@
+<section xml:id="Graphs_of_the_Sine_and_Cosine_Functions">
+  <title>Graphs of the Sine and Cosine Functions</title>
+  <introduction>
+    <p>
+      The seasons on Earth are caused by axial tilt.
+      To visual axial tilt,
+      image a pole through the center of Earth and extending through the North and South Pole with Earth spinning around this pole.
+      Each spin is one day.
+      As the Earth revolves around the sun,
+      the North Pole tilts towards the sun and sometimes the South Pole tilts towards the sun,
+      this tilting is call <em>axial tilt</em>.
+          <idx><h>Axial Tilt</h></idx>
+      When the North Pole is closer to the Sun
+      (the South Pole is away from the Sun),
+      the Northern Hemisphere experiences summer
+      (the Southern Hemisphere experiences winter).
+      When the axial tilt is reversed and the North Pole is further from the Sun (South Pole is close to the Sun),
+      the seasons are reversed.
+    </p>
+    <p>
+      Every day as the Earth spins on its axis,
+      the Sun rises from the eastern horizon.
+      However, only twice a year will the sun rise due east,
+      in the house Hikina.
+      One occurrence is during the spring equinox.
+      In the northern hemisphere, as spring turns into summer,
+      the position the sun rises from will slowly move north,
+      until the summer solstice,
+      when the sun will rise from the most northern point
+      (<m>23.44^{\circ}</m> or the house `\=Aina Ko`olau).
+      After this, the position of the rising sun will move south until the fall equinox where the sun will once again rise from due east or Hikina,
+      before continuing its southern movement until the winter solstice when the sun will rise from its southern most position
+      (<m>-23.44^{\circ}</m> or the house `\=Aina Malanai).
+      As winter turns to spring,
+      the sun rise will start to move north until the next spring equinox where the position of the sun rise will once again be due east (Hikina).
+      This process takes one year before it repeats itself year after year.
+      This pattern of the position of the sun rise is a periodic function.
+    </p>
+    <p>
+      The sun's <em>declination</em>
+          <idx><h>Declination</h></idx>
+      is the angle between the equator and a line from the center of Earth to the sun.
+    </p>
+    <p>
+      June 20 December 21 March 20 September 22
+    </p>
+    <p>
+      In <xref ref="Trigonometry">Chapter</xref>
+      we learned about the six trigonometric functions.
+      In this section we will study the graphs of the sine and cosine functions to help us understand their use in modeling physical phenomena.
+      We will study the graphs of the remaining trigonometric functions in <xref ref="Graphs_of_Other_Trigonometric_Functions">Section</xref>.
+    </p>
+  </introduction>
+  <subsection>
+    <title>Periodic Functions</title>
+    <definition>
+      <statement>
+        <p>
+              <idx><h>Period Functions</h></idx>
+          A function <m>f</m> is called <term>periodic</term> if there exists a positive number <m>p</m> such that
+          <me>
+            f(\theta+p)=f(\theta)
+          </me>
+          for every <m>\theta</m>.
+          The smallest number <m>p</m> is called the
+          <term>period</term> of <m>f</m>.
+        </p>
+      </statement>
+    </definition>
+    <p>
+      \begin{mybox}[Periodic Properties]
+          <idx><h>Period Functions</h></idx>
+      <md>
+        <mrow>\sin(\theta+2\pi)\amp =\sin\theta \amp  \cos(\theta+2\pi)\amp =\cos\theta \amp  \tan(\theta+\pi)\amp =\tan\theta</mrow>
+        <mrow>\csc(\theta+2\pi)\amp =\csc\theta \amp  \sec(\theta+2\pi)\amp =\sec\theta \amp  \cot(\theta+\pi)\amp =\cot\theta</mrow>
+      </md>
+    </p>
+    <p>
+      \end{mybox}
+    </p>
+    <p>
+      Recall that if <m>\theta</m> is an angle with radian measure <m>t</m>,
+      then the <em>six trigonometric functions</em> become
+      <md>
+        <mrow>\sin \theta\amp =y \amp  \cos \theta\amp =x \amp  \tan \theta\amp =\frac{y}{x}  (x\neq0)</mrow>
+        <mrow>\csc \theta\amp =\frac{1}{y}  (y\neq0) \amp  \sec \theta\amp =\frac{1}{x}  (x\neq0) \amp  \cot \theta\amp =\frac{x}{y}  (y\neq0)</mrow>
+      </md>
+    </p>
+    <image>
+<latex-image>
+<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+\draw (0,0) circle (1cm);
+\draw[line width=2pt] (0,0) -- (45:1cm) node[midway,above,yshift=0.2cm] {1};
+\draw[line width=2pt] (0,0) -- (0.707106781187,0) -- (0.707106781187,0.707106781187);
+\filldraw[black] (45:1cm) circle(1pt) node[above right] {\(P(x,y)\)};
+\draw ([shift=(0:0.25cm)]0,0) arc (0:45:0.25cm) node[midway,right,xshift=0.1cm,yshift=0.1cm] {\(\theta\)};\end{tikzpicture}]]>
+</latex-image>
+    </image>
+    <p>
+      Division is not required for the trigonometric functions <m>\sin\theta</m> and
+      <m>\cos\theta</m> and so we do not need to worry about dividing by zero,
+      thus <m>\theta</m> can be any angle.
+      In other words, the domains for <m>\sin\theta</m> and
+      <m>\cos\theta</m> consist of the set of all real numbers.
+    </p>
+    <p>
+      However, looking at <m>\tan\theta</m> and <m>\sec\theta</m>,
+      you may notice there is division by <m>x</m>.
+      We run into problems when <m>x=0</m> because it would result in dividing by 0.
+      These are the points when the terminal side of <m>\theta</m> lies on the <m>y</m>-axis.
+      On the unit circle, the points are <m>(0,1)</m> and <m>(0,-1)</m>.
+      These points correspond to the angles <m>\frac{\pi}{2}</m> and
+      <m>\frac{3\pi}{2}</m> (<m>90^{\circ}</m> and <m>270^{\circ}</m>),
+      as well as all their coterminal angles:
+      <m>\ldots, -\frac{3\pi}{2}, \frac{-\pi}{2}, \frac{\pi}{2}, \frac{3\pi}{2}, \frac{5\pi}{2}, \ldots</m>
+      (<m>\ldots, -270^{\circ}, -90^{\circ}, 90^{\circ}, 270^{\circ}, 450^{\circ}, \ldots</m>).
+      In general, any angle of the form
+      <m>\frac{\pi}{2}+n\pi</m> (<m>90^{\circ}+180^{\circ}\cdot n</m>) for some integer <m>n</m> should be excluded from the domain.
+    </p>
+    <p>
+      Similarly, we run into problems for <m>\csc\theta</m> and
+      <m>\cot\theta</m> when <m>y=0</m> since we would divide by 0.
+      This corresponds to when the terminal side of <m>\theta</m> lies on the <m>x</m>-axis.
+      These points on the unit circle are <m>(1,0)</m> and <m>(-1,0)</m> and have corresponding angles <m>0</m> and <m>\pi</m>,
+      as well as all their coterminal angles:
+      <m>\ldots, -2\pi, -\pi, 0, \pi, 2\pi, \ldots</m>
+      (<m>\ldots, -360^{\circ}, -180^{\circ}, 0^{\circ}, 180^{\circ}, 360^{\circ}, \ldots</m>).
+      In general, any angle of the form
+      <m>\pi\cdot n</m> (<m>180^{\circ}\cdot n</m>) for some integer <m>n</m> should be excluded from the domain.
+    </p>
+    <p>
+      We summarize the domains of the trigonometric functions in <xref ref="tab_trig-domain">Table</xref>.
+    </p>
+    <table xml:id="tab_trig-domain">
+      <title>Domains of the trigonometric functions</title>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Function</cell>
+          <cell>Domain</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\sin\theta</m></cell>
+          <cell>all real numbers</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\cos\theta</m></cell>
+          <cell>all real numbers</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\tan\theta</m></cell>
+          <cell>all real numbers except <m>\frac{\pi}{2}+n\pi</m> (<m>90^{\circ}+180^{\circ}\cdot n</m>) for some integer <m>n</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\csc\theta</m></cell>
+          <cell>all real numbers except <m>\pi\cdot n</m> (<m>180^{\circ}\cdot n</m>) for some integer <m>n</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\sec\theta</m></cell>
+          <cell>all real numbers except <m>\frac{\pi}{2}+n\pi</m> (<m>90^{\circ}+180^{\circ}\cdot n</m>) for some integer <m>n</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\cot\theta</m></cell>
+          <cell>all real numbers except (<m>180^{\circ}\cdot n</m>) <m>\pi\cdot n</m> for some integer <m>n</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+    </table>
+    <p>
+      Next we look at the range for each of the trigonometric functions.
+      If <m>P(x,y)</m> is a point on the unit circle,
+      then we have <m>-1\leq x\leq1</m> and <m>-1\leq y\le1</m>.
+      Since <m>\sin\theta=y</m> and <m>\cos\theta=x</m>,
+      it follows that <m>-1\leq\sin\theta\leq1</m> and <m>-1\leq\cos\theta\leq1</m>.
+    </p>
+    <p>
+      **Look at Sullivan p384 for csc sec, cot/tan
+    </p>
+    <table xml:id="tab_trig-range">
+      <title>Ranges of the trigonometric functions</title>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Function</cell>
+          <cell>Range</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\sin\theta</m></cell>
+          <cell>all real numbers from -1 to 1</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\cos\theta</m></cell>
+          <cell>all real numbers from -1 to 1</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\tan\theta</m></cell>
+          <cell>all real numbers</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\csc\theta</m></cell>
+          <cell>all real numbers greater than or equal to 1 or less than or equal to -1</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\sec\theta</m></cell>
+          <cell>all real numbers greater than or equal to 1 or less than or equal to -1</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\cot\theta</m></cell>
+          <cell>all real numbers</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+    </table>
+    <p>
+      Recall that <m>\cos(0)=0</m> but so do <m>\cos(0+2\pi)=\cos2\pi=0</m>.
+      In fact, if we add or subtract any multiple of <m>2\pi</m> to our angle,
+      we will obtain the same value for cosine.
+      Functions such as these are known as
+      <em>periodic functions</em>
+    </p>
+    <definition>
+      <title>Periodic Function</title>
+      <statement>
+        <p>
+          A function <m>f</m> is said to be <term>periodic</term>
+              <idx><h>periodic</h></idx>
+          if there exists a number <m>p>0</m> such that
+          <me>
+            f(\theta+p)=f(x)
+          </me>
+          for all <m>\theta</m> in the domain of <m>f</m>.
+          The smallest value of the number <m>p</m> is called the <term>period</term>
+              <idx><h>period</h></idx>
+          of <m>f</m>.
+        </p>
+      </statement>
+    </definition>
+    <p>
+      \begin{mybox}[Periodic Properties] The six trigonometric functions are periodic functions.
+      <md>
+        <mrow>\sin(\theta+2\pi)\amp =\sin\theta \amp  \cos(\theta+2\pi)\amp =\cos\theta \amp  \tan(\theta+\pi)\amp =\tan\theta</mrow>
+        <mrow>\csc(\theta+2\pi)\amp =\csc\theta \amp  \sec(\theta+2\pi)\amp =\sec\theta \amp  \cot(\theta+\pi)\amp =\cot\theta</mrow>
+      </md>
+    </p>
+    <p>
+      \end{mybox}
+    </p>
+    <example>
+      <statement>
+        <p>
+          uncomment for links
+        </p>
+        <figure xml:id="fig_sunrise">
+          <caption>Sunrise summer, winter solstice and equinox</caption>
+          <image width="50%" source="Pictures/sunrise-angles.jpg"/>
+        </figure>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Position of rising run throughout the year. 66 degreees ENE "<url href="\1"/>
+        </p>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Talk about moon phases and tie that into sine graphs.
+          Try to fit the curve and come up with an equation.
+          Also discuss how fishing/farming is tied to moon phases.
+        </p>
+        <p>
+          Introduce the different moon phases in Hawaiian.
+        </p>
+        <p>
+          Moon phases would describe the different times for planting/fishing.
+        </p>
+        <p>
+          Phases of the moon are comparable to the phases of the sine function.
+          What are other events in nature that go through similar phases? (See Stewart p460, 64) Graphs of sine and cosine:
+          like that of waves
+        </p>
+        <p>
+          "<url href="\1"/>
+        </p>
+        <p>
+          "<url href="\1"/>
+        </p>
+        <p>
+          "<url href="\1"/>
+        </p>
+        <p>
+          Also talk about other polynesian moons such as Maori
+        </p>
+        <p>
+          Example of moon phases and the graph of sine:
+        </p>
+        <p>
+          See example from Jay Abramson's book, p621.
+          Fitting sine curve to data.
+        </p>
+        <p>
+          This can be a project or an introduction to the section.
+        </p>
+        <p>
+          Perhaps the introduction of moon cycles,
+          plot the moons to obtain the graph and then have the project as later.
+        </p>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Exercise for students: Tide charts:
+        </p>
+        <p>
+          uncomment for url Use Desmos.
+        </p>
+        <p>
+          There's also a tide worksheet example for NCTM.
+        </p>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Track the position of the rising and setting of the sun and the moon.
+          Data of Boston from "<url href="\1"/> This could be turned into a trig function.
+          Can get data from "<url href="\1"/> but it would be better if from NOAA.
+        </p>
+      </statement>
+    </example>
+    <exercise>
+      <statement>
+        <p>
+          \Question Find the equation for the time that Makalii (Pleiades) emerges over the horizon over time throughout the year.
+          Talk about the importance of this and how when it rises at sunset,
+          it coincides with the start of Makahiki season.
+          Then using an example that we already worked with the sun and the time the sun sets over the year,
+          find the intersection of these two equations to determine when Makahiki season will begin.
+        </p>
+        <p>
+          ``The rising of Makali`i
+          (the constellation Pleiades)
+          at sunset marks the beginning of the Hawaiian new year,
+          known as Makahiki.
+          Makahiki usally begins mid-November and ends in late January or February,
+          aligning with the rainy season.
+          It is a time set aside for tribute, harvest, sport,
+          and play. " "<url href="\1"/>
+        </p>
+        <p>
+          \Question Problem 55, p540 in Abramson's book: Standing on the shore of a lake,
+          a fisherman sights a boat far in the distance to his left.
+          Let x, measured in radians,
+          be the angle formed by the line of sight to the ship and a line due north from his position.
+          Assume due north is 0 and x is measured negative to the left and positive to the right.
+          (See Figure 19.)
+          The boat travels from due west to due east and,
+          ignoring the curvature of the Earth,
+          the distance d(x), in kilometers,
+          from the fisherman to the boat is given by the function d(x) = 1.5sec(x).
+        </p>
+        <p>
+          a. What is a reasonable domain for d(x)? b.
+          Graph d(x) on this domain. c.
+          Find and discuss the meaning of any vertical asymptotes on the graph of d(x). d.
+          Calculate and interpret <mdash/> . Round to the e.
+          Calculate and interpret <mdash/>.
+          Round to the second decimal place. f.
+          What is the minimum distance between the fisherman and the boat?
+          When does this occur?
+        </p>
+        <p>
+          \Question
+        </p>
+      </statement>
+    </exercise>
+  </subsection>
+</section>

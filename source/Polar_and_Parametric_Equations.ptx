@@ -1,0 +1,7 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="Polar_and_Parametric_Equations">
+  <title>Polar and Parametric Equations</title>
+  <xi:include  href="Polar_Coordinates.ptx"/>
+  <xi:include  href="Polar_Equations_and_Graphs.ptx"/>
+  <xi:include  href="Complex_Numbers__De_Moivre_s_Theorem.ptx"/>
+  <xi:include  href="Parametric_Curves_and_Parametric_Equations.ptx"/>
+</chapter>
