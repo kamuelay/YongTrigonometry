@@ -594,19 +594,27 @@
                   </p>
                 </li>
               </ol>
+              <p>
               Quadrant I
+              </p>
               <image>
                  <latex-image> <![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (60:1cm) circle(1pt); \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (60:1); \draw[->] (0:0.4cm) arc (0:60:0.4cm) node[midway, right,xshift=0.05cm] {\(\frac{\pi}{6}\)};\end{tikzpicture}]]> </latex-image>
               </image>
+              <p>
               Quadrant II
+              </p>
               <image>
                  <latex-image> <![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (150:1cm) circle(1pt); \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (150:1); \draw[->] (0:0.4cm) arc (0:150:0.4cm) node[midway, right,xshift=0.2cm] {\(\frac{5\pi}{6}\)}; \draw[->] (180:0.4cm) arc (180:150:0.4cm) node[midway, left,xshift=-0.25cm,yshift=0.1cm] {\(\frac{\pi}{6}\)};\end{tikzpicture}]]> </latex-image>
               </image>
+              <p>
               Quadrant III
+              </p>
               <image>
                  <latex-image> <![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (210:1cm) circle(1pt); \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (210:1); \draw[->] (0:0.3cm) arc (0:210:0.3cm) node[midway, left,xshift=-0.1cm] {\(\frac{7\pi}{6}\)}; \draw[->] (180:0.6cm) arc (180:210:0.6cm) node[midway, left,xshift=-0.1cm,yshift=-0.1cm] {\(\frac{\pi}{6}\)};\end{tikzpicture}]]> </latex-image>
               </image>
+              <p>
               Quadrant IV
+              </p>
               <image>
                  <latex-image> <![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (330:1cm) circle(1pt); \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (330:1); \draw[->] (0:0.3cm) arc (0:330:0.3cm) node[midway, left,xshift=0.1cm,yshift=0.2cm] {\(\frac{11\pi}{6}\)}; \draw[->] (360:0.6cm) arc (360:330:0.6cm) node[midway, right,xshift=0.1cm,yshift=-0.1cm] {\(\frac{\pi}{6}\)};\end{tikzpicture}]]> </latex-image>
               </image>
@@ -629,19 +637,27 @@
                   </p>
                 </li>
               </ol>
+              <p>
               Quadrant I
+              </p>
               <image>
                  <latex-image> <![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (45:1cm) circle(1pt); \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (45:1); \draw[->] (0:0.4cm) arc (0:45:0.4cm) node[midway, right,xshift=0.05cm] {\(45^{\circ}\)};\end{tikzpicture}]]> </latex-image>
               </image>
+              <p>
               Quadrant II
+              </p>
               <image>
                  <latex-image> <![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (135:1cm) circle(1pt); \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (135:1); \draw[->] (0:0.4cm) arc (0:135:0.4cm) node[midway, right,xshift=0.1cm] {\(135^{\circ}\)}; \draw[->] (180:0.4cm) arc (180:135:0.4cm) node[midway, left,xshift=-0.0cm,yshift=0.1cm] {\(45^{\circ}\)};\end{tikzpicture}]]> </latex-image>
               </image>
+              <p>
               Quadrant III
+              </p>
               <image>
                  <latex-image> <![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (225:1cm) circle(1pt); \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (225:1); \draw[->] (0:0.3cm) arc (0:225:0.3cm) node[midway, left,xshift=-0.0cm] {\(225^{\circ}\)}; \draw[->] (180:0.5cm) arc (180:225:0.5cm) node[midway, left,xshift=0.0cm,yshift=-0.0cm] {\(45^{\circ}\)};\end{tikzpicture}]]> </latex-image>
               </image>
+              <p>
               Quadrant IV
+              </p>
               <image>
                  <latex-image> <![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (315:1cm) circle(1pt); \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (315:1); \draw[->] (0:0.3cm) arc (0:315:0.3cm) node[midway, left,xshift=0.0cm,yshift=0.0cm] {\(315^{\circ}\)}; \draw[->] (360:0.5cm) arc (360:315:0.5cm) node[midway, right,xshift=0.05cm,yshift=-0.0cm] {\(45^{\circ}\)};\end{tikzpicture}]]> </latex-image>
               </image>

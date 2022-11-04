@@ -882,9 +882,9 @@
           what is the area of the sector that cannot be sailed?
           Round your answer to the nearest square mile.
         </p>
-        <figure xml:id="fig_Sailing-upwind">
+<!--
+        <figure xml:id="fig_sailing-upwind">
           <caption>Voyaging canoes cannot sail within <m>67^{\circ}</m> into the direction of the wind.</caption>
-          <image>
 <latex-image>
 <![CDATA[\begin{tikzpicture}\draw (0,0) circle (1cm);
 \draw[->] (0,0) -- (157:1.2cm);
@@ -912,6 +912,23 @@
 </latex-image>
           </image>
         </figure>
+-->
+<!--
+    <image xml:id="fig-hoe-uli">
+<latex-image>
+<![CDATA[
+\begin{tikzpicture}
+\draw pic {waa-single-side={waacolor}{0}{1}};
+\draw [color=waacolor] (-3.876609754200976,0.19897036596795284) -- (-4.431283335105596,0.2303260794507818) -- (-4.898394752926766,0.1524741764805878) -- (-5.040559097481035,-0.0946209938161149) -- (-4.826183093167583,-0.28733251913671576) -- (-4.373740624214583,-0.17924262747936925) -- (-3.85247136084893,0.09154660024304466) -- (-0.73043162509275,0.7961615849190451) -- (-0.7741285435525864,0.9054038810686352) -- cycle;
+\fill[color=brown,fill=brown,fill opacity=0.4] (-3.876609754200976,0.19897036596795284) -- (-4.431283335105596,0.2303260794507818) -- (-4.898394752926766,0.1524741764805878) -- (-5.040559097481035,-0.0946209938161149) -- (-4.826183093167583,-0.28733251913671576) -- (-4.373740624214583,-0.17924262747936925) -- (-3.85247136084893,0.09154660024304466) -- (-0.73043162509275,0.7961615849190451) -- (-0.7741285435525864,0.9054038810686352) -- cycle;
+\draw[->] ([shift=(131.4:1.13)]0.15,-0.3) arc (-60:120:0.3cm);
+\end{tikzpicture}
+]]>
+</latex-image>
+    </image>
+    -->
+
+
       </statement>
       <solution>
         <p>

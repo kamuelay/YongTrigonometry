@@ -1,7 +1,10 @@
 <section xml:id="Hawaiian_Star_Compass">
   <title>Hawaiian Star Compass</title>
   <p>
-    Pacific Islanders have been wayfinding across long distances in the Pacific long before the magnetic compasses or other instruments were introduced.
+Hawaii
+&#699
+
+    This is a test. Pacific Islanders have been wayfinding across long distances in the Pacific long before the magnetic compasses or other instruments were introduced.
     Navigators relied on observations of the stars, sun, ocean, winds,
     and other signs from nature to determine their position.
     Through time,
@@ -142,6 +145,7 @@
       <row>
         <cell>Star Compass</cell>
         <cell>32 Point Compass</cell>
+        <cell> </cell>
         <cell>Star Compass</cell>
         <cell>32 Point Compass</cell>
       </row>
@@ -236,7 +240,7 @@
         <cell>South by West</cell>
       </row>
       <row>
-        <cell>`\=Akau</cell>
+        <cell></cell>
         <cell>N</cell>
         <cell>North</cell>
         <cell>Hema</cell>
@@ -364,7 +368,7 @@
   </p>
   <figure xml:id="fig_celestial-sphere2">
     <caption>Celestial Sphere. (image from PVS)</caption>
-    <image width="40%" source="Pictures/celestial_sphere.jpg"/>
+    <image width="40%" source="celestial_sphere.jpg"/>
   </figure>
   <p>
     The star compass is also used to determine direction based on wind and ocean swells.
@@ -388,26 +392,89 @@
     many cultures across the Pacific use a <em>wind compass</em>.
     Similar to the star compass, the wind compass is also a mental construct.
   </p>
-  <exercise xml:id="ex-1_1">
+  <exercises xml:id="hawaiian-star-compass-exercises">
+  <exercise>
     <statement>
       <p>
-        \Question The Hawaiian Star Compass was based on the Micronesian Star Compass,
+        Who developed the Hawaiian Star Compass?
+      </p>
+    </statement>
+    <answer>
+      <p>
+        Nainoa Thompson
+      </p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        The Hawaiian Star Compass was based on the Micronesian Star Compass,
         known as the <em>paafu</em>.
         Who shared the paafu with the Hawaiians?
       </p>
+    </statement>
+    <answer>
       <p>
-        \Question According to the Hawaiian Star Compass,
-        what is the name for \begin{tasks}(4) \task North \task East \task South \task West \end{tasks}
+        Mau Piailug or Papa Mau
       </p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
       <p>
-        \Question What is the Hawaiian name for winds in the \begin{tasks}(2) \task Northeast quadrant \task Southeast quadrant \task Southwest quadrant \task Northwest quadrant \end{tasks}
+        According to the Hawaiian Star Compass,
+        what is the name for
       </p>
+      <ol>
+        <li>
+          North
+        </li>
+        <li>
+          East
+        </li>
+        <li>
+          South
+        </li>
+        <li>
+          West
+        </li>
+      </ol>
+    </statement>
+    <answer>
       <p>
-        \Question For each direction,
+        \begin{tasks}(2) \task `\=Akau \task Hikina \task Hema \task Komohana \end{tasks} 
+      </p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        What is the Hawaiian name for winds in the \begin{tasks}(2) \task Northeast quadrant \task Southeast quadrant \task Southwest quadrant \task Northwest quadrant \end{tasks}
+      </p>
+    </statement>
+    <answer>
+      <p>
+        \begin{tasks}(2) \task Ko`olau \task Malanai \task Kona \task Ho`olua \end{tasks} 
+      </p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        For each direction,
         identify the Hawaiian names of the corresponding house and quadrant in the Hawaiian Star Compass \begin{tasks}(3) \task Northwest by North \task East-northeast \task North-northwest \task Southeast \task South by West \task East by South \task Southwest by West \task Northeast by North \task South-southeast \end{tasks}
       </p>
+    </statement>
+    <answer>
       <p>
-        \Question The winter solstice in the southern hemisphere,
+        \begin{tasks} \task N\={a}lani Ho`olua \task `\=Aina Ko`olau \task N\={a} Leo Ho`olua \task Manu Malanai \task Haka Kona \task L\={a} Malanai \task Noio Kona \task N\={a}lani Ko`olau \task N\={a} Leo Malanai \end{tasks} 
+      </p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        The winter solstice in the southern hemisphere,
         which occurs on June 22,
         is when the sun is at its lowest elevation in the sky,
         resulting in the shortest daylight of the year.
@@ -415,30 +482,124 @@
         the sun rises from its northernmost position `\=Aina Ko`olau.
         What house does the sun set in the winter solstice in the southern hemisphere?
       </p>
+    </statement>
+    <answer>
       <p>
-        \Question The winter solstice in the northern hemisphere occurs on December 22 when the sun rises from its southernmost position `\=Aina Malanai.
+        `\=Aina Ho`olua
+      </p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        The winter solstice in the northern hemisphere occurs on December 22 when the sun rises from its southernmost position `\=Aina Malanai.
         What house does the sun set in the winter solstice in the northern hemisphere?
       </p>
+    </statement>
+    <answer>
       <p>
-        \Question Wind is coming from N\={a} Leo Kona.
+        `\=Aina Kona 
+      </p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Wind is coming from N\={a} Leo Kona.
         In what direction is the wind blowing towards?
       </p>
+    </statement>
+    <answer>
       <p>
-        \Question Current is coming from Noio Ho`olua.
+        N\={a} Leo Ko`olau 
+      </p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Current is coming from Noio Ho`olua.
         In what direction is the current heading towards?
       </p>
     </statement>
+    <answer>
+      <p>
+        Noio Malanai
+      </p>
+    </answer>
   </exercise>
-  <p>
-    \setboolean{firstanswerofthechapter}{true}
-  </p>
-  <p>
-    \begin{Answer}[ref={ex-1.1}] \Question Nainoa Thompson \Question Mau Piailug or Papa Mau \Question \begin{tasks}(2) \task `\=Akau \task Hikina \task Hema \task Komohana \end{tasks} \Question \begin{tasks}(2) \task Ko`olau \task Malanai \task Kona \task Ho`olua \end{tasks} \Question \begin{tasks} \task N\={a}lani Ho`olua \task `\=Aina Ko`olau \task N\={a} Leo Ho`olua \task Manu Malanai \task Haka Kona \task L\={a} Malanai \task Noio Kona \task N\={a}lani Ko`olau \task N\={a} Leo Malanai \end{tasks} \Question `\=Aina Ho`olua \Question `\=Aina Kona \Question N\={a} Leo Ko`olau \Question Noio Malanai
-  </p>
-  <p>
-    \end{Answer}
-  </p>
-  <p>
-    \setboolean{firstanswerofthechapter}{false}
-  </p>
+
+  <exercisegroup>
+
+    <introduction>
+      <p>
+        Here's where you put the common instructions.
+      </p>
+    </introduction>
+
+    <exercise>
+      <statement>
+        <p>
+          First exercise.
+          <idx><h sortby="statement"><tag>statement</tag></h><h sortby="of an exercise">of an <tag>exercise</tag></h></idx>
+          <idx><h sortby="exercise"><tag>exercise</tag></h><h sortby="statement"><tag>statement</tag></h></idx>
+          You can add all the usual bells and whistles after,
+          but we'll keep it short here.
+          (The <tag>statement</tag> may be omitted if none of
+          <tag>hint</tag>, <tag>answer</tag>, or <tag>solution</tag>
+          are present as a child of the <tag>exercise</tag>.)
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Second exercise.
+        </p>
+      </statement>
+      <hint>
+        <p>
+          The <tag>statement</tag> for this exercise is necessary because we
+          have included at least one of
+          <tag>hint</tag>, <tag>answer</tag>, or <tag>solution</tag>
+          (namely, <tag>hint</tag>).
+        </p>
+      </hint>
+    </exercise>
+
+    <exercise>
+      <p>
+        Third exercise.
+        (No <tag>statement</tag> necessary here because no
+        <tag>hint</tag>, <tag>answer</tag>, or <tag>solution</tag>.)
+      </p>
+    </exercise>
+
+  </exercisegroup>
+
+  <exercise>
+    <p>
+      This <tag>exercise</tag> is not inside the <tag>exercisegroup</tag>.
+    </p>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Is this an exercise?
+      </p>
+    </statement>
+    <answer>
+      <p>
+        Yes.
+      </p>
+    </answer>
+    <solution>
+      <p>
+        It is, but not a very good one.
+      </p>
+    </solution>
+  </exercise>
+</exercises>
+  
 </section>
