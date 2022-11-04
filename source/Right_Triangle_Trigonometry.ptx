@@ -16,14 +16,14 @@
     <p>
       During a voyage, a navigator uses a
       <em>reference course</em>
-          <idx><h>Reference Course</h></idx>
+          <idx><h>reference course</h></idx>
       to keep track of their position.
       This reference course is a line that runs between the starting point and the destination.
       If the wa<sq>a (canoe) encounters winds that push it from its intended course,
       the navigator can then mentally plot their position in relation to the reference course.
       To ensure they don</sq>t miss their destination,
       navigators must keep track of how far they <em>deviate</em>
-          <idx><h>Deviation</h></idx>
+          <idx><h>deviation</h></idx>
       from the intended course.
       They can do this by first measuring the angle of deviation from the intended reference course
       (in units of houses)
@@ -68,7 +68,7 @@
     <p>
       Based on the definition of the six trigonometric functions,
       we have the following trigonometric identities. \begin{mybox}[Reciprocal Identities]
-          <idx><h>Reciprocal Identities</h></idx>
+          <idx><h>reciprocal identities</h></idx>
       <md>
         <mrow>\sin\theta\amp =\dfrac{1}{\csc\theta} \amp  \cos\theta\amp =\dfrac{1}{\sec\theta} \amp  \tan\theta\amp =\dfrac{1}{\cot\theta}</mrow>
         <mrow>\csc\theta\amp =\dfrac{1}{\sin\theta} \amp  \sec\theta\amp =\dfrac{1}{\cos\theta} \amp  \cot\theta\amp =\dfrac{1}{\tan\theta}</mrow>
@@ -79,7 +79,7 @@
     </p>
     <p>
       \begin{mybox}[Quotient Identities]
-          <idx><h>Quotient Identities</h></idx>
+          <idx><h>quotient identities</h></idx>
       <md>
         <mrow>\tan\theta \amp =\dfrac{\sin\theta}{\cos\theta} \amp  \cot\theta\amp =\dfrac{\cos\theta}{\sin\theta}</mrow>
       </md>
@@ -297,7 +297,7 @@
   <subsection xml:id="core-standars-CCSS_MATH_CONTENT_HSG_SRT_C_7">
     <title>Cofunctions</title>
     <p>
-          <idx><h>Cofunctions</h></idx>
+          <idx><h>cofunctions</h></idx>
       You may recognize the symmetry of <m>\sin\theta</m> and <m>\cos\theta</m> if reverse order of the values of sine and cosine from <m>90^{\circ}</m> to <m>0^{\circ}</m>.
       This symmetry gives us <m>\sin0^{\circ}=\cos90^{\circ}</m>,
       <m>\sin30^{\circ}=\cos60^{\circ}</m>,
@@ -313,7 +313,7 @@
       the two remaining angles will sum to
       <m>90^{\circ}</m> or <m>\frac{\pi}{2}</m> radians,
       meaning they are <em>complementary angles</em>.
-          <idx><h>Complementary Angles</h></idx>
+          <idx><h>complementary angles</h></idx>
     </p>
     <figure>
       \vspace{-0.5cm}
@@ -348,7 +348,7 @@
     </p>
     <p>
       } Sine and cosine are called <term>cofunctions</term>
-          <idx><h>Cofunctions</h></idx>
+          <idx><h>cofunctions</h></idx>
       because of this relationship between these functions and their complementary angles.
       We can obtain similar relationships for all trigonometric functions:
       <md>
@@ -365,7 +365,7 @@
     </p>
     <p>
       \begin{mybox}[Cofunction Identities]
-          <idx><h>Cofunctions Identities</h></idx>
+          <idx><h>cofunctions identities</h></idx>
       The cofunction identities in degrees are
       <md>
         <mrow>\sin\theta\amp =\cos(90^{\circ}-\theta) \amp  \cos\theta\amp =\sin(90^{\circ}-\theta) \amp  \tan\theta\amp =\cot(90^{\circ}-\theta)</mrow>
@@ -722,9 +722,9 @@
         <p>
           We are now ready to calculate the deviation example proposed at the start of this section.
           In an average day of sailing,
-          a wa`a sails for 120 nautical miles (NM).
+          a wa&#699;a sails for 120 nautical miles (NM).
           If Hikianalia is supposed to sail in the direction of Hikina (East),
-          but currents have deviated her course by one house so she actually sailed toward the house L\={a}, how far off the course has H&#333;k&#363;le`a deviated?
+          but currents have deviated her course by one house so she actually sailed toward the house L&#257;, how far off the course has H&#333;k&#363;le&#699;a deviated?
         </p>
         <image>
 <latex-image>
@@ -743,7 +743,7 @@
         <p>
           From the Star Compass
           (<xref ref="fig_star-compass">Figure</xref>),
-          the house L\={a} is one house (<m>11.25^{\circ}</m>) from Hikina.
+          the house L&#257; is one house (<m>11.25^{\circ}</m>) from Hikina.
           If we let <m>y</m> denote the distance deviated from the reference course,
           our right triangle becomes:
         </p>
@@ -976,8 +976,8 @@ node[midway,right,xshift=0.1cm] {\(y\)};
         </p>
         <p>
           \Question In <xref ref="ex-deviation">Example</xref>
-          we calculated when a wa`a sails for one day (120 nautical miles) and deviates from its course by 1 House,
-          the wa`a is <m>23.4</m> NM from its reference course.
+          we calculated when a wa&#699;a sails for one day (120 nautical miles) and deviates from its course by 1 House,
+          the wa&#699;a is <m>23.4</m> NM from its reference course.
           Calculate the deviation, <m>x</m>,
           for the remaining 7 angles.
           Round your answer to the nearest tenth of a nautical mile.
@@ -1024,8 +1024,8 @@ node[pos=0.5,above] {\(x_1\)};
         </p>
         <p>
           \Question In <xref ref="ques-deviation">Question</xref>
-          we calculated the deviation of wa`a after sailing for one day (120 nautical miles).
-          Calculate how far along the reference course (north) the wa`a has traveled for each deviation,
+          we calculated the deviation of wa&#699;a after sailing for one day (120 nautical miles).
+          Calculate how far along the reference course (north) the wa&#699;a has traveled for each deviation,
           <m>y</m>.
           Round your answer to the nearest tenth of a nautical mile.
           Note that one house is <m>11.25^{\circ}</m>
@@ -1100,9 +1100,9 @@ node[pos=0.8,right] {\(y_1\)};
           Find <m>b</m>, <m>c</m>, and <m>\beta</m> \end{tasks}
         </p>
         <p>
-          \Question A wa`a sails in the direction of the house N\={a}lani Ho`olua for one day (120 nautical miles).
-          How many nautical miles has the wa`a traveled north?
-          How many miles has the wa`a traveled west?
+          \Question A wa&#699;a sails in the direction of the house N&#257;lani Ho&#699;olua for one day (120 nautical miles).
+          How many nautical miles has the wa&#699;a traveled north?
+          How many miles has the wa&#699;a traveled west?
           To calculate the angle <m>\theta</m>,
           refer to the Star Compass on <xref ref="fig_star-compass">Figure</xref>
           on <xref ref="fig_star-compass">page</xref>
@@ -1125,15 +1125,15 @@ node[pos=0.8,right] {\(y_1\)};
           In general, waves aren't perpendicular to the shore,
           instead they come at an angle.
           When the wave crashes on the shore in a process known as <em>swash</em>,
-              <idx><h>Swash</h></idx>
+              <idx><h>swash</h></idx>
           water as well as sediment move onto the beach as the same angle of the wave.
           Gravity takes over and the water and sediment run straight into the ocean
           (perpendicular to the shoreline),
           a process known as <em>backwash</em>.
-              <idx><h>Backwash</h></idx>
+              <idx><h>backwash</h></idx>
           This zig-zag motion of sand via the swash/backwash is called
           <em>longshore drift</em>.
-              <idx><h>Longshore Drift</h></idx>
+              <idx><h>longshore drift</h></idx>
           Some beaches experience seasonal changes were waves come from a single direction in one season but come from the other direction in the next season while other beaches where waves predominantly come from a single direction will have other sand pile up at one.
         </p>
         <p>
@@ -1175,8 +1175,8 @@ node[pos=0.8,right] {\(y_1\)};
 </latex-image>
         </image>
         <p>
-          \Question In 2013–2017, H&#333;k&#363;le`a circumnavigated the globe with a voyage mission to
-          <em>m\={a}lama honua</em> -
+          \Question In 2013–2017, H&#333;k&#363;le&#699;a circumnavigated the globe with a voyage mission to
+          <em>m&#257;lama honua</em> -
           <q>care for Island Earth</q>
           and all people and places as <em>`ohana</em> (
           <q>family</q>).
@@ -1185,7 +1185,7 @@ node[pos=0.8,right] {\(y_1\)};
           Every point on the Earth experiences this rotation through an angular speed and linear velocity (See <xref ref="sec_angular_velocity_and_linear_speed">Section</xref>).
           If we assume the Earth completes one rotation in 24 hours and that the Earth is a perfect sphere,
           with a radius of <m>R=4,000</m> miles,
-          then for each of the following ports of the M\={a}lama Honua voyage and it's given latitude,
+          then for each of the following ports of the M&#257;lama Honua voyage and it's given latitude,
           <m>\phi</m>, calculate the following
           <ol label="labelroman">
             <li>

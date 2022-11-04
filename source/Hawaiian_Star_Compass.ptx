@@ -10,9 +10,9 @@
     The island of Satawal in the Federated States of Micronesia was home to Mau Piailug,
     one of the last traditional navigators.
     To determine his position, Mau used the <em>paafu</em>,
-        <idx><h>Paafu</h></idx>
+        <idx><h>paafu</h></idx>
     a Micronesian <em>Star Compass</em>
-        <idx><h>Star Compass</h></idx>
+        <idx><h>star compass</h></idx>
     which is mental construct used to help determine position by memorizing things important to navigation,
     such as the position of stars when they rise and set on the horizon.
     The star compass also reads the flight path of birds and the direction of winds and waves.
@@ -40,11 +40,11 @@
 \draw[thick] (0cm,0cm) circle(1cm);
 \draw[thick] (0cm,0cm) circle(1.1cm);
 \draw[left] (0:0.98cm) node{\large HIKINA};
-\draw[left] (90:0.98cm) node[rotate=90] {\large `\={A}KAU};
+\draw[left] (90:0.98cm) node[rotate=90] {\large &#699;&#256;KAU};
 \draw[right] (180:0.98cm) node{\large KOMOHANA};
 \draw[left] (270:0.98cm) node[rotate=-90] {\large HEMA};
-\draw (45:0.5cm) node[rotate=-45] {\huge Ko`olau};
-\draw (135:0.5cm) node[rotate=45] {\huge Ho`olua};
+\draw (45:0.5cm) node[rotate=-45] {\huge Ko&#699;olau};
+\draw (135:0.5cm) node[rotate=45] {\huge Ho&#699;olua};
 \draw (225:0.5cm) node[rotate=315] {\huge Kona};
 \draw (-45:0.5cm) node[rotate=45] {\huge Malanai};
 \foreach \x in {5.625,16.875,...,90} {
@@ -57,20 +57,20 @@
 \draw[gray] (\x:1.1cm) -- (\x:1cm);
 }
 \foreach \x/\xtext in {
-11.25/L\={a},
-22.5/`\={A}ina,
+11.25/L&#257;,
+22.5/&#699;&#256;ina,
 33.75/Noio,
 45/Manu,
-56.25/N\={a}lani,
-67.5/N\={a} Leo,
+56.25/N&#257;lani,
+67.5/N&#257; Leo,
 78.75/Haka,
 281.25/Haka,
-292.5/N\={a} Leo,
-303.75/N\={a}lani,
+292.5/N&#257; Leo,
+303.75/N&#257;lani,
 315/Manu,
 326.25/Noio,
-337.5/`\={A}ina,
-348.75/L\={a}
+337.5/&#699;&#256;ina,
+348.75/L&#257;
 }
 \draw[left] (\x:0.98cm) node[rotate=\x] {\xtext};
 \foreach \x/\xtext in {
@@ -92,18 +92,18 @@
 \draw[right] (\x:1.12cm) node[rotate=\x] {\xtext};
 \foreach \x/\xtext in {
 101.25/Haka,
-112.5/N\={a} Leo,
-123.75/N\={a}lani,
+112.5/N&#257; Leo,
+123.75/N&#257;lani,
 135/Manu,
 146.25/Noio,
-157.5/`\={A}ina,
-168.75/L\={a},
-191.25/L\={a},
-202.5/`\={A}ina,
+157.5/&#699;&#256;ina,
+168.75/L&#257;,
+191.25/L&#257;,
+202.5/&#699;&#256;ina,
 213.75/Noio,
 225/Manu,
-236.25/N\={a}lani,
-247.5/N\={a} Leo,
+236.25/N&#257;lani,
+247.5/N&#257; Leo,
 258.75/Haka
 }
 \draw[right] (\x:0.98cm) node[rotate=180+\x] {\xtext};
@@ -180,23 +180,23 @@
         <cell>West</cell>
       </row>
       <row>
-        <cell>L\={a} Ko`olau</cell>
+        <cell>L&#257; Ko&#699;olau</cell>
         <cell>EbN</cell>
         <cell>East by North</cell>
-        <cell>L\={a} Kona</cell>
+        <cell>L&#257; Kona</cell>
         <cell>WbS</cell>
         <cell>West by South</cell>
       </row>
       <row>
-        <cell>`\=Aina Ko`olau</cell>
+        <cell>&#699;&#256;ina Ko&#699;olau</cell>
         <cell>ENE</cell>
         <cell>East-northeast</cell>
-        <cell>`\=Aina Kona</cell>
+        <cell>&#699;&#256;ina Kona</cell>
         <cell>WSW</cell>
         <cell>West-southwest</cell>
       </row>
       <row>
-        <cell>Noio Ko`olau</cell>
+        <cell>Noio Ko&#699;olau</cell>
         <cell>NEbE</cell>
         <cell>Northeast by East</cell>
         <cell>Noio Kona</cell>
@@ -204,7 +204,7 @@
         <cell>Southwest by West</cell>
       </row>
       <row>
-        <cell>Manu Ko`olau</cell>
+        <cell>Manu Ko&#699;olau</cell>
         <cell>NE</cell>
         <cell>Northeast</cell>
         <cell>Manu Kona</cell>
@@ -212,23 +212,23 @@
         <cell>Southwest</cell>
       </row>
       <row>
-        <cell>N\={a}lani Ko`olau</cell>
+        <cell>N&#257;lani Ko&#699;olau</cell>
         <cell>NEbN</cell>
         <cell>Northeast by North</cell>
-        <cell>N\={a}lani Kona</cell>
+        <cell>N&#257;lani Kona</cell>
         <cell>SWbS</cell>
         <cell>Southwest by South</cell>
       </row>
       <row>
-        <cell>N\={a} Leo Ko`olau</cell>
+        <cell>N&#257; Leo Ko&#699;olau</cell>
         <cell>NNE</cell>
         <cell>North-northeast</cell>
-        <cell>N\={a} Leo Kona</cell>
+        <cell>N&#257; Leo Kona</cell>
         <cell>SSW</cell>
         <cell>South-southwest</cell>
       </row>
       <row>
-        <cell>Haka Ko`olau</cell>
+        <cell>Haka Ko&#699;olau</cell>
         <cell>NbE</cell>
         <cell>North by east</cell>
         <cell>Haka Kona</cell>
@@ -236,7 +236,7 @@
         <cell>South by West</cell>
       </row>
       <row>
-        <cell>`\=Akau</cell>
+        <cell>&#699;&#256;kau</cell>
         <cell>N</cell>
         <cell>North</cell>
         <cell>Hema</cell>
@@ -244,7 +244,7 @@
         <cell>South</cell>
       </row>
       <row>
-        <cell>Haka Ho`olua</cell>
+        <cell>Haka Ho&#699;olua</cell>
         <cell>NbW</cell>
         <cell>North by West</cell>
         <cell>Haka Malanai</cell>
@@ -252,23 +252,23 @@
         <cell>South by East</cell>
       </row>
       <row>
-        <cell>N\={a} Leo Ho`olua</cell>
+        <cell>N&#257; Leo Ho&#699;olua</cell>
         <cell>NNW</cell>
         <cell>North-northwest</cell>
-        <cell>N\={a} Leo Malanai</cell>
+        <cell>N&#257; Leo Malanai</cell>
         <cell>SSE</cell>
         <cell>South-southeast</cell>
       </row>
       <row>
-        <cell>N\={a}lani Ho`olua</cell>
+        <cell>N&#257;lani Ho&#699;olua</cell>
         <cell>NWbN</cell>
         <cell>Northwest by North</cell>
-        <cell>N\={a}lani Malanai</cell>
+        <cell>N&#257;lani Malanai</cell>
         <cell>SEbS</cell>
         <cell>Southeast by South</cell>
       </row>
       <row>
-        <cell>Manu Ho`olua</cell>
+        <cell>Manu Ho&#699;olua</cell>
         <cell>NW</cell>
         <cell>Northwest</cell>
         <cell>Manu Malanai</cell>
@@ -276,7 +276,7 @@
         <cell>Southeast</cell>
       </row>
       <row>
-        <cell>Noio Ho`olua</cell>
+        <cell>Noio Ho&#699;olua</cell>
         <cell>NWbW</cell>
         <cell>Northwest by West</cell>
         <cell>Noio Malanai</cell>
@@ -284,18 +284,18 @@
         <cell>Southeast by East</cell>
       </row>
       <row>
-        <cell>`\=Aina Ho`olua</cell>
+        <cell>&#699;&#256;ina Ho&#699;olua</cell>
         <cell>WNW</cell>
         <cell>West-northwest</cell>
-        <cell>`\=Aina Malanai</cell>
+        <cell>&#699;&#256;ina Malanai</cell>
         <cell>ESE</cell>
         <cell>East-southeast</cell>
       </row>
       <row>
-        <cell>L\={a} Ho`olua</cell>
+        <cell>L&#257; Ho&#699;olua</cell>
         <cell>WbN</cell>
         <cell>West by North</cell>
-        <cell>L\={a} Malanai</cell>
+        <cell>L&#257; Malanai</cell>
         <cell>EbS</cell>
         <cell>East by South</cell>
       </row>
@@ -326,7 +326,7 @@
     <q>To Enter</q>
     ) or West.
     If you stand with your back towards Hikina (East) and face Komohana (West),
-    your right will point towards <em>`\=Akau</em> (
+    your right will point towards <em>&#699;&#256;kau</em> (
     <q>Right</q>
     ) or North and your left will point towards <em>Hema</em> (
     <q>Left</q>
@@ -335,8 +335,8 @@
   <p>
     These four cardinal points divide the compass into four quadrants.
     Each quadrant is named after winds in Hawai`i.
-    <em>Ko`olau</em> is the Northeast quadrant named for the trade winds;
-    <em>Ho`olua</em> is the Northwest quadrant,
+    <em>Ko&#699;olau</em> is the Northeast quadrant named for the trade winds;
+    <em>Ho&#699;olua</em> is the Northwest quadrant,
     <em>Kona</em> is the Southwest quadrant;
     and <em>Malanai</em> is the Southeast quadrant.
   </p>
@@ -344,8 +344,8 @@
     Each house on the compass has a name.
     The corresponding houses in the east and in the west share a name.
     Starting in the east or west and moving northwards and southwards is the first house positioned on either side of Hikina (East) and Komohana (West).
-    This is the house L\={a} (Sun).
-    It is followed by `\=Aina (Land), Noio (Tern), Manu (Bird), N\={a}lani (Heavens), N\={a} Leo (Voices),
+    This is the house L&#257; (Sun).
+    It is followed by &#699;&#256;ina (Land), Noio (Tern), Manu (Bird), N&#257;lani (Heavens), N&#257; Leo (Voices),
     and Haka (Empty).
     The 32 houses in the Hawaiian Star Compass correspond to the points of the 32-wind compass rose
     (<xref ref="tab_compass">Table</xref>).
@@ -356,11 +356,11 @@
   </p>
   <p>
     For example,
-    if a star arrives in the Ko`olau (northeastern) quadrant in the star house Noio,
+    if a star arrives in the Ko&#699;olau (northeastern) quadrant in the star house Noio,
     it will arc overhead,
     staying in the northern hemisphere and enters the horizon in the same house it arrived in, Noio,
-    but in the Ho`olua (northwest) quadrant.
-    If a star arrives in the Malanai (southeast) quadrant in the house L\={a}, it will remain in the southern hemisphere as it arcs overhead and enters the horizon in the house L\={a} in the Kona (southwestern) quadrant.
+    but in the Ho&#699;olua (northwest) quadrant.
+    If a star arrives in the Malanai (southeast) quadrant in the house L&#257;, it will remain in the southern hemisphere as it arcs overhead and enters the horizon in the house L&#257; in the Kona (southwestern) quadrant.
   </p>
   <figure xml:id="fig_celestial-sphere2">
     <caption>Celestial Sphere. (image from PVS)</caption>
@@ -369,8 +369,8 @@
   <p>
     The star compass is also used to determine direction based on wind and ocean swells.
     As the wind and swells move, they cross the star compass diagonally.
-    If a wind is blowing from the house `\={a}ina in the Ko`olau (northeast) quadrant,
-    it would blow in the direction of the Kona (southwest) quadrant and exit at the same house it originated from, `\={a}ina.
+    If a wind is blowing from the house `&#257;ina in the Ko&#699;olau (northeast) quadrant,
+    it would blow in the direction of the Kona (southwest) quadrant and exit at the same house it originated from, `&#257;ina.
   </p>
   <p>
     Now that we know the star compass,
@@ -412,33 +412,27 @@
         is when the sun is at its lowest elevation in the sky,
         resulting in the shortest daylight of the year.
         During the winter solstice,
-        the sun rises from its northernmost position `\=Aina Ko`olau.
+        the sun rises from its northernmost position &#699;&#256;ina Ko&#699;olau.
         What house does the sun set in the winter solstice in the southern hemisphere?
       </p>
       <p>
-        \Question The winter solstice in the northern hemisphere occurs on December 22 when the sun rises from its southernmost position `\=Aina Malanai.
+        \Question The winter solstice in the northern hemisphere occurs on December 22 when the sun rises from its southernmost position &#699;&#256;ina Malanai.
         What house does the sun set in the winter solstice in the northern hemisphere?
       </p>
       <p>
-        \Question Wind is coming from N\={a} Leo Kona.
+        \Question Wind is coming from N&#257; Leo Kona.
         In what direction is the wind blowing towards?
       </p>
       <p>
-        \Question Current is coming from Noio Ho`olua.
+        \Question Current is coming from Noio Ho&#699;olua.
         In what direction is the current heading towards?
       </p>
     </statement>
   </exercise>
-  <p>
-    \setboolean{firstanswerofthechapter}{true}
-  </p>
-  <p>
-    \begin{Answer}[ref={ex-1.1}] \Question Nainoa Thompson \Question Mau Piailug or Papa Mau \Question \begin{tasks}(2) \task `\=Akau \task Hikina \task Hema \task Komohana \end{tasks} \Question \begin{tasks}(2) \task Ko`olau \task Malanai \task Kona \task Ho`olua \end{tasks} \Question \begin{tasks} \task N\={a}lani Ho`olua \task `\=Aina Ko`olau \task N\={a} Leo Ho`olua \task Manu Malanai \task Haka Kona \task L\={a} Malanai \task Noio Kona \task N\={a}lani Ko`olau \task N\={a} Leo Malanai \end{tasks} \Question `\=Aina Ho`olua \Question `\=Aina Kona \Question N\={a} Leo Ko`olau \Question Noio Malanai
+<p>
+    \begin{Answer}[ref={ex-1.1}] \Question Nainoa Thompson \Question Mau Piailug or Papa Mau \Question \begin{tasks}(2) \task &#699;&#256;kau \task Hikina \task Hema \task Komohana \end{tasks} \Question \begin{tasks}(2) \task Ko&#699;olau \task Malanai \task Kona \task Ho&#699;olua \end{tasks} \Question \begin{tasks} \task N&#257;lani Ho&#699;olua \task &#699;&#256;ina Ko&#699;olau \task N&#257; Leo Ho&#699;olua \task Manu Malanai \task Haka Kona \task L&#257; Malanai \task Noio Kona \task N&#257;lani Ko&#699;olau \task N&#257; Leo Malanai \end{tasks} \Question &#699;&#256;ina Ho&#699;olua \Question &#699;&#256;ina Kona \Question N&#257; Leo Ko&#699;olau \Question Noio Malanai
   </p>
   <p>
     \end{Answer}
-  </p>
-  <p>
-    \setboolean{firstanswerofthechapter}{false}
   </p>
 </section>

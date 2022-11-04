@@ -3,7 +3,7 @@
   <introduction>
     <p>
       The Fijian canoe Uto Ni Yalo is sailing from Fiji to Tonga.
-      The navigators know Tonga is 412 NM from Fiji in the House L\={a} Malanai
+      The navigators know Tonga is 412 NM from Fiji in the House L&#257; Malanai
       (<m>16.81^{\circ}</m>).
       After sailing for one day and traveling 120 NM, the navigator determines they have gone off course by 2 houses
       (<m>22.5^{\circ}</m>).
@@ -37,7 +37,7 @@
       <title>Law of Cosines</title>
       <statement>
         <p>
-              <idx><h>Law of Cosines</h></idx>
+              <idx><h>law of cosines</h></idx>
           Given a triangle with sides <m>a</m>, <m>b</m>, <m>c</m> and opposite angles <m>A</m>, <m>B</m>, <m>C</m>, respectively,
           <md>
             <mrow>a^2\amp =\amp b^2+c^2-2bc\cos A</mrow>
@@ -255,7 +255,7 @@
       <statement>
         <p>
               <idx><h>Area</h><h>Triangle</h></idx>
-              <idx><h>Heron's Formula</h></idx>
+              <idx><h>heron's formula</h></idx>
           The area
           <me>
             \mbox{Area} =\sqrt{s(s-a)(s-b)(s-c)}

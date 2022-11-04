@@ -6,7 +6,7 @@
   </p>
   <p>
     \begin{mybox}[Product-to-Sum Formulas]
-        <idx><h>Product-to-Sum Formulas</h></idx>
+        <idx><h>product-to-sum formulas</h></idx>
     <me>
       \sin\alpha\cos\beta=\frac{1}{2}[\sin(\alpha+\beta)+\sin(\alpha-\beta)]
     </me>
@@ -98,7 +98,7 @@
   </example>
   <p>
     \begin{mybox}[Sum-to-Product Formula]
-        <idx><h>Sum-to-Product Formula</h></idx>
+        <idx><h>sum-to-product formula</h></idx>
     <md>
       <mrow>\sin\alpha+\sin\beta\amp =\amp 2\sin\left(\frac{\alpha+\beta}{2}\right)\cos\left(\frac{\alpha-\beta}{2}\right)</mrow>
       <mrow>\sin\alpha-\sin\beta\amp =\amp 2\cos\left(\frac{\alpha+\beta}{2}\right)\sin\left(\frac{\alpha-\beta}{2}\right)</mrow>
