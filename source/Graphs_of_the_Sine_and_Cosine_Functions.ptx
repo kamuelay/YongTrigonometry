@@ -393,8 +393,8 @@
       </statement>
     </example>
     <exercise>
-      <statement>
         
+<task>
 <introduction>
   <p>
     Find the equation for the time that Makalii (Pleiades) emerges over the horizon over time throughout the year.
@@ -404,6 +404,8 @@
           find the intersection of these two equations to determine when Makahiki season will begin.
   </p>
 </introduction>
+<statement>
+<p>
 Find the equation for the time that Makalii (Pleiades) emerges over the horizon over time throughout the year.
           Talk about the importance of this and how when it rises at sunset,
           it coincides with the start of Makahiki season.
@@ -427,7 +429,7 @@ Find the equation for the time that Makalii (Pleiades) emerges over the horizon 
           It is a time set aside for tribute, harvest, sport,
           and play. " "<url href="\1"/>
         </p>
-        
+<task>     
 <introduction>
   <p>
     Problem 55, p540 in Abramson's book: Standing on the shore of a lake,
@@ -442,6 +444,8 @@ Find the equation for the time that Makalii (Pleiades) emerges over the horizon 
           from the fisherman to the boat is given by the function d(x) = 1.5sec(x).
   </p>
 </introduction>
+<statement>
+<p>
 Problem 55, p540 in Abramson's book: Standing on the shore of a lake,
           a fisherman sights a boat far in the distance to his left.
           Let x, measured in radians,
@@ -471,15 +475,11 @@ Problem 55, p540 in Abramson's book: Standing on the shore of a lake,
           When does this occur?
         </p>
         
-      </p>
-    </statement>
     <answer>
       <p>
         MYANSWER
       </p>
     </answer>
-  </task>
-      </statement>
     </exercise>
   </subsection>
 </section>
