@@ -1094,6 +1094,8 @@
           <m>\theta=190^{\circ}</m> \task <m>\theta=323^{\circ}</m> \task
           <m>\theta=158^{\circ}</m> \task <m>\theta=172^{\circ}</m> \end{tasks}
         </p>
+        </statement>
+        </exercise>
         
 <introduction>
   <p>
@@ -1212,14 +1214,12 @@
     </answer>
   </task>
         
-      </p>
-    </statement>
     <answer>
       <p>
         MYANSWER
       </p>
     </answer>
-  </task>
+
         <p>
           Recall the Star Compass with the boundaries for each House.
           Write the angles for the boundaries between the following houses in the Ko&#699;olau quadrant in terms of degrees, minutes,
@@ -2079,6 +2079,8 @@
           (round to two decimal places).
   </p>
 </introduction>
+<task>
+<p>
 The <em>oeoe</em>, or Hawaiian bullroarer,
           is made by drilling holes into a kamani seed or coconut shell,
           then threading a long string through the holes to securing it.
@@ -2089,7 +2091,7 @@ The <em>oeoe</em>, or Hawaiian bullroarer,
           calculate 1) the angular speed measured in radians per minute; 2) the linear speed of the shell in miles per hour
           (round to two decimal places).
       </p>
-    </statement>
+
     <answer>
       <p>
         MYANSWER
@@ -2170,6 +2172,9 @@ The <em>oeoe</em>, or Hawaiian bullroarer,
           expressed as miles per hour.
   </p>
 </introduction>
+<task>
+<statement>
+<p>
 As the the moon orbits the Earth,
           different parts of its surface become illuminated by the Sun which we call moon phases.
               <idx><h>moon phases</h></idx>
@@ -2200,6 +2205,9 @@ As the the moon orbits the Earth,
           <em>Hint: the proportion of distance between the two cities to the distance traveled in one rotation is the same as the proportion of the time it takes to see the sun between the two cities to time it takes to complete one rotation.</em>
   </p>
 </introduction>
+<task>
+<statement>
+<p>
 At <m>17.7^{\circ}</m> S latitude,
           the city of Nadi, Fiji is <m>6,071</m> km from the Earth's axis of rotation
           (see <xref ref="ex-1_2">Exercise</xref>,
@@ -2218,8 +2226,6 @@ At <m>17.7^{\circ}</m> S latitude,
       </p>
     </answer>
   </task>
-      </statement>
-    </exercise>
     <p>
       \begin{Answer}[ref={ex-1.2}]
     </p>
