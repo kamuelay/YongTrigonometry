@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Double-Angle and Half-Angle Formulas</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Trigonometry through polynesian navigation">
+<meta property="book:author" content="Kamuela E Yong">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+},
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\def\R{4 }
+
+\def\angEl{20}
+
+\def\angAz{-20}
+
+\def\R{4 }
+\def\angEl{20}
+\newcommand{\intoo}[2]{\mathopen{]}#1\,;#2\mathclose{[}}
+\def\angAz{-20}
+\newcommand{\ud}{\mathop{\mathrm{{}d}}\mathopen{}}
+\newcommand{\intff}[2]{\mathopen{[}#1\,;#2\mathclose{]}}
+\newcommand{\thepartimage}{}
+\newcommand{\thechapterimage}{}
+\newcommand{\autodot}{.}
+\newcommand{\QuestionNB}{\bfseries\arabic{Question}.\ }
+
+
+
+\newcommand{\pgfmathsinandcos}[3]{
+\pgfmathsetmacro#1{sin(#3)}
+\pgfmathsetmacro#2{cos(#3)}}
+\newcommand{\LongitudePlane}[3][current plane]{
+\pgfmathsinandcos\sinEl\cosEl{#2}
+\pgfmathsinandcos\sint\cost{#3}
+\tikzset{#1/.style={cm={\cost,\sint*\sinEl,0,\cosEl,(0,0)}}}
+}
+\newcommand{\LatitudePlane}[3][current plane]{
+\pgfmathsinandcos\sinEl\cosEl{#2}
+\pgfmathsinandcos\sint\cost{#3}
+\pgfmathsetmacro\yshift{\cosEl*\sint}
+\tikzset{#1/.style={cm={\cost,0,0,\cost*\sinEl,(0,\yshift)}}}
+}
+\newcommand{\NewLatitudePlane}[4][current plane]{
+\pgfmathsinandcos\sinEl\cosEl{#3}
+\pgfmathsinandcos\sint\cost{#4}
+\pgfmathsetmacro\yshift{#2*\cosEl*\sint}
+\tikzset{#1/.style={cm={\cost,0,0,\cost*\sinEl,(0,\yshift)}}}
+}
+\newcommand{\DrawLongitudeCircle}[2][1]{
+\LongitudePlane{\angEl}{#2}
+\tikzset{current plane/.prefix style={scale=#1}}
+\pgfmathsetmacro\angVis{atan(sin(#2)*cos(\angEl)/sin(\angEl))}
+\draw[current plane] (\angVis:1) arc (\angVis:\angVis+180:1);
+\draw[current plane,dashed] (\angVis-180:1) arc (\angVis-180:\angVis:1);
+}
+\newcommand{\DrawLatitudeCircle}[2][1]{
+\LatitudePlane{\angEl}{#2}
+\tikzset{current plane/.prefix style={scale=#1}}
+\pgfmathsetmacro\sinVis{sin(#2)/cos(#2)*sin(\angEl)/cos(\angEl)}
+\pgfmathsetmacro\angVis{asin(min(1,max(\sinVis,-1)))}
+\draw[current plane] (\angVis:1) arc (\angVis:-\angVis-180:1);
+\draw[current plane,dashed] (180-\angVis:1) arc (180-\angVis:\angVis:1);
+}
+\newcommand{\sectionbreak}{\clearpage}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="book-1.html"><span class="title">Trigonometry through polynesian navigation</span></a></h1>
+<p class="byline">Kamuela E Yong</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="Sum_and_Difference_Formulas.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="Analytic_Trigonometry.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="Product-to-Sum_and_Sum-to-Product_Formulas.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="Sum_and_Difference_Formulas.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="Analytic_Trigonometry.html" title="Up">Up</a><a class="next-button button toolbar-item" href="Product-to-Sum_and_Sum-to-Product_Formulas.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1" class="internal"><span class="title">Front Matter</span></a></li>
+<li class="link">
+<a href="Trigonometry.html" data-scroll="Trigonometry" class="internal"><span class="codenumber">1</span> <span class="title">Trigonometry</span></a><ul>
+<li><a href="Hawaiian_Star_Compass.html" data-scroll="Hawaiian_Star_Compass" class="internal">Hawaiian Star Compass</a></li>
+<li><a href="Angles_and_Their_Measure.html" data-scroll="Angles_and_Their_Measure" class="internal">Angles and Their Measure</a></li>
+<li><a href="Unit_Circle.html" data-scroll="Unit_Circle" class="internal">Unit Circle</a></li>
+<li><a href="Right_Triangle_Trigonometry.html" data-scroll="Right_Triangle_Trigonometry" class="internal">Right Triangle Trigonometry</a></li>
+<li><a href="Trigonometric_Functions_of_Any_Angles.html" data-scroll="Trigonometric_Functions_of_Any_Angles" class="internal">Trigonometric Functions of Any Angles</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Graphs_of_the_Trigonometric_Functions.html" data-scroll="Graphs_of_the_Trigonometric_Functions" class="internal"><span class="codenumber">2</span> <span class="title">Graphs of the Trigonometric Functions</span></a><ul>
+<li><a href="Graphs_of_the_Sine_and_Cosine_Functions.html" data-scroll="Graphs_of_the_Sine_and_Cosine_Functions" class="internal">Graphs of the Sine and Cosine Functions</a></li>
+<li><a href="Graphs_of_Other_Trigonometric_Functions.html" data-scroll="Graphs_of_Other_Trigonometric_Functions" class="internal">Graphs of Other Trigonometric Functions</a></li>
+<li><a href="Phase_Shifts_and_Sinusoidal_Curve_Fitting.html" data-scroll="Phase_Shifts_and_Sinusoidal_Curve_Fitting" class="internal">Harmonic Motion/Phase shift/Sinusoidal Curve Fitting</a></li>
+<li><a href="Inverse_Trigonometry.html" data-scroll="Inverse_Trigonometry" class="internal">Inverse Trigonometric Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Analytic_Trigonometry.html" data-scroll="Analytic_Trigonometry" class="internal"><span class="codenumber">3</span> <span class="title">Analytic Trigonometry</span></a><ul>
+<li><a href="Trigonometric_Identities.html" data-scroll="Trigonometric_Identities" class="internal">Trigonometric Identities</a></li>
+<li><a href="Sum_and_Difference_Formulas.html" data-scroll="Sum_and_Difference_Formulas" class="internal">Sum and Difference Formulas</a></li>
+<li><a href="Double-Angle_and_Half-Angle_Formulas.html" data-scroll="Double-Angle_and_Half-Angle_Formulas" class="active">Double-Angle and Half-Angle Formulas</a></li>
+<li><a href="Product-to-Sum_and_Sum-to-Product_Formulas.html" data-scroll="Product-to-Sum_and_Sum-to-Product_Formulas" class="internal">Product-to-Sum and Sum-to-Product Formulas</a></li>
+<li><a href="Trigonometric_Equations.html" data-scroll="Trigonometric_Equations" class="internal">Trigonometric Equations</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Applications_of_Trigonometry.html" data-scroll="Applications_of_Trigonometry" class="internal"><span class="codenumber">4</span> <span class="title">Applications of Trigonometry</span></a><ul>
+<li><a href="The_Law_of_Sines.html" data-scroll="The_Law_of_Sines" class="internal">The Law of Sines</a></li>
+<li><a href="The_Law_of_Cosines.html" data-scroll="The_Law_of_Cosines" class="internal">The Law of Cosines</a></li>
+<li><a href="Vectors.html" data-scroll="Vectors" class="internal">Vectors</a></li>
+<li><a href="Dot_Product.html" data-scroll="Dot_Product" class="internal">Dot Product</a></li>
+<li><a href="Cross_Product.html" data-scroll="Cross_Product" class="internal">Cross Product</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Polar_and_Parametric_Equations.html" data-scroll="Polar_and_Parametric_Equations" class="internal"><span class="codenumber">5</span> <span class="title">Polar and Parametric Equations</span></a><ul>
+<li><a href="Polar_Coordinates.html" data-scroll="Polar_Coordinates" class="internal">Polar Coordinates</a></li>
+<li><a href="Polar_Equations_and_Graphs.html" data-scroll="Polar_Equations_and_Graphs" class="internal">Polar Equations and Graphs</a></li>
+<li><a href="Complex_Numbers__De_Moivre_s_Theorem.html" data-scroll="Complex_Numbers__De_Moivre_s_Theorem" class="internal">Complex Numbers; De Moivre's Theorem</a></li>
+<li><a href="Parametric_Curves_and_Parametric_Equations.html" data-scroll="Parametric_Curves_and_Parametric_Equations" class="internal">Parametric Curves and Parametric Equations</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Analytic_Geometry.html" data-scroll="Analytic_Geometry" class="internal"><span class="codenumber">6</span> <span class="title">Analytic Geometry</span></a><ul>
+<li><a href="Parabols.html" data-scroll="Parabols" class="internal">Parabolas</a></li>
+<li><a href="Ellipses.html" data-scroll="Ellipses" class="internal">Ellipses</a></li>
+<li><a href="Hyperbolas.html" data-scroll="Hyperbolas" class="internal">Hyperbolas</a></li>
+</ul>
+</li>
+<li class="link"><a href="Solutions.html" data-scroll="Solutions" class="internal"><span class="codenumber">7</span> <span class="title">Solutions</span></a></li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1" class="internal"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="references-1.html" data-scroll="references-1" class="internal"><span class="title">Bibliography</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="Double-Angle_and_Half-Angle_Formulas"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.3</span> <span class="title">Double-Angle and Half-Angle Formulas</span>
+</h2>
+<section class="introduction" id="introduction-10"><p id="p-644">In <a href="Right_Triangle_Trigonometry.html" class="internal" title="Section 1.4: Right Triangle Trigonometry">Section 1.4</a> we learned about <em class="emphasis">deviation</em> and how to calculate how far a waʻa has traveled off course. For example, if a waʻa traveled for one day of sailing at 5 knots or 120 nautical miles and was off course by 2 Houses or <span class="process-math">\(22.5^{\circ}\text{,}\)</span> how far have they deviated?</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-145.svg" role="img" class="contained"></div>
+<p id="p-645">Using the methods of <a href="Right_Triangle_Trigonometry.html" class="internal" title="Section 1.4: Right Triangle Trigonometry">Section 1.4</a>, we concluded that the deviation was <span class="process-math">\(y=120\cdot\sin22.5^{\circ}\text{.}\)</span> We then proceeded to obtain a numerical approximation because we could not obtain an exact value for <span class="process-math">\(\sin22.5^{\circ}\text{.}\)</span> We are familiar with the value of trigonometric functions at <span class="process-math">\(30, 45, 60^{\circ}\)</span> but not <span class="process-math">\(22.5^{\circ}\text{.}\)</span> In this section, we will examine double and half angles and will be able to calculate the exact value of <span class="process-math">\(\sin22.5^{\circ}\)</span> since <span class="process-math">\(22.5=\frac{1}{2}\cdot45\text{.}\)</span></p></section><section class="subsection" id="subsection-32"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.3.1</span> <span class="title">Double-Angle Formulas</span>
+</h3>
+<p id="p-646">Recall the sum formula for sine:</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="eq_double-angle1">
+\begin{equation}
+\sin (\alpha+\beta)=\sin \alpha \cos \beta + \cos \alpha \sin \beta\tag{3.3.1}
+\end{equation}
+</div>
+<p id="p-647">Consider the case when the two angles are equal. We will call this angle <span class="process-math">\(\theta\text{,}\)</span> so let <span class="process-math">\(\alpha=\theta\)</span> and <span class="process-math">\(\beta=\theta\text{.}\)</span> Then <a href="" class="xref" data-knowl="./knowl/eq_double-angle1.html" title="Equation 3.3.1">Eq (3.3.1)</a> becomes</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_double-angle1.html" id="md-61">
+\begin{align*}
+\sin(\theta+\theta)\amp =\amp \sin \theta \cos \theta + \cos \theta \sin \theta\\
+\sin (2\theta)\amp =\amp 2\sin \theta \cos \theta
+\end{align*}
+</div>
+<p id="p-648">Thus we obtain a formula for sine of twice the angle <span class="process-math">\(\theta\text{.}\)</span></p>
+<p id="p-649">\begin{mybox}[Double-Angle Formulas] </p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-62">
+\begin{align*}
+\sin 2\theta \amp =\amp  2\sin \theta \cos \theta
+\end{align*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-63">
+\begin{align*}
+\cos 2\theta \amp  =\amp   \cos^2 \theta - \sin^2 \theta\\
+\amp =\amp 1-2\sin^2 \theta\\
+\amp =\amp 2\cos^2 \theta-1
+\end{align*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-64">
+\begin{align*}
+\tan 2 \theta \amp =\amp  \frac{2\tan \theta}{1-\tan^2 \theta}
+\end{align*}
+</div>
+<p id="p-650">\end{mybox} The proofs for the double-angle formulas for cosine and tangent are left as exercises.</p>
+<article class="example example-like" id="example-50"><a href="" data-knowl="" class="id-ref example-knowl original has-image" data-refid="hk-example-50"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.3.1</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-50"><article class="example example-like"><p id="p-651">If <span class="process-math">\(\cos\theta=-\frac{4}{5}\)</span> and <span class="process-math">\(\frac{\pi}{2}\lt \theta\lt \pi\text{,}\)</span> calculate <span class="process-math">\(\sin2\theta\text{,}\)</span> <span class="process-math">\(\cos2\theta\text{,}\)</span> and <span class="process-math">\(\tan2\theta\text{.}\)</span></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-42" id="solution-42"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-42"><div class="solution solution-like">
+<p id="p-652">To compute <span class="process-math">\(\cos2\theta\text{,}\)</span> notice there are three different formulas: <span class="process-math">\(\cos2\theta=\cos^\theta-\sin^2\theta\text{,}\)</span> <span class="process-math">\(\cos2\theta=1-2\sin^2\theta\text{,}\)</span> or <span class="process-math">\(\cos2\theta=2\cos^2\theta-1\text{.}\)</span> Using any of the three equations will give us the correct answer, however, if we look at the information we are given, we know that <span class="process-math">\(\cos\theta=-\frac{4}{5}\)</span> so it may be easier to use <span class="process-math">\(\cos2\theta=2\cos^2\theta-1\)</span> since the first two equations require us to know <span class="process-math">\(\sin\theta\text{.}\)</span> Thus</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\cos2\theta=2\cos^2\theta-1=2\left(-\frac{4}{5}\right)^2-1=2\left(\frac{16}{25}\right)-1=\frac{32}{25}-\frac{25}{25}=\frac{7}{25}
+\end{equation*}
+</div>
+<p id="p-653">To compute <span class="process-math">\(\sin2\theta\text{,}\)</span> <span class="process-math">\(\tan2\theta\text{,}\)</span> or using the other equations for <span class="process-math">\(\cos2\theta\text{,}\)</span> we will need to compute <span class="process-math">\(\sin\theta\)</span> and <span class="process-math">\(\tan\theta\text{.}\)</span> To do this, we will draw the triangle formed from <span class="process-math">\(\cos\theta=-\frac{4}{5}\)</span> where <span class="process-math">\(-\frac{\pi}{2}\lt \theta\lt \pi\text{.}\)</span></p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-146.svg" role="img" class="contained"></div>
+<p id="p-654">Using the Pythagorean Theorem, we can solve the triangle:</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-65">
+\begin{align*}
+(-4)^2+y^2\amp =\amp 5^2\\
+16+y^2\amp =\amp 25\\
+y^2\amp =\amp 9\\
+y\amp =\amp 3
+\end{align*}
+</div>
+<p id="p-655">Using the right triangle, we can now find an expression for</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\sin\theta=\frac{\mbox{opposite} }{\mbox{hypotenuse} }=\frac{3}{5}
+\end{equation*}
+</div>
+<p class="continuation">and</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\tan\theta=\frac{\mbox{opposite} }{\mbox{adjacent} }=\frac{3}{-4}=-\frac{3}{4}
+\end{equation*}
+</div>
+<p id="p-656">Using the Double-Angle Formula, we get</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\sin2\theta=2\sin\theta\cos\theta=2\left(\frac{3}{5}\right)\left(-\frac{4}{5}\right)=-\frac{24}{25}
+\end{equation*}
+</div>
+<p class="continuation">and</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\tan2\theta=\frac{2\tan\theta}{1-\tan^2\theta}=\frac{2\left(-\frac{3}{4}\right)}{1-\left(-\frac{3}{4}\right)^2}=\frac{-\frac{6}{4}}{1-\frac{9}{16}}=\frac{-\frac{6}{4}}{\frac{16}{16}-\frac{9}{16}}=\frac{-\frac{6}{4}}{\frac{7}{16}}=-\frac{6}{4}\cdot\frac{16}{7}=-\frac{24}{7}
+\end{equation*}
+</div>
+</div></div>
+</div></article></div>
+<article class="example example-like" id="example-51"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-51"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.3.2</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-51"><article class="example example-like"><p id="p-657">Write <span class="process-math">\(\cos(3\theta)\)</span> in terms of <span class="process-math">\(\sin\theta\text{.}\)</span></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-43" id="solution-43"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-43"><div class="solution solution-like"><div class="displaymath process-math" data-contains-math-knowls="" id="md-66">
+\begin{align*}
+\sin(3\theta)\amp =\sin(2\theta+\theta)\\
+\amp =\sin(2\theta)\cos\theta+\cos(2\theta)\sin\theta\amp \amp \mbox{sum formula}\\
+\amp =(2\sin\theta\cos\theta)\cos\theta+(\cos^2\theta-\sin^2\theta)\sin\theta\amp \amp \mbox{double-angle formula}\\
+\amp =2\sin\theta\cos^2\theta+\sin\theta\cos^2\theta-\sin^3\theta\\
+\amp =3\sin\theta\cos^2\theta-\sin^3\theta\\
+\amp =3\sin\theta(1-\sin^2\theta)-\sin^3\theta\amp \amp \mbox{Pythagorean Identity}\\
+\amp =3\sin\theta-3\sin^3\theta-\sin^3\theta\\
+\amp =3\sin\theta-4\sin^3\theta
+\end{align*}
+</div></div></div>
+</div></article></div></section><section class="subsection" id="subsection-33"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.3.2</span> <span class="title">Reducing Powers Formulas</span>
+</h3>
+<p id="p-658">You may notice that the double angle formula for cosine takes a trigonometric function and expresses it in terms of the square of a trigonometric function. If we rearrange the terms, we can obtain formula for reducing the powers of sine, cosine, and tangent expressions with even powers in terms of only cosine. These formulas come in handy in calculus.</p>
+<p id="p-659">\begin{mybox}[Formulas for Reducing Powers]</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\sin^2\theta=\frac{1-\cos(2\theta)}{2}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\cos^2\theta=\frac{1+\cos(2\theta)}{2}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\tan^2\theta=\frac{1-\cos(2\theta)}{1+\cos(2\theta)}
+\end{equation*}
+</div>
+<p id="p-660">\end{mybox}</p>
+<article class="hiddenproof" id="proof-6"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-6"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-6"><article class="hiddenproof"><p id="p-661">To prove the first formula, solve for <span class="process-math">\(\sin^2\theta\)</span> in the Double-Angle Formula <span class="process-math">\(\cos2\theta=1-2\sin^2\theta\text{.}\)</span> The second formula is obtained similarly by solving for <span class="process-math">\(\cos^2\theta\)</span> in the formula <span class="process-math">\(\cos2\theta=2\cos^2\theta-1\text{.}\)</span> The first two formula can be used to obtain the third formula</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\tan^2\theta=\frac{\sin^2\theta}{\cos^2\theta}=\frac{\dfrac{1-\cos(2\theta)}{2}}{\dfrac{1+\cos(2\theta)}{2}}=\frac{1-\cos(2\theta)}{1+\cos(2\theta)}
+\end{equation*}
+</div></article></div>
+<article class="example example-like" id="example-52"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-52"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.3.3</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-52"><article class="example example-like"><p id="p-662">Write <span class="process-math">\(\sin^4\theta\)</span> as an expression that does not involve powers of sine or cosine greater than 1.</p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-44" id="solution-44"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-44"><div class="solution solution-like">
+<p id="p-663">We will use the power reduction formula twice.</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-67">
+\begin{align*}
+\sin^2\theta \amp = (\sin^2\theta)^2\\
+\amp =\left(\frac{1-\cos(2\theta)}{2}\right)^2\amp \amp \mbox{reducing powers}\\
+\amp =\frac{1}{4}\left(1-2\cos(2\theta)+\cos^2(2\theta)\right)\\
+\amp =\frac{1}{4}\left(1-2\cos(2\theta)+\frac{1+\cos(4\theta)}{2}\right)\amp \amp \mbox{reducing powers}\\
+\amp =\frac{1}{4}\left(1-2\cos(2\theta)+\frac{1}{2}+\frac{\cos(4\theta)}{2}\right)\\
+\amp =\frac{1}{4}\left(\frac{3}{2}-2\cos(2\theta)+\frac{\cos(4\theta)}{2}\right)\\
+\amp =\frac{3}{8}-\frac{1}{2}\cos(2\theta)+\frac{\cos(4\theta)}{8}
+\end{align*}
+</div>
+</div></div>
+</div></article></div></section><section class="subsection" id="subsection-34"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.3.3</span> <span class="title">Half-Angle Formulas</span>
+</h3>
+<p id="p-664">Another set of useful formulas are the half-angle formulas. \begin{mybox}[Half-Angle Formulas]</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-68">
+\begin{align*}
+\sin\frac{\theta}{2}\amp =\pm\sqrt{\frac{1-\cos\theta}{2}},\amp \cos\frac{\theta}{2}\amp =\pm\sqrt{\frac{1+\cos\theta}{2}},\amp \tan\frac{\theta}{2}\amp =\pm\sqrt{\frac{1-\cos\theta}{1+\cos\theta}}
+\end{align*}
+</div>
+<p id="p-665">The choice of the + or - sign depends on the Quadrant in which <span class="process-math">\(\theta/2\)</span> lies. \end{mybox}</p>
+<article class="hiddenproof" id="proof-7"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-7"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-7"><article class="hiddenproof"><p id="p-666">We take the square root on both sides of the Formulas for Reducing Powers and halve the angle (<span class="process-math">\(\theta\)</span> becomes <span class="process-math">\(\frac{\theta}{2}\)</span> and <span class="process-math">\(2\theta\)</span> becomes <span class="process-math">\(\theta\)</span>) to arrive at our formulas.</p></article></div>
+<article class="example example-like" id="example-53"><a href="" data-knowl="" class="id-ref example-knowl original has-image" data-refid="hk-example-53"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.3.4</span><span class="period">.</span><span class="space"> </span><span class="title">Deviation.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-53"><article class="example example-like"><p id="p-667">We are now ready to revisit the problem posed at the start of this section when we were give that a waʻa traveling 120 NM deviates by <span class="process-math">\(22.5^{\circ}\)</span> and we asked to determine the exact value of how far it deviated. Houses or <span class="process-math">\(22.5^{\circ}\text{,}\)</span> how far have they deviated?</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-147.svg" role="img" class="contained"></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-45" id="solution-45"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-45"><div class="solution solution-like">
+<p id="p-668">We know the deviation is</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y=120\cdot\sin22.5^{\circ}=120\cdot\sin\left(\frac{45}{2}\right)^{\circ}=120\cdot\sqrt{\frac{1-\cos45^{\circ}}{2}}=120\cdot\sqrt{\frac{1-\frac{\sqrt{2}}{2}}{2}}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+=120\cdot\sqrt{\frac{\frac{2}{2}-\frac{\sqrt{2}}{2}}{2}}=120\cdot\sqrt{\frac{2-\sqrt{2}}{4}}=\frac{120}{2}\cdot\sqrt{2-\sqrt{2}}=60\cdot\sqrt{2-\sqrt{2}}
+\end{equation*}
+</div>
+<p id="p-669">Thus we have found the exact value of <span class="process-math">\(120\cdot\sin22.5^{\circ}=60\cdot\sqrt{2-\sqrt{2}}\mbox{ NM}\text{.}\)</span></p>
+</div></div>
+</div></article></div>
+<article class="example example-like" id="ex_half-angle"><a href="" data-knowl="" class="id-ref example-knowl original has-image" data-refid="hk-ex_half-angle"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.3.5</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-ex_half-angle"><article class="example example-like"><p id="p-670">Given <span class="process-math">\(\sin\theta=-\frac{5}{13}\)</span> and <span class="process-math">\(\theta\)</span> lies in Quadrant III, find the exact value of</p>
+<ol class="decimal">
+<li id="li-134"><p id="p-671"><span class="process-math">\(\displaystyle \sin\frac{\theta}{2}\)</span></p></li>
+<li id="li-135"><p id="p-672"><span class="process-math">\(\displaystyle \cos\frac{\theta}{2}\)</span></p></li>
+<li id="li-136"><p id="p-673"><span class="process-math">\(\displaystyle \tan\frac{\theta}{2}\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-46" id="solution-46"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-46"><div class="solution solution-like">
+<p id="p-674">Notice the Half-Angle Formulas all require us to know <span class="process-math">\(\cos\theta\)</span> so we begin by drawing the triangle formed from <span class="process-math">\(\sin\theta=-\frac{5}{13}\)</span> and <span class="process-math">\(\theta\)</span> in Quadrant III.</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-148.svg" role="img" class="contained"></div>
+<p id="p-675">Using the Pythagorean Theorem, we can solve the triangle:</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-69">
+\begin{align*}
+x^2+(-5)^2\amp =\amp 13^2\\
+x^2+25\amp =\amp 169\\
+x^2\amp =\amp 144\\
+x\amp =\amp 12
+\end{align*}
+</div>
+<p id="p-676">Thus we have</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\cos\theta=-\frac{12}{13}
+\end{equation*}
+</div>
+<p id="p-677">Next, since <span class="process-math">\(\theta\)</span> is in Quadrant III, <span class="process-math">\(180^{\circ}\lt \theta\lt 270^{\circ}\text{,}\)</span> so dividing by 2 gives us <span class="process-math">\(\frac{180^{\circ}}{2}\lt \frac{\theta}{2}\lt \frac{270^{\circ}}{2}\)</span> or <span class="process-math">\(90^{\circ}\lt \frac{\theta}{2}\lt 135^{\circ}\text{.}\)</span> Therefore, we conclude that <span class="process-math">\(\frac{\theta}{2}\)</span> lies in Quadrant II.</p>
+<ol class="decimal">
+<li id="li-137">
+<p id="p-678">To calculate <span class="process-math">\(\sin\frac{\theta}{2}\text{,}\)</span> we first note that because <span class="process-math">\(\frac{\theta}{2}\)</span> lies in Quadrant II, <span class="process-math">\(\sin\frac{\theta}{2}&gt;0\)</span> so we will choose the positive (+) sign in the Half-Angle Formula:</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-70">
+\begin{align*}
+\sin\frac{\theta}{2}\amp =\amp \sqrt{\frac{1-\cos\theta}{2}}\\
+\amp =\amp \sqrt{\frac{1-\left(-\frac{12}{13}\right)}{2}}\\
+\amp =\amp \sqrt{\frac{1+\frac{12}{13}}{2}}\\
+\amp =\amp \sqrt{\frac{\frac{13}{13}+\frac{12}{13}}{2}}\\
+\amp =\amp \sqrt{\frac{\frac{25}{13}}{2}}\\
+\amp =\amp \sqrt{\frac{25}{26}}
+\end{align*}
+</div>
+</li>
+<li id="li-138">
+<p id="p-679">Since <span class="process-math">\(\frac{\theta}{2}\)</span> is in Quadrant II, we know that <span class="process-math">\(\cos\frac{\theta}{2}\lt 0\)</span> so we will choose the negative (-) sign in the Half-Angle Formula:</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-71">
+\begin{align*}
+\cos\frac{\theta}{2}\amp =\amp -\sqrt{\frac{1+\cos\theta}{2}}\\
+\amp =\amp -\sqrt{\frac{1+\left(-\frac{12}{13}\right)}{2}}\\
+\amp =\amp -\sqrt{\frac{1-\frac{12}{13}}{2}}\\
+\amp =\amp -\sqrt{\frac{\frac{13}{13}-\frac{12}{13}}{2}}\\
+\amp =\amp -\sqrt{\frac{\frac{1}{13}}{2}}\\
+\amp =\amp -\sqrt{\frac{1}{26}}
+\end{align*}
+</div>
+</li>
+<li id="li-139">
+<p id="p-680">Since <span class="process-math">\(\frac{\theta}{2}\)</span> is in Quadrant II, we know that <span class="process-math">\(\tan\frac{\theta}{2}\lt 0\)</span> so we will choose the negative (-) sign in the Half-Angle Formula:</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-72">
+\begin{align*}
+\tan\frac{\theta}{2}\amp =\amp -\sqrt{\frac{1-\cos\theta}{1+\cos\theta}}\\
+\amp =\amp -\sqrt{\frac{1-\left(-\frac{12}{13}\right)}{1+\left(-\frac{12}{13}\right)}}\\
+\amp =\amp -\sqrt{\frac{1+\frac{12}{13}}{1-\frac{12}{13}}}\\
+\amp =\amp -\sqrt{\frac{\frac{13}{13}+\frac{12}{13}}{\frac{13}{13}-\frac{12}{13}}}\\
+\amp =\amp -\sqrt{\frac{\frac{25}{13}}{\frac{1}{13}}}\\
+\amp =\amp -\sqrt{\frac{25}{13}\cdot\frac{13}{1}}\\
+\amp =\amp -\sqrt{25}\\
+\amp =\amp -5
+\end{align*}
+</div>
+</li>
+</ol>
+</div></div>
+</div></article></div>
+<p id="p-681">We can derive another formula for <span class="process-math">\(\tan\frac{\theta}{2}\)</span> that does not involve <span class="process-math">\(\pm\text{:}\)</span> \begin{mybox}[Half-Angle Formulas for Tangent]</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\tan\frac{\theta}{2}=\pm\sqrt{\frac{1-\cos\theta}{1+\cos\theta}}=\frac{1-\cos\theta}{\sin\theta}=\frac{\sin\theta}{1+\cos\theta}
+\end{equation*}
+</div>
+<p id="p-682">\end{mybox}</p>
+<article class="hiddenproof" id="proof-8"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-8"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-8"><article class="hiddenproof"><p id="p-683">We begin by first multiplying both sides of the Sine formula for Reducing Powers by 2 and halving the angle:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+1-\cos\theta=2\sin^2\left(\frac{\theta}{2}\right)
+\end{equation*}
+</div>
+<p class="continuation">and applying the double-angle formula to:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\sin\theta=\sin2\cdot\frac{\theta}{2}=2\sin\frac{\theta}{2}\cos\frac{\theta}{2}
+\end{equation*}
+</div>
+<p id="p-684">Diving the two preceding results</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{1-\cos\theta}{\sin\theta}=\frac{2\sin^2\left(\frac{\theta}{2}\right)}{2\sin\frac{\theta}{2}\cos\frac{\theta}{2}}=\frac{\sin\frac{\theta}{2}}{\cos\frac{\theta}{2}}=\tan\frac{\theta}{2}
+\end{equation*}
+</div>
+<p id="p-685">Thus</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\tan\frac{\theta}{2}=\frac{1-\cos\theta}{\sin\theta}
+\end{equation*}
+</div>
+<p id="p-686">Similarly, it can be shown that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\tan\frac{\theta}{2}=\frac{\sin\theta}{1+\cos\theta}
+\end{equation*}
+</div></article></div>
+<article class="example example-like" id="example-55"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-55"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.3.6</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-55"><article class="example example-like"><p id="p-687">Calculate <span class="process-math">\(\tan\frac{\theta}{2}\)</span> from <a href="" class="xref" data-knowl="./knowl/ex_half-angle.html" title="Example 3.3.5">Example 3.3.5</a> using the above formula.</p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-47" id="solution-47"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-47"><div class="solution solution-like"><div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\tan\frac{\theta}{2}=\frac{1-\cos\theta}{\sin\theta}=\frac{1-\left(-\frac{12}{13}\right)}{-\frac{5}{13}}=\frac{\frac{25}{13}}{-\frac{5}{13}}=\frac{25}{13}\cdot\left(-\frac{13}{5}\right)=-5
+\end{equation*}
+</div></div></div>
+</div></article></div>
+<p id="p-688">Note: We obtained the same result for <span class="process-math">\(\tan\frac{\theta}{2}\)</span> as we did in <a href="" class="xref" data-knowl="./knowl/ex_half-angle.html" title="Example 3.3.5">Example 3.3.5</a>. In this example, we did not have to determine if <span class="process-math">\(\tan\frac{\theta}{2}\)</span> was positive or negative, however, we do need to know the values of both <span class="process-math">\(\sin\theta\)</span> and <span class="process-math">\(\cos\theta\text{.}\)</span></p>
+<article class="exercise exercise-like" id="ex-3_3"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-ex-3_3"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">3.3.7</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-ex-3_3"><article class="exercise exercise-like"><div class="displaymath process-math" data-contains-math-knowls=" ">
+\begin{equation*}
+\cos2\theta=\cos^2\theta-\sin^2\theta
+\end{equation*}
+</div>
+<p id="p-689">\Question Use the Pythagorean identity (<span class="process-math">\(\sin^2\theta+\cos^2\theta=1\)</span>) and the result from <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "x3_3-ex1" missing or not unique]</code> to prove</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\cos2\theta=1-2\sin^2\theta
+\end{equation*}
+</div>
+<p id="p-690">\Question Use the Pythagorean identify (<span class="process-math">\(\sin^2\theta+\cos^2\theta=1\)</span>) and the result from <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "x3_3-ex1" missing or not unique]</code> to prove</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\cos2\theta=2\cos^2\theta-1
+\end{equation*}
+</div>
+<p id="p-691">\Question Use the sum formula, <span class="process-math">\(\tan(\alpha+\beta)=\frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}\text{,}\)</span> to prove the double angle formula for tangent:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\tan2\theta=\frac{2\tan\theta}{1-\tan^2\theta}
+\end{equation*}
+</div>
+<p id="p-692">\Question Find the exact value of i) <span class="process-math">\(\sin2\theta\text{,}\)</span> ii) <span class="process-math">\(\cos2\theta\text{,}\)</span> and iii) <span class="process-math">\(\tan2\theta\)</span> if \begin{tasks} \task <span class="process-math">\(\cos\theta=\frac{-3}{5}\)</span> and <span class="process-math">\(\theta\)</span> is in Quadrant III</p>
+<p id="p-693">\task <span class="process-math">\(\sin\theta=-\frac{8}{17}\)</span> and <span class="process-math">\(270^{\circ}\lt \theta\lt 360^{\circ}\)</span></p>
+<p id="p-694">\end{tasks}</p>
+<p id="p-695">\Question Using the Half-Angle Formula, find the exact value of \begin{tasks}(2) \task <span class="process-math">\(\tan315^{\circ}\)</span></p>
+<p id="p-696">\task <span class="process-math">\(\sin150^{\circ}\)</span></p>
+<p id="p-697">\task <span class="process-math">\(\tan225^{\circ}\)</span></p>
+<p id="p-698">\task <span class="process-math">\(\cos30^{\circ}\)</span></p>
+<p id="p-699">\task <span class="process-math">\(\cos\frac{\pi}{8}\)</span></p>
+<p id="p-700">\task <span class="process-math">\(\tan\frac{11\pi}{12}\)</span></p>
+<p id="p-701">\task <span class="process-math">\(\sin\frac{7\pi}{12}\)</span></p>
+<p id="p-702">\task <span class="process-math">\(\cos\frac{3\pi}{8}\)</span></p>
+<p id="p-703">\end{tasks}</p>
+<p id="p-704">\Question Use the Half-Angle Formulas to find the exact values of i) <span class="process-math">\(\sin\frac{\theta}{2}\text{,}\)</span> ii) <span class="process-math">\(\cos\frac{\theta}{2}\text{,}\)</span> and iii) <span class="process-math">\(\tan\frac{\theta}{2}\)</span> if \begin{tasks} \task <span class="process-math">\(\tan\theta=-\frac{4}{3}\)</span> and <span class="process-math">\(\theta\)</span> is in Quadrant II</p>
+<p id="p-705">\task <span class="process-math">\(\cos\theta=\frac{2}{3}\)</span> and <span class="process-math">\(\frac{3\pi}{4}\lt \theta\lt 2\pi\)</span> \end{tasks}</p></article></div></section></section></div></main>
+</div>
+</body>
+</html>

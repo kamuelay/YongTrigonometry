@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Product-to-Sum and Sum-to-Product Formulas</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Trigonometry through polynesian navigation">
+<meta property="book:author" content="Kamuela E Yong">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+},
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\def\R{4 }
+
+\def\angEl{20}
+
+\def\angAz{-20}
+
+\def\R{4 }
+\def\angEl{20}
+\newcommand{\intoo}[2]{\mathopen{]}#1\,;#2\mathclose{[}}
+\def\angAz{-20}
+\newcommand{\ud}{\mathop{\mathrm{{}d}}\mathopen{}}
+\newcommand{\intff}[2]{\mathopen{[}#1\,;#2\mathclose{]}}
+\newcommand{\thepartimage}{}
+\newcommand{\thechapterimage}{}
+\newcommand{\autodot}{.}
+\newcommand{\QuestionNB}{\bfseries\arabic{Question}.\ }
+
+
+
+\newcommand{\pgfmathsinandcos}[3]{
+\pgfmathsetmacro#1{sin(#3)}
+\pgfmathsetmacro#2{cos(#3)}}
+\newcommand{\LongitudePlane}[3][current plane]{
+\pgfmathsinandcos\sinEl\cosEl{#2}
+\pgfmathsinandcos\sint\cost{#3}
+\tikzset{#1/.style={cm={\cost,\sint*\sinEl,0,\cosEl,(0,0)}}}
+}
+\newcommand{\LatitudePlane}[3][current plane]{
+\pgfmathsinandcos\sinEl\cosEl{#2}
+\pgfmathsinandcos\sint\cost{#3}
+\pgfmathsetmacro\yshift{\cosEl*\sint}
+\tikzset{#1/.style={cm={\cost,0,0,\cost*\sinEl,(0,\yshift)}}}
+}
+\newcommand{\NewLatitudePlane}[4][current plane]{
+\pgfmathsinandcos\sinEl\cosEl{#3}
+\pgfmathsinandcos\sint\cost{#4}
+\pgfmathsetmacro\yshift{#2*\cosEl*\sint}
+\tikzset{#1/.style={cm={\cost,0,0,\cost*\sinEl,(0,\yshift)}}}
+}
+\newcommand{\DrawLongitudeCircle}[2][1]{
+\LongitudePlane{\angEl}{#2}
+\tikzset{current plane/.prefix style={scale=#1}}
+\pgfmathsetmacro\angVis{atan(sin(#2)*cos(\angEl)/sin(\angEl))}
+\draw[current plane] (\angVis:1) arc (\angVis:\angVis+180:1);
+\draw[current plane,dashed] (\angVis-180:1) arc (\angVis-180:\angVis:1);
+}
+\newcommand{\DrawLatitudeCircle}[2][1]{
+\LatitudePlane{\angEl}{#2}
+\tikzset{current plane/.prefix style={scale=#1}}
+\pgfmathsetmacro\sinVis{sin(#2)/cos(#2)*sin(\angEl)/cos(\angEl)}
+\pgfmathsetmacro\angVis{asin(min(1,max(\sinVis,-1)))}
+\draw[current plane] (\angVis:1) arc (\angVis:-\angVis-180:1);
+\draw[current plane,dashed] (180-\angVis:1) arc (180-\angVis:\angVis:1);
+}
+\newcommand{\sectionbreak}{\clearpage}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="book-1.html"><span class="title">Trigonometry through polynesian navigation</span></a></h1>
+<p class="byline">Kamuela E Yong</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="Double-Angle_and_Half-Angle_Formulas.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="Analytic_Trigonometry.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="Trigonometric_Equations.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="Double-Angle_and_Half-Angle_Formulas.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="Analytic_Trigonometry.html" title="Up">Up</a><a class="next-button button toolbar-item" href="Trigonometric_Equations.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1" class="internal"><span class="title">Front Matter</span></a></li>
+<li class="link">
+<a href="Trigonometry.html" data-scroll="Trigonometry" class="internal"><span class="codenumber">1</span> <span class="title">Trigonometry</span></a><ul>
+<li><a href="Hawaiian_Star_Compass.html" data-scroll="Hawaiian_Star_Compass" class="internal">Hawaiian Star Compass</a></li>
+<li><a href="Angles_and_Their_Measure.html" data-scroll="Angles_and_Their_Measure" class="internal">Angles and Their Measure</a></li>
+<li><a href="Unit_Circle.html" data-scroll="Unit_Circle" class="internal">Unit Circle</a></li>
+<li><a href="Right_Triangle_Trigonometry.html" data-scroll="Right_Triangle_Trigonometry" class="internal">Right Triangle Trigonometry</a></li>
+<li><a href="Trigonometric_Functions_of_Any_Angles.html" data-scroll="Trigonometric_Functions_of_Any_Angles" class="internal">Trigonometric Functions of Any Angles</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Graphs_of_the_Trigonometric_Functions.html" data-scroll="Graphs_of_the_Trigonometric_Functions" class="internal"><span class="codenumber">2</span> <span class="title">Graphs of the Trigonometric Functions</span></a><ul>
+<li><a href="Graphs_of_the_Sine_and_Cosine_Functions.html" data-scroll="Graphs_of_the_Sine_and_Cosine_Functions" class="internal">Graphs of the Sine and Cosine Functions</a></li>
+<li><a href="Graphs_of_Other_Trigonometric_Functions.html" data-scroll="Graphs_of_Other_Trigonometric_Functions" class="internal">Graphs of Other Trigonometric Functions</a></li>
+<li><a href="Phase_Shifts_and_Sinusoidal_Curve_Fitting.html" data-scroll="Phase_Shifts_and_Sinusoidal_Curve_Fitting" class="internal">Harmonic Motion/Phase shift/Sinusoidal Curve Fitting</a></li>
+<li><a href="Inverse_Trigonometry.html" data-scroll="Inverse_Trigonometry" class="internal">Inverse Trigonometric Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Analytic_Trigonometry.html" data-scroll="Analytic_Trigonometry" class="internal"><span class="codenumber">3</span> <span class="title">Analytic Trigonometry</span></a><ul>
+<li><a href="Trigonometric_Identities.html" data-scroll="Trigonometric_Identities" class="internal">Trigonometric Identities</a></li>
+<li><a href="Sum_and_Difference_Formulas.html" data-scroll="Sum_and_Difference_Formulas" class="internal">Sum and Difference Formulas</a></li>
+<li><a href="Double-Angle_and_Half-Angle_Formulas.html" data-scroll="Double-Angle_and_Half-Angle_Formulas" class="internal">Double-Angle and Half-Angle Formulas</a></li>
+<li><a href="Product-to-Sum_and_Sum-to-Product_Formulas.html" data-scroll="Product-to-Sum_and_Sum-to-Product_Formulas" class="active">Product-to-Sum and Sum-to-Product Formulas</a></li>
+<li><a href="Trigonometric_Equations.html" data-scroll="Trigonometric_Equations" class="internal">Trigonometric Equations</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Applications_of_Trigonometry.html" data-scroll="Applications_of_Trigonometry" class="internal"><span class="codenumber">4</span> <span class="title">Applications of Trigonometry</span></a><ul>
+<li><a href="The_Law_of_Sines.html" data-scroll="The_Law_of_Sines" class="internal">The Law of Sines</a></li>
+<li><a href="The_Law_of_Cosines.html" data-scroll="The_Law_of_Cosines" class="internal">The Law of Cosines</a></li>
+<li><a href="Vectors.html" data-scroll="Vectors" class="internal">Vectors</a></li>
+<li><a href="Dot_Product.html" data-scroll="Dot_Product" class="internal">Dot Product</a></li>
+<li><a href="Cross_Product.html" data-scroll="Cross_Product" class="internal">Cross Product</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Polar_and_Parametric_Equations.html" data-scroll="Polar_and_Parametric_Equations" class="internal"><span class="codenumber">5</span> <span class="title">Polar and Parametric Equations</span></a><ul>
+<li><a href="Polar_Coordinates.html" data-scroll="Polar_Coordinates" class="internal">Polar Coordinates</a></li>
+<li><a href="Polar_Equations_and_Graphs.html" data-scroll="Polar_Equations_and_Graphs" class="internal">Polar Equations and Graphs</a></li>
+<li><a href="Complex_Numbers__De_Moivre_s_Theorem.html" data-scroll="Complex_Numbers__De_Moivre_s_Theorem" class="internal">Complex Numbers; De Moivre's Theorem</a></li>
+<li><a href="Parametric_Curves_and_Parametric_Equations.html" data-scroll="Parametric_Curves_and_Parametric_Equations" class="internal">Parametric Curves and Parametric Equations</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Analytic_Geometry.html" data-scroll="Analytic_Geometry" class="internal"><span class="codenumber">6</span> <span class="title">Analytic Geometry</span></a><ul>
+<li><a href="Parabols.html" data-scroll="Parabols" class="internal">Parabolas</a></li>
+<li><a href="Ellipses.html" data-scroll="Ellipses" class="internal">Ellipses</a></li>
+<li><a href="Hyperbolas.html" data-scroll="Hyperbolas" class="internal">Hyperbolas</a></li>
+</ul>
+</li>
+<li class="link"><a href="Solutions.html" data-scroll="Solutions" class="internal"><span class="codenumber">7</span> <span class="title">Solutions</span></a></li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1" class="internal"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="references-1.html" data-scroll="references-1" class="internal"><span class="title">Bibliography</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="Product-to-Sum_and_Sum-to-Product_Formulas"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.4</span> <span class="title">Product-to-Sum and Sum-to-Product Formulas</span>
+</h2>
+<p id="p-706">*needs motivation/intro, needs examples, and needs to expand on the math*</p>
+<p id="p-707">\begin{mybox}[Product-to-Sum Formulas] </p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\sin\alpha\cos\beta=\frac{1}{2}[\sin(\alpha+\beta)+\sin(\alpha-\beta)]
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\cos\alpha\sin\beta=\frac{1}{2}[\sin(\alpha+\beta)-\sin(\alpha-\beta)]
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\cos\alpha\cos\beta=\frac{1}{2}[\cos(\alpha+\beta)+\cos(\alpha-\beta)]
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\sin\alpha\sin\beta=\frac{1}{2}[\cos(\alpha-\beta)-\cos(\alpha+\beta)]
+\end{equation*}
+</div>
+<p id="p-708">\end{mybox}</p>
+<article class="hiddenproof" id="proof-9"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-9"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-9"><article class="hiddenproof"><p id="p-709">We add the sum and difference formula for cosine:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\begin{array}{rcl} \cos(\alpha+\beta)\amp =\amp \cos\alpha\cos\beta-\sin\alpha\sin\beta\\ +\cos(\alpha-\beta)\amp =\amp \cos\alpha\cos\beta+\sin\alpha\sin\beta\\ \hline \end{array}
+\end{equation*}
+</div>
+<p id="p-710">Dividing both sides by 2, we get</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{1}{2}[\cos(\alpha+\beta)+\cos(\alpha-\beta)]=\cos\alpha\cos\beta
+\end{equation*}
+</div>
+<p id="p-711">We add the sum and difference formula for sine:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\begin{array}{rcl} \sin(\alpha+\beta)\amp =\amp \sin\alpha\cos\beta+\cos\alpha\sin\beta\\ +\sin(\alpha-\beta)\amp =\amp \sin\alpha\cos\beta-\cos\alpha\sin\beta\\ \hline \end{array}
+\end{equation*}
+</div>
+<p id="p-712">Dividing both sides by 2, we get</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{1}{2}[\sin(\alpha+\beta)+\sin(\alpha-\beta)=\sin\alpha\cos\beta
+\end{equation*}
+</div>
+<p id="p-713">We subtract the sum and difference formula for sine:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\begin{array}{rcl} \sin(\alpha+\beta)\amp =\amp \sin\alpha\cos\beta+\cos\alpha\sin\beta\\ -\sin(\alpha-\beta)\amp =\amp \sin\alpha\cos\beta-\cos\alpha\sin\beta\\ \hline \end{array}
+\end{equation*}
+</div>
+<p id="p-714">Dividing both sides by 2, we get</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{1}{2}[\sin(\alpha+\beta)-\sin(\alpha-\beta)=\sin\beta\cos\alpha
+\end{equation*}
+</div>
+<p id="p-715">We subtract the difference and sum formula for cosine:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\begin{array}{rcl} \cos(\alpha-\beta)\amp =\amp \cos\alpha\cos\beta+\sin\alpha\sin\beta\\ -\cos(\alpha+\beta)\amp =\amp \cos\alpha\cos\beta-\sin\alpha\sin\beta\\ \hline \end{array}
+\end{equation*}
+</div>
+<p id="p-716">Dividing both sides by 2, we get</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{1}{2}[\cos(\alpha-\beta)-\cos(\alpha+\beta)]=\sin\alpha\sin\beta
+\end{equation*}
+</div></article></div>
+<article class="example example-like" id="example-56"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-56"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.1</span><span class="period">.</span>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-56"><article class="example example-like"><p id="p-717">Express the product of <span class="process-math">\(\cos2x\cos5x\)</span> as a sum or difference of sine and cosine with no products **fix wording**</p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-48" id="solution-48"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-48"><div class="solution solution-like">
+<p id="p-718">Using the formula we get</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-73">
+\begin{align*}
+\cos2x\cos5x\amp =\amp \frac{1}{2}[\cos(2x+5x)+\cos(2x-5x)]\\
+\amp =\amp \frac{1}{2}[\cos(7x)+\cos(-3x)]
+\end{align*}
+</div>
+<p id="p-719">Since cosine is even, <span class="process-math">\(\cos(-3x)=\cos3x\text{.}\)</span> Thus,</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\cos2x\cos5x=\frac{1}{2}[\cos(7x)+\cos(3x)]
+\end{equation*}
+</div>
+</div></div>
+</div></article></div>
+<p id="p-720">\begin{mybox}[Sum-to-Product Formula] </p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-74">
+\begin{align*}
+\sin\alpha+\sin\beta\amp =\amp 2\sin\left(\frac{\alpha+\beta}{2}\right)\cos\left(\frac{\alpha-\beta}{2}\right)\\
+\sin\alpha-\sin\beta\amp =\amp 2\cos\left(\frac{\alpha+\beta}{2}\right)\sin\left(\frac{\alpha-\beta}{2}\right)\\
+\cos\alpha+\cos\beta\amp =\amp 2\cos\left(\frac{\alpha+\beta}{2}\right)\cos\left(\frac{\alpha-\beta}{2}\right)\\
+\cos\alpha-\cos\beta\amp =\amp -2\sin\left(\frac{\alpha+\beta}{2}\right)\sin\left(\frac{\alpha-\beta}{2}\right)
+\end{align*}
+</div>
+<p id="p-721">\end{mybox}</p>
+<article class="hiddenproof" id="proof-10"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-10"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-10"><article class="hiddenproof"><p id="p-722">We first let <span class="process-math">\(\alpha=\frac{u+v}{2}\)</span> and <span class="process-math">\(\beta=\frac{u-v}{2}\text{.}\)</span> Then</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\alpha+\beta=\frac{u+v}{2}+\frac{u-v}{2}=\frac{2u}{2}=u
+\end{equation*}
+</div>
+<p class="continuation">and</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\alpha-\beta=\frac{u+v}{2}-\frac{u-v}{2}=\frac{2v}{2}=v
+\end{equation*}
+</div>
+<p id="p-723">Substituting these values for <span class="process-math">\(\alpha\text{,}\)</span> <span class="process-math">\(\beta\text{,}\)</span> <span class="process-math">\(\alpha+\beta\text{,}\)</span> and <span class="process-math">\(\alpha-\beta\)</span> into the Product-to-Sum Formulas, we get</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-75">
+\begin{align*}
+\sin\left(\frac{u+v}{2}\right)\cos\left(\frac{u-v}{2}\right)\amp =\amp \frac{1}{2}[\sin(u)+\sin(v)]\\
+\cos\left(\frac{u+v}{2}\right)\sin\left(\frac{u-v}{2}\right)\amp =\amp \frac{1}{2}[\sin(u)-\sin(v)]\\
+\cos\left(\frac{u+v}{2}\right)\cos\left(\frac{u-v}{2}\right)\amp =\amp \frac{1}{2}[\cos(u)+\cos(v)]\\
+\sin\left(\frac{u+v}{2}\right)\sin\left(\frac{u-v}{2}\right)\amp =\amp \frac{1}{2}[\cos(v)-\cos(u)]
+\end{align*}
+</div>
+<p id="p-724">Multiplying both sides by 2 and replacing <span class="process-math">\(u\)</span> with <span class="process-math">\(\alpha\)</span> and <span class="process-math">\(v\)</span> with <span class="process-math">\(\beta\)</span> we end up with the Sum-to-Product Formula. (multiply the last equation by -1)</p>
+<p id="p-725">***reword***</p></article></div>
+<p id="p-726">Example:</p>
+<p id="p-727">GPS. "<a class="external" href="%5C1" target="_blank"><code class="code-inline tex2jax_ignore">\1</code></a></p></section></div></main>
+</div>
+</body>
+</html>

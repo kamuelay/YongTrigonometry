@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Vectors</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Trigonometry through polynesian navigation">
+<meta property="book:author" content="Kamuela E Yong">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+},
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\def\R{4 }
+
+\def\angEl{20}
+
+\def\angAz{-20}
+
+\def\R{4 }
+\def\angEl{20}
+\newcommand{\intoo}[2]{\mathopen{]}#1\,;#2\mathclose{[}}
+\def\angAz{-20}
+\newcommand{\ud}{\mathop{\mathrm{{}d}}\mathopen{}}
+\newcommand{\intff}[2]{\mathopen{[}#1\,;#2\mathclose{]}}
+\newcommand{\thepartimage}{}
+\newcommand{\thechapterimage}{}
+\newcommand{\autodot}{.}
+\newcommand{\QuestionNB}{\bfseries\arabic{Question}.\ }
+
+
+
+\newcommand{\pgfmathsinandcos}[3]{
+\pgfmathsetmacro#1{sin(#3)}
+\pgfmathsetmacro#2{cos(#3)}}
+\newcommand{\LongitudePlane}[3][current plane]{
+\pgfmathsinandcos\sinEl\cosEl{#2}
+\pgfmathsinandcos\sint\cost{#3}
+\tikzset{#1/.style={cm={\cost,\sint*\sinEl,0,\cosEl,(0,0)}}}
+}
+\newcommand{\LatitudePlane}[3][current plane]{
+\pgfmathsinandcos\sinEl\cosEl{#2}
+\pgfmathsinandcos\sint\cost{#3}
+\pgfmathsetmacro\yshift{\cosEl*\sint}
+\tikzset{#1/.style={cm={\cost,0,0,\cost*\sinEl,(0,\yshift)}}}
+}
+\newcommand{\NewLatitudePlane}[4][current plane]{
+\pgfmathsinandcos\sinEl\cosEl{#3}
+\pgfmathsinandcos\sint\cost{#4}
+\pgfmathsetmacro\yshift{#2*\cosEl*\sint}
+\tikzset{#1/.style={cm={\cost,0,0,\cost*\sinEl,(0,\yshift)}}}
+}
+\newcommand{\DrawLongitudeCircle}[2][1]{
+\LongitudePlane{\angEl}{#2}
+\tikzset{current plane/.prefix style={scale=#1}}
+\pgfmathsetmacro\angVis{atan(sin(#2)*cos(\angEl)/sin(\angEl))}
+\draw[current plane] (\angVis:1) arc (\angVis:\angVis+180:1);
+\draw[current plane,dashed] (\angVis-180:1) arc (\angVis-180:\angVis:1);
+}
+\newcommand{\DrawLatitudeCircle}[2][1]{
+\LatitudePlane{\angEl}{#2}
+\tikzset{current plane/.prefix style={scale=#1}}
+\pgfmathsetmacro\sinVis{sin(#2)/cos(#2)*sin(\angEl)/cos(\angEl)}
+\pgfmathsetmacro\angVis{asin(min(1,max(\sinVis,-1)))}
+\draw[current plane] (\angVis:1) arc (\angVis:-\angVis-180:1);
+\draw[current plane,dashed] (180-\angVis:1) arc (180-\angVis:\angVis:1);
+}
+\newcommand{\sectionbreak}{\clearpage}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="book-1.html"><span class="title">Trigonometry through polynesian navigation</span></a></h1>
+<p class="byline">Kamuela E Yong</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="The_Law_of_Cosines.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="Applications_of_Trigonometry.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="Dot_Product.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="The_Law_of_Cosines.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="Applications_of_Trigonometry.html" title="Up">Up</a><a class="next-button button toolbar-item" href="Dot_Product.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1" class="internal"><span class="title">Front Matter</span></a></li>
+<li class="link">
+<a href="Trigonometry.html" data-scroll="Trigonometry" class="internal"><span class="codenumber">1</span> <span class="title">Trigonometry</span></a><ul>
+<li><a href="Hawaiian_Star_Compass.html" data-scroll="Hawaiian_Star_Compass" class="internal">Hawaiian Star Compass</a></li>
+<li><a href="Angles_and_Their_Measure.html" data-scroll="Angles_and_Their_Measure" class="internal">Angles and Their Measure</a></li>
+<li><a href="Unit_Circle.html" data-scroll="Unit_Circle" class="internal">Unit Circle</a></li>
+<li><a href="Right_Triangle_Trigonometry.html" data-scroll="Right_Triangle_Trigonometry" class="internal">Right Triangle Trigonometry</a></li>
+<li><a href="Trigonometric_Functions_of_Any_Angles.html" data-scroll="Trigonometric_Functions_of_Any_Angles" class="internal">Trigonometric Functions of Any Angles</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Graphs_of_the_Trigonometric_Functions.html" data-scroll="Graphs_of_the_Trigonometric_Functions" class="internal"><span class="codenumber">2</span> <span class="title">Graphs of the Trigonometric Functions</span></a><ul>
+<li><a href="Graphs_of_the_Sine_and_Cosine_Functions.html" data-scroll="Graphs_of_the_Sine_and_Cosine_Functions" class="internal">Graphs of the Sine and Cosine Functions</a></li>
+<li><a href="Graphs_of_Other_Trigonometric_Functions.html" data-scroll="Graphs_of_Other_Trigonometric_Functions" class="internal">Graphs of Other Trigonometric Functions</a></li>
+<li><a href="Phase_Shifts_and_Sinusoidal_Curve_Fitting.html" data-scroll="Phase_Shifts_and_Sinusoidal_Curve_Fitting" class="internal">Harmonic Motion/Phase shift/Sinusoidal Curve Fitting</a></li>
+<li><a href="Inverse_Trigonometry.html" data-scroll="Inverse_Trigonometry" class="internal">Inverse Trigonometric Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Analytic_Trigonometry.html" data-scroll="Analytic_Trigonometry" class="internal"><span class="codenumber">3</span> <span class="title">Analytic Trigonometry</span></a><ul>
+<li><a href="Trigonometric_Identities.html" data-scroll="Trigonometric_Identities" class="internal">Trigonometric Identities</a></li>
+<li><a href="Sum_and_Difference_Formulas.html" data-scroll="Sum_and_Difference_Formulas" class="internal">Sum and Difference Formulas</a></li>
+<li><a href="Double-Angle_and_Half-Angle_Formulas.html" data-scroll="Double-Angle_and_Half-Angle_Formulas" class="internal">Double-Angle and Half-Angle Formulas</a></li>
+<li><a href="Product-to-Sum_and_Sum-to-Product_Formulas.html" data-scroll="Product-to-Sum_and_Sum-to-Product_Formulas" class="internal">Product-to-Sum and Sum-to-Product Formulas</a></li>
+<li><a href="Trigonometric_Equations.html" data-scroll="Trigonometric_Equations" class="internal">Trigonometric Equations</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Applications_of_Trigonometry.html" data-scroll="Applications_of_Trigonometry" class="internal"><span class="codenumber">4</span> <span class="title">Applications of Trigonometry</span></a><ul>
+<li><a href="The_Law_of_Sines.html" data-scroll="The_Law_of_Sines" class="internal">The Law of Sines</a></li>
+<li><a href="The_Law_of_Cosines.html" data-scroll="The_Law_of_Cosines" class="internal">The Law of Cosines</a></li>
+<li><a href="Vectors.html" data-scroll="Vectors" class="active">Vectors</a></li>
+<li><a href="Dot_Product.html" data-scroll="Dot_Product" class="internal">Dot Product</a></li>
+<li><a href="Cross_Product.html" data-scroll="Cross_Product" class="internal">Cross Product</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Polar_and_Parametric_Equations.html" data-scroll="Polar_and_Parametric_Equations" class="internal"><span class="codenumber">5</span> <span class="title">Polar and Parametric Equations</span></a><ul>
+<li><a href="Polar_Coordinates.html" data-scroll="Polar_Coordinates" class="internal">Polar Coordinates</a></li>
+<li><a href="Polar_Equations_and_Graphs.html" data-scroll="Polar_Equations_and_Graphs" class="internal">Polar Equations and Graphs</a></li>
+<li><a href="Complex_Numbers__De_Moivre_s_Theorem.html" data-scroll="Complex_Numbers__De_Moivre_s_Theorem" class="internal">Complex Numbers; De Moivre's Theorem</a></li>
+<li><a href="Parametric_Curves_and_Parametric_Equations.html" data-scroll="Parametric_Curves_and_Parametric_Equations" class="internal">Parametric Curves and Parametric Equations</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Analytic_Geometry.html" data-scroll="Analytic_Geometry" class="internal"><span class="codenumber">6</span> <span class="title">Analytic Geometry</span></a><ul>
+<li><a href="Parabols.html" data-scroll="Parabols" class="internal">Parabolas</a></li>
+<li><a href="Ellipses.html" data-scroll="Ellipses" class="internal">Ellipses</a></li>
+<li><a href="Hyperbolas.html" data-scroll="Hyperbolas" class="internal">Hyperbolas</a></li>
+</ul>
+</li>
+<li class="link"><a href="Solutions.html" data-scroll="Solutions" class="internal"><span class="codenumber">7</span> <span class="title">Solutions</span></a></li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1" class="internal"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="references-1.html" data-scroll="references-1" class="internal"><span class="title">Bibliography</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="Vectors"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">4.3</span> <span class="title">Vectors</span>
+</h2>
+<section class="introduction" id="introduction-13"><p id="p-827">The Hawai`iloa is a double-hulled voyaging canoe whose construction was intended to recover knowledge and skills associated with traditional Hawaiian canoe-building with native materials. A major problem arose in 1989-1990 when it was determined that the koa forests in Hawai`i no longer had trees large enough to construct such a canoe so the search had to be extended beyond Hawai‘i. Using trees that didn’t originate in Hawai`i still followed the theme of using traditional materials because during storms, large trees from the Pacific Coast of North American have been known to have been swept into the Pacific Ocean and float to islands such as Hawai`i. Such trees have traditionally been used for canoe building across the Pacific. Two trees, each 200 feet high and over 400 years old were located in Shelikof Island in Soda Bay, Prince of Wales Island, west of Ketchikan, Alaska. Traditional Hawaiian and Tlingit tree cutting ceremonies were then performed to ask permission to take the trees to build a waʻa. The trees were then cut and the logs shipped to Hawai`i. The path of these logs from Alaska to Hawai`i is known as a <dfn class="terminology">vector</dfn>,  because it has both a length and a direction. We represent a vector with an arrow to indicate its <dfn class="terminology">direction</dfn>.  The length of the arrow represents the <dfn class="terminology">magnitude</dfn>  of the vector. See <a href="" class="xref" data-knowl="./knowl/fig_Juneau-to-Honolulu.html" title="Figure 4.3.1">Figure 4.3.1</a>. Many things in physics can be represented with vectors.</p>
+<figure class="figure figure-like" id="fig_Juneau-to-Honolulu"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="external/Pictures/Juneau-to-Honolulu.jpg" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.3.1<span class="period">.</span></span><span class="space"> </span>The path of the logs from Alaska to Hawai`i created a vector with a direction and magnitude. (image from Wolframalpha)</figcaption></figure></section><section class="subsection" id="subsection-40"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.3.1</span> <span class="title">Geometric Vectors</span>
+</h3>
+<p id="p-828">The vector whose path begins at the point <span class="process-math">\(P\)</span> and ends at the point <span class="process-math">\(Q\)</span> is written as <span class="process-math">\(\overrightarrow{PQ}\text{,}\)</span> where the arrow on top indicates the direction. The point <span class="process-math">\(P\)</span> is called the <em class="emphasis">initial point</em> and the point <span class="process-math">\(Q\)</span> is called the <em class="emphasis">terminal point</em> of the vector <span class="process-math">\(\overrightarrow{PQ}\text{.}\)</span> The <dfn class="terminology">magnitude</dfn>  of <span class="process-math">\(\overrightarrow{PQ}\)</span> is the length or distance and is written as <span class="process-math">\(\|\overrightarrow{PQ}\|\text{.}\)</span> We can also think of <span class="process-math">\(\overrightarrow{PQ}\)</span> as the <dfn class="terminology">displacement</dfn>.  The <dfn class="terminology">direction</dfn>  of <span class="process-math">\(\overrightarrow{PQ}\)</span> is from <span class="process-math">\(P\)</span> to <span class="process-math">\(Q\text{.}\)</span></p>
+<p id="p-830">The <em class="emphasis">zero vector</em>,  written as <span class="process-math">\(\mathbf{0}\)</span> or <span class="process-math">\({\overrightarrow{\mathbf{0}}}\text{,}\)</span> is a vector with zero magnitude, meaning it has no displacement and it has no direction.</p>
+<p id="p-831">It is important to note that a vector only requires a magnitude and direction, but it does not have a unique location. Thus, as long as the magnitude and direction aren't changed, a vector may be <dfn class="terminology">translated</dfn> or moved from one place to another. As a result, if two vectors <span class="process-math">\(\mathbf{v}\)</span> and <span class="process-math">\(\mathbf{w}\)</span> have the same direction and the same magnitude, then they are <dfn class="terminology">equal</dfn>,  written as</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\mathbf{v}=\mathbf{w}\text{.}
+\end{equation*}
+</div>
+<article class="example example-like" id="example-66"><a href="" data-knowl="" class="id-ref example-knowl original has-image" data-refid="hk-example-66"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.2</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-66"><article class="example example-like"><p id="p-832">The average distanced travled by a waʻa in one day of sailing is 120 nautical miles. If the Nāmāhoe departed from Kaua`i, the Hawai`iloa departed from Oʻahu, the Moʻokiha departed from Maui, and the Makali`i departed from Hawai`i and all waʻa traveled for three days (<span class="process-math">\(120\times3=360\)</span> miles) in the direction of Manu Koʻolau (NE), the resulting vectors from each waʻa will be equal since they all have the same direction (NE) and the same magnitude (360 miles). See <a href="" class="xref" data-knowl="./knowl/fig_equal-vectors.html" title="Figure 4.3.3">Figure 4.3.3</a>.</p>
+<figure class="figure figure-like" id="fig_equal-vectors"><div class="image-box" style="width: 15%; margin-left: 42.5%; margin-right: 42.5%;"><img src="external/Pictures/equal-vectors.jpeg" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.3.3<span class="period">.</span></span><span class="space"> </span>The vectors created by the paths of each canoe traveling the same distance (240 miles) and in the same direction (Manu Koʻolau, NE) are all equal. (image modified from Google Maps)</figcaption></figure></article></div></section><section class="subsection" id="subsection-41"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.3.2</span> <span class="title">Vector Addition</span>
+</h3>
+<article class="example example-like" id="example-67"><a href="" data-knowl="" class="id-ref example-knowl original has-image" data-refid="hk-example-67"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.4</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-67"><article class="example example-like"><p id="p-833">If you stand in Tahiti and face Hawai`i, you would be looking at the Haka Hoʻolua house or north by west (NbW). When the Hōkūleʻa sails from Tahiti to return home to Hawai`i, the navigator does not point Hōkūleʻa directly to Hawai`i and sail to the Haka Hoʻolua house. Instead, Hōkūleʻa sails north. When the navigator has determined that Hōkūleʻa has reached the latitude of Hawai`i, about <span class="process-math">\(20^{\circ}\)</span> N, the wa‘a then turns west to come home. This method of navigation is called <em class="emphasis">latitude sailing</em>.  For this strategy to work, the navigator must know their latitude which can be determined by (1) measuring altitude of Hokupa’a (North Star); (2) measuring the altitude of stars as they cross the meridian; or (3) watching for pairs of stars that rise or set together.</p>
+<p id="p-834">We can represent Hōkūle‘a’s path north by the vector <span class="process-math">\(\overrightarrow{PQ}\)</span> and the path west by the vector <span class="process-math">\(\overrightarrow{QR}\)</span> then the resulting displacement is the same as if you were to sail directly from Tahiti to Hawai`i, represented by <span class="process-math">\(\overrightarrow{PR}\text{.}\)</span> See <a href="" class="xref" data-knowl="./knowl/fig_adding-vectors.html" title="Figure 4.3.5">Figure 4.3.5</a>. We call the vector <span class="process-math">\(\overrightarrow{PR}\)</span> the <em class="emphasis">sum</em>  of the vectors <span class="process-math">\(\overrightarrow{PQ}\)</span> and <span class="process-math">\(\overrightarrow{QR}\)</span> and we write</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig_adding-vectors.html">
+\begin{equation*}
+\overrightarrow{PQ}+\overrightarrow{QR}=\overrightarrow{PR}\text{.}
+\end{equation*}
+</div>
+<figure class="figure figure-like" id="fig_adding-vectors"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-185.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.3.5<span class="period">.</span></span><span class="space"> </span>Adding the vector heading north with the vector heading west (similar to the path navigators use through latitude sailing) results in the same vector directly from Tahiti to Hawai`i.</figcaption></figure></article></div>
+<p id="p-835">To find the <em class="emphasis">sum</em> of vectors <span class="process-math">\(\mathbf{u}\)</span> and <span class="process-math">\(\mathbf{v}\text{,}\)</span> we place the initial point of the second vector at the terminal (or end) point of the first vector. The vector formed from the initial point of the first vector to the terminal point of the second vector is the the sum of the two vectors, <span class="process-math">\(\mathbf{u}+\mathbf{v}\text{.}\)</span> See <a href="" class="xref" data-knowl="./knowl/fig_sum-of-vectors1.html" title="Figure 4.3.6">Figure 4.3.6</a>. Since vectors can be translated, any two vectors can be added. Notice that adding the vector <span class="process-math">\(\mathbf{v}\)</span> to <span class="process-math">\(\mathbf{u}\)</span> results in the same vector obtained by adding <span class="process-math">\(\mathbf{u}\)</span> to <span class="process-math">\(\mathbf{v}\text{.}\)</span> Thus <span class="process-math">\(\mathbf{u}+\mathbf{v}=\mathbf{v}+\mathbf{u}\text{.}\)</span></p>
+<figure class="figure figure-like" id="fig_sum-of-vectors1"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-186.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.3.6<span class="period">.</span></span><span class="space"> </span><span class="process-math">\(\mathbf{u}+\mathbf{v}=\mathbf{v}+\mathbf{u}\)</span></figcaption></figure></section><section class="subsection" id="subsection-42"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.3.3</span> <span class="title">Multiplying Vectors by a Scalar</span>
+</h3>
+<p id="p-836">If a waʻa sails for two days at 5 knots, it will have covered 240 miles. This distance traveled is known as the magnitude of the vector and it is given as a real number. These real numbers are often referred to as <dfn class="terminology">scalars</dfn>.  The magnitude of the vector that represents a wa‘a’s path for two days will be twice as big as the magnitude of the vector that represents the path a waʻa sailed for only one day. We now can define how we multiply a vector by a scalar.</p>
+<article class="definition definition-like" id="definition-18"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.3.7</span><span class="period">.</span>
+</h4>
+<p id="p-837">If <span class="process-math">\(c\)</span> is a scalar (real number) and <span class="process-math">\(\mathbf{v}\)</span> is a vector, then the <dfn class="terminology">scalar multiple</dfn> <span class="process-math">\(c\mathbf{v}\)</span> has magnitude <span class="process-math">\(c\)</span> times the magnitude of <span class="process-math">\(\mathbf{v}\)</span> (<span class="process-math">\(|c|\|\mathbf{v}\|\)</span>) and if</p>
+<ul class="disc">
+<li id="li-145"><p id="p-838"><span class="process-math">\(c&gt;0\)</span> has the same direction as <span class="process-math">\(\mathbf{v}\)</span></p></li>
+<li id="li-146"><p id="p-839"><span class="process-math">\(c\lt 0\)</span> has the opposite direction as <span class="process-math">\(\mathbf{v}\)</span></p></li>
+</ul>
+<p id="p-840">If <span class="process-math">\(c=0\)</span> or <span class="process-math">\(\mathbf{v}=\mathbf{0}\text{,}\)</span> then <span class="process-math">\(c\mathbf{v}=\mathbf{0}\text{.}\)</span></p></article><figure class="figure figure-like" id="fig_scalar-multiples"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-187.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.3.8<span class="period">.</span></span><span class="space"> </span>scalar multiples</figcaption></figure></section><section class="subsection" id="subsection-43"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.3.4</span> <span class="title">Vector Subtraction</span>
+</h3>
+<p id="p-841">\begin{mybox}[Vector Subtraction] Vector subtraction is defined to be the sum of one vector with the negative of another vector. In other words, <span class="process-math">\(\mathbf{u}-\mathbf{v}=\mathbf{u}+(-\mathbf{v})\text{.}\)</span> \end{mybox}</p></section><section class="subsection" id="subsection-44"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.3.5</span> <span class="title">Vectors in Coordinates</span>
+</h3>
+<p id="p-842">\begin{mybox}[Component Form of a Vector] If a vector, <span class="process-math">\(\mathbf{v}\)</span> has initial point <span class="process-math">\(P(x_1,y_1)\)</span> and terminal point <span class="process-math">\(Q(x_2,y_2)\text{,}\)</span> then the following are equivalent ways to write the vector</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-81">
+\begin{align*}
+\mathbf{v}\amp =\amp \overrightarrow{PQ}\\
+\amp =\amp \langle x_2-x_1,y_2-y_1\rangle\\
+\amp =\amp \langle v_x,v_y\rangle
+\end{align*}
+</div>
+<p id="p-843">The coordinates, <span class="process-math">\(v_x\)</span> and <span class="process-math">\(v_y\)</span> are scalars (real numbers) and represent the <em class="emphasis">horizontal component</em>, and <em class="emphasis">vertical component</em> of <span class="process-math">\(\mathbf{v}\text{,}\)</span> respectively. Note <span class="process-math">\(v_x\)</span> and <span class="process-math">\(v_y\)</span> are not coordinates. See <a href="" class="xref" data-knowl="./knowl/fig_vector-component.html" title="Figure 4.3.9">Figure 4.3.9</a> \end{mybox}</p>
+<figure class="figure figure-like" id="fig_vector-component"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-188.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.3.9<span class="period">.</span></span><span class="space"> </span>Components of vectors. The following are equivalent ways of describing a vector: <span class="process-math">\(\mathbf{v}=\overrightarrow{PQ}=\langle x_2-x_1,y_2-y_1\rangle=\langle v_x,v_y\rangle\)</span></figcaption></figure><p id="p-845">A vector, <span class="process-math">\(\mathbf{v}\)</span> with an initial point at <span class="process-math">\((0,0)\)</span> and terminal point at <span class="process-math">\((a,b)\)</span> can be written as <span class="process-math">\(\mathbf{v}=\langle a-0,b-0\rangle=\langle a,b\rangle\text{,}\)</span> and <span class="process-math">\(\mathbf{v}\)</span> is said to be in <em class="emphasis">standard position</em>.  A vector with an initial point at the origin is called the <em class="emphasis">position vector</em>. </p>
+<article class="example example-like" id="example-68"><a href="" data-knowl="" class="id-ref example-knowl original has-image" data-refid="hk-example-68"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.10</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-68"><article class="example example-like"><p id="p-846">The vector <span class="process-math">\(\mathbf{v}\)</span> that goes from <span class="process-math">\(P(1,7)\)</span> to <span class="process-math">\(Q(11,2)\)</span> can be expressed as</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\mathbf{v}=\overrightarrow{PQ}=\langle11-1,2-7\rangle=\langle10,-5\rangle
+\end{equation*}
+</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-189.svg" role="img" class="contained"></div></article></div>
+<article class="definition definition-like" id="definition-19"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.3.11</span><span class="period">.</span>
+</h4>
+<p id="p-847">The <dfn class="terminology">zero vector</dfn>  is the vector <span class="process-math">\(\mathbf{0}=\langle0,0\rangle\)</span></p></article><article class="definition definition-like" id="definition-20"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.3.12</span><span class="period">.</span>
+</h4>
+<p id="p-848">Given a vector <span class="process-math">\(\mathbf{v}=\langle v_x,v_y\rangle\text{,}\)</span> the <dfn class="terminology">magnitude</dfn>  or <dfn class="terminology">length</dfn>  is</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\|\mathbf{v}\|=\sqrt{v_x^2+v_y^2}
+\end{equation*}
+</div>
+<p id="p-849">This formula is derived from the Pythagorean Theorem or the distance formula.</p></article><article class="definition definition-like" id="definition-21"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.3.13</span><span class="period">.</span>
+</h4>
+<p id="p-850">A vector <span class="process-math">\(\mathbf{u}\)</span> with magnitude 1, <span class="process-math">\(\|\mathbf{u}\|=1\text{,}\)</span> is called a <dfn class="terminology">unit vector</dfn></p></article><article class="example example-like" id="ex_magnitude"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-ex_magnitude"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.14</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-ex_magnitude"><article class="example example-like"><p id="p-851">Find the magnitude of the vector <span class="process-math">\(\mathbf{v}=\langle10,-5\rangle\)</span></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-58" id="solution-58"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-58"><div class="solution solution-like"><div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\|\mathbf{v}\|=\sqrt{10^2+(-5)^2}=\sqrt{125}=\sqrt{25\cdot5}=\sqrt{25}\cdot\sqrt{5}=5\sqrt{5}
+\end{equation*}
+</div></div></div>
+</div></article></div>
+<article class="definition definition-like" id="definition-22"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.3.15</span><span class="period">.</span><span class="space"> </span><span class="title">Algebraic operations of vectors.</span>
+</h4>
+<p id="p-852">If <span class="process-math">\(\mathbf{u}=\langle u_x,u_y\rangle\text{,}\)</span> <span class="process-math">\(\mathbf{v}=\langle v_x,v_y\rangle\text{,}\)</span> and <span class="process-math">\(c\)</span> is a scalar, then</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-82">
+\begin{align*}
+\mathbf{u}+\mathbf{v}\amp =\amp \langle u_x+v_x,u_y+v_y\rangle\\
+\mathbf{u}-\mathbf{v}\amp =\amp \langle u_x-v_x,u_y-v_y\rangle\\
+c\mathbf{u}\amp =\amp \langle cu_x,cu_y\rangle
+\end{align*}
+</div></article><article class="example example-like" id="example-70"><a href="" data-knowl="" class="id-ref example-knowl original has-image" data-refid="hk-example-70"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.16</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-70"><article class="example example-like"><p id="p-853">Let <span class="process-math">\(\mathbf{u}=\langle 5, 1\rangle\)</span> and <span class="process-math">\(\mathbf{v}=\langle 4, 6\rangle\text{.}\)</span> Compute the following:</p>
+<ol class="decimal">
+<li id="li-147"><p id="p-854"><span class="process-math">\(\displaystyle \mathbf{u}+\mathbf{v}\)</span></p></li>
+<li id="li-148"><p id="p-855"><span class="process-math">\(\displaystyle \mathbf{u}-\mathbf{v}\)</span></p></li>
+<li id="li-149"><p id="p-856"><span class="process-math">\(\displaystyle 3\mathbf{u}\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-59" id="solution-59"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-59"><div class="solution solution-like"><ol id="p-857" class="decimal">
+<li id="li-150"><p id="p-858"><span class="process-math">\(\mathbf{u}+\mathbf{v}=\langle 5, 1\rangle+\langle 4, 6\rangle=\langle 5+4,1+6\rangle=\langle 9,7\rangle\)</span> <figure class="figure figure-like" id="fig_algebraic-operations-vectors-u_v"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-190.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.3.17<span class="period">.</span></span><span class="space"> </span><span class="process-math">\(\mathbf{u}+\mathbf{v}\)</span></figcaption></figure></p></li>
+<li id="li-151"><p id="p-859"><span class="process-math">\(\mathbf{u}-\mathbf{v}=\langle 5, 1\rangle-\langle 4, 6\rangle=\langle 5-4,1-6\rangle=\langle 1,-5\rangle\)</span> <figure class="figure figure-like" id="fig_algebraic-operations-vectors-u-v"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-191.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.3.18<span class="period">.</span></span><span class="space"> </span><span class="process-math">\(\mathbf{u}-\mathbf{v}\)</span></figcaption></figure></p></li>
+<li id="li-152"><p id="p-860"><span class="process-math">\(3\mathbf{u}=3\langle 5,1\rangle=\langle 3\cdot5,3\cdot1\rangle=\langle 15,3\rangle\)</span> <figure class="figure figure-like" id="fig_algebraic-operations-vectors-3u"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-192.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.3.19<span class="period">.</span></span><span class="space"> </span><span class="process-math">\(3\mathbf{u}\)</span></figcaption></figure></p></li>
+</ol></div></div>
+</div></article></div></section><section class="subsection" id="subsection-45"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.3.6</span> <span class="title">Properties of Addition, Length, and Scalar Multiplication</span>
+</h3>
+<p id="p-861">\begin{mybox}[Properties of Vectors] If <span class="process-math">\(\mathbf{u}\text{,}\)</span> <span class="process-math">\(\mathbf{v}\text{,}\)</span> and <span class="process-math">\(\mathbf{w}\)</span> are vectors, <span class="process-math">\(\mathbf{0}\)</span> is the zero vector, and <span class="process-math">\(c\)</span> and <span class="process-math">\(d\)</span> are scalars, then</p>
+<p id="p-862"><em class="emphasis">Vector Addition</em></p>
+<ol class="decimal">
+<li id="li-153"><p id="p-863"><span class="process-math">\(\displaystyle \mathbf{u}+\mathbf{v}=\mathbf{v}+\mathbf{u}\)</span></p></li>
+<li id="li-154"><p id="p-864"><span class="process-math">\(\displaystyle \mathbf{u}+(\mathbf{v}+\mathbf{w})=(\mathbf{u}+\mathbf{v})+\mathbf{w}\)</span></p></li>
+<li id="li-155"><p id="p-865"><span class="process-math">\(\displaystyle \mathbf{u}+\mathbf{0}=\mathbf{u}\)</span></p></li>
+<li id="li-156"><p id="p-866"><span class="process-math">\(\displaystyle \mathbf{u}+(-\mathbf{u})=\mathbf{0}\)</span></p></li>
+</ol>
+<p id="p-867"><em class="emphasis">Length of a Vector</em></p>
+<ol class="decimal"><li id="li-157"><p id="p-868"><span class="process-math">\(\displaystyle \|c\mathbf{u}\|=|c|\|\mathbf{u}\|\)</span></p></li></ol>
+<p id="p-869"><em class="emphasis">Scalar Multiplication</em></p>
+<ol class="decimal">
+<li id="li-158"><p id="p-870"><span class="process-math">\(\displaystyle c(\mathbf{u}+\mathbf{v})=c\mathbf{u}+c\mathbf{v}\)</span></p></li>
+<li id="li-159"><p id="p-871"><span class="process-math">\(\displaystyle (c+d)\mathbf{u}=c\mathbf{u}+d\mathbf{u}\)</span></p></li>
+<li id="li-160"><p id="p-872"><span class="process-math">\(\displaystyle (cd)\mathbf{u}=c(d\mathbf{u})=d(c\mathbf{u})\)</span></p></li>
+<li id="li-161"><p id="p-873"><span class="process-math">\(\displaystyle 1\mathbf{u}=\mathbf{u}\)</span></p></li>
+<li id="li-162"><p id="p-874"><span class="process-math">\(\displaystyle 0\mathbf{u}=\mathbf{0}\)</span></p></li>
+<li id="li-163"><p id="p-875"><span class="process-math">\(\displaystyle c\mathbf{0}=\mathbf{0}\)</span></p></li>
+</ol>
+<p id="p-876">\end{mybox}</p>
+<article class="example example-like" id="example-71"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-71"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.20</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-71"><article class="example example-like"><p id="p-877">Prove 1, 5, 6 and leave the rest as exercises</p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-60" id="solution-60"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-60"><div class="solution solution-like"><p id="p-878">solution</p></div></div>
+</div></article></div></section><section class="subsection" id="subsection-46"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.3.7</span> <span class="title">Finding a Unit Vector</span>
+</h3>
+<p id="p-879">Sometimes it is useful to look at problems involving vectors in terms of a vector in the same direction, but with a magnitude of one. Recall that a unit vector <span class="process-math">\(\mathbf{u}\)</span> is a vector whose length is one, <span class="process-math">\(\|\mathbf{u}\|=1\text{.}\)</span> To find a unit vector in the same direction, you will need to divide that vector by its length or magnitude. \begin{mybox} Let <span class="process-math">\(\mathbf{v}\)</span> be any vector. The vector</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\mathbf{u}=\frac{\mathbf{v}}{\|\mathbf{v}\|}
+\end{equation*}
+</div>
+<p class="continuation">is a unit vector that has the same direction as <span class="process-math">\(\mathbf{v}\text{.}\)</span> \end{mybox}</p>
+<article class="example example-like" id="example-72"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-72"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.21</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-72"><article class="example example-like"><p id="p-880">Find the unit vector that has the same direction as <span class="process-math">\(\mathbf{v}=\langle10,-5\rangle\)</span></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-61" id="solution-61"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-61"><div class="solution solution-like">
+<p id="p-881">From <a href="" class="xref" data-knowl="./knowl/ex_magnitude.html" title="Example 4.3.14">Example 4.3.14</a>, we know <span class="process-math">\(\|\mathbf{v}\|=5\sqrt{5}\text{.}\)</span> Then</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/ex_magnitude.html">
+\begin{equation*}
+\mathbf{u}=\frac{\mathbf{v}}{\|\mathbf{v}\|}=\frac{\langle10,-5\rangle}{5\sqrt{5}}=\left\langle\frac{10}{5\sqrt{5}},-\frac{5}{5\sqrt{5}}\right\rangle=\left\langle\frac{2}{\sqrt{5}},-\frac{1}{\sqrt{5}}\right\rangle=\left\langle\frac{2\sqrt{5}}{5},-\frac{\sqrt{5}}{5}\right\rangle
+\end{equation*}
+</div>
+<p id="p-882">We can verify that this is in fact a unit vector by computing the magnitude:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\|\mathbf{u}\|=\left\|\left\langle\frac{2\sqrt{5}}{5},-\frac{\sqrt{5}}{5}\right\rangle\right\|=\sqrt{\left(\frac{2\sqrt{5}}{5}\right)^2+\left(-\frac{\sqrt{5}}{5}\right)^2}=\sqrt{\frac{4\cdot5}{25}+\frac{5}{25}}=\sqrt{\frac{25}{25}}=1
+\end{equation*}
+</div>
+</div></div>
+</div></article></div>
+<p id="p-883">Two useful unit vectors are <span class="process-math">\(\mathbf{i}\)</span> and <span class="process-math">\(\mathbf{j}\text{.}\)</span> The vector <span class="process-math">\(\mathbf{i}\)</span> represents the unit vector whose direction is along the positive <span class="process-math">\(x\)</span>-axis and the vector <span class="process-math">\(\mathbf{j}\)</span> represents the unit vector whose direction is along the positive <span class="process-math">\(y\)</span>-axis.</p>
+<article class="definition definition-like" id="definition-23"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.3.22</span><span class="period">.</span>
+</h4>
+<p id="p-884">The <dfn class="terminology">unit vectors</dfn> <span class="process-math">\(\mathbf{i}\)</span> and <span class="process-math">\(\mathbf{j}\)</span> are defined as</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\mathbf{i}=\langle1,0\rangle,\mathbf{j}=\langle0,1\rangle
+\end{equation*}
+</div></article><p id="p-885">We can now represent any vector using the unit vectors <span class="process-math">\(\mathbf{i}\)</span> and <span class="process-math">\(\mathbf{j}\text{.}\)</span></p>
+<article class="definition definition-like" id="definition-24"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.3.23</span><span class="period">.</span>
+</h4>
+<p id="p-886">Let <span class="process-math">\(\mathbf{v}\)</span> be any vector. Then we can express <span class="process-math">\(\mathbf{v}\)</span> in terms of its <dfn class="terminology">horizontal</dfn> and <dfn class="terminology">vertical components</dfn></p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\mathbf{v}=\langle v_x,v_y\rangle=v_x\mathbf{i}+v_y\mathbf{j}
+\end{equation*}
+</div></article></section><section class="subsection" id="subsection-47"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.3.8</span> <span class="title">Components and Direction</span>
+</h3>
+<p id="p-887">Recall that a vector is composed of a direction and magnitude. Earlier in this section we learned how to calculate the magnitude. Now we will discuss how to calculate the direction.</p>
+<article class="definition definition-like" id="definition-25"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.3.24</span><span class="period">.</span>
+</h4>
+<p id="p-888">Let <span class="process-math">\(\mathbf{v}=\langle v_x,v_y\rangle\)</span> be a vector with magnitude <span class="process-math">\(\|\mathbf{v}\|\text{.}\)</span> The angle <span class="process-math">\(\theta\)</span> represents the <dfn class="terminology">direction</dfn>  of <span class="process-math">\(\mathbf{v}\)</span> and is the smallest positive angle in standard position formed by the positive <span class="process-math">\(x\)</span>-axis and <span class="process-math">\(\mathbf{v}\)</span> (<span class="process-math">\(0^{\circ}\leq\theta\leq360^{\circ}\)</span>). The direction, <span class="process-math">\(\theta\)</span> and can be calculated by</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\theta=\tan^{-1}\left(\frac{v_y}{v_x}\right)
+\end{equation*}
+</div></article><p id="p-889">We now have all the information needed to write a vector. \begin{mybox} Using Right Triangle Trigonometry we can solve for the horizontal and vertical components, <span class="process-math">\(v_x\)</span> and <span class="process-math">\(v_y\text{,}\)</span> respectively</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+a=\|\mathbf{v}\|\cos\theta, b=\|\mathbf{v}\|\sin\theta
+\end{equation*}
+</div>
+<p id="p-890">This allows us to express <span class="process-math">\(\mathbf{v}\)</span> as</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\mathbf{v}=\|\mathbf{v}\|\cos\theta\mathbf{i}+\|\mathbf{v}\|\sin\theta\mathbf{j}=\langle\|\mathbf{v}\|\cos\theta,\|\mathbf{v}\|\sin\theta\rangle
+\end{equation*}
+</div>
+<p id="p-891">\end{mybox}</p>
+<figure class="figure figure-like" id="fig_vector-components"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-193.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.3.25<span class="period">.</span></span><span class="space"> </span>The horizontal and vertical components of a vector</figcaption></figure></section><section class="subsection" id="subsection-48"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.3.9</span> <span class="title">Velocity</span>
+</h3>
+<p id="p-892">Vectors can be used to represented many physical objects. For example, the velocity of a moving waʻa is presented by a vector whose direction is the direction of motion and whose magnitude is the speed of the waʻa. This vector is called the <em class="emphasis">velocity vector</em>  and can also be used to describe other physical objects and phenomena such as wind and currents.</p>
+<article class="example example-like" id="example-73"><a href="" data-knowl="" class="id-ref example-knowl original has-image" data-refid="hk-example-73"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.26</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-73"><article class="example example-like"><p id="p-893">Wind is blowing from the house Nā Leo Hoʻolua (N<span class="process-math">\(22.5^{\circ}\)</span>W) at 10 knots. Write the wind velocity as a vector <span class="process-math">\(\mathbf{v}\text{.}\)</span></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-62" id="solution-62"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-62"><div class="solution solution-like">
+<p id="p-894">First we note that since the velocity is 10 knots, we have <span class="process-math">\(\|\mathbf{v}\|=10\text{.}\)</span> Next we will need to find the direction. Since <span class="process-math">\(\theta\)</span> is measured from the positive <span class="process-math">\(x\)</span>-axis, we see that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\theta=90^{\circ}+22.5^{\circ}=112.5^{\circ}
+\end{equation*}
+</div>
+<p id="p-895">To find the vector, will need the horizontal and vertical components.</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-83">
+\begin{align*}
+v_x\amp =\amp \|\mathbf{v}\|\cos\theta=10\cos112.5^{\circ}\approx-3.8\\
+v_y\amp =\amp \|\mathbf{v}\|\sin\theta=10\sin112.5^{\circ}\approx9.2
+\end{align*}
+</div>
+<p id="p-896">Thus</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\mathbf{v}\approx-3.8\mathbf{i}+9.2\mathbf{j}=\langle-3.8,9.2\rangle
+\end{equation*}
+</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-194.svg" role="img" class="contained"></div>
+</div></div>
+</div></article></div>
+<article class="example example-like" id="example-74"><a href="" data-knowl="" class="id-ref example-knowl original has-image" data-refid="hk-example-74"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.27</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-74"><article class="example example-like"><p id="p-897">An estimate for the speed of Hikianalia is <span class="process-math">\(\frac{1}{3}\)</span> the speed of the wind on a beam reach (wind is at a right angle to the waʻa). So if Hikianalia is sailing with winds at 15 knots, the speed of the wa‘a is <span class="process-math">\(\frac{1}{3}\cdot15=5\)</span> knots. However, if Hikianalia is sailing directly into a current of 2 knots, Hikianalia’s actual speed will be slowed down to 3 knots.</p>
+<figure class="figure figure-like" id="figure-22"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-195.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.3.28<span class="period">.</span></span><span class="space"> </span></figcaption></figure></article></div>
+<article class="example example-like" id="example-75"><a href="" data-knowl="" class="id-ref example-knowl original has-image" data-refid="hk-example-75"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.29</span><span class="period">.</span><span class="space"> </span><span class="title">Leeway.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-75"><article class="example example-like"><p id="p-898">It is very rare that a wa‘a sailing on the ocean will be moving in the same direction it’s pointed. One reason for this is that crosswind can push the waʻa off its course. The angle of displacement between the apparent heading of the waʻa and the direction the waʻa is actually traveling through the water is referred to as <em class="emphasis">leeway</em>.  Using vector addition, we can determine where the waʻa will actually travel. However, on the waʻa, the navigator can determine the leeway by observing the angle from the wake behind the waʻa and the apparent direction the waʻa is pointed towards.</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-196.svg" role="img" class="contained"></div>
+<p id="p-899">In order to compensate for the wind, the navigator must steer the waʻa into the wind by the same angle as the leeway angle. For example, if the waʻa needs to sail in the direction of Manu Malanai (SE) and the wind is pushing the waʻa one house further south, the waʻa will move towards Nālani Malanai (SEbS). To maintain the course of Manu Malanai, the navigator must then point the waʻa one house north with an apparent heading in the house of Noio Malanai (SEbE) in order for the actual heading to be in the house of Manu Malanai (SE).</p></article></div></section></section></div></main>
+</div>
+</body>
+</html>

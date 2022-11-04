@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Sum and Difference Formulas</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Trigonometry through polynesian navigation">
+<meta property="book:author" content="Kamuela E Yong">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+},
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\def\R{4 }
+
+\def\angEl{20}
+
+\def\angAz{-20}
+
+\def\R{4 }
+\def\angEl{20}
+\newcommand{\intoo}[2]{\mathopen{]}#1\,;#2\mathclose{[}}
+\def\angAz{-20}
+\newcommand{\ud}{\mathop{\mathrm{{}d}}\mathopen{}}
+\newcommand{\intff}[2]{\mathopen{[}#1\,;#2\mathclose{]}}
+\newcommand{\thepartimage}{}
+\newcommand{\thechapterimage}{}
+\newcommand{\autodot}{.}
+\newcommand{\QuestionNB}{\bfseries\arabic{Question}.\ }
+
+
+
+\newcommand{\pgfmathsinandcos}[3]{
+\pgfmathsetmacro#1{sin(#3)}
+\pgfmathsetmacro#2{cos(#3)}}
+\newcommand{\LongitudePlane}[3][current plane]{
+\pgfmathsinandcos\sinEl\cosEl{#2}
+\pgfmathsinandcos\sint\cost{#3}
+\tikzset{#1/.style={cm={\cost,\sint*\sinEl,0,\cosEl,(0,0)}}}
+}
+\newcommand{\LatitudePlane}[3][current plane]{
+\pgfmathsinandcos\sinEl\cosEl{#2}
+\pgfmathsinandcos\sint\cost{#3}
+\pgfmathsetmacro\yshift{\cosEl*\sint}
+\tikzset{#1/.style={cm={\cost,0,0,\cost*\sinEl,(0,\yshift)}}}
+}
+\newcommand{\NewLatitudePlane}[4][current plane]{
+\pgfmathsinandcos\sinEl\cosEl{#3}
+\pgfmathsinandcos\sint\cost{#4}
+\pgfmathsetmacro\yshift{#2*\cosEl*\sint}
+\tikzset{#1/.style={cm={\cost,0,0,\cost*\sinEl,(0,\yshift)}}}
+}
+\newcommand{\DrawLongitudeCircle}[2][1]{
+\LongitudePlane{\angEl}{#2}
+\tikzset{current plane/.prefix style={scale=#1}}
+\pgfmathsetmacro\angVis{atan(sin(#2)*cos(\angEl)/sin(\angEl))}
+\draw[current plane] (\angVis:1) arc (\angVis:\angVis+180:1);
+\draw[current plane,dashed] (\angVis-180:1) arc (\angVis-180:\angVis:1);
+}
+\newcommand{\DrawLatitudeCircle}[2][1]{
+\LatitudePlane{\angEl}{#2}
+\tikzset{current plane/.prefix style={scale=#1}}
+\pgfmathsetmacro\sinVis{sin(#2)/cos(#2)*sin(\angEl)/cos(\angEl)}
+\pgfmathsetmacro\angVis{asin(min(1,max(\sinVis,-1)))}
+\draw[current plane] (\angVis:1) arc (\angVis:-\angVis-180:1);
+\draw[current plane,dashed] (180-\angVis:1) arc (180-\angVis:\angVis:1);
+}
+\newcommand{\sectionbreak}{\clearpage}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="book-1.html"><span class="title">Trigonometry through polynesian navigation</span></a></h1>
+<p class="byline">Kamuela E Yong</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="Trigonometric_Identities.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="Analytic_Trigonometry.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="Double-Angle_and_Half-Angle_Formulas.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="Trigonometric_Identities.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="Analytic_Trigonometry.html" title="Up">Up</a><a class="next-button button toolbar-item" href="Double-Angle_and_Half-Angle_Formulas.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1" class="internal"><span class="title">Front Matter</span></a></li>
+<li class="link">
+<a href="Trigonometry.html" data-scroll="Trigonometry" class="internal"><span class="codenumber">1</span> <span class="title">Trigonometry</span></a><ul>
+<li><a href="Hawaiian_Star_Compass.html" data-scroll="Hawaiian_Star_Compass" class="internal">Hawaiian Star Compass</a></li>
+<li><a href="Angles_and_Their_Measure.html" data-scroll="Angles_and_Their_Measure" class="internal">Angles and Their Measure</a></li>
+<li><a href="Unit_Circle.html" data-scroll="Unit_Circle" class="internal">Unit Circle</a></li>
+<li><a href="Right_Triangle_Trigonometry.html" data-scroll="Right_Triangle_Trigonometry" class="internal">Right Triangle Trigonometry</a></li>
+<li><a href="Trigonometric_Functions_of_Any_Angles.html" data-scroll="Trigonometric_Functions_of_Any_Angles" class="internal">Trigonometric Functions of Any Angles</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Graphs_of_the_Trigonometric_Functions.html" data-scroll="Graphs_of_the_Trigonometric_Functions" class="internal"><span class="codenumber">2</span> <span class="title">Graphs of the Trigonometric Functions</span></a><ul>
+<li><a href="Graphs_of_the_Sine_and_Cosine_Functions.html" data-scroll="Graphs_of_the_Sine_and_Cosine_Functions" class="internal">Graphs of the Sine and Cosine Functions</a></li>
+<li><a href="Graphs_of_Other_Trigonometric_Functions.html" data-scroll="Graphs_of_Other_Trigonometric_Functions" class="internal">Graphs of Other Trigonometric Functions</a></li>
+<li><a href="Phase_Shifts_and_Sinusoidal_Curve_Fitting.html" data-scroll="Phase_Shifts_and_Sinusoidal_Curve_Fitting" class="internal">Harmonic Motion/Phase shift/Sinusoidal Curve Fitting</a></li>
+<li><a href="Inverse_Trigonometry.html" data-scroll="Inverse_Trigonometry" class="internal">Inverse Trigonometric Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Analytic_Trigonometry.html" data-scroll="Analytic_Trigonometry" class="internal"><span class="codenumber">3</span> <span class="title">Analytic Trigonometry</span></a><ul>
+<li><a href="Trigonometric_Identities.html" data-scroll="Trigonometric_Identities" class="internal">Trigonometric Identities</a></li>
+<li><a href="Sum_and_Difference_Formulas.html" data-scroll="Sum_and_Difference_Formulas" class="active">Sum and Difference Formulas</a></li>
+<li><a href="Double-Angle_and_Half-Angle_Formulas.html" data-scroll="Double-Angle_and_Half-Angle_Formulas" class="internal">Double-Angle and Half-Angle Formulas</a></li>
+<li><a href="Product-to-Sum_and_Sum-to-Product_Formulas.html" data-scroll="Product-to-Sum_and_Sum-to-Product_Formulas" class="internal">Product-to-Sum and Sum-to-Product Formulas</a></li>
+<li><a href="Trigonometric_Equations.html" data-scroll="Trigonometric_Equations" class="internal">Trigonometric Equations</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Applications_of_Trigonometry.html" data-scroll="Applications_of_Trigonometry" class="internal"><span class="codenumber">4</span> <span class="title">Applications of Trigonometry</span></a><ul>
+<li><a href="The_Law_of_Sines.html" data-scroll="The_Law_of_Sines" class="internal">The Law of Sines</a></li>
+<li><a href="The_Law_of_Cosines.html" data-scroll="The_Law_of_Cosines" class="internal">The Law of Cosines</a></li>
+<li><a href="Vectors.html" data-scroll="Vectors" class="internal">Vectors</a></li>
+<li><a href="Dot_Product.html" data-scroll="Dot_Product" class="internal">Dot Product</a></li>
+<li><a href="Cross_Product.html" data-scroll="Cross_Product" class="internal">Cross Product</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Polar_and_Parametric_Equations.html" data-scroll="Polar_and_Parametric_Equations" class="internal"><span class="codenumber">5</span> <span class="title">Polar and Parametric Equations</span></a><ul>
+<li><a href="Polar_Coordinates.html" data-scroll="Polar_Coordinates" class="internal">Polar Coordinates</a></li>
+<li><a href="Polar_Equations_and_Graphs.html" data-scroll="Polar_Equations_and_Graphs" class="internal">Polar Equations and Graphs</a></li>
+<li><a href="Complex_Numbers__De_Moivre_s_Theorem.html" data-scroll="Complex_Numbers__De_Moivre_s_Theorem" class="internal">Complex Numbers; De Moivre's Theorem</a></li>
+<li><a href="Parametric_Curves_and_Parametric_Equations.html" data-scroll="Parametric_Curves_and_Parametric_Equations" class="internal">Parametric Curves and Parametric Equations</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Analytic_Geometry.html" data-scroll="Analytic_Geometry" class="internal"><span class="codenumber">6</span> <span class="title">Analytic Geometry</span></a><ul>
+<li><a href="Parabols.html" data-scroll="Parabols" class="internal">Parabolas</a></li>
+<li><a href="Ellipses.html" data-scroll="Ellipses" class="internal">Ellipses</a></li>
+<li><a href="Hyperbolas.html" data-scroll="Hyperbolas" class="internal">Hyperbolas</a></li>
+</ul>
+</li>
+<li class="link"><a href="Solutions.html" data-scroll="Solutions" class="internal"><span class="codenumber">7</span> <span class="title">Solutions</span></a></li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1" class="internal"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="references-1.html" data-scroll="references-1" class="internal"><span class="title">Bibliography</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="Sum_and_Difference_Formulas"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.2</span> <span class="title">Sum and Difference Formulas</span>
+</h2>
+<section class="introduction" id="introduction-9"><p id="p-599">*need intro/motivation, need examples, and expand on the math*</p>
+<p id="p-600">use example that introduces this section compute the angle for 15 degrees</p></section><section class="subsection" id="subsection-30"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.2.1</span> <span class="title">Sum and Difference Formulas</span>
+</h3>
+<p id="p-601"> \begin{mybox}[Sum and Difference Formulas for Cosine]</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-45">
+\begin{align*}
+\cos(\alpha+\beta)\amp =\amp \cos\alpha\cos\beta-\sin\alpha\sin\beta\\
+\cos(\alpha-\beta)\amp =\amp \cos\alpha\cos\beta+\sin\alpha\sin\beta
+\end{align*}
+</div>
+<p id="p-602">\end{mybox}</p>
+<article class="hiddenproof" id="proof-3"><a href="" data-knowl="" class="id-ref proof-knowl original has-image" data-refid="hk-proof-3"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-3"><article class="hiddenproof"><p id="p-603">First we will prove the Difference Formula for Cosine</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\cos(\alpha-\beta)=\cos\alpha\cos\beta+\sin\alpha\sin\beta
+\end{equation*}
+</div>
+<p id="p-604">We begin by considering two points on the unit circle. Point <span class="process-math">\(P\)</span> is at an angle of <span class="process-math">\(\beta\)</span> in standard position with coordinates <span class="process-math">\((\cos\beta,\sin\beta)\)</span> and point <span class="process-math">\(Q\)</span> is at an angle of <span class="process-math">\(\alpha\)</span> in standard position with coordinates <span class="process-math">\((\cos\alpha,\sin\alpha)\text{.}\)</span></p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-140.svg" role="img" class="contained"></div>
+<p id="p-605">We use the Distance Formula to calculate the distance between <span class="process-math">\(P\)</span> and <span class="process-math">\(Q\)</span> to get</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-46">
+\begin{align*}
+d(P,Q)\amp =\amp \sqrt{(\cos\alpha-\cos\beta)^2+(\sin\alpha-\sin\beta)^2}\\
+\amp =\amp \sqrt{\cos^2\alpha-2\cos\alpha\cos\beta+\cos^2\beta+\sin^2\alpha-2\sin\alpha\sin\beta+\sin^2\beta}\\
+\amp =\amp \sqrt{(\cos^2\alpha+\sin^2\alpha)+(\cos^2\beta+\sin^2\beta)-2\cos\alpha\cos\beta-2\sin\alpha\sin\beta}
+\end{align*}
+</div>
+<p id="p-606">Then by the Pythagorean Identify,</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-47">
+\begin{align*}
+d(P,Q)\amp =\amp \sqrt{1+1-2\cos\alpha\cos\beta-2\sin\alpha\sin\beta}\\
+\amp =\amp \sqrt{2-2\cos\alpha\cos\beta-2\sin\alpha\sin\beta}
+\end{align*}
+</div>
+<p id="p-607">Next, consider two additional points on a second unit circle. Point <span class="process-math">\(A\)</span> has coordinates at <span class="process-math">\((1,0)\)</span> and Point <span class="process-math">\(B\)</span> is at an angle of <span class="process-math">\(\alpha-\beta\)</span> in standard position with coordinates <span class="process-math">\((\cos(\alpha-\beta),\sin(\alpha-\beta))\text{.}\)</span></p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-141.svg" role="img" class="contained"></div>
+<p id="p-608">The distance between <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> is</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-48">
+\begin{align*}
+d(A,B)\amp =\amp \sqrt{(\cos(\alpha-\beta)-1)^2+(\sin(\alpha-\beta)-0)^2}\\
+\amp =\amp \sqrt{\cos^2(\alpha-\beta)-2\cos(\alpha-\beta)+1+\sin^2(\alpha-\beta)}\\
+\amp =\amp \sqrt{(\cos^2(\alpha-\beta)+\sin^2(\alpha-\beta))-2\cos(\alpha-\beta)+1}\\
+\amp =\amp \sqrt{1-2\cos(\alpha-\beta)+1}\\
+\amp =\amp \sqrt{2-2\cos(\alpha-\beta)}
+\end{align*}
+</div>
+<p id="p-609">Note that since <span class="process-math">\(OP\text{,}\)</span> <span class="process-math">\(OQ\text{,}\)</span> <span class="process-math">\(OA\text{,}\)</span> and <span class="process-math">\(OB\)</span> are lines from the center to points on the unit circle, they are congruent and have length of 1. Also note that <span class="process-math">\(\angle POB=\angle AOB=\alpha-\beta\text{.}\)</span> Then since two sides and the included angle of <span class="process-math">\(\Delta OPQ\)</span> and <span class="process-math">\(\Delta OAB\)</span> are equivalent, we can conclude by side-angle-side theorem (SAS) that the two triangles are congruent. Thus, <span class="process-math">\(d(PQ)=d(AB)\text{.}\)</span> Substituting our results for <span class="process-math">\(d(P,Q)\)</span> and <span class="process-math">\(d(A,B)\)</span> we get</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-49">
+\begin{align*}
+d(PQ)\amp =\amp d(AB)\\
+\sqrt{2-2\cos\alpha\cos\beta-2\sin\alpha\sin\beta}\amp =\amp \sqrt{2-2\cos(\alpha-\beta)}\\
+2-2\cos\alpha\cos\beta-2\sin\alpha\sin\beta\amp =\amp 2-2\cos(\alpha-\beta)\\
+-2\cos\alpha\cos\beta-2\sin\alpha\sin\beta\amp =\amp -2\cos(\alpha-\beta)
+\end{align*}
+</div>
+<p id="p-610">Dividing both sides by -2 we arrive at the Difference Formula for Cosine</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\cos\alpha\cos\beta+\sin\alpha\sin\beta=\cos(\alpha-\beta)
+\end{equation*}
+</div>
+<p id="p-611">To prove the Sum Formula for Cosine, replace <span class="process-math">\(\beta\)</span> with <span class="process-math">\(-\beta\)</span> in the Difference Formula and use the Even-Odd Identities where <span class="process-math">\(\sin(-\beta)=-\sin\beta\)</span> and <span class="process-math">\(\cos(-\beta)=\cos\beta\)</span> to get</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-50">
+\begin{align*}
+\cos\alpha\cos(-\beta)+\sin\alpha\sin(-\beta)\amp =\amp \cos(\alpha-(-\beta))\\
+\cos\alpha\cos(\beta)+\sin\alpha(-\sin\beta)\amp =\amp \cos(\alpha+\beta)\\
+\cos\alpha\cos\beta-\sin\alpha\sin\beta\amp =\amp \cos(\alpha+\beta)
+\end{align*}
+</div></article></div>
+<article class="example example-like" id="example-43"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-43"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.1</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-43"><article class="example example-like"><p id="p-612">Find the exact value of <span class="process-math">\(\cos105^{\circ}\text{.}\)</span></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-35" id="solution-35"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-35"><div class="solution solution-like">
+<p id="p-613">First note that <span class="process-math">\(105^{\circ}=60^{\circ}+45^{\circ}\text{.}\)</span> Now, using the Sum Formula for Cosine,</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-51">
+\begin{align*}
+\cos105^{\circ}\amp =\amp \cos(60^{\circ}+45^{\circ})\\
+\amp =\amp \cos60^{\circ}\cos45^{\circ}-\sin60^{\circ}\sin45^{\circ}\\
+\amp =\amp \frac{1}{2}\cdot\frac{\sqrt{2}}{2}-\frac{\sqrt{3}}{2}\frac{\sqrt{2}}{2}\\
+\amp =\amp \frac{1}{4}\left(\sqrt{2}-\sqrt{6}\right)
+\end{align*}
+</div>
+</div></div>
+</div></article></div>
+<article class="example example-like" id="example-44"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-44"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.2</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-44"><article class="example example-like"><p id="p-614">Find the exact value of <span class="process-math">\(\cos\left(\frac{\pi}{4}-\frac{\pi}{6}\right)\text{.}\)</span></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-36" id="solution-36"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-36"><div class="solution solution-like">
+<p id="p-615">Using the Difference Formula for Cosine we get</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-52">
+\begin{align*}
+\cos\left(\frac{\pi}{4}-\frac{\pi}{6}\right)\amp =\amp \cos\frac{\pi}{4}\cos\frac{\pi}{6}+\sin\frac{\pi}{4}\sin\frac{\pi}{6}\\
+\amp =\amp \frac{\sqrt{2}}{2}\cdot\frac{\sqrt{3}}{2}+\frac{\sqrt{2}}{2}\cdot\frac{1}{2}\\
+\amp =\amp \frac{1}{4}\left(\sqrt{6}+\sqrt{2}\right)
+\end{align*}
+</div>
+</div></div>
+</div></article></div>
+<article class="example example-like" id="example-45"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-45"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.3</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-45"><article class="example example-like"><p id="p-616">Find the exact value of the expression <span class="process-math">\(\cos25^{\circ}\cos35^{\circ}-\sin25^{\circ}\sin35^{\circ}\text{.}\)</span></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-37" id="solution-37"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-37"><div class="solution solution-like">
+<p id="p-617">Notice this expression is the Sum Formula for Cosine with <span class="process-math">\(\alpha=25^{\circ}\)</span> and <span class="process-math">\(\beta=35^{\circ}\text{.}\)</span> So</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\cos25^{\circ}\cos35^{\circ}-\sin25^{\circ}\sin35^{\circ}=\cos(25^{\circ}+35^{\circ})=\cos60^{\circ}=\frac{1}{2}
+\end{equation*}
+</div>
+</div></div>
+</div></article></div>
+<p id="p-618">\begin{mybox}[Sum and Difference Formulas for Sine]</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-53">
+\begin{align*}
+\sin(\alpha+\beta)\amp =\amp \sin\alpha\cos\beta+\cos\alpha\sin\beta\\
+\sin(\alpha-\beta)\amp =\amp \sin\alpha\cos\beta-\cos\alpha\sin\beta
+\end{align*}
+</div>
+<p id="p-619">\end{mybox} We will prove the Sum Formula for Sine in <a href="" class="xref" data-knowl="./knowl/sum-formula-sine-proof.html" title="Example 3.2.7">Example 3.2.7</a> and the Difference Formula can be established using the Even-Odd Identities.</p>
+<article class="example example-like" id="ex-cofunction-identify-cos"><a href="" data-knowl="" class="id-ref example-knowl original has-image" data-refid="hk-ex-cofunction-identify-cos"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.4</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-ex-cofunction-identify-cos"><article class="example example-like"><p id="p-620">Use the Difference Formula for Sine to establish the identity <span class="process-math">\(\cos\theta=\sin\left(\frac{\pi}{2}-\theta\right)\)</span></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-38" id="solution-38"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-38"><div class="solution solution-like">
+<p id="p-621">To establish an identity, we will start from one side of the equality and use properties to end up with the expression on the other side of the equality. So,</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\sin\left(\frac{\pi}{2}-\theta\right)=\sin\frac{\pi}{2}\cos\theta-\cos\frac{\pi}{2}\sin\theta=1\cdot\cos\theta-0\cdot\sin\theta=\cos\theta
+\end{equation*}
+</div>
+<p id="p-622">Visually, we have <span class="process-math">\(\cos\theta=\frac{x}{r}=\sin\left(\frac{\pi}{2}-\theta\right)\text{:}\)</span></p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-142.svg" role="img" class="contained"></div>
+</div></div>
+</div></article></div>
+<article class="example example-like" id="example-47"><a href="" data-knowl="" class="id-ref example-knowl original has-image" data-refid="hk-example-47"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.5</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-47"><article class="example example-like"><p id="p-623">Given <span class="process-math">\(\sin\alpha=-\frac{12}{13}\text{,}\)</span> with <span class="process-math">\(\frac{3\pi}{2}\lt \alpha\lt 2\pi\)</span> and <span class="process-math">\(\cos\beta=-\frac{3}{5}\text{,}\)</span> with <span class="process-math">\(\frac{\pi}{2}\lt \beta\lt \pi\text{,}\)</span> find the exact value of <span class="process-math">\(\sin(\alpha+\beta)\text{.}\)</span></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-39" id="solution-39"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-39"><div class="solution solution-like">
+<p id="p-624">The Sum Formula for Sine gives us</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\sin(\alpha+\beta)=\sin\alpha\cos\beta+\cos\alpha\sin\beta
+\end{equation*}
+</div>
+<p id="p-625">At this moment, we do not know the exact values of <span class="process-math">\(\cos\alpha\)</span> and <span class="process-math">\(\sin\beta\)</span> but we can compute them.</p>
+<p id="p-626">Given <span class="process-math">\(\sin\alpha=-\frac{12}{13}\)</span> with <span class="process-math">\(\frac{3\pi}{2}\lt \alpha\lt 2\pi\)</span> and <span class="process-math">\(\cos\beta=-\frac{3}{5}\)</span> with <span class="process-math">\(\frac{\pi}{2}\lt \beta\lt \pi\text{,}\)</span> we can draw the following triangles associated with <span class="process-math">\(\alpha\)</span> and <span class="process-math">\(\beta\text{,}\)</span> respectively:</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-143.svg" role="img" class="contained"></div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-144.svg" role="img" class="contained"></div>
+<p id="p-627">Next, using the Pythagorean Theorem, we solve for the missing sides on the triangles</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-54">
+\begin{align*}
+x^2+(-12)^2\amp =\amp 13^2\\
+x+144\amp =\amp 169\\
+x^2\amp =\amp 25\\
+x\amp =\amp 5
+\end{align*}
+</div>
+<p id="p-628">Thus we get</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\cos\alpha=\frac{5}{13}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-55">
+\begin{align*}
+(-3)^2+y^2\amp =\amp 5^2\\
+9+y^2\amp =\amp 25\\
+y^2\amp =\amp 16\\
+y\amp =\amp 4
+\end{align*}
+</div>
+<p id="p-629">Thus we get</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\sin\beta=-\frac{4}{5}
+\end{equation*}
+</div>
+<p id="p-630">We now have all the information needed to proceed.</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-56">
+\begin{align*}
+\sin(\alpha+\beta)\amp =\amp \sin\alpha\cos\beta+\cos\alpha\sin\beta\\
+\amp =\amp \left(-\frac{12}{13}\right)\left(-\frac{3}{5}\right)+\left(\frac{5}{13}\right)\left(\frac{4}{5}\right)\\
+\amp =\amp \frac{36}{65}+\frac{20}{65}\\
+\amp =\amp \frac{56}{65}
+\end{align*}
+</div>
+<p id="p-631">Notice we did not have to know the values of <span class="process-math">\(\alpha\)</span> or <span class="process-math">\(\beta\)</span> to do this example.</p>
+</div></div>
+</div></article></div>
+<p id="p-632">\begin{mybox}[Sum and Difference Formulas for Tangent]</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-57">
+\begin{align*}
+\tan(\alpha+\beta)\amp =\amp \frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}\\
+\tan(\alpha-\beta)\amp =\amp \frac{\tan\alpha-\tan\beta}{1-\tan\alpha\tan\beta}
+\end{align*}
+</div>
+<p id="p-633">\end{mybox}</p>
+<article class="hiddenproof" id="proof-4"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-4"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-4"><article class="hiddenproof"><p id="p-634">Recall that <span class="process-math">\(\tan\theta=\frac{\sin\theta}{\cos\theta}\)</span> as long as <span class="process-math">\(\cos\theta\neq0\text{.}\)</span> Using this fact, and our new formulas for the sum of sine and cosine, we get</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-58">
+\begin{align*}
+\tan(\alpha+\beta)\amp =\amp \frac{\sin(\alpha+\beta)}{\cos(\alpha+\beta)}\\
+\amp =\amp \frac{\sin\alpha\cos\beta+\cos\alpha\sin\beta}{\cos\alpha\cos\beta-\sin\alpha\sin\beta}\\
+\amp =\amp \frac{\dfrac{\sin\alpha\cos\beta+\cos\alpha\sin\beta}{\cos\alpha\cos\beta}}{\dfrac{\cos\alpha\cos\beta-\sin\alpha\sin\beta}{\cos\alpha\cos\beta}}\\
+\amp =\amp \frac{\sin\alpha\cos\beta+\cos\alpha\sin\beta}{\cancel{\cos\alpha\cos\beta}}\cdot\frac{\cancel{\cos\alpha\cos\beta}}{\cos\alpha\cos\beta-\sin\alpha\sin\beta}\\
+\amp =\amp \frac{\dfrac{\sin\alpha\cancel{\cos\beta}}{\cos\alpha\cancel{\cos\beta}}+\dfrac{\cancel{\cos\alpha}\sin\beta}{\cancel{\cos\alpha}\cos\beta}}{\dfrac{\cancel{\cos\alpha\cos\beta}}{\cancel{\cos\alpha\cos\beta}}-\dfrac{\sin\alpha\sin\beta}{\cos\alpha\cos\beta}}\\
+\amp =\amp \frac{\dfrac{\sin\alpha}{\cos\alpha}+\dfrac{\sin\beta}{\cos\beta}}{1-\dfrac{\sin\alpha}{\cos\alpha}\dfrac{\sin\beta}{\cos\beta}}\\
+\amp =\amp \frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}
+\end{align*}
+</div>
+<p id="p-635">The difference formula can be established using the Even-Odd Identities.</p></article></div>
+<article class="example example-like" id="example-48"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-48"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.6</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-48"><article class="example example-like"><p id="p-636">Find the exact value of <span class="process-math">\(\tan\left(\frac{3\pi}{4}+\frac{\pi}{6}\right)\)</span></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-40" id="solution-40"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-40"><div class="solution solution-like">
+<p id="p-637">Using the sum formula for tangent, we get</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\tan\left(\frac{3\pi}{4}+\frac{\pi}{6}\right)=\frac{\tan\frac{3\pi}{4}+\tan\frac{\pi}{6}}{1-\tan\frac{3\pi}{4}\tan\frac{\pi}{6}}=\frac{(-1)+\frac{\sqrt{3}}{3}}{1-(-1)\cdot\frac{\sqrt{3}}{3}}=\frac{-1+\frac{\sqrt{3}}{3}}{1+\frac{\sqrt{3}}{3}}=\frac{\frac{-3+\sqrt{3}}{3}}{\frac{3+\sqrt{3}}{3}}=\frac{-3+\sqrt{3}}{3+\sqrt{3}}
+\end{equation*}
+</div>
+</div></div>
+</div></article></div></section><section class="subsection" id="subsection-31"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.2.2</span> <span class="title">Cofunction Identities</span>
+</h3>
+<p id="p-638">Another identity for trigonometric functions is the Cofunction Identities \begin{mybox}[Cofunction Identities]  The <em class="emphasis">Cofunction Identities</em> are given below</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-59">
+\begin{align*}
+\sin\theta\amp =\cos\left(\frac{\pi}{2}-\theta\right) \amp \cos\theta\amp =\sin\left(\frac{\pi}{2}-\theta\right)\\
+\tan\theta\amp =\cot\left(\frac{\pi}{2}-\theta\right) \amp \cot\theta\amp =\tan\left(\frac{\pi}{2}-\theta\right)\\
+\sec\theta\amp =\csc\left(\frac{\pi}{2}-\theta\right) \amp \csc\theta\amp =\sec\left(\frac{\pi}{2}-\theta\right)
+\end{align*}
+</div>
+<p id="p-639">\end{mybox}</p>
+<article class="hiddenproof" id="proof-5"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-5"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-5"><article class="hiddenproof"><p id="p-640">The proof for <span class="process-math">\(\sin\theta\)</span> is given in <a href="" class="xref" data-knowl="./knowl/ex-cofunction-identify-cos.html" title="Example 3.2.4">Example 3.2.4</a> and the proof for <span class="process-math">\(\cos\theta\)</span> is given as <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "ex-cofunction-identify-sin" missing or not unique]</code>. The Cofunction Identities for <span class="process-math">\(\tan\theta\)</span> and <span class="process-math">\(\cot\theta\)</span> can be found using the Quotient and Cofunction Identities for <span class="process-math">\(\csc\theta\)</span> and <span class="process-math">\(\sec\theta\)</span> can be found using the Reciprocal Identities.</p></article></div>
+<p id="p-641">Talk about cofunctions and give triangle example. ***************</p>
+<article class="example example-like" id="sum-formula-sine-proof"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-sum-formula-sine-proof"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.7</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-sum-formula-sine-proof"><article class="example example-like"><p id="p-642">Prove the Sum Formula for Sine</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\sin(\alpha+\beta)=\sin\alpha\cos\beta+\cos\alpha\sin\beta
+\end{equation*}
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-41" id="solution-41"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-41"><div class="solution solution-like">
+<p id="p-643">We begin by using the cofunction identity</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-60">
+\begin{align*}
+\sin(\alpha+\beta)\amp =\cos\left(\frac{\pi}{2}-(\alpha+\beta)\right)\amp \amp \mbox{Cofunction Identity}\\
+\amp =\cos\left(\left(\frac{\pi}{2}-\alpha\right)-\beta\right)\\
+\amp =\cos\left(\frac{\pi}{2}-\alpha\right)\cos\beta+\sin\left(\frac{\pi}{2}-\alpha\right)\sin\beta\amp \amp \mbox{Difference Formula for Cosine}\\
+\amp =\sin\alpha\cos\beta+\sin\alpha\sin\beta\amp \amp \mbox{Cofunction Identity}\\
+\amp =\sin\alpha\cos\beta+\cos\alpha\sin\beta
+\end{align*}
+</div>
+</div></div>
+</div></article></div></section></section></div></main>
+</div>
+</body>
+</html>

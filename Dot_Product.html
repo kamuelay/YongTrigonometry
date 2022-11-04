@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Dot Product</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Trigonometry through polynesian navigation">
+<meta property="book:author" content="Kamuela E Yong">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+},
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\def\R{4 }
+
+\def\angEl{20}
+
+\def\angAz{-20}
+
+\def\R{4 }
+\def\angEl{20}
+\newcommand{\intoo}[2]{\mathopen{]}#1\,;#2\mathclose{[}}
+\def\angAz{-20}
+\newcommand{\ud}{\mathop{\mathrm{{}d}}\mathopen{}}
+\newcommand{\intff}[2]{\mathopen{[}#1\,;#2\mathclose{]}}
+\newcommand{\thepartimage}{}
+\newcommand{\thechapterimage}{}
+\newcommand{\autodot}{.}
+\newcommand{\QuestionNB}{\bfseries\arabic{Question}.\ }
+
+
+
+\newcommand{\pgfmathsinandcos}[3]{
+\pgfmathsetmacro#1{sin(#3)}
+\pgfmathsetmacro#2{cos(#3)}}
+\newcommand{\LongitudePlane}[3][current plane]{
+\pgfmathsinandcos\sinEl\cosEl{#2}
+\pgfmathsinandcos\sint\cost{#3}
+\tikzset{#1/.style={cm={\cost,\sint*\sinEl,0,\cosEl,(0,0)}}}
+}
+\newcommand{\LatitudePlane}[3][current plane]{
+\pgfmathsinandcos\sinEl\cosEl{#2}
+\pgfmathsinandcos\sint\cost{#3}
+\pgfmathsetmacro\yshift{\cosEl*\sint}
+\tikzset{#1/.style={cm={\cost,0,0,\cost*\sinEl,(0,\yshift)}}}
+}
+\newcommand{\NewLatitudePlane}[4][current plane]{
+\pgfmathsinandcos\sinEl\cosEl{#3}
+\pgfmathsinandcos\sint\cost{#4}
+\pgfmathsetmacro\yshift{#2*\cosEl*\sint}
+\tikzset{#1/.style={cm={\cost,0,0,\cost*\sinEl,(0,\yshift)}}}
+}
+\newcommand{\DrawLongitudeCircle}[2][1]{
+\LongitudePlane{\angEl}{#2}
+\tikzset{current plane/.prefix style={scale=#1}}
+\pgfmathsetmacro\angVis{atan(sin(#2)*cos(\angEl)/sin(\angEl))}
+\draw[current plane] (\angVis:1) arc (\angVis:\angVis+180:1);
+\draw[current plane,dashed] (\angVis-180:1) arc (\angVis-180:\angVis:1);
+}
+\newcommand{\DrawLatitudeCircle}[2][1]{
+\LatitudePlane{\angEl}{#2}
+\tikzset{current plane/.prefix style={scale=#1}}
+\pgfmathsetmacro\sinVis{sin(#2)/cos(#2)*sin(\angEl)/cos(\angEl)}
+\pgfmathsetmacro\angVis{asin(min(1,max(\sinVis,-1)))}
+\draw[current plane] (\angVis:1) arc (\angVis:-\angVis-180:1);
+\draw[current plane,dashed] (180-\angVis:1) arc (180-\angVis:\angVis:1);
+}
+\newcommand{\sectionbreak}{\clearpage}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="book-1.html"><span class="title">Trigonometry through polynesian navigation</span></a></h1>
+<p class="byline">Kamuela E Yong</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="Vectors.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="Applications_of_Trigonometry.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="Cross_Product.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="Vectors.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="Applications_of_Trigonometry.html" title="Up">Up</a><a class="next-button button toolbar-item" href="Cross_Product.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1" class="internal"><span class="title">Front Matter</span></a></li>
+<li class="link">
+<a href="Trigonometry.html" data-scroll="Trigonometry" class="internal"><span class="codenumber">1</span> <span class="title">Trigonometry</span></a><ul>
+<li><a href="Hawaiian_Star_Compass.html" data-scroll="Hawaiian_Star_Compass" class="internal">Hawaiian Star Compass</a></li>
+<li><a href="Angles_and_Their_Measure.html" data-scroll="Angles_and_Their_Measure" class="internal">Angles and Their Measure</a></li>
+<li><a href="Unit_Circle.html" data-scroll="Unit_Circle" class="internal">Unit Circle</a></li>
+<li><a href="Right_Triangle_Trigonometry.html" data-scroll="Right_Triangle_Trigonometry" class="internal">Right Triangle Trigonometry</a></li>
+<li><a href="Trigonometric_Functions_of_Any_Angles.html" data-scroll="Trigonometric_Functions_of_Any_Angles" class="internal">Trigonometric Functions of Any Angles</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Graphs_of_the_Trigonometric_Functions.html" data-scroll="Graphs_of_the_Trigonometric_Functions" class="internal"><span class="codenumber">2</span> <span class="title">Graphs of the Trigonometric Functions</span></a><ul>
+<li><a href="Graphs_of_the_Sine_and_Cosine_Functions.html" data-scroll="Graphs_of_the_Sine_and_Cosine_Functions" class="internal">Graphs of the Sine and Cosine Functions</a></li>
+<li><a href="Graphs_of_Other_Trigonometric_Functions.html" data-scroll="Graphs_of_Other_Trigonometric_Functions" class="internal">Graphs of Other Trigonometric Functions</a></li>
+<li><a href="Phase_Shifts_and_Sinusoidal_Curve_Fitting.html" data-scroll="Phase_Shifts_and_Sinusoidal_Curve_Fitting" class="internal">Harmonic Motion/Phase shift/Sinusoidal Curve Fitting</a></li>
+<li><a href="Inverse_Trigonometry.html" data-scroll="Inverse_Trigonometry" class="internal">Inverse Trigonometric Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Analytic_Trigonometry.html" data-scroll="Analytic_Trigonometry" class="internal"><span class="codenumber">3</span> <span class="title">Analytic Trigonometry</span></a><ul>
+<li><a href="Trigonometric_Identities.html" data-scroll="Trigonometric_Identities" class="internal">Trigonometric Identities</a></li>
+<li><a href="Sum_and_Difference_Formulas.html" data-scroll="Sum_and_Difference_Formulas" class="internal">Sum and Difference Formulas</a></li>
+<li><a href="Double-Angle_and_Half-Angle_Formulas.html" data-scroll="Double-Angle_and_Half-Angle_Formulas" class="internal">Double-Angle and Half-Angle Formulas</a></li>
+<li><a href="Product-to-Sum_and_Sum-to-Product_Formulas.html" data-scroll="Product-to-Sum_and_Sum-to-Product_Formulas" class="internal">Product-to-Sum and Sum-to-Product Formulas</a></li>
+<li><a href="Trigonometric_Equations.html" data-scroll="Trigonometric_Equations" class="internal">Trigonometric Equations</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Applications_of_Trigonometry.html" data-scroll="Applications_of_Trigonometry" class="internal"><span class="codenumber">4</span> <span class="title">Applications of Trigonometry</span></a><ul>
+<li><a href="The_Law_of_Sines.html" data-scroll="The_Law_of_Sines" class="internal">The Law of Sines</a></li>
+<li><a href="The_Law_of_Cosines.html" data-scroll="The_Law_of_Cosines" class="internal">The Law of Cosines</a></li>
+<li><a href="Vectors.html" data-scroll="Vectors" class="internal">Vectors</a></li>
+<li><a href="Dot_Product.html" data-scroll="Dot_Product" class="active">Dot Product</a></li>
+<li><a href="Cross_Product.html" data-scroll="Cross_Product" class="internal">Cross Product</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Polar_and_Parametric_Equations.html" data-scroll="Polar_and_Parametric_Equations" class="internal"><span class="codenumber">5</span> <span class="title">Polar and Parametric Equations</span></a><ul>
+<li><a href="Polar_Coordinates.html" data-scroll="Polar_Coordinates" class="internal">Polar Coordinates</a></li>
+<li><a href="Polar_Equations_and_Graphs.html" data-scroll="Polar_Equations_and_Graphs" class="internal">Polar Equations and Graphs</a></li>
+<li><a href="Complex_Numbers__De_Moivre_s_Theorem.html" data-scroll="Complex_Numbers__De_Moivre_s_Theorem" class="internal">Complex Numbers; De Moivre's Theorem</a></li>
+<li><a href="Parametric_Curves_and_Parametric_Equations.html" data-scroll="Parametric_Curves_and_Parametric_Equations" class="internal">Parametric Curves and Parametric Equations</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Analytic_Geometry.html" data-scroll="Analytic_Geometry" class="internal"><span class="codenumber">6</span> <span class="title">Analytic Geometry</span></a><ul>
+<li><a href="Parabols.html" data-scroll="Parabols" class="internal">Parabolas</a></li>
+<li><a href="Ellipses.html" data-scroll="Ellipses" class="internal">Ellipses</a></li>
+<li><a href="Hyperbolas.html" data-scroll="Hyperbolas" class="internal">Hyperbolas</a></li>
+</ul>
+</li>
+<li class="link"><a href="Solutions.html" data-scroll="Solutions" class="internal"><span class="codenumber">7</span> <span class="title">Solutions</span></a></li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1" class="internal"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="references-1.html" data-scroll="references-1" class="internal"><span class="title">Bibliography</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="Dot_Product"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">4.4</span> <span class="title">Dot Product</span>
+</h2>
+<section class="introduction" id="introduction-14"><p id="p-900">*Good `ike examples but need to talk about the math (definitions and theorems are there but they are given without context). Also write intro/motivation*</p>
+<p id="p-901">Tacking</p>
+<p id="p-902">(<em class="emphasis">pinching</em> if you steer the wa‘a at too small of an angle at the upcoming wind, you will point in the upwind direction but go slow, <em class="emphasis">footing</em> if you move at a too large of an angle then you will move fast but won’t make much upwind progress.</p>
+<p id="p-903">A voyage undertaken using modern wayfinding must design a course strategy, which includes a reference course for reaching the vicinity of one's destination, hopefully upwind, so that the canoe can sail downwind to the destination rather than having to tack into the wind to get there. (Tacking involves sailing back and forth as closely as possible into the wind to make progress against the wind; it's very arduous and time-consuming, something to be avoided if at all possible, particularly at the end of a long, difficult voyage.)</p>
+<p id="p-904">"<a class="external" href="%5C1" target="_blank"><code class="code-inline tex2jax_ignore">\1</code></a> Designing a Course Strategy</p>
+<p id="p-905">“Before a voyage by sail begins, the wayfinder designs a course strategy and reference course for reaching the destination from the departure point, given the capabilities of the vessel and the winds, currents, and weather conditions anticipated along the way. (See ``Winds, Weather, and Currents of the Pacific.” ) The course strategy represents the most efficient way of getting to the destination. The wayfinder also chooses the best time to go (when the wind and weather conditions are the most favorable), taking into account the timing of the return voyage as well."</p>
+<figure class="figure figure-like" id="figure-23"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/Pictures/windward.jpg" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.4.1<span class="period">.</span></span><span class="space"> </span>Sailing upwind</figcaption></figure><p id="p-906">``Sailing vessels like Hokule‘a cannot sail directly in the direction of the wind. If it needs to head toward the direction from which the wind is blowing, a vessel will sail off to the side, while remaining as close as possible to the wind direction (i.e., close-hauled), then change tacks to the other side, making forward progress in a tedious zigzagging pattern known as tacking:"</p>
+<figure class="figure figure-like" id="figure-24"><div class="image-box" style="width: 25%; margin-left: 37.5%; margin-right: 37.5%;"><img src="external/Pictures/tacking.jpg" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.4.2<span class="period">.</span></span><span class="space"> </span>Tacking. Try to use dot product.</figcaption></figure><p id="p-907">––</p>
+<p id="p-908">Video with examples at the end "<a class="external" href="%5C1" target="_blank"><code class="code-inline tex2jax_ignore">\1</code></a></p>
+<p id="p-909">Stewart's "<a class="external" href="%5C1" target="_blank"><code class="code-inline tex2jax_ignore">\1</code></a> Sailing Against the Wind</p>
+<figure class="figure figure-like" id="figure-25"><div class="image-box" style="width: 25%; margin-left: 37.5%; margin-right: 37.5%;"><img src="external/Pictures/sailing-into-the-wind.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.4.3<span class="period">.</span></span><span class="space"> </span>From Stewart</figcaption></figure><p id="p-910">–-</p>
+<p id="p-911">Another example of tacking is when Hokulea is sailing to Rapa Nui. When it is When Hokulea is about 300 miles west of Rapa Nui , the navigators will begin a series of close tacks between <span class="process-math">\(25^{\circ}\)</span> S and <span class="process-math">\(29^{\circ}\)</span> S to search for the island; they will have to pass within about 30 miles of the island in daylight to see it from the canoe.</p>
+<p id="p-912">"<a class="external" href="%5C1" target="_blank"><code class="code-inline tex2jax_ignore">\1</code></a></p>
+<p id="p-913">"<a class="external" href="%5C1" target="_blank"><code class="code-inline tex2jax_ignore">\1</code></a></p>
+<p id="p-914">Do something along the lines of determine the angle to turn to ensure you don't miss the land. See inverse trig to know the distance that can be seen</p>
+<p id="p-915">Sailing strategy good resource "<a class="external" href="%5C1" target="_blank"><code class="code-inline tex2jax_ignore">\1</code></a> –-</p>
+<p id="p-916">This is a great example that can be used as a project or exercise. "<a class="external" href="%5C1" target="_blank"><code class="code-inline tex2jax_ignore">\1</code></a></p>
+<p id="p-917">Determine angle to the wind given a distance traveled, number of tacks, etc</p>
+<p id="p-918">–––-</p>
+<p id="p-919">–––-</p>
+<p id="p-920">––––</p>
+<p id="p-921">examples for computing angle and decomposing a vector: "<a class="external" href="%5C1" target="_blank"><code class="code-inline tex2jax_ignore">\1</code></a></p>
+<p id="p-922">"<a class="external" href="%5C1" target="_blank"><code class="code-inline tex2jax_ignore">\1</code></a></p>
+<p id="p-923">May also consider adding/subtracting vectors for True wind velocity, Boat velocity, and Apparent wind velocity. Add this to the 8.1 sections or as a problem.</p>
+<p id="p-924">Also decompose a vector (waʻa velocity) into the north and south components.</p>
+<p id="p-925">Force on the mast and ropes?</p>
+<p id="p-926">Work done to hoist the sail?</p></section><section class="subsection" id="subsection-49"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.4.1</span> <span class="title">The Dot Product of Two Vectors</span>
+</h3>
+<article class="definition definition-like" id="definition-26"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.4.4</span><span class="period">.</span>
+</h4>
+<p id="p-927">If <span class="process-math">\(\mathbf{u}=\langle u_1,u_2\rangle\)</span> and <span class="process-math">\(\mathbf{v}=\langle v_1,v_2\rangle\)</span> are vectors, then their <dfn class="terminology">dot product</dfn>,  written <span class="process-math">\(\mathbf{u}\cdot\mathbf{v}\)</span> is defined as</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\mathbf{u}\cdot\mathbf{v}=u_1v_1+u_2v_2
+\end{equation*}
+</div>
+<p id="p-928">In other words, we compute the dot product by multiplying the corresponding components of the two vectors and adding the results. Note: The dot product is <dfn class="terminology">not</dfn> a vector, but instead is a real number (a scalar)</p></article><article class="example example-like" id="example-76"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-76"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.4.5</span><span class="period">.</span><span class="space"> </span><span class="title">Finding Dot Products.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-76"><article class="example example-like"><p id="p-929">Here we calculate some dot products. Maybe we can calculate <span class="process-math">\(\mathbf{u}\cdot\mathbf{v}\text{,}\)</span> <span class="process-math">\(\mathbf{u}\cdot\mathbf{v}\text{,}\)</span> <span class="process-math">\(\mathbf{u}\cdot\mathbf{u}\text{,}\)</span> <span class="process-math">\(\|\mathbf{u}\|\)</span></p></article></div>
+<p id="p-930">\begin{mybox}[Properties of the Dot Product] Let <span class="process-math">\(\mathbf{u}\text{,}\)</span> <span class="process-math">\(\mathbf{v}\text{,}\)</span> and <span class="process-math">\(\mathbf{w}\)</span> be vectors and let <span class="process-math">\(c\)</span> be a scalar (real number). Then</p>
+<ol class="decimal">
+<li id="li-164"><p id="p-931"><span class="process-math">\(\displaystyle \mathbf{u}\cdot\mathbf{v}=\mathbf{v}\cdot\mathbf{u}\)</span></p></li>
+<li id="li-165"><p id="p-932"><span class="process-math">\(\displaystyle c(\mathbf{u}\cdot\mathbf{v})=(c\mathbf{u})\cdot\mathbf{v}=\mathbf{u}\cdot(c\mathbf{v})\)</span></p></li>
+<li id="li-166"><p id="p-933"><span class="process-math">\(\displaystyle (\mathbf{u}+\mathbf{v})\cdot\mathbf{w}=\mathbf{u}\cdot\mathbf{w}+\mathbf{v}\cdot\mathbf{w}\)</span></p></li>
+<li id="li-167"><p id="p-934"><span class="process-math">\(\displaystyle \mathbf{u}\cdot\mathbf{u}=\|\mathbf{u}\|^2\)</span></p></li>
+<li id="li-168"><p id="p-935"><span class="process-math">\(\displaystyle \mathbf{0}\cdot\mathbf{v}=0\)</span></p></li>
+</ol>
+<p id="p-936">The proof of many of these can be left as an exercise, but I should probably problem one or two. \end{mybox}</p></section><section class="subsection" id="subsection-50"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.4.2</span> <span class="title">The Angle between Two Vectors</span>
+</h3>
+<p id="p-937">\begin{mybox}[Angle Between Two Vectors] If <span class="process-math">\(\theta\)</span> is the angle between two nonzero vectors <span class="process-math">\(\mathbf{u}\)</span> and <span class="process-math">\(\mathbf{v}\text{,}\)</span> then</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\cos\theta=\frac{\mathbf{u}\cdot\mathbf{v}}{\|\mathbf{u}\|\|\mathbf{v}\|}
+\end{equation*}
+</div>
+<p id="p-938">\end{mybox}</p>
+<article class="definition definition-like" id="definition-27"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.4.6</span><span class="period">.</span>
+</h4>
+<p id="p-939">The vectors <span class="process-math">\(\mathbf{u}\)</span> and <span class="process-math">\(\mathbf{v}\)</span> are <dfn class="terminology">orthogonal</dfn>  if and only if <span class="process-math">\(\mathbf{u}\cdot\mathbf{v}=0\text{.}\)</span></p></article><article class="exercise exercise-like" id="exercise-23"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-23"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">4.4.7</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-23"><article class="exercise exercise-like"><p id="p-940">\Question first question</p>
+<p id="p-941">\Question Second question \begin{tasks}(2) \task Next \task another \end{tasks}</p></article></div></section></section></div></main>
+</div>
+</body>
+</html>

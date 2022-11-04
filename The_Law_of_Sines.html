@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>The Law of Sines</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Trigonometry through polynesian navigation">
+<meta property="book:author" content="Kamuela E Yong">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+},
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\def\R{4 }
+
+\def\angEl{20}
+
+\def\angAz{-20}
+
+\def\R{4 }
+\def\angEl{20}
+\newcommand{\intoo}[2]{\mathopen{]}#1\,;#2\mathclose{[}}
+\def\angAz{-20}
+\newcommand{\ud}{\mathop{\mathrm{{}d}}\mathopen{}}
+\newcommand{\intff}[2]{\mathopen{[}#1\,;#2\mathclose{]}}
+\newcommand{\thepartimage}{}
+\newcommand{\thechapterimage}{}
+\newcommand{\autodot}{.}
+\newcommand{\QuestionNB}{\bfseries\arabic{Question}.\ }
+
+
+
+\newcommand{\pgfmathsinandcos}[3]{
+\pgfmathsetmacro#1{sin(#3)}
+\pgfmathsetmacro#2{cos(#3)}}
+\newcommand{\LongitudePlane}[3][current plane]{
+\pgfmathsinandcos\sinEl\cosEl{#2}
+\pgfmathsinandcos\sint\cost{#3}
+\tikzset{#1/.style={cm={\cost,\sint*\sinEl,0,\cosEl,(0,0)}}}
+}
+\newcommand{\LatitudePlane}[3][current plane]{
+\pgfmathsinandcos\sinEl\cosEl{#2}
+\pgfmathsinandcos\sint\cost{#3}
+\pgfmathsetmacro\yshift{\cosEl*\sint}
+\tikzset{#1/.style={cm={\cost,0,0,\cost*\sinEl,(0,\yshift)}}}
+}
+\newcommand{\NewLatitudePlane}[4][current plane]{
+\pgfmathsinandcos\sinEl\cosEl{#3}
+\pgfmathsinandcos\sint\cost{#4}
+\pgfmathsetmacro\yshift{#2*\cosEl*\sint}
+\tikzset{#1/.style={cm={\cost,0,0,\cost*\sinEl,(0,\yshift)}}}
+}
+\newcommand{\DrawLongitudeCircle}[2][1]{
+\LongitudePlane{\angEl}{#2}
+\tikzset{current plane/.prefix style={scale=#1}}
+\pgfmathsetmacro\angVis{atan(sin(#2)*cos(\angEl)/sin(\angEl))}
+\draw[current plane] (\angVis:1) arc (\angVis:\angVis+180:1);
+\draw[current plane,dashed] (\angVis-180:1) arc (\angVis-180:\angVis:1);
+}
+\newcommand{\DrawLatitudeCircle}[2][1]{
+\LatitudePlane{\angEl}{#2}
+\tikzset{current plane/.prefix style={scale=#1}}
+\pgfmathsetmacro\sinVis{sin(#2)/cos(#2)*sin(\angEl)/cos(\angEl)}
+\pgfmathsetmacro\angVis{asin(min(1,max(\sinVis,-1)))}
+\draw[current plane] (\angVis:1) arc (\angVis:-\angVis-180:1);
+\draw[current plane,dashed] (180-\angVis:1) arc (180-\angVis:\angVis:1);
+}
+\newcommand{\sectionbreak}{\clearpage}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="book-1.html"><span class="title">Trigonometry through polynesian navigation</span></a></h1>
+<p class="byline">Kamuela E Yong</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="Applications_of_Trigonometry.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="Applications_of_Trigonometry.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="The_Law_of_Cosines.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="Applications_of_Trigonometry.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="Applications_of_Trigonometry.html" title="Up">Up</a><a class="next-button button toolbar-item" href="The_Law_of_Cosines.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1" class="internal"><span class="title">Front Matter</span></a></li>
+<li class="link">
+<a href="Trigonometry.html" data-scroll="Trigonometry" class="internal"><span class="codenumber">1</span> <span class="title">Trigonometry</span></a><ul>
+<li><a href="Hawaiian_Star_Compass.html" data-scroll="Hawaiian_Star_Compass" class="internal">Hawaiian Star Compass</a></li>
+<li><a href="Angles_and_Their_Measure.html" data-scroll="Angles_and_Their_Measure" class="internal">Angles and Their Measure</a></li>
+<li><a href="Unit_Circle.html" data-scroll="Unit_Circle" class="internal">Unit Circle</a></li>
+<li><a href="Right_Triangle_Trigonometry.html" data-scroll="Right_Triangle_Trigonometry" class="internal">Right Triangle Trigonometry</a></li>
+<li><a href="Trigonometric_Functions_of_Any_Angles.html" data-scroll="Trigonometric_Functions_of_Any_Angles" class="internal">Trigonometric Functions of Any Angles</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Graphs_of_the_Trigonometric_Functions.html" data-scroll="Graphs_of_the_Trigonometric_Functions" class="internal"><span class="codenumber">2</span> <span class="title">Graphs of the Trigonometric Functions</span></a><ul>
+<li><a href="Graphs_of_the_Sine_and_Cosine_Functions.html" data-scroll="Graphs_of_the_Sine_and_Cosine_Functions" class="internal">Graphs of the Sine and Cosine Functions</a></li>
+<li><a href="Graphs_of_Other_Trigonometric_Functions.html" data-scroll="Graphs_of_Other_Trigonometric_Functions" class="internal">Graphs of Other Trigonometric Functions</a></li>
+<li><a href="Phase_Shifts_and_Sinusoidal_Curve_Fitting.html" data-scroll="Phase_Shifts_and_Sinusoidal_Curve_Fitting" class="internal">Harmonic Motion/Phase shift/Sinusoidal Curve Fitting</a></li>
+<li><a href="Inverse_Trigonometry.html" data-scroll="Inverse_Trigonometry" class="internal">Inverse Trigonometric Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Analytic_Trigonometry.html" data-scroll="Analytic_Trigonometry" class="internal"><span class="codenumber">3</span> <span class="title">Analytic Trigonometry</span></a><ul>
+<li><a href="Trigonometric_Identities.html" data-scroll="Trigonometric_Identities" class="internal">Trigonometric Identities</a></li>
+<li><a href="Sum_and_Difference_Formulas.html" data-scroll="Sum_and_Difference_Formulas" class="internal">Sum and Difference Formulas</a></li>
+<li><a href="Double-Angle_and_Half-Angle_Formulas.html" data-scroll="Double-Angle_and_Half-Angle_Formulas" class="internal">Double-Angle and Half-Angle Formulas</a></li>
+<li><a href="Product-to-Sum_and_Sum-to-Product_Formulas.html" data-scroll="Product-to-Sum_and_Sum-to-Product_Formulas" class="internal">Product-to-Sum and Sum-to-Product Formulas</a></li>
+<li><a href="Trigonometric_Equations.html" data-scroll="Trigonometric_Equations" class="internal">Trigonometric Equations</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Applications_of_Trigonometry.html" data-scroll="Applications_of_Trigonometry" class="internal"><span class="codenumber">4</span> <span class="title">Applications of Trigonometry</span></a><ul>
+<li><a href="The_Law_of_Sines.html" data-scroll="The_Law_of_Sines" class="active">The Law of Sines</a></li>
+<li><a href="The_Law_of_Cosines.html" data-scroll="The_Law_of_Cosines" class="internal">The Law of Cosines</a></li>
+<li><a href="Vectors.html" data-scroll="Vectors" class="internal">Vectors</a></li>
+<li><a href="Dot_Product.html" data-scroll="Dot_Product" class="internal">Dot Product</a></li>
+<li><a href="Cross_Product.html" data-scroll="Cross_Product" class="internal">Cross Product</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Polar_and_Parametric_Equations.html" data-scroll="Polar_and_Parametric_Equations" class="internal"><span class="codenumber">5</span> <span class="title">Polar and Parametric Equations</span></a><ul>
+<li><a href="Polar_Coordinates.html" data-scroll="Polar_Coordinates" class="internal">Polar Coordinates</a></li>
+<li><a href="Polar_Equations_and_Graphs.html" data-scroll="Polar_Equations_and_Graphs" class="internal">Polar Equations and Graphs</a></li>
+<li><a href="Complex_Numbers__De_Moivre_s_Theorem.html" data-scroll="Complex_Numbers__De_Moivre_s_Theorem" class="internal">Complex Numbers; De Moivre's Theorem</a></li>
+<li><a href="Parametric_Curves_and_Parametric_Equations.html" data-scroll="Parametric_Curves_and_Parametric_Equations" class="internal">Parametric Curves and Parametric Equations</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Analytic_Geometry.html" data-scroll="Analytic_Geometry" class="internal"><span class="codenumber">6</span> <span class="title">Analytic Geometry</span></a><ul>
+<li><a href="Parabols.html" data-scroll="Parabols" class="internal">Parabolas</a></li>
+<li><a href="Ellipses.html" data-scroll="Ellipses" class="internal">Ellipses</a></li>
+<li><a href="Hyperbolas.html" data-scroll="Hyperbolas" class="internal">Hyperbolas</a></li>
+</ul>
+</li>
+<li class="link"><a href="Solutions.html" data-scroll="Solutions" class="internal"><span class="codenumber">7</span> <span class="title">Solutions</span></a></li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1" class="internal"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="references-1.html" data-scroll="references-1" class="internal"><span class="title">Bibliography</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="The_Law_of_Sines"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">4.1</span> <span class="title">The Law of Sines</span>
+</h2>
+<section class="introduction" id="introduction-11"><p id="p-729">Recall the example from <a href="Inverse_Trigonometry.html" class="internal" title="Section 2.4: Inverse Trigonometric Functions">Section 2.4</a> where Alingano Maisu is sailing to her new home in Satawal. For the first leg of the voyage, we calculated that to sail from Johnston Atoll to Majuro, you would need to sail towards the house House ʻĀina Kona (<span class="process-math">\(27.4^{\circ}\)</span>). In reality, there are currents that push the wa‘a off course. Now let’s consider that a current of 1 knot is flowing to the house Komohana (West). If we were to face Majuro and sail straight, the current put us to the west of our destination. To ensure we arrive at Majuro, our apparent heading will need to be a point to the west of our destination, as shown below.</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-149.svg" role="img" class="contained"></div>
+<p id="p-730">If we sail at 5 knots, what house will we need to face in order to compensate for the current of 2 knots? First notice that by alternate interior angles, we have that <span class="process-math">\(A=27.4^{\circ}\text{.}\)</span> Now we will write the triangle where the sides represent speed and we can ignore the distance.</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-150.svg" role="img" class="contained"></div>
+<p id="p-731">We cannot use the methods from previous sections to solve for this triangle because this is not a right triangle. Any triangle with no right angles is called an <em class="emphasis">oblique triangle</em>.  In this section, we will learn methods to solve oblique triangles.</p>
+<p id="p-732">To solve an oblique triangle, we must know the length of one side as well as two other values of the triangle. This gives us a total of 5 possible triangles.</p>
+<ol class="decimal">
+<li id="li-140"><p id="p-733"><em class="emphasis">Angle-Side-Angle (ASA)</em>: Two angles and the side between them are known <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-151.svg" role="img" class="contained"></div></p></li>
+<li id="li-141"><p id="p-734"><em class="emphasis">Side-Angle-Angle (SAA)</em>: One side and two consecutive angles are known <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-152.svg" role="img" class="contained"></div></p></li>
+<li id="li-142"><p id="p-735"><em class="emphasis">Side-Side-Angle (SSA)</em>: Two sides and the angle that is not between them are known <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-153.svg" role="img" class="contained"></div></p></li>
+<li id="li-143"><p id="p-736"><em class="emphasis">Side-Angle-Side (SAS)</em>: Two sides and the angle between them are known <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-154.svg" role="img" class="contained"></div></p></li>
+<li id="li-144"><p id="p-737"><em class="emphasis">Side-Side-Side (SSS)</em>: All three sides of a triangle are known <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-155.svg" role="img" class="contained"></div></p></li>
+</ol>
+<p id="p-738">In this section, we learn techniques to solving triangles of the form ASA, SAA, and SSA.</p></section><section class="subsection" id="subsection-35"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.1.1</span> <span class="title">Law of Sines</span>
+</h3>
+<p id="p-739">In any triangle, we can draw an <dfn class="terminology">altitude</dfn>,  a line through a vertex and perpendicular to the side opposite the vertex.</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-156.svg" role="img" class="contained"></div>
+<p id="p-740">Using the right triangles, we have <span class="process-math">\(\sin A=\frac{h}{b}\)</span> and <span class="process-math">\(\sin B=\frac{h}{a}\text{.}\)</span> Solving both equations for <span class="process-math">\(h\text{,}\)</span> we get <span class="process-math">\(h=b\sin A\)</span> and <span class="process-math">\(h=a\sin B\text{.}\)</span> Since these equations both equal <span class="process-math">\(h\text{,}\)</span> we can now set them equal to each other.</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+b\sin A = a\sin B
+\end{equation*}
+</div>
+<p id="p-741">Dividing both sides by <span class="process-math">\(ab\text{,}\)</span> we get</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{\sin A}{a}=\frac{\sin B}{b}
+\end{equation*}
+</div>
+<p id="p-742">Using the same method, we can get</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{\sin A}{a}=\frac{\sin C}{c}\mbox{ and } \frac{\sin B}{b}=\frac{\sin C}{c}
+\end{equation*}
+</div>
+<p id="p-743">Putting these together, we get</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{\sin A}{a}=\frac{\sin B}{b}=\frac{\sin C}{c}
+\end{equation*}
+</div>
+<p id="p-744">This is known as the <em class="emphasis">Law of Sines</em>. </p>
+<article class="theorem theorem-like" id="core-standards-CCSS_MATH_CONTENT_HSG_SRT_D_10-a"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">4.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">Law of Sines.</span>
+</h4>
+<p id="p-745">In triangle <span class="process-math">\(ABC\text{,}\)</span> we have</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{\sin A}{a}=\frac{\sin B}{b}=\frac{\sin C}{c}
+\end{equation*}
+</div>
+<p class="continuation">which may also be written in the form</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{a}{\sin A}=\frac{b}{\sin B}=\frac{c}{\sin C}
+\end{equation*}
+</div>
+<p id="p-746">The first form is more convenient when you are trying to find an angle and the second form is more convenient when you are trying to find a side.</p></article><p id="p-747">\begin{mybox} When solving triangles, it is often useful to use the fact that the sum of the angles in a triangle equals <span class="process-math">\(180^{\circ}\text{.}\)</span> That is,</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+A+B+C=180^{\circ}
+\end{equation*}
+</div>
+<p id="p-748">\end{mybox}</p>
+<article class="example example-like" id="core-standards-CCSS_MATH_CONTENT_HSG_SRT_D_11-a"><a href="" data-knowl="" class="id-ref example-knowl original has-image" data-refid="hk-core-standards-CCSS_MATH_CONTENT_HSG_SRT_D_11-a"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.2</span><span class="period">.</span><span class="space"> </span><span class="title">Using Law of Sines (ASA).</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-core-standards-CCSS_MATH_CONTENT_HSG_SRT_D_11-a"><article class="example example-like"><p id="p-749">The waʻa Kānehūnāmoku is returning from an afternoon sail from training students in the ways of sailing. Two observers stand 1,000 feet apart on the shore at Kāne`ohe Bay spot Kānehūnāmoku. Observer <span class="process-math">\(A\)</span> determines that the angle between the waʻa and Observer <span class="process-math">\(B\)</span> is <span class="process-math">\(80^{\circ}\)</span> while Observer <span class="process-math">\(B\)</span> determines that the angle between the waʻa and Observer <span class="process-math">\(A\)</span> is <span class="process-math">\(60^{\circ}\text{.}\)</span> How far is Kānehūnāmoku from each observer and what is the angle formed by the two observers (round your answer to the nearest foot)?</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-157.svg" role="img" class="contained"></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-49" id="solution-49"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-49"><div class="solution solution-like">
+<p id="p-750">In this triangle, we know the values of two angles and the side between them, so we have an Angle-Side-Angle (ASA) triangle. We know that <span class="process-math">\(A+B+C=180^{\circ}\text{.}\)</span> So <span class="process-math">\(80^{\circ}+60^{\circ}+C=140^{\circ}+C=180^{\circ}\)</span> so <span class="process-math">\(C=40^{\circ}\text{.}\)</span> To solve for <span class="process-math">\(a\text{,}\)</span> we will use the Law of Sines. Either form for the Law of Sines can be used to solve this problem, but since we are solving for a side, it would be easier and require fewer steps if we use the second form for the Law of Sines.</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-76">
+\begin{align*}
+\frac{a}{\sin A}\amp =\amp \frac{c}{\sin C}\\
+\frac{a}{\sin 80^{\circ}}\amp =\amp \frac{1,000}{\sin 40^{\circ}}
+\end{align*}
+</div>
+<p id="p-751">Multiplying both sides by <span class="process-math">\(\sin 80^{\circ}\text{,}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+a=\frac{1,000\sin 80^{\circ}}{\sin 40^{\circ}}\approx1,532\mbox{ ft}\text{.}
+\end{equation*}
+</div>
+<p id="p-752">To solve for <span class="process-math">\(b\text{,}\)</span> we have two options to use for the Law of Sines</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{b}{\sin B}=\frac{a}{\sin A}\qquad\mbox{or} \qquad\frac{b}{\sin B}=\frac{c}{\sin C}
+\end{equation*}
+</div>
+<p id="p-753">Because our answer for <span class="process-math">\(a\)</span> was rounded, using the first option may lead to rounding errors so it is best to use the second option because it has known values that we were originally given in the problem (<span class="process-math">\(c=1,000\)</span>). Thus we will use</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{b}{\sin B}=\frac{c}{\sin C}
+\end{equation*}
+</div>
+<p id="p-754">So we get</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+b=\frac{c\sin B}{\sin C}=\frac{1,000\sin 60^{\circ}}{\sin 40^{\circ}}\approx1,347\mbox{ ft}
+\end{equation*}
+</div>
+<p id="p-755">Thus Kānehūnāmoku is 1,347 feet from Observer A and 1,532 feet from Observer B, and the angle between the two observers is <span class="process-math">\(40^{\circ}\text{.}\)</span></p>
+</div></div>
+</div></article></div>
+<article class="example example-like" id="example-58"><a href="" data-knowl="" class="id-ref example-knowl original has-image" data-refid="hk-example-58"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.3</span><span class="period">.</span><span class="space"> </span><span class="title">Using Law of Sines (SAA).</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-58"><article class="example example-like"><p id="p-756">For the triangle shown below with <span class="process-math">\(A=120^{\circ}\text{,}\)</span> <span class="process-math">\(C=20^{\circ}\text{,}\)</span> and <span class="process-math">\(a=5\text{,}\)</span> find the remaining sides. Round your answer to two decimal places.</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-158.svg" role="img" class="contained"></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-50" id="solution-50"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-50"><div class="solution solution-like">
+<p id="p-757">In this triangle, we know the values of one side and two consecutive angles, so we have a Side-Angle-Angle (SAA) triangle. The third angle can be calculated by subtracting the known angles from <span class="process-math">\(180^{\circ}\text{.}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+B=180^{\circ}-A-C=180^{\circ}-120^{\circ}-20^{\circ}=40^{\circ}
+\end{equation*}
+</div>
+<p id="p-758">Using the first form of the Law of Sines</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{b}{\sin B}=\frac{a}{\sin A}\qquad\mbox{and} \qquad\frac{c}{\sin C}=\frac{a}{\sin A}
+\end{equation*}
+</div>
+<p class="continuation">we have</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+b=\frac{a\sin B}{\sin A}=\frac{5\sin40^{\circ}}{\sin120^{\circ}}\approx3.71\qquad\mbox{and} \qquad c=\frac{a\sin C}{\sin A}=\frac{5\sin20^{\circ}}{\sin120^{\circ}}\approx1.97
+\end{equation*}
+</div>
+</div></div>
+</div></article></div></section><section class="subsection" id="subsection-36"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.1.2</span> <span class="title">The Ambiguous Case</span>
+</h3>
+<p id="p-759">Although the Law of Sines can be used to solve oblique triangles, there may be cases that would give us one triangle, two triangles, or even no solution. Such cases are known as the <em class="emphasis">ambiguous case</em>.  This occurs when we know two sides and an angle that is opposite to one of the given sides.</p>
+<p id="p-760">\begin{mybox}[The Ambiguous Case] Consider a triangle where <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\text{,}\)</span> and <span class="process-math">\(A\)</span> are given. The altitude is <span class="process-math">\(h=b\sin A\text{.}\)</span> Then we have the following possibilities</p>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><em class="emphasis">No triangle</em></td>
+<td class="l m b0 r0 l0 t0 lines">
+<em class="emphasis">One right triangle</em> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-159.svg" role="img" class="contained"></div>
+</td>
+<td class="l m b0 r0 l0 t0 lines"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-160.svg" role="img" class="contained"></div></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(A\)</span> is acute and <span class="process-math">\(a\lt h=b\sin A\)</span>
+</td>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(A\)</span> is acute and <span class="process-math">\(a=h=b\sin A\)</span>
+</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">
+<em class="emphasis">Two triangles</em> (<span class="process-math">\(\Delta ACB_1\)</span> and <span class="process-math">\(\Delta ACB_2\)</span>)</td>
+<td class="l m b0 r0 l0 t0 lines">
+<em class="emphasis">One triangle</em> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-161.svg" role="img" class="contained"></div>
+</td>
+<td class="l m b0 r0 l0 t0 lines"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-162.svg" role="img" class="contained"></div></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(A\)</span> is acute and <span class="process-math">\(h=b\sin A\lt a\lt b\)</span>
+</td>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(A\)</span> is acute and <span class="process-math">\(a\geq b\text{.}\)</span>
+</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><em class="emphasis">No triangle</em></td>
+<td class="l m b0 r0 l0 t0 lines">
+<em class="emphasis">One triangle</em> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-163.svg" role="img" class="contained"></div>
+</td>
+<td class="l m b0 r0 l0 t0 lines"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-164.svg" role="img" class="contained"></div></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(A\)</span> is obtuse and <span class="process-math">\(a\leq b\)</span>
+</td>
+<td class="l m b0 r0 l0 t0 lines">
+<span class="process-math">\(A\)</span> is obtuse and <span class="process-math">\(a&gt;b\)</span>
+</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+</table></div>
+<p id="p-761">\end{mybox}</p>
+<p id="p-762">To generalize the ambiguous case of SSA, we are given a triangle with (1) a known angle, <span class="process-math">\(\theta\text{;}\)</span> (2) a side <dfn class="terminology">adjacent</dfn> to <span class="process-math">\(\theta\text{;}\)</span> (3) a side <dfn class="terminology">opposite</dfn> to <span class="process-math">\(\theta\text{.}\)</span> If we calculate the <dfn class="terminology">altitude</dfn> <span class="process-math">\(h=\)</span> (adjacent side)<span class="process-math">\(\sin\theta\text{,}\)</span> then <a href="" class="xref" data-knowl="./knowl/tab_SSA.html" title="Table 4.1.4: Possibilities for the ambiguous case (SSA)">Table 4.1.4</a> summarizes the possible cases.</p>
+<figure class="table table-like" id="tab_SSA"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">4.1.4<span class="period">.</span></span><span class="space"> </span>Possibilities for the ambiguous case (SSA)</figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Case</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\theta\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">Condition on Opposite Side</td>
+<td class="l m b0 r0 l0 t0 lines">Number of Triangles</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">1</td>
+<td class="l m b0 r0 l0 t0 lines">acute</td>
+<td class="l m b0 r0 l0 t0 lines">opposite side <span class="process-math">\(\lt\)</span> altitude</td>
+<td class="l m b0 r0 l0 t0 lines">None</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">2</td>
+<td class="l m b0 r0 l0 t0 lines">acute</td>
+<td class="l m b0 r0 l0 t0 lines">opposite side = altitude</td>
+<td class="l m b0 r0 l0 t0 lines">One (right triangle)</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">3</td>
+<td class="l m b0 r0 l0 t0 lines">acute</td>
+<td class="l m b0 r0 l0 t0 lines">altitude <span class="process-math">\(\lt\)</span> opposite side <span class="process-math">\(\lt\)</span> adjacent side</td>
+<td class="l m b0 r0 l0 t0 lines">Two</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4</td>
+<td class="l m b0 r0 l0 t0 lines">acute</td>
+<td class="l m b0 r0 l0 t0 lines">opposite side <span class="process-math">\(\geq\)</span> adjacent side</td>
+<td class="l m b0 r0 l0 t0 lines">One</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">5</td>
+<td class="l m b0 r0 l0 t0 lines">obtuse</td>
+<td class="l m b0 r0 l0 t0 lines">opposite side <span class="process-math">\(\leq\)</span> adjacent side</td>
+<td class="l m b0 r0 l0 t0 lines">None</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">6</td>
+<td class="l m b0 r0 l0 t0 lines">obtuse</td>
+<td class="l m b0 r0 l0 t0 lines">opposite side <span class="process-math">\(&gt;\)</span> adjacent side</td>
+<td class="l m b0 r0 l0 t0 lines">One</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+</table></div></figure><article class="example example-like" id="core-standards-CCSS_MATH_CONTENT_HSG_SRT_D_11-b"><a href="" data-knowl="" class="id-ref example-knowl original has-image" data-refid="hk-core-standards-CCSS_MATH_CONTENT_HSG_SRT_D_11-b"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.5</span><span class="period">.</span><span class="space"> </span><span class="title">Using Law of Sines (SSA) one-solution.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-core-standards-CCSS_MATH_CONTENT_HSG_SRT_D_11-b"><article class="example example-like"><p id="p-763">We can now return to the example at the start of the section where the Alingano Maisu must account for a current and we had the following triangle</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-165.svg" role="img" class="contained"></div>
+<p id="p-764">What house do we need to head in order to account for current?</p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-51" id="solution-51"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-51"><div class="solution solution-like">
+<p id="p-765">Referring to <a href="" class="xref" data-knowl="./knowl/tab_SSA.html" title="Table 4.1.4: Possibilities for the ambiguous case (SSA)">Table 4.1.4</a>, our known angle (<span class="process-math">\(A=27.4^{\circ}\)</span>) is acute, the side opposite of our angle (<span class="process-math">\(a=5\)</span>) is greater than the side adjacent to the angle (<span class="process-math">\(c=1\)</span>) so we have Case 4 and know that we have one triangle.</p>
+<p id="p-766">Using the first form of the Law of Sines</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{\sin A}{a}=\frac{\sin C}{c}
+\end{equation*}
+</div>
+<p class="continuation">we get</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\sin C=c\cdot\frac{\sin A}{a}\approx1\cdot\frac{\sin 27.4^{\circ}}{5}\approx0.092
+\end{equation*}
+</div>
+<p id="p-767">Taking the inverse sine we get</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+C=\sin^{-1}0.092\approx5.8^{\circ}
+\end{equation*}
+</div>
+<p id="p-768">Now that we know the value of <span class="process-math">\(C\text{,}\)</span> we will need to add that to the heading that we determined in the last section (<span class="process-math">\(207.4^{\circ}\)</span>) to get <span class="process-math">\(5.8^{\circ}+207.4^{\circ}=213.2^{\circ}\text{.}\)</span> Next we refer to the Star Compass with angles (<a href="" class="xref" data-knowl="./knowl/fig_star-compass-with-angles.html" title="Figure 1.2.4">Figure 1.2.4</a> on <a href="" class="xref" data-knowl="./knowl/fig_star-compass-with-angles.html" title="Figure 1.2.4">page 1.2.4</a>) to conclude we will need to sail towards the House Noio Kona.</p>
+</div></div>
+</div></article></div>
+<article class="example example-like" id="example-60"><a href="" data-knowl="" class="id-ref example-knowl original has-image" data-refid="hk-example-60"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.6</span><span class="period">.</span><span class="space"> </span><span class="title">Using Law of Sines (SSA) no solution.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-60"><article class="example example-like"><p id="p-769">Solve the triangle if <span class="process-math">\(C=70\text{,}\)</span> <span class="process-math">\(b=6\text{,}\)</span> and <span class="process-math">\(c=5\text{.}\)</span></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-52" id="solution-52"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-52"><div class="solution solution-like">
+<p id="p-770">The altitude of the triangle is <span class="process-math">\(h=b\sin C=6\sin70^{\circ}\approx5.64\text{.}\)</span> Since <span class="process-math">\(C\)</span> is an acute angle and the altitude (<span class="process-math">\(h\approx5.64\)</span>) is greater than the side opposite of the angle (<span class="process-math">\(c=5)\text{,}\)</span> then by <a href="" class="xref" data-knowl="./knowl/tab_SSA.html" title="Table 4.1.4: Possibilities for the ambiguous case (SSA)">Table 4.1.4</a>, there is no triangle.</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-166.svg" role="img" class="contained"></div>
+</div></div>
+</div></article></div>
+<article class="example example-like" id="example-61"><a href="" data-knowl="" class="id-ref example-knowl original has-image" data-refid="hk-example-61"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.7</span><span class="period">.</span><span class="space"> </span><span class="title">Using Law of Sines (SSA) two solutions.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-61"><article class="example example-like"><p id="p-771">Solve the triangle if <span class="process-math">\(a=6\text{,}\)</span> <span class="process-math">\(b=7\text{,}\)</span> and <span class="process-math">\(A=40^{\circ}\text{.}\)</span></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-53" id="solution-53"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-53"><div class="solution solution-like">
+<p id="p-772">The altitude of the triangle is <span class="process-math">\(h=b\sin A=7\sin40^{\circ}\approx4.50\text{.}\)</span> Since <span class="process-math">\(A\)</span> is an acute angle and the altitude (<span class="process-math">\(h\approx4.50\)</span>) is less than the opposite side (<span class="process-math">\(a=6\)</span>) which is less than the adjacent side (<span class="process-math">\(b=7)\text{,}\)</span> then by <a href="" class="xref" data-knowl="./knowl/tab_SSA.html" title="Table 4.1.4: Possibilities for the ambiguous case (SSA)">Table 4.1.4</a>, there are two triangles.</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-167.svg" role="img" class="contained"></div>
+<p id="p-773">Using the first form for the Law of Sines</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{\sin A}{a}=\frac{\sin B}{b}
+\end{equation*}
+</div>
+<p class="continuation">we get</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\sin B=\frac{b\sin A}{a}=\frac{7\sin40^{\circ}}{6}\approx0.75
+\end{equation*}
+</div>
+<p id="p-774">Here we have that <span class="process-math">\(\sin B\)</span> is positive and we know that sine is positive in Quadrant I and II so our value for <span class="process-math">\(B\)</span> may be between <span class="process-math">\(0^{\circ}\)</span> and <span class="process-math">\(180^{\circ}\text{.}\)</span> Taking the inverse sine we get our first angle</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+B_1=\sin^{-1}(0.75)\approx48.58^{\circ}
+\end{equation*}
+</div>
+<p class="continuation">which is in Quadrant I. To calculate the angle in Quadrant II, we subtract the reference angle from <span class="process-math">\(180^{\circ}\)</span> to get</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+B_2=180^{\circ}-B_1=180^{\circ}-48.58^{\circ}=131.42^{\circ}
+\end{equation*}
+</div>
+<p id="p-775">So we now have two triangles: <span class="process-math">\(AB_1C\)</span> and <span class="process-math">\(AB_2C\text{.}\)</span></p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-168.svg" role="img" class="contained"></div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-169.svg" role="img" class="contained"></div>
+<p id="p-776">To solve triangle <span class="process-math">\(AB_1C\text{,}\)</span> be begin by finding <span class="process-math">\(C_1\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+C_1\approx180^{\circ}-A-B_1=180^{\circ}-40^{\circ}-48.58^{\circ}=91.42^{\circ}
+\end{equation*}
+</div>
+<p id="p-777">To find the side <span class="process-math">\(c_1\text{,}\)</span> we use the second form for the Law of Sines</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{c_1}{\sin C}=\frac{a}{\sin A}
+\end{equation*}
+</div>
+<p id="p-778">Thus</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+c_1=\frac{a\sin C_1}{\sin A}\approx\frac{6\sin48.58^{\circ}}{\sin40^{\circ}}\approx9.33
+\end{equation*}
+</div>
+<p id="p-779">To solve triangle <span class="process-math">\(AB_2C\text{,}\)</span> we begin by finding <span class="process-math">\(C_2\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+C_2\approx180^{\circ}-A-B_2=180^{\circ}-40^{\circ}-131.42^{\circ}=8.58^{\circ}
+\end{equation*}
+</div>
+<p id="p-780">To find the side <span class="process-math">\(c_2\text{,}\)</span> we use the second form for the Law of Sines to get</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+c_2=\frac{a\sin C_2}{\sin A}\approx\frac{6\sin8.58^{\circ}}{\sin40^{\circ}}\approx1.39
+\end{equation*}
+</div>
+</div></div>
+</div></article></div></section><section class="subsection" id="core-standards-CCSS_MATH_CONTENT_HSG_SRT_D_9"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.1.3</span> <span class="title">Area of an oblique triangle</span>
+</h3>
+<p id="p-781">After heavy use, you determine it's time to replace the peʻa (sail) of your waʻa. Before you buy the new peʻa, you need to determine its area. We know the length of the `ōpeʻa (spar) is <span class="process-math">\(b=18\)</span> feet, the length of the paepae (boom) is <span class="process-math">\(a=15\)</span> feet, and the tack or the angle between them is <span class="process-math">\(C=44^{\circ}\text{.}\)</span> What is the area of the peʻa?</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-170.svg" role="img" class="contained"></div>
+<p id="p-782">At this point, we don't have a formula for the area of an oblique triangle. However, we can apply the sine function to an oblique triangle to develop a new formula for the area of a triangle.</p>
+<p id="p-783">\begin{mybox}[Area of a Triangle]  Given two sides of a triangle and their included side, the area of the triangle is given by</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-77">
+\begin{align*}
+\mbox{Area} \amp =\amp \frac{1}{2}ab\sin C\\
+\amp =\amp \frac{1}{2}ac\sin B\\
+\amp =\amp \frac{1}{2}bc\sin A
+\end{align*}
+</div>
+<p id="p-784">In other words, the area of a triangle equals one half of the product of two sides and the sine of their included angle. \end{mybox}</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-171.svg" role="img" class="contained"></div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-172.svg" role="img" class="contained"></div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-173.svg" role="img" class="contained"></div>
+<article class="hiddenproof" id="proof-11"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-11"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-11"><article class="hiddenproof"><p id="p-785">Recall the area of any triangle is <span class="process-math">\(\mbox{Area} =\frac{1}{2}bh\)</span> where <span class="process-math">\(b\)</span> is the base and <span class="process-math">\(h\)</span> is the height of a triangle. In a right triangle, the height is the length of one side. However, in an oblique triangle, the height is not immediately known.</p>
+<p id="p-786">If the angle <span class="process-math">\(C\)</span> is acute, then using the property that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\sin C=\frac{\mbox{opposite} }{\mbox{adjacent} }=\frac{h}{a}
+\end{equation*}
+</div>
+<p class="continuation">the height is then given by</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+h=a\sin C
+\end{equation*}
+</div>
+<p id="p-787">If the angle <span class="process-math">\(C\)</span> is obtuse, then we use the reference angle for <span class="process-math">\(C\text{,}\)</span> <span class="process-math">\(180^{\circ}-C\)</span> to get</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+h=a\sin(180^{\circ}-C)
+\end{equation*}
+</div>
+<p id="p-788">By the difference formula we get <span class="process-math">\(\sin(180^{\circ}-C)=\sin C\)</span> and thus</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+h=a\sin C
+\end{equation*}
+</div>
+<p id="p-789">In a right triangle, <span class="process-math">\(C=90^{\circ}\)</span> and since <span class="process-math">\(\sin90^{\circ}=1\text{,}\)</span> we can also write</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+h=a\sin C=a\sin90^{\circ}=a\cdot1=a
+\end{equation*}
+</div>
+<p id="p-790">Thus regardless of the triangle, we get</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\mbox{Area} =\frac{1}{2}(\mbox{base} )(\mbox{height} )=\frac{1}{2}b(a\sin C)=\frac{1}{2}ab\sin C
+\end{equation*}
+</div>
+<p id="p-791">The other formulas are obtained using a similar method.</p></article></div>
+<article class="example example-like" id="example-62"><a href="" data-knowl="" class="id-ref example-knowl original has-image" data-refid="hk-example-62"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.1.8</span><span class="period">.</span><span class="space"> </span><span class="title">Area of a sail.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-62"><article class="example example-like"><p id="p-792">We can now calculate the area of the sail</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-174.svg" role="img" class="contained"></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-54" id="solution-54"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-54"><div class="solution solution-like">
+<p id="p-793">Using the formula, the area is</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\mbox{Area} =\frac{1}{2}ab\sin C=\frac{1}{2}(15)(18)\sin44^{\circ}\approx93.8\mbox{ft} ^2
+\end{equation*}
+</div>
+<p id="p-794">Thus we will need to order a sail that is 93.8ft<span class="process-math">\(^2\text{.}\)</span></p>
+</div></div>
+</div></article></div>
+<article class="exercise exercise-like" id="exercise-22"><a href="" data-knowl="" class="id-ref exercise-knowl original has-image" data-refid="hk-exercise-22"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">4.1.9</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-22"><article class="exercise exercise-like"><p id="p-795">\Question (SSA) A waʻa is sailing in the direction Hikina (east) at 5 knots and spots an island in the house Lā Koʻolau. 6 hours later the navigator measures the island in the house Manu Hoʻolua. How far is the waʻa from the island at the time of its second measurement? How close did the waʻa get to the island (measure the altitude)?</p>
+<p id="p-796">\Question Recall the example from <a href="Inverse_Trigonometry.html" class="internal" title="Section 2.4: Inverse Trigonometric Functions">Section 2.4</a> where Hinemoana is sailing to Rarotonga. We calculated that to sail from Aotearoa to Rarotonga, you would need to sail towards the house Manu Koʻolau (<span class="process-math">\(41.8^{\circ}\)</span>). In reality, there are currents that push the wa‘a off course. Now let’s consider that a current of 2 knots is moving to the house Hikina (East). If we were to face Rarotonga and sail straight, the current put us to the east of our destination. To ensure we arrive at Rarotonga, our apparent heading will need to be a point to the west of our destination, as shown below.</p>
+<p id="p-797">*(check the direction of the current in real life to make this more realistic)</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-175.svg" role="img" class="contained"></div>
+<p id="p-798">If we sail at 5 knots, what house will we need to face in order to compensate for the current of 2 knots? First notice that by alternate interior angles, we have that <span class="process-math">\(B=41.8^{\circ}\text{.}\)</span> Now we will write the triangle where the sides represents the speed.</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-176.svg" role="img" class="contained"></div></article></div></section></section></div></main>
+</div>
+</body>
+</html>

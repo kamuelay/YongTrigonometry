@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Inverse Trigonometric Functions</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Trigonometry through polynesian navigation">
+<meta property="book:author" content="Kamuela E Yong">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+},
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\def\R{4 }
+
+\def\angEl{20}
+
+\def\angAz{-20}
+
+\def\R{4 }
+\def\angEl{20}
+\newcommand{\intoo}[2]{\mathopen{]}#1\,;#2\mathclose{[}}
+\def\angAz{-20}
+\newcommand{\ud}{\mathop{\mathrm{{}d}}\mathopen{}}
+\newcommand{\intff}[2]{\mathopen{[}#1\,;#2\mathclose{]}}
+\newcommand{\thepartimage}{}
+\newcommand{\thechapterimage}{}
+\newcommand{\autodot}{.}
+\newcommand{\QuestionNB}{\bfseries\arabic{Question}.\ }
+
+
+
+\newcommand{\pgfmathsinandcos}[3]{
+\pgfmathsetmacro#1{sin(#3)}
+\pgfmathsetmacro#2{cos(#3)}}
+\newcommand{\LongitudePlane}[3][current plane]{
+\pgfmathsinandcos\sinEl\cosEl{#2}
+\pgfmathsinandcos\sint\cost{#3}
+\tikzset{#1/.style={cm={\cost,\sint*\sinEl,0,\cosEl,(0,0)}}}
+}
+\newcommand{\LatitudePlane}[3][current plane]{
+\pgfmathsinandcos\sinEl\cosEl{#2}
+\pgfmathsinandcos\sint\cost{#3}
+\pgfmathsetmacro\yshift{\cosEl*\sint}
+\tikzset{#1/.style={cm={\cost,0,0,\cost*\sinEl,(0,\yshift)}}}
+}
+\newcommand{\NewLatitudePlane}[4][current plane]{
+\pgfmathsinandcos\sinEl\cosEl{#3}
+\pgfmathsinandcos\sint\cost{#4}
+\pgfmathsetmacro\yshift{#2*\cosEl*\sint}
+\tikzset{#1/.style={cm={\cost,0,0,\cost*\sinEl,(0,\yshift)}}}
+}
+\newcommand{\DrawLongitudeCircle}[2][1]{
+\LongitudePlane{\angEl}{#2}
+\tikzset{current plane/.prefix style={scale=#1}}
+\pgfmathsetmacro\angVis{atan(sin(#2)*cos(\angEl)/sin(\angEl))}
+\draw[current plane] (\angVis:1) arc (\angVis:\angVis+180:1);
+\draw[current plane,dashed] (\angVis-180:1) arc (\angVis-180:\angVis:1);
+}
+\newcommand{\DrawLatitudeCircle}[2][1]{
+\LatitudePlane{\angEl}{#2}
+\tikzset{current plane/.prefix style={scale=#1}}
+\pgfmathsetmacro\sinVis{sin(#2)/cos(#2)*sin(\angEl)/cos(\angEl)}
+\pgfmathsetmacro\angVis{asin(min(1,max(\sinVis,-1)))}
+\draw[current plane] (\angVis:1) arc (\angVis:-\angVis-180:1);
+\draw[current plane,dashed] (180-\angVis:1) arc (180-\angVis:\angVis:1);
+}
+\newcommand{\sectionbreak}{\clearpage}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="book-1.html"><span class="title">Trigonometry through polynesian navigation</span></a></h1>
+<p class="byline">Kamuela E Yong</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="Phase_Shifts_and_Sinusoidal_Curve_Fitting.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="Graphs_of_the_Trigonometric_Functions.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="Analytic_Trigonometry.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="Phase_Shifts_and_Sinusoidal_Curve_Fitting.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="Graphs_of_the_Trigonometric_Functions.html" title="Up">Up</a><a class="next-button button toolbar-item" href="Analytic_Trigonometry.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1" class="internal"><span class="title">Front Matter</span></a></li>
+<li class="link">
+<a href="Trigonometry.html" data-scroll="Trigonometry" class="internal"><span class="codenumber">1</span> <span class="title">Trigonometry</span></a><ul>
+<li><a href="Hawaiian_Star_Compass.html" data-scroll="Hawaiian_Star_Compass" class="internal">Hawaiian Star Compass</a></li>
+<li><a href="Angles_and_Their_Measure.html" data-scroll="Angles_and_Their_Measure" class="internal">Angles and Their Measure</a></li>
+<li><a href="Unit_Circle.html" data-scroll="Unit_Circle" class="internal">Unit Circle</a></li>
+<li><a href="Right_Triangle_Trigonometry.html" data-scroll="Right_Triangle_Trigonometry" class="internal">Right Triangle Trigonometry</a></li>
+<li><a href="Trigonometric_Functions_of_Any_Angles.html" data-scroll="Trigonometric_Functions_of_Any_Angles" class="internal">Trigonometric Functions of Any Angles</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Graphs_of_the_Trigonometric_Functions.html" data-scroll="Graphs_of_the_Trigonometric_Functions" class="internal"><span class="codenumber">2</span> <span class="title">Graphs of the Trigonometric Functions</span></a><ul>
+<li><a href="Graphs_of_the_Sine_and_Cosine_Functions.html" data-scroll="Graphs_of_the_Sine_and_Cosine_Functions" class="internal">Graphs of the Sine and Cosine Functions</a></li>
+<li><a href="Graphs_of_Other_Trigonometric_Functions.html" data-scroll="Graphs_of_Other_Trigonometric_Functions" class="internal">Graphs of Other Trigonometric Functions</a></li>
+<li><a href="Phase_Shifts_and_Sinusoidal_Curve_Fitting.html" data-scroll="Phase_Shifts_and_Sinusoidal_Curve_Fitting" class="internal">Harmonic Motion/Phase shift/Sinusoidal Curve Fitting</a></li>
+<li><a href="Inverse_Trigonometry.html" data-scroll="Inverse_Trigonometry" class="active">Inverse Trigonometric Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Analytic_Trigonometry.html" data-scroll="Analytic_Trigonometry" class="internal"><span class="codenumber">3</span> <span class="title">Analytic Trigonometry</span></a><ul>
+<li><a href="Trigonometric_Identities.html" data-scroll="Trigonometric_Identities" class="internal">Trigonometric Identities</a></li>
+<li><a href="Sum_and_Difference_Formulas.html" data-scroll="Sum_and_Difference_Formulas" class="internal">Sum and Difference Formulas</a></li>
+<li><a href="Double-Angle_and_Half-Angle_Formulas.html" data-scroll="Double-Angle_and_Half-Angle_Formulas" class="internal">Double-Angle and Half-Angle Formulas</a></li>
+<li><a href="Product-to-Sum_and_Sum-to-Product_Formulas.html" data-scroll="Product-to-Sum_and_Sum-to-Product_Formulas" class="internal">Product-to-Sum and Sum-to-Product Formulas</a></li>
+<li><a href="Trigonometric_Equations.html" data-scroll="Trigonometric_Equations" class="internal">Trigonometric Equations</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Applications_of_Trigonometry.html" data-scroll="Applications_of_Trigonometry" class="internal"><span class="codenumber">4</span> <span class="title">Applications of Trigonometry</span></a><ul>
+<li><a href="The_Law_of_Sines.html" data-scroll="The_Law_of_Sines" class="internal">The Law of Sines</a></li>
+<li><a href="The_Law_of_Cosines.html" data-scroll="The_Law_of_Cosines" class="internal">The Law of Cosines</a></li>
+<li><a href="Vectors.html" data-scroll="Vectors" class="internal">Vectors</a></li>
+<li><a href="Dot_Product.html" data-scroll="Dot_Product" class="internal">Dot Product</a></li>
+<li><a href="Cross_Product.html" data-scroll="Cross_Product" class="internal">Cross Product</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Polar_and_Parametric_Equations.html" data-scroll="Polar_and_Parametric_Equations" class="internal"><span class="codenumber">5</span> <span class="title">Polar and Parametric Equations</span></a><ul>
+<li><a href="Polar_Coordinates.html" data-scroll="Polar_Coordinates" class="internal">Polar Coordinates</a></li>
+<li><a href="Polar_Equations_and_Graphs.html" data-scroll="Polar_Equations_and_Graphs" class="internal">Polar Equations and Graphs</a></li>
+<li><a href="Complex_Numbers__De_Moivre_s_Theorem.html" data-scroll="Complex_Numbers__De_Moivre_s_Theorem" class="internal">Complex Numbers; De Moivre's Theorem</a></li>
+<li><a href="Parametric_Curves_and_Parametric_Equations.html" data-scroll="Parametric_Curves_and_Parametric_Equations" class="internal">Parametric Curves and Parametric Equations</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Analytic_Geometry.html" data-scroll="Analytic_Geometry" class="internal"><span class="codenumber">6</span> <span class="title">Analytic Geometry</span></a><ul>
+<li><a href="Parabols.html" data-scroll="Parabols" class="internal">Parabolas</a></li>
+<li><a href="Ellipses.html" data-scroll="Ellipses" class="internal">Ellipses</a></li>
+<li><a href="Hyperbolas.html" data-scroll="Hyperbolas" class="internal">Hyperbolas</a></li>
+</ul>
+</li>
+<li class="link"><a href="Solutions.html" data-scroll="Solutions" class="internal"><span class="codenumber">7</span> <span class="title">Solutions</span></a></li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1" class="internal"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="references-1.html" data-scroll="references-1" class="internal"><span class="title">Bibliography</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="Inverse_Trigonometry"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2.4</span> <span class="title">Inverse Trigonometric Functions</span>
+</h2>
+<section class="introduction" id="introduction-7"><p id="p-514">When Mau Pialug sailed to his home on the Makali`i in 1999, the people of Satawal, Micronesia were impressed with such a large waʻa. As a gift to the man who shared his knowledge of navigation, Nā Kālai Waʻa at Kawaihae Harbor built a 56-foot long double-hulled voyaging canoe called the Alingano Maisu. In 2007, the Alingano Maisu, accompanied by the Hōkūleʻa, embarked on her maiden voyage to her new home in Satawal so Papa Mau can carry on his legacy of navigation in his home islands. Leaving Hawai`i, Hōkūleʻa led the way to Johnston Atoll. From there, the Alingano Maisu took the lead as they entered Micronesia by first stopping at Majuro, Marshall Islands before continuing on to her new home in Satawal. It is known that the island of Majuro is 1,108 nautical miles to the east and 575 nautical miles to the south of Johnston Atoll. What house do you need to sail towards and what distance will you need to sail? If the waʻa travels at 5 knots, how many days will it take to reach the destination? Note that 1 knot = 1 nautical mile/hour.</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-120.svg" role="img" class="contained"></div>
+<p id="p-515">You may notice that for our given angle, <span class="process-math">\(\theta\text{,}\)</span> we have the opposite side, 575 NM, and the adjacent side, 1,100 NM, which are all related with the tangent function</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\tan\theta=\frac{575}{1,100}
+\end{equation*}
+</div>
+<p id="p-516">Up until now, we were given the angles for the trigonometric problems we've encountered. To solve for the angle <span class="process-math">\(\theta\text{,}\)</span> we cannot simply divide by “tan” because it is part of the tangent function where we input an angle and the output is a ratio of sides. Instead, we will need to use the inverse function in which we input the ratio of sides and output an angle.</p></section><section class="subsection" id="core-standards-CCSS_MATH_CONTENT_HSF_TF_B_6"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.4.1</span> <span class="title">Inverse Trigonometric Functions</span>
+</h3>
+<p id="p-517">Recall (from Unit 1) that for a function <span class="process-math">\(f\)</span> and its inverse function <span class="process-math">\(f^{-1}\)</span></p>
+<ol class="decimal">
+<li id="li-103"><p id="p-518">The Domain of <span class="process-math">\(f^{-1}=\)</span> Range of <span class="process-math">\(f\)</span></p></li>
+<li id="li-104"><p id="p-519">The Range of <span class="process-math">\(f^{-1}=\)</span> Domain of <span class="process-math">\(f\)</span></p></li>
+<li id="li-105"><p id="p-520">If <span class="process-math">\(f(a)=b\)</span> then <span class="process-math">\(f^{-1}(b)=a\)</span></p></li>
+</ol>
+<p id="p-521">In terms of trigonometric functions, for example, if <span class="process-math">\(f(x)=\sin x\)</span> then <span class="process-math">\(f^{-1}(x)=\sin^{-1}x\text{.}\)</span> Now consider <span class="process-math">\(\sin\left(\frac{\pi}{4}\right)=\frac{\sqrt{2}}{2}\text{,}\)</span> then <span class="process-math">\(\frac{\pi}{4}=\sin^{-1}\left(\frac{\sqrt{2}}{2}\right)\text{.}\)</span> \begin{mybox}[Be Careful] Do not confuse the inverse trigonometric notations with an exponent, in other words, <span class="process-math">\(\sin^{-1}x\neq\frac{1}{\sin x}\text{.}\)</span> To avoid this, we will use parentheses around the trigonometric function to denote the power of negative one: <span class="process-math">\((\sin x)^{-1}\text{.}\)</span> \end{mybox}</p>
+<p id="p-522">Also recall (from Unit 1) that for a function, <span class="process-math">\(f\text{,}\)</span> to have an inverse, <span class="process-math">\(f^{-1}\text{,}\)</span> it must be one-to-one, meaning no horizontal line intersects the graph more than once. Since this is not true for trigonometric functions, they do not have inverses. We need functions to be one-to-one because both <span class="process-math">\(\sin\frac{\pi}{4}=\frac{\sqrt{2}}{2}\)</span> and <span class="process-math">\(\sin\frac{3\pi}{4}=\frac{\sqrt{2}}{2}\)</span> but if we took the inverse of sine, would we wouldn't know to use <span class="process-math">\(\sin^{-1}\left(\frac{\sqrt{2}}{2}\right)=\frac{\pi}{4}\)</span> or <span class="process-math">\(\sin^{-1}\left(\frac{\sqrt{2}}{2}\right)=\frac{3\pi}{4}\text{.}\)</span> To avoid this confusion and to ensure the function is one-to-one, we can put restrictions on the domains of each trigonometric function so they attain all the values in the range only once, making the function one-to-one, and thus have an inverse (see <a href="" class="xref" data-knowl="./knowl/fig_sine-not-one-to-one.html" title="Figure 2.4.1">Figure 2.4.1</a>).</p>
+<figure class="figure figure-like" id="fig_sine-not-one-to-one"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-121.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.4.1<span class="period">.</span></span><span class="space"> </span>The graph of <span class="process-math">\(f(x)=\sin x\)</span> does not pass the horizontal line test and is not one-to-one. If we restrict the graph to <span class="process-math">\(-\frac{\pi}{2}\leq x\leq\frac{\pi}{2}\)</span> so that each value in the range <span class="process-math">\([-1,1]\)</span> is attained only once, then the function is one-to-one and has an inverse.</figcaption></figure><p id="p-523">We will restrict the domain of <span class="process-math">\(y=\sin x\)</span> to the interval <span class="process-math">\([-\frac{\pi}{2},\frac{\pi}{2}]\text{,}\)</span> the domain of <span class="process-math">\(y=\cos x\)</span> to <span class="process-math">\([0,\pi]\text{,}\)</span> and the domain of <span class="process-math">\(y=\tan x\)</span> to the interval <span class="process-math">\((-\frac{\pi}{2},\frac{\pi}{2})\text{.}\)</span> Notice that the domain for each trigonometric function includes one quadrant where the function is positive and one quadrant where it is negative.</p>
+<p id="p-524">Domain of <span class="process-math">\(y=\sin x\text{:}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+-\frac{\pi}{2}\leq x\leq\frac{\pi}{2}
+\end{equation*}
+</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-122.svg" role="img" class="contained"></div>
+<p id="p-525">The graph of sine for the restricted domain</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-123.svg" role="img" class="contained"></div>
+<p id="p-526">Domain of <span class="process-math">\(y=\cos x\text{:}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+0\leq x\leq\pi
+\end{equation*}
+</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-124.svg" role="img" class="contained"></div>
+<p id="p-527">The graph of cosine for the restricted domain</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-125.svg" role="img" class="contained"></div>
+<p id="p-528">Domain of <span class="process-math">\(y=\tan x\text{:}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+-\frac{\pi}{2}\leq x\leq\frac{\pi}{2}
+\end{equation*}
+</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-126.svg" role="img" class="contained"></div>
+<p id="p-529">The graph of tangent for the restricted domain</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-127.svg" role="img" class="contained"></div>
+<p id="p-530">With these new restrictions on the domains, we now have trigonometric functions that are one-to-one and so we can define their inverse functions:</p>
+<p id="p-531">\begin{mybox}[Inverse Sine] The <em class="emphasis">inverse sine function</em>  is symbolized by</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-40">
+\begin{align*}
+y=\sin^{-1}x \amp \amp  \mbox{and means}  \amp \amp x=\sin y\text{.}
+\end{align*}
+</div>
+<p id="p-532">The inverse sine function is also called the <em class="emphasis">arcsine function</em>,  and is denoted by <span class="process-math">\(\arcsin x\text{.}\)</span> \end{mybox}</p>
+<p id="p-533">\begin{mybox}[Inverse Cosine] The <em class="emphasis">inverse cosine function</em>  is symbolized by</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-41">
+\begin{align*}
+y=\cos^{-1}x \amp \amp  \mbox{and means}  \amp \amp  x=\cos y\text{.}
+\end{align*}
+</div>
+<p id="p-534">The inverse cosine function is also called the <em class="emphasis">arccosine function</em>,  and is denoted by <span class="process-math">\(\arccos x\text{.}\)</span> \end{mybox}</p>
+<p id="p-535">\begin{mybox}[Inverse Tangent] The <em class="emphasis">inverse tangent function</em>  is symbolized by</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-42">
+\begin{align*}
+y=\tan^{-1}x \amp \amp  \mbox{and means}  \amp \amp  x=\tan y\text{.}
+\end{align*}
+</div>
+<p id="p-536">The inverse tangent function is also called the <em class="emphasis">arctangent function</em>,  and is denoted by <span class="process-math">\(\arctan x\text{.}\)</span> \end{mybox} \begin{mybox}[Inverse Cosecant, Secant, and Cotangent] Inverse cosecant, inverse secant, and inverse cotangent functions are not as common as the other trigonometric functions so we will just summarize them and not consider any examples in this book.</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-43">
+\begin{align*}
+y=\csc^{-1}x \amp \amp  \mbox{means}  \amp \amp  x=\csc y\\
+y=\sec^{-1}x \amp \amp  \mbox{means}  \amp \amp  x=\sec y\\
+y=\cot^{-1}x \amp \amp  \mbox{means}  \amp \amp  x=\cot y
+\end{align*}
+</div>
+<p id="p-537">\end{mybox} \begin{mybox}[Domain and Range] The domain and range for each function is</p>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Function</td>
+<td class="l m b0 r0 l0 t0 lines">Domain</td>
+<td class="l m b0 r0 l0 t0 lines">Range</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\sin^{-1}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\([-1,1]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\left[-\frac{\pi}{2},\frac{\pi}{2}\right]\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\cos^{-1}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\([-1,1]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\([0,\pi]\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\tan^{-1}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\([-\infty,\infty]\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\left(-\frac{\pi}{2},\frac{\pi}{2}\right)\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\csc^{-1}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\((-\infty,-1]\cup[1,\infty)\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\left[-\frac{\pi}{2},\frac{\pi}{2}\right],y\neq0\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\sec^{-1}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\((-\infty,-1]\cup[1,\infty)\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\([0,\pi],y\neq\frac{\pi}{2}\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\cot^{-1}\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\((-\infty,\infty)\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\((0,\pi)\)</span></td>
+</tr>
+</table></div>
+<p id="p-538">\end{mybox}</p></section><section class="subsection" id="subsection-26"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.4.2</span> <span class="title">Finding the Exact Value of an Inverse Trigonometric Function</span>
+</h3>
+<article class="example example-like" id="example-37"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-37"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.2</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-37"><article class="example example-like"><p id="p-539">Find the exact value.</p>
+<ol class="decimal">
+<li id="li-106"><p id="p-540"><span class="process-math">\(\displaystyle \cos^{-1}\frac{1}{2}\)</span></p></li>
+<li id="li-107"><p id="p-541"><span class="process-math">\(\displaystyle \tan^{-1}\sqrt{3}\)</span></p></li>
+<li id="li-108"><p id="p-542"><span class="process-math">\(\displaystyle \sin^{-1}\left(-\frac{\sqrt{2}}{2}\right)\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-31" id="solution-31"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-31"><div class="solution solution-like"><ol id="p-543" class="decimal">
+<li id="li-109">
+<p id="p-544">Let <span class="process-math">\(\theta=\cos^{-1}\frac{1}{2}\text{.}\)</span> Then evaluating the problem is the same as determining the angle, <span class="process-math">\(\theta\text{,}\)</span> for which</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\cos\theta=\frac{1}{2}\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Although there are infinite values of <span class="process-math">\(\theta\)</span> that satisfy the equation, such as <span class="process-math">\(\theta=\frac{\pi}{3}\)</span> and <span class="process-math">\(\theta=\frac{5\pi}{3}\text{,}\)</span> there is only one value that lies in the interval <span class="process-math">\([0,\pi]\text{.}\)</span> Thus, <span class="process-math">\(\cos^{-1}\frac{1}{2}=\frac{\pi}{3}\text{.}\)</span></p>
+</li>
+<li id="li-110"><p id="p-545">Let <span class="process-math">\(\theta=\tan^{-1}\sqrt{3}\text{.}\)</span> Then we must find <span class="process-math">\(\theta\)</span> that satisfies <span class="process-math">\(\tan\theta=\sqrt{3}\)</span> as well as satisfies the range of <span class="process-math">\(\tan^{-1}\text{.}\)</span> Because <span class="process-math">\(\tan\frac{\pi}{3}=\sqrt{3}\)</span> and <span class="process-math">\(-\frac{\pi}{2}\lt \frac{\pi}{3}\lt \frac{\pi}{2}\text{,}\)</span> we conclude that <span class="process-math">\(\tan^{-1}\sqrt{3}=\frac{\pi}{3}\text{.}\)</span></p></li>
+<li id="li-111"><p id="p-546">The angle, <span class="process-math">\(\theta\text{,}\)</span> in the interval <span class="process-math">\([-\frac{\pi}{2},\frac{\pi}{2}]\)</span> that satisfies <span class="process-math">\(\sin\theta=-\frac{\sqrt{2}}{2}\)</span> is <span class="process-math">\(\theta=\sin^{-1}\left(-\frac{\sqrt{2}}{2}\right)=-\frac{\pi}{4}\text{.}\)</span></p></li>
+</ol></div></div>
+</div></article></div></section><section class="subsection" id="subsection-27"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.4.3</span> <span class="title">Approximations of Inverse Trigonometric Functions</span>
+</h3>
+<p id="p-547">To evaluate inverse trigonometric functions that do not have special angles, we will need to use a calculator. \begin{mybox}[Using a Calculator] Using a calculator for inverse trigonometric functions: Most calculators will have a special button for the inverse sine, cosine, and tangent functions. Depending on your calculator, you may see the following keys for inverse the inverse trigonometric functions</p>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Function</td>
+<td class="l m b0 r0 l0 t0 lines">Calculator Key</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">inverse sine</td>
+<td class="l m b0 r0 l0 t0 lines">
+<em class="emphasis">SIN<span class="process-math">\(^{-1}\)</span></em>, <em class="emphasis">ARCSIN</em>, or <em class="emphasis">ASIN</em>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">inverse cosine</td>
+<td class="l m b0 r0 l0 t0 lines">
+<em class="emphasis">COS<span class="process-math">\(^{-1}\)</span></em>, <em class="emphasis">ARCCOS</em>, or <em class="emphasis">ACOS</em>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">inverse tangent</td>
+<td class="l m b0 r0 l0 t0 lines">
+<em class="emphasis">TAN<span class="process-math">\(^{-1}\)</span></em>, <em class="emphasis">ARCTAN</em>, or <em class="emphasis">ATAN</em>
+</td>
+</tr>
+</table></div>
+<p id="p-548">\end{mybox}</p>
+<article class="example example-like" id="example-38"><a href="" data-knowl="" class="id-ref example-knowl original has-image" data-refid="hk-example-38"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.3</span><span class="period">.</span><span class="space"> </span><span class="title">A gift for Mau.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-38"><article class="example example-like"><p id="p-549">We are now ready to return to the example at the start of this section.</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-128.svg" role="img" class="contained"></div>
+<p id="p-550">Since we were able to write <span class="process-math">\(\tan\theta=\frac{575}{1,108}\text{,}\)</span> we can use a calculator or other technology to evaluate the inverse tangent to find our angle:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\theta=\tan^{-1}\left(\frac{575}{1,108}\right)\approx27.4^{\circ}\text{.}
+\end{equation*}
+</div>
+<p id="p-551">Because this angle is in Quadrant III, we find its value on the Unit Circle by adding <span class="process-math">\(180^{\circ}+27.4^{\circ}=207.4^{\circ}\text{.}\)</span> Next we refer to the Star Compass with angles (<a href="" class="xref" data-knowl="./knowl/fig_star-compass-with-angles.html" title="Figure 1.2.4">Figure 1.2.4</a> on <a href="" class="xref" data-knowl="./knowl/fig_star-compass-with-angles.html" title="Figure 1.2.4">page 1.2.4</a>) to conclude we will need to sail towards the House ʻĀina Kona.</p>
+<p id="p-552">To determine the distance, <span class="process-math">\(d\text{,}\)</span> we use the Pythagorean Theorem:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+d=\sqrt{575^2+1,108^2}\approx1,248 \mbox{NM}\text{.}
+\end{equation*}
+</div>
+<p id="p-553">Finally, we note that since (speed) = (distance)/(duration), we can rearrange the terms to get (duration) = (distance)/(speed). If we travel at 5 knots (5 NM/hr), we can calculate the duration as</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\mbox{duration} =\frac{1,248.3\mbox{ NM} }{5\mbox{ kt} }=\frac{1,248.3\mbox{ NM} }{5\mbox{ NM/hr} }=249.7\mbox{ hours} =249.7\mbox{ hours} \cdot\frac{\mbox{day} }{24\mbox{ hours} }\approx10.4\mbox{ days}
+\end{equation*}
+</div></article></div>
+<article class="example example-like" id="core-standards-CCSS_MATH_CONTENT_HSF_TF_B_7"><a href="" data-knowl="" class="id-ref example-knowl original has-image" data-refid="hk-core-standards-CCSS_MATH_CONTENT_HSF_TF_B_7"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.4</span><span class="period">.</span><span class="space"> </span><span class="title">Finding Land.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-core-standards-CCSS_MATH_CONTENT_HSF_TF_B_7"><article class="example example-like"><p id="p-554">As Hōkūle‘a is sailing towards Rapa Nui, the navigator uses a process called dead reckoning to determine their position based on the latitude, measured by the stars, and other factors such as the estimated distance traveled, speed, and direction. Once the navigator has determined they are in the vicinity of land, her attention is now focused on looking for signs of land. One method navigators will use is to look for land-based seabirds such as the manu-o-kū (fairy tern) and the noio (noddy tern), which go out to sea in the morning to fish and return to land at night. However, Rapa Nui’s seabird population has been reduced so she will look for other signs such as drifting land vegetation; clouds that form over islands; the loom of the island when white sand and still lagoons reflect the sun or moon upwards; and distinctive patterns of swells bending (refracting) around and / or reflecting off islands. Land will be spotted when the navigator first sees Maunga Terevaka, the tallest point in Rapa Nui, which stands at 1,665 ft.</p>
+<ol class="decimal">
+<li id="li-112"><p id="p-555">On the deck of Hōkūleʻa, a navigator stands at 9 ft above sea level. If she looks out to the sea, how far is she from horizon? Assume the radius of the earth at Rapa Nui is 3,960.449 miles.</p></li>
+<li id="li-113"><p id="p-556">How far is Hōkūleʻa from Maunga Terevaka when it first becomes visible over the horizon to someone standing 9ft above sea level?</p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-32" id="solution-32"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-32"><div class="solution solution-like"><ol id="p-557" class="decimal">
+<li id="li-114">
+<p id="p-558">We begin by assuming that the earth is a sphere with radius <span class="process-math">\(R\text{.}\)</span> Standing on Hōkūle‘a, the line from the navigator’s eye to the horizon is tangent to the circle of radius <span class="process-math">\(R\text{.}\)</span> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-129.svg" role="img" class="contained"></div> Here <span class="process-math">\(h=9\)</span> ft, represents the height of the navigator's eye above sea level, <span class="process-math">\(R=3,960.449\)</span> miles (20,911,171 ft) is the radius of the earth at Rapa Nui, and <span class="process-math">\(s_1\)</span> is the arc length or distance along the surface of the earth from the navigator to the horizon. We have written the distances in feet since the height of the navigator is in feet. Recall from <a href="" class="xref" data-knowl="./knowl/thm_arc-length.html" title="Theorem 1.2.18">Theorem 1.2.18</a> the formula for finding the arc length is <span class="process-math">\(s_1=2\pi R\cdot\left(\frac{\theta_1}{360}\right)\text{.}\)</span> Since we know <span class="process-math">\(R\text{,}\)</span> we only need to find <span class="process-math">\(\theta_1\text{.}\)</span> Notice this forms a right triangle. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-130.svg" role="img" class="contained"></div> Since we know the adjacent side and hypotenuse of this triangle, we can use cosine:</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/thm_arc-length.html">
+\begin{equation*}
+\cos\theta_1=\frac{R}{R+h}=\frac{20,911,171}{20,911,171+9}=\frac{20,911,171}{20,911,180}\text{.}
+\end{equation*}
+</div>
+<p class="continuation">To solve for <span class="process-math">\(\theta_1\text{,}\)</span> we use the inverse cosine</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/thm_arc-length.html">
+\begin{equation*}
+\theta_1=\cos^{-1}\left(\frac{20,911,171}{20,911,180}\right)\approx0.053^{\circ}\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Now we are ready to calculate the arc length, <span class="process-math">\(s_1\text{.}\)</span> To give our answer in miles, we will use <span class="process-math">\(R=3,960.449\)</span> miles and calculate the following</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/thm_arc-length.html">
+\begin{equation*}
+s_1=2\pi\cdot\frac{0.053^{\circ}}{360^{\circ}}\cdot3,960.449\approx3.7\mbox{ miles}
+\end{equation*}
+</div>
+<p class="continuation">So the horizon is 3.7 miles from the navigator.</p>
+</li>
+<li id="li-115">
+<p id="p-559">Next, to determine how far the navigator is from Maunga Terevaka when it emerges over the horizon, we need to align the top of the mountain with line from the navigator's eye to the horizon. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-131.svg" role="img" class="contained"></div> Here, <span class="process-math">\(H=1,665\)</span> ft, is the height of Maunga Terevaka. To find the distance from the top of the mountain to the horizon, we will need to determine <span class="process-math">\(s_2\text{.}\)</span> We begin by redrawing the triangle. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-132.svg" role="img" class="contained"></div> The angle is then given by</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\theta_1=\cos^{-1}\left(\frac{R}{R+H}\right)=\cos^{-1}\left(\frac{20,911,171}{20,911,173+1,665}\right)=\cos^{-1}\left(\frac{20,911,171}{20,912,836}\right)\approx0.723^{\circ}
+\end{equation*}
+</div>
+<p class="continuation">We conclude that the distance from Maunga Terevaka to the horizon is</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+s_2=2\pi\cdot\frac{0.723^{\circ}}{360^{\circ}}\cdot3,960.449\approx50.0\mbox{ miles}
+\end{equation*}
+</div>
+<p class="continuation">Therefore, the total distance between the navigator and Maunga Terevaka is <span class="process-math">\(s_1+s_2=3.7+50.0=53.7\)</span> miles. Please note that this is the distance when the island may first be seen, however, weather conditions may reduce visibility.</p>
+</li>
+</ol></div></div>
+</div></article></div></section><section class="subsection" id="subsection-28"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.4.4</span> <span class="title">Graphs of Inverse Trigonometric Functions</span>
+</h3>
+<p id="p-560">Recall from Unit 1 that</p>
+<ol class="decimal">
+<li id="li-116"><p id="p-561">The point <span class="process-math">\((a,b)\)</span> is on the graph of <span class="process-math">\(f\)</span> if and only if the point <span class="process-math">\((b,a)\)</span> is on the graph of <span class="process-math">\(f^{-1}\)</span></p></li>
+<li id="li-117"><p id="p-562">The graphs of <span class="process-math">\(f^{-1}\)</span> and <span class="process-math">\(f\)</span> are reflections of each other about the line <span class="process-math">\(y=x\)</span></p></li>
+</ol>
+<p id="p-563">The graph of each inverse trigonometric function can be obtained by reflecting the graph of the original function about the line <span class="process-math">\(y=x\text{.}\)</span></p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-133.svg" role="img" class="contained"></div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-134.svg" role="img" class="contained"></div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-135.svg" role="img" class="contained"></div></section><section class="subsection" id="subsection-29"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.4.5</span> <span class="title">Composition of Inverse Trigonometric Functions</span>
+</h3>
+<p id="p-564">Recall (from Unit 1) that if <span class="process-math">\(f\)</span> is a one-to-one function with inverse <span class="process-math">\(f^{-1}\text{,}\)</span> then</p>
+<ol class="decimal">
+<li id="li-118"><p id="p-565"><span class="process-math">\(f(f^{-1}(y))=y\)</span> for every <span class="process-math">\(y\)</span> in the domain of <span class="process-math">\(f^{-1}\)</span></p></li>
+<li id="li-119"><p id="p-566"><span class="process-math">\(f^{-1}(f(x))=x\)</span> for every <span class="process-math">\(x\)</span> in the domain of <span class="process-math">\(f\)</span></p></li>
+</ol>
+<p id="p-567">In terms of trigonometric functions, <span class="process-math">\(f(f^{-1}(y))=y\)</span> will work for all <span class="process-math">\(y\)</span> in the domain, however, we need to be careful when evaluating <span class="process-math">\(f^{-1}(f(x))=x\)</span> because the domain of <span class="process-math">\(f^{-1}\)</span> is restricted.</p>
+<p id="p-568">\begin{mybox}[Properties of Composition of Trigonometric Functions]</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\sin(\sin^{-1}x)=x\mbox{ when } -1\leq x\leq1
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\cos(\cos^{-1}x)=x\mbox{ when } -1\leq x\leq1
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\tan(\tan^{-1}x)=x\mbox{ when } -\infty\leq x\leq\infty
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\sin^{-1}(\sin x)=x\mathbf{{only} when }-\frac{\pi}{2}\leq x\leq\frac{\pi}{2}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\cos^{-1}(\cos x)=x\mathbf{{only} when }0\leq x\leq\pi
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\tan^{-1}(\tan x)=x\mathbf{{only} when }-\frac{\pi}{2}\lt  x\lt \frac{\pi}{2}
+\end{equation*}
+</div>
+<p id="p-569">\end{mybox}  </p>
+<article class="example example-like" id="example-40"><a href="" data-knowl="" class="id-ref example-knowl original has-image" data-refid="hk-example-40"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.5</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-40"><article class="example example-like"><p id="p-570">Find the exact value of each expression</p>
+<ol class="decimal">
+<li id="li-120"><p id="p-571"><span class="process-math">\(\displaystyle \cos^{-1}\left(\cos\frac{\pi}{8}\right)\)</span></p></li>
+<li id="li-121"><p id="p-572"><span class="process-math">\(\displaystyle \tan(\tan^{-1}7)\)</span></p></li>
+<li id="li-122"><p id="p-573"><span class="process-math">\(\displaystyle \sin^{-1}\left(\sin\left(-\frac{\pi}{7}\right)\right)\)</span></p></li>
+<li id="li-123"><p id="p-574"><span class="process-math">\(\displaystyle \sin^{-1}\left(\sin\frac{4\pi}{5}\right)\)</span></p></li>
+<li id="li-124"><p id="p-575"><span class="process-math">\(\displaystyle \cos(\cos^{-1}(-0.283))\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-33" id="solution-33"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-33"><div class="solution solution-like"><ol id="p-576" class="decimal">
+<li id="li-125">
+<p id="p-577">Since <span class="process-math">\(\frac{\pi}{8}\)</span> is in the interval <span class="process-math">\([0,\pi]\text{,}\)</span> then from the properties of compositions of inverse functions, we get</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\cos^{-1}\left(\cos\frac{\pi}{8}\right)=\frac{\pi}{8}
+\end{equation*}
+</div>
+</li>
+<li id="li-126">
+<p id="p-578">Since <span class="process-math">\(7\)</span> is in the interval <span class="process-math">\((-\infty,\infty)\text{,}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\tan(\tan^{-1}7)=7
+\end{equation*}
+</div>
+</li>
+<li id="li-127">
+<p id="p-579">Since <span class="process-math">\(-\frac{\pi}{7}\)</span> is in the interval <span class="process-math">\(\left[-\frac{\pi}{2},\frac{\pi}{2}\right]\text{,}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\sin^{-1}\left(\sin\left(-\frac{\pi}{7}\right)\right)=-\frac{\pi}{7}
+\end{equation*}
+</div>
+</li>
+<li id="li-128">
+<p id="p-580">Note that <span class="process-math">\(\frac{5\pi}{7}\)</span> is not in the interval <span class="process-math">\(\left[-\frac{\pi}{2},\frac{\pi}{2}\right]\text{.}\)</span> In order to evaluate the expression, we first need to find an angle, <span class="process-math">\(\theta\text{,}\)</span> such that <span class="process-math">\(-\frac{\pi}{2}\leq\theta\leq\frac{\pi}{2}\)</span> and <span class="process-math">\(\sin\frac{5\pi}{7}=\sin\theta\text{.}\)</span> Since <span class="process-math">\(\frac{\pi}{2}\lt \frac{5\pi}{7}\lt \pi\)</span> means <span class="process-math">\(\frac{5\pi}{7}\)</span> is in Quadrant II. Recall from <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "sec_unit-circle" missing or not unique]</code> that our reference angle is <span class="process-math">\(\theta=\pi-\frac{5\pi}{7}=\frac{2\pi}{7}\text{.}\)</span> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-136.svg" role="img" class="contained"></div> Since <span class="process-math">\(\frac{2\pi}{7}\)</span> is in the interval <span class="process-math">\(\left[-\frac{\pi}{2},\frac{\pi}{2}\right]\text{,}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\sin^{-1}\left(\sin\frac{5\pi}{7}\right)=\sin^{-1}\left(\sin\frac{2\pi}{7}\right)=\frac{2\pi}{7}
+\end{equation*}
+</div>
+</li>
+<li id="li-129">
+<p id="p-581">Since <span class="process-math">\(-0.283\)</span> is in the interval <span class="process-math">\([-1,1]\text{,}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\cos(\cos^{-1}(-0.283))=-0.283
+\end{equation*}
+</div>
+</li>
+</ol></div></div>
+</div></article></div>
+<p id="p-582">Now we will look at what happens when we need to evaluate the composition of a trigonometric function and the inverse of a different trigonometric function.</p>
+<article class="example example-like" id="example-41"><a href="" data-knowl="" class="id-ref example-knowl original has-image" data-refid="hk-example-41"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.6</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-41"><article class="example example-like"><p id="p-583">Find the exact value of</p>
+<ol class="decimal">
+<li id="li-130"><p id="p-584"><span class="process-math">\(\displaystyle \cos\left(\tan^{-1}\frac{4}{3}\right)\)</span></p></li>
+<li id="li-131"><p id="p-585"><span class="process-math">\(\displaystyle \sin\left(\cos^{-1}\left(-\frac{3}{8}\right)\right)\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-34" id="solution-34"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-34"><div class="solution solution-like"><ol id="p-586" class="decimal">
+<li id="li-132">
+<p id="p-587">Let <span class="process-math">\(\theta\)</span> be an angle in the range of <span class="process-math">\(\tan^{-1}\text{,}\)</span> that is, let <span class="process-math">\(\theta\)</span> be in the interval <span class="process-math">\(\left(-\frac{\pi}{2},\frac{\pi}{2}\right)\)</span> such that <span class="process-math">\(\theta=\tan^{-1}\frac{4}{3}\text{.}\)</span> This equation is equivalent to <span class="process-math">\(\tan\theta=\frac{4}{3}\text{.}\)</span> Since <span class="process-math">\(\tan\theta&gt;0\text{,}\)</span> we know that <span class="process-math">\(\theta\)</span> must be in Quadrant I <span class="process-math">\(\left(0\lt \theta\lt \frac{\pi}{2}\right)\text{.}\)</span> Let <span class="process-math">\((x,y)\)</span> be a point on the terminal side of <span class="process-math">\(\theta\text{,}\)</span> then by the trigonometric ratios,</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\tan\theta=\frac{\mbox{opposite} }{\mbox{adjacent} }=\frac{y}{x}
+\end{equation*}
+</div>
+<p class="continuation">Since we have <span class="process-math">\(\tan\theta=\frac{4}{3}\text{,}\)</span> we get <span class="process-math">\(x=3\)</span> and <span class="process-math">\(y=4\text{,}\)</span> as shown in the figure below. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-137.svg" role="img" class="contained"></div> Evaluating <span class="process-math">\(\cos\left(\tan^{-1}\frac{4}{3}\right)\)</span> is equivalent to evaluating</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\cos\theta=\frac{\mbox{adjacent} }{\mbox{hypotenuse} }=\frac{3}{r}\text{,}
+\end{equation*}
+</div>
+<p class="continuation">where <span class="process-math">\(r=\sqrt{x^2+y^2}=\sqrt{3^2+4^2}=\sqrt{9+16}=\sqrt{25}=5\text{.}\)</span> So,</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\cos\left(\tan^{-1}\frac{4}{3}\right)=\cos\theta=\frac{3}{5}
+\end{equation*}
+</div>
+</li>
+<li id="li-133">
+<p id="p-588">Let <span class="process-math">\(\theta\)</span> be an angle in the range of <span class="process-math">\(\cos^{-1}\text{,}\)</span> that is, let <span class="process-math">\(\theta\)</span> be in the interval <span class="process-math">\(\left[0,\pi\right]\)</span> such that <span class="process-math">\(\theta=\cos^{-1}\left(-\frac{3}{8}\right)\text{.}\)</span> This equation is equivalent to <span class="process-math">\(\cos\theta=-\frac{3}{8}\text{.}\)</span> Since <span class="process-math">\(\cos\theta\lt 0\text{,}\)</span> we know that <span class="process-math">\(\theta\)</span> must be in Quadrant II <span class="process-math">\(\left(\frac{\pi}{2}\leq\theta\leq\pi\right)\text{.}\)</span> Let <span class="process-math">\((x,y)\)</span> be a point on the terminal side of <span class="process-math">\(\theta\text{,}\)</span> then by the trigonometric ratios,</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\cos\theta=\frac{\mbox{adjacent} }{\mbox{hypotenuse} }=\frac{x}{r}
+\end{equation*}
+</div>
+<p class="continuation">Since we have <span class="process-math">\(\cos\theta=-\frac{3}{8}\text{,}\)</span> we get <span class="process-math">\(\frac{x}{r}=-\frac{3}{8}\)</span> which gives us either <span class="process-math">\(x=-3\)</span> and <span class="process-math">\(r=8\)</span> or <span class="process-math">\(x=3\)</span> and <span class="process-math">\(r=-8\text{.}\)</span> Since <span class="process-math">\(\theta\)</span> is in Quadrant II, we know that <span class="process-math">\(x\)</span> is negative, thus <span class="process-math">\(x=-3\)</span> and <span class="process-math">\(r=8\text{,}\)</span> as shown in the figure below. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-138.svg" role="img" class="contained"></div> Evaluating <span class="process-math">\(\sin\left(\cos^{-1}\left(-\frac{3}{8}\right)\right)\)</span> is equivalent to evaluating</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\sin\theta=\frac{\mbox{opposite} }{\mbox{hypotenuse} }=\frac{y}{8}\text{,}
+\end{equation*}
+</div>
+<p class="continuation">where</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-44">
+\begin{align*}
+r^2\amp =\amp x^2+y^2\\
+8^2\amp =\amp (-3)^2+y^2\\
+64\amp =\amp 9+y^2\\
+y^2\amp =\amp 55
+\end{align*}
+</div>
+<p class="continuation">Thus <span class="process-math">\(y=\sqrt{55}\text{.}\)</span> So,</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\sin\left(\cos^{-1}\frac{-3}{8}\right)=\sin\theta=\frac{\sqrt{55}}{8}
+\end{equation*}
+</div>
+<p class="continuation">Note this is positive since sine is positive in Quadrant II.</p>
+</li>
+</ol></div></div>
+</div></article></div>
+<article class="exercise exercise-like" id="ex-2_4"><a href="" data-knowl="" class="id-ref exercise-knowl original has-image" data-refid="hk-ex-2_4"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.4.7</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-ex-2_4"><article class="exercise exercise-like"><p id="p-589">(Sunrise on Mauna Kea) The summit of Mauna Kea is the highest point in Hawai`i and sits 13,803 ft above the sea level. If you stand at the summit, you will be able to see the sun rise before someone standing at the sea level just north or south of Mauna Kea (at the same latitude). In fact, you will see the sunrise at the same time as someone at sea level sailing in a wa‘a to the east of Mauna Kea. \begin{tasks} \task How far is the horizon when someone 5 ft tall stands on the summit to watch the sun rise? \task How much faster will you see the sun rise than someone standing nearby at sea level? Hint: the ratio of your previous answer to the circumference of the Earth is equal to the ratio of the time to the 24 hours in Earth’s rotation. \end{tasks} It turns out you will see the sunrise 8.33 mins before someone at the sea level.</p>
+<p id="p-590">\Question <em class="emphasis">Sunrise on Haleakalā</em></p>
+<p id="p-591">According to moʻolelo, or legend, the sun traveled very fast across the sky, leaving people with days so short there was not enough time to carry on with their daily lives. Determined to slow the sun, the demigod Maui climbed to the summit of Haleakalā, which stands at 10,023 feet, to snare the sun. Assume the radius of the earth is at Haleakalā is 3961.527 miles.</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-139.svg" role="img" class="contained"></div>
+<p id="p-592">\begin{tasks} \task How far is the horizon when Maui stands at the summit? Assume Maui's eyes are 5 ft from the ground. \task How much faster would Maui see the sun emerge over the horizon than someone 5 ft tall and standing at the seashore? \end{tasks}</p></article></div>
+<p id="p-593">\begin{Answer}[ref={ex-2.4}] \Question dafdf \begin{tasks} \task Answer 1a \task Answer 1b \end{tasks} \Question \begin{tasks} \task Answer 2a \task Answer 2b \end{tasks}</p>
+<p id="p-594">\end{Answer}</p></section></section></div></main>
+</div>
+</body>
+</html>

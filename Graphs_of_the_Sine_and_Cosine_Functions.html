@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Graphs of the Sine and Cosine Functions</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Trigonometry through polynesian navigation">
+<meta property="book:author" content="Kamuela E Yong">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+},
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\def\R{4 }
+
+\def\angEl{20}
+
+\def\angAz{-20}
+
+\def\R{4 }
+\def\angEl{20}
+\newcommand{\intoo}[2]{\mathopen{]}#1\,;#2\mathclose{[}}
+\def\angAz{-20}
+\newcommand{\ud}{\mathop{\mathrm{{}d}}\mathopen{}}
+\newcommand{\intff}[2]{\mathopen{[}#1\,;#2\mathclose{]}}
+\newcommand{\thepartimage}{}
+\newcommand{\thechapterimage}{}
+\newcommand{\autodot}{.}
+\newcommand{\QuestionNB}{\bfseries\arabic{Question}.\ }
+
+
+
+\newcommand{\pgfmathsinandcos}[3]{
+\pgfmathsetmacro#1{sin(#3)}
+\pgfmathsetmacro#2{cos(#3)}}
+\newcommand{\LongitudePlane}[3][current plane]{
+\pgfmathsinandcos\sinEl\cosEl{#2}
+\pgfmathsinandcos\sint\cost{#3}
+\tikzset{#1/.style={cm={\cost,\sint*\sinEl,0,\cosEl,(0,0)}}}
+}
+\newcommand{\LatitudePlane}[3][current plane]{
+\pgfmathsinandcos\sinEl\cosEl{#2}
+\pgfmathsinandcos\sint\cost{#3}
+\pgfmathsetmacro\yshift{\cosEl*\sint}
+\tikzset{#1/.style={cm={\cost,0,0,\cost*\sinEl,(0,\yshift)}}}
+}
+\newcommand{\NewLatitudePlane}[4][current plane]{
+\pgfmathsinandcos\sinEl\cosEl{#3}
+\pgfmathsinandcos\sint\cost{#4}
+\pgfmathsetmacro\yshift{#2*\cosEl*\sint}
+\tikzset{#1/.style={cm={\cost,0,0,\cost*\sinEl,(0,\yshift)}}}
+}
+\newcommand{\DrawLongitudeCircle}[2][1]{
+\LongitudePlane{\angEl}{#2}
+\tikzset{current plane/.prefix style={scale=#1}}
+\pgfmathsetmacro\angVis{atan(sin(#2)*cos(\angEl)/sin(\angEl))}
+\draw[current plane] (\angVis:1) arc (\angVis:\angVis+180:1);
+\draw[current plane,dashed] (\angVis-180:1) arc (\angVis-180:\angVis:1);
+}
+\newcommand{\DrawLatitudeCircle}[2][1]{
+\LatitudePlane{\angEl}{#2}
+\tikzset{current plane/.prefix style={scale=#1}}
+\pgfmathsetmacro\sinVis{sin(#2)/cos(#2)*sin(\angEl)/cos(\angEl)}
+\pgfmathsetmacro\angVis{asin(min(1,max(\sinVis,-1)))}
+\draw[current plane] (\angVis:1) arc (\angVis:-\angVis-180:1);
+\draw[current plane,dashed] (180-\angVis:1) arc (180-\angVis:\angVis:1);
+}
+\newcommand{\sectionbreak}{\clearpage}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="book-1.html"><span class="title">Trigonometry through polynesian navigation</span></a></h1>
+<p class="byline">Kamuela E Yong</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="Graphs_of_the_Trigonometric_Functions.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="Graphs_of_the_Trigonometric_Functions.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="Graphs_of_Other_Trigonometric_Functions.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="Graphs_of_the_Trigonometric_Functions.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="Graphs_of_the_Trigonometric_Functions.html" title="Up">Up</a><a class="next-button button toolbar-item" href="Graphs_of_Other_Trigonometric_Functions.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1" class="internal"><span class="title">Front Matter</span></a></li>
+<li class="link">
+<a href="Trigonometry.html" data-scroll="Trigonometry" class="internal"><span class="codenumber">1</span> <span class="title">Trigonometry</span></a><ul>
+<li><a href="Hawaiian_Star_Compass.html" data-scroll="Hawaiian_Star_Compass" class="internal">Hawaiian Star Compass</a></li>
+<li><a href="Angles_and_Their_Measure.html" data-scroll="Angles_and_Their_Measure" class="internal">Angles and Their Measure</a></li>
+<li><a href="Unit_Circle.html" data-scroll="Unit_Circle" class="internal">Unit Circle</a></li>
+<li><a href="Right_Triangle_Trigonometry.html" data-scroll="Right_Triangle_Trigonometry" class="internal">Right Triangle Trigonometry</a></li>
+<li><a href="Trigonometric_Functions_of_Any_Angles.html" data-scroll="Trigonometric_Functions_of_Any_Angles" class="internal">Trigonometric Functions of Any Angles</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Graphs_of_the_Trigonometric_Functions.html" data-scroll="Graphs_of_the_Trigonometric_Functions" class="internal"><span class="codenumber">2</span> <span class="title">Graphs of the Trigonometric Functions</span></a><ul>
+<li><a href="Graphs_of_the_Sine_and_Cosine_Functions.html" data-scroll="Graphs_of_the_Sine_and_Cosine_Functions" class="active">Graphs of the Sine and Cosine Functions</a></li>
+<li><a href="Graphs_of_Other_Trigonometric_Functions.html" data-scroll="Graphs_of_Other_Trigonometric_Functions" class="internal">Graphs of Other Trigonometric Functions</a></li>
+<li><a href="Phase_Shifts_and_Sinusoidal_Curve_Fitting.html" data-scroll="Phase_Shifts_and_Sinusoidal_Curve_Fitting" class="internal">Harmonic Motion/Phase shift/Sinusoidal Curve Fitting</a></li>
+<li><a href="Inverse_Trigonometry.html" data-scroll="Inverse_Trigonometry" class="internal">Inverse Trigonometric Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Analytic_Trigonometry.html" data-scroll="Analytic_Trigonometry" class="internal"><span class="codenumber">3</span> <span class="title">Analytic Trigonometry</span></a><ul>
+<li><a href="Trigonometric_Identities.html" data-scroll="Trigonometric_Identities" class="internal">Trigonometric Identities</a></li>
+<li><a href="Sum_and_Difference_Formulas.html" data-scroll="Sum_and_Difference_Formulas" class="internal">Sum and Difference Formulas</a></li>
+<li><a href="Double-Angle_and_Half-Angle_Formulas.html" data-scroll="Double-Angle_and_Half-Angle_Formulas" class="internal">Double-Angle and Half-Angle Formulas</a></li>
+<li><a href="Product-to-Sum_and_Sum-to-Product_Formulas.html" data-scroll="Product-to-Sum_and_Sum-to-Product_Formulas" class="internal">Product-to-Sum and Sum-to-Product Formulas</a></li>
+<li><a href="Trigonometric_Equations.html" data-scroll="Trigonometric_Equations" class="internal">Trigonometric Equations</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Applications_of_Trigonometry.html" data-scroll="Applications_of_Trigonometry" class="internal"><span class="codenumber">4</span> <span class="title">Applications of Trigonometry</span></a><ul>
+<li><a href="The_Law_of_Sines.html" data-scroll="The_Law_of_Sines" class="internal">The Law of Sines</a></li>
+<li><a href="The_Law_of_Cosines.html" data-scroll="The_Law_of_Cosines" class="internal">The Law of Cosines</a></li>
+<li><a href="Vectors.html" data-scroll="Vectors" class="internal">Vectors</a></li>
+<li><a href="Dot_Product.html" data-scroll="Dot_Product" class="internal">Dot Product</a></li>
+<li><a href="Cross_Product.html" data-scroll="Cross_Product" class="internal">Cross Product</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Polar_and_Parametric_Equations.html" data-scroll="Polar_and_Parametric_Equations" class="internal"><span class="codenumber">5</span> <span class="title">Polar and Parametric Equations</span></a><ul>
+<li><a href="Polar_Coordinates.html" data-scroll="Polar_Coordinates" class="internal">Polar Coordinates</a></li>
+<li><a href="Polar_Equations_and_Graphs.html" data-scroll="Polar_Equations_and_Graphs" class="internal">Polar Equations and Graphs</a></li>
+<li><a href="Complex_Numbers__De_Moivre_s_Theorem.html" data-scroll="Complex_Numbers__De_Moivre_s_Theorem" class="internal">Complex Numbers; De Moivre's Theorem</a></li>
+<li><a href="Parametric_Curves_and_Parametric_Equations.html" data-scroll="Parametric_Curves_and_Parametric_Equations" class="internal">Parametric Curves and Parametric Equations</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Analytic_Geometry.html" data-scroll="Analytic_Geometry" class="internal"><span class="codenumber">6</span> <span class="title">Analytic Geometry</span></a><ul>
+<li><a href="Parabols.html" data-scroll="Parabols" class="internal">Parabolas</a></li>
+<li><a href="Ellipses.html" data-scroll="Ellipses" class="internal">Ellipses</a></li>
+<li><a href="Hyperbolas.html" data-scroll="Hyperbolas" class="internal">Hyperbolas</a></li>
+</ul>
+</li>
+<li class="link"><a href="Solutions.html" data-scroll="Solutions" class="internal"><span class="codenumber">7</span> <span class="title">Solutions</span></a></li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1" class="internal"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="references-1.html" data-scroll="references-1" class="internal"><span class="title">Bibliography</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="Graphs_of_the_Sine_and_Cosine_Functions"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2.1</span> <span class="title">Graphs of the Sine and Cosine Functions</span>
+</h2>
+<section class="introduction" id="introduction-6"><p id="p-470">The seasons on Earth are caused by axial tilt. To visual axial tilt, image a pole through the center of Earth and extending through the North and South Pole with Earth spinning around this pole. Each spin is one day. As the Earth revolves around the sun, the North Pole tilts towards the sun and sometimes the South Pole tilts towards the sun, this tilting is call <em class="emphasis">axial tilt</em>.  When the North Pole is closer to the Sun (the South Pole is away from the Sun), the Northern Hemisphere experiences summer (the Southern Hemisphere experiences winter). When the axial tilt is reversed and the North Pole is further from the Sun (South Pole is close to the Sun), the seasons are reversed.</p>
+<p id="p-471">Every day as the Earth spins on its axis, the Sun rises from the eastern horizon. However, only twice a year will the sun rise due east, in the house Hikina. One occurrence is during the spring equinox. In the northern hemisphere, as spring turns into summer, the position the sun rises from will slowly move north, until the summer solstice, when the sun will rise from the most northern point (<span class="process-math">\(23.44^{\circ}\)</span> or the house ʻĀina Koʻolau). After this, the position of the rising sun will move south until the fall equinox where the sun will once again rise from due east or Hikina, before continuing its southern movement until the winter solstice when the sun will rise from its southern most position (<span class="process-math">\(-23.44^{\circ}\)</span> or the house ʻĀina Malanai). As winter turns to spring, the sun rise will start to move north until the next spring equinox where the position of the sun rise will once again be due east (Hikina). This process takes one year before it repeats itself year after year. This pattern of the position of the sun rise is a periodic function.</p>
+<p id="p-472">The sun's <em class="emphasis">declination</em>  is the angle between the equator and a line from the center of Earth to the sun.</p>
+<p id="p-473">June 20 December 21 March 20 September 22</p>
+<p id="p-474">In <a href="Trigonometry.html" class="internal" title="Chapter 1: Trigonometry">Chapter 1</a> we learned about the six trigonometric functions. In this section we will study the graphs of the sine and cosine functions to help us understand their use in modeling physical phenomena. We will study the graphs of the remaining trigonometric functions in <a href="Graphs_of_Other_Trigonometric_Functions.html" class="internal" title="Section 2.2: Graphs of Other Trigonometric Functions">Section 2.2</a>.</p></section><section class="subsection" id="subsection-24"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.1.1</span> <span class="title">Periodic Functions</span>
+</h3>
+<article class="definition definition-like" id="definition-16"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.1</span><span class="period">.</span>
+</h4>
+<p id="p-475"> A function <span class="process-math">\(f\)</span> is called <dfn class="terminology">periodic</dfn> if there exists a positive number <span class="process-math">\(p\)</span> such that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f(\theta+p)=f(\theta)
+\end{equation*}
+</div>
+<p class="continuation">for every <span class="process-math">\(\theta\text{.}\)</span> The smallest number <span class="process-math">\(p\)</span> is called the <dfn class="terminology">period</dfn> of <span class="process-math">\(f\text{.}\)</span></p></article><p id="p-476">\begin{mybox}[Periodic Properties] </p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-37">
+\begin{align*}
+\sin(\theta+2\pi)\amp =\sin\theta \amp  \cos(\theta+2\pi)\amp =\cos\theta \amp  \tan(\theta+\pi)\amp =\tan\theta\\
+\csc(\theta+2\pi)\amp =\csc\theta \amp  \sec(\theta+2\pi)\amp =\sec\theta \amp  \cot(\theta+\pi)\amp =\cot\theta
+\end{align*}
+</div>
+<p id="p-477">\end{mybox}</p>
+<p id="p-478">Recall that if <span class="process-math">\(\theta\)</span> is an angle with radian measure <span class="process-math">\(t\text{,}\)</span> then the <em class="emphasis">six trigonometric functions</em> become</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-38">
+\begin{align*}
+\sin \theta\amp =y \amp  \cos \theta\amp =x \amp  \tan \theta\amp =\frac{y}{x}  (x\neq0)\\
+\csc \theta\amp =\frac{1}{y}  (y\neq0) \amp  \sec \theta\amp =\frac{1}{x}  (x\neq0) \amp  \cot \theta\amp =\frac{x}{y}  (y\neq0)
+\end{align*}
+</div>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-118.svg" role="img" class="contained"></div>
+<p id="p-479">Division is not required for the trigonometric functions <span class="process-math">\(\sin\theta\)</span> and <span class="process-math">\(\cos\theta\)</span> and so we do not need to worry about dividing by zero, thus <span class="process-math">\(\theta\)</span> can be any angle. In other words, the domains for <span class="process-math">\(\sin\theta\)</span> and <span class="process-math">\(\cos\theta\)</span> consist of the set of all real numbers.</p>
+<p id="p-480">However, looking at <span class="process-math">\(\tan\theta\)</span> and <span class="process-math">\(\sec\theta\text{,}\)</span> you may notice there is division by <span class="process-math">\(x\text{.}\)</span> We run into problems when <span class="process-math">\(x=0\)</span> because it would result in dividing by 0. These are the points when the terminal side of <span class="process-math">\(\theta\)</span> lies on the <span class="process-math">\(y\)</span>-axis. On the unit circle, the points are <span class="process-math">\((0,1)\)</span> and <span class="process-math">\((0,-1)\text{.}\)</span> These points correspond to the angles <span class="process-math">\(\frac{\pi}{2}\)</span> and <span class="process-math">\(\frac{3\pi}{2}\)</span> (<span class="process-math">\(90^{\circ}\)</span> and <span class="process-math">\(270^{\circ}\)</span>), as well as all their coterminal angles: <span class="process-math">\(\ldots, -\frac{3\pi}{2}, \frac{-\pi}{2}, \frac{\pi}{2}, \frac{3\pi}{2}, \frac{5\pi}{2}, \ldots\)</span> (<span class="process-math">\(\ldots, -270^{\circ}, -90^{\circ}, 90^{\circ}, 270^{\circ}, 450^{\circ}, \ldots\)</span>). In general, any angle of the form <span class="process-math">\(\frac{\pi}{2}+n\pi\)</span> (<span class="process-math">\(90^{\circ}+180^{\circ}\cdot n\)</span>) for some integer <span class="process-math">\(n\)</span> should be excluded from the domain.</p>
+<p id="p-481">Similarly, we run into problems for <span class="process-math">\(\csc\theta\)</span> and <span class="process-math">\(\cot\theta\)</span> when <span class="process-math">\(y=0\)</span> since we would divide by 0. This corresponds to when the terminal side of <span class="process-math">\(\theta\)</span> lies on the <span class="process-math">\(x\)</span>-axis. These points on the unit circle are <span class="process-math">\((1,0)\)</span> and <span class="process-math">\((-1,0)\)</span> and have corresponding angles <span class="process-math">\(0\)</span> and <span class="process-math">\(\pi\text{,}\)</span> as well as all their coterminal angles: <span class="process-math">\(\ldots, -2\pi, -\pi, 0, \pi, 2\pi, \ldots\)</span> (<span class="process-math">\(\ldots, -360^{\circ}, -180^{\circ}, 0^{\circ}, 180^{\circ}, 360^{\circ}, \ldots\)</span>). In general, any angle of the form <span class="process-math">\(\pi\cdot n\)</span> (<span class="process-math">\(180^{\circ}\cdot n\)</span>) for some integer <span class="process-math">\(n\)</span> should be excluded from the domain.</p>
+<p id="p-482">We summarize the domains of the trigonometric functions in <a href="" class="xref" data-knowl="./knowl/tab_trig-domain.html" title="Table 2.1.2: Domains of the trigonometric functions">Table 2.1.2</a>.</p>
+<figure class="table table-like" id="tab_trig-domain"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.2<span class="period">.</span></span><span class="space"> </span>Domains of the trigonometric functions</figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Function</td>
+<td class="l m b0 r0 l0 t0 lines">Domain</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\sin\theta\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">all real numbers</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\cos\theta\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">all real numbers</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\tan\theta\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">all real numbers except <span class="process-math">\(\frac{\pi}{2}+n\pi\)</span> (<span class="process-math">\(90^{\circ}+180^{\circ}\cdot n\)</span>) for some integer <span class="process-math">\(n\)</span>
+</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\csc\theta\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">all real numbers except <span class="process-math">\(\pi\cdot n\)</span> (<span class="process-math">\(180^{\circ}\cdot n\)</span>) for some integer <span class="process-math">\(n\)</span>
+</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\sec\theta\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">all real numbers except <span class="process-math">\(\frac{\pi}{2}+n\pi\)</span> (<span class="process-math">\(90^{\circ}+180^{\circ}\cdot n\)</span>) for some integer <span class="process-math">\(n\)</span>
+</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\cot\theta\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">all real numbers except (<span class="process-math">\(180^{\circ}\cdot n\)</span>) <span class="process-math">\(\pi\cdot n\)</span> for some integer <span class="process-math">\(n\)</span>
+</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+</table></div></figure><p id="p-483">Next we look at the range for each of the trigonometric functions. If <span class="process-math">\(P(x,y)\)</span> is a point on the unit circle, then we have <span class="process-math">\(-1\leq x\leq1\)</span> and <span class="process-math">\(-1\leq y\le1\text{.}\)</span> Since <span class="process-math">\(\sin\theta=y\)</span> and <span class="process-math">\(\cos\theta=x\text{,}\)</span> it follows that <span class="process-math">\(-1\leq\sin\theta\leq1\)</span> and <span class="process-math">\(-1\leq\cos\theta\leq1\text{.}\)</span></p>
+<p id="p-484">**Look at Sullivan p384 for csc sec, cot/tan</p>
+<figure class="table table-like" id="tab_trig-range"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.3<span class="period">.</span></span><span class="space"> </span>Ranges of the trigonometric functions</figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Function</td>
+<td class="l m b0 r0 l0 t0 lines">Range</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\sin\theta\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">all real numbers from -1 to 1</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\cos\theta\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">all real numbers from -1 to 1</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\tan\theta\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">all real numbers</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\csc\theta\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">all real numbers greater than or equal to 1 or less than or equal to -1</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\sec\theta\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">all real numbers greater than or equal to 1 or less than or equal to -1</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\cot\theta\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">all real numbers</td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+</table></div></figure><p id="p-485">Recall that <span class="process-math">\(\cos(0)=0\)</span> but so do <span class="process-math">\(\cos(0+2\pi)=\cos2\pi=0\text{.}\)</span> In fact, if we add or subtract any multiple of <span class="process-math">\(2\pi\)</span> to our angle, we will obtain the same value for cosine. Functions such as these are known as <em class="emphasis">periodic functions</em></p>
+<article class="definition definition-like" id="definition-17"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.4</span><span class="period">.</span><span class="space"> </span><span class="title">Periodic Function.</span>
+</h4>
+<p id="p-486">A function <span class="process-math">\(f\)</span> is said to be <dfn class="terminology">periodic</dfn>  if there exists a number <span class="process-math">\(p&gt;0\)</span> such that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f(\theta+p)=f(x)
+\end{equation*}
+</div>
+<p class="continuation">for all <span class="process-math">\(\theta\)</span> in the domain of <span class="process-math">\(f\text{.}\)</span> The smallest value of the number <span class="process-math">\(p\)</span> is called the <dfn class="terminology">period</dfn>  of <span class="process-math">\(f\text{.}\)</span></p></article><p id="p-487">\begin{mybox}[Periodic Properties] The six trigonometric functions are periodic functions.</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-39">
+\begin{align*}
+\sin(\theta+2\pi)\amp =\sin\theta \amp  \cos(\theta+2\pi)\amp =\cos\theta \amp  \tan(\theta+\pi)\amp =\tan\theta\\
+\csc(\theta+2\pi)\amp =\csc\theta \amp  \sec(\theta+2\pi)\amp =\sec\theta \amp  \cot(\theta+\pi)\amp =\cot\theta
+\end{align*}
+</div>
+<p id="p-488">\end{mybox}</p>
+<article class="example example-like" id="example-32"><a href="" data-knowl="" class="id-ref example-knowl original has-image" data-refid="hk-example-32"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.5</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-32"><article class="example example-like"><p id="p-489">uncomment for links</p>
+<figure class="figure figure-like" id="fig_sunrise"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/Pictures/sunrise-angles.jpg" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.1.6<span class="period">.</span></span><span class="space"> </span>Sunrise summer, winter solstice and equinox</figcaption></figure></article></div>
+<article class="example example-like" id="example-33"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-33"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.7</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-33"><article class="example example-like"><p id="p-490">Position of rising run throughout the year. 66 degreees ENE "<a class="external" href="%5C1" target="_blank"><code class="code-inline tex2jax_ignore">\1</code></a></p></article></div>
+<article class="example example-like" id="example-34"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-34"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.8</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-34"><article class="example example-like"><p id="p-491">Talk about moon phases and tie that into sine graphs. Try to fit the curve and come up with an equation. Also discuss how fishing/farming is tied to moon phases.</p>
+<p id="p-492">Introduce the different moon phases in Hawaiian.</p>
+<p id="p-493">Moon phases would describe the different times for planting/fishing.</p>
+<p id="p-494">Phases of the moon are comparable to the phases of the sine function. What are other events in nature that go through similar phases? (See Stewart p460, 64) Graphs of sine and cosine: like that of waves</p>
+<p id="p-495">"<a class="external" href="%5C1" target="_blank"><code class="code-inline tex2jax_ignore">\1</code></a></p>
+<p id="p-496">"<a class="external" href="%5C1" target="_blank"><code class="code-inline tex2jax_ignore">\1</code></a></p>
+<p id="p-497">"<a class="external" href="%5C1" target="_blank"><code class="code-inline tex2jax_ignore">\1</code></a></p>
+<p id="p-498">Also talk about other polynesian moons such as Maori</p>
+<p id="p-499">Example of moon phases and the graph of sine:</p>
+<p id="p-500">See example from Jay Abramson's book, p621. Fitting sine curve to data.</p>
+<p id="p-501">This can be a project or an introduction to the section.</p>
+<p id="p-502">Perhaps the introduction of moon cycles, plot the moons to obtain the graph and then have the project as later.</p></article></div>
+<article class="example example-like" id="example-35"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-35"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.9</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-35"><article class="example example-like"><p id="p-503">Exercise for students: Tide charts:</p>
+<p id="p-504">uncomment for url Use Desmos.</p>
+<p id="p-505">There's also a tide worksheet example for NCTM.</p></article></div>
+<article class="example example-like" id="example-36"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-36"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.10</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-36"><article class="example example-like"><p id="p-506">Track the position of the rising and setting of the sun and the moon. Data of Boston from "<a class="external" href="%5C1" target="_blank"><code class="code-inline tex2jax_ignore">\1</code></a> This could be turned into a trig function. Can get data from "<a class="external" href="%5C1" target="_blank"><code class="code-inline tex2jax_ignore">\1</code></a> but it would be better if from NOAA.</p></article></div>
+<article class="exercise exercise-like" id="exercise-19"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-19"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.1.11</span><span class="period">.</span>
+</h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-19"><article class="exercise exercise-like"><p id="p-507">\Question Find the equation for the time that Makalii (Pleiades) emerges over the horizon over time throughout the year. Talk about the importance of this and how when it rises at sunset, it coincides with the start of Makahiki season. Then using an example that we already worked with the sun and the time the sun sets over the year, find the intersection of these two equations to determine when Makahiki season will begin.</p>
+<p id="p-508">``The rising of Makali`i (the constellation Pleiades) at sunset marks the beginning of the Hawaiian new year, known as Makahiki. Makahiki usally begins mid-November and ends in late January or February, aligning with the rainy season. It is a time set aside for tribute, harvest, sport, and play. " "<a class="external" href="%5C1" target="_blank"><code class="code-inline tex2jax_ignore">\1</code></a></p>
+<p id="p-509">\Question Problem 55, p540 in Abramson's book: Standing on the shore of a lake, a fisherman sights a boat far in the distance to his left. Let x, measured in radians, be the angle formed by the line of sight to the ship and a line due north from his position. Assume due north is 0 and x is measured negative to the left and positive to the right. (See Figure 19.) The boat travels from due west to due east and, ignoring the curvature of the Earth, the distance d(x), in kilometers, from the fisherman to the boat is given by the function d(x) = 1.5sec(x).</p>
+<p id="p-510">a. What is a reasonable domain for d(x)? b. Graph d(x) on this domain. c. Find and discuss the meaning of any vertical asymptotes on the graph of d(x). d. Calculate and interpret — . Round to the e. Calculate and interpret —. Round to the second decimal place. f. What is the minimum distance between the fisherman and the boat? When does this occur?</p>
+<p id="p-511">\Question</p></article></div></section></section></div></main>
+</div>
+</body>
+</html>

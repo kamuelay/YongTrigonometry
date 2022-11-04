@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Solutions</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Trigonometry through polynesian navigation">
+<meta property="book:author" content="Kamuela E Yong">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+},
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\def\R{4 }
+
+\def\angEl{20}
+
+\def\angAz{-20}
+
+\def\R{4 }
+\def\angEl{20}
+\newcommand{\intoo}[2]{\mathopen{]}#1\,;#2\mathclose{[}}
+\def\angAz{-20}
+\newcommand{\ud}{\mathop{\mathrm{{}d}}\mathopen{}}
+\newcommand{\intff}[2]{\mathopen{[}#1\,;#2\mathclose{]}}
+\newcommand{\thepartimage}{}
+\newcommand{\thechapterimage}{}
+\newcommand{\autodot}{.}
+\newcommand{\QuestionNB}{\bfseries\arabic{Question}.\ }
+
+
+
+\newcommand{\pgfmathsinandcos}[3]{
+\pgfmathsetmacro#1{sin(#3)}
+\pgfmathsetmacro#2{cos(#3)}}
+\newcommand{\LongitudePlane}[3][current plane]{
+\pgfmathsinandcos\sinEl\cosEl{#2}
+\pgfmathsinandcos\sint\cost{#3}
+\tikzset{#1/.style={cm={\cost,\sint*\sinEl,0,\cosEl,(0,0)}}}
+}
+\newcommand{\LatitudePlane}[3][current plane]{
+\pgfmathsinandcos\sinEl\cosEl{#2}
+\pgfmathsinandcos\sint\cost{#3}
+\pgfmathsetmacro\yshift{\cosEl*\sint}
+\tikzset{#1/.style={cm={\cost,0,0,\cost*\sinEl,(0,\yshift)}}}
+}
+\newcommand{\NewLatitudePlane}[4][current plane]{
+\pgfmathsinandcos\sinEl\cosEl{#3}
+\pgfmathsinandcos\sint\cost{#4}
+\pgfmathsetmacro\yshift{#2*\cosEl*\sint}
+\tikzset{#1/.style={cm={\cost,0,0,\cost*\sinEl,(0,\yshift)}}}
+}
+\newcommand{\DrawLongitudeCircle}[2][1]{
+\LongitudePlane{\angEl}{#2}
+\tikzset{current plane/.prefix style={scale=#1}}
+\pgfmathsetmacro\angVis{atan(sin(#2)*cos(\angEl)/sin(\angEl))}
+\draw[current plane] (\angVis:1) arc (\angVis:\angVis+180:1);
+\draw[current plane,dashed] (\angVis-180:1) arc (\angVis-180:\angVis:1);
+}
+\newcommand{\DrawLatitudeCircle}[2][1]{
+\LatitudePlane{\angEl}{#2}
+\tikzset{current plane/.prefix style={scale=#1}}
+\pgfmathsetmacro\sinVis{sin(#2)/cos(#2)*sin(\angEl)/cos(\angEl)}
+\pgfmathsetmacro\angVis{asin(min(1,max(\sinVis,-1)))}
+\draw[current plane] (\angVis:1) arc (\angVis:-\angVis-180:1);
+\draw[current plane,dashed] (180-\angVis:1) arc (180-\angVis:\angVis:1);
+}
+\newcommand{\sectionbreak}{\clearpage}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="book-1.html"><span class="title">Trigonometry through polynesian navigation</span></a></h1>
+<p class="byline">Kamuela E Yong</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="Hyperbolas.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="book-1.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter-1.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="Hyperbolas.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="book-1.html" title="Up">Up</a><a class="next-button button toolbar-item" href="backmatter-1.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1" class="internal"><span class="title">Front Matter</span></a></li>
+<li class="link">
+<a href="Trigonometry.html" data-scroll="Trigonometry" class="internal"><span class="codenumber">1</span> <span class="title">Trigonometry</span></a><ul>
+<li><a href="Hawaiian_Star_Compass.html" data-scroll="Hawaiian_Star_Compass" class="internal">Hawaiian Star Compass</a></li>
+<li><a href="Angles_and_Their_Measure.html" data-scroll="Angles_and_Their_Measure" class="internal">Angles and Their Measure</a></li>
+<li><a href="Unit_Circle.html" data-scroll="Unit_Circle" class="internal">Unit Circle</a></li>
+<li><a href="Right_Triangle_Trigonometry.html" data-scroll="Right_Triangle_Trigonometry" class="internal">Right Triangle Trigonometry</a></li>
+<li><a href="Trigonometric_Functions_of_Any_Angles.html" data-scroll="Trigonometric_Functions_of_Any_Angles" class="internal">Trigonometric Functions of Any Angles</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Graphs_of_the_Trigonometric_Functions.html" data-scroll="Graphs_of_the_Trigonometric_Functions" class="internal"><span class="codenumber">2</span> <span class="title">Graphs of the Trigonometric Functions</span></a><ul>
+<li><a href="Graphs_of_the_Sine_and_Cosine_Functions.html" data-scroll="Graphs_of_the_Sine_and_Cosine_Functions" class="internal">Graphs of the Sine and Cosine Functions</a></li>
+<li><a href="Graphs_of_Other_Trigonometric_Functions.html" data-scroll="Graphs_of_Other_Trigonometric_Functions" class="internal">Graphs of Other Trigonometric Functions</a></li>
+<li><a href="Phase_Shifts_and_Sinusoidal_Curve_Fitting.html" data-scroll="Phase_Shifts_and_Sinusoidal_Curve_Fitting" class="internal">Harmonic Motion/Phase shift/Sinusoidal Curve Fitting</a></li>
+<li><a href="Inverse_Trigonometry.html" data-scroll="Inverse_Trigonometry" class="internal">Inverse Trigonometric Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Analytic_Trigonometry.html" data-scroll="Analytic_Trigonometry" class="internal"><span class="codenumber">3</span> <span class="title">Analytic Trigonometry</span></a><ul>
+<li><a href="Trigonometric_Identities.html" data-scroll="Trigonometric_Identities" class="internal">Trigonometric Identities</a></li>
+<li><a href="Sum_and_Difference_Formulas.html" data-scroll="Sum_and_Difference_Formulas" class="internal">Sum and Difference Formulas</a></li>
+<li><a href="Double-Angle_and_Half-Angle_Formulas.html" data-scroll="Double-Angle_and_Half-Angle_Formulas" class="internal">Double-Angle and Half-Angle Formulas</a></li>
+<li><a href="Product-to-Sum_and_Sum-to-Product_Formulas.html" data-scroll="Product-to-Sum_and_Sum-to-Product_Formulas" class="internal">Product-to-Sum and Sum-to-Product Formulas</a></li>
+<li><a href="Trigonometric_Equations.html" data-scroll="Trigonometric_Equations" class="internal">Trigonometric Equations</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Applications_of_Trigonometry.html" data-scroll="Applications_of_Trigonometry" class="internal"><span class="codenumber">4</span> <span class="title">Applications of Trigonometry</span></a><ul>
+<li><a href="The_Law_of_Sines.html" data-scroll="The_Law_of_Sines" class="internal">The Law of Sines</a></li>
+<li><a href="The_Law_of_Cosines.html" data-scroll="The_Law_of_Cosines" class="internal">The Law of Cosines</a></li>
+<li><a href="Vectors.html" data-scroll="Vectors" class="internal">Vectors</a></li>
+<li><a href="Dot_Product.html" data-scroll="Dot_Product" class="internal">Dot Product</a></li>
+<li><a href="Cross_Product.html" data-scroll="Cross_Product" class="internal">Cross Product</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Polar_and_Parametric_Equations.html" data-scroll="Polar_and_Parametric_Equations" class="internal"><span class="codenumber">5</span> <span class="title">Polar and Parametric Equations</span></a><ul>
+<li><a href="Polar_Coordinates.html" data-scroll="Polar_Coordinates" class="internal">Polar Coordinates</a></li>
+<li><a href="Polar_Equations_and_Graphs.html" data-scroll="Polar_Equations_and_Graphs" class="internal">Polar Equations and Graphs</a></li>
+<li><a href="Complex_Numbers__De_Moivre_s_Theorem.html" data-scroll="Complex_Numbers__De_Moivre_s_Theorem" class="internal">Complex Numbers; De Moivre's Theorem</a></li>
+<li><a href="Parametric_Curves_and_Parametric_Equations.html" data-scroll="Parametric_Curves_and_Parametric_Equations" class="internal">Parametric Curves and Parametric Equations</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="Analytic_Geometry.html" data-scroll="Analytic_Geometry" class="internal"><span class="codenumber">6</span> <span class="title">Analytic Geometry</span></a><ul>
+<li><a href="Parabols.html" data-scroll="Parabols" class="internal">Parabolas</a></li>
+<li><a href="Ellipses.html" data-scroll="Ellipses" class="internal">Ellipses</a></li>
+<li><a href="Hyperbolas.html" data-scroll="Hyperbolas" class="internal">Hyperbolas</a></li>
+</ul>
+</li>
+<li class="link active"><a href="Solutions.html" data-scroll="Solutions" class="internal"><span class="codenumber">7</span> <span class="title">Solutions</span></a></li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1" class="internal"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="references-1.html" data-scroll="references-1" class="internal"><span class="title">Bibliography</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="chapter" id="Solutions"><h2 class="heading">
+<span class="type">Chapter</span> <span class="codenumber">7</span> <span class="title">Solutions</span>
+</h2>
+<p id="p-988">\subsection*{Solutions <a href="" class="xref" data-knowl="./knowl/ex-1_2.html" title="Checkpoint 1.2.28">for 1.2.28</a>}</p>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-64" id="solution-64"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-64"><div class="solution solution-like"><ol id="p-989" class="decimal">
+<li id="li-169">
+<p id="p-990">We are given the angular speed is <span class="process-math">\(\omega=180\)</span> revolutions per minute. To convert our angular speed to radians per minute, we use the fact that one revolution is <span class="process-math">\(2\pi\)</span> radians to get</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\omega=180\frac{\mbox{revolution} }{\mbox{minute} }=180\frac{\mbox{rev} }{\mbox{minute} }\cdot2\pi\frac{\mbox{radians} }{\mbox{revolution} }=360\pi\frac{\mbox{radians} }{\mbox{minute} }
+\end{equation*}
+</div>
+<p class="continuation">Thus the oeoe is moving at an angular speed of <span class="process-math">\(360\pi\)</span> radians per second.</p>
+</li>
+<li id="li-170">
+<p id="p-991">Since the radius is <span class="process-math">\(r=3\)</span> ft and the angular speed is <span class="process-math">\(\omega=180\)</span> is measure in radians per minute we can <a href="" class="xref" data-knowl="./knowl/def_linear-speed.html" title="Definition 1.2.26: Linear Speed">Definition 1.2.26</a> to calculate the linear speed</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/def_linear-speed.html">
+\begin{equation*}
+v=r\omega=3\mbox{ft} \cdot360\pi\frac{\mbox{rad} }{\mbox{min} }\cdot\frac{\mbox{mile} }{5280\mbox{ft} }\cdot\frac{60\mbox{min} }{\mbox{hr} }\approx38.56\frac{\mbox{miles} }{\mbox{hour} }
+\end{equation*}
+</div>
+<p class="continuation">Thus the girl swinging the oeoe is moving shell at a linear speed of 38.56 mph.</p>
+</li>
+</ol></div></div>
+<p id="p-992">\subsection*{Solutions <a href="" class="xref" data-knowl="./knowl/ex-1_3.html" title="Checkpoint 1.3.10">for 1.3.10</a>}</p>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-65" id="solution-65"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-65"><div class="solution solution-like"><ol id="p-993" class="decimal">
+<li id="li-174"><p id="p-derived-li-174"><ol class="lower-alpha">
+<li id="li-175"><p id="p-997">In Quadrant II, the associated angle is <span class="process-math">\(t=\pi-\frac{\pi}{3}=\frac{3\pi}{3}-\frac{\pi}{3}=\frac{2\pi}{3}\)</span> Alternative solution: Since <span class="process-math">\(t'=\frac{\pi}{3}=\frac{1\pi}{3}\text{,}\)</span> then <span class="process-math">\(t=\frac{(3-1)\pi}{3}=\frac{2\pi}{3}\)</span></p></li>
+<li id="li-176"><p id="p-998">In Quadrant III, the associated angle is <span class="process-math">\(t=\pi+\frac{\pi}{3}=\frac{3\pi}{3}+\frac{\pi}{3}=\frac{4\pi}{3}\)</span> Alternative solution: <span class="process-math">\(t=\frac{(3+1)\pi}{3}=\frac{4\pi}{3}\)</span></p></li>
+<li id="li-177"><p id="p-999">In Quadrant IV, the associated angle is <span class="process-math">\(t=2\pi-\frac{\pi}{3}=\frac{6\pi}{3}-\frac{\pi}{3}=\frac{5\pi}{3}\)</span> Alternative solution: <span class="process-math">\(t=\frac{(2\cdot3-1)\pi}{3}=\frac{5\pi}{3}\)</span></p></li>
+</ol></p></li>
+<li id="li-178"><p id="p-derived-li-178"><ol class="lower-alpha">
+<li id="li-179"><p id="p-1000">In Quadrant II, the associated angle is <span class="process-math">\(t=180^{\circ}-30^{\circ}=150^{\circ}\)</span></p></li>
+<li id="li-180"><p id="p-1001">In Quadrant III, the associated angle is <span class="process-math">\(t=180^{\circ}+30^{\circ}=210^{\circ}\)</span></p></li>
+<li id="li-181"><p id="p-1002">In Quadrant IV, the associated angle is <span class="process-math">\(t=360^{\circ}-30^{\circ}=330^{\circ}\)</span></p></li>
+</ol></p></li>
+<li id="li-182"><p id="p-derived-li-182"><ol class="lower-alpha">
+<li id="li-183"><p id="p-1003">In Quadrant II, the associated angle is <span class="process-math">\(t=180^{\circ}-60^{\circ}=120^{\circ}\)</span></p></li>
+<li id="li-184"><p id="p-1004">In Quadrant III, the associated angle is <span class="process-math">\(t=180^{\circ}+60^{\circ}=240^{\circ}\)</span></p></li>
+<li id="li-185"><p id="p-1005">In Quadrant IV, the associated angle is <span class="process-math">\(t=360^{\circ}-60^{\circ}=300^{\circ}\)</span></p></li>
+</ol></p></li>
+</ol></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-66" id="solution-66"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-66"><div class="solution solution-like"><ol id="p-1006" class="decimal">
+<li id="li-186">
+<p id="p-1007">When <span class="process-math">\(\theta=\frac{\pi}{2}\)</span> radians (<span class="process-math">\(90^{\circ}\)</span>), the point on the circle is <span class="process-math">\(P(0,1)\text{.}\)</span> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-203.svg" role="img" class="contained"></div> Then <span class="process-math">\(x=0\)</span> and <span class="process-math">\(y=1\)</span> gives us</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-84">
+\begin{align*}
+\sin \frac{\pi}{2}=\sin 90^{\circ}\amp =1,\amp  \cos \frac{\pi}{2}=\cos 90^{\circ}\amp =0, \amp  \tan \frac{\pi}{2}=\tan 90^{\circ}\amp =\mbox{undef} ,\\
+\csc \frac{\pi}{2}=\csc  90^{\circ}\amp =1, \amp  \sec \frac{\pi}{2}=\sec  90^{\circ}\amp =\mbox{undefined} , \amp  \cot \frac{\pi}{2}=\cot  90^{\circ}\amp =0\text{.}
+\end{align*}
+</div>
+<p class="continuation">Note that <span class="process-math">\(\tan\frac{\pi}{2}\)</span> is undefined since <span class="process-math">\(\tan\theta=\frac{y}{x}\)</span> only when <span class="process-math">\(x\neq0\)</span> but at <span class="process-math">\(P(0,1)\)</span> we have <span class="process-math">\(x=0\text{,}\)</span> resulting in <span class="process-math">\(\tan\frac{\pi}{2}\)</span> being undefined.</p>
+</li>
+<li id="li-187">
+<p id="p-1008">When <span class="process-math">\(\theta=\pi\)</span> radians (<span class="process-math">\(180^{\circ}\)</span>), the point on the circle is <span class="process-math">\(P(-1,0)\text{.}\)</span> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-204.svg" role="img" class="contained"></div> Then <span class="process-math">\(x=-1\)</span> and <span class="process-math">\(y=0\)</span> gives us</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-85">
+\begin{align*}
+\sin \pi=\sin 180^{\circ}\amp =0, \amp  \cos \pi=\cos 180^{\circ}\amp =-1, \amp  \tan \pi=\tan 180^{\circ}\amp =0,\\
+\csc \pi=\csc  180^{\circ}\amp =\mbox{undef} , \amp  \sec \pi=\sec  180^{\circ}\amp =-1, \amp  \cot \pi=\cot  180^{\circ}\amp =\mbox{undef}
+\end{align*}
+</div>
+</li>
+</ol></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-67" id="solution-67"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">4</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-67"><div class="solution solution-like"><ol id="p-1009" class="decimal">
+<li id="li-188">
+<p id="p-1010">From <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "ex_reference-angle" missing or not unique]</code>, we have <span class="process-math">\(\theta'=\frac{\pi}{4}\text{.}\)</span> The six trigonometric functions are</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-86">
+\begin{align*}
+\sin \frac{\pi}{4}\amp =\frac{\sqrt{2}}{2}, \amp  \cos \frac{\pi}{4}\amp =\frac{\sqrt{2}}{2}, \amp  \tan \frac{\pi}{4}\amp =1,\\
+\csc \frac{\pi}{4}\amp =\sqrt{2}, \amp  \sec \frac{\pi}{4}\amp =\sqrt{2}, \amp  \cot \frac{\pi}{4}\amp =1\text{.}
+\end{align*}
+</div>
+<p class="continuation">Since <span class="process-math">\(\theta=-\frac{3\pi}{4}\)</span> is in Quadrant III, we have that the <span class="process-math">\(x\)</span>-value is negative and the <span class="process-math">\(y\)</span>-value is negative. Thus we get</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-87">
+\begin{align*}
+\sin -\frac{3\pi}{4}\amp =-\frac{\sqrt{2}}{2}, \amp  \cos -\frac{3\pi}{4}\amp =-\frac{\sqrt{2}}{2}, \amp  \tan -\frac{3\pi}{4}\amp =1,\\
+\csc -\frac{3\pi}{4}\amp =-\sqrt{2}, \amp  \sec -\frac{3\pi}{4}\amp =-\sqrt{2}, \amp  \cot -\frac{3\pi}{4}\amp =1\text{.}
+\end{align*}
+</div>
+</li>
+<li id="li-189">
+<p id="p-1011">From <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "ex_reference-angle" missing or not unique]</code>, we have <span class="process-math">\(\theta'=\frac{\pi}{3}\text{.}\)</span> The six trigonometric functions are</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-88">
+\begin{align*}
+\sin \frac{\pi}{3}\amp =\frac{\sqrt{3}}{2}, \amp  \cos \frac{\pi}{3}\amp =\frac{1}{2}, \amp  \tan \frac{\pi}{3}\amp =\sqrt{3},\\
+\csc \frac{\pi}{3}\amp =\frac{2\sqrt{3}}{3}, \amp  \sec \frac{\pi}{3}\amp =2, \amp  \cot \frac{\pi}{3}=\amp \frac{\sqrt{3}}{3}\text{.}
+\end{align*}
+</div>
+<p class="continuation">Since <span class="process-math">\(\theta=\frac{4\pi}{3}\)</span> is in Quadrant III, we have that the <span class="process-math">\(x\)</span>-value is negative and the <span class="process-math">\(y\)</span>-value is negative. Thus we get</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-89">
+\begin{align*}
+\sin \frac{4\pi}{3}\amp =-\frac{\sqrt{3}}{2}, \amp  \cos \frac{4\pi}{3}\amp =-\frac{1}{2}, \amp  \tan \frac{4\pi}{3}\amp =\sqrt{3},\\
+\csc \frac{4\pi}{3}\amp =-\frac{2\sqrt{3}}{3}, \amp  \sec \frac{4\pi}{3}\amp =-2, \amp  \cot \frac{4\pi}{3}\amp =\frac{\sqrt{3}}{3}\text{.}
+\end{align*}
+</div>
+</li>
+<li id="li-190">
+<p id="p-1012">From <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "ex_reference-angle" missing or not unique]</code>, we have <span class="process-math">\(\theta'=\frac{\pi}{6}\text{.}\)</span> The six trigonometric functions are</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-90">
+\begin{align*}
+\sin \frac{\pi}{6}\amp =\frac{1}{2}, \amp  \cos \frac{\pi}{6}\amp =\frac{\sqrt{3}}{2}, \amp  \tan \frac{\pi}{6}\amp \frac{\sqrt{3}}{3},\\
+\csc \frac{\pi}{6}\amp =2 \amp  \sec \frac{\pi}{6}\amp =\frac{2\sqrt{3}}{3}, \amp  \cot \frac{\pi}{6}\amp =\sqrt{3}\text{.}
+\end{align*}
+</div>
+<p class="continuation">Since <span class="process-math">\(\theta=\frac{11\pi}{6}\)</span> is in Quadrant IV, we have that the <span class="process-math">\(x\)</span>-value is positive and the <span class="process-math">\(y\)</span>-value is negative. Thus we get</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-91">
+\begin{align*}
+\sin \frac{11\pi}{6}\amp =-\frac{1}{2}, \amp  \cos \frac{11\pi}{6}\amp =\frac{\sqrt{3}}{2}, \amp  \tan \frac{11\pi}{6}\amp -\frac{\sqrt{3}}{3},\\
+\csc \frac{11\pi}{6}\amp =-2 \amp  \sec \frac{11\pi}{6}\amp =\frac{2\sqrt{3}}{3}, \amp  \cot \frac{11\pi}{6}\amp =-\sqrt{3}\text{.}
+\end{align*}
+</div>
+</li>
+<li id="li-191">
+<p id="p-1013">From <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "ex_reference-angle" missing or not unique]</code>, we have <span class="process-math">\(\theta'=60^{\circ}\text{.}\)</span> The six trigonometric functions are</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-92">
+\begin{align*}
+\sin 60^{\circ}\amp =\frac{\sqrt{3}}{2}, \amp  \cos 60^{\circ}\amp =\frac{1}{2}, \amp  \tan 60^{\circ}\amp =\sqrt{3},\\
+\csc 60^{\circ}\amp =\frac{2\sqrt{3}}{3}, \amp  \sec 60^{\circ}\amp =2, \amp  \cot 60^{\circ}=\amp \frac{\sqrt{3}}{3}\text{.}
+\end{align*}
+</div>
+<p class="continuation">Since <span class="process-math">\(\theta=120^{\circ}\)</span> is in Quadrant II, we have that the <span class="process-math">\(x\)</span>-value is negative and the <span class="process-math">\(y\)</span>-value is positive. Thus we get</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-93">
+\begin{align*}
+\sin 120^{\circ}\amp =\frac{\sqrt{3}}{2}, \amp  \cos 120^{\circ}\amp =-\frac{1}{2}, \amp  \tan 120^{\circ}\amp =-\sqrt{3},\\
+\csc 120^{\circ}\amp =\frac{2\sqrt{3}}{3}, \amp  \sec 120^{\circ}\amp =-2, \amp  \cot 120^{\circ}\amp =-\frac{\sqrt{3}}{3}\text{.}
+\end{align*}
+</div>
+</li>
+<li id="li-192">
+<p id="p-1014">Since <span class="process-math">\(\theta=\frac{7\pi}{3}&gt;2\pi\text{,}\)</span> we find the coterminal angle by subtracting by <span class="process-math">\(2\pi\text{:}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{7\pi}{3}-2\pi=\frac{7\pi}{3}-\frac{6\pi}{3}=\frac{\pi}{3}
+\end{equation*}
+</div>
+<p class="continuation">Therefore, the values of the six trigonometric functions are equivalent to when <span class="process-math">\(\theta=\frac{\pi}{3}\text{:}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-94">
+\begin{align*}
+\sin \frac{7\pi}{3}\amp =\frac{\sqrt{3}}{2}, \amp  \cos \frac{7\pi}{3}\amp =\frac{1}{2}, \amp  \tan \frac{7\pi}{3}\amp =\sqrt{3},\\
+\csc \frac{7\pi}{3}\amp =\frac{2\sqrt{3}}{3}, \amp  \sec \frac{7\pi}{3}\amp =2, \amp  \cot \frac{7\pi}{3}\amp =\frac{\sqrt{3}}{3}\text{.}
+\end{align*}
+</div>
+</li>
+<li id="li-193">
+<p id="p-1015">Since <span class="process-math">\(\theta=480^{\circ}&gt;360^{\circ}\text{,}\)</span> we find the coterminal angle by subtracting by <span class="process-math">\(360^{\circ}\text{:}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+480^{\circ}-360^{\circ}=120^{\circ}
+\end{equation*}
+</div>
+<p class="continuation">Therefore, the values of the six trigonometric functions are equivalent to when <span class="process-math">\(\theta=120^{\circ}\text{:}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-95">
+\begin{align*}
+\sin 480^{\circ}\amp =\frac{\sqrt{3}}{2}, \amp  \cos 480^{\circ}\amp =-\frac{1}{2}, \amp  \tan 480^{\circ}\amp =-\sqrt{3},\\
+\csc 480^{\circ}\amp =\frac{2\sqrt{3}}{3}, \amp  \sec 480^{\circ}\amp =-2, \amp  \cot 480^{\circ}\amp =-\frac{\sqrt{3}}{3}\text{.}
+\end{align*}
+</div>
+</li>
+</ol></div></div>
+<p id="p-1016">\subsection*{Solutions <a href="" class="xref" data-knowl="./knowl/ex-1_4.html" title="Checkpoint 1.4.13">for 1.4.13</a>}</p>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-68" id="solution-68"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">5</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-68"><div class="solution solution-like"><p id="p-1017"><span class="process-math">\(x_2=120\sin22.5^{\circ}=45.9\)</span> NM <span class="process-math">\(x_3=120\sin33.75^{\circ}=66.7\)</span> NM <span class="process-math">\(x_4=120\sin45^{\circ}=84.5\)</span> NM <span class="process-math">\(x_5=120\sin56.25^{\circ}=99.8\)</span> NM <span class="process-math">\(x_6=120\sin67.5^{\circ}=110.9\)</span> NM <span class="process-math">\(x_7=120\sin78.75^{\circ}=117.7\)</span> NM <span class="process-math">\(x_8=120\sin90^{\circ}=120\)</span> NM</p></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-69" id="solution-69"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">6</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-69"><div class="solution solution-like"><p id="p-1018"><span class="process-math">\(y_1=120\cos11.25^{\circ}=117.7\)</span> NM <span class="process-math">\(y_2=120\cos22.5^{\circ}=110.9\)</span> NM <span class="process-math">\(y_3=120\cos33.75^{\circ}=99.8\)</span> NM <span class="process-math">\(y_4=120\cos45^{\circ}=84.5\)</span> NM <span class="process-math">\(y_5=120\cos56.25^{\circ}=66.7\)</span> NM <span class="process-math">\(y_6=120\cos67.5^{\circ}=45.9\)</span> NM <span class="process-math">\(y_7=120\cos78.75^{\circ}=23.4\)</span> NM</p></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-70" id="solution-70"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">7</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-70"><div class="solution solution-like">
+<p id="p-1019">To determine the movement of sand along the shore, we first construct the triangle.</p>
+<div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-205.svg" role="img" class="contained"></div>
+<p id="p-1020">The since we want to find the adjacent side to the known angle of <span class="process-math">\(60^{\circ}\)</span> and we are given the hypotenuse, the trigonometric function that we will use is cosine:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\cos60^{\circ}=\frac{\mbox{adjacent} }{\mbox{hypotenuse} }=\frac{x}{10}
+\end{equation*}
+</div>
+<p id="p-1021">Multiplying both sides by 10 and using the fact that <span class="process-math">\(\cos60^{\circ}=\frac{1}{2}\text{,}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+x=10\cdot\cos60^{\circ}=10\cdot\frac{1}{2}=5\mbox{ ft}
+\end{equation*}
+</div>
+</div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-71" id="solution-71"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">8</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-71"><div class="solution solution-like">
+<p id="p-1022">The House Nālani in the quadrant Hoʻolua is three houses from ʻĀkau (North). Since each house is <span class="process-math">\(11.25^{\circ}\text{,}\)</span> the waʻa is <span class="process-math">\(3\cdot11.25=33.75^{\circ}\)</span> west of due north.</p>
+<p id="p-1023">Let <span class="process-math">\(y\)</span> be the distance traveled north. To calculate <span class="process-math">\(y\text{,}\)</span> we first determine which trigonometric function to use. Since we need to use the side adjacent to our angle and the hypotenuse, we will use cosine:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\cos33.75^{\circ}=\frac{y}{120\mbox{ NM} }
+\end{equation*}
+</div>
+<p id="p-1024">So</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y=120\cdot\cos33.75^{\circ}\mbox{ NM} \approx99.8\mbox{ NM}
+\end{equation*}
+</div>
+<p id="p-1025">Let <span class="process-math">\(x\)</span> be the distance traveled west. Since we need to use the side opposite to our angle and the hypotenuse, we will use sine:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\sin33.75^{\circ}=\frac{x}{120\mbox{ NM} }
+\end{equation*}
+</div>
+<p id="p-1026">So</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+x=120\cdot\sin33.75^{\circ}\mbox{ NM} \approx66.7\mbox{ NM}
+\end{equation*}
+</div>
+</div></div>
+<p id="p-1027">\subsection*{Solutions <a href="" class="xref" data-knowl="./knowl/ex-3_3.html" title="Checkpoint 3.3.7">for 3.3.7</a>}</p>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-72" id="solution-72"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">9</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-72"><div class="solution solution-like"><div class="displaymath process-math" data-contains-math-knowls="" id="md-96">
+\begin{align*}
+\cos2\theta \amp =\amp  \cos(\theta + \theta)\\
+\amp  = \amp  \cos\theta \cdot \cos\theta - \sin\theta \cdot \sin\theta\\
+\amp  = \amp  \cos^2\theta - \sin^2\theta
+\end{align*}
+</div></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-73" id="solution-73"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">10</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-73"><div class="solution solution-like"><div class="displaymath process-math" data-contains-math-knowls="" id="md-97">
+\begin{align*}
+\cos2\theta \amp =\amp  \cos^2\theta - \sin^2\theta\\
+\amp  = \amp  (1 - \sin^2\theta) - \sin^2\theta\\
+\amp  = \amp  1 - 2\sin^2\theta
+\end{align*}
+</div></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-74" id="solution-74"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">11</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-74"><div class="solution solution-like"><div class="displaymath process-math" data-contains-math-knowls="" id="md-98">
+\begin{align*}
+\cos2\theta \amp =\amp  \cos^2\theta - \sin^2\theta\\
+\amp  = \amp  \cos^2\theta - (1-\cos^2\theta)\\
+\amp  = \amp  \cos^2\theta - 1 + \cos^2\theta\\
+\amp  = \amp  2\cos^2\theta - 1
+\end{align*}
+</div></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-75" id="solution-75"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">12</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-75"><div class="solution solution-like"><div class="displaymath process-math" data-contains-math-knowls="" id="md-99">
+\begin{align*}
+\tan2\theta \amp =\amp  \tan(\theta + \theta)\\
+\amp  = \amp  \frac{\tan\theta + \tan\theta}{1-\tan\theta \cdot \tan\theta}\\
+\amp  = \amp  \frac{2\tan\theta}{1-\tan^2\theta}
+\end{align*}
+</div></div></div>
+<p id="p-1028">\subsection*{Solutions <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "ex-5_4" missing or not unique]</code>}</p>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-76" id="solution-76"><span class="type">Solution</span><span class="space"> </span><span class="codenumber">13</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-76"><div class="solution solution-like">
+<p id="p-1029">Since we were able to write <span class="process-math">\(\tan\theta=\frac{839}{937}\text{,}\)</span> we can use a calculator or other technology to evaluate the inverse tangent to find our angle:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\theta=\tan^{-1}\left(\frac{839}{937}\right)\approx41.8^{\circ}\text{.}
+\end{equation*}
+</div>
+<p id="p-1030">Next we refer to the Star Compass with angles (<a href="" class="xref" data-knowl="./knowl/fig_star-compass-with-angles.html" title="Figure 1.2.4">Figure 1.2.4</a> on <a href="" class="xref" data-knowl="./knowl/fig_star-compass-with-angles.html" title="Figure 1.2.4">page 1.2.4</a>) to conclude we will need to sail towards the House Manu Koʻolau.</p>
+<p id="p-1031">To determine the distance, <span class="process-math">\(d\text{,}\)</span> we use the Pythagorean Theorem:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+d=\sqrt{937^2+839^2}\approx1,257.7 \mbox{NM}\text{.}
+\end{equation*}
+</div>
+<p id="p-1032">Finally, we note that since (speed) = (distance)/(duration), we can rearrange the terms to get (duration) = (distance)/(speed). If we travel at 5 knots (5 NM/hr), we can calculate the duration as</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\mbox{duration} =\frac{1,257.7\mbox{ NM} }{5\mbox{ kt} }=\frac{1,257.7\mbox{ NM} }{5\mbox{ NM/hr} }=251.4\mbox{ hours} =251.4\mbox{ hours} \cdot\frac{\mbox{day} }{24\mbox{ hours} }\approx10.5\mbox{ days}
+\end{equation*}
+</div>
+</div></div></section></div></main>
+</div>
+</body>
+</html>
