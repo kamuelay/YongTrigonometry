@@ -457,42 +457,119 @@ node[midway,right,xshift=0.1cm] {\(y\)};
         <me>
           \cos2\theta=\cos^2\theta-\sin^2\theta
         </me>
-        <p>
-          \Question Use the Pythagorean identity (<m>\sin^2\theta+\cos^2\theta=1</m>) and the result from <xref ref="x3_3-ex1">Exercise</xref> to prove
+        
+<introduction>
+  <p>
+    Use the Pythagorean identity (<m>\sin^2\theta+\cos^2\theta=1</m>) and the result from <xref ref="x3_3-ex1">Exercise</xref> to prove
           <me>
             \cos2\theta=1-2\sin^2\theta
           </me>
-        </p>
-        <p>
-          \Question Use the Pythagorean identify (<m>\sin^2\theta+\cos^2\theta=1</m>) and the result from <xref ref="x3_3-ex1">Exercise</xref> to prove
+  </p>
+</introduction>
+Use the Pythagorean identity (<m>\sin^2\theta+\cos^2\theta=1</m>) and the result from <xref ref="x3_3-ex1">Exercise</xref> to prove
+          <me>
+            \cos2\theta=1-2\sin^2\theta
+          </me>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+        
+<introduction>
+  <p>
+    Use the Pythagorean identify (<m>\sin^2\theta+\cos^2\theta=1</m>) and the result from <xref ref="x3_3-ex1">Exercise</xref> to prove
           <me>
             \cos2\theta=2\cos^2\theta-1
           </me>
-        </p>
-        <p>
-          \Question Use the sum formula,
+  </p>
+</introduction>
+Use the Pythagorean identify (<m>\sin^2\theta+\cos^2\theta=1</m>) and the result from <xref ref="x3_3-ex1">Exercise</xref> to prove
+          <me>
+            \cos2\theta=2\cos^2\theta-1
+          </me>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+        
+<introduction>
+  <p>
+    Use the sum formula,
           <m>\tan(\alpha+\beta)=\frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}</m>,
           to prove the double angle formula for tangent:
           <me>
             \tan2\theta=\frac{2\tan\theta}{1-\tan^2\theta}
           </me>
-        </p>
-        <p>
-          \Question Find the exact value of i)
+  </p>
+</introduction>
+Use the sum formula,
+          <m>\tan(\alpha+\beta)=\frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}</m>,
+          to prove the double angle formula for tangent:
+          <me>
+            \tan2\theta=\frac{2\tan\theta}{1-\tan^2\theta}
+          </me>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+        
+<introduction>
+  <p>
+    Find the exact value of i)
           <m>\sin2\theta</m>, ii) <m>\cos2\theta</m>,
-          and iii) <m>\tan2\theta</m> if \begin{tasks} \task
+          and iii) <m>\tan2\theta</m> if 
+  </p>
+</introduction>
+  <task>
+    <statement>
+      <p>
+        
           <m>\cos\theta=\frac{-3}{5}</m> and <m>\theta</m> is in Quadrant III
-        </p>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
         <p>
           \task <m>\sin\theta=-\frac{8}{17}</m> and <m>270^{\circ}\lt \theta\lt 360^{\circ}</m>
         </p>
         <p>
           \end{tasks}
         </p>
-        <p>
-          \Question Using the Half-Angle Formula,
-          find the exact value of \begin{tasks}(2) \task <m>\tan315^{\circ}</m>
-        </p>
+        
+<introduction>
+  <p>
+    Using the Half-Angle Formula,
+          find the exact value of 
+  </p>
+</introduction>
+  <task>
+    <statement>
+      <p>
+         <m>\tan315^{\circ}</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
         <p>
           \task <m>\sin150^{\circ}</m>
         </p>
@@ -517,12 +594,27 @@ node[midway,right,xshift=0.1cm] {\(y\)};
         <p>
           \end{tasks}
         </p>
-        <p>
-          \Question Use the Half-Angle Formulas to find the exact values of i) <m>\sin\frac{\theta}{2}</m>,
+        
+<introduction>
+  <p>
+    Use the Half-Angle Formulas to find the exact values of i) <m>\sin\frac{\theta}{2}</m>,
           ii) <m>\cos\frac{\theta}{2}</m>,
-          and iii) <m>\tan\frac{\theta}{2}</m> if \begin{tasks} \task
+          and iii) <m>\tan\frac{\theta}{2}</m> if 
+  </p>
+</introduction>
+  <task>
+    <statement>
+      <p>
+        
           <m>\tan\theta=-\frac{4}{3}</m> and <m>\theta</m> is in Quadrant II
-        </p>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
         <p>
           \task <m>\cos\theta=\frac{2}{3}</m> and <m>\frac{3\pi}{4}\lt \theta\lt 2\pi</m> \end{tasks}
         </p>

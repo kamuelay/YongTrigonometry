@@ -1094,15 +1094,132 @@
           <m>\theta=190^{\circ}</m> \task <m>\theta=323^{\circ}</m> \task
           <m>\theta=158^{\circ}</m> \task <m>\theta=172^{\circ}</m> \end{tasks}
         </p>
-        <p>
-          \Question Convert the given angle <m>\theta</m> to a decimal in degrees rounded to two decimal places. \begin{tasks}(3) \task <m>\theta=20^{\circ}50'30''</m> \task <m>\theta=80^{\circ}25'16''</m> \task <m>\theta=7^{\circ}22'38''</m> \task
-          <m>\theta=330^{\circ}14'12''</m> \task <m>\theta=168^{\circ}22'26''</m> \task
-          <m>\theta=49^{\circ}27'12''</m> \task <m>\theta=327^{\circ}38'58''</m> \task
-          <m>\theta=281^{\circ}48'50''</m> \task <m>\theta=134^{\circ}53'47''</m> \end{tasks}
-        </p>
-        <p>
-          \Question
-        </p>
+        
+<introduction>
+  <p>
+    Convert the given angle <m>\theta</m> to a decimal in degrees rounded to two decimal places. 
+  </p>
+</introduction>
+  <task>
+    <statement>
+      <p>
+         <m>\theta=20^{\circ}50'30''</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>\theta=80^{\circ}25'16''</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>\theta=7^{\circ}22'38''</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        
+          <m>\theta=330^{\circ}14'12''</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>\theta=168^{\circ}22'26''</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        
+          <m>\theta=49^{\circ}27'12''</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>\theta=327^{\circ}38'58''</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        
+          <m>\theta=281^{\circ}48'50''</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>\theta=134^{\circ}53'47''</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+        
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
         <p>
           Recall the Star Compass with the boundaries for each House.
           Write the angles for the boundaries between the following houses in the Ko&#699;olau quadrant in terms of degrees, minutes,
@@ -1136,78 +1253,789 @@
 \draw[left] (\x:0.98) node[rotate=\x] {\xtext};\end{tikzpicture}]]>
 </latex-image>
         </image>
-        <p>
-          \Question Convert the given angle <m>\theta</m> to degrees/minutes/seconds rounded to the nearest second and identify the house and quadrant on the Hawaiian Star Compass. \begin{tasks}(3) \task <m>\theta=258.39111111111^{\circ}</m> \task <m>\theta=212.42583333333^{\circ}</m> \task <m>\theta=244.96638888889^{\circ}</m> \task
-          <m>\theta=93.95166666667^{\circ}</m> \task <m>\theta=135.625^{\circ}</m> \task
-          <m>\theta=132.99888888889^{\circ}</m> \task <m>\theta=328.2025^{\circ}</m> \task
-          <m>\theta=48.121388888889^{\circ}</m> \task <m>\theta=241.27083333333^{\circ}</m> \end{tasks}
-        </p>
-        <p>
-          \Question Convert the given angle <m>\theta</m> to radians and identify the house and quadrant on the Hawaiian Star Compass.
-          Keep your answers in terms of <m>\pi</m>. \begin{tasks}(3) \task <m>\theta=102^{\circ}</m> \task <m>\theta=96^{\circ}</m> \task <m>\theta=190^{\circ}</m> \task
-          <m>\theta=122^{\circ}</m> \task <m>\theta=32^{\circ}</m> \task
-          <m>\theta=236^{\circ}</m> \task <m>\theta=82^{\circ}</m> \task
-          <m>\theta=228^{\circ}</m> \task <m>\theta=332^{\circ}</m> \end{tasks}
-        </p>
-        <p>
-          \Question Draw the angle in standard position \begin{tasks}(4) \task <m>60^{\circ}</m> \task <m>135^{\circ}</m> \task <m>-30^{\circ}</m> \task <m>495^{\circ}</m> \task <m>-240^{\circ}</m> \task <m>800^{\circ}</m> \task
-          <m>\frac{\pi}{4}</m> \task <m>\frac{5\pi}{6}</m> \task
-          <m>-\frac{\pi}{3}</m> \task <m>\frac{10\pi}{3}</m> \task
-          <m>\frac{11\pi}{6}</m> \task <m>-\frac{2\pi}{3}</m> \end{tasks}
-        </p>
-        <p>
-          \Question Convert the given angle from degrees to radians.
-          Round your answer to two decimal places. \begin{tasks}(3) \task
-          <m>27^{\circ}</m> \task <m>63^{\circ}</m> \task
-          <m>-39^{\circ}</m> \task <m>200^{\circ}</m> \task
-          <m>415^{\circ}</m> \task <m>105^{\circ}</m> \end{tasks}
-        </p>
-        <p>
-          \Question Convert the given angle from radians to degrees.
-          Round your answer to two decimal places. \begin{tasks}(3) \task <m>\frac{3\pi}{5}</m> \task
-          <m>\frac{8\pi}{3}</m> \task <m>-\frac{4\pi}{7}</m> \task
-          <m>\frac{15\pi}{4}</m> \task <m>-1.5</m> \task <m>3</m> \end{tasks}
-        </p>
-        <p>
-          \Question Determine whether the two given angles in standard position are coterminal. \begin{tasks}(4) \task <m>50^{\circ}</m>,
-          <m>410^{\circ}</m> \task <m>-60^{\circ}</m>,
-          <m>330^{\circ}</m> \task <m>30^{\circ}</m>,
-          <m>1110^{\circ}</m> \task <m>-210^{\circ}</m>,
-          <m>150^{\circ}</m> \end{tasks}
-        </p>
-        <p>
-          \Question Find an angle between <m>0^{\circ}</m> and
-          <m>360^{\circ}</m> that is coterminal with the given angle \begin{tasks}(4) \task
-          <m>405^{\circ}</m> \task <m>600^{\circ}</m> \task
-          <m>1035^{\circ}</m> \task <m>-300^{\circ}</m> \end{tasks}
-        </p>
-        <p>
-          \Question Given a circle with radius <m>r</m>,
+        
+<introduction>
+  <p>
+    Convert the given angle <m>\theta</m> to degrees/minutes/seconds rounded to the nearest second and identify the house and quadrant on the Hawaiian Star Compass. 
+  </p>
+</introduction>
+  <task>
+    <statement>
+      <p>
+         <m>\theta=258.39111111111^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>\theta=212.42583333333^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>\theta=244.96638888889^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        
+          <m>\theta=93.95166666667^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>\theta=135.625^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        
+          <m>\theta=132.99888888889^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>\theta=328.2025^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        
+          <m>\theta=48.121388888889^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>\theta=241.27083333333^{\circ}</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+        
+<introduction>
+  <p>
+    Convert the given angle <m>\theta</m> to radians and identify the house and quadrant on the Hawaiian Star Compass.
+          Keep your answers in terms of <m>\pi</m>. 
+  </p>
+</introduction>
+  <task>
+    <statement>
+      <p>
+         <m>\theta=102^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>\theta=96^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>\theta=190^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        
+          <m>\theta=122^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>\theta=32^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        
+          <m>\theta=236^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>\theta=82^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        
+          <m>\theta=228^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>\theta=332^{\circ}</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+        
+<introduction>
+  <p>
+    Draw the angle in standard position 
+  </p>
+</introduction>
+  <task>
+    <statement>
+      <p>
+         <m>60^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>135^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>-30^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>495^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>-240^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>800^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        
+          <m>\frac{\pi}{4}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>\frac{5\pi}{6}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        
+          <m>-\frac{\pi}{3}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>\frac{10\pi}{3}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        
+          <m>\frac{11\pi}{6}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>-\frac{2\pi}{3}</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+        
+<introduction>
+  <p>
+    Convert the given angle from degrees to radians.
+          Round your answer to two decimal places. 
+  </p>
+</introduction>
+  <task>
+    <statement>
+      <p>
+        
+          <m>27^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>63^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        
+          <m>-39^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>200^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        
+          <m>415^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>105^{\circ}</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+        
+<introduction>
+  <p>
+    Convert the given angle from radians to degrees.
+          Round your answer to two decimal places. 
+  </p>
+</introduction>
+  <task>
+    <statement>
+      <p>
+         <m>\frac{3\pi}{5}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        
+          <m>\frac{8\pi}{3}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>-\frac{4\pi}{7}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        
+          <m>\frac{15\pi}{4}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>-1.5</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>3</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+        
+<introduction>
+  <p>
+    Determine whether the two given angles in standard position are coterminal. 
+  </p>
+</introduction>
+  <task>
+    <statement>
+      <p>
+         <m>50^{\circ}</m>,
+          <m>410^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>-60^{\circ}</m>,
+          <m>330^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>30^{\circ}</m>,
+          <m>1110^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>-210^{\circ}</m>,
+          <m>150^{\circ}</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+        
+<introduction>
+  <p>
+    Find an angle between <m>0^{\circ}</m> and
+          <m>360^{\circ}</m> that is coterminal with the given angle 
+  </p>
+</introduction>
+  <task>
+    <statement>
+      <p>
+        
+          <m>405^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>600^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        
+          <m>1035^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>-300^{\circ}</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+        
+<introduction>
+  <p>
+    Given a circle with radius <m>r</m>,
           calculate i) the length of the arc subtended by a central angle <m>\theta</m>;
           and ii) the area of a sector with central angle <m>\theta</m>.
-          Round your answer to four decimal places. \begin{tasks}(2) \task <m>r=10</m> in,
-          <m>\theta=45^{\circ}</m> \task <m>r=5</m> m, <m>\theta=120^{\circ}</m> \task <m>r=3</m> mi,
-          <m>\theta=\frac{\pi}{3}</m> radians \task <m>r=8</m> cm,
-          <m>\theta=2</m> radians \end{tasks}
-        </p>
-        <p>
-          \Question At the start of this section you learned that the <em>latitude</em>
+          Round your answer to four decimal places. 
+  </p>
+</introduction>
+  <task>
+    <statement>
+      <p>
+         <m>r=10</m> in,
+          <m>\theta=45^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>r=5</m> m, <m>\theta=120^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>r=3</m> mi,
+          <m>\theta=\frac{\pi}{3}</m> radians 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>r=8</m> cm,
+          <m>\theta=2</m> radians
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+        
+<introduction>
+  <p>
+    At the start of this section you learned that the <em>latitude</em>
               <idx><h>latitude</h></idx>
           of a place is the angle between a line drawn from the center of the earth to that point and the equatorial plane.
           If the radius of the earth is 3,959 miles,
           calculate the arc length, <m>s</m>,
-          along the surface of the earth for \begin{tasks}(2) \task <m>1^{\circ}</m> of latitude
+          along the surface of the earth for 
+  </p>
+</introduction>
+  <task>
+    <statement>
+      <p>
+         <m>1^{\circ}</m> of latitude
           (in miles, rounded to 2 decimals)
-          \task <m>1'</m> of latitude
-          (in miles, rounded to 2 decimals). \task <m>1''</m> of latitude
+          
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>1'</m> of latitude
+          (in miles, rounded to 2 decimals). 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>1''</m> of latitude
           (in feet, rounded to the nearest integer)
-          \end{tasks} A <em>nautical mile</em>,
+           A <em>nautical mile</em>,
               <idx><h>nautical mile</h></idx>
           frequently used in navigation,
           is slightly longer than a mile on land.
           One nautical mile was historically defined to be the arc length corresponding to one minute of latitude.
           Check your answer in (b) with the value of one nautical mile.
-        </p>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
         <image>
 <latex-image>
 <![CDATA[\begin{tikzpicture}\filldraw[ball color=white] (0,0) circle (\R);
@@ -1237,8 +2065,10 @@
 \draw[angle,-,blue,line width=2pt] (0:\R) arc (0:30:\R) node[midway,right,black] {\(s\)};\end{tikzpicture}]]>
 </latex-image>
         </image>
-        <p>
-          \Question The <em>oeoe</em>, or Hawaiian bullroarer,
+        
+<introduction>
+  <p>
+    The <em>oeoe</em>, or Hawaiian bullroarer,
           is made by drilling holes into a kamani seed or coconut shell,
           then threading a long string through the holes to securing it.
           When the oeoe is swung by the string,
@@ -1247,29 +2077,118 @@
           If a girl is swinging an oeoe at the end of 3 foot long rope at a rate of 180 revolutions per minute,
           calculate 1) the angular speed measured in radians per minute; 2) the linear speed of the shell in miles per hour
           (round to two decimal places).
-        </p>
-        <p>
-          \Question Earth completes one rotation around the Sun approximately every 365.25 days.
-          Assume the orbit is a circle and that the Earth is <m>92.9</m> million miles from the Sun. \begin{tasks} \task How far does the Earth travel in one day,
+  </p>
+</introduction>
+The <em>oeoe</em>, or Hawaiian bullroarer,
+          is made by drilling holes into a kamani seed or coconut shell,
+          then threading a long string through the holes to securing it.
+          When the oeoe is swung by the string,
+          a whistling sound is produced,
+          similar to the sound of the wind on the top of mountains.
+          If a girl is swinging an oeoe at the end of 3 foot long rope at a rate of 180 revolutions per minute,
+          calculate 1) the angular speed measured in radians per minute; 2) the linear speed of the shell in miles per hour
+          (round to two decimal places).
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+        
+<introduction>
+  <p>
+    Earth completes one rotation around the Sun approximately every 365.25 days.
+          Assume the orbit is a circle and that the Earth is <m>92.9</m> million miles from the Sun. 
+  </p>
+</introduction>
+  <task>
+    <statement>
+      <p>
+         How far does the Earth travel in one day,
           expressed as millions of miles?
           <em>Hint: First determine the angle or proportion of a rotation that Earth travels in one day,
           then calculate the arc length of Earth's orbit.</em>
-          \task How for does the Earth travel in 30 days,
-          expressed as millions of miles? \task How far does the Earth travel in one rotation,
-          expressed as millions of miles? \task What is the linear speed of Earth as orbits the Sun?
-          Express your answer in miles per hour. \end{tasks}
-        </p>
-        <p>
-          \Question As the the moon orbits the Earth,
+          
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         How for does the Earth travel in 30 days,
+          expressed as millions of miles? 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         How far does the Earth travel in one rotation,
+          expressed as millions of miles? 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         What is the linear speed of Earth as orbits the Sun?
+          Express your answer in miles per hour.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+        
+<introduction>
+  <p>
+    As the the moon orbits the Earth,
           different parts of its surface become illuminated by the Sun which we call moon phases.
               <idx><h>moon phases</h></idx>
           The moon completes one rotation about Earth in approximately 27.3 days.
           If we assume its orbit is circular and the moon is 239,000 miles from Earth,
           calculate the linear speed of the moon,
           expressed as miles per hour.
-        </p>
-        <p>
-          \Question At <m>17.7^{\circ}</m> S latitude,
+  </p>
+</introduction>
+As the the moon orbits the Earth,
+          different parts of its surface become illuminated by the Sun which we call moon phases.
+              <idx><h>moon phases</h></idx>
+          The moon completes one rotation about Earth in approximately 27.3 days.
+          If we assume its orbit is circular and the moon is 239,000 miles from Earth,
+          calculate the linear speed of the moon,
+          expressed as miles per hour.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+        
+<introduction>
+  <p>
+    At <m>17.7^{\circ}</m> S latitude,
           the city of Nadi, Fiji is <m>6,071</m> km from the Earth's axis of rotation
           (see <xref ref="ex-1_2">Exercise</xref>,
           <xref ref="Earth_Angular_Velocity"></xref>).
@@ -1279,18 +2198,514 @@
           how many minutes sooner will the people of Nadi see the Sun rise than the people in Port Vila,
           rounded to one decimal?
           <em>Hint: the proportion of distance between the two cities to the distance traveled in one rotation is the same as the proportion of the time it takes to see the sun between the two cities to time it takes to complete one rotation.</em>
-        </p>
+  </p>
+</introduction>
+At <m>17.7^{\circ}</m> S latitude,
+          the city of Nadi, Fiji is <m>6,071</m> km from the Earth's axis of rotation
+          (see <xref ref="ex-1_2">Exercise</xref>,
+          <xref ref="Earth_Angular_Velocity"></xref>).
+          In 24 hours, Nadi will have traveled one rotation around Earth or <m>2\pi(6, 071)</m> km.
+          The city of Port Vila, Vanuatu lies 967 km directly to the west of Nadi, Fiji.
+          As the Earth rotates,
+          how many minutes sooner will the people of Nadi see the Sun rise than the people in Port Vila,
+          rounded to one decimal?
+          <em>Hint: the proportion of distance between the two cities to the distance traveled in one rotation is the same as the proportion of the time it takes to see the sun between the two cities to time it takes to complete one rotation.</em>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
       </statement>
     </exercise>
     <p>
       \begin{Answer}[ref={ex-1.2}]
     </p>
+      <task>
+    <statement>
+      <p>
+         &#699;&#256;ina Malanai 
+      </p>
+    </statement>
+    <answer>
     <p>
-      \Question \begin{tasks} \task &#699;&#256;ina Malanai \task N&#257;lani Kona \task Noio Ko&#699;olau \task Manu Kona \task N&#257; Leo Ho&#699;olua \task L&#257; Kona \task Noio Malanai \task &#699;&#256;ina Ho&#699;olua \task L&#257; Ho&#699;olua \end{tasks} \Question \begin{tasks}(3) \task <m>20.84^{\circ}</m> \task <m>80.42^{\circ}</m> \task <m>7.38^{\circ}</m> \task <m>330.24^{\circ}</m> \task <m>168.37^{\circ}</m> \task <m>49.45^{\circ}</m> \task <m>327.65^{\circ}</m> \task <m>281.81^{\circ}</m> \task <m>134.90^{\circ}</m> \end{tasks} \Question \begin{tasks}(2) \task <m>5^{\circ}37'30''</m> \task <m>16^{\circ}52'30''</m> \task <m>28^{\circ}7'30''</m> \task <m>39^{\circ}22'30''</m> \end{tasks} \Question \begin{tasks}(2) \task <m>\theta=258^{\circ}23'28''</m> Haka Malanai \task <m>\theta=212^{\circ}25'33''</m> Noio Kona \task <m>\theta=244^{\circ}57'59''</m> N&#257; Leo Kona \task <m>\theta=93^{\circ}57'6''</m> Haka Ho&#699;olua \task <m>\theta=135^{\circ}37'30''</m> Manu Ho&#699;olua \task <m>\theta=132^{\circ}59'56''</m> Manu Ho&#699;olua \task <m>\theta=328^{\circ}12'9''</m> Noio Malanai \task <m>\theta=48^{\circ}7'17''</m> Manu Ko&#699;olau \task <m>\theta=241^{\circ}16'15''</m> N&#257; Lani Kona \end{tasks} \Question \begin{tasks}(2) \task <m>\theta=\frac{17\pi}{30}</m> Haka Ho&#699;olua \task <m>\theta=\frac{8\pi}{15}</m> &#699;&#256;kau \task <m>\theta=\frac{19\pi}{18}</m> L&#257; Kona \task <m>\theta=\frac{61\pi}{90}</m> N&#257;lani Ho&#699;olua \item <m>\theta=\frac{8\pi}{45}</m> Noio Ko&#699;olau \task
-      <m>\theta=\frac{59\pi}{45}</m> N&#257;lani Kona \task
-      <m>\theta=\frac{41\pi}{90}</m> Haka Ko&#699;olau \task <m>\theta=\frac{19\pi}{15}</m> Manu Kona \task
-      <m>\theta=\frac{83\pi}{45}</m> &#699;&#256;ina Ko&#699;olau \end{tasks} \Question \begin{tasks}(2) \task
+      MYANSWER
     </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         N&#257;lani Kona 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         Noio Ko&#699;olau 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         Manu Kona 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         N&#257; Leo Ho&#699;olua 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         L&#257; Kona 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         Noio Malanai 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         &#699;&#256;ina Ho&#699;olua 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         L&#257; Ho&#699;olua  \Question  
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>20.84^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>80.42^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>7.38^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>330.24^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>168.37^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>49.45^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>327.65^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>281.81^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>134.90^{\circ}</m>  \Question  
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>5^{\circ}37'30''</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>16^{\circ}52'30''</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>28^{\circ}7'30''</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>39^{\circ}22'30''</m>  \Question  
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>\theta=258^{\circ}23'28''</m> Haka Malanai 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>\theta=212^{\circ}25'33''</m> Noio Kona 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>\theta=244^{\circ}57'59''</m> N&#257; Leo Kona 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>\theta=93^{\circ}57'6''</m> Haka Ho&#699;olua 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>\theta=135^{\circ}37'30''</m> Manu Ho&#699;olua 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>\theta=132^{\circ}59'56''</m> Manu Ho&#699;olua 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>\theta=328^{\circ}12'9''</m> Noio Malanai 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>\theta=48^{\circ}7'17''</m> Manu Ko&#699;olau 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>\theta=241^{\circ}16'15''</m> N&#257; Lani Kona  \Question  
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>\theta=\frac{17\pi}{30}</m> Haka Ho&#699;olua 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>\theta=\frac{8\pi}{15}</m> &#699;&#256;kau 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>\theta=\frac{19\pi}{18}</m> L&#257; Kona 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>\theta=\frac{61\pi}{90}</m> N&#257;lani Ho&#699;olua \item <m>\theta=\frac{8\pi}{45}</m> Noio Ko&#699;olau 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        
+      <m>\theta=\frac{59\pi}{45}</m> N&#257;lani Kona 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        
+      <m>\theta=\frac{41\pi}{90}</m> Haka Ko&#699;olau 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>\theta=\frac{19\pi}{15}</m> Manu Kona 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        
+      <m>\theta=\frac{83\pi}{45}</m> &#699;&#256;ina Ko&#699;olau  \Question  
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
     <image>
 <latex-image>
 <![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)-(1.25,0) node[right]{\(x\)};

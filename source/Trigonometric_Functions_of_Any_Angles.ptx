@@ -1588,10 +1588,23 @@
           <m>\sec\theta\lt 0</m> and <m>\csc\theta\lt 0</m> \task
           <m>\cos\theta\lt 0</m> and <m>\tan\theta>0</m> \end{tasks}
         </p>
-        <p>
-          \Question The point <m>P(x,y)</m> is on the terminal side of angle <m>\theta</m>.
+        
+<introduction>
+  <p>
+    The point <m>P(x,y)</m> is on the terminal side of angle <m>\theta</m>.
           Determine the exact values of the six trigonometric functions at <m>\theta</m>
-        </p>
+  </p>
+</introduction>
+The point <m>P(x,y)</m> is on the terminal side of angle <m>\theta</m>.
+          Determine the exact values of the six trigonometric functions at <m>\theta</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
         <p>
           \begin{tasks} \task
         </p>
@@ -1623,9 +1636,21 @@
         <p>
           \task <m>(3,-4)</m> \task <m>(-12,-5)</m> \task <m>(-2,-3)</m> \task <m>(-4,4)</m> \task <m>(-24,7)</m> \task <m>(9,-40)</m> \end{tasks}
         </p>
-        <p>
-          \Question Find the exact value of the remaining five trigonometric functions of <m>\theta</m> from the given information.
-        </p>
+        
+<introduction>
+  <p>
+    Find the exact value of the remaining five trigonometric functions of <m>\theta</m> from the given information.
+  </p>
+</introduction>
+Find the exact value of the remaining five trigonometric functions of <m>\theta</m> from the given information.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
         <p>
           \begin{tasks} \task <m>\tan\theta=-\frac{12}{5}</m>,
           <m>\theta</m> is Quadrant II \task <m>\cos\theta=\frac{3}{5}</m>,
@@ -1641,24 +1666,105 @@
           <m>\cos\theta\lt 0</m> \task <m>\cot\theta=-\frac{1}{3}</m>,
           <m>\sin\theta>0</m> \end{tasks}
         </p>
-        <p>
-          \Question Calculate the reference angle...
-        </p>
-        <p>
-          \Question Given a reference angle, <m>t'</m>,
-          compute the associated angle in standard position for i) Quadrant II; ii) Quadrant III; and iii) Quadrant IV. \begin{tasks}(2) \task
-          <m>t'=\frac{\pi}{4}</m> \task <m>t'=\frac{\pi}{3}</m> \task
-          <m>t'=30^{\circ}</m> \task <m>t'=60^{\circ}</m> \end{tasks}
-        </p>
-        <p>
-          \Question Calculate the exact values of the six trigonometric functions for each angle,
+        
+<introduction>
+  <p>
+    Calculate the reference angle...
+  </p>
+</introduction>
+Calculate the reference angle...
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+        
+<introduction>
+  <p>
+    Given a reference angle, <m>t'</m>,
+          compute the associated angle in standard position for i) Quadrant II; ii) Quadrant III; and iii) Quadrant IV. 
+  </p>
+</introduction>
+  <task>
+    <statement>
+      <p>
+        
+          <m>t'=\frac{\pi}{4}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>t'=\frac{\pi}{3}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        
+          <m>t'=30^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>t'=60^{\circ}</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+        
+<introduction>
+  <p>
+    Calculate the exact values of the six trigonometric functions for each angle,
           <m>\theta</m>.
           <em>Hint</em>: Use the reference angle that we found in Example reference angles
           <ol>
             <li>
               <p>
                 <m>\theta=-\frac{3\pi}{4}</m>
-              </p>
+  </p>
+</introduction>
+Calculate the exact values of the six trigonometric functions for each angle,
+          <m>\theta</m>.
+          <em>Hint</em>: Use the reference angle that we found in Example reference angles
+          <ol>
+            <li>
+              <p>
+                <m>\theta=-\frac{3\pi}{4}</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
             </li>
             <li>
               <p>
@@ -1687,35 +1793,127 @@
             </li>
           </ol>
         </p>
-        <p>
-          \Question Use reference angles to compute the exact value of sin(225) etc
+        
+<introduction>
+  <p>
+    Use reference angles to compute the exact value of sin(225) etc
           (maybe not necessary since we now have the trig table.
           Maybe phrase it given theta, I)
           find the reference angle, theta' ii) evaluate at the reference angle,
           sin(theta'), iii) use the reference angle and the quadrant to evaluate sin(theta)
-        </p>
-        <p>
-          \Question Use the fact that sine and cosine are periodic to find <m>\sin1200^{\circ}</m>.
-        </p>
-        <p>
-          \Question Prove the third Pythagorean Identity:
+  </p>
+</introduction>
+Use reference angles to compute the exact value of sin(225) etc
+          (maybe not necessary since we now have the trig table.
+          Maybe phrase it given theta, I)
+          find the reference angle, theta' ii) evaluate at the reference angle,
+          sin(theta'), iii) use the reference angle and the quadrant to evaluate sin(theta)
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+        
+<introduction>
+  <p>
+    Use the fact that sine and cosine are periodic to find <m>\sin1200^{\circ}</m>.
+  </p>
+</introduction>
+Use the fact that sine and cosine are periodic to find <m>\sin1200^{\circ}</m>.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+        
+<introduction>
+  <p>
+    Prove the third Pythagorean Identity:
           <m>1+\tan^2\theta=\sec^2\theta</m>.
           <em>Hint</em>: Begin with <m>\sin^2\theta+\cos^2\theta=1</m> and divide both sides of the equation by <m>\cos^2\theta</m>.
-        </p>
-        <p>
-          \Question Prove the third Pythagorean Identity:
+  </p>
+</introduction>
+Prove the third Pythagorean Identity:
+          <m>1+\tan^2\theta=\sec^2\theta</m>.
+          <em>Hint</em>: Begin with <m>\sin^2\theta+\cos^2\theta=1</m> and divide both sides of the equation by <m>\cos^2\theta</m>.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+        
+<introduction>
+  <p>
+    Prove the third Pythagorean Identity:
           <m>1+\cot^2\theta+1=\csc^2\theta</m>.
           <em>Hint</em>: Begin with <m>\sin^2\theta+\cos^2\theta=1</m> and divide both sides of the equation by <m>\sin^2\theta</m>.
-        </p>
-        <p>
-          \Question pythagorean identity questions
-        </p>
-        <p>
-          \Question Use the Pythagorean Identities to write the first trigonometric function of <m>\theta</m> in terms of the second function given the quadrant
-        </p>
-        <p>
-          \Question Use the even and odd properties to evaluate the following
-        </p>
+  </p>
+</introduction>
+Prove the third Pythagorean Identity:
+          <m>1+\cot^2\theta+1=\csc^2\theta</m>.
+          <em>Hint</em>: Begin with <m>\sin^2\theta+\cos^2\theta=1</m> and divide both sides of the equation by <m>\sin^2\theta</m>.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+        
+<introduction>
+  <p>
+    pythagorean identity questions
+  </p>
+</introduction>
+pythagorean identity questions
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+        
+<introduction>
+  <p>
+    Use the Pythagorean Identities to write the first trigonometric function of <m>\theta</m> in terms of the second function given the quadrant
+  </p>
+</introduction>
+Use the Pythagorean Identities to write the first trigonometric function of <m>\theta</m> in terms of the second function given the quadrant
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+        
+<introduction>
+  <p>
+    Use the even and odd properties to evaluate the following
+  </p>
+</introduction>
+Use the even and odd properties to evaluate the following
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
         <p>
           \begin{tasks} \task <m>\cos(-60^{\circ})</m> \task <m>\tan(-225^{\circ})</m> \task <m>\csc(-330^{\circ})</m> \task <m>\sin(-90^{\circ})</m> \task <m>\cot(-300^{\circ})</m> \task <m>\sec(-150^{\circ})</m> \task
           <m>\sin\left(-\frac{11\pi}{6}\right)</m> \task <m>\tan\left(-\frac{5\pi}{4}\right)</m> \task
@@ -1727,33 +1925,213 @@
     <p>
       \begin{Answer}[ref={ex-1.5}] \Question \begin{tasks}(4) \task QII \task QIII \task QIV \task QI \task QII \task QIII \task QIII \task QIII \end{tasks}
     </p>
-    <p>
-      \Question \begin{tasks} \task <m>\sin\theta=</m>,
+      <task>
+    <statement>
+      <p>
+         <m>\sin\theta=</m>,
       <m>\cos\theta=</m>, <m>\tan\theta=</m>,
       <m>\csc\theta=</m>, <m>\sec\theta=</m>,
-      <m>\cot\theta=</m> \end{tasks}
-    </p>
+      <m>\cot\theta=</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+    
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+    
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+    
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+    
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+    
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+      <task>
+    <statement>
+      <p>
+         <m>\frac{1}{2}</m> 
+      </p>
+    </statement>
+    <answer>
     <p>
-      \Question
+      MYANSWER
     </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>-1</m> 
+      </p>
+    </statement>
+    <answer>
     <p>
-      \Question
+      MYANSWER
     </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>2</m> 
+      </p>
+    </statement>
+    <answer>
     <p>
-      \Question
+      MYANSWER
     </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>-1</m> 
+      </p>
+    </statement>
+    <answer>
     <p>
-      \Question
+      MYANSWER
     </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        
+      <m>\frac{\sqrt{3}}{3}</m> 
+      </p>
+    </statement>
+    <answer>
     <p>
-      \Question
+      MYANSWER
     </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>-\frac{2\sqrt{3}}{3}</m> 
+      </p>
+    </statement>
+    <answer>
     <p>
-      \Question \begin{tasks} \task <m>\frac{1}{2}</m> \task <m>-1</m> \task <m>2</m> \task <m>-1</m> \task
-      <m>\frac{\sqrt{3}}{3}</m> \task <m>-\frac{2\sqrt{3}}{3}</m> \task
-      <m>\frac{1}{2}</m> \task <m>-1</m> \task <m>-\frac{1}{2}</m> \task <m>0</m> \task
-      <m>\sqrt{2}</m> \task <m>2</m> \end{tasks}
+      MYANSWER
     </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        
+      <m>\frac{1}{2}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>-1</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>-\frac{1}{2}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>0</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        
+      <m>\sqrt{2}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>2</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
     <p>
       \end{Answer}
     </p>

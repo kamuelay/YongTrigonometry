@@ -221,12 +221,51 @@
     </definition>
     <exercise>
       <statement>
-        <p>
-          \Question first question
-        </p>
-        <p>
-          \Question Second question \begin{tasks}(2) \task Next \task another \end{tasks}
-        </p>
+        
+<introduction>
+  <p>
+    first question
+  </p>
+</introduction>
+first question
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+        
+<introduction>
+  <p>
+    Second question 
+  </p>
+</introduction>
+  <task>
+    <statement>
+      <p>
+         Next 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         another
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
       </statement>
     </exercise>
   </subsection>
