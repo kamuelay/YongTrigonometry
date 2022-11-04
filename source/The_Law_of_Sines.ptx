@@ -932,6 +932,7 @@
     <exercise>
       <statement>
         
+<task>
 <introduction>
   <p>
     (SSA) A wa&#699;a is sailing in the direction Hikina (east) at 5 knots and spots an island in the house L&#257; Ko&#699;olau. 6 hours later the navigator measures the island in the house Manu Ho&#699;olua.
@@ -939,6 +940,8 @@
           How close did the wa&#699;a get to the island (measure the altitude)?
   </p>
 </introduction>
+<statement>
+<p>
 (SSA) A wa&#699;a is sailing in the direction Hikina (east) at 5 knots and spots an island in the house L&#257; Ko&#699;olau. 6 hours later the navigator measures the island in the house Manu Ho&#699;olua.
           How far is the wa&#699;a from the island at the time of its second measurement?
           How close did the wa&#699;a get to the island (measure the altitude)?
@@ -951,6 +954,7 @@
     </answer>
   </task>
         
+<task>
 <introduction>
   <p>
     Recall the example from <xref ref="Inverse_Trigonometry">Section</xref>
@@ -967,6 +971,8 @@
           as shown below.
   </p>
 </introduction>
+<statement>
+<p>
 Recall the example from <xref ref="Inverse_Trigonometry">Section</xref>
           where Hinemoana is sailing to Rarotonga.
           We calculated that to sail from Aotearoa to Rarotonga,

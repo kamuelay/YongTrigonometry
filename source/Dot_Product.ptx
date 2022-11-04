@@ -222,11 +222,14 @@
     <exercise>
       <statement>
         
+<task>
 <introduction>
   <p>
     first question
   </p>
 </introduction>
+<statement>
+<p>
 first question
       </p>
     </statement>
