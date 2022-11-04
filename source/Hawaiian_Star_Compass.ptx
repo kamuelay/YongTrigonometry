@@ -30,34 +30,35 @@ Hawaii
     <caption>Hawaiian Star Compass</caption>
     <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<-,dashed] (-1.2cm,0cm) -- (-0.97cm,0cm);
-\draw[dashed] (-0.49cm,0cm) -- (0.68cm,0cm);
-\draw[->,dashed] (0.98cm,0cm) -- (1.2cm,0cm);
-\draw[<-,dashed] (0cm,-1.2cm) -- (0cm,-0.98cm);
-\draw[dashed] (0cm,-0.72cm) -- (0cm,0.71cm);
-\draw[->,dashed] (0cm,0.98cm) -- (0cm,1.2cm);
+\begin{tikzpicture}[x=5.3cm,y=5.3cm,cap=round,>=latex]
+\draw[&lt;-,dashed] (-1.2,0) -- (-0.97,0);
+\draw[dashed] (-0.49 ,0 ) -- (0.68 ,0 );
+\draw[->,dashed] (0.98 ,0 ) -- (1.2 ,0 );
+\draw[&lt;-,dashed] (0 ,-1.2 ) -- (0 ,-0.98 );
+\draw[dashed] (0 ,-0.72 ) -- (0 ,0.71 );
+\draw[->,dashed] (0 ,0.98 ) -- (0 ,1.2 );
 \node[right] at (1.2,0) {\Large E};
 \node[above] at (0,1.2) {\Large N};
 \node[left] at (-1.2,0) {\Large W};
 \node[below] at (0,-1.2) {\Large S};
-\draw[thick] (0cm,0cm) circle(1cm);
-\draw[thick] (0cm,0cm) circle(1.1cm);
-\draw[left] (0:0.98cm) node{\large HIKINA};
-\draw[left] (90:0.98cm) node[rotate=90] {\large &#699;&#256;KAU};
-\draw[right] (180:0.98cm) node{\large KOMOHANA};
-\draw[left] (270:0.98cm) node[rotate=-90] {\large HEMA};
-\draw (45:0.5cm) node[rotate=-45] {\huge Ko&#699;olau};
-\draw (135:0.5cm) node[rotate=45] {\huge Ho&#699;olua};
-\draw (225:0.5cm) node[rotate=315] {\huge Kona};
-\draw (-45:0.5cm) node[rotate=45] {\huge Malanai};
+\draw[thick] (0 ,0 ) circle(1 );
+\draw[thick] (0 ,0 ) circle(1.1 );
+\draw[left] (0:0.98 ) node{\large HIKINA};
+\draw[left] (90:0.98 ) node[rotate=90] {\large &#699;&#256;KAU};
+\draw[right] (180:0.98 ) node{\large KOMOHANA};
+\draw[left] (270:0.98 ) node[rotate=-90] {\large HEMA};
+\draw (45:0.5 ) node[rotate=-45] {\huge Ko&#699;olau};
+\draw (135:0.5 ) node[rotate=45] {\huge Ho&#699;olua};
+\draw (225:0.5 ) node[rotate=315] {\huge Kona};
+\draw (-45:0.5 ) node[rotate=45] {\huge Malanai};
 \foreach \x in {5.625,16.875,...,90} {
-\draw[gray] (\x:1.1cm) -- (\x:1cm);
+\draw[gray] (\x:1.1 ) -- (\x:1 );
 }
 \foreach \x in {95.625,106.875,...,270} {
-\draw[gray] (\x:1.1cm) -- (\x:1cm);
+\draw[gray] (\x:1.1 ) -- (\x:1 );
 }
 \foreach \x in {275.625,286.875,...,360} {
-\draw[gray] (\x:1.1cm) -- (\x:1cm);
+\draw[gray] (\x:1.1 ) -- (\x:1 );
 }
 \foreach \x/\xtext in {
 11.25/L&#257;,
@@ -75,7 +76,7 @@ Hawaii
 337.5/&#699;&#256;ina,
 348.75/L&#257;
 }
-\draw[left] (\x:0.98cm) node[rotate=\x] {\xtext};
+\draw[left] (\x:0.98 ) node[rotate=\x] {\xtext};
 \foreach \x/\xtext in {
 11.25/EbN,
 22.5/ENE,
@@ -92,7 +93,7 @@ Hawaii
 337.5/ESE,
 348.75/EbS
 }
-\draw[right] (\x:1.12cm) node[rotate=\x] {\xtext};
+\draw[right] (\x:1.12 ) node[rotate=\x] {\xtext};
 \foreach \x/\xtext in {
 101.25/Haka,
 112.5/N&#257; Leo,
@@ -109,7 +110,7 @@ Hawaii
 247.5/N&#257; Leo,
 258.75/Haka
 }
-\draw[right] (\x:0.98cm) node[rotate=180+\x] {\xtext};
+\draw[right] (\x:0.98 ) node[rotate=180+\x] {\xtext};
 \foreach \x/\xtext in {
 101.25/NbW,
 112.5/NNW,
@@ -126,7 +127,7 @@ Hawaii
 247.5/SSW,
 258.75/SbW
 }
-\draw[left] (\x:1.12cm) node[rotate=180+\x] {\xtext};\end{tikzpicture}]]>
+\draw[left] (\x:1.12 ) node[rotate=180+\x] {\xtext};\end{tikzpicture}
 </latex-image>
     </image>
   </figure>
