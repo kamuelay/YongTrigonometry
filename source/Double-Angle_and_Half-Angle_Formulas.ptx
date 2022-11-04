@@ -4,9 +4,9 @@
     <p>
       In <xref ref="Right_Triangle_Trigonometry">Section</xref>
       we learned about <em>deviation</em>
-      and how to calculate how far a wa`a has traveled off course.
+      and how to calculate how far a wa&#699;a has traveled off course.
       For example,
-      if a wa`a traveled for one day of sailing at 5 knots or 120 nautical miles and was off course by 2 Houses or <m>22.5^{\circ}</m>,
+      if a wa&#699;a traveled for one day of sailing at 5 knots or 120 nautical miles and was off course by 2 Houses or <m>22.5^{\circ}</m>,
       how far have they deviated?
     </p>
     <image>
@@ -56,7 +56,7 @@ node[midway,right,xshift=0.1cm] {\(y\)};
     </p>
     <p>
       \begin{mybox}[Double-Angle Formulas]
-          <idx><h>Double-Angle Formulas</h></idx>
+          <idx><h>double-angle formulas</h></idx>
       <md>
         <mrow>\sin 2\theta \amp =\amp  2\sin \theta \cos \theta</mrow>
       </md>
@@ -177,7 +177,7 @@ node[midway,right,xshift=0.1cm] {\(y\)};
       These formulas come in handy in calculus.
     </p>
     <p>
-      \begin{mybox}[Formulas for Reducing Powers]<idx><h>Reducing Powers Formulas</h></idx>
+      \begin{mybox}[Formulas for Reducing Powers]<idx><h>reducing powers formulas</h></idx>
       <me>
         \sin^2\theta=\frac{1-\cos(2\theta)}{2}
       </me>
@@ -248,7 +248,7 @@ node[midway,right,xshift=0.1cm] {\(y\)};
       <title>Deviation</title>
       <statement>
         <p>
-          We are now ready to revisit the problem posed at the start of this section when we were give that a wa`a traveling 120 NM deviates by
+          We are now ready to revisit the problem posed at the start of this section when we were give that a wa&#699;a traveling 120 NM deviates by
           <m>22.5^{\circ}</m> and we asked to determine the exact value of how far it deviated.
           Houses or <m>22.5^{\circ}</m>,
           how far have they deviated?

@@ -3,15 +3,15 @@
   <introduction>
     <p>
       When Mau Pialug sailed to his home on the Makali`i in 1999,
-      the people of Satawal, Micronesia were impressed with such a large wa`a.
-      As a gift to the man who shared his knowledge of navigation, N\={a} K\={a}lai Wa`a at Kawaihae Harbor built a 56-foot long double-hulled voyaging canoe called the Alingano Maisu.
+      the people of Satawal, Micronesia were impressed with such a large wa&#699;a.
+      As a gift to the man who shared his knowledge of navigation, N&#257; K&#257;lai Wa&#699;a at Kawaihae Harbor built a 56-foot long double-hulled voyaging canoe called the Alingano Maisu.
       In 2007, the Alingano Maisu,
-      accompanied by the H&#333;k&#363;le`a, embarked on her maiden voyage to her new home in Satawal so Papa Mau can carry on his legacy of navigation in his home islands.
-      Leaving Hawai`i, H&#333;k&#363;le`a led the way to Johnston Atoll.
+      accompanied by the H&#333;k&#363;le&#699;a, embarked on her maiden voyage to her new home in Satawal so Papa Mau can carry on his legacy of navigation in his home islands.
+      Leaving Hawai`i, H&#333;k&#363;le&#699;a led the way to Johnston Atoll.
       From there, the Alingano Maisu took the lead as they entered Micronesia by first stopping at Majuro, Marshall Islands before continuing on to her new home in Satawal.
       It is known that the island of Majuro is 1,108 nautical miles to the east and 575 nautical miles to the south of Johnston Atoll.
       What house do you need to sail towards and what distance will you need to sail?
-      If the wa`a travels at 5 knots,
+      If the wa&#699;a travels at 5 knots,
       how many days will it take to reach the destination?
       Note that 1 knot = 1 nautical mile/hour.
     </p>
@@ -239,7 +239,7 @@ ylabel=\(y\)]
     <p>
       \begin{mybox}[Inverse Sine] The
       <em>inverse sine function</em>
-          <idx><h>Inverse sine</h></idx>
+          <idx><h>inverse sine</h></idx>
       is symbolized by
       <md>
         <mrow>y=\sin^{-1}x \amp \amp  \mbox{and means}  \amp \amp x=\sin y</mrow>
@@ -248,13 +248,13 @@ ylabel=\(y\)]
     <p>
       The inverse sine function is also called the
       <em>arcsine function</em>,
-          <idx><h>Arcsine function</h></idx>
+          <idx><h>arcsine function</h></idx>
       and is denoted by <m>\arcsin x</m>. \end{mybox}
     </p>
     <p>
       \begin{mybox}[Inverse Cosine] The
       <em>inverse cosine function</em>
-          <idx><h>Inverse cosine</h></idx>
+          <idx><h>inverse cosine</h></idx>
       is symbolized by
       <md>
         <mrow>y=\cos^{-1}x \amp \amp  \mbox{and means}  \amp \amp  x=\cos y</mrow>
@@ -263,13 +263,13 @@ ylabel=\(y\)]
     <p>
       The inverse cosine function is also called the
       <em>arccosine function</em>,
-          <idx><h>Arccosine function</h></idx>
+          <idx><h>arccosine function</h></idx>
       and is denoted by <m>\arccos x</m>. \end{mybox}
     </p>
     <p>
       \begin{mybox}[Inverse Tangent] The
       <em>inverse tangent function</em>
-          <idx><h>Inverse tangent</h></idx>
+          <idx><h>inverse tangent</h></idx>
       is symbolized by
       <md>
         <mrow>y=\tan^{-1}x \amp \amp  \mbox{and means}  \amp \amp  x=\tan y</mrow>
@@ -278,7 +278,7 @@ ylabel=\(y\)]
     <p>
       The inverse tangent function is also called the
       <em>arctangent function</em>,
-          <idx><h>Arctangent function</h></idx>
+          <idx><h>arctangent function</h></idx>
       and is denoted by <m>\arctan x</m>. \end{mybox} \begin{mybox}[Inverse Cosecant, Secant,
       and Cotangent] Inverse cosecant, inverse secant,
       and inverse cotangent functions are not as common as the other trigonometric functions so we will just summarize them and not consider any examples in this book.
@@ -466,7 +466,7 @@ ylabel=\(y\)]
           Next we refer to the Star Compass with angles
           (<xref ref="fig_star-compass-with-angles">Figure</xref>
           on <xref ref="fig_star-compass-with-angles">page</xref>)
-          to conclude we will need to sail towards the House `\=Aina Kona.
+          to conclude we will need to sail towards the House &#699;&#256;ina Kona.
         </p>
         <p>
           To determine the distance, <m>d</m>,
@@ -511,14 +511,14 @@ ylabel=\(y\)]
           <ol>
             <li>
               <p>
-                On the deck of H&#333;k&#363;le`a, a navigator stands at 9 ft above sea level.
+                On the deck of H&#333;k&#363;le&#699;a, a navigator stands at 9 ft above sea level.
                 If she looks out to the sea, how far is she from horizon?
                 Assume the radius of the earth at Rapa Nui is 3,960.449 miles.
               </p>
             </li>
             <li>
               <p>
-                How far is H&#333;k&#363;le`a from Maunga Terevaka when it first becomes visible over the horizon to someone standing 9ft above sea level?
+                How far is H&#333;k&#363;le&#699;a from Maunga Terevaka when it first becomes visible over the horizon to someone standing 9ft above sea level?
               </p>
             </li>
           </ol>
@@ -934,16 +934,16 @@ ylabel=\(y\)]
           Hint: the ratio of your previous answer to the circumference of the Earth is equal to the ratio of the time to the 24 hours in Earth</sq>s rotation. \end{tasks} It turns out you will see the sunrise 8.33 mins before someone at the sea level.
         </p>
         <p>
-          \Question <em>Sunrise on Haleakal\={a}</em>
+          \Question <em>Sunrise on Haleakal&#257;</em>
         </p>
         <p>
-          According to mo`olelo, or legend,
+          According to mo&#699;olelo, or legend,
           the sun traveled very fast across the sky,
           leaving people with days so short there was not enough time to carry on with their daily lives.
           Determined to slow the sun,
-          the demigod Maui climbed to the summit of Haleakal\={a}, which stands at 10,023 feet,
+          the demigod Maui climbed to the summit of Haleakal&#257;, which stands at 10,023 feet,
           to snare the sun.
-          Assume the radius of the earth is at Haleakal\={a} is 3961.527 miles.
+          Assume the radius of the earth is at Haleakal&#257; is 3961.527 miles.
         </p>
         <image>
 <latex-image>
@@ -969,17 +969,11 @@ ylabel=\(y\)]
         </p>
       </statement>
     </exercise>
-    <p>
-      \setboolean{firstanswerofthechapter}{true}
-    </p>
-    <p>
+<p>
       \begin{Answer}[ref={ex-2.4}] \Question dafdf \begin{tasks} \task Answer 1a \task Answer 1b \end{tasks} \Question \begin{tasks} \task Answer 2a \task Answer 2b \end{tasks}
     </p>
     <p>
       \end{Answer}
     </p>
-    <p>
-      \setboolean{firstanswerofthechapter}{false}
-    </p>
-  </subsection>
+</subsection>
 </section>

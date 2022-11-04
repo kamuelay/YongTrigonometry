@@ -11,7 +11,7 @@
   <subsection>
     <title>Sum and Difference Formulas</title>
     <p>
-          <idx><h>Sum and Difference Formulas</h></idx> \begin{mybox}[Sum and Difference Formulas for Cosine]<idx><h>Sum and Difference Formulas</h><h>for Cosine</h></idx>
+          <idx><h>sum and difference formulas</h></idx> \begin{mybox}[Sum and Difference Formulas for Cosine]<idx><h>Sum and Difference Formulas</h><h>for Cosine</h></idx>
       <md>
         <mrow>\cos(\alpha+\beta)\amp =\amp \cos\alpha\cos\beta-\sin\alpha\sin\beta</mrow>
         <mrow>\cos(\alpha-\beta)\amp =\amp \cos\alpha\cos\beta+\sin\alpha\sin\beta</mrow>
@@ -362,7 +362,7 @@
     <title>Cofunction Identities</title>
     <p>
       Another identity for trigonometric functions is the Cofunction Identities \begin{mybox}[Cofunction Identities]
-          <idx><h>Cofunction Identities</h></idx>
+          <idx><h>cofunction identities</h></idx>
       The <em>Cofunction Identities</em> are given below
       <md>
         <mrow>\sin\theta\amp =\cos\left(\frac{\pi}{2}-\theta\right) \amp \cos\theta\amp =\sin\left(\frac{\pi}{2}-\theta\right)</mrow>

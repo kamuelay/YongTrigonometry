@@ -3,12 +3,12 @@
   <introduction>
     <p>
       One method people use to identify their position is by looking at the <em>latitude</em>.
-          <idx><h>Latitude</h></idx>
+          <idx><h>latitude</h></idx>
       These imaginary lines that form circles around the Earth run parallel to the Equator.
       The latitude of a place is defined as the angle between a line drawn from the center of the earth to that point and the equatorial plane.
       For any point in the Northern Hemisphere,
       a navigator can measure their latitude by determining the angle
-      <em>H&#333;k&#363;pa`a</em>
+      <em>H&#333;k&#363;pa&#699;a</em>
       (North Star) makes with the horizon.
     </p>
     <image>
@@ -16,10 +16,10 @@
 <![CDATA[\begin{tikzpicture}\draw (0,0)--(-0.5,0);
 \draw[line width=2pt] (0,0) -- (1.1,0) node[right,xshift=0.1cm] {Horizon};
 \draw[line width=2pt] (0,0) -- (30:1.2);
-\draw[line width=2pt] (0:0.3cm) arc (0:30:0.3cm) node[midway, right,xshift=0.05cm,yshift=0.1cm] {Angle of H\={o}k\={u}pa`a};
+\draw[line width=2pt] (0:0.3cm) arc (0:30:0.3cm) node[midway, right,xshift=0.05cm,yshift=0.1cm] {Angle of H\={o}k\={u}pa&#699;a};
 \node [black,scale=1.5] at (30:1.27017059222) {\(\bigstar\)};
 \node [yellow] at (30:1.27017059222) {\(\bigstar\)};
-\node at (1.4,0.63) {H\={o}k\={u}pa`a};\end{tikzpicture}]]>
+\node at (1.4,0.63) {H\={o}k\={u}pa&#699;a};\end{tikzpicture}]]>
 </latex-image>
     </image>
     <p>
@@ -33,7 +33,7 @@
       <statement>
         <p>
           A <term>ray</term>
-              <idx><h>Ray</h></idx>
+              <idx><h>ray</h></idx>
           is a part of a line that begins at a point <m>O</m> and extends in one direction.
         </p>
         <image>
@@ -50,13 +50,13 @@
         <p>
           If two rays have a common vertex, <m>O</m>,
           they form an <term>angle</term>,
-              <idx><h>Angle</h></idx>
+              <idx><h>angle</h></idx>
           <m>\theta</m>.
           The starting ray of the angle is called the <term>initial side</term>
-              <idx><h>Initial side</h></idx>
+              <idx><h>initial side</h></idx>
           and the second ray is called the
           <term>terminal side</term>.
-              <idx><h>Terminal side</h></idx>
+              <idx><h>terminal side</h></idx>
         </p>
         <image>
 <latex-image>
@@ -81,11 +81,11 @@
     <title>Degree</title>
     <p>
       The <term>measure</term>
-          <idx><h>Measure</h></idx>
+          <idx><h>measure</h></idx>
       of an angle is the amount of rotation from the initial side to the terminal side.
       One unit of measuring angles is the degree.
       One <term>degree</term>
-          <idx><h>Degree</h></idx>
+          <idx><h>degree</h></idx>
       is <m>\frac{1}{360}</m> of a complete revolution,
       so one full revolution is <m>360^{\circ}</m>.
     </p>
@@ -93,14 +93,14 @@
       Today we often use decimals to represent the fractional parts of a degree.
       However, fractional parts of a degree were traditionally represented in minutes and seconds.
       One <term>minute</term>
-          <idx><h>Minute</h></idx>
+          <idx><h>minute</h></idx>
       or <em>arc minute</em>,
-          <idx><h>Arc Minute</h></idx>
+          <idx><h>arc minute</h></idx>
       denoted <m>1'</m>, is defined as
       <m>\frac{1}{60}(1^{\circ})</m> and one <term>second</term>
-          <idx><h>Second</h></idx>
+          <idx><h>second</h></idx>
       or <em>arc second</em>,
-          <idx><h>Arc Second</h></idx>
+          <idx><h>arc second</h></idx>
       denoted <m>1''</m>, is defined as
       <m>\frac{1}{60}(1')</m>. \begin{mybox}[Conversion Between Degree, Minutes,
       and Seconds]
@@ -134,7 +134,7 @@
 \draw[->,dashed] (0cm,0.98cm) -- (0cm,1.2cm);
 \draw[thick] (0cm,0cm) circle(1cm);
 \draw[left] (0:0.98) node{\large HIKINA};
-\draw[left] (90:0.98) node[rotate=90] {\large `\={A}KAU};
+\draw[left] (90:0.98) node[rotate=90] {\large &#699;&#256;KAU};
 \draw[right] (180:0.98cm) node{\large KOMOHANA};
 \draw[left] (270:0.98) node[rotate=-90] {\large HEMA};
 \foreach \x in {5.625,16.875,...,90} {
@@ -153,36 +153,36 @@
 \draw (\x:1.2cm) node[rotate=\x] {\(\x^\circ\)};
 }
 \foreach \x/\xtext in {
-11.25/L\={a},
-22.5/`\={A}ina,
+11.25/L&#257;,
+22.5/&#699;&#256;ina,
 33.75/Noio,
 45/Manu,
-56.25/N\={a}lani,
-67.5/N\={a} Leo,
+56.25/N&#257;lani,
+67.5/N&#257; Leo,
 78.75/Haka,
 281.25/Haka,
-292.5/N\={a} Leo,
-303.75/N\={a}lani,
+292.5/N&#257; Leo,
+303.75/N&#257;lani,
 315/Manu,
 326.25/Noio,
-337.5/`\={A}ina,
-348.75/L\={a}
+337.5/&#699;&#256;ina,
+348.75/L&#257;
 }
 \draw[left] (\x:0.98) node[rotate=\x] {\xtext};
 \foreach \x/\xtext in {
 101.25/Haka,
-112.5/N\={a} Leo,
-123.75/N\={a}lani,
+112.5/N&#257; Leo,
+123.75/N&#257;lani,
 135/Manu,
 146.25/Noio,
-157.5/`\={A}ina,
-168.75/L\={a},
-191.25/L\={a},
-202.5/`\={A}ina,
+157.5/&#699;&#256;ina,
+168.75/L&#257;,
+191.25/L&#257;,
+202.5/&#699;&#256;ina,
 213.75/Noio,
 225/Manu,
-236.25/N\={a}lani,
-247.5/N\={a} Leo,
+236.25/N&#257;lani,
+247.5/N&#257; Leo,
 258.75/Haka
 }
 \draw[right] (\x:0.98) node[rotate=180+\x] {\xtext};\end{tikzpicture}]]>
@@ -272,19 +272,19 @@
           When an angle is in standard position,
           the terminal side will either lie in a quadrant or it will lie on the <m>x</m>-axis or <m>y</m>-axis.
           An angle is called a <term>quadrantal angle</term>
-              <idx><h>Quadrantal Angle</h></idx>
+              <idx><h>quadrantal angle</h></idx>
           if the terminal side lies on <m>x</m>-axis or <m>y</m>-axis.
           The two axes divide the plane into four <term>quadrants</term>.
-              <idx><h>Quadrants</h></idx>
+              <idx><h>quadrants</h></idx>
           In the Cartesian plane,
-          the four quadrants are Quadrant I, II, III, and IV. The corresponding quadrants of Star Compass are Ko`olau (NE), Ho`olua (NW), Kona (SE), and Malanai (SW).
+          the four quadrants are Quadrant I, II, III, and IV. The corresponding quadrants of Star Compass are Ko&#699;olau (NE), Ho&#699;olua (NW), Kona (SE), and Malanai (SW).
         </p>
         <image>
 <latex-image>
 <![CDATA[\begin{tikzpicture}\draw[<->] (-2,0)--(2,0) node[right]{\(x\)};
 \draw[<->] (0,-2)--(0,2) node[above]{\(y\)};
-\node at (1,1) [ align=center] {I \\ Ko`olau};
-\node at (-1,1) [ align=center]{II \\ Ho`olua};
+\node at (1,1) [ align=center] {I \\ Ko&#699;olau};
+\node at (-1,1) [ align=center]{II \\ Ho&#699;olua};
 \node at (-1,-1) [ align=center] {III \\ Kona};
 \node at (1,-1) [ align=center] {IV \\ Malanai};\end{tikzpicture}]]>
 </latex-image>
@@ -295,7 +295,7 @@
       <statement>
         <p>
           <term>Coterminal angles</term>
-              <idx><h>Coterminal Angles</h></idx>
+              <idx><h>coterminal angles</h></idx>
           are angles in standard position that have the same initial side and the same terminal side.
           Any angle has infinitely many coterminal angles because each time we add or subtract <m>360^{\circ}</m> from it,
           the resulting angle has the same terminal side.
@@ -346,7 +346,7 @@
             <li>
               <p>
                 Since <m>90^{\circ}\lt 140^{\circ}\lt 180^{\circ}</m>,
-                <m>140^{\circ}</m> lies in Quadrant II, or Manu Ho`olua.
+                <m>140^{\circ}</m> lies in Quadrant II, or Manu Ho&#699;olua.
               </p>
             </li>
             <li>
@@ -370,7 +370,7 @@
                 </me>
                 So <m>203^{\circ}</m> and <m>923^{\circ }</m> are coterminal.
                 Since <m>180^{\circ}\lt 203^{\circ}\lt 270^{\circ}</m>,
-                <m>923^{\circ}</m> lies in Quadrant III or `\=Aina Kona.
+                <m>923^{\circ}</m> lies in Quadrant III or &#699;&#256;ina Kona.
               </p>
             </li>
           </ol>
@@ -394,7 +394,7 @@
       <statement>
         <p>
           A <term>central angle</term>
-              <idx><h>Central Angle</h></idx>
+              <idx><h>central angle</h></idx>
           is a positive angle formed at the center of a circle by two radii.
         </p>
       </statement>
@@ -410,7 +410,7 @@
       <title>Definition of a Radian</title>
       <statement>
         <p>
-          The <term>radian measure</term><idx><h>Radian Measure,
+          The <term>radian measure</term><idx><h>radian measure,
           of angles</h></idx> of a central angle in a circle is the ratio of the length of the arc on a circle subtended by the angle to the radius.
           If <m>r</m> is the radius of the circle,
           <m>\theta</m> is the angle,
@@ -731,7 +731,7 @@
     <theorem xml:id="thm_arc-length">
       <statement>
         <p>
-              <idx><h>Arc Length</h></idx>
+              <idx><h>arc length</h></idx>
           In a circle of radius <m>r</m>, the <em>arc length</em>, <m>s</m>, subtended by a central angle (in radians), <m>\theta</m>, is
           <me>
             s=r\theta
@@ -765,7 +765,7 @@
           Although Kiritimati and Moloka`i share the same longitude at <m>157^{\circ}12'</m> west
           (meaning Moloka`i is directly north of Kiritimati),
           both islands are 24 hours apart.
-          For example, if the time on O`ahu is 3:00 pm on Thursday,
+          For example, if the time on O&#699;ahu is 3:00 pm on Thursday,
           then at that same moment it is 3:00 pm on Friday in Kiritimati.
           Find the distance between Kiritimati (<m>1^{\circ}45'</m> north latitude) and Moloka`i
           (<m>21^{\circ}08'</m> north latitude).
@@ -875,10 +875,10 @@
       <statement>
         <p>
           When sailing,
-          a wa`a (canoe) cannot make headway by sailing directly into the wind.
+          a wa&#699;a (canoe) cannot make headway by sailing directly into the wind.
           It can only sail beyond <m>67^{\circ}</m> in either direction from the wind
           (<xref ref="fig_Sailing-upwind">Figure</xref>).
-          If H&#333;k&#363;le`a sails for 50 miles,
+          If H&#333;k&#363;le&#699;a sails for 50 miles,
           what is the area of the sector that cannot be sailed?
           Round your answer to the nearest square mile.
         </p>
@@ -968,7 +968,7 @@
       <statement>
         <p>
               <idx><h>Speed</h><h>Linear</h></idx>
-              <idx><h>Linear Speed</h></idx>
+              <idx><h>linear speed</h></idx>
           Suppose an object moves along a circle with radius <m>r</m> and <m>\theta</m> (measured in radians) is the angle transversed in time <m>t</m>.
           Let <m>s</m> be the distance the object traveled in time <m>t</m>.
           Then the <term>linear speed</term>,
@@ -984,7 +984,7 @@
       <statement>
         <p>
               <idx><h>Speed</h><h>Angular</h></idx>
-              <idx><h>Angular Speed</h></idx>
+              <idx><h>angular speed</h></idx>
           Suppose an object moves along a circle.
           Let <m>\theta</m>
           (measured in radians)
@@ -1010,7 +1010,7 @@
       <statement>
         <p>
               <idx><h>Speed</h><h>Linear</h></idx>
-              <idx><h>Linear Speed</h></idx>
+              <idx><h>linear speed</h></idx>
           Suppose an object moves along a circle with radius <m>r</m> and an angular speed <m>\omega</m> (measured in radians per unit time).
           Then the <term>linear speed</term>,
           <m>v</m>, of the object is given by
@@ -1024,7 +1024,7 @@
       <title>Une</title>
       <statement>
         <p>
-          One method a wa`a uses to change direction is with the
+          One method a wa&#699;a uses to change direction is with the
           <em>hoe uli</em>, or the steering paddle.
           When a sharp turn is needed for maneuvers such as tacking,
           the steersperson will turn the handle of the hoe uli in a circular motion,
@@ -1104,8 +1104,8 @@
         </p>
         <p>
           Recall the Star Compass with the boundaries for each House.
-          Write the angles for the boundaries between the following houses in the Ko`olau quadrant in terms of degrees, minutes,
-          and seconds: \begin{tasks} \task Between Hikina and L\={a} (<m>5.625^{\circ}</m>) \task Between L\={a} and `\=Aina (<m>16.875^{\circ}</m>) \task Between `\=Aina and Noio (<m>28.175^{\circ}</m>) \task Between Noio and Manu (<m>39.375^{\circ}</m>) \end{tasks}
+          Write the angles for the boundaries between the following houses in the Ko&#699;olau quadrant in terms of degrees, minutes,
+          and seconds: \begin{tasks} \task Between Hikina and L&#257; (<m>5.625^{\circ}</m>) \task Between L&#257; and &#699;&#256;ina (<m>16.875^{\circ}</m>) \task Between &#699;&#256;ina and Noio (<m>28.175^{\circ}</m>) \task Between Noio and Manu (<m>39.375^{\circ}</m>) \end{tasks}
         </p>
         <image>
 <latex-image>
@@ -1115,7 +1115,7 @@
 \draw[->,dashed] (0cm,0.98cm) -- (0cm,1.1cm);
 \draw[thick] (0:1cm) arc (0:90:1cm);
 \draw[left] (0:0.98) node[rotate=0] {\large HIKINA};
-\draw[left] (90:0.98) node[rotate=90] {\large `\={A}KAU};
+\draw[left] (90:0.98) node[rotate=90] {\large &#699;&#256;KAU};
 \foreach \x in {5.625,16.875,...,90} {
 \draw[gray] (0cm,0cm) -- (\x:1cm);
 }
@@ -1124,12 +1124,12 @@
 \draw (\x:1.2cm) node[rotate=\x] {\(\x^\circ\)};
 }
 \foreach \x/\xtext in {
-11.25/L\={a},
-22.5/`\={A}ina,
+11.25/L&#257;,
+22.5/&#699;&#256;ina,
 33.75/Noio,
 45/Manu,
-56.25/N\={a}lani,
-67.5/N\={a} Leo,
+56.25/N&#257;lani,
+67.5/N&#257; Leo,
 78.75/Haka
 }
 \draw[left] (\x:0.98) node[rotate=\x] {\xtext};\end{tikzpicture}]]>
@@ -1191,7 +1191,7 @@
         </p>
         <p>
           \Question At the start of this section you learned that the <em>latitude</em>
-              <idx><h>Latitude</h></idx>
+              <idx><h>latitude</h></idx>
           of a place is the angle between a line drawn from the center of the earth to that point and the equatorial plane.
           If the radius of the earth is 3,959 miles,
           calculate the arc length, <m>s</m>,
@@ -1201,7 +1201,7 @@
           (in miles, rounded to 2 decimals). \task <m>1''</m> of latitude
           (in feet, rounded to the nearest integer)
           \end{tasks} A <em>nautical mile</em>,
-              <idx><h>Nautical Mile</h></idx>
+              <idx><h>nautical mile</h></idx>
           frequently used in navigation,
           is slightly longer than a mile on land.
           One nautical mile was historically defined to be the arc length corresponding to one minute of latitude.
@@ -1261,7 +1261,7 @@
         <p>
           \Question As the the moon orbits the Earth,
           different parts of its surface become illuminated by the Sun which we call moon phases.
-              <idx><h>Moon Phases</h></idx>
+              <idx><h>moon phases</h></idx>
           The moon completes one rotation about Earth in approximately 27.3 days.
           If we assume its orbit is circular and the moon is 239,000 miles from Earth,
           calculate the linear speed of the moon,
@@ -1285,10 +1285,10 @@
       \begin{Answer}[ref={ex-1.2}]
     </p>
     <p>
-      \Question \begin{tasks} \task `\=Aina Malanai \task N\={a}lani Kona \task Noio Ko`olau \task Manu Kona \task N\={a} Leo Ho`olua \task L\={a} Kona \task Noio Malanai \task `\=Aina Ho`olua \task L\={a} Ho`olua \end{tasks} \Question \begin{tasks}(3) \task <m>20.84^{\circ}</m> \task <m>80.42^{\circ}</m> \task <m>7.38^{\circ}</m> \task <m>330.24^{\circ}</m> \task <m>168.37^{\circ}</m> \task <m>49.45^{\circ}</m> \task <m>327.65^{\circ}</m> \task <m>281.81^{\circ}</m> \task <m>134.90^{\circ}</m> \end{tasks} \Question \begin{tasks}(2) \task <m>5^{\circ}37'30''</m> \task <m>16^{\circ}52'30''</m> \task <m>28^{\circ}7'30''</m> \task <m>39^{\circ}22'30''</m> \end{tasks} \Question \begin{tasks}(2) \task <m>\theta=258^{\circ}23'28''</m> Haka Malanai \task <m>\theta=212^{\circ}25'33''</m> Noio Kona \task <m>\theta=244^{\circ}57'59''</m> N\={a} Leo Kona \task <m>\theta=93^{\circ}57'6''</m> Haka Ho`olua \task <m>\theta=135^{\circ}37'30''</m> Manu Ho`olua \task <m>\theta=132^{\circ}59'56''</m> Manu Ho`olua \task <m>\theta=328^{\circ}12'9''</m> Noio Malanai \task <m>\theta=48^{\circ}7'17''</m> Manu Ko`olau \task <m>\theta=241^{\circ}16'15''</m> N\={a} Lani Kona \end{tasks} \Question \begin{tasks}(2) \task <m>\theta=\frac{17\pi}{30}</m> Haka Ho`olua \task <m>\theta=\frac{8\pi}{15}</m> `\=Akau \task <m>\theta=\frac{19\pi}{18}</m> L\={a} Kona \task <m>\theta=\frac{61\pi}{90}</m> N\={a}lani Ho`olua \item <m>\theta=\frac{8\pi}{45}</m> Noio Ko`olau \task
-      <m>\theta=\frac{59\pi}{45}</m> N\={a}lani Kona \task
-      <m>\theta=\frac{41\pi}{90}</m> Haka Ko`olau \task <m>\theta=\frac{19\pi}{15}</m> Manu Kona \task
-      <m>\theta=\frac{83\pi}{45}</m> `\=Aina Ko`olau \end{tasks} \Question \begin{tasks}(2) \task
+      \Question \begin{tasks} \task &#699;&#256;ina Malanai \task N&#257;lani Kona \task Noio Ko&#699;olau \task Manu Kona \task N&#257; Leo Ho&#699;olua \task L&#257; Kona \task Noio Malanai \task &#699;&#256;ina Ho&#699;olua \task L&#257; Ho&#699;olua \end{tasks} \Question \begin{tasks}(3) \task <m>20.84^{\circ}</m> \task <m>80.42^{\circ}</m> \task <m>7.38^{\circ}</m> \task <m>330.24^{\circ}</m> \task <m>168.37^{\circ}</m> \task <m>49.45^{\circ}</m> \task <m>327.65^{\circ}</m> \task <m>281.81^{\circ}</m> \task <m>134.90^{\circ}</m> \end{tasks} \Question \begin{tasks}(2) \task <m>5^{\circ}37'30''</m> \task <m>16^{\circ}52'30''</m> \task <m>28^{\circ}7'30''</m> \task <m>39^{\circ}22'30''</m> \end{tasks} \Question \begin{tasks}(2) \task <m>\theta=258^{\circ}23'28''</m> Haka Malanai \task <m>\theta=212^{\circ}25'33''</m> Noio Kona \task <m>\theta=244^{\circ}57'59''</m> N&#257; Leo Kona \task <m>\theta=93^{\circ}57'6''</m> Haka Ho&#699;olua \task <m>\theta=135^{\circ}37'30''</m> Manu Ho&#699;olua \task <m>\theta=132^{\circ}59'56''</m> Manu Ho&#699;olua \task <m>\theta=328^{\circ}12'9''</m> Noio Malanai \task <m>\theta=48^{\circ}7'17''</m> Manu Ko&#699;olau \task <m>\theta=241^{\circ}16'15''</m> N&#257; Lani Kona \end{tasks} \Question \begin{tasks}(2) \task <m>\theta=\frac{17\pi}{30}</m> Haka Ho&#699;olua \task <m>\theta=\frac{8\pi}{15}</m> &#699;&#256;kau \task <m>\theta=\frac{19\pi}{18}</m> L&#257; Kona \task <m>\theta=\frac{61\pi}{90}</m> N&#257;lani Ho&#699;olua \item <m>\theta=\frac{8\pi}{45}</m> Noio Ko&#699;olau \task
+      <m>\theta=\frac{59\pi}{45}</m> N&#257;lani Kona \task
+      <m>\theta=\frac{41\pi}{90}</m> Haka Ko&#699;olau \task <m>\theta=\frac{19\pi}{15}</m> Manu Kona \task
+      <m>\theta=\frac{83\pi}{45}</m> &#699;&#256;ina Ko&#699;olau \end{tasks} \Question \begin{tasks}(2) \task
     </p>
     <image>
 <latex-image>

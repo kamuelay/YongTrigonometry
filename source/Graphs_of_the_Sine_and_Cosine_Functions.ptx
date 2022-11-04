@@ -9,7 +9,7 @@
       As the Earth revolves around the sun,
       the North Pole tilts towards the sun and sometimes the South Pole tilts towards the sun,
       this tilting is call <em>axial tilt</em>.
-          <idx><h>Axial Tilt</h></idx>
+          <idx><h>axial tilt</h></idx>
       When the North Pole is closer to the Sun
       (the South Pole is away from the Sun),
       the Northern Hemisphere experiences summer
@@ -27,10 +27,10 @@
       the position the sun rises from will slowly move north,
       until the summer solstice,
       when the sun will rise from the most northern point
-      (<m>23.44^{\circ}</m> or the house `\=Aina Ko`olau).
+      (<m>23.44^{\circ}</m> or the house &#699;&#256;ina Ko&#699;olau).
       After this, the position of the rising sun will move south until the fall equinox where the sun will once again rise from due east or Hikina,
       before continuing its southern movement until the winter solstice when the sun will rise from its southern most position
-      (<m>-23.44^{\circ}</m> or the house `\=Aina Malanai).
+      (<m>-23.44^{\circ}</m> or the house &#699;&#256;ina Malanai).
       As winter turns to spring,
       the sun rise will start to move north until the next spring equinox where the position of the sun rise will once again be due east (Hikina).
       This process takes one year before it repeats itself year after year.
@@ -38,7 +38,7 @@
     </p>
     <p>
       The sun's <em>declination</em>
-          <idx><h>Declination</h></idx>
+          <idx><h>declination</h></idx>
       is the angle between the equator and a line from the center of Earth to the sun.
     </p>
     <p>
@@ -56,7 +56,7 @@
     <definition>
       <statement>
         <p>
-              <idx><h>Period Functions</h></idx>
+              <idx><h>period functions</h></idx>
           A function <m>f</m> is called <term>periodic</term> if there exists a positive number <m>p</m> such that
           <me>
             f(\theta+p)=f(\theta)
@@ -69,7 +69,7 @@
     </definition>
     <p>
       \begin{mybox}[Periodic Properties]
-          <idx><h>Period Functions</h></idx>
+          <idx><h>period functions</h></idx>
       <md>
         <mrow>\sin(\theta+2\pi)\amp =\sin\theta \amp  \cos(\theta+2\pi)\amp =\cos\theta \amp  \tan(\theta+\pi)\amp =\tan\theta</mrow>
         <mrow>\csc(\theta+2\pi)\amp =\csc\theta \amp  \sec(\theta+2\pi)\amp =\sec\theta \amp  \cot(\theta+\pi)\amp =\cot\theta</mrow>

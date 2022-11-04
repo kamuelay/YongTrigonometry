@@ -9,10 +9,10 @@
       Such trees have traditionally been used for canoe building across the Pacific.
       Two trees, each 200 feet high and over 400 years old were located in Shelikof Island in Soda Bay, Prince of Wales Island,
       west of Ketchikan, Alaska.
-      Traditional Hawaiian and Tlingit tree cutting ceremonies were then performed to ask permission to take the trees to build a wa`a.
+      Traditional Hawaiian and Tlingit tree cutting ceremonies were then performed to ask permission to take the trees to build a wa&#699;a.
       The trees were then cut and the logs shipped to Hawai`i.
       The path of these logs from Alaska to Hawai`i is known as a <term>vector</term>,
-          <idx><h>Vectors</h></idx>
+          <idx><h>vectors</h></idx>
       because it has both a length and a direction.
       We represent a vector with an arrow to indicate its <term>direction</term>.
           <idx><h>Vectors</h><h>Direction</h></idx>
@@ -57,7 +57,7 @@
     </notation>
     <p>
       The <em>zero vector</em>,
-          <idx><h>Zero Vector</h></idx>
+          <idx><h>zero vector</h></idx>
       written as <m>\mathbf{0}</m> or <m>{\overrightarrow{\mathbf{0}}}</m>,
       is a vector with zero magnitude,
       meaning it has no displacement and it has no direction.
@@ -79,14 +79,14 @@
     <example>
       <statement>
         <p>
-          The average distanced travled by a wa`a in one day of sailing is 120 nautical miles.
-          If the N\={a}m\={a}hoe departed from Kaua`i, the Hawai`iloa departed from O`ahu,
-          the Mo`okiha departed from Maui,
-          and the Makali`i departed from Hawai`i and all wa`a traveled for three days (<m>120\times3=360</m> miles) in the direction of Manu Ko`olau (NE), the resulting vectors from each wa`a will be equal since they all have the same direction (NE) and the same magnitude (360 miles).
+          The average distanced travled by a wa&#699;a in one day of sailing is 120 nautical miles.
+          If the N&#257;m&#257;hoe departed from Kaua`i, the Hawai`iloa departed from O&#699;ahu,
+          the Mo&#699;okiha departed from Maui,
+          and the Makali`i departed from Hawai`i and all wa&#699;a traveled for three days (<m>120\times3=360</m> miles) in the direction of Manu Ko&#699;olau (NE), the resulting vectors from each wa&#699;a will be equal since they all have the same direction (NE) and the same magnitude (360 miles).
           See <xref ref="fig_equal-vectors">Figure</xref>.
         </p>
         <figure xml:id="fig_equal-vectors">
-          <caption>The vectors created by the paths of each canoe traveling the same distance (240 miles) and in the same direction (Manu Ko`olau, NE) are all equal. (image modified from Google Maps)</caption>
+          <caption>The vectors created by the paths of each canoe traveling the same distance (240 miles) and in the same direction (Manu Ko&#699;olau, NE) are all equal. (image modified from Google Maps)</caption>
           <image width="15%" source="Pictures/equal-vectors.jpeg"/>
         </figure>
       </statement>
@@ -97,14 +97,14 @@
     <example>
       <statement>
         <p>
-          If you stand in Tahiti and face Hawai`i, you would be looking at the Haka Ho`olua house or north by west (NbW).
-          When the H&#333;k&#363;le`a sails from Tahiti to return home to Hawai`i, the navigator does not point H&#333;k&#363;le`a directly to Hawai`i and sail to the Haka Ho`olua house.
-          Instead, H&#333;k&#363;le`a sails north.
-          When the navigator has determined that H&#333;k&#363;le`a has reached the latitude of Hawai`i, about
+          If you stand in Tahiti and face Hawai`i, you would be looking at the Haka Ho&#699;olua house or north by west (NbW).
+          When the H&#333;k&#363;le&#699;a sails from Tahiti to return home to Hawai`i, the navigator does not point H&#333;k&#363;le&#699;a directly to Hawai`i and sail to the Haka Ho&#699;olua house.
+          Instead, H&#333;k&#363;le&#699;a sails north.
+          When the navigator has determined that H&#333;k&#363;le&#699;a has reached the latitude of Hawai`i, about
           <m>20^{\circ}</m> N, the wa<sq>a then turns west to come home.
           This method of navigation is called
           <em>latitude sailing</em>.
-              <idx><h>Latitude Sailing</h></idx>
+              <idx><h>latitude sailing</h></idx>
           For this strategy to work,
           the navigator must know their latitude which can be determined by (1) measuring altitude of Hokupa</sq>a (North Star); (2) measuring the altitude of stars as they cross the meridian;
           or (3) watching for pairs of stars that rise or set together.
@@ -170,12 +170,12 @@
   <subsection>
     <title>Multiplying Vectors by a Scalar</title>
     <p>
-      If a wa`a sails for two days at 5 knots,
+      If a wa&#699;a sails for two days at 5 knots,
       it will have covered 240 miles.
       This distance traveled is known as the magnitude of the vector and it is given as a real number.
       These real numbers are often referred to as <term>scalars</term>.
-          <idx><h>Scalar</h></idx>
-      The magnitude of the vector that represents a wa<sq>a</sq>s path for two days will be twice as big as the magnitude of the vector that represents the path a wa`a sailed for only one day.
+          <idx><h>scalar</h></idx>
+      The magnitude of the vector that represents a wa<sq>a</sq>s path for two days will be twice as big as the magnitude of the vector that represents the path a wa&#699;a sailed for only one day.
       We now can define how we multiply a vector by a scalar.
     </p>
     <definition>
@@ -308,7 +308,7 @@
       <statement>
         <p>
           The <term>zero vector</term>
-              <idx><h>Zero Vector</h></idx>
+              <idx><h>zero vector</h></idx>
           is the vector <m>\mathbf{0}=\langle0,0\rangle</m>
         </p>
       </statement>
@@ -656,7 +656,7 @@
     <p>
       Vectors can be used to represented many physical objects.
       For example,
-      the velocity of a moving wa`a is presented by a vector whose direction is the direction of motion and whose magnitude is the speed of the wa`a.
+      the velocity of a moving wa&#699;a is presented by a vector whose direction is the direction of motion and whose magnitude is the speed of the wa&#699;a.
       This vector is called the <em>velocity vector</em>
           <idx><h>Vectors</h><h>Velocity</h></idx>
       and can also be used to describe other physical objects and phenomena such as wind and currents.
@@ -664,7 +664,7 @@
     <example>
       <statement>
         <p>
-          Wind is blowing from the house N\={a} Leo Ho`olua (N<m>22.5^{\circ}</m>W) at 10 knots.
+          Wind is blowing from the house N&#257; Leo Ho&#699;olua (N<m>22.5^{\circ}</m>W) at 10 knots.
           Write the wind velocity as a vector <m>\mathbf{v}</m>.
         </p>
       </statement>
@@ -711,7 +711,7 @@
         <p>
           An estimate for the speed of Hikianalia is
           <m>\frac{1}{3}</m> the speed of the wind on a beam reach
-          (wind is at a right angle to the wa`a).
+          (wind is at a right angle to the wa&#699;a).
           So if Hikianalia is sailing with winds at 15 knots,
           the speed of the wa<sq>a is <m>\frac{1}{3}\cdot15=5</m> knots.
           However, if Hikianalia is sailing directly into a current of 2 knots, Hikianalia</sq>s actual speed will be slowed down to 3 knots.
@@ -735,19 +735,19 @@
       <statement>
         <p>
           It is very rare that a wa<sq>a sailing on the ocean will be moving in the same direction it</sq>s pointed.
-          One reason for this is that crosswind can push the wa`a off its course.
-          The angle of displacement between the apparent heading of the wa`a and the direction the wa`a is actually traveling through the water is referred to as <em>leeway</em>.
-              <idx><h>Leeway</h></idx>
+          One reason for this is that crosswind can push the wa&#699;a off its course.
+          The angle of displacement between the apparent heading of the wa&#699;a and the direction the wa&#699;a is actually traveling through the water is referred to as <em>leeway</em>.
+              <idx><h>leeway</h></idx>
           Using vector addition,
-          we can determine where the wa`a will actually travel.
-          However, on the wa`a, the navigator can determine the leeway by observing the angle from the wake behind the wa`a and the apparent direction the wa`a is pointed towards.
+          we can determine where the wa&#699;a will actually travel.
+          However, on the wa&#699;a, the navigator can determine the leeway by observing the angle from the wake behind the wa&#699;a and the apparent direction the wa&#699;a is pointed towards.
         </p>
         <image>
 <latex-image>
 <![CDATA[\begin{tikzpicture}\draw[thin,gray!40] (-7,-7) grid (7,7);
-\draw[line width=1pt,-stealth,dashed](-6,5) -- (6,-5) node[black,right,xshift=-30,yshift=50,text width=1.3cm]{ Apparent Heading of Wa`a};
-\draw[line width=1pt,blue,-stealth,decorate,decoration=snake](0,0) -- (-3,6) node[black,right]{ Wake of Wa`a};
-\draw[line width=1pt,blue,dashed,-stealth](0,0) -- (3,-6) node[black,left,xshift=-15,yshift=20,text width=1.3cm]{ Actual Heading of Wa`a};
+\draw[line width=1pt,-stealth,dashed](-6,5) -- (6,-5) node[black,right,xshift=-30,yshift=50,text width=1.3cm]{ Apparent Heading of Wa&#699;a};
+\draw[line width=1pt,blue,-stealth,decorate,decoration=snake](0,0) -- (-3,6) node[black,right]{ Wake of Wa&#699;a};
+\draw[line width=1pt,blue,dashed,-stealth](0,0) -- (3,-6) node[black,left,xshift=-15,yshift=20,text width=1.3cm]{ Actual Heading of Wa&#699;a};
 \draw[-stealth,line width=2pt](3,1) -- (0,0) node[black,sloped,midway,above]{ Wind};
 \draw[-stealth,line width=2pt](6,-5) -- (3,-6) node[black,sloped,midway,above]{ Wind};
 \draw[-stealth,line width=2pt](-3,6) -- (-6,5) node[black,sloped,midway,above]{ Wind};
@@ -757,12 +757,12 @@
         </image>
         <p>
           In order to compensate for the wind,
-          the navigator must steer the wa`a into the wind by the same angle as the leeway angle.
+          the navigator must steer the wa&#699;a into the wind by the same angle as the leeway angle.
           For example,
-          if the wa`a needs to sail in the direction of Manu Malanai (SE) and the wind is pushing the wa`a one house further south,
-          the wa`a will move towards N\={a}lani Malanai (SEbS).
+          if the wa&#699;a needs to sail in the direction of Manu Malanai (SE) and the wind is pushing the wa&#699;a one house further south,
+          the wa&#699;a will move towards N&#257;lani Malanai (SEbS).
           To maintain the course of Manu Malanai,
-          the navigator must then point the wa`a one house north with an apparent heading in the house of Noio Malanai (SEbE) in order for the actual heading to be in the house of Manu Malanai (SE).
+          the navigator must then point the wa&#699;a one house north with an apparent heading in the house of Noio Malanai (SEbE) in order for the actual heading to be in the house of Manu Malanai (SE).
         </p>
       </statement>
     </example>

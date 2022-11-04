@@ -117,7 +117,7 @@
       Add this to the 8.1 sections or as a problem.
     </p>
     <p>
-      Also decompose a vector (wa`a velocity) into the north and south components.
+      Also decompose a vector (wa&#699;a velocity) into the north and south components.
     </p>
     <p>
       Force on the mast and ropes?
@@ -133,7 +133,7 @@
         <p>
           If <m>\mathbf{u}=\langle u_1,u_2\rangle</m> and <m>\mathbf{v}=\langle v_1,v_2\rangle</m> are vectors,
           then their <term>dot product</term>,
-              <idx><h>Dot Product</h></idx>
+              <idx><h>dot product</h></idx>
           written <m>\mathbf{u}\cdot\mathbf{v}</m> is defined as
           <me>
             \mathbf{u}\cdot\mathbf{v}=u_1v_1+u_2v_2
@@ -214,7 +214,7 @@
         <p>
           The vectors <m>\mathbf{u}</m> and
           <m>\mathbf{v}</m> are <term>orthogonal</term>
-              <idx><h>Orthogonal</h></idx>
+              <idx><h>orthogonal</h></idx>
           if and only if <m>\mathbf{u}\cdot\mathbf{v}=0</m>.
         </p>
       </statement>

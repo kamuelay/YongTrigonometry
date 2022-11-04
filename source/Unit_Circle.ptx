@@ -12,7 +12,7 @@
       <statement>
         <p>
           The <term>unit circle</term>
-              <idx><h>Unit Circle</h></idx>
+              <idx><h>unit circle</h></idx>
           is a circle whose radius is 1 and whose center is at the origin of a rectangular plane
           (or <m>xy</m>-plane).
           The equation for the unit circle is
@@ -84,7 +84,7 @@
   <subsection xml:id="core-standards-CCSS_MATH_CONTENT_HSF_TF_A_2">
     <title>Trigonometric Functions</title>
     <p>
-          <idx><h>Trigonometric Functions</h></idx>
+          <idx><h>trigonometric functions</h></idx>
       The <m>x</m>- and <m>y</m>-coordinates for <m>P(x,y)</m> can then be used to define the six trigonometric functions of a real number <m>t</m>.
       <em>sine cosine tangent cosecant secant cotangent</em>
       which are abbreviated as <em>sin</em>,
@@ -663,13 +663,13 @@
       When a star enters the sky in the east,
       the house that arrives in will be the same house it will set in on the west.
       For example,
-      if a star first appears in the house N\={a}lani in the Ko`olau quadrant (northeast),
-      it will arc over the sky and enter the horizon in the Ho`olua quadrant
+      if a star first appears in the house N&#257;lani in the Ko&#699;olau quadrant (northeast),
+      it will arc over the sky and enter the horizon in the Ho&#699;olua quadrant
       (northwest).
       This is similar to the symmetry of <m>P(x,y)</m> and <m>Q(-x,y)</m>.
       Additionally,
-      if an ocean swell or wind comes from the house of N\={a}lani in the Malanai quadrant (southeast),
-      it will leave the wa`a in the opposite direction towards the Ho`olua quadrant
+      if an ocean swell or wind comes from the house of N&#257;lani in the Malanai quadrant (southeast),
+      it will leave the wa&#699;a in the opposite direction towards the Ho&#699;olua quadrant
       (northwest).
       This is similar to the symmetry of <m>S(x,-y)</m> and <m>Q(-x,y)</m>.
     </p>
@@ -700,16 +700,16 @@
 \node[rotate=-90] at (1.35,0) {Hikina};
 \node[rotate=90] at (-1.35,0) {Komohana};
 \node[below] at (0,-1.25) {Hema};
-\draw[<->] (0,-1.25)--(0,1.25) node[above]{`\={A}kau};
+\draw[<->] (0,-1.25)--(0,1.25) node[above]{&#699;&#256;kau};
 \draw (0,0) circle (1cm);
 \filldraw[black] (60:1cm) circle(1pt);
 \filldraw[black] (120:1cm) circle(1pt);
 \filldraw[black] (240:1cm) circle(1pt);
 \filldraw[black] (300:1cm) circle(1pt);
-\draw (60:1.25cm) node {N\={a}lani};
-\draw (120:1.25cm) node {N\={a}lani};
-\draw (240:1.25cm) node {N\={a}lani};
-\draw (300:1.25cm) node {N\={a}lani};
+\draw (60:1.25cm) node {N&#257;lani};
+\draw (120:1.25cm) node {N&#257;lani};
+\draw (240:1.25cm) node {N&#257;lani};
+\draw (300:1.25cm) node {N&#257;lani};
 \draw[gray,dashed] (60:1cm) -- (240:1cm);
 \draw[gray,dashed] (120:1cm) -- (300:1cm);
 \draw[gray,dashed] (60:1cm) -- (120:1cm);
