@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="Dot_Product">
   <title>Dot Product</title>
   <introduction>
@@ -222,11 +223,14 @@
     <exercise>
       <statement>
         
+<task>
 <introduction>
   <p>
     first question
   </p>
 </introduction>
+<statement>
+<p>
 first question
       </p>
     </statement>

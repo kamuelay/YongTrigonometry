@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="Double-Angle_and_Half-Angle_Formulas">
   <title>Double-Angle and Half-Angle Formulas</title>
   <introduction>
@@ -458,6 +459,7 @@ node[midway,right,xshift=0.1cm] {\(y\)};
           \cos2\theta=\cos^2\theta-\sin^2\theta
         </me>
         
+<task>
 <introduction>
   <p>
     Use the Pythagorean identity (<m>\sin^2\theta+\cos^2\theta=1</m>) and the result from <xref ref="x3_3-ex1">Exercise</xref> to prove
@@ -466,6 +468,8 @@ node[midway,right,xshift=0.1cm] {\(y\)};
           </me>
   </p>
 </introduction>
+<statement>
+<p>
 Use the Pythagorean identity (<m>\sin^2\theta+\cos^2\theta=1</m>) and the result from <xref ref="x3_3-ex1">Exercise</xref> to prove
           <me>
             \cos2\theta=1-2\sin^2\theta
@@ -479,6 +483,7 @@ Use the Pythagorean identity (<m>\sin^2\theta+\cos^2\theta=1</m>) and the result
     </answer>
   </task>
         
+<task>
 <introduction>
   <p>
     Use the Pythagorean identify (<m>\sin^2\theta+\cos^2\theta=1</m>) and the result from <xref ref="x3_3-ex1">Exercise</xref> to prove
@@ -487,6 +492,8 @@ Use the Pythagorean identity (<m>\sin^2\theta+\cos^2\theta=1</m>) and the result
           </me>
   </p>
 </introduction>
+<statement>
+<p>
 Use the Pythagorean identify (<m>\sin^2\theta+\cos^2\theta=1</m>) and the result from <xref ref="x3_3-ex1">Exercise</xref> to prove
           <me>
             \cos2\theta=2\cos^2\theta-1
@@ -500,6 +507,7 @@ Use the Pythagorean identify (<m>\sin^2\theta+\cos^2\theta=1</m>) and the result
     </answer>
   </task>
         
+<task>
 <introduction>
   <p>
     Use the sum formula,
@@ -510,6 +518,8 @@ Use the Pythagorean identify (<m>\sin^2\theta+\cos^2\theta=1</m>) and the result
           </me>
   </p>
 </introduction>
+<statement>
+<p>
 Use the sum formula,
           <m>\tan(\alpha+\beta)=\frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}</m>,
           to prove the double angle formula for tangent:

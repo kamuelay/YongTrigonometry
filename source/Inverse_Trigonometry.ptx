@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="Inverse_Trigonometry">
   <title>Inverse Trigonometric Functions</title>
   <introduction>
@@ -934,11 +935,14 @@ ylabel=\(y\)]
           Hint: the ratio of your previous answer to the circumference of the Earth is equal to the ratio of the time to the 24 hours in Earth</sq>s rotation. \end{tasks} It turns out you will see the sunrise 8.33 mins before someone at the sea level.
         </p>
         
+<task>
 <introduction>
   <p>
     <em>Sunrise on Haleakal&#257;</em>
   </p>
 </introduction>
+<statement>
+<p>
 <em>Sunrise on Haleakal&#257;</em>
       </p>
     </statement>
