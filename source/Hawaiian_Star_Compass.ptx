@@ -390,24 +390,262 @@
   </p>
   <exercise xml:id="ex-1_1">
     <statement>
-      <p>
-        \Question The Hawaiian Star Compass was based on the Micronesian Star Compass,
+      
+<introduction>
+  <p>
+    The Hawaiian Star Compass was based on the Micronesian Star Compass,
+        known as the <em>paafu</em>.
+        Who shared the paafu with the Hawaiians?
+  </p>
+</introduction>
+The Hawaiian Star Compass was based on the Micronesian Star Compass,
         known as the <em>paafu</em>.
         Who shared the paafu with the Hawaiians?
       </p>
+    </statement>
+    <answer>
       <p>
-        \Question According to the Hawaiian Star Compass,
-        what is the name for \begin{tasks}(4) \task North \task East \task South \task West \end{tasks}
+        MYANSWER
       </p>
+    </answer>
+  </task>
+      
+<introduction>
+  <p>
+    According to the Hawaiian Star Compass,
+        what is the name for 
+  </p>
+</introduction>
+  <task>
+    <statement>
       <p>
-        \Question What is the Hawaiian name for winds in the \begin{tasks}(2) \task Northeast quadrant \task Southeast quadrant \task Southwest quadrant \task Northwest quadrant \end{tasks}
+         North 
       </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
       <p>
-        \Question For each direction,
-        identify the Hawaiian names of the corresponding house and quadrant in the Hawaiian Star Compass \begin{tasks}(3) \task Northwest by North \task East-northeast \task North-northwest \task Southeast \task South by West \task East by South \task Southwest by West \task Northeast by North \task South-southeast \end{tasks}
+         East 
       </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
       <p>
-        \Question The winter solstice in the southern hemisphere,
+         South 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         West
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+      
+<introduction>
+  <p>
+    What is the Hawaiian name for winds in the 
+  </p>
+</introduction>
+  <task>
+    <statement>
+      <p>
+         Northeast quadrant 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         Southeast quadrant 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         Southwest quadrant 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         Northwest quadrant
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+      
+<introduction>
+  <p>
+    For each direction,
+        identify the Hawaiian names of the corresponding house and quadrant in the Hawaiian Star Compass 
+  </p>
+</introduction>
+  <task>
+    <statement>
+      <p>
+         Northwest by North 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         East-northeast 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         North-northwest 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         Southeast 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         South by West 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         East by South 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         Southwest by West 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         Northeast by North 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         South-southeast
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+      
+<introduction>
+  <p>
+    The winter solstice in the southern hemisphere,
+        which occurs on June 22,
+        is when the sun is at its lowest elevation in the sky,
+        resulting in the shortest daylight of the year.
+        During the winter solstice,
+        the sun rises from its northernmost position &#699;&#256;ina Ko&#699;olau.
+        What house does the sun set in the winter solstice in the southern hemisphere?
+  </p>
+</introduction>
+The winter solstice in the southern hemisphere,
         which occurs on June 22,
         is when the sun is at its lowest elevation in the sky,
         resulting in the shortest daylight of the year.
@@ -415,18 +653,64 @@
         the sun rises from its northernmost position &#699;&#256;ina Ko&#699;olau.
         What house does the sun set in the winter solstice in the southern hemisphere?
       </p>
+    </statement>
+    <answer>
       <p>
-        \Question The winter solstice in the northern hemisphere occurs on December 22 when the sun rises from its southernmost position &#699;&#256;ina Malanai.
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+      
+<introduction>
+  <p>
+    The winter solstice in the northern hemisphere occurs on December 22 when the sun rises from its southernmost position &#699;&#256;ina Malanai.
+        What house does the sun set in the winter solstice in the northern hemisphere?
+  </p>
+</introduction>
+The winter solstice in the northern hemisphere occurs on December 22 when the sun rises from its southernmost position &#699;&#256;ina Malanai.
         What house does the sun set in the winter solstice in the northern hemisphere?
       </p>
+    </statement>
+    <answer>
       <p>
-        \Question Wind is coming from N&#257; Leo Kona.
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+      
+<introduction>
+  <p>
+    Wind is coming from N&#257; Leo Kona.
+        In what direction is the wind blowing towards?
+  </p>
+</introduction>
+Wind is coming from N&#257; Leo Kona.
         In what direction is the wind blowing towards?
       </p>
+    </statement>
+    <answer>
       <p>
-        \Question Current is coming from Noio Ho&#699;olua.
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+      
+<introduction>
+  <p>
+    Current is coming from Noio Ho&#699;olua.
+        In what direction is the current heading towards?
+  </p>
+</introduction>
+Current is coming from Noio Ho&#699;olua.
         In what direction is the current heading towards?
       </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
     </statement>
   </exercise>
 <p>

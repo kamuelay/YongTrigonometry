@@ -394,13 +394,29 @@
     </example>
     <exercise>
       <statement>
-        <p>
-          \Question Find the equation for the time that Makalii (Pleiades) emerges over the horizon over time throughout the year.
+        
+<introduction>
+  <p>
+    Find the equation for the time that Makalii (Pleiades) emerges over the horizon over time throughout the year.
           Talk about the importance of this and how when it rises at sunset,
           it coincides with the start of Makahiki season.
           Then using an example that we already worked with the sun and the time the sun sets over the year,
           find the intersection of these two equations to determine when Makahiki season will begin.
-        </p>
+  </p>
+</introduction>
+Find the equation for the time that Makalii (Pleiades) emerges over the horizon over time throughout the year.
+          Talk about the importance of this and how when it rises at sunset,
+          it coincides with the start of Makahiki season.
+          Then using an example that we already worked with the sun and the time the sun sets over the year,
+          find the intersection of these two equations to determine when Makahiki season will begin.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
         <p>
           ``The rising of Makali`i
           (the constellation Pleiades)
@@ -411,8 +427,10 @@
           It is a time set aside for tribute, harvest, sport,
           and play. " "<url href="\1"/>
         </p>
-        <p>
-          \Question Problem 55, p540 in Abramson's book: Standing on the shore of a lake,
+        
+<introduction>
+  <p>
+    Problem 55, p540 in Abramson's book: Standing on the shore of a lake,
           a fisherman sights a boat far in the distance to his left.
           Let x, measured in radians,
           be the angle formed by the line of sight to the ship and a line due north from his position.
@@ -422,7 +440,26 @@
           ignoring the curvature of the Earth,
           the distance d(x), in kilometers,
           from the fisherman to the boat is given by the function d(x) = 1.5sec(x).
-        </p>
+  </p>
+</introduction>
+Problem 55, p540 in Abramson's book: Standing on the shore of a lake,
+          a fisherman sights a boat far in the distance to his left.
+          Let x, measured in radians,
+          be the angle formed by the line of sight to the ship and a line due north from his position.
+          Assume due north is 0 and x is measured negative to the left and positive to the right.
+          (See Figure 19.)
+          The boat travels from due west to due east and,
+          ignoring the curvature of the Earth,
+          the distance d(x), in kilometers,
+          from the fisherman to the boat is given by the function d(x) = 1.5sec(x).
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
         <p>
           a. What is a reasonable domain for d(x)? b.
           Graph d(x) on this domain. c.
@@ -433,9 +470,15 @@
           What is the minimum distance between the fisherman and the boat?
           When does this occur?
         </p>
-        <p>
-          \Question
-        </p>
+        
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
       </statement>
     </exercise>
   </subsection>

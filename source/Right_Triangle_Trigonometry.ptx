@@ -936,12 +936,27 @@ node[midway,right,xshift=0.1cm] {\(y\)};
         <p>
           \end{tasks}
         </p>
-        <p>
-          \Question Calculate i) <m>\cos\alpha</m> and <m>\sin\beta</m>;
+        
+<introduction>
+  <p>
+    Calculate i) <m>\cos\alpha</m> and <m>\sin\beta</m>;
           ii) <m>\tan\alpha</m> and <m>\cot\beta</m>;
           iii) <m>\csc\alpha</m> and
-          <m>\sec\beta</m> \begin{tasks}(2) \task
-        </p>
+          <m>\sec\beta</m> 
+  </p>
+</introduction>
+  <task>
+    <statement>
+      <p>
+        
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
         <image>
 <latex-image>
 <![CDATA[\begin{tikzpicture}\draw (0,0) -- (5,0) node[midway,below]{5};
@@ -968,21 +983,114 @@ node[midway,right,xshift=0.1cm] {\(y\)};
         <p>
           \end{tasks}
         </p>
-        <p>
-          \Question Use the Cofunction Identities to determine the value of <m>\theta</m> \begin{tasks}(3) \task
-          <m>\sin28^{\circ}=\cos\theta</m> \task <m>\cos74^{\circ}=\sin\theta</m> \task
-          <m>\tan52^{\circ}=\cot\theta</m> \task <m>\sec87^{\circ}=\csc\theta</m> \task
-          <m>\sin\frac{3\pi}{8}=\cos\theta</m> \task <m>\cot\frac{2\pi}{5}=\tan\theta</m> \end{tasks}
-        </p>
-        <p>
-          \Question In <xref ref="ex-deviation">Example</xref>
+        
+<introduction>
+  <p>
+    Use the Cofunction Identities to determine the value of <m>\theta</m> 
+  </p>
+</introduction>
+  <task>
+    <statement>
+      <p>
+        
+          <m>\sin28^{\circ}=\cos\theta</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>\cos74^{\circ}=\sin\theta</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        
+          <m>\tan52^{\circ}=\cot\theta</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>\sec87^{\circ}=\csc\theta</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        
+          <m>\sin\frac{3\pi}{8}=\cos\theta</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>\cot\frac{2\pi}{5}=\tan\theta</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+        
+<introduction>
+  <p>
+    In <xref ref="ex-deviation">Example</xref>
           we calculated when a wa&#699;a sails for one day (120 nautical miles) and deviates from its course by 1 House,
           the wa&#699;a is <m>23.4</m> NM from its reference course.
           Calculate the deviation, <m>x</m>,
           for the remaining 7 angles.
           Round your answer to the nearest tenth of a nautical mile.
           Note that one house is <m>11.25^{\circ}</m>
-        </p>
+  </p>
+</introduction>
+In <xref ref="ex-deviation">Example</xref>
+          we calculated when a wa&#699;a sails for one day (120 nautical miles) and deviates from its course by 1 House,
+          the wa&#699;a is <m>23.4</m> NM from its reference course.
+          Calculate the deviation, <m>x</m>,
+          for the remaining 7 angles.
+          Round your answer to the nearest tenth of a nautical mile.
+          Note that one house is <m>11.25^{\circ}</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
         <image>
 <latex-image>
 <![CDATA[\begin{tikzpicture}\draw[line width=1pt,-stealth] (0,0) -- (0:1.2cm) node[pos=0.8,sloped,below] {\(x_8\)};
@@ -1022,14 +1130,31 @@ node[pos=0.5,above] {\(x_1\)};
           <m>x_7</m> \task 8 Houses (<m>11.25^{\circ}\times8=90^{\circ}</m>);
           <m>x_8</m> \end{tasks}
         </p>
-        <p>
-          \Question In <xref ref="ques-deviation">Question</xref>
+        
+<introduction>
+  <p>
+    In <xref ref="ques-deviation">Question</xref>
           we calculated the deviation of wa&#699;a after sailing for one day (120 nautical miles).
           Calculate how far along the reference course (north) the wa&#699;a has traveled for each deviation,
           <m>y</m>.
           Round your answer to the nearest tenth of a nautical mile.
           Note that one house is <m>11.25^{\circ}</m>
-        </p>
+  </p>
+</introduction>
+In <xref ref="ques-deviation">Question</xref>
+          we calculated the deviation of wa&#699;a after sailing for one day (120 nautical miles).
+          Calculate how far along the reference course (north) the wa&#699;a has traveled for each deviation,
+          <m>y</m>.
+          Round your answer to the nearest tenth of a nautical mile.
+          Note that one house is <m>11.25^{\circ}</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
         <image>
 <latex-image>
 <![CDATA[\begin{tikzpicture}\draw[line width=1pt,-stealth] (0,0) -- (0:1.2cm) node[midway,sloped,below] {120 NM};
@@ -1068,13 +1193,29 @@ node[pos=0.8,right] {\(y_1\)};
           <m>y_6</m> \task 7 Houses (<m>11.25^{\circ}\times7=78.75^{\circ}</m>);
           <m>y_7</m> \end{tasks}
         </p>
-        <p>
-          \Question Using the right triangle
+        
+<introduction>
+  <p>
+    Using the right triangle
           (not drawn to scale)
           shown below.
           Solve the right triangle with the given information.
           Round your answers to two decimal places.
-        </p>
+  </p>
+</introduction>
+Using the right triangle
+          (not drawn to scale)
+          shown below.
+          Solve the right triangle with the given information.
+          Round your answers to two decimal places.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
         <image>
 <latex-image>
 <![CDATA[\begin{tikzpicture}\draw (0,0) -- (4,0) node[midway,below]{\(b\)};
@@ -1099,15 +1240,33 @@ node[pos=0.8,right] {\(y_1\)};
           and <m>\beta</m> \task <m>a=6</m>, <m>\alpha=38^{\circ}</m>.
           Find <m>b</m>, <m>c</m>, and <m>\beta</m> \end{tasks}
         </p>
-        <p>
-          \Question A wa&#699;a sails in the direction of the house N&#257;lani Ho&#699;olua for one day (120 nautical miles).
+        
+<introduction>
+  <p>
+    A wa&#699;a sails in the direction of the house N&#257;lani Ho&#699;olua for one day (120 nautical miles).
           How many nautical miles has the wa&#699;a traveled north?
           How many miles has the wa&#699;a traveled west?
           To calculate the angle <m>\theta</m>,
           refer to the Star Compass on <xref ref="fig_star-compass">Figure</xref>
           on <xref ref="fig_star-compass">page</xref>
           for help determining the number of houses and use the fact that one house is <m>11.25^{\circ}</m>.
-        </p>
+  </p>
+</introduction>
+A wa&#699;a sails in the direction of the house N&#257;lani Ho&#699;olua for one day (120 nautical miles).
+          How many nautical miles has the wa&#699;a traveled north?
+          How many miles has the wa&#699;a traveled west?
+          To calculate the angle <m>\theta</m>,
+          refer to the Star Compass on <xref ref="fig_star-compass">Figure</xref>
+          on <xref ref="fig_star-compass">page</xref>
+          for help determining the number of houses and use the fact that one house is <m>11.25^{\circ}</m>.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
         <image>
 <latex-image>
 <![CDATA[\begin{tikzpicture}\draw[line width=2pt,-stealth] (0,0) -- (123.75:1.2cm) node[midway,left,xshift=-0.2cm] {120 mi};
@@ -1118,8 +1277,10 @@ node[pos=0.8,right] {\(y_1\)};
 \draw (-0.1,0.997763534763) -- (-0.1,0.897763534763) -- (0,0.897763534763);\end{tikzpicture}]]>
 </latex-image>
         </image>
-        <p>
-          \Question <em>Movement of Sand</em>
+        
+<introduction>
+  <p>
+    <em>Movement of Sand</em>
           The position of sand on a beach is constantly changing.
           One of the ways sand moves is through waves.
           In general, waves aren't perpendicular to the shore,
@@ -1135,7 +1296,32 @@ node[pos=0.8,right] {\(y_1\)};
           <em>longshore drift</em>.
               <idx><h>longshore drift</h></idx>
           Some beaches experience seasonal changes were waves come from a single direction in one season but come from the other direction in the next season while other beaches where waves predominantly come from a single direction will have other sand pile up at one.
-        </p>
+  </p>
+</introduction>
+<em>Movement of Sand</em>
+          The position of sand on a beach is constantly changing.
+          One of the ways sand moves is through waves.
+          In general, waves aren't perpendicular to the shore,
+          instead they come at an angle.
+          When the wave crashes on the shore in a process known as <em>swash</em>,
+              <idx><h>swash</h></idx>
+          water as well as sediment move onto the beach as the same angle of the wave.
+          Gravity takes over and the water and sediment run straight into the ocean
+          (perpendicular to the shoreline),
+          a process known as <em>backwash</em>.
+              <idx><h>backwash</h></idx>
+          This zig-zag motion of sand via the swash/backwash is called
+          <em>longshore drift</em>.
+              <idx><h>longshore drift</h></idx>
+          Some beaches experience seasonal changes were waves come from a single direction in one season but come from the other direction in the next season while other beaches where waves predominantly come from a single direction will have other sand pile up at one.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
         <p>
           Calculate how far along the shore one grain of sand moves after a wave breaks on the shore at an angle of
           <m>60^{\circ}</m> and washes on shore for 10 ft before falling back to the ocean?
@@ -1174,8 +1360,10 @@ node[pos=0.8,right] {\(y_1\)};
 \draw[line width=2pt,blue,-stealth,shorten >=3] (30:0.866025403784) -- ([shift=(30:0.866025403784)]-60:0.25);\end{tikzpicture}]]>
 </latex-image>
         </image>
-        <p>
-          \Question In 2013–2017, H&#333;k&#363;le&#699;a circumnavigated the globe with a voyage mission to
+        
+<introduction>
+  <p>
+    In 2013–2017, H&#333;k&#363;le&#699;a circumnavigated the globe with a voyage mission to
           <em>m&#257;lama honua</em> -
           <q>care for Island Earth</q>
           and all people and places as <em>`ohana</em> (
@@ -1192,7 +1380,33 @@ node[pos=0.8,right] {\(y_1\)};
               <p>
                 <m>r</m>, the distance from the port to the Earth's Axis of Rotation (in miles,
                 rounded to 1 decimal);
-              </p>
+  </p>
+</introduction>
+In 2013–2017, H&#333;k&#363;le&#699;a circumnavigated the globe with a voyage mission to
+          <em>m&#257;lama honua</em> -
+          <q>care for Island Earth</q>
+          and all people and places as <em>`ohana</em> (
+          <q>family</q>).
+          The 40,000 nautical mile voyage stopped at more than 150 ports in 18 nations.
+          Throughout this voyage, Earth rotates on an axis that runs between the North Pole and the South Pole.
+          Every point on the Earth experiences this rotation through an angular speed and linear velocity (See <xref ref="sec_angular_velocity_and_linear_speed">Section</xref>).
+          If we assume the Earth completes one rotation in 24 hours and that the Earth is a perfect sphere,
+          with a radius of <m>R=4,000</m> miles,
+          then for each of the following ports of the M&#257;lama Honua voyage and it's given latitude,
+          <m>\phi</m>, calculate the following
+          <ol label="labelroman">
+            <li>
+              <p>
+                <m>r</m>, the distance from the port to the Earth's Axis of Rotation (in miles,
+                rounded to 1 decimal);
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
             </li>
             <li>
               <p>
@@ -1262,72 +1476,585 @@ node[pos=0.8,right] {\(y_1\)};
       <m>\sec\theta=\frac{\sqrt{13}}{3}</m>,
       <m>\cot\theta=\frac{3}{2}</m> \end{tasks}
     </p>
-    <p>
-      \Question \begin{tasks} \task i) <m>\cos\alpha=\sin\beta=\frac{5\sqrt{34}}{34}</m>;
+      <task>
+    <statement>
+      <p>
+         i) <m>\cos\alpha=\sin\beta=\frac{5\sqrt{34}}{34}</m>;
       ii) <m>\tan\alpha=\cot\beta=\frac{3}{5}</m>;
-      iii) <m>\csc\alpha=\sec\beta=\frac{\sqrt{34}}{3}</m> \task i) <m>\cos\alpha=\sin\beta=\frac{7}{8}</m>;
+      iii) <m>\csc\alpha=\sec\beta=\frac{\sqrt{34}}{3}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         i) <m>\cos\alpha=\sin\beta=\frac{7}{8}</m>;
       ii) <m>\tan\alpha=\cot\beta=\frac{\sqrt{15}}{7}</m>;
-      iii) <m>\csc\alpha=\sec\beta=\frac{8\sqrt{15}}{15}</m> \end{tasks}
-    </p>
+      iii) <m>\csc\alpha=\sec\beta=\frac{8\sqrt{15}}{15}</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+      <task>
+    <statement>
+      <p>
+        
+      <m>\theta=62^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
     <p>
-      \Question \begin{tasks} \task
-      <m>\theta=62^{\circ}</m> \task <m>\theta=16^{\circ}</m> \task
-      <m>\theta=38^{\circ}</m> \task <m>\theta=3^{\circ}</m> \task
-      <m>\theta=\frac{\pi}{8}</m> \task<m>\theta=\frac{\pi}{10}</m> \end{tasks}
+      MYANSWER
     </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>\theta=16^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
     <p>
-      \Question \begin{tasks} \task <m>x_2=45.9</m> NM \task <m>x_3=66.7</m> NM \task <m>x_4=84.5</m> NM \task <m>x_5=99.8</m> NM \task <m>x_6=110.9</m> NM \task <m>x_7=117.7</m> NM \task <m>x_8=120</m> NM \end{tasks} \Question \begin{tasks} \task <m>y_1=117.7</m> NM \task
-      <m>y_2=110.9</m> NM \task <m>y_3=99.8</m> NM \task
-      <m>y_4=84.5</m> NM \task <m>y_5=66.7</m> NM \task
-      <m>y_6=45.9</m> NM \task <m>y_7=23.4</m> NM \end{tasks}
+      MYANSWER
     </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        
+      <m>\theta=38^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
     <p>
-      \Question \begin{tasks} \task <m>b=3.50</m>,
-      <m>c=6.10</m>, <m>\alpha=55^{\circ}</m> \task <m>a=28.27</m>,
-      <m>c=30.71</m>, <m>\alpha=67^{\circ}</m> \task <m>a=26.12</m>,
-      <m>c=27.05</m>, <m>\beta=15^{\circ}</m> \task <m>a=2.57</m>,
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>\theta=3^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        
+      <m>\theta=\frac{\pi}{8}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        <m>\theta=\frac{\pi}{10}</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+      <task>
+    <statement>
+      <p>
+         <m>x_2=45.9</m> NM 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>x_3=66.7</m> NM 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>x_4=84.5</m> NM 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>x_5=99.8</m> NM 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>x_6=110.9</m> NM 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>x_7=117.7</m> NM 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>x_8=120</m> NM  \Question  
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>y_1=117.7</m> NM 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        
+      <m>y_2=110.9</m> NM 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>y_3=99.8</m> NM 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        
+      <m>y_4=84.5</m> NM 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>y_5=66.7</m> NM 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        
+      <m>y_6=45.9</m> NM 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>y_7=23.4</m> NM
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+      <task>
+    <statement>
+      <p>
+         <m>b=3.50</m>,
+      <m>c=6.10</m>, <m>\alpha=55^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>a=28.27</m>,
+      <m>c=30.71</m>, <m>\alpha=67^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>a=26.12</m>,
+      <m>c=27.05</m>, <m>\beta=15^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>a=2.57</m>,
       <m>b=3.06</m>,
-      <m>\alpha=40^{\circ}</m> \task <m>a=9.51</m>, <m>b=3.09</m>,
-      <m>\beta=72^{\circ}</m> \task <m>b=7.68</m>, <m>c=9.75</m>,
-      <m>\beta=52^{\circ}</m> \end{tasks}
-    </p>
+      <m>\alpha=40^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
     <p>
-      \Question 66.7 NM west; 99.8 NM north
+      MYANSWER
     </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>a=9.51</m>, <m>b=3.09</m>,
+      <m>\beta=72^{\circ}</m> 
+      </p>
+    </statement>
+    <answer>
     <p>
-      \Question 5ft
+      MYANSWER
     </p>
-    <p>
-      \Question \begin{tasks} \task
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>b=7.68</m>, <m>c=9.75</m>,
+      <m>\beta=52^{\circ}</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+    
+<introduction>
+  <p>
+    66.7 NM west; 99.8 NM north
+  </p>
+</introduction>
+66.7 NM west; 99.8 NM north
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+    
+<introduction>
+  <p>
+    5ft
+  </p>
+</introduction>
+5ft
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+      <task>
+    <statement>
+      <p>
+        
       <m>r=3,765.4</m> miles; <m>\omega=0.2618</m> rad/hr;
-      <m>v=986</m> mi/hr \task <m>r=3,814.2</m> miles;
-      <m>\omega=0.2618</m> rad/hr;
-      <m>v=999</m> mi/hr \task <m>r=3,883.7</m> miles;
-      <m>\omega=0.2618</m> rad/hr;
-      <m>v=1,017</m> mi/hr \task <m>r32,65.8</m> miles;
-      <m>\omega=0.2618</m> rad/hr;
-      <m>v=855</m> mi/hr \task <m>r=3,321.3</m> miles;
-      <m>\omega=0.2618</m> rad/hr;
-      <m>v=870</m> mi/hr \task <m>r=3,957.0</m> miles;
-      <m>\omega=0.2618</m> rad/hr;
-      <m>v=1,036</m> mi/hr \task <m>r=3,754.9</m> miles;
-      <m>\omega=0.2618</m> rad/hr;
-      <m>v=983</m> mi/hr \task <m>r=3,319.1</m> miles;
-      <m>\omega=0.2618</m> rad/hr;
-      <m>v=869</m> mi/hr \task <m>r=3,979.6</m> miles;
-      <m>\omega=0.2618</m> rad/hr;
-      <m>v=1,042</m> mi/hr \task <m>r=3,792.7</m> miles;
-      <m>\omega=0.2618</m> rad/hr;
-      <m>v=993</m> mi/hr \task <m>r=3,792.7</m> miles;
-      <m>\omega=0.2618</m> rad/hr;
-      <m>v=755</m> mi/hr \task <m>r=3,951.2</m> miles;
-      <m>\omega=0.2618</m> rad/hr;
-      <m>v=1,034</m> mi/hr \task <m>r=3,999.5</m> miles;
-      <m>\omega=0.2618</m> rad/hr;
-      <m>v=1,047</m> mi/hr \task <m>r=3,560.5</m> miles;
-      <m>\omega=0.2618</m> rad/hr;
-      <m>v=932</m> mi/hr \end{tasks}
+      <m>v=986</m> mi/hr 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
     </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>r=3,814.2</m> miles;
+      <m>\omega=0.2618</m> rad/hr;
+      <m>v=999</m> mi/hr 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>r=3,883.7</m> miles;
+      <m>\omega=0.2618</m> rad/hr;
+      <m>v=1,017</m> mi/hr 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>r32,65.8</m> miles;
+      <m>\omega=0.2618</m> rad/hr;
+      <m>v=855</m> mi/hr 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>r=3,321.3</m> miles;
+      <m>\omega=0.2618</m> rad/hr;
+      <m>v=870</m> mi/hr 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>r=3,957.0</m> miles;
+      <m>\omega=0.2618</m> rad/hr;
+      <m>v=1,036</m> mi/hr 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>r=3,754.9</m> miles;
+      <m>\omega=0.2618</m> rad/hr;
+      <m>v=983</m> mi/hr 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>r=3,319.1</m> miles;
+      <m>\omega=0.2618</m> rad/hr;
+      <m>v=869</m> mi/hr 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>r=3,979.6</m> miles;
+      <m>\omega=0.2618</m> rad/hr;
+      <m>v=1,042</m> mi/hr 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>r=3,792.7</m> miles;
+      <m>\omega=0.2618</m> rad/hr;
+      <m>v=993</m> mi/hr 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>r=3,792.7</m> miles;
+      <m>\omega=0.2618</m> rad/hr;
+      <m>v=755</m> mi/hr 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>r=3,951.2</m> miles;
+      <m>\omega=0.2618</m> rad/hr;
+      <m>v=1,034</m> mi/hr 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>r=3,999.5</m> miles;
+      <m>\omega=0.2618</m> rad/hr;
+      <m>v=1,047</m> mi/hr 
+      </p>
+    </statement>
+    <answer>
+    <p>
+      MYANSWER
+    </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+         <m>r=3,560.5</m> miles;
+      <m>\omega=0.2618</m> rad/hr;
+      <m>v=932</m> mi/hr
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
     <p>
       \end{Answer}
     </p>

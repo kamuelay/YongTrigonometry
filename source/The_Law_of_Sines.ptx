@@ -931,13 +931,29 @@
     </example>
     <exercise>
       <statement>
-        <p>
-          \Question (SSA) A wa&#699;a is sailing in the direction Hikina (east) at 5 knots and spots an island in the house L&#257; Ko&#699;olau. 6 hours later the navigator measures the island in the house Manu Ho&#699;olua.
+        
+<introduction>
+  <p>
+    (SSA) A wa&#699;a is sailing in the direction Hikina (east) at 5 knots and spots an island in the house L&#257; Ko&#699;olau. 6 hours later the navigator measures the island in the house Manu Ho&#699;olua.
           How far is the wa&#699;a from the island at the time of its second measurement?
           How close did the wa&#699;a get to the island (measure the altitude)?
-        </p>
-        <p>
-          \Question Recall the example from <xref ref="Inverse_Trigonometry">Section</xref>
+  </p>
+</introduction>
+(SSA) A wa&#699;a is sailing in the direction Hikina (east) at 5 knots and spots an island in the house L&#257; Ko&#699;olau. 6 hours later the navigator measures the island in the house Manu Ho&#699;olua.
+          How far is the wa&#699;a from the island at the time of its second measurement?
+          How close did the wa&#699;a get to the island (measure the altitude)?
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
+        
+<introduction>
+  <p>
+    Recall the example from <xref ref="Inverse_Trigonometry">Section</xref>
           where Hinemoana is sailing to Rarotonga.
           We calculated that to sail from Aotearoa to Rarotonga,
           you would need to sail towards the house Manu Ko&#699;olau
@@ -949,7 +965,28 @@
           To ensure we arrive at Rarotonga,
           our apparent heading will need to be a point to the west of our destination,
           as shown below.
-        </p>
+  </p>
+</introduction>
+Recall the example from <xref ref="Inverse_Trigonometry">Section</xref>
+          where Hinemoana is sailing to Rarotonga.
+          We calculated that to sail from Aotearoa to Rarotonga,
+          you would need to sail towards the house Manu Ko&#699;olau
+          (<m>41.8^{\circ}</m>).
+          In reality, there are currents that push the wa<sq>a off course.
+          Now let</sq>s consider that a current of 2 knots is moving to the house Hikina (East).
+          If we were to face Rarotonga and sail straight,
+          the current put us to the east of our destination.
+          To ensure we arrive at Rarotonga,
+          our apparent heading will need to be a point to the west of our destination,
+          as shown below.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        MYANSWER
+      </p>
+    </answer>
+  </task>
         <p>
           *(check the direction of the current in real life to make this more realistic)
         </p>
