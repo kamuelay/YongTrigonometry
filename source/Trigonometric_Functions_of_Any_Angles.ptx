@@ -1588,13 +1588,17 @@
           <m>\sec\theta\lt 0</m> and <m>\csc\theta\lt 0</m> \task
           <m>\cos\theta\lt 0</m> and <m>\tan\theta>0</m> \end{tasks}
         </p>
+</statement>
         
+<task>
 <introduction>
   <p>
     The point <m>P(x,y)</m> is on the terminal side of angle <m>\theta</m>.
           Determine the exact values of the six trigonometric functions at <m>\theta</m>
   </p>
 </introduction>
+<statement>
+<p>
 The point <m>P(x,y)</m> is on the terminal side of angle <m>\theta</m>.
           Determine the exact values of the six trigonometric functions at <m>\theta</m>
       </p>
@@ -1637,11 +1641,14 @@ The point <m>P(x,y)</m> is on the terminal side of angle <m>\theta</m>.
           \task <m>(3,-4)</m> \task <m>(-12,-5)</m> \task <m>(-2,-3)</m> \task <m>(-4,4)</m> \task <m>(-24,7)</m> \task <m>(9,-40)</m> \end{tasks}
         </p>
         
+<task>
 <introduction>
   <p>
     Find the exact value of the remaining five trigonometric functions of <m>\theta</m> from the given information.
   </p>
 </introduction>
+<statement>
+<p>
 Find the exact value of the remaining five trigonometric functions of <m>\theta</m> from the given information.
       </p>
     </statement>
@@ -1667,11 +1674,14 @@ Find the exact value of the remaining five trigonometric functions of <m>\theta<
           <m>\sin\theta>0</m> \end{tasks}
         </p>
         
+<task>
 <introduction>
   <p>
     Calculate the reference angle...
   </p>
 </introduction>
+<statement>
+<p>
 Calculate the reference angle...
       </p>
     </statement>
@@ -1739,23 +1749,20 @@ Calculate the reference angle...
     </answer>
   </task>
         
+<task>
 <introduction>
   <p>
     Calculate the exact values of the six trigonometric functions for each angle,
           <m>\theta</m>.
           <em>Hint</em>: Use the reference angle that we found in Example reference angles
-          <ol>
-            <li>
-              <p>
                 <m>\theta=-\frac{3\pi}{4}</m>
   </p>
 </introduction>
+<statement>
+<p>
 Calculate the exact values of the six trigonometric functions for each angle,
           <m>\theta</m>.
           <em>Hint</em>: Use the reference angle that we found in Example reference angles
-          <ol>
-            <li>
-              <p>
                 <m>\theta=-\frac{3\pi}{4}</m>
       </p>
     </statement>
@@ -1765,7 +1772,8 @@ Calculate the exact values of the six trigonometric functions for each angle,
       </p>
     </answer>
   </task>
-            </li>
+<p>
+<ol>
             <li>
               <p>
                 <m>\theta=\frac{4\pi}{3}</m>
@@ -1794,6 +1802,7 @@ Calculate the exact values of the six trigonometric functions for each angle,
           </ol>
         </p>
         
+<task>
 <introduction>
   <p>
     Use reference angles to compute the exact value of sin(225) etc
@@ -1803,6 +1812,8 @@ Calculate the exact values of the six trigonometric functions for each angle,
           sin(theta'), iii) use the reference angle and the quadrant to evaluate sin(theta)
   </p>
 </introduction>
+<statement>
+<p>
 Use reference angles to compute the exact value of sin(225) etc
           (maybe not necessary since we now have the trig table.
           Maybe phrase it given theta, I)
@@ -1817,11 +1828,14 @@ Use reference angles to compute the exact value of sin(225) etc
     </answer>
   </task>
         
+<task>
 <introduction>
   <p>
     Use the fact that sine and cosine are periodic to find <m>\sin1200^{\circ}</m>.
   </p>
 </introduction>
+<statement>
+<p>
 Use the fact that sine and cosine are periodic to find <m>\sin1200^{\circ}</m>.
       </p>
     </statement>
@@ -1832,6 +1846,7 @@ Use the fact that sine and cosine are periodic to find <m>\sin1200^{\circ}</m>.
     </answer>
   </task>
         
+<task>
 <introduction>
   <p>
     Prove the third Pythagorean Identity:
@@ -1839,6 +1854,8 @@ Use the fact that sine and cosine are periodic to find <m>\sin1200^{\circ}</m>.
           <em>Hint</em>: Begin with <m>\sin^2\theta+\cos^2\theta=1</m> and divide both sides of the equation by <m>\cos^2\theta</m>.
   </p>
 </introduction>
+<statement>
+<p>
 Prove the third Pythagorean Identity:
           <m>1+\tan^2\theta=\sec^2\theta</m>.
           <em>Hint</em>: Begin with <m>\sin^2\theta+\cos^2\theta=1</m> and divide both sides of the equation by <m>\cos^2\theta</m>.
@@ -1851,6 +1868,7 @@ Prove the third Pythagorean Identity:
     </answer>
   </task>
         
+<task>
 <introduction>
   <p>
     Prove the third Pythagorean Identity:
@@ -1858,6 +1876,8 @@ Prove the third Pythagorean Identity:
           <em>Hint</em>: Begin with <m>\sin^2\theta+\cos^2\theta=1</m> and divide both sides of the equation by <m>\sin^2\theta</m>.
   </p>
 </introduction>
+<statement>
+<p>
 Prove the third Pythagorean Identity:
           <m>1+\cot^2\theta+1=\csc^2\theta</m>.
           <em>Hint</em>: Begin with <m>\sin^2\theta+\cos^2\theta=1</m> and divide both sides of the equation by <m>\sin^2\theta</m>.
@@ -1870,11 +1890,14 @@ Prove the third Pythagorean Identity:
     </answer>
   </task>
         
+<task>
 <introduction>
   <p>
     pythagorean identity questions
   </p>
 </introduction>
+<statement>
+<p>
 pythagorean identity questions
       </p>
     </statement>
@@ -1885,11 +1908,14 @@ pythagorean identity questions
     </answer>
   </task>
         
+<task>
 <introduction>
   <p>
     Use the Pythagorean Identities to write the first trigonometric function of <m>\theta</m> in terms of the second function given the quadrant
   </p>
 </introduction>
+<statement>
+<p>
 Use the Pythagorean Identities to write the first trigonometric function of <m>\theta</m> in terms of the second function given the quadrant
       </p>
     </statement>
@@ -1900,11 +1926,14 @@ Use the Pythagorean Identities to write the first trigonometric function of <m>\
     </answer>
   </task>
         
+<task>
 <introduction>
   <p>
     Use the even and odd properties to evaluate the following
   </p>
 </introduction>
+<statement>
+<p>
 Use the even and odd properties to evaluate the following
       </p>
     </statement>
@@ -1920,8 +1949,7 @@ Use the even and odd properties to evaluate the following
           <m>\cos\left(-\frac{4\pi}{3}\right)</m> \task <m>\tan(-\pi)</m> \task
           <m>\sec\left(-\frac{\pi}{4}\right)</m> \task <m>\csc\left(-\frac{7\pi}{6}\right)</m> \end{tasks}
         </p>
-      </statement>
-    </exercise>
+
     <p>
       \begin{Answer}[ref={ex-1.5}] \Question \begin{tasks}(4) \task QII \task QIII \task QIV \task QI \task QII \task QIII \task QIII \task QIII \end{tasks}
     </p>
@@ -1941,74 +1969,6 @@ Use the even and odd properties to evaluate the following
     </answer>
   </task>
     
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
-    
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
-    
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
-    
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
-    
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
-      <task>
-    <statement>
-      <p>
-         <m>\frac{1}{2}</m> 
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
-    <statement>
-      <p>
-         <m>-1</m> 
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
   <task>
     <statement>
       <p>
@@ -2135,5 +2095,6 @@ Use the even and odd properties to evaluate the following
     <p>
       \end{Answer}
     </p>
+</exercise>
 </subsection>
 </section>

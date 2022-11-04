@@ -1024,15 +1024,10 @@
 <introduction>
   <p>
     The the exact values of the six trigonometric functions for the angle <m>\theta</m> which has a terminal point on the unit circle at
-          <ol>
-            <li>
-              <p>
                 <m>\left(\frac{3}{5},-\frac{4}{5}\right)</m>
   </p>
 </introduction>
 The the exact values of the six trigonometric functions for the angle <m>\theta</m> which has a terminal point on the unit circle at
-          <ol>
-            <li>
               <p>
                 <m>\left(\frac{3}{5},-\frac{4}{5}\right)</m>
       </p>
@@ -1042,8 +1037,9 @@ The the exact values of the six trigonometric functions for the angle <m>\theta<
         MYANSWER
       </p>
     </answer>
-  </task>
-            </li>
+<statement>
+<p>
+<ol>
             <li>
               <p>
                 <m>\left(\frac{}{},\frac{}{}\right)</m>

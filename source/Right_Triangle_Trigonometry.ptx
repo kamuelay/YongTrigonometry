@@ -1065,6 +1065,7 @@ node[midway,right,xshift=0.1cm] {\(y\)};
     </answer>
   </task>
         
+<task>
 <introduction>
   <p>
     In <xref ref="ex-deviation">Example</xref>
@@ -1076,6 +1077,8 @@ node[midway,right,xshift=0.1cm] {\(y\)};
           Note that one house is <m>11.25^{\circ}</m>
   </p>
 </introduction>
+<statement>
+<p>
 In <xref ref="ex-deviation">Example</xref>
           we calculated when a wa&#699;a sails for one day (120 nautical miles) and deviates from its course by 1 House,
           the wa&#699;a is <m>23.4</m> NM from its reference course.
@@ -1131,6 +1134,7 @@ node[pos=0.5,above] {\(x_1\)};
           <m>x_8</m> \end{tasks}
         </p>
         
+<task>
 <introduction>
   <p>
     In <xref ref="ques-deviation">Question</xref>
@@ -1141,6 +1145,8 @@ node[pos=0.5,above] {\(x_1\)};
           Note that one house is <m>11.25^{\circ}</m>
   </p>
 </introduction>
+<statement>
+<p>
 In <xref ref="ques-deviation">Question</xref>
           we calculated the deviation of wa&#699;a after sailing for one day (120 nautical miles).
           Calculate how far along the reference course (north) the wa&#699;a has traveled for each deviation,
@@ -1194,6 +1200,7 @@ node[pos=0.8,right] {\(y_1\)};
           <m>y_7</m> \end{tasks}
         </p>
         
+<task>
 <introduction>
   <p>
     Using the right triangle
@@ -1203,6 +1210,8 @@ node[pos=0.8,right] {\(y_1\)};
           Round your answers to two decimal places.
   </p>
 </introduction>
+<statement>
+<p>
 Using the right triangle
           (not drawn to scale)
           shown below.
@@ -1241,6 +1250,7 @@ Using the right triangle
           Find <m>b</m>, <m>c</m>, and <m>\beta</m> \end{tasks}
         </p>
         
+<task>
 <introduction>
   <p>
     A wa&#699;a sails in the direction of the house N&#257;lani Ho&#699;olua for one day (120 nautical miles).
@@ -1252,6 +1262,8 @@ Using the right triangle
           for help determining the number of houses and use the fact that one house is <m>11.25^{\circ}</m>.
   </p>
 </introduction>
+<statement>
+<p>
 A wa&#699;a sails in the direction of the house N&#257;lani Ho&#699;olua for one day (120 nautical miles).
           How many nautical miles has the wa&#699;a traveled north?
           How many miles has the wa&#699;a traveled west?
@@ -1278,6 +1290,7 @@ A wa&#699;a sails in the direction of the house N&#257;lani Ho&#699;olua for one
 </latex-image>
         </image>
         
+<task>
 <introduction>
   <p>
     <em>Movement of Sand</em>
@@ -1298,6 +1311,8 @@ A wa&#699;a sails in the direction of the house N&#257;lani Ho&#699;olua for one
           Some beaches experience seasonal changes were waves come from a single direction in one season but come from the other direction in the next season while other beaches where waves predominantly come from a single direction will have other sand pile up at one.
   </p>
 </introduction>
+<statement>
+<p>
 <em>Movement of Sand</em>
           The position of sand on a beach is constantly changing.
           One of the ways sand moves is through waves.
@@ -1361,6 +1376,7 @@ A wa&#699;a sails in the direction of the house N&#257;lani Ho&#699;olua for one
 </latex-image>
         </image>
         
+<task>
 <introduction>
   <p>
     In 2013–2017, H&#333;k&#363;le&#699;a circumnavigated the globe with a voyage mission to
@@ -1375,13 +1391,12 @@ A wa&#699;a sails in the direction of the house N&#257;lani Ho&#699;olua for one
           with a radius of <m>R=4,000</m> miles,
           then for each of the following ports of the M&#257;lama Honua voyage and it's given latitude,
           <m>\phi</m>, calculate the following
-          <ol label="labelroman">
-            <li>
-              <p>
                 <m>r</m>, the distance from the port to the Earth's Axis of Rotation (in miles,
                 rounded to 1 decimal);
   </p>
 </introduction>
+<statement>
+<p>
 In 2013–2017, H&#333;k&#363;le&#699;a circumnavigated the globe with a voyage mission to
           <em>m&#257;lama honua</em> -
           <q>care for Island Earth</q>
@@ -1394,9 +1409,6 @@ In 2013–2017, H&#333;k&#363;le&#699;a circumnavigated the globe with a voyage 
           with a radius of <m>R=4,000</m> miles,
           then for each of the following ports of the M&#257;lama Honua voyage and it's given latitude,
           <m>\phi</m>, calculate the following
-          <ol label="labelroman">
-            <li>
-              <p>
                 <m>r</m>, the distance from the port to the Earth's Axis of Rotation (in miles,
                 rounded to 1 decimal);
       </p>
@@ -1407,7 +1419,8 @@ In 2013–2017, H&#333;k&#363;le&#699;a circumnavigated the globe with a voyage 
       </p>
     </answer>
   </task>
-            </li>
+<p>
+<ol>
             <li>
               <p>
                 <m>\omega</m>,
@@ -1830,11 +1843,14 @@ In 2013–2017, H&#333;k&#363;le&#699;a circumnavigated the globe with a voyage 
     </answer>
   </task>
     
+<task>
 <introduction>
   <p>
     66.7 NM west; 99.8 NM north
   </p>
 </introduction>
+<statement>
+<p>
 66.7 NM west; 99.8 NM north
       </p>
     </statement>
@@ -1845,11 +1861,14 @@ In 2013–2017, H&#333;k&#363;le&#699;a circumnavigated the globe with a voyage 
     </answer>
   </task>
     
+<task>
 <introduction>
   <p>
     5ft
   </p>
 </introduction>
+<statement>
+<p>
 5ft
       </p>
     </statement>
