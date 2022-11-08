@@ -2,16 +2,17 @@
 <section xml:id="Right_Triangle_Trigonometry">
   <title>Right Triangle Trigonometry</title>
   <introduction>
-    <image>
+    <image xml:id="deviation-introduction" width="70%">
 <latex-image>
-<![CDATA[\begin{tikzpicture}\node[above,yshift=0.15cm] at (0,0) {start};
+\begin{tikzpicture}[x=6cm, y=6cm]
+\node[above,yshift=0.15] at (0,0) {start};
 \node[above right] at (11.25:1.2) {end};
-\draw[line width=2pt,-stealth] (0,0) -- (11.25:1.2cm) node[midway,sloped,above] {actual course};
-\draw[dashed] (0,0) -- (1.17694233648,0) node[midway,below,yshift=-0.1cm] {reference course};
-\draw[dashed] (1.17694233648,0) -- (1.17694233648,0.234108386419) node[midway,right,xshift=0.1cm] {deviation};
-\draw ([shift=(0:0.2cm)]0,0) arc (0:11.25:0.2cm) node[midway,right,xshift=0.5cm,yshift=0.07cm] {1 House};
-\draw ([shift=(11.25:-0.1cm)]0,0) pic {waa-top={waacolor}{-78.75}{0.1}};
-\draw (1.17694233648-0.06,0) -- (1.11694233648,0.06) -- (1.17694233648,0.06);\end{tikzpicture}]]>
+\draw[line width=2pt,-stealth] (0,0) -- (11.25:1.2) node[midway,sloped,above] {actual course};
+\draw[dashed] (0,0) -- (1.17694233648,0) node[midway,below,yshift=-0.1] {reference course};
+\draw[dashed] (1.17694233648,0) -- (1.17694233648,0.234108386419) node[midway,right,xshift=0.1] {deviation};
+\draw ([shift=(0:0.2)]0,0) arc (0:11.25:0.2) node[midway,right,xshift=0.5,yshift=0.07] {1 House};
+\draw ([shift=(11.25:-0.1)]0,0) pic {waa-top={waacolor}{-78.75}{0.02}};
+\draw (1.17694233648-0.06,0) -- (1.11694233648,0.06) -- (1.17694233648,0.06);\end{tikzpicture}
 </latex-image>
     </image>
     <p>
@@ -40,12 +41,12 @@
       \begin{mybox}[Trigonometric Ratios]<idx><h>Trigonometric Functions</h><h>ratios</h></idx> Consider a right triangle with <m>\theta</m> as one of its acute angles.
       The trigonometric ratios are defined as follows:
     </p>
-    <image>
+    <image width="33%">
 <latex-image>
 <![CDATA[\begin{tikzpicture}\draw (0,0) -- (5,0) node[midway, below] {adjacent};
 \draw(0,0) -- (5,3) node[midway,above,sloped] {hypotenuse};
 \draw(5,0) -- (5,3) node[midway, below,rotate=90] {opposite};
-\draw ([shift=(0:1cm)]0,0) arc (0:30.9637565321:1cm) node[midway,right,xshift=0.1cm] {\(\theta\)};\end{tikzpicture}]]>
+\draw ([shift=(0:1)]0,0) arc (0:30.9637565321:1) node[midway,right,xshift=0.1cm] {\(\theta\)};\end{tikzpicture}]]>
 </latex-image>
     </image>
     <md>
@@ -836,306 +837,442 @@ node[midway,right,xshift=0.1cm] {\(y\)};
         </p>
       </solution>
     </example>
-    <exercise xml:id="ex-1_4">
+  </subsection>
+  <exercises>
+    <exercisegroup>
+      <introduction>
+        <p>
+          Find the exact values of the six trigonometric functions of the angle <m>\theta</m> in each triangle.
+        </p>
+      </introduction>
+    <exercise>
       <statement>
-        <p>
-          \begin{tasks}(4) \task
-        </p>
-        <image>
-<latex-image>
-<![CDATA[\begin{tikzpicture}\draw (0,0) -- (3,0) node[midway,below]{3};
-\draw(0,0) -- (3,4) node[midway,above left]{5};
-\draw(3,0) -- (3,4) node[midway,right]{4};
-\draw(2.7,0) -- (2.7,0.3) -- (3,0.3);
-\draw ([shift=(0:0.5)]0,0) arc (0:53.1301023542:0.5) node[midway,right,xshift=0.1,yshift=0.2] {\(\theta\)};\end{tikzpicture}]]>
-</latex-image>
+        <image width="33%">
+          <latex-image>
+          <![CDATA[\begin{tikzpicture}\draw (0,0) -- (3,0) node[midway,below]{3};
+          \draw(0,0) -- (3,4) node[midway,above left]{5};
+          \draw(3,0) -- (3,4) node[midway,right]{4};
+          \draw(2.7,0) -- (2.7,0.3) -- (3,0.3);
+          \draw ([shift=(0:0.5)]0,0) arc (0:53.1301023542:0.5) node[midway,right,xshift=0.1,yshift=0.2] {\(\theta\)};\end{tikzpicture}]]>
+          </latex-image>
         </image>
+      </statement>
+      <answer>
+        <m>\sin\theta=\frac{4}{5}</m>, <m>\cos\theta=\frac{3}{5}</m>, 
+          <m>\tan\theta=\frac{4}{3}</m>, <m>\csc\theta=\frac{5}{4}</m>, 
+          <m>\sec\theta=\frac{5}{3}</m>, <m>\cot\theta=\frac{3}{4}</m>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <image width="33%">
+          <latex-image>
+          <![CDATA[\begin{tikzpicture}\draw (0,0) -- (5,0) node[midway,below]{5};
+          \draw(0,0) -- (5,7) node[midway,above left]{\(\sqrt{74}\)};
+          \draw(5,0) -- (5,7) node[midway,right]{7};
+          \draw(4.25,0) -- (4.25,0.75) -- (5,0.75);
+          \draw ([shift=(234.462322208:1.75)]5,7) arc (234.462322208:270:1.75) node[midway,below,xshift=-0.2] {\(\theta\)};\end{tikzpicture}]]>
+          </latex-image>
+                  </image>
+      </statement>
+      <answer>
+        <m>\sin\theta=\frac{5\sqrt{74}}{74}</m>,
+          <m>\cos\theta=\frac{7\sqrt{74}}{74}</m>, 
+          <m>\tan\theta=\frac{5}{7}</m>,
+          <m>\csc\theta=\frac{\sqrt{74}}{5}</m>,
+          <m>\sec\theta=\frac{\sqrt{74}}{7}</m>,
+          <m>\cot\theta=\frac{7}{5}</m>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <image width="33%">
+          <latex-image>
+          <![CDATA[\begin{tikzpicture}\draw (0,0) -- (-4,0) node[midway,below]{4};
+          \draw(0,0) -- (-4,6);
+          \draw(-4,0) -- (-4,6) node[midway,left]{6};
+          \draw(-3.4,0) -- (-3.4,0.6) -- (-4,0.6);
+          \draw ([shift=(180:1)]0,0) arc (180:123.690067526:1) node[midway,left,xshift=-0.1] {\(\theta\)};\end{tikzpicture}]]>
+          </latex-image>
+                  </image>
+      </statement>
+      <answer>
+        <m>\sin\theta=\frac{3\sqrt{13}}{13}</m>,
+          <m>\cos\theta=\frac{2\sqrt{13}}{13}</m>,
+          <m>\tan\theta=\frac{3}{2}</m>,
+          <m>\csc\theta=\frac{\sqrt{13}}{3}</m>,
+          <m>\sec\theta=\frac{\sqrt{13}}{2}</m>,
+          <m>\cot\theta=\frac{2}{3}</m>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <image width="33%">
+          <latex-image>
+          <![CDATA[\begin{tikzpicture}\draw (0,0) -- (-5,0);
+          \draw(0,0) -- (-5,12) node[midway,above right]{13};
+          \draw(-5,0) -- (-5,12) node[midway,left]{12};
+          \draw(-4,0) -- (-4,1) -- (-5,1);
+          \draw ([shift=(270:2.5)]-5,12) arc (270:292.619864948:2.5) node[midway,below,xshift=0.1,yshift=-0.1] {\(\theta\)};\end{tikzpicture}]]>
+          </latex-image>
+                  </image> 
+      </statement>
+      <answer>
+        <m>\sin\theta=\frac{5}{13}</m>,
+          <m>\cos\theta=\frac{12}{13}</m>,
+          <m>\tan\theta=\frac{5}{12}</m>,
+          <m>\csc\theta=\frac{13}{5}</m>,
+          <m>\sec\theta=\frac{13}{12}</m>,
+          <m>\cot\theta=\frac{12}{5}</m>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <image width="33%">
+          <latex-image>
+          <![CDATA[\begin{tikzpicture}\draw (0,0) -- (-7,0) node[midway,below]{7};
+          \draw(0,0) -- (-7,14);
+          \draw(-7,0) -- (-7,14) node[midway,left]{14};
+          \draw(-5.8,0) -- (-5.8,1.2) -- (-7,1.2);
+          \draw ([shift=(180:2)]0,0) arc (180:116.565051177:2) node[midway,left,xshift=-0.1] {\(\theta\)};\end{tikzpicture}]]>
+          </latex-image>
+                  </image>
+      </statement>
+      <answer>
+        <m>\sin\theta=\frac{2\sqrt{5}}{5}</m>,
+          <m>\cos\theta=\frac{\sqrt{5}}{5}</m>, <m>\tan\theta=2</m>,
+          <m>\csc\theta=\frac{\sqrt{5}}{2}</m>,
+          <m>\sec\theta=\sqrt{5}</m>,
+          <m>\cot\theta=\frac{1}{2}</m>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <image width="33%">
+          <latex-image>
+          <![CDATA[\begin{tikzpicture}\draw (0,0) -- (4,0) node[midway,below]{4};
+          \draw(0,0) -- (4,4);
+          \draw(4,0) -- (4,4) node[midway,right]{4};
+          \draw(3.5,0) -- (3.5,0.5) -- (4,0.5);
+          \draw ([shift=(225:0.6)]4,4) arc (225:270:0.6) node[midway,below,xshift=-0.1,yshift=-0.1] {\(\theta\)};\end{tikzpicture}]]>
+          </latex-image>
+                  </image>
+      </statement>
+      <answer>
+        <m>\sin\theta=\frac{\sqrt{2}}{2}</m>,
+          <m>\cos\theta=\frac{\sqrt{2}}{2}</m>, <m>\tan\theta=1</m>,
+          <m>\csc\theta=\sqrt{2}</m>, <m>\sec\theta=\sqrt{2}</m>,
+          <m>\cot\theta=1</m>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <image width="33%">
+          <latex-image>
+          <![CDATA[\begin{tikzpicture}\draw (0,0) -- (-2,0) node[midway,below]{2};
+          \draw(0,0) -- (-2,2.44948974278) node[midway,above right]{\(\sqrt{10}\)};
+          \draw(-2,0) -- (-2,2.44948974278);
+          \draw(-1.7,0) -- (-1.7,0.3) -- (-2,0.3);
+          \draw ([shift=(180:0.5)]0,0) arc (180:129.231520484:0.5) node[midway,left,xshift=-0.1] {\(\theta\)};\end{tikzpicture}]]>
+          </latex-image>
+                  </image>
+      </statement>
+      <answer>
+        <m>\sin\theta=\frac{\sqrt{15}}{5}</m>,
+          <m>\cos\theta=\frac{\sqrt{10}}{5}</m>,
+          <m>\tan\theta=\frac{\sqrt{6}}{2}</m>,
+          <m>\csc\theta=\frac{\sqrt{15}}{3}</m>,
+          <m>\sec\theta=\frac{\sqrt{10}}{2}</m>,
+          <m>\cot\theta=\frac{\sqrt{6}}{3}</m>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <image width="33%">
+          <latex-image>
+          <![CDATA[\begin{tikzpicture}\draw (0,0) -- (2,0) node[midway,below]{2};
+          \draw(0,0) -- (2,3);
+          \draw(2,0) -- (2,3) node[midway,right]{3};
+          \draw(1.7,0) -- (1.7,0.3) -- (2,0.3);
+          \draw ([shift=(236.309932474:0.5)]2,3) arc (234.462322208:270:0.5) node[midway,below,xshift=-0.1] {\(\theta\)};\end{tikzpicture}]]>
+          </latex-image>
+                  </image>
+      </statement>
+      <answer>
+        <m>\sin\theta=\frac{2\sqrt{13}}{13}</m>,
+          <m>\cos\theta=\frac{3\sqrt{13}}{13}</m>,
+          <m>\tan\theta=\frac{2}{3}</m>,
+          <m>\csc\theta=\frac{\sqrt{13}}{2}</m>,
+          <m>\sec\theta=\frac{\sqrt{13}}{3}</m>,
+          <m>\cot\theta=\frac{3}{2}</m>
+      </answer>
+    </exercise>
+    </exercisegroup>
+
+    <exercisegroup>
+      <introduction>
         <p>
-          \task
+          For each of the following problems, calculate
+          <ol>
+            <li>
+              <m>\cos\alpha</m> and <m>\sin\beta</m>;
+            </li>
+            <li>
+              <m>\tan\alpha</m> and <m>\cot\beta</m>;
+            </li>
+            <li>
+              <m>\csc\alpha</m> and <m>\sec\beta</m>
+            </li>
+          </ol>
         </p>
-        <image>
-<latex-image>
-<![CDATA[\begin{tikzpicture}\draw (0,0) -- (5,0) node[midway,below]{5};
-\draw(0,0) -- (5,7) node[midway,above left]{\(\sqrt{74}\)};
-\draw(5,0) -- (5,7) node[midway,right]{7};
-\draw(4.25,0) -- (4.25,0.75) -- (5,0.75);
-\draw ([shift=(234.462322208:1.75)]5,7) arc (234.462322208:270:1.75) node[midway,below,xshift=-0.2] {\(\theta\)};\end{tikzpicture}]]>
-</latex-image>
-        </image>
-        <p>
-          \task
-        </p>
-        <image>
-<latex-image>
-<![CDATA[\begin{tikzpicture}\draw (0,0) -- (-4,0) node[midway,below]{4};
-\draw(0,0) -- (-4,6);
-\draw(-4,0) -- (-4,6) node[midway,left]{6};
-\draw(-3.4,0) -- (-3.4,0.6) -- (-4,0.6);
-\draw ([shift=(180:1)]0,0) arc (180:123.690067526:1) node[midway,left,xshift=-0.1] {\(\theta\)};\end{tikzpicture}]]>
-</latex-image>
-        </image>
-        <p>
-          \task
-        </p>
-        <image>
-<latex-image>
-<![CDATA[\begin{tikzpicture}\draw (0,0) -- (-5,0);
-\draw(0,0) -- (-5,12) node[midway,above right]{13};
-\draw(-5,0) -- (-5,12) node[midway,left]{12};
-\draw(-4,0) -- (-4,1) -- (-5,1);
-\draw ([shift=(270:2.5)]-5,12) arc (270:292.619864948:2.5) node[midway,below,xshift=0.1,yshift=-0.1] {\(\theta\)};\end{tikzpicture}]]>
-</latex-image>
-        </image>
-        <p>
-          \task
-        </p>
-        <image>
-<latex-image>
-<![CDATA[\begin{tikzpicture}\draw (0,0) -- (-7,0) node[midway,below]{7};
-\draw(0,0) -- (-7,14);
-\draw(-7,0) -- (-7,14) node[midway,left]{14};
-\draw(-5.8,0) -- (-5.8,1.2) -- (-7,1.2);
-\draw ([shift=(180:2)]0,0) arc (180:116.565051177:2) node[midway,left,xshift=-0.1] {\(\theta\)};\end{tikzpicture}]]>
-</latex-image>
-        </image>
-        <p>
-          \task
-        </p>
-        <image>
-<latex-image>
-<![CDATA[\begin{tikzpicture}\draw (0,0) -- (4,0) node[midway,below]{4};
-\draw(0,0) -- (4,4);
-\draw(4,0) -- (4,4) node[midway,right]{4};
-\draw(3.5,0) -- (3.5,0.5) -- (4,0.5);
-\draw ([shift=(225:0.6)]4,4) arc (225:270:0.6) node[midway,below,xshift=-0.1,yshift=-0.1] {\(\theta\)};\end{tikzpicture}]]>
-</latex-image>
-        </image>
-        <p>
-          \task
-        </p>
-        <image>
-<latex-image>
-<![CDATA[\begin{tikzpicture}\draw (0,0) -- (-2,0) node[midway,below]{2};
-\draw(0,0) -- (-2,2.44948974278) node[midway,above right]{\(\sqrt{10}\)};
-\draw(-2,0) -- (-2,2.44948974278);
-\draw(-1.7,0) -- (-1.7,0.3) -- (-2,0.3);
-\draw ([shift=(180:0.5)]0,0) arc (180:129.231520484:0.5) node[midway,left,xshift=-0.1] {\(\theta\)};\end{tikzpicture}]]>
-</latex-image>
-        </image>
-        <p>
-          \task
-        </p>
-        <image>
-<latex-image>
-<![CDATA[\begin{tikzpicture}\draw (0,0) -- (2,0) node[midway,below]{2};
-\draw(0,0) -- (2,3);
-\draw(2,0) -- (2,3) node[midway,right]{3};
-\draw(1.7,0) -- (1.7,0.3) -- (2,0.3);
-\draw ([shift=(236.309932474:0.5)]2,3) arc (234.462322208:270:0.5) node[midway,below,xshift=-0.1] {\(\theta\)};\end{tikzpicture}]]>
-</latex-image>
-        </image>
-        <p>
-          \end{tasks}
-        </p>
-        
-<introduction>
-  <p>
-    Calculate i) <m>\cos\alpha</m> and <m>\sin\beta</m>;
-          ii) <m>\tan\alpha</m> and <m>\cot\beta</m>;
-          iii) <m>\csc\alpha</m> and
-          <m>\sec\beta</m> 
-  </p>
-</introduction>
-  <task>
-    <statement>
-      <p>
-        
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
-        <image>
-<latex-image>
-<![CDATA[\begin{tikzpicture}\draw (0,0) -- (5,0) node[midway,below]{5};
-\draw(0,0) -- (5,3);
-\draw(5,0) -- (5,3) node[midway,right]{3};
-\draw(4.6,0) -- (4.6,0.4) -- (5,0.4);
-\draw ([shift=(210.963756532:0.75)]5,3) arc (210.963756532:270:0.75) node[midway,below,xshift=-0.1] {\(\beta\)};
-\draw ([shift=(0:1)]0,0) arc (0:30.9637565321:1) node[midway,right,xshift=0.1,yshift=0.3] {\(\alpha\)};\end{tikzpicture}]]>
-</latex-image>
-        </image>
-        <p>
-          \task
-        </p>
-        <image>
-<latex-image>
-<![CDATA[\begin{tikzpicture}\draw (0,0) -- (-7,0) node[midway,below]{7};
-\draw(0,0) -- (-7,3.87298334621) node[midway,above right]{8};
-\draw(-7,0) -- (-7,3.87298334621);
-\draw(-6.5,0) -- (-6.5,0.5) -- (-7,0.5);
-\draw ([shift=(180:1)]0,0) arc (180:151.044975628:1) node[midway,left,xshift=-0.1] {\(\alpha\)};
-\draw ([shift=(270:1)]-7,3.87298334621) arc (270:331.044975628:1) node[midway,below,xshift=0.1,yshift=-0.1] {\(\beta\)};\end{tikzpicture}]]>
-</latex-image>
-        </image>
-        <p>
-          \end{tasks}
-        </p>
-        
+      </introduction>
+    <exercise>
+      <statement>
+        <image width="50%">
+          <latex-image>
+          <![CDATA[\begin{tikzpicture}\draw (0,0) -- (5,0) node[midway,below]{5};
+          \draw(0,0) -- (5,3);
+          \draw(5,0) -- (5,3) node[midway,right]{3};
+          \draw(4.6,0) -- (4.6,0.4) -- (5,0.4);
+          \draw ([shift=(210.963756532:0.75)]5,3) arc (210.963756532:270:0.75) node[midway,below,xshift=-0.1] {\(\beta\)};
+          \draw ([shift=(0:1)]0,0) arc (0:30.9637565321:1) node[midway,right,xshift=0.1,yshift=0.3] {\(\alpha\)};\end{tikzpicture}]]>
+          </latex-image>
+                  </image>
+      </statement>
+      <answer>
+        <ol>
+          <li>
+            <m>\cos\alpha=\sin\beta=\frac{5\sqrt{34}}{34}</m>;
+          </li>
+          <li>
+            <m>\tan\alpha=\cot\beta=\frac{3}{5}</m>;
+          </li>
+          <li>
+            <m>\csc\alpha=\sec\beta=\frac{\sqrt{34}}{3}</m>
+          </li>
+        </ol>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <image width="50%">
+          <latex-image>
+          <![CDATA[\begin{tikzpicture}\draw (0,0) -- (-7,0) node[midway,below]{7};
+          \draw(0,0) -- (-7,3.87298334621) node[midway,above right]{8};
+          \draw(-7,0) -- (-7,3.87298334621);
+          \draw(-6.5,0) -- (-6.5,0.5) -- (-7,0.5);
+          \draw ([shift=(180:1)]0,0) arc (180:151.044975628:1) node[midway,left,xshift=-0.1] {\(\alpha\)};
+          \draw ([shift=(270:1)]-7,3.87298334621) arc (270:331.044975628:1) node[midway,below,xshift=0.1,yshift=-0.1] {\(\beta\)};\end{tikzpicture}]]>
+          </latex-image>
+                  </image>
+      </statement>
+      <answer>
+        <ol>
+          <li>
+            <m>\cos\alpha=\sin\beta=\frac{7}{8}</m>;
+          </li>
+          <li>
+            <m>\tan\alpha=\cot\beta=\frac{\sqrt{15}}{7}</m>;
+          </li>
+          <li>
+            <m>\csc\alpha=\sec\beta=\frac{8\sqrt{15}}{15}</m>
+          </li>
+        </ol>
+      </answer>
+    </exercise>
+    </exercisegroup>
+
+<exercisegroup>
 <introduction>
   <p>
     Use the Cofunction Identities to determine the value of <m>\theta</m> 
   </p>
 </introduction>
-  <task>
-    <statement>
-      <p>
-        
-          <m>\sin28^{\circ}=\cos\theta</m> 
-      </p>
-    </statement>
-    <answer>
+<exercise>
+  <statement>
     <p>
-      MYANSWER
+      <m>\sin28^{\circ}=\cos\theta</m> 
     </p>
-    </answer>
-  </task>
-  <task>
-    <statement>
-      <p>
-         <m>\cos74^{\circ}=\sin\theta</m> 
-      </p>
-    </statement>
-    <answer>
+  </statement>
+  <answer>
     <p>
-      MYANSWER
+      <m>\theta=62^{\circ}</m>
     </p>
-    </answer>
-  </task>
-  <task>
-    <statement>
-      <p>
-        
-          <m>\tan52^{\circ}=\cot\theta</m> 
-      </p>
-    </statement>
-    <answer>
+  </answer>
+</exercise>
+<exercise>
+  <statement>
     <p>
-      MYANSWER
+      <m>\cos74^{\circ}=\sin\theta</m>
     </p>
-    </answer>
-  </task>
-  <task>
-    <statement>
-      <p>
-         <m>\sec87^{\circ}=\csc\theta</m> 
-      </p>
-    </statement>
-    <answer>
+  </statement>
+  <answer>
     <p>
-      MYANSWER
+      <m>\theta=16^{\circ}</m>
     </p>
-    </answer>
-  </task>
-  <task>
-    <statement>
-      <p>
-        
-          <m>\sin\frac{3\pi}{8}=\cos\theta</m> 
-      </p>
-    </statement>
-    <answer>
+  </answer>
+</exercise>
+<exercise>
+  <statement>
     <p>
-      MYANSWER
+      <m>\tan52^{\circ}=\cot\theta</m>
     </p>
-    </answer>
-  </task>
-  <task>
-    <statement>
-      <p>
-         <m>\cot\frac{2\pi}{5}=\tan\theta</m>
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
-        
-<task>
-<introduction>
-  <p>
-    In <xref ref="ex-deviation">Example</xref>
+  </statement>
+  <answer>
+    <p>
+      <m>\theta=62^{\circ}</m>
+    </p>
+  </answer>
+</exercise>
+<exercise>
+  <statement>
+    <p>
+      <m>\sin28^{\circ}=\cos\theta</m> 
+    </p>
+  </statement>
+  <answer>
+    <p>
+      <m>\theta=38^{\circ}</m>
+    </p>
+  </answer>
+</exercise>
+<exercise>
+  <statement>
+    <p>
+      <m>\sec87^{\circ}=\csc\theta</m>
+    </p>
+  </statement>
+  <answer>
+    <p>
+      <m>\theta=3^{\circ}</m>
+    </p>
+  </answer>
+</exercise>
+<exercise>
+  <statement>
+    <p>
+      <m>\sin\frac{3\pi}{8}=\cos\theta</m>
+    </p>
+  </statement>
+  <answer>
+    <p>
+      <m>\theta=\frac{\pi}{8}</m>
+    </p>
+  </answer>
+</exercise>
+<exercise>
+  <statement>
+    <p>
+      <m>\cot\frac{2\pi}{5}=\tan\theta</m>
+    </p>
+  </statement>
+  <answer>
+    <p>
+      <m>\theta=\frac{\pi}{10}</m>
+    </p>
+  </answer>
+</exercise>
+</exercisegroup>
+
+
+
+<exercise>
+  <statement>
+    <p>
+      In <xref ref="ex-deviation">Example</xref>
           we calculated when a wa&#699;a sails for one day (120 nautical miles) and deviates from its course by 1 House,
-          the wa&#699;a is <m>23.4</m> NM from its reference course.
+          the waʻa is <m>23.4</m> NM from its reference course.
           Calculate the deviation, <m>x</m>,
           for the remaining 7 angles.
           Round your answer to the nearest tenth of a nautical mile.
           Note that one house is <m>11.25^{\circ}</m>
-  </p>
-</introduction>
-<statement>
-<p>
-In <xref ref="ex-deviation">Example</xref>
-          we calculated when a wa&#699;a sails for one day (120 nautical miles) and deviates from its course by 1 House,
-          the wa&#699;a is <m>23.4</m> NM from its reference course.
-          Calculate the deviation, <m>x</m>,
-          for the remaining 7 angles.
-          Round your answer to the nearest tenth of a nautical mile.
-          Note that one house is <m>11.25^{\circ}</m>
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
+    </p>
+    <image xml:id="fig-deviation-x">
+      <latex-image>
+      <![CDATA[\begin{tikzpicture}\draw[line width=1pt,-stealth] (0,0) -- (0:1.2cm) node[pos=0.8,sloped,below] {\(x_8\)};
+      \draw[line width=1pt,-stealth] (0,0) -- (11.25:1.2cm) node[right] {7 Houses};
+      \draw[line width=1pt,-stealth] (0,0) -- (22.5:1.2cm) node[right] {6 Houses};
+      \draw[line width=1pt,-stealth] (0,0) -- (33.75:1.2cm) node[right] {5 Houses};
+      \draw[line width=1pt,-stealth] (0,0) -- (45:1.2cm) node[right] {4 Houses};
+      \draw[line width=1pt,-stealth] (0,0) -- (56.65:1.2cm) node[right] {3 Houses};
+      \draw[line width=1pt,-stealth] (0,0) -- (67.5:1.2cm) node[right] {2 Houses};
+      \draw[line width=1pt,-stealth] (0,0) -- (78.75:1.2cm) node[above right] {1 House};
+      \draw[line width=1pt,-stealth] (0,0) -- (90:1.2cm) node[midway,sloped,above] {Reference Course, 120 NM};
+      \node[right] at (0:1.2cm) {8 Houses};
+      \draw[dashed] (0,0.234108386419) -- (1.17694233648,0.234108386419)
+      node[pos=0.8,above] {\(x_7\)};
+      \draw[dashed] (0,0.459220118838) -- (1.10865543901,0.459220118838)
+      node[pos=0.8,above] {\(x_6\)};
+      \draw[dashed] (0,0.666684279624) -- (0.997763534763,0.666684279624)
+      node[pos=0.8,above] {\(x_5\)};
+      \draw[dashed] (0,0.848528137424) -- (0.848528137424,0.848528137424)
+      node[pos=0.8,above] {\(x_4\)};
+      \draw[dashed] (0,0.997763534763) -- (0.666684279624,0.997763534763)
+      node[pos=0.8,above] {\(x_3\)};
+      \draw[dashed] (0,1.10865543901) -- (0.459220118838,1.10865543901)
+      node[pos=0.7,above] {\(x_2\)};
+      \draw[dashed] (0,1.17694233648) -- (0.234108386419,1.17694233648)
+      node[pos=0.5,above] {\(x_1\)};
+      \draw ([shift=(45:-0.1cm)]0,0) pic {waa-top={waacolor}{(-45)}{0.1}};\end{tikzpicture}]]>
+      </latex-image>
+              </image>
+              <p>
+                \begin{tasks}(2) \task 2 Houses (<m>11.25^{\circ}\times2=22.5^{\circ}</m>);
+                <m>x_2</m> \task 3 Houses (<m>11.25^{\circ}\times3=33.75^{\circ}</m>);
+                <m>x_3</m> \task 4 Houses (<m>11.25^{\circ}\times4=45^{\circ}</m>);
+                <m>x_4</m> \task 5 Houses (<m>11.25^{\circ}\times5=56.25^{\circ}</m>);
+                <m>x_5</m> \task 6 Houses (<m>11.25^{\circ}\times6=67.5^{\circ}</m>);
+                <m>x_6</m> \task 7 Houses (<m>11.25^{\circ}\times7=78.75^{\circ}</m>);
+                <m>x_7</m> \task 8 Houses (<m>11.25^{\circ}\times8=90^{\circ}</m>);
+                <m>x_8</m> \end{tasks}
+              </p>
+  </statement>
+  <answer>
+    <p>
+      <m>x_2=45.9</m> NM 
+    </p>
     </answer>
-  </task>
-        <image>
-<latex-image>
-<![CDATA[\begin{tikzpicture}\draw[line width=1pt,-stealth] (0,0) -- (0:1.2cm) node[pos=0.8,sloped,below] {\(x_8\)};
-\draw[line width=1pt,-stealth] (0,0) -- (11.25:1.2cm) node[right] {7 Houses};
-\draw[line width=1pt,-stealth] (0,0) -- (22.5:1.2cm) node[right] {6 Houses};
-\draw[line width=1pt,-stealth] (0,0) -- (33.75:1.2cm) node[right] {5 Houses};
-\draw[line width=1pt,-stealth] (0,0) -- (45:1.2cm) node[right] {4 Houses};
-\draw[line width=1pt,-stealth] (0,0) -- (56.65:1.2cm) node[right] {3 Houses};
-\draw[line width=1pt,-stealth] (0,0) -- (67.5:1.2cm) node[right] {2 Houses};
-\draw[line width=1pt,-stealth] (0,0) -- (78.75:1.2cm) node[above right] {1 House};
-\draw[line width=1pt,-stealth] (0,0) -- (90:1.2cm) node[midway,sloped,above] {Reference Course, 120 NM};
-\node[right] at (0:1.2cm) {8 Houses};
-\draw[dashed] (0,0.234108386419) -- (1.17694233648,0.234108386419)
-node[pos=0.8,above] {\(x_7\)};
-\draw[dashed] (0,0.459220118838) -- (1.10865543901,0.459220118838)
-node[pos=0.8,above] {\(x_6\)};
-\draw[dashed] (0,0.666684279624) -- (0.997763534763,0.666684279624)
-node[pos=0.8,above] {\(x_5\)};
-\draw[dashed] (0,0.848528137424) -- (0.848528137424,0.848528137424)
-node[pos=0.8,above] {\(x_4\)};
-\draw[dashed] (0,0.997763534763) -- (0.666684279624,0.997763534763)
-node[pos=0.8,above] {\(x_3\)};
-\draw[dashed] (0,1.10865543901) -- (0.459220118838,1.10865543901)
-node[pos=0.7,above] {\(x_2\)};
-\draw[dashed] (0,1.17694233648) -- (0.234108386419,1.17694233648)
-node[pos=0.5,above] {\(x_1\)};
-\draw ([shift=(45:-0.1cm)]0,0) pic {waa-top={waacolor}{(-45)}{0.1}};\end{tikzpicture}]]>
-</latex-image>
-        </image>
-        <p>
-          \begin{tasks}(2) \task 2 Houses (<m>11.25^{\circ}\times2=22.5^{\circ}</m>);
-          <m>x_2</m> \task 3 Houses (<m>11.25^{\circ}\times3=33.75^{\circ}</m>);
-          <m>x_3</m> \task 4 Houses (<m>11.25^{\circ}\times4=45^{\circ}</m>);
-          <m>x_4</m> \task 5 Houses (<m>11.25^{\circ}\times5=56.25^{\circ}</m>);
-          <m>x_5</m> \task 6 Houses (<m>11.25^{\circ}\times6=67.5^{\circ}</m>);
-          <m>x_6</m> \task 7 Houses (<m>11.25^{\circ}\times7=78.75^{\circ}</m>);
-          <m>x_7</m> \task 8 Houses (<m>11.25^{\circ}\times8=90^{\circ}</m>);
-          <m>x_8</m> \end{tasks}
-        </p>
-        
-<task>
+
+    
+    <answer>
+    <p>
+      <m>x_3=66.7</m> NM 
+    </p>
+    </answer>
+
+    <answer>
+    <p>
+      <m>x_4=84.5</m> NM 
+    </p>
+    </answer>
+
+    <answer>
+    <p>
+      <m>x_5=99.8</m> NM 
+    </p>
+    </answer>
+  
+    <answer>
+    <p>
+      <m>x_6=110.9</m> NM
+    </p>
+    </answer>
+
+    <answer>
+    <p>
+      <m>x_7=117.7</m> NM
+    </p>
+    </answer>
+
+    <answer>
+    <p>
+      <m>x_8=120</m> NM
+    </p>
+    </answer>
+</exercise>
+
+
+<exercise>
 <introduction>
   <p>
     In <xref ref="ques-deviation">Question</xref>
@@ -1156,12 +1293,8 @@ In <xref ref="ques-deviation">Question</xref>
           Note that one house is <m>11.25^{\circ}</m>
       </p>
     </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
+
+
         <image>
 <latex-image>
 <![CDATA[\begin{tikzpicture}\draw[line width=1pt,-stealth] (0,0) -- (0:1.2cm) node[midway,sloped,below] {120 NM};
@@ -1200,8 +1333,54 @@ node[pos=0.8,right] {\(y_1\)};
           <m>y_6</m> \task 7 Houses (<m>11.25^{\circ}\times7=78.75^{\circ}</m>);
           <m>y_7</m> \end{tasks}
         </p>
-        
-<task>
+        <answer>
+          <p>
+            <m>y_1=117.7</m> NM
+          </p>
+          </answer>
+      
+          <answer>
+          <p>
+            <m>y_2=110.9</m> NM
+          </p>
+          </answer>
+      
+          <answer>
+          <p>
+            <m>y_3=99.8</m> NM 
+          </p>
+          </answer>
+      
+          <answer>
+          <p>
+            <m>y_4=84.5</m> NM 
+          </p>
+          </answer>
+      
+          <answer>
+          <p>
+            <m>y_5=66.7</m> NM
+          </p>
+          </answer>
+      
+          <answer>
+          <p>
+            <m>y_6=45.9</m> NM
+          </p>
+          </answer>
+      
+          <answer>
+            <p>
+              <m>y_7=23.4</m> NM
+            </p>
+          </answer>
+</exercise>
+
+
+
+
+
+<exercisegroup>
 <introduction>
   <p>
     Using the right triangle
@@ -1220,12 +1399,7 @@ Using the right triangle
           Round your answers to two decimal places.
       </p>
     </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
+
         <image>
 <latex-image>
 <![CDATA[\begin{tikzpicture}\draw (0,0) -- (4,0) node[midway,below]{\(b\)};
@@ -1250,833 +1424,579 @@ Using the right triangle
           and <m>\beta</m> \task <m>a=6</m>, <m>\alpha=38^{\circ}</m>.
           Find <m>b</m>, <m>c</m>, and <m>\beta</m> \end{tasks}
         </p>
+
+
+        <answer>
+          <p>
+            <m>b=3.50</m>,
+            <m>c=6.10</m>, <m>\alpha=55^{\circ}</m> 
+          </p>
+          </answer>
+      
+          <answer>
+          <p>
+            <m>a=28.27</m>,
+            <m>c=30.71</m>, <m>\alpha=67^{\circ}</m> 
+          </p>
+          </answer>
+      
+          <answer>
+          <p>
+            <m>a=26.12</m>,
+            <m>c=27.05</m>, <m>\beta=15^{\circ}</m> 
+          </p>
+          </answer>
+      
+          <answer>
+          <p>
+            <m>a=2.57</m>,
+            <m>b=3.06</m>,
+            <m>\alpha=40^{\circ}</m> 
+          </p>
+          </answer>
+      
+          <answer>
+          <p>
+            <m>a=9.51</m>, <m>b=3.09</m>,
+            <m>\beta=72^{\circ}</m> 
+          </p>
+          </answer>
+      
+          <answer>
+            <p>
+              <m>b=7.68</m>, <m>c=9.75</m>,
+            <m>\beta=52^{\circ}</m>
+            </p>
+          </answer>
+
+</exercisegroup>
         
-<task>
-<introduction>
-  <p>
-    A wa&#699;a sails in the direction of the house N&#257;lani Ho&#699;olua for one day (120 nautical miles).
-          How many nautical miles has the wa&#699;a traveled north?
-          How many miles has the wa&#699;a traveled west?
-          To calculate the angle <m>\theta</m>,
-          refer to the Star Compass on <xref ref="fig_star-compass">Figure</xref>
-          on <xref ref="fig_star-compass">page</xref>
-          for help determining the number of houses and use the fact that one house is <m>11.25^{\circ}</m>.
-  </p>
-</introduction>
-<statement>
-<p>
-A wa&#699;a sails in the direction of the house N&#257;lani Ho&#699;olua for one day (120 nautical miles).
-          How many nautical miles has the wa&#699;a traveled north?
-          How many miles has the wa&#699;a traveled west?
-          To calculate the angle <m>\theta</m>,
-          refer to the Star Compass on <xref ref="fig_star-compass">Figure</xref>
-          on <xref ref="fig_star-compass">page</xref>
-          for help determining the number of houses and use the fact that one house is <m>11.25^{\circ}</m>.
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
-        <image>
-<latex-image>
-<![CDATA[\begin{tikzpicture}\draw[line width=2pt,-stealth] (0,0) -- (123.75:1.2cm) node[midway,left,xshift=-0.2cm] {120 mi};
-\draw[line width=2pt,dashed] (0,0.997763534763) -- (-0.666684279624,0.997763534763) node[midway,above,yshift=0.1cm] {west};
-\draw[line width=2pt, dashed] (0,0) -- (0,0.997763534763) node[midway,right,xshift=0.1cm] {north};
-\draw ([shift=(90:0.2cm)]0,0) arc (90:123.75:0.2cm) node[midway,above,xshift=-1,yshift=3] {\(\theta\)};
-\draw ([shift=(123.75:-0.15cm)]0,0) pic {waa-top={waacolor}{(33.75)}{0.1}};
-\draw (-0.1,0.997763534763) -- (-0.1,0.897763534763) -- (0,0.897763534763);\end{tikzpicture}]]>
-</latex-image>
-        </image>
+
+
         
-<task>
-<introduction>
-  <p>
-    <em>Movement of Sand</em>
-          The position of sand on a beach is constantly changing.
-          One of the ways sand moves is through waves.
-          In general, waves aren't perpendicular to the shore,
-          instead they come at an angle.
-          When the wave crashes on the shore in a process known as <em>swash</em>,
-              <idx><h>swash</h></idx>
-          water as well as sediment move onto the beach as the same angle of the wave.
-          Gravity takes over and the water and sediment run straight into the ocean
-          (perpendicular to the shoreline),
-          a process known as <em>backwash</em>.
-              <idx><h>backwash</h></idx>
-          This zig-zag motion of sand via the swash/backwash is called
-          <em>longshore drift</em>.
-              <idx><h>longshore drift</h></idx>
-          Some beaches experience seasonal changes were waves come from a single direction in one season but come from the other direction in the next season while other beaches where waves predominantly come from a single direction will have other sand pile up at one.
-  </p>
-</introduction>
-<statement>
-<p>
-<em>Movement of Sand</em>
-          The position of sand on a beach is constantly changing.
-          One of the ways sand moves is through waves.
-          In general, waves aren't perpendicular to the shore,
-          instead they come at an angle.
-          When the wave crashes on the shore in a process known as <em>swash</em>,
-              <idx><h>swash</h></idx>
-          water as well as sediment move onto the beach as the same angle of the wave.
-          Gravity takes over and the water and sediment run straight into the ocean
-          (perpendicular to the shoreline),
-          a process known as <em>backwash</em>.
-              <idx><h>backwash</h></idx>
-          This zig-zag motion of sand via the swash/backwash is called
-          <em>longshore drift</em>.
-              <idx><h>longshore drift</h></idx>
-          Some beaches experience seasonal changes were waves come from a single direction in one season but come from the other direction in the next season while other beaches where waves predominantly come from a single direction will have other sand pile up at one.
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
-        <p>
-          Calculate how far along the shore one grain of sand moves after a wave breaks on the shore at an angle of
-          <m>60^{\circ}</m> and washes on shore for 10 ft before falling back to the ocean?
-        </p>
-        <image>
-<latex-image>
-<![CDATA[\begin{tikzpicture}\fill[color={rgb:red,0;green,100;blue,100}] (-1,0) -- (1,0) -- (1,1) -- (-1,1);
-\fill[yellow,opacity=0.75] (-1,0) -- (1,0) -- (1,-1) -- (-1,-1);
-\fill[pattern=dots,opacity=0.1] (-1,0) -- (1,0) -- (1,-1) -- (-1,-1);
-\draw[line width=1pt,blue,decorate,decoration=snake](0,0) -- (1,0.57735026919);
-\draw[line width=1pt,blue,decorate,decoration=snake](-1,0) -- (0.732050807569,1) node[black,midway,above,sloped,yshift=2]{Waves};
-\draw[line width=1pt,blue,decorate,decoration=snake,shorten >= 5pt](-1,0.57735026919) -- (-0.267949192431,1);
-\draw[line width=2pt,-stealth,shorten >=3] (0,0) -- (-60:1) node[midway,sloped,below,xshift=-0.2] {10 ft};
-\draw[line width=2pt,-stealth,shorten >=3] ([shift=(0:0.5)]0,0) -- ([shift=(0:0.5)]-60:1);
-\draw[line width=2pt,-stealth,shorten >=3] ([shift=(0:-0.5)]0,0) -- ([shift=(0:-0.5)]-60:1);
-\draw[line width=2pt,-stealth,shorten >=3] ([shift=(0:-1)]0,0) -- ([shift=(0:-1)]-60:1) node[midway,below,sloped]{swash};
-\draw[line width=2pt, -stealth,dashed,shorten >=2] (0,0) -- (0.5,0) node[midway,below,xshift=4] {\(x\)};
-\draw[line width=2pt, -stealth,dashed,shorten >=2] (0:0.5) -- (0:1);
-\draw[line width=2pt, -stealth,dashed,shorten >=2] (0:-0.5) -- (0:0);
-\draw[line width=2pt, -stealth,dashed,shorten >=2] (0:-1) -- (0:-0.5) node[midway,below]{movement};
-\draw[line width=2pt,-stealth,shorten >=3] (0.5,-0.866025403784) -- (0.5,0);
-\draw[line width=2pt,-stealth,shorten >=3] ([shift=(0:0.5)]-60:1) -- (0:1);
-\draw[line width=2pt,-stealth,shorten >=3] ([shift=(0:-0.5)]-60:1) -- (0:0);
-\draw[line width=2pt,-stealth,shorten >=3] ([shift=(0:-1)]-60:1) -- (0:-0.5) node[midway,below,sloped,rotate=180]{backwash};
-\draw ([shift=(0:0.15)]0,0) arc (0:-60:0.15) node[midway,right,xshift=-4,yshift=-6] {\(60^{\circ}\)};
-\draw (0.4,0) -- (0.4,-0.1) -- (0.5,-0.1);
-\draw[line width=2pt,blue,-stealth,shorten >=3] (-0.5,0.866025403784) -- (-0.375,0.649519052838);
-\draw[line width=2pt,blue,-stealth,shorten >=3] ([shift=(120:1)]210:{sqrt(3)/4}) -- ([shift=(120:0.75)]210:{sqrt(3)/4});
-\draw[line width=2pt,blue,-stealth,shorten >=3] ({-0.25*cos(60)+(5*sqrt(3)/8-1)*sin(30)/cos(30)},1) -- ([shift=(120:0.75)]30:{sqrt(3)/4});
-\draw[line width=2pt,blue,-stealth,shorten >=3] ([shift=(120:0.5)]210:0.433012701892) -- ([shift=(120:0.25)]210:0.433012701892);
-\draw[line width=2pt,blue,-stealth,shorten >=3] (-0.25,0.433012701892) -- (-0.125,0.216506350946);
-\draw[line width=2pt,blue,-stealth,shorten >=3] ([shift=(120:0.5)]30:0.433012701892) -- ([shift=(120:0.25)]30:0.433012701892);
-\draw[line width=2pt,blue,-stealth,shorten >=3] ([shift=(120:0.5)]30:0.866025403784) -- ([shift=(120:0.25)]30:0.866025403784);
-\draw[line width=2pt,blue,-stealth,shorten >=3] (0.92264973081,1) -- (1,0.866025403784);
-\draw[line width=2pt,blue,-stealth,shorten >=3] (30:0.433012701892) -- ([shift=(30:0.433012701892)]-60:0.25);
-\draw[line width=2pt,blue,-stealth,shorten >=3] (30:0.866025403784) -- ([shift=(30:0.866025403784)]-60:0.25);\end{tikzpicture}]]>
-</latex-image>
-        </image>
-        
-<task>
-<introduction>
-  <p>
-    In 2013–2017, H&#333;k&#363;le&#699;a circumnavigated the globe with a voyage mission to
-          <em>m&#257;lama honua</em> -
-          <q>care for Island Earth</q>
-          and all people and places as <em>`ohana</em> (
-          <q>family</q>).
-          The 40,000 nautical mile voyage stopped at more than 150 ports in 18 nations.
-          Throughout this voyage, Earth rotates on an axis that runs between the North Pole and the South Pole.
-          Every point on the Earth experiences this rotation through an angular speed and linear velocity (See <xref ref="sec_angular_velocity_and_linear_speed">Section</xref>).
-          If we assume the Earth completes one rotation in 24 hours and that the Earth is a perfect sphere,
-          with a radius of <m>R=4,000</m> miles,
-          then for each of the following ports of the M&#257;lama Honua voyage and it's given latitude,
-          <m>\phi</m>, calculate the following
-                <m>r</m>, the distance from the port to the Earth's Axis of Rotation (in miles,
-                rounded to 1 decimal);
-  </p>
-</introduction>
-<statement>
-<p>
-In 2013–2017, H&#333;k&#363;le&#699;a circumnavigated the globe with a voyage mission to
-          <em>m&#257;lama honua</em> -
-          <q>care for Island Earth</q>
-          and all people and places as <em>`ohana</em> (
-          <q>family</q>).
-          The 40,000 nautical mile voyage stopped at more than 150 ports in 18 nations.
-          Throughout this voyage, Earth rotates on an axis that runs between the North Pole and the South Pole.
-          Every point on the Earth experiences this rotation through an angular speed and linear velocity (See <xref ref="sec_angular_velocity_and_linear_speed">Section</xref>).
-          If we assume the Earth completes one rotation in 24 hours and that the Earth is a perfect sphere,
-          with a radius of <m>R=4,000</m> miles,
-          then for each of the following ports of the M&#257;lama Honua voyage and it's given latitude,
-          <m>\phi</m>, calculate the following
-                <m>r</m>, the distance from the port to the Earth's Axis of Rotation (in miles,
-                rounded to 1 decimal);
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
-<p>
-<ol>
-            <li>
-              <p>
-                <m>\omega</m>,
-                the angular velocity (in radians per hour, rounded to 4 decimals)
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>v</m>, the linear speed (in miles per hour,
-                rounded to the nearest whole number)
-              </p>
-            </li>
-          </ol>
-        </p>
-        <image>
-<latex-image>
-<![CDATA[\begin{tikzpicture}\draw (0,0) circle (1cm);
-\draw[dashed] (0,-1.1) -- (0,1.1) node[right] {Earth's Axis};
-\draw (0,0)--(-1,0) node[left] {Equator};
-\draw[line width=2pt] (0,0) -- (1,0) node[midway,below] {\(R\)};
-\draw[line width=2pt] (0,0) -- (30:1) node[midway,below,yshift=-0.3] {\(R\)};
-\draw[line width=2pt] (0,0.5) -- (30:1) node[midway,above] {\(r\)};
-\draw (0:0.3cm) arc (0:30:0.3cm) node[midway, right,xshift=0.05cm] {\(\phi\)};
-\draw ([shift=(30:1)]180:0.3cm) arc (180:210:0.3cm) node[midway, left,xshift=-0.05cm] {\(\phi\)};
-\filldraw[black] (30:1) circle(1pt) node[right,xshift=4]{Port City};\end{tikzpicture}]]>
-</latex-image>
-        </image>
-        <p>
-          \begin{tasks}(2) \task Hilo, Hawai`i (<m>19.7216^{\circ}</m>N) \task Papeete, Tahiti (<m>17.5325^{\circ}</m>S) \task Apia, Samoa (<m>13.8507^{\circ}</m>S) \task Waitangi, Aotearoa (<m>35.2683^{\circ}</m>S) \task Sydney, Australia (<m>33.8688^{\circ}</m>S) \task Bali, Indonesia (<m>8.4095^{\circ}</m>S) \task Port Louis, Mauritius (<m>20.1609^{\circ}</m>S) \task Cape Town, South Africa (<m>33.9249^{\circ}</m>S) \task Natal, Brazil (<m>5.7842^{\circ}</m>S) \task Necker, British Virgin Islands (<m>18.5268^{\circ}</m>N) \task Yarmouth, Nova Scotia (<m>43.8379^{\circ}</m>N) \task Balboa, Panama (<m>8.9614^{\circ}</m>N) \task Galapagos Islands (<m>0.9538^{\circ}</m>S) \task Rapa Nui (<m>27.1127^{\circ}</m>S) \end{tasks}
-        </p>
-      </statement>
-    </exercise>
-    <p>
-      \begin{Answer}[ref={ex-1.4}] \Question \begin{tasks} \task <m>\sin\theta=\frac{4}{5}</m>, <m>\cos\theta=\frac{3}{5}</m>, <m>\tan\theta=\frac{4}{3}</m>, <m>\csc\theta=\frac{5}{4}</m>, <m>\sec\theta=\frac{5}{3}</m>,
-      <m>\cot\theta=\frac{3}{4}</m> \task <m>\sin\theta=\frac{5\sqrt{74}}{74}</m>,
-      <m>\cos\theta=\frac{7\sqrt{74}}{74}</m>, <m>\tan\theta=\frac{5}{7}</m>,
-      <m>\csc\theta=\frac{\sqrt{74}}{5}</m>,
-      <m>\sec\theta=\frac{\sqrt{74}}{7}</m>,
-      <m>\cot\theta=\frac{7}{5}</m> \task <m>\sin\theta=\frac{3\sqrt{13}}{13}</m>,
-      <m>\cos\theta=\frac{2\sqrt{13}}{13}</m>,
-      <m>\tan\theta=\frac{3}{2}</m>,
-      <m>\csc\theta=\frac{\sqrt{13}}{3}</m>,
-      <m>\sec\theta=\frac{\sqrt{13}}{2}</m>,
-      <m>\cot\theta=\frac{2}{3}</m> \task
-      <m>\sin\theta=\frac{5}{13}</m>,
-      <m>\cos\theta=\frac{12}{13}</m>,
-      <m>\tan\theta=\frac{5}{12}</m>,
-      <m>\csc\theta=\frac{13}{5}</m>,
-      <m>\sec\theta=\frac{13}{12}</m>,
-      <m>\cot\theta=\frac{12}{5}</m> \task <m>\sin\theta=\frac{2\sqrt{5}}{5}</m>,
-      <m>\cos\theta=\frac{\sqrt{5}}{5}</m>, <m>\tan\theta=2</m>,
-      <m>\csc\theta=\frac{\sqrt{5}}{2}</m>,
-      <m>\sec\theta=\sqrt{5}</m>,
-      <m>\cot\theta=\frac{1}{2}</m> \task <m>\sin\theta=\frac{\sqrt{2}}{2}</m>,
-      <m>\cos\theta=\frac{\sqrt{2}}{2}</m>, <m>\tan\theta=1</m>,
-      <m>\csc\theta=\sqrt{2}</m>, <m>\sec\theta=\sqrt{2}</m>,
-      <m>\cot\theta=1</m> \task <m>\sin\theta=\frac{\sqrt{15}}{5}</m>,
-      <m>\cos\theta=\frac{\sqrt{10}}{5}</m>,
-      <m>\tan\theta=\frac{\sqrt{6}}{2}</m>,
-      <m>\csc\theta=\frac{\sqrt{15}}{3}</m>,
-      <m>\sec\theta=\frac{\sqrt{10}}{2}</m>,
-      <m>\cot\theta=\frac{\sqrt{6}}{3}</m> \task <m>\sin\theta=\frac{2\sqrt{13}}{13}</m>,
-      <m>\cos\theta=\frac{3\sqrt{13}}{13}</m>,
-      <m>\tan\theta=\frac{2}{3}</m>,
-      <m>\csc\theta=\frac{\sqrt{13}}{2}</m>,
-      <m>\sec\theta=\frac{\sqrt{13}}{3}</m>,
-      <m>\cot\theta=\frac{3}{2}</m> \end{tasks}
-    </p>
-      <task>
-    <statement>
-      <p>
-         i) <m>\cos\alpha=\sin\beta=\frac{5\sqrt{34}}{34}</m>;
-      ii) <m>\tan\alpha=\cot\beta=\frac{3}{5}</m>;
-      iii) <m>\csc\alpha=\sec\beta=\frac{\sqrt{34}}{3}</m> 
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
-    <statement>
-      <p>
-         i) <m>\cos\alpha=\sin\beta=\frac{7}{8}</m>;
-      ii) <m>\tan\alpha=\cot\beta=\frac{\sqrt{15}}{7}</m>;
-      iii) <m>\csc\alpha=\sec\beta=\frac{8\sqrt{15}}{15}</m>
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
-      <task>
-    <statement>
-      <p>
-        
-      <m>\theta=62^{\circ}</m> 
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
-    <statement>
-      <p>
-         <m>\theta=16^{\circ}</m> 
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
-    <statement>
-      <p>
-        
-      <m>\theta=38^{\circ}</m> 
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
-    <statement>
-      <p>
-         <m>\theta=3^{\circ}</m> 
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
-    <statement>
-      <p>
-        
-      <m>\theta=\frac{\pi}{8}</m> 
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
-    <statement>
-      <p>
-        <m>\theta=\frac{\pi}{10}</m>
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
-      <task>
-    <statement>
-      <p>
-         <m>x_2=45.9</m> NM 
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
-    <statement>
-      <p>
-         <m>x_3=66.7</m> NM 
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
-    <statement>
-      <p>
-         <m>x_4=84.5</m> NM 
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
-    <statement>
-      <p>
-         <m>x_5=99.8</m> NM 
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
-    <statement>
-      <p>
-         <m>x_6=110.9</m> NM 
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
-    <statement>
-      <p>
-         <m>x_7=117.7</m> NM 
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
-    <statement>
-      <p>
-         <m>x_8=120</m> NM  \Question  
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
-    <statement>
-      <p>
-         <m>y_1=117.7</m> NM 
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
-    <statement>
-      <p>
-        
-      <m>y_2=110.9</m> NM 
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
-    <statement>
-      <p>
-         <m>y_3=99.8</m> NM 
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
-    <statement>
-      <p>
-        
-      <m>y_4=84.5</m> NM 
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
-    <statement>
-      <p>
-         <m>y_5=66.7</m> NM 
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
-    <statement>
-      <p>
-        
-      <m>y_6=45.9</m> NM 
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
-    <statement>
-      <p>
-         <m>y_7=23.4</m> NM
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
-      <task>
-    <statement>
-      <p>
-         <m>b=3.50</m>,
-      <m>c=6.10</m>, <m>\alpha=55^{\circ}</m> 
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
-    <statement>
-      <p>
-         <m>a=28.27</m>,
-      <m>c=30.71</m>, <m>\alpha=67^{\circ}</m> 
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
-    <statement>
-      <p>
-         <m>a=26.12</m>,
-      <m>c=27.05</m>, <m>\beta=15^{\circ}</m> 
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
-    <statement>
-      <p>
-         <m>a=2.57</m>,
-      <m>b=3.06</m>,
-      <m>\alpha=40^{\circ}</m> 
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
-    <statement>
-      <p>
-         <m>a=9.51</m>, <m>b=3.09</m>,
-      <m>\beta=72^{\circ}</m> 
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
-    <statement>
-      <p>
-         <m>b=7.68</m>, <m>c=9.75</m>,
-      <m>\beta=52^{\circ}</m>
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
+
     
-<task>
-<introduction>
-  <p>
-    66.7 NM west; 99.8 NM north
-  </p>
-</introduction>
-<statement>
-<p>
-66.7 NM west; 99.8 NM north
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
+
+
+
+
+
+
+
+
+
+
+
+
+
     
-<task>
-<introduction>
-  <p>
-    5ft
-  </p>
-</introduction>
-<statement>
-<p>
-5ft
-      </p>
-    </statement>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<exercise>
+  <statement>
+    <p>
+      A waʻa sails in the direction of the house Nālani Hoʻolua for one day (120 nautical miles).
+        How many nautical miles has the waʻa traveled north?
+        How many miles has the waʻa traveled west?
+        To calculate the angle <m>\theta</m>,
+        refer to the Star Compass on <xref ref="fig_star-compass">Figure</xref>
+        on <xref ref="fig_star-compass">page</xref>
+        for help determining the number of houses and use the fact that one house is <m>11.25^{\circ}</m>.
+    </p>
+  </statement>
+  <image xml:id="fig-waa-right-triangle-distance-traveled" width="70%">
+    <latex-image>
+    <![CDATA[\begin{tikzpicture}[x=4cm,y=4cm]
+    \draw[line width=2pt,-stealth] (0,0) -- (123.75:1.2cm) node[midway,left,xshift=-0.2cm] {120 mi};
+    \draw[line width=2pt,dashed] (0,0.997763534763) -- (-0.666684279624,0.997763534763) node[midway,above,yshift=0.1cm] {west};
+    \draw[line width=2pt, dashed] (0,0) -- (0,0.997763534763) node[midway,right,xshift=0.1cm] {north};
+    \draw ([shift=(90:0.2cm)]0,0) arc (90:123.75:0.2cm) node[midway,above,xshift=-1,yshift=3] {\(\theta\)};
+    \draw ([shift=(123.75:-0.15cm)]0,0) pic {waa-top={waacolor}{(33.75)}{0.1}};
+    \draw (-0.1,0.997763534763) -- (-0.1,0.897763534763) -- (0,0.897763534763);\end{tikzpicture}]]>
+    </latex-image>
+  </image>
     <answer>
       <p>
-        MYANSWER
+        66.7 NM west; 99.8 NM north
       </p>
     </answer>
-  </task>
-      <task>
+</exercise>        
+
+
+
+  <exercise>
     <statement>
       <p>
-        
-      <m>r=3,765.4</m> miles; <m>\omega=0.2618</m> rad/hr;
-      <m>v=986</m> mi/hr 
+        <em>Movement of Sand</em>
+                The position of sand on a beach is constantly changing.
+                One of the ways sand moves is through waves.
+                In general, waves aren't perpendicular to the shore,
+                instead they come at an angle.
+                When the wave crashes on the shore in a process known as <em>swash</em>,
+                    <idx><h>swash</h></idx>
+                water as well as sediment move onto the beach as the same angle of the wave.
+                Gravity takes over and the water and sediment run straight into the ocean
+                (perpendicular to the shoreline),
+                a process known as <em>backwash</em>.
+                    <idx><h>backwash</h></idx>
+                This zig-zag motion of sand via the swash/backwash is called
+                <em>longshore drift</em>.
+                    <idx><h>longshore drift</h></idx>
+                Some beaches experience seasonal changes were waves come from a single 
+                direction in one season but come from the other direction in the next season 
+                while other beaches where waves predominantly come from a single direction 
+                will have other sand pile up at one.
       </p>
+      <p>
+        Calculate how far along the shore one grain of sand moves after a wave breaks on the shore at an angle of
+        <m>60^{\circ}</m> and washes on shore for 10 ft before falling back to the ocean?
+      </p>
+      <image xml:id="fig-sand-movement" width="50%">
+        <latex-image>
+        <![CDATA[\begin{tikzpicture}[x=4cm,y=4cm]
+        \fill[color={rgb:red,0;green,100;blue,100}] (-1,0) -- (1,0) -- (1,1) -- (-1,1);
+        \fill[yellow,opacity=0.75] (-1,0) -- (1,0) -- (1,-1) -- (-1,-1);
+        \fill[pattern=dots,opacity=0.1] (-1,0) -- (1,0) -- (1,-1) -- (-1,-1);
+        \draw[line width=1pt,blue,decorate,decoration=snake](0,0) -- (1,0.57735026919);
+        \draw[line width=1pt,blue,decorate,decoration=snake](-1,0) -- (0.732050807569,1) node[black,midway,above,sloped,yshift=2]{Waves};
+        \draw[line width=1pt,blue,decorate,decoration=snake,shorten >= 5pt](-1,0.57735026919) -- (-0.267949192431,1);
+        \draw[line width=2pt,-stealth,shorten >=3] (0,0) -- (-60:1) node[midway,sloped,below,xshift=-0.2] {10 ft};
+        \draw[line width=2pt,-stealth,shorten >=3] ([shift=(0:0.5)]0,0) -- ([shift=(0:0.5)]-60:1);
+        \draw[line width=2pt,-stealth,shorten >=3] ([shift=(0:-0.5)]0,0) -- ([shift=(0:-0.5)]-60:1);
+        \draw[line width=2pt,-stealth,shorten >=3] ([shift=(0:-1)]0,0) -- ([shift=(0:-1)]-60:1) node[midway,below,sloped]{swash};
+        \draw[line width=2pt, -stealth,dashed,shorten >=2] (0,0) -- (0.5,0) node[midway,below,xshift=4] {\(x\)};
+        \draw[line width=2pt, -stealth,dashed,shorten >=2] (0:0.5) -- (0:1);
+        \draw[line width=2pt, -stealth,dashed,shorten >=2] (0:-0.5) -- (0:0);
+        \draw[line width=2pt, -stealth,dashed,shorten >=2] (0:-1) -- (0:-0.5) node[midway,below]{movement};
+        \draw[line width=2pt,-stealth,shorten >=3] (0.5,-0.866025403784) -- (0.5,0);
+        \draw[line width=2pt,-stealth,shorten >=3] ([shift=(0:0.5)]-60:1) -- (0:1);
+        \draw[line width=2pt,-stealth,shorten >=3] ([shift=(0:-0.5)]-60:1) -- (0:0);
+        \draw[line width=2pt,-stealth,shorten >=3] ([shift=(0:-1)]-60:1) -- (0:-0.5) node[midway,below,sloped,rotate=180]{backwash};
+        \draw ([shift=(0:0.15)]0,0) arc (0:-60:0.15) node[midway,right,xshift=-4,yshift=-6] {\(60^{\circ}\)};
+        \draw (0.4,0) -- (0.4,-0.1) -- (0.5,-0.1);
+        \draw[line width=2pt,blue,-stealth,shorten >=3] (-0.5,0.866025403784) -- (-0.375,0.649519052838);
+        \draw[line width=2pt,blue,-stealth,shorten >=3] ([shift=(120:1)]210:{sqrt(3)/4}) -- ([shift=(120:0.75)]210:{sqrt(3)/4});
+        \draw[line width=2pt,blue,-stealth,shorten >=3] ({-0.25*cos(60)+(5*sqrt(3)/8-1)*sin(30)/cos(30)},1) -- ([shift=(120:0.75)]30:{sqrt(3)/4});
+        \draw[line width=2pt,blue,-stealth,shorten >=3] ([shift=(120:0.5)]210:0.433012701892) -- ([shift=(120:0.25)]210:0.433012701892);
+        \draw[line width=2pt,blue,-stealth,shorten >=3] (-0.25,0.433012701892) -- (-0.125,0.216506350946);
+        \draw[line width=2pt,blue,-stealth,shorten >=3] ([shift=(120:0.5)]30:0.433012701892) -- ([shift=(120:0.25)]30:0.433012701892);
+        \draw[line width=2pt,blue,-stealth,shorten >=3] ([shift=(120:0.5)]30:0.866025403784) -- ([shift=(120:0.25)]30:0.866025403784);
+        \draw[line width=2pt,blue,-stealth,shorten >=3] (0.92264973081,1) -- (1,0.866025403784);
+        \draw[line width=2pt,blue,-stealth,shorten >=3] (30:0.433012701892) -- ([shift=(30:0.433012701892)]-60:0.25);
+        \draw[line width=2pt,blue,-stealth,shorten >=3] (30:0.866025403784) -- ([shift=(30:0.866025403784)]-60:0.25);\end{tikzpicture}]]>
+        </latex-image>
+                </image>
+    
     </statement>
     <answer>
-    <p>
-      MYANSWER
-    </p>
+      <p>
+        5ft
+      </p>
     </answer>
-  </task>
-  <task>
+  </exercise>
+  
+  <exercisegroup>
+    <introduction>
+      <p>
+        In 2013-2017, Hōkūleʻa circumnavigated the globe with a voyage mission to
+        <em>mālama honua</em> - <q>care for Island Earth</q>
+        and all people and places as <em>ʻohana</em> (<q>family</q>).
+        The 40,000 nautical mile voyage stopped at more than 150 ports in 18 nations.
+        Throughout this voyage, Earth rotates on an axis that runs between the North Pole and the South Pole.
+        Every point on the Earth experiences this rotation through an angular speed and linear velocity 
+        If we assume the Earth completes one rotation in 24 hours and that the Earth is a perfect sphere,
+        with a radius of <m>R=4,000</m> miles,
+        then for each of the following ports of the Mālama Honua voyage and it's given latitude,
+        <m>\phi</m>, calculate the following
+  
+        I donʻt know why my list is not showing up!!!
+        <ol>
+          <il>
+            <m>r</m>, the distance from the port to the Earth's Axis of Rotation (in miles,
+            rounded to 1 decimal)
+          </il>
+          <il>
+            <m>\omega</m>,
+            the angular velocity (in radians per hour, rounded to 4 decimals)
+          </il>
+          <il>
+            <m>v</m>, the linear speed (in miles per hour,
+            rounded to the nearest whole number)
+          </il>
+        </ol>        
+      </p>
+      <image xml:id="fig-spinning-earth" width="75%">
+        <latex-image>
+        <![CDATA[\begin{tikzpicture}[x=3cm,y=3cm]
+        \draw (0,0) circle (1);
+        \draw[dashed] (0,-1.1) -- (0,1.1) node[right] {Earth's Axis};
+        \draw (0,0)--(-1,0) node[left] {Equator};
+        \draw[line width=2pt] (0,0) -- (1,0) node[midway,below] {\(R\)};
+        \draw[line width=2pt] (0,0) -- (30:1) node[midway,below,yshift=0.2cm,xshift=0.25cm] {\(R\)};
+        \draw[line width=2pt] (0,0.5) -- (30:1) node[midway,above] {\(r\)};
+        \draw (0:0.3) arc (0:30:0.3) node[midway, right,xshift=0.05cm] {\(\phi\)};
+        \draw ([shift=(30:1)]180:0.3) arc (180:210:0.3) node[midway, left,xshift=-0.05] {\(\phi\)};
+        \filldraw[black] (30:1) circle(1pt) node[right,xshift=4]{Port City};\end{tikzpicture}]]>
+        </latex-image>
+      </image>
+    </introduction>
+  <exercise>
     <statement>
       <p>
-         <m>r=3,814.2</m> miles;
-      <m>\omega=0.2618</m> rad/hr;
-      <m>v=999</m> mi/hr 
+        Hilo, Hawaiʻi (<m>19.7216^{\circ}</m>N)
       </p>
     </statement>
     <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+      <p>
+        <ol>
+          <li>
+            <m>r=3,8765.4</m> miles;
+          </li>
+          <li>
+            <m>\omega=0.2618</m> rad/hr;
+          </li>
+          <li>
+            <m>v=986</m> mi/hr 
+          </li>
+        </ol>
+      </p>
+    </answer> 
+  </exercise>
+  <exercise>
     <statement>
       <p>
-         <m>r=3,883.7</m> miles;
-      <m>\omega=0.2618</m> rad/hr;
-      <m>v=1,017</m> mi/hr 
+        Papeete, Tahiti (<m>17.5325^{\circ}</m>S)
       </p>
     </statement>
     <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+      <p>
+        <ol>
+          <li>
+            <m>r=3,814.2</m> miles;
+          </li>
+          <li>
+            <m>\omega=0.2618</m> rad/hr;
+          </li>
+          <li>
+            <m>v=999</m> mi/hr 
+          </li>
+        </ol>
+      </p>
+    </answer> 
+  </exercise>
+  <exercise>
     <statement>
       <p>
-         <m>r32,65.8</m> miles;
-      <m>\omega=0.2618</m> rad/hr;
-      <m>v=855</m> mi/hr 
+        Apia, Samoa (<m>13.8507^{\circ}</m>S)
       </p>
     </statement>
     <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+      <p>
+        <ol>
+          <li>
+            <m>r=3,883.7</m> miles;
+          </li>
+          <li>
+            <m>\omega=0.2618</m> rad/hr;
+          </li>
+          <li>
+            <m>v=1,017</m> mi/hr 
+          </li>
+        </ol>
+      </p>
+    </answer> 
+  </exercise>
+  <exercise>
     <statement>
       <p>
-         <m>r=3,321.3</m> miles;
-      <m>\omega=0.2618</m> rad/hr;
-      <m>v=870</m> mi/hr 
+        Waitangi, Aotearoa (<m>35.2683^{\circ}</m>S)
       </p>
     </statement>
     <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+      <p>
+        <ol>
+          <li>
+            <m>r=32,65.8</m> miles;
+          </li>
+          <li>
+            <m>\omega=0.2618</m> rad/hr;
+          </li>
+          <li>
+            <m>v=855</m> mi/hr 
+          </li>
+        </ol>
+      </p>
+    </answer> 
+  </exercise>
+  <exercise>
     <statement>
       <p>
-         <m>r=3,957.0</m> miles;
-      <m>\omega=0.2618</m> rad/hr;
-      <m>v=1,036</m> mi/hr 
+        Sydney, Australia (<m>33.8688^{\circ}</m>S)
       </p>
     </statement>
     <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+      <p>
+        <ol>
+          <li>
+            <m>r=3,321.3</m> miles;
+          </li>
+          <li>
+            <m>\omega=0.2618</m> rad/hr;
+          </li>
+          <li>
+            <m>v=870</m> mi/hr 
+          </li>
+        </ol>
+      </p>
+    </answer> 
+  </exercise>
+  <exercise>
     <statement>
       <p>
-         <m>r=3,754.9</m> miles;
-      <m>\omega=0.2618</m> rad/hr;
-      <m>v=983</m> mi/hr 
+        Bali, Indonesia (<m>8.4095^{\circ}</m>S)
       </p>
     </statement>
     <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+      <p>
+        <ol>
+          <li>
+            <m>r=3,957.0</m> miles;
+          </li>
+          <li>
+            <m>\omega=0.2618</m> rad/hr;
+          </li>
+          <li>
+            <m>v=1,036</m> mi/hr 
+          </li>
+        </ol>
+      </p>
+    </answer> 
+  </exercise>
+  <exercise>
     <statement>
       <p>
-         <m>r=3,319.1</m> miles;
-      <m>\omega=0.2618</m> rad/hr;
-      <m>v=869</m> mi/hr 
+        Port Louis, Mauritius (<m>20.1609^{\circ}</m>S)
       </p>
     </statement>
     <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+      <p>
+        <ol>
+          <li>
+            <m>r=3,754.9</m> miles;
+          </li>
+          <li>
+            <m>\omega=0.2618</m> rad/hr;
+          </li>
+          <li>
+            <m>v=983</m> mi/hr 
+          </li>
+        </ol>
+      </p>
+    </answer> 
+  </exercise>
+  <exercise>
     <statement>
       <p>
-         <m>r=3,979.6</m> miles;
-      <m>\omega=0.2618</m> rad/hr;
-      <m>v=1,042</m> mi/hr 
+        Cape Town, South Africa (<m>33.9249^{\circ}</m>S)
       </p>
     </statement>
     <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+      <p>
+        <ol>
+          <li>
+            <m>r=3,319.1</m> miles;
+          </li>
+          <li>
+            <m>\omega=0.2618</m> rad/hr;
+          </li>
+          <li>
+            <m>v=869</m> mi/hr 
+          </li>
+        </ol>
+      </p>
+    </answer> 
+  </exercise>
+  <exercise>
     <statement>
       <p>
-         <m>r=3,792.7</m> miles;
-      <m>\omega=0.2618</m> rad/hr;
-      <m>v=993</m> mi/hr 
+        Natal, Brazil (<m>5.7842^{\circ}</m>S)
       </p>
     </statement>
     <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+      <p>
+        <ol>
+          <li>
+            <m>r=3,979.6</m> miles;
+          </li>
+          <li>
+            <m>\omega=0.2618</m> rad/hr;
+          </li>
+          <li>
+            <m>v=1,042</m> mi/hr 
+          </li>
+        </ol>
+      </p>
+    </answer> 
+  </exercise>
+  <exercise>
     <statement>
       <p>
-         <m>r=3,792.7</m> miles;
-      <m>\omega=0.2618</m> rad/hr;
-      <m>v=755</m> mi/hr 
+        Necker, British Virgin Islands (<m>18.5268^{\circ}</m>N)
       </p>
     </statement>
     <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+      <p>
+        <ol>
+          <li>
+            <m>r=3,792.7</m> miles;
+          </li>
+          <li>
+            <m>\omega=0.2618</m> rad/hr;
+          </li>
+          <li>
+            <m>v=993</m> mi/hr 
+          </li>
+        </ol>
+      </p>
+    </answer> 
+  </exercise>
+  <exercise>
     <statement>
       <p>
-         <m>r=3,951.2</m> miles;
-      <m>\omega=0.2618</m> rad/hr;
-      <m>v=1,034</m> mi/hr 
+        Yarmouth, Nova Scotia (<m>43.8379^{\circ}</m>N)
       </p>
     </statement>
     <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+      <p>
+        <ol>
+          <li>
+            <m>r=3,792.7</m> miles;
+          </li>
+          <li>
+            <m>\omega=0.2618</m> rad/hr;
+          </li>
+          <li>
+            <m>v=755</m> mi/hr 
+          </li>
+        </ol>
+      </p>
+    </answer> 
+  </exercise>
+  <exercise>
     <statement>
       <p>
-         <m>r=3,999.5</m> miles;
-      <m>\omega=0.2618</m> rad/hr;
-      <m>v=1,047</m> mi/hr 
+        Balboa, Panama (<m>8.9614^{\circ}</m>N)
       </p>
     </statement>
     <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+      <p>
+        <ol>
+          <li>
+            <m>r=3,951.2</m> miles;
+          </li>
+          <li>
+            <m>\omega=0.2618</m> rad/hr;
+          </li>
+          <li>
+            <m>v=1,034</m> mi/hr 
+          </li>
+        </ol>
+      </p>
+    </answer> 
+  </exercise>
+  <exercise>
     <statement>
       <p>
-         <m>r=3,560.5</m> miles;
-      <m>\omega=0.2618</m> rad/hr;
-      <m>v=932</m> mi/hr
+        Galapagos Islands (<m>0.9538^{\circ}</m>S)
       </p>
     </statement>
     <answer>
       <p>
-        MYANSWER
+        <ol>
+          <li>
+            <m>r=3,999.5</m> miles;
+          </li>
+          <li>
+            <m>\omega=0.2618</m> rad/hr;
+          </li>
+          <li>
+            <m>v=1,047</m> mi/hr 
+          </li>
+        </ol>
       </p>
-    </answer>
-  </task>
-    <p>
-      \end{Answer}
-    </p>
-  </subsection>
-</section>
+    </answer> 
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Rapa Nui (<m>27.1127^{\circ}</m>S)
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <ol>
+          <li>
+            <m>r=3,560.5</m> miles;
+          </li>
+          <li>
+            <m>\omega=0.2618</m> rad/hr;
+          </li>
+          <li>
+            <m>v=932</m> mi/hr 
+          </li>
+        </ol>
+      </p>
+    </answer> 
+  </exercise>
+  </exercisegroup>
+    </exercises>
+  
+  </section>
+  

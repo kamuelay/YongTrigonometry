@@ -9,18 +9,19 @@
       The latitude of a place is defined as the angle between a line drawn from the center of the earth to that point and the equatorial plane.
       For any point in the Northern Hemisphere,
       a navigator can measure their latitude by determining the angle
-      <em>H&#333;k&#363;pa&#699;a</em>
+      <em>Hōkūpaʻa</em>
       (North Star) makes with the horizon.
     </p>
-    <image>
+    <image xml:id="angles-Hokupaa" width="70%">
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw (0,0)-(-0.5,0);
-\draw[line width=2pt] (0,0) - (1.1,0) node[right,xshift=0.1cm] {Horizon};
-\draw[line width=2pt] (0,0) - (30:1.2);
+<![CDATA[\begin{tikzpicture}
+\draw (0,0)--(-0.5,0);
+\draw[line width=2pt] (0,0) -- (1.1,0) node[right,xshift=0.1cm] {Horizon};
+\draw[line width=2pt] (0,0) -- (30:1.2);
 \draw[line width=2pt] (0:0.3cm) arc (0:30:0.3cm) node[midway, right,xshift=0.05cm,yshift=0.1cm] {Angle of H\={o}k\={u}pa&#699;a};
 \node [black,scale=1.5] at (30:1.27017059222) {\(\bigstar\)};
 \node [yellow] at (30:1.27017059222) {\(\bigstar\)};
-\node at (1.4,0.63) {H\={o}k\={u}pa&#699;a};\end{tikzpicture}]]>
+\node at (1.4,0.63) {a};\end{tikzpicture}]]>
 </latex-image>
     </image>
     <p>
@@ -37,10 +38,10 @@
               <idx><h>ray</h></idx>
           is a part of a line that begins at a point <m>O</m> and extends in one direction.
         </p>
-        <image>
+        <image xml:id="fig:ray">
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-5,0) - (5,0);
-\draw[->, line width=2pt,blue,-stealth](0,0) - (5,0) node[black,midway,below]{Ray};
+<![CDATA[\begin{tikzpicture}\draw[<->] (-5,0) -- (5,0);
+\draw[->, line width=2pt,blue,-stealth](0,0) -- (5,0) node[black,midway,below]{Ray};
 \node[circle,fill=blue,inner sep=2pt,minimum size=2pt,label=below:{\(O\)}] (a) at (0,0) {};\end{tikzpicture}]]>
 </latex-image>
         </image>
@@ -59,13 +60,14 @@
           <term>terminal side</term>.
               <idx><h>terminal side</h></idx>
         </p>
-        <image>
+        <image xml:id="fig:initial-terminal-side">
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[->, line width=2pt,blue,-stealth](0,0) - (5,0) node[black,midway,below]{Initial Side};
-\draw[->, line width=2pt,blue,-stealth](0,0) - (40:5) node[black,midway,left,xshift=-0.5cm]{Terminal Side};
+\begin{tikzpicture}[]
+\draw[->, line width=2pt,blue,-stealth](0,0) -- (5,0) node[black,midway,below]{Initial Side};
+\draw[->, line width=2pt,blue,-stealth](0,0) -- (40:5) node[black,midway,left,xshift=-0.5cm]{Terminal Side};
 \node[circle,fill=blue,inner sep=2pt,minimum size=2pt,label=below:{\(O\)}] (a) at (0,0) {};
 \draw[red] ([shift=(0:0.8cm)]0,0) arc (0:40:0.8cm);
-\node at (1,0.35) {\(\theta\)};\end{tikzpicture}]]>
+\node at (1,0.35) {\(\theta\)};\end{tikzpicture}
 </latex-image>
         </image>
       </statement>
@@ -103,16 +105,18 @@
       or <em>arc second</em>,
           <idx><h>arc second</h></idx>
       denoted <m>1''</m>, is defined as
-      <m>\frac{1}{60}(1')</m>. \begin{mybox}[Conversion Between Degree, Minutes,
+      <m>\frac{1}{60}(1')</m>. 
+    </p>
+      <remark>
+        <p>
+      [Conversion Between Degree, Minutes,
       and Seconds]
       <md>
         <mrow>1^{\circ}\amp =60' \amp  1'\amp =\left(\frac{1}{60}\right)^{\circ} \amp  1''\amp =\left(\frac{1}{3600}\right)^{\circ}</mrow>
         <mrow>1^{\circ}\amp =3600'' \amp  1'\amp =60'' \amp  1''\amp =\left(\frac{1}{60}\right)'</mrow>
       </md>
     </p>
-    <p>
-      \end{mybox}
-    </p>
+  </remark>
     <example>
       <statement>
         <p>
@@ -127,12 +131,13 @@
           <caption>The Star Compass with the angles indicating the boundaries for each House</caption>
           <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<-,dashed] (-1.2cm,0cm) - (-0.97cm,0cm);
-\draw[dashed] (-0.49cm,0cm) - (0.68cm,0cm);
-\draw[->,dashed] (0.98cm,0cm) - (1.2cm,0cm);
-\draw[<-,dashed] (0cm,-1.2cm) - (0cm,-0.98cm);
-\draw[dashed] (0cm,-0.72cm) - (0cm,0.71cm);
-\draw[->,dashed] (0cm,0.98cm) - (0cm,1.2cm);
+\begin{tikzpicture}[x=5.3cm,y=5.3cm,cap=round,>=latex]
+\draw[->,dashed] (-0.97cm,0cm) -- (-1.2cm,0cm);
+\draw[dashed] (-0.49cm,0cm) -- (0.68cm,0cm);
+\draw[->,dashed] (0.98cm,0cm) -- (1.2cm,0cm);
+\draw[->,dashed] (0cm,-0.98cm) -- (0cm,-1.2cm);
+\draw[dashed] (0cm,-0.72cm) -- (0cm,0.71cm);
+\draw[->,dashed] (0cm,0.98cm) -- (0cm,1.2cm);
 \draw[thick] (0cm,0cm) circle(1cm);
 \draw[left] (0:0.98) node{\large HIKINA};
 \draw[left] (90:0.98) node[rotate=90] {\large &#699;&#256;KAU};
@@ -144,12 +149,12 @@
 \draw (\x:1.2cm) node[rotate=\x] {\(\x^\circ\)};
 }
 \foreach \x in {95.625,106.875,...,270} {
-\draw[gray] (0cm,0cm) - (\x:1cm);
+\draw[gray] (0cm,0cm) -- (\x:1cm);
 \filldraw[black] (\x:1cm) circle(0.4pt);
 \draw (\x:1.2cm) node[rotate=180+\x] {\(\x^\circ\)};
 }
 \foreach \x in {275.625,286.875,...,360} {
-\draw[gray] (0cm,0cm) - (\x:1cm);
+\draw[gray] (0cm,0cm) -- (\x:1cm);
 \filldraw[black] (\x:1cm) circle(0.4pt);
 \draw (\x:1.2cm) node[rotate=\x] {\(\x^\circ\)};
 }
@@ -186,7 +191,7 @@
 247.5/N&#257; Leo,
 258.75/Haka
 }
-\draw[right] (\x:0.98) node[rotate=180+\x] {\xtext};\end{tikzpicture}]]>
+\draw[right] (\x:0.98) node[rotate=180+\x] {\xtext};\end{tikzpicture}
 </latex-image>
           </image>
         </figure>
@@ -401,6 +406,8 @@
       </statement>
     </definition>
   </subsection>
+
+<!--
   <subsection>
     <title>Radian</title>
     <p>
@@ -1022,11 +1029,12 @@
         </p>
       </statement>
     </definition>
+  -->
     <example>
       <title>Une</title>
       <statement>
         <p>
-          One method a wa&#699;a uses to change direction is with the
+          One method a waʻa uses to change direction is with the
           <em>hoe uli</em>, or the steering paddle.
           When a sharp turn is needed for maneuvers such as tacking,
           the steersperson will turn the handle of the hoe uli in a circular motion,
@@ -1087,6 +1095,7 @@
         </p>
       </solution>
     </example>
+    <!--
     <exercise xml:id="ex-1_2">
       <statement>
         <p>
@@ -2878,4 +2887,5 @@ plot ({\t r}: {0.1+0.06*\t});\end{tikzpicture}]]>
       ii) <m>64</m>cm<m>^2</m> \end{tasks} \Question \begin{tasks}(2) \task <m>69.10</m> miles \task <m>1.15</m> miles \task <m>101</m> feet \end{tasks} \Question \begin{tasks} \task <m>360\pi</m> radians/minute \task <m>38.56</m> miles/hour \end{tasks} \Question \begin{tasks} \task <m>1.6</m> million miles \task <m>47.9</m> million miles \task <m>583.7</m> million miles \task <m>66,588</m> miles per hour \end{tasks} \Question 2,292 miles per hour \Question 36.5 minutes \end{Answer}
     </p>
   </subsection>
-</section>
+  -->
+</section> 

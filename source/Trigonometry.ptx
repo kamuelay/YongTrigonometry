@@ -2,8 +2,8 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="Trigonometry">
   <title>Trigonometry</title>
   <xi:include  href="Hawaiian_Star_Compass.ptx"/>
-  <xi:include  href="Angles_and_Their_Measure.ptx"/>
-  <xi:include  href="Unit_Circle.ptx"/>
+  <!-- <xi:include  href="Angles_and_Their_Measure.ptx"/> -->
+  <!-- <xi:include  href="Unit_Circle.ptx"/> -->
   <xi:include  href="Right_Triangle_Trigonometry.ptx"/>
-  <xi:include  href="Trigonometric_Functions_of_Any_Angles.ptx"/>
+  <!-- <xi:include  href="Trigonometric_Functions_of_Any_Angles.ptx"/> -->
 </chapter>

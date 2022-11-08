@@ -218,20 +218,21 @@
   </docinfo>
   <book>
     <title>Trigonometry through polynesian navigation</title>
-    <frontmatter>
+    <!-- <frontmatter>
       <titlepage>
         <author>
           <personname>Kamuela E Yong</personname>
         </author>
       </titlepage>
-    </frontmatter>
+    </frontmatter> -->
+    <xi:include href="./Front_Matter.ptx"/>
     <xi:include href="./Trigonometry.ptx"/>
-    <xi:include href="./Graphs_of_the_Trigonometric_Functions.ptx"/>
-    <xi:include href="./Analytic_Trigonometry.ptx"/>
-    <xi:include href="./Applications_of_Trigonometry.ptx"/>
-    <xi:include href="./Polar_and_Parametric_Equations.ptx"/>
-    <xi:include href="./Analytic_Geometry.ptx"/>
-    <xi:include href="./Solutions.ptx"/>
+    <!-- <xi:include href="./Graphs_of_the_Trigonometric_Functions.ptx"/> -->
+    <!-- <xi:include href="./Analytic_Trigonometry.ptx"/> -->
+    <!-- <xi:include href="./Applications_of_Trigonometry.ptx"/> -->
+    <!-- <xi:include href="./Polar_and_Parametric_Equations.ptx"/> -->
+    <!-- <xi:include href="./Analytic_Geometry.ptx"/> -->
+    <!-- <xi:include href="./Solutions.ptx"/> -->
     <backmatter>
       <xi:include href="./bibliography.ptx"/>
       <index>
