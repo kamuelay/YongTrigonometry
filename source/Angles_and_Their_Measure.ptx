@@ -12,18 +12,18 @@
       <em>Hōkūpaʻa</em>
       (North Star) makes with the horizon.
     </p>
-    <image xml:id="angles-Hokupaa" width="70%">
-<latex-image>
-<![CDATA[\begin{tikzpicture}
-\draw (0,0)--(-0.5,0);
-\draw[line width=2pt] (0,0) -- (1.1,0) node[right,xshift=0.1cm] {Horizon};
-\draw[line width=2pt] (0,0) -- (30:1.2);
-\draw[line width=2pt] (0:0.3cm) arc (0:30:0.3cm) node[midway, right,xshift=0.05cm,yshift=0.1cm] {Angle of H\={o}k\={u}pa&#699;a};
-\node [black,scale=1.5] at (30:1.27017059222) {\(\bigstar\)};
-\node [yellow] at (30:1.27017059222) {\(\bigstar\)};
-\node at (1.4,0.63) {a};\end{tikzpicture}]]>
-</latex-image>
-    </image>
+    <image xml:id="angles-Hokupaa" width="100%">
+      <latex-image>
+      \begin{tikzpicture}[x=4cm,y=4cm]
+      \draw (0,0)--(-0.5,0);
+      \draw[line width=2pt] (0,0) -- (1.1,0) node[right,xshift=0.1cm] {Horizon};
+      \draw[line width=2pt] (0,0) -- (30:1.2);
+      \draw[line width=2pt] (0:0.3) arc (0:30:0.3) node[midway, right,xshift=0.05,yshift=0.1] {Angle of H\={o}k\={u}pa`a};
+      \node [black,scale=1.5] at (30:1.27017059222) {\(\bigstar\)};
+      \node [yellow] at (30:1.27017059222) {\(\bigstar\)};
+      \node at (1.4,0.63) {Hokupa`a};\end{tikzpicture}
+      </latex-image>
+          </image>
     <p>
       When voyaging,
       knowing correct angles can be the difference between finding and missing your destination.
@@ -38,11 +38,11 @@
               <idx><h>ray</h></idx>
           is a part of a line that begins at a point <m>O</m> and extends in one direction.
         </p>
-        <image xml:id="fig:ray">
+        <image xml:id="fig-ray">
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-5,0) -- (5,0);
+\begin{tikzpicture}\draw[&lt;->] (-5,0) -- (5,0);
 \draw[->, line width=2pt,blue,-stealth](0,0) -- (5,0) node[black,midway,below]{Ray};
-\node[circle,fill=blue,inner sep=2pt,minimum size=2pt,label=below:{\(O\)}] (a) at (0,0) {};\end{tikzpicture}]]>
+\node[circle,fill=blue,inner sep=2pt,minimum size=2pt,label=below:{\(O\)}] (a) at (0,0) {};\end{tikzpicture}
 </latex-image>
         </image>
       </statement>
@@ -60,7 +60,7 @@
           <term>terminal side</term>.
               <idx><h>terminal side</h></idx>
         </p>
-        <image xml:id="fig:initial-terminal-side">
+        <image xml:id="fig-initial-terminal-side">
 <latex-image>
 \begin{tikzpicture}[]
 \draw[->, line width=2pt,blue,-stealth](0,0) -- (5,0) node[black,midway,below]{Initial Side};
@@ -88,13 +88,102 @@
       of an angle is the amount of rotation from the initial side to the terminal side.
       One unit of measuring angles is the degree.
       One <term>degree</term>
-          <idx><h>degree</h></idx>
-      is <m>\frac{1}{360}</m> of a complete revolution,
+          <idx><h>degree</h></idx>,
+      denoted by <m>1^{\circ}</m>, is <m>\frac{1}{360}</m> of a complete revolution,
       so one full revolution is <m>360^{\circ}</m>.
     </p>
     <p>
-      Today we often use decimals to represent the fractional parts of a degree.
-      However, fractional parts of a degree were traditionally represented in minutes and seconds.
+      Since the Hawaiian Star Compass has 32 houses, we see that each house has <m> \frac{360^{\circ}}
+        {32}=11.25^{\circ}</m>. If we assume due East corresponds to <m>0^{\circ}</m> 
+        and the center of the House of Hikina points due East, 
+        the border between Hikina and Lā Koʻolau will be half the angle of the house, 
+        <m>\frac{11.25^{\circ}}{2}=5.625^{\circ}</m>.
+        The angles for the remaining boundaries on the Hawaiian Star Compass are shown in 
+        <xref ref="star-compass-with-angles">Figure</xref>.
+    </p>
+    <figure xml:id="star-compass-with-angles">
+      <caption>The Star Compass with the angles indicating the boundaries for each House</caption>
+      <image>
+  <latex-image>
+    \begin{tikzpicture}[scale=5.3,cap=round,>=latex]
+    % draw the coordinates
+    \draw[&lt;-,dashed] (-1.2,0) -- (-0.96,0);
+    \draw[dashed] (-0.36,0) -- (0.6,0);
+    \draw[->,dashed] (0.96,0) -- (1.2,0);
+    \draw[&lt;-,dashed] (0,-1.2) -- (0,-0.96);
+    \draw[dashed] (0,-0.65) -- (0,0.63);
+    \draw[->,dashed] (0,0.96) -- (0,1.2);
+    % draw the unit circle
+    \draw[thick] (0cm,0cm) circle(1cm);
+        \draw[left] (0:0.98) node{\large HIKINA};
+        \draw[left] (90:0.98) node[rotate=90] {\large `\={A}KAU};
+        \draw[right] (180:0.98cm) node{\large KOMOHANA};
+        \draw[left] (270:0.98) node[rotate=-90] {\large HEMA};
+    \foreach \x in {5.625,16.875,...,90} {
+            % lines from center to point
+            \draw[gray] (0cm,0cm) -- (\x:1cm);% node[fill=white,left,sloped] {$\x^\circ$};
+            % dots at each point
+            \filldraw[black] (\x:1cm) circle(0.4pt);
+            % draw each angle in degrees
+            \draw (\x:1.2cm) node[rotate=\x] {$\x^\circ$};
+    }
+    \foreach \x in {95.625,106.875,...,270} {
+            % lines from center to point
+            \draw[gray] (0cm,0cm) -- (\x:1cm);% node[fill=white,left,sloped] {$\x^\circ$};
+            % dots at each point
+            \filldraw[black] (\x:1cm) circle(0.4pt);
+            % draw each angle in degrees
+            \draw (\x:1.2cm) node[rotate=180+\x] {$\x^\circ$};
+    }
+    \foreach \x in {275.625,286.875,...,360} {
+            % lines from center to point
+            \draw[gray] (0cm,0cm) -- (\x:1cm);% node[fill=white,left,sloped] {$\x^\circ$};
+            % dots at each point
+            \filldraw[black] (\x:1cm) circle(0.4pt);
+            % draw each angle in degrees
+            \draw (\x:1.2cm) node[rotate=\x] {$\x^\circ$};
+    }
+    \foreach \x/\xtext in {
+        11.25/L\={a},
+        22.5/`\={A}ina,
+        33.75/Noio,
+        45/Manu,
+        56.25/N\={a}lani,
+        67.5/N\={a} Leo,
+        78.75/Haka,
+        281.25/Haka,
+        292.5/N\={a} Leo,
+        303.75/N\={a}lani,
+        315/Manu,
+        326.25/Noio,
+        337.5/`\={A}ina,
+        348.75/L\={a}
+        }
+        \draw[left] (\x:0.98) node[rotate=\x] {\xtext};
+    \foreach \x/\xtext in {
+        101.25/Haka,
+        112.5/N\={a} Leo,
+        123.75/N\={a}lani,
+        135/Manu,
+        146.25/Noio,
+        157.5/`\={A}ina,
+        168.75/L\={a},
+        191.25/L\={a},
+        202.5/`\={A}ina,
+        213.75/Noio,
+        225/Manu,
+        236.25/N\={a}lani,
+        247.5/N\={a} Leo,
+        258.75/Haka
+        }
+        \draw[right] (\x:0.98) node[rotate=180+\x] {\xtext};
+  \end{tikzpicture}
+  </latex-image>
+      </image>
+    </figure>
+    <p>
+      Although we often use decimals to represent the fractional parts of a degree, it was 
+      traditionally represented in minutes and seconds.
       One <term>minute</term>
           <idx><h>minute</h></idx>
       or <em>arc minute</em>,
@@ -107,94 +196,26 @@
       denoted <m>1''</m>, is defined as
       <m>\frac{1}{60}(1')</m>. 
     </p>
-      <remark>
-        <p>
-      [Conversion Between Degree, Minutes,
-      and Seconds]
+      <remark><title>Conversion Between Degree, Minutes,
+        and Seconds</title>
       <md>
         <mrow>1^{\circ}\amp =60' \amp  1'\amp =\left(\frac{1}{60}\right)^{\circ} \amp  1''\amp =\left(\frac{1}{3600}\right)^{\circ}</mrow>
         <mrow>1^{\circ}\amp =3600'' \amp  1'\amp =60'' \amp  1''\amp =\left(\frac{1}{60}\right)'</mrow>
       </md>
-    </p>
   </remark>
-    <example>
+
+
+    <example><title>Convert angle from decimal degrees to degrees/minutes/seconds</title>
       <statement>
         <p>
           In the Star Compass
-          (<xref ref="fig_star-compass-with-angles">Figure</xref>),
-          the angle that divides the houses Manu (northwest) and Noio
+          (<xref ref="star-compass-with-angles">Figure</xref>),
+          the angle that divides the houses Manu Hoʻolua (northwest) and Noio Hoʻolua
           (northwest by west)
           is <m>140.625^{\circ}</m>.
           Represent <m>140.625^{\circ}</m> in degrees, minutes, and seconds.
         </p>
-        <figure xml:id="fig_star-compass-with-angles">
-          <caption>The Star Compass with the angles indicating the boundaries for each House</caption>
-          <image>
-<latex-image>
-\begin{tikzpicture}[x=5.3cm,y=5.3cm,cap=round,>=latex]
-\draw[->,dashed] (-0.97cm,0cm) -- (-1.2cm,0cm);
-\draw[dashed] (-0.49cm,0cm) -- (0.68cm,0cm);
-\draw[->,dashed] (0.98cm,0cm) -- (1.2cm,0cm);
-\draw[->,dashed] (0cm,-0.98cm) -- (0cm,-1.2cm);
-\draw[dashed] (0cm,-0.72cm) -- (0cm,0.71cm);
-\draw[->,dashed] (0cm,0.98cm) -- (0cm,1.2cm);
-\draw[thick] (0cm,0cm) circle(1cm);
-\draw[left] (0:0.98) node{\large HIKINA};
-\draw[left] (90:0.98) node[rotate=90] {\large &#699;&#256;KAU};
-\draw[right] (180:0.98cm) node{\large KOMOHANA};
-\draw[left] (270:0.98) node[rotate=-90] {\large HEMA};
-\foreach \x in {5.625,16.875,...,90} {
-\draw[gray] (0cm,0cm) - (\x:1cm);
-\filldraw[black] (\x:1cm) circle(0.4pt);
-\draw (\x:1.2cm) node[rotate=\x] {\(\x^\circ\)};
-}
-\foreach \x in {95.625,106.875,...,270} {
-\draw[gray] (0cm,0cm) -- (\x:1cm);
-\filldraw[black] (\x:1cm) circle(0.4pt);
-\draw (\x:1.2cm) node[rotate=180+\x] {\(\x^\circ\)};
-}
-\foreach \x in {275.625,286.875,...,360} {
-\draw[gray] (0cm,0cm) -- (\x:1cm);
-\filldraw[black] (\x:1cm) circle(0.4pt);
-\draw (\x:1.2cm) node[rotate=\x] {\(\x^\circ\)};
-}
-\foreach \x/\xtext in {
-11.25/L&#257;,
-22.5/&#699;&#256;ina,
-33.75/Noio,
-45/Manu,
-56.25/N&#257;lani,
-67.5/N&#257; Leo,
-78.75/Haka,
-281.25/Haka,
-292.5/N&#257; Leo,
-303.75/N&#257;lani,
-315/Manu,
-326.25/Noio,
-337.5/&#699;&#256;ina,
-348.75/L&#257;
-}
-\draw[left] (\x:0.98) node[rotate=\x] {\xtext};
-\foreach \x/\xtext in {
-101.25/Haka,
-112.5/N&#257; Leo,
-123.75/N&#257;lani,
-135/Manu,
-146.25/Noio,
-157.5/&#699;&#256;ina,
-168.75/L&#257;,
-191.25/L&#257;,
-202.5/&#699;&#256;ina,
-213.75/Noio,
-225/Manu,
-236.25/N&#257;lani,
-247.5/N&#257; Leo,
-258.75/Haka
-}
-\draw[right] (\x:0.98) node[rotate=180+\x] {\xtext};\end{tikzpicture}
-</latex-image>
-          </image>
-        </figure>
+
       </statement>
       <solution>
         <p>
@@ -212,7 +233,7 @@
         </p>
       </solution>
     </example>
-    <example>
+    <example><title>Convert angle from degrees/minutes/seconds to decimal degrees</title>
       <statement>
         <p>
           Convert <m>263^{\circ}24'45''</m> to decimal degrees.
@@ -249,29 +270,34 @@
               <idx><h>negative angle</h></idx>
         </p>
         <image>
-<latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)-(1.25,0) node[right]{\(x\)};
-\draw[<->] (0,-1.25)-(0,1.25) node[above]{\(y\)};
-\filldraw[blue] (1cm,0) circle(1pt);
-\filldraw[blue] (60:1.2cm) circle(1pt);
-\draw[line width=2pt,blue] (0,0) - (1,0);
-\draw[line width=2pt,blue] (0,0) - (60:1.2);
-\draw[->, line width=1.25pt] (0:0.7cm) arc (0:60:0.7cm) node[midway, right,xshift=0.05cm,yshift=0.2cm] {positive angle};\end{tikzpicture}]]>
-</latex-image>
+          <latex-image>
+            \begin{tikzpicture}[x=1.25cm,y=1.25cm]
+            \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+            \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+            \filldraw[blue] (1cm,0) circle(1pt);
+            \filldraw[blue] (60:1.2cm) circle(1pt);
+            \draw[line width=2pt,blue] (0,0) -- (1,0);
+            \draw[line width=2pt,blue] (0,0) -- (60:1.2);
+            \draw[->, line width=1.25pt] (0:0.7cm) arc (0:60:0.7cm) node[midway, right,xshift=0.05cm,yshift=0.2cm] {positive angle};
+            \end{tikzpicture}
+          </latex-image>
         </image>
         <image>
-<latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)-(1.25,0) node[right]{\(x\)};
-\draw[<->] (0,-1.25)-(0,1.25) node[above]{\(y\)};
-\filldraw[blue] (1cm,0) circle(1pt);
-\filldraw[blue] (-60:1.2cm) circle(1pt);
-\draw[line width=2pt,blue] (0,0) - (1,0);
-\draw[line width=2pt,blue] (0,0) - (-60:1.2);
-\draw[->, line width=1.25pt] (0:0.7cm) arc (0:-60:0.7cm) node[midway, right,xshift=0.05cm,yshift=-0.2cm] {negative angle};\end{tikzpicture}]]>
-</latex-image>
+          <latex-image>
+            \begin{tikzpicture}[x=1.25cm,y=1.25cm]
+            \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+            \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+            \filldraw[blue] (1cm,0) circle(1pt);
+            \filldraw[blue] (-60:1.2cm) circle(1pt);
+            \draw[line width=2pt,blue] (0,0) -- (1,0);
+            \draw[line width=2pt,blue] (0,0) -- (-60:1.2);
+            \draw[->, line width=1.25pt] (0:0.7cm) arc (0:-60:0.7cm) node[midway, right,xshift=0.05cm,yshift=-0.2cm] {negative angle};
+            \end{tikzpicture}
+          </latex-image>
         </image>
       </statement>
     </definition>
+
     <definition>
       <statement>
         <p>
@@ -287,12 +313,14 @@
         </p>
         <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-2,0)-(2,0) node[right]{\(x\)};
-\draw[<->] (0,-2)-(0,2) node[above]{\(y\)};
+\begin{tikzpicture}
+\draw[&lt;->] (-2,0)--(2,0) node[right]{$x$};
+\draw[&lt;->] (0,-2)--(0,2) node[above]{$y$};
 \node at (1,1) [ align=center] {I \\ Ko&#699;olau};
 \node at (-1,1) [ align=center]{II \\ Ho&#699;olua};
 \node at (-1,-1) [ align=center] {III \\ Kona};
-\node at (1,-1) [ align=center] {IV \\ Malanai};\end{tikzpicture}]]>
+\node at (1,-1) [ align=center] {IV \\ Malanai};
+\end{tikzpicture}
 </latex-image>
         </image>
       </statement>
@@ -326,7 +354,7 @@
       <statement>
         <p>
           Determine the quadrant in which each angle lies and name the corresponding House and quadrant in the Star Compass
-          (<xref ref="fig_star-compass-with-angles">Figure</xref>).
+          (<xref ref="star-compass-with-angles">Figure</xref>).
           <ol>
             <li>
               <p>
@@ -406,8 +434,6 @@
       </statement>
     </definition>
   </subsection>
-
-<!--
   <subsection>
     <title>Radian</title>
     <p>
@@ -433,16 +459,18 @@
         </p>
         <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)-(1.25,0) node[right]{\(x\)};
-\draw[<->] (0,-1.25)-(0,1.25) node[above]{\(y\)};
+\begin{tikzpicture}[x=2cm,y=2cm]
+\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+\draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
 \draw (0,0) circle (1cm);
-\draw[blue] (45:0.95cm) - (45:1.05cm);
-\draw[line width=2pt,blue] (0:1cm) arc (0:45:1cm) node[midway,above,yshift=0.15cm,xshift=0.2cm] {\(s\)};
+\draw[blue] (45:0.95cm) -- (45:1.05cm);
+\draw[line width=2pt,blue] (0:1cm) arc (0:45:1cm) node[midway,above,yshift=0.15cm,xshift=0.2cm] {$s$};
 \filldraw[blue] (1cm,0) circle(1pt);
 \filldraw[blue] (45:1cm) circle(1pt);
-\draw[line width=2pt,blue] (0,0) - (1,0) node[midway,below,yshift=-0.1cm]{r};
-\draw[line width=2pt,blue] (0,0) - (45:1);
-\draw (0:0.3cm) arc (0:45:0.3cm) node[midway,above,xshift=0.2cm,yshift=-0.1cm]{\(\theta\)};\end{tikzpicture}]]>
+\draw[line width=2pt,blue] (0,0) -- (1,0) node[midway,below,yshift=-0.1cm]{r};
+\draw[line width=2pt,blue] (0,0) -- (45:1);
+\draw (0:0.3cm) arc (0:45:0.3cm) node[midway,above,xshift=0.2cm,yshift=-0.1cm]{$\theta$};
+\end{tikzpicture}
 </latex-image>
         </image>
       </statement>
@@ -456,32 +484,36 @@
     </p>
     <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)-(1.25,0) node[right]{\(x\)};
-\draw[<->] (0,-1.25)-(0,1.25) node[above]{\(y\)};
-\draw (0,0) circle (1cm);
-\draw[blue] (57.3:0.95cm) - (57.3:1.05cm);
-\draw[line width=2pt,blue] (0:1cm) arc (0:57.3:1cm) node[midway,above,yshift=0.15cm,xshift=0.2cm] {\(r\)};
-\filldraw[blue] (1cm,0) circle(1pt);
-\filldraw[blue] (57.3:1cm) circle(1pt);
-\draw[line width=2pt,blue] (0,0) - (1,0) node[midway,below,yshift=-0.1cm]{r};
-\draw[line width=2pt,blue] (0,0) - (57.3:1);
-\draw (0:0.3cm) arc (0:57.3:0.3cm) node[midway,above,xshift=0.2cm,yshift=-0.1cm]{\(\theta\)};\end{tikzpicture}]]>
+  \begin{tikzpicture}[x=1.9cm,y=1.9cm]
+  \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+  \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+  \draw (0,0) circle (1cm);
+  \draw[blue] (57.3:0.95cm) -- (57.3:1.05cm);
+  \draw[line width=2pt,blue] (0:1cm) arc (0:57.3:1cm) node[midway,above,yshift=0.15cm,xshift=0.2cm] {$r$};
+  \filldraw[blue] (1cm,0) circle(1pt);
+  \filldraw[blue] (57.3:1cm) circle(1pt);
+  \draw[line width=2pt,blue] (0,0) -- (1,0) node[midway,below,yshift=-0.1cm]{r};
+  \draw[line width=2pt,blue] (0,0) -- (57.3:1);
+  \draw (0:0.3cm) arc (0:57.3:0.3cm) node[midway,above,xshift=0.2cm,yshift=-0.1cm]{$\theta$};
+\end{tikzpicture}
 </latex-image>
     </image>
     <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)-(1.25,0) node[right]{\(x\)};
-\draw[<->] (0,-1.25)-(0,1.25) node[above]{\(y\)};
-\draw (0,0) circle (1cm);
-\draw[blue] (57.3:0.95cm) - (57.3:1.05cm);
-\draw[line width=2pt,blue] (0:1cm) arc (0:57.3:1cm) node[midway,above,yshift=0.15cm,xshift=0.2cm] {\(r\)};
-\draw[line width=2pt,blue] (57.3:1cm) arc (57.3:114.6:1cm) node[midway,above,xshift=0.15cm,yshift=0.1cm] {\(r\)};
-\filldraw[blue] (1cm,0) circle(1pt);
-\filldraw[blue] (57.3:1cm) circle(1pt);
-\filldraw[blue] (114.6:1cm) circle(1pt);
-\draw[line width=2pt,blue] (0,0) - (1,0) node[midway,below,yshift=-0.1cm]{r};
-\draw[line width=2pt,blue] (0,0) - (114.6:1);
-\draw (0:0.3cm) arc (0:114.6:0.3cm) node[midway,above,xshift=0.2cm,yshift=-0.1cm]{\(\theta\)};\end{tikzpicture}]]>
+  \begin{tikzpicture}[x=1.9,x=1.9cm]
+  \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+  \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+  \draw (0,0) circle (1cm);
+  \draw[blue] (57.3:0.95cm) -- (57.3:1.05cm);
+  \draw[line width=2pt,blue] (0:1cm) arc (0:57.3:1cm) node[midway,above,yshift=0.15cm,xshift=0.2cm] {$r$};
+  \draw[line width=2pt,blue] (57.3:1cm) arc (57.3:114.6:1cm) node[midway,above,xshift=0.15cm,yshift=0.1cm] {$r$};
+  \filldraw[blue] (1cm,0) circle(1pt);
+  \filldraw[blue] (57.3:1cm) circle(1pt);
+  \filldraw[blue] (114.6:1cm) circle(1pt);
+  \draw[line width=2pt,blue] (0,0) -- (1,0) node[midway,below,yshift=-0.1cm]{r};
+  \draw[line width=2pt,blue] (0,0) -- (114.6:1);
+  \draw (0:0.3cm) arc (0:114.6:0.3cm) node[midway,above,xshift=0.2cm,yshift=-0.1cm]{$\theta$};
+\end{tikzpicture}
 </latex-image>
     </image>
     <p>
@@ -494,24 +526,28 @@
       <caption>One rotation of the unit circle is <m>2\pi\approx6.28</m> radians.</caption>
       <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)-(1.25,0) node[right]{\(x\)};
-\draw[<->] (0,-1.25)-(0,1.25) node[above]{\(y\)};
-\draw (0,0) circle (1cm);
-\draw[blue] (57.3:0.95cm) - (57.3:1.05cm);
-\draw[blue] (0:1cm) arc (0:57.3:1cm) node[midway,above,yshift=0.15cm] {\(r\)};
-\draw[blue] (57.3:1cm) arc (57.3:114.6:1cm) node[midway,above,xshift=0.15cm] {\(r\)};
-\draw[blue] (114.6:1cm) arc (114.6:171.9:1cm) node[midway,above,yshift=0.15cm] {\(r\)};
-\draw[blue] (171.9:1cm) arc (171.9:229.2:1cm) node[midway,left] {\(r\)};
-\draw[blue] (229.2:1cm) arc (229.2:286.5:1cm) node[midway,below] {\(r\)};
-\draw[blue] (286.5:1cm) arc (286.5:343.8:1cm) node[midway,below] {\(r\)};
-\filldraw[blue] (1cm,0) circle(1pt) node[black, above right,yshift=0.1cm] {0 radians, \(2\pi\approx6.28\) radians};
-\filldraw[blue] (57.3:1cm) circle(1pt) node[black, above right] {1 radian};
-\filldraw[blue] (114.6:1cm) circle(1pt) node[black, above left] {2 radians};
-\filldraw[blue] (171.9:1cm) circle(1pt) node[black, left] {3 radians};
-\filldraw[blue] (229.2:1cm) circle(1pt) node[black, below left] {4 radians};
-\filldraw[blue] (286.5:1cm) circle(1pt) node[black, below right] {5 radians};
-\filldraw[blue] (343.8:1cm) circle(1pt) node[black, below right] {6 radians};
-\node[blue, right] at (1,-0.15) {fractional piece};\end{tikzpicture}]]>
+  \begin{tikzpicture}[x=2cm,y=2cm]
+  \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+  \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+  \draw (0,0) circle (1cm);
+  \draw[blue] (57.3:0.95cm) -- (57.3:1.05cm);
+  \draw[blue] (0:1cm) arc (0:57.3:1cm) node[midway,above,yshift=0.15cm] {$r$};
+  \draw[blue] (57.3:1cm) arc (57.3:114.6:1cm) node[midway,above,xshift=0.15cm] {$r$};
+  \draw[blue] (114.6:1cm) arc (114.6:171.9:1cm) node[midway,above,yshift=0.15cm] {$r$};
+  \draw[blue] (171.9:1cm) arc (171.9:229.2:1cm) node[midway,left] {$r$};
+  \draw[blue] (229.2:1cm) arc (229.2:286.5:1cm) node[midway,below] {$r$};
+  \draw[blue] (286.5:1cm) arc (286.5:343.8:1cm) node[midway,below] {$r$};
+  \filldraw[blue] (1cm,0) circle(1pt) node[black, above right,yshift=0.1cm] {0 radians, $2\pi\approx6.28$ radians};
+  %\filldraw[blue] (1cm,0) circle(1pt) node[black, above right,yshift=0.1cm, align=left] {0 radians,\\ $2\pi\approx6.28$ radians (one rotation)};
+  \filldraw[blue] (57.3:1cm) circle(1pt) node[black, above right] {1 radian};
+  \filldraw[blue] (114.6:1cm) circle(1pt) node[black, above left] {2 radians};
+  \filldraw[blue] (171.9:1cm) circle(1pt) node[black, left] {3 radians};
+  \filldraw[blue] (229.2:1cm) circle(1pt) node[black, below left] {4 radians};
+  \filldraw[blue] (286.5:1cm) circle(1pt) node[black, below right] {5 radians};
+  \filldraw[blue] (343.8:1cm) circle(1pt) node[black, below right] {6 radians};
+  \node[blue, right] at (1,-0.15) {fractional piece};
+\end{tikzpicture}
+
 </latex-image>
       </image>
     </figure>
@@ -773,44 +809,20 @@
           Although Kiritimati and Moloka`i share the same longitude at <m>157^{\circ}12'</m> west
           (meaning Moloka`i is directly north of Kiritimati),
           both islands are 24 hours apart.
-          For example, if the time on O&#699;ahu is 3:00 pm on Thursday,
+          For example, if the time on Oʻahu is 3:00 pm on Thursday,
           then at that same moment it is 3:00 pm on Friday in Kiritimati.
-          Find the distance between Kiritimati (<m>1^{\circ}45'</m> north latitude) and Moloka`i
+          Find the distance between Kiritimati (<m>1^{\circ}45'</m> north latitude) and Molokaʻi
           (<m>21^{\circ}08'</m> north latitude).
           Assume the radius of Earth is 3,960 miles and that the central angle between the two islands is the difference in their laititudes.
         </p>
         <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\filldraw[ball color=white] (0,0) circle (\R);
-\filldraw[fill=white] (0,0) circle (\R);
-\shade[ball color = gray!40, opacity = 0.5] (0,0) circle (\R);
-\foreach \t in {1.75,21.1333333333} { \DrawLatitudeCircle[\R]{\t} }
-\foreach \t in {-120} { \DrawLongitudeCircle[\R]{\t} }
-\pgfmathsetmacro\H{\R*cos(\angEl)}
-\coordinate (O) at (0,0);
-\node[circle,draw,black,scale=0.3] at (0,0) {};
-\draw[right] node at (0,0){O};
-\coordinate[mark coordinate] (N) at (0,\H);
-\draw[left] node at (0,\H){N};
-\coordinate[mark coordinate] (S) at (0,-\H);
-\draw[left] node at (0,-\H){S};
-\draw[thick, dashed, black](N)-(S);
-\NewLatitudePlane[planeP]{\R}{\angEl}{21.4666666667}
-\path[planeP] (-120:\R) coordinate (P);
-\draw[left] node at (P){Moloka`i};
-\node[right] at (21.4666666667:\R) {\(21^{\circ}08'\)N};
-\node[right] at (1.75:\R) {\(1^{\circ}45'\)N};
-\node[right] at (-1.9,-2.5) {\(157^{\circ}12'\)W};
-\NewLatitudePlane[equator]{\R}{\angEl}{1.96666666667}
-\path[equator] (-120:\R) coordinate (Pprime);
-\draw[left] node at (Pprime){Kiritimati};
-\draw[-,dashed,blue,line width=2pt] (O)-(P) node[black,midway,above] {\(r\)};
-\draw[-,dashed,blue,line width=2pt] (O)-(Pprime) node[black,midway,below] {\(r\)};
-\LongitudePlane[angle]{\angEl}{-120}
-\draw[angle,-] (1.96666666667:1.25) arc (1.96666666667:21.4666666667:1.25) node[xshift=-0.25cm,yshift=-0.2cm] {\(\theta\)};
-\draw[angle,-,blue,line width=2pt] (1.96666666667:\R) arc (1.96666666667:21.4666666667:\R) node[midway,right,black] {\(s\)};\end{tikzpicture}]]>
+  \begin{tikzpicture}[scale=0.8] % "THE GLOBE" showcase
+  \draw (0,0) circle (1cm);
+\end{tikzpicture}
 </latex-image>
         </image>
+        <p>THIS FIGURE NEEDS TO BE CHANGED TO INCLUDE THE GLOBE</p>
       </statement>
       <solution>
         <p>
@@ -830,7 +842,7 @@
           </me>
         </p>
         <p>
-          So the distance between Kiritimati and Moloka`i is approximately 1,340 miles.
+          So the distance between Kiritimati and Molokaʻi is approximately 1,340 miles.
         </p>
       </solution>
     </example>
@@ -883,10 +895,10 @@
       <statement>
         <p>
           When sailing,
-          a wa&#699;a (canoe) cannot make headway by sailing directly into the wind.
+          a waʻa (canoe) cannot make headway by sailing directly into the wind.
           It can only sail beyond <m>67^{\circ}</m> in either direction from the wind
-          (<xref ref="fig_Sailing-upwind">Figure</xref>).
-          If H&#333;k&#363;le&#699;a sails for 50 miles,
+          (<xref ref="fig_sailing-upwind">Figure</xref>).
+          If Hōkūleʻa sails for 50 miles,
           what is the area of the sector that cannot be sailed?
           Round your answer to the nearest square mile.
         </p>
@@ -895,29 +907,31 @@
           <caption>Voyaging canoes cannot sail within <m>67^{\circ}</m> into the direction of the wind.</caption>
 <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw (0,0) circle (1cm);
-\draw[->] (0,0) - (157:1.2cm);
-\draw[->] (0,0) - (23:1.2cm);
-\fill[blue,fill opacity=0.1] (157:1cm) - (0,0) - (23:1cm) arc (23:157:1cm);
-\filldraw[blue] (0,0) circle(1pt);
-\draw[<->] (23:0.3cm) arc (23:90:0.3cm) node[midway,above,xshift=0.3cm,yshift=-0.cm]{\(67^{\circ}\)};
-\draw[<->] (90:0.3cm) arc (90:157:0.3cm) node[midway,above,xshift=-0.3cm,yshift=-0.cm]{\(67^{\circ}\)};
-\draw[<->] (-1.2,0) - (1.2,0);
-\draw[<-] (0,-1.15) - (0,1);
-\draw[->] (0,0) - (-45:1.2);
-\draw[->] (0,0) - (225:1.2);
-\draw[line width=2pt,->] (0,0.9) - (0,0.5);
-\draw[line width=2pt,->] (0.2,0.9) - (0.2,0.5);
-\draw[line width=2pt,->] (-0.2,0.9) - (-0.2,0.5);
-\node at (0,-1.2) {Downwind};
-\node at (0,1.2) {Upwind};
-\draw ([shift=(23:0.6cm)]0,0) pic {waa1-top={waacolor}{-67}{0.1}};
-\draw ([shift=(157:0.6cm)]0,0) pic {waa1-top={waacolor}{67}{0.1}};
-\draw ([shift=(0:0.6cm)]0,0) pic {waa1-top={waacolor}{-90}{0.1}};
-\draw ([shift=(180:0.6cm)]0,0) pic {waa1-top={waacolor}{90}{0.1}};
-\draw ([shift=(-45:0.6cm)]0,0) pic {waa1-top={waacolor}{-135}{0.1}};
-\draw ([shift=(225:0.6cm)]0,0) pic {waa1-top={waacolor}{135}{0.1}};
-\draw ([shift=(-90:0.6cm)]0,0) pic {waa1-top={waacolor}{180}{0.1}};\end{tikzpicture}]]>
+  \begin{tikzpicture}[x=2.9cm,y=2.9cm]
+  \draw (0,0) circle (1cm);
+  \draw[->] (0,0) -- (157:1.2cm);
+  \draw[->] (0,0) -- (23:1.2cm);
+  \fill[blue,fill opacity=0.1] (157:1cm) -- (0,0) -- (23:1cm) arc (23:157:1cm);
+  \filldraw[blue] (0,0) circle(1pt);
+  \draw[&lt;->] (23:0.3cm) arc (23:90:0.3cm) node[midway,above,xshift=0.3cm,yshift=-0.cm]{$67^{\circ}$};
+  \draw[&lt;->] (90:0.3cm) arc (90:157:0.3cm) node[midway,above,xshift=-0.3cm,yshift=-0.cm]{$67^{\circ}$};
+  \draw[&lt;->] (-1.2,0) -- (1.2,0);
+  \draw[&lt;-] (0,-1.15) -- (0,1);
+  \draw[->] (0,0) -- (-45:1.2);
+  \draw[->] (0,0) -- (225:1.2);
+  \draw[line width=2pt,->] (0,0.9) -- (0,0.5);
+  \draw[line width=2pt,->] (0.2,0.9) -- (0.2,0.5);
+  \draw[line width=2pt,->] (-0.2,0.9) -- (-0.2,0.5);
+  \node at (0,-1.2) {Downwind};
+  \node at (0,1.2) {Upwind};
+  \draw ([shift=(23:0.6cm)]0,0) pic {waa1-top={waacolor}{-67}{0.1}};
+  \draw ([shift=(157:0.6cm)]0,0) pic {waa1-top={waacolor}{67}{0.1}};
+  \draw ([shift=(0:0.6cm)]0,0) pic {waa1-top={waacolor}{-90}{0.1}};
+  \draw ([shift=(180:0.6cm)]0,0) pic {waa1-top={waacolor}{90}{0.1}};
+  \draw ([shift=(-45:0.6cm)]0,0) pic {waa1-top={waacolor}{-135}{0.1}};
+  \draw ([shift=(225:0.6cm)]0,0) pic {waa1-top={waacolor}{135}{0.1}};
+  \draw ([shift=(-90:0.6cm)]0,0) pic {waa1-top={waacolor}{180}{0.1}};
+\end{tikzpicture}
 </latex-image>
           </image>
         </figure>
@@ -925,19 +939,14 @@
 
     <image xml:id="fig-hoe-uli">
 <latex-image>
-<![CDATA[
-\begin{tikzpicture}
-\draw pic {waa-single-side={waacolor}{0}{1}};
-\draw [color=waacolor] (-3.876609754200976,0.19897036596795284) - (-4.431283335105596,0.2303260794507818) - (-4.898394752926766,0.1524741764805878) - (-5.040559097481035,-0.0946209938161149) - (-4.826183093167583,-0.28733251913671576) - (-4.373740624214583,-0.17924262747936925) - (-3.85247136084893,0.09154660024304466) - (-0.73043162509275,0.7961615849190451) - (-0.7741285435525864,0.9054038810686352) - cycle;
-\fill[color=brown,fill=brown,fill opacity=0.4] (-3.876609754200976,0.19897036596795284) - (-4.431283335105596,0.2303260794507818) - (-4.898394752926766,0.1524741764805878) - (-5.040559097481035,-0.0946209938161149) - (-4.826183093167583,-0.28733251913671576) - (-4.373740624214583,-0.17924262747936925) - (-3.85247136084893,0.09154660024304466) - (-0.73043162509275,0.7961615849190451) - (-0.7741285435525864,0.9054038810686352) - cycle;
-\draw[->] ([shift=(131.4:1.13)]0.15,-0.3) arc (-60:120:0.3cm);
-\end{tikzpicture}
-]]>
+  \begin{tikzpicture}
+  \draw pic {waa-single-side={waacolor}{0}{1}};
+  \draw [color=waacolor] (-3.876609754200976,0.19897036596795284) -- (-4.431283335105596,0.2303260794507818) -- (-4.898394752926766,0.1524741764805878) -- (-5.040559097481035,-0.0946209938161149) -- (-4.826183093167583,-0.28733251913671576) -- (-4.373740624214583,-0.17924262747936925) -- (-3.85247136084893,0.09154660024304466) -- (-0.73043162509275,0.7961615849190451) -- (-0.7741285435525864,0.9054038810686352) -- cycle;
+  \fill[color=brown,fill=brown,fill opacity=0.4] (-3.876609754200976,0.19897036596795284) -- (-4.431283335105596,0.2303260794507818) -- (-4.898394752926766,0.1524741764805878) -- (-5.040559097481035,-0.0946209938161149) -- (-4.826183093167583,-0.28733251913671576) -- (-4.373740624214583,-0.17924262747936925) -- (-3.85247136084893,0.09154660024304466) -- (-0.73043162509275,0.7961615849190451) -- (-0.7741285435525864,0.9054038810686352) -- cycle;
+  \draw[->] ([shift=(131.4:1.13)]0.15,-0.3) arc (-60:120:0.3cm);
+  \end{tikzpicture}
 </latex-image>
     </image>
-   
-
-
       </statement>
       <solution>
         <p>
@@ -960,16 +969,18 @@
     </p>
     <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw (0,0) circle (1cm);
-\draw[blue] (45:0.95cm) - (45:1.05cm);
-\draw[blue] (0:1cm) arc (0:45:1cm) node[midway,above,yshift=0.15cm,xshift=0.2cm] {\(s\)};
-\filldraw[blue] (1cm,0) circle(1pt);
-\filldraw[blue] (45:1cm) circle(1pt);
-\filldraw[blue] (0,0) circle(1pt);
-\draw[blue] (0,0) - (1,0) node[midway,below,yshift=-0.1cm]{r};
-\draw[blue] (0,0) - (45:1);
-\draw (0:0.3cm) arc (0:45:0.3cm) node[midway,above,xshift=0.2cm,yshift=-0.1cm]{\(\theta\)};
-\draw[->] (0:0.8cm) arc (0:45:0.8cm);\end{tikzpicture}]]>
+  \begin{tikzpicture}[x=1.75cm,y=1.75cm]
+  \draw (0,0) circle (1cm);
+  \draw[blue] (45:0.95cm) -- (45:1.05cm);
+  \draw[blue] (0:1cm) arc (0:45:1cm) node[midway,above,yshift=0.15cm,xshift=0.2cm] {$s$};
+  \filldraw[blue] (1cm,0) circle(1pt);
+  \filldraw[blue] (45:1cm) circle(1pt);
+  \filldraw[blue] (0,0) circle(1pt);
+  \draw[blue] (0,0) -- (1,0) node[midway,below,yshift=-0.1cm]{r};
+  \draw[blue] (0,0) -- (45:1);
+  \draw (0:0.3cm) arc (0:45:0.3cm) node[midway,above,xshift=0.2cm,yshift=-0.1cm]{$\theta$};
+  \draw[->] (0:0.8cm) arc (0:45:0.8cm);
+  \end{tikzpicture}
 </latex-image>
     </image>
     <definition>
@@ -1029,7 +1040,7 @@
         </p>
       </statement>
     </definition>
-  -->
+  
     <example>
       <title>Une</title>
       <statement>
@@ -1059,10 +1070,12 @@
         </p>
         <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw pic {waa-single-side={waacolor}{0}{1}};
-\draw [color=waacolor] (-3.876609754200976,0.19897036596795284) - (-4.431283335105596,0.2303260794507818) - (-4.898394752926766,0.1524741764805878) - (-5.040559097481035,-0.0946209938161149) - (-4.826183093167583,-0.28733251913671576) - (-4.373740624214583,-0.17924262747936925) - (-3.85247136084893,0.09154660024304466) - (-0.73043162509275,0.7961615849190451) - (-0.7741285435525864,0.9054038810686352) - cycle;
-\fill[color=brown,fill=brown,fill opacity=0.4] (-3.876609754200976,0.19897036596795284) - (-4.431283335105596,0.2303260794507818) - (-4.898394752926766,0.1524741764805878) - (-5.040559097481035,-0.0946209938161149) - (-4.826183093167583,-0.28733251913671576) - (-4.373740624214583,-0.17924262747936925) - (-3.85247136084893,0.09154660024304466) - (-0.73043162509275,0.7961615849190451) - (-0.7741285435525864,0.9054038810686352) - cycle;
-\draw[->] ([shift=(131.4:1.13)]0.15,-0.3) arc (-60:120:0.3cm);\end{tikzpicture}]]>
+  \begin{tikzpicture}
+  \draw pic {waa-single-side={waacolor}{0}{1}};
+  \draw [color=waacolor] (-3.876609754200976,0.19897036596795284) -- (-4.431283335105596,0.2303260794507818) -- (-4.898394752926766,0.1524741764805878) -- (-5.040559097481035,-0.0946209938161149) -- (-4.826183093167583,-0.28733251913671576) -- (-4.373740624214583,-0.17924262747936925) -- (-3.85247136084893,0.09154660024304466) -- (-0.73043162509275,0.7961615849190451) -- (-0.7741285435525864,0.9054038810686352) -- cycle;
+  \fill[color=brown,fill=brown,fill opacity=0.4] (-3.876609754200976,0.19897036596795284) -- (-4.431283335105596,0.2303260794507818) -- (-4.898394752926766,0.1524741764805878) -- (-5.040559097481035,-0.0946209938161149) -- (-4.826183093167583,-0.28733251913671576) -- (-4.373740624214583,-0.17924262747936925) -- (-3.85247136084893,0.09154660024304466) -- (-0.73043162509275,0.7961615849190451) -- (-0.7741285435525864,0.9054038810686352) -- cycle;
+  \draw[->] ([shift=(131.4:1.13)]0.15,-0.3) arc (-60:120:0.3cm);
+  \end{tikzpicture}
 </latex-image>
         </image>
       </statement>
@@ -1095,7 +1108,8 @@
         </p>
       </solution>
     </example>
-    <!--
+  </subsection>
+<subsection>
     <exercise xml:id="ex-1_2">
       <statement>
         <p>
@@ -1112,155 +1126,116 @@
     Convert the given angle <m>\theta</m> to a decimal in degrees rounded to two decimal places. 
   </p>
 </introduction>
-  <task>
+
+</subsection>
+
+<subsection>
+  <!--<task>-->
     <statement>
       <p>
          <m>\theta=20^{\circ}50'30''</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>\theta=80^{\circ}25'16''</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>\theta=7^{\circ}22'38''</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
         
           <m>\theta=330^{\circ}14'12''</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>\theta=168^{\circ}22'26''</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
         
           <m>\theta=49^{\circ}27'12''</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>\theta=327^{\circ}38'58''</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
         
           <m>\theta=281^{\circ}48'50''</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>\theta=134^{\circ}53'47''</m>
       </p>
     </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
+  <!--</task>-->
         
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
 
         <p>
           Recall the Star Compass with the boundaries for each House.
-          Write the angles for the boundaries between the following houses in the Ko&#699;olau quadrant in terms of degrees, minutes,
-          and seconds: \begin{tasks} \task Between Hikina and L&#257; (<m>5.625^{\circ}</m>) \task Between L&#257; and &#699;&#256;ina (<m>16.875^{\circ}</m>) \task Between &#699;&#256;ina and Noio (<m>28.175^{\circ}</m>) \task Between Noio and Manu (<m>39.375^{\circ}</m>) \end{tasks}
+          Write the angles for the boundaries between the following houses in the Koʻolau quadrant in terms of degrees, minutes,
+          and seconds: \begin{tasks} \task Between Hikina and Lā (<m>5.625^{\circ}</m>) \task Between Lā and ʻĀina (<m>16.875^{\circ}</m>) \task Between &#699;&#256;ina and Noio (<m>28.175^{\circ}</m>) \task Between Noio and Manu (<m>39.375^{\circ}</m>) \end{tasks}
         </p>
         <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[dashed] (0cm,0cm) - (0.68cm,0cm);
-\draw[->,dashed] (0.98cm,0cm) - (1.1cm,0cm);
-\draw[dashed] (0cm,0cm) - (0cm,0.71cm);
-\draw[->,dashed] (0cm,0.98cm) - (0cm,1.1cm);
-\draw[thick] (0:1cm) arc (0:90:1cm);
-\draw[left] (0:0.98) node[rotate=0] {\large HIKINA};
-\draw[left] (90:0.98) node[rotate=90] {\large &#699;&#256;KAU};
-\foreach \x in {5.625,16.875,...,90} {
-\draw[gray] (0cm,0cm) - (\x:1cm);
-}
-\foreach \x in {5.625,16.875,...,39.375} {
-\filldraw[black] (\x:1cm) circle(0.4pt);
-\draw (\x:1.2cm) node[rotate=\x] {\(\x^\circ\)};
-}
-\foreach \x/\xtext in {
-11.25/L&#257;,
-22.5/&#699;&#256;ina,
-33.75/Noio,
-45/Manu,
-56.25/N&#257;lani,
-67.5/N&#257; Leo,
-78.75/Haka
-}
-\draw[left] (\x:0.98) node[rotate=\x] {\xtext};\end{tikzpicture}]]>
+  \begin{tikzpicture}[x=5.3cm,y=5.3cm]
+  % draw the coordinates
+  \draw[dashed] (0cm,0cm) -- (0.68cm,0cm);
+  \draw[->,dashed] (0.98cm,0cm) -- (1.1cm,0cm);
+  \draw[dashed] (0cm,0cm) -- (0cm,0.71cm);
+  \draw[->,dashed] (0cm,0.98cm) -- (0cm,1.1cm);
+  % draw the unit circle
+  \draw[thick] (0:1cm) arc (0:90:1cm);
+      \draw[left] (0:0.98) node[rotate=0] {\large HIKINA};
+      \draw[left] (90:0.98) node[rotate=90] {\large `\={A}KAU};
+  \foreach \x in {5.625,16.875,...,90} {
+          % lines from center to point
+          \draw[gray] (0cm,0cm) -- (\x:1cm);% node[fill=white,left,sloped] {$\x^\circ$};
+  }
+  \foreach \x in {5.625,16.875,...,39.375} {
+          % dots at each point
+          \filldraw[black] (\x:1cm) circle(0.4pt);
+          % draw each angle in degrees
+          \draw (\x:1.2cm) node[rotate=\x] {$\x^\circ$};
+  }
+  \foreach \x/\xtext in {
+      11.25/L\={a},
+      22.5/`\={A}ina,
+      33.75/Noio,
+      45/Manu,
+      56.25/N\={a}lani,
+      67.5/N\={a} Leo,
+      78.75/Haka
+      }
+      \draw[left] (\x:0.98) node[rotate=\x] {\xtext};
+\end{tikzpicture}
 </latex-image>
         </image>
         
@@ -1269,117 +1244,72 @@
     Convert the given angle <m>\theta</m> to degrees/minutes/seconds rounded to the nearest second and identify the house and quadrant on the Hawaiian Star Compass. 
   </p>
 </introduction>
-  <task>
+  <!--<task>-->
     <statement>
       <p>
          <m>\theta=258.39111111111^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>\theta=212.42583333333^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>\theta=244.96638888889^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
         
           <m>\theta=93.95166666667^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>\theta=135.625^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
         
           <m>\theta=132.99888888889^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>\theta=328.2025^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
         
           <m>\theta=48.121388888889^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>\theta=241.27083333333^{\circ}</m>
       </p>
     </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
+  <!--</task>-->
         
 <introduction>
   <p>
@@ -1387,270 +1317,165 @@
           Keep your answers in terms of <m>\pi</m>. 
   </p>
 </introduction>
-  <task>
+  <!--<task>-->
     <statement>
       <p>
          <m>\theta=102^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>\theta=96^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>\theta=190^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
         
           <m>\theta=122^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>\theta=32^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
         
           <m>\theta=236^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>\theta=82^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
         
           <m>\theta=228^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>\theta=332^{\circ}</m>
       </p>
     </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
+  <!--</task>-->
         
 <introduction>
   <p>
     Draw the angle in standard position 
   </p>
 </introduction>
-  <task>
+  <!--<task>-->
     <statement>
       <p>
          <m>60^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>135^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>-30^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>495^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>-240^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>800^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
         
           <m>\frac{\pi}{4}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>\frac{5\pi}{6}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
         
           <m>-\frac{\pi}{3}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>\frac{10\pi}{3}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
         
           <m>\frac{11\pi}{6}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>-\frac{2\pi}{3}</m>
       </p>
     </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
+  <!--</task>-->
         
 <introduction>
   <p>
@@ -1658,81 +1483,51 @@
           Round your answer to two decimal places. 
   </p>
 </introduction>
-  <task>
+  <!--<task>-->
     <statement>
       <p>
         
           <m>27^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>63^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
         
           <m>-39^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>200^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
         
           <m>415^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>105^{\circ}</m>
       </p>
     </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
+  <!--</task>-->
         
 <introduction>
   <p>
@@ -1740,138 +1535,88 @@
           Round your answer to two decimal places. 
   </p>
 </introduction>
-  <task>
+  <!--<task>-->
     <statement>
       <p>
          <m>\frac{3\pi}{5}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
         
           <m>\frac{8\pi}{3}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>-\frac{4\pi}{7}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
         
           <m>\frac{15\pi}{4}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>-1.5</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>3</m>
       </p>
     </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
+  <!--</task>-->
         
 <introduction>
   <p>
     Determine whether the two given angles in standard position are coterminal. 
   </p>
 </introduction>
-  <task>
+  <!--<task>-->
     <statement>
       <p>
          <m>50^{\circ}</m>,
           <m>410^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>-60^{\circ}</m>,
           <m>330^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>30^{\circ}</m>,
           <m>1110^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>-210^{\circ}</m>,
           <m>150^{\circ}</m>
       </p>
     </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
+  <!--</task>-->
         
 <introduction>
   <p>
@@ -1879,56 +1624,36 @@
           <m>360^{\circ}</m> that is coterminal with the given angle 
   </p>
 </introduction>
-  <task>
+  <!--<task>-->
     <statement>
       <p>
         
           <m>405^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>600^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
         
           <m>1035^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>-300^{\circ}</m>
       </p>
     </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
+  <!--</task>-->
         
 <introduction>
   <p>
@@ -1938,57 +1663,37 @@
           Round your answer to four decimal places. 
   </p>
 </introduction>
-  <task>
+  <!--<task>-->
     <statement>
       <p>
          <m>r=10</m> in,
           <m>\theta=45^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>r=5</m> m, <m>\theta=120^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>r=3</m> mi,
           <m>\theta=\frac{\pi}{3}</m> radians 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>r=8</m> cm,
           <m>\theta=2</m> radians
       </p>
     </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
+  <!--</task>-->
         
 <introduction>
   <p>
@@ -2000,7 +1705,7 @@
           along the surface of the earth for 
   </p>
 </introduction>
-  <task>
+  <!--<task>-->
     <statement>
       <p>
          <m>1^{\circ}</m> of latitude
@@ -2008,26 +1713,16 @@
           
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>1'</m> of latitude
           (in miles, rounded to 2 decimals). 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>1''</m> of latitude
@@ -2040,39 +1735,14 @@
           Check your answer in (b) with the value of one nautical mile.
       </p>
     </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
+  <!--</task>-->
         <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\filldraw[ball color=white] (0,0) circle (\R);
-\filldraw[fill=white] (0,0) circle (\R);
-\shade[ball color = blue!40, opacity = 0.5] (0,0) circle (\R);
-\foreach \t in {0,30} { \DrawLatitudeCircle[\R]{\t} }
-\pgfmathsetmacro\H{\R*cos(\angEl)}
-\coordinate (O) at (0,0);
-\node[circle,draw,black,scale=0.3] at (0,0) {};
-\draw[left] node at (0,0){O};
-\coordinate[mark coordinate] (N) at (0,\H);
-\draw[left] node at (0,\H){N};
-\coordinate[mark coordinate] (S) at (0,-\H);
-\draw[left] node at (0,-\H){S};
-\draw[thick, dashed, black](N)-(S);
-\NewLatitudePlane[planeP]{\R}{\angEl}{30};
-\path[planeP] (-60:\R) coordinate (P);
-\draw[right] node at (P){\(P\)};
-\NewLatitudePlane[equator]{\R}{\angEl}{00};
-\path[equator] (-60:\R) coordinate (Q);
-\draw[right] node at (Q){\(Q\)};
-\draw[-,blue,dashed] (O)-(P);
-\draw[-,blue,dashed] (O)-(Q);
-\node[right] at (0:\R) {Equator};
-\LongitudePlane[angle]{\angEl}{-60};
-\draw[angle,-] (0:1) arc (0:30:1) node[xshift=0.25cm,yshift=-0.2cm] {\(\theta\)};
-\draw[angle,-,blue,line width=2pt] (0:\R) arc (0:30:\R) node[midway,right,black] {\(s\)};\end{tikzpicture}]]>
+  \begin{tikzpicture}[x=5.3cm,y=5.3cm]
+  \draw (0,0) circle (1cm);
+\end{tikzpicture}
+<p>NEED TO FIX THIS IMAGE TO MAKE GLOBE</p>
+
 </latex-image>
         </image>
         
@@ -2089,7 +1759,7 @@
           (round to two decimal places).
   </p>
 </introduction>
-<task>
+<!--<task>-->
 <p>
 The <em>oeoe</em>, or Hawaiian bullroarer,
           is made by drilling holes into a kamani seed or coconut shell,
@@ -2102,12 +1772,7 @@ The <em>oeoe</em>, or Hawaiian bullroarer,
           (round to two decimal places).
       </p>
 
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
+  <!--</task>-->
         
 <introduction>
   <p>
@@ -2115,7 +1780,7 @@ The <em>oeoe</em>, or Hawaiian bullroarer,
           Assume the orbit is a circle and that the Earth is <m>92.9</m> million miles from the Sun. 
   </p>
 </introduction>
-  <task>
+  <!--<task>-->
     <statement>
       <p>
          How far does the Earth travel in one day,
@@ -2125,51 +1790,31 @@ The <em>oeoe</em>, or Hawaiian bullroarer,
           
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          How for does the Earth travel in 30 days,
           expressed as millions of miles? 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          How far does the Earth travel in one rotation,
           expressed as millions of miles? 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          What is the linear speed of Earth as orbits the Sun?
           Express your answer in miles per hour.
       </p>
     </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
+  <!--</task>-->
         
 <introduction>
   <p>
@@ -2182,7 +1827,7 @@ The <em>oeoe</em>, or Hawaiian bullroarer,
           expressed as miles per hour.
   </p>
 </introduction>
-<task>
+<!--<task>-->
 <statement>
 <p>
 As the the moon orbits the Earth,
@@ -2194,19 +1839,14 @@ As the the moon orbits the Earth,
           expressed as miles per hour.
       </p>
     </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
+  <!--</task>-->
         
 <introduction>
   <p>
     At <m>17.7^{\circ}</m> S latitude,
           the city of Nadi, Fiji is <m>6,071</m> km from the Earth's axis of rotation
           (see <xref ref="ex-1_2">Exercise</xref>,
-          <xref ref="Earth_Angular_Velocity"></xref>).
+          <!-- <xref ref="Earth_Angular_Velocity"></xref>). -->
           In 24 hours, Nadi will have traveled one rotation around Earth or <m>2\pi(6, 071)</m> km.
           The city of Port Vila, Vanuatu lies 967 km directly to the west of Nadi, Fiji.
           As the Earth rotates,
@@ -2215,13 +1855,13 @@ As the the moon orbits the Earth,
           <em>Hint: the proportion of distance between the two cities to the distance traveled in one rotation is the same as the proportion of the time it takes to see the sun between the two cities to time it takes to complete one rotation.</em>
   </p>
 </introduction>
-<task>
+<!--<task>-->
 <statement>
 <p>
 At <m>17.7^{\circ}</m> S latitude,
           the city of Nadi, Fiji is <m>6,071</m> km from the Earth's axis of rotation
           (see <xref ref="ex-1_2">Exercise</xref>,
-          <xref ref="Earth_Angular_Velocity"></xref>).
+          <!-- <xref ref="Earth_Angular_Velocity"></xref>). -->
           In 24 hours, Nadi will have traveled one rotation around Earth or <m>2\pi(6, 071)</m> km.
           The city of Port Vila, Vanuatu lies 967 km directly to the west of Nadi, Fiji.
           As the Earth rotates,
@@ -2230,507 +1870,304 @@ At <m>17.7^{\circ}</m> S latitude,
           <em>Hint: the proportion of distance between the two cities to the distance traveled in one rotation is the same as the proportion of the time it takes to see the sun between the two cities to time it takes to complete one rotation.</em>
       </p>
     </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
+  <!--</task>-->
     <p>
       \begin{Answer}[ref={ex-1.2}]
     </p>
-      <task>
+      <!--<task>-->
     <statement>
       <p>
          &#699;&#256;ina Malanai 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          N&#257;lani Kona 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          Noio Ko&#699;olau 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          Manu Kona 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          N&#257; Leo Ho&#699;olua 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          L&#257; Kona 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          Noio Malanai 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          &#699;&#256;ina Ho&#699;olua 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          L&#257; Ho&#699;olua  \Question  
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>20.84^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>80.42^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>7.38^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>330.24^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>168.37^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>49.45^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>327.65^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>281.81^{\circ}</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>134.90^{\circ}</m>  \Question  
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>5^{\circ}37'30''</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>16^{\circ}52'30''</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>28^{\circ}7'30''</m> 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>39^{\circ}22'30''</m>  \Question  
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>\theta=258^{\circ}23'28''</m> Haka Malanai 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>\theta=212^{\circ}25'33''</m> Noio Kona 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>\theta=244^{\circ}57'59''</m> N&#257; Leo Kona 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>\theta=93^{\circ}57'6''</m> Haka Ho&#699;olua 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>\theta=135^{\circ}37'30''</m> Manu Ho&#699;olua 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>\theta=132^{\circ}59'56''</m> Manu Ho&#699;olua 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>\theta=328^{\circ}12'9''</m> Noio Malanai 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>\theta=48^{\circ}7'17''</m> Manu Ko&#699;olau 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>\theta=241^{\circ}16'15''</m> N&#257; Lani Kona  \Question  
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>\theta=\frac{17\pi}{30}</m> Haka Ho&#699;olua 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>\theta=\frac{8\pi}{15}</m> &#699;&#256;kau 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>\theta=\frac{19\pi}{18}</m> L&#257; Kona 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>\theta=\frac{61\pi}{90}</m> N&#257;lani Ho&#699;olua \item <m>\theta=\frac{8\pi}{45}</m> Noio Ko&#699;olau 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
         
       <m>\theta=\frac{59\pi}{45}</m> N&#257;lani Kona 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
         
       <m>\theta=\frac{41\pi}{90}</m> Haka Ko&#699;olau 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
          <m>\theta=\frac{19\pi}{15}</m> Manu Kona 
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
         
       <m>\theta=\frac{83\pi}{45}</m> &#699;&#256;ina Ko&#699;olau  \Question  
       </p>
     </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
+  <!--</task>-->
+  <!--<task>-->
     <statement>
       <p>
         
       </p>
     </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
+  <!--</task>-->
     <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)-(1.25,0) node[right]{\(x\)};
-\draw[<->] (0,-1.25)-(0,1.25) node[above]{\(y\)};
-\filldraw[blue] (1cm,0) circle(1pt);
-\filldraw[blue] (60:1.2cm) circle(1pt);
-\draw[blue] (0,0) - (1,0);
-\draw[blue] (0,0) - (60:1.2);
-\draw[->] (0:0.7cm) arc (0:60:0.7cm);\end{tikzpicture}]]>
+  \begin{tikzpicture}[x=0.75cm,y=0.75cm]
+  \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+  \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+  \filldraw[blue] (1cm,0) circle(1pt);
+  \filldraw[blue] (60:1.2cm) circle(1pt);
+  \draw[blue] (0,0) -- (1,0);
+  \draw[blue] (0,0) -- (60:1.2);
+  \draw[->] (0:0.7cm) arc (0:60:0.7cm);
+\end{tikzpicture}
 </latex-image>
     </image>
     <p>
@@ -2738,13 +2175,15 @@ At <m>17.7^{\circ}</m> S latitude,
     </p>
     <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)-(1.25,0) node[right]{\(x\)};
-\draw[<->] (0,-1.25)-(0,1.25) node[above]{\(y\)};
-\filldraw[blue] (1cm,0) circle(1pt);
-\filldraw[blue] (135:1.2cm) circle(1pt);
-\draw[blue] (0,0) - (1,0);
-\draw[blue] (0,0) - (135:1.2);
-\draw[->] (0:0.7cm) arc (0:135:0.7cm);\end{tikzpicture}]]>
+  \begin{tikzpicture}[x=0.75cm,y=0.75cm]
+  \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+  \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+  \filldraw[blue] (1cm,0) circle(1pt);
+  \filldraw[blue] (135:1.2cm) circle(1pt);
+  \draw[blue] (0,0) -- (1,0);
+  \draw[blue] (0,0) -- (135:1.2);
+  \draw[->] (0:0.7cm) arc (0:135:0.7cm);
+\end{tikzpicture}
 </latex-image>
     </image>
     <p>
@@ -2752,13 +2191,16 @@ At <m>17.7^{\circ}</m> S latitude,
     </p>
     <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)-(1.25,0) node[right]{\(x\)};
-\draw[<->] (0,-1.25)-(0,1.25) node[above]{\(y\)};
-\filldraw[blue] (1cm,0) circle(1pt);
-\filldraw[blue] (-30:1.2cm) circle(1pt);
-\draw[blue] (0,0) - (1,0);
-\draw[blue] (0,0) - (-30:1.2);
-\draw[->] (0:0.7cm) arc (0:-30:0.7cm);\end{tikzpicture}]]>
+  \begin{tikzpicture}[x=0.75cm,y=0.75cm]
+  \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+  \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+  \filldraw[blue] (1cm,0) circle(1pt);
+  \filldraw[blue] (-30:1.2cm) circle(1pt);
+  \draw[blue] (0,0) -- (1,0);
+  \draw[blue] (0,0) -- (-30:1.2);
+  \draw[->] (0:0.7cm) arc (0:-30:0.7cm);
+\end{tikzpicture}
+
 </latex-image>
     </image>
     <p>
@@ -2766,14 +2208,17 @@ At <m>17.7^{\circ}</m> S latitude,
     </p>
     <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)-(1.25,0) node[right]{\(x\)};
-\draw[<->] (0,-1.25)-(0,1.25) node[above]{\(y\)};
-\filldraw[blue] (1cm,0) circle(1pt);
-\filldraw[blue] (495:1.2cm) circle(1pt);
-\draw[blue] (0,0) - (1,0);
-\draw[blue] (0,0) - (495:1.2);
-\draw [->,domain=0:8.63937979737,variable=\t,smooth,samples=75]
-plot ({\t r}: {0.1+0.07*\t});\end{tikzpicture}]]>
+  \begin{tikzpicture}[x=0.75cm,y=0.75cm]
+  \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+  \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+  \filldraw[blue] (1cm,0) circle(1pt);
+  \filldraw[blue] (495:1.2cm) circle(1pt);
+  \draw[blue] (0,0) -- (1,0);
+  \draw[blue] (0,0) -- (495:1.2);
+%      \draw[->] (0:0.7cm) arc (0:495:0.7cm);
+  \draw [->,domain=0:8.63937979737,variable=\t,smooth,samples=75]
+    plot ({\t r}: {0.1+0.07*\t});
+\end{tikzpicture}
 </latex-image>
     </image>
     <p>
@@ -2781,13 +2226,15 @@ plot ({\t r}: {0.1+0.07*\t});\end{tikzpicture}]]>
     </p>
     <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)-(1.25,0) node[right]{\(x\)};
-\draw[<->] (0,-1.25)-(0,1.25) node[above]{\(y\)};
-\filldraw[blue] (1cm,0) circle(1pt);
-\filldraw[blue] (-240:1.2cm) circle(1pt);
-\draw[blue] (0,0) - (1,0);
-\draw[blue] (0,0) - (-240:1.2);
-\draw[->] (0:0.7cm) arc (0:-240:0.7cm);\end{tikzpicture}]]>
+  \begin{tikzpicture}[x=0.75cm,y=0.75cm]
+  \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+  \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+  \filldraw[blue] (1cm,0) circle(1pt);
+  \filldraw[blue] (-240:1.2cm) circle(1pt);
+  \draw[blue] (0,0) -- (1,0);
+  \draw[blue] (0,0) -- (-240:1.2);
+  \draw[->] (0:0.7cm) arc (0:-240:0.7cm);
+\end{tikzpicture}
 </latex-image>
     </image>
     <p>
@@ -2795,14 +2242,17 @@ plot ({\t r}: {0.1+0.07*\t});\end{tikzpicture}]]>
     </p>
     <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)-(1.25,0) node[right]{\(x\)};
-\draw[<->] (0,-1.25)-(0,1.25) node[above]{\(y\)};
-\filldraw[blue] (1cm,0) circle(1pt);
-\filldraw[blue] (800:1.2cm) circle(1pt);
-\draw[blue] (0,0) - (1,0);
-\draw[blue] (0,0) - (800:1.2);
-\draw [->,domain=0:13.962634016,variable=\t,smooth,samples=75]
-plot ({\t r}: {0.1+0.05*\t});\end{tikzpicture}]]>
+  \begin{tikzpicture}[x=0.75cm,y=0.75cm]
+  \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+  \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+  \filldraw[blue] (1cm,0) circle(1pt);
+  \filldraw[blue] (800:1.2cm) circle(1pt);
+  \draw[blue] (0,0) -- (1,0);
+  \draw[blue] (0,0) -- (800:1.2);
+%      \draw[->] (0:0.7cm) arc (0:800:0.7cm);
+  \draw [->,domain=0:13.962634016,variable=\t,smooth,samples=75]
+    plot ({\t r}: {0.1+0.05*\t});
+\end{tikzpicture}
 </latex-image>
     </image>
     <p>
@@ -2810,13 +2260,15 @@ plot ({\t r}: {0.1+0.05*\t});\end{tikzpicture}]]>
     </p>
     <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)-(1.25,0) node[right]{\(x\)};
-\draw[<->] (0,-1.25)-(0,1.25) node[above]{\(y\)};
-\filldraw[blue] (1cm,0) circle(1pt);
-\filldraw[blue] (45:1.2cm) circle(1pt);
-\draw[blue] (0,0) - (1,0);
-\draw[blue] (0,0) - (45:1.2);
-\draw[->] (0:0.7cm) arc (0:45:0.7cm);\end{tikzpicture}]]>
+  \begin{tikzpicture}[x=0.75cm,y=0.75cm]
+  \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+  \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+  \filldraw[blue] (1cm,0) circle(1pt);
+  \filldraw[blue] (45:1.2cm) circle(1pt);
+  \draw[blue] (0,0) -- (1,0);
+  \draw[blue] (0,0) -- (45:1.2);
+  \draw[->] (0:0.7cm) arc (0:45:0.7cm);
+\end{tikzpicture}
 </latex-image>
     </image>
     <p>
@@ -2824,13 +2276,15 @@ plot ({\t r}: {0.1+0.05*\t});\end{tikzpicture}]]>
     </p>
     <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)-(1.25,0) node[right]{\(x\)};
-\draw[<->] (0,-1.25)-(0,1.25) node[above]{\(y\)};
-\filldraw[blue] (1cm,0) circle(1pt);
-\filldraw[blue] (150:1.2cm) circle(1pt);
-\draw[blue] (0,0) - (1,0);
-\draw[blue] (0,0) - (150:1.2);
-\draw[->] (0:0.7cm) arc (0:150:0.7cm);\end{tikzpicture}]]>
+  \begin{tikzpicture}[x=0.75cm,y=0.75cm]
+  \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+  \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+  \filldraw[blue] (1cm,0) circle(1pt);
+  \filldraw[blue] (150:1.2cm) circle(1pt);
+  \draw[blue] (0,0) -- (1,0);
+  \draw[blue] (0,0) -- (150:1.2);
+  \draw[->] (0:0.7cm) arc (0:150:0.7cm);
+\end{tikzpicture}
 </latex-image>
     </image>
     <p>
@@ -2838,13 +2292,15 @@ plot ({\t r}: {0.1+0.05*\t});\end{tikzpicture}]]>
     </p>
     <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)-(1.25,0) node[right]{\(x\)};
-\draw[<->] (0,-1.25)-(0,1.25) node[above]{\(y\)};
-\filldraw[blue] (1cm,0) circle(1pt);
-\filldraw[blue] (-60:1.2cm) circle(1pt);
-\draw[blue] (0,0) - (1,0);
-\draw[blue] (0,0) - (-60:1.2);
-\draw[->] (0:0.7cm) arc (0:-60:0.7cm);\end{tikzpicture}]]>
+  \begin{tikzpicture}[x=0.75cm,y=0.75cm]
+  \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+  \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+  \filldraw[blue] (1cm,0) circle(1pt);
+  \filldraw[blue] (-60:1.2cm) circle(1pt);
+  \draw[blue] (0,0) -- (1,0);
+  \draw[blue] (0,0) -- (-60:1.2);
+  \draw[->] (0:0.7cm) arc (0:-60:0.7cm);
+\end{tikzpicture}
 </latex-image>
     </image>
     <p>
@@ -2852,14 +2308,17 @@ plot ({\t r}: {0.1+0.05*\t});\end{tikzpicture}]]>
     </p>
     <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)-(1.25,0) node[right]{\(x\)};
-\draw[<->] (0,-1.25)-(0,1.25) node[above]{\(y\)};
-\filldraw[blue] (1cm,0) circle(1pt);
-\filldraw[blue] (600:1.2cm) circle(1pt);
-\draw[blue] (0,0) - (1,0);
-\draw[blue] (0,0) - (600:1.2);
-\draw [->,domain=0:10.471975512,variable=\t,smooth,samples=75]
-plot ({\t r}: {0.1+0.06*\t});\end{tikzpicture}]]>
+  \begin{tikzpicture}[x=0.75cm,y=0.75cm]
+  \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+  \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+  \filldraw[blue] (1cm,0) circle(1pt);
+  \filldraw[blue] (600:1.2cm) circle(1pt);
+  \draw[blue] (0,0) -- (1,0);
+  \draw[blue] (0,0) -- (600:1.2);
+%      \draw[->] (0:0.7cm) arc (0:600:0.7cm);
+  \draw [->,domain=0:10.471975512,variable=\t,smooth,samples=75]
+    plot ({\t r}: {0.1+0.06*\t}); %20.94395=1200*pi/180
+\end{tikzpicture}
 </latex-image>
     </image>
     <p>
@@ -2867,13 +2326,15 @@ plot ({\t r}: {0.1+0.06*\t});\end{tikzpicture}]]>
     </p>
     <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)-(1.25,0) node[right]{\(x\)};
-\draw[<->] (0,-1.25)-(0,1.25) node[above]{\(y\)};
-\filldraw[blue] (1cm,0) circle(1pt);
-\filldraw[blue] (-120:1.2cm) circle(1pt);
-\draw[blue] (0,0) - (1,0);
-\draw[blue] (0,0) - (-120:1.2);
-\draw[->] (0:0.7cm) arc (0:-120:0.7cm);\end{tikzpicture}]]>
+  \begin{tikzpicture}[x=0.75cm,y=0.75cm]
+  \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+  \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+  \filldraw[blue] (1cm,0) circle(1pt);
+  \filldraw[blue] (-120:1.2cm) circle(1pt);
+  \draw[blue] (0,0) -- (1,0);
+  \draw[blue] (0,0) -- (-120:1.2);
+  \draw[->] (0:0.7cm) arc (0:-120:0.7cm);
+\end{tikzpicture}
 </latex-image>
     </image>
     <p>
@@ -2886,6 +2347,202 @@ plot ({\t r}: {0.1+0.06*\t});\end{tikzpicture}]]>
       ii) <m>4.7124</m> mi<m>^2</m> \task i) <m>16</m> cm;
       ii) <m>64</m>cm<m>^2</m> \end{tasks} \Question \begin{tasks}(2) \task <m>69.10</m> miles \task <m>1.15</m> miles \task <m>101</m> feet \end{tasks} \Question \begin{tasks} \task <m>360\pi</m> radians/minute \task <m>38.56</m> miles/hour \end{tasks} \Question \begin{tasks} \task <m>1.6</m> million miles \task <m>47.9</m> million miles \task <m>583.7</m> million miles \task <m>66,588</m> miles per hour \end{tasks} \Question 2,292 miles per hour \Question 36.5 minutes \end{Answer}
     </p>
-  </subsection>
-  -->
+</subsection>
+
+
+
+<subsection>
+  <image>
+<latex-image>
+\begin{tikzpicture}[x=0.75cm,y=0.75cm]
+\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+\draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+\filldraw[blue] (1cm,0) circle(1pt);
+\filldraw[blue] (60:1.2cm) circle(1pt);
+\draw[blue] (0,0) -- (1,0);
+\draw[blue] (0,0) -- (60:1.2);
+\draw[->] (0:0.7cm) arc (0:60:0.7cm);
+\end{tikzpicture}
+</latex-image>
+  </image>
+  <p>
+    \task
+  </p>
+  <image>
+<latex-image>
+\begin{tikzpicture}[x=0.75cm,y=0.75cm]
+\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+\draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+\filldraw[blue] (1cm,0) circle(1pt);
+\filldraw[blue] (135:1.2cm) circle(1pt);
+\draw[blue] (0,0) -- (1,0);
+\draw[blue] (0,0) -- (135:1.2);
+\draw[->] (0:0.7cm) arc (0:135:0.7cm);
+\end{tikzpicture}
+</latex-image>
+  </image>
+  <p>
+    \task
+  </p>
+  <image>
+<latex-image>
+\begin{tikzpicture}[x=0.75cm,y=0.75cm]
+\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+\draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+\filldraw[blue] (1cm,0) circle(1pt);
+\filldraw[blue] (-30:1.2cm) circle(1pt);
+\draw[blue] (0,0) -- (1,0);
+\draw[blue] (0,0) -- (-30:1.2);
+\draw[->] (0:0.7cm) arc (0:-30:0.7cm);
+\end{tikzpicture}
+
+</latex-image>
+  </image>
+  <p>
+    \task
+  </p>
+  <image>
+<latex-image>
+\begin{tikzpicture}[x=0.75cm,y=0.75cm]
+\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+\draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+\filldraw[blue] (1cm,0) circle(1pt);
+\filldraw[blue] (495:1.2cm) circle(1pt);
+\draw[blue] (0,0) -- (1,0);
+\draw[blue] (0,0) -- (495:1.2);
+%      \draw[->] (0:0.7cm) arc (0:495:0.7cm);
+\draw [->,domain=0:8.63937979737,variable=\t,smooth,samples=75]
+  plot ({\t r}: {0.1+0.07*\t});
+\end{tikzpicture}
+</latex-image>
+  </image>
+  <p>
+    \task
+  </p>
+  <image>
+<latex-image>
+\begin{tikzpicture}[x=0.75cm,y=0.75cm]
+\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+\draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+\filldraw[blue] (1cm,0) circle(1pt);
+\filldraw[blue] (-240:1.2cm) circle(1pt);
+\draw[blue] (0,0) -- (1,0);
+\draw[blue] (0,0) -- (-240:1.2);
+\draw[->] (0:0.7cm) arc (0:-240:0.7cm);
+\end{tikzpicture}
+</latex-image>
+  </image>
+  <p>
+    \task
+  </p>
+  <image>
+<latex-image>
+\begin{tikzpicture}[x=0.75cm,y=0.75cm]
+\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+\draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+\filldraw[blue] (1cm,0) circle(1pt);
+\filldraw[blue] (800:1.2cm) circle(1pt);
+\draw[blue] (0,0) -- (1,0);
+\draw[blue] (0,0) -- (800:1.2);
+%      \draw[->] (0:0.7cm) arc (0:800:0.7cm);
+\draw [->,domain=0:13.962634016,variable=\t,smooth,samples=75]
+  plot ({\t r}: {0.1+0.05*\t});
+\end{tikzpicture}
+</latex-image>
+  </image>
+  <p>
+    \task
+  </p>
+  <image>
+<latex-image>
+\begin{tikzpicture}[x=0.75cm,y=0.75cm]
+\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+\draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+\filldraw[blue] (1cm,0) circle(1pt);
+\filldraw[blue] (45:1.2cm) circle(1pt);
+\draw[blue] (0,0) -- (1,0);
+\draw[blue] (0,0) -- (45:1.2);
+\draw[->] (0:0.7cm) arc (0:45:0.7cm);
+\end{tikzpicture}
+</latex-image>
+  </image>
+  <p>
+    \task
+  </p>
+  <image>
+<latex-image>
+\begin{tikzpicture}[x=0.75cm,y=0.75cm]
+\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+\draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+\filldraw[blue] (1cm,0) circle(1pt);
+\filldraw[blue] (150:1.2cm) circle(1pt);
+\draw[blue] (0,0) -- (1,0);
+\draw[blue] (0,0) -- (150:1.2);
+\draw[->] (0:0.7cm) arc (0:150:0.7cm);
+\end{tikzpicture}
+</latex-image>
+  </image>
+  <p>
+    \task
+  </p>
+  <image>
+<latex-image>
+\begin{tikzpicture}[x=0.75cm,y=0.75cm]
+\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+\draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+\filldraw[blue] (1cm,0) circle(1pt);
+\filldraw[blue] (-60:1.2cm) circle(1pt);
+\draw[blue] (0,0) -- (1,0);
+\draw[blue] (0,0) -- (-60:1.2);
+\draw[->] (0:0.7cm) arc (0:-60:0.7cm);
+\end{tikzpicture}
+</latex-image>
+  </image>
+  <p>
+    \task
+  </p>
+  <image>
+<latex-image>
+\begin{tikzpicture}[x=0.75cm,y=0.75cm]
+\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+\draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+\filldraw[blue] (1cm,0) circle(1pt);
+\filldraw[blue] (600:1.2cm) circle(1pt);
+\draw[blue] (0,0) -- (1,0);
+\draw[blue] (0,0) -- (600:1.2);
+%      \draw[->] (0:0.7cm) arc (0:600:0.7cm);
+\draw [->,domain=0:10.471975512,variable=\t,smooth,samples=75]
+  plot ({\t r}: {0.1+0.06*\t}); %20.94395=1200*pi/180
+\end{tikzpicture}
+</latex-image>
+  </image>
+  <p>
+    \task
+  </p>
+  <image>
+<latex-image>
+\begin{tikzpicture}[x=0.75cm,y=0.75cm]
+\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+\draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+\filldraw[blue] (1cm,0) circle(1pt);
+\filldraw[blue] (-120:1.2cm) circle(1pt);
+\draw[blue] (0,0) -- (1,0);
+\draw[blue] (0,0) -- (-120:1.2);
+\draw[->] (0:0.7cm) arc (0:-120:0.7cm);
+\end{tikzpicture}
+</latex-image>
+  </image>
+  <p>
+    \end{tasks} \Question \begin{tasks}(3) \task <m>0.47</m> \task <m>1.10</m> \task <m>-0.68</m> \task <m>3.49</m> \task <m>7.24</m> \task <m>1.83</m> \end{tasks} \Question \begin{tasks}(3) \task <m>108^{\circ}</m> \task <m>480^{\circ}</m> \task <m>-102.86^{\circ}</m> \task <m>675^{\circ}</m> \task <m>-85.94^{\circ}</m> \task
+    <m>171.89^{\circ}</m> \end{tasks} \Question \begin{tasks}(4) \task Yes \task Yes \task No \task Yes \end{tasks} \Question \begin{tasks}(2) \task <m>405^{\circ}</m> \task
+    <m>240^{\circ}</m> \task <m>315^{\circ}</m> \task
+    <m>60^{\circ}</m> \end{tasks} \Question \begin{tasks} \task i) <m>7.8540</m> in;
+    ii) <m>39.2699</m> in<m>^2</m> \task i) <m>2.0944</m> m;
+    ii) <m>26.1799</m> m<m>^2</m> \task i) <m>3.1416</m> mi;
+    ii) <m>4.7124</m> mi<m>^2</m> \task i) <m>16</m> cm;
+    ii) <m>64</m>cm<m>^2</m> \end{tasks} \Question \begin{tasks}(2) \task <m>69.10</m> miles \task <m>1.15</m> miles \task <m>101</m> feet \end{tasks} \Question \begin{tasks} \task <m>360\pi</m> radians/minute \task <m>38.56</m> miles/hour \end{tasks} \Question \begin{tasks} \task <m>1.6</m> million miles \task <m>47.9</m> million miles \task <m>583.7</m> million miles \task <m>66,588</m> miles per hour \end{tasks} \Question 2,292 miles per hour \Question 36.5 minutes \end{Answer}
+  </p>
+
+
+</subsection>
 </section> 

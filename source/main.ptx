@@ -82,6 +82,8 @@
 \usetikzlibrary{shapes}
 \usetikzlibrary{through,intersections,decorations,shadows,fadings}
 \usepackage{pgfplots}
+<!--Globe Design-->
+
 <!--WAA DESIGN-->
 \tikzset{
   pobl/.style={
@@ -217,7 +219,7 @@
 </latex-image-preamble>
   </docinfo>
   <book>
-    <title>Trigonometry through polynesian navigation</title>
+    <title>Trigonometry Through Wayfinding and Navigation Across the Pacific</title>
     <!-- <frontmatter>
       <titlepage>
         <author>
@@ -227,7 +229,7 @@
     </frontmatter> -->
     <xi:include href="./Front_Matter.ptx"/>
     <xi:include href="./Trigonometry.ptx"/>
-    <!-- <xi:include href="./Graphs_of_the_Trigonometric_Functions.ptx"/> -->
+    <xi:include href="./Graphs_of_the_Trigonometric_Functions.ptx"/>
     <!-- <xi:include href="./Analytic_Trigonometry.ptx"/> -->
     <!-- <xi:include href="./Applications_of_Trigonometry.ptx"/> -->
     <!-- <xi:include href="./Polar_and_Parametric_Equations.ptx"/> -->

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<section xml:id="Hawaiian_Star_Compass">
+<section xml:id="Hawaiian_Star_Compass" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Hawaiian Star Compass</title>
   <p>
     Pacific Islanders have been wayfinding across long distances in the Pacific long before the magnetic compasses or other instruments were introduced.
@@ -29,22 +29,22 @@
     <image>
 <latex-image>
 \begin{tikzpicture}[x=5.3cm,y=5.3cm,cap=round,>=latex]
-\draw[&lt;-,dashed] (-1.2,0) -- (-0.97,0);
-\draw[dashed] (-0.49 ,0 ) -- (0.68 ,0 );
-\draw[->,dashed] (0.98 ,0 ) -- (1.2 ,0 );
-\draw[&lt;-,dashed] (0 ,-1.2 ) -- (0 ,-0.98 );
-\draw[dashed] (0 ,-0.72 ) -- (0 ,0.71 );
-\draw[->,dashed] (0 ,0.98 ) -- (0 ,1.2 );
+\draw[&lt;-,dashed] (-1.2,0) -- (-0.96,0);
+\draw[dashed] (-0.36,0) -- (0.6,0);
+\draw[->,dashed] (0.96,0) -- (1.2,0);
+\draw[&lt;-,dashed] (0,-1.2) -- (0,-0.96);
+\draw[dashed] (0,-0.65) -- (0,0.67);
+\draw[->,dashed] (0,0.96) -- (0,1.2);
 \node[right] at (1.2,0) {\Large E};
 \node[above] at (0,1.2) {\Large N};
 \node[left] at (-1.2,0) {\Large W};
 \node[below] at (0,-1.2) {\Large S};
-\draw[thick] (0 ,0 ) circle(1 );
-\draw[thick] (0 ,0 ) circle(1.1 );
-\draw[left] (0:0.98 ) node{\large HIKINA};
-\draw[left] (90:0.98 ) node[rotate=90] {\large &#699;&#256;KAU};
-\draw[right] (180:0.98 ) node{\large KOMOHANA};
-\draw[left] (270:0.98 ) node[rotate=-90] {\large HEMA};
+\draw[thick] (0,0) circle(1 );
+\draw[thick] (0,0) circle(1.1 );
+\draw[left] (0:0.98) node{\large HIKINA};
+\draw[left] (90:0.98) node[rotate=90] {\large &#699;&#256;KAU};
+\draw[right] (180:0.98) node{\large KOMOHANA};
+\draw[left] (270:0.98) node[rotate=-90] {\large HEMA};
 \draw (45:0.5 ) node[rotate=-45] {\huge Ko&#699;olau};
 \draw (135:0.5 ) node[rotate=45] {\huge Ho&#699;olua};
 \draw (225:0.5 ) node[rotate=315] {\huge Kona};
@@ -628,5 +628,34 @@
       </p>
     </answer>
   </exercise>
+
+  <exercise>
+          <webwork>
+        <pg-code>
+          $a = Compute(random(1, 9, 1));
+          $b = Compute(random(1, 9, 1));
+          $c = $a + $b;
+        </pg-code>
+        <statement>
+          <p>
+            Compute the sum of <m><var name="$a" /></m> and <m><var name="$b" /></m>:
+          </p>
+          <p>
+            <m><var name="$a" /> + <var name="$b" /> =</m> <var name="$c" width="5" />
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Add <m><var name="$a" /></m> and <m><var name="$b" /></m> together.
+          </p>
+        </hint>
+        <solution>
+          <p>
+            <m><var name="$a" /> + <var name="$b" /> = <var name="$c" /></m>.
+          </p>
+        </solution>
+      </webwork>
+  </exercise>
+
 </exercises>  
 </section>

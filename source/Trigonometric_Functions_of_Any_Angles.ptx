@@ -15,8 +15,8 @@
     </p>
     <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-\draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+\begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
 \draw (0,0) circle (1cm);
 \filldraw[blue] (1cm,0) circle(1pt);
 \filldraw[blue] (135:1cm) circle(1pt);
@@ -26,7 +26,7 @@
 \draw[->, line width=1.25pt] (0:0.4cm) arc (0:135:0.4cm) node[midway, right,xshift=0.2cm] {\(\theta\)};
 \draw[dashed] (135:1cm) -- (-0.707106781187,0) node[midway,left] {\(y\)};
 \draw[dashed] (-0.707106781187,0) -- (0,0) node[midway,below] {\(x\)};
-\draw (-0.557106781187,0) -- (-0.557106781187,0.15) -- (-0.707106781187,0.15);\end{tikzpicture}]]>
+\draw (-0.557106781187,0) -- (-0.557106781187,0.15) -- (-0.707106781187,0.15);\end{tikzpicture}
 </latex-image>
     </image>
     <example>
@@ -103,34 +103,34 @@
       <caption>Signs of trigonometric functions</caption>
       <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-2,0)--(2,0) node[right]{\(x\)};
-\draw[<->] (0,-2)--(0,2) node[above]{\(y\)};
+\begin{tikzpicture}\draw[&lt;->] (-2,0)--(2,0) node[right]{\(x\)};
+\draw[&lt;->] (0,-2)--(0,2) node[above]{\(y\)};
 \node at (1,1) [ align=center] {+};
 \node at (-1,1) [ align=center]{+};
 \node at (-1,-1) [ align=center] {-};
-\node at (1,-1) [ align=center] {-};\end{tikzpicture}]]>
+\node at (1,-1) [ align=center] {-};\end{tikzpicture}
 </latex-image>
       </image>
       <m>\sin\theta, \csc\theta</m>
       <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-2,0)--(2,0) node[right]{\(x\)};
-\draw[<->] (0,-2)--(0,2) node[above]{\(y\)};
+\begin{tikzpicture}\draw[&lt;->] (-2,0)--(2,0) node[right]{\(x\)};
+\draw[&lt;->] (0,-2)--(0,2) node[above]{\(y\)};
 \node at (1,1) [ align=center] {+};
 \node at (-1,1) [ align=center]{-};
 \node at (-1,-1) [ align=center] {+};
-\node at (1,-1) [ align=center] {-};\end{tikzpicture}]]>
+\node at (1,-1) [ align=center] {-};\end{tikzpicture}
 </latex-image>
       </image>
       <m>\tan\theta, \cot\theta</m>
       <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-2,0)--(2,0) node[right]{\(x\)};
-\draw[<->] (0,-2)--(0,2) node[above]{\(y\)};
+\begin{tikzpicture}\draw[&lt;->] (-2,0)--(2,0) node[right]{\(x\)};
+\draw[&lt;->] (0,-2)--(0,2) node[above]{\(y\)};
 \node at (1,1) [ align=center] {+};
 \node at (-1,1) [ align=center]{-};
 \node at (-1,-1) [ align=center] {-};
-\node at (1,-1) [ align=center] {+};\end{tikzpicture}]]>
+\node at (1,-1) [ align=center] {+};\end{tikzpicture}
 </latex-image>
       </image>
       <m>\cos\theta, \sec\theta</m>
@@ -173,12 +173,12 @@
     </p>
     <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-2,0)--(2,0) node[right]{\(x\)};
-\draw[<->] (0,-2)--(0,2) node[above]{\(y\)};
+\begin{tikzpicture}\draw[&lt;->] (-2,0)--(2,0) node[right]{\(x\)};
+\draw[&lt;->] (0,-2)--(0,2) node[above]{\(y\)};
 \node at (1,1) [ align=center] {{\Large \textbf A}ll\\ };
 \node at (-1,1) [ align=center]{{\Large \textbf S}in\\ (Csc)};
 \node at (-1,-1) [ align=center] {{\Large \textbf T}an\\ (Cot)};
-\node at (1,-1) [ align=center] {{\Large \textbf C}os\\ (Sec)};\end{tikzpicture}]]>
+\node at (1,-1) [ align=center] {{\Large \textbf C}os\\ (Sec)};\end{tikzpicture}
 </latex-image>
     </image>
     <example>
@@ -256,14 +256,14 @@
     </p>
     <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-\draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+\begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
 \draw (0,0) circle (1cm);
 \filldraw[blue] (1cm,0) circle(1pt);
 \filldraw[blue] (60:1cm) circle(1pt);
 \draw[line width=2pt,blue] (0,0) -- (1,0);
 \draw[line width=2pt,blue] (0,0) -- (60:1);
-\draw[->] (0:0.4cm) arc (0:60:0.4cm) node[midway, right,xshift=0.05cm] {\(t=t'\)};\end{tikzpicture}]]>
+\draw[->] (0:0.4cm) arc (0:60:0.4cm) node[midway, right,xshift=0.05cm] {\(t=t'\)};\end{tikzpicture}
 </latex-image>
     </image>
     <p>
@@ -277,8 +277,8 @@
     </p>
     <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-\draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+\begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
 \draw (0,0) circle (1cm);
 \filldraw[blue] (1cm,0) circle(1pt);
 \filldraw[blue] (120:1cm) circle(1pt);
@@ -286,7 +286,7 @@
 \draw[line width=2pt,blue] (0,0) -- (1,0);
 \draw[line width=2pt,blue] (0,0) -- (120:1);
 \draw[->] (0:0.4cm) arc (0:120:0.4cm) node[midway, right,xshift=0.2cm] {\(t\)};
-\draw[->] (180:0.4cm) arc (180:120:0.4cm) node[midway, left,xshift=-0.1cm] {\(t'\)};\end{tikzpicture}]]>
+\draw[->] (180:0.4cm) arc (180:120:0.4cm) node[midway, left,xshift=-0.1cm] {\(t'\)};\end{tikzpicture}
 </latex-image>
     </image>
     <p>
@@ -300,8 +300,8 @@
     </p>
     <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-\draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+\begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
 \draw (0,0) circle (1cm);
 \filldraw[blue] (1cm,0) circle(1pt);
 \filldraw[blue] (240:1cm) circle(1pt);
@@ -309,7 +309,7 @@
 \draw[line width=2pt,blue] (0,0) -- (1,0);
 \draw[line width=2pt,blue] (0,0) -- (240:1);
 \draw[->] (0:0.3cm) arc (0:240:0.3cm) node[midway, left,xshift=-0.1cm] {\(t\)};
-\draw[->] (180:0.6cm) arc (180:240:0.6cm) node[midway, left,xshift=-0.1cm] {\(t'\)};\end{tikzpicture}]]>
+\draw[->] (180:0.6cm) arc (180:240:0.6cm) node[midway, left,xshift=-0.1cm] {\(t'\)};\end{tikzpicture}
 </latex-image>
     </image>
     <p>
@@ -323,15 +323,15 @@
     </p>
     <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-\draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+\begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
 \draw (0,0) circle (1cm);
 \filldraw[blue] (1cm,0) circle(1pt);
 \filldraw[blue] (300:1cm) circle(1pt);
 \draw[line width=2pt,blue] (0,0) -- (1,0);
 \draw[line width=2pt,blue] (0,0) -- (300:1);
 \draw[->] (0:0.3cm) arc (0:300:0.3cm) node[midway, left,xshift=-0.1cm] {\(t\)};
-\draw[->] (360:0.6cm) arc (360:300:0.6cm) node[midway, right,xshift=0.1cm] {\(t'\)};\end{tikzpicture}]]>
+\draw[->] (360:0.6cm) arc (360:300:0.6cm) node[midway, right,xshift=0.1cm] {\(t'\)};\end{tikzpicture}
 </latex-image>
     </image>
     <p>
@@ -346,7 +346,7 @@
               <p>
                 <m>t=\frac{\pi}{3}</m>
                 <image>
-                   <latex-image> <![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (60:1cm) circle(1pt); \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (60:1); \draw[->] (0:0.4cm) arc (0:60:0.4cm) node[midway, right,xshift=0.05cm] {\(\frac{\pi}{3}\)};\end{tikzpicture}]]> </latex-image>
+                   <latex-image> \begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (60:1cm) circle(1pt); \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (60:1); \draw[->] (0:0.4cm) arc (0:60:0.4cm) node[midway, right,xshift=0.05cm] {\(\frac{\pi}{3}\)};\end{tikzpicture} </latex-image>
                 </image>
               </p>
             </li>
@@ -354,7 +354,7 @@
               <p>
                 <m>t=\frac{3\pi}{4}</m>
                 <image>
-                   <latex-image> <![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (135:1cm) circle(1pt); \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (135:1); \draw[->] (0:0.4cm) arc (0:135:0.4cm) node[midway, right,xshift=0.2cm] {\(\frac{3\pi}{4}\)}; \draw[->] (180:0.4cm) arc (180:135:0.4cm) node[midway, left,xshift=-0.1cm,yshift=0.1cm] {\(t'\)};\end{tikzpicture}]]> </latex-image>
+                   <latex-image> \begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (135:1cm) circle(1pt); \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (135:1); \draw[->] (0:0.4cm) arc (0:135:0.4cm) node[midway, right,xshift=0.2cm] {\(\frac{3\pi}{4}\)}; \draw[->] (180:0.4cm) arc (180:135:0.4cm) node[midway, left,xshift=-0.1cm,yshift=0.1cm] {\(t'\)};\end{tikzpicture} </latex-image>
                 </image>
                 \columnbreak
               </p>
@@ -363,7 +363,7 @@
               <p>
                 <m>t=-\frac{3\pi}{4}</m>
                 <image>
-                   <latex-image> <![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (-135:1cm) circle(1pt); \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (-135:1); \draw[->] (0:0.4cm) arc (0:-135:0.4cm) node[midway, below ,xshift=0.2cm,yshift=0.1cm] {\(-\frac{3\pi}{4}\)}; \draw[->] (-180:0.4cm) arc (-180:-135:0.4cm) node[midway, left,xshift=-0.1cm,yshift=-0.1cm] {\(t'\)};\end{tikzpicture}]]> </latex-image>
+                   <latex-image> \begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (-135:1cm) circle(1pt); \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (-135:1); \draw[->] (0:0.4cm) arc (0:-135:0.4cm) node[midway, below ,xshift=0.2cm,yshift=0.1cm] {\(-\frac{3\pi}{4}\)}; \draw[->] (-180:0.4cm) arc (-180:-135:0.4cm) node[midway, left,xshift=-0.1cm,yshift=-0.1cm] {\(t'\)};\end{tikzpicture} </latex-image>
                 </image>
               </p>
             </li>
@@ -371,7 +371,7 @@
               <p>
                 <m>t=240^{\circ}</m>
                 <image>
-                   <latex-image> <![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (240:1cm) circle(1pt); \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (240:1); \draw[->] (0:0.3cm) arc (0:240:0.3cm) node[midway, left,xshift=-0.1cm] {\(240^{\circ}\)}; \draw[->] (180:0.6cm) arc (180:240:0.6cm) node[midway, left,xshift=-0.1cm] {\(t'\)};\end{tikzpicture}]]> </latex-image>
+                   <latex-image> \begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (240:1cm) circle(1pt); \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (240:1); \draw[->] (0:0.3cm) arc (0:240:0.3cm) node[midway, left,xshift=-0.1cm] {\(240^{\circ}\)}; \draw[->] (180:0.6cm) arc (180:240:0.6cm) node[midway, left,xshift=-0.1cm] {\(t'\)};\end{tikzpicture} </latex-image>
                 </image>
               </p>
             </li>
@@ -379,7 +379,7 @@
               <p>
                 <m>t=\frac{11\pi}{6}</m>
                 <image>
-                   <latex-image> <![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (330:1cm) circle(1pt); \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (330:1); \draw[->] (0:0.3cm) arc (0:330:0.3cm) node[midway, left,xshift=0.1cm,yshift=0.2cm] {\(\frac{11\pi}{6}\)}; \draw[->] (360:0.6cm) arc (360:330:0.6cm) node[midway, right,xshift=0.1cm] {\(t'\)};\end{tikzpicture}]]> </latex-image>
+                   <latex-image> \begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (330:1cm) circle(1pt); \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (330:1); \draw[->] (0:0.3cm) arc (0:330:0.3cm) node[midway, left,xshift=0.1cm,yshift=0.2cm] {\(\frac{11\pi}{6}\)}; \draw[->] (360:0.6cm) arc (360:330:0.6cm) node[midway, right,xshift=0.1cm] {\(t'\)};\end{tikzpicture} </latex-image>
                 </image>
               </p>
             </li>
@@ -387,7 +387,7 @@
               <p>
                 <m>t=\frac{2\pi}{3}</m>
                 <image>
-                   <latex-image> <![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (120:1cm) circle(1pt); \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (120:1); \draw[->] (0:0.4cm) arc (0:120:0.4cm) node[midway, right,xshift=0.2cm] {\(\frac{2\pi}{3}\)}; \draw[->] (180:0.4cm) arc (180:120:0.4cm) node[midway, left,xshift=-0.1cm,yshift=0.1cm] {\(t'\)};\end{tikzpicture}]]> </latex-image>
+                   <latex-image> \begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (120:1cm) circle(1pt); \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (120:1); \draw[->] (0:0.4cm) arc (0:120:0.4cm) node[midway, right,xshift=0.2cm] {\(\frac{2\pi}{3}\)}; \draw[->] (180:0.4cm) arc (180:120:0.4cm) node[midway, left,xshift=-0.1cm,yshift=0.1cm] {\(t'\)};\end{tikzpicture} </latex-image>
                 </image>
               </p>
             </li>
@@ -451,14 +451,14 @@
     </p>
     <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-\draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+\begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
 \draw (0,0) circle (1cm);
 \filldraw[blue] (1cm,0) circle(1pt);
 \filldraw[blue] (60:1cm) circle(1pt);
 \draw[line width=2pt,blue] (0,0) -- (1,0);
 \draw[line width=2pt,blue] (0,0) -- (60:1);
-\draw[->] (0:0.4cm) arc (0:60:0.4cm) node[midway, right,xshift=0.05cm] {\(t=t'\)};\end{tikzpicture}]]>
+\draw[->] (0:0.4cm) arc (0:60:0.4cm) node[midway, right,xshift=0.05cm] {\(t=t'\)};\end{tikzpicture}
 </latex-image>
     </image>
     <p>
@@ -472,8 +472,8 @@
     </p>
     <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-\draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+\begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
 \draw (0,0) circle (1cm);
 \filldraw[blue] (1cm,0) circle(1pt);
 \filldraw[blue] (120:1cm) circle(1pt);
@@ -481,7 +481,7 @@
 \draw[line width=2pt,blue] (0,0) -- (1,0);
 \draw[line width=2pt,blue] (0,0) -- (120:1);
 \draw[->] (0:0.4cm) arc (0:120:0.4cm) node[midway, right,xshift=0.2cm] {\(t\)};
-\draw[->] (180:0.4cm) arc (180:120:0.4cm) node[midway, left,xshift=-0.1cm] {\(t'\)};\end{tikzpicture}]]>
+\draw[->] (180:0.4cm) arc (180:120:0.4cm) node[midway, left,xshift=-0.1cm] {\(t'\)};\end{tikzpicture}
 </latex-image>
     </image>
     <p>
@@ -495,8 +495,8 @@
     </p>
     <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-\draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+\begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
 \draw (0,0) circle (1cm);
 \filldraw[blue] (1cm,0) circle(1pt);
 \filldraw[blue] (240:1cm) circle(1pt);
@@ -504,7 +504,7 @@
 \draw[line width=2pt,blue] (0,0) -- (1,0);
 \draw[line width=2pt,blue] (0,0) -- (240:1);
 \draw[->] (0:0.3cm) arc (0:240:0.3cm) node[midway, left,xshift=-0.1cm] {\(t\)};
-\draw[->] (180:0.6cm) arc (180:240:0.6cm) node[midway, left,xshift=-0.1cm] {\(t'\)};\end{tikzpicture}]]>
+\draw[->] (180:0.6cm) arc (180:240:0.6cm) node[midway, left,xshift=-0.1cm] {\(t'\)};\end{tikzpicture}
 </latex-image>
     </image>
     <p>
@@ -518,15 +518,15 @@
     </p>
     <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-\draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+\begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
 \draw (0,0) circle (1cm);
 \filldraw[blue] (1cm,0) circle(1pt);
 \filldraw[blue] (300:1cm) circle(1pt);
 \draw[line width=2pt,blue] (0,0) -- (1,0);
 \draw[line width=2pt,blue] (0,0) -- (300:1);
 \draw[->] (0:0.3cm) arc (0:300:0.3cm) node[midway, left,xshift=-0.1cm] {\(t\)};
-\draw[->] (360:0.6cm) arc (360:300:0.6cm) node[midway, right,xshift=0.1cm] {\(t'\)};\end{tikzpicture}]]>
+\draw[->] (360:0.6cm) arc (360:300:0.6cm) node[midway, right,xshift=0.1cm] {\(t'\)};\end{tikzpicture}
 </latex-image>
     </image>
     <p>
@@ -538,12 +538,12 @@
     </p>
     <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-2,0)--(2,0) node[right]{\(x\)};
-\draw[<->] (0,-2)--(0,2) node[above]{\(y\)};
+\begin{tikzpicture}\draw[&lt;->] (-2,0)--(2,0) node[right]{\(x\)};
+\draw[&lt;->] (0,-2)--(0,2) node[above]{\(y\)};
 \node at (1,1) [ align=center] {I \\ \(t=t'=\frac{a\pi}{b}\)};
 \node at (-1,1) [ align=center]{II \\ \(t=\frac{(b-a)\pi}{b}\)};
 \node at (-1,-1) [ align=center] {III \\ \(t=\frac{(b+a)\pi}{b}\)};
-\node at (1,-1) [ align=center] {IV \\ \(t=\frac{(2b-a)\pi}{b}\)};\end{tikzpicture}]]>
+\node at (1,-1) [ align=center] {IV \\ \(t=\frac{(2b-a)\pi}{b}\)};\end{tikzpicture}
 </latex-image>
     </image>
     <p>
@@ -599,25 +599,25 @@
               Quadrant I
               </p>
               <image>
-                 <latex-image> <![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (60:1cm) circle(1pt); \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (60:1); \draw[->] (0:0.4cm) arc (0:60:0.4cm) node[midway, right,xshift=0.05cm] {\(\frac{\pi}{6}\)};\end{tikzpicture}]]> </latex-image>
+                 <latex-image> \begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (60:1cm) circle(1pt); \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (60:1); \draw[->] (0:0.4cm) arc (0:60:0.4cm) node[midway, right,xshift=0.05cm] {\(\frac{\pi}{6}\)};\end{tikzpicture} </latex-image>
               </image>
               <p>
               Quadrant II
               </p>
               <image>
-                 <latex-image> <![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (150:1cm) circle(1pt); \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (150:1); \draw[->] (0:0.4cm) arc (0:150:0.4cm) node[midway, right,xshift=0.2cm] {\(\frac{5\pi}{6}\)}; \draw[->] (180:0.4cm) arc (180:150:0.4cm) node[midway, left,xshift=-0.25cm,yshift=0.1cm] {\(\frac{\pi}{6}\)};\end{tikzpicture}]]> </latex-image>
+                 <latex-image> \begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (150:1cm) circle(1pt); \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (150:1); \draw[->] (0:0.4cm) arc (0:150:0.4cm) node[midway, right,xshift=0.2cm] {\(\frac{5\pi}{6}\)}; \draw[->] (180:0.4cm) arc (180:150:0.4cm) node[midway, left,xshift=-0.25cm,yshift=0.1cm] {\(\frac{\pi}{6}\)};\end{tikzpicture} </latex-image>
               </image>
               <p>
               Quadrant III
               </p>
               <image>
-                 <latex-image> <![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (210:1cm) circle(1pt); \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (210:1); \draw[->] (0:0.3cm) arc (0:210:0.3cm) node[midway, left,xshift=-0.1cm] {\(\frac{7\pi}{6}\)}; \draw[->] (180:0.6cm) arc (180:210:0.6cm) node[midway, left,xshift=-0.1cm,yshift=-0.1cm] {\(\frac{\pi}{6}\)};\end{tikzpicture}]]> </latex-image>
+                 <latex-image> \begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (210:1cm) circle(1pt); \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (210:1); \draw[->] (0:0.3cm) arc (0:210:0.3cm) node[midway, left,xshift=-0.1cm] {\(\frac{7\pi}{6}\)}; \draw[->] (180:0.6cm) arc (180:210:0.6cm) node[midway, left,xshift=-0.1cm,yshift=-0.1cm] {\(\frac{\pi}{6}\)};\end{tikzpicture} </latex-image>
               </image>
               <p>
               Quadrant IV
               </p>
               <image>
-                 <latex-image> <![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (330:1cm) circle(1pt); \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (330:1); \draw[->] (0:0.3cm) arc (0:330:0.3cm) node[midway, left,xshift=0.1cm,yshift=0.2cm] {\(\frac{11\pi}{6}\)}; \draw[->] (360:0.6cm) arc (360:330:0.6cm) node[midway, right,xshift=0.1cm,yshift=-0.1cm] {\(\frac{\pi}{6}\)};\end{tikzpicture}]]> </latex-image>
+                 <latex-image> \begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (330:1cm) circle(1pt); \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (330:1); \draw[->] (0:0.3cm) arc (0:330:0.3cm) node[midway, left,xshift=0.1cm,yshift=0.2cm] {\(\frac{11\pi}{6}\)}; \draw[->] (360:0.6cm) arc (360:330:0.6cm) node[midway, right,xshift=0.1cm,yshift=-0.1cm] {\(\frac{\pi}{6}\)};\end{tikzpicture} </latex-image>
               </image>
             </li>
             <li>
@@ -642,25 +642,25 @@
               Quadrant I
               </p>
               <image>
-                 <latex-image> <![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (45:1cm) circle(1pt); \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (45:1); \draw[->] (0:0.4cm) arc (0:45:0.4cm) node[midway, right,xshift=0.05cm] {\(45^{\circ}\)};\end{tikzpicture}]]> </latex-image>
+                 <latex-image> \begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (45:1cm) circle(1pt); \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (45:1); \draw[->] (0:0.4cm) arc (0:45:0.4cm) node[midway, right,xshift=0.05cm] {\(45^{\circ}\)};\end{tikzpicture} </latex-image>
               </image>
               <p>
               Quadrant II
               </p>
               <image>
-                 <latex-image> <![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (135:1cm) circle(1pt); \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (135:1); \draw[->] (0:0.4cm) arc (0:135:0.4cm) node[midway, right,xshift=0.1cm] {\(135^{\circ}\)}; \draw[->] (180:0.4cm) arc (180:135:0.4cm) node[midway, left,xshift=-0.0cm,yshift=0.1cm] {\(45^{\circ}\)};\end{tikzpicture}]]> </latex-image>
+                 <latex-image> \begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (135:1cm) circle(1pt); \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (135:1); \draw[->] (0:0.4cm) arc (0:135:0.4cm) node[midway, right,xshift=0.1cm] {\(135^{\circ}\)}; \draw[->] (180:0.4cm) arc (180:135:0.4cm) node[midway, left,xshift=-0.0cm,yshift=0.1cm] {\(45^{\circ}\)};\end{tikzpicture} </latex-image>
               </image>
               <p>
               Quadrant III
               </p>
               <image>
-                 <latex-image> <![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (225:1cm) circle(1pt); \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (225:1); \draw[->] (0:0.3cm) arc (0:225:0.3cm) node[midway, left,xshift=-0.0cm] {\(225^{\circ}\)}; \draw[->] (180:0.5cm) arc (180:225:0.5cm) node[midway, left,xshift=0.0cm,yshift=-0.0cm] {\(45^{\circ}\)};\end{tikzpicture}]]> </latex-image>
+                 <latex-image> \begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (225:1cm) circle(1pt); \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (225:1); \draw[->] (0:0.3cm) arc (0:225:0.3cm) node[midway, left,xshift=-0.0cm] {\(225^{\circ}\)}; \draw[->] (180:0.5cm) arc (180:225:0.5cm) node[midway, left,xshift=0.0cm,yshift=-0.0cm] {\(45^{\circ}\)};\end{tikzpicture} </latex-image>
               </image>
               <p>
               Quadrant IV
               </p>
               <image>
-                 <latex-image> <![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (315:1cm) circle(1pt); \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (315:1); \draw[->] (0:0.3cm) arc (0:315:0.3cm) node[midway, left,xshift=0.0cm,yshift=0.0cm] {\(315^{\circ}\)}; \draw[->] (360:0.5cm) arc (360:315:0.5cm) node[midway, right,xshift=0.05cm,yshift=-0.0cm] {\(45^{\circ}\)};\end{tikzpicture}]]> </latex-image>
+                 <latex-image> \begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (315:1cm) circle(1pt); \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (315:1); \draw[->] (0:0.3cm) arc (0:315:0.3cm) node[midway, left,xshift=0.0cm,yshift=0.0cm] {\(315^{\circ}\)}; \draw[->] (360:0.5cm) arc (360:315:0.5cm) node[midway, right,xshift=0.05cm,yshift=-0.0cm] {\(45^{\circ}\)};\end{tikzpicture} </latex-image>
               </image>
             </li>
           </ol>
@@ -680,15 +680,15 @@
     </p>
     <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-1.2,0)--(1.2,0) node[right]{\(x\)};
-\draw[<->] (0,-1.2)--(0,1.2) node[right]{\(y\)};
+\begin{tikzpicture}\draw[&lt;->] (-1.2,0)--(1.2,0) node[right]{\(x\)};
+\draw[&lt;->] (0,-1.2)--(0,1.2) node[right]{\(y\)};
 \draw (0,0) circle (1cm);
 \filldraw[blue] (1cm,0) circle(1pt);
 \filldraw[blue] (150:1) circle(1pt) node [left] {\(P\)};
 \draw[blue] (0,0) -- (1,0);
 \draw[blue] (0,0) -- (150:1) node[midway,above] {\(r\)};
 \draw[->] (0:0.4cm) arc (0:150:0.4cm) node[midway, right,xshift=0.2cm] {\(\theta\)};
-\draw[->] (180:0.4cm) arc (180:150:0.4cm) node[midway, left,xshift=-0.1cm] {\(\theta'\)};\end{tikzpicture}]]>
+\draw[->] (180:0.4cm) arc (180:150:0.4cm) node[midway, left,xshift=-0.1cm] {\(\theta'\)};\end{tikzpicture}
 </latex-image>
     </image>
     <p>
@@ -703,9 +703,9 @@
     </p>
     <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<-] (-1.15,0)--(-0.866025403784,0);
+\begin{tikzpicture}\draw[&lt;-] (-1.15,0)--(-0.866025403784,0);
 \draw[->] (0.866025403784,0)--(1.15,0) node[right]{\(x\)};
-\draw[<->] (0,-1.15)--(0,1.15) node[right]{\(y\)};
+\draw[&lt;->] (0,-1.15)--(0,1.15) node[right]{\(y\)};
 \draw (0,0) circle (1cm);
 \filldraw[blue] (30:1) circle(1pt) node[right] {\(P'(x',y')\)};
 \filldraw[blue] (150:1) circle(1pt) node [left] {\(P(x,y)\)};
@@ -717,7 +717,7 @@
 \draw[blue,dashed] (30:1) -- (0.866025403784,0) node[midway,left] {\(y'\)};
 \draw[blue,dashed] (150:1) -- (-0.866025403784,0) node[midway,right] {\(y\)};
 \draw[->] (0:0.4) arc (0:30:0.4) node[midway, right,xshift=0.0cm] {\(\theta'\)};
-\draw[->] (0:0.2) arc (0:150:0.2) node[midway, above,xshift=0.1cm] {\(\theta\)};\end{tikzpicture}]]>
+\draw[->] (0:0.2) arc (0:150:0.2) node[midway, above,xshift=0.1cm] {\(\theta\)};\end{tikzpicture}
 </latex-image>
     </image>
     <p>
@@ -783,7 +783,7 @@
       <statement>
         <p>
           Use the reference angle associated with the given angle to find the exact value of
-          <ol label="labelalph">
+          <ol>
             <li>
               <p>
                 <m>\cos210^{\circ}</m>
@@ -801,14 +801,14 @@
         <p>
           We will use the steps for evaluating trigonometric functions using reference angles.
         </p>
-        <ol label="labelalph">
+        <ol>
           <li>
-            <ol label="leftmargin125cm">
+            <ol>
               <li>
                 <title>Step 1</title>
                 <p>
                   <image>
-                     <latex-image> <![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (210:1) circle(1pt) node [left] {\(P\)}; \draw[blue] (0,0) -- (1,0); \draw[blue] (0,0) -- (210:1) node[midway,below] {\(r\)}; \draw[->] (0:0.2cm) arc (0:210:0.2cm) node[midway, right,xshift=0.2cm] {\(\theta\)}; \draw[->] (180:0.4cm) arc (180:210:0.4cm) node[midway, left,xshift=-0.1cm] {\(\theta'\)};\end{tikzpicture}]]> </latex-image>
+                     <latex-image> \begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (210:1) circle(1pt) node [left] {\(P\)}; \draw[blue] (0,0) -- (1,0); \draw[blue] (0,0) -- (210:1) node[midway,below] {\(r\)}; \draw[->] (0:0.2cm) arc (0:210:0.2cm) node[midway, right,xshift=0.2cm] {\(\theta\)}; \draw[->] (180:0.4cm) arc (180:210:0.4cm) node[midway, left,xshift=-0.1cm] {\(\theta'\)};\end{tikzpicture} </latex-image>
                   </image>
                 </p>
               </li>
@@ -839,12 +839,12 @@
             </ol>
           </li>
           <li>
-            <ol label="leftmargin125cm">
+            <ol>
               <li>
                 <title>Step 1</title>
                 <p>
                   <image>
-                     <latex-image> <![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw (0.4cm,0) circle(1pt); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (315:1) circle(1pt) node [right] {\(P\)}; \draw[blue] (0,0) -- (1,0); \draw[blue] (0,0) -- (315:1) node[midway,below] {\(r\)}; \draw[->] (0:0.4cm) arc (0:315:0.4cm) node[midway, left,xshift=-0.1cm] {\(\theta\)}; \draw[->] (360:0.4cm) arc (360:315:0.4cm) node[midway, right,xshift=0.1cm] {\(\theta'\)};\end{tikzpicture}]]> </latex-image>
+                     <latex-image> \begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw (0.4cm,0) circle(1pt); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (315:1) circle(1pt) node [right] {\(P\)}; \draw[blue] (0,0) -- (1,0); \draw[blue] (0,0) -- (315:1) node[midway,below] {\(r\)}; \draw[->] (0:0.4cm) arc (0:315:0.4cm) node[midway, left,xshift=-0.1cm] {\(\theta\)}; \draw[->] (360:0.4cm) arc (360:315:0.4cm) node[midway, right,xshift=0.1cm] {\(\theta'\)};\end{tikzpicture} </latex-image>
                   </image>
                 </p>
               </li>
@@ -893,7 +893,7 @@
                 <figure xml:id="fig_1_5-1200deg">
                   <caption>The angle <m>\theta=\frac{20\pi}{3}</m> makes three rotations before ending in Quadrant II.</caption>
                   <image>
-                     <latex-image> <![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (120:1) circle(1pt) node [left] {\(P\)}; \draw[blue] (0,0) -- (1,0); \draw[blue] (0,0) -- (120:1); \draw[->,domain=0:20.94395,variable=\t,smooth,samples=75] plot ({\t r}: {0.1+0.03*\t}); \node at (60:0.8cm) {\(\theta\)}; \draw[->] (180:0.7283cm) arc (180:120:0.7283cm) node[midway, left,xshift=-0.0cm] {\(\theta'\)}; \filldraw[blue] (120:0.162831853072) circle(1pt); \filldraw[blue] (120:0.351327412287) circle(1pt); \filldraw[blue] (120:0.539822971503) circle(1pt); \filldraw[blue] (120:0.7283cm) circle(1pt);\end{tikzpicture}]]> </latex-image>
+                     <latex-image> \begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \filldraw[blue] (1cm,0) circle(1pt); \filldraw[blue] (120:1) circle(1pt) node [left] {\(P\)}; \draw[blue] (0,0) -- (1,0); \draw[blue] (0,0) -- (120:1); \draw[->,domain=0:20.94395,variable=\t,smooth,samples=75] plot ({\t r}: {0.1+0.03*\t}); \node at (60:0.8cm) {\(\theta\)}; \draw[->] (180:0.7283cm) arc (180:120:0.7283cm) node[midway, left,xshift=-0.0cm] {\(\theta'\)}; \filldraw[blue] (120:0.162831853072) circle(1pt); \filldraw[blue] (120:0.351327412287) circle(1pt); \filldraw[blue] (120:0.539822971503) circle(1pt); \filldraw[blue] (120:0.7283cm) circle(1pt);\end{tikzpicture} </latex-image>
                   </image>
                 </figure>
               </p>
@@ -1404,15 +1404,15 @@
       </p>
       <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-\draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+\begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
 \draw (0,0) circle (1cm);
 \draw[line width=2pt] (0,0) -- (45:1cm) node[midway,above,yshift=0.2cm] {\(r\)};
 \draw[line width=2pt] (0,0) -- (0.707106781187,0) node[midway,below,yshift=-0.1cm] {\(x=\cos \theta\)};
 \draw[line width=2pt] (0.707106781187,0) -- (0.707106781187,0.707106781187) node[midway,right,yshift=-0.2cm] {\(y=\sin \theta\)};
 \filldraw[black] (45:1cm) circle(1pt) node[above right] {\(P(x,y)\)};
 \draw ([shift=(0:0.25cm)]0,0) arc (0:45:0.25cm) node[midway,right,xshift=0.1cm] {\(\theta\)};
-\draw (0.557106781187,0) -- (0.557106781187,0.15) -- (0.707106781187,0.15);\end{tikzpicture}]]>
+\draw (0.557106781187,0) -- (0.557106781187,0.15) -- (0.707106781187,0.15);\end{tikzpicture}
 </latex-image>
       </image>
       <p>
@@ -1503,8 +1503,8 @@
       </p>
       <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-\draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+\begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
 \draw (0,0) circle (1cm);
 \node at (-0.1,-0.1) {0};
 \draw[line width=2pt,blue] (0,0) -- (1,0) node[black,below,xshift=-0.2cm]{1};
@@ -1515,7 +1515,7 @@
 \filldraw (0,0) circle(1pt);
 \filldraw (1,0) circle(1pt);
 \draw[->, line width=1.25pt] (0:0.3cm) arc (0:-40:0.3cm) node[midway, right,yshift=0.1cm,xshift=0.1cm] {\(-\theta\)};
-\draw[->, line width=1.25pt] (0:0.4cm) arc (0:40:0.4cm) node[midway, right,xshift=0.1cm] {\(\theta\)};\end{tikzpicture}]]>
+\draw[->, line width=1.25pt] (0:0.4cm) arc (0:40:0.4cm) node[midway, right,xshift=0.1cm] {\(\theta\)};\end{tikzpicture}
 </latex-image>
       </image>
       <p>
@@ -1591,7 +1591,7 @@
         </p>
 </statement>
         
-<task>
+
 <introduction>
   <p>
     The point <m>P(x,y)</m> is on the terminal side of angle <m>\theta</m>.
@@ -1609,19 +1609,19 @@ The point <m>P(x,y)</m> is on the terminal side of angle <m>\theta</m>.
         MYANSWER
       </p>
     </answer>
-  </task>
+  
         <p>
           \begin{tasks} \task
         </p>
         <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-\draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+\begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
 \filldraw[blue] (1cm,0) circle(1pt);
 \filldraw[blue] (126.869897646:1.2cm) circle(1pt);
 \draw[blue] (0,0) -- (1,0);
 \draw[blue] (0,0) -- (126.869897646:1.2) node[left]{P(-8,6)};
-\draw[->] (0:0.7cm) arc (0:126.869897646:0.7cm) node[midway,above] {\(\theta\)};\end{tikzpicture}]]>
+\draw[->] (0:0.7cm) arc (0:126.869897646:0.7cm) node[midway,above] {\(\theta\)};\end{tikzpicture}
 </latex-image>
         </image>
         <p>
@@ -1629,20 +1629,20 @@ The point <m>P(x,y)</m> is on the terminal side of angle <m>\theta</m>.
         </p>
         <image>
 <latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-\draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+\begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
 \filldraw[blue] (1cm,0) circle(1pt);
 \filldraw[blue] (310.601294645:1.2cm) circle(1pt);
 \draw[blue] (0,0) -- (1,0);
 \draw[blue] (0,0) -- (310.601294645:1.2) node[right]{P(6,-7)};
-\draw[->] (0:0.7cm) arc (0:310.601294645:0.7cm) node[midway,left] {\(\theta\)};\end{tikzpicture}]]>
+\draw[->] (0:0.7cm) arc (0:310.601294645:0.7cm) node[midway,left] {\(\theta\)};\end{tikzpicture}
 </latex-image>
         </image>
         <p>
           \task <m>(3,-4)</m> \task <m>(-12,-5)</m> \task <m>(-2,-3)</m> \task <m>(-4,4)</m> \task <m>(-24,7)</m> \task <m>(9,-40)</m> \end{tasks}
         </p>
         
-<task>
+
 <introduction>
   <p>
     Find the exact value of the remaining five trigonometric functions of <m>\theta</m> from the given information.
@@ -1658,7 +1658,7 @@ Find the exact value of the remaining five trigonometric functions of <m>\theta<
         MYANSWER
       </p>
     </answer>
-  </task>
+  
         <p>
           \begin{tasks} \task <m>\tan\theta=-\frac{12}{5}</m>,
           <m>\theta</m> is Quadrant II \task <m>\cos\theta=\frac{3}{5}</m>,
@@ -1675,7 +1675,7 @@ Find the exact value of the remaining five trigonometric functions of <m>\theta<
           <m>\sin\theta>0</m> \end{tasks}
         </p>
         
-<task>
+
 <introduction>
   <p>
     Calculate the reference angle...
@@ -1691,7 +1691,7 @@ Calculate the reference angle...
         MYANSWER
       </p>
     </answer>
-  </task>
+  
         
 <introduction>
   <p>
@@ -1699,7 +1699,7 @@ Calculate the reference angle...
           compute the associated angle in standard position for i) Quadrant II; ii) Quadrant III; and iii) Quadrant IV. 
   </p>
 </introduction>
-  <task>
+  
     <statement>
       <p>
         
@@ -1711,8 +1711,8 @@ Calculate the reference angle...
       MYANSWER
     </p>
     </answer>
-  </task>
-  <task>
+  
+  
     <statement>
       <p>
          <m>t'=\frac{\pi}{3}</m> 
@@ -1723,8 +1723,8 @@ Calculate the reference angle...
       MYANSWER
     </p>
     </answer>
-  </task>
-  <task>
+  
+  
     <statement>
       <p>
         
@@ -1736,8 +1736,8 @@ Calculate the reference angle...
       MYANSWER
     </p>
     </answer>
-  </task>
-  <task>
+  
+  
     <statement>
       <p>
          <m>t'=60^{\circ}</m>
@@ -1748,9 +1748,9 @@ Calculate the reference angle...
         MYANSWER
       </p>
     </answer>
-  </task>
+  
         
-<task>
+
 <introduction>
   <p>
     Calculate the exact values of the six trigonometric functions for each angle,
@@ -1772,7 +1772,7 @@ Calculate the exact values of the six trigonometric functions for each angle,
         MYANSWER
       </p>
     </answer>
-  </task>
+  
 <p>
 <ol>
             <li>
@@ -1803,7 +1803,7 @@ Calculate the exact values of the six trigonometric functions for each angle,
           </ol>
         </p>
         
-<task>
+
 <introduction>
   <p>
     Use reference angles to compute the exact value of sin(225) etc
@@ -1827,9 +1827,9 @@ Use reference angles to compute the exact value of sin(225) etc
         MYANSWER
       </p>
     </answer>
-  </task>
+  
         
-<task>
+
 <introduction>
   <p>
     Use the fact that sine and cosine are periodic to find <m>\sin1200^{\circ}</m>.
@@ -1845,9 +1845,9 @@ Use the fact that sine and cosine are periodic to find <m>\sin1200^{\circ}</m>.
         MYANSWER
       </p>
     </answer>
-  </task>
+  
         
-<task>
+
 <introduction>
   <p>
     Prove the third Pythagorean Identity:
@@ -1867,9 +1867,9 @@ Prove the third Pythagorean Identity:
         MYANSWER
       </p>
     </answer>
-  </task>
+  
         
-<task>
+
 <introduction>
   <p>
     Prove the third Pythagorean Identity:
@@ -1889,9 +1889,9 @@ Prove the third Pythagorean Identity:
         MYANSWER
       </p>
     </answer>
-  </task>
+  
         
-<task>
+
 <introduction>
   <p>
     pythagorean identity questions
@@ -1907,9 +1907,9 @@ pythagorean identity questions
         MYANSWER
       </p>
     </answer>
-  </task>
+  
         
-<task>
+
 <introduction>
   <p>
     Use the Pythagorean Identities to write the first trigonometric function of <m>\theta</m> in terms of the second function given the quadrant
@@ -1925,9 +1925,9 @@ Use the Pythagorean Identities to write the first trigonometric function of <m>\
         MYANSWER
       </p>
     </answer>
-  </task>
+  
         
-<task>
+
 <introduction>
   <p>
     Use the even and odd properties to evaluate the following
@@ -1943,7 +1943,7 @@ Use the even and odd properties to evaluate the following
         MYANSWER
       </p>
     </answer>
-  </task>
+  
         <p>
           \begin{tasks} \task <m>\cos(-60^{\circ})</m> \task <m>\tan(-225^{\circ})</m> \task <m>\csc(-330^{\circ})</m> \task <m>\sin(-90^{\circ})</m> \task <m>\cot(-300^{\circ})</m> \task <m>\sec(-150^{\circ})</m> \task
           <m>\sin\left(-\frac{11\pi}{6}\right)</m> \task <m>\tan\left(-\frac{5\pi}{4}\right)</m> \task
@@ -1954,7 +1954,7 @@ Use the even and odd properties to evaluate the following
     <p>
       \begin{Answer}[ref={ex-1.5}] \Question \begin{tasks}(4) \task QII \task QIII \task QIV \task QI \task QII \task QIII \task QIII \task QIII \end{tasks}
     </p>
-      <task>
+      
     <statement>
       <p>
          <m>\sin\theta=</m>,
@@ -1968,9 +1968,9 @@ Use the even and odd properties to evaluate the following
         MYANSWER
       </p>
     </answer>
-  </task>
+  
     
-  <task>
+  
     <statement>
       <p>
          <m>2</m> 
@@ -1981,8 +1981,8 @@ Use the even and odd properties to evaluate the following
       MYANSWER
     </p>
     </answer>
-  </task>
-  <task>
+  
+  
     <statement>
       <p>
          <m>-1</m> 
@@ -1993,8 +1993,8 @@ Use the even and odd properties to evaluate the following
       MYANSWER
     </p>
     </answer>
-  </task>
-  <task>
+  
+  
     <statement>
       <p>
         
@@ -2006,8 +2006,8 @@ Use the even and odd properties to evaluate the following
       MYANSWER
     </p>
     </answer>
-  </task>
-  <task>
+  
+  
     <statement>
       <p>
          <m>-\frac{2\sqrt{3}}{3}</m> 
@@ -2018,8 +2018,8 @@ Use the even and odd properties to evaluate the following
       MYANSWER
     </p>
     </answer>
-  </task>
-  <task>
+  
+  
     <statement>
       <p>
         
@@ -2031,8 +2031,8 @@ Use the even and odd properties to evaluate the following
       MYANSWER
     </p>
     </answer>
-  </task>
-  <task>
+  
+  
     <statement>
       <p>
          <m>-1</m> 
@@ -2043,8 +2043,8 @@ Use the even and odd properties to evaluate the following
       MYANSWER
     </p>
     </answer>
-  </task>
-  <task>
+  
+  
     <statement>
       <p>
          <m>-\frac{1}{2}</m> 
@@ -2055,8 +2055,8 @@ Use the even and odd properties to evaluate the following
       MYANSWER
     </p>
     </answer>
-  </task>
-  <task>
+  
+  
     <statement>
       <p>
          <m>0</m> 
@@ -2067,8 +2067,8 @@ Use the even and odd properties to evaluate the following
       MYANSWER
     </p>
     </answer>
-  </task>
-  <task>
+  
+  
     <statement>
       <p>
         
@@ -2080,8 +2080,8 @@ Use the even and odd properties to evaluate the following
       MYANSWER
     </p>
     </answer>
-  </task>
-  <task>
+  
+  
     <statement>
       <p>
          <m>2</m>
@@ -2092,7 +2092,7 @@ Use the even and odd properties to evaluate the following
         MYANSWER
       </p>
     </answer>
-  </task>
+  
     <p>
       \end{Answer}
     </p>

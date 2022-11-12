@@ -4,4 +4,9 @@
     <source>
         <directories external="../assets" generated="../generated-assets"/>
     </source>
+    <latex>
+        <fonts>
+            <main regular="CMU Serif"/>
+        </fonts>
+    </latex>
 </publication>

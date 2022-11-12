@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This frontmatter division will contain all content before the -->
+<!-- first chapter.  Fill in and comment/uncomment to see how this -->
+<!-- works.                                                        -->
+
+<frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="meta_frontmatter">
+  <titlepage>
+    <author>
+      <personname>Kamuela E Yong</personname>
+      <department>Mathematics, Natural, and Health Sciences</department>
+      <institution>University of Hawaiʻi - West Oʻahu</institution>
+    </author>
+    <date>
+      <today />
+    </date>
+  </titlepage>
+
+  <colophon>
+
+    <website>
+      <name>
+        <c>kamuelayong.com</c>
+      </name>
+      <address>http://kamuelayong.com</address>
+    </website>
+
+
+    <copyright>
+      <!-- In addition to specifying the copyright holder, you should  -->
+      <!-- include a license, such as the cc-by-sa license shown below -->
+      <!-- so people reading your book know how they can use it.       -->
+      <year>
+        2022
+        <ndash />
+        2022
+      </year>
+      <holder>Kamuela E Yong</holder>
+      <minilicense><image source="by-nc-sa.svg" /></minilicense>
+
+      <shortlicense>
+        <!-- <image source="../images/by-sa.png" width="15%"/>  -->
+        This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+        To view a copy of this license, visit
+        <url
+          href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+          visual="creativecommons.org/licenses/by-nc-sa/4.0">
+          CreativeCommons.org</url>
+      </shortlicense>
+    </copyright>
+      <image xml:id="creativecommonslicense" width="40%" source="by-nc-sa.svg" alt="Creative Commons License"/>
+   </colophon>
+
+  <dedication>
+    <p>
+      For Tasha and Kamuela
+    </p>
+  </dedication>
+
+  <acknowledgement>
+    <p>
+      This project is partially supported by NSF grant #1853533 and the University of Hawai`i System. 
+      Additionally, I would like to thank BarbaraJean Kahawaii and Dr. Walter Kahumoku, III for their patience, encouragement, and sharing their knowledge. 
+      Leighton Manalo for his input and help writing this book. Bonnie Kahapea and the crew of Kānehūnāmoku Voyaging Academy. 
+      The Friends of Hōkūeʻa and Hawaiʻiloa. 
+      Carina Chernisky and UHWO OER committee. 
+      I truly valued the discussions I have had with Linda Furuto, Kekai Lee, and so many more. 
+    </p>
+  </acknowledgement>
+
+  <preface xml:id="meta_frontmatter-preface">
+    <!-- You should be a little careful about what you put here -->
+    <!-- Avoid elements that should have a number, for example  -->
+    <p>
+      About this book: This book integrates navigation into trigonometry curriculum.
+    </p>
+  </preface>
+
+  <!-- You can have more than one preface. -->
+  <preface>
+    <title>Core Standards</title>
+    <p>
+      The curriculum in this book aligns with the Common Core State Standards:
+
+      <url
+          href="http://www.corestandards.org/Math/Content/HSF/TF/"
+          visual="http://www.corestandards.org/Math/Content/HSF/TF/">
+          corestandards.org</url>
+
+    </p>
+    <p>
+          Build out the core standards
+    </p>
+    <p>
+      High School: Functions: Trigonometric Functions
+      <url
+          href="http://www.corestandards.org/Math/Content/HSF/TF/"
+          visual="http://www.corestandards.org/Math/Content/HSF/TF/">
+          corestandards.org</url>
+    </p>
+
+    <!-- \subsection{High School: Functions: Trigonometric Functions}
+\url{http://www.corestandards.org/Math/Content/HSF/TF/}
+
+
+\subsubsection*{Extend the domain of trigonometric functions using the unit circle}
+\begin{enumerate}[leftmargin=2cm]
+\item[HSF.TF.A.1] \textbf{Page \pageref{core-standards-CCSS.MATH.CONTENT.HSF.TF.A.1}}
+Understand radian measure of an angle as the length of the arc on the unit circle subtended by the angle. (CCSS.MATH.CONTENT.HSF.TF.A.1)
+
+\item[HSF.TF.A.2] \textbf{Page \pageref{core-standards-CCSS.MATH.CONTENT.HSF.TF.A.2}}
+Explain how the unit circle in the coordinate plane enables the extension of trigonometric functions to all real numbers, interpreted as radian measures of angles traversed counterclockwise around the unit circle. \\
+(CCSS.MATH.CONTENT.HSF.TF.A.2)
+
+\item[HSF.TF.A.3] \textbf{Page \pageref{core-standards-CCSS.MATH.CONTENT.HSF.TF.A.3}, \pageref{core-standards-CCSS.MATH.CONTENT.HSF.TF.A.3-reference-angles}}
+Use special triangles to determine geometrically the values of sine, cosine, tangent for $\pi/3$, $\pi/4$ and $\pi/6$, and use the unit circle to express the values of sine, cosine, and tangent for $x$, $\pi+x$, and $2\pi-x$ in terms of their values for $x$, where $x$ is any real number. (CCSS.MATH.CONTENT.HSF.TF.A.3)
+
+\item[HSF.TF.A.4]\textbf{Page \pageref{core-standardsCCSS.MATH.CONTENT.HSF.TF.A.4-a}, \pageref{core-standardsCCSS.MATH.CONTENT.HSF.TF.A.4-b}}
+Use the unit circle to explain symmetry (odd and even) and periodicity of trigonometric functions.
+Model periodic phenomena with trigonometric functions. (CCSS.MATH.CONTENT.HSF.TF.A.4)
+
+\end{enumerate}
+
+
+\subsubsection*{Model periodic phenomena with trigonometric functions}
+\begin{enumerate}[leftmargin=2cm]
+\item[HSF.TF.B.5] \textbf{***still need}
+CCSS.MATH.CONTENT.HSF.TF.B.5
+Choose trigonometric functions to model periodic phenomena with specified amplitude, frequency, and midline.*
+
+\item[HSF.TF.B.6]\textbf{Page \pageref{core-standards-CCSS.MATH.CONTENT.HSF.TF.B.6}}
+Understand that restricting a trigonometric function to a domain on which it is always increasing or always decreasing allows its inverse to be constructed. (CCSS.MATH.CONTENT.HSF.TF.B.6)
+
+\item[HSF.TF.B.7]\textbf{Page \pageref{core-standards-CCSS.MATH.CONTENT.HSF.TF.B.7}}
+Use inverse functions to solve trigonometric equations that arise in modeling contexts; evaluate the solutions using technology, and interpret them in terms of the context.
+(CCSS.MATH.CONTENT.HSF.TF.B.7)
+\end{enumerate}
+
+\subsubsection*{Prove and apply trigonometric identities}
+\begin{enumerate}[leftmargin=2cm]
+\item[HSF.TF.C.8]\textbf{Page \pageref{core-standards-CCSS.MATH.CONTENT.HSF.TF.C.8}}
+Prove the Pythagorean identity $\sin^2\theta+\cos^2\theta = 1$ and use it to find $\sin\theta$, $\cos\theta$, or $\tan\theta$ given $\sin\theta$, $\cos\theta$, or $\tan\theta$ and the quadrant of the angle. \\
+(CCSS.MATH.CONTENT.HSF.TF.C.8)
+
+\item[HSF.TF.C.9]\textbf{Page \pageref{core-standars-CCSS.MATH.CONTENT.HSF.TF.C.9}}
+Prove the addition and subtraction formulas for sine, cosine, and tangent and use them to solve problems. (CCSS.MATH.CONTENT.HSF.TF.C.9)
+\end{enumerate}
+
+
+
+
+\subsection{High School: Geometry: Similarity, Right Triangles, and Trigonometry}
+\url{http://www.corestandards.org/Math/Content/HSG/SRT/}
+
+
+\subsubsection*{Define trigonometric ratios and solve problems involving right triangles}
+\begin{enumerate}[leftmargin=2cm]
+\item[HSG.SRT.C.6]\textbf{Page \pageref{core-standars-CCSS.MATH.CONTENT.HSG.SRT.C.6}}
+Understand that by similarity, side ratios in right triangles are properties of the angles in the triangle, leading to definitions of trigonometric ratios for acute angles.
+
+\item[HSG.SRT.C.7]\textbf{Page \pageref{core-standars-CCSS.MATH.CONTENT.HSG.SRT.C.7}}
+Explain and use the relationship between the sine and cosine of complementary angles.
+
+\item[HSG.SRT.C.8]\textbf{Page \pageref{core-standars-CCSS.MATH.CONTENT.HSG.SRT.C.8}}
+Use trigonometric ratios and the Pythagorean Theorem to solve right triangles in applied problems.
+\end{enumerate}
+
+
+\subsubsection*{Apply trigonometry to general triangles}
+\begin{enumerate}[leftmargin=2cm]
+\item[HSG.SRT.D.9]\textbf{Page \pageref{core-standards-CCSS.MATH.CONTENT.HSG.SRT.D.9}, \pageref{core-standards-CCSS.MATH.CONTENT.HSG.SRT.D.10-b}}
+Derive the formula Area$ = \frac{1}{2}ab\sin C$ for the area of a triangle by drawing an auxiliary line from a vertex perpendicular to the opposite side.
+
+\item[HSG.SRT.D.10]\textbf{Page \pageref{core-standards-CCSS.MATH.CONTENT.HSG.SRT.D.10-a}, {core-standards-CCSS.MATH.CONTENT.HSG.SRT.D.10-b}}
+Prove the Laws of Sines and Cosines and use them to solve problems.
+
+\item[HSG.SRT.D.11]\textbf{Page \pageref{core-standards-CCSS.MATH.CONTENT.HSG.SRT.D.11-a}, {core-standards-CCSS.MATH.CONTENT.HSG.SRT.D.11-b}, \pageref{core-standards-CCSS.MATH.CONTENT.HSG.SRT.D.11-c}}
+Understand and apply the Law of Sines and the Law of Cosines to find unknown measurements in right and non-right triangles (e.g., surveying problems, resultant forces).
+\end{enumerate}
+
+\subsection{High School: Geometry: Circles}
+\url{http://www.corestandards.org/Math/Content/HSG/C/}
+\subsubsection*{Find arc lengths and areas of sectors of circles}
+\begin{enumerate}[leftmargin=2cm]
+\item[HSG.C.B.5]\textbf{Page \pageref{core-standards-CCSS.MATH.CONTENT.HSG.C.B.5-a}, \pageref{core-standards-CCSS.MATH.CONTENT.HSG.C.B.5-b}, \pageref{core-standards-CCSS.MATH.CONTENT.HSG.C.B.5-c}}
+Derive using similarity the fact that the length of the arc intercepted by an angle is proportional to the radius, and define the radian measure of the angle as the constant of proportionality; derive the formula for the area of a sector.
+\end{enumerate} -->
+
+  </preface>
+
+</frontmatter>
