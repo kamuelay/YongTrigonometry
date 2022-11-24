@@ -10,10 +10,17 @@
     except with a few navigators.
     The island of Satawal in the Federated States of Micronesia was home to Mau Piailug,
     one of the last traditional navigators.
-    To determine his position, Mau used the <em>paafu</em>,
-        <idx><h>paafu</h></idx>
-    a Micronesian <em>Star Compass</em>
-        <idx><h>Star Compass</h></idx>
+    To determine his position, Mau used the
+    <em>paafu</em>
+    ,
+    <idx>
+      <h>paafu</h>
+    </idx>
+    a Micronesian
+    <em>Star Compass</em>
+    <idx>
+      <h>Star Compass</h>
+    </idx>
     which is mental construct used to help determine position by memorizing things important to navigation,
     such as the position of stars when they rise and set on the horizon.
     The star compass also reads the flight path of birds and the direction of winds and waves.
@@ -22,12 +29,14 @@
     Wanting to revive wayfinding in Hawaiʻi, Nainoa Thompson traveled to the island of Satawal to learn from Mau Piailug.
     Thompson adopted Mau's star compass,
     resulting in the Hawaiian Star Compass
-    (<xref ref="star-compass-32-compass-rose">Figure</xref>).
+    (
+    <xref ref="star-compass-32-compass-rose">Figure</xref>
+    ).
   </p>
   <figure xml:id="star-compass-32-compass-rose">
     <caption>Hawaiian Star Compass</caption>
     <image>
-<latex-image>
+      <latex-image>
 \begin{tikzpicture}[x=5.3cm,y=5.3cm,cap=round,>=latex]
 \draw[&lt;-,dashed] (-1.2,0) -- (-0.96,0);
 \draw[dashed] (-0.36,0) -- (0.6,0);
@@ -144,7 +153,7 @@
       <row>
         <cell>Star Compass</cell>
         <cell>32 Point Compass</cell>
-        <cell> </cell>
+        <cell></cell>
         <cell>Star Compass</cell>
         <cell>32 Point Compass</cell>
       </row>
@@ -323,25 +332,38 @@
   </p>
   <p>
     The four cardinal points correspond to a house.
-    The stars arrive from the horizon called <em>Hikina</em> (
+    The stars arrive from the horizon called
+    <em>Hikina</em>
+    (
     <q>To Arrive</q>
-    ) or East and enter the horizon called <em>Komohana</em> (
+    ) or East and enter the horizon called
+    <em>Komohana</em>
+    (
     <q>To Enter</q>
     ) or West.
     If you stand with your back towards Hikina (East) and face Komohana (West),
-    your right will point towards <em>ʻĀkau</em> (
+    your right will point towards
+    <em>ʻĀkau</em>
+    (
     <q>Right</q>
-    ) or North and your left will point towards <em>Hema</em> (
+    ) or North and your left will point towards
+    <em>Hema</em>
+    (
     <q>Left</q>
     ) or South.
   </p>
   <p>
     These four cardinal points divide the compass into four quadrants.
     Each quadrant is named after winds in Hawaiʻi.
-    <em>Koʻolau</em> is the Northeast quadrant named for the trade winds;
-    <em>Hoʻolua</em> is the Northwest quadrant,
-    <em>Kona</em> is the Southwest quadrant;
-    and <em>Malanai</em> is the Southeast quadrant.
+    <em>Koʻolau</em>
+    is the Northeast quadrant named for the trade winds;
+    <em>Hoʻolua</em>
+    is the Northwest quadrant,
+    <em>Kona</em>
+    is the Southwest quadrant;
+    and
+    <em>Malanai</em>
+    is the Southeast quadrant.
   </p>
   <p>
     Each house on the compass has a name.
@@ -351,11 +373,15 @@
     It is followed by ʻĀina (Land), Noio (Tern), Manu (Bird), Nālani (Heavens), Nā Leo (Voices),
     and Haka (Empty).
     The 32 houses in the Hawaiian Star Compass correspond to the points of the 32-wind compass rose
-    (<xref ref="tab_compass">Table</xref>).
+    (
+    <xref ref="tab_compass">Table</xref>
+    ).
     The celestial bodies move in parallel paths across the sky from East to West,
     rising and setting in the same house,
     remaining in its hemisphere
-    (<xref ref="fig_celestial-sphere">Figure</xref>).
+    (
+    <xref ref="fig_celestial-sphere">Figure</xref>
+    ).
   </p>
   <p>
     For example,
@@ -367,7 +393,7 @@
   </p>
   <figure xml:id="fig_celestial-sphere">
     <caption>Celestial Sphere. (image from PVS)</caption>
-    <image width="40%" source="celestial_sphere.jpg"/>
+    <image width="40%" source="celestial_sphere.jpg" />
   </figure>
   <p>
     The star compass is also used to determine direction based on wind and ocean swells.
@@ -388,189 +414,271 @@
   </p>
   <p>
     In addition to the star compass,
-    many cultures across the Pacific use a <em>wind compass</em>.
+    many cultures across the Pacific use a
+    <em>wind compass</em>
+    .
     Similar to the star compass, the wind compass is also a mental construct.
   </p>
   <exercises xml:id="hawaiian-star-compass-exercises">
-  <exercise>
-    <statement>
+    <exercise>
+      <statement>
 
-      <p>
+        <p>
         Who developed the Hawaiian Star Compass?
       </p>
-    </statement>
-    <answer>
-      <p>
+      </statement>
+      <answer>
+        <p>
         Nainoa Thompson
       </p>
-    </answer>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        The Hawaiian Star Compass was based on the Micronesian Star Compass,
-        known as the <em>paafu</em>.
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          The Hawaiian Star Compass was based on the Micronesian Star Compass,
+        known as the
+          <em>paafu</em>
+          .
         Who shared the paafu with the Hawaiians?
-      </p>
-    </statement>
-    <answer>
-      <p>
+        </p>
+      </statement>
+      <answer>
+        <p>
         Mau Piailug or Papa Mau
       </p>
-    </answer>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        According to the Hawaiian Star Compass,
-        what is the name for
-      </p>
-      <ol>
-        <li>
-          North
-        </li>
-        <li>
-          East
-        </li>
-        <li>
-          South
-        </li>
-        <li>
-          West
-        </li>
-      </ol>
-    </statement>
-    <answer>
-      <p>
-        <ol>
-          <li>
+      </answer>
+    </exercise>
+    <exercise>
+      <introduction>
+        <p>
+          According to the Hawaiian Star Compass,
+          what is the name for
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            North
+          </p>
+        </statement>
+        <answer>
+          <p>
             ʻĀkau
-          </li>
-          <li>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            East
+          </p>
+        </statement>
+        <answer>
+          <p>
             Hikina
-          </li>
-          <li>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            South
+          </p>
+        </statement>
+        <answer>
+          <p>
             Hema
-          </li>
-          <li>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            West
+          </p>
+        </statement>
+        <answer>
+          <p>
             Komohana
-          </li>
-        </ol>
-      </p>
-    </answer>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        What is the Hawaiian name for winds in the 
-      </p>
-      <ol>
-        <li>
-          Northeast quadrant
-        </li>
-        <li>
-          Southeast quadrant
-        </li>
-        <li>
-          Southwest quadrant
-        </li>
-        <li>
-          Northwest quadrant
-        </li>
-      </ol>
-    </statement>
-    <answer>
-      <p>
-        <ol>
-          <li>
+          </p>
+        </answer>
+      </task>
+    </exercise>
+    <exercise>
+      <introduction>
+        <p>
+          What is the Hawaiian name for winds in the
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            Northeast quadrant
+          </p>
+        </statement>
+        <answer>
+          <p>
             Koʻolau
-          </li>
-          <li>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Southeast quadrant
+          </p>
+        </statement>
+        <answer>
+          <p>
             Malanai
-          </li>
-          <li>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Southwest quadrant
+          </p>
+        </statement>
+        <answer>
+          <p>
             Kona
-          </li>
-          <li>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Northwest quadrant
+          </p>
+        </statement>
+        <answer>
+          <p>
             Hoʻolua
-          </li>
-        </ol>
-      </p>
-    </answer>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        For each direction,
-        identify the Hawaiian names of the corresponding house and quadrant in the Hawaiian Star Compass
-      </p>
-      <ol>
-        <li>
-          Northwest by North
-        </li>
-        <li>
-          East-northeast
-        </li>
-        <li>
-           North-northwest
-        </li>
-        <li>
-          Southeast
-        </li>
-        <li>
-          South by West
-        </li>
-        <li>
-          East by South
-        </li>
-        <li>
-          Southwest by West
-        </li>
-        <li>
-          Northeast by North
-        </li>
-        <li>
-          South-southeast
-        </li>
-      </ol>
-    </statement>
-    <answer>
-      <p>
-        <ol>
-          <li>
+          </p>
+        </answer>
+      </task>
+    </exercise>
+    <exercisegroup>
+      <introduction>
+        <p>
+          For each direction, identify the Hawaiian names of the corresponding house 
+          and quadrant in the Hawaiian Star Compass
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            Northwest by North
+          </p>
+        </statement>
+        <answer>
+          <p>
             Nālani Hoʻolua
-          </li>
-          <li>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            East-northeast
+          </p>
+        </statement>
+        <answer>
+          <p>
             ʻĀina Koʻolau
-          </li>
-          <li>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            North-northwest
+          </p>
+        </statement>
+        <answer>
+          <p>
             Nā Leo Hoʻolua
-          </li>
-          <li>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Southeast
+          </p>
+        </statement>
+        <answer>
+          <p>
             Manu Malanai
-          </li>
-          <li>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            South by West
+          </p>
+        </statement>
+        <answer>
+          <p>
             Haka Kona
-          </li>
-          <li>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            East by South
+          </p>
+        </statement>
+        <answer>
+          <p>
             Lā Malanai
-          </li>
-          <li>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Southwest by West
+          </p>
+        </statement>
+        <answer>
+          <p>
             Noio Kona
-          </li>
-          <li>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Northeast by North
+          </p>
+        </statement>
+        <answer>
+          <p>
             Nālani Koʻolau
-          </li>
-          <li>
+          </p>
+        </answer>
+      </exercise>
+            <exercise>
+        <statement>
+          <p>
+            South-southeast
+          </p>
+        </statement>
+        <answer>
+          <p>
             Nā Leo Malanai
-          </li>
-        </ol>
-      </p>
-    </answer>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercise>
+      <statement>
+        <p>
         The winter solstice in the southern hemisphere,
 
         which occurs on June 22,
@@ -580,82 +688,99 @@
         the sun rises from its northernmost position ʻĀina Koʻolau.
         What house does the sun set in the winter solstice in the southern hemisphere?
       </p>
-    </statement>
-    <answer>
-      <p>
+      </statement>
+      <answer>
+        <p>
 
         ʻĀina Hoʻolua
       </p>
-    </answer>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        The winter solstice in the northern hemisphere occurs on December 22 when the sun rises from its southernmost position `\=Aina Malanai.
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+        The winter solstice in the northern hemisphere occurs on December 22 when the sun rises from its southernmost position ʻĀina Malanai.
 
         What house does the sun set in the winter solstice in the northern hemisphere?
       </p>
-    </statement>
-    <answer>
-      <p>
+      </statement>
+      <answer>
+        <p>
         ʻĀina Kona 
       </p>
-    </answer>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
         Wind is coming from Nā Leo Kona.
         In what direction is the wind blowing towards?
       </p>
-    </statement>
-    <answer>
-      <p>
+      </statement>
+      <answer>
+        <p>
         Nā Leo Koʻolau 
       </p>
-    </answer>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
         Current is coming from Noio Hoʻolua.
         In what direction is the current heading towards?
       </p>
-    </statement>
-    <answer>
-      <p>
+      </statement>
+      <answer>
+        <p>
         Noio Malanai
       </p>
-    </answer>
-  </exercise>
+      </answer>
+    </exercise>
 
-  <exercise>
-          <webwork>
+    <!-- <exercise>
+      <webwork>
         <pg-code>
+          Context("LimitedNumeric");
           $a = Compute(random(1, 9, 1));
           $b = Compute(random(1, 9, 1));
           $c = $a + $b;
         </pg-code>
+
         <statement>
           <p>
-            Compute the sum of <m><var name="$a" /></m> and <m><var name="$b" /></m>:
+            Compute
+            <m>
+              <var name="$a" />
+              +
+              <var name="$b" />
+            </m>
+            .
           </p>
+          <instruction>
+            Type your answer without using the
+            <c>+</c>
+            sign.
+          </instruction>
           <p>
-            <m><var name="$a" /> + <var name="$b" /> =</m> <var name="$c" width="5" />
+            The sum is
+            <var name="$c" width="2" />
+            .
           </p>
         </statement>
-        <hint>
-          <p>
-            Add <m><var name="$a" /></m> and <m><var name="$b" /></m> together.
-          </p>
-        </hint>
+
         <solution>
           <p>
-            <m><var name="$a" /> + <var name="$b" /> = <var name="$c" /></m>.
+            <m>
+              <var name="$a" />
+              +
+              <var name="$b" />
+              =
+              <var name="$c" />
+            </m>
+            .
           </p>
         </solution>
       </webwork>
-  </exercise>
-
-</exercises>  
+    </exercise> -->
+  </exercises>
 </section>

@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
   <docinfo>
-<macros>
-<!--\renewcommand{\chaptermark}[1]{\markboth{\sffamily\normalsize\bfseries\chaptername\ \thechapter.\ #1}{}}
+    <macros>
+      <!--\renewcommand{\chaptermark}[1]{\markboth{\sffamily\normalsize\bfseries\chaptername\ \thechapter.\ #1}{}}
 -->
-\def\R{4 }
-<!--\renewcommand{\sectionmark}[1]{{}}
+      \def\R{4 }
+      <!--\renewcommand{\sectionmark}[1]{{}}
 -->
-\def\angEl{20}
-<!--\renewcommand{\headrulewidth}{0.5pt}
+      \def\angEl{20}
+      <!--\renewcommand{\headrulewidth}{0.5pt}
 -->
-\def\angAz{-20}
-<!--\renewcommand{\headrulewidth}{0pt}
+      \def\angAz{-20}
+      <!--\renewcommand{\headrulewidth}{0pt}
 -->
 \def\R{4 }
 \def\angEl{20}
@@ -24,16 +24,7 @@
 \newcommand{\thechapterimage}{}
 \newcommand{\autodot}{.}
 \newcommand{\QuestionNB}{\bfseries\arabic{Question}.\ }
-<!--%\renewcommand{\ExerciseName}{EXERCISES}
--->
-<!--\renewcommand{\AnswerName}{Exercises}
--->
-<!--\renewcommand{\AnswerHeader}{
-{\textcolor{cyan}{\textbf{CHAPTER \thechapter}}
-\bfseries\emph{\textcolor{cyan}{\AnswerName\ \ExerciseHeaderNB, page
-\ref{\AnswerRef}}}}
-{\bfseries\emph{\textcolor{cyan}{\AnswerName\ \ExerciseHeaderNB, page \ref{\AnswerRef}}}}}
--->
+
 \newcommand{\pgfmathsinandcos}[3]{
 \pgfmathsetmacro#1{sin(#3)}
 \pgfmathsetmacro#2{cos(#3)}}
@@ -70,9 +61,9 @@
 \draw[current plane,dashed] (180-\angVis:1) arc (180-\angVis:\angVis:1);
 }
 \newcommand{\sectionbreak}{\clearpage}
-</macros>
-<latex-image-preamble>
-\usepackage{tikz}
+    </macros>
+    <latex-image-preamble>
+      \usepackage{tikz}
 \usepackage{tkz-graph}
 \usepackage{tkz-euclide}
 \usetikzlibrary{patterns}
@@ -82,10 +73,10 @@
 \usetikzlibrary{shapes}
 \usetikzlibrary{through,intersections,decorations,shadows,fadings}
 \usepackage{pgfplots}
-<!--Globe Design-->
+      <!--Globe Design-->
 
-<!--WAA DESIGN-->
-\tikzset{
+      <!--WAA DESIGN-->
+      \tikzset{
   pobl/.style={
     inner sep=0pt, outer sep=0pt, fill=#1,
   },
@@ -216,7 +207,7 @@
 \draw [rotate=#2,color=#1] (-2*#3,4*#3)-- (1.5383010267763384*#3,0.502043791255312*#3);
 }}}
 \definecolor{waacolor}{rgb}{0.6,0.2,0}
-</latex-image-preamble>
+    </latex-image-preamble>
   </docinfo>
   <book>
     <title>Trigonometry Through Wayfinding and Navigation Across the Pacific</title>
@@ -227,19 +218,19 @@
         </author>
       </titlepage>
     </frontmatter> -->
-    <xi:include href="./Front_Matter.ptx"/>
-    <xi:include href="./Trigonometry.ptx"/>
-    <xi:include href="./Graphs_of_the_Trigonometric_Functions.ptx"/>
+    <xi:include href="./Front_Matter.ptx" />
+    <xi:include href="./Trigonometry.ptx" />
+    <!-- <xi:include href="./Graphs_of_the_Trigonometric_Functions.ptx"/> -->
     <!-- <xi:include href="./Analytic_Trigonometry.ptx"/> -->
     <!-- <xi:include href="./Applications_of_Trigonometry.ptx"/> -->
     <!-- <xi:include href="./Polar_and_Parametric_Equations.ptx"/> -->
     <!-- <xi:include href="./Analytic_Geometry.ptx"/> -->
     <!-- <xi:include href="./Solutions.ptx"/> -->
     <backmatter>
-      <xi:include href="./bibliography.ptx"/>
+      <xi:include href="./bibliography.ptx" />
       <index>
         <title>Index</title>
-        <index-list/>
+        <index-list />
       </index>
     </backmatter>
   </book>

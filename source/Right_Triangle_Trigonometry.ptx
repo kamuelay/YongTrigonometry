@@ -2062,7 +2062,7 @@ Using the right triangle
         <image xml:id="fig-sand-movement" width="50%">
           <latex-image>
             \begin{tikzpicture}[x=4cm,y=4cm]
-        \fill[color={rgb:red,0;green,100;blue,100}] (-1,0) -- (1,0) -- (1,1) -- (-1,1);
+        \fill[color={rgb:red,0;green,255;blue,255}] (-1,0) -- (1,0) -- (1,1) -- (-1,1);
         \fill[yellow,opacity=0.75] (-1,0) -- (1,0) -- (1,-1) -- (-1,-1);
         \fill[pattern=dots,opacity=0.1] (-1,0) -- (1,0) -- (1,-1) -- (-1,-1);
         \draw[line width=1pt,blue,decorate,decoration=snake](0,0) -- (1,0.57735026919);

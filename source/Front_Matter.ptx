@@ -21,7 +21,7 @@
       <name>
         <c>kamuelayong.com</c>
       </name>
-      <address>http://kamuelayong.com</address>
+      <address>https://www.kamuelayong.com/trigonometry/</address>
     </website>
 
 
@@ -35,7 +35,9 @@
         2022
       </year>
       <holder>Kamuela E Yong</holder>
-      <minilicense><image source="by-nc-sa.svg" /></minilicense>
+      <minilicense>
+        <image source="by-nc-sa.svg" />
+      </minilicense>
 
       <shortlicense>
         <!-- <image source="../images/by-sa.png" width="15%"/>  -->
@@ -47,8 +49,8 @@
           CreativeCommons.org</url>
       </shortlicense>
     </copyright>
-      <image xml:id="creativecommonslicense" width="40%" source="by-nc-sa.svg" alt="Creative Commons License"/>
-   </colophon>
+    <image xml:id="creativecommonslicense" width="40%" source="by-nc-sa.svg" alt="Creative Commons License" />
+  </colophon>
 
   <dedication>
     <p>
@@ -80,10 +82,9 @@
     <title>Core Standards</title>
     <p>
       The curriculum in this book aligns with the Common Core State Standards:
-
       <url
-          href="http://www.corestandards.org/Math/Content/HSF/TF/"
-          visual="http://www.corestandards.org/Math/Content/HSF/TF/">
+        href="http://www.corestandards.org/Math/Content/HSF/TF/"
+        visual="http://www.corestandards.org/Math/Content/HSF/TF/">
           corestandards.org</url>
 
     </p>
@@ -93,9 +94,16 @@
     <p>
       High School: Functions: Trigonometric Functions
       <url
-          href="http://www.corestandards.org/Math/Content/HSF/TF/"
-          visual="http://www.corestandards.org/Math/Content/HSF/TF/">
+        href="http://www.corestandards.org/Math/Content/HSF/TF/"
+        visual="http://www.corestandards.org/Math/Content/HSF/TF/">
           corestandards.org</url>
+    </p>
+
+    <p>
+      <xref ref="core-standards-CCSS_MATH_CONTENT_HSG_C_B_5-c">Theorem</xref>
+    </p>
+    <p>
+      <xref ref="core-standards-CCSS_MATH_CONTENT_HSF_TF_A_1">Theorem</xref>
     </p>
 
     <!-- \subsection{High School: Functions: Trigonometric Functions}
