@@ -47,7 +47,7 @@
         </p>
         <image xml:id="fig-ray">
           <latex-image>
-            \begin{tikzpicture}\draw[&lt;->] (-5,0) -- (5,0);
+            \begin{tikzpicture}\draw[&lt;-] (-5,0) -- (0,0);
             \draw[->, line width=2pt,blue,-stealth](0,0) -- (5,0) node[black,midway,below]{Ray};
             \node[circle,fill=blue,inner sep=2pt,minimum size=2pt,label=below:{\(O\)}] (a) at (0,0) {};\end{tikzpicture}
           </latex-image>
@@ -75,7 +75,7 @@
             <h>terminal side</h>
           </idx>
         </p>
-        <image xml:id="fig-initial-terminal-side">
+        <image xml:id="fig-initial-terminal-side" width="50%">
           <latex-image>
             \begin{tikzpicture}[scale=2]
             \draw[->, line width=2pt,blue,-stealth](0,0) -- (5,0) node[black,midway,below]{Initial Side};

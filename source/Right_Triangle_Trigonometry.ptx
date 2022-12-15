@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<section xml:id="Right_Triangle_Trigonometry">
+<section xml:id="Right_Triangle_Trigonometry"  xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Right Triangle Trigonometry</title>
   <introduction>
     <image xml:id="deviation-introduction" width="100%">
       <latex-image>
-\begin{tikzpicture}[x=6cm, y=6cm]
-\node[above,yshift=0.15] at (0,0) {start};
+\begin{tikzpicture}[scale=5]
+\node[above,yshift=2] at (0,0) {start};
 \node[above right] at (11.25:1.2) {end};
 \draw[line width=2pt,-stealth] (0,0) -- (11.25:1.2) node[midway,sloped,above] {actual course};
 \draw[dashed] (0,0) -- (1.17694233648,0) node[midway,below,yshift=-0.1] {reference course};
 \draw[dashed] (1.17694233648,0) -- (1.17694233648,0.234108386419) node[midway,right,xshift=0.1] {deviation};
-\draw ([shift=(0:0.2)]0,0) arc (0:11.25:0.2) node[midway,right,xshift=0.5,yshift=0.07] {1 House};
-\draw ([shift=(11.25:-0.1)]0,0) pic {waa-top={waacolor}{-78.75}{0.02}};
+\draw ([shift=(0:0.3)]0,0) arc (0:11.25:0.3) node[midway,right,xshift=12,yshift=2] {1 House};
+\draw ([shift=(11.25:-0.1)]0,0) pic {waa-top={waacolor}{-78.75}{0.1}};
 \draw (1.17694233648-0.06,0) -- (1.11694233648,0.06) -- (1.17694233648,0.06);\end{tikzpicture}
 </latex-image>
     </image>
@@ -57,12 +57,14 @@
       as one of its acute angles.
       The trigonometric ratios are defined as follows:
     </p>
-    <image width="33%">
+    <image width="60%" xml:id="fig-right-triangle-opp-adj-hyp">
       <latex-image>
-        \begin{tikzpicture}\draw (0,0) -- (5,0) node[midway, below] {adjacent};
-\draw(0,0) -- (5,3) node[midway,above,sloped] {hypotenuse};
-\draw(5,0) -- (5,3) node[midway, below,rotate=90] {opposite};
-\draw ([shift=(0:1)]0,0) arc (0:30.9637565321:1) node[midway,right,xshift=0.1cm] {\(\theta\)};\end{tikzpicture}
+        \begin{tikzpicture}
+        \draw (0,0) -- (5,0) node[midway, below] {adjacent};
+        \draw(0,0) -- (5,3) node[midway,above,sloped] {hypotenuse};
+        \draw(5,0) -- (5,3) node[midway, below,rotate=90] {opposite};
+        \draw ([shift=(0:1)]0,0) arc (0:30.9637565321:1) node[midway,right,xshift=0.1cm] {\(\theta\)};
+        \end{tikzpicture}
       </latex-image>
     </image>
     <md>
@@ -76,71 +78,49 @@
     <p>
       A common mnemonic for remembering these relationships is SOHCAHTOA, formed from the first letters of
       <q>
-        <em>
-          <em>S</em>
-        </em>
-        ine is
-        <em>
-          <em>O</em>
-        </em>
-        pposite over
-        <em>
-          <em>H</em>
-        </em>
-        ypotenuse,
-        <em>
-          <em>C</em>
-        </em>
-        osine is
-        <em>
-          <em>A</em>
-        </em>
-        djacent over
-        <em>
-          <em>H</em>
-        </em>
-        ypotenuse,
-        <em>
-          <em>T</em>
-        </em>
-        angent is
-        <em>
-          <em>O</em>
-        </em>
-        pposite over
-        <em>
-          <em>A</em>
-        </em>
-        djacent.
+        <em>S</em>ine is
+        <em>O</em>pposite over
+        <em>H</em>ypotenuse,
+        <em>C</em>osine is
+        <em>A</em>djacent over
+        <em>H</em>ypotenuse,
+        <em>T</em>angent is
+        <em>O</em>pposite over
+        <em>A</em>djacent.
       </q>
-      \end{mybox}
     </p>
     <p>
       Based on the definition of the six trigonometric functions,
-      we have the following trigonometric identities. \begin{mybox}[Reciprocal Identities]
-      <idx>
-        <h>reciprocal identities</h>
-      </idx>
-      <md>
-        <mrow>\sin\theta\amp =\dfrac{1}{\csc\theta} \amp  \cos\theta\amp =\dfrac{1}{\sec\theta} \amp  \tan\theta\amp =\dfrac{1}{\cot\theta}</mrow>
-        <mrow>\csc\theta\amp =\dfrac{1}{\sin\theta} \amp  \sec\theta\amp =\dfrac{1}{\cos\theta} \amp  \cot\theta\amp =\dfrac{1}{\tan\theta}</mrow>
-      </md>
+      we have the following trigonometric identities.
     </p>
-    <p>
-      \end{mybox}
-    </p>
-    <p>
-      \begin{mybox}[Quotient Identities]
-      <idx>
-        <h>quotient identities</h>
-      </idx>
-      <md>
-        <mrow>\tan\theta \amp =\dfrac{\sin\theta}{\cos\theta} \amp  \cot\theta\amp =\dfrac{\cos\theta}{\sin\theta}</mrow>
-      </md>
-    </p>
-    <p>
-      \end{mybox}
-    </p>
+      <definition>
+        <title>Reciprocal Identities</title>
+        <statement>
+          <p>
+            <idx>
+              <h>reciprocal identities</h>
+            </idx>
+            <md>
+              <mrow>\sin\theta\amp =\dfrac{1}{\csc\theta} \amp  \cos\theta\amp =\dfrac{1}{\sec\theta} \amp  \tan\theta\amp =\dfrac{1}{\cot\theta}</mrow>
+              <mrow>\csc\theta\amp =\dfrac{1}{\sin\theta} \amp  \sec\theta\amp =\dfrac{1}{\cos\theta} \amp  \cot\theta\amp =\dfrac{1}{\tan\theta}</mrow>
+            </md>
+          </p>
+        </statement>
+      </definition>
+
+    <definition>
+      <title>Quotient Identities</title>
+      <statement>
+        <p>
+          <idx>
+            <h>quotient identities</h>
+          </idx>
+          <md>
+            <mrow>\tan\theta \amp =\dfrac{\sin\theta}{\cos\theta} \amp  \cot\theta\amp =\dfrac{\cos\theta}{\sin\theta}</mrow>
+          </md>
+        </p>
+      </statement>
+    </definition>
     <example>
       <statement>
         <p>
@@ -150,11 +130,13 @@
         </p>
         <image>
           <latex-image>
-            \begin{tikzpicture}\draw (0,0) -- (4,0) node[midway, below] {4};
-\draw(0,0) -- (4,3) node[midway,above left] {5};
-\draw(4,0) -- (4,3) node[midway, right] {3};
-\draw ([shift=(0:0.5cm)]0,0) arc (0:36.8698976458:0.5cm) node[midway,right,xshift=0.1cm] {\(\theta\)};
-\draw (3.6,0) -- (3.6,0.4) -- (4,0.4);\end{tikzpicture}
+            \begin{tikzpicture}
+            \draw (0,0) -- (4,0) node[midway, below] {4};
+            \draw(0,0) -- (4,3) node[midway,above left] {5};
+            \draw(4,0) -- (4,3) node[midway, right] {3};
+            \draw ([shift=(0:0.5cm)]0,0) arc (0:36.8698976458:0.5cm) node[midway,right,xshift=0.1cm] {\(\theta\)};
+            \draw (3.6,0) -- (3.6,0.4) -- (4,0.4);
+            \end{tikzpicture}
           </latex-image>
         </image>
       </statement>
@@ -219,50 +201,50 @@
       </idx>
       The angles
       <m>30^{\circ}, 45^{\circ}, 60^{\circ}</m>
-      (
-      <m>\frac{\pi}{6}, \frac{\pi}{4}, \frac{\pi}{3}</m>
-      ) give special values for trigonometric functions.
+      (<m>\frac{\pi}{6}, \frac{\pi}{4}, \frac{\pi}{3}</m>)
+      give special values for trigonometric functions.
       The following figures are used to calculate trigonometric values.
     </p>
-    <image>
+    <image xml:id="fig-45degree-triangle" width="60%">
       <latex-image>
-        \begin{tikzpicture}\draw[red,line width=2pt] (0cm,0cm) -- (1cm,0cm) node[midway,below,black] {1};
-\draw[red,line width=2pt] (1cm,0cm) -- (1cm,1cm) node[midway,right,black] {1};
-\draw[blue] (1cm,1cm) -- (0cm,1cm);
-\draw[blue] (0cm,1cm) -- (0cm,0cm);
-\draw[red,line width=2pt] (0cm,0cm) -- (1cm,1cm) node[midway,above,xshift=-0.2cm,black] {\(\sqrt{2}\)};
-\draw ([shift=(0:0.2cm)]0,0) arc (0:45:0.2cm);
-\draw ([shift=(225:0.2cm)]1,1) arc (225:270:0.2cm);
-\node at (0.35cm,0.1cm) {\(45^{\circ}\)};
-\node at (0.88cm,0.7cm) {\(45^{\circ}\)};
-\draw (0.9cm,0cm) -- (0.9cm,0.1cm) -- (1cm,0.1cm);\end{tikzpicture}
+        \begin{tikzpicture}[scale=4]
+        \draw[red,line width=2pt] (0,0) -- (1,0) node[midway,below,black] {1};
+        \draw[red,line width=2pt] (1,0) -- (1,1) node[midway,right,black] {1};
+        \draw[blue] (1,1) -- (0,1);
+        \draw[blue] (0,1) -- (0,0);
+        \draw[red,line width=2pt] (0,0) -- (1,1) node[midway,above,xshift=-02,yshift=2,black] {\(\sqrt{2}\)};
+        \draw ([shift=(0:0.2)]0,0) arc (0:45:0.2);
+        \draw ([shift=(225:0.2)]1,1) arc (225:270:0.2);
+        \node at (0.3,0.1) {\(45^{\circ}\)};
+        \node at (0.88,0.75) {\(45^{\circ}\)};
+        \draw (0.9,0) -- (0.9,0.1) -- (1,0.1);
+        \end{tikzpicture}
       </latex-image>
     </image>
-    <image>
+    <image xml:id="fig-30-60degree-triangle" width="60%">
       <latex-image>
-        \begin{tikzpicture}\draw[red,line width=2pt] (0,0) -- (60:1cm) node[midway,above,yshift=0.2cm,black] {1};
-\draw[red,line width=2pt] (0,0) -- (0.5,0) node[midway, below,black] {\(\frac{1}{2}\)};
-\draw[blue] (0.5,0) -- (1,0) node[midway, below,black] {\(\frac{1}{2}\)};
-\draw[blue] (1,0) -- (0.5,0.866025403784) node[midway,right,yshift=0.2cm,black] {\(1\)};
-\draw[red,line width=2pt] (0.5,0) -- (0.5,0.866025403784) node[midway,right,yshift=0.0cm] {\(\frac{\sqrt{3}}{2}\)};
-\draw ([shift=(0:0.2cm)]0,0) arc (0:60:0.2cm) node[midway,right,xshift=0.04cm] {\(60^{\circ}\)};
-\draw ([shift=(120:0.2cm)]1,0) arc (120:180:0.2cm) node[midway,left,xshift=-0.04cm] {\(60^{\circ}\)};
-\draw ([shift=(240:0.2cm)]60:1cm) arc (240:270:0.2cm) node[midway,below,xshift=-0.1cm,yshift=-0.1cm] {\(30^{\circ}\)};
-\draw ([shift=(270:0.2cm)]60:1cm) arc (270:300:0.2cm) node[midway,below,xshift=0.1cm,yshift=-0.1cm] {\(30^{\circ}\)};
-\draw (0.4,0) -- (0.4,0.1);
-\draw (0.4,0.1) -- (0.5,0.1);\end{tikzpicture}
+        \begin{tikzpicture}[scale=4]
+        \draw[red,line width=2pt] (0,0) -- (60:1) node[midway,above,yshift=0.2,black] {1};
+        \draw[red,line width=2pt] (0,0) -- (0.5,0) node[midway, below,black] {\(\frac{1}{2}\)};
+        \draw[blue] (0.5,0) -- (1,0) node[midway, below,black] {\(\frac{1}{2}\)};
+        \draw[blue] (1,0) -- (0.5,0.866025403784) node[midway,right,yshift=0.2,black] {\(1\)};
+        \draw[red,line width=2pt] (0.5,0) -- (0.5,0.866025403784) node[midway,right,xshift=-1.5,yshift=-3] {\(\frac{\sqrt{3}}{2}\)};
+        \draw ([shift=(0:0.2)]0,0) arc (0:60:0.2) node[midway,right,xshift=0.04] {\(60^{\circ}\)};
+        \draw ([shift=(120:0.2)]1,0) arc (120:180:0.2) node[midway,left,xshift=-0.04] {\(60^{\circ}\)};
+        \draw ([shift=(240:0.2)]60:1) arc (240:270:0.2) node[midway,below,xshift=-1.5,yshift=-0.5] {\(30^{\circ}\)};
+        \draw ([shift=(270:0.2)]60:1) arc (270:300:0.2) node[midway,below,xshift=3,yshift=-0.5] {\(30^{\circ}\)};
+        \draw (0.4,0) -- (0.4,0.1);
+        \draw (0.4,0.1) -- (0.5,0.1);
+        \end{tikzpicture}
       </latex-image>
     </image>
-    <p>
-      \end{mybox}
-    </p>
     <p>
       The trigonometric values for the special angles
       <m>0, 30^{\circ}, 45^{\circ}, 60^{\circ}, 90^{\circ}</m>
-      (
-      <m>0, \frac{\pi}{6}, \frac{\pi}{4}, \frac{\pi}{3}, \frac{\pi}{2}</m>
-      ) are given in
-      <xref ref="tab_basic-trig-Q1">Table</xref>
+      
+      <m>\left(0, \frac{\pi}{6}, \frac{\pi}{4}, \frac{\pi}{3}, \frac{\pi}{2}\right)</m>
+       are given in
+      <xref ref="tab_basic-trig-Q1">Table</xref>.
     </p>
     <table xml:id="tab_basic-trig-Q1">
       <title>Values of the trigonometric functions in Quadrant I</title>
@@ -281,13 +263,6 @@
           <cell>
             <m>\theta</m>
           </cell>
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell>(degrees)</cell>
-          <cell>(radians)</cell>
           <cell>
             <m>\sin\theta</m>
           </cell>
@@ -297,6 +272,13 @@
           <cell>
             <m>\tan\theta</m>
           </cell>
+        </row>
+        <row>
+          <cell>(degrees)</cell>
+          <cell>(radians)</cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
         </row>
         <row bottom="minor">
           <cell></cell>
@@ -420,25 +402,17 @@
       </idx>
       You may recognize the symmetry of
       <m>\sin\theta</m>
-      and
-      <m>\cos\theta</m>
+      and <m>\cos\theta</m>
       if reverse order of the values of sine and cosine from
       <m>90^{\circ}</m>
-      to
-      <m>0^{\circ}</m>
-      .
+      to <m>0^{\circ}</m>.
       This symmetry gives us
-      <m>\sin0^{\circ}=\cos90^{\circ}</m>
-      ,
-      <m>\sin30^{\circ}=\cos60^{\circ}</m>
-      ,
-      <m>\sin45^{\circ}=\cos45^{\circ}</m>
-      ,
-      <m>\sin60^{\circ}=\cos30^{\circ}</m>
-      ,
+      <m>\sin0^{\circ}=\cos90^{\circ}</m>,
+      <m>\sin30^{\circ}=\cos60^{\circ}</m>,
+      <m>\sin45^{\circ}=\cos45^{\circ}</m>,
+      <m>\sin60^{\circ}=\cos30^{\circ}</m>,
       and
-      <m>\sin90^{\circ}=\cos0^{\circ}</m>
-      .
+      <m>\sin90^{\circ}=\cos0^{\circ}</m>.
     </p>
     <p>
       This pattern between sine and cosine is no coincidence.
@@ -454,29 +428,28 @@
       <m>\frac{\pi}{2}</m>
       radians,
       meaning they are
-      <em>complementary angles</em>
-      .
+      <em>complementary angles</em>.
       <idx>
         <h>complementary angles</h>
       </idx>
     </p>
     <figure xml:id="fig-cofunction">
-      <image>
+      <image width="60%">
         <latex-image>
-          \begin{tikzpicture}\draw (0,0) -- (4,0) node[midway,below]{\(b\)};
-\draw(0,0) -- (4,3) node[midway,above left]{\(c\)};
-\draw(4,0) -- (4,3) node[midway,right]{\(a\)};
-\draw(3.7,0) -- (3.7,0.3) -- (4,0.3);
-\draw ([shift=(0:0.5cm)]0,0) arc (0:36.8698976458:0.5cm) node[midway,right,xshift=0.1cm] {\(\alpha\)};
-\draw ([shift=({180+atan(3/4)}:0.5cm)]4,3) arc (216.869897646:270:0.5cm) node[midway,below,xshift=-0.1cm] {\(\beta\)};\end{tikzpicture}
+          \begin{tikzpicture}[scale=1]
+          \draw (0,0) -- (4,0) node[midway,below]{\(b\)};
+          \draw(0,0) -- (4,3) node[midway,above left]{\(c\)};
+          \draw(4,0) -- (4,3) node[midway,right]{\(a\)};
+          \draw(3.7,0) -- (3.7,0.3) -- (4,0.3);
+          \draw ([shift=(0:0.5)]0,0) arc (0:36.8698976458:0.5cm) node[midway,right,xshift=0.1cm] {\(\alpha\)};
+          \draw ([shift=({180+atan(3/4)}:0.5)]4,3) arc (216.869897646:270:0.5) node[midway,below,xshift=-0.1] {\(\beta\)};
+          \end{tikzpicture}
         </latex-image>
       </image>
-      \vspace{-0.1cm}
     </figure>
     <p>
       Consider the right triangle in
-      <xref ref="fig-cofunction">Figure</xref>
-      ,
+      <xref ref="fig-cofunction">Figure</xref>,
       where angles
       <m>\alpha</m>
       and
@@ -485,13 +458,11 @@
       side
       <m>a</m>
       is opposite of angle
-      <m>\alpha</m>
-      ,
+      <m>\alpha</m>,
       and side
       <m>b</m>
       is opposite of angle
-      <m>\beta</m>
-      .
+      <m>\beta</m>.
       Notice that we can also describe side
       <m>b</m>
       as adjacent to angle
@@ -499,8 +470,7 @@
       and side
       <m>a</m>
       as adjacent to angle
-      <m>\beta</m>
-      .
+      <m>\beta</m>.
       Therefore,
       <me>
         \sin\alpha=\dfrac{\mbox{opposite} }{\mbox{hypotenuse} }=\dfrac{a}{c}\mbox{and} \cos\beta=\dfrac{\mbox{adjacent} }{\mbox{hypotenuse} }=\dfrac{a}{c}
@@ -513,7 +483,7 @@
       </me>
     </p>
     <p>
-      } Sine and cosine are called
+      Sine and cosine are called
       <term>cofunctions</term>
       <idx>
         <h>cofunctions</h>
@@ -1040,8 +1010,8 @@
       <solution>
         <p>
           From the Star Compass
-          (
-          <xref ref="star-compass-with-angles">Figure</xref>
+          ( uncomment reference
+          <!-- <xref ref="star-compass-with-angles">Figure</xref> -->
           ),
           the house Lā is one house (
           <m>11.25^{\circ}</m>
@@ -1679,7 +1649,7 @@ node[midway,right,xshift=0.1cm] {\(y\)};
       <introduction>
         <p>
           In
-          <xref ref="ques-deviation">Question</xref>
+          <xref ref="ques-deviation">Exercise</xref>
           we calculated the deviation of waʻa after sailing for one day (120 nautical miles).
           Calculate how far along the reference course (north) the waʻa has traveled for each deviation,
           <m>y</m>
@@ -1692,7 +1662,7 @@ node[midway,right,xshift=0.1cm] {\(y\)};
       <statement>
         <p>
           In
-          <xref ref="ques-deviation">Question</xref>
+          <xref ref="ques-deviation">Exercise</xref>
           we calculated the deviation of waʻa after sailing for one day (120 nautical miles).
           Calculate how far along the reference course (north) the waʻa has traveled for each deviation,
           <m>y</m>
@@ -1992,10 +1962,10 @@ Using the right triangle
         To calculate the angle
           <m>\theta</m>
           ,
-        refer to the Star Compass on
-          <xref ref="star-compass-with-angles">Figure</xref>
+        refer to the Star Compass on (uncomment)
+          <!-- <xref ref="star-compass-with-angles">Figure</xref> -->
           on
-          <xref ref="star-compass-with-angles">page</xref>
+          <!-- <xref ref="star-compass-with-angles">page</xref> -->
           for help determining the number of houses and use the fact that one house is
           <m>11.25^{\circ}</m>
           .
@@ -2539,7 +2509,80 @@ Using the right triangle
         </answer>
       </exercise>
     </exercisegroup>
+    <!-- <exercise>
+      <introduction>
+        <p>
+          WebWork example
+        </p>
+      </introduction>
+      <webwork>
+        <pg-code>
+          $a = Compute(random(1, 9, 1));
+          $b = Compute(random(1, 9, 1));
+          $c = $a + $b;
+        </pg-code>
+        <statement>
+          <p>
+            Compute the sum of <m><var name="$a" /></m> and <m><var name="$b" /></m>:
+          </p>
+          <p>
+            <m><var name="$a" /> + <var name="$b" /> =</m> <var name="$c" width="5" />
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Add <m><var name="$a" /></m> and <m><var name="$b" /></m> together.
+          </p>
+        </hint>
+        <solution>
+          <p>
+            <m><var name="$a" /> + <var name="$b" /> = <var name="$c" /></m>.
+          </p>
+        </solution>
+      </webwork>
+    </exercise> -->
+    <!-- <exercise>
+  <webwork>
+<statement>
+<p><m>1+2=</m><var name="'3'" width="5" /></p>
+    </statement>
+  </webwork>
+</exercise> -->
+
+ <!-- <exercise>
+    <webwork xml:id="ex_first-webwork-add-numbers">
+      <description>
+        Add two positive single-digit integers.
+      </description>
+
+      <pg-code>
+        $a = random(1, 9, 1);
+        $b = random(1, 9, 1);
+        $c = Compute($a + $b);
+      </pg-code>
+
+      <statement>
+        <p>
+          Compute the sum of <m><var name="$a" /></m> and <m><var name="$b" /></m>:
+        </p>
+        <p>
+          <m><var name="$a" /> + <var name="$b" /> =</m><var name="$c" width="5" category="integer" />
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          <m><var name="$a" /> + <var name="$b" /> = <var name="$c" /></m>.
+        </p>
+      </solution>
+    </webwork>
+  </exercise> -->
+
+  <!-- <exercise>
+    <webwork source="Library/PCC/BasicAlgebra/Exponents/exponentsMultiplication0.pg" />
+  </exercise> -->
   </exercises>
+
 
 </section>
   

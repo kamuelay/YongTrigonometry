@@ -37,9 +37,10 @@
       The circumference of the unit circle is
       <m>2\pi r=2\pi \cdot 1=2\pi</m>.
     </p>
-    <image>
+    <image xml:id="fig-unit-circle-with-arc-length">
       <latex-image>
-        \begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+        \begin{tikzpicture}[scale=3]
+        \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
         \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
         \draw (0,0) circle (1);
         \draw (0,0) -- (57.3:1);
@@ -56,11 +57,11 @@
       Here, <m>P(x,y)</m> is the terminal point.
       If <m>t\lt 0</m> then we would wrap in a clockwise direction.
     </p>
-    <image>
+    <image xml:id="fig-unit-circle-with-arc-length-wrapped">
       <latex-image>
-        \begin{tikzpicture}[x=1.8cm, y-1.8cm]
+        \begin{tikzpicture}[scale=3]
         \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-        \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}
+        \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
         \draw (0,0) circle (1);
         \draw[->] (1,0) -- (1,1.25);
         \draw[blue] (0.95,0.25) -- (1.05,0.25);
@@ -103,40 +104,43 @@
       <em>sin</em>, <em>cos</em>, <em>tan</em>,
       <em>csc</em>, <em>sec</em>, and <em>cot</em>, respectively.
     </p>
-    <p>
-      \begin{mybox}[Definition of Trigonometric Functions]
-      <idx>
-        <h>Trigonometric Functions</h>
-        <h>of real numbers</h>
-      </idx>
-      Let <m>t</m> be any real number and let
-      <m>P(x,y)</m> be the terminal point on the unit circle associated with
-      <m>t</m>. Then
-      <md>
-        <mrow>\sin t\amp =y \amp  \cos t\amp =x \amp  \tan t\amp =\frac{y}{x}  (x\neq0)</mrow>
-        <mrow>\csc t\amp =\frac{1}{y}  (y\neq0) \amp  \sec t\amp =\frac{1}{x}  (x\neq0) \amp  \cot t\amp =\frac{x}{y}  (y\neq0)</mrow>
-      </md>
-    </p>
-    <image>
-      <latex-image>
-        \begin{tikzpicture}\draw[&lt;->] (-1.15,0)--(1.15,0) node[right]{\(x\)};
-        \draw[&lt;->] (0,-1.15)--(0,1.15) node[above]{\(y\)};
-        \draw (0,0) circle (1cm);
-        \draw[line width=2pt] (0,0) -- (45:1cm) node[midway,above,yshift=0.2cm] {1};
-        \draw[line width=2pt] (0,0) -- (0.707106781187,0) node[midway,below,yshift=-0.1cm] {\(\cos t\)};
-        \draw[line width=2pt] (0.707106781187,0) -- (0.707106781187,0.707106781187) node[midway,right,yshift=-0.2cm] {\(\sin t\)};
-        \draw (0.607106781187,0) -- (0.607106781187,0.1) -- (0.707106781187,0.1);
-        \filldraw[black] (45:1cm) circle(1pt) node[above right] {\(P(x,y)\)};
-        \draw ([shift=(0:0.25cm)]0,0) arc (0:45:0.25cm) node[midway,right,xshift=0.1cm] {\(t\)};
-        \node at (22.5:1.1) {t};\end{tikzpicture}
-      </latex-image>
-    </image>
-    <p>
-      Notice that <m>\tan t</m> and <m>\sec t</m>
-      are undefined when <m>x=0</m> and <m>\csc t</m>
-      and <m>\cot t</m> are undefined when <m>y=0</m>.
-      \end{mybox}
-    </p>
+    <definition xml:id="def-of-trig-functions"><title>Definition of Trigonometric Functions</title>
+      <statement>
+        <p>
+          <idx>
+            <h>Trigonometric Functions</h>
+            <h>of real numbers</h>
+          </idx>
+          Let <m>t</m> be any real number and let
+          <m>P(x,y)</m> be the terminal point on the unit circle associated with
+          <m>t</m>. Then
+          <md>
+            <mrow>\sin t\amp =y \amp  \cos t\amp =x \amp  \tan t\amp =\frac{y}{x}  (x\neq0)</mrow>
+            <mrow>\csc t\amp =\frac{1}{y}  (y\neq0) \amp  \sec t\amp =\frac{1}{x}  (x\neq0) \amp  \cot t\amp =\frac{x}{y}  (y\neq0)</mrow>
+          </md>
+        </p>
+        <image xml:id="fig-def-trig-function-unit-circle">
+          <latex-image>
+            \begin{tikzpicture}[scale=4]
+            \draw[&lt;->] (-1.15,0)--(1.15,0) node[right]{\(x\)};
+            \draw[&lt;->] (0,-1.15)--(0,1.15) node[above]{\(y\)};
+            \draw (0,0) circle (1);
+            \draw[line width=2pt] (0,0) -- (45:1) node[midway,above,yshift=0.2] {1};
+            \draw[line width=2pt] (0,0) -- (0.707106781187,0) node[midway,below,yshift=-0.1] {\(\cos t\)};
+            \draw[line width=2pt] (0.707106781187,0) -- (0.707106781187,0.707106781187) node[midway,right,yshift=-0.2] {\(\sin t\)};
+            \draw (0.607106781187,0) -- (0.607106781187,0.1) -- (0.707106781187,0.1);
+            \filldraw[black] (45:1) circle(1pt) node[above right] {\(P(x,y)\)};
+            \draw ([shift=(0:0.25)]0,0) arc (0:45:0.25) node[midway,right,xshift=0.1] {\(t\)};
+            \node at (22.5:1.1) {t};\end{tikzpicture}
+          </latex-image>
+        </image>
+        <p>
+          Notice that <m>\tan t</m> and <m>\sec t</m>
+          are undefined when <m>x=0</m> and <m>\csc t</m>
+          and <m>\cot t</m> are undefined when <m>y=0</m>.
+        </p>
+      </statement>
+    </definition>
     <example>
       <statement>
         <p>
@@ -153,8 +157,9 @@
           gives us <m>x=\frac{\sqrt{3}}{2}</m> and <m>y=-\frac{1}{2}</m>.
           Then we have
           <md>
-            <mrow>\sin \theta\amp =y=-\frac{1}{2} \amp  \cos \theta\amp =x=\frac{\sqrt{3}}{2} \amp  \tan \theta\amp =\frac{y}{x}=\frac{-\frac{1}{2}}{\frac{\sqrt{3}}{2}}=-\frac{\sqrt{3}}{3}</mrow>
-            <mrow>\csc \theta\amp =\frac{1}{y}=\frac{1}{\frac{1}{2}}=-2 \amp  \sec \theta\amp =\frac{1}{x}=\frac{1}{\frac{\sqrt{3}}{2}}=\frac{2\sqrt{3}}{3} \amp  \cot \theta\amp =\frac{x}{y}=\frac{=\frac{\sqrt{3}}{2}}{-\frac{1}{2}}=-\sqrt{3}</mrow>
+            <mrow> \sin \theta\amp =y=-\frac{1}{2},\amp \csc \theta\amp =\frac{1}{y}=\frac{1}{-\frac{1}{2}}=-2,</mrow>
+            <mrow> \cos \theta\amp =x=\frac{\sqrt{3}}{2}, \amp \sec \theta\amp =\frac{1}{x}=\frac{1}{\frac{\sqrt{3}}{2}}=\frac{2\sqrt{3}}{3},</mrow>
+            <mrow> \tan \theta\amp =\frac{y}{x}=\frac{-\frac{1}{2}}{\frac{\sqrt{3}}{2}}=-\frac{\sqrt{3}}{3},\amp \cot \theta\amp =\frac{x}{y}=\frac{\frac{\sqrt{3}}{2}}{-\frac{1}{2}}=-\sqrt{3}.</mrow>
           </md>
         </p>
       </solution>
@@ -170,11 +175,8 @@
             <h>Trigonometric Functions</h>
             <h>of angles</h>
           </idx>
-          If
-          <m>\theta</m>
-          is an angle with radian measure
-          <m>t</m>
-          , then the
+          If <m>\theta</m> is an angle with radian measure
+          <m>t</m>, then the
           <term>six trigonometric functions</term>
           become
           <md>
@@ -187,136 +189,111 @@
     <example>
       <statement>
         <p>
-          Find the exact values of the six trigonometric functions of
-          <ol>
-            <li>
-              <p>
-                <m>\theta=0</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>\theta=\frac{3\pi}{2}</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>\theta=5\pi</m>
-              </p>
-            </li>
-          </ol>
+          Find the exact values of the six trigonometric functions for
         </p>
+        <task>
+          <p>
+            <m>\theta=0</m>
+          </p>
+          <solution>
+            <p>
+              When <m>\theta=0</m> radians (<m>0^{\circ}</m>),
+              the point on the circle is <m>P(1,0)</m>.
+              <image xml:id="exmp-6trig-0">
+                <latex-image>
+                  \begin{tikzpicture}[scale=3]
+                  \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+                  \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+                  \draw (0,0) circle (1);
+                  \draw[blue,line width=2pt] (0,0) -- (1,0) node[black,above right,yshift=0.1] {P(1,0)};
+                  \filldraw[blue,line width=2pt] (0:1) circle(1pt);
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+              Then <m>x=1</m> and <m>y=0</m> gives us
+              <md>
+                <mrow>\sin 0\amp =\sin 0^{\circ}=0, \amp \csc 0\amp =\csc  0^{\circ}=\mbox{undefined},</mrow>
+                <mrow>\cos 0\amp =\cos 0^{\circ}=1, \amp \sec 0\amp =\sec  0^{\circ}=1,</mrow>
+                <mrow>\tan 0\amp =\tan 0^{\circ}=0, \amp \cot 0 \amp =\cot  0^{\circ}=\mbox{undefined}.</mrow>
+              </md>
+            </p>
+          </solution>
+        </task>
+        <task>
+          <p>
+            <m>\theta=\frac{3\pi}{2}</m>
+          </p>
+          <solution>
+            <p>
+              When <m>\theta=\frac{3\pi}{2}</m>
+              radians (<m>270^{\circ}</m>),
+              the point on the circle is
+              <m>P(0,-1)</m>.
+              <image xml:id="exmp-6trig-3pi2">
+                <latex-image> \begin{tikzpicture}[scale=3]
+                  \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+                  \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+                  \draw (0,0) circle (1);
+                  \draw[blue,line width=2pt] (0,0) -- (0,-1) node[black,below right,xshift=0.1] {P(0,-1)};
+                  \filldraw[blue,line width=2pt] (270:1) circle(1pt); \draw[->] (0:0.3) arc (0:270:0.3);
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+              Then <m>x=0</m> and <m>y=-1</m> gives us
+              <md>
+                <mrow>\sin \frac{3\pi}{2}\amp =\sin 270^{\circ}=-1, \amp \csc \frac{3\pi}{2}\amp =\csc  270^{\circ}=-1,</mrow>
+                <mrow>\cos \frac{3\pi}{2}\amp =\cos 270^{\circ}=0, \amp  \sec \frac{3\pi}{2}\amp =\sec  270^{\circ}=\mbox{undefined},</mrow>
+                <mrow>\tan \frac{3\pi}{2}\amp =\tan 270^{\circ}=\mbox{undefined}, \amp \cot \frac{3\pi}{2}\amp =\cot  270^{\circ}=0</mrow>
+              </md>
+            </p>
+          </solution>
+        </task>
+        <task>
+          <p>
+            <m>\theta=5\pi</m>
+          </p>
+          <solution>
+            <p>
+              Since <m>\theta=5\pi>2\pi</m>, our angle is greater than one full rotation of a circle.
+              We first subtract <m>\theta</m> by one rotation, <m>2\pi</m>, to get
+              <me>
+                5\pi-2\pi-=3\pi
+              </me>
+              Again, since we are greater than one rotation,
+              we can repeat the previous step
+              <me>
+                3\pi-2\pi=\pi
+              </me>
+              The values of the six trigonometric functions when
+              <m>\theta=5\pi</m> is equal to that when <m>\theta=\pi</m>.
+              Notice, <m>5\pi</m> and <m>\pi</m> are
+              <em>coterminal angles</em> ending with the point<m>P(-1,0)</m>.
+              <image xml:id="exmp-6trig-5pi">
+                <latex-image> \begin{tikzpicture}[scale=3]
+                  \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+                  \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+                  \draw (0,0) circle (1);
+                  \draw[blue,line width=2pt] (0,0) -- (-1,0) node[black,above left,xshift=-0.1] {P(-1,0)};
+                  \filldraw[blue,line width=2pt] (180:1) circle(1pt); \draw [->,domain=0:5*pi,variable=\t,smooth,samples=75] plot ({\t r}: {0.1+0.03*\t});
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+              Since <m>x=-1</m> and <m>y=0</m> we we
+              <md>
+                <mrow>\sin 5\pi\amp =0, \amp  \cos 5\pi\amp =-1, \amp  \tan 5\pi\amp =0,</mrow>
+                <mrow>\csc 5\pi\amp =\mbox{undefined}, \amp  \sec 5\pi\amp =-1, \amp  \cot 5\pi\amp =\mbox{undefined}. </mrow>
+              </md>
+            </p>
+          </solution>
+        </task>
       </statement>
-      <solution>
-        <p>
-          <ol>
-            <li>
-              <p>
-                When
-                <m>\theta=0</m>
-                radians (
-                <m>0^{\circ}</m>
-                ),
-                the point on the circle is
-                <m>P(1,0)</m>
-                .
-                <image>
-                  <latex-image> \begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \draw[blue,line width=2pt] (0,0) -- (1,0) node[black,above right,yshift=0.1cm] {P(1,0)}; \filldraw[blue,line width=2pt] (0:1cm) circle(1pt);\end{tikzpicture} </latex-image>
-                </image>
-                Then
-                <m>x=1</m>
-                and
-                <m>y=0</m>
-                gives us
-                <md>
-                  <mrow>\sin 0=\sin 0^{\circ}\amp =0, \amp  \cos 0=\cos 0^{\circ}\amp =1, \amp  \tan 0=\tan 0^{\circ}\amp =0,</mrow>
-                  <mrow>\csc 0=\csc  0^{\circ}\amp =\mbox{undefined} , \amp  \sec 0=\sec  0^{\circ}\amp =1, \amp  \cot 0=\cot  0^{\circ}\amp =\mbox{undefined} </mrow>
-                </md>
-                .
-              </p>
-            </li>
-            <li>
-              <p>
-                When
-                <m>\theta=\frac{3\pi}{2}</m>
-                radians (
-                <m>270^{\circ}</m>
-                ),
-                the point on the circle is
-                <m>P(0,-1)</m>
-                .
-                <image>
-                  <latex-image> \begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \draw[blue,line width=2pt] (0,0) -- (0,-1) node[black,below right,xshift=0.1cm] {P(0,-1)}; \filldraw[blue,line width=2pt] (270:1cm) circle(1pt); \draw[->] (0:0.3cm) arc (0:270:0.3cm);\end{tikzpicture} </latex-image>
-                </image>
-                Then
-                <m>x=0</m>
-                and
-                <m>y=-1</m>
-                gives us
-                <md>
-                  <mrow>\sin \frac{3\pi}{2}=\sin 270^{\circ}\amp =-1, \amp  \cos \frac{3\pi}{2}=\cos 270^{\circ}\amp =0, \amp  \tan \frac{3\pi}{2}=\tan 270^{\circ}\amp =\mbox{undefined} ,</mrow>
-                  <mrow>\csc \frac{3\pi}{2}=\csc  270^{\circ}\amp =-1, \amp  \sec \frac{3\pi}{2}=\sec  270^{\circ}\amp =\mbox{undefined} , \amp  \cot \frac{3\pi}{2}=\cot  270^{\circ}\amp =0</mrow>
-                </md>
-                .
-              </p>
-            </li>
-            <li>
-              <p>
-                Since
-                <m>\theta=5\pi>2\pi</m>
-                ,
-                our angle is greater than one full rotation of a circle.
-                We first subtract
-                <m>\theta</m>
-                by one rotation,
-                <m>2\pi</m>
-                , to get
-                <me>
-                  5\pi-2\pi-=3\pi
-                </me>
-                Again, since we are greater than one rotation,
-                we can repeat the previous step
-                <me>
-                  3\pi-2\pi=\pi
-                </me>
-                The values of the six trigonometric functions when
-                <m>\theta=5\pi</m>
-                is equal to that when
-                <m>\theta=\pi</m>
-                .
-                Notice,
-                <m>5\pi</m>
-                and
-                <m>\pi</m>
-                are
-                <em>coterminal angles</em>
-                ending with the point
-                <m>P(-1,0)</m>
-                .
-                <image>
-                  <latex-image> \begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1cm); \draw[blue,line width=2pt] (0,0) -- (-1,0) node[black,above left,xshift=-0.1cm] {P(-1,0)}; \filldraw[blue,line width=2pt] (180:1cm) circle(1pt); \draw [->,domain=0:5*pi,variable=\t,smooth,samples=75] plot ({\t r}: {0.1+0.03*\t});\end{tikzpicture} </latex-image>
-                </image>
-                Since
-                <m>x=-1</m>
-                and
-                <m>y=0</m>
-                we we
-                <md>
-                  <mrow>\sin 5\pi\amp =0, \amp  \cos 5\pi\amp =-1, \amp  \tan 5\pi\amp =0,</mrow>
-                  <mrow>\csc 5\pi\amp =\mbox{undefined} , \amp  \sec 5\pi\amp =-1, \amp  \cot 5\pi\amp =\mbox{undefined} </mrow>
-                </md>
-                .
-              </p>
-            </li>
-          </ol>
-        </p>
-      </solution>
     </example>
     <example>
+      <title>Finding the Exact Values of the Trigonometric Functions for <m>\theta=45^{\circ}</m></title>
       <statement>
         <p>
-          Find the exact value for
-          <m>\frac{\pi}{4}=45^{\circ}</m>
+          Find the exact values of the six trigonometric functions for
+          <m>\theta=45^{\circ}</m>
         </p>
       </statement>
       <solution>
@@ -325,65 +302,53 @@
           <m>45^{\circ}</m>
           in the unit circle.
         </p>
-        <image>
+        <image xml:id="fig-1st-quad-triangle-45">
           <latex-image>
-\begin{tikzpicture}\draw[->] (0,0)--(1.1,0) node[right]{\(x\)};
-\draw[->] (0,0)--(0,1.1) node[above]{\(y\)};
-\draw (0:1) arc (0:90:1);
-\draw[line width=2pt] (0,0) -- (45:1cm) node[midway,above,yshift=0.2cm] {1};
-\draw[line width=2pt] (0,0) -- (0.707106781187,0) node[midway,below,yshift=-0.1cm] {\(x\)};
-\draw[line width=2pt] (0.707106781187,0) -- (0.707106781187,0.707106781187) node[midway,right,yshift=-0.2cm] {\(y\)};
-\filldraw[black] (45:1cm) circle(1pt) node[right,xshift=0.1cm] {\(P(x,y)\)};
-\draw ([shift=(0:0.25cm)]0,0) arc (0:45:0.25cm) node[midway,right,xshift=0.04cm] {\(45^{\circ}\)};
-\draw (0.607106781187,0) -- ((0.607106781187,0.1) -- (0.707106781187,0.1);
-\draw[dashed] (0,0) -- (0.9,0.9) node[above] {\(y=x\)};\end{tikzpicture}
-</latex-image>
+            \begin{tikzpicture}[scale=7]
+            \draw[->] (0,0)--(1.1,0) node[right]{\(x\)};
+            \draw[->] (0,0)--(0,1.1) node[above]{\(y\)};
+            \draw (0:1) arc (0:90:1);
+            \draw[line width=2pt] (0,0) -- (45:1) node[midway,above,yshift=0.2] {1};
+            \draw[line width=2pt] (0,0) -- (0.707106781187,0) node[midway,below,yshift=-0.1] {\(x\)};
+            \draw[line width=2pt] (0.707106781187,0) -- (0.707106781187,0.707106781187) node[midway,right,yshift=-0.2] {\(y\)};
+            \filldraw[black] (45:1) circle(1pt) node[right,xshift=2.3] {\(P(x,y)\)};
+            \draw ([shift=(0:0.2)]0,0) arc (0:45:0.2) node[midway,right,xshift=0.04] {\(45^{\circ}\)};
+            \draw (0.627106781187,0) -- (0.627106781187,0.08) -- (0.707106781187,0.08);
+            \draw[dashed] (0,0) -- (0.9,0.9) node[above] {\(y=x\)};
+            \end{tikzpicture}
+          </latex-image>
         </image>
         <p>
-          Since the first quadrant has
-          <m>90^{\circ}</m>
-          ,
-          at
-          <m>\theta=45^{\circ}</m>
-          ,
-          the point
-          <m>P</m>
-          lies on the line that bisects the first quadrant.
-          This means the point
-          <m>P</m>
-          is on the line
-          <m>y=x</m>
-          .
-          Since
-          <m>P(x,y)</m>
-          also lies on the unit circle,
-          whose equation is
-          <m>x^2+y^2=1</m>
-          , we get
+          Since the first quadrant has <m>90^{\circ}</m>,
+          at <m>\theta=45^{\circ}</m>, the point
+          <m>P</m> lies on the line that bisects the first quadrant.
+          This means the point <m>P</m> is on the line <m>y=x</m>.
+          Since <m>P(x,y)</m> also lies on the unit circle, whose equation is
+          <m>x^2+y^2=1</m>, we get
           <md>
-            <mrow>x^2+y^2\amp =\amp 1</mrow>
-            <mrow>x^2+x^2\amp =\amp 1 (\mbox{since } y=x)</mrow>
-            <mrow>2x^2\amp =\amp 1</mrow>
-            <mrow>x^2\amp =\amp \frac{1}{2}</mrow>
-            <mrow>x\amp =\amp \frac{1}{\sqrt{2}}=\frac{\sqrt{2}}{2}=y</mrow>
+            <mrow>x^2+y^2\amp = 1</mrow>
+            <mrow>x^2+x^2\amp = 1 (\mbox{since } y=x)</mrow>
+            <mrow>2x^2\amp = 1</mrow>
+            <mrow>x^2\amp = \frac{1}{2}</mrow>
+            <mrow>x\amp = \frac{1}{\sqrt{2}}=\frac{\sqrt{2}}{2}=y.</mrow>
           </md>
         </p>
         <p>
           Then
           <md>
-            <mrow>\sin \frac{\pi}{4}=\sin 45^{\circ}\amp =\frac{\sqrt{2}}{2}, \amp  \cos \frac{\pi}{4}=\cos 45^{\circ}\amp =\frac{\sqrt{2}}{2}, \amp  \tan \frac{\pi}{4}=\tan 45^{\circ}\amp =\frac{\frac{\sqrt{2}}{2}}{\frac{\sqrt{2}}{2}}=1,</mrow>
-            <mrow>\csc \frac{\pi}{4}=\csc  45^{\circ}\amp =\frac{1}{\frac{\sqrt{2}}{2}}=\sqrt{2}, \amp  \sec \frac{\pi}{4}=\sec  45^{\circ}\amp =\frac{1}{\frac{\sqrt{2}}{2}}=\sqrt{2}, \amp  \cot \frac{\pi}{4}=\cot  45^{\circ}\amp =\frac{\frac{\sqrt{2}}{2}}{\frac{\sqrt{2}}{2}}=1</mrow>
+            <mrow>\sin 45^{\circ} \amp=\frac{\sqrt{2}}{2} \amp \csc  45^{\circ}=\frac{1}{\frac{\sqrt{2}}{2}}\amp=\sqrt{2}</mrow>
+            <mrow> \cos 45^{\circ}\amp=\frac{\sqrt{2}}{2} \amp \sec  45^{\circ}=\frac{1}{\frac{\sqrt{2}}{2}}\amp=\sqrt{2}</mrow>
+            <mrow> \tan 45^{\circ}\amp=\frac{\frac{\sqrt{2}}{2}}{\frac{\sqrt{2}}{2}}=1 \amp \cot  45^{\circ}=\frac{\frac{\sqrt{2}}{2}}{\frac{\sqrt{2}}{2}}\amp=1</mrow>
           </md>
-          .
         </p>
       </solution>
     </example>
     <example xml:id="ex_unit-circle-30">
+      <title>Finding the Exact Values of the Trigonometric Functions for <m>\theta=30^{\circ}</m></title>
       <statement>
         <p>
           Find the exact values of the six trigonometric functions for
-          <m>\theta=30^{\circ}=\frac{\pi}{6}</m>
-          .
+          <m>\theta=30^{\circ}</m>.
         </p>
       </statement>
       <solution>
@@ -394,143 +359,128 @@
           <m>-30^{\circ}</m>
           .
         </p>
-        <image>
+        <image xml:id="fig-1st-quad-triangle-30">
           <latex-image>
-\begin{tikzpicture}\draw[&lt;->] (-1.15,0)--(1.15,0) node[right]{\(x\)};
-\draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
-\draw (0,0) circle (1cm);
-\draw[line width=2pt] (0,0) -- (30:1cm) node[midway,above,yshift=0.2cm] {1};
-\draw[line width=2pt] (0,0) -- (-30:1cm) node[midway,below,yshift=-0.1cm] {1};
-\draw[line width=2pt] (0,0) -- (0.866025403784,0) node[midway,below,yshift=-0.1cm] {\(x\)};
-\draw[line width=2pt] (0.866025403784,0) -- (0.866025403784,0.5) node[midway,right,yshift=-0.2cm] {\(y\)};
-\draw[line width=2pt] (0.866025403784,0) -- (0.866025403784,-0.5) node[midway,right,yshift=0.2cm] {\(y\)};
-\filldraw[black] (30:1cm) circle(1pt) node[right,xshift=0.1cm] {\(P(x,y)\)};
-\draw ([shift=(0:0.25cm)]0,0) arc (0:30:0.25cm) node[midway,right,xshift=0.2cm,yshift=0.1cm] {\(30^{\circ}\)};
-\draw (0.766025403784,0) -- (0.766025403784,0.1) -- (0.866025403784,0.1);\end{tikzpicture}
-</latex-image>
+          \begin{tikzpicture}[scale=5]
+          \draw[&lt;->] (-1.15,0)--(1.15,0) node[right]{\(x\)};
+          \draw[&lt;->] (0,-1.15)--(0,1.15) node[above]{\(y\)};
+          \draw (0,0) circle (1);
+          \draw[line width=2pt] (0,0) -- (30:1) node[midway,above,yshift=0.2] {1};
+          \draw[line width=2pt] (0,0) -- (-30:1) node[midway,below,yshift=-0.1] {1};
+          \draw[line width=2pt] (0,0) -- (0.866025403784,0) node[midway,below,yshift=-0.1] {\(x\)};
+          \draw[line width=2pt] (0.866025403784,0) -- (0.866025403784,0.5) node[midway,left,xshift=-0.2] {\(y\)};
+          \draw[line width=2pt] (0.866025403784,0) -- (0.866025403784,-0.5) node[midway,left,xshift=-0.2] {\(y\)};
+          \filldraw[black] (30:1) circle(1pt) node[right,xshift=0.1] {\(P(x,y)\)};
+          \draw ([shift=(0:0.25)]0,0) arc (0:30:0.25) node[midway,right,xshift=0.,yshift=0.1] {\(30^{\circ}\)};
+          \draw (0.766025403784,0) -- (0.766025403784,0.1) -- (0.866025403784,0.1);
+          \end{tikzpicture}
+        </latex-image>
         </image>
         <p>
           This gives us two 30-60-90 triangles.
-          Notice this now gives us one larger triangle whose angles are all
-          <m>60^{\circ}</m>
-          .
-          Thus we have an equilateral triangle,
-          with each side of length 1.
+          Notice this now gives us one larger triangle whose angles are all <m>60^{\circ}</m>.
+          Thus we have an equilateral triangle, with each side of length 1.
         </p>
-        <image>
+        <image xml:id="fig-two-30-60-90-derive">
           <latex-image>
-\begin{tikzpicture}\draw[line width=2pt] (0,0) -- (30:1cm) node[midway,above,yshift=0.2cm] {1};
-\draw[line width=2pt] (0,0) -- (-30:1cm) node[midway,below,yshift=-0.1cm] {1};
-\draw[line width=2pt] (0,0) -- (0.866025403784,0) node[midway,below,yshift=-0.1cm] {\(x\)};
-\draw[line width=2pt] (0.866025403784,0) -- (0.866025403784,0.5) node[midway,right,yshift=-0.2cm] {\(y\)};
-\draw[line width=2pt] (0.866025403784,0) -- (0.866025403784,-0.5) node[midway,right,yshift=0.2cm] {\(y\)};
-\filldraw[black] (30:1cm) circle(1pt) node[right,xshift=0.1cm] {\(P(x,y)\)};
-\draw ([shift=(0:0.2cm)]0,0) arc (0:30:0.2cm) node[midway,right,xshift=0.04cm,yshift=0.1cm] {\(30^{\circ}\)};
-\draw ([shift=(0:0.2cm)]0,0) arc (0:-30:0.2cm) node[midway,right,xshift=0.04cm,yshift=-0.1cm] {\(30^{\circ}\)};
-\draw ([shift=(210:0.2cm)]30:1cm) arc (210:270:0.2cm) node[midway,below,xshift=-0.1cm] {\(60^{\circ}\)};
-\draw ([shift=(90:0.2cm)]-30:1cm) arc (90:150:0.2cm) node[midway,above,xshift=-0.1cm] {\(60^{\circ}\)};
-\draw (0.766025403784,0) -- (0.766025403784,0.1) -- (0.866025403784,0.1);\end{tikzpicture}
-</latex-image>
-        </image>
-        <image>
+            \begin{tikzpicture}[scale=9]
+            \draw[line width=2pt] (0,0) -- (30:1) node[midway,above,yshift=0.2] {1};
+            \draw[line width=2pt] (0,0) -- (-30:1) node[midway,below,yshift=-0.1] {1};
+            \draw[line width=2pt] (0,0) -- (0.866025403784,0) node[midway,below,yshift=-0.1] {\(x\)};
+            \draw[line width=2pt] (0.866025403784,0) -- (0.866025403784,0.5) node[midway,left,yshift=-0.2] {\(y\)};
+            \draw[line width=2pt] (0.866025403784,0) -- (0.866025403784,-0.5) node[midway,left,yshift=0.2] {\(y\)};
+            \filldraw[black] (30:1) circle(1pt) node[left,xshift=-10] {\(P(x,y)\)};
+            \draw ([shift=(0:0.15)]0,0) arc (0:30:0.15) node[midway,right,xshift=0.04,yshift=0.1] {\(30^{\circ}\)};
+            \draw ([shift=(0:0.15)]0,0) arc (0:-30:0.15) node[midway,right,xshift=0.0,yshift=-0.1] {\(30^{\circ}\)};
+            \draw ([shift=(210:0.15)]30:1) arc (210:270:0.15) node[midway,below,xshift=-0.1] {\(60^{\circ}\)};
+            \draw ([shift=(90:0.15)]-30:1) arc (90:150:0.15) node[midway,above,xshift=-0.1] {\(60^{\circ}\)};
+            \draw (0.786025403784,0) -- (0.786025403784,0.08) -- (0.866025403784,0.08);
+            \end{tikzpicture}
+          </latex-image>
           <latex-image>
-\begin{tikzpicture}\draw[line width=2pt] (0,0) -- (30:1cm) node[midway,above,yshift=0.2cm] {1};
-\draw[line width=2pt] (0,0) -- (-30:1cm) node[midway,below,yshift=-0.1cm] {1};
-\draw[line width=2pt] (0.866025403784,-0.5) -- (0.866025403784,0.5) node[midway,right,yshift=-0.2cm] {\(1=2y\)};
-\filldraw[black] (30:1cm) circle(1pt) node[right,xshift=0.1cm] {\(P(x,y)\)};
-\draw ([shift=(-30:0.2cm)]0,0) arc (-30:30:0.2cm) node[midway,right,xshift=0.04cm] {\(60^{\circ}\)};
-\draw ([shift=(210:0.2cm)]30:1cm) arc (210:270:0.2cm) node[midway,below,xshift=-0.1cm] {\(60^{\circ}\)};
-\draw ([shift=(90:0.2cm)]-30:1cm) arc (90:150:0.2cm) node[midway,above,xshift=-0.1cm] {\(60^{\circ}\)};\end{tikzpicture}
-</latex-image>
+            \begin{tikzpicture}[scale=9]
+            \draw[line width=2pt] (0,0) -- (30:1) node[midway,above,yshift=0.2] {1};
+            \draw[line width=2pt] (0,0) -- (-30:1) node[midway,below,yshift=-0.1] {1};
+            \draw[line width=2pt] (0.866025403784,-0.5) -- (0.866025403784,0.5) node[midway,left,yshift=-0.2] {\(1=2y\)};
+            \filldraw[black] (30:1) circle(1pt) node[left,xshift=-10] {\(P(x,y)\)};
+            \draw ([shift=(-30:0.15)]0,0) arc (-30:30:0.15) node[midway,right,xshift=0.04] {\(60^{\circ}\)};
+            \draw ([shift=(210:0.15)]30:1) arc (210:270:0.15) node[midway,below,xshift=-0.1] {\(60^{\circ}\)};
+            \draw ([shift=(90:0.15)]-30:1) arc (90:150:0.15) node[midway,above,xshift=-0.1] {\(60^{\circ}\)};
+            \end{tikzpicture}
+          </latex-image>
         </image>
         <p>
-          We see that
-          <m>1=2y</m>
-          so
-          <m>y=\frac{1}{2}</m>
-          .
+          We see that <m>1=2y</m> so <m>y=\frac{1}{2}</m>.
           Then by the Pythagorean Theorem,
           <md>
-            <mrow>x^2+y^2\amp =\amp 1^2</mrow>
-            <mrow>x^2+\left(\frac{1}{2}\right)^2\amp =\amp 1</mrow>
-            <mrow>x^2+\frac{1}{4}\amp =\amp 1</mrow>
-            <mrow>x^2\amp =\amp \frac{3}{4}</mrow>
-            <mrow>x\amp =\amp \frac{\sqrt{3}}{2}</mrow>
+            <mrow>x^2+y^2\amp = 1^2</mrow>
+            <mrow>x^2+\left(\frac{1}{2}\right)^2\amp = 1</mrow>
+            <mrow>x^2+\frac{1}{4}\amp = 1</mrow>
+            <mrow>x^2\amp = \frac{3}{4}</mrow>
+            <mrow>x\amp = \frac{\sqrt{3}}{2}</mrow>
           </md>
         </p>
         <p>
           Giving us the following triangle
         </p>
-        <image>
+        <image xml:id="fig-30-60-90-sides">
           <latex-image>
-\begin{tikzpicture}\draw[->] (0,0)--(1.25,0) node[right]{\(x\)};
-\draw[->] (0,0)--(0,1.25) node[left]{\(y\)};
-\draw (0:1) arc (0:90:1);
-\draw[line width=2pt] (0,0) -- (30:1cm) node[midway,above,yshift=0.2cm] {1};
-\draw[line width=2pt] (0,0) -- (0.866025403784,0) node[midway,below,yshift=-0.1cm] {\(\frac{\sqrt{3}}{2}\)};
-\draw[line width=2pt] (0.866025403784,0) -- (0.866025403784,0.5) node[midway,right,yshift=-0.2cm] {\(\frac{1}{2}\)};
-\filldraw[black] (30:1cm) circle(1pt) node[right,xshift=0.1cm] {\(P(x,y)=P\left(\frac{\sqrt{3}}{2},\frac{1}{2}\right)\)};
-\draw ([shift=(0:0.2cm)]0,0) arc (0:30:0.2cm) node[midway,right,xshift=0.04cm,yshift=0.1cm] {\(30^{\circ}\)};
-\draw ([shift=(210:0.2cm)]30:1cm) arc (210:270:0.2cm) node[midway,below,xshift=-0.1cm] {\(60^{\circ}\)};
-\draw (0.766025403784,0) -- (0.766025403784,0.1) -- (0.866025403784,0.1);\end{tikzpicture}
-</latex-image>
+            \begin{tikzpicture}[scale=7]
+            \draw[->] (0,0)--(1.1,0) node[right]{\(x\)};
+            \draw[->] (0,0)--(0,1.1) node[left]{\(y\)};
+            \draw (0:1) arc (0:90:1);
+            \draw[line width=2pt] (0,0) -- (30:1) node[midway,above,yshift=0.2] {1};
+            \draw[line width=2pt] (0,0) -- (0.866025403784,0) node[midway,below,yshift=-0.1] {\(\frac{\sqrt{3}}{2}\)};
+            \draw[line width=2pt] (0.866025403784,0) -- (0.866025403784,0.5) node[midway,right,yshift=-0.2] {\(\frac{1}{2}\)};
+            \filldraw[black] (30:1) circle(1pt) node[left,xshift=-7,yshift=3] {\(P(x,y)=P\left(\frac{\sqrt{3}}{2},\frac{1}{2}\right)\)};
+            \draw ([shift=(0:0.1)]0,0) arc (0:30:0.1) node[midway,right,xshift=0.04,yshift=1.1] {\(30^{\circ}\)};
+            \draw ([shift=(210:0.1)]30:1) arc (210:270:0.1) node[midway,below,xshift=-0.1] {\(60^{\circ}\)};
+            \draw (0.796025403784,0) -- (0.796025403784,0.07) -- (0.866025403784,0.07);
+            \end{tikzpicture}
+          </latex-image>
         </image>
         <p>
           Then
           <md>
-            <mrow>\sin \frac{\pi}{6}=\sin 30^{\circ}\amp =\frac{1}{2}, \amp  \csc \frac{\pi}{6}=\csc  30^{\circ}\amp =\frac{1}{\frac{1}{2}}=2,</mrow>
-            <mrow>\cos \frac{\pi}{6}=\cos 30^{\circ}\amp =\frac{\sqrt{3}}{2}, \amp  \sec \frac{\pi}{6}=\sec  30^{\circ}\amp =\frac{1}{\frac{\sqrt{3}}{2}}=\frac{2}{\sqrt{3}}=\frac{2\sqrt{3}}{3},</mrow>
-            <mrow>\tan \frac{\pi}{6}=\tan 30^{\circ}\amp =\frac{\frac{1}{2}}{\frac{\sqrt{3}}{2}}=\frac{1}{\sqrt{3}}=\frac{\sqrt{3}}{3}, \amp  \cot \frac{\pi}{6}=\cot  30^{\circ}\amp =\frac{\frac{\sqrt{3}}{2}}{\frac{1}{2}}=\sqrt{3}</mrow>
+            <mrow>\sin 30^{\circ}\amp =\frac{1}{2}, \amp  \csc  30^{\circ}\amp =\frac{1}{\frac{1}{2}}=2,</mrow>
+            <mrow>\cos 30^{\circ}\amp =\frac{\sqrt{3}}{2}, \amp \sec  30^{\circ}\amp =\frac{1}{\frac{\sqrt{3}}{2}}=\frac{2}{\sqrt{3}}=\frac{2\sqrt{3}}{3},</mrow>
+            <mrow>\tan 30^{\circ}\amp =\frac{\frac{1}{2}}{\frac{\sqrt{3}}{2}}=\frac{1}{\sqrt{3}}=\frac{\sqrt{3}}{3}, \amp  \cot  30^{\circ}\amp =\frac{\frac{\sqrt{3}}{2}}{\frac{1}{2}}=\sqrt{3}.</mrow>
           </md>
-          .
         </p>
       </solution>
     </example>
-    <p>
-      Similarly, we can get the following for
-      <m>\theta=60^{\circ}=\frac{\pi}{3}</m>
-      .
-    </p>
-    <image>
-      <latex-image>
-\begin{tikzpicture}\draw[->] (0,0)--(1.15,0) node[right]{\(x\)};
-\draw[->] (0,0)--(0,1.15) node[above]{\(y\)};
-\draw (0:1) arc (0:90:1);
-\draw[line width=2pt] (0,0) -- (60:1cm) node[midway,above,yshift=0.2cm] {1};
-\draw[line width=2pt] (0,0) -- (1,0);
-\draw[line width=2pt] (1,0) -- ({cos(60)},{sin(60)}) node[midway,right,yshift=0.2cm] {\(1\)};
-\node[below] at (0.25,0) {\(\frac{1}{2}\)};
-\node[below] at (0.75,0) {\(\frac{1}{2}\)};
-\draw (0.5,0) -- (0.5,0.866025403784) node[midway,right,yshift=0.0cm] {\(\frac{\sqrt{3}}{2}\)};
-\filldraw[black] (60:1cm) circle(1pt) node[right,xshift=0.1cm,yshift=-0.3cm] {\(P(x,y)=P\left(\frac{1}{2},\frac{\sqrt{3}}{2}\right)\)};
-\draw ([shift=(0:0.2cm)]0,0) arc (0:60:0.2cm) node[midway,right,xshift=0.04cm] {\(60^{\circ}\)};
-\draw ([shift=(120:0.2cm)]1,0) arc (120:180:0.2cm) node[midway,left,xshift=-0.04cm] {\(60^{\circ}\)};
-\draw ([shift=(240:0.2cm)]60:1cm) arc (240:270:0.2cm) node[midway,below,xshift=-0.1cm,yshift=-0.2cm] {\(30^{\circ}\)};
-\draw ([shift=(270:0.2cm)]60:1cm) arc (270:300:0.2cm) node[midway,below,xshift=0.1cm,yshift=-0.2cm] {\(30^{\circ}\)};
-\draw (0.4,0) -- (0.4,0.1) -- (0.5,0.1);\end{tikzpicture}
-</latex-image>
-    </image>
-    <image>
-      <latex-image>
-\begin{tikzpicture}\draw[->] (0,0)--(1.15,0) node[right]{\(x\)};
-\draw[->] (0,0)--(0,1.15) node[left]{\(y\)};
-\draw (0:1) arc (0:90:1);
-\draw[line width=2pt] (0,0) -- (60:1cm) node[midway,above,yshift=0.2cm] {1};
-\draw[line width=2pt] (0,0) -- (0.5,0) node[midway,below,yshift=-0.1cm] {\(\frac{1}{2}\)};
-\draw[line width=2pt] (0.5,0) -- (0.5,0.866025403784) node[midway,right,yshift=-0.2cm] {\(\frac{\sqrt{3}}{2}\)};
-\filldraw[black] (60:1cm) circle(1pt) node[right,xshift=0.1cm] {\(P(x,y)=P\left(\frac{1}{2},\frac{\sqrt{3}}{2}\right)\)};
-\draw (0:0.2cm) arc (0:60:0.2cm) node[midway,right,xshift=0.04cm,yshift=0.1cm] {\(60^{\circ}\)};
-\draw (60:0.8cm) arc (240:270:0.2cm) node[midway,below,xshift=-0.1cm,yshift=-0.5cm] {\(30^{\circ}\)};
-\draw (0.4,0) -- (0.4,0.1) -- (0.5,0.1);\end{tikzpicture}
-</latex-image>
-    </image>
+    <remark>
+      <title>Finding the Exact Values of the Trigonometric Functions for <m>\theta=90^{\circ}</m></title>
+      <p>
+        Similarly, we can get the following for
+        <m>\theta=60^{\circ}</m>.
+      </p>
+      <image xml:id="fig-60-60-60-sides">
+        <latex-image>
+          \begin{tikzpicture}[scale=9]
+          \draw[->] (0,0)--(1.05,0) node[below]{\(x\)};
+          \draw[->] (0,0)--(0,1.05) node[above]{\(y\)};
+          \draw (0:1) arc (0:90:1);
+          \draw[line width=2pt] (0,0) -- (60:1) node[midway,left,yshift=2] {1};
+          \draw[line width=2pt] (0,0) -- (1,0);
+          \draw[line width=2pt] (1,0) -- ({cos(60)},{sin(60)}) node[midway,right,yshift=0.2] {1};
+          \node[below] at (0.25,0) {\(\frac{1}{2}\)};
+          \node[below] at (0.75,0) {\(\frac{1}{2}\)};
+          \draw (0.5,0) -- (0.5,0.866025403784) node[midway,right,yshift=0.0] {\(\frac{\sqrt{3}}{2}\)};
+          \filldraw[black] (60:1) circle(1pt) node[right,xshift=-4,yshift=-0.3] {\(P(x,y)=P\left(\frac{1}{2},\frac{\sqrt{3}}{2}\right)\)};
+          \draw ([shift=(0:0.1)]0,0) arc (0:60:0.1) node[midway,right,xshift=0.04] {\(60^{\circ}\)};
+          \draw ([shift=(120:0.1)]1,0) arc (120:180:0.1) node[midway,left,xshift=-0.04] {\(60^{\circ}\)};
+          \draw ([shift=(240:0.1)]60:1) arc (240:270:0.1) node[midway,below,xshift=-2,yshift=-3] {\(30^{\circ}\)};
+          \draw ([shift=(270:0.1)]60:1) arc (270:300:0.1) node[midway,below,xshift=2,yshift=-3] {\(30^{\circ}\)};
+          \draw (0.44,0) -- (0.44,0.06) -- (0.5,0.06);
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </remark>
     <p>
       We now summarize what we know about the six trigonometric functions for special angles.
-      Note the trigonometric functions for
-      <m>\theta=\frac{\pi}{2}</m>
-      and
-      <m>\theta=\frac{\pi}{3}</m>
-      are left as exercises.
+      Note the trigonometric functions for <m>\theta=\frac{\pi}{2}</m> 
+      and <m>\theta=\frac{\pi}{3}</m> are left as exercises.
     </p>
     <table>
       <idx>
@@ -848,376 +798,335 @@
   <subsection>
     <title>Symmetry on the Unit Circle</title>
     <p>
-      \begin{mybox}[Symmetry of the unit circle] If the point
-      <m>P(x,y)</m>
-      is a point on the unit circle,
+      If the point <m>P(x,y)</m> is a point on the unit circle,
       then the following symmetric points are also on the unit circle:
       <ol>
         <li>
           <p>
-            <m>Q(-x,y)</m>
-            : Symmetry about the
-            <m>y</m>
-            -axis.
+            <m>Q(-x,y)</m>: Symmetry about the <m>y</m>-axis.
           </p>
         </li>
         <li>
           <p>
-            <m>R(-x,-y)</m>
-            : Symmetry about the origin.
+            <m>R(-x,-y)</m>: Symmetry about the origin.
           </p>
         </li>
         <li>
           <p>
-            <m>S(x,-y)</m>
-            : Symmetry about the
-            <m>x</m>
-            -axis.
+            <m>S(x,-y)</m>: Symmetry about the <m>x</m>-axis.
           </p>
         </li>
       </ol>
     </p>
     <p>
       The symmetry in the unit circle is similar to that in the Star Compass.
-      When a star enters the sky in the east,
-      the house that arrives in will be the same house it will set in on the west.
-      For example,
-      if a star first appears in the house N&#257;lani in the Ko&#699;olau quadrant (northeast),
-      it will arc over the sky and enter the horizon in the Ho&#699;olua quadrant
+      When a star enters the sky in the east, the house that arrives in will be 
+      the same house it will set in on the west.
+      For example, if a star first appears in the house Nālani in the Koʻolau quadrant (northeast),
+      it will arc over the sky and enter the horizon in the Hoʻolua quadrant (northwest).
+      This is similar to the symmetry of <m>P(x,y)</m> and <m>Q(-x,y)</m>.
+      Additionally, if an ocean swell or wind comes from the house of Nālani in the Malanai quadrant (southeast),
+      it will leave the waʻa in the opposite direction towards the Hoʻolua quadrant
       (northwest).
-      This is similar to the symmetry of
-      <m>P(x,y)</m>
-      and
-      <m>Q(-x,y)</m>
-      .
-      Additionally,
-      if an ocean swell or wind comes from the house of N&#257;lani in the Malanai quadrant (southeast),
-      it will leave the wa&#699;a in the opposite direction towards the Ho&#699;olua quadrant
-      (northwest).
-      This is similar to the symmetry of
-      <m>S(x,-y)</m>
-      and
-      <m>Q(-x,y)</m>
-      .
+      This is similar to the symmetry of <m>S(x,-y)</m> and <m>Q(-x,y)</m>.
     </p>
-    <image>
+    <image xml:id="fig-unit-circle-symmetry">
       <latex-image>
-\begin{tikzpicture}[x=2cm,y=2cm]
-\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-\draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
-\draw (0,0) circle (1);
-\filldraw[black] (60:1) circle(1pt);
-\filldraw[black] (120:1) circle(1pt);
-\filldraw[black] (240:1) circle(1pt);
-\filldraw[black] (300:1) circle(1pt);
-\draw (60:1.25) node {\(P(x,y)\)};
-\draw (120:1.25) node {\(Q(-x,y)\)};
-\draw (240:1.25) node {\(R(-x,-y)\)};
-\draw (300:1.25) node {\(S(x,-y)\)};
-\draw[gray,dashed] (60:1) -- (240:1);
-\draw[gray,dashed] (120:1) -- (300:1);
-\draw[gray,dashed] (60:1) -- (120:1);
-\draw[gray,dashed] (120:1) -- (240:1);
-\draw[gray,dashed] (240:1) -- (300:1);
-\draw[gray,dashed] (300:1) -- (60:1);\end{tikzpicture}
-</latex-image>
+        \begin{tikzpicture}[scale=5]
+        \draw[&lt;->] (-1.1,0)--(1.1,0) node[below]{\(x\)};
+        \draw[&lt;->] (0,-1.1)--(0,1.1) node[above]{\(y\)};
+        \node[below] at (0,-1.1) {};
+        \draw (0,0) circle (1);
+        \filldraw[black] (60:1) circle(1pt);
+        \filldraw[black] (120:1) circle(1pt);
+        \filldraw[black] (240:1) circle(1pt);
+        \filldraw[black] (300:1) circle(1pt);
+        \draw (60:1.2) node {\(P(x,y)\)};
+        \draw (120:1.2) node {\(Q(-x,y)\)};
+        \draw (240:1.2) node {\(R(-x,-y)\)};
+        \draw (300:1.2) node {\(S(x,-y)\)};
+        \draw[gray,dashed] (60:1) -- (240:1);
+        \draw[gray,dashed] (120:1) -- (300:1);
+        \draw[gray,dashed] (60:1) -- (120:1);
+        \draw[gray,dashed] (120:1) -- (240:1);
+        \draw[gray,dashed] (240:1) -- (300:1);
+        \draw[gray,dashed] (300:1) -- (60:1);
+        \end{tikzpicture}
+      </latex-image>
     </image>
-    <image>
+    <image xml:id="fig-star-compass-symmetry">
       <latex-image>
-\begin{tikzpicture}[x=2cm,y=2cm]
-\draw[&lt;->] (-1.25,0)--(1.25,0);
-\node[rotate=-90] at (1.35,0) {Hikina};
-\node[rotate=90] at (-1.35,0) {Komohana};
-\node[below] at (0,-1.25) {Hema};
-\draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{&#699;&#256;kau};
-\draw (0,0) circle (1);
-\filldraw[black] (60:1) circle(1pt);
-\filldraw[black] (120:1) circle(1pt);
-\filldraw[black] (240:1) circle(1pt);
-\filldraw[black] (300:1) circle(1pt);
-\draw (60:1.25) node {N&#257;lani};
-\draw (120:1.25) node {N&#257;lani};
-\draw (240:1.25) node {N&#257;lani};
-\draw (300:1.25) node {N&#257;lani};
-\draw[gray,dashed] (60:1) -- (240:1);
-\draw[gray,dashed] (120:1) -- (300:1);
-\draw[gray,dashed] (60:1) -- (120:1);
-\draw[gray,dashed] (120:1) -- (240:1);
-\draw[gray,dashed] (240:1) -- (300:1);
-\draw[gray,dashed] (300:1) -- (60:1);
-\draw (0,0) pic {waa1-top={waacolor}{-60}{0.03}};\end{tikzpicture}
-</latex-image>
+        \begin{tikzpicture}[scale=5]
+        \draw[&lt;->] (-1.1,0)--(1.1,0);
+        \node[rotate=-90] at (1.15,0) {Hikina};
+        \node[rotate=90] at (-1.15,0) {Komohana};
+        \node[below] at (0,-1.1) {Hema};
+        \draw[&lt;->] (0,-1.1)--(0,1.1) node[above]{ʻĀkau};
+        \draw (0,0) circle (1);
+        \filldraw[black] (60:1) circle(1pt);
+        \filldraw[black] (120:1) circle(1pt);
+        \filldraw[black] (240:1) circle(1pt);
+        \filldraw[black] (300:1) circle(1pt);
+        \draw (60:1.2) node {Nālani};
+        \draw (120:1.2) node {Nālani};
+        \draw (240:1.2) node {Nālani};
+        \draw (300:1.2) node {Nālani};
+        \draw[gray,dashed] (60:1) -- (240:1);
+        \draw[gray,dashed] (120:1) -- (300:1);
+        \draw[gray,dashed] (60:1) -- (120:1);
+        \draw[gray,dashed] (120:1) -- (240:1);
+        \draw[gray,dashed] (240:1) -- (300:1);
+        \draw[gray,dashed] (300:1) -- (60:1);
+        \draw (0,0) pic {waa1-top={waacolor}{-60}{0.03}};
+        \end{tikzpicture}
+      </latex-image>
     </image>
     <ol>
-      <li>
+      <li value="4">
         <p>
-          <m>T(y,x)</m>
-          : Symmetry about the line
-          <m>y=x</m>
-          .
+          <m>T(y,x)</m>: Symmetry about the line <m>y=x</m>.
           This is accomplished by interchanging the
-          <m>x</m>
-          - and
-          <m>y</m>
-          -values.
+          <m>x</m>- and <m>y</m>-values.
         </p>
       </li>
     </ol>
-    <image>
+    <image xml:id="fig-unit-circle-symmetry-xy">
       <latex-image>
-\begin{tikzpicture}[x=2cm,y=2cm]
-\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-\draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
-\draw (0,0) circle (1);
-\filldraw[black] (60:1) circle(1pt);
-\filldraw[black] (30:1) circle(1pt);
-\draw (60:1.25) node {\(P(x,y)\)};
-\draw (30:1.25) node {\(T(y,x)\)};
-\draw[gray,dashed] (225:1.25) -- (45:1.25);\end{tikzpicture}
-</latex-image>
+        \begin{tikzpicture}[scale=5]
+        \draw[&lt;->] (-1.1,0)--(1.1,0) node[below]{\(x\)};
+        \draw[&lt;->] (0,-1.1)--(0,1.1) node[above]{\(y\)};
+        \draw (0,0) circle (1);
+        \filldraw[black] (60:1) circle(1pt);
+        \filldraw[black] (30:1) circle(1pt);
+        \draw (60:1.25) node {\(P(x,y)\)};
+        \draw (30:1.25) node {\(T(y,x)\)};
+        \draw[gray,dashed] (225:1.25) -- (45:1.25);\end{tikzpicture}
+      </latex-image>
     </image>
-    <p>
-      \end{mybox}
-    </p>
     <p>
       On the Unit Circle,
       notice that the radius extending from the center at an angle of
-      <m>30^{\circ}</m>
-      to the point
+      <m>30^{\circ}</m> to the point
       <m>T(x,y)=\left(\frac{1}{2},\frac{\sqrt{3}}{2}\right)</m>
-      is symmetric about the line
-      <m>y=x</m>
+      is symmetric about the line <m>y=x</m>
       to the radius extending from the center at an angle of
-      <m>60^{\circ}</m>
-      to the point
-      <m>P(x,y)</m>
-      .
+      <m>60^{\circ}</m> to the point <m>P(x,y)</m>.
     </p>
-    <image>
+    <image xml:id="fig-unit-circle-symmetry-30-60">
       <latex-image>
-\begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-\draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
-\draw (0,0) circle (1cm);
-\filldraw[black] (60:1cm) circle(1pt);
-\filldraw[black] (30:1cm) circle(1pt);
-\draw (0,0) -- (60:1cm) node[right] {\(P(x,y)=\left(\frac{1}{2},\frac{\sqrt{3}}{2}\right)\)};
-\draw (0,0) -- (30:1cm) node[right] {\(T(x,y)=\left(\frac{\sqrt{3}}{2},\frac{1}{2}\right)\)};
-\draw[gray,dashed] (225:1cm) -- (45:1cm);
-\draw ([shift=(0:0.3cm)]0,0) arc (0:30:0.3cm) node[midway,right,xshift=0.04cm] {\(30^{\circ}\)};
-\draw ([shift=(0:0.2cm)]0,0) arc (0:60:0.2cm) node[midway,left,xshift=-0.12cm,yshift=0.1cm] {\(60^{\circ}\)};\end{tikzpicture}
-</latex-image>
+        \begin{tikzpicture}[scale=5]
+        \draw[&lt;->] (-1.1,0)--(1.1,0) node[right]{\(x\)};
+        \draw[&lt;->] (0,-1.1)--(0,1.1) node[above]{\(y\)};
+        \draw (0,0) circle (1);
+        \filldraw[black] (60:1) circle(1pt);
+        \filldraw[black] (30:1) circle(1pt);
+        \draw (0,0) -- (60:1) node[right,xshift=3] {\(P(x,y)=\left(\frac{1}{2},\frac{\sqrt{3}}{2}\right)\)};
+        \draw (0,0) -- (30:1) node[right,xshift=3] {\(T(x,y)=\left(\frac{\sqrt{3}}{2},\frac{1}{2}\right)\)};
+        \draw[gray,dashed] (225:1) -- (45:1);
+        \draw ([shift=(0:0.3)]0,0) arc (0:30:0.3) node[midway,right,xshift=0.04] {\(30^{\circ}\)};
+        \draw ([shift=(0:0.2)]0,0) arc (0:60:0.2) node[above,xshift=-3,yshift=3] {\(60^{\circ}\)};
+        \end{tikzpicture}
+      </latex-image>
     </image>
     <p>
-      Using symmetry about the
-      <m>x</m>
-      -axis,
-      symmetry about the
-      <m>y</m>
-      -axis,
-      and symmetry about the origin,
-      we can complete the unit circle,
+      Using symmetry about the <m>x</m>-axis, symmetry about the <m>y</m>-axis,
+      and symmetry about the origin, we can complete the unit circle,
       as long as we remember that the
-      <m>x</m>
-      -values in Quadrants II and III are negative while the
-      <m>y</m>
-      -values in Quadrants III and IV are negative.
+      <m>x</m>-values in Quadrants II and III are negative while the
+      <m>y</m>-values in Quadrants III and IV are negative.
     </p>
-    <image>
+    <image xml:id="unit-circle-45">
       <latex-image>
-\begin{tikzpicture}\draw[&lt;-] (-1.5,0) -- (-1,0);
-\draw[->] (1,0) -- (1.5,0) node[right] {\(x\)};
-\draw[&lt;-] (0,-1.5) -- (0,-1.35);
-\draw (0,-1.15) -- (0,-1);
-\draw[->] (0,1.35) -- (0,1.5) node[above] {\(y\)};
-\draw (0,1) -- (0,1.15);
-\draw[thick] (0cm,0cm) circle(1cm);
-\foreach \x in {0,45,...,360} {
-\draw[gray] (0cm,0cm) -- (\x:0.45cm);
-\draw[gray] (\x:0.75cm) -- (\x:1cm);
-\filldraw[black] (\x:1cm) circle(0.4pt);
-}
-\draw (0,0) -- (0:0.45cm);
-\draw (0:0.75cm) -- (0:1cm);
-\draw (0,0) -- (90:0.45cm);
-\draw (90:0.75cm) -- (90:1cm);
-\draw (0,0) -- (180:0.45cm);
-\draw (180:0.75cm) -- (180:1cm);
-\draw (0,0) -- (270:0.45cm);
-\draw (270:0.75cm) -- (270:1cm);
-\foreach \x/\xtext in {
-45/\frac{\pi}{4},
-90/\frac{\pi}{2},
-135/\frac{3\pi}{4},
-180/\pi,
-225/\frac{5\pi}{4},
-270/\frac{3\pi}{2},
-315/\frac{7\pi}{4},
-360/2\pi}
-\draw (\x:0.6cm) node {\(\xtext\)};
-\foreach \x/\xtext/\y in {
-45/\frac{\sqrt{2}}{2}/\frac{\sqrt{2}}{2},
-135/-\frac{\sqrt{2}}{2}/\frac{\sqrt{2}}{2},
-225/-\frac{\sqrt{2}}{2}/-\frac{\sqrt{2}}{2},
-315/\frac{\sqrt{2}}{2}/-\frac{\sqrt{2}}{2}}
-\draw (\x:1.35cm) node {\(\left(\xtext,\y\right)\)};
-\draw (-1.25cm,0cm) node[above=1pt] {\((-1,0)\)}
-(1.25cm,0cm)  node[above=1pt] {\((1,0)\)}
-(0cm,-1.25cm) node {\((0,-1)\)}
-(0cm,1.25cm)  node {\((0,1)\)};\end{tikzpicture}
-</latex-image>
+        \begin{tikzpicture}[scale=5]
+        \draw[&lt;-] (-1.15,0) -- (-0.7,0);
+        \draw[->] (0.7,0) -- (1.15,0) node[below] {\(x\)};
+        \draw[&lt;-] (0,-1.15) -- (0,-0.7);
+        \draw[->] (0,0.7) -- (0,1.15) node[left] {\(y\)};
+        \draw (0,-0.5) -- (0,0.5);
+        \draw (-0.5,0) -- (0.5,0);
+        \draw[thick] (0,0) circle(1);
+        \foreach \x in {0,45,...,360} {
+        \draw[gray] (0,0) -- (\x:0.5);
+        \draw[gray] (\x:0.7) -- (\x:1);
+        \filldraw[black] (\x:1) circle(0.4pt);
+        }
+        \draw (0,0) -- (0:0.45);
+        \draw (0:0.75) -- (0:1);
+        \draw (0,0) -- (90:0.45);
+        \draw (90:0.75) -- (90:1);
+        \draw (0,0) -- (180:0.45);
+        \draw (180:0.75) -- (180:1);
+        \draw (0,0) -- (270:0.45);
+        \draw (270:0.75) -- (270:1);
+        \foreach \x/\xtext in {
+        45/\frac{\pi}{4},
+        90/\frac{\pi}{2},
+        135/\frac{3\pi}{4},
+        180/\pi,
+        225/\frac{5\pi}{4},
+        270/\frac{3\pi}{2},
+        315/\frac{7\pi}{4},
+        360/2\pi}
+        \draw (\x:0.6) node {\(\xtext\)};
+        \foreach \x/\xtext/\y in {
+        45/\frac{\sqrt{2}}{2}/\frac{\sqrt{2}}{2},
+        135/-\frac{\sqrt{2}}{2}/\frac{\sqrt{2}}{2},
+        225/-\frac{\sqrt{2}}{2}/-\frac{\sqrt{2}}{2},
+        315/\frac{\sqrt{2}}{2}/-\frac{\sqrt{2}}{2}}
+        \draw (\x:1.35) node {\(\left(\xtext,\y\right)\)};
+        \draw (-1.25,0) node[above=1pt] {\((-1,0)\)}
+        (1.25,0)  node[above=1pt] {\((1,0)\)}
+        (0,-1.25) node {\((0,-1)\)}
+        (0,1.25)  node {\((0,1)\)};
+        \end{tikzpicture}
+      </latex-image>
     </image>
-    <image>
+        \draw[thick] (0,0) circle(1);
+    <image xml:id="unit-circle-30-60">
       <latex-image>
-\begin{tikzpicture}\draw[&lt;-] (-1.5,0) -- (-1,0);
-\draw[->] (1,0) -- (1.5,0) node[right] {\(x\)};
-\draw[&lt;-] (0,-1.5) -- (0,-1.35);
-\draw (0,-1.15) -- (0,-1);
-\draw[->] (0,1.35) -- (0,1.5) node[above] {\(y\)};
-\draw (0,1) -- (0,1.15);
-\draw[thick] (0cm,0cm) circle(1cm);
-\foreach \x in {0,30,...,360} {
-\draw[gray] (0cm,0cm) -- (\x:0.45cm);
-\draw[gray] (\x:0.75cm) -- (\x:1cm);
-\filldraw[black] (\x:1cm) circle(0.4pt);
-}
-\draw (0,0) -- (0:0.45cm);
-\draw (0:0.75cm) -- (0:1cm);
-\draw (0,0) -- (90:0.45cm);
-\draw (90:0.75cm) -- (90:1cm);
-\draw (0,0) -- (180:0.45cm);
-\draw (180:0.75cm) -- (180:1cm);
-\draw (0,0) -- (270:0.45cm);
-\draw (270:0.75cm) -- (270:1cm);
-\foreach \x/\xtext in {
-30/\frac{\pi}{6},
-60/\frac{\pi}{3},
-90/\frac{\pi}{2},
-120/\frac{2\pi}{3},
-150/\frac{5\pi}{6},
-180/\pi,
-210/\frac{7\pi}{6},
-240/\frac{4\pi}{3},
-270/\frac{3\pi}{2},
-300/\frac{5\pi}{3},
-330/\frac{11\pi}{6},
-360/2\pi}
-\draw (\x:0.6cm) node {\(\xtext\)};
-\foreach \x/\xtext/\y in {
-30/\frac{\sqrt{3}}{2}/\frac{1}{2},
-60/\frac{1}{2}/\frac{\sqrt{3}}{2},
-150/-\frac{\sqrt{3}}{2}/\frac{1}{2},
-120/-\frac{1}{2}/\frac{\sqrt{3}}{2},
-210/-\frac{\sqrt{3}}{2}/-\frac{1}{2},
-240/-\frac{1}{2}/-\frac{\sqrt{3}}{2},
-330/\frac{\sqrt{3}}{2}/-\frac{1}{2},
-300/\frac{1}{2}/-\frac{\sqrt{3}}{2}}
-\draw (\x:1.35cm) node {\(\left(\xtext,\y\right)\)};
-\draw (-1.25cm,0cm) node[above=1pt] {\((-1,0)\)}
-(1.25cm,0cm)  node[above=1pt] {\((1,0)\)}
-(0cm,-1.25cm) node {\((0,-1)\)}
-(0cm,1.25cm)  node {\((0,1)\)};\end{tikzpicture}
-</latex-image>
+        \begin{tikzpicture}[scale=5]
+        \draw[&lt;-] (-1.15,0) -- (-0.7,0);
+        \draw[->] (0.7,0) -- (1.15,0) node[below] {\(x\)};
+        \draw[&lt;-] (0,-1.15) -- (0,-0.7);
+        \draw[->] (0,0.7) -- (0,1.15) node[left] {\(y\)};
+        \draw (0,-0.5) -- (0,0.5);
+        \draw (-0.5,0) -- (0.5,0);
+        \draw[thick] (0,0) circle(1);
+        \foreach \x in {0,30,...,360} {
+        \draw[gray] (0,0) -- (\x:0.5);
+        \draw[gray] (\x:0.7) -- (\x:1);
+        \filldraw[black] (\x:1) circle(0.4pt);
+        }
+        \foreach \x/\xtext in {
+        30/\frac{\pi}{6},
+        60/\frac{\pi}{3},
+        90/\frac{\pi}{2},
+        120/\frac{2\pi}{3},
+        150/\frac{5\pi}{6},
+        180/\pi,
+        210/\frac{7\pi}{6},
+        240/\frac{4\pi}{3},
+        270/\frac{3\pi}{2},
+        300/\frac{5\pi}{3},
+        330/\frac{11\pi}{6},
+        360/2\pi}
+        \draw (\x:0.6) node {\(\xtext\)};
+        \foreach \x/\xtext/\y in {
+        30/\frac{\sqrt{3}}{2}/\frac{1}{2},
+        60/\frac{1}{2}/\frac{\sqrt{3}}{2},
+        150/-\frac{\sqrt{3}}{2}/\frac{1}{2},
+        120/-\frac{1}{2}/\frac{\sqrt{3}}{2},
+        210/-\frac{\sqrt{3}}{2}/-\frac{1}{2},
+        240/-\frac{1}{2}/-\frac{\sqrt{3}}{2},
+        330/\frac{\sqrt{3}}{2}/-\frac{1}{2},
+        300/\frac{1}{2}/-\frac{\sqrt{3}}{2}}
+        \draw (\x:1.25) node {\(\left(\xtext,\y\right)\)};
+        \draw (-1.25,0) node[above=1pt] {\((-1,0)\)}
+        (1.25,0)  node[above=1pt] {\((1,0)\)}
+        (0,-1.25) node {\((0,-1)\)}
+        (0,1.25)  node {\((0,1)\)};
+        \end{tikzpicture}
+      </latex-image>
     </image>
     <p>
       Finally, we tie everything together and look at the entire Unit Circle.
       At first glance it may seem intimidating,
       however, similar to the Star Compass,
-      there is a lot of symmetry (
-      <m>x</m>
-      -axis,
-      <m>y</m>
-      -axis, origin,
-      about the line
-      <m>y=x</m>
-      ) and it can help by focusing on one quadrant,
+      there is a lot of symmetry (<m>x</m>-axis, <m>y</m>-axis, origin,
+      about the line <m>y=x</m>) and it can help by focusing on one quadrant,
       and use symmetry to fill out the rest of the circle.
     </p>
-    <image>
-      <latex-image>
-\begin{tikzpicture}\draw[->] (0.92cm,0cm) -- (1.5cm,0cm) node[right] {\(x\)};
-\draw (0cm,0.92cm) -- (0cm,1.2cm);
-\draw[->] (0,1.30cm) -- (0,1.5cm) node[above] {\(y\)};
-\draw (0,0) -- (0.42cm,0);
-\draw (0.68cm,0) -- (0.8cm,0);
-\draw[&lt;-] (-1.5cm,0) -- (-1cm,0);
-\draw (0,-0.92cm) -- (0,-1.2cm);
-\draw[&lt;-] (0,-1.5cm) -- (0,-1.32cm);
-\draw[thick] (0cm,0cm) circle(1cm);
-\foreach \x in {30,60,...,330} {
-\draw[gray] (0cm,0cm) -- (\x:0.52cm);
-\draw[gray] (\x:0.68cm) -- (\x:0.8cm);
-\draw[gray] (\x:0.92) -- (\x:1cm);
-\filldraw[black] (\x:1cm) circle(0.4pt);
-\draw (\x:0.6cm) node {\(\x^\circ\)};
-}
-\draw (0:0.55cm) node {\(0^{\circ},360^{\circ}\)};
-\draw[gray] (0cm,0cm) -- (45:0.52cm);
-\draw[gray] (45:0.68cm) -- (45:0.8cm);
-\draw[gray] (45:0.92cm) -- (45:1cm);
-\filldraw[black] (45:1cm) circle(0.4pt);
-\draw (45:0.6cm) node {\(45^\circ\)};
-\draw[gray] (0cm,0cm) -- (135:0.52cm);
-\draw[gray] (135:0.68cm) -- (135:0.8cm);
-\draw[gray] (135:0.92cm) -- (135:1cm);
-\filldraw[black] (135:1cm) circle(0.4pt);
-\draw (135:0.6cm) node {\(135^\circ\)};
-\draw[gray] (0cm,0cm) -- (225:0.52cm);
-\draw[gray] (225:0.68cm) -- (225:0.8cm);
-\draw[gray] (225:0.92cm) -- (225:1cm);
-\filldraw[black] (225:1cm) circle(0.4pt);
-\draw (225:0.6cm) node {\(225^\circ\)};
-\draw[gray] (0cm,0cm) -- (315:0.52cm);
-\draw[gray] (315:0.68cm) -- (315:0.8cm);
-\draw[gray] (315:0.92cm) -- (315:1cm);
-\filldraw[black] (315:1cm) circle(0.4pt);
-\draw (315:0.6cm) node {\(315^\circ\)};
-\draw (0,0) -- (90:0.52cm);
-\draw (90:0.68cm) -- (90:0.8cm);
-\draw (90:0.92cm) -- (90:1cm);
-\draw (0,0) -- (180:0.52cm);
-\draw (180:0.68cm) -- (180:0.8cm);
-\draw (180:0.92cm) -- (180:1cm);
-\draw (0,0) -- (270:0.52cm);
-\draw (270:0.68cm) -- (270:0.8cm);
-\draw (270:0.92cm) -- (270:1cm);
-\foreach \x/\xtext in {
-30/\frac{\pi}{6},
-45/\frac{\pi}{4},
-60/\frac{\pi}{3},
-90/\frac{\pi}{2},
-120/\frac{2\pi}{3},
-135/\frac{3\pi}{4},
-150/\frac{5\pi}{6},
-180/\pi,
-210/\frac{7\pi}{6},
-225/\frac{5\pi}{4},
-240/\frac{4\pi}{3},
-270/\frac{3\pi}{2},
-300/\frac{5\pi}{3},
-315/\frac{7\pi}{4},
-330/\frac{11\pi}{6},
-360/2\pi}
-\draw (\x:0.85cm) node {\(\xtext\)};
-\foreach \x/\xtext/\y in {
-30/\frac{\sqrt{3}}{2}/\frac{1}{2},
-45/\frac{\sqrt{2}}{2}/\frac{\sqrt{2}}{2},
-60/\frac{1}{2}/\frac{\sqrt{3}}{2},
-150/-\frac{\sqrt{3}}{2}/\frac{1}{2},
-135/-\frac{\sqrt{2}}{2}/\frac{\sqrt{2}}{2},
-120/-\frac{1}{2}/\frac{\sqrt{3}}{2},
-210/-\frac{\sqrt{3}}{2}/-\frac{1}{2},
-225/-\frac{\sqrt{2}}{2}/-\frac{\sqrt{2}}{2},
-240/-\frac{1}{2}/-\frac{\sqrt{3}}{2},
-330/\frac{\sqrt{3}}{2}/-\frac{1}{2},
-315/\frac{\sqrt{2}}{2}/-\frac{\sqrt{2}}{2},
-300/\frac{1}{2}/-\frac{\sqrt{3}}{2}}
-\draw (\x:1.25cm) node {\(\left(\xtext,\y\right)\)};
-\draw (-1.25cm,0cm) node[above=1pt] {\((-1,0)\)}
-(1.25cm,0cm)  node[above=1pt] {\((1,0)\)}
-(0cm,-1.25cm) node {\((0,-1)\)}
-(0cm,1.25cm)  node {\((0,1)\)};\end{tikzpicture}
-</latex-image>
-    </image>
+    <figure xml:id="trig-unit-circle-deg-rad">
+      <caption>
+        The Unit Circle for common angles in radians and degrees.
+      </caption>
+      <image>
+        <latex-image>
+          \begin{tikzpicture}[scale=5]
+          \draw[&lt;-] (-1.15,0) -- (-0.92,0);
+          \draw[->] (0.92,0) -- (1.15,0) node[below] {\(x\)};
+          \draw[&lt;-] (0,-1.15) -- (0,-0.92);
+          \draw[->] (0,0.92) -- (0,1.15) node[left] {\(y\)};
+          \draw (0,0) -- (0.4,0);
+          \draw (0.7,0) -- (0.8,0);
+          \draw[thick] (0,0) circle(1);
+          \foreach \x in {30,60,...,330} {
+          \draw[gray] (0,0) -- (\x:0.52);
+          \draw[gray] (\x:0.68) -- (\x:0.8);
+          \draw[gray] (\x:0.92) -- (\x:1);
+          \filldraw[black] (\x:1) circle(0.4pt);
+          \draw (\x:0.6) node {\(\x^\circ\)};
+          }
+          \draw (0:0.55) node {\(0^{\circ},360^{\circ}\)};
+          \draw[gray] (0,0) -- (45:0.52);
+          \draw[gray] (45:0.68) -- (45:0.8);
+          \draw[gray] (45:0.92) -- (45:1);
+          \filldraw[black] (45:1) circle(0.4pt);
+          \draw (45:0.6) node {\(45^\circ\)};
+          \draw[gray] (0,0) -- (135:0.52);
+          \draw[gray] (135:0.68) -- (135:0.8);
+          \draw[gray] (135:0.92) -- (135:1);
+          \filldraw[black] (135:1) circle(0.4pt);
+          \draw (135:0.6) node {\(135^\circ\)};
+          \draw[gray] (0,0) -- (225:0.52);
+          \draw[gray] (225:0.68) -- (225:0.8);
+          \draw[gray] (225:0.92) -- (225:1);
+          \filldraw[black] (225:1) circle(0.4pt);
+          \draw (225:0.6) node {\(225^\circ\)};
+          \draw[gray] (0,0) -- (315:0.52);
+          \draw[gray] (315:0.68) -- (315:0.8);
+          \draw[gray] (315:0.92) -- (315:1);
+          \filldraw[black] (315:1) circle(0.4pt);
+          \draw (315:0.6) node {\(315^\circ\)};
+          \draw (0,0) -- (90:0.52);
+          \draw (90:0.68) -- (90:0.8);
+          \draw (90:0.92) -- (90:1);
+          \draw (0,0) -- (180:0.52);
+          \draw (180:0.68) -- (180:0.8);
+          \draw (180:0.92) -- (180:1);
+          \draw (0,0) -- (270:0.52);
+          \draw (270:0.68) -- (270:0.8);
+          \draw (270:0.92) -- (270:1);
+          \foreach \x/\xtext in {
+          30/\frac{\pi}{6},
+          45/\frac{\pi}{4},
+          60/\frac{\pi}{3},
+          90/\frac{\pi}{2},
+          120/\frac{2\pi}{3},
+          135/\frac{3\pi}{4},
+          150/\frac{5\pi}{6},
+          180/\pi,
+          210/\frac{7\pi}{6},
+          225/\frac{5\pi}{4},
+          240/\frac{4\pi}{3},
+          270/\frac{3\pi}{2},
+          300/\frac{5\pi}{3},
+          315/\frac{7\pi}{4},
+          330/\frac{11\pi}{6},
+          360/2\pi}
+          \draw (\x:0.85) node {\(\xtext\)};
+          \foreach \x/\xtext/\y in {
+          30/\frac{\sqrt{3}}{2}/\frac{1}{2},
+          45/\frac{\sqrt{2}}{2}/\frac{\sqrt{2}}{2},
+          60/\frac{1}{2}/\frac{\sqrt{3}}{2},
+          150/-\frac{\sqrt{3}}{2}/\frac{1}{2},
+          135/-\frac{\sqrt{2}}{2}/\frac{\sqrt{2}}{2},
+          120/-\frac{1}{2}/\frac{\sqrt{3}}{2},
+          210/-\frac{\sqrt{3}}{2}/-\frac{1}{2},
+          225/-\frac{\sqrt{2}}{2}/-\frac{\sqrt{2}}{2},
+          240/-\frac{1}{2}/-\frac{\sqrt{3}}{2},
+          330/\frac{\sqrt{3}}{2}/-\frac{1}{2},
+          315/\frac{\sqrt{2}}{2}/-\frac{\sqrt{2}}{2},
+          300/\frac{1}{2}/-\frac{\sqrt{3}}{2}}
+          \draw (\x:1.25) node {\(\left(\xtext,\y\right)\)};
+          \draw (-1.25,0) node[above=1pt] {\((-1,0)\)}
+          (1.25,0)  node[above=1pt] {\((1,0)\)}
+          (0,-1.25) node {\((0,-1)\)}
+          (0,1.25)  node {\((0,1)\)};
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </figure>
   </subsection>
   <subsection>
     <title>
@@ -1226,20 +1135,12 @@
     </title>
     <p>
       Until now, computing the exact values of trigonometric functions of an angle
-      <m>\theta</m>
-      required us to locate the corresponding point
-      <m>P(x,y)</m>
-      on the unit circle.
+      <m>\theta</m> required us to locate the corresponding point
+      <m>P(x,y)</m> on the unit circle.
       However, we can use any circle with center at the origin, that is,
-      any circle of the form
-      <m>x^2+y^2=r^2</m>
-      ,
-      where
-      <m>r>0</m>
-      is the radius.
-      Note that if
-      <m>r=1</m>
-      , then it is the unit circle.
+      any circle of the form <m>x^2+y^2=r^2</m>,
+      where <m>r>0</m> is the radius.
+      Note that if <m>r=1</m>, then it is the unit circle.
     </p>
     <theorem>
       <statement>
@@ -1253,14 +1154,10 @@
           </idx>
           For an angle
           <m>\theta</m>
-          in standard position, let
-          <m>P(x,y)</m>
-          be the point on the terminal side of
-          <m>\theta</m>
-          that is also on the circle
-          <m>x^2+y^2=r^2</m>
-          .
-          Then
+          in standard position, let <m>P(x,y)</m>
+          be the point on the terminal side of 
+          <m>\theta</m> that is also on the circle
+          <m>x^2+y^2=r^2</m>. Then
           <md>
             <mrow>\sin \theta\amp =\frac{y}{r} \amp  \cos \theta\amp =\frac{x}{r} \amp  \tan \theta\amp =\frac{y}{x}  (x\neq0)</mrow>
             <mrow>\csc \theta\amp =\frac{r}{y}  (y\neq0) \amp  \sec \theta\amp =\frac{r}{x}  (x\neq0) \amp  \cot \theta\amp =\frac{x}{y}  (y\neq0)</mrow>
@@ -1268,415 +1165,116 @@
         </p>
       </statement>
     </theorem>
-    <exercise xml:id="ex-1_3">
-      <statement>
-        <p>
-          \begin{tasks} \task
-          <m>\theta=\frac{\pi}{2}</m>
-          \task
-          <m>\theta=\frac{\pi}{3}</m>
-          \end{tasks}
-        </p>
-
+  </subsection>
+    <exercises xml:id="unit-circle-exercises">
+      <exercisegroup>
         <introduction>
           <p>
             Find the exact values of the six trigonometric functions given
-            <m>\theta</m>
-            .
-          If any are not defined, say
+            <m>\theta</m>. If any are not defined, say
             <q>
-              <em>undefined</em>
-              .
+              <em>undefined</em>.
             </q>
-
           </p>
         </introduction>
-        <statement>
-          <p>
+        <exercise>
+          <statement>
             <m>\theta=\frac{\pi}{2}</m>
-          </p>
-        </statement>
-        <answer>
-          <p>
-      MYANSWER
-    </p>
-        </answer>
-        <statement>
-          <p>
+          </statement>
+          <answer>
+            <ol>
+              <li><p><m>\sin\frac{\pi}{2}=1</m></p></li>
+              <li><p><m>\cos\frac{\pi}{2}=0</m></p></li>
+              <li><p><m>\tan\frac{\pi}{2}</m> is undefined</p></li>
+              <li><p><m>\csc\frac{\pi}{2}=1</m></p></li>
+              <li><p><m>\sec\frac{\pi}{2}</m> is undefined</p></li>
+              <li><p><m>\cot\frac{\pi}{2}=0</m></p></li>
+            </ol>
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
             <m>\theta=\pi</m>
-          </p>
-        </statement>
-        <answer>
-          <p>
-        MYANSWER
-      </p>
-        </answer>
-
+          </statement>
+          <answer>
+            <ol>
+              <li><p><m>\sin\pi=0</m></p></li>
+              <li><p><m>\cos\pi=-1</m></p></li>
+              <li><p><m>\tan\pi=0</m></p></li>
+              <li><p><m>\csc\pi</m> is undefined</p></li>
+              <li><p><m>\sec\pi=-1</m></p></li>
+              <li><p><m>\cot\pi</m> is undefined</p></li>
+            </ol>
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <m>\theta=\frac{\pi}{3}</m>
+          </statement>
+          <answer>
+            <ol>
+              <li><p><m>\sin\pi=</m></p></li>
+              <li><p><m>\cos\pi=</m></p></li>
+              <li><p><m>\tan\pi=</m></p></li>
+              <li><p><m>\csc\pi=</m></p></li>
+              <li><p><m>\sec\pi=</m></p></li>
+              <li><p><m>\cot\pi=</m></p></li>
+            </ol>
+          </answer>
+        </exercise>
+      </exercisegroup>
+      <exercisegroup>
         <introduction>
           <p>
-            The the exact values of the six trigonometric functions for the angle
-            <m>\theta</m>
-            which has a terminal point on the unit circle at
-            <m>\left(\frac{3}{5},-\frac{4}{5}\right)</m>
+            Calculate the exact values of the six trigonometric functions for the angle
+            <m>\theta</m> which has a terminal point on the unit circle at
           </p>
         </introduction>
-        The the exact values of the six trigonometric functions for the angle
-        <m>\theta</m>
-        which has a terminal point on the unit circle at
-        <p>
-          <m>\left(\frac{3}{5},-\frac{4}{5}\right)</m>
-        </p>
-      </statement>
-      <answer>
-        <p>
-        MYANSWER
-      </p>
-      </answer>
-      <statement>
-        <p>
-          <ol>
-            <li>
-              <p>
-                <m>\left(\frac{}{},\frac{}{}\right)</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>\left(\frac{}{},\frac{}{}\right)</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>\left(\frac{}{},\frac{}{}\right)</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>\left(\frac{}{},\frac{}{}\right)</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>\left(\frac{}{},\frac{}{}\right)</m>
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <p>
-      \begin{Answer}[ref={ex-1.3}] \Question
-    </p>
-    <statement>
-      <p>
-        i)
-        <m>t=\frac{3\pi}{4}</m>
-        ;
-      ii)
-        <m>t=\frac{5\pi}{4}</m>
-        ;
-      iii)
-        <m>t=\frac{7\pi}{4}</m>
-      </p>
-    </statement>
-    <answer>
-      <p>
-      MYANSWER
-    </p>
-    </answer>
-    <statement>
-      <p>
-        i)
-        <m>t=\frac{2\pi}{3}</m>
-        ;
-      ii)
-        <m>t=\frac{4\pi}{3}</m>
-        ;
-      iii)
-        <m>t=\frac{5\pi}{3}</m>
-      </p>
-    </statement>
-    <answer>
-      <p>
-      MYANSWER
-    </p>
-    </answer>
-    <statement>
-      <p>
-        i)
-        <m>t=150^{\circ}</m>
-        ; ii)
-        <m>t=210^{\circ}</m>
-        ;
-      iii)
-        <m>t=330^{\circ}</m>
-      </p>
-    </statement>
-    <answer>
-      <p>
-      MYANSWER
-    </p>
-    </answer>
-    <statement>
-      <p>
-        i)
-        <m>t=120^{\circ}</m>
-        ;
-      ii)
-        <m>t=240^{\circ}</m>
-        ;
-      iii)
-        <m>t=300^{\circ}</m>
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-    <statement>
-      <p>
-        <m>\sin\frac{\pi}{2}=1</m>
-        ;
-        <m>\cos\frac{\pi}{2}=0</m>
-        ;
-        <m>\tan\frac{\pi}{2}</m>
-        is undefined;
-        <m>\csc\frac{\pi}{2}=1</m>
-        ;
-        <m>\sec\frac{\pi}{2}</m>
-        is undefined;
-        <m>\cot\frac{\pi}{2}=0</m>
-      </p>
-    </statement>
-    <answer>
-      <p>
-      MYANSWER
-    </p>
-    </answer>
-    <statement>
-      <p>
-        <m>\sin\pi=0</m>
-        ;
-        <m>\cos\pi=-1</m>
-        ;
-        <m>\tan\pi=0</m>
-        ;
-        <m>\csc\pi</m>
-        is undefined;
-        <m>\sec\pi=-1</m>
-        ;
-        <m>\cot\pi</m>
-        is undefined
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-    <statement>
-      <p>
-        <m>\sin\frac{\pi}{4}=\frac{\sqrt{2}}{2}</m>
-        ;
-        <m>\cos\frac{\pi}{4}</m>
-        ;
-        <m>\frac{\sqrt{2}}{2}</m>
-        ;
-        <m>\tan\frac{\pi}{4}=1</m>
-        ;
-        <m>\csc\frac{\pi}{4}=\sqrt{2}</m>
-        ;
-        <m>\sec\frac{\pi}{4}=\sqrt{2}</m>
-        ;
-        <m>\cot\frac{\pi}{4}=1</m>
-      </p>
-    </statement>
-    <answer>
-      <p>
-      MYANSWER
-    </p>
-    </answer>
-    <statement>
-      <p>
-        <m>\sin-\frac{3\pi}{4}=-\frac{\sqrt{2}}{2}</m>
-        ;
-        <m>\cos-\frac{3\pi}{4}=-\frac{\sqrt{2}}{2}</m>
-        ;
-        <m>\tan-\frac{3\pi}{4}=1</m>
-        ;
-        <m>\csc-\frac{3\pi}{4}=-\sqrt{2}</m>
-        ;
-        <m>\sec-\frac{3\pi}{4}=-\sqrt{2}</m>
-        ;
-        <m>\cot-\frac{3\pi}{4}=1</m>
-      </p>
-    </statement>
-    <answer>
-      <p>
-      MYANSWER
-    </p>
-    </answer>
-    <statement>
-      <p>
-        <m>\sin\frac{\pi}{3}=\frac{\sqrt{3}}{2}</m>
-        ;
-        <m>\cos\frac{\pi}{3}=\frac{1}{2}</m>
-        ;
-        <m>\tan\frac{\pi}{3}=\sqrt{3}</m>
-        ;
-        <m>\csc\frac{\pi}{3}=\frac{2\sqrt{3}}{3}</m>
-        ;
-        <m>\sec\frac{\pi}{3}=2</m>
-        ;
-        <m>\cot\frac{\pi}{3}=\frac{\sqrt{3}}{3}</m>
-      </p>
-    </statement>
-    <answer>
-      <p>
-      MYANSWER
-    </p>
-    </answer>
-    <statement>
-      <p>
-        <m>\sin\frac{4\pi}{3}=-\frac{\sqrt{3}}{2}</m>
-        ;
-        <m>\cos\frac{4\pi}{3}=-\frac{1}{2}</m>
-        ;
-        <m>\tan\frac{4\pi}{3}=\sqrt{3}</m>
-        ;
-        <m>\csc\frac{4\pi}{3}=-\frac{2\sqrt{3}}{3}</m>
-        ;
-        <m>\sec\frac{4\pi}{3}=-2</m>
-        ;
-        <m>\cot\frac{4\pi}{3}=\frac{\sqrt{3}}{3}</m>
-      </p>
-    </statement>
-    <answer>
-      <p>
-      MYANSWER
-    </p>
-    </answer>
-    <statement>
-      <p>
-        <m>\sin\frac{\pi}{6}=\frac{1}{2}</m>
-        ;
-        <m>\cos\frac{\pi}{6}=\frac{\sqrt{3}}{2}</m>
-        ;
-        <m>\tan\frac{\pi}{6}=\frac{\sqrt{3}}{3}</m>
-        ;
-        <m>\csc\frac{\pi}{6}=2</m>
-        ;
-        <m>\sec\frac{\pi}{6}=\frac{2\sqrt{3}}{3}</m>
-        ;
-        <m>\cot\frac{\pi}{6}=\sqrt{3}</m>
-      </p>
-    </statement>
-    <answer>
-      <p>
-      MYANSWER
-    </p>
-    </answer>
-    <statement>
-      <p>
-        <m>\sin\frac{11\pi}{6}=-\frac{1}{2}</m>
-        ;
-        <m>\cos\frac{11\pi}{6}=\frac{\sqrt{3}}{2}</m>
-        ;
-        <m>\tan\frac{11\pi}{6}=-\frac{\sqrt{3}}{3}</m>
-        ;
-        <m>\csc\frac{11\pi}{6}=-2</m>
-        ;
-        <m>\sec\frac{11\pi}{6}=\frac{2\sqrt{3}}{3}</m>
-        ;
-        <m>\cot\frac{11\pi}{6}=-\sqrt{3}</m>
-      </p>
-    </statement>
-    <answer>
-      <p>
-      MYANSWER
-    </p>
-    </answer>
-    <statement>
-      <p>
-        <m>\sin60^{\circ}=\frac{\sqrt{3}}{2}</m>
-        ;
-        <m>\cos60^{\circ}=\frac{1}{2}</m>
-        ;
-        <m>\tan60^{\circ}=\sqrt{3}</m>
-        ;
-        <m>\csc60^{\circ}=\frac{2\sqrt{3}}{3}</m>
-        ;
-        <m>\sec60^{\circ}=2</m>
-        ;
-        <m>\cot60^{\circ}=\frac{\sqrt{3}}{3}</m>
-      </p>
-    </statement>
-    <answer>
-      <p>
-      MYANSWER
-    </p>
-    </answer>
-    <statement>
-      <p>
-        <m>\sin120^{\circ}=\frac{\sqrt{3}}{2}</m>
-        ;
-        <m>\cos120^{\circ}=-\frac{1}{2}</m>
-        ;
-        <m>\tan120^{\circ}=-\sqrt{3}</m>
-        ;
-        <m>\csc120^{\circ}=\frac{2\sqrt{3}}{3}</m>
-        ;
-        <m>\sec120^{\circ}=-2</m>
-        ;
-        <m>\cot120^{\circ}=-\frac{\sqrt{3}}{3}</m>
-      </p>
-    </statement>
-    <answer>
-      <p>
-      MYANSWER
-    </p>
-    </answer>
-    <statement>
-      <p>
-        <m>\sin\frac{7\pi}{3}=\frac{\sqrt{3}}{2}</m>
-        ;
-        <m>\cos\frac{7\pi}{3}=\frac{1}{2}</m>
-        ;
-        <m>\tan\frac{7\pi}{3}=\sqrt{3}</m>
-        ;
-        <m>\csc\frac{7\pi}{3}=\frac{2\sqrt{3}}{3}</m>
-        ;
-        <m>\sec\frac{7\pi}{3}=2</m>
-        ;
-        <m>\cot\frac{7\pi}{3}=\frac{\sqrt{3}}{3}</m>
-      </p>
-    </statement>
-    <answer>
-      <p>
-      MYANSWER
-    </p>
-    </answer>
-    <statement>
-      <p>
-        <m>\sin480^{\circ}=\frac{\sqrt{3}}{2}</m>
-        ;
-        <m>\cos480^{\circ}=-\frac{1}{2}</m>
-        ;
-        <m>\tan480^{\circ}=-\sqrt{3}</m>
-        ;
-        <m>\csc480^{\circ}=\frac{2\sqrt{3}}{3}</m>
-        ;
-        <m>\sec480^{\circ}=-2</m>
-        ;
-        <m>\cot480^{\circ}=-\sqrt{3}{3}</m>
-        \end{Answer}
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </subsection>
+        <exercise>
+          <statement>
+            <m>\left(\frac{3}{5},-\frac{4}{5}\right)</m>
+          </statement>
+          <answer>
+            <ol>
+              <li><p><m>\sin\pi=</m></p></li>
+              <li><p><m>\cos\pi=</m></p></li>
+              <li><p><m>\tan\pi=</m></p></li>
+              <li><p><m>\csc\pi=</m></p></li>
+              <li><p><m>\sec\pi=</m></p></li>
+              <li><p><m>\cot\pi=</m></p></li>
+            </ol>
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <m>\left(\frac{}{},\frac{}{}\right)</m>
+          </statement>
+          <answer>
+            <ol>
+              <li><p><m>\sin\pi=</m></p></li>
+              <li><p><m>\cos\pi=</m></p></li>
+              <li><p><m>\tan\pi=</m></p></li>
+              <li><p><m>\csc\pi=</m></p></li>
+              <li><p><m>\sec\pi=</m></p></li>
+              <li><p><m>\cot\pi=</m></p></li>
+            </ol>
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <m>\left(\frac{}{},\frac{}{}\right)</m>
+          </statement>
+          <answer>
+            <ol>
+              <li><p><m>\sin\pi=</m></p></li>
+              <li><p><m>\cos\pi=</m></p></li>
+              <li><p><m>\tan\pi=</m></p></li>
+              <li><p><m>\csc\pi=</m></p></li>
+              <li><p><m>\sec\pi=</m></p></li>
+              <li><p><m>\cot\pi=</m></p></li>
+            </ol>
+          </answer>
+        </exercise>
+      </exercisegroup>
+  </exercises>
 </section>
