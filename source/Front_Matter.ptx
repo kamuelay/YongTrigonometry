@@ -60,7 +60,7 @@
 
   <acknowledgement>
     <p>
-      This project is partially supported by NSF grant #1853533 and the University of Hawai`i System. 
+      This project is partially supported by NSF grant #1853533 and the University of Hawaiʻi System. 
       Additionally, I would like to thank BarbaraJean Kahawaii and Dr. Walter Kahumoku, III for their patience, encouragement, and sharing their knowledge. 
       Leighton Manalo for his input and help writing this book. Bonnie Kahapea and the crew of Kānehūnāmoku Voyaging Academy. 
       The Friends of Hōkūeʻa and Hawaiʻiloa. 
@@ -88,9 +88,7 @@
           corestandards.org</url>
 
     </p>
-    <p>
-          Build out the core standards
-    </p>
+
     <p>
       High School: Functions: Trigonometric Functions
       <url
@@ -98,6 +96,107 @@
         visual="http://www.corestandards.org/Math/Content/HSF/TF/">
           corestandards.org</url>
     </p>
+    <p>
+      Extend the domain of trigonometric functions using the unit circle.
+    </p>
+    <ul>
+      <li>
+        <p>
+          <xref ref="core-standards-CCSS_MATH_CONTENT_HSF_TF_A_1">HSF.TF.A.1</xref>
+          Understand radian measure of an angle as the length of the arc on the unit circle 
+          subtended by the angle. (CCSS.MATH.CONTENT.HSF.TF.A.1)
+        </p>
+      </li>
+      <li>
+        <p>
+          <xref ref="core-standards-CCSS_MATH_CONTENT_HSF_TF_A_2">HSF.TF.A.2</xref>
+          Explain how the unit circle in the coordinate plane enables the extension of 
+          trigonometric functions to all real numbers, interpreted as radian measures of 
+          angles traversed counterclockwise around the unit circle (CCSS.MATH.CONTENT.HSF.TF.A.2)
+        </p>
+      </li>
+      <li>
+        <p>
+          <xref ref="core-standards-CCSS_MATH_CONTENT_HSF_TF_A_3">HSF.TF.A.3</xref> and 
+          <xref ref="core-standards-CCSS_MATH_CONTENT_HSF_TF_A_3-reference-angles">HSF.TF.A.3</xref>
+          Use special triangles to determine geometrically the values of sine, cosine, tangent for 
+          <m>\pi/3</m>, <m>\pi/4</m> and <m>\pi/6</m>, and use the unit circle to express the values 
+          of sine, cosine, and tangent for <m>x</m>, <m>\pi+x</m>, and <m>2\pi-x</m> in terms of their values for $x$, where $x$ is any real number. (CCSS.MATH.CONTENT.HSF.TF.A.3)
+        </p>
+      </li>
+      <li>
+        <p>
+          <xref ref="core-standards-CCSS_MATH_CONTENT_HSF_TF_A_4-a">HSF.TF.A.4</xref>
+          <xref ref="core-standards-CCSS_MATH_CONTENT_HSF_TF_A_4-b">HSF.TF.A.4</xref>
+          Use the unit circle to explain symmetry (odd and even) and periodicity of trigonometric functions.
+          Model periodic phenomena with trigonometric functions. (CCSS.MATH.CONTENT.HSF.TF.A.4)
+        </p>
+      </li>
+    </ul>
+    <h2>High School: Functions: Trigonometric Functions2</h2>
+    <ul>
+      <li>
+        <p>
+          B.1
+        </p>
+      </li>
+      <li>
+        <p>
+          B.2
+        </p>
+      </li>
+    </ul>
+
+
+
+
+    <!-- <subsection xml:id="core-standards-trigonometric-functions">
+      <title>High School: Functions: Trigonometric Functions</title>
+      <ul>
+        <li>
+          <p>
+            A.1
+          </p>
+        </li>
+        <li>
+          <p>
+            A.2
+          </p>
+        </li>
+      </ul>
+    </subsection>
+
+    <subsection xml:id="core-standards-trigonometric-functions2">
+      <title>High School: Functions: Trigonometric Functions</title>
+      <ul>
+        <li>
+          <p>
+            A.1
+          </p>
+        </li>
+        <li>
+          <p>
+            A.2
+          </p>
+        </li>
+      </ul>
+    </subsection>
+
+    <subsection xml:id="core-standards-trigonometric-functions3">
+      <title>High School: Functions: Trigonometric Functions3</title>
+      <ul>
+        <li>
+          <p>
+            A.1
+          </p>
+        </li>
+        <li>
+          <p>
+            A.2
+          </p>
+        </li>
+      </ul>
+    </subsection> -->
 
     <!-- <p>
       <xref ref="core-standards-CCSS_MATH_CONTENT_HSG_C_B_5-c">Theorem</xref>

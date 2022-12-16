@@ -35,7 +35,7 @@
   </p>
   <figure xml:id="star-compass-32-compass-rose">
     <caption>Hawaiian Star Compass</caption>
-    <image>
+    <image xml:id="fig-star-compass-32-compass-rose">
       <latex-image>
 \begin{tikzpicture}[x=5.3cm,y=5.3cm,cap=round,>=latex]
 \draw[&lt;-,dashed] (-1.2,0) -- (-0.96,0);

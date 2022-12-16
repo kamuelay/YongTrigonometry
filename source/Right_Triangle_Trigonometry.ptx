@@ -4,16 +4,16 @@
   <introduction>
     <image xml:id="deviation-introduction" width="100%">
       <latex-image>
-\begin{tikzpicture}[scale=5]
-\node[above,yshift=2] at (0,0) {start};
-\node[above right] at (11.25:1.2) {end};
-\draw[line width=2pt,-stealth] (0,0) -- (11.25:1.2) node[midway,sloped,above] {actual course};
-\draw[dashed] (0,0) -- (1.17694233648,0) node[midway,below,yshift=-0.1] {reference course};
-\draw[dashed] (1.17694233648,0) -- (1.17694233648,0.234108386419) node[midway,right,xshift=0.1] {deviation};
-\draw ([shift=(0:0.3)]0,0) arc (0:11.25:0.3) node[midway,right,xshift=12,yshift=2] {1 House};
-\draw ([shift=(11.25:-0.1)]0,0) pic {waa-top={waacolor}{-78.75}{0.1}};
-\draw (1.17694233648-0.06,0) -- (1.11694233648,0.06) -- (1.17694233648,0.06);\end{tikzpicture}
-</latex-image>
+        \begin{tikzpicture}[scale=7]
+        \node[above,yshift=2] at (0,0) {start};
+        \node[above right] at (11.25:1.2) {end};
+        \draw[line width=2pt,-stealth] (0,0) -- (11.25:1.2) node[midway,sloped,above] {actual course};
+        \draw[dashed] (0,0) -- (1.17694233648,0) node[midway,below,yshift=-0.1] {reference course};
+        \draw[dashed] (1.17694233648,0) -- (1.17694233648,0.234108386419) node[midway,right,xshift=0.1] {deviation};
+        \draw ([shift=(0:0.3)]0,0) arc (0:11.25:0.3) node[midway,right,xshift=12,yshift=2] {1 House};
+        \draw ([shift=(11.25:-0.1)]0,0) pic {waa-top={waacolor}{-78.75}{0.1}};
+        \draw (1.17694233648-0.06,0) -- (1.11694233648,0.06) -- (1.17694233648,0.06);\end{tikzpicture}
+      </latex-image>
     </image>
     <p>
       During a voyage, a navigator uses a
@@ -44,7 +44,7 @@
       s intended reference course.
     </p>
   </introduction>
-  <subsection xml:id="core-standars-CCSS_MATH_CONTENT_HSG_SRT_C_6">
+  <subsection xml:id="core-standards-CCSS_MATH_CONTENT_HSG_SRT_C_6">
     <title>Trigonometric Ratios</title>
     <p>
       \begin{mybox}[Trigonometric Ratios]
@@ -128,9 +128,9 @@
           <m>\theta</m>
           in the given triangle.
         </p>
-        <image>
+        <image xml:id="ex-trig-ratios1" width="60%">
           <latex-image>
-            \begin{tikzpicture}
+            \begin{tikzpicture}[scale=1.25]
             \draw (0,0) -- (4,0) node[midway, below] {4};
             \draw(0,0) -- (4,3) node[midway,above left] {5};
             \draw(4,0) -- (4,3) node[midway, right] {3};
@@ -157,13 +157,15 @@
           <m>\theta</m>
           in the given triangle.
         </p>
-        <image>
+        <image xml:id="ex-trig-ratios2" width="60%">
           <latex-image>
-            \begin{tikzpicture}\draw (0,0) -- (5,0) node[midway, below] {5};
-\draw(0,0) -- (5,2);
-\draw(5,0) -- (5,2) node[midway, right] {2};
-\draw ([shift=(201.801409486:0.5cm)]5,2) arc (201.801409486:270:0.5cm) node[midway,left,yshift=-0.1cm] {\(\theta\)};
-\draw (4.6,0) -- (4.6,0.4) -- (5,0.4);\end{tikzpicture}
+            \begin{tikzpicture}[scale=1.25]
+            \draw (0,0) -- (5,0) node[midway, below] {5};
+            \draw(0,0) -- (5,2);
+            \draw(5,0) -- (5,2) node[midway, right] {2};
+            \draw ([shift=(201.801409486:0.5cm)]5,2) arc (201.801409486:270:0.5cm) node[midway,left,yshift=-0.1cm] {\(\theta\)};
+            \draw (4.6,0) -- (4.6,0.4) -- (5,0.4);
+            \end{tikzpicture}
           </latex-image>
         </image>
       </statement>
@@ -205,9 +207,9 @@
       give special values for trigonometric functions.
       The following figures are used to calculate trigonometric values.
     </p>
-    <image xml:id="fig-45degree-triangle" width="60%">
+    <image xml:id="fig-special-triangles" width="100%">
       <latex-image>
-        \begin{tikzpicture}[scale=4]
+        \begin{tikzpicture}[scale=5]
         \draw[red,line width=2pt] (0,0) -- (1,0) node[midway,below,black] {1};
         \draw[red,line width=2pt] (1,0) -- (1,1) node[midway,right,black] {1};
         \draw[blue] (1,1) -- (0,1);
@@ -220,15 +222,13 @@
         \draw (0.9,0) -- (0.9,0.1) -- (1,0.1);
         \end{tikzpicture}
       </latex-image>
-    </image>
-    <image xml:id="fig-30-60degree-triangle" width="60%">
       <latex-image>
-        \begin{tikzpicture}[scale=4]
+        \begin{tikzpicture}[scale=5]
         \draw[red,line width=2pt] (0,0) -- (60:1) node[midway,above,yshift=0.2,black] {1};
         \draw[red,line width=2pt] (0,0) -- (0.5,0) node[midway, below,black] {\(\frac{1}{2}\)};
         \draw[blue] (0.5,0) -- (1,0) node[midway, below,black] {\(\frac{1}{2}\)};
         \draw[blue] (1,0) -- (0.5,0.866025403784) node[midway,right,yshift=0.2,black] {\(1\)};
-        \draw[red,line width=2pt] (0.5,0) -- (0.5,0.866025403784) node[midway,right,xshift=-1.5,yshift=-3] {\(\frac{\sqrt{3}}{2}\)};
+        \draw[red,line width=2pt] (0.5,0) -- (0.5,0.866025403784) node[midway,right,xshift=-1.5,yshift=-3,black] {\(\frac{\sqrt{3}}{2}\)};
         \draw ([shift=(0:0.2)]0,0) arc (0:60:0.2) node[midway,right,xshift=0.04] {\(60^{\circ}\)};
         \draw ([shift=(120:0.2)]1,0) arc (120:180:0.2) node[midway,left,xshift=-0.04] {\(60^{\circ}\)};
         \draw ([shift=(240:0.2)]60:1) arc (240:270:0.2) node[midway,below,xshift=-1.5,yshift=-0.5] {\(30^{\circ}\)};
@@ -434,7 +434,7 @@
       </idx>
     </p>
     <figure xml:id="fig-cofunction">
-      <image width="60%">
+      <image xml:id="fig-cofunction1" width="50%">
         <latex-image>
           \begin{tikzpicture}[scale=1]
           \draw (0,0) -- (4,0) node[midway,below]{\(b\)};
@@ -841,36 +841,26 @@
     <title>Solving Right Triangles</title>
     <figure>
       \vspace{-0.9cm}
-      <image>
+      <image xml:id="solving-rt-triangle" width="60%">
         <latex-image>
-          \begin{tikzpicture}\draw (0,0) -- (4,0) node[midway,below]{\(b\)};
-\draw(0,0) -- (4,3) node[midway,above left]{\(c\)};
-\draw(4,0) -- (4,3) node[midway,right]{\(a\)};
-\draw(3.7,0) -- (3.7,0.3) -- (4,0.3);
-\draw ([shift=(0:0.5cm)]0,0) arc (0:36.8698976458:0.5cm) node[midway,right,xshift=0.1cm] {\(\alpha\)};
-\draw ([shift=(216.869897646:0.5cm)]4,3) arc (216.86989:270:0.5cm) node[midway,below,xshift=-0.1cm] {\(\beta\)};\end{tikzpicture}
+          \begin{tikzpicture}[scale=1]
+          \draw (0,0) -- (4,0) node[midway,below]{\(b\)};
+          \draw(0,0) -- (4,3) node[midway,above left]{\(c\)};
+          \draw(4,0) -- (4,3) node[midway,right]{\(a\)};
+          \draw(3.7,0) -- (3.7,0.3) -- (4,0.3);
+          \draw ([shift=(0:0.5cm)]0,0) arc (0:36.8698976458:0.5cm) node[midway,right,xshift=0.1cm] {\(\alpha\)};
+          \draw ([shift=(216.869897646:0.5cm)]4,3) arc (216.86989:270:0.5cm) node[midway,below,xshift=-0.1cm] {\(\beta\)};
+          \end{tikzpicture}
         </latex-image>
       </image>
       \vspace{-0.3cm}
     </figure>
     <p>
       Consider the following right triangle where side
-      <m>a</m>
-      is opposite angle
-      <m>\alpha</m>
-      ,
-      side
-      <m>b</m>
-      is opposite angle
-      <m>\beta</m>
-      ,
-      and side
-      <m>c</m>
-      is the hypotenuse.
-      Since
-      <m>\alpha</m>
-      and
-      <m>\beta</m>
+      <m>a</m> is opposite angle <m>\alpha</m>,
+      side <m>b</m> is opposite angle <m>\beta</m>,
+      and side <m>c</m> is the hypotenuse.
+      Since <m>\alpha</m> and <m>\beta</m>
       are complementary angles, we have
       <me>
         \alpha+\beta=90^{\circ}
@@ -911,52 +901,36 @@
           Solve the right triangle.
           Round your answer to two decimal places.
         </p>
-        <image>
+        <image xml:id="solving-rt-triangle-ex" width="50%">
           <latex-image>
-            \begin{tikzpicture}\draw (0,0) -- (16,0) node[midway,below]{\(16\)};
-\draw(0,0) -- (16,19.0680574815) node[midway,above left]{\(c\)};
-\draw(16,0) -- (16,19.0680574815) node[midway,right]{\(a\)};
-\draw(14.5,0) -- (14.5,1.5) -- (16,1.5);
-\draw ([shift=(0:3)]0,0) arc (0:50:3) node[midway,right,xshift=0.1cm,yshift=0.1cm] {\(50^{\circ}\)};
-\draw ([shift=(230:3)]16,19.0680574815) arc (230:270:3) node[midway,below,xshift=-0.1cm] {\(\beta\)};\end{tikzpicture}
+            \begin{tikzpicture}[scale=0.3]
+            \draw (0,0) -- (16,0) node[midway,below]{\(16\)};
+            \draw(0,0) -- (16,19.0680574815) node[midway,above left]{\(c\)};
+            \draw(16,0) -- (16,19.0680574815) node[midway,right]{\(a\)};
+            \draw(14.5,0) -- (14.5,1.5) -- (16,1.5);
+            \draw ([shift=(0:3)]0,0) arc (0:50:3) node[midway,right,xshift=0.1cm,yshift=0.1cm] {\(50^{\circ}\)};
+            \draw ([shift=(230:3)]16,19.0680574815) arc (230:270:3) node[midway,below,xshift=-0.1cm] {\(\beta\)};
+            \end{tikzpicture}
           </latex-image>
         </image>
       </statement>
       <solution>
         <p>
-          Since this is a right triangle,
-          we know one angle is
-          <m>90^{\circ}</m>
-          ,
-          we also know that the other angle is
-          <m>50^{\circ}</m>
-          and the adjacent side is 16.
+          Since this is a right triangle, we know one angle is
+          <m>90^{\circ}</m>, we also know that the other angle is
+          <m>50^{\circ}</m> and the adjacent side is 16.
           To solve this triangle, we will need to determine the values of
-          <m>a</m>
-          ,
-          <m>c</m>
-          , and
-          <m>\beta</m>
-          .
-          We begin by finding
-          <m>\beta</m>
-          .
-          Since
-          <m>50^{\circ}+\beta=90^{\circ}</m>
-          we have
+          <m>a</m>, <m>c</m>, and <m>\beta</m>.
+          We begin by finding <m>\beta</m>.
+          Since <m>50^{\circ}+\beta=90^{\circ}</m> we have
           <me>
             \beta=90^{\circ}-50^{\circ}=40^{\circ}
           </me>
         </p>
         <p>
-          Next, we will solve for
-          <m>a</m>
-          .
-          If we use the angle
-          <m>50^{\circ}</m>
-          ,
-          the adjacent side is 16 and
-          <m>a</m>
+          Next, we will solve for<m>a</m>.
+          If we use the angle <m>50^{\circ}</m>,
+          the adjacent side is 16 and <m>a</m>
           is the opposite side to the angle.
           The trigonometric function that relates these is tangent:
           <me>
@@ -990,20 +964,21 @@
         <p>
           We are now ready to calculate the deviation example proposed at the start of this section.
           In an average day of sailing,
-          a wa&#699;a sails for 120 nautical miles (NM).
+          a waʻa sails for 120 nautical miles (NM).
           If Hikianalia is supposed to sail in the direction of Hikina (East),
           but currents have deviated her course by one house so she actually sailed toward the house L&#257;, how far off the course has H&#333;k&#363;le&#699;a deviated?
         </p>
-        <image>
+        <image xml:id="deviation-example" width="100%">
           <latex-image>
-            \begin{tikzpicture}\node[above,yshift=0.15cm] at (0,0) {start};
-\node[above right] at (11.25:1.2) {end};
-\draw[line width=2pt,-stealth] (0,0) -- (11.25:1.2cm) node[midway,sloped,above] {actual course};
-\draw[dashed] (0,0) -- (1.17694233648,0) node[midway,below,yshift=-0.1cm] {reference course};
-\draw[dashed] (1.17694233648,0) -- (1.17694233648,0.234108386419) node[midway,right,xshift=0.1cm] {deviation};
-\draw ([shift=(0:0.2cm)]0,0) arc (0:11.25:0.2cm) node[midway,right,xshift=0.5cm,yshift=0.07cm] {1 House};
-\draw ([shift=(11.25:-0.1cm)]0,0) pic {waa-top={waacolor}{-78.75}{0.1}};
-\draw (1.10694233648,0) -- (1.10694233648,0.07) -- (1.17694233648,0.07);\end{tikzpicture}
+            \begin{tikzpicture}[scale=7]
+            \node[above,yshift=2] at (0,0) {start};
+            \node[above right] at (11.25:1.2) {end};
+            \draw[line width=2pt,-stealth] (0,0) -- (11.25:1.2) node[midway,sloped,above] {actual course};
+            \draw[dashed] (0,0) -- (1.17694233648,0) node[midway,below,yshift=-0.1] {reference course};
+            \draw[dashed] (1.17694233648,0) -- (1.17694233648,0.234108386419) node[midway,right,xshift=0.1] {deviation};
+            \draw ([shift=(0:0.3)]0,0) arc (0:11.25:0.3) node[midway,right,xshift=12,yshift=2] {1 House};
+            \draw ([shift=(11.25:-0.1)]0,0) pic {waa-top={waacolor}{-78.75}{0.1}};
+            \draw (1.17694233648-0.06,0) -- (1.11694233648,0.06) -- (1.17694233648,0.06);\end{tikzpicture}
           </latex-image>
         </image>
       </statement>
@@ -1021,17 +996,19 @@
           denote the distance deviated from the reference course,
           our right triangle becomes:
         </p>
-        <image>
+        <image xml:id="deviation-example-soln" width="100%">
           <latex-image>
-            \begin{tikzpicture}\node[above,yshift=0.15cm] at (0,0) {start};
-\node[above right] at (11.25:1.2) {end};
-\draw[line width=2pt,-stealth] (0,0) -- (11.25:1.2cm) node[midway,sloped,above] {120 NM};
-\draw[dashed] (0,0) -- (1.17694233648,0);
-\draw[dashed] (1.17694233648,0) -- (1.17694233648,0.234108386419)
-node[midway,right,xshift=0.1cm] {\(y\)};
-\draw ([shift=(0:0.2cm)]0,0) arc (0:11.25:0.2cm) node[midway,right,xshift=0.5cm,yshift=0.07cm] {\(11.25^{\circ}\)};
-\draw ([shift=(11.25:-0.1cm)]0,0) pic {waa-top={waacolor}{(-90+11.25)}{0.1}};
-\draw (1.10694233648,0) -- (1.10694233648,0.07) -- (1.17694233648,0.07);\end{tikzpicture}
+            \begin{tikzpicture}[scale=7]
+            \node[above,yshift=0.15cm] at (0,0) {start};
+            \node[above right] at (11.25:1.2) {end};
+            \draw[line width=2pt,-stealth] (0,0) -- (11.25:1.2cm) node[midway,sloped,above] {120 NM};
+            \draw[dashed] (0,0) -- (1.17694233648,0);
+            \draw[dashed] (1.17694233648,0) -- (1.17694233648,0.234108386419)
+            node[midway,right,xshift=0.1cm] {\(y\)};
+            \draw ([shift=(0:0.2cm)]0,0) arc (0:11.25:0.2cm) node[midway,right,xshift=0.5cm,yshift=0.07cm] {\(11.25^{\circ}\)};
+            \draw ([shift=(11.25:-0.1cm)]0,0) pic {waa-top={waacolor}{(-90+11.25)}{0.1}};
+            \draw (1.10694233648,0) -- (1.10694233648,0.07) -- (1.17694233648,0.07);
+            \end{tikzpicture}
           </latex-image>
         </image>
         <p>
@@ -1057,36 +1034,33 @@ node[midway,right,xshift=0.1cm] {\(y\)};
           Solar panels use the sun's energy to produce electricity.
           In order to maximize the energy output,
           solar panels should be installed perpendicular to the sun's light.
-          The angle of elevation of the sun varies by latitude and in Hawai
-          <sq>
-            i,
+          The angle of elevation of the sun varies by latitude and in Hawaiʻi,
           south facing solar panels should have a pitch of
-            <m>21^{\circ}</m>
-            to be perpendicular to the sun
-          </sq>
-          s rays.
+          <m>21^{\circ}</m> to be perpendicular to the sun's rays.
           When installing a solar panel,
           it may be difficult to determine the pitch,
           so instead of measure the angle,
           you can measure the height of the top of the panel.
-          What height should a south facing solar panel that is 65 in in length be installed to achieve the optimal angle of
-          <m>21^{\circ}</m>
-          ?
+          What height should a south facing solar panel that is 65 in in length 
+          be installed to achieve the optimal angle of
+          <m>21^{\circ}</m>?
           Round your answer to the nearest tenth of an inch.
         </p>
-        <image>
+        <image xml:id="fig-solar">
           <latex-image>
-            \begin{tikzpicture}\draw[line width=2pt,red] (0,0) -- (159:6.5) node[black,sloped,midway,below] {Solar Panel};
-\draw (-6.5,0) -- (1,0);
-\draw[dashed] (-6.06827277223,0) -- (-6.06827277223,2.32939167204) node[sloped,midway,above] {Height};
-\draw[stealth-,line width=2pt,yellow] (159:6.5) -- ([shift=(159:6.5)]69:3);
-\draw[stealth-,line width=2pt,yellow] (159:4.875) -- ([shift=(159:4.875)]69:3);
-\draw[stealth-,line width=2pt,yellow] (159:3.25) -- ([shift=(159:3.25)]69:3) node[above,rotate=-21,black] {Sun's rays};
-\draw[stealth-,line width=2pt,yellow] (159:1.625) -- ([shift=(159:1.625)]69:3);
-\draw[stealth-,line width=2pt,yellow] (0,0) -- (69:3);
-\draw (69:0.4) -- ([shift=(159:0.4)]69:0.4) -- (159:0.4);
-\draw ([shift=(0:0.75)]0,0) arc (0:69:0.75) node[midway,right,xshift=0.1cm,yshift=0.3cm,text width=1.9cm,align=left] {Angle of elevation of Sun};
-\draw ([shift=(159:0.75)]0,0) arc (159:180:0.75) node[midway,right,xshift=-1.2cm,yshift=-0.5cm,text width=3cm,align=left] {Pitch angle};\end{tikzpicture}
+            \begin{tikzpicture}
+            \draw[line width=2pt,red] (0,0) -- (159:6.5) node[black,sloped,midway,below] {Solar Panel};
+            \draw (-6.5,0) -- (1,0);
+            \draw[dashed] (-6.06827277223,0) -- (-6.06827277223,2.32939167204) node[sloped,midway,above] {Height};
+            \draw[stealth-,line width=2pt,yellow] (159:6.5) -- ([shift=(159:6.5)]69:3);
+            \draw[stealth-,line width=2pt,yellow] (159:4.875) -- ([shift=(159:4.875)]69:3);
+            \draw[stealth-,line width=2pt,yellow] (159:3.25) -- ([shift=(159:3.25)]69:3) node[above,rotate=-21,black] {Sun's rays};
+            \draw[stealth-,line width=2pt,yellow] (159:1.625) -- ([shift=(159:1.625)]69:3);
+            \draw[stealth-,line width=2pt,yellow] (0,0) -- (69:3);
+            \draw (69:0.4) -- ([shift=(159:0.4)]69:0.4) -- (159:0.4);
+            \draw ([shift=(0:0.75)]0,0) arc (0:69:0.75) node[midway,right,xshift=0.1cm,yshift=0.3cm,text width=1.9cm,align=left] {Angle of elevation of Sun};
+            \draw ([shift=(159:0.75)]0,0) arc (159:180:0.75) node[midway,right,xshift=-1.2cm,yshift=-0.5cm,text width=3cm,align=left] {Pitch angle};
+            \end{tikzpicture}
           </latex-image>
         </image>
       </statement>
@@ -1094,13 +1068,15 @@ node[midway,right,xshift=0.1cm] {\(y\)};
         <p>
           We begin by drawing the triangle.
         </p>
-        <image>
+        <image xml:id="fig-solar-soln">
           <latex-image>
-            \begin{tikzpicture}\draw[line width=2pt] (0,0) -- (159:6.5) node[sloped,midway,above] {65 in};
-\draw (-6.06827277223,0) -- (0,0);
-\draw[dashed] (-6.06827277223,0) -- (-6.06827277223,2.32939167204) node[sloped,midway,above] {Height};
-\draw ([shift=(159:0.75)]0,0) arc (159:180:0.75) node[midway,left,xshift=-0.3cm,yshift=0.1cm] {\(21^{\circ}\)};
-\draw (-6.06827277223,0.4) -- (-5.66827277223,0.4) -- (-5.66827277223,0);\end{tikzpicture}
+            \begin{tikzpicture}
+            \draw[line width=2pt] (0,0) -- (159:6.5) node[sloped,midway,above] {65 in};
+            \draw (-6.06827277223,0) -- (0,0);
+            \draw[dashed] (-6.06827277223,0) -- (-6.06827277223,2.32939167204) node[sloped,midway,above] {Height};
+            \draw ([shift=(159:0.75)]0,0) arc (159:180:0.75) node[midway,left,xshift=-0.3cm,yshift=0.1cm] {\(21^{\circ}\)};
+            \draw (-6.06827277223,0.4) -- (-5.66827277223,0.4) -- (-5.66827277223,0);
+            \end{tikzpicture}
           </latex-image>
         </image>
         <p>
@@ -1518,47 +1494,46 @@ node[midway,right,xshift=0.1cm] {\(y\)};
     <exercise xml:id="ques-deviation">
       <statement>
         <p>
-          In
-          <xref ref="ex-deviation">Example</xref>
-          we calculated when a waʻa sails for one day (120 nautical miles) and deviates from its course by 1 House,
-          the waʻa is
-          <m>23.4</m>
+          In <xref ref="ex-deviation">Example</xref>
+          we calculated when a waʻa sails for one day (120 nautical miles) and 
+          deviates from its course by 1 House,
+          the waʻa is <m>23.4</m>
           NM from its reference course.
-          Calculate the deviation,
-          <m>x</m>
-          ,
+          Calculate the deviation, <m>x</m>,
           for the remaining 7 angles.
           Round your answer to the nearest tenth of a nautical mile.
           Note that one house is
           <m>11.25^{\circ}</m>
         </p>
-        <image xml:id="fig-deviation-x">
+        <image xml:id="fig-deviation-x" width="100%">
           <latex-image>
-            \begin{tikzpicture}\draw[line width=1pt,-stealth] (0,0) -- (0:1.2cm) node[pos=0.8,sloped,below] {\(x_8\)};
-      \draw[line width=1pt,-stealth] (0,0) -- (11.25:1.2cm) node[right] {7 Houses};
-      \draw[line width=1pt,-stealth] (0,0) -- (22.5:1.2cm) node[right] {6 Houses};
-      \draw[line width=1pt,-stealth] (0,0) -- (33.75:1.2cm) node[right] {5 Houses};
-      \draw[line width=1pt,-stealth] (0,0) -- (45:1.2cm) node[right] {4 Houses};
-      \draw[line width=1pt,-stealth] (0,0) -- (56.65:1.2cm) node[right] {3 Houses};
-      \draw[line width=1pt,-stealth] (0,0) -- (67.5:1.2cm) node[right] {2 Houses};
-      \draw[line width=1pt,-stealth] (0,0) -- (78.75:1.2cm) node[above right] {1 House};
-      \draw[line width=1pt,-stealth] (0,0) -- (90:1.2cm) node[midway,sloped,above] {Reference Course, 120 NM};
-      \node[right] at (0:1.2cm) {8 Houses};
-      \draw[dashed] (0,0.234108386419) -- (1.17694233648,0.234108386419)
-      node[pos=0.8,above] {\(x_7\)};
-      \draw[dashed] (0,0.459220118838) -- (1.10865543901,0.459220118838)
-      node[pos=0.8,above] {\(x_6\)};
-      \draw[dashed] (0,0.666684279624) -- (0.997763534763,0.666684279624)
-      node[pos=0.8,above] {\(x_5\)};
-      \draw[dashed] (0,0.848528137424) -- (0.848528137424,0.848528137424)
-      node[pos=0.8,above] {\(x_4\)};
-      \draw[dashed] (0,0.997763534763) -- (0.666684279624,0.997763534763)
-      node[pos=0.8,above] {\(x_3\)};
-      \draw[dashed] (0,1.10865543901) -- (0.459220118838,1.10865543901)
-      node[pos=0.7,above] {\(x_2\)};
-      \draw[dashed] (0,1.17694233648) -- (0.234108386419,1.17694233648)
-      node[pos=0.5,above] {\(x_1\)};
-      \draw ([shift=(45:-0.1cm)]0,0) pic {waa-top={waacolor}{(-45)}{0.1}};\end{tikzpicture}
+            \begin{tikzpicture}[scale=7]
+            \draw[line width=1pt,-stealth] (0,0) -- (0:1.2cm) node[pos=0.8,sloped,below] {\(x_8\)};
+            \draw[line width=1pt,-stealth] (0,0) -- (11.25:1.2cm) node[right] {7 Houses};
+            \draw[line width=1pt,-stealth] (0,0) -- (22.5:1.2cm) node[right] {6 Houses};
+            \draw[line width=1pt,-stealth] (0,0) -- (33.75:1.2cm) node[right] {5 Houses};
+            \draw[line width=1pt,-stealth] (0,0) -- (45:1.2cm) node[right] {4 Houses};
+            \draw[line width=1pt,-stealth] (0,0) -- (56.65:1.2cm) node[right] {3 Houses};
+            \draw[line width=1pt,-stealth] (0,0) -- (67.5:1.2cm) node[right] {2 Houses};
+            \draw[line width=1pt,-stealth] (0,0) -- (78.75:1.2cm) node[above right] {1 House};
+            \draw[line width=1pt,-stealth] (0,0) -- (90:1.2cm) node[midway,sloped,above] {Reference Course, 120 NM};
+            \node[right] at (0:1.2cm) {8 Houses};
+            \draw[dashed] (0,0.234108386419) -- (1.17694233648,0.234108386419)
+            node[pos=0.8,above] {\(x_7\)};
+            \draw[dashed] (0,0.459220118838) -- (1.10865543901,0.459220118838)
+            node[pos=0.8,above] {\(x_6\)};
+            \draw[dashed] (0,0.666684279624) -- (0.997763534763,0.666684279624)
+            node[pos=0.8,above] {\(x_5\)};
+            \draw[dashed] (0,0.848528137424) -- (0.848528137424,0.848528137424)
+            node[pos=0.8,above] {\(x_4\)};
+            \draw[dashed] (0,0.997763534763) -- (0.666684279624,0.997763534763)
+            node[pos=0.8,above] {\(x_3\)};
+            \draw[dashed] (0,1.10865543901) -- (0.459220118838,1.10865543901)
+            node[pos=0.7,above] {\(x_2\)};
+            \draw[dashed] (0,1.17694233648) -- (0.234108386419,1.17694233648)
+            node[pos=0.5,above] {\(x_1\)};
+            \draw ([shift=(45:-0.1cm)]0,0) pic {waa-top={waacolor}{(-45)}{0.1}};
+            \end{tikzpicture}
           </latex-image>
         </image>
         <p>
@@ -2509,7 +2484,7 @@ Using the right triangle
         </answer>
       </exercise>
     </exercisegroup>
-    <!-- <exercise>
+    <exercise>
       <introduction>
         <p>
           WebWork example
@@ -2540,16 +2515,16 @@ Using the right triangle
           </p>
         </solution>
       </webwork>
-    </exercise> -->
-    <!-- <exercise>
+    </exercise>
+    <exercise>
   <webwork>
 <statement>
 <p><m>1+2=</m><var name="'3'" width="5" /></p>
     </statement>
   </webwork>
-</exercise> -->
+</exercise>
 
- <!-- <exercise>
+ <exercise>
     <webwork xml:id="ex_first-webwork-add-numbers">
       <description>
         Add two positive single-digit integers.
@@ -2576,13 +2551,84 @@ Using the right triangle
         </p>
       </solution>
     </webwork>
-  </exercise> -->
+  </exercise>
 
-  <!-- <exercise>
+<exercise>
     <webwork source="Library/PCC/BasicAlgebra/Exponents/exponentsMultiplication0.pg" />
-  </exercise> -->
+  </exercise>
+
+
+
+ <exercise>
+      <introduction>
+        <p>
+          WebWork example
+        </p>
+      </introduction>
+      <webwork>
+        <pg-code>
+          $a = Compute(random(1, 9, 1));
+          $b = Compute(random(1, 9, 1));
+          $c = $a + $b;
+        </pg-code>
+        <statement>
+          <p>
+            Compute the sum of <m><var name="$a" /></m> and <m><var name="$b" /></m>:
+          </p>
+          <p>
+            <m><var name="$a" /> + <var name="$b" /> =</m> <var name="$c" width="5" />
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Add <m><var name="$a" /></m> and <m><var name="$b" /></m> together.
+          </p>
+        </hint>
+        <solution>
+          <p>
+            <m><var name="$a" /> + <var name="$b" /> = <var name="$c" /></m>.
+          </p>
+        </solution>
+      </webwork>
+    </exercise>
+
   </exercises>
 
+
+
+
+    <exercise>
+      <introduction>
+        <p>
+          WebWork example
+        </p>
+      </introduction>
+      <webwork>
+        <pg-code>
+          $a = Compute(random(1, 9, 1));
+          $b = Compute(random(1, 9, 1));
+          $c = $a + $b;
+        </pg-code>
+        <statement>
+          <p>
+            Compute the sum of <m><var name="$a" /></m> and <m><var name="$b" /></m>:
+          </p>
+          <p>
+            <m><var name="$a" /> + <var name="$b" /> =</m> <var name="$c" width="5" />
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Add <m><var name="$a" /></m> and <m><var name="$b" /></m> together.
+          </p>
+        </hint>
+        <solution>
+          <p>
+            <m><var name="$a" /> + <var name="$b" /> = <var name="$c" /></m>.
+          </p>
+        </solution>
+      </webwork>
+    </exercise>
 
 </section>
   
