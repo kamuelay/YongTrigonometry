@@ -1,28 +1,28 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <publication>
     <!-- directories are relative to the main source PreTeXt file -->
     <source>
-        <directories external="../assets" generated="../generated-assets"/>
+        <directories external="../assets" generated="../generated-assets" />
     </source>
     <latex>
         <fonts>
-            <main regular="CMU Serif"/>
+            <main regular="CMU Serif" />
         </fonts>
     </latex>
     <!-- below makes webwork files dynamic in exercises-->
-    <html>
-        <webwork divisional="dynamic"/>
-    </html>
-    <common>
+    <!-- <html>
+        <webwork divisional="dynamic" />
+    </html> -->
+    <!-- <common>
         <watermark scale="0.22">DRAFT 2022-12-16</watermark>
-    </common>
+    </common> -->
     <html>
-        <analytics google-gst="G-6JP58041KD"/>
+        <analytics google-gst="G-6JP58041KD" />
     </html>
-    <html>
-        <knowl example="no"/>
-    </html>
-    <html>
-        <knowl example-solution="no"/>
-    </html>
+    <!-- <html>
+        <knowl example="no" />
+    </html> -->
+    <!-- <html>
+        <knowl example-solution="no" />
+    </html> -->
 </publication>
