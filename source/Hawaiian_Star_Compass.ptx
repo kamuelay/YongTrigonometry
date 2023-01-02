@@ -2,7 +2,8 @@
 <section xml:id="Hawaiian_Star_Compass" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Hawaiian Star Compass</title>
   <p>
-    Pacific Islanders have been wayfinding across long distances in the Pacific long before the magnetic compasses or other instruments were introduced.
+    Pacific Islanders have been wayfinding across long distances in the Pacific 
+    long before the magnetic compasses or other instruments were introduced.
     Navigators relied on observations of the stars, sun, ocean, winds,
     and other signs from nature to determine their position.
     Through time,
@@ -11,8 +12,7 @@
     The island of Satawal in the Federated States of Micronesia was home to Mau Piailug,
     one of the last traditional navigators.
     To determine his position, Mau used the
-    <em>paafu</em>
-    ,
+    <em>paafu</em>,
     <idx>
       <h>paafu</h>
     </idx>
@@ -29,20 +29,18 @@
     Wanting to revive wayfinding in Hawaiʻi, Nainoa Thompson traveled to the island of Satawal to learn from Mau Piailug.
     Thompson adopted Mau's star compass,
     resulting in the Hawaiian Star Compass
-    (
-    <xref ref="star-compass-32-compass-rose">Figure</xref>
-    ).
+    (<xref ref="star-compass-32-compass-rose">Figure</xref>).
   </p>
   <figure xml:id="star-compass-32-compass-rose">
-    <caption>Hawaiian Star Compass</caption>
+    <caption>Hawaiian Star Compass.</caption>
     <image xml:id="fig-star-compass-32-compass-rose">
       <latex-image>
 \begin{tikzpicture}[x=5.3cm,y=5.3cm,cap=round,>=latex]
 \draw[&lt;-,dashed] (-1.2,0) -- (-0.96,0);
-\draw[dashed] (-0.36,0) -- (0.6,0);
+\draw[dashed] (-0.45,0) -- (0.65,0);
 \draw[->,dashed] (0.96,0) -- (1.2,0);
 \draw[&lt;-,dashed] (0,-1.2) -- (0,-0.96);
-\draw[dashed] (0,-0.65) -- (0,0.67);
+\draw[dashed] (0,-0.7) -- (0,0.7);
 \draw[->,dashed] (0,0.96) -- (0,1.2);
 \node[right] at (1.2,0) {\Large E};
 \node[above] at (0,1.2) {\Large N};
@@ -51,11 +49,11 @@
 \draw[thick] (0,0) circle(1 );
 \draw[thick] (0,0) circle(1.1 );
 \draw[left] (0:0.98) node{\large HIKINA};
-\draw[left] (90:0.98) node[rotate=90] {\large &#699;&#256;KAU};
+\draw[left] (90:0.98) node[rotate=90] {\large `&#256;KAU};
 \draw[right] (180:0.98) node{\large KOMOHANA};
 \draw[left] (270:0.98) node[rotate=-90] {\large HEMA};
-\draw (45:0.5 ) node[rotate=-45] {\huge Ko&#699;olau};
-\draw (135:0.5 ) node[rotate=45] {\huge Ho&#699;olua};
+\draw (45:0.5 ) node[rotate=-45] {\huge Ko`olau};
+\draw (135:0.5 ) node[rotate=45] {\huge Ho`olua};
 \draw (225:0.5 ) node[rotate=315] {\huge Kona};
 \draw (-45:0.5 ) node[rotate=45] {\huge Malanai};
 \foreach \x in {5.625,16.875,...,90} {
@@ -69,7 +67,7 @@
 }
 \foreach \x/\xtext in {
 11.25/L&#257;,
-22.5/&#699;&#256;ina,
+22.5/`&#256;ina,
 33.75/Noio,
 45/Manu,
 56.25/N&#257;lani,
@@ -80,7 +78,7 @@
 303.75/N&#257;lani,
 315/Manu,
 326.25/Noio,
-337.5/&#699;&#256;ina,
+337.5/`&#256;ina,
 348.75/L&#257;
 }
 \draw[left] (\x:0.98 ) node[rotate=\x] {\xtext};
@@ -107,10 +105,10 @@
 123.75/N&#257;lani,
 135/Manu,
 146.25/Noio,
-157.5/&#699;&#256;ina,
+157.5/`&#256;ina,
 168.75/L&#257;,
 191.25/L&#257;,
-202.5/&#699;&#256;ina,
+202.5/`&#256;ina,
 213.75/Noio,
 225/Manu,
 236.25/N&#257;lani,
@@ -134,12 +132,14 @@
 247.5/SSW,
 258.75/SbW
 }
-\draw[left] (\x:1.12 ) node[rotate=180+\x] {\xtext};\end{tikzpicture}
+\draw[left] (\x:1.12 ) node[rotate=180+\x] {\xtext};
+\draw (0,0) pic {iwa={0.1}};
+\end{tikzpicture}
 </latex-image>
     </image>
   </figure>
   <table xml:id="tab_compass">
-    <title>The houses of the Hawaiian Star Compass and the corresponding points on the 32-wind compass rose</title>
+    <title>The houses of the Hawaiian Star Compass and the corresponding points on the 32-wind compass rose.</title>
     <tabular>
       <row bottom="minor">
         <cell></cell>
@@ -325,63 +325,43 @@
   <p>
     In the star compass, Thompson divides the visual horizon into 32 equidistant points around a circle,
     called houses.
-    Houses represent a space on the horizon where a celestial bodies such as the sun, stars,
+    Houses represent a space on the horizon where celestial bodies such as the sun, stars,
     moon, and planets rise and set.
     In the same way that we have addresses to help people find our homes,
     each celestial body has its own address represented with these houses.
   </p>
   <p>
     The four cardinal points correspond to a house.
-    The stars arrive from the horizon called
-    <em>Hikina</em>
-    (
-    <q>To Arrive</q>
-    ) or East and enter the horizon called
-    <em>Komohana</em>
-    (
-    <q>To Enter</q>
-    ) or West.
+    The stars arrive from the horizon called <em>Hikina</em>
+    (<q>To Arrive</q>) or East and enter the horizon called <em>Komohana</em>
+    (<q>To Enter</q>) or West.
     If you stand with your back towards Hikina (East) and face Komohana (West),
-    your right will point towards
-    <em>ʻĀkau</em>
-    (
-    <q>Right</q>
-    ) or North and your left will point towards
-    <em>Hema</em>
-    (
-    <q>Left</q>
-    ) or South.
+    your right will point towards <em>ʻĀkau</em>
+    (<q>Right</q>) or North and your left will point towards <em>Hema</em>
+    (<q>Left</q>) or South.
   </p>
   <p>
     These four cardinal points divide the compass into four quadrants.
     Each quadrant is named after winds in Hawaiʻi.
-    <em>Koʻolau</em>
-    is the Northeast quadrant named for the trade winds;
-    <em>Hoʻolua</em>
-    is the Northwest quadrant,
-    <em>Kona</em>
-    is the Southwest quadrant;
-    and
-    <em>Malanai</em>
-    is the Southeast quadrant.
+    <em>Koʻolau</em> is the Northeast quadrant named for the trade winds;
+    <em>Hoʻolua</em> is the Northwest quadrant,
+    <em>Kona</em> is the Southwest quadrant;
+    and <em>Malanai</em> is the Southeast quadrant.
   </p>
   <p>
     Each house on the compass has a name.
     The corresponding houses in the east and in the west share a name.
-    Starting in the east or west and moving northwards and southwards is the first house positioned on either side of Hikina (East) and Komohana (West).
+    Starting in the east or west and moving northwards and southwards 
+    is the first house positioned on either side of Hikina (East) and Komohana (West).
     This is the house Lā (Sun).
     It is followed by ʻĀina (Land), Noio (Tern), Manu (Bird), Nālani (Heavens), Nā Leo (Voices),
     and Haka (Empty).
     The 32 houses in the Hawaiian Star Compass correspond to the points of the 32-wind compass rose
-    (
-    <xref ref="tab_compass">Table</xref>
-    ).
+    (<xref ref="tab_compass">Table</xref>).
     The celestial bodies move in parallel paths across the sky from East to West,
     rising and setting in the same house,
     remaining in its hemisphere
-    (
-    <xref ref="fig_celestial-sphere">Figure</xref>
-    ).
+    (<xref ref="fig_celestial-sphere">Figure</xref>).
   </p>
   <p>
     For example,

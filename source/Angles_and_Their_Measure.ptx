@@ -8,18 +8,18 @@
       parallel to the Equator. The latitude of a place is defined as the angle between a line drawn
       from the center of the earth to that point and the equatorial plane. For any point in the
       Northern Hemisphere, a navigator can measure their latitude by determining the angle <em>
-      Hōkūpaʻa</em> (North Star) makes with the horizon. </p>
+      Hōkūpaʻa</em> (also known as <em>Kūmau</em>, North Star, or Polaris) makes with the horizon. </p>
     <image xml:id="angles-Hokupaa" width="100%">
       <latex-image>
-        \begin{tikzpicture}[scale=5]
+        \begin{tikzpicture}[scale=6]
         \draw (0,0)--(-0.5,0);
         \draw[line width=2pt] (0,0) -- (1.1,0) node[right,xshift=0.1] {Horizon};
         \draw[line width=2pt] (0,0) -- (30:1.2);
         \draw[line width=2pt] (0:0.3) arc (0:30:0.3) node[midway, right,xshift=0.05,yshift=2.7]
         {Angle of H\={o}k\={u}pa`a};
-        \node [black,scale=1.5] at (30:1.27017059222) {\(\bigstar\)};
-        \node [yellow] at (30:1.27017059222) {\(\bigstar\)};
-        \node at (1.35,0.63) {Hokupa`a};
+        \node [black,scale=1.5] at (30:1.25) {\(\bigstar\)};
+        \node [yellow] at (30:1.25) {\(\bigstar\)};
+        \node at (1.27,0.63) {Hokupa`a};
         \end{tikzpicture}
       </latex-image>
     </image>
@@ -91,10 +91,8 @@
       <idx>
         <h>measure</h>
       </idx> of an angle is the amount of rotation from the initial side to
-      the terminal side. One unit of measuring angles is the degree. One <term>degree</term>
-      <idx>
-        <h>degree</h>
-      </idx>, denoted by <m>1^{\circ}</m>, is <m>\frac{1}{360}</m> of a
+      the terminal side. One unit of measuring angles is the degree. One <term>degree</term>,
+      <idx><h>degree</h></idx> denoted by <m>1^{\circ}</m>, is <m>\frac{1}{360}</m> of a
       complete revolution, so one full revolution is <m>360^{\circ}</m>. </p>
     <p> Since the Hawaiian Star Compass has 32 houses, we see that each house has <m>
       \frac{360^{\circ}}
@@ -179,6 +177,7 @@
           258.75/Haka
           }
           \draw[right] (\x:0.98) node[rotate=180+\x] {\xtext};
+          \draw (0,0) pic {iwa={0.53}};
           \end{tikzpicture}
         </latex-image>
       </image>
@@ -226,14 +225,23 @@
     </example>
     <exercise>
       <webwork>
-        <pg-code> $d = Compute(random(0,359)); $m = Compute(random(0,59)); $s =
-          Compute(random(0,59)); <!-- $deg = Compute($d+$m/60+$s/(60^2)); --> $deg = 40; </pg-code>
+        <pg-code> 
+          $d = Compute(random(0,359)); 
+          $m = Compute(random(0,59)); 
+          $s = Compute(random(0,59)); <!-- $deg = Compute($d+$m/60+$s/(60^2)); -->
+          $deg = $d;
+          $deg1 = $m/60;
+          $deg2 = $s/60^2;
+        </pg-code>
         <statement>
-          <p> Convert <m>
-              <var name="$deg" />^\circ</m> to degrees/minutes/seconds form. <var name="$d" />
-            <var
-              name="$m" />
+          <p> 
+            Convert <m><var name="$deg" />^\circ</m> to degrees/minutes/seconds form. 
+            <var name="$d" />
+            <var name="$m" />
             <var name="$s" />
+            <var name="$deg"/>
+            <var name="$deg1"/>
+            <var name="$deg2"/>
           </p>
           <p>
             solutions not working or matching up
@@ -355,7 +363,7 @@
       <statement>
         <p>
           <m>90^{\circ}</m> and <m>450^{\circ}</m> are coterminal angles since <m>
-          450^{\circ}-360^{\circ}=90^{\circ}</m>
+          450^{\circ}-360^{\circ}=90^{\circ}</m>.
         </p>
       </statement>
     </example>
@@ -382,7 +390,7 @@
             <m>-770^{\circ}</m>
           </p>
           <solution>
-            <p> Since <m>-770^{\circ}\lt 0</m>, we first add <m>3\times360</m> to <m>-770^{\circ}</m>
+            <p> Since <m>-770^{\circ}\lt 0^{\circ}</m>, we first add <m>3\times360</m> to <m>-770^{\circ}</m>
               to obtain an angle <m>0^{\circ}</m> and <m>360^{\circ}</m>, <me>
               -770^{\circ}+3\times360^{\circ}=310^{\circ}
               </me> So <m>
@@ -396,7 +404,7 @@
             <m>923^{\circ}</m>
           </p>
           <solution>
-            <p> Since <m>923^{\circ}>360</m> we begin by subtracting <m>2\times360^{\circ}</m>
+            <p> Since <m>923^{\circ}>360^{\circ}</m> we begin by subtracting <m>2\times360^{\circ}</m>
               <me>
               923^{\circ}-2\times360^{\circ}=203^{\circ}
               </me> So <m>
@@ -428,9 +436,9 @@
             <h>central angle</h>
           </idx> is a positive angle formed at the center of a
           circle by two radii. </p>
-        <image xml:id="fig-central-angle" width="67%">
+        <image xml:id="fig-central-angle" width="50%">
           <latex-image>
-            \begin{tikzpicture}[x=4cm,y=4cm]
+            \begin{tikzpicture}[scale=3]
             \draw (0,0) circle (1);
             \filldraw[blue] (0,0) circle(1pt);
             \filldraw[blue] (60:1) circle(1pt);
@@ -849,8 +857,8 @@
         <p>
           <idx>
             <h>arc length</h>
-          </idx> In a circle of radius <m>r</m>, the <em>arc length</em>
-          , <m>s</m>, subtended by a central angle (in radians), <m>\theta</m>, is <me>
+          </idx> In a circle of radius <m>r</m>, the <em>arc length</em>, <m>s</m>, 
+          subtended by a central angle (in radians), <m>\theta</m>, is <me>
             s=r\theta </me>
         </p>
         <p> If <m>\theta</m> is given in degrees, then <m>\displaystyle s=2\pi
@@ -876,7 +884,7 @@
           Molokaʻi is directly north of Kiritimati), both islands are 24 hours apart. For example,
           if the time on Oʻahu is 3:00 pm on Thursday, then at that same moment it is 3:00 pm on
           Friday in Kiritimati. Find the distance between Kiritimati ( <m>1^{\circ}45'</m> north
-          latitude) and Molokaʻi ( <m>21^{\circ}08'</m> north latitude). Assume the radius of Earth
+          latitude) and Molokaʻi (<m>21^{\circ}08'</m> north latitude). Assume the radius of Earth
           is 3,960 miles and that the central angle between the two islands is the difference in
           their laititudes. </p>
         <image width="75%" source="fig-globe-kiritimati.svg" />
@@ -990,14 +998,13 @@
     </theorem>
     <example>
       <statement>
-        <p> When sailing, a waʻa (canoe) cannot make headway by sailing directly into the wind. It
+        <p> When sailing, Hōkūleʻa cannot make headway by sailing directly into the wind. It
           can only sail beyond <m>67^{\circ}</m> in either direction from the wind (<xref
             ref="fig_sailing-upwind">Figure</xref>). If Hōkūleʻa sails for 50 miles, what is the
           area of the sector that cannot be sailed? Round your answer to the nearest square mile. </p>
 
         <figure xml:id="fig_sailing-upwind">
-          <caption> Voyaging canoes cannot sail within <m>67^{\circ}</m> into the direction of the
-            wind. </caption>
+            <caption> Hōkūleʻa cannot sail within <m>67^{\circ}</m> into the direction of the wind. </caption>
           <image xml:id="sailing-upwind" width="75%">
             <latex-image>
               \begin{tikzpicture}[x=3.25cm,y=3.25cm]
@@ -1043,13 +1050,13 @@
   </subsection>
   <subsection xml:id="sec_angular_velocity_and_linear_speed">
     <title>Angular Velocity and Linear Speed</title>
-    <p> Consider an object moving along a circle as shown on the right. There are two ways to
+    <p> Consider an object moving along a circle as shown below. There are two ways to
       describe the circular motion of this object: <em>linear speed</em> which measures the distance
       traveled; and <em>angular speed</em> which measures the rate at which the central angle
       changes. </p>
-    <image xml:id="fig-angular-velocity-linear-speed" width="50%">
+    <image xml:id="fig-angular-velocity-linear-speed" width="33%">
       <latex-image>
-        \begin{tikzpicture}[scale=2.25]
+        \begin{tikzpicture}[scale=1.25]
         \draw (0,0) circle (1cm);
         \draw[blue] (45:0.95cm) -- (45:1.05cm);
         \draw[blue] (0:1cm) arc (0:45:1cm) node[midway,above,yshift=0.15cm,xshift=0.2cm] {$s$};
@@ -1149,7 +1156,8 @@
         <p> One method a waʻa uses to change direction is with the <em>hoe uli</em>, or the steering
           paddle. When a sharp turn is needed for maneuvers such as tacking, the steersperson will
           turn the handle of the hoe uli in a circular motion, as a lever to scoop the paddle in the
-          water and change the heading of a vessel. This move is called <em>une</em>, which
+          water and change the heading of a vessel. This move called <em>une</em> (prounced oo-NAY 
+          although it is often mispronounced as oo-NEE) <!-- https://www.lokahicanoeclub.org/culture/canoeterms.php -->
           literally translates to <q>lever.</q> If the steerperson is performing an une at a rate of
           25 rotations per minute and the radius of the circular movement is 2 feet, calculate <ol>
             <li>
@@ -1188,7 +1196,7 @@
                 }\cdot\frac{\mbox{mile} }{5280\mbox{ft} }\cdot\frac{60\mbox{min} }{\mbox{hr}
                 }\approx3.57\frac{\mbox{miles} }{\mbox{hour} }
                 </me>
-                Thus the steersperson moving the hoe uli at a linear speed of 3.57 mph. </p>
+                Thus the steersperson is moving the hoe uli at a linear speed of 3.57 mph. </p>
               <!-- <video youtube="uzD2k-CqbDE?t=504" /> -->
             </li>
           </ol>
@@ -1357,7 +1365,8 @@
       <introduction>
         <p> Recall the Star Compass with the boundaries for each House. Write the angles for the
           boundaries between the following houses in the Koʻolau quadrant in terms of degrees,
-          minutes, and seconds. <image xml:id="star-compass-first-quadrant" width="75%">
+          minutes, and seconds. 
+          <image xml:id="star-compass-first-quadrant" width="75%">
             <latex-image>
               \begin{tikzpicture}[scale=6.75]
               % draw the coordinates
@@ -1377,7 +1386,7 @@
               % dots at each point
               \filldraw[black] (\x:1cm) circle(0.4pt);
               % draw each angle in degrees
-              \draw (\x:1.2cm) node[rotate=\x] {$\x^\circ$};
+              \draw (\x:1.125cm) node[rotate=\x] {$\x^\circ$};
               }
               \foreach \x/\xtext in {
               11.25/L\={a},
