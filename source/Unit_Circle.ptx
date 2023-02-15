@@ -37,12 +37,12 @@
       The circumference of the unit circle is
       <m>2\pi r=2\pi \cdot 1=2\pi</m>.
     </p>
-    <image xml:id="fig-unit-circle-with-arc-length">
+    <image xml:id="fig-unit-circle-with-arc-length" width="60%">
       <latex-image>
-        \begin{tikzpicture}[scale=3]
+        \begin{tikzpicture}[scale=2.25]
         \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
         \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
-        \draw (0,0) circle (1);
+        \draw (0,0) circle (1);r
         \draw (0,0) -- (57.3:1);
         \draw ([shift=(0:0.25)]0,0) arc (0:57.3:0.25) node[midway,right,xshift=0.1] {\(t\)};
         \node[right] at (30:1.1) {\(s=t\)};
@@ -57,9 +57,9 @@
       Here, <m>P(x,y)</m> is the terminal point.
       If <m>t\lt 0</m> then we would wrap in a clockwise direction.
     </p>
-    <image xml:id="fig-unit-circle-with-arc-length-wrapped">
+    <image xml:id="fig-unit-circle-with-arc-length-wrapped" width="55%">
       <latex-image>
-        \begin{tikzpicture}[scale=3]
+        \begin{tikzpicture}[scale=2.25]
         \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
         \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
         \draw (0,0) circle (1);
@@ -75,8 +75,8 @@
         \draw[blue, dashed] (57.3:1) -- (1,1);
         \draw[line width=2pt,blue] (0:1) arc (0:57.3:1);
         \filldraw[black] (1,0) circle(1pt);
-        \filldraw[black] (57.3:1) circle(1pt) node[above,yshift=0.15] {\(P(x,y)\)};
-        \filldraw[black] (1,1) circle(1pt) node[right, xshift=0.1] {\(t\)};
+        \filldraw[black] (57.3:1) circle(1pt) node[above,yshift=5] {\(P(x,y)\)};
+        \filldraw[black] (1,1) circle(1pt) node[right, xshift=2] {\(t\)};
         \draw (0,0) -- (57.3:1);
         \draw ([shift=(0:0.25)]0,0) arc (0:57.3:0.25) node[midway,right,xshift=0.1] {\(t\)};\end{tikzpicture}
       </latex-image>
@@ -99,7 +99,11 @@
       The <m>x</m>- and <m>y</m>-coordinates for <m>P(x,y)</m>
       can then be used to define the six trigonometric functions of a real number
       <m>t</m>.
-      <em>sine cosine tangent cosecant secant cotangent</em>
+    </p>
+    <p class="center">
+      <em>sine</em>, <em>cosine</em>, <em>tangent</em>, <em>cosecant</em>, <em>secant</em>, <em>cotangent</em>
+    </p>
+    <p>
       which are abbreviated as
       <em>sin</em>, <em>cos</em>, <em>tan</em>,
       <em>csc</em>, <em>sec</em>, and <em>cot</em>, respectively.
@@ -119,18 +123,18 @@
             <mrow>\csc t\amp =\frac{1}{y}  (y\neq0) \amp  \sec t\amp =\frac{1}{x}  (x\neq0) \amp  \cot t\amp =\frac{x}{y}  (y\neq0)</mrow>
           </md>
         </p>
-        <image xml:id="fig-def-trig-function-unit-circle">
+        <image xml:id="fig-def-trig-function-unit-circle" width="75%">
           <latex-image>
-            \begin{tikzpicture}[scale=4]
+            \begin{tikzpicture}[scale=3.5]
             \draw[&lt;->] (-1.15,0)--(1.15,0) node[right]{\(x\)};
             \draw[&lt;->] (0,-1.15)--(0,1.15) node[above]{\(y\)};
             \draw (0,0) circle (1);
-            \draw[line width=2pt] (0,0) -- (45:1) node[midway,above,yshift=0.2] {1};
-            \draw[line width=2pt] (0,0) -- (0.707106781187,0) node[midway,below,yshift=-0.1] {\(\cos t\)};
-            \draw[line width=2pt] (0.707106781187,0) -- (0.707106781187,0.707106781187) node[midway,right,yshift=-0.2] {\(\sin t\)};
+            \draw[line width=2pt] (0,0) -- (45:1) node[midway,above,yshift=5] {1};
+            \draw[line width=2pt] (0,0) -- (0.707106781187,0) node[midway,below,yshift=-2] {\(\cos t\)};
+            \draw[line width=2pt] (0.707106781187,0) -- (0.707106781187,0.707106781187) node[midway,right,yshift=-6] {\(\sin t\)};
             \draw (0.607106781187,0) -- (0.607106781187,0.1) -- (0.707106781187,0.1);
             \filldraw[black] (45:1) circle(1pt) node[above right] {\(P(x,y)\)};
-            \draw ([shift=(0:0.25)]0,0) arc (0:45:0.25) node[midway,right,xshift=0.1] {\(t\)};
+            \draw ([shift=(0:0.25)]0,0) arc (0:45:0.25) node[midway,right,xshift=1] {\(t\)};
             \node at (22.5:1.1) {t};\end{tikzpicture}
           </latex-image>
         </image>
@@ -199,9 +203,9 @@
             <p>
               When <m>\theta=0</m> radians (<m>0^{\circ}</m>),
               the point on the circle is <m>P(1,0)</m>.
-              <image xml:id="exmp-6trig-0">
+              <image xml:id="exmp-6trig-0" width="55%">
                 <latex-image>
-                  \begin{tikzpicture}[scale=3]
+                  \begin{tikzpicture}[scale=2.25]
                   \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
                   \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
                   \draw (0,0) circle (1);
@@ -229,8 +233,8 @@
               radians (<m>270^{\circ}</m>),
               the point on the circle is
               <m>P(0,-1)</m>.
-              <image xml:id="exmp-6trig-3pi2">
-                <latex-image> \begin{tikzpicture}[scale=3]
+              <image xml:id="exmp-6trig-3pi2" width="55%">
+                <latex-image> \begin{tikzpicture}[scale=2.25]
                   \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
                   \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
                   \draw (0,0) circle (1);
@@ -268,8 +272,8 @@
               <m>\theta=5\pi</m> is equal to that when <m>\theta=\pi</m>.
               Notice, <m>5\pi</m> and <m>\pi</m> are
               <em>coterminal angles</em> ending with the point<m>P(-1,0)</m>.
-              <image xml:id="exmp-6trig-5pi">
-                <latex-image> \begin{tikzpicture}[scale=3]
+              <image xml:id="exmp-6trig-5pi" width="55%">
+                <latex-image> \begin{tikzpicture}[scale=2.25]
                   \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
                   \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
                   \draw (0,0) circle (1);
@@ -302,17 +306,17 @@
           <m>45^{\circ}</m>
           in the unit circle.
         </p>
-        <image xml:id="fig-1st-quad-triangle-45">
+        <image xml:id="fig-1st-quad-triangle-45" width="55%">
           <latex-image>
-            \begin{tikzpicture}[scale=7]
+            \begin{tikzpicture}[scale=4.5]
             \draw[->] (0,0)--(1.1,0) node[right]{\(x\)};
             \draw[->] (0,0)--(0,1.1) node[above]{\(y\)};
             \draw (0:1) arc (0:90:1);
-            \draw[line width=2pt] (0,0) -- (45:1) node[midway,above,yshift=0.2] {1};
-            \draw[line width=2pt] (0,0) -- (0.707106781187,0) node[midway,below,yshift=-0.1] {\(x\)};
-            \draw[line width=2pt] (0.707106781187,0) -- (0.707106781187,0.707106781187) node[midway,right,yshift=-0.2] {\(y\)};
-            \filldraw[black] (45:1) circle(1pt) node[right,xshift=2.3] {\(P(x,y)\)};
-            \draw ([shift=(0:0.2)]0,0) arc (0:45:0.2) node[midway,right,xshift=0.04] {\(45^{\circ}\)};
+            \draw[line width=2pt] (0,0) -- (45:1) node[midway,above,yshift=5] {1};
+            \draw[line width=2pt] (0,0) -- (0.707106781187,0) node[midway,below,yshift=-3] {\(x\)};
+            \draw[line width=2pt] (0.707106781187,0) -- (0.707106781187,0.707106781187) node[midway,right,xshift=3] {\(y\)};
+            \filldraw[black] (45:1) circle(0.5pt) node[right,xshift=2.3] {\(P(x,y)\)};
+            \draw ([shift=(0:0.2)]0,0) arc (0:45:0.2) node[midway,right,xshift=1] {\(45^{\circ}\)};
             \draw (0.627106781187,0) -- (0.627106781187,0.08) -- (0.707106781187,0.08);
             \draw[dashed] (0,0) -- (0.9,0.9) node[above] {\(y=x\)};
             \end{tikzpicture}
@@ -327,7 +331,7 @@
           <m>x^2+y^2=1</m>, we get
           <md>
             <mrow>x^2+y^2\amp = 1</mrow>
-            <mrow>x^2+x^2\amp = 1 (\mbox{since } y=x)</mrow>
+            <mrow>x^2+x^2\amp = 1 \amp(\mbox{since } y=x)</mrow>
             <mrow>2x^2\amp = 1</mrow>
             <mrow>x^2\amp = \frac{1}{2}</mrow>
             <mrow>x\amp = \frac{1}{\sqrt{2}}=\frac{\sqrt{2}}{2}=y.</mrow>
@@ -336,9 +340,9 @@
         <p>
           Then
           <md>
-            <mrow>\sin 45^{\circ} \amp=\frac{\sqrt{2}}{2} \amp \csc  45^{\circ}=\frac{1}{\frac{\sqrt{2}}{2}}\amp=\sqrt{2}</mrow>
-            <mrow> \cos 45^{\circ}\amp=\frac{\sqrt{2}}{2} \amp \sec  45^{\circ}=\frac{1}{\frac{\sqrt{2}}{2}}\amp=\sqrt{2}</mrow>
-            <mrow> \tan 45^{\circ}\amp=\frac{\frac{\sqrt{2}}{2}}{\frac{\sqrt{2}}{2}}=1 \amp \cot  45^{\circ}=\frac{\frac{\sqrt{2}}{2}}{\frac{\sqrt{2}}{2}}\amp=1</mrow>
+            <mrow> \sin 45^{\circ} \amp=\frac{\sqrt{2}}{2} \amp \csc  45^{\circ}=\frac{1}{\frac{\sqrt{2}}{2}}\amp=\sqrt{2}</mrow>
+            <mrow> \cos 45^{\circ} \amp=\frac{\sqrt{2}}{2} \amp \sec  45^{\circ}=\frac{1}{\frac{\sqrt{2}}{2}}\amp=\sqrt{2}</mrow>
+            <mrow> \tan 45^{\circ} \amp=\frac{\frac{\sqrt{2}}{2}}{\frac{\sqrt{2}}{2}}=1 \amp \cot  45^{\circ}=\frac{\frac{\sqrt{2}}{2}}{\frac{\sqrt{2}}{2}}\amp=1</mrow>
           </md>
         </p>
       </solution>
@@ -359,9 +363,9 @@
           <m>-30^{\circ}</m>
           .
         </p>
-        <image xml:id="fig-1st-quad-triangle-30">
+        <image xml:id="fig-1st-quad-triangle-30" width="75%">
           <latex-image>
-          \begin{tikzpicture}[scale=5]
+          \begin{tikzpicture}[scale=3.25]
           \draw[&lt;->] (-1.15,0)--(1.15,0) node[right]{\(x\)};
           \draw[&lt;->] (0,-1.15)--(0,1.15) node[above]{\(y\)};
           \draw (0,0) circle (1);
@@ -383,13 +387,13 @@
         </p>
         <image xml:id="fig-two-30-60-90-derive">
           <latex-image>
-            \begin{tikzpicture}[scale=9]
+            \begin{tikzpicture}[scale=6]
             \draw[line width=2pt] (0,0) -- (30:1) node[midway,above,yshift=0.2] {1};
             \draw[line width=2pt] (0,0) -- (-30:1) node[midway,below,yshift=-0.1] {1};
             \draw[line width=2pt] (0,0) -- (0.866025403784,0) node[midway,below,yshift=-0.1] {\(x\)};
             \draw[line width=2pt] (0.866025403784,0) -- (0.866025403784,0.5) node[midway,left,yshift=-0.2] {\(y\)};
             \draw[line width=2pt] (0.866025403784,0) -- (0.866025403784,-0.5) node[midway,left,yshift=0.2] {\(y\)};
-            \filldraw[black] (30:1) circle(1pt) node[left,xshift=-10] {\(P(x,y)\)};
+            \filldraw[black] (30:1) circle(0.5pt) node[left,xshift=-10] {\(P(x,y)\)};
             \draw ([shift=(0:0.15)]0,0) arc (0:30:0.15) node[midway,right,xshift=0.04,yshift=0.1] {\(30^{\circ}\)};
             \draw ([shift=(0:0.15)]0,0) arc (0:-30:0.15) node[midway,right,xshift=0.0,yshift=-0.1] {\(30^{\circ}\)};
             \draw ([shift=(210:0.15)]30:1) arc (210:270:0.15) node[midway,below,xshift=-0.1] {\(60^{\circ}\)};
@@ -398,11 +402,11 @@
             \end{tikzpicture}
           </latex-image>
           <latex-image>
-            \begin{tikzpicture}[scale=9]
+            \begin{tikzpicture}[scale=6]
             \draw[line width=2pt] (0,0) -- (30:1) node[midway,above,yshift=0.2] {1};
             \draw[line width=2pt] (0,0) -- (-30:1) node[midway,below,yshift=-0.1] {1};
             \draw[line width=2pt] (0.866025403784,-0.5) -- (0.866025403784,0.5) node[midway,left,yshift=-0.2] {\(1=2y\)};
-            \filldraw[black] (30:1) circle(1pt) node[left,xshift=-10] {\(P(x,y)\)};
+            \filldraw[black] (30:1) circle(0.5pt) node[left,xshift=-10] {\(P(x,y)\)};
             \draw ([shift=(-30:0.15)]0,0) arc (-30:30:0.15) node[midway,right,xshift=0.04] {\(60^{\circ}\)};
             \draw ([shift=(210:0.15)]30:1) arc (210:270:0.15) node[midway,below,xshift=-0.1] {\(60^{\circ}\)};
             \draw ([shift=(90:0.15)]-30:1) arc (90:150:0.15) node[midway,above,xshift=-0.1] {\(60^{\circ}\)};
@@ -423,18 +427,18 @@
         <p>
           Giving us the following triangle
         </p>
-        <image xml:id="fig-30-60-90-sides">
+        <image xml:id="fig-30-60-90-sides" width="55%">
           <latex-image>
-            \begin{tikzpicture}[scale=7]
+            \begin{tikzpicture}[scale=4.5]
             \draw[->] (0,0)--(1.1,0) node[right]{\(x\)};
             \draw[->] (0,0)--(0,1.1) node[left]{\(y\)};
             \draw (0:1) arc (0:90:1);
             \draw[line width=2pt] (0,0) -- (30:1) node[midway,above,yshift=0.2] {1};
             \draw[line width=2pt] (0,0) -- (0.866025403784,0) node[midway,below,yshift=-0.1] {\(\frac{\sqrt{3}}{2}\)};
             \draw[line width=2pt] (0.866025403784,0) -- (0.866025403784,0.5) node[midway,right,yshift=-0.2] {\(\frac{1}{2}\)};
-            \filldraw[black] (30:1) circle(1pt) node[left,xshift=-7,yshift=3] {\(P(x,y)=P\left(\frac{\sqrt{3}}{2},\frac{1}{2}\right)\)};
-            \draw ([shift=(0:0.1)]0,0) arc (0:30:0.1) node[midway,right,xshift=0.04,yshift=1.1] {\(30^{\circ}\)};
-            \draw ([shift=(210:0.1)]30:1) arc (210:270:0.1) node[midway,below,xshift=-0.1] {\(60^{\circ}\)};
+            \filldraw[black] (30:1) circle(0.5pt) node[left,xshift=-7,yshift=3] {\(P(x,y)=P\left(\frac{\sqrt{3}}{2},\frac{1}{2}\right)\)};
+            \draw ([shift=(0:0.15)]0,0) arc (0:30:0.15) node[midway,right,xshift=3,yshift=3] {\(30^{\circ}\)};
+            \draw ([shift=(210:0.1)]30:1) arc (210:270:0.1) node[midway,below,xshift=-1] {\(60^{\circ}\)};
             \draw (0.796025403784,0) -- (0.796025403784,0.07) -- (0.866025403784,0.07);
             \end{tikzpicture}
           </latex-image>
@@ -455,9 +459,9 @@
         Similarly, we can get the following for
         <m>\theta=60^{\circ}</m>.
       </p>
-      <image xml:id="fig-60-60-60-sides">
+      <image xml:id="fig-60-60-60-sides" width="55%">
         <latex-image>
-          \begin{tikzpicture}[scale=9]
+          \begin{tikzpicture}[scale=5.5]
           \draw[->] (0,0)--(1.05,0) node[below]{\(x\)};
           \draw[->] (0,0)--(0,1.05) node[above]{\(y\)};
           \draw (0:1) arc (0:90:1);
@@ -467,11 +471,11 @@
           \node[below] at (0.25,0) {\(\frac{1}{2}\)};
           \node[below] at (0.75,0) {\(\frac{1}{2}\)};
           \draw (0.5,0) -- (0.5,0.866025403784) node[midway,right,yshift=0.0] {\(\frac{\sqrt{3}}{2}\)};
-          \filldraw[black] (60:1) circle(1pt) node[right,xshift=-4,yshift=-0.3] {\(P(x,y)=P\left(\frac{1}{2},\frac{\sqrt{3}}{2}\right)\)};
+          \filldraw[black] (60:1) circle(0.5pt) node[above,xshift=-4,yshift=-0.3] {\(P(x,y)=P\left(\frac{1}{2},\frac{\sqrt{3}}{2}\right)\)};
           \draw ([shift=(0:0.1)]0,0) arc (0:60:0.1) node[midway,right,xshift=0.04] {\(60^{\circ}\)};
           \draw ([shift=(120:0.1)]1,0) arc (120:180:0.1) node[midway,left,xshift=-0.04] {\(60^{\circ}\)};
-          \draw ([shift=(240:0.1)]60:1) arc (240:270:0.1) node[midway,below,xshift=-2,yshift=-3] {\(30^{\circ}\)};
-          \draw ([shift=(270:0.1)]60:1) arc (270:300:0.1) node[midway,below,xshift=2,yshift=-3] {\(30^{\circ}\)};
+          \draw ([shift=(240:0.1)]60:1) arc (240:270:0.1) node[midway,below,xshift=-4,yshift=-5] {\(30^{\circ}\)};
+          \draw ([shift=(270:0.1)]60:1) arc (270:300:0.1) node[midway,below,xshift=4,yshift=-5] {\(30^{\circ}\)};
           \draw (0.44,0) -- (0.44,0.06) -- (0.5,0.06);
           \end{tikzpicture}
         </latex-image>

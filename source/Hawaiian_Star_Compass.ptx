@@ -363,23 +363,27 @@
     remaining in its hemisphere
     (<xref ref="fig_celestial-sphere">Figure</xref>).
   </p>
+  
   <p>
     For example,
-    if a star arrives in the Koʻolau (northeastern) quadrant in the star house Noio,
+    if a star arrives in the Koʻolau (northeastern) quadrant in the star house ʻĀina,
     it will arc overhead,
-    staying in the northern hemisphere and enters the horizon in the same house it arrived in, Noio,
-    but in the Hoʻolua (northwest) quadrant.
+    staying in the northern hemisphere and enters the horizon in the same house it arrived in, ʻĀina,
+    but in the Hoʻolua (northwest) quadrant, see Figure <xref ref="fig_celestial-sphere"/>.
     If a star arrives in the Malanai (southeast) quadrant in the house Lā, it will remain in the southern hemisphere as it arcs overhead and enters the horizon in the house Lā in the Kona (southwestern) quadrant.
   </p>
   <figure xml:id="fig_celestial-sphere">
-    <caption>Celestial Sphere. (image from PVS)</caption>
-    <image width="40%" source="celestial_sphere.jpg" />
+    <caption>
+      In the Celestial Sphere, stars rise in the East, move over the sky and set in the West. 
+      A star will rise and set in the same house.
+    </caption>
+    <interactive geogebra="nmjdg3kb" aspect="1.75:1"/>
   </figure>
   <p>
     The star compass is also used to determine direction based on wind and ocean swells.
     As the wind and swells move, they cross the star compass diagonally.
-    If a wind is blowing from the house ʻāina in the Koʻolau (northeast) quadrant,
-    it would blow in the direction of the Kona (southwest) quadrant and exit at the same house it originated from, ʻāina.
+    If a wind is blowing from the house Noio in the Koʻolau (northeast) quadrant,
+    it would blow in the direction of the Kona (southwest) quadrant and exit at the same house it originated from, Noio.
   </p>
   <p>
     Now that we know the star compass,

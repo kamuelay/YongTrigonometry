@@ -91,9 +91,10 @@
       <idx>
         <h>measure</h>
       </idx> of an angle is the amount of rotation from the initial side to
-      the terminal side. One unit of measuring angles is the degree. One <term>degree</term>,
-      <idx><h>degree</h></idx> denoted by <m>1^{\circ}</m>, is <m>\frac{1}{360}</m> of a
-      complete revolution, so one full revolution is <m>360^{\circ}</m>. </p>
+      the terminal side. One unit of measuring angles is the degree. One <term>degree</term>, <idx>
+        <h>degree</h>
+      </idx> denoted by <m>1^{\circ}</m>, is <m>\frac{1}{360}</m> of a complete
+      revolution, so one full revolution is <m>360^{\circ}</m>. </p>
     <p> Since the Hawaiian Star Compass has 32 houses, we see that each house has <m>
       \frac{360^{\circ}}
         {32}=11.25^{\circ}</m>. If we assume due East corresponds to <m>0^{\circ}</m> and the center
@@ -224,24 +225,21 @@
       </solution>
     </example>
     <exercise>
+      <!--
       <webwork>
-        <pg-code> 
-          $d = Compute(random(0,359)); 
-          $m = Compute(random(0,59)); 
-          $s = Compute(random(0,59)); <!-- $deg = Compute($d+$m/60+$s/(60^2)); -->
-          $deg = $d;
-          $deg1 = $m/60;
-          $deg2 = $s/60^2;
-        </pg-code>
+        <pg-code> $d = Compute(random(0,359)); $m = Compute(random(0,59)); $s =
+          Compute(random(0,59)); 
+
+          $deg = $d; $deg1 = $m/60; $deg2 = $s/60^2; </pg-code>
         <statement>
-          <p> 
-            Convert <m><var name="$deg" />^\circ</m> to degrees/minutes/seconds form. 
-            <var name="$d" />
+          <p> Convert <m><var name="$deg" />^\circ</m> to degrees/minutes/seconds form. <var
+              name="$d" />
             <var name="$m" />
             <var name="$s" />
-            <var name="$deg"/>
-            <var name="$deg1"/>
-            <var name="$deg2"/>
+            <var name="$deg" />
+            <var name="$deg1" />
+            <var
+              name="$deg2" />
           </p>
           <p>
             solutions not working or matching up
@@ -257,6 +255,7 @@
                 name="$b" /></m>. </p>
         </solution>
       </webwork>
+      -->
     </exercise>
     <example>
       <title>Convert angle from degrees/minutes/seconds to decimal degrees</title>
@@ -363,8 +362,7 @@
       <statement>
         <p>
           <m>90^{\circ}</m> and <m>450^{\circ}</m> are coterminal angles since <m>
-          450^{\circ}-360^{\circ}=90^{\circ}</m>.
-        </p>
+          450^{\circ}-360^{\circ}=90^{\circ}</m>. </p>
       </statement>
     </example>
     <p> To determine the quadrant in which an angle lies, add or subtract one revolution (<m>
@@ -390,8 +388,8 @@
             <m>-770^{\circ}</m>
           </p>
           <solution>
-            <p> Since <m>-770^{\circ}\lt 0^{\circ}</m>, we first add <m>3\times360</m> to <m>-770^{\circ}</m>
-              to obtain an angle <m>0^{\circ}</m> and <m>360^{\circ}</m>, <me>
+            <p> Since <m>-770^{\circ}\lt 0^{\circ}</m>, we first add <m>3\times360</m> to <m>
+              -770^{\circ}</m> to obtain an angle <m>0^{\circ}</m> and <m>360^{\circ}</m>, <me>
               -770^{\circ}+3\times360^{\circ}=310^{\circ}
               </me> So <m>
               310^{\circ}</m> and <m>-770^{\circ}</m> are coterminal. Since <m>270^{\circ}\lt
@@ -857,8 +855,8 @@
         <p>
           <idx>
             <h>arc length</h>
-          </idx> In a circle of radius <m>r</m>, the <em>arc length</em>, <m>s</m>, 
-          subtended by a central angle (in radians), <m>\theta</m>, is <me>
+          </idx> In a circle of radius <m>r</m>, the <em>arc length</em>
+          , <m>s</m>, subtended by a central angle (in radians), <m>\theta</m>, is <me>
             s=r\theta </me>
         </p>
         <p> If <m>\theta</m> is given in degrees, then <m>\displaystyle s=2\pi
@@ -909,6 +907,7 @@
       </solution>
     </example>
     <exercise>
+      <!--
       <webwork>
         <pg-code>
           $c=random(50,100,1);
@@ -927,8 +926,10 @@
             <m>s=r\cdot\theta=<var name="$c" /> \cdot <var name="$d" /> = <var name="$ans1" /></m>. </p>
         </solution>
       </webwork>
+      -->
     </exercise>
     <exercise>
+      <!--
       <webwork>
         <pg-code>
           $a=random(2,20,1);
@@ -948,6 +949,7 @@
             \cdot\left(\frac{<var name="$b" />}{360^{\circ}}\right) = <var name="$ans2" /></m>. </p>
         </solution>
       </webwork>
+      -->
     </exercise>
   </subsection>
   <subsection xml:id="core-standards-CCSS_MATH_CONTENT_HSG_C_B_5-c">
@@ -998,13 +1000,13 @@
     </theorem>
     <example>
       <statement>
-        <p> When sailing, Hōkūleʻa cannot make headway by sailing directly into the wind. It
-          can only sail beyond <m>67^{\circ}</m> in either direction from the wind (<xref
+        <p> When sailing, Hōkūleʻa cannot make headway by sailing directly into the wind. It can
+          only sail beyond <m>67^{\circ}</m> in either direction from the wind (<xref
             ref="fig_sailing-upwind">Figure</xref>). If Hōkūleʻa sails for 50 miles, what is the
           area of the sector that cannot be sailed? Round your answer to the nearest square mile. </p>
 
         <figure xml:id="fig_sailing-upwind">
-            <caption> Hōkūleʻa cannot sail within <m>67^{\circ}</m> into the direction of the wind. </caption>
+          <caption> Hōkūleʻa cannot sail within <m>67^{\circ}</m> into the direction of the wind. </caption>
           <image xml:id="sailing-upwind" width="75%">
             <latex-image>
               \begin{tikzpicture}[x=3.25cm,y=3.25cm]
@@ -1050,10 +1052,9 @@
   </subsection>
   <subsection xml:id="sec_angular_velocity_and_linear_speed">
     <title>Angular Velocity and Linear Speed</title>
-    <p> Consider an object moving along a circle as shown below. There are two ways to
-      describe the circular motion of this object: <em>linear speed</em> which measures the distance
-      traveled; and <em>angular speed</em> which measures the rate at which the central angle
-      changes. </p>
+    <p> Consider an object moving along a circle as shown below. There are two ways to describe the
+      circular motion of this object: <em>linear speed</em> which measures the distance traveled;
+      and <em>angular speed</em> which measures the rate at which the central angle changes. </p>
     <image xml:id="fig-angular-velocity-linear-speed" width="33%">
       <latex-image>
         \begin{tikzpicture}[scale=1.25]
@@ -1153,13 +1154,17 @@
             \end{tikzpicture}
           </latex-image>
         </image>
-        <p> One method a waʻa uses to change direction is with the <em>hoe uli</em>, or the steering
-          paddle. When a sharp turn is needed for maneuvers such as tacking, the steersperson will
-          turn the handle of the hoe uli in a circular motion, as a lever to scoop the paddle in the
-          water and change the heading of a vessel. This move called <em>une</em> (prounced oo-NAY 
-          although it is often mispronounced as oo-NEE) <!-- https://www.lokahicanoeclub.org/culture/canoeterms.php -->
-          literally translates to <q>lever.</q> If the steerperson is performing an une at a rate of
-          25 rotations per minute and the radius of the circular movement is 2 feet, calculate <ol>
+        <p> One method a waʻa uses to change direction is with the <em>hoe uli</em><gi>
+            <title>hoe uli</title>
+            <p>steering paddle</p>
+          </gi>, or the steering paddle. When a sharp turn is
+          needed for maneuvers such as tacking, the steersperson will turn the handle of the hoe uli
+          in a circular motion, as a lever to scoop the paddle in the water and change the heading
+          of a vessel. This move called <em>une</em> (prounced oo-NAY although it is often
+          mispronounced as oo-NEE) <!--
+          https://www.lokahicanoeclub.org/culture/canoeterms.php --> literally translates to <q>lever.</q> If the steerperson is
+          performing an une at a rate of 25 rotations per minute and the radius of the circular
+          movement is 2 feet, calculate <ol>
             <li>
               <p>
                 the angular speed measured in radians per minute
@@ -1365,8 +1370,7 @@
       <introduction>
         <p> Recall the Star Compass with the boundaries for each House. Write the angles for the
           boundaries between the following houses in the Koʻolau quadrant in terms of degrees,
-          minutes, and seconds. 
-          <image xml:id="star-compass-first-quadrant" width="75%">
+          minutes, and seconds. <image xml:id="star-compass-first-quadrant" width="75%">
             <latex-image>
               \begin{tikzpicture}[scale=6.75]
               % draw the coordinates
