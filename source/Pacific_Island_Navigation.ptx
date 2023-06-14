@@ -1,36 +1,288 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<section xml:id="Hawaiian_Star_Compass" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Hawaiian Star Compass</title>
+<section xml:id="Pacific_Island_Navigation" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Pacific Island Navigation</title>
+    <introduction>
   <p>
-    Pacific Islanders have been wayfinding across long distances in the Pacific 
-    long before the magnetic compasses or other instruments were introduced.
-    Navigators relied on observations of the stars, sun, ocean, winds,
-    and other signs from nature to determine their position.
-    Through time,
-    much of the art and science of traditional wayfinding was lost across the Pacific,
-    except with a few navigators.
-    The island of Satawal in the Federated States of Micronesia was home to Mau Piailug,
-    one of the last traditional navigators.
-    To determine his position, Mau used the
-    <em>paafu</em>,
-    <idx>
-      <h>paafu</h>
-    </idx>
-    a Micronesian
-    <em>Star Compass</em>
-    <idx>
-      <h>Star Compass</h>
-    </idx>
-    which is mental construct used to help determine position by memorizing things important to navigation,
-    such as the position of stars when they rise and set on the horizon.
-    The star compass also reads the flight path of birds and the direction of winds and waves.
+    Pacific Islanders have been navigating across long distances in the Pacific long 
+    before the magnetic compasses or other modern instruments were introduced. 
+    Navigators relied on observations of the stars, sun, ocean, winds, habits of sea 
+    and winged creatures, and other terrestrial and marine signs from nature to 
+    determine their position relative to the direction of known or meaningful 
+    locales – islands, reefs, continents – around them. Through time, much of the art 
+    and science of traditional navigating was lost across the Pacific, except in some 
+    islands, mostly in Micronesia and on the island of Taumako in the Solomon Islands, 
+    where traditional schools continued to produce ocean going canoes and 
+    individuals – navigators – capable of voyaging long distances through the 
+    instrumentalization of deep knowledge about the natural world. 
   </p>
-  <p>
-    Wanting to revive wayfinding in Hawaiʻi, Nainoa Thompson traveled to the island of Satawal to learn from Mau Piailug.
-    Thompson adopted Mau's star compass,
-    resulting in the Hawaiian Star Compass
-    (<xref ref="star-compass-32-compass-rose">Figure</xref>).
-  </p>
+    </introduction>
+  <subsection xml:id="subsec-Micronesia">
+    <title>Micronesia</title>
+
+    <p>
+      Navigators in Micronesia use the <em>paafu</em><idx><h>paafu</h></idx> mat or 
+      map (shown in Figure (ref)), often mistranslated and misconstrued as a Star 
+      <q>Compass</q> for its use of stars and constellations to discern direction, but 
+      paafu is similar but not equivalent to the use of stars to mark cardinal 
+      directionality (the familiar marking of space in terms of North, South, East and 
+      West <q>cardinal points</q> for which compasses are known). Instead, paafu is a 
+      learning and teaching tool that was developed to begin to teach the locational 
+      position of an island (or a locale, or even a canoe) relative to other locales 
+      as these are <q>marked</q> by rising and setting points of stars and constellations. 
+    </p>
+
+
+
+
+      <figure xml:id="paafu">
+    <caption>The paafu, or Micronesian Star Compass. Stars are identified using the Polowat 
+    dialect of the Chuukese language as it is used by members of the Weriyeng School of 
+    navigation.</caption>
+    <image xml:id="fig-paafu">
+      <latex-image>
+\begin{tikzpicture}[scale=4.25,cap=round,>=latex]
+       \node[above,align=center, text width=1.7cm] at (0,1.45) {{\Large Tan}  Rising};
+        \node[below,align=center, text width=1.7cm] at (0,-1.45) {{\Large Tolon}  Setting};
+
+        \draw[thick] (0cm,0cm) circle(1cm);
+        \draw[thick] (0cm,0cm) circle(1.1cm);
+        
+
+        \foreach \x in {5.625,16.875,...,90} {
+                \draw[gray] (\x:1.1cm) - (\x:1cm);% node[fill=white,left,sloped] {$\x^\circ$};
+                }
+        \foreach \x in {95.625,106.875,...,270} {
+                \draw[gray] (\x:1.1cm) - (\x:1cm);% node[fill=white,left,sloped] {$\x^\circ$};
+                
+        }
+        \foreach \x in {275.625,286.875,...,360} {
+                \draw[gray] (\x:1.1cm) - (\x:1cm);% node[fill=white,left,sloped] {$\x^\circ$};
+        }
+
+        \foreach \x/\xtext in {
+            0/\footnotesize Crux at Meridian,
+            11.25/\footnotesize Crux Rising at $45^{\circ}$,
+            22.5/\footnotesize Rising Crux,
+            33.75/\footnotesize Shaula,
+            45/\footnotesize Antares,
+            56.25/\footnotesize Gamma Corvus,
+            67.5/\footnotesize Orion's Belt,
+            78.75/\footnotesize Beta Aquila,
+            90/\footnotesize Altair,
+            270/\footnotesize Altar,
+            281.25/\footnotesize Beta Aquila,
+            292.5/\footnotesize Orion's Belta,
+            303.75/\footnotesize Gamma Corvus,
+            315/\footnotesize Antares,
+            326.25/\footnotesize Shaula,
+            337.5/\footnotesize Setting Crux,
+            348.75/\footnotesize Crux Setting at $45^{\circ}$
+            }
+            \draw[left] (\x:0.98cm) node[rotate=\x] {\xtext};
+            
+
+        \foreach \x/\xtext in {
+            0/\small Wenenwenenup,
+            11.25/\small Machemeas,
+            22.5/\small Tan Up,
+            33.75/\small Maharuw,
+            45/\small Tumur,
+            56.25/\small Harapwel,
+            67.5/\small Oluol,
+            78.75/\small Paior,
+            90/\small Mailap,
+            270/\small Mailap,
+            281.25/\small Paior,
+            292.5/\small Oluol,
+            303.75/\small Harapwel,
+            315/\small Tumur,
+            326.25/\small Maharuw,
+            337.5/\small Tolon Up,
+            348.75/\small Machemeas
+            }
+            \draw[right] (\x:1.12cm) node[rotate=\x,text width=2.7cm] {\xtext};
+            
+        \foreach \x/\xtext in {
+            101.25/\footnotesize Gamma Aquila,
+            112.5/\footnotesize Aldebaran,
+            123.75/\footnotesize Pleiades,
+            135/\footnotesize Vega,
+            146.25/\footnotesize Alpha Cassiopeia,
+            157.5/\footnotesize Alpha Ursa Major,
+            168.75/\footnotesize Beta Ursa Minor,
+            180/\footnotesize Polaris,
+            191.25/\footnotesize Beta Ursa Minor,
+            202.5/\footnotesize Alpha Ursa Major,
+            213.75/\footnotesize Alpha Cassiopeia,
+            225/\footnotesize Vega,
+            236.25/\footnotesize Pleiades,
+            247.5/\footnotesize Aldebaran,
+            258.75/\footnotesize Gamma Aquila
+            }
+            \draw[right] (\x:0.98cm) node[rotate=180+\x] {\xtext};
+            
+        \foreach \x/\xtext in {
+            101.25/\small Paiefung,
+            112.5/\small Un, 
+            123.75/\small Mwarikar,
+            135/\small Mol,
+            146.25/\small Ukinik,
+            157.5/\small Welo,
+            168.75/\small Mailapenefung,
+            180/\small Wenenwenenfuhmwaket,
+            191.25/\small Mailapenefung,
+            202.5/\small Welo,
+            213.75/\small Ukinik,
+            225/\small Mol,
+            236.25/\small Mwarikar,
+            247.5/\small Un,
+            258.75/\small Paiefung
+            }
+            \draw[left] (\x:1.12cm) node[rotate=180+\x] {\xtext};
+            \draw (0,0) pic {micronesian-canoe={waacolor}{0}{0.45}};
+
+      \end{tikzpicture}
+</latex-image>
+    </image>
+  </figure>
+
+
+
+<p>
+A constellation is a cluster of stars whose shapes and meanings reflect and carry 
+cultural meanings or significance, such as the cluster of stars, prominent in the 
+southern hemisphere, that is cruciform in shape and is commonly referred to in modern 
+society as the <q>Southern Cross.</q> The same constellation for the Polowatese and other 
+islanders from the Central Carolines region in the western Pacific islands resembles 
+for them the trigger fish Pup, and so is named as such. In the Central Carolines, the 
+general location in the celestial sky where stars appear to rise after sundown is 
+referred to as <q><em>tan</em>,</q> which is often mistranslated as <q>east</q> since 
+modern society refers to stars (like the sun) as <q>rising</q> in the east. Indeed, tan 
+means <q>rising.</q> It does not mean <q>Eastward.</q>
+</p>
+
+<p>
+Figure ref{fig:paafu} orients the cardinal direction known as <q>east</q> at the top of 
+the page, and so the top half of this diagram is also identified as <q>tan</q> – where 
+stars appear to rise. Following an apparent <q>path</q> across the sky each night and 
+day (although most stars are not visible during the day) and across a year – in this 
+system, the rising and presence of specific stars across the sky mark months, the same 
+stars will eventually set at a point horizontally opposite where they rose. 
+Corresponding to the cardinal direction point called <q>west,</q> this part of the circle 
+is referred to as <q><em>tolon</em></q> or where the stars <q>set</q> or go down. In the 
+paafu <q>map</q> in Figure \ref{fig:paafu}, whose center is the figure of a canoe, the 
+star called Mailap (Altair) marks due east. Where and when Mailap rises is referred 
+to as Tan Mailap (rising Mailap) and when and where it sets is referred to as Tolon 
+Mailap (setting Mailap). In Figure \ref{fig:paafu}, east or the rising points of the 
+navigation or paafu stars is situated at the top of the circle, and west or the setting 
+points of these stars is situated at the bottom of the circle. As a map, paafu uses the 
+rising and setting points of stars to mark places around any given locale that would be 
+placed in the center of the circle (see Table \ref{tab:paafu}). Paafu can also be used 
+to identify the direction that moving objects, like canoes, or creatures, like birds, 
+fish, and humans, are heading or coming from. In this version of paafu, the stars are 
+identified using the Polowat dialect of the Chuukese language as it is used by members 
+of the Weriyeng School of navigation.
+    </p>
+
+ <table xml:id="tab_paafu">
+    <title>Star and constellation names in order of rising during sailing season in Polowat (Third week of March).</title>
+    <tabular>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row bottom="minor">
+        <cell>Star and Constellation Names (Polowat)</cell>
+        <cell>International Astronomical Union</cell>
+      </row>
+      <row>
+        <cell>Wenenwenenfuhmwaket </cell>
+        <cell> Polaris (always above the horizon)</cell>
+      </row>
+<row>
+        <cell>Tan Mwarikar  [Mahrah-ker] </cell>
+        <cell> Pleiades aka Seven Sisters</cell>
+      </row>
+<row>
+        <cell>Tan Un  [Oon] </cell>
+        <cell> Aldebaran</cell>
+      </row>
+<row>
+        <cell>Tan Uliul  [Ooh-lee-ool] </cell>
+        <cell> Orion’s Belt</cell>
+      </row>
+<row>
+        <cell>Tan Harapwel  [Ah-rah-pwol] </cell>
+        <cell> Gamma Corvus</cell>
+      </row>
+<row>
+        <cell>Tan Mailapenefang [My Lap in a Fang] </cell>
+        <cell> Beta Ursa Minor in Big Dipper</cell>
+      </row>
+<row>
+        <cell>Tan Up [Oop]  </cell>
+        <cell> Crux or Southern Cross at Rising</cell>
+      </row>
+<row>
+        <cell>Machemeas [Matche-may-ess] </cell>
+        <cell> Crux or S. Cross at <m>45^{\circ}</m>.<aside>The <q>Tan</q> prefix is not used for this position, because it is no longer rising</aside></cell>
+      </row>
+<row>
+        <cell>Tan Welo [Well-Ah] </cell>
+        <cell> Alpha Ursa Major in Big Dipper</cell>
+      </row>
+<row>
+        <cell>Wenenwenenup  [Wehneh wehnen Oop] </cell>
+        <cell> Crux  or S. Cross at Meridian or upright </cell>
+      </row>
+<row>
+        <cell>Tan Tumur  [Two More] </cell>
+        <cell> Antares or Scorpio’s tail</cell>
+      </row>
+<row>
+        <cell>Tan Maharuw [Maa-Haa-Roo] </cell>
+        <cell> Shaula or Scorpio’s stinger</cell>
+      </row>
+<row>
+        <cell>Tan Mol  [Mohl] </cell>
+        <cell> Vega</cell>
+      </row>
+<row>
+        <cell>Tan Mailap [My Lap] </cell>
+        <cell> Altair</cell>
+      </row>
+<row>
+        <cell>Tan Paiefung [Pie Efung] </cell>
+        <cell> Gamma Aquila</cell>
+      </row>
+<row>
+        <cell>Tan Paior [Pie Or] </cell>
+        <cell> Beta Aquila</cell>
+      </row>
+<row>
+        <cell>Tan Ukinik [Icky Nick] </cell>
+        <cell> Cassioepea</cell>
+      </row>
+            <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+      </row>
+
+    </tabular>
+  </table>
+
+  </subsection>
+  
+  <subsection xml:id="subsec-Hawaii">
+    <title>Hawaiʻi</title>\
+    <p>
+Wanting to revive wayfinding in Hawaiʻi, Nainoa Thompson traveled to the island 
+of Satawal in the Federated States of Micronesia to learn from navigator Mau Piailug, 
+who affectionately became known as Papa Mau. Thompson adopted the paafu, resulting in 
+the Hawaiian <em>Star Compass</em><idx><h>Star Compass</h><h>Hawaiian</h></idx>, also known as the 
+<em>Kūkuluokalani</em><idx><h>Kūkuluokalani</h></idx> (Figure \ref{fig:star-compass}).
+</p>
+
   <figure xml:id="star-compass-32-compass-rose">
     <caption>Hawaiian Star Compass.</caption>
     <image xml:id="fig-star-compass-32-compass-rose">
@@ -322,13 +574,15 @@
       </row>
     </tabular>
   </table>
+
   <p>
-    In the star compass, Thompson divides the visual horizon into 32 equidistant points around a circle,
-    called houses.
-    Houses represent a space on the horizon where celestial bodies such as the sun, stars,
-    moon, and planets rise and set.
-    In the same way that we have addresses to help people find our homes,
-    each celestial body has its own address represented with these houses.
+    In the star compass, whose center is the figure of an ʻiwa or great frigatebird, 
+    Thompson divides the visual horizon into 32 equidistant points around a circle, 
+    called houses. The houses in the Hawaiian Star Compass represent a space on the 
+    horizon (<m>11.25^{\circ}</m>) where celestial bodies such as the sun, stars, 
+    moon, and planets rise and set. In the same way that we have addresses to help 
+    people find our homes, each celestial body has its own address represented with 
+    these houses.
   </p>
   <p>
     The four cardinal points correspond to a house.
@@ -338,7 +592,8 @@
     If you stand with your back towards Hikina (East) and face Komohana (West),
     your right will point towards <em>ʻĀkau</em>
     (<q>Right</q>) or North and your left will point towards <em>Hema</em>
-    (<q>Left</q>) or South.
+    (<q>Left</q>) or South. The Hawaiian Star Compass is oriented with North at 
+    the top of the compass.
   </p>
   <p>
     These four cardinal points divide the compass into four quadrants.
@@ -399,10 +654,11 @@
   <p>
     In addition to the star compass,
     many cultures across the Pacific use a
-    <em>wind compass</em>
-    .
+    <em>wind compass</em>.
     Similar to the star compass, the wind compass is also a mental construct.
   </p>
+</subsection>
+
   <exercises xml:id="hawaiian-star-compass-exercises">
     <exercise>
       <statement>
