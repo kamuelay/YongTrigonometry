@@ -52,17 +52,20 @@
     </definition>
     <definition>
       <statement>
-        <p> If two rays have a common vertex, <m>O</m>, they form an <term>angle</term>, <idx>
+        <p> We can create an <term>angle</term><idx>
             <h>angle</h>
-          </idx>
-          <m>\theta</m>. The starting ray of the angle is called the <term>initial
+          </idx>, <m>\theta</m>, by rotating rays. 
+        First, we begin with two rays lying on top of each other and beginning at <m>O</m>. 
+        We let one ray be fixed and will rotate the second ray about the point <m>O</m>. 
+        The ray that is fixed is called the <term>initial
           side</term>
           <idx>
             <h>initial side</h>
-          </idx> and the second ray is called the <term>terminal side</term>
-          . <idx>
+          </idx> 
+        and the ray that is rotated is called the <term>terminal side</term>
+          <idx>
             <h>terminal side</h>
-          </idx>
+          </idx>. 
         </p>
         <image xml:id="fig-initial-terminal-side" width="50%">
           <latex-image>
@@ -93,7 +96,7 @@
       </idx> of an angle is the amount of rotation from the initial side to
       the terminal side. One unit of measuring angles is the degree. One <term>degree</term>, <idx>
         <h>degree</h>
-      </idx> denoted by <m>1^{\circ}</m>, is <m>\frac{1}{360}</m> of a complete
+      </idx> denoted by <m>1^{\circ}</m>, is <m>\frac{1}{360}</m> of a complete circular
       revolution, so one full revolution is <m>360^{\circ}</m>. </p>
     <p> Since the Hawaiian Star Compass has 32 houses, we see that each house has <m>
       \frac{360^{\circ}}
@@ -367,7 +370,7 @@
     </example>
     <p> To determine the quadrant in which an angle lies, add or subtract one revolution (<m>
       360^{\circ}</m>) until you obtain a coterminal angle between <m>0^{\circ}</m> and <m>
-      360^{\circ}</m>. The quadrant that the terminal side lies is the quadrant of the angle.
+      360^{\circ}</m>. The quadrant where the terminal side lies is the quadrant of the angle.
       Quadrantal angles do not lie in any quadrant. </p>
     <example>
       <title>Determine the corresponding house and quadrant in the Star Compass</title>
