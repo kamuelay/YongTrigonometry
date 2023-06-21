@@ -909,8 +909,7 @@
         </p>
       </solution>
     </example>
-    <exercise>
-      <!--
+    <!-- <exercise>
       <webwork>
         <pg-code>
           $c=random(50,100,1);
@@ -929,10 +928,9 @@
             <m>s=r\cdot\theta=<var name="$c" /> \cdot <var name="$d" /> = <var name="$ans1" /></m>. </p>
         </solution>
       </webwork>
-      -->
-    </exercise>
+    </exercise> -->
+    <!--
     <exercise>
-      <!--
       <webwork>
         <pg-code>
           $a=random(2,20,1);
@@ -952,8 +950,8 @@
             \cdot\left(\frac{<var name="$b" />}{360^{\circ}}\right) = <var name="$ans2" /></m>. </p>
         </solution>
       </webwork>
-      -->
     </exercise>
+    -->
   </subsection>
   <subsection xml:id="core-standards-CCSS_MATH_CONTENT_HSG_C_B_5-c">
     <title>Area of a Sector of a Circle</title>
@@ -1001,7 +999,7 @@
         </p>
       </statement>
     </theorem>
-    <example>
+    <example xml:id="example:sail-into-wind">
       <statement>
         <p> When sailing, Hōkūleʻa cannot make headway by sailing directly into the wind. It can
           only sail beyond <m>67^{\circ}</m> in either direction from the wind (<xref
@@ -1157,10 +1155,7 @@
             \end{tikzpicture}
           </latex-image>
         </image>
-        <p> One method a waʻa uses to change direction is with the <em>hoe uli</em><gi>
-            <title>hoe uli</title>
-            <p>steering paddle</p>
-          </gi>, or the steering paddle. When a sharp turn is
+        <p> One method a waʻa uses to change direction is with the <em>hoe uli</em>, or the steering paddle. When a sharp turn is
           needed for maneuvers such as tacking, the steersperson will turn the handle of the hoe uli
           in a circular motion, as a lever to scoop the paddle in the water and change the heading
           of a vessel. This move called <em>une</em> (prounced oo-NAY although it is often
@@ -2473,6 +2468,36 @@
       <answer>
         <p> 36.5 minutes</p>
       </answer>
+    </exercise>
+    <exercise>
+      <introduction>
+        <p> In <xref ref="example:sail-into-wind">Example</xref>, we learned that wa‘a cannot sail directly into the wind. 
+        For each of the following wa‘a and distance traveled, determine the area of the sector that 
+        cannot be sailed? Recall that 1 house = <m>11.25</m>. Round your answer to the nearest square mile.  
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            Makaliʻi sails for 25 miles and cannot sail within 4 houses from the direction of the wind.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>491</m> square miles </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Alingano Maisu sails for 15 miles and cannot sail within 3 houses from the direction of the wind.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>133</m> square miles </p>
+        </answer>
+      </task>
     </exercise>
 
   </exercises>
