@@ -27,10 +27,11 @@
     </definition>
     <p>
       Let <m>t</m> be a real number.
-      Recall that a radian measure of a central angle, <m>t</m>,
+      Recall from <xref ref="core-standards-CCSS_MATH_CONTENT_HSF_TF_A_1">Definition</xref> 
+      that a radian measure of a central angle, <m>t</m>,
       is defined as the ratio of the arc length
       <m>s</m> to the radius <m>r</m>.
-      So, <m>t=\frac{s}{r}</m>.
+      In other words, <m>t=\frac{s}{r}</m>.
       In the unit circle, the radius is
       <m>r=1</m>, and the angle in radians is equal to the arc length, <m>t=s</m>.
       We will let <m>t</m> be in radians.
@@ -87,7 +88,7 @@
       <m>P(x,y)</m>.
       Therefore, we can conclude that regardless of the value of <m>t</m>,
       we have a unique point <m>P(x,y)</m> that lies on the unit circle.
-      We call <m>P(x,y)</m> the point on the unit circle that corresponds to <m>t</m>.
+      We call <m>P(x,y)</m> the <em>point on the unit circle that corresponds to <m>t</m></em>.
     </p>
   </subsection>
   <subsection xml:id="core-standards-CCSS_MATH_CONTENT_HSF_TF_A_2">
@@ -119,8 +120,8 @@
           <m>P(x,y)</m> be the terminal point on the unit circle associated with
           <m>t</m>. Then
           <md>
-            <mrow>\sin t\amp =y \amp  \cos t\amp =x \amp  \tan t\amp =\frac{y}{x}  (x\neq0)</mrow>
-            <mrow>\csc t\amp =\frac{1}{y}  (y\neq0) \amp  \sec t\amp =\frac{1}{x}  (x\neq0) \amp  \cot t\amp =\frac{x}{y}  (y\neq0)</mrow>
+            <mrow>\sin t\amp =y \amp  \cos t\amp =x \amp  \tan t\amp =\frac{y}{x},~(x\neq0)</mrow>
+            <mrow>\csc t\amp =\frac{1}{y},~(y\neq0) \amp  \sec t\amp =\frac{1}{x},~(x\neq0) \amp  \cot t\amp =\frac{x}{y},~(y\neq0)</mrow>
           </md>
         </p>
         <image xml:id="fig-def-trig-function-unit-circle" width="75%">
@@ -162,8 +163,8 @@
           Then we have
           <md>
             <mrow> \sin \theta\amp =y=-\frac{1}{2},\amp \csc \theta\amp =\frac{1}{y}=\frac{1}{-\frac{1}{2}}=-2,</mrow>
-            <mrow> \cos \theta\amp =x=\frac{\sqrt{3}}{2}, \amp \sec \theta\amp =\frac{1}{x}=\frac{1}{\frac{\sqrt{3}}{2}}=\frac{2\sqrt{3}}{3},</mrow>
-            <mrow> \tan \theta\amp =\frac{y}{x}=\frac{-\frac{1}{2}}{\frac{\sqrt{3}}{2}}=-\frac{\sqrt{3}}{3},\amp \cot \theta\amp =\frac{x}{y}=\frac{\frac{\sqrt{3}}{2}}{-\frac{1}{2}}=-\sqrt{3}.</mrow>
+            <mrow> \cos \theta\amp =x=\frac{\sqrt{3}}{2}, \amp \sec \theta\amp =\frac{1}{x}=\frac{1}{\frac{\sqrt{3}}{2}}=\frac{2}{\sqrt{3}}=\frac{2\sqrt{3}}{3},</mrow>
+            <mrow> \tan \theta\amp =\frac{y}{x}=\frac{-\frac{1}{2}}{\frac{\sqrt{3}}{2}}=-\frac{1}{\sqrt{3}}=-\frac{\sqrt{3}}{3},\amp \cot \theta\amp =\frac{x}{y}=\frac{\frac{\sqrt{3}}{2}}{-\frac{1}{2}}=-\sqrt{3}.</mrow>
           </md>
         </p>
       </solution>
@@ -184,8 +185,8 @@
           <term>six trigonometric functions</term>
           become
           <md>
-            <mrow>\sin \theta\amp =y \amp  \cos \theta\amp =x \amp  \tan \theta\amp =\frac{y}{x}  (x\neq0)</mrow>
-            <mrow>\csc \theta\amp =\frac{1}{y}  (y\neq0) \amp  \sec \theta\amp =\frac{1}{x}  (x\neq0) \amp  \cot \theta\amp =\frac{x}{y}  (y\neq0)</mrow>
+            <mrow>\sin \theta\amp =y \amp  \cos \theta\amp =x \amp  \tan \theta\amp =\frac{y}{x},~(x\neq0)</mrow>
+            <mrow>\csc \theta\amp =\frac{1}{y},~(y\neq0) \amp  \sec \theta\amp =\frac{1}{x},~(x\neq0) \amp  \cot \theta\amp =\frac{x}{y},~(y\neq0)</mrow>
           </md>
         </p>
       </statement>
@@ -334,14 +335,15 @@
             <mrow>x^2+x^2\amp = 1 \amp(\mbox{since } y=x)</mrow>
             <mrow>2x^2\amp = 1</mrow>
             <mrow>x^2\amp = \frac{1}{2}</mrow>
-            <mrow>x\amp = \frac{1}{\sqrt{2}}=\frac{\sqrt{2}}{2}=y.</mrow>
+            <mrow>x\amp = \frac{1}{\sqrt{2}}</mrow>
+            <mrow>y\amp = \frac{1}{\sqrt{2}} \amp(\mbox{since } y=x)</mrow>
           </md>
         </p>
         <p>
           Then
           <md>
-            <mrow> \sin 45^{\circ} \amp=\frac{\sqrt{2}}{2} \amp \csc  45^{\circ}=\frac{1}{\frac{\sqrt{2}}{2}}\amp=\sqrt{2}</mrow>
-            <mrow> \cos 45^{\circ} \amp=\frac{\sqrt{2}}{2} \amp \sec  45^{\circ}=\frac{1}{\frac{\sqrt{2}}{2}}\amp=\sqrt{2}</mrow>
+            <mrow> \sin 45^{\circ} \amp=\frac{1}{\sqrt{2}}=\frac{\sqrt{2}}{2} \amp \csc  45^{\circ}=\frac{1}{\frac{\sqrt{2}}{2}}\amp=\sqrt{2}</mrow>
+            <mrow> \cos 45^{\circ} \amp=\frac{1}{\sqrt{2}}=\frac{\sqrt{2}}{2} \amp \sec  45^{\circ}=\frac{1}{\frac{\sqrt{2}}{2}}\amp=\sqrt{2}</mrow>
             <mrow> \tan 45^{\circ} \amp=\frac{\frac{\sqrt{2}}{2}}{\frac{\sqrt{2}}{2}}=1 \amp \cot  45^{\circ}=\frac{\frac{\sqrt{2}}{2}}{\frac{\sqrt{2}}{2}}\amp=1</mrow>
           </md>
         </p>
@@ -491,7 +493,7 @@
         <h>Trigonometric Functions</h>
         <h>special values</h>
       </idx>
-      <tabular>
+      <tabular halign="center">
         <row bottom="minor">
           <cell></cell>
           <cell></cell>
@@ -688,116 +690,7 @@
         </row>
       </tabular>
     </table>
-    <p>
-      To help remember the values of sine and cosine for basic angles in the first quadrant,
-      write them in the form
-      <m>\sqrt{\cdot}/2</m>
-    </p>
-    <table>
-      <tabular>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell>
-            <m>t</m>
-          </cell>
-          <cell>
-            <m>\sin t</m>
-          </cell>
-          <cell>
-            <m>\cos t</m>
-          </cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell>
-            <m>0</m>
-          </cell>
-          <cell>
-            <m>\sqrt{0}/2</m>
-          </cell>
-          <cell>
-            <m>\sqrt{4}/2</m>
-          </cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell>
-            <m>\pi/6</m>
-          </cell>
-          <cell>
-            <m>\sqrt{1}/2</m>
-          </cell>
-          <cell>
-            <m>\sqrt{3}/2</m>
-          </cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell>
-            <m>\pi/4</m>
-          </cell>
-          <cell>
-            <m>\sqrt{2}/2</m>
-          </cell>
-          <cell>
-            <m>\sqrt{2}/2</m>
-          </cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell>
-            <m>\pi/3</m>
-          </cell>
-          <cell>
-            <m>\sqrt{3}/2</m>
-          </cell>
-          <cell>
-            <m>\sqrt{1}/2</m>
-          </cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell>
-            <m>\pi/2</m>
-          </cell>
-          <cell>
-            <m>\sqrt{4}/2</m>
-          </cell>
-          <cell>
-            <m>\sqrt{0}/2</m>
-          </cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-        </row>
-      </tabular>
-    </table>
+
   </subsection>
   <subsection>
     <title>Symmetry on the Unit Circle</title>
@@ -824,9 +717,9 @@
     </p>
     <p>
       The symmetry in the unit circle is similar to that in the Star Compass.
-      When a star enters the sky in the east, the house that arrives in will be 
+      When a star enters the sky in the east, the house that it arrives in will be 
       the same house it will set in on the west.
-      For example, if a star first appears in the house Nālani in the Koʻolau quadrant (northeast),
+      For example, if a star enters the horizon in the house Nālani in the Koʻolau quadrant (northeast),
       it will arc over the sky and enter the horizon in the Hoʻolua quadrant (northwest).
       This is similar to the symmetry of <m>P(x,y)</m> and <m>Q(-x,y)</m>.
       Additionally, if an ocean swell or wind comes from the house of Nālani in the Malanai quadrant (southeast),
@@ -1163,14 +1056,316 @@
           <m>\theta</m> that is also on the circle
           <m>x^2+y^2=r^2</m>. Then
           <md>
-            <mrow>\sin \theta\amp =\frac{y}{r} \amp  \cos \theta\amp =\frac{x}{r} \amp  \tan \theta\amp =\frac{y}{x}  (x\neq0)</mrow>
-            <mrow>\csc \theta\amp =\frac{r}{y}  (y\neq0) \amp  \sec \theta\amp =\frac{r}{x}  (x\neq0) \amp  \cot \theta\amp =\frac{x}{y}  (y\neq0)</mrow>
+            <mrow>\sin \theta\amp =\frac{y}{r} \amp  \cos \theta\amp =\frac{x}{r} \amp  \tan \theta\amp =\frac{y}{x},~(x\neq0)</mrow>
+            <mrow>\csc \theta\amp =\frac{r}{y},~(y\neq0) \amp  \sec \theta\amp =\frac{r}{x},~(x\neq0) \amp  \cot \theta\amp =\frac{x}{y},~(y\neq0)</mrow>
           </md>
         </p>
       </statement>
     </theorem>
   </subsection>
     <exercises xml:id="unit-circle-exercises">
+      <exercisegroup>
+        <introduction>
+          <p>
+            Verify algebraically that the point <m>P</m> is on the unit circle (<m>x^2+y^2=1</m>)
+          </p>
+        </introduction>
+        <exercise>
+          <statement>
+            <m>P\left(\frac{3}{5},-\frac{4}{5}\right)</m>
+          </statement>
+          <answer>
+            <m>\left(\frac{3}{5}\right)^2+\left(-\frac{4}{5}\right)^2=1</m>
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <m>P\left(-\frac{\sqrt{39}}{8},-\frac{5}{8}\right)</m>
+          </statement>
+          <answer>
+            <m>\left(-\frac{\sqrt{39}}{8}\right)^2+\left(-\frac{5}{8}\right)^2=1</m>
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <m>P\left(-\frac{\sqrt{55}}{8},\frac{3}{8}\right)</m>
+          </statement>
+          <answer>
+            <m>\left(-\frac{\sqrt{55}}{8}\right)^2+\left(\frac{3}{8}\right)^2=1</m>
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <m>P\left(-\frac{2}{3},\frac{\sqrt{5}}{3}\right)</m>
+          </statement>
+          <answer>
+            <m>\left(-\frac{2}{3}\right)^2+\left(\frac{\sqrt{5}}{3}\right)^2=1</m>
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <m>P\left(\frac{3}{4},\frac{\sqrt{7}}{4}\right)</m>
+          </statement>
+          <answer>
+            <m>\left(\frac{3}{4}\right)^2+\left(\frac{\sqrt{7}}{4}\right)^2=1</m>
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <m>P\left(\frac{\sqrt{21}}{5},-\frac{2}{5}\right)</m>
+          </statement>
+          <answer>
+            <m>\left(\frac{\sqrt{21}}{5}\right)^2+\left(-\frac{2}{5}\right)^2=1</m>
+          </answer>
+        </exercise>
+      </exercisegroup>
+      <exercisegroup>
+        <introduction>
+        <p>
+          Let the point <m>P</m> be on the unit circle. Given the quadrant that <m>P</m> lies in, 
+          determine the missing coordinate, <m>a</m>
+        </p>
+        </introduction>
+        <exercise>
+          <statement>
+            <p>III; <m>P\left(-\frac{2}{3},a\right)</m></p>
+          </statement>
+          <answer>
+            <m>-\frac{\sqrt{5}}{3}</m>
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>IV; <m>P\left(\frac{5}{8},a\right)</m></p>
+          </statement>
+          <answer>
+            <m>-\frac{\sqrt{39}}{8}</m>
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>III; <m>P\left(a,-\frac{2}{5}\right)</m></p>
+          </statement>
+          <answer>
+            <m>-\frac{\sqrt{21}}{5}</m>
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>II; <m>P\left(a,\frac{4}{9}\right)</m></p> 
+          </statement>
+          <answer>
+            <m>-\frac{\sqrt{65}}{9}</m>
+          </answer>
+        </exercise>
+      </exercisegroup>
+      <exercisegroup xml:id="exercise:unit circle angles">
+        <introduction>
+        <p>
+          Given an angle <m>\theta</m> that corresponds to the point <m>P</m> on the unit circle, determine the coordinates of the point <m>P(x,y)</m>.
+        </p>
+        </introduction>
+        <exercise>
+          <statement>
+            <m>\theta=\frac{\pi}{2}</m>
+          </statement>
+          <answer>
+            <m>(0,1)</m>
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <m>\theta=\pi</m>
+          </statement>
+          <answer>
+            <m>(-1,0)</m>
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <m>\theta=\frac{5\pi}{3}</m>
+          </statement>
+          <answer>
+            <m>\left(\frac{1}{2},-\frac{\sqrt{3}}{2}\right)</m>
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <m>\theta=\frac{4\pi}{3}</m>
+          </statement>
+          <answer>
+            <m>\left(-\frac{1}{2},-\frac{\sqrt{3}}{2}\right)</m>
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <m>\theta=-\frac{\pi}{4}</m>
+          </statement>
+          <answer>
+            <m>\left(\frac{\sqrt{2}}{2},-\frac{\sqrt{2}}{2}\right)</m>
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <m>\theta=\frac{5\pi}{6}</m>
+          </statement>
+          <answer>
+            <m>\left(-\frac{\sqrt{3}}{2},\frac{1}{2}\right)</m>
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <m>\theta=315^{\circ}</m>
+          </statement>
+          <answer>
+            <m>\left(\frac{\sqrt{2}}{2},-\frac{\sqrt{2}}{2}\right)</m>
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <m>\theta=720^{\circ}</m>
+          </statement>
+          <answer>
+            <m>\left(1,0\right)</m>
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <m>\theta=60^{\circ}</m>
+          </statement>
+          <answer>
+            <m>\left(\frac{1}{2},\frac{\sqrt{3}}{2}\right)</m>
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <m>\theta=-180^{\circ}</m>
+          </statement>
+          <answer>
+            <m>\left(-1,0\right)</m>
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <m>\theta=210^{\circ}</m>
+          </statement>
+          <answer>
+            <m>\left(-\frac{\sqrt{3}}{2},-\frac{1}{2}\right)</m>
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <m>\theta=120^{\circ}</m>
+          </statement>
+          <answer>
+            <m>\left(-\frac{1}{2},\frac{\sqrt{3}}{2}\right)</m>
+          </answer>
+        </exercise>
+      </exercisegroup>
+      <exercisegroup xml:id="exercise:unit circle angles">
+        <introduction>
+        <p>
+          For each angle <m>\theta</m> that corresponds to the point <m>P</m> on the unit circle, find the exact values of the six trigonometric functions. If any are not defined, say <q><em>undefined</em>.</q>
+        </p>
+        </introduction>
+        <exercise>
+          <statement>
+            <m>\theta=\frac{\pi}{2}</m>
+          </statement>
+          <answer>
+            aaa
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <m>\theta=\pi</m>
+          </statement>
+          <answer>
+            aaa
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <m>\theta=\frac{5\pi}{3}</m>
+          </statement>
+          <answer>
+            aaa
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <m>\theta=\frac{4\pi}{3}</m>
+          </statement>
+          <answer>
+            aaa
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <m>\theta=-\frac{\pi}{4}</m>
+          </statement>
+          <answer>
+            aaa
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <m>\theta=\frac{5\pi}{6}</m>
+          </statement>
+          <answer>
+            aaa
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <m>\theta=315^{\circ}</m>
+          </statement>
+          <answer>
+            aaa
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <m>\theta=720^{\circ}</m>
+          </statement>
+          <answer>
+            aaa
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <m>\theta=60^{\circ}</m>
+          </statement>
+          <answer>
+            aaa
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <m>\theta=-180^{\circ}</m>
+          </statement>
+          <answer>
+            aaa
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <m>\theta=210^{\circ}</m>
+          </statement>
+          <answer>
+            aaa
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <m>\theta=120^{\circ}</m>
+          </statement>
+          <answer>
+            aaa
+          </answer>
+        </exercise>
+      </exercisegroup>
+
       <exercisegroup>
         <introduction>
           <p>
