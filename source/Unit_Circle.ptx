@@ -1072,50 +1072,50 @@
         </introduction>
         <exercise>
           <statement>
-            <m>P\left(\frac{3}{5},-\frac{4}{5}\right)</m>
+            <p><m>P\left(\frac{3}{5},-\frac{4}{5}\right)</m></p>
           </statement>
           <answer>
-            <m>\left(\frac{3}{5}\right)^2+\left(-\frac{4}{5}\right)^2=1</m>
+            <p><m>\left(\frac{3}{5}\right)^2+\left(-\frac{4}{5}\right)^2=1</m></p>
           </answer>
         </exercise>
         <exercise>
           <statement>
-            <m>P\left(-\frac{\sqrt{39}}{8},-\frac{5}{8}\right)</m>
+            <p><m>P\left(-\frac{\sqrt{39}}{8},-\frac{5}{8}\right)</m></p>
           </statement>
           <answer>
-            <m>\left(-\frac{\sqrt{39}}{8}\right)^2+\left(-\frac{5}{8}\right)^2=1</m>
+            <p><m>\left(-\frac{\sqrt{39}}{8}\right)^2+\left(-\frac{5}{8}\right)^2=1</m></p>
           </answer>
         </exercise>
         <exercise>
           <statement>
-            <m>P\left(-\frac{\sqrt{55}}{8},\frac{3}{8}\right)</m>
+            <p><m>P\left(-\frac{\sqrt{55}}{8},\frac{3}{8}\right)</m></p>
           </statement>
           <answer>
-            <m>\left(-\frac{\sqrt{55}}{8}\right)^2+\left(\frac{3}{8}\right)^2=1</m>
+            <p><m>\left(-\frac{\sqrt{55}}{8}\right)^2+\left(\frac{3}{8}\right)^2=1</m></p>
           </answer>
         </exercise>
         <exercise>
           <statement>
-            <m>P\left(-\frac{2}{3},\frac{\sqrt{5}}{3}\right)</m>
+            <p><m>P\left(-\frac{2}{3},\frac{\sqrt{5}}{3}\right)</m></p>
           </statement>
           <answer>
-            <m>\left(-\frac{2}{3}\right)^2+\left(\frac{\sqrt{5}}{3}\right)^2=1</m>
+            <p><m>\left(-\frac{2}{3}\right)^2+\left(\frac{\sqrt{5}}{3}\right)^2=1</m></p>
           </answer>
         </exercise>
         <exercise>
           <statement>
-            <m>P\left(\frac{3}{4},\frac{\sqrt{7}}{4}\right)</m>
+            <p><m>P\left(\frac{3}{4},\frac{\sqrt{7}}{4}\right)</m></p>
           </statement>
           <answer>
-            <m>\left(\frac{3}{4}\right)^2+\left(\frac{\sqrt{7}}{4}\right)^2=1</m>
+            <p><m>\left(\frac{3}{4}\right)^2+\left(\frac{\sqrt{7}}{4}\right)^2=1</m></p>
           </answer>
         </exercise>
         <exercise>
           <statement>
-            <m>P\left(\frac{\sqrt{21}}{5},-\frac{2}{5}\right)</m>
+            <p><m>P\left(\frac{\sqrt{21}}{5},-\frac{2}{5}\right)</m></p>
           </statement>
           <answer>
-            <m>\left(\frac{\sqrt{21}}{5}\right)^2+\left(-\frac{2}{5}\right)^2=1</m>
+            <p><m>\left(\frac{\sqrt{21}}{5}\right)^2+\left(-\frac{2}{5}\right)^2=1</m></p>
           </answer>
         </exercise>
       </exercisegroup>
@@ -1131,7 +1131,7 @@
             <p>III; <m>P\left(-\frac{2}{3},a\right)</m></p>
           </statement>
           <answer>
-            <m>-\frac{\sqrt{5}}{3}</m>
+            <p><m>-\frac{\sqrt{5}}{3}</m></p>
           </answer>
         </exercise>
         <exercise>
@@ -1139,7 +1139,7 @@
             <p>IV; <m>P\left(\frac{5}{8},a\right)</m></p>
           </statement>
           <answer>
-            <m>-\frac{\sqrt{39}}{8}</m>
+            <p><m>-\frac{\sqrt{39}}{8}</m></p>
           </answer>
         </exercise>
         <exercise>
@@ -1147,7 +1147,7 @@
             <p>III; <m>P\left(a,-\frac{2}{5}\right)</m></p>
           </statement>
           <answer>
-            <m>-\frac{\sqrt{21}}{5}</m>
+            <p><m>-\frac{\sqrt{21}}{5}</m></p>
           </answer>
         </exercise>
         <exercise>
@@ -1155,7 +1155,7 @@
             <p>II; <m>P\left(a,\frac{4}{9}\right)</m></p> 
           </statement>
           <answer>
-            <m>-\frac{\sqrt{65}}{9}</m>
+            <p><m>-\frac{\sqrt{65}}{9}</m></p>
           </answer>
         </exercise>
       </exercisegroup>
@@ -1167,102 +1167,102 @@
         </introduction>
         <exercise>
           <statement>
-            <m>\theta=\frac{\pi}{2}</m>
+            <p><m>\theta=\frac{\pi}{2}</m></p>
           </statement>
           <answer>
-            <m>(0,1)</m>
+            <p><m>(0,1)</m></p>
           </answer>
         </exercise>
         <exercise>
           <statement>
-            <m>\theta=\pi</m>
+            <p><m>\theta=\pi</m></p>
           </statement>
           <answer>
-            <m>(-1,0)</m>
+            <p><m>(-1,0)</m></p>
           </answer>
         </exercise>
         <exercise>
           <statement>
-            <m>\theta=\frac{5\pi}{3}</m>
+            <p><m>\theta=\frac{5\pi}{3}</m></p>
           </statement>
           <answer>
-            <m>\left(\frac{1}{2},-\frac{\sqrt{3}}{2}\right)</m>
+            <p><m>\left(\frac{1}{2},-\frac{\sqrt{3}}{2}\right)</m></p>
           </answer>
         </exercise>
         <exercise>
           <statement>
-            <m>\theta=\frac{4\pi}{3}</m>
+            <p><m>\theta=\frac{4\pi}{3}</m></p>
           </statement>
           <answer>
-            <m>\left(-\frac{1}{2},-\frac{\sqrt{3}}{2}\right)</m>
+            <p><m>\left(-\frac{1}{2},-\frac{\sqrt{3}}{2}\right)</m></p>
           </answer>
         </exercise>
         <exercise>
           <statement>
-            <m>\theta=-\frac{\pi}{4}</m>
+            <p><m>\theta=-\frac{\pi}{4}</m></p>
           </statement>
           <answer>
-            <m>\left(\frac{\sqrt{2}}{2},-\frac{\sqrt{2}}{2}\right)</m>
+            <p><m>\left(\frac{\sqrt{2}}{2},-\frac{\sqrt{2}}{2}\right)</m></p>
           </answer>
         </exercise>
         <exercise>
           <statement>
-            <m>\theta=\frac{5\pi}{6}</m>
+            <p><m>\theta=\frac{5\pi}{6}</m></p>
           </statement>
           <answer>
-            <m>\left(-\frac{\sqrt{3}}{2},\frac{1}{2}\right)</m>
+            <p><m>\left(-\frac{\sqrt{3}}{2},\frac{1}{2}\right)</m></p>
           </answer>
         </exercise>
         <exercise>
           <statement>
-            <m>\theta=315^{\circ}</m>
+            <p><m>\theta=315^{\circ}</m></p>
           </statement>
           <answer>
-            <m>\left(\frac{\sqrt{2}}{2},-\frac{\sqrt{2}}{2}\right)</m>
+            <p><m>\left(\frac{\sqrt{2}}{2},-\frac{\sqrt{2}}{2}\right)</m></p>
           </answer>
         </exercise>
         <exercise>
           <statement>
-            <m>\theta=720^{\circ}</m>
+            <p><m>\theta=720^{\circ}</m></p>
           </statement>
           <answer>
-            <m>\left(1,0\right)</m>
+            <p><m>\left(1,0\right)</m></p>
           </answer>
         </exercise>
         <exercise>
           <statement>
-            <m>\theta=60^{\circ}</m>
+            <p><m>\theta=60^{\circ}</m></p>
           </statement>
           <answer>
-            <m>\left(\frac{1}{2},\frac{\sqrt{3}}{2}\right)</m>
+            <p><m>\left(\frac{1}{2},\frac{\sqrt{3}}{2}\right)</m></p>
           </answer>
         </exercise>
         <exercise>
           <statement>
-            <m>\theta=-180^{\circ}</m>
+            <p><m>\theta=-180^{\circ}</m></p>
           </statement>
           <answer>
-            <m>\left(-1,0\right)</m>
+            <p><m>\left(-1,0\right)</m></p>
           </answer>
         </exercise>
         <exercise>
           <statement>
-            <m>\theta=210^{\circ}</m>
+            <p><m>\theta=210^{\circ}</m></p>
           </statement>
           <answer>
-            <m>\left(-\frac{\sqrt{3}}{2},-\frac{1}{2}\right)</m>
+            <p><m>\left(-\frac{\sqrt{3}}{2},-\frac{1}{2}\right)</m></p>
           </answer>
         </exercise>
         <exercise>
           <statement>
-            <m>\theta=120^{\circ}</m>
+            <p><m>\theta=120^{\circ}</m></p>
           </statement>
           <answer>
-            <m>\left(-\frac{1}{2},\frac{\sqrt{3}}{2}\right)</m>
+            <p><m>\left(-\frac{1}{2},\frac{\sqrt{3}}{2}\right)</m></p>
           </answer>
         </exercise>
       </exercisegroup>
-      <exercisegroup xml:id="exercise:unit circle angles">
+      <exercisegroup>
         <introduction>
         <p>
           For each angle <m>\theta</m> that corresponds to the point <m>P</m> on the unit circle, find the exact values of the six trigonometric functions. If any are not defined, say <q><em>undefined</em>.</q>
@@ -1270,210 +1270,102 @@
         </introduction>
         <exercise>
           <statement>
-            <m>\theta=\frac{\pi}{2}</m>
+            <p><m>\theta=\frac{\pi}{2}</m></p>
           </statement>
           <answer>
-            aaa
+            <p><m>\sin\frac{\pi}{2}=1</m>; <m>\cos\frac{\pi}{2}=0</m>; <m>\tan\frac{\pi}{2}</m> is undefined; <m>\csc\frac{\pi}{2}=1</m>; <m>\sec\frac{\pi}{2}</m> is undefined; <m>\cot\frac{\pi}{2}=0</m></p>
           </answer>
         </exercise>
         <exercise>
           <statement>
-            <m>\theta=\pi</m>
+            <p><m>\theta=\pi</m></p>
           </statement>
           <answer>
-            aaa
+            <p><m>\sin\pi=0</m>; <m>\cos\pi=-1</m>; <m>\tan\pi=0</m>; <m>\csc\pi</m> is undefined; <m>\sec\pi=-1</m>; <m>\cot\pi</m> is undefined</p>
           </answer>
         </exercise>
         <exercise>
           <statement>
-            <m>\theta=\frac{5\pi}{3}</m>
+            <p><m>\theta=\frac{5\pi}{3}</m></p>
           </statement>
           <answer>
-            aaa
+            <p><m>\sin\frac{5\pi}{3}=-\frac{\sqrt{3}}{2}</m>; <m>\cos\frac{5\pi}{3}=\frac{1}{2}</m>; <m>\tan\frac{5\pi}{3}=-\sqrt{3}</m>; <m>\csc\frac{5\pi}{3}=-\frac{2\sqrt{3}}{3}</m>; <m>\sec\frac{5\pi}{3}=2</m>; <m>\cot\frac{5\pi}{3}=-\frac{\sqrt{3}}{3}</m></p>
           </answer>
         </exercise>
         <exercise>
           <statement>
-            <m>\theta=\frac{4\pi}{3}</m>
+            <p><m>\theta=\frac{4\pi}{3}</m></p>
           </statement>
           <answer>
-            aaa
+            <p><m>\sin\frac{4\pi}{3}=-\frac{\sqrt{3}}{2}</m>; <m>\cos\frac{4\pi}{3}=-\frac{1}{2}</m>; <m>\tan\frac{4\pi}{3}=\sqrt{3}</m>; <m>\csc\frac{4\pi}{3}=-\frac{2\sqrt{3}}{3}</m>; <m>\sec\frac{4\pi}{3}=-2</m>; <m>\cot\frac{4\pi}{3}=\frac{\sqrt{3}}{3}</m></p>
           </answer>
         </exercise>
         <exercise>
           <statement>
-            <m>\theta=-\frac{\pi}{4}</m>
+            <p><m>\theta=-\frac{\pi}{4}</m></p>
           </statement>
           <answer>
-            aaa
+            <p><m>\sin\left(-\frac{\pi}{4}\right)=-\frac{\sqrt{2}}{2}</m>; <m>\cos\left(-\frac{\pi}{4}\right)=\frac{\sqrt{2}}{2}</m>; <m>\tan\left(-\frac{\pi}{4}\right)=-1</m>; <m>\csc\left(-\frac{\pi}{4}\right)=-\sqrt{2}</m>; <m>\sec\left(-\frac{\pi}{4}\right)=\sqrt{2}</m>; <m>\cot\left(-\frac{\pi}{4}\right)=-1</m></p>
           </answer>
         </exercise>
         <exercise>
           <statement>
-            <m>\theta=\frac{5\pi}{6}</m>
+            <p><m>\theta=\frac{5\pi}{6}</m></p>
           </statement>
           <answer>
-            aaa
+            <p><m>\sin\frac{5\pi}{6}=\frac{1}{2}</m>; <m>\cos\frac{5\pi}{6}=-\frac{\sqrt{3}}{2}</m>; <m>\tan\frac{5\pi}{6}=-\frac{\sqrt{3}}{3}</m>; <m>\csc\frac{5\pi}{6}=2</m>; <m>\sec\frac{5\pi}{6}=-\frac{2\sqrt{3}}{3}</m>; <m>\cot\frac{5\pi}{6}=-\sqrt{3}</m></p>
           </answer>
         </exercise>
         <exercise>
           <statement>
-            <m>\theta=315^{\circ}</m>
+            <p><m>\theta=315^{\circ}</m></p>
           </statement>
           <answer>
-            aaa
+            <p><m>\sin315^{\circ}=-\frac{\sqrt{2}}{2}</m>; <m>\cos315^{\circ}=\frac{\sqrt{2}}{2}</m>; <m>\tan315^{\circ}=-1</m>; <m>\csc315^{\circ}=-\sqrt{2}</m>; <m>\sec315^{\circ}=\sqrt{2}</m>; <m>\cot315^{\circ}=-1</m></p>
           </answer>
         </exercise>
         <exercise>
           <statement>
-            <m>\theta=720^{\circ}</m>
+            <p><m>\theta=720^{\circ}</m></p>
           </statement>
           <answer>
-            aaa
+            <p><m>\sin720^{\circ}=0</m>; <m>\cos720^{\circ}=1</m>; <m>\tan720^{\circ}=0</m>; <m>\csc720^{\circ}</m> is undefined; <m>\sec720^{\circ}=1</m>; <m>\cot720^{\circ}</m> is undefined</p>
           </answer>
         </exercise>
         <exercise>
           <statement>
-            <m>\theta=60^{\circ}</m>
+            <p><m>\theta=60^{\circ}</m></p>
           </statement>
           <answer>
-            aaa
+            <p><m>\sin60^{\circ}=\frac{\sqrt{3}}{2}</m>; <m>\cos60^{\circ}=\frac{1}{2}</m>; <m>\tan60^{\circ}=\sqrt{3}</m>; <m>\csc60^{\circ}=\frac{2\sqrt{3}}{3}</m>; <m>\sec60^{\circ}=2</m>; <m>\cot60^{\circ}=\frac{\sqrt{3}}{3}</m></p>
           </answer>
         </exercise>
         <exercise>
           <statement>
-            <m>\theta=-180^{\circ}</m>
+            <p><m>\theta=-180^{\circ}</m></p>
           </statement>
           <answer>
-            aaa
+            <p><m>\sin(-180^{\circ})=0</m>; <m>\cos(-180^{\circ})=-1</m>; <m>\tan(-180^{\circ})=0</m>; <m>\csc(-180^{\circ})</m> is undefined; <m>\sec(-180^{\circ})=-1</m>; <m>\cot(-180^{\circ})</m> is undefined</p>
           </answer>
         </exercise>
         <exercise>
           <statement>
-            <m>\theta=210^{\circ}</m>
+            <p><m>\theta=210^{\circ}</m></p>
           </statement>
           <answer>
-            aaa
+            <p><m>\sin210^{\circ}=-\frac{1}{2}</m>; <m>\cos210^{\circ}=-\frac{\sqrt{3}}{2}</m>; <m>\tan210^{\circ}=\frac{\sqrt{3}}{3}</m>; <m>\csc210^{\circ}=-2</m>; <m>\sec210^{\circ}=-\frac{2\sqrt{3}}{3}</m>; <m>\cot210^{\circ}=\sqrt{3}</m></p>
           </answer>
         </exercise>
         <exercise>
           <statement>
-            <m>\theta=120^{\circ}</m>
+            <p><m>\theta=120^{\circ}</m></p>
           </statement>
           <answer>
-            aaa
+            <p><m>\sin120^{\circ}=\frac{\sqrt{3}}{2}</m>; <m>\cos120^{\circ}=-\frac{1}{2}</m>; <m>\tan120^{\circ}=-\sqrt{3}</m>; <m>\csc120^{\circ}=\frac{2\sqrt{3}}{3}</m>; <m>\sec120^{\circ}=-2</m>; <m>\cot120^{\circ}=-\frac{\sqrt{3}}{3}</m></p>
           </answer>
         </exercise>
       </exercisegroup>
 
-      <exercisegroup>
-        <introduction>
-          <p>
-            Find the exact values of the six trigonometric functions given
-            <m>\theta</m>. If any are not defined, say
-            <q>
-              <em>undefined</em>.
-            </q>
-          </p>
-        </introduction>
-        <exercise>
-          <statement>
-            <m>\theta=\frac{\pi}{2}</m>
-          </statement>
-          <answer>
-            <ol>
-              <li><p><m>\sin\frac{\pi}{2}=1</m></p></li>
-              <li><p><m>\cos\frac{\pi}{2}=0</m></p></li>
-              <li><p><m>\tan\frac{\pi}{2}</m> is undefined</p></li>
-              <li><p><m>\csc\frac{\pi}{2}=1</m></p></li>
-              <li><p><m>\sec\frac{\pi}{2}</m> is undefined</p></li>
-              <li><p><m>\cot\frac{\pi}{2}=0</m></p></li>
-            </ol>
-          </answer>
-        </exercise>
-        <exercise>
-          <statement>
-            <m>\theta=\pi</m>
-          </statement>
-          <answer>
-            <ol>
-              <li><p><m>\sin\pi=0</m></p></li>
-              <li><p><m>\cos\pi=-1</m></p></li>
-              <li><p><m>\tan\pi=0</m></p></li>
-              <li><p><m>\csc\pi</m> is undefined</p></li>
-              <li><p><m>\sec\pi=-1</m></p></li>
-              <li><p><m>\cot\pi</m> is undefined</p></li>
-            </ol>
-          </answer>
-        </exercise>
-        <exercise>
-          <statement>
-            <m>\theta=\frac{\pi}{3}</m>
-          </statement>
-          <answer>
-            <ol>
-              <li><p><m>\sin\pi=</m></p></li>
-              <li><p><m>\cos\pi=</m></p></li>
-              <li><p><m>\tan\pi=</m></p></li>
-              <li><p><m>\csc\pi=</m></p></li>
-              <li><p><m>\sec\pi=</m></p></li>
-              <li><p><m>\cot\pi=</m></p></li>
-            </ol>
-          </answer>
-        </exercise>
-      </exercisegroup>
-      <exercisegroup>
-        <introduction>
-          <p>
-            Calculate the exact values of the six trigonometric functions for the angle
-            <m>\theta</m> which has a terminal point on the unit circle at
-          </p>
-        </introduction>
-        <exercise>
-          <statement>
-            <m>\left(\frac{3}{5},-\frac{4}{5}\right)</m>
-          </statement>
-          <answer>
-            <ol>
-              <li><p><m>\sin\pi=</m></p></li>
-              <li><p><m>\cos\pi=</m></p></li>
-              <li><p><m>\tan\pi=</m></p></li>
-              <li><p><m>\csc\pi=</m></p></li>
-              <li><p><m>\sec\pi=</m></p></li>
-              <li><p><m>\cot\pi=</m></p></li>
-            </ol>
-          </answer>
-        </exercise>
-        <exercise>
-          <statement>
-            <m>\left(\frac{}{},\frac{}{}\right)</m>
-          </statement>
-          <answer>
-            <ol>
-              <li><p><m>\sin\pi=</m></p></li>
-              <li><p><m>\cos\pi=</m></p></li>
-              <li><p><m>\tan\pi=</m></p></li>
-              <li><p><m>\csc\pi=</m></p></li>
-              <li><p><m>\sec\pi=</m></p></li>
-              <li><p><m>\cot\pi=</m></p></li>
-            </ol>
-          </answer>
-        </exercise>
-        <exercise>
-          <statement>
-            <m>\left(\frac{}{},\frac{}{}\right)</m>
-          </statement>
-          <answer>
-            <ol>
-              <li><p><m>\sin\pi=</m></p></li>
-              <li><p><m>\cos\pi=</m></p></li>
-              <li><p><m>\tan\pi=</m></p></li>
-              <li><p><m>\csc\pi=</m></p></li>
-              <li><p><m>\sec\pi=</m></p></li>
-              <li><p><m>\cot\pi=</m></p></li>
-            </ol>
-          </answer>
-        </exercise>
-      </exercisegroup>
+      
   </exercises>
 </section>
