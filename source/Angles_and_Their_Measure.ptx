@@ -999,7 +999,7 @@
         </p>
       </statement>
     </theorem>
-    <example xml:id="example:sail-into-wind">
+    <example xml:id="example-sail-into-wind">
       <statement>
         <p> When sailing, Hōkūleʻa cannot make headway by sailing directly into the wind. It can
           only sail beyond <m>67^{\circ}</m> in either direction from the wind (<xref
@@ -2471,7 +2471,7 @@
     </exercise>
     <exercise>
       <introduction>
-        <p> In <xref ref="example:sail-into-wind">Example</xref>, we learned that wa‘a cannot sail directly into the wind. 
+        <p> In <xref ref="example-sail-into-wind">Example</xref>, we learned that wa‘a cannot sail directly into the wind. 
         For each of the following wa‘a and distance traveled, determine the area of the sector that 
         cannot be sailed? Recall that 1 house = <m>11.25</m>. Round your answer to the nearest square mile.  
         </p>

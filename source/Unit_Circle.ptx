@@ -1064,7 +1064,7 @@
     </theorem>
   </subsection>
     <exercises xml:id="unit-circle-exercises">
-      <exercisegroup>
+      <exercisegroup xml:id="exercises-point-on-unit-circle">
         <introduction>
           <p>
             Verify algebraically that the point <m>P</m> is on the unit circle (<m>x^2+y^2=1</m>)
@@ -1159,7 +1159,7 @@
           </answer>
         </exercise>
       </exercisegroup>
-      <exercisegroup xml:id="exercise:unit circle angles">
+      <exercisegroup xml:id="exercise-unit-circle-angles">
         <introduction>
         <p>
           Given an angle <m>\theta</m> that corresponds to the point <m>P</m> on the unit circle, determine the coordinates of the point <m>P(x,y)</m>.
@@ -1265,7 +1265,7 @@
       <exercisegroup>
         <introduction>
         <p>
-          For each angle <m>\theta</m> that corresponds to the point <m>P</m> on the unit circle, find the exact values of the six trigonometric functions. If any are not defined, say <q><em>undefined</em>.</q>
+          For each angle <m>\theta</m> in <xref ref="exercise-unit-circle-angles">Exercises</xref>, find the exact values of the six trigonometric functions. If any are not defined, say <q><em>undefined</em>.</q>
         </p>
         </introduction>
         <exercise>
@@ -1365,7 +1365,77 @@
           </answer>
         </exercise>
       </exercisegroup>
-
-      
+      <exercisegroup>
+        <introduction>
+        <p>
+          Let <m>\theta</m> be the angle that corresponds to the point <m>P</m>. 
+          <xref ref="exercises-point-on-unit-circle">Exercises</xref> verified <m>P</m> is on the unit circle. 
+          Find the exact values of the six trigonometric functions of <m>\theta</m>.
+        </p>
+        </introduction>
+        <exercise>
+          <statement>
+            <p><m>P\left(\frac{3}{5},-\frac{4}{5}\right)</m></p>
+          </statement>
+          <answer>
+            <p><m>\sin\theta=-\frac{4}{5}</m>; <m>\cos\theta=\frac{3}{5}</m>; <m>\tan\theta=-\frac{4}{3}</m>; <m>\csc\theta=-\frac{5}{4}</m>; <m>\sec\theta=\frac{5}{3}</m>; <m>\cot\theta=-\frac{3}{4}</m></p>
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <p><m>P\left(-\frac{\sqrt{39}}{8},-\frac{5}{8}\right)</m></p>
+          </statement>
+          <answer>
+            <p><m>\sin\theta=-\frac{5}{8}</m>; <m>\cos\theta=-\frac{\sqrt{39}}{8}</m>; <m>\tan\theta=\frac{5\sqrt{39}}{39}</m>; <m>\csc\theta=-\frac{8}{5}</m>; <m>\sec\theta=-\frac{8\sqrt{39}}{39}</m>; <m>\cot\theta=\frac{\sqrt{39}}{5}</m></p>
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <p><m>P\left(-\frac{\sqrt{55}}{8},\frac{3}{8}\right)</m></p>
+          </statement>
+          <answer>
+            <p><m>\sin\theta=\frac{3}{8}</m>; <m>\cos\theta=-\frac{\sqrt{55}}{8}</m>; <m>\tan\theta=-\frac{3\sqrt{55}}{55}</m>; <m>\csc\theta=\frac{8}{3}</m>; <m>\sec\theta=-\frac{8\sqrt{55}}{55}</m>; <m>\cot\theta=-\frac{\sqrt{55}}{3}</m></p>
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <p><m>P\left(-\frac{2}{3},\frac{\sqrt{5}}{3}\right)</m></p>
+          </statement>
+          <answer>
+            <p><m>\sin\theta=\frac{\sqrt{5}}{3}</m>; <m>\cos\theta=-\frac{2}{3}</m>; <m>\tan\theta=-\frac{\sqrt{5}}{2}</m>; <m>\csc\theta=\frac{3\sqrt{5}}{5}</m>; <m>\sec\theta=-\frac{3}{2}</m>; <m>\cot\theta=-\frac{2\sqrt{5}}{5}</m></p>
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <p><m>P\left(\frac{3}{4},\frac{\sqrt{7}}{4}\right)</m></p>
+          </statement>
+          <answer>
+            <p><m>\sin\theta=\frac{\sqrt{7}}{4}</m>; <m>\cos\theta=\frac{3}{4}</m>; <m>\tan\theta=\frac{\sqrt{7}}{3}</m>; <m>\csc\theta=\frac{4\sqrt{7}}{7}</m>; <m>\sec\theta=\frac{4}{3}</m>; <m>\cot\theta=\frac{3\sqrt{7}}{7}</m></p>
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <p><m>P\left(\frac{\sqrt{21}}{5},-\frac{2}{5}\right)</m></p>
+          </statement>
+          <answer>
+            <p><m>\sin\theta=-\frac{2}{5}</m>; <m>\cos\theta=\frac{\sqrt{21}}{5}</m>; <m>\tan\theta=-\frac{2\sqrt{21}}{21}</m>; <m>\csc\theta=-\frac{5}{2}</m>; <m>\sec\theta=\frac{5\sqrt{21}}{21}</m>; <m>\cot\theta=-\frac{\sqrt{21}}{2}</m></p>
+          </answer>
+        </exercise>
+      </exercisegroup>
+      <exercisegroup>
+        <introduction>
+        <p>
+          Find the exact value of each expression.
+        </p>
+        </introduction>
+        <exercise>
+          <statement>
+            <p><m>...</m></p>
+          </statement>
+          <answer>
+            <p><m>...</m></p>
+          </answer>
+        </exercise>
+      </exercisegroup>
   </exercises>
 </section>
