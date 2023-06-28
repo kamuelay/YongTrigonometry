@@ -2480,7 +2480,7 @@ Using the right triangle
         </answer>
       </exercise>
     </exercisegroup>
-    <exercise>
+    <!-- <exercise>
       <introduction>
         <p>
           WebWork example
@@ -2511,16 +2511,16 @@ Using the right triangle
           </p>
         </solution>
       </webwork>
-    </exercise>
-    <exercise>
+    </exercise> -->
+    <!-- <exercise>
   <webwork>
 <statement>
 <p><m>1+2=</m><var name="'3'" width="5" /></p>
     </statement>
   </webwork>
-</exercise>
+</exercise> -->
 
- <exercise>
+ <!-- <exercise>
     <webwork xml:id="ex_first-webwork-add-numbers">
       <description>
         Add two positive single-digit integers.
@@ -2547,15 +2547,15 @@ Using the right triangle
         </p>
       </solution>
     </webwork>
-  </exercise>
+  </exercise> -->
 
-<exercise>
+<!-- <exercise>
     <webwork source="Library/PCC/BasicAlgebra/Exponents/exponentsMultiplication0.pg" />
-  </exercise>
+  </exercise> -->
 
 
 
- <exercise>
+ <!-- <exercise>
       <introduction>
         <p>
           WebWork example
@@ -2586,45 +2586,44 @@ Using the right triangle
           </p>
         </solution>
       </webwork>
-    </exercise>
+    </exercise> -->
 
+
+
+
+
+    <!-- <exercise>
+      <introduction>
+        <p>
+          WebWork example
+        </p>
+      </introduction>
+      <webwork>
+        <pg-code>
+          $a = Compute(random(1, 9, 1));
+          $b = Compute(random(1, 9, 1));
+          $c = $a + $b;
+        </pg-code>
+        <statement>
+          <p>
+            Compute the sum of <m><var name="$a" /></m> and <m><var name="$b" /></m>:
+          </p>
+          <p>
+            <m><var name="$a" /> + <var name="$b" /> =</m> <var name="$c" width="5" />
+          </p>
+        </statement>
+        <hint>
+          <p>
+            Add <m><var name="$a" /></m> and <m><var name="$b" /></m> together.
+          </p>
+        </hint>
+        <solution>
+          <p>
+            <m><var name="$a" /> + <var name="$b" /> = <var name="$c" /></m>.
+          </p>
+        </solution>
+      </webwork>
+    </exercise> -->
   </exercises>
-
-
-
-
-    <exercise>
-      <introduction>
-        <p>
-          WebWork example
-        </p>
-      </introduction>
-      <webwork>
-        <pg-code>
-          $a = Compute(random(1, 9, 1));
-          $b = Compute(random(1, 9, 1));
-          $c = $a + $b;
-        </pg-code>
-        <statement>
-          <p>
-            Compute the sum of <m><var name="$a" /></m> and <m><var name="$b" /></m>:
-          </p>
-          <p>
-            <m><var name="$a" /> + <var name="$b" /> =</m> <var name="$c" width="5" />
-          </p>
-        </statement>
-        <hint>
-          <p>
-            Add <m><var name="$a" /></m> and <m><var name="$b" /></m> together.
-          </p>
-        </hint>
-        <solution>
-          <p>
-            <m><var name="$a" /> + <var name="$b" /> = <var name="$c" /></m>.
-          </p>
-        </solution>
-      </webwork>
-    </exercise>
-
 </section>
   
