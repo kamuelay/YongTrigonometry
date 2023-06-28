@@ -1430,12 +1430,80 @@
         </introduction>
         <exercise>
           <statement>
-            <p><m>...</m></p>
+            <p><m>\sin30^{\circ}+\sin150^{\circ}</m></p>
           </statement>
           <answer>
-            <p><m>...</m></p>
+            <p><m>1</m></p>
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <p><m>\cos30^{\circ}+\cos150^{\circ}</m></p>
+          </statement>
+          <answer>
+            <p><m>0</m></p>
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <p><m>\sin60^{\circ}+\sin120^{\circ}+\sin240^{\circ}+\sin300^{\circ}</m></p>
+          </statement>
+          <answer>
+            <p><m>0</m></p>
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <p><m>\cos60^{\circ}+\cos120^{\circ}+\cos240^{\circ}+\cos300^{\circ}</m></p>
+          </statement>
+          <answer>
+            <p><m>0</m></p>
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <p><m>\tan45^{\circ}+\tan135^{\circ}</m></p>
+          </statement>
+          <answer>
+            <p><m>0</m></p>
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <p><m>\tan135^{\circ}+\tan225^{\circ}</m></p>
+          </statement>
+          <answer>
+            <p><m>0</m></p>
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <p><m>\tan225^{\circ}+\tan315^{\circ}</m></p>
+          </statement>
+          <answer>
+            <p><m>0</m></p>
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <p><m>\tan45^{\circ}+\tan225^{\circ}</m></p>
+          </statement>
+          <answer>
+            <p><m>2</m></p>
           </answer>
         </exercise>
       </exercisegroup>
+
+
+
+
+
+
+
+
+
+
+
+
   </exercises>
 </section>
