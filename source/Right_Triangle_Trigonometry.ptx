@@ -1892,15 +1892,10 @@ Using the right triangle
         How many nautical miles has the waʻa traveled north?
         How many miles has the waʻa traveled west?
         To calculate the angle
-          <m>\theta</m>
-          ,
-        refer to the Star Compass on (uncomment)
-          <!-- <xref ref="star-compass-with-angles">Figure</xref> -->
-          on
-          <!-- <xref ref="star-compass-with-angles">page</xref> -->
+          <m>\theta</m>,
+        refer to the Star Compass (<xref ref="star-compass-32-compass-rose">Figure</xref>)
           for help determining the number of houses and use the fact that one house is
-          <m>11.25^{\circ}</m>
-          .
+          <m>11.25^{\circ}</m>.
         </p>
       </statement>
       <image xml:id="fig-waa-right-triangle-distance-traveled" width="70%">
@@ -1931,8 +1926,7 @@ Using the right triangle
                 In general, waves aren't perpendicular to the shore,
                 instead they come at an angle.
                 When the wave crashes on the shore in a process known as
-          <em>swash</em>
-          ,
+          <em>swash</em>,
           <idx>
             <h>swash</h>
           </idx>
@@ -1940,14 +1934,12 @@ Using the right triangle
                 Gravity takes over and the water and sediment run straight into the ocean
                 (perpendicular to the shoreline),
                 a process known as
-          <em>backwash</em>
-          .
+          <em>backwash</em>.
           <idx>
             <h>backwash</h>
           </idx>
           This zig-zag motion of sand via the swash/backwash is called
-          <em>longshore drift</em>
-          .
+          <em>longshore drift</em>.
           <idx>
             <h>longshore drift</h>
           </idx>
