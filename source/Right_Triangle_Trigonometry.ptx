@@ -1448,8 +1448,8 @@
     </exercisegroup>
 
 
-    <exercise xml:id="ques-deviation">
-      <statement>
+    <exercisegroup xml:id="ques-deviation">
+      <introduction>
         <p>
           In <xref ref="ex-deviation">Example</xref>
           we calculated when a waʻa sails for one day (120 nautical miles) and 
@@ -1460,7 +1460,7 @@
           for the remaining 7 angles.
           Round your answer to the nearest tenth of a nautical mile.
           Note that one house is
-          <m>11.25^{\circ}</m>
+          <m>11.25^{\circ}</m>.
         </p>
         <image xml:id="fig-deviation-x" width="100%">
           <latex-image>
@@ -1493,88 +1493,106 @@
             \end{tikzpicture}
           </latex-image>
         </image>
-        <p>
-          \begin{tasks}(2) \task 2 Houses (
-          <m>11.25^{\circ}\times2=22.5^{\circ}</m>
-          );
-          <m>x_2</m>
-          \task 3 Houses (
-          <m>11.25^{\circ}\times3=33.75^{\circ}</m>
-          );
-          <m>x_3</m>
-          \task 4 Houses (
-          <m>11.25^{\circ}\times4=45^{\circ}</m>
-          );
-          <m>x_4</m>
-          \task 5 Houses (
-          <m>11.25^{\circ}\times5=56.25^{\circ}</m>
-          );
-          <m>x_5</m>
-          \task 6 Houses (
-          <m>11.25^{\circ}\times6=67.5^{\circ}</m>
-          );
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            2 Houses (<m>11.25^{\circ}\times2=22.5^{\circ}</m>);
+            <m>x_2</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>x_2=45.9</m>
+            NM
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            3 Houses (<m>11.25^{\circ}\times3=33.75^{\circ}</m>);
+            <m>x_3</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>x_3=66.7</m>
+            NM
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            4 Houses (<m>11.25^{\circ}\times4=45^{\circ}</m>);
+            <m>x_4</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>x_4=84.5</m>
+            NM
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            5 Houses (<m>11.25^{\circ}\times5=56.25^{\circ}</m>);
+            <m>x_5</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>x_5=99.8</m>
+            NM
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            6 Houses (<m>11.25^{\circ}\times6=67.5^{\circ}</m>);
           <m>x_6</m>
-          \task 7 Houses (
-          <m>11.25^{\circ}\times7=78.75^{\circ}</m>
-          );
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>x_6=110.9</m>
+            NM
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            7 Houses (<m>11.25^{\circ}\times7=78.75^{\circ}</m>);
           <m>x_7</m>
-          \task 8 Houses (
-          <m>11.25^{\circ}\times8=90^{\circ}</m>
-          );
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>x_7=117.7</m>
+            NM
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            8 Houses (<m>11.25^{\circ}\times8=90^{\circ}</m>);
           <m>x_8</m>
-          \end{tasks}
-        </p>
-      </statement>
-      <answer>
-        <p>
-          <m>x_2=45.9</m>
-          NM
-        </p>
-      </answer>
-
-
-      <answer>
-        <p>
-          <m>x_3=66.7</m>
-          NM
-        </p>
-      </answer>
-
-      <answer>
-        <p>
-          <m>x_4=84.5</m>
-          NM
-        </p>
-      </answer>
-
-      <answer>
-        <p>
-          <m>x_5=99.8</m>
-          NM
-        </p>
-      </answer>
-
-      <answer>
-        <p>
-          <m>x_6=110.9</m>
-          NM
-        </p>
-      </answer>
-
-      <answer>
-        <p>
-          <m>x_7=117.7</m>
-          NM
-        </p>
-      </answer>
-
-      <answer>
-        <p>
-          <m>x_8=120</m>
-          NM
-        </p>
-      </answer>
-    </exercise>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>x_8=120</m>
+            NM
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
 
 
     <exercise>
@@ -2029,7 +2047,7 @@ Using the right triangle
             <li>
               <m>v</m>, the linear speed (in miles per hour,
             rounded to the nearest whole number)
-            </il>
+            </li>
           </ol>
         </p>
         <image xml:id="fig-spinning-earth" width="75%">
