@@ -21,7 +21,7 @@
 
     <p>
       Navigators in Micronesia use the <em>paafu</em><idx><h>paafu</h></idx> mat or 
-      map (shown in Figure (ref)), often mistranslated and misconstrued as a Star 
+      map (shown in <xref ref="paafu">Figure</xref>), often mistranslated and misconstrued as a Star 
       <q>Compass</q> for its use of stars and constellations to discern direction, but 
       paafu is similar but not equivalent to the use of stars to mark cardinal 
       directionality (the familiar marking of space in terms of North, South, East and 
@@ -30,9 +30,6 @@
       position of an island (or a locale, or even a canoe) relative to other locales 
       as these are <q>marked</q> by rising and setting points of stars and constellations. 
     </p>
-
-
-
 
       <figure xml:id="paafu">
     <caption>The paafu, or Micronesian Star Compass. Stars are identified using the Polowat 
@@ -162,7 +159,7 @@ means <q>rising.</q> It does not mean <q>Eastward.</q>
 </p>
 
 <p>
-Figure ref{fig:paafu} orients the cardinal direction known as <q>east</q> at the top of 
+<xref ref="paafu">Figure</xref> orients the cardinal direction known as <q>east</q> at the top of 
 the page, and so the top half of this diagram is also identified as <q>tan</q> – where 
 stars appear to rise. Following an apparent <q>path</q> across the sky each night and 
 day (although most stars are not visible during the day) and across a year – in this 
@@ -170,14 +167,14 @@ system, the rising and presence of specific stars across the sky mark months, th
 stars will eventually set at a point horizontally opposite where they rose. 
 Corresponding to the cardinal direction point called <q>west,</q> this part of the circle 
 is referred to as <q><em>tolon</em></q> or where the stars <q>set</q> or go down. In the 
-paafu <q>map</q> in Figure \ref{fig:paafu}, whose center is the figure of a canoe, the 
+paafu <q>map</q> in <xref ref="paafu">Figure</xref>, whose center is the figure of a canoe, the 
 star called Mailap (Altair) marks due east. Where and when Mailap rises is referred 
 to as Tan Mailap (rising Mailap) and when and where it sets is referred to as Tolon 
-Mailap (setting Mailap). In Figure \ref{fig:paafu}, east or the rising points of the 
+Mailap (setting Mailap). In <xref ref="paafu">Figure</xref>, east or the rising points of the 
 navigation or paafu stars is situated at the top of the circle, and west or the setting 
 points of these stars is situated at the bottom of the circle. As a map, paafu uses the 
 rising and setting points of stars to mark places around any given locale that would be 
-placed in the center of the circle (see Table \ref{tab:paafu}). Paafu can also be used 
+placed in the center of the circle (see <xref ref="tab_paafu">Table</xref>). Paafu can also be used 
 to identify the direction that moving objects, like canoes, or creatures, like birds, 
 fish, and humans, are heading or coming from. In this version of paafu, the stars are 
 identified using the Polowat dialect of the Chuukese language as it is used by members 
@@ -280,7 +277,7 @@ Wanting to revive wayfinding in Hawaiʻi, Nainoa Thompson traveled to the island
 of Satawal in the Federated States of Micronesia to learn from navigator Mau Piailug, 
 who affectionately became known as Papa Mau. Thompson adopted the paafu, resulting in 
 the Hawaiian <em>Star Compass</em><idx><h>Star Compass</h><h>Hawaiian</h></idx>, also known as the 
-<em>Kūkuluokalani</em><idx><h>Kūkuluokalani</h></idx> (Figure \ref{fig:star-compass}).
+<em>Kūkuluokalani</em><idx><h>Kūkuluokalani</h></idx> (<xref ref="star-compass-32-compass-rose">Figure</xref>).
 </p>
 
   <figure xml:id="star-compass-32-compass-rose">

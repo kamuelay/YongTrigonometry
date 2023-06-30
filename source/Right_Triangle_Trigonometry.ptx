@@ -42,16 +42,19 @@
   </introduction>
   <subsection xml:id="core-standards-CCSS_MATH_CONTENT_HSG_SRT_C_6">
     <title>Trigonometric Ratios</title>
+    <definition>
+        <title>Trigonometric Ratios</title>
+    <statement>
     <p>
-      \begin{mybox}[Trigonometric Ratios]
-      <idx>
-        <h>Trigonometric Functions</h>
-        <h>ratios</h>
-      </idx>
       Consider a right triangle with
       <m>\theta</m>
       as one of its acute angles.
-      The trigonometric ratios are defined as follows:
+      The trigonometric ratios 
+      <idx>
+        <h>Trigonometric Functions</h>
+        <h>ratios</h>
+      </idx> 
+      are defined as follows:
     </p>
     <image width="60%" xml:id="fig-right-triangle-opp-adj-hyp">
       <latex-image>
@@ -85,6 +88,8 @@
         <em>A</em>djacent.
       </q>
     </p>
+    </statement>
+    </definition>
     <p>
       Based on the definition of the six trigonometric functions,
       we have the following trigonometric identities.
@@ -192,15 +197,15 @@
   <subsection xml:id="core-standards-CCSS_MATH_CONTENT_HSF_TF_A_3">
     <title>Special Triangles</title>
     <p>
-      \begin{mybox}[Special values of trigonometric functions]
+      The angles
+      <m>30^{\circ}, 45^{\circ}, 60^{\circ}</m>
+      (<m>\frac{\pi}{6}, \frac{\pi}{4}, \frac{\pi}{3}</m>)
+      give special values 
       <idx>
         <h>Trigonometric Functions</h>
         <h>special</h>
       </idx>
-      The angles
-      <m>30^{\circ}, 45^{\circ}, 60^{\circ}</m>
-      (<m>\frac{\pi}{6}, \frac{\pi}{4}, \frac{\pi}{3}</m>)
-      give special values for trigonometric functions.
+      for trigonometric functions.
       The following figures are used to calculate trigonometric values.
     </p>
     <image xml:id="fig-special-triangles" width="100%">
@@ -399,7 +404,7 @@
       You may recognize the symmetry of
       <m>\sin\theta</m>
       and <m>\cos\theta</m>
-      if reverse order of the values of sine and cosine from
+      if you reverse order of the values of sine and cosine from
       <m>90^{\circ}</m>
       to <m>0^{\circ}</m>.
       This symmetry gives us
@@ -469,7 +474,7 @@
       <m>\beta</m>.
       Therefore,
       <me>
-        \sin\alpha=\dfrac{\mbox{opposite} }{\mbox{hypotenuse} }=\dfrac{a}{c}\mbox{and} \cos\beta=\dfrac{\mbox{adjacent} }{\mbox{hypotenuse} }=\dfrac{a}{c}
+        \sin\alpha=\dfrac{\mbox{opposite} }{\mbox{hypotenuse} }=\dfrac{a}{c}\mbox{~and~} \cos\beta=\dfrac{\mbox{adjacent} }{\mbox{hypotenuse} }=\dfrac{a}{c}
       </me>
     </p>
     <p>
@@ -497,24 +502,23 @@
       and
       <m>\beta</m>
       are complementary angles,
-      <m>\alpha+\beta=90^{\circ}</m>
-      .
+      <m>\alpha+\beta=90^{\circ}</m>.
       Rearranging, we get
-      <m>\beta=90^{\circ}-\alpha</m>
-      .
+      <m>\beta=90^{\circ}-\alpha</m>.
       Substituting this into our cofunctions and replacing
       <m>\alpha</m>
       with
-      <m>\theta</m>
-      ,
+      <m>\theta</m>,
       we get our cofunction identities.
     </p>
+    <definition><title>Cofunction Identities</title>
+    <statement>
     <p>
-      \begin{mybox}[Cofunction Identities]
+      The cofunction identities 
       <idx>
         <h>cofunctions identities</h>
       </idx>
-      The cofunction identities in degrees are
+      in degrees are
       <md>
         <mrow>\sin\theta\amp =\cos(90^{\circ}-\theta) \amp  \cos\theta\amp =\sin(90^{\circ}-\theta) \amp  \tan\theta\amp =\cot(90^{\circ}-\theta)</mrow>
         <mrow>\csc\theta\amp =\sec(90^{\circ}-\theta) \amp  \sec\theta\amp =\csc(90^{\circ}-\theta) \amp  \cot\theta\amp =\tan(90^{\circ}-\theta)</mrow>
@@ -527,9 +531,8 @@
         <mrow>\csc\theta\amp =\sec\left(\frac{\pi}{2}-\theta\right) \amp  \sec\theta\amp =\csc\left(\frac{\pi}{2}-\theta\right) \amp  \cot\theta\amp =\tan\left(\frac{\pi}{2}-\theta\right)</mrow>
       </md>
     </p>
-    <p>
-      \end{mybox}
-    </p>
+    </statement>
+    </definition>
     <example>
       <statement>
         <p>
@@ -544,8 +547,10 @@
         </p>
       </statement>
     </example>
+    <subsubsection xml:id="patterns-in-trig-table">
+      <title>Patterns in the Trigonometric Table</title>
     <p>
-      \begin{mybox}[Patterns in the Trigonometric Table] Learning the values of the trigonometric functions in this table can increase your confidence and efficiency in trigonometry.
+      Learning the values of the trigonometric functions in this table can increase your confidence and efficiency in trigonometry.
       To help remember the values of sine and cosine,
       we utilize cofunctions and also write them in the form
       <m>\sqrt{\cdot}/2</m>
@@ -680,9 +685,9 @@
     </tabular>
     <p>
       which simplifies to the values in
-      <xref ref="tab_basic-trig-Q1">Table</xref>
-      . \end{mybox}
+      <xref ref="tab_basic-trig-Q1">Table</xref>.
     </p>
+    </subsubsection>
   </subsection>
   <subsection>
     <title>Using a Calculator</title>
@@ -692,8 +697,7 @@
     </p>
     <p>
       <em>First, be sure that your angle is either in degrees or radians,
-      depending on the problem</em>
-      ,
+      depending on the problem</em>,
       refer to your calculator's manual for instructions.
       Most calculators will have a special button for the sine,
       cosine, and tangent functions.
@@ -743,14 +747,11 @@
       and you should pay close attention to see if the question is asking for the exact solution or a decimal approximation.
       For example,
       if you need to calculate
-      <m>\sin45^{\circ}=\frac{\sqrt{2}}{2}</m>
-      ,
+      <m>\sin45^{\circ}=\frac{\sqrt{2}}{2}</m>,
       the calculator may give the answer as
-      <m>\sin45^{\circ}\approx0.70710678</m>
-      ,
+      <m>\sin45^{\circ}\approx0.70710678</m>,
       which is a decimal approximation since the actual solution goes on forever.
-      <em>Unless stated otherwise, answers in the book should be exact</em>
-      , e.g.
+      <em>Unless stated otherwise, answers in the book should be exact</em>, e.g.
       <m>\frac{\sqrt{2}}{2}</m>
       and not 0.70710678.
     </p>
@@ -818,16 +819,14 @@
                 we must change the mode on our calculator then Input:
                 <em>COS</em>
                 (5); Output:
-                <m>0.2837</m>
-                .
+                <m>0.2837</m>.
               </p>
             </li>
           </ol>
         </p>
         <p>
           Notice that
-          <m>\cos5^{\circ}\neq\cos5\mbox{ rad}</m>
-          .
+          <m>\cos5^{\circ}\neq\cos5\mbox{ rad}</m>.
           This is why it is important to double check if your calculator is on degree or radian mode.
         </p>
       </solution>
@@ -882,14 +881,12 @@
       </statement>
     </definition>
     <p>
-      \begin{mybox}[Solving Right Triangles] To solve a right triangle,
-      it is useful to use the following
+      To solve a right triangle, it is useful to use the following
       <me>
         \alpha+\beta=90^{\circ}, \qquad a^2+b^2=c^2
       </me>
     </p>
     <p>
-      \end{mybox}
     </p>
     <example>
       <statement>
@@ -913,7 +910,7 @@
       <solution>
         <p>
           Since this is a right triangle, we know one angle is
-          <m>90^{\circ}</m>, we also know that the other angle is
+          <m>90^{\circ}</m>, we also know another angle is
           <m>50^{\circ}</m> and the adjacent side is 16.
           To solve this triangle, we will need to determine the values of
           <m>a</m>, <m>c</m>, and <m>\beta</m>.
@@ -928,11 +925,11 @@
           If we use the angle <m>50^{\circ}</m>,
           the adjacent side is 16 and <m>a</m>
           is the opposite side to the angle.
-          The trigonometric function that relates these is tangent:
+          The trigonometric function that relates the opposite and adjacentsides is tangent:
           <me>
             \tan50^{\circ}=\frac{a}{16}
           </me>
-          multiplying both sides by 16 we get
+          Multiplying both sides by 16 we get
           <me>
             a=16\cdot\tan50^{\circ}\approx19.07
           </me>
@@ -962,7 +959,7 @@
           In an average day of sailing,
           a waʻa sails for 120 nautical miles (NM).
           If Hikianalia is supposed to sail in the direction of Hikina (East),
-          but currents have deviated her course by one house so she actually sailed toward the house L&#257;, how far off the course has H&#333;k&#363;le&#699;a deviated?
+          but currents have deviated her course by one house so she actually sailed in the house L&#257;, how far off the course has H&#333;k&#363;le&#699;a deviated?
         </p>
         <image xml:id="deviation-example" width="100%">
           <latex-image>
@@ -981,9 +978,7 @@
       <solution>
         <p>
           From the Star Compass
-          ( uncomment reference
-          <!-- <xref ref="star-compass-with-angles">Figure</xref> -->
-          ),
+          (<xref ref="star-compass-32-compass-rose">Figure</xref>),
           the house Lā is one house (
           <m>11.25^{\circ}</m>
           ) from Hikina.
@@ -1111,17 +1106,14 @@
           </image>
         </statement>
         <answer>
-          <m>\sin\theta=\frac{4}{5}</m>
-          ,
-          <m>\cos\theta=\frac{3}{5}</m>
-          ,
-          <m>\tan\theta=\frac{4}{3}</m>
-          ,
-          <m>\csc\theta=\frac{5}{4}</m>
-          ,
-          <m>\sec\theta=\frac{5}{3}</m>
-          ,
+          <p>
+          <m>\sin\theta=\frac{4}{5}</m>,
+          <m>\cos\theta=\frac{3}{5}</m>,
+          <m>\tan\theta=\frac{4}{3}</m>,
+          <m>\csc\theta=\frac{5}{4}</m>,
+          <m>\sec\theta=\frac{5}{3}</m>,
           <m>\cot\theta=\frac{3}{4}</m>
+          </p>
         </answer>
       </exercise>
       <exercise>
@@ -1137,17 +1129,14 @@
           </image>
         </statement>
         <answer>
-          <m>\sin\theta=\frac{5\sqrt{74}}{74}</m>
-          ,
-          <m>\cos\theta=\frac{7\sqrt{74}}{74}</m>
-          ,
-          <m>\tan\theta=\frac{5}{7}</m>
-          ,
-          <m>\csc\theta=\frac{\sqrt{74}}{5}</m>
-          ,
-          <m>\sec\theta=\frac{\sqrt{74}}{7}</m>
-          ,
+          <p>
+          <m>\sin\theta=\frac{5\sqrt{74}}{74}</m>,
+          <m>\cos\theta=\frac{7\sqrt{74}}{74}</m>,
+          <m>\tan\theta=\frac{5}{7}</m>,
+          <m>\csc\theta=\frac{\sqrt{74}}{5}</m>,
+          <m>\sec\theta=\frac{\sqrt{74}}{7}</m>,
           <m>\cot\theta=\frac{7}{5}</m>
+          </p>
         </answer>
       </exercise>
       <exercise>
@@ -1163,17 +1152,14 @@
           </image>
         </statement>
         <answer>
-          <m>\sin\theta=\frac{3\sqrt{13}}{13}</m>
-          ,
-          <m>\cos\theta=\frac{2\sqrt{13}}{13}</m>
-          ,
-          <m>\tan\theta=\frac{3}{2}</m>
-          ,
-          <m>\csc\theta=\frac{\sqrt{13}}{3}</m>
-          ,
-          <m>\sec\theta=\frac{\sqrt{13}}{2}</m>
-          ,
+          <p>
+          <m>\sin\theta=\frac{3\sqrt{13}}{13}</m>,
+          <m>\cos\theta=\frac{2\sqrt{13}}{13}</m>,
+          <m>\tan\theta=\frac{3}{2}</m>,
+          <m>\csc\theta=\frac{\sqrt{13}}{3}</m>,
+          <m>\sec\theta=\frac{\sqrt{13}}{2}</m>,
           <m>\cot\theta=\frac{2}{3}</m>
+          </p>
         </answer>
       </exercise>
       <exercise>
@@ -1189,17 +1175,14 @@
           </image>
         </statement>
         <answer>
-          <m>\sin\theta=\frac{5}{13}</m>
-          ,
-          <m>\cos\theta=\frac{12}{13}</m>
-          ,
-          <m>\tan\theta=\frac{5}{12}</m>
-          ,
-          <m>\csc\theta=\frac{13}{5}</m>
-          ,
-          <m>\sec\theta=\frac{13}{12}</m>
-          ,
+          <p>
+          <m>\sin\theta=\frac{5}{13}</m>,
+          <m>\cos\theta=\frac{12}{13}</m>,
+          <m>\tan\theta=\frac{5}{12}</m>,
+          <m>\csc\theta=\frac{13}{5}</m>,
+          <m>\sec\theta=\frac{13}{12}</m>,
           <m>\cot\theta=\frac{12}{5}</m>
+          </p>
         </answer>
       </exercise>
       <exercise>
@@ -1215,17 +1198,14 @@
           </image>
         </statement>
         <answer>
-          <m>\sin\theta=\frac{2\sqrt{5}}{5}</m>
-          ,
-          <m>\cos\theta=\frac{\sqrt{5}}{5}</m>
-          ,
-          <m>\tan\theta=2</m>
-          ,
-          <m>\csc\theta=\frac{\sqrt{5}}{2}</m>
-          ,
-          <m>\sec\theta=\sqrt{5}</m>
-          ,
+          <p>
+          <m>\sin\theta=\frac{2\sqrt{5}}{5}</m>,
+          <m>\cos\theta=\frac{\sqrt{5}}{5}</m>,
+          <m>\tan\theta=2</m>,
+          <m>\csc\theta=\frac{\sqrt{5}}{2}</m>,
+          <m>\sec\theta=\sqrt{5}</m>,
           <m>\cot\theta=\frac{1}{2}</m>
+          </p>
         </answer>
       </exercise>
       <exercise>
@@ -1241,17 +1221,14 @@
           </image>
         </statement>
         <answer>
-          <m>\sin\theta=\frac{\sqrt{2}}{2}</m>
-          ,
-          <m>\cos\theta=\frac{\sqrt{2}}{2}</m>
-          ,
-          <m>\tan\theta=1</m>
-          ,
-          <m>\csc\theta=\sqrt{2}</m>
-          ,
-          <m>\sec\theta=\sqrt{2}</m>
-          ,
+          <p>
+          <m>\sin\theta=\frac{\sqrt{2}}{2}</m>,
+          <m>\cos\theta=\frac{\sqrt{2}}{2}</m>,
+          <m>\tan\theta=1</m>,
+          <m>\csc\theta=\sqrt{2}</m>,
+          <m>\sec\theta=\sqrt{2}</m>,
           <m>\cot\theta=1</m>
+          </p>
         </answer>
       </exercise>
       <exercise>
@@ -1267,17 +1244,14 @@
           </image>
         </statement>
         <answer>
-          <m>\sin\theta=\frac{\sqrt{15}}{5}</m>
-          ,
-          <m>\cos\theta=\frac{\sqrt{10}}{5}</m>
-          ,
-          <m>\tan\theta=\frac{\sqrt{6}}{2}</m>
-          ,
-          <m>\csc\theta=\frac{\sqrt{15}}{3}</m>
-          ,
-          <m>\sec\theta=\frac{\sqrt{10}}{2}</m>
-          ,
+          <p>
+          <m>\sin\theta=\frac{\sqrt{15}}{5}</m>,
+          <m>\cos\theta=\frac{\sqrt{10}}{5}</m>,
+          <m>\tan\theta=\frac{\sqrt{6}}{2}</m>,
+          <m>\csc\theta=\frac{\sqrt{15}}{3}</m>,
+          <m>\sec\theta=\frac{\sqrt{10}}{2}</m>,
           <m>\cot\theta=\frac{\sqrt{6}}{3}</m>
+          </p>
         </answer>
       </exercise>
       <exercise>
@@ -1293,17 +1267,14 @@
           </image>
         </statement>
         <answer>
-          <m>\sin\theta=\frac{2\sqrt{13}}{13}</m>
-          ,
-          <m>\cos\theta=\frac{3\sqrt{13}}{13}</m>
-          ,
-          <m>\tan\theta=\frac{2}{3}</m>
-          ,
-          <m>\csc\theta=\frac{\sqrt{13}}{2}</m>
-          ,
-          <m>\sec\theta=\frac{\sqrt{13}}{3}</m>
-          ,
+          <p>
+          <m>\sin\theta=\frac{2\sqrt{13}}{13}</m>,
+          <m>\cos\theta=\frac{3\sqrt{13}}{13}</m>,
+          <m>\tan\theta=\frac{2}{3}</m>,
+          <m>\csc\theta=\frac{\sqrt{13}}{2}</m>,
+          <m>\sec\theta=\frac{\sqrt{13}}{3}</m>,
           <m>\cot\theta=\frac{3}{2}</m>
+          </p>
         </answer>
       </exercise>
     </exercisegroup>
@@ -1347,19 +1318,19 @@
           </image>
         </statement>
         <answer>
+          <p>
           <ol>
             <li>
-              <m>\cos\alpha=\sin\beta=\frac{5\sqrt{34}}{34}</m>
-              ;
+              <m>\cos\alpha=\sin\beta=\frac{5\sqrt{34}}{34}</m>;
             </li>
             <li>
-              <m>\tan\alpha=\cot\beta=\frac{3}{5}</m>
-              ;
+              <m>\tan\alpha=\cot\beta=\frac{3}{5}</m>;
             </li>
             <li>
               <m>\csc\alpha=\sec\beta=\frac{\sqrt{34}}{3}</m>
             </li>
           </ol>
+          </p>
         </answer>
       </exercise>
       <exercise>
@@ -1376,6 +1347,7 @@
           </image>
         </statement>
         <answer>
+          <p>
           <ol>
             <li>
               <m>\cos\alpha=\sin\beta=\frac{7}{8}</m>
@@ -1389,6 +1361,7 @@
               <m>\csc\alpha=\sec\beta=\frac{8\sqrt{15}}{15}</m>
             </li>
           </ol>
+          </p>
         </answer>
       </exercise>
     </exercisegroup>
@@ -1433,18 +1406,6 @@
         <answer>
           <p>
             <m>\theta=62^{\circ}</m>
-          </p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\sin28^{\circ}=\cos\theta</m>
-          </p>
-        </statement>
-        <answer>
-          <p>
-            <m>\theta=38^{\circ}</m>
           </p>
         </answer>
       </exercise>
@@ -2053,9 +2014,7 @@ Using the right triangle
           <q>care for Island Earth</q>
           and all people and places as
           <em>ʻohana</em>
-          (
-          <q>family</q>
-          ).
+          (<q>family</q>).
         The 40,000 nautical mile voyage stopped at more than 150 ports in 18 nations.
         Throughout this voyage, Earth rotates on an axis that runs between the North Pole and the South Pole.
         Every point on the Earth experiences this rotation through an angular speed and linear velocity 
@@ -2064,24 +2023,19 @@ Using the right triangle
           <m>R=4,000</m>
           miles,
         then for each of the following ports of the Mālama Honua voyage and it's given latitude,
-          <m>\phi</m>
-          , calculate the following
+          <m>\phi</m>, calculate the following
   
-        I donʻt know why my list is not showing up!!!
           <ol>
-            <il>
-              <m>r</m>
-              , the distance from the port to the Earth's Axis of Rotation (in miles,
+            <li>
+              <m>r</m>, the distance from the port to the Earth's Axis of Rotation (in miles,
             rounded to 1 decimal)
-            </il>
-            <il>
-              <m>\omega</m>
-              ,
+            </li>
+            <li>
+              <m>\omega</m>,
             the angular velocity (in radians per hour, rounded to 4 decimals)
-            </il>
-            <il>
-              <m>v</m>
-              , the linear speed (in miles per hour,
+            </li>
+            <li>
+              <m>v</m>, the linear speed (in miles per hour,
             rounded to the nearest whole number)
             </il>
           </ol>
@@ -2104,9 +2058,7 @@ Using the right triangle
       <exercise>
         <statement>
           <p>
-            Hilo, Hawaiʻi (
-            <m>19.7216^{\circ}</m>
-            N)
+            Hilo, Hawaiʻi (<m>19.7216^{\circ}</m> N)
           </p>
         </statement>
         <answer>
@@ -2131,9 +2083,7 @@ Using the right triangle
       <exercise>
         <statement>
           <p>
-            Papeete, Tahiti (
-            <m>17.5325^{\circ}</m>
-            S)
+            Papeete, Tahiti (<m>17.5325^{\circ}</m> S)
           </p>
         </statement>
         <answer>
@@ -2158,9 +2108,7 @@ Using the right triangle
       <exercise>
         <statement>
           <p>
-            Apia, Samoa (
-            <m>13.8507^{\circ}</m>
-            S)
+            Apia, Samoa (<m>13.8507^{\circ}</m> S)
           </p>
         </statement>
         <answer>
@@ -2185,9 +2133,7 @@ Using the right triangle
       <exercise>
         <statement>
           <p>
-            Waitangi, Aotearoa (
-            <m>35.2683^{\circ}</m>
-            S)
+            Waitangi, Aotearoa (<m>35.2683^{\circ}</m> S)
           </p>
         </statement>
         <answer>
@@ -2212,9 +2158,7 @@ Using the right triangle
       <exercise>
         <statement>
           <p>
-            Sydney, Australia (
-            <m>33.8688^{\circ}</m>
-            S)
+            Sydney, Australia (<m>33.8688^{\circ}</m> S)
           </p>
         </statement>
         <answer>
@@ -2266,9 +2210,7 @@ Using the right triangle
       <exercise>
         <statement>
           <p>
-            Port Louis, Mauritius (
-            <m>20.1609^{\circ}</m>
-            S)
+            Port Louis, Mauritius (<m>20.1609^{\circ}</m> S)
           </p>
         </statement>
         <answer>
@@ -2293,9 +2235,7 @@ Using the right triangle
       <exercise>
         <statement>
           <p>
-            Cape Town, South Africa (
-            <m>33.9249^{\circ}</m>
-            S)
+            Cape Town, South Africa (<m>33.9249^{\circ}</m> S)
           </p>
         </statement>
         <answer>
@@ -2320,9 +2260,7 @@ Using the right triangle
       <exercise>
         <statement>
           <p>
-            Natal, Brazil (
-            <m>5.7842^{\circ}</m>
-            S)
+            Natal, Brazil (<m>5.7842^{\circ}</m> S)
           </p>
         </statement>
         <answer>
@@ -2347,9 +2285,7 @@ Using the right triangle
       <exercise>
         <statement>
           <p>
-            Necker, British Virgin Islands (
-            <m>18.5268^{\circ}</m>
-            N)
+            Necker, British Virgin Islands (<m>18.5268^{\circ}</m> N)
           </p>
         </statement>
         <answer>
@@ -2374,9 +2310,7 @@ Using the right triangle
       <exercise>
         <statement>
           <p>
-            Yarmouth, Nova Scotia (
-            <m>43.8379^{\circ}</m>
-            N)
+            Yarmouth, Nova Scotia (<m>43.8379^{\circ}</m> N)
           </p>
         </statement>
         <answer>
@@ -2401,9 +2335,7 @@ Using the right triangle
       <exercise>
         <statement>
           <p>
-            Balboa, Panama (
-            <m>8.9614^{\circ}</m>
-            N)
+            Balboa, Panama (<m>8.9614^{\circ}</m>N)
           </p>
         </statement>
         <answer>
@@ -2428,9 +2360,7 @@ Using the right triangle
       <exercise>
         <statement>
           <p>
-            Galapagos Islands (
-            <m>0.9538^{\circ}</m>
-            S)
+            Galapagos Islands (<m>0.9538^{\circ}</m> S)
           </p>
         </statement>
         <answer>
@@ -2455,9 +2385,7 @@ Using the right triangle
       <exercise>
         <statement>
           <p>
-            Rapa Nui (
-            <m>27.1127^{\circ}</m>
-            S)
+            Rapa Nui (<m>27.1127^{\circ}</m> S)
           </p>
         </statement>
         <answer>
