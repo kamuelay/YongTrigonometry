@@ -2536,7 +2536,7 @@ Use the even and odd properties to evaluate the following
     </statement>
 
 
-    <exercise>
+    <!-- <exercise>
       <introduction>
         <p>
           WebWork example
@@ -2567,6 +2567,6 @@ Use the even and odd properties to evaluate the following
           </p>
         </solution>
       </webwork>
-    </exercise>
+    </exercise> -->
 
 </section>
