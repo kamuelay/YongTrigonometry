@@ -1606,9 +1606,10 @@
           Note that one house is
           <m>11.25^{\circ}</m>
         </p>
-      <image>
+      <image xml:id="fig-deviation-y" width="100%">
         <latex-image>
-          \begin{tikzpicture}\draw[line width=1pt,-stealth] (0,0) -- (0:1.2cm) node[midway,sloped,below] {120 NM};
+          \begin{tikzpicture}[scale=7]
+          \draw[line width=1pt,-stealth] (0,0) -- (0:1.2cm) node[midway,sloped,below] {120 NM};
 \draw[line width=1pt,-stealth] (0,0) -- (11.25:1.2cm) node[right] {7 House};
 \draw[line width=1pt,-stealth] (0,0) -- (22.5:1.2cm) node[right] {6 Houses};
 \draw[line width=1pt,-stealth] (0,0) -- (33.75:1.2cm) node[right] {5 Houses};
