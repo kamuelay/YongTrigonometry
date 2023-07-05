@@ -46,14 +46,14 @@
         
 
         \foreach \x in {5.625,16.875,...,90} {
-                \draw[gray] (\x:1.1cm) - (\x:1cm);% node[fill=white,left,sloped] {$\x^\circ$};
+                \draw[gray] (\x:1.1cm) -- (\x:1cm);% node[fill=white,left,sloped] {$\x^\circ$};
                 }
         \foreach \x in {95.625,106.875,...,270} {
-                \draw[gray] (\x:1.1cm) - (\x:1cm);% node[fill=white,left,sloped] {$\x^\circ$};
+                \draw[gray] (\x:1.1cm) -- (\x:1cm);% node[fill=white,left,sloped] {$\x^\circ$};
                 
         }
         \foreach \x in {275.625,286.875,...,360} {
-                \draw[gray] (\x:1.1cm) - (\x:1cm);% node[fill=white,left,sloped] {$\x^\circ$};
+                \draw[gray] (\x:1.1cm) -- (\x:1cm);% node[fill=white,left,sloped] {$\x^\circ$};
         }
 
         \foreach \x/\xtext in {
