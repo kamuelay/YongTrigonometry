@@ -879,13 +879,12 @@
       To evaluate trigonometric functions in any quadrant using reference angles,
       we begin with an angle, <m>\theta</m>,
       that lies in Quadrant II. Suppose we want to evaluate
-      <m>\sin\theta</m> and <m>\cos\theta</m>. 
-      First, we draw <m>\theta</m> in standard position,
-      then we determine and draw its reference angle, <m>\theta'</m>.
+      <m>\sin\theta</m> and <m>\cos\theta.</m> First, we draw <m>\theta</m> in standard position,
+      then we determine and draw its reference angle, <m>\theta'.</m>
     </p>
     <image xml:id="fig-using-ref-angles" width="75%">
       <latex-image>
-        \begin{tikzpicture}[scale=1.75]
+        \begin{tikzpicture}[scale=3]
         \draw[&lt;->] (-1.2,0)--(1.2,0) node[right]{\(x\)};
         \draw[&lt;->] (0,-1.2)--(0,1.2) node[right]{\(y\)};
         \draw (0,0) circle (1);
@@ -910,7 +909,7 @@
     </p>
     <image xml:id="fig-using-ref-angles2" width="95%">
       <latex-image>
-        \begin{tikzpicture}[scale=1.75]
+        \begin{tikzpicture}[scale=3]
         \draw[&lt;-] (-1.15,0)--(-0.866025403784,0);
         \draw[->] (0.866025403784,0)--(1.15,0) node[right]{\(x\)};
         \draw[&lt;->] (0,-1.15)--(0,1.15) node[right]{\(y\)};
@@ -957,8 +956,9 @@
       This method can be applied to all quadrants.
       We now summarize the steps for using reference angles to evaluate trigonometric functions.
     </p>
+    <remark><title>Steps for Evaluating Trigonometric Functions Using Reference Angles</title>
     <p>
-      \begin{mybox}[Steps for Evaluating Trigonometric Functions Using Reference Angles] The values of a trigonometric function for a given angle are the same as the values of the same trigonometric function for the reference angle,
+      The values of a trigonometric function for a given angle are the same as the values of the same trigonometric function for the reference angle,
       except possibly for a difference in the sign.
       To calculate the value of a trigonometric function given any angle use the following steps
       <ol>
@@ -985,9 +985,7 @@
         </li>
       </ol>
     </p>
-    <p>
-      \end{mybox}
-    </p>
+    </remark>
     <example>
       <statement>
         <p>
@@ -1570,22 +1568,25 @@
         </row>
       </tabular>
     </table>
+    <remark><title>Table Made Easy</title>
     <p>
-      \begin{mybox}[Table Made Easy] <xref ref="tab_trig-table">Table</xref>
+      <xref ref="tab_trig-table">Table</xref>
       may seem intimidating but if you recognize the symmetry about <m>90^{\circ}</m>,
       <m>180^{\circ}</m>, and <m>270^{\circ}</m>,
       you will only need to memorize the values for the first quadrant
       (<xref ref="tab_basic-trig-Q1">Table</xref>).
-      In fact, you need only produce the values of sine in Quadrant I. Use the cofunction identities to find the values of cosine.
-      Next, use the trigonometric identity to find <m>\tan\theta=\sin\theta/\cos\theta</m>.
-      Finally, use the the reciprocal identities to produce <m>\csc\theta</m>,
-      <m>\sec\theta</m>, and <m>\cot\theta</m>. \end{mybox}
+      In fact, you need only produce the values of sine in Quadrant I. Use the Cofunction Identities to find the values of cosine.
+      Next, use the trigonometric identity to find <m>\tan\theta=\sin\theta/\cos\theta.</m>
+      Finally, use the the reciprocal identities to produce <m>\csc\theta,</m>
+      <m>\sec\theta,</m> and <m>\cot\theta.</m>
     </p>
+    </remark>
   </subsection>
   <subsection>
     <title>Pythagorean Identities</title>
+    <definition xml:id="pythagorean-identity"><title>Pythagorean Identities</title>
+    <statement>
     <p>
-      \begin{mybox}[Pythagorean Identities]
       <ol>
         <li>
           <p>
@@ -1604,9 +1605,8 @@
         </li>
       </ol>
     </p>
-    <p>
-      \end{mybox}
-    </p>
+    </statement>
+    </definition>
     <proof>
       <p>
         We will use the Pythagorean Theorem to prove the reciprocal identities.
