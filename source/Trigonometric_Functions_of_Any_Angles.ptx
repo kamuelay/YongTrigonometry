@@ -235,9 +235,13 @@
         </p>
       </statement>
     </definition>
-    <p>
-      \begin{mybox}[Calculating the reference angle] Given an angle <m>t</m>,
-      to calculate the reference angle <m>t'</m>
+    <remark>
+    <title>Calculating the reference angle</title>
+      <p>
+        Given an angle <m>t</m>,
+        to calculate the reference angle <m>t'</m>
+      </p>
+      <p>
       <ul>
         <li>
           <p>
@@ -253,8 +257,8 @@
           </p>
         </li>
       </ul>
-    </p>
-    <p>
+      </p>
+          <p>
       Quadrant I:
       <image xml:id="fig-calculate-ref-angle-q1" width="50%">
         <latex-image>
@@ -340,9 +344,7 @@
         <mrow>t' \amp =360^{\circ}-t</mrow>
       </md>
     </p>
-    <p>
-      \end{mybox}
-    </p>
+    </remark>
 
     <example xml:id="exercise_find-ref-angles">
       <introduction>
@@ -428,9 +430,13 @@
         </statement>
         <solution>
           <p>
-            Since <m>-\frac{3\pi}{4}</m> goes counterclockwise and spans only two quadrants,
-                we treat this similar to if we had an angle in Quadrant II. By the previous problem,
-                <m>t'+\frac{3\pi}{4}=\pi</m> so <m>t'=\pi-\frac{3\pi}{4}=\frac{\pi}{4}</m>.
+            Since <m>t \lt 0</m>, we can add <m>2\pi</m> to get <m>-\frac{3\pi}{4}+2\pi=\frac{5\pi}{4}</m>. 
+            From the formula, we get <m>t'=\frac{5\pi}{4}-\pi=\frac{\pi}{4}</m>.
+          </p>
+          <p>
+            Alternative solution: Since <m>-\frac{3\pi}{4}</m> goes counterclockwise and spans only two quadrants, 
+            we treat this similar to if we had an angle in Quadrant II. By the previous problem, 
+            <m>t'+\frac{3\pi}{4}=\pi</m> so <m>t'=\pi-\frac{3\pi}{4}=\frac{\pi}{4}</m>.
           </p>
         </solution>
       </task>
@@ -517,8 +523,8 @@
         </solution>
       </task>
     </example>
-    <p>
-      \begin{mybox}[Calculate an angle in standard position given its quadrant and reference angle] 
+    <remark><title>Calculate an angle in standard position given its quadrant and reference angle</title>
+        <p>
       To calculate an angle in standard position, <m>t</m>,
       given the quadrant that <m>t</m> lies in and the reference angle <m>t'</m>,
     </p>
@@ -629,123 +635,15 @@
       \end{tikzpicture}
       </latex-image>
     </image>
-    <p>
-      \end{mybox}
-    </p>
+    </remark>
   <example>
     <title>Calculate an angle given its reference angle and quadrant </title>
     <introduction>
       <p>
-        Compute the angle <m>t</m> in standard position given a quadrant and reference angle, <m>t'</m>.
+        Given a reference angle, <m>t</m>, compute the associated angle in standard position for Quadrant II, III, and IV.
       </p>
     </introduction>
-    <task>
-      <introduction>
-        <p>
-          <m>t'=45^{\circ}</m>
-          <image xml:id="fig-angle-45" width="50%">
-            <latex-image>
-              \begin{tikzpicture}[scale=1.75]
-              \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
-              \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
-              \draw (0,0) circle (1); 
-              \filldraw[blue] (1,0) circle(1pt); 
-              \filldraw[blue] (45:1) circle(1pt); 
-              \draw[line width=2pt,blue] (0,0) -- (1,0); 
-              \draw[line width=2pt,blue] (0,0) -- (45:1); 
-              \draw[->] (0:0.4) arc (0:45:0.4) node[midway, right,xshift=0.05] {\(45^{\circ}\)};
-              \end{tikzpicture} 
-            </latex-image>
-          </image>
-        </p>
-      </introduction>
-      <task>
-        <statement>
-          <p>
-            Quadrant II
-          </p>
-        </statement>
-        <solution>
-          <p>
-            In Quadrant II, the associated angle is <m>t=180^{\circ}-45^{\circ}=135^{\circ}</m>
-          </p>
-          <p>
-            <image xml:id="fig-angle-45-q2" width="50%">
-              <latex-image> 
-                \begin{tikzpicture}[scale=1.75]
-                \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
-                \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
-                \draw (0,0) circle (1); \filldraw[blue] (1,0) circle(1pt); 
-                \filldraw[blue] (135:1) circle(1pt); 
-                \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); 
-                \draw[line width=2pt,blue] (0,0) -- (1,0); 
-                \draw[line width=2pt,blue] (0,0) -- (135:1); 
-                \draw[->] (0:0.4) arc (0:135:0.4) node[midway, right,xshift=0.1] {\(135^{\circ}\)}; 
-                \draw[->] (180:0.4) arc (180:135:0.4) node[midway, left,xshift=-0.0,yshift=0.1] {\(45^{\circ}\)};
-                \end{tikzpicture} 
-              </latex-image>
-            </image>
-          </p>
-        </solution>
-      </task>
-      <task>
-        <statement>
-          <p>
-            Quadrant III
-          </p>
-        </statement>
-        <solution>
-          <p>
-            In Quadrant III, the associated angle is <m>t=180^{\circ}+45^{\circ}=225^{\circ}</m>
-          </p>
-          <p>
-            <image xml:id="fig-angle-45-q3" width="50%">
-              <latex-image> \begin{tikzpicture}[scale=1.75]
-                \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
-                \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
-                \draw (0,0) circle (1); 
-                \filldraw[blue] (1,0) circle(1pt); 
-                \filldraw[blue] (225:1) circle(1pt); 
-                \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); 
-                \draw[line width=2pt,blue] (0,0) -- (1,0); 
-                \draw[line width=2pt,blue] (0,0) -- (225:1); 
-                \draw[->] (0:0.3) arc (0:225:0.3) node[midway, left,xshift=-0.0] {\(225^{\circ}\)}; 
-                \draw[->] (180:0.5) arc (180:225:0.5) node[midway, left,xshift=0.0,yshift=-0.0] {\(45^{\circ}\)};
-                \end{tikzpicture} 
-              </latex-image>
-            </image>
-          </p>
-        </solution>
-      </task>
-      <task>
-        <statement>
-          <p>
-            Quadrant IV
-          </p>
-        </statement>
-        <solution>
-          <p>
-            In Quadrant IV, the associated angle is <m>t=360^{\circ}-45^{\circ}=315^{\circ}</m>
-          </p>
-          <p>
-            <image xml:id="fig-angle-45-q4" width="50%">
-              <latex-image> 
-                \begin{tikzpicture}[scale=1.75]
-                \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
-                \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1); 
-                \filldraw[blue] (1,0) circle(1pt); 
-                \filldraw[blue] (315:1) circle(1pt); 
-                \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (315:1); 
-                \draw[->] (0:0.3) arc (0:315:0.3) node[midway, left,xshift=0.0,yshift=0.0] {\(315^{\circ}\)}; 
-                \draw[->] (360:0.5) arc (360:315:0.5) node[midway, right,xshift=0.05,yshift=-0.0] {\(45^{\circ}\)};
-                \end{tikzpicture} 
-              </latex-image>
-            </image>
-          </p>
-        </solution>
-      </task>
-    </task>
-    <task>
+        <task>
       <introduction>
         <p>
           <m>t'=\frac{\pi}{6}</m>
@@ -866,6 +764,112 @@
         </solution>
       </task>
     </task>
+    <task>
+      <introduction>
+        <p>
+          <m>t'=45^{\circ}</m>
+          <image xml:id="fig-angle-45" width="50%">
+            <latex-image>
+              \begin{tikzpicture}[scale=1.75]
+              \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
+              \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
+              \draw (0,0) circle (1); 
+              \filldraw[blue] (1,0) circle(1pt); 
+              \filldraw[blue] (45:1) circle(1pt); 
+              \draw[line width=2pt,blue] (0,0) -- (1,0); 
+              \draw[line width=2pt,blue] (0,0) -- (45:1); 
+              \draw[->] (0:0.4) arc (0:45:0.4) node[midway, right,xshift=0.05] {\(45^{\circ}\)};
+              \end{tikzpicture} 
+            </latex-image>
+          </image>
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            Quadrant II
+          </p>
+        </statement>
+        <solution>
+          <p>
+            In Quadrant II, the associated angle is <m>t=180^{\circ}-45^{\circ}=135^{\circ}</m>
+          </p>
+          <p>
+            <image xml:id="fig-angle-45-q2" width="50%">
+              <latex-image> 
+                \begin{tikzpicture}[scale=1.75]
+                \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
+                \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
+                \draw (0,0) circle (1); \filldraw[blue] (1,0) circle(1pt); 
+                \filldraw[blue] (135:1) circle(1pt); 
+                \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); 
+                \draw[line width=2pt,blue] (0,0) -- (1,0); 
+                \draw[line width=2pt,blue] (0,0) -- (135:1); 
+                \draw[->] (0:0.4) arc (0:135:0.4) node[midway, right,xshift=0.1] {\(135^{\circ}\)}; 
+                \draw[->] (180:0.4) arc (180:135:0.4) node[midway, left,xshift=-0.0,yshift=0.1] {\(45^{\circ}\)};
+                \end{tikzpicture} 
+              </latex-image>
+            </image>
+          </p>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Quadrant III
+          </p>
+        </statement>
+        <solution>
+          <p>
+            In Quadrant III, the associated angle is <m>t=180^{\circ}+45^{\circ}=225^{\circ}</m>
+          </p>
+          <p>
+            <image xml:id="fig-angle-45-q3" width="50%">
+              <latex-image> \begin{tikzpicture}[scale=1.75]
+                \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
+                \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
+                \draw (0,0) circle (1); 
+                \filldraw[blue] (1,0) circle(1pt); 
+                \filldraw[blue] (225:1) circle(1pt); 
+                \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); 
+                \draw[line width=2pt,blue] (0,0) -- (1,0); 
+                \draw[line width=2pt,blue] (0,0) -- (225:1); 
+                \draw[->] (0:0.3) arc (0:225:0.3) node[midway, left,xshift=-0.0] {\(225^{\circ}\)}; 
+                \draw[->] (180:0.5) arc (180:225:0.5) node[midway, left,xshift=0.0,yshift=-0.0] {\(45^{\circ}\)};
+                \end{tikzpicture} 
+              </latex-image>
+            </image>
+          </p>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Quadrant IV
+          </p>
+        </statement>
+        <solution>
+          <p>
+            In Quadrant IV, the associated angle is <m>t=360^{\circ}-45^{\circ}=315^{\circ}</m>
+          </p>
+          <p>
+            <image xml:id="fig-angle-45-q4" width="50%">
+              <latex-image> 
+                \begin{tikzpicture}[scale=1.75]
+                \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
+                \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1); 
+                \filldraw[blue] (1,0) circle(1pt); 
+                \filldraw[blue] (315:1) circle(1pt); 
+                \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (315:1); 
+                \draw[->] (0:0.3) arc (0:315:0.3) node[midway, left,xshift=0.0,yshift=0.0] {\(315^{\circ}\)}; 
+                \draw[->] (360:0.5) arc (360:315:0.5) node[midway, right,xshift=0.05,yshift=-0.0] {\(45^{\circ}\)};
+                \end{tikzpicture} 
+              </latex-image>
+            </image>
+          </p>
+        </solution>
+      </task>
+    </task>
   </example>
 
   </subsection>
@@ -875,7 +879,7 @@
       To evaluate trigonometric functions in any quadrant using reference angles,
       we begin with an angle, <m>\theta</m>,
       that lies in Quadrant II. Suppose we want to evaluate
-      <m>\sin\theta</m> and <m>\cos\theta</m>.
+      <m>\sin\theta</m> and <m>\cos\theta</m>. 
       First, we draw <m>\theta</m> in standard position,
       then we determine and draw its reference angle, <m>\theta'</m>.
     </p>
@@ -1686,6 +1690,9 @@
       and a function is odd if <m>f(-x)=-f(x)</m> for all values of <m>x</m>.
       We can now classify trigonometric functions as even or odd.
     </p>
+    <definition>
+
+    
     <p>
       \begin{mybox}[Even and Odd Trigonometric Properties]<idx><h>even and odd trigonometric properties</h></idx> The cosine and secant functions are <em>even</em>
       <md>
@@ -1702,6 +1709,7 @@
     <p>
       \end{mybox}
     </p>
+    </definition>
     <proof>
       <p>
         Let <m>P</m> be a point on the unit circle corresponding to the angle <m>\theta</m> with coordinates <m>(x,y)</m> and <m>Q</m> be the point corresponding to the angle <m>-\theta</m> with coordinates <m>(x,-y)</m>.
@@ -1787,6 +1795,88 @@
       </solution>
     </example>
   </subsection>
+<exercises>
+<exercisegroup>
+  <introduction>
+    <p>
+      Determine the quadrant containing
+      <m>\theta</m>
+      given the following
+    </p>
+  </introduction>
+  <exercise>
+    <statement>
+      <p><m>\cot \theta \lt 0</m> and <m>\cos \theta \lt 0</m></p>
+    </statement>
+    <answer>
+      <p>QII</p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
+      <p><m>\csc \theta \gt 0</m> and <m>\tan \theta \gt 0</m></p>
+    </statement>
+    <answer>
+      <p>QI</p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
+      <p><m>\cos \theta \gt 0</m> and <m>\sin \theta \lt 0</m></p>
+    </statement>
+    <answer>
+      <p>QIV</p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
+      <p><m>\sec \theta \gt 0</m> and <m>\tan \theta \gt 0</m></p>
+    </statement>
+    <answer>
+      <p>QI</p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
+      <p><m>\tan \theta \lt 0</m> and <m>\csc \theta \gt 0</m></p>
+    </statement>
+    <answer>
+      <p>QII</p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
+      <p><m>\cot \theta \gt 0</m> and <m>\sin \theta \lt 0</m></p>
+    </statement>
+    <answer>
+      <p>QIV</p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
+      <p><m>\sec \theta \lt 0</m> and <m>\csc \theta \lt 0</m></p>
+    </statement>
+    <answer>
+      <p>QIII</p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
+      <p><m>\cos \theta \lt 0</m> and <m>\tan \theta \gt 0</m></p>
+    </statement>
+    <answer>
+      <p>QIII</p>
+    </answer>
+  </exercise>
+</exercisegroup>
+</exercises>
+
+
+
+
+
+<!-- 
+
     <exercise xml:id="ex-1_5">
       <statement>
         <p>
@@ -1819,6 +1909,7 @@ The point <m>P(x,y)</m> is on the terminal side of angle <m>\theta</m>.
         <p>
           \begin{tasks} \task
         </p>
+        -->
         <image>
 <latex-image>
 \begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
@@ -1843,7 +1934,8 @@ The point <m>P(x,y)</m> is on the terminal side of angle <m>\theta</m>.
 \draw[blue] (0,0) -- (310.601294645:1.2) node[right]{P(6,-7)};
 \draw[->] (0:0.7) arc (0:310.601294645:0.7) node[midway,left] {\(\theta\)};\end{tikzpicture}
 </latex-image>
-        </image>
+        </image> 
+        <!--
         <p>
           \task <m>(3,-4)</m> \task <m>(-12,-5)</m> \task <m>(-2,-3)</m> \task <m>(-4,4)</m> \task <m>(-24,7)</m> \task <m>(9,-40)</m> \end{tasks}
         </p>
@@ -2533,7 +2625,7 @@ Use the even and odd properties to evaluate the following
         ;
         <m>\cot480^{\circ}=-\sqrt{3}{3}</m>
       </p>
-    </statement>
+    </statement> -->
 
 
     <!-- <exercise>
