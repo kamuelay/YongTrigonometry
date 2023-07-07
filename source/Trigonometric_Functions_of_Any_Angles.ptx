@@ -1171,7 +1171,7 @@
       Thus, the values of sine and cosine for all angles corresponding to point <m>P</m> are equal.
       In other words
     </p>
-      <definition xml:id="def-Periodic-Properties"><idx><h>periodic properties</h></idx><title>Periodic Properties</title>
+      <definition xml:id="def-Periodic-Properties-sincos"><idx><h>periodic properties</h></idx><title>Periodic Properties</title>
       
       
         <statement>
@@ -1204,7 +1204,7 @@
       Sine, cosine, cosecant,
       and secant repeat their values with a period of <m>2\pi</m> while tangent and cotangent have a period of <m>\pi</m>.
     </p>
-    <definition xml:id="def-Periodic-Properties"><title>Periodic Properties</title><idx><h>period functions</h></idx>
+    <definition xml:id="def-Periodic-Properties-all6"><title>Periodic Properties</title><idx><h>period functions</h></idx>
       <statement>
         <p>
           <md>
@@ -1903,7 +1903,7 @@
   <exercise>
     <statement>
       <p>
-        <image xml:id="exer-6trig-P-86" width="75%">
+        <image xml:id="exer-6trig-P6-7" width="75%">
 <latex-image>
 \begin{tikzpicture}[scale=4]\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
 \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
@@ -1995,7 +1995,265 @@
     </answer>
   </exercise>
 </exercisegroup>
+<exercisegroup>
+  <introduction>
+  <p>
+    Find the exact value of the remaining five trigonometric functions of <m>\theta</m> from the given information.
+  </p>
+  </introduction>
+  <exercise>
+    <statement>
+      <p>
+        <m>\tan\theta=-\frac{12}{5}</m>, <m>\theta</m> is Quadrant II
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>\sin\theta=\frac{12}{13}</m>, <m>\cos\theta=-\frac{5}{13}</m>, <m>\csc\theta=\frac{13}{12}</m>, <m>\sec\theta=-\frac{13}{5}</m>, <m>\cot\theta=-\frac{5}{12}</m>
+      </p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        <m>\cos\theta=\frac{3}{5}</m>, <m>\theta</m> is Quadrant IV
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>\sin\theta=-\frac{4}{5}</m>, <m>\tan\theta=-\frac{4}{3}</m>, <m>\csc\theta=-\frac{5}{4}</m>, <m>\sec\theta=\frac{5}{3}</m>, <m>\cot\theta=-\frac{3}{4}</m>
+      </p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        <m>\csc\theta=\frac{\sqrt{10}}{2}</m>, <m>\theta</m> is Quadrant II
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>\sin\theta=\frac{\sqrt{10}}{5}</m>, <m>\cos\theta=-\frac{\sqrt{15}}{5}</m>, <m>\tan\theta=-\frac{\sqrt{6}}{3}</m>, <m>\sec\theta=-\frac{\sqrt{15}}{3}</m>, <m>\cot\theta=-\frac{6}{2}</m>
+      </p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        <m>\cos\theta=-\frac{5}{8}</m>, <m>\theta</m> is Quadrant III
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>\sin\theta=-\frac{\sqrt{39}}{8}</m>, <m>\tan\theta=\frac{\sqrt{39}}{5}</m>, <m>\csc\theta=-\frac{8\sqrt{39}}{39}</m>, <m>\sec\theta=-\frac{8}{5}</m>, <m>\cot\theta=\frac{5\sqrt{39}}{39}</m>
+      </p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        <m>\sec\theta=-2</m>, <m>\pi\lt \theta\lt \frac{3\pi}{2}</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>\sin\theta=-\frac{\sqrt{3}}{2}</m>, <m>\cos\theta=-\frac{1}{2}</m>, <m>\tan\theta=\sqrt{3}</m>, <m>\csc\theta=-\frac{2\sqrt{3}}{3}</m>, <m>\cot\theta=\frac{\sqrt{3}}{3}</m>
+      </p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        <m>\cot\theta=-\frac{5}{3}</m>, <m>\frac{3\pi}{2}\lt \theta\lt 2\pi</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>\sin\theta=-\frac{3\sqrt{34}}{34}</m>, <m>\cos\theta=\frac{5\sqrt{34}}{34}</m>, <m>\tan\theta=-\frac{3}{5}</m>, <m>\csc\theta=-\frac{\sqrt{34}}{3}</m>, <m>\sec\theta=\frac{\sqrt{34}}{5}</m>
+      </p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        <m>\cos\theta=\frac{2}{3}</m>, <m>0\lt \theta\lt \pi</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>\sin\theta=\frac{\sqrt{5}}{3}</m>, <m>\tan\theta=-\frac{\sqrt{5}}{2}</m>, <m>\csc\theta=\frac{3\sqrt{5}}{5}</m>, <m>\sec\theta=-\frac{3}{2}</m>, <m>\cot\theta=-\frac{2\sqrt{5}}{5}</m>
+      </p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        <m>\tan\theta=\frac{7}{4}</m>, <m>0\lt \theta\lt \frac{\pi}{2}</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>\sin\theta=\frac{7\sqrt{65}}{65}</m>, <m>\cos\theta=\frac{4\sqrt{65}}{65}</m>, <m>\csc\theta=\frac{\sqrt{65}}{7}</m>, <m>\sec\theta=\frac{\sqrt{65}}{4}</m>, <m>\cot\theta=\frac{4}{7}</m>
+      </p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        <m>\csc\theta=\frac{3}{2}</m>, <m>\tan\theta\lt 0</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>\sin\theta=\frac{2}{3}</m>, <m>\cos\theta=-\frac{\sqrt{5}}{3}</m>, <m>\tan\theta=-\frac{2\sqrt{5}}{5}</m>, <m>\sec\theta=-\frac{3\sqrt{5}}{5}</m>, <m>\cot\theta=-\frac{\sqrt{5}}{2}</m>
+      </p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        <m>\sin\theta=\frac{5}{6}</m>, <m>\cot\theta>0</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>\cos\theta=\frac{\sqrt{11}}{6}</m>, <m>\tan\theta=\frac{5\sqrt{11}}{11}</m>, <m>\csc\theta=\frac{6}{5}</m>, <m>\sec\theta=\frac{6\sqrt{11}}{11}</m>, <m>\cot\theta=\frac{\sqrt{11}}{5}</m>
+      </p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        <m>\sin\theta=-\frac{15}{17}</m>, <m>\cos\theta\lt 0</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>\cos\theta=-\frac{8}{17}</m>, <m>\tan\theta=\frac{15}{8}</m>, <m>\csc\theta=-\frac{17}{15}</m>, <m>\sec\theta=-\frac{17}{8}</m>, <m>\cot\theta=\frac{8}{15}</m>
+      </p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        <m>\cot\theta=-\frac{1}{3}</m>, <m>\sin\theta>0</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>\sin\theta=\frac{3\sqrt{10}}{10}</m>, <m>\cos\theta=-\frac{\sqrt{10}}{10}</m>, <m>\tan\theta=-3</m>, <m>\csc\theta=\frac{\sqrt{10}}{3}</m>, <m>\sec\theta=-\sqrt{10}</m>
+      </p>
+    </answer>
+  </exercise>
+</exercisegroup>
 
+
+<exercisegroup>
+  <introduction>
+    <p>
+      The Makaliʻi<idx><h>Makaliʻi</h></idx> is sailing along the Kohala Coast, keeping two nautical miles off shore. An observer at Mahukona watches as Makali`i passes. Let <m>d</m> represent the distance of the line connecting the Makali`i to the observer at Mahukona. If <m>\theta</m> is the angle formed between <m>d</m> and the shore, calculate to one decimal place Makaliʻi's distance, <m>d</m>, from the observer for each <m>\theta</m>.
+    </p> 
+    <p>
+      <image xml:id="exer-makalii-distance" width="75%">
+      <latex-image>
+      \begin{tikzpicture}[scale=6]
+      \node[below,yshift=-5] at (0,0) {Mahukona};
+      \draw[dashed] (0,0) -- (-1.3,0.5) node[midway,above,xshift=5,yshift=5] {$d$};
+      \draw (-1.4,0) -- (0.2,0);
+      \draw[dashed] (-1.3,0) -- (-1.3,0.5) node[rotate=90,midway,above,yshift=5] {$2$ miles};
+      \draw ([shift=(180:0.3)]0,0) arc (180:158.9625:0.3) node[midway,left,xshift=-5] {$\theta$};
+      \draw (-1.3,0.5) pic {waa-single-side={waacolor}{0}{0.2}};
+      \draw (-1.3,0.1) -- (-1.2,0.1) -- (-1.2,0);
+      \end{tikzpicture}
+      </latex-image>
+      </image>
+    </p>
+  </introduction>
+  <exercise>
+    <statement>
+      <p>
+        <m>\theta=30^{\circ}</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>4</m> NM
+      </p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        <m>\theta=45^{\circ}</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>2.8</m> NM
+      </p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        <m>\theta=60^{\circ}</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>2.3</m> NM
+      </p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        <m>\theta=90^{\circ}</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>2</m> NM
+      </p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        <m>\theta=120^{\circ}</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>2.3</m> NM
+      </p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        <m>\theta=135^{\circ}</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>2.8</m> NM
+      </p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        <m>\theta=150^{\circ}</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>4</m> NM
+      </p>
+    </answer>
+  </exercise>
+</exercisegroup>
 </exercises>
 
 
@@ -2003,38 +2261,8 @@
 
 
 <!-- 
-<introduction>
-  <p>
-    Find the exact value of the remaining five trigonometric functions of <m>\theta</m> from the given information.
-  </p>
-</introduction>
-<statement>
-<p>
-Find the exact value of the remaining five trigonometric functions of <m>\theta</m> from the given information.
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  
-        <p>
-          \begin{tasks} \task <m>\tan\theta=-\frac{12}{5}</m>,
-          <m>\theta</m> is Quadrant II \task <m>\cos\theta=\frac{3}{5}</m>,
-          <m>\theta</m> is Quadrant IV \task <m>\csc\theta=\frac{\sqrt{10}}{2}</m>,
-          <m>\theta</m> is Quadrant II \task <m>\cos\theta=-\frac{5}{8}</m>,
-          <m>\theta</m> is Quadrant III \task <m>\sec\theta=-2</m>,
-          <m>\pi\lt \theta\lt \frac{3\pi}{2}</m> \task <m>\cot\theta=-\frac{5}{3}</m>,
-          <m>\frac{3\pi}{2}\lt \theta\lt 2\pi</m> \task <m>\cos\theta=\frac{2}{3}</m>,
-          <m>0\lt \theta\lt \pi</m> \task <m>\tan\theta=\frac{7}{4}</m>,
-          <m>0\lt \theta\lt \frac{\pi}{2}</m> \task <m>\csc\theta=\frac{3}{2}</m>,
-          <m>\tan\theta\lt 0</m> \task <m>\sin\theta=\frac{5}{6}</m>,
-          <m>\cot\theta>0</m> \task <m>\sin\theta=-\frac{15}{17}</m>,
-          <m>\cos\theta\lt 0</m> \task <m>\cot\theta=-\frac{1}{3}</m>,
-          <m>\sin\theta>0</m> \end{tasks}
-        </p>
-        
+
+
 
 <introduction>
   <p>
