@@ -547,7 +547,7 @@
         </p>
       </statement>
     </example>
-    <subsubsection xml:id="patterns-in-trig-table">
+    <remark xml:id="patterns-in-trig-table">
       <title>Patterns in the Trigonometric Table</title>
     <p>
       Learning the values of the trigonometric functions in this table can increase your confidence and efficiency in trigonometry.
@@ -687,7 +687,7 @@
       which simplifies to the values in
       <xref ref="tab_basic-trig-Q1">Table</xref>.
     </p>
-    </subsubsection>
+    </remark>
   </subsection>
   <subsection>
     <title>Using a Calculator</title>
