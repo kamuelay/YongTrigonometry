@@ -76,9 +76,20 @@
       About this book: This book integrates navigation into trigonometry curriculum.
     </p>
   </preface>
+  
+  <!-- You can have more than one preface. -->
+  <preface xml:id="pdf-book">
+    <!-- You should be a little careful about what you put here -->
+    <!-- Avoid elements that should have a number, for example  -->
+    <title>Download PDF</title>
+    <p>
+      Chapter 1 is available to down as a PDF at <url href="https://www.kamuelayong.com/Trigonometry-Yong-Chapter-1.pdf"></url>
+    </p>
+    <p>This PDF was created using a LaTeX template downloaded from <url href="http://www.LaTeXTemplates.com"></url></p>
+  </preface>
 
   <!-- You can have more than one preface. -->
-  <preface>
+  <preface xml:id="core-standards">
     <title>Core Standards</title>
     <p>
       The curriculum in this book aligns with the Common Core State Standards:
