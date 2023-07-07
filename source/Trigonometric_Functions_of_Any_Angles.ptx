@@ -15,7 +15,7 @@
     </p>
     <image xml:id="trig-functions-QII-triangle" width="75%">
         <latex-image>
-        \begin{tikzpicture}[scale=2]
+        \begin{tikzpicture}[scale=3]
         \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
         \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
         \draw (0,0) circle (1);
@@ -346,7 +346,7 @@
     </p>
     </remark>
 
-    <example xml:id="exercise_find-ref-angles">
+    <example xml:id="example_find-ref-angles">
       <introduction>
         <p>
           Find the reference angle for each value of <m>t</m>
@@ -987,102 +987,99 @@
     </p>
     </remark>
     <example>
-      <statement>
+      <introduction>
         <p>
           Use the reference angle associated with the given angle to find the exact value of
-          <ol>
-            <li>
-              <p>
-                <m>\cos210^{\circ}</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>\tan\frac{7\pi}{4}</m>
-              </p>
-            </li>
-          </ol>
         </p>
-      </statement>
-      <solution>
-        <p>
-          We will use the steps for evaluating trigonometric functions using reference angles.
-        </p>
-        <ol>
-          <li>
-            <ol>
-              <li>
-                <title>Step 1</title>
-                <p>
-                  <image>
-                     <latex-image> \begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1); \filldraw[blue] (1,0) circle(1pt); \filldraw[blue] (210:1) circle(1pt) node [left] {\(P\)}; \draw[blue] (0,0) -- (1,0); \draw[blue] (0,0) -- (210:1) node[midway,below] {\(r\)}; \draw[->] (0:0.2) arc (0:210:0.2) node[midway, right,xshift=0.2] {\(\theta\)}; \draw[->] (180:0.4) arc (180:210:0.4) node[midway, left,xshift=-0.1] {\(\theta'\)};\end{tikzpicture} </latex-image>
-                  </image>
-                </p>
-              </li>
-              <li>
-                <title>Step 2</title>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>\cos210^{\circ}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We will use the steps for evaluating trigonometric functions using reference angles.
+          </p>
+          <task><title>Step 1</title>
+            <statement>
+              <p>
+                <image xml:id="exmp-6trig-ref-ang-210" width="75%">
+                    <latex-image> \begin{tikzpicture}[scale=4]\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1); \filldraw[blue] (1,0) circle(1pt); \filldraw[blue] (210:1) circle(1pt) node [left] {\(P\)}; \draw[blue] (0,0) -- (1,0); \draw[blue] (0,0) -- (210:1) node[midway,below] {\(r\)}; \draw[->] (0:0.2) arc (0:210:0.2) node[midway, right,xshift=0.2] {\(\theta\)}; \draw[->] (180:0.4) arc (180:210:0.4) node[midway, left,xshift=-0.1] {\(\theta'\)};\end{tikzpicture} </latex-image>
+                </image>
+              </p>
+            </statement>
+          </task>
+          <task><title>Step 2</title>
+            <statement>
                 <p>
                   The reference angle is
                   <me>
                     \theta'=210^{\circ}-180^{\circ}=30^{\circ}
                   </me>
                 </p>
-              </li>
-              <li>
-                <title>Step 3</title>
+            </statement>
+          </task>
+          <task><title>Step 3</title>
+            <statement>
                 <p>
                   <m>\cos30^{\circ}=\frac{\sqrt{3}}{2}</m>
                 </p>
-              </li>
-              <li>
-                <title>Step 4</title>
+            </statement>
+          </task>
+          <task><title>Step 4</title>
+            <statement>
                 <p>
                   Since <m>210^{\circ}</m> lies in Quadrant III, we know that <m>\cos\theta\lt 0</m>, so
                   <me>
                     \cos210^{\circ}=-\frac{\sqrt{3}}{2}
                   </me>
                 </p>
-              </li>
-            </ol>
-          </li>
-          <li>
-            <ol>
-              <li>
-                <title>Step 1</title>
-                <p>
-                  <image>
-                     <latex-image> \begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1); \filldraw (0.4,0) circle(1pt); \filldraw[blue] (1,0) circle(1pt); \filldraw[blue] (315:1) circle(1pt) node [right] {\(P\)}; \draw[blue] (0,0) -- (1,0); \draw[blue] (0,0) -- (315:1) node[midway,below] {\(r\)}; \draw[->] (0:0.4) arc (0:315:0.4) node[midway, left,xshift=-0.1] {\(\theta\)}; \draw[->] (360:0.4) arc (360:315:0.4) node[midway, right,xshift=0.1] {\(\theta'\)};\end{tikzpicture} </latex-image>
-                  </image>
+            </statement>
+          </task>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\tan\frac{7\pi}{4}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We will use the steps for evaluating trigonometric functions using reference angles.
+          </p>
+          <task><title>Step 1</title>
+            <p>
+              <image xml:id="exmp-6trig-ref-ang-7pi4" width="75%">
+                  <latex-image> \begin{tikzpicture}[scale=4]\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1); \filldraw (0.4,0) circle(1pt); \filldraw[blue] (1,0) circle(1pt); \filldraw[blue] (315:1) circle(1pt) node [right] {\(P\)}; \draw[blue] (0,0) -- (1,0); \draw[blue] (0,0) -- (315:1) node[midway,below] {\(r\)}; \draw[->] (0:0.4) arc (0:315:0.4) node[midway, left,xshift=-0.1] {\(\theta\)}; \draw[->] (360:0.4) arc (360:315:0.4) node[midway, right,xshift=0.1] {\(\theta'\)};\end{tikzpicture} </latex-image>
+              </image>
                 </p>
-              </li>
-              <li>
-                <title>Step 2</title>
-                <p>
-                  The reference angle is
-                  <me>
-                    2\pi-\frac{7\pi}{4}=\frac{8\pi}{4}-\frac{7\pi}{4}=\frac{\pi}{4}
-                  </me>
-                </p>
-              </li>
-              <li>
-                <title>Step 3</title>
-                <p>
-                  <m>\tan\frac{\pi}{4}=1</m>
-                </p>
-              </li>
-              <li>
-                <title>Step 4</title>
-                <p>
-                  Since <m>\frac{7\pi}{4}</m> lies in Quadrant IV, we know that <m>\tan\theta\lt 0</m>, so
-                  <me>
-                    \tan\frac{7\pi}{4}=-1
-                  </me>
-                </p>
-              </li>
-            </ol>
-          </li>
-        </ol>
-      </solution>
+          </task>
+          <task><title>Step 2</title>
+            <p>
+              The reference angle is
+              <me>
+                2\pi-\frac{7\pi}{4}=\frac{8\pi}{4}-\frac{7\pi}{4}=\frac{\pi}{4}
+              </me>
+          </p>
+          </task>
+          <task><title>Step 3</title>
+            <p>
+              <m>\tan\frac{\pi}{4}=1</m>
+            </p>
+          </task>
+          <task><title>Step 4</title>
+            <p>
+              Since <m>\frac{7\pi}{4}</m> lies in Quadrant IV, we know that <m>\tan\theta\lt 0</m>, so
+              <me>
+                \tan\frac{7\pi}{4}=-1
+              </me>
+            </p>
+          </task>
+        </solution>
+      </task>
     </example>
     <example xml:id="ex-1_5-20pi3">
       <statement>
@@ -1092,62 +1089,62 @@
         </p>
       </statement>
       <solution>
-        <p>
-          <ol>
-            <li>
-              <title>Step 1</title>
-              <p>
-                <figure xml:id="fig_1_5-1200deg">
+        <task><title>Step 1</title>
+          <statement>
+            <p>
+                <figure xml:id="exmp-trig-20pi3" width="75">
                   <caption>The angle <m>\theta=\frac{20\pi}{3}</m> makes three rotations before ending in Quadrant II.</caption>
                   <image>
-                     <latex-image> \begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1); \filldraw[blue] (1,0) circle(1pt); \filldraw[blue] (120:1) circle(1pt) node [left] {\(P\)}; \draw[blue] (0,0) -- (1,0); \draw[blue] (0,0) -- (120:1); \draw[->,domain=0:20.94395,variable=\t,smooth,samples=75] plot ({\t r}: {0.1+0.03*\t}); \node at (60:0.8) {\(\theta\)}; \draw[->] (180:0.7283) arc (180:120:0.7283) node[midway, left,xshift=-0.0] {\(\theta'\)}; \filldraw[blue] (120:0.162831853072) circle(1pt); \filldraw[blue] (120:0.351327412287) circle(1pt); \filldraw[blue] (120:0.539822971503) circle(1pt); \filldraw[blue] (120:0.7283) circle(1pt);\end{tikzpicture} </latex-image>
+                     <latex-image> \begin{tikzpicture}[scale=4] \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1); \filldraw[blue] (1,0) circle(1pt); \filldraw[blue] (120:1) circle(1pt) node [left] {\(P\)}; \draw[blue] (0,0) -- (1,0); \draw[blue] (0,0) -- (120:1); \draw[->,domain=0:20.94395,variable=\t,smooth,samples=75] plot ({\t r}: {0.1+0.03*\t}); \node at (60:0.8) {\(\theta\)}; \draw[->] (180:0.7283) arc (180:120:0.7283) node[midway, left,xshift=-0.0] {\(\theta'\)}; \filldraw[blue] (120:0.162831853072) circle(1pt); \filldraw[blue] (120:0.351327412287) circle(1pt); \filldraw[blue] (120:0.539822971503) circle(1pt); \filldraw[blue] (120:0.7283) circle(1pt);\end{tikzpicture} </latex-image>
                   </image>
                 </figure>
               </p>
-            </li>
-            <li>
-              <title>Step 2</title>
-              <p>
-                To obtain the reference angle,
-                we first subtract multiples of <m>2\pi</m> from <m>\theta</m> to obtain a coterminal angle between <m>0</m> and <m>2\pi</m>:
-                <md>
-                  <mrow>\frac{20\pi}{3}-2\pi\amp =\amp \frac{20\pi}{3}-\frac{6\pi}{3}=\frac{14\pi}{3}</mrow>
-                  <mrow>\frac{20\pi}{3}-4\pi\amp =\amp \frac{20\pi}{3}-\frac{12\pi}{3}=\frac{8\pi}{3}</mrow>
-                  <mrow>\frac{20\pi}{3}-6\pi\amp =\amp \frac{20\pi}{3}-\frac{18\pi}{3}=\frac{2\pi}{3}</mrow>
-                </md>
-                From <xref ref="exercise_1_5-ref-angles">Example</xref>,
-                the reference angle for <m>\frac{2\pi}{3}</m> is <m>\theta'=\frac{\pi}{3}</m>
-              </p>
-            </li>
-            <li>
-              <title>Step 3</title>
-              <p>
-                <m>\sin\frac{\pi}{3}=\frac{\sqrt{3}}{2}</m> and <m>\cos\frac{\pi}{3}=\frac{1}{2}</m>
-              </p>
-            </li>
-            <li>
-              <title>Step 4</title>
-              <p>
-                Since <m>\frac{20\pi}{3}</m> lies in Quadrant II, we know that
-                <m>\sin\theta>0</m> and <m>\cos\theta\lt 0</m>, so
-                <me>
-                  \sin\frac{20\pi}{3}=\frac{\sqrt{3}}{2}; \qquad \cos\frac{20\pi}{3}=-\frac{1}{2}
-                </me>
-              </p>
-            </li>
-          </ol>
-        </p>
+          </statement>
+        </task>
+        <task><title>Step 2</title>
+          <statement>
+            <p>
+              To obtain the reference angle,
+              we first subtract multiples of <m>2\pi</m> from <m>\theta</m> to obtain a coterminal angle between <m>0</m> and <m>2\pi</m>:
+              <md>
+                <mrow>\frac{20\pi}{3}-2\pi\amp =\amp \frac{20\pi}{3}-\frac{6\pi}{3}=\frac{14\pi}{3}</mrow>
+                <mrow>\frac{20\pi}{3}-4\pi\amp =\amp \frac{20\pi}{3}-\frac{12\pi}{3}=\frac{8\pi}{3}</mrow>
+                <mrow>\frac{20\pi}{3}-6\pi\amp =\amp \frac{20\pi}{3}-\frac{18\pi}{3}=\frac{2\pi}{3}</mrow>
+              </md>
+              From <xref ref="example_find-ref-angles">Example</xref>,
+              the reference angle for <m>\frac{2\pi}{3}</m> is <m>\theta'=\frac{\pi}{3}</m>
+            </p>
+          </statement>
+        </task>
+        <task><title>Step 3</title>
+          <statement>
+            <p>
+              <m>\sin\frac{\pi}{3}=\frac{\sqrt{3}}{2}</m> and <m>\cos\frac{\pi}{3}=\frac{1}{2}</m>
+            </p>
+          </statement>
+        </task>
+        <task><title>Step 4</title>
+          <statement>
+            <p>
+              Since <m>\frac{20\pi}{3}</m> lies in Quadrant II, we know that
+              <m>\sin\theta>0</m> and <m>\cos\theta\lt 0</m>, so
+              <me>
+                \sin\frac{20\pi}{3}=\frac{\sqrt{3}}{2}; \qquad \cos\frac{20\pi}{3}=-\frac{1}{2}
+              </me>
+            </p>
+          </statement>
+        </task>
       </solution>
     </example>
   </subsection>
   <subsection xml:id="core-standardsCCSS_MATH_CONTENT_HSF_TF_A_4-a">
     <title>Periodic Functions</title>
     <p>
-      In <xref ref="fig_1_5-1200deg">Figure</xref>
+      In <xref ref="exmp-trig-20pi3">Figure</xref>
       of <xref ref="ex-1_5-20pi3">Example</xref>,
-      the point <m>P</m> corresponds to the angle <m>\frac{20\pi}{3}</m>.
+      the point <m>P</m> corresponds to the angle <m>\frac{20\pi}{3}.</m>
       When finding the reference angle,
-      we subtracted multiples of <m>2\pi</m>.
+      we subtracted multiples of <m>2\pi.</m>
       Each multiple of <m>2\pi</m> traces the unit circle back to the point <m>P</m>,
       giving us a coterminal angle.
       Therefore
@@ -1172,14 +1169,22 @@
       be any angle and let point <m>P</m> be the corresponding point on the unit circle.
       Adding or subtracting integer multiples of <m>2\pi</m> to <m>\theta</m> will result in a corresponding point on the unit circle identical to point <m>P</m>.
       Thus, the values of sine and cosine for all angles corresponding to point <m>P</m> are equal.
-      In other words \begin{mybox}[Periodic Properties]
-          <idx><h>periodic properties</h></idx>
-      <md>
-        <mrow>\sin(\theta+2\pi k)\amp =\sin\theta \amp  \cos(\theta+2\pi k)\amp =\cos\theta</mrow>
-      </md>
-      where <m>k</m> is any integer. \end{mybox} Functions like these that repeats its values in regular cycles are called
-      <em>periodic functions</em>.
+      In other words
     </p>
+      <definition xml:id="def-Periodic-Properties"><idx><h>periodic properties</h></idx><title>Periodic Properties</title>
+      
+      
+        <statement>
+          <p>
+            <md>
+              <mrow>\sin(\theta+2\pi k)\amp =\sin\theta \amp  \cos(\theta+2\pi k)\amp =\cos\theta</mrow>
+            </md>
+            where <m>k</m> is any integer.
+          </p>
+        </statement>
+      </definition>
+      <p>Functions like these that repeats its values in regular cycles are called
+            <em>periodic functions</em>.</p>
     <definition>
       <statement>
         <p>
@@ -1189,7 +1194,7 @@
           <me>
             f(\theta+p)=f(\theta)
           </me>
-          for every <m>\theta</m>.
+          for every <m>\theta.</m>
           The smallest number <m>p</m> is called the
           <term>period</term> of <m>f</m>.
         </p>
@@ -1197,16 +1202,18 @@
     </definition>
     <p>
       Sine, cosine, cosecant,
-      and secant repeat their values with a period of <m>2\pi</m> while tangent and cotangent have a period of <m>\pi</m>. \begin{mybox}[Periodic Properties]
-          <idx><h>period functions</h></idx>
-      <md>
-        <mrow>\sin(\theta+2\pi)\amp =\sin\theta \amp  \cos(\theta+2\pi)\amp =\cos\theta \amp  \tan(\theta+\pi)\amp =\tan\theta</mrow>
-        <mrow>\csc(\theta+2\pi)\amp =\csc\theta \amp  \sec(\theta+2\pi)\amp =\sec\theta \amp  \cot(\theta+\pi)\amp =\cot\theta</mrow>
-      </md>
+      and secant repeat their values with a period of <m>2\pi</m> while tangent and cotangent have a period of <m>\pi</m>.
     </p>
-    <p>
-      \end{mybox}
-    </p>
+    <definition xml:id="def-Periodic-Properties"><title>Periodic Properties</title><idx><h>period functions</h></idx>
+      <statement>
+        <p>
+          <md>
+            <mrow>\sin(\theta+2\pi)\amp =\sin\theta \amp  \cos(\theta+2\pi)\amp =\cos\theta \amp  \tan(\theta+\pi)\amp =\tan\theta</mrow>
+            <mrow>\csc(\theta+2\pi)\amp =\csc\theta \amp  \sec(\theta+2\pi)\amp =\sec\theta \amp  \cot(\theta+\pi)\amp =\cot\theta</mrow>
+          </md>
+        </p>
+      </statement>
+    </definition>
   </subsection>
   <subsection>
     <title>Trigonometric Table</title>
@@ -1611,9 +1618,10 @@
       <p>
         We will use the Pythagorean Theorem to prove the reciprocal identities.
       </p>
-      <image>
+      <image xml:id="fig-pythagorean-identity-proof" width="75%">
 <latex-image>
-\begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\begin{tikzpicture}[scale=3.5]
+\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
 \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
 \draw (0,0) circle (1);
 \draw[line width=2pt] (0,0) -- (45:1) node[midway,above,yshift=0.2] {\(r\)};
@@ -1653,11 +1661,11 @@
         <p>
           Substituting our value of <m>\cos\theta</m> into the Pythagorean Identity,
           <md>
-            <mrow>\sin^2\theta+\cos^2\theta\amp =\amp 1</mrow>
-            <mrow>\sin^2\theta+\left(\frac{3}{5}\right)^2\amp =\amp 1</mrow>
-            <mrow>\sin^2\theta+\frac{9}{25}\amp =\amp 1</mrow>
-            <mrow>\sin^2\theta\amp =\amp 1-\frac{9}{25}</mrow>
-            <mrow>\sin^2\theta\amp =\amp \frac{16}{25}</mrow>
+            <mrow>\sin^2\theta+\cos^2\theta\amp = 1</mrow>
+            <mrow>\sin^2\theta+\left(\frac{3}{5}\right)^2\amp = 1</mrow>
+            <mrow>\sin^2\theta+\frac{9}{25}\amp = 1</mrow>
+            <mrow>\sin^2\theta\amp = 1-\frac{9}{25}</mrow>
+            <mrow>\sin^2\theta\amp = \frac{16}{25}</mrow>
           </md>
         </p>
         <p>
@@ -1690,11 +1698,10 @@
       and a function is odd if <m>f(-x)=-f(x)</m> for all values of <m>x</m>.
       We can now classify trigonometric functions as even or odd.
     </p>
-    <definition>
-
-    
+    <definition><title>Even and Odd Trigonometric Properties</title><idx><h>even and odd trigonometric properties</h></idx>
+    <statement>
     <p>
-      \begin{mybox}[Even and Odd Trigonometric Properties]<idx><h>even and odd trigonometric properties</h></idx> The cosine and secant functions are <em>even</em>
+      The cosine and secant functions are <em>even</em>
       <md>
         <mrow>\cos(-\theta)\amp =\cos\theta \amp  \sec(-\theta)\amp =\sec\theta</mrow>
       </md>
@@ -1706,17 +1713,16 @@
         <mrow>\tan(-\theta)\amp =-\tan\theta \amp  \cot(-\theta)\amp =-\cot(\theta)</mrow>
       </md>
     </p>
-    <p>
-      \end{mybox}
-    </p>
+    </statement>
     </definition>
     <proof>
       <p>
         Let <m>P</m> be a point on the unit circle corresponding to the angle <m>\theta</m> with coordinates <m>(x,y)</m> and <m>Q</m> be the point corresponding to the angle <m>-\theta</m> with coordinates <m>(x,-y)</m>.
       </p>
-      <image>
+      <image xml:id="fig-even-odd-property-proof" width="75%">
 <latex-image>
-\begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\begin{tikzpicture}[scale=3.5]
+\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
 \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
 \draw (0,0) circle (1);
 \node at (-0.1,-0.1) {0};
@@ -1748,8 +1754,10 @@
         Thus we conclude that sine is an odd function and cosine is an even function.
         Next, using the Quotient and Reciprocal Identities we get
         <md>
-          <mrow>\tan(-\theta)\amp =\frac{\sin(-\theta)}{\cos(-\theta)}=\frac{-\sin\theta}{\cos\theta}=-\tan\theta, \amp  \cot(-\theta)\amp =\frac{1}{\tan(-\theta)}=\frac{1}{-\tan\theta}=-\cot\theta</mrow>
-          <mrow>\csc(-\theta)\amp =\frac{1}{\sin(-\theta)}=\frac{1}{-\sin\theta}=-\csc\theta, \amp  \sec(-\theta)\amp =\frac{1}{\cos(-\theta)}=\frac{1}{-\cos\theta}=\sec\theta</mrow>
+          <mrow>\tan(-\theta)\amp =\frac{\sin(-\theta)}{\cos(-\theta)}=\frac{-\sin\theta}{\cos\theta}=-\tan\theta,</mrow>
+          <mrow>\cot(-\theta)\amp =\frac{1}{\tan(-\theta)}=\frac{1}{-\tan\theta}=-\cot\theta,</mrow>
+          <mrow>\csc(-\theta)\amp =\frac{1}{\sin(-\theta)}=\frac{1}{-\sin\theta}=-\csc\theta,</mrow>
+          <mrow>\sec(-\theta)\amp =\frac{1}{\cos(-\theta)}=\frac{1}{-\cos\theta}=\sec\theta.</mrow>
         </md>
       </p>
       <p>
@@ -1758,41 +1766,35 @@
       </p>
     </proof>
     <example>
-      <statement>
+      <introduction>
         <p>
           Use the even-odd properties of trigonometric functions to determine the exact value of
-          <ol>
-            <li>
-              <p>
-                <m>\csc(-30^{\circ})</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>\cos(-\theta)</m> if <m>\cos\theta=0.4</m>
-              </p>
-            </li>
-          </ol>
         </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>\csc(-30^{\circ})</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Since cosecant is an odd function,
+            the cosecant of a negative angle is the opposite sign of the cosecant of the positive angle.
+            Thus, <m>\csc(-30^{\circ})=-\csc30^{\circ}=-2</m>
+          </p>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\cos(-\theta)</m> if <m>\cos\theta=0.4</m>
+          </p>
       </statement>
-      <solution>
-        <p>
-          <ol>
-            <li>
-              <p>
-                Since cosecant is an odd function,
-                the cosecant of a negative angle is the opposite sign of the cosecant of the positive angle.
-                Thus, <m>\csc(-30^{\circ})=-\csc30^{\circ}=-2</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                Cosine is an even function so <m>\cos(-\theta)=\cos\theta=0.4</m>.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </solution>
+        <solution>
+          <p>Cosine is an even function so <m>\cos(-\theta)=\cos\theta=0.4</m>.</p>
+        </solution>
+      </task>
     </example>
   </subsection>
 <exercises>
@@ -1869,50 +1871,19 @@
     </answer>
   </exercise>
 </exercisegroup>
-</exercises>
-
-
-
-
-
-<!-- 
-
-    <exercise xml:id="ex-1_5">
-      <statement>
-        <p>
-          \begin{tasks} \task <m>\cot\theta\lt 0</m> and <m>\cos\theta\lt 0</m> \task <m>\csc\theta>0</m> and <m>\tan\theta>0</m> \task <m>\cos\theta>0</m> and <m>\sin\theta\lt 0</m> \task <m>\sec\theta>0</m> and <m>\tan\theta>0</m> \task <m>\tan\theta\lt 0</m> and <m>\csc\theta>0</m> \task
-          <m>\cot\theta>0</m> and <m>\sin\theta\lt 0</m> \task
-          <m>\sec\theta\lt 0</m> and <m>\csc\theta\lt 0</m> \task
-          <m>\cos\theta\lt 0</m> and <m>\tan\theta>0</m> \end{tasks}
-        </p>
-</statement>
-        
-
-<introduction>
+<exercisegroup>
+  <introduction>
   <p>
     The point <m>P(x,y)</m> is on the terminal side of angle <m>\theta</m>.
-          Determine the exact values of the six trigonometric functions at <m>\theta</m>
+    Determine the exact values of the six trigonometric functions at <m>\theta</m>
   </p>
-</introduction>
-<statement>
-<p>
-The point <m>P(x,y)</m> is on the terminal side of angle <m>\theta</m>.
-          Determine the exact values of the six trigonometric functions at <m>\theta</m>
-      </p>
-    </statement>
-    <answer>
+  </introduction>
+  <exercise>
+    <statement>
       <p>
-        MYANSWER
-      </p>
-    </answer>
-  
-        <p>
-          \begin{tasks} \task
-        </p>
-        -->
-        <image>
+        <image xml:id="exer-6trig-P-86" width="75%">
 <latex-image>
-\begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\begin{tikzpicture}[scale=4]\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
 \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
 \filldraw[blue] (1,0) circle(1pt);
 \filldraw[blue] (126.869897646:1.2) circle(1pt);
@@ -1921,12 +1892,20 @@ The point <m>P(x,y)</m> is on the terminal side of angle <m>\theta</m>.
 \draw[->] (0:0.7) arc (0:126.869897646:0.7) node[midway,above] {\(\theta\)};\end{tikzpicture}
 </latex-image>
         </image>
-        <p>
-          \task
-        </p>
-        <image>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>\sin\theta=\frac{3}{5}</m>, <m>\cos\theta=-\frac{4}{5}</m>, <m>\tan\theta=-\frac{3}{4}</m>, <m>\csc\theta=\frac{5}{3}</m>, <m>\sec\theta=-\frac{5}{4}</m>, <m>\cot\theta=-\frac{4}{3}</m>
+      </p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        <image xml:id="exer-6trig-P-86" width="75%">
 <latex-image>
-\begin{tikzpicture}\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\begin{tikzpicture}[scale=4]\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
 \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
 \filldraw[blue] (1,0) circle(1pt);
 \filldraw[blue] (310.601294645:1.2) circle(1pt);
@@ -1935,12 +1914,95 @@ The point <m>P(x,y)</m> is on the terminal side of angle <m>\theta</m>.
 \draw[->] (0:0.7) arc (0:310.601294645:0.7) node[midway,left] {\(\theta\)};\end{tikzpicture}
 </latex-image>
         </image> 
-        <!--
-        <p>
-          \task <m>(3,-4)</m> \task <m>(-12,-5)</m> \task <m>(-2,-3)</m> \task <m>(-4,4)</m> \task <m>(-24,7)</m> \task <m>(9,-40)</m> \end{tasks}
-        </p>
-        
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>\sin\theta=-\frac{7\sqrt{85}}{85}</m>, <m>\cos\theta=\frac{6\sqrt{85}}{85}</m>, <m>\tan\theta=-\frac{7}{6}</m>, <m>\csc\theta=-\frac{\sqrt{85}}{7}</m>, <m>\sec\theta=\frac{\sqrt{85}}{6}</m>, <m>\cot\theta=-\frac{6}{7}</m>
+      </p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        <m>(3,-4)</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>\sin\theta=-\frac{4}{5}</m>, <m>\cos\theta=\frac{3}{5}</m>, <m>\tan\theta=-\frac{4}{3}</m>, <m>\csc\theta=-\frac{5}{4}</m>, <m>\sec\theta=\frac{5}{3}</m>, <m>\cot\theta=-\frac{3}{4}</m>
+      </p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        <m>(-12,-5)</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>\sin\theta=-\frac{5}{13}</m>, <m>\cos\theta=-\frac{12}{13}</m>, <m>\tan\theta=\frac{5}{12}</m>, <m>\csc\theta=-\frac{13}{5}</m>, <m>\sec\theta=-\frac{13}{12}</m>, <m>\cot\theta=\frac{12}{5}</m>
+      </p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        <m>(-2,-3)</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>\sin\theta=-\frac{3\sqrt{13}}{13}</m>, <m>\cos\theta=-\frac{2\sqrt{13}}{13}</m>, <m>\tan\theta=\frac{3}{2}</m>, <m>\csc\theta=-\frac{\sqrt{13}}{3}</m>, <m>\sec\theta=-\frac{\sqrt{13}}{2}</m>, <m>\cot\theta=\frac{2}{3}</m>
+      </p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        <m>(-4,4)</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>\sin\theta=\frac{\sqrt{2}}{2}</m>, <m>\cos\theta=-\frac{\sqrt{2}}{2}</m>, <m>\tan\theta=-1$</m> <m>\csc\theta=\sqrt{2}</m>, <m>\sec\theta=-\sqrt{2}</m>, <m>\cot\theta=-1</m>
+      </p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        <m>(-24,7)</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>\sin\theta=\frac{7}{25}</m>, <m>\cos\theta=-\frac{24}{25}</m>, <m>\tan\theta=-\frac{7}{24}</m>, <m>\csc\theta=\frac{25}{7}</m>, <m>\sec\theta=-\frac{25}{24}</m>, <m>\cot\theta=-\frac{24}{7}</m>
+      </p>
+    </answer>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        <m>(9,-40)</m>
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>\sin\theta=-\frac{40}{41}</m>, <m>\cos\theta=\frac{9}{41}</m>, <m>\tan\theta=-\frac{40}{9}</m>, <m>\csc\theta=-\frac{41}{40}</m>, <m>\sec\theta=\frac{41}{9}</m>, <m>\cot\theta=-\frac{9}{40}</m>
+      </p>
+    </answer>
+  </exercise>
+</exercisegroup>
 
+</exercises>
+
+
+
+
+
+<!-- 
 <introduction>
   <p>
     Find the exact value of the remaining five trigonometric functions of <m>\theta</m> from the given information.
@@ -2222,11 +2284,11 @@ Use the Pythagorean Identities to write the first trigonometric function of <m>\
       <p>
         MYANSWER
       </p>
-    </answer>
+    </answer> -->
   
         
 
-<introduction>
+<!-- <introduction>
   <p>
     Use the even and odd properties to evaluate the following
   </p>
