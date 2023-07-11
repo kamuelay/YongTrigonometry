@@ -1798,7 +1798,7 @@
     </example>
   </subsection>
 <exercises>
-<exercisegroup>
+<exercisegroup cols="2">
   <introduction>
     <p>
       Determine the quadrant containing
@@ -1871,7 +1871,7 @@
     </answer>
   </exercise>
 </exercisegroup>
-<exercisegroup>
+<exercisegroup cols="2">
   <introduction>
   <p>
     The point <m>P(x,y)</m> is on the terminal side of angle <m>\theta</m>.
@@ -1883,7 +1883,7 @@
       <p>
         <image xml:id="exer-6trig-P-86" width="75%">
 <latex-image>
-\begin{tikzpicture}[scale=4]\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\begin{tikzpicture}[scale=1.5]\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
 \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
 \filldraw[blue] (1,0) circle(1pt);
 \filldraw[blue] (126.869897646:1.2) circle(1pt);
@@ -1905,7 +1905,7 @@
       <p>
         <image xml:id="exer-6trig-P6-7" width="75%">
 <latex-image>
-\begin{tikzpicture}[scale=4]\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+\begin{tikzpicture}[scale=1.5]\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
 \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
 \filldraw[blue] (1,0) circle(1pt);
 \filldraw[blue] (310.601294645:1.2) circle(1pt);
@@ -1995,7 +1995,7 @@
     </answer>
   </exercise>
 </exercisegroup>
-<exercisegroup>
+<exercisegroup cols="2">
   <introduction>
   <p>
     Find the exact value of the remaining five trigonometric functions of <m>\theta</m> from the given information.
@@ -2146,274 +2146,86 @@
     </answer>
   </exercise>
 </exercisegroup>
-<exercisegroup>
+<exercisegroup cols="2">
   <introduction>
     <p>
-      Given a reference angle,
+      Given a reference angle, <m>t'</m>, compute the associated angle, <m>t</m>, in standard position,  <m>\sin t</m>, <m>\cos t</m>, and <m>\tan t</m> for
     </p>
-  </introduction>
-  <exercise>
+    <p>
+  <task>
     <statement>
       <p>
+        Quadrant II
       </p>
     </statement>
-    <answer>
+  </task>
+  <task>
+    <statement>
       <p>
+         Quadrant III
       </p>
-    </answer>
+    </statement>
+  </task>
+  <task>
+    <statement>
+      <p>
+        Quadrant IV
+      </p>
+    </statement>
+  </task>
+  </p>
+  </introduction>
+  <exercise>
+  <introduction><p><m>t'=\frac{\pi}{4}</m></p></introduction>
+  <task>
+    <answer><p><m>t=\frac{3\pi}{4}</m>, <m>\sin\frac{3\pi}{4}=\frac{\sqrt{2}}{2}</m>, <m>\cos\frac{3\pi}{4}=-\frac{\sqrt{2}}{2}</m>, <m>\tan\frac{3\pi}{4}=-1</m></p></answer>
+  </task>
+  <task>
+    <answer><p><m>t=\frac{5\pi}{4}</m>, <m>\sin\frac{5\pi}{4}=-\frac{\sqrt{2}}{2}</m>, <m>\cos\frac{5\pi}{4}=-\frac{\sqrt{2}}{2}</m>, <m>\tan\frac{5\pi}{4}=1</m></p></answer>
+  </task>
+  <task>
+    <answer><p><m>t=\frac{7\pi}{4}</m>, <m>\sin\frac{7\pi}{4}=-\frac{\sqrt{2}}{2}</m>, <m>\cos\frac{7\pi}{4}=\frac{\sqrt{2}}{2}</m>, <m>\tan\frac{7\pi}{4}=-1$</m>
+    </p></answer>
+  </task>
+  </exercise>
+  <exercise>
+  <introduction><p><m>t'=\frac{\pi}{3}</m></p></introduction>
+  <task>
+    <answer><p><m>t=\frac{2\pi}{3}</m>, <m>\sin\frac{2\pi}{3}=\frac{\sqrt{3}}{2}</m>, <m>\cos\frac{2\pi}{3}=-\frac{1}{2}</m>, <m>\tan\frac{2\pi}{3}=-\sqrt{3}</m></p></answer>
+  </task>
+  <task>
+    <answer><p><m>t=\frac{4\pi}{3}</m>, <m>\sin\frac{4\pi}{3}=-\frac{\sqrt{3}}{2}</m>, <m>\cos\frac{4\pi}{3}=-\frac{1}{2}</m>, <m>\tan\frac{4\pi}{3}=\sqrt{3}</m></p></answer>
+  </task>
+  <task>
+    <answer><p><m>t=\frac{5\pi}{3}</m>, <m>\sin\frac{5\pi}{3}=-\frac{\sqrt{3}}{2}</m>, <m>\cos\frac{5\pi}{3}=\frac{1}{2}</m>, <m>\tan\frac{5\pi}{3}=-\sqrt{3}$</m></p></answer>
+  </task>
+  </exercise>
+  <exercise>
+  <introduction><p><m>t'=30^{\circ}</m></p></introduction>
+  <task>
+    <answer><p><m>t=150^{\circ}</m>, <m>\sin150^{\circ}=\frac{1}{2}</m>, <m>\cos150^{\circ}=-\frac{\sqrt{3}}{2}</m>, <m>\tan150^{\circ}=-\frac{\sqrt{3}}{3}</m></p></answer>
+  </task>
+  <task>
+    <answer><p><m>t=210^{\circ}</m>, <m>\sin210^{\circ}=-\frac{1}{2}</m>, <m>\cos210^{\circ}=-\frac{\sqrt{3}}{2}</m>, <m>\tan210^{\circ}=\frac{\sqrt{3}}{3}</m></p></answer>
+  </task>
+  <task>
+    <answer><p><m>t=330^{\circ}</m>, <m>\sin330^{\circ}=-\frac{1}{2}</m>, <m>\cos330^{\circ}=\frac{\sqrt{3}}{2}</m>, <m>\tan330^{\circ}=-\frac{\sqrt{3}}{3}$</m></p></answer>
+  </task>
+  </exercise>
+  <exercise>
+  <introduction><p><m>t'=60^{\circ}</m></p></introduction>
+  <task>
+    <answer><p><m>t=120^{\circ}</m>, <m>\sin120^{\circ}=\frac{\sqrt{3}}{2}</m>, <m>\cos120^{\circ}=-\frac{1}{2}</m>, <m>\tan120^{\circ}=-\sqrt{3}</m></p></answer>
+  </task>
+  <task>
+    <answer><p><m>t=240^{\circ}</m>, <m>\sin240^{\circ}=-\frac{\sqrt{3}}{2}</m>, <m>\cos240^{\circ}=-\frac{1}{2}</m>, <m>\tan240^{\circ}=\sqrt{3}</m></p></answer>
+  </task>
+  <task>
+    <answer><p><m>t=300^{\circ}</m>, <m>\sin300^{\circ}=-\frac{\sqrt{3}}{2}</m>, <m>\cos300^{\circ}=\frac{1}{2}</m>, <m>\tan300^{\circ}=-\sqrt{3}$</m></p></answer>
+  </task>
   </exercise>
 </exercisegroup>
-<!-- <exercisegroup>
-  <introduction>
-    <p>
-      For each angle <m>\theta</m>,
-    </p>
-  <task>
-    <statement>
-      <p>
-        Determine the quadrant <m>\theta</m> lies in
-      </p>
-    </statement>
-  </task>
-  <task>
-    <statement>
-      <p>
-         Calculate the reference angle <m>\theta'</m>
-      </p>
-    </statement>
-  </task>
-  <task>
-    <statement>
-      <p>
-        Use the reference angle, <m>\theta'</m> to evaluate the exact values of the six trigonometric functions for <m>\theta</m>
-      </p>
-    </statement>
-  </task>
-  </introduction>
-  <exercise>
-    <statement>
-      <p>
-        <m>\theta=-\frac{3\pi}{4}</m>
-      </p>
-    </statement>
-    <answer>
-      <task>
-        <statement>
-          <p>
-            QIII
-          </p>
-        </statement>
-      </task>
-      <task>
-        <statement>
-          <p>
-            <m>\theta'=\frac{\pi}{4}</m>
-          </p>
-        </statement>
-      </task>
-      <task>
-        <statement>
-          <p>
-            <m>\sin\theta=-\frac{\sqrt{2}}{2}</m>, <m>\cos\theta=-\frac{\sqrt{2}}{2}</m>, <m>\tan\theta=1</m>, <m>\csc\theta=-\sqrt{2}</m>, <m>\sec\theta=-\sqrt{2}</m>, <m>\cot\theta=1</m>
-          </p>
-        </statement>
-      </task>
-    </answer>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        <m>\theta=\frac{4\pi}{3}</m>
-      </p>
-    </statement>
-    <answer>
-      <task>
-        <statement>
-          <p>
-            QIII
-          </p>
-        </statement>
-      </task>
-      <task>
-        <statement>
-          <p>
-            <m>\theta'=\frac{\pi}{3}</m>
-          </p>
-        </statement>
-      </task>
-      <task>
-        <statement>
-          <p>
-            <m>\sin\theta=-\frac{\sqrt{3}}{2}</m>, <m>\cos\theta=-\frac{1}{2}</m>, <m>\tan\theta=\sqrt{3}</m>, <m>\csc\theta=-\frac{2\sqrt{3}}{3}</m>, <m>\sec\theta=-2</m>, <m>\cot\theta=\frac{\sqrt{3}}{3}</m>
-          </p>
-        </statement>
-      </task>
-    </answer>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        <m>\theta=\frac{11\pi}{6}</m>
-      </p>
-    </statement>
-    <answer>
-      <task>
-        <statement>
-          <p>
-            QIV
-          </p>
-        </statement>
-      </task>
-      <task>
-        <statement>
-          <p>
-            <m>\theta'=\frac{\pi}{6}</m>
-          </p>
-        </statement>
-      </task>
-      <task>
-        <statement>
-          <p>
-            <m>\sin\theta=-\frac{1}{2}</m>, <m>\cos\theta=\frac{\sqrt{3}}{2}</m>, <m>\tan\theta=-\frac{\sqrt{3}}{3}</m>, <m>\csc\theta=-2</m>, <m>\sec\theta=\frac{2\sqrt{3}}{3}</m>, <m>\cot\theta=-\sqrt{3}</m>
-          </p>
-        </statement>
-      </task>
-    </answer>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        <m>\theta=\frac{7\pi}{3}</m>
-      </p>
-    </statement>
-    <answer>
-      <task>
-        <statement>
-          <p>
-            QI
-          </p>
-        </statement>
-      </task>
-      <task>
-        <statement>
-          <p>
-            <m>\theta'=\frac{\pi}{3}</m>
-          </p>
-        </statement>
-      </task>
-      <task>
-        <statement>
-          <p>
-            <m>\sin\theta=\frac{\sqrt{3}}{2}</m>, <m>\cos\theta=\frac{1}{2}</m>, <m>\tan\theta=\sqrt{3}</m>, <m>\csc\theta=\frac{2\sqrt{3}}{3}</m>, <m>\sec\theta=2</m>, <m>\cot\theta=\frac{\sqrt{3}}{3}</m>
-          </p>
-        </statement>
-      </task>
-    </answer>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        <m>\theta=120^{\circ}</m>
-      </p>
-    </statement>
-    <answer>
-      <task>
-        <statement>
-          <p>
-            QII
-          </p>
-        </statement>
-      </task>
-      <task>
-        <statement>
-          <p>
-            <m>\theta'=60^{\circ}</m>
-          </p>
-        </statement>
-      </task>
-      <task>
-        <statement>
-          <p>
-            <m>\sin\theta=\frac{\sqrt{3}}{2}</m>, <m>\cos\theta=-\frac{1}{2}</m>, <m>\tan\theta=-\sqrt{3}</m>, <m>\csc\theta=\frac{2\sqrt{3}}{3}</m>, <m>\sec\theta=-2</m>, <m>\cot\theta=-\frac{\sqrt{3}}{3}</m>
-          </p>
-        </statement>
-      </task>
-    </answer>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        <m>\theta=480^{\circ}</m>
-      </p>
-    </statement>
-    <answer>
-      <task>
-        <statement>
-          <p>
-            QII
-          </p>
-        </statement>
-      </task>
-      <task>
-        <statement>
-          <p>
-            <m>\theta'=60^{\circ}</m>
-          </p>
-        </statement>
-      </task>
-      <task>
-        <statement>
-          <p>
-            <m>\sin\theta=\frac{\sqrt{3}}{2}</m>, <m>\cos\theta=-\frac{1}{2}</m>, <m>\tan\theta=-\sqrt{3}</m>, <m>\csc\theta=\frac{2\sqrt{3}}{3}</m>, <m>\sec\theta=-2</m>, <m>\cot\theta=-\frac{\sqrt{3}}{3}</m>
-          </p>
-        </statement>
-      </task>
-    </answer>
-  </exercise>
-
-  <exercise>
-  <introduction><p><m>theta1</m></p></introduction>
-  <task>
-  <statement></statement>
-    <answer><p>ans1</p></answer>
-  </task>
-  <task>
-  <statement></statement>
-    <answer><p>ans2</p></answer>
-  </task>
-  <task>
-  <statement></statement>
-    <answer><p>ans3</p></answer>
-  </task>
-  </exercise>
-
-
-  <exercise>
-    <statement>
-      <p>
-        <m>\theta=480^{\circ}</m>
-      </p>
-    </statement>
-    <answer>
-      <p>
-        QII
-      </p>
-    </answer>
-    <answer>
-      <p>
-        <m>\theta'=60^{\circ}</m>
-      </p>
-    </answer>
-    <answer><title>(c)</title>
-      <p>
-        <m>\sin\theta=\frac{\sqrt{3}}{2}</m>, <m>\cos\theta=-\frac{1}{2}</m>, <m>\tan\theta=-\sqrt{3}</m>, <m>\csc\theta=\frac{2\sqrt{3}}{3}</m>, <m>\sec\theta=-2</m>, <m>\cot\theta=-\frac{\sqrt{3}}{3}</m>
-      </p>
-    </answer>
-  </exercise>
-</exercisegroup> -->
-
-
-<exercisegroup>
+<exercisegroup cols="3">
   <introduction>
     <p>
       For each angle <m>\theta</m>,
@@ -2443,276 +2255,79 @@
   </p>
   </introduction>
   <exercise>
-  <introduction><p><m>\theta=480^{\circ}</m></p></introduction>
+  <introduction><p><m>\theta=-\frac{3\pi}{4}</m></p></introduction>
   <task>
-    <answer><p><m>\theta=480^{\circ}</m></p></answer>
+    <answer><p>QIII</p></answer>
   </task>
   <task>
+    <answer><p><m>\theta'=\frac{\pi}{4}</m></p></answer>
+  </task>
+  <task>
+    <answer><p><m>\sin\theta=-\frac{\sqrt{2}}{2}</m>, <m>\cos\theta=-\frac{\sqrt{2}}{2}</m>, <m>\tan\theta=1</m>, <m>\csc\theta=-\sqrt{2}</m>, <m>\sec\theta=-\sqrt{2}</m>, <m>\cot\theta=1</m></p></answer>
+  </task>
+  </exercise>
+  <exercise>
+  <introduction><p><m>\theta=\frac{4\pi}{3}</m></p></introduction>
+  <task>
+    <answer><p>QIII</p></answer>
+  </task>
+  <task>
+    <answer><p><m>\theta'=\frac{\pi}{3}</m></p></answer>
+  </task>
+  <task>
+    <answer><p><m>\sin\theta=-\frac{\sqrt{3}}{2}</m>, <m>\cos\theta=-\frac{1}{2}</m>, <m>\tan\theta=\sqrt{3}</m>, <m>\csc\theta=-\frac{2\sqrt{3}}{3}</m>, <m>\sec\theta=-2</m>, <m>\cot\theta=\frac{\sqrt{3}}{3}</m></p></answer>
+  </task>
+  </exercise>
+  <exercise>
+  <introduction><p><m>\theta=\frac{11\pi}{6}</m></p></introduction>
+  <task>
+    <answer><p>QIV</p></answer>
+  </task>
+  <task>
+    <answer><p><m>\theta'=\frac{\pi}{6}</m></p></answer>
+  </task>
+  <task>
+    <answer><p><m>\sin\theta=-\frac{1}{2}</m>, <m>\cos\theta=\frac{\sqrt{3}}{2}</m>, <m>\tan\theta=-\frac{\sqrt{3}}{3}</m>, <m>\csc\theta=-2</m>, <m>\sec\theta=\frac{2\sqrt{3}}{3}</m>, <m>\cot\theta=-\sqrt{3}</m></p></answer>
+  </task>
+  </exercise>
+  <exercise>
+  <introduction><p><m>\theta=\frac{7\pi}{3}</m></p></introduction>
+  <task>
+    <answer><p>QI</p></answer>
+  </task>
+  <task>
+    <answer><p><m>\theta'=\frac{\pi}{3}</m></p></answer>
+  </task>
+  <task>
+    <answer><p><m>\sin\theta=\frac{\sqrt{3}}{2}</m>, <m>\cos\theta=\frac{1}{2}</m>, <m>\tan\theta=\sqrt{3}</m>, <m>\csc\theta=\frac{2\sqrt{3}}{3}</m>, <m>\sec\theta=2</m>, <m>\cot\theta=\frac{\sqrt{3}}{3}</m></p></answer>
+  </task>
+  </exercise>
+  <exercise>
+  <introduction><p><m>\theta=120^{\circ}</m></p></introduction>
+  <task>
     <answer><p>QII</p></answer>
+  </task>
+  <task>
+    <answer><p><m>\theta'=60^{\circ}</m></p></answer>
   </task>
   <task>
     <answer><p><m>\sin\theta=\frac{\sqrt{3}}{2}</m>, <m>\cos\theta=-\frac{1}{2}</m>, <m>\tan\theta=-\sqrt{3}</m>, <m>\csc\theta=\frac{2\sqrt{3}}{3}</m>, <m>\sec\theta=-2</m>, <m>\cot\theta=-\frac{\sqrt{3}}{3}</m></p></answer>
   </task>
   </exercise>
-
+  <exercise>
+  <introduction><p><m>\theta=480^{\circ}</m></p></introduction>
+  <task>
+    <answer><p>QII</p></answer>
+  </task>
+  <task>
+    <answer><p><m>\theta'=60^{\circ}</m></p></answer>
+  </task>
+  <task>
+    <answer><p><m>\sin\theta=\frac{\sqrt{3}}{2}</m>, <m>\cos\theta=-\frac{1}{2}</m>, <m>\tan\theta=-\sqrt{3}</m>, <m>\csc\theta=\frac{2\sqrt{3}}{3}</m>, <m>\sec\theta=-2</m>, <m>\cot\theta=-\frac{\sqrt{3}}{3}</m></p></answer>
+  </task>
+  </exercise>
 </exercisegroup>
-
-
-<!-- %%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%% -->
-
-<!-- <exercisegroup>
-  <introduction>
-    <p>
-      For each angle <m>\theta</m>,
-    </p>
-    <p>
-    
-    <ol marker="(a)" cols="2">
-      <li>
-        <p>
-          Determine the quadrant <m>\theta</m> lies in
-        </p>
-      </li>
-      <li>
-        <p>
-          Calculate the reference angle <m>\theta'</m>
-        </p>
-      </li>
-      <li>
-        <p>
-          Use the reference angle, <m>\theta'</m> to evaluate the exact values of the six trigonometric functions for <m>\theta</m>
-        </p>
-      </li>
-    </ol>
-    </p>
-  </introduction>
-  <exercise>
-    <statement>
-      <p>
-        <m>\theta=-\frac{3\pi}{4}</m>
-      </p>
-    </statement>
-    <answer>
-      <task>
-        <statement>
-          <p>
-            QIII
-          </p>
-        </statement>
-      </task>
-      <task>
-        <statement>
-          <p>
-            <m>\theta'=\frac{\pi}{4}</m>
-          </p>
-        </statement>
-      </task>
-      <task>
-        <statement>
-          <p>
-            <m>\sin\theta=-\frac{\sqrt{2}}{2}</m>, <m>\cos\theta=-\frac{\sqrt{2}}{2}</m>, <m>\tan\theta=1</m>, <m>\csc\theta=-\sqrt{2}</m>, <m>\sec\theta=-\sqrt{2}</m>, <m>\cot\theta=1</m>
-          </p>
-        </statement>
-      </task>
-    </answer>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        <m>\theta=\frac{4\pi}{3}</m>
-      </p>
-    </statement>
-    <answer>
-      <task>
-        <statement>
-          <p>
-            QIII
-          </p>
-        </statement>
-      </task>
-      <task>
-        <statement>
-          <p>
-            <m>\theta'=\frac{\pi}{3}</m>
-          </p>
-        </statement>
-      </task>
-      <task>
-        <statement>
-          <p>
-            <m>\sin\theta=-\frac{\sqrt{3}}{2}</m>, <m>\cos\theta=-\frac{1}{2}</m>, <m>\tan\theta=\sqrt{3}</m>, <m>\csc\theta=-\frac{2\sqrt{3}}{3}</m>, <m>\sec\theta=-2</m>, <m>\cot\theta=\frac{\sqrt{3}}{3}</m>
-          </p>
-        </statement>
-      </task>
-    </answer>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        <m>\theta=\frac{11\pi}{6}</m>
-      </p>
-    </statement>
-    <answer>
-      <task>
-        <statement>
-          <p>
-            QIV
-          </p>
-        </statement>
-      </task>
-      <task>
-        <statement>
-          <p>
-            <m>\theta'=\frac{\pi}{6}</m>
-          </p>
-        </statement>
-      </task>
-      <task>
-        <statement>
-          <p>
-            <m>\sin\theta=-\frac{1}{2}</m>, <m>\cos\theta=\frac{\sqrt{3}}{2}</m>, <m>\tan\theta=-\frac{\sqrt{3}}{3}</m>, <m>\csc\theta=-2</m>, <m>\sec\theta=\frac{2\sqrt{3}}{3}</m>, <m>\cot\theta=-\sqrt{3}</m>
-          </p>
-        </statement>
-      </task>
-    </answer>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        <m>\theta=\frac{7\pi}{3}</m>
-      </p>
-    </statement>
-    <answer>
-      <task>
-        <statement>
-          <p>
-            QI
-          </p>
-        </statement>
-      </task>
-      <task>
-        <statement>
-          <p>
-            <m>\theta'=\frac{\pi}{3}</m>
-          </p>
-        </statement>
-      </task>
-      <task>
-        <statement>
-          <p>
-            <m>\sin\theta=\frac{\sqrt{3}}{2}</m>, <m>\cos\theta=\frac{1}{2}</m>, <m>\tan\theta=\sqrt{3}</m>, <m>\csc\theta=\frac{2\sqrt{3}}{3}</m>, <m>\sec\theta=2</m>, <m>\cot\theta=\frac{\sqrt{3}}{3}</m>
-          </p>
-        </statement>
-      </task>
-    </answer>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        <m>\theta=120^{\circ}</m>
-      </p>
-    </statement>
-    <answer>
-      <task>
-        <statement>
-          <p>
-            QII
-          </p>
-        </statement>
-      </task>
-      <task>
-        <statement>
-          <p>
-            <m>\theta'=60^{\circ}</m>
-          </p>
-        </statement>
-      </task>
-      <task>
-        <statement>
-          <p>
-            <m>\sin\theta=\frac{\sqrt{3}}{2}</m>, <m>\cos\theta=-\frac{1}{2}</m>, <m>\tan\theta=-\sqrt{3}</m>, <m>\csc\theta=\frac{2\sqrt{3}}{3}</m>, <m>\sec\theta=-2</m>, <m>\cot\theta=-\frac{\sqrt{3}}{3}</m>
-          </p>
-        </statement>
-      </task>
-    </answer>
-  </exercise>
-  <exercise>
-    <statement>
-      <p>
-        <m>\theta=480^{\circ}</m>
-      </p>
-    </statement>
-    <answer>
-      <task>
-        <statement>
-          <p>
-            QII
-          </p>
-        </statement>
-      </task>
-      <task>
-        <statement>
-          <p>
-            <m>\theta'=60^{\circ}</m>
-          </p>
-        </statement>
-      </task>
-      <task>
-        <statement>
-          <p>
-            <m>\sin\theta=\frac{\sqrt{3}}{2}</m>, <m>\cos\theta=-\frac{1}{2}</m>, <m>\tan\theta=-\sqrt{3}</m>, <m>\csc\theta=\frac{2\sqrt{3}}{3}</m>, <m>\sec\theta=-2</m>, <m>\cot\theta=-\frac{\sqrt{3}}{3}</m>
-          </p>
-        </statement>
-      </task>
-    </answer>
-  </exercise>
-
-  <exercise>
-  <introduction><p><m>theta1</m></p></introduction>
-  <task>
-  <statement></statement>
-    <answer><p>ans1</p></answer>
-  </task>
-  <task>
-  <statement></statement>
-    <answer><p>ans2</p></answer>
-  </task>
-  <task>
-  <statement></statement>
-    <answer><p>ans3</p></answer>
-  </task>
-  </exercise>
-
-
-  <exercise>
-    <statement>
-      <p>
-        <m>\theta=480^{\circ}</m>
-      </p>
-    </statement>
-    <answer>
-      <p>
-        QII
-      </p>
-    </answer>
-    <answer>
-      <p>
-        <m>\theta'=60^{\circ}</m>
-      </p>
-    </answer>
-    <answer><title>(c)</title>
-      <p>
-        <m>\sin\theta=\frac{\sqrt{3}}{2}</m>, <m>\cos\theta=-\frac{1}{2}</m>, <m>\tan\theta=-\sqrt{3}</m>, <m>\csc\theta=\frac{2\sqrt{3}}{3}</m>, <m>\sec\theta=-2</m>, <m>\cot\theta=-\frac{\sqrt{3}}{3}</m>
-      </p>
-    </answer>
-  </exercise>
-</exercisegroup> -->
-
-
-
-<exercisegroup>
+<exercisegroup cols="4">
   <introduction>
     <p>
       Use the fact that the trigonometric functions are periodic to find the exact value for each expression.
@@ -2818,7 +2433,7 @@
 <exercise>
   <statement>
     <p>
-      Prove the third Pythagorean Identity: <m>1+\tan^2\theta=\sec^2\theta.</m> 
+      Prove the second <xref ref="pythagorean-identity"> Pythagorean Identity</xref>: <m>1+\tan^2\theta=\sec^2\theta.</m>
     </p>
   </statement>
   <hint>
@@ -2830,7 +2445,7 @@
 <exercise>
   <statement>
     <p>
-      Prove the third Pythagorean Identity: <m>1+\cot^2\theta+1=\csc^2\theta.</m>
+      Prove the third <xref ref="pythagorean-identity"> Pythagorean Identity</xref>: <m>1+\cot^2\theta+1=\csc^2\theta.</m>
     </p>
   </statement>
   <hint>
@@ -2839,7 +2454,7 @@
     </p>
   </hint>
 </exercise>
-<exercisegroup>
+<exercisegroup cols="3">
   <introduction>
     <p>
       Use the Pythagorean Identity to find the exact value of the following
@@ -2918,7 +2533,7 @@
     </answer>
   </exercise>
 </exercisegroup>
-<exercisegroup>
+<exercisegroup cols="2">
   <introduction>
     <p>
       Use the Pythagorean Identities to write the first trigonometric function of <m>\theta</m> in terms of the second function given the quadrant.
@@ -2997,7 +2612,7 @@
     </answer>
   </exercise>
 </exercisegroup>
-<exercisegroup>
+<exercisegroup cols="2">
   <introduction>
     <p>
       Use the Pythagorean Identities to find the exact values of the remaining five trigonometric functions of <m>\theta</m> from the given information.
@@ -3203,7 +2818,7 @@
     </answer>
   </exercise>
 </exercisegroup>
-<exercisegroup>
+<exercisegroup cols="4">
   <introduction>
     <p>
       The Makaliʻi<idx><h>Makaliʻi</h></idx> is sailing along the Kohala Coast, keeping two nautical miles off shore. An observer at Mahukona watches as Makaliʻi passes. Let <m>d</m> represent the distance of the line connecting the Makali`i to the observer at Mahukona. If <m>\theta</m> is the angle formed between <m>d</m> and the shore, calculate to one decimal place Makaliʻi's distance, <m>d</m>, from the observer for each <m>\theta</m>.
@@ -3313,664 +2928,6 @@
 
 
 
-
-
-<!-- 
-
-
-
-<introduction>
-  <p>
-    Calculate the reference angle...
-  </p>
-</introduction>
-<statement>
-<p>
-Calculate the reference angle...
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  
-        
-<introduction>
-  <p>
-    Given a reference angle, <m>t'</m>,
-          compute the associated angle in standard position for i) Quadrant II; ii) Quadrant III; and iii) Quadrant IV. 
-  </p>
-</introduction>
-  
-    <statement>
-      <p>
-        
-          <m>t'=\frac{\pi}{4}</m> 
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  
-  
-    <statement>
-      <p>
-         <m>t'=\frac{\pi}{3}</m> 
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  
-  
-    <statement>
-      <p>
-        
-          <m>t'=30^{\circ}</m> 
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  
-  
-    <statement>
-      <p>
-         <m>t'=60^{\circ}</m>
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  
-        
-
-<introduction>
-  <p>
-    Calculate the exact values of the six trigonometric functions for each angle,
-          <m>\theta</m>.
-          <em>Hint</em>: Use the reference angle that we found in Example reference angles
-                <m>\theta=-\frac{3\pi}{4}</m>
-  </p>
-</introduction>
-<statement>
-<p>
-Calculate the exact values of the six trigonometric functions for each angle,
-          <m>\theta</m>.
-          <em>Hint</em>: Use the reference angle that we found in Example reference angles
-                <m>\theta=-\frac{3\pi}{4}</m>
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  
-<p>
-<ol>
-            <li>
-              <p>
-                <m>\theta=\frac{4\pi}{3}</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>\theta=\frac{11\pi}{6}</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>\theta=120^{\circ}</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>\theta=\frac{7\pi}{3}</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>\theta=480^{\circ}</m>
-              </p>
-            </li>
-          </ol>
-        </p>
-        
-
-<introduction>
-  <p>
-    Use reference angles to compute the exact value of sin(225) etc
-          (maybe not necessary since we now have the trig table.
-          Maybe phrase it given theta, I)
-          find the reference angle, theta' ii) evaluate at the reference angle,
-          sin(theta'), iii) use the reference angle and the quadrant to evaluate sin(theta)
-  </p>
-</introduction>
-<statement>
-<p>
-Use reference angles to compute the exact value of sin(225) etc
-          (maybe not necessary since we now have the trig table.
-          Maybe phrase it given theta, I)
-          find the reference angle, theta' ii) evaluate at the reference angle,
-          sin(theta'), iii) use the reference angle and the quadrant to evaluate sin(theta)
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  
-        
-
-<introduction>
-  <p>
-    Use the fact that sine and cosine are periodic to find <m>\sin1200^{\circ}</m>.
-  </p>
-</introduction>
-<statement>
-<p>
-Use the fact that sine and cosine are periodic to find <m>\sin1200^{\circ}</m>.
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  
-        
-
-<introduction>
-  <p>
-    Prove the third Pythagorean Identity:
-          <m>1+\tan^2\theta=\sec^2\theta</m>.
-          <em>Hint</em>: Begin with <m>\sin^2\theta+\cos^2\theta=1</m> and divide both sides of the equation by <m>\cos^2\theta</m>.
-  </p>
-</introduction>
-<statement>
-<p>
-Prove the third Pythagorean Identity:
-          <m>1+\tan^2\theta=\sec^2\theta</m>.
-          <em>Hint</em>: Begin with <m>\sin^2\theta+\cos^2\theta=1</m> and divide both sides of the equation by <m>\cos^2\theta</m>.
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  
-        
-
-<introduction>
-  <p>
-    Prove the third Pythagorean Identity:
-          <m>1+\cot^2\theta+1=\csc^2\theta</m>.
-          <em>Hint</em>: Begin with <m>\sin^2\theta+\cos^2\theta=1</m> and divide both sides of the equation by <m>\sin^2\theta</m>.
-  </p>
-</introduction>
-<statement>
-<p>
-Prove the third Pythagorean Identity:
-          <m>1+\cot^2\theta+1=\csc^2\theta</m>.
-          <em>Hint</em>: Begin with <m>\sin^2\theta+\cos^2\theta=1</m> and divide both sides of the equation by <m>\sin^2\theta</m>.
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  
-        
-
-<introduction>
-  <p>
-    pythagorean identity questions
-  </p>
-</introduction>
-<statement>
-<p>
-pythagorean identity questions
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  
-        
-
-<introduction>
-  <p>
-    Use the Pythagorean Identities to write the first trigonometric function of <m>\theta</m> in terms of the second function given the quadrant
-  </p>
-</introduction>
-<statement>
-<p>
-Use the Pythagorean Identities to write the first trigonometric function of <m>\theta</m> in terms of the second function given the quadrant
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer> -->
-  
-        
-
-<!-- <introduction>
-  <p>
-    Use the even and odd properties to evaluate the following
-  </p>
-</introduction>
-<statement>
-<p>
-Use the even and odd properties to evaluate the following
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  
-        <p>
-          \begin{tasks} \task <m>\cos(-60^{\circ})</m> \task <m>\tan(-225^{\circ})</m> \task <m>\csc(-330^{\circ})</m> \task <m>\sin(-90^{\circ})</m> \task <m>\cot(-300^{\circ})</m> \task <m>\sec(-150^{\circ})</m> \task
-          <m>\sin\left(-\frac{11\pi}{6}\right)</m> \task <m>\tan\left(-\frac{5\pi}{4}\right)</m> \task
-          <m>\cos\left(-\frac{4\pi}{3}\right)</m> \task <m>\tan(-\pi)</m> \task
-          <m>\sec\left(-\frac{\pi}{4}\right)</m> \task <m>\csc\left(-\frac{7\pi}{6}\right)</m> \end{tasks}
-        </p>
-
-    <p>
-      \begin{Answer}[ref={ex-1.5}] \Question \begin{tasks}(4) \task QII \task QIII \task QIV \task QI \task QII \task QIII \task QIII \task QIII \end{tasks}
-    </p>
-      
-    <statement>
-      <p>
-         <m>\sin\theta=</m>,
-      <m>\cos\theta=</m>, <m>\tan\theta=</m>,
-      <m>\csc\theta=</m>, <m>\sec\theta=</m>,
-      <m>\cot\theta=</m>
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  
-    
-  
-    <statement>
-      <p>
-         <m>2</m> 
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  
-  
-    <statement>
-      <p>
-         <m>-1</m> 
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  
-  
-    <statement>
-      <p>
-        
-      <m>\frac{\sqrt{3}}{3}</m> 
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  
-  
-    <statement>
-      <p>
-         <m>-\frac{2\sqrt{3}}{3}</m> 
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  
-  
-    <statement>
-      <p>
-        
-      <m>\frac{1}{2}</m> 
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  
-  
-    <statement>
-      <p>
-         <m>-1</m> 
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  
-  
-    <statement>
-      <p>
-         <m>-\frac{1}{2}</m> 
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  
-  
-    <statement>
-      <p>
-         <m>0</m> 
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  
-  
-    <statement>
-      <p>
-        
-      <m>\sqrt{2}</m> 
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  
-  
-    <statement>
-      <p>
-         <m>2</m>
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  
-    <p>
-      \end{Answer}
-    </p>
-</exercise>
-    <statement>
-      <p>
-        i)
-        <m>t=\frac{3\pi}{4}</m>
-        ;
-      ii)
-        <m>t=\frac{5\pi}{4}</m>
-        ;
-      iii)
-        <m>t=\frac{7\pi}{4}</m>
-      </p>
-    </statement>
-    <statement>
-      <p>
-        i)
-        <m>t=\frac{2\pi}{3}</m>
-        ;
-      ii)
-        <m>t=\frac{4\pi}{3}</m>
-        ;
-      iii)
-        <m>t=\frac{5\pi}{3}</m>
-      </p>
-    </statement>
-   
-    <statement>
-      <p>
-        i)
-        <m>t=150^{\circ}</m>
-        ; ii)
-        <m>t=210^{\circ}</m>
-        ;
-      iii)
-        <m>t=330^{\circ}</m>
-      </p>
-    </statement>
-    <statement>
-      <p>
-        i)
-        <m>t=120^{\circ}</m>
-        ;
-      ii)
-        <m>t=240^{\circ}</m>
-        ;
-      iii)
-        <m>t=300^{\circ}</m>
-      </p>
-    </statement>
-    <statement>
-      <p>
-        <m>\sin\frac{\pi}{2}=1</m>
-        ;
-        <m>\cos\frac{\pi}{2}=0</m>
-        ;
-        <m>\tan\frac{\pi}{2}</m>
-        is undefined;
-        <m>\csc\frac{\pi}{2}=1</m>
-        ;
-        <m>\sec\frac{\pi}{2}</m>
-        is undefined;
-        <m>\cot\frac{\pi}{2}=0</m>
-      </p>
-    </statement>
-    <statement>
-      <p>
-        <m>\sin\pi=0</m>
-        ;
-        <m>\cos\pi=-1</m>
-        ;
-        <m>\tan\pi=0</m>
-        ;
-        <m>\csc\pi</m>
-        is undefined;
-        <m>\sec\pi=-1</m>
-        ;
-        <m>\cot\pi</m>
-        is undefined
-      </p>
-    </statement>
-    <statement>
-      <p>
-        <m>\sin\frac{\pi}{4}=\frac{\sqrt{2}}{2}</m>
-        ;
-        <m>\cos\frac{\pi}{4}</m>
-        ;
-        <m>\frac{\sqrt{2}}{2}</m>
-        ;
-        <m>\tan\frac{\pi}{4}=1</m>
-        ;
-        <m>\csc\frac{\pi}{4}=\sqrt{2}</m>
-        ;
-        <m>\sec\frac{\pi}{4}=\sqrt{2}</m>
-        ;
-        <m>\cot\frac{\pi}{4}=1</m>
-      </p>
-    </statement>
-    <statement>
-      <p>
-        <m>\sin-\frac{3\pi}{4}=-\frac{\sqrt{2}}{2}</m>
-        ;
-        <m>\cos-\frac{3\pi}{4}=-\frac{\sqrt{2}}{2}</m>
-        ;
-        <m>\tan-\frac{3\pi}{4}=1</m>
-        ;
-        <m>\csc-\frac{3\pi}{4}=-\sqrt{2}</m>
-        ;
-        <m>\sec-\frac{3\pi}{4}=-\sqrt{2}</m>
-        ;
-        <m>\cot-\frac{3\pi}{4}=1</m>
-      </p>
-    </statement>
-    <statement>
-      <p>
-        <m>\sin\frac{\pi}{3}=\frac{\sqrt{3}}{2}</m>
-        ;
-        <m>\cos\frac{\pi}{3}=\frac{1}{2}</m>
-        ;
-        <m>\tan\frac{\pi}{3}=\sqrt{3}</m>
-        ;
-        <m>\csc\frac{\pi}{3}=\frac{2\sqrt{3}}{3}</m>
-        ;
-        <m>\sec\frac{\pi}{3}=2</m>
-        ;
-        <m>\cot\frac{\pi}{3}=\frac{\sqrt{3}}{3}</m>
-      </p>
-    </statement>
-    <statement>
-      <p>
-        <m>\sin\frac{4\pi}{3}=-\frac{\sqrt{3}}{2}</m>
-        ;
-        <m>\cos\frac{4\pi}{3}=-\frac{1}{2}</m>
-        ;
-        <m>\tan\frac{4\pi}{3}=\sqrt{3}</m>
-        ;
-        <m>\csc\frac{4\pi}{3}=-\frac{2\sqrt{3}}{3}</m>
-        ;
-        <m>\sec\frac{4\pi}{3}=-2</m>
-        ;
-        <m>\cot\frac{4\pi}{3}=\frac{\sqrt{3}}{3}</m>
-      </p>
-    </statement>
-    <statement>
-      <p>
-        <m>\sin\frac{\pi}{6}=\frac{1}{2}</m>
-        ;
-        <m>\cos\frac{\pi}{6}=\frac{\sqrt{3}}{2}</m>
-        ;
-        <m>\tan\frac{\pi}{6}=\frac{\sqrt{3}}{3}</m>
-        ;
-        <m>\csc\frac{\pi}{6}=2</m>
-        ;
-        <m>\sec\frac{\pi}{6}=\frac{2\sqrt{3}}{3}</m>
-        ;
-        <m>\cot\frac{\pi}{6}=\sqrt{3}</m>
-      </p>
-    </statement>
-    <statement>
-      <p>
-        <m>\sin\frac{11\pi}{6}=-\frac{1}{2}</m>
-        ;
-        <m>\cos\frac{11\pi}{6}=\frac{\sqrt{3}}{2}</m>
-        ;
-        <m>\tan\frac{11\pi}{6}=-\frac{\sqrt{3}}{3}</m>
-        ;
-        <m>\csc\frac{11\pi}{6}=-2</m>
-        ;
-        <m>\sec\frac{11\pi}{6}=\frac{2\sqrt{3}}{3}</m>
-        ;
-        <m>\cot\frac{11\pi}{6}=-\sqrt{3}</m>
-      </p>
-    </statement>
-    <statement>
-      <p>
-        <m>\sin60^{\circ}=\frac{\sqrt{3}}{2}</m>
-        ;
-        <m>\cos60^{\circ}=\frac{1}{2}</m>
-        ;
-        <m>\tan60^{\circ}=\sqrt{3}</m>
-        ;
-        <m>\csc60^{\circ}=\frac{2\sqrt{3}}{3}</m>
-        ;
-        <m>\sec60^{\circ}=2</m>
-        ;
-        <m>\cot60^{\circ}=\frac{\sqrt{3}}{3}</m>
-      </p>
-    </statement>
-    <statement>
-      <p>
-        <m>\sin120^{\circ}=\frac{\sqrt{3}}{2}</m>
-        ;
-        <m>\cos120^{\circ}=-\frac{1}{2}</m>
-        ;
-        <m>\tan120^{\circ}=-\sqrt{3}</m>
-        ;
-        <m>\csc120^{\circ}=\frac{2\sqrt{3}}{3}</m>
-        ;
-        <m>\sec120^{\circ}=-2</m>
-        ;
-        <m>\cot120^{\circ}=-\frac{\sqrt{3}}{3}</m>
-      </p>
-    </statement>
-    <statement>
-      <p>
-        <m>\sin\frac{7\pi}{3}=\frac{\sqrt{3}}{2}</m>
-        ;
-        <m>\cos\frac{7\pi}{3}=\frac{1}{2}</m>
-        ;
-        <m>\tan\frac{7\pi}{3}=\sqrt{3}</m>
-        ;
-        <m>\csc\frac{7\pi}{3}=\frac{2\sqrt{3}}{3}</m>
-        ;
-        <m>\sec\frac{7\pi}{3}=2</m>
-        ;
-        <m>\cot\frac{7\pi}{3}=\frac{\sqrt{3}}{3}</m>
-      </p>
-    </statement>
-    <statement>
-      <p>
-        <m>\sin480^{\circ}=\frac{\sqrt{3}}{2}</m>
-        ;
-        <m>\cos480^{\circ}=-\frac{1}{2}</m>
-        ;
-        <m>\tan480^{\circ}=-\sqrt{3}</m>
-        ;
-        <m>\csc480^{\circ}=\frac{2\sqrt{3}}{3}</m>
-        ;
-        <m>\sec480^{\circ}=-2</m>
-        ;
-        <m>\cot480^{\circ}=-\sqrt{3}{3}</m>
-      </p>
-    </statement> -->
 
 
     <!-- <exercise>
