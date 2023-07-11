@@ -6,9 +6,9 @@
       The seasons on Earth are caused by axial tilt.
       To visual axial tilt,
       image a pole through the center of Earth and extending through the North and South Pole with Earth spinning around this pole.
-      Each spin is one day.
+      Each spin on the axis is one day.
       As the Earth revolves around the sun,
-      the North Pole tilts towards the sun and sometimes the South Pole tilts towards the sun,
+      either the North Pole or South Pole tilts towards the sun,
       this tilting is call <em>axial tilt</em>.
           <idx><h>axial tilt</h></idx>
       When the North Pole is closer to the Sun
@@ -18,36 +18,27 @@
       When the axial tilt is reversed and the North Pole is further from the Sun (South Pole is close to the Sun),
       the seasons are reversed.
     </p>
+    <p>[include image of Earth's axial tilt, one with North pointing to sun, one with South pointing to sun, and equinox. Also include line from center of earth to sun. Sun can be a wall of rays.]</p>
     <p>
       Every day as the Earth spins on its axis,
       the Sun rises from the eastern horizon.
       However, only twice a year will the sun rise due east,
-      in the house Hikina.
-      One occurrence is during the spring equinox.
-      In the northern hemisphere, as spring turns into summer,
+      in the house Hikina. 
+      One occurance is around March 20, the spring equinox in the northern hemisphere (or fall equinox in the southern hemisphere).
+      As spring gives way to summer in the north (or fall turns to winter in the south),
       the position the sun rises from will slowly move north,
-      until the summer solstice,
+      until the summer solstice occurs around June 20,
       when the sun will rise from the most northern point
-      (<m>23.44^{\circ}</m> or the house &#699;&#256;ina Ko&#699;olau).
-      After this, the position of the rising sun will move south until the fall equinox where the sun will once again rise from due east or Hikina,
-      before continuing its southern movement until the winter solstice when the sun will rise from its southern most position
-      (<m>-23.44^{\circ}</m> or the house &#699;&#256;ina Malanai).
+      (in the house &#699;&#256;ina Ko&#699;olau).
+      After this, the position of the rising sun will move south until the fall equinox around September 22 where the sun will once again rise from due east or Hikina,
+      before continuing its southern movement until the winter solstice occurs around December 21 when the sun will rise from its southern most position
+      (in the house &#699;&#256;ina Malanai).
       As winter turns to spring,
-      the sun rise will start to move north until the next spring equinox where the position of the sun rise will once again be due east (Hikina).
+      the sun rise will start to move north until the next spring equinox around March 20 where the position of the sun rise will once again be due east (Hikina).
       This process takes one year before it repeats itself year after year.
-      This pattern of the position of the sun rise is a periodic function.
-    </p>
+   </p>
     <p>
-      The sun's <em>declination</em>
-          <idx><h>declination</h></idx>
-      is the angle between the equator and a line from the center of Earth to the sun.
-    </p>
-    <p>
-      June 20 December 21 March 20 September 22
-    </p>
-    <p>
-      In <xref ref="Trigonometry">Chapter</xref>
-      we learned about the six trigonometric functions.
+      This pattern of the position of the sun rise is a <em>periodic function</em> which can be expressed as trigonometric functions that were discussed in <xref ref="Trigonometry">Chapter</xref>.
       In this section we will study the graphs of the sine and cosine functions to help us understand their use in modeling physical phenomena.
       We will study the graphs of the remaining trigonometric functions in <xref ref="Graphs_of_Other_Trigonometric_Functions">Section</xref>.
     </p>
@@ -307,6 +298,20 @@
     <p>
       \end{mybox}
     </p>
+    <example xml:id="example-sun-declination">
+      <title>Rising Sun</title>
+      <p>In example, introduce the concept of declination, put figure/gif of the sun's rising position and the different dates <m>23.44^{\circ}</m></p>
+      <p>
+        The sun's <em>declination</em>
+            <idx><h>declination</h></idx>
+        is the angle between the equator and a line from the center of Earth to the sun.
+      </p>
+      <p>
+        June 20 December 21 March 20 September 22
+      </p>
+
+
+    </example>
     <example>
       <statement>
         <p>
