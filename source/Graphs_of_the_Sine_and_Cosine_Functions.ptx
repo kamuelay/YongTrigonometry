@@ -37,10 +37,59 @@
       the sun rise will start to move north until the next spring equinox around March 20 where the position of the sun rise will once again be due east (Hikina).
       This process takes one year before it repeats itself year after year.
    </p>
+   <p>
+      Every day as the Earth spins on its axis,
+      the Sun rises from the eastern horizon.
+      However, only twice a year, on the fall and spring equinox will the sun rise due east,
+      in the house Hikina.
+    </p>
     <p>
-      The pattern from the position of where the sun will rise creates a <em>periodic function</em> which can be expressed as trigonometric functions that were discussed in <xref ref="Trigonometry">Chapter</xref>.
-      In this section we will study the graphs of the sine and cosine functions to help us understand their use in modeling physical phenomena.
-      We will study the graphs of the remaining trigonometric functions in <xref ref="Graphs_of_Other_Trigonometric_Functions">Section</xref>.
+      In the northern hemisphere, the spring equinox occurs around March 20.
+      As spring gives way to summer,
+      the position where the sun emerges from the horizon will slowly move north,
+      until the summer solstice occurs around June 20,
+      when the sun will rise from the most northern point in the house &#699;&#256;ina Ko&#699;olau.
+      After this, the position of the rising sun will move south until the fall equinox around September 22 where the sun will once again rise from due east or Hikina,
+      before continuing its southern movement until the winter solstice occurs around December 21 when the sun will rise from its southern most position
+      in the house &#699;&#256;ina Malanai.
+      As winter turns to spring,
+      the sun rise will start to move north until the next spring equinox around March 20 where the position of the sun rise will once again be due east, in the house Hikina.
+      This process takes one year before it repeats itself year after year.
+   </p>
+   <p>
+      The southern hemisphere experiences the opposite season with the fall equinox occurring around March 20.
+      As fall turns into winter,
+      the position where the sun emerges from the horizon will slowly move north,
+      until the winter solstice occurs around June 20. This is when the sun will rise from its most northern position in the house &#699;&#256;ina Ko&#699;olau.
+      After this, the position of the rising sun will move south until the spring equinox around September 22 where the sun will once again rise from due east or Hikina,
+      before continuing its southern movement until the summer solstice occurs around December 21 when the sun will rise from its southern most position
+      in the house &#699;&#256;ina Malanai.
+      As summer turns to fall,
+      the sun rise will start to move north until the next spring equinox around March 20 where the position of the sun rise will once again be due east, in the house Hikina.
+      This process takes one year before it repeats itself year after year.
+   </p>
+   <p>
+      Every day as the Earth spins on its axis,
+      the Sun rises from the eastern horizon.
+      However, only twice a year will the sun rise due east,
+      in the house Hikina. 
+      One occurance is around March 20, the spring equinox in the northern hemisphere (or fall equinox in the southern hemisphere).
+      As spring gives way to summer in the north (or fall turns to winter in the south),
+      the position the sun rises from will slowly move north,
+      until the summer solstice occurs around June 20,
+      when the sun will rise from the most northern point
+      (in the house &#699;&#256;ina Ko&#699;olau).
+      After this, the position of the rising sun will move south until the fall equinox around September 22 where the sun will once again rise from due east or Hikina,
+      before continuing its southern movement until the winter solstice occurs around December 21 when the sun will rise from its southern most position
+      (in the house &#699;&#256;ina Malanai).
+      As winter turns to spring,
+      the sun rise will start to move north until the next spring equinox around March 20 where the position of the sun rise will once again be due east (Hikina).
+      This process takes one year before it repeats itself year after year.
+   </p>
+    <p>
+      The pattern from the position of where the sun will rise creates a <em>periodic function</em>.  
+      In this section learn how the sine and cosine functions are periodic and examine their graphs which cna be used to help us understand their use in modeling physical phenomena.
+      The graphs of the remaining trigonometric functions that were discussed in <xref ref="Trigonometry">Chapter</xref> will be covered in <xref ref="Graphs_of_Other_Trigonometric_Functions">Section</xref>.
     </p>
   </introduction>
   <subsection>
@@ -97,8 +146,7 @@
       thus <m>\theta</m> can be any angle.
       In other words, the domains for <m>\sin\theta</m> and
       <m>\cos\theta</m> consist of the set of all real numbers.
-    </p
-    >
+    </p>
     <p>
       However, looking at <m>\tan\theta</m> and <m>\sec\theta</m>,
       you may notice there is division by <m>x</m>.
@@ -291,15 +339,23 @@
         </p>
       </statement>
     </definition>
+    <definition xml:id="def-periodic-properties">
+    <title>Periodic Properties</title>
+      <statement>
+        <p>
+          The six trigonometric functions are periodic functions.
+          <md>
+            <mrow>\sin(\theta+2\pi)\amp =\sin\theta \amp  \cos(\theta+2\pi)\amp =\cos\theta \amp  \tan(\theta+\pi)\amp =\tan\theta</mrow>
+            <mrow>\csc(\theta+2\pi)\amp =\csc\theta \amp  \sec(\theta+2\pi)\amp =\sec\theta \amp  \cot(\theta+\pi)\amp =\cot\theta</mrow>
+          </md>
+        </p>
+      </statement>
+    </definition>
     <p>
-      \begin{mybox}[Periodic Properties] The six trigonometric functions are periodic functions.
-      <md>
-        <mrow>\sin(\theta+2\pi)\amp =\sin\theta \amp  \cos(\theta+2\pi)\amp =\cos\theta \amp  \tan(\theta+\pi)\amp =\tan\theta</mrow>
-        <mrow>\csc(\theta+2\pi)\amp =\csc\theta \amp  \sec(\theta+2\pi)\amp =\sec\theta \amp  \cot(\theta+\pi)\amp =\cot\theta</mrow>
-      </md>
-    </p>
-    <p>
-      \end{mybox}
+      In <xref ref="Trigonometry">Chapter</xref>, trigonometric functions use <m>\theta</m> or <m>t</m> for the variable in the domain of the function, 
+      e.g. <m>y=\cos\theta</m>, <m>y=\sin t</m>.
+      However, graphing functions on the <m>xy</m>-coordinate system traditionally use <m>x</m> for the variable in the domain.
+      Therefore we will use the variable <m>x</m> when graphing trigonometric functions,  e.g. <m>y=\cos x</m>, <m>y=\sin x</m>.
     </p>
     <example xml:id="example-sun-declination">
       <title>Rising Sun</title>
