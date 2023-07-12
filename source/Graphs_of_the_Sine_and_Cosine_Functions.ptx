@@ -38,14 +38,15 @@
       This process takes one year before it repeats itself year after year.
    </p>
     <p>
-      This pattern of the position of the sun rise is a <em>periodic function</em> which can be expressed as trigonometric functions that were discussed in <xref ref="Trigonometry">Chapter</xref>.
+      The pattern from the position of where the sun will rise creates a <em>periodic function</em> which can be expressed as trigonometric functions that were discussed in <xref ref="Trigonometry">Chapter</xref>.
       In this section we will study the graphs of the sine and cosine functions to help us understand their use in modeling physical phenomena.
       We will study the graphs of the remaining trigonometric functions in <xref ref="Graphs_of_Other_Trigonometric_Functions">Section</xref>.
     </p>
   </introduction>
   <subsection>
     <title>Periodic Functions</title>
-    <definition>
+    <definition xml:id="def-periodic-functions">
+      <title>Periodic Functions</title>
       <statement>
         <p>
               <idx><h>period functions</h></idx>
@@ -59,35 +60,36 @@
         </p>
       </statement>
     </definition>
-    <p>
-      \begin{mybox}[Periodic Properties]
+    <definition xml:id="def-periodic-properties">
+      <title>Periodic Properties</title>
+      <statement>
+        <p>
           <idx><h>period functions</h></idx>
-      <md>
-        <mrow>\sin(\theta+2\pi)\amp =\sin\theta \amp  \cos(\theta+2\pi)\amp =\cos\theta \amp  \tan(\theta+\pi)\amp =\tan\theta</mrow>
-        <mrow>\csc(\theta+2\pi)\amp =\csc\theta \amp  \sec(\theta+2\pi)\amp =\sec\theta \amp  \cot(\theta+\pi)\amp =\cot\theta</mrow>
-      </md>
-    </p>
-    <p>
-      \end{mybox}
-    </p>
+          <md>
+            <mrow>\sin(\theta+2\pi)\amp =\sin\theta \amp  \cos(\theta+2\pi)\amp =\cos\theta \amp  \tan(\theta+\pi)\amp =\tan\theta</mrow>
+            <mrow>\csc(\theta+2\pi)\amp =\csc\theta \amp  \sec(\theta+2\pi)\amp =\sec\theta \amp  \cot(\theta+\pi)\amp =\cot\theta</mrow>
+          </md>
+        </p>
+      </statement>
+    </definition>
     <p>
       Recall that if <m>\theta</m> is an angle with radian measure <m>t</m>,
-      then the <em>six trigonometric functions</em> become
+      then the <term>six trigonometric functions</term> become
       <md>
         <mrow>\sin \theta\amp =y \amp  \cos \theta\amp =x \amp  \tan \theta\amp =\frac{y}{x}  (x\neq0)</mrow>
         <mrow>\csc \theta\amp =\frac{1}{y}  (y\neq0) \amp  \sec \theta\amp =\frac{1}{x}  (x\neq0) \amp  \cot \theta\amp =\frac{x}{y}  (y\neq0)</mrow>
       </md>
     </p>
-    <image>
-<latex-image>
-<![CDATA[\begin{tikzpicture}\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-\draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
-\draw (0,0) circle (1cm);
-\draw[line width=2pt] (0,0) -- (45:1cm) node[midway,above,yshift=0.2cm] {1};
-\draw[line width=2pt] (0,0) -- (0.707106781187,0) -- (0.707106781187,0.707106781187);
-\filldraw[black] (45:1cm) circle(1pt) node[above right] {\(P(x,y)\)};
-\draw ([shift=(0:0.25cm)]0,0) arc (0:45:0.25cm) node[midway,right,xshift=0.1cm,yshift=0.1cm] {\(\theta\)};\end{tikzpicture}]]>
-</latex-image>
+    <image xml:id="fig-unitcircle-theta" width="50%">
+    <latex-image>
+    <![CDATA[\begin{tikzpicture}[scale=2.5]\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+    \draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+    \draw (0,0) circle (1cm);
+    \draw[line width=2pt] (0,0) -- (45:1cm) node[midway,above,yshift=0.2cm] {1};
+    \draw[line width=2pt] (0,0) -- (0.707106781187,0) -- (0.707106781187,0.707106781187);
+    \filldraw[black] (45:1cm) circle(1pt) node[above right] {\(P(x,y)\)};
+    \draw ([shift=(0:0.25cm)]0,0) arc (0:45:0.25cm) node[midway,right,xshift=0.1cm,yshift=0.1cm] {\(\theta\)};\end{tikzpicture}]]>
+    </latex-image>
     </image>
     <p>
       Division is not required for the trigonometric functions <m>\sin\theta</m> and
@@ -95,7 +97,8 @@
       thus <m>\theta</m> can be any angle.
       In other words, the domains for <m>\sin\theta</m> and
       <m>\cos\theta</m> consist of the set of all real numbers.
-    </p>
+    </p
+    >
     <p>
       However, looking at <m>\tan\theta</m> and <m>\sec\theta</m>,
       you may notice there is division by <m>x</m>.
