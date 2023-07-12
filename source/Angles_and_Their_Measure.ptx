@@ -1208,7 +1208,7 @@
     </example>
   </subsection>
   <exercises xml:id="angles-and-their-measure-exercises">
-    <exercisegroup>
+    <exercisegroup cols="3">
       <introduction>
         <p> Given an angle, <m>\theta</m>, identify the house and quadrant on the Hawaiian Star
           Compass. </p>
@@ -1286,7 +1286,7 @@
         </answer>
       </exercise>
     </exercisegroup>
-    <exercisegroup>
+    <exercisegroup cols="3">
       <introduction>
         <p> Convert the given angle <m>\theta</m> to a decimal in degrees rounded to two decimal
           places. </p>
@@ -1438,7 +1438,7 @@
         </answer>
       </exercise>
     </exercisegroup>
-    <exercisegroup>
+    <exercisegroup cols="2">
       <introduction>
         <p> Convert the given angle <m>\theta</m> to degrees/minutes/seconds rounded to the nearest
           second and identify the house and quadrant on the Hawaiian Star Compass. </p>
@@ -1543,7 +1543,7 @@
         </answer>
       </exercise>
     </exercisegroup>
-    <exercisegroup>
+    <exercisegroup cols="2">
       <introduction>
         <p> Convert the given angle <m>\theta</m> to radians and identify the house and quadrant on
           the Hawaiian Star Compass. Keep your answers in terms of <m>\pi</m>. </p>
@@ -1648,7 +1648,7 @@
         </answer>
       </exercise>
     </exercisegroup>
-    <exercisegroup>
+    <exercisegroup cols="3">
       <introduction>
         <p>
           Draw the angle in standard position.
@@ -1945,7 +1945,7 @@
         </answer>
       </exercise>
     </exercisegroup>
-    <exercisegroup>
+    <exercisegroup cols="3">
       <introduction>
         <p>
           Convert the given angle from degrees to radians.
@@ -2025,7 +2025,7 @@
         </answer>
       </exercise>
     </exercisegroup>
-    <exercisegroup>
+    <exercisegroup cols="3">
       <introduction>
         <p>
           Convert the given angle from radians to degrees.
@@ -2105,7 +2105,7 @@
         </answer>
       </exercise>
     </exercisegroup>
-    <exercisegroup>
+    <exercisegroup cols="2">
       <introduction>
         <p>
           Determine whether the two given
@@ -2161,7 +2161,7 @@
         </answer>
       </exercise>
     </exercisegroup>
-    <exercisegroup>
+    <exercisegroup cols="2">
       <introduction>
         <p> Find an angle between <m>0^{\circ}</m> and <m>360^{\circ}</m> that is coterminal with
           the given angle </p>
@@ -2215,7 +2215,7 @@
         </answer>
       </exercise>
     </exercisegroup>
-    <exercisegroup>
+    <exercisegroup cols="2">
       <introduction>
         <p> Given a circle with radius <m>r</m>, calculate (a) the length of the arc subtended by a
           central angle <m>\theta</m>; and (b) the area of a sector with central angle <m>\theta</m>.
