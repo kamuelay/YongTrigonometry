@@ -109,18 +109,6 @@
         </p>
       </statement>
     </definition>
-    <definition xml:id="def-periodic-properties">
-      <title>Periodic Properties</title>
-      <statement>
-        <p>
-          <idx><h>period functions</h></idx>
-          <md>
-            <mrow>\sin(\theta+2\pi)\amp =\sin\theta \amp  \cos(\theta+2\pi)\amp =\cos\theta \amp  \tan(\theta+\pi)\amp =\tan\theta</mrow>
-            <mrow>\csc(\theta+2\pi)\amp =\csc\theta \amp  \sec(\theta+2\pi)\amp =\sec\theta \amp  \cot(\theta+\pi)\amp =\cot\theta</mrow>
-          </md>
-        </p>
-      </statement>
-    </definition>
     <p>
       Recall that if <m>\theta</m> is an angle with radian measure <m>t</m>,
       then the <term>six trigonometric functions</term> become
