@@ -648,15 +648,31 @@ the Hawaiian <em>Star Compass</em><idx><h>Star Compass</h><h>Hawaiian</h></idx>,
     you no longer are able to tell where on the horizon it came from.
     You can also memorize where the wind and waves are coming from and check to see if it has changed direction between sunrise and sunset.
   </p>
+</subsection>
+<subsection xml:id="subsec-marshall-islands">
+  <title>Marshall Islands</title>
+  <p>
+    The Marshallese use stick charts made by tying together the midribs of coconut fronds and seashells 
+    to form curved and straight sticks.
+    The straight sticks represent the ocean swells while the curved sticks represent the swells and waves around the islands, 
+    which are represented by shells.
+    <figure width="75%" xml:id="marshallese-stick-chart">
+      <image source="images/stick-chart.jpg"/>
+    </figure>
+    
+  </p>
+</subsection>
+<subsection xml:id="subsec-elsewhere-in-pacific">
+  <title>Elsewhere in the Pacific</title>
   <p>
     In addition to the star compass,
     many cultures across the Pacific use a
     <em>wind compass</em>.
     Similar to the star compass, the wind compass is also a mental construct.
   </p>
+  
 </subsection>
-
-  <exercises xml:id="hawaiian-star-compass-exercises">
+  <exercises xml:id="pacific-island-exercises">
     <exercise>
       <statement>
 
