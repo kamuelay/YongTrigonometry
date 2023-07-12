@@ -1064,7 +1064,7 @@
     </theorem>
   </subsection>
     <exercises xml:id="unit-circle-exercises">
-      <exercisegroup xml:id="exercises-point-on-unit-circle">
+      <exercisegroup xml:id="exercises-point-on-unit-circle" cols="3">
         <introduction>
           <p>
             Verify algebraically that the point <m>P</m> is on the unit circle (<m>x^2+y^2=1</m>)
@@ -1119,7 +1119,7 @@
           </answer>
         </exercise>
       </exercisegroup>
-      <exercisegroup>
+      <exercisegroup cols="2">
         <introduction>
         <p>
           Let the point <m>P</m> be on the unit circle. Given the quadrant that <m>P</m> lies in, 
@@ -1159,7 +1159,7 @@
           </answer>
         </exercise>
       </exercisegroup>
-      <exercisegroup xml:id="exercise-unit-circle-angles">
+      <exercisegroup xml:id="exercise-unit-circle-angles" cols="4">
         <introduction>
         <p>
           Given an angle <m>\theta</m> that corresponds to the point <m>P</m> on the unit circle, determine the coordinates of the point <m>P(x,y)</m>.
@@ -1262,7 +1262,7 @@
           </answer>
         </exercise>
       </exercisegroup>
-      <exercisegroup>
+      <exercisegroup cols="3">
         <introduction>
         <p>
           For each angle <m>\theta</m> in <xref ref="exercise-unit-circle-angles">Exercises</xref>, find the exact values of the six trigonometric functions. If any are not defined, say <q><em>undefined</em>.</q>
@@ -1365,7 +1365,7 @@
           </answer>
         </exercise>
       </exercisegroup>
-      <exercisegroup>
+      <exercisegroup cols="3">
         <introduction>
         <p>
           Let <m>\theta</m> be the angle that corresponds to the point <m>P</m>. 
