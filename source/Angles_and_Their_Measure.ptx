@@ -2105,7 +2105,7 @@
         </answer>
       </exercise>
     </exercisegroup>
-    <exercisegroup cols="2">
+    <exercisegroup cols="4">
       <introduction>
         <p>
           Determine whether the two given
@@ -2161,7 +2161,7 @@
         </answer>
       </exercise>
     </exercisegroup>
-    <exercisegroup cols="2">
+    <exercisegroup cols="4">
       <introduction>
         <p> Find an angle between <m>0^{\circ}</m> and <m>360^{\circ}</m> that is coterminal with
           the given angle </p>
