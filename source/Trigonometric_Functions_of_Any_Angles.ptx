@@ -1189,7 +1189,6 @@
       <statement>
         <p>
               <idx><h>period functions</h></idx>
-              <idx><h>period functions</h></idx>
           A function <m>f</m> is called <term>periodic</term> if there exists a positive number <m>p</m> such that
           <me>
             f(\theta+p)=f(\theta)
