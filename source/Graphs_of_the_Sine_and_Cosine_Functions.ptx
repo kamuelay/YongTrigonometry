@@ -3,93 +3,38 @@
   <title>Graphs of the Sine and Cosine Functions</title>
   <introduction>
     <p>
-      The seasons on Earth are caused by axial tilt.
-      To visual axial tilt,
-      image a pole through the center of Earth and extending through the North and South Pole with Earth spinning around this pole.
-      Each spin on the axis is one day.
-      As the Earth revolves around the sun,
-      either the North Pole or South Pole tilts towards the sun,
-      this tilting is call <em>axial tilt</em>.
-          <idx><h>axial tilt</h></idx>
-      When the North Pole is closer to the Sun
-      (the South Pole is away from the Sun),
-      the Northern Hemisphere experiences summer
-      (the Southern Hemisphere experiences winter).
-      When the axial tilt is reversed and the North Pole is further from the Sun (South Pole is close to the Sun),
-      the seasons are reversed.
+      During the equinoxes, around March 20th and September 22nd, the Sun rises due east, and day and night are roughly equal in duration all around the globe. These dates mark the transition from one season to another—spring to summer and summer to autumn/fall, respectively, in the Northern Hemisphere (and fall to winter and winter to spring in the Southern Hemisphere).
     </p>
+    <p>
+      After the <term>spring equinox</term>,
+      <idx><h>equinox</h><h>spring</h></idx>
+      as the Earth continues its orbit around the Sun, the Northern Hemisphere tilts towards the Sun. This causes the Sun's rising position to move northward each day. By the time of the <term>summer solstice</term>,
+      <idx><h>solstice</h><h>summer</h></idx>
+      around June 20th, the Sun rises from its northernmost position for the year, resulting in the longest day of the year in the Northern Hemisphere (and the shortest day in the Southern Hemisphere).
+    </p>
+    <p>
+      Following the summer solstice, the Earth's axial tilt remains the same, but the northern hemisphere starts tilting away from the Sun. This causes the Sun's rising position to gradually shift southward each day. By the time of the <term>fall equinox</term>,
+      <idx><h>equinox</h><h>fall</h></idx>
+      around September 22nd, the Sun rises due east again, and day and night are once more equal in duration.
+    </p>
+    <p>
+      As the Northern Hemisphere continues to tilt away from the Sun, the Sun's rising position moves even further south each day. By the time of the winter solstice<term>winter solstice</term>,
+      <idx><h>solstice</h><h>winter</h></idx>
+      around December 21st, the Sun rises from its southernmost position, resulting in the shortest day of the year in the Northern Hemisphere (and the longest day in the Southern Hemisphere).
+    </p>
+    <p>
+      After the winter solstice, the Northern Hemisphere begins tilting back towards the Sun, causing the Sun's rising position to gradually shift northward each day. This movement continues until the next spring equinox, completing the annual cycle.
+    </p>
+    <p>
+      Overall, the changing position of the sunrise throughout the year is a result of the Earth's <term>axial tilt</term>.
+      <idx><h>axial tilt</h></idx>
+      combined with its orbit around the Sun.
+    </p>
+
     <figure>
         <caption>Illustration shows the relative positions and timing of solstice, equinox and seasons in relation to the Earth's orbit around the Sun and the axial tilt. Image by Colivine, CC0, via Wikimedia Commons</caption>
         <image source="Orbital_relations_of_the_Solstice,_Equinox_and_Intervening_Seasons.png"/>
     </figure>
-    <p>[include image of Earth's axial tilt, one with North pointing to sun, one with South pointing to sun, and equinox. Also include line from center of earth to sun. Sun can be a wall of rays.]</p>
-    <p>
-      Every day as the Earth spins on its axis,
-      the Sun rises from the eastern horizon.
-      However, only twice a year will the sun rise due east,
-      in the house Hikina. 
-      One occurance is around March 20, the spring equinox in the northern hemisphere (or fall equinox in the southern hemisphere).
-      As spring gives way to summer in the north (or fall turns to winter in the south),
-      the position the sun rises from will slowly move north,
-      until the summer solstice occurs around June 20,
-      when the sun will rise from the most northern point
-      (in the house &#699;&#256;ina Ko&#699;olau).
-      After this, the position of the rising sun will move south until the fall equinox around September 22 where the sun will once again rise from due east or Hikina,
-      before continuing its southern movement until the winter solstice occurs around December 21 when the sun will rise from its southern most position
-      (in the house &#699;&#256;ina Malanai).
-      As winter turns to spring,
-      the sun rise will start to move north until the next spring equinox around March 20 where the position of the sun rise will once again be due east (Hikina).
-      This process takes one year before it repeats itself year after year.
-   </p>
-   <p>
-      Every day as the Earth spins on its axis,
-      the Sun rises from the eastern horizon.
-      However, only twice a year, on the fall and spring equinox will the sun rise due east,
-      in the house Hikina.
-    </p>
-    <p>
-      In the northern hemisphere, the spring equinox occurs around March 20.
-      As spring gives way to summer,
-      the position where the sun emerges from the horizon will slowly move north,
-      until the summer solstice occurs around June 20,
-      when the sun will rise from the most northern point in the house &#699;&#256;ina Ko&#699;olau.
-      After this, the position of the rising sun will move south until the fall equinox around September 22 where the sun will once again rise from due east or Hikina,
-      before continuing its southern movement until the winter solstice occurs around December 21 when the sun will rise from its southern most position
-      in the house &#699;&#256;ina Malanai.
-      As winter turns to spring,
-      the sun rise will start to move north until the next spring equinox around March 20 where the position of the sun rise will once again be due east, in the house Hikina.
-      This process takes one year before it repeats itself year after year.
-   </p>
-   <p>
-      The southern hemisphere experiences the opposite season with the fall equinox occurring around March 20.
-      As fall turns into winter,
-      the position where the sun emerges from the horizon will slowly move north,
-      until the winter solstice occurs around June 20. This is when the sun will rise from its most northern position in the house &#699;&#256;ina Ko&#699;olau.
-      After this, the position of the rising sun will move south until the spring equinox around September 22 where the sun will once again rise from due east or Hikina,
-      before continuing its southern movement until the summer solstice occurs around December 21 when the sun will rise from its southern most position
-      in the house &#699;&#256;ina Malanai.
-      As summer turns to fall,
-      the sun rise will start to move north until the next spring equinox around March 20 where the position of the sun rise will once again be due east, in the house Hikina.
-      This process takes one year before it repeats itself year after year.
-   </p>
-   <p>
-      Every day as the Earth spins on its axis,
-      the Sun rises from the eastern horizon.
-      However, only twice a year will the sun rise due east,
-      in the house Hikina. 
-      One occurance is around March 20, the spring equinox in the northern hemisphere (or fall equinox in the southern hemisphere).
-      As spring gives way to summer in the north (or fall turns to winter in the south),
-      the position the sun rises from will slowly move north,
-      until the summer solstice occurs around June 20,
-      when the sun will rise from the most northern point
-      (in the house &#699;&#256;ina Ko&#699;olau).
-      After this, the position of the rising sun will move south until the fall equinox around September 22 where the sun will once again rise from due east or Hikina,
-      before continuing its southern movement until the winter solstice occurs around December 21 when the sun will rise from its southern most position
-      (in the house &#699;&#256;ina Malanai).
-      As winter turns to spring,
-      the sun rise will start to move north until the next spring equinox around March 20 where the position of the sun rise will once again be due east (Hikina).
-      This process takes one year before it repeats itself year after year.
-   </p>
     <p>
       The pattern of the position where the Sun rises throughout the year can be described as a <term>periodic function</term> which repeats itself in approximately one year. This function can be graphically represented as the position of the sunrise on the horizon relative to Hikina or east as a function of time. This function would show the gradual northward and southward movement of the sunrise position throughout the year, with certain key dates marking significant points in this pattern, such as the equinoxes and solstices.
     </p>
@@ -98,8 +43,6 @@
     </p>
     <p>
       In this section we will learn how to graph the sine and cosine functions and use that information to make predictions about the position of the sunrise on any given day of the year, as well as observe and understand the seasonal variations in sunlight and daylight hours experienced at different latitudes on Earth.
-    </p>
-    <p>
       The graphs of the remaining trigonometric functions that were discussed in <xref ref="Trigonometry">Chapter</xref> will be covered in <xref ref="Graphs_of_Other_Trigonometric_Functions">Section</xref>.
     </p>
   </introduction>
