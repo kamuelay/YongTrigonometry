@@ -9,10 +9,10 @@
     <p>
       During the equinoxes, which mark the transition from winter to spring and from summer to fall, the Earth's axis is not tilted towards or away from the Sun. Consequently, on these days, the Sun rises due east and sets due west, and the duration of day and night is approximately equal.
     </p>
-    <figure>
+    <!-- <figure>
       <caption>Illustration shows the relative positions and timing of solstice, equinox and seasons in relation to the Earth's orbit around the Sun and the axial tilt. Image by Colivine, CC0, via Wikimedia Commons</caption>
       <image source="Solstice_equinox_sun_position.svg"/>
-    </figure>
+    </figure> -->
     <p>
       Following the <term>fall equinox</term>
       <idx><h>equinox</h><h>fall</h></idx> in the Southern Hemisphere, typically occurring around March 20th, the Earth proceeds along its orbit around the Sun, leading the Southern Hemisphere to tilt away from the Sun. As a result, the Sun's rising position progressively moves northward each day. By the time of the <term>winter solstice</term>,
@@ -30,7 +30,7 @@
       Following the summer solstice, the Southern Hemisphere begins tilting away from the Sun, causing the Sun's rising position to gradually shift northward each day. This movement continues until the next fall equinox, completing the annual cycle.
     </p>
     <figure>
-        <caption>Illustration shows the relative positions and timing of solstice, equinox and seasons in relation to the Earth's orbit around the Sun and the axial tilt. Image by Colivine, CC0, via Wikimedia Commons</caption>
+        <caption>Illustration shows the relative positions and timing of solstice, equinox and seasons in relation to the Earth's orbit around the Sun and the axial tilt. Image by Maxmath12, CC0, via Wikimedia Commons</caption>
         <image source="Orbital_relations_of_the_Solstice,_Equinox_and_Intervening_Seasons.svg"/>
     </figure>
     <p>
@@ -40,7 +40,7 @@
       By analyzing and studying this periodic function, astronomers and scientists can make predictions about the position of the sunrise on any given day of the year, as well as observe and understand the seasonal variations in sunlight and daylight hours experienced at different latitudes on Earth.
     </p>
     <p>
-      In this section we will learn how to graph the sine and cosine functions and use that information to make predictions about the position of the sunrise on any given day of the year, as well as observe and understand the seasonal variations in sunlight and daylight hours experienced at different latitudes on Earth.
+      In this section, we will explore the periodic nature of the sine and cosine functions. These functions play a vital role in graphing and analyzing various phenomena, including predicting the position of the sunrise throughout the year. By studying the graphs of sine and cosine functions, we can gain insights into the world around us. 
       The graphs of the remaining trigonometric functions that were discussed in <xref ref="Trigonometry">Chapter</xref> will be covered in <xref ref="Graphs_of_Other_Trigonometric_Functions">Section</xref>.
     </p>
   </introduction>
