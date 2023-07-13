@@ -463,7 +463,8 @@
       <statement>
         <p> The <term>radian measure</term>
           <idx>
-            <h>radian measure, of angles</h>
+            <h>radian measure</h>
+            <h>of angles</h>
           </idx> of a central angle in a circle is the
           ratio of the length of the arc on a circle subtended by the angle to the radius. If <m>r</m>
           is the radius of the circle, <m>\theta</m> is the angle, and <m>s</m> is the arc length,
