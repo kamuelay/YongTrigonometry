@@ -680,12 +680,221 @@ the Hawaiian <em>Star Compass</em><idx><h>Star Compass</h><h>Hawaiian</h></idx>,
 <subsection xml:id="subsec-elsewhere-in-pacific">
   <title>Elsewhere in the Pacific</title>
   <p>
+    
+  </p>
+  <p>
     In addition to the star compass,
     many cultures across the Pacific use a
     <em>wind compass</em>.
     Similar to the star compass, the wind compass is also a mental construct.
   </p>
-  
+  <p>
+    Other Pacific Island cultures adapted the modern Hawaiian Star Compass to their languages. Below are examples of the Cook Island, M
+  </p>
+
+  <figure xml:id="cook-island-star-compass-32-compass-rose">
+    <caption>The Cook Island Star Compass.</caption>
+    <image xml:id="fig-cook-island-star-compass-32-compass-rose">
+      <latex-image>
+\begin{tikzpicture}[x=5.3cm,y=5.3cm,cap=round]
+\node[right] at (1.15,0) {\Large E};
+\node[above] at (0,1.15) {\Large N};
+\node[left] at (-1.15,0) {\Large W};
+\node[below] at (0,-1.15) {\Large S};
+\draw[thick] (0,0) circle(1 );
+\draw[thick] (0,0) circle(1.1 );
+\draw[left] (0:0.98) node{\large ITINGA};
+\draw[left] (90:0.98) node[rotate=90] {\large AKARUA};
+\draw[right] (180:0.98) node{\large OPUNGA};
+\draw[left] (270:0.98) node[rotate=-90] {\large TONGA};
+\draw (45:1.25 ) node[rotate=-45] {\huge Maoake};
+\draw (135:1.25 ) node[rotate=45] {\huge Tokerau};
+\draw (225:1.25 ) node[rotate=315] {\huge Iku};
+\draw (-45:1.25 ) node[rotate=45] {\huge Muri};
+\foreach \x in {5.625,16.875,...,90} {
+\draw[gray] (\x:1.1 ) -- (\x:1 );
+}
+\foreach \x in {95.625,106.875,...,270} {
+\draw[gray] (\x:1.1 ) -- (\x:1 );
+}
+\foreach \x in {275.625,286.875,...,360} {
+\draw[gray] (\x:1.1 ) -- (\x:1 );
+}
+\foreach \x/\xtext in {
+11.25/R&#257;,
+22.5/K&#257;ina,
+33.75/Ngoio,
+45/Manu,
+56.25/Ng&#257; Rangi,
+67.5/Ng&#257; Reo,
+78.75/Haka,
+281.25/Haka,
+292.5/Ng&#257; Reo,
+303.75/Ng&#257; Rangi,
+315/Manu,
+326.25/Ngoio,
+337.5/K&#257;ina,
+348.75/R&#257;
+}
+\draw[left] (\x:0.98 ) node[rotate=\x] {\xtext};
+\foreach \x/\xtext in {
+101.25/Haka,
+112.5/Ng&#257; Reo,
+123.75/Ng&#257; Rangi,
+135/Manu,
+146.25/Ngoio,
+157.5/K&#257;ina,
+168.75/R&#257;,
+191.25/R&#257;,
+202.5/K&#257;ina,
+213.75/Ngoio,
+225/Manu,
+236.25/Ng&#257; Rangi,
+247.5/Ng&#257; Reo,
+258.75/Haka
+}
+\draw[right] (\x:0.98 ) node[rotate=180+\x] {\xtext};
+\draw (0,0) pic {iwa={0.1}};
+\end{tikzpicture}
+</latex-image>
+    </image>
+  </figure>
+  <figure xml:id="maori-star-compass-32-compass-rose">
+    <caption>The M&#257;ori Star Compass.</caption>
+    <image xml:id="fig-maori-star-compass-32-compass-rose">
+      <latex-image>
+\begin{tikzpicture}[x=5.3cm,y=5.3cm,cap=round]
+\node[right] at (1.15,0) {\Large E};
+\node[above] at (0,1.15) {\Large N};
+\node[left] at (-1.15,0) {\Large W};
+\node[below] at (0,-1.15) {\Large S};
+\draw[thick] (0,0) circle(1 );
+\draw[thick] (0,0) circle(1.1 );
+\draw[left] (0:0.98) node{\large WHITINGA};
+\draw[left] (90:0.98) node[rotate=90] {\large RAKI};
+\draw[right] (180:0.98) node{\large TOMOKANGA};
+\draw[left] (270:0.98) node[rotate=-90] {\large TONGA};
+\draw (45:1.25 ) node[rotate=-45] {\huge Tokerau};
+\draw (135:1.25 ) node[rotate=45] {\huge Whakararo};
+\draw (225:1.25 ) node[rotate=315] {\huge Whakarunga};
+\draw (-45:1.25 ) node[rotate=45] {\huge Marangai};
+\foreach \x in {5.625,16.875,...,90} {
+\draw[gray] (\x:1.1 ) -- (\x:1 );
+}
+\foreach \x in {95.625,106.875,...,270} {
+\draw[gray] (\x:1.1 ) -- (\x:1 );
+}
+\foreach \x in {275.625,286.875,...,360} {
+\draw[gray] (\x:1.1 ) -- (\x:1 );
+}
+\foreach \x/\xtext in {
+11.25/R&#257;,
+22.5/K&#257;ina,
+33.75/Ngoi,
+45/Manu,
+56.25/Ng&#257; Rangi,
+67.5/Ng&#257; Reo,
+78.75/Haka,
+281.25/Haka,
+292.5/Ng&#257; Reo,
+303.75/Ng&#257; Rangi,
+315/Manu,
+326.25/Ngoi,
+337.5/K&#257;ina,
+348.75/R&#257;
+}
+\draw[left] (\x:0.98 ) node[rotate=\x] {\xtext};
+\foreach \x/\xtext in {
+101.25/Haka,
+112.5/Ng&#257; Reo,
+123.75/Ng&#257; Rangi,
+135/Manu,
+146.25/Ngoi,
+157.5/K&#257;ina,
+168.75/R&#257;,
+191.25/R&#257;,
+202.5/K&#257;ina,
+213.75/Ngoi,
+225/Manu,
+236.25/Ng&#257; Rangi,
+247.5/Ng&#257; Reo,
+258.75/Haka
+}
+\draw[right] (\x:0.98 ) node[rotate=180+\x] {\xtext};
+\draw (0,0) pic {iwa={0.1}};
+\end{tikzpicture}
+</latex-image>
+    </image>
+  </figure>
+  <figure xml:id="samoan-star-compass-32-compass-rose">
+    <caption>The S&#257;moan Star Compass.</caption>
+    <image xml:id="fig-samoan-star-compass-32-compass-rose">
+      <latex-image>
+\begin{tikzpicture}[x=5.3cm,y=5.3cm,cap=round]
+\node[right] at (1.15,0) {\Large E};
+\node[above] at (0,1.15) {\Large N};
+\node[left] at (-1.15,0) {\Large W};
+\node[below] at (0,-1.15) {\Large S};
+\draw[thick] (0,0) circle(1 );
+\draw[thick] (0,0) circle(1.1 );
+\draw[left] (0:0.98) node{\large SASA`E};
+\draw[left] (90:0.98) node[rotate=90] {\large MATU};
+\draw[right] (180:0.98) node{\large SISIFO};
+\draw[left] (270:0.98) node[rotate=-90] {\large TONGA};
+\draw (45:1.25 ) node[rotate=-45] {\huge Toelau};
+\draw (135:1.25 ) node[rotate=45] {\huge Lai};
+\draw (225:1.25 ) node[rotate=315] {\huge Tuaoloa};
+\draw (-45:1.25 ) node[rotate=45] {\huge Matau Upolu};
+\foreach \x in {5.625,16.875,...,90} {
+\draw[gray] (\x:1.1 ) -- (\x:1 );
+}
+\foreach \x in {95.625,106.875,...,270} {
+\draw[gray] (\x:1.1 ) -- (\x:1 );
+}
+\foreach \x in {275.625,286.875,...,360} {
+\draw[gray] (\x:1.1 ) -- (\x:1 );
+}
+\foreach \x/\xtext in {
+11.25/L&#257;,
+22.5/&#256;iga,
+33.75/Gogo,
+45/Manu,
+56.25/Tali`ilagi,
+67.5/Leo,
+78.75/Ata,
+281.25/Ata,
+292.5/Leo,
+303.75/Tali`ilagi,
+315/Manu,
+326.25/Gogo,
+337.5/&#256;iga,
+348.75/L&#257;
+}
+\draw[left] (\x:0.98 ) node[rotate=\x] {\xtext};
+\foreach \x/\xtext in {
+101.25/Ata,
+112.5/Leo,
+123.75/Tali`ilagi,
+135/Manu,
+146.25/Gogo,
+157.5/&#256;iga,
+168.75/L&#257;,
+191.25/L&#257;,
+202.5/&#256;iga,
+213.75/Gogo,
+225/Manu,
+236.25/Tali`ilagi,
+247.5/Leo,
+258.75/Ata
+}
+\draw[right] (\x:0.98 ) node[rotate=180+\x] {\xtext};
+\draw (0,0) pic {iwa={0.1}};
+\end{tikzpicture}
+</latex-image>
+    </image>
+  </figure>
+
+
 </subsection>
   <exercises xml:id="pacific-island-exercises">
     <exercise>
