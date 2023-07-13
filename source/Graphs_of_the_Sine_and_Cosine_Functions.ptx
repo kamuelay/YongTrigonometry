@@ -18,6 +18,10 @@
       When the axial tilt is reversed and the North Pole is further from the Sun (South Pole is close to the Sun),
       the seasons are reversed.
     </p>
+    <figure>
+        <caption>Illustration shows the relative positions and timing of solstice, equinox and seasons in relation to the Earth's orbit around the Sun and the axial tilt. Image by Colivine, CC0, via Wikimedia Commons</caption>
+        <image source="Orbital_relations_of_the_Solstice,_Equinox_and_Intervening_Seasons.png"/>
+    </figure>
     <p>[include image of Earth's axial tilt, one with North pointing to sun, one with South pointing to sun, and equinox. Also include line from center of earth to sun. Sun can be a wall of rays.]</p>
     <p>
       Every day as the Earth spins on its axis,
@@ -87,8 +91,15 @@
       This process takes one year before it repeats itself year after year.
    </p>
     <p>
-      The pattern from the position of where the sun will rise creates a <em>periodic function</em>.  
-      In this section learn how the sine and cosine functions are periodic and examine their graphs which cna be used to help us understand their use in modeling physical phenomena.
+      The pattern of the position where the Sun rises throughout the year can be described as a <term>periodic function</term> which repeats itself in approximately one year. This function can be graphically represented as the position of the sunrise on the horizon relative to Hikina or east as a function of time. This function would show the gradual northward and southward movement of the sunrise position throughout the year, with certain key dates marking significant points in this pattern, such as the equinoxes and solstices.
+    </p>
+    <p>
+      By analyzing and studying this periodic function, astronomers and scientists can make predictions about the position of the sunrise on any given day of the year, as well as observe and understand the seasonal variations in sunlight and daylight hours experienced at different latitudes on Earth.
+    </p>
+    <p>
+      In this section we will learn how to graph the sine and cosine functions and use that information to make predictions about the position of the sunrise on any given day of the year, as well as observe and understand the seasonal variations in sunlight and daylight hours experienced at different latitudes on Earth.
+    </p>
+    <p>
       The graphs of the remaining trigonometric functions that were discussed in <xref ref="Trigonometry">Chapter</xref> will be covered in <xref ref="Graphs_of_Other_Trigonometric_Functions">Section</xref>.
     </p>
   </introduction>
