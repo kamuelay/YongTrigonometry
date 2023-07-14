@@ -34,14 +34,10 @@
         <image source="Orbital_relations_of_the_Solstice,_Equinox_and_Intervening_Seasons.svg"/>
     </figure>
     <p>
-      The pattern of the position where the Sun rises throughout the year can be described as a <term>periodic function</term> which repeats itself in approximately one year. This function can be graphically represented as the position of the sunrise on the horizon relative to Hikina or east as a function of time. This function would show the gradual northward and southward movement of the sunrise position throughout the year, with certain key dates marking significant points in this pattern, such as the equinoxes and solstices.
+      The position where the Sun rises throughout the year exhibits a repeating pattern, characterized as a <term>periodic function</term> with a cycle of about one year. This function can be mathematically represented as either a sine or cosine function. Graphically, it illustrates the sunrise position on the horizon relative to the east (Hikina) as time progresses. By examining this function, we can observe the gradual northward and southward movement of the sunrise position throughout the year. Key dates such as the equinoxes and solstices mark significant points in this pattern, providing insights into the changing seasons and variations in daylight hours.
     </p>
     <p>
-      By analyzing and studying this periodic function, astronomers and scientists can make predictions about the position of the sunrise on any given day of the year, as well as observe and understand the seasonal variations in sunlight and daylight hours experienced at different latitudes on Earth.
-    </p>
-    <p>
-      In this section, we will explore the periodic nature of the sine and cosine functions. These functions play a vital role in graphing and analyzing various phenomena, including predicting the position of the sunrise throughout the year. By studying the graphs of sine and cosine functions, we can gain insights into the world around us. 
-      The graphs of the remaining trigonometric functions that were discussed in <xref ref="Trigonometry">Chapter</xref> will be covered in <xref ref="Graphs_of_Other_Trigonometric_Functions">Section</xref>.
+      In this section, we will explore the graphs of the sine and cosine functions through their periodic nature. Studying the graphs of sine and cosine functions provides valuable insights into the world around us. The graphs of the remaining trigonometric functions that were discussed in <xref ref="Trigonometry">Chapter</xref> will be covered in <xref ref="Graphs_of_Other_Trigonometric_Functions">Section</xref>.
     </p>
   </introduction>
   <subsection>
@@ -61,6 +57,9 @@
         </p>
       </statement>
     </definition>
+    <p>
+      In <xref ref="Trigonometry">Chapter</xref>, trigonometric functions typically use <m>\theta</m> or <m>t</m> as the variable in the domain, such as <m>y=\cos\theta</m> and <m>y=\sin t</m>. However, when graphing functions on the Cartesian plane (<m>xy</m>-coordinate system), <m>x</m> is conventionally used as the variable in the domain. Therefore, when graphing trigonometric functions, we will use <m>x</m> as the variable, for example <m>y=\cos x</m> and <m>y=\sin x</m>.
+    </p>
     <p>
       Recall that if <m>\theta</m> is an angle with radian measure <m>t</m>,
       then the <term>six trigonometric functions</term> become
@@ -291,12 +290,7 @@
         </p>
       </statement>
     </definition>
-    <p>
-      In <xref ref="Trigonometry">Chapter</xref>, trigonometric functions use <m>\theta</m> or <m>t</m> for the variable in the domain of the function, 
-      e.g. <m>y=\cos\theta</m>, <m>y=\sin t</m>.
-      However, graphing functions on the <m>xy</m>-coordinate system traditionally use <m>x</m> for the variable in the domain.
-      Therefore we will use the variable <m>x</m> when graphing trigonometric functions,  e.g. <m>y=\cos x</m>, <m>y=\sin x</m>.
-    </p>
+    
     <example xml:id="example-sun-declination">
       <title>Rising Sun</title>
       <p>In example, introduce the concept of declination, put figure/gif of the sun's rising position and the different dates <m>23.44^{\circ}</m></p>
