@@ -186,6 +186,91 @@
         </latex-image>
       </image>
     </figure>
+    <p>
+      ***Now we will look at the Hawaiian Star Compass where the angles correspond to the azmuth***
+    </p>
+    <figure xml:id="star-compass-with-angles-bearing">
+      <caption>The Star Compass with the angles indicating the boundaries for each House.</caption>
+      <image xml:id="fig-star-compass-with-angles-bearing">
+        <latex-image>
+          \begin{tikzpicture}[scale=5.3,cap=round,>=latex]
+          % draw the coordinates
+          \draw[&lt;-,dashed] (-1.2,0) -- (-0.96,0);
+          \draw[dashed] (-0.46,0) -- (0.66,0);
+          \draw[->,dashed] (0.96,0) -- (1.2,0);
+          \draw[&lt;-,dashed] (0,-1.2) -- (0,-0.96);
+          \draw[dashed] (0,-0.69) -- (0,0.69);
+          \draw[->,dashed] (0,0.96) -- (0,1.2);
+          % draw the unit circle
+          \draw[thick] (0cm,0cm) circle(1cm);
+          \draw[left] (0:0.98) node{\large HIKINA};
+          \draw[left] (90:0.98) node[rotate=90] {\large `\={A}KAU};
+          \draw[right] (180:0.98cm) node{\large KOMOHANA};
+          \draw[left] (270:0.98) node[rotate=-90] {\large HEMA};
+          \foreach \x in {5.625,16.875,...,90} {
+          % lines from center to point
+          \draw[gray] (0cm,0cm) -- (\x:1cm);% node[fill=white,left,sloped] {$\x^\circ$};
+          % dots at each point
+          \filldraw[black] (\x:1cm) circle(0.4pt);
+          }
+          \foreach \x in {95.625,106.875,...,270} {
+          % lines from center to point
+          \draw[gray] (0cm,0cm) -- (\x:1cm);% node[fill=white,left,sloped] {$\x^\circ$};
+          % dots at each point
+          \filldraw[black] (\x:1cm) circle(0.4pt);
+          }
+          \foreach \x in {275.625,286.875,...,360} {
+          % lines from center to point
+          \draw[gray] (0cm,0cm) -- (\x:1cm);% node[fill=white,left,sloped] {$\x^\circ$};
+          % dots at each point
+          \filldraw[black] (\x:1cm) circle(0.4pt);
+          }
+          \foreach \x/\xtext in {
+            5.625/{$84.375^\circ$},
+            16.875/{$73.125^\circ$},
+            28.125/{$61.875^\circ$},
+            39.375/{$50.625^\circ$}
+            }
+            \draw[right] (\x:1.05) node[rotate=\x] {\xtext};
+          \foreach \x/\xtext in {
+          11.25/L\={a},
+          22.5/`\={A}ina,
+          33.75/Noio,
+          45/Manu,
+          56.25/N\={a}lani,
+          67.5/N\={a} Leo,
+          78.75/Haka,
+          281.25/Haka,
+          292.5/N\={a} Leo,
+          303.75/N\={a}lani,
+          315/Manu,
+          326.25/Noio,
+          337.5/`\={A}ina,
+          348.75/L\={a}
+          }
+          \draw[left] (\x:0.98) node[rotate=\x] {\xtext};
+          \foreach \x/\xtext in {
+          101.25/Haka,
+          112.5/N\={a} Leo,
+          123.75/N\={a}lani,
+          135/Manu,
+          146.25/Noio,
+          157.5/`\={A}ina,
+          168.75/L\={a},
+          191.25/L\={a},
+          202.5/`\={A}ina,
+          213.75/Noio,
+          225/Manu,
+          236.25/N\={a}lani,
+          247.5/N\={a} Leo,
+          258.75/Haka
+          }
+          \draw[right] (\x:0.98) node[rotate=180+\x] {\xtext};
+          \draw (0,0) pic {iwa={0.53}};
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </figure>
     <p> Although we often use decimals to represent the fractional parts of a degree, it was
       traditionally represented in minutes and seconds. One <term>minute</term>
       <idx>
