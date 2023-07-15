@@ -270,7 +270,7 @@ of the Weriyeng School of navigation.
   </subsection>
   
   <subsection xml:id="subsec-Hawaii">
-    <title>Hawaiʻi</title>\
+    <title>Hawaiʻi</title>
     <p>
 Wanting to revive wayfinding in Hawaiʻi, Nainoa Thompson traveled to the island 
 of Satawal in the Federated States of Micronesia to learn from navigator Mau Piailug, 
@@ -672,7 +672,8 @@ the Hawaiian <em>Star Compass</em><idx><h>Star Compass</h><h>Hawaiian</h></idx>,
   </p>
   <p>
     <figure width="75%" xml:id="marshallese-stick-chart">
-      <image source="images/stick-chart.jpg"/>
+      <caption>Marshallese stick chart.</caption>
+      <image source="stick-chart.jpg"/>
     </figure>
   </p>
 </subsection>
@@ -688,11 +689,14 @@ the Hawaiian <em>Star Compass</em><idx><h>Star Compass</h><h>Hawaiian</h></idx>,
     Similar to the star compass, the wind compass is also a mental construct.
   </p>
   <p>
-    Other Pacific Island cultures adapted the modern Hawaiian Star Compass to their languages. Below are examples of the Cook Island, M
+    Other Pacific Island cultures have also adapted the modern Hawaiian Star Compass to their languages, as illustrated in <xref ref="other-pacific-star-compass-32-compass-rose">Figure</xref>.
   </p>
 
+  <figure xml:id="other-pacific-star-compass-32-compass-rose">
+    <caption>Examples of Star Compasses across the Pacific.</caption>
+  <sidebyside>
   <figure xml:id="cook-island-star-compass-32-compass-rose">
-    <caption>The Cook Island Star Compass.</caption>
+    <caption>The Cook Islands.</caption>
     <image xml:id="fig-cook-island-star-compass-32-compass-rose">
       <latex-image>
 \begin{tikzpicture}[x=5.3cm,y=5.3cm,cap=round]
@@ -759,7 +763,7 @@ the Hawaiian <em>Star Compass</em><idx><h>Star Compass</h><h>Hawaiian</h></idx>,
     </image>
   </figure>
   <figure xml:id="maori-star-compass-32-compass-rose">
-    <caption>The M&#257;ori Star Compass.</caption>
+    <caption>The M&#257;ori.</caption>
     <image xml:id="fig-maori-star-compass-32-compass-rose">
       <latex-image>
 \begin{tikzpicture}[x=5.3cm,y=5.3cm,cap=round]
@@ -826,7 +830,7 @@ the Hawaiian <em>Star Compass</em><idx><h>Star Compass</h><h>Hawaiian</h></idx>,
     </image>
   </figure>
   <figure xml:id="samoan-star-compass-32-compass-rose">
-    <caption>The S&#257;moan Star Compass.</caption>
+    <caption>The S&#257;moan.</caption>
     <image xml:id="fig-samoan-star-compass-32-compass-rose">
       <latex-image>
 \begin{tikzpicture}[x=5.3cm,y=5.3cm,cap=round]
@@ -891,6 +895,8 @@ the Hawaiian <em>Star Compass</em><idx><h>Star Compass</h><h>Hawaiian</h></idx>,
 \end{tikzpicture}
 </latex-image>
     </image>
+  </figure>
+</sidebyside>
   </figure>
 
 
