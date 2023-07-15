@@ -4,4 +4,193 @@
   <p>
     EMPTY SECTION
   </p>
+  <example xml:id="example-sun-declination">
+    <title>Rising Sun</title>
+    <p>In example, introduce the concept of declination, put figure/gif of the sun's rising position and the different dates <m>23.44^{\circ}</m></p>
+    <p>
+      The sun's <em>declination</em>
+          <idx><h>declination</h></idx>
+      is the angle between the equator and a line from the center of Earth to the sun.
+    </p>
+    <p>
+      June 20 December 21 March 20 September 22
+    </p>
+
+
+  </example>
+  <example>
+    <statement>
+      <p>
+        uncomment for links
+      </p>
+      <figure xml:id="fig_sunrise">
+        <caption>Sunrise summer, winter solstice and equinox</caption>
+        <image width="50%" source="Pictures/sunrise-angles.jpg"/>
+      </figure>
+    </statement>
+  </example>
+  <example>
+    <statement>
+      <p>
+        Position of rising run throughout the year. 66 degreees ENE "<url href="\1"/>
+      </p>
+    </statement>
+  </example>
+  <example>
+    <statement>
+      <p>
+        Talk about moon phases and tie that into sine graphs.
+        Try to fit the curve and come up with an equation.
+        Also discuss how fishing/farming is tied to moon phases.
+      </p>
+      <p>
+        Introduce the different moon phases in Hawaiian.
+      </p>
+      <p>
+        Moon phases would describe the different times for planting/fishing.
+      </p>
+      <p>
+        Phases of the moon are comparable to the phases of the sine function.
+        What are other events in nature that go through similar phases? (See Stewart p460, 64) Graphs of sine and cosine:
+        like that of waves
+      </p>
+      <p>
+        "<url href="\1"/>
+      </p>
+      <p>
+        "<url href="\1"/>
+      </p>
+      <p>
+        "<url href="\1"/>
+      </p>
+      <p>
+        Also talk about other polynesian moons such as Maori
+      </p>
+      <p>
+        Example of moon phases and the graph of sine:
+      </p>
+      <p>
+        See example from Jay Abramson's book, p621.
+        Fitting sine curve to data.
+      </p>
+      <p>
+        This can be a project or an introduction to the section.
+      </p>
+      <p>
+        Perhaps the introduction of moon cycles,
+        plot the moons to obtain the graph and then have the project as later.
+      </p>
+    </statement>
+  </example>
+  <example>
+    <statement>
+      <p>
+        Exercise for students: Tide charts:
+      </p>
+      <p>
+        uncomment for url Use Desmos.
+      </p>
+      <p>
+        There's also a tide worksheet example for NCTM.
+      </p>
+    </statement>
+  </example>
+  <example>
+    <statement>
+      <p>
+        Track the position of the rising and setting of the sun and the moon.
+        Data of Boston from "<url href="\1"/> This could be turned into a trig function.
+        Can get data from "<url href="\1"/> but it would be better if from NOAA.
+      </p>
+    </statement>
+  </example>
+  <exercise>
+      
+<task>
+<introduction>
+<p>
+  Find the equation for the time that Makalii (Pleiades) emerges over the horizon over time throughout the year.
+        Talk about the importance of this and how when it rises at sunset,
+        it coincides with the start of Makahiki season.
+        Then using an example that we already worked with the sun and the time the sun sets over the year,
+        find the intersection of these two equations to determine when Makahiki season will begin.
+</p>
+</introduction>
+<statement>
+<p>
+Find the equation for the time that Makalii (Pleiades) emerges over the horizon over time throughout the year.
+        Talk about the importance of this and how when it rises at sunset,
+        it coincides with the start of Makahiki season.
+        Then using an example that we already worked with the sun and the time the sun sets over the year,
+        find the intersection of these two equations to determine when Makahiki season will begin.
+    </p>
+  </statement>
+  <answer>
+    <p>
+      MYANSWER
+    </p>
+  </answer>
+</task>
+      <p>
+        ``The rising of Makali`i
+        (the constellation Pleiades)
+        at sunset marks the beginning of the Hawaiian new year,
+        known as Makahiki.
+        Makahiki usally begins mid-November and ends in late January or February,
+        aligning with the rainy season.
+        It is a time set aside for tribute, harvest, sport,
+        and play. " "<url href="\1"/>
+      </p>
+<task>     
+<introduction>
+<p>
+  Problem 55, p540 in Abramson's book: Standing on the shore of a lake,
+        a fisherman sights a boat far in the distance to his left.
+        Let x, measured in radians,
+        be the angle formed by the line of sight to the ship and a line due north from his position.
+        Assume due north is 0 and x is measured negative to the left and positive to the right.
+        (See Figure 19.)
+        The boat travels from due west to due east and,
+        ignoring the curvature of the Earth,
+        the distance d(x), in kilometers,
+        from the fisherman to the boat is given by the function d(x) = 1.5sec(x).
+</p>
+</introduction>
+<statement>
+<p>
+Problem 55, p540 in Abramson's book: Standing on the shore of a lake,
+        a fisherman sights a boat far in the distance to his left.
+        Let x, measured in radians,
+        be the angle formed by the line of sight to the ship and a line due north from his position.
+        Assume due north is 0 and x is measured negative to the left and positive to the right.
+        (See Figure 19.)
+        The boat travels from due west to due east and,
+        ignoring the curvature of the Earth,
+        the distance d(x), in kilometers,
+        from the fisherman to the boat is given by the function d(x) = 1.5sec(x).
+    </p>
+  </statement>
+  <answer>
+    <p>
+      MYANSWER
+    </p>
+  </answer>
+</task>
+      <p>
+        a. What is a reasonable domain for d(x)? b.
+        Graph d(x) on this domain. c.
+        Find and discuss the meaning of any vertical asymptotes on the graph of d(x). d.
+        Calculate and interpret <mdash/> . Round to the e.
+        Calculate and interpret <mdash/>.
+        Round to the second decimal place. f.
+        What is the minimum distance between the fisherman and the boat?
+        When does this occur?
+      </p>
+      
+  <answer>
+    <p>
+      MYANSWER
+    </p>
+  </answer>
+  </exercise>
 </section>
