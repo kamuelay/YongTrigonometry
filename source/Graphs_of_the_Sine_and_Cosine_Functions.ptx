@@ -37,11 +37,91 @@
       The position where the Sun rises throughout the year exhibits a repeating pattern, characterized as a <term>periodic function</term> with a cycle of about one year. This function can be mathematically represented as either a sine or cosine function. Graphically, it illustrates the sunrise position on the horizon relative to the east (Hikina) as time progresses. By examining this function, we can observe the gradual northward and southward movement of the sunrise position throughout the year. Key dates such as the equinoxes and solstices mark significant points in this pattern, providing insights into the changing seasons and variations in daylight hours.
     </p>
     <p>
-      In this section, we will explore the graphs of the sine and cosine functions through their periodic nature. Studying the graphs of sine and cosine functions provides valuable insights into the world around us. The graphs of the remaining trigonometric functions that were discussed in <xref ref="Trigonometry">Chapter</xref> will be covered in <xref ref="Graphs_of_Other_Trigonometric_Functions">Section</xref>.
+      In this section, we will explore the graphs of the sine and cosine functions through their periodic nature. Studying the graphs of sine and cosine functions provides valuable insights into the world around us. The graphs of the remaining trigonometric functions will be covered in <xref ref="Graphs_of_Other_Trigonometric_Functions">Section</xref>.
     </p>
   </introduction>
-  <subsection>
-    <title>Periodic Functions</title>
+  <subsection xml:id="subsec-sine-function">
+    <title>The Sine Function</title>
+    <p>
+      In <xref ref="Trigonometry">Chapter</xref>, trigonometric functions typically use <m>\theta</m> or <m>t</m> as the variable in the domain, such as <m>y=\cos\theta</m> and <m>y=\sin t</m>. However, when graphing functions on the Cartesian plane (<m>xy</m>-coordinate system), <m>x</m> is conventionally used as the variable in the domain. Therefore, when graphing trigonometric functions, we will use <m>x</m> as the variable, for example <m>y=\cos x</m> and <m>y=\sin x</m>.
+    </p>
+    <p>
+      Recall from <xref ref="Angles_and_Their_Measure">Section</xref> that the sine function is a periodic functions with period <m>2\pi</m>. Therefore, we only need to graph <m>y=\sin x</m> on the interval <m>[0,2\pi]</m>, and we can complete the remainder of the graph by repeating the values.
+    </p>
+
+
+    <table xml:id="tab_sine-graph-values">
+      <title>Values for 
+        <m>y=\sin x</m>
+      </title>
+      <tabular halign="center">
+        <row bottom="major">
+          <cell><m>x</m></cell>
+          <cell><m>y</m></cell>
+          <cell right="major"><m>(x,y)</m></cell>
+          <cell><m>x</m></cell>
+          <cell><m>y</m></cell>
+          <cell><m>(x,y)</m></cell>
+        </row>
+        <row>
+          <cell><m>0</m></cell>
+          <cell><m>0</m></cell>
+          <cell right="major"><m>(0,0)</m></cell>
+          <cell><m>\pi</m></cell>
+          <cell><m>0</m></cell>
+          <cell><m>\left(\pi,0\right)</m></cell>
+        </row>
+        <row>
+          <cell><m>\frac{\pi}{6}</m></cell>
+          <cell><m>\frac{1}{2}</m></cell>
+          <cell right="major"><m>\left(\frac{\pi}{6},\frac{1}{2}\right)</m></cell>
+          <cell><m>\frac{7\pi}{6}</m></cell>
+          <cell><m>-\frac{1}{2}</m></cell>
+          <cell><m>\left(\frac{7\pi}{6},-\frac{1}{2}\right)</m></cell>
+        </row>
+        <row>
+          <cell><m>\frac{\pi}{3}</m></cell>
+          <cell><m>\frac{\sqrt{3}}{2}</m></cell>
+          <cell right="major"><m>\left(\frac{\pi}{3},\frac{\sqrt{3}}{2}\right)</m></cell>
+           <cell><m>\frac{4\pi}{3}</m></cell>
+          <cell><m>-\frac{\sqrt{3}}{2}</m></cell>
+          <cell><m>\left(\frac{4\pi}{3},-\frac{\sqrt{3}}{2}\right)</m></cell>
+        </row>
+        <row>
+          <cell><m>\frac{\pi}{2}</m></cell>
+          <cell><m>1</m></cell>
+          <cell right="major"><m>\left(\frac{\pi}{2},1\right)</m></cell>
+          <cell><m>\frac{3\pi}{2}</m></cell>
+          <cell><m>-1</m></cell>
+          <cell><m>\left(\frac{3\pi}{2},-1\right)</m></cell>
+        </row>
+        <row>
+          <cell><m>\frac{2\pi}{3}</m></cell>
+          <cell><m>\frac{\sqrt{3}}{2}</m></cell>
+          <cell right="major"><m>\left(\frac{2\pi}{3},\frac{\sqrt{3}}{2}\right)</m></cell>
+          <cell><m>\frac{5\pi}{3}</m></cell>
+          <cell><m>-\frac{\sqrt{3}}{2}</m></cell>
+          <cell><m>\left(\frac{5\pi}{3},-\frac{\sqrt{3}}{2}\right)</m></cell>
+        </row>
+        <row>
+          <cell><m>\frac{5\pi}{6}</m></cell>
+          <cell><m>\frac{1}{2}</m></cell>
+          <cell right="major"><m>\left(\frac{5\pi}{6},\frac{1}{2}\right)</m></cell>
+          <cell><m>\frac{11\pi}{6}</m></cell>
+          <cell><m>-\frac{1}{2}</m></cell>
+          <cell><m>\left(\frac{11\pi}{6},-\frac{1}{2}\right)</m></cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell></cell>
+          <cell right="major"></cell>
+          <cell><m>2\pi</m></cell>
+          <cell><m>0</m></cell>
+          <cell><m>\left(2\pi,0\right)</m></cell>
+        </row>
+      </tabular>
+    </table>
+
     <definition xml:id="def-periodic-functions">
       <title>Periodic Functions</title>
       <statement>
@@ -57,9 +137,7 @@
         </p>
       </statement>
     </definition>
-    <p>
-      In <xref ref="Trigonometry">Chapter</xref>, trigonometric functions typically use <m>\theta</m> or <m>t</m> as the variable in the domain, such as <m>y=\cos\theta</m> and <m>y=\sin t</m>. However, when graphing functions on the Cartesian plane (<m>xy</m>-coordinate system), <m>x</m> is conventionally used as the variable in the domain. Therefore, when graphing trigonometric functions, we will use <m>x</m> as the variable, for example <m>y=\cos x</m> and <m>y=\sin x</m>.
-    </p>
+
     <p>
       Recall that if <m>\theta</m> is an angle with radian measure <m>t</m>,
       then the <term>six trigonometric functions</term> become
