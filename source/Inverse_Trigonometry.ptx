@@ -3,6 +3,75 @@
   <title>Inverse Trigonometric Functions</title>
   <introduction>
     <p>
+      Swells are one of the most consistent navigational tools for maintaining a straight course due to their consistency over longer periods of time. Unlike stars that may be obscured during the day or on cloudy nights, and winds that can frequently change direction, swells tend to remain relatively constant. By keeping the angle at which the swell passes the canoe constant, crew members can navigate on a straight course.
+    </p>
+    <p>
+      Even in poor visibility, when the crew may not be able to see the swells, they can still feel them. Parts of the waka (canoe) will lift and then lower as the swells pass beneath. Skilled navigators can use these movements to maintain course, even without directly seeing the waves.
+    </p>
+    <p>
+      The side-to-side rocking motion of the canoe is known as <term>roll</term>. This motion occurs when a swell approaches from either the port (left) or starboard (right) side, causing the waka to initially lift the corresponding hull (port or starboard), followed by the opposite hull, depending on the direction of the swell.
+    </p>
+    <p>
+      When a swell approaches from the bow (front) of the canoe, it lifts the front, causing the canoe to tilt backward before tilting forward. This motion is known as <term>pitch.</term> Conversely, if the swell comes from the stern (back), the canoe tilts forward and then backward.
+    </p>
+    <p>
+      When a swell approaches the canoe from an angle that is not perpendicular to any side, a combination of pitch and roll occurs. The specific motion experienced depends on the precise angle of the swell. For instance, if the swell comes from an angle and lifts the starboard bow (front right), it may subsequently lift the port bow, followed by the starboard stern, and finally the port stern. However, with a slightly different angle, the sequence may change as well. After lifting the starboard bow, it could lead to the starboard stern being lifted next, followed by the port bow, and finally the port stern. This twisting motion is referred to as a <term>corkscrew</term> effect due to its combination of motions.
+    </p>
+    <figure xml:id="video-swell-movement">
+      <caption>
+        As swells pass under the Waka Paikea, the canoe pitches, rolls, and corkscrews, depending on the angle of the swell. A navigator can use these movements to keep a straight course.
+      </caption>
+      <video youtube="fUTlW9RWGLA"/>
+    </figure>
+    <p>
+      As the waka Paikea sails north in the Cook Islands from Rarotonga to Arutanga with a heading of <m>0^{\circ}</m>, the swells are approaching the waka from the northwest and moving towards the southeast. Referring to <xref ref="star-compass-with-heading-angles">Figure</xref>, which provides heading angles, we observe that the swells have a heading ranging between <m>90^{\circ}</m> and <m>180^{\circ}</m>.
+    </p> 
+    <p>
+      Additional observations of the crew reveal the swells hit Paikea in the following order: 1) port bow (front left); 2) starboard bow (front right); 3) port stern (back left); and 4) starboard stern (back right). If Paikea is 14.8 m (50 ft) in length and 6.2 m (20 ft) in width, what is the possible range of headings from which the swells may be approaching?
+    </p>
+    <p>
+      
+    </p>
+
+  <image xml:id="fig-waa-currents" width="100%">
+    <latex-image>
+      \begin{tikzpicture}[x=4cm,y=4cm]
+        \draw[line width=1pt,blue,decorate,decoration=snake](0,0) -- (1,0.57735026919);
+        \draw[line width=1pt,blue,decorate,decoration=snake](-1,0) -- (0.732050807569,1) node[black,midway,above,sloped,yshift=2]{Waves};
+        \draw[line width=1pt,blue,decorate,decoration=snake,shorten >= 5pt](-1,0.57735026919) -- (-0.267949192431,1);
+        \draw[line width=2pt,-stealth,shorten >=3] (0,0) -- (-60:1) node[midway,sloped,below,xshift=-0.2] {10 ft};
+        \draw[line width=2pt,-stealth,shorten >=3] ([shift=(0:0.5)]0,0) -- ([shift=(0:0.5)]-60:1);
+        \draw[line width=2pt,-stealth,shorten >=3] ([shift=(0:-0.5)]0,0) -- ([shift=(0:-0.5)]-60:1);
+        \draw[line width=2pt,-stealth,shorten >=3] ([shift=(0:-1)]0,0) -- ([shift=(0:-1)]-60:1) node[midway,below,sloped]{swash};
+        \draw[line width=2pt, -stealth,dashed,shorten >=2] (0,0) -- (0.5,0) node[midway,below,xshift=4] {\(x\)};
+        \draw[line width=2pt, -stealth,dashed,shorten >=2] (0:0.5) -- (0:1);
+        \draw[line width=2pt, -stealth,dashed,shorten >=2] (0:-0.5) -- (0:0);
+        \draw[line width=2pt, -stealth,dashed,shorten >=2] (0:-1) -- (0:-0.5) node[midway,below]{movement};
+        \draw[line width=2pt,-stealth,shorten >=3] (0.5,-0.866025403784) -- (0.5,0);
+        \draw[line width=2pt,-stealth,shorten >=3] ([shift=(0:0.5)]-60:1) -- (0:1);
+        \draw[line width=2pt,-stealth,shorten >=3] ([shift=(0:-0.5)]-60:1) -- (0:0);
+        \draw[line width=2pt,-stealth,shorten >=3] ([shift=(0:-1)]-60:1) -- (0:-0.5) node[midway,below,sloped,rotate=180]{backwash};
+        \draw ([shift=(0:0.15)]0,0) arc (0:-60:0.15) node[midway,right,xshift=-4,yshift=-6] {\(60^{\circ}\)};
+        \draw (0.4,0) -- (0.4,-0.1) -- (0.5,-0.1);
+        \draw[line width=2pt,blue,-stealth,shorten >=3] (-0.5,0.866025403784) -- (-0.375,0.649519052838);
+        \draw[line width=2pt,blue,-stealth,shorten >=3] ([shift=(120:1)]210:{sqrt(3)/4}) -- ([shift=(120:0.75)]210:{sqrt(3)/4});
+        \draw[line width=2pt,blue,-stealth,shorten >=3] ({-0.25*cos(60)+(5*sqrt(3)/8-1)*sin(30)/cos(30)},1) -- ([shift=(120:0.75)]30:{sqrt(3)/4});
+        \draw[line width=2pt,blue,-stealth,shorten >=3] ([shift=(120:0.5)]210:0.433012701892) -- ([shift=(120:0.25)]210:0.433012701892);
+        \draw[line width=2pt,blue,-stealth,shorten >=3] (-0.25,0.433012701892) -- (-0.125,0.216506350946);
+        \draw[line width=2pt,blue,-stealth,shorten >=3] ([shift=(120:0.5)]30:0.433012701892) -- ([shift=(120:0.25)]30:0.433012701892);
+        \draw[line width=2pt,blue,-stealth,shorten >=3] ([shift=(120:0.5)]30:0.866025403784) -- ([shift=(120:0.25)]30:0.866025403784);
+        \draw[line width=2pt,blue,-stealth,shorten >=3] (0.92264973081,1) -- (1,0.866025403784);
+        \draw[line width=2pt,blue,-stealth,shorten >=3] (30:0.433012701892) -- ([shift=(30:0.433012701892)]-60:0.25);
+        \draw[line width=2pt,blue,-stealth,shorten >=3] (30:0.866025403784) -- ([shift=(30:0.866025403784)]-60:0.25);
+        \draw ([shift=(90:-0.5)]0,0) pic {waa1-top={waacolor}{0}{0.1}};
+      \end{tikzpicture}
+    </latex-image>
+  </image>
+
+
+
+
+    <p>
       When Mau Pialug sailed to his home on the Makali`i in 1999,
       the people of Satawal, Micronesia were impressed with such a large wa&#699;a.
       As a gift to the man who shared his knowledge of navigation, N&#257; K&#257;lai Wa&#699;a at Kawaihae Harbor built a 56-foot long double-hulled voyaging canoe called the Alingano Maisu.
