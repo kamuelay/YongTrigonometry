@@ -44,9 +44,12 @@
   </introduction>
   <subsection xml:id="subsec-sine-function">
     <title>The Sine Function</title>
-    <p>
-      In <xref ref="Trigonometry">Chapter</xref>, trigonometric functions typically use <m>\theta</m> or <m>t</m> as the variable in the domain, such as <m>y=\cos\theta</m> and <m>y=\sin t</m>. However, when graphing functions on the Cartesian plane (<m>xy</m>-coordinate system), <m>x</m> is conventionally used as the variable in the domain. Therefore, when graphing trigonometric functions, we will use <m>x</m> as the variable, for example <m>y=\cos x</m> and <m>y=\sin x</m>.
-    </p>
+    <convention>
+      <p>
+        In <xref ref="Trigonometry">Chapter</xref>, trigonometric functions typically use <m>\theta</m> or <m>t</m> as the variable in the domain, such as <m>y=\cos\theta</m> and <m>y=\sin t</m>. However, when graphing functions on the Cartesian plane (<m>xy</m>-coordinate system), <m>x</m> is conventionally used as the variable in the domain. Therefore, when graphing trigonometric functions, we will use <m>x</m> as the variable, for example <m>y=\cos x</m> and <m>y=\sin x</m>.
+      </p>
+    </convention>
+    
     <p>
       The sine function, as discussed in <xref ref="core-standardsCCSS_MATH_CONTENT_HSF_TF_A_4-a">Section</xref>, is a periodic functions with period <m>2\pi</m>. To graph <m>y=\sin x</m>, we can focus on the interval <m>[0,2\pi]</m>. By plotting this interval, we can then repeat the values to complete the remaining graph.
     </p>
