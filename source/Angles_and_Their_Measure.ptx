@@ -195,9 +195,9 @@
     <p>
       ***Now we will look at the Hawaiian Star Compass where the angles correspond to the azmuth***
     </p>
-    <figure xml:id="star-compass-with-angles-bearing">
+    <figure xml:id="star-compass-with-heading-angles">
       <caption>The Star Compass with the angles indicating the boundaries for each House.</caption>
-      <image xml:id="fig-star-compass-with-angles-bearing">
+      <image xml:id="fig-star-compass-with-heading-angles">
         <latex-image>
           \begin{tikzpicture}[scale=5.3,cap=round,>=latex]
           % draw the coordinates
@@ -218,6 +218,7 @@
           \draw[gray] (0cm,0cm) -- (\x:1cm);% node[fill=white,left,sloped] {$\x^\circ$};
           % dots at each point
           \filldraw[black] (\x:1cm) circle(0.4pt);
+          \draw (\x:1.2cm) node[rotate=\x] {${90-\x}^\circ$};
           }
           \foreach \x in {95.625,106.875,...,270} {
           % lines from center to point
@@ -1262,13 +1263,18 @@
             </li>
             <li>
               <p>
-                the linear speed of the hoe uli in miles per hour (round your answer to two decimal
-          places)
+                the linear speed of the hoe uli in miles per hour (round your answer to two decimal places)
               </p>
             </li>
           </ol>
         </p>
-        <video youtube="1A2UDMDE3Uc" />
+        <figure xml:id="vide-une">
+          <caption>
+            A waʻa (canoe) can change directions by rotating the hoe uli (steering sweep) in a process known as une.
+          </caption>
+          <video youtube="1A2UDMDE3Uc" />
+        </figure>
+        
       </statement>
       <solution>
         <p>
