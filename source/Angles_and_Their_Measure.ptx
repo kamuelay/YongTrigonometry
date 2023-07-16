@@ -8,7 +8,13 @@
       parallel to the Equator. The latitude of a place is defined as the angle between a line drawn
       from the center of the earth to that point and the equatorial plane. For any point in the
       Northern Hemisphere, a navigator can measure their latitude by determining the angle <em>
-      Hōkūpaʻa</em> (also known as <em>Kūmau</em>, North Star, or Polaris) makes with the horizon. </p>
+      Hōkūpaʻa</em> (also known as <em>Kūmau</em>, North Star, or Polaris) makes with the horizon. 
+    </p>
+      <!-- <p>
+        Names of Polaris (cannot find sources): "Litokne Kabroa" in the Chuukese language, "Aelōñ in Majel" in Marshallese, and "Ulluch Palau" in Palauan.
+        Wenenwenenfuhmwaket in Polowat
+      </p> -->
+
     <image xml:id="angles-Hokupaa" width="100%">
       <latex-image>
         \begin{tikzpicture}[scale=6]
