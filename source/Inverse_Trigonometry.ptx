@@ -24,34 +24,37 @@
       <video youtube="fUTlW9RWGLA"/>
     </figure>
     <p>
-      As the waka Paikea sails north in the Cook Islands from Rarotonga to Arutanga with a heading of <m>0^{\circ}</m>, the swells are approaching the waka from the northwest and moving towards the southeast. Referring to <xref ref="star-compass-with-heading-angles">Figure</xref>, which provides heading angles, we observe that the swells have a heading ranging between <m>90^{\circ}</m> and <m>180^{\circ}</m>.
+      As the waka Paikea sails north in the Cook Islands from Rarotonga to Arutanga with a heading of <m>0^{\circ}</m>, the swells are approaching the waka from the southwest and moving towards the northeast. Referring to <xref ref="star-compass-with-heading-angles">Figure</xref>, which provides heading angles, we observe that the swells have a heading ranging between <m>0^{\circ}</m> (north) and <m>90^{\circ}</m> (east).
     </p> 
     <p>
-      Additional observations of the crew reveal the swells hit Paikea in the following order: 1) port bow (front left); 2) starboard bow (front right); 3) port stern (back left); and 4) starboard stern (back right). If Paikea is 14.8 m (50 ft) in length and 6.2 m (20 ft) in width, what is the possible range of headings from which the swells may be approaching?
+      Additional observations of the crew reveal the swells hit Paikea in the following order: 1) port stern (back left); 2) starboard stern (back right); 3) port bow (front left); and 4) starboard bow (front right). If Paikea is 14.8 m (50 ft) in length and 6.2 m (20 ft) in width, what is the possible range of headings from which the swells may be approaching?
     </p>
     <p>
       
     </p>
 
-  <image xml:id="fig-waa-currents" width="100%">
-    <latex-image>
-      \begin{tikzpicture}[x=4cm,y=4cm]
-        \draw[line width=1pt,blue,decorate,decoration=snake](-1,0.288675134595) -- (0.232050807569,1) node[black,midway,above,sloped,yshift=2]{Waves};
-        \draw[line width=1pt,blue,decorate,decoration=snake](-1,-0.57735026919) -- (1,0.57735026919);
-        \draw[line width=1pt,blue,decorate,decoration=snake](-0.232050807569,-1) -- (1,-0.288675134595);
-        \draw ([shift=(180:0.65)]0,0.1) arc (90:-60:0.1) node[midway,right] {\(\theta\)};
-        \draw[line width=2pt,-stealth,shorten >=3] (-0.65,0) -- ([shift=(180:0.65)]90:0.3)node[black,midway,above,sloped,yshift=2]{North};
-        \draw[line width=2pt,-stealth,shorten >=3] (-0.65,0) -- ([shift=(180:0.65)]-60:0.3);
-        \draw[line width=2pt,blue,-stealth,shorten >=3] (210:0.433012701892) -- ([shift=(210:0.433012701892)]-60:0.25);
-        \draw[line width=2pt,blue,-stealth,shorten >=3] (210:0.866025403784) -- ([shift=(210:0.866025403784)]-60:0.25);
-        \draw[line width=2pt,blue,-stealth,shorten >=3] (30:0.433012701892) -- ([shift=(30:0.433012701892)]-60:0.25);
-        \draw[line width=2pt,blue,-stealth,shorten >=3] (30:0.866025403784) -- ([shift=(30:0.866025403784)]-60:0.25);
-        \draw ([shift=(-90:0.35)]0,0) pic {waa1-top={waacolor}{0}{0.1}};
-      \end{tikzpicture}
-    </latex-image>
-  </image>
+    <figure xml:id="waa-currents">
+      <caption>Swells moving towards the northeast pass under the waka Paikea heading.</caption>
+      <image xml:id="fig-waa-currents" width="100%">
+        <latex-image>
+          \begin{tikzpicture}[x=4cm,y=4cm]
+            \draw[line width=1pt,blue,decorate,decoration=snake](1,0.288675134595) -- (-0.232050807569,1) node[black,midway,above,sloped,yshift=2]{Waves};
+            \draw[line width=1pt,blue,decorate,decoration=snake](1,-0.57735026919) -- (-1,0.57735026919);
+            \draw[line width=1pt,blue,decorate,decoration=snake](0.232050807569,-1) -- (-1,-0.288675134595);
+            \draw ([shift=(210:0.65)]0,0.15) arc (90:60:0.15) node[midway,right,xshift=3,yshift=-5] {\(\theta\)};
+            \draw[line width=2pt,-stealth,shorten >=3] ([shift=(210:0.65)]0,0) -- ([shift=(210:0.65)]90:0.4)node[black,midway,above,sloped,yshift=2]{North};
+            \draw[line width=2pt,-stealth,shorten >=3] ([shift=(210:0.65)]0,0) -- ([shift=(210:0.65)]60:0.4);
+            \draw[line width=2pt,blue,-stealth,shorten >=3] (150:0.866025403784) -- ([shift=(150:0.866025403784)]60:0.25);
+            \draw[line width=2pt,blue,-stealth,shorten >=3] (150:0.433012701892) -- ([shift=(150:0.433012701892)]60:0.25);
+            \draw[line width=2pt,blue,-stealth,shorten >=3] (-30:0.433012701892) -- ([shift=(-30:0.433012701892)]60:0.25);
+            \draw[line width=2pt,blue,-stealth,shorten >=3] (-30:0.866025403784) -- ([shift=(-30:0.866025403784)]60:0.25);
+            \draw ([shift=(-90:0.09)]0,0) pic {waa1-top={waacolor}{0}{0.12}};
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </figure>
 
-
+  
 
 
     <p>
