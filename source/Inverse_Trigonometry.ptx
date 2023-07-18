@@ -53,7 +53,18 @@
         </latex-image>
       </image>
     </figure>
-
+    <figure xml:id="waa-currents-dimensions">
+      <caption>Caption</caption>
+      <image xml:id="fig-waa-currents-dimensions" width="100">
+        <latex-image>
+          \begin{tikzpicture}
+          \draw (0,0) -- (6.2,0) -- (6.2,14.8), -- (0,14.8) -- cycle;
+          \draw[blue] (0,0) -- (6.2,14.8);
+          \draw ([shift=(90:2)]0,0) arc (90:60:2) node[midway,right,xshift=-15,yshift=-1] {\(\theta\)};
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </figure>
   
 
 
