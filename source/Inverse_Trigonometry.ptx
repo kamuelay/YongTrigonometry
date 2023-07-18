@@ -15,7 +15,7 @@
       When a swell approaches from the bow (front) of the canoe, it lifts the front, causing the canoe to tilt backward before tilting forward. This motion is known as <term>pitch.</term> Conversely, if the swell comes from the stern (back), the canoe tilts forward and then backward.
     </p>
     <p>
-      When a swell approaches the canoe from an angle that is not perpendicular to any side, a combination of pitch and roll occurs. The specific motion experienced depends on the precise angle of the swell. For instance, if the swell comes from an angle and lifts the starboard bow (front right), it may subsequently lift the port bow, followed by the starboard stern, and finally the port stern. However, with a slightly different angle, the sequence may change as well. After lifting the starboard bow, it could lead to the starboard stern being lifted next, followed by the port bow, and finally the port stern. This twisting motion is referred to as a <term>corkscrew</term> effect due to its combination of motions.
+      When a swell approaches the canoe from an angle that is not perpendicular to any side, a combination of pitch and roll occurs. The specific motion experienced depends on the precise angle of the swell. For instance, if the swell comes from an angle and lifts the starboard bow (front right), it may subsequently lift the port bow, followed by the starboard stern, and finally the port stern. However, with a slightly different angle, the sequence may change as well. After lifting the starboard bow, it could lead to the starboard stern being lifted next, followed by the port bow, and finally the port stern. This twisting motion is referred to as a <term>corkscrew</term> effect due to its combination of motions. The video in <xref ref="video-swell-movement">Figure</xref> shows hows a waka moves as swells pass under the hulls.
     </p>
     <figure xml:id="video-swell-movement">
       <caption>
@@ -27,15 +27,11 @@
       As the waka Paikea sails north in the Cook Islands from Rarotonga to Arutanga with a heading of <m>0^{\circ}</m>, the swells are approaching the waka from the southwest and moving towards the northeast. Referring to <xref ref="star-compass-with-heading-angles">Figure</xref>, which provides heading angles, we observe that the swells have a heading ranging between <m>0^{\circ}</m> (north) and <m>90^{\circ}</m> (east).
     </p> 
     <p>
-      Additional observations of the crew reveal the swells hit Paikea in the following order: 1) port stern (back left); 2) starboard stern (back right); 3) port bow (front left); and 4) starboard bow (front right). If Paikea is 14.8 m (50 ft) in length and 6.2 m (20 ft) in width, what is the possible range of headings from which the swells may be approaching?
+      Additional observations of the crew reveal the swells hit Paikea in the following order: 1) port stern (back left); 2) starboard stern (back right); 3) port bow (front left); and 4) starboard bow (front right), as shown in <xref ref="waa-currents">Figure</xref>. If Paikea is 14.8 m (50 ft) in length and 6.2 m (20 ft) in width, what is the possible range of headings from which the swells may be approaching?
     </p>
-    <p>
-      
-    </p>
-
     <figure xml:id="waa-currents">
       <caption>Swells moving towards the northeast pass under the waka Paikea heading.</caption>
-      <image xml:id="fig-waa-currents" width="100%">
+      <image xml:id="fig-waa-currents" width="80%">
         <latex-image>
           \begin{tikzpicture}[x=4cm,y=4cm]
             \draw[line width=1pt,blue,decorate,decoration=snake](1,0.288675134595) -- (-0.232050807569,1) node[black,midway,above,sloped,yshift=2]{Waves};
@@ -53,21 +49,37 @@
         </latex-image>
       </image>
     </figure>
+   <p>
+    To determine the range of headings, we start by considering one boundary, which occurs when the swells are moving directly north with a heading of <m>0^{\circl}</m>. To identify the other boundary, we want to find the angle at which the swell intersects both the starboard stern and port bow simultaneously as it passes beneath the waka. Essentially, we want to find the angle that diagonally traverses the canoe from one corner to another. To simplify this, we represent the waka as a rectangle and create a triangle by connecting the corners. The angle, denoted as <m>\theta</m>, is formed between the side adjacent to the 14.8 m length of the canoe and the diagonal. This angle corresponds to the heading of the swells, as shown in <xref ref="waa-currents-dimensions">Figure</xref>.
+   </p>
     <figure xml:id="waa-currents-dimensions">
-      <caption>Caption</caption>
-      <image xml:id="fig-waa-currents-dimensions" width="100">
+      <caption>The deck of the waka Paikea can be simplified to a rectangle, and its diagonal represents the threshold between different sequences of motions as swells pass. The angle <m>\theta</m> corresponds to the heading of the swells.</caption>
+      <image xml:id="fig-waa-currents-dimensions" width="33%">
         <latex-image>
-          \begin{tikzpicture}
-          \draw (0,0) -- (6.2,0) -- (6.2,14.8), -- (0,14.8) -- cycle;
+          \begin{tikzpicture}[scale=0.5]
+          \draw (0,0) -- (6.2,0) -- (6.2,14.8) -- (0,14.8) -- cycle;
+          \node[above,rotate=90] at (0,7.4) {14.8 m};
+          \node[above] at (3.1,14.8) {6.2 m};
           \draw[blue] (0,0) -- (6.2,14.8);
-          \draw ([shift=(90:2)]0,0) arc (90:60:2) node[midway,right,xshift=-15,yshift=-1] {\(\theta\)};
+          \draw ([shift=(90:2)]0,0) arc (90:67.2702679201:2) node[midway,above,yshift=5,xshift=3] {\(\theta\)};
           \end{tikzpicture}
         </latex-image>
       </image>
     </figure>
-  
+    <p>
+      You may notice that for our given angle, <m>\theta</m>, we have the opposite side of length 6.2 m and the adjacent side of length 14.8 m, which are both related to the tangent function:
+      <me>
+        \tan\theta=\frac{14.8}{6.2}
+      </me>
+    </p>
+    <p>
+      Until now, the angles for the trigonometric problems we encountered were given. However, to solve for the angle <m>\theta</m>, we cannot simply divide by <q>tan</q> since it is part of the tangent function, which takes an angle as input and provides a ratio of sides as output. To find the angle <m>\theta</m>, we need to use the inverse function, which takes the ratio of sides as input and provides an angle as output. In this section, we will explore inverse trigonometric functions, including their properties and usage.
+    </p>
+  </introduction>
 
 
+  <subsection xml:id="subsec-alternate-introduction">
+    <title>Alternate Introduction</title>
     <p>
       When Mau Pialug sailed to his home on the Makali`i in 1999,
       the people of Satawal, Micronesia were impressed with such a large wa&#699;a.
@@ -111,7 +123,11 @@
       because it is part of the tangent function where we input an angle and the output is a ratio of sides.
       Instead, we will need to use the inverse function in which we input the ratio of sides and output an angle.
     </p>
-  </introduction>
+  </subsection>
+
+
+
+
   <subsection xml:id="core-standards-CCSS_MATH_CONTENT_HSF_TF_B_6">
     <title>Inverse Trigonometric Functions</title>
     <p>
