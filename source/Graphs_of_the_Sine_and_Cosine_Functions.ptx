@@ -31,9 +31,13 @@
     <p>
       Following the summer solstice, the Southern Hemisphere begins tilting away from the Sun, causing the Sun's rising position to gradually shift northward each day. This movement continues until the next fall equinox, completing the annual cycle.
     </p>
-    <figure>
+    <!-- <figure>
         <caption>Illustration shows the relative positions and timing of solstice, equinox and seasons in relation to the Earth's orbit around the Sun and the axial tilt. Image by Maxmath12, CC0, via Wikimedia Commons</caption>
         <image source="Orbital_relations_of_the_Solstice,_Equinox_and_Intervening_Seasons.svg"/>
+    </figure> -->
+    <figure>
+        <caption>Illustration shows the relative positions and timing of solstice, equinox and seasons in relation to the Earth's orbit around the Sun and the axial tilt. During the June solstice, the northern hemisphere is tilted towards the Sun, while the southern hemisphere is tilted away. Conversely, during the December solstice, the southern hemisphere is tilted towards the Sun, and the northern hemisphere is tilted away. During the March and September equinoxes, the Earth's axis is perpendicular to the line connecting the Earth to the Sun, causing the Sun to appear directly above the equator. As a result, day and night are approximately equal in length all over the world.</caption>
+        <image source="planets-seasons.svg"/>
     </figure>
     <p>
       The position where the Sun rises throughout the year exhibits a repeating pattern, characterized as a <term>periodic function</term> with a cycle of about one year. This function can be mathematically represented as either a sine or cosine function. Graphically, it illustrates the sunrise position on the horizon relative to the east (Hikina) as time progresses. By examining this function, we can observe the gradual northward and southward movement of the sunrise position throughout the year. Key dates such as the equinoxes and solstices mark significant points in this pattern, providing insights into the changing seasons and variations in daylight hours.
