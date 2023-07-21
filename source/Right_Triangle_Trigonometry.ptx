@@ -21,23 +21,12 @@
       <idx>
         <h>reference course</h>
       </idx>
-      to keep track of their position.
-      This reference course is a line that runs between the starting point and the destination.
-      If the waʻa (canoe) encounters winds that push it from its intended course,
-      the navigator can then mentally plot their position in relation to the reference course.
-      To ensure they don't miss their destination,
-      navigators must keep track of how far they
+      which is a line connecting the starting point and the destination, to track their position. If the wa&#699; a (canoe) encounters winds that push it off its intended course, the navigator can mentally plot their position in relation to the reference course. To prevent missing the destination, navigators must monitor how far they 
       <em>deviate</em>
       <idx>
         <h>deviation</h>
       </idx>
-      from the intended course.
-      They can do this by first measuring the angle of deviation from the intended reference course
-      (in units of houses)
-      and calculating the distance traveled.
-      In this section,
-      we will learn how to calculate the trigonometric functions with right triangles,
-      which will allow us to determine how far a waʻa has deviated from its intended reference course.
+      from the intended course. This involves measuring the angle of deviation from the reference course (in units of houses) and calculating the distance traveled. In this section, we will explore how to calculate trigonometric functions using right triangles. These calculations will allow us to determine the distance a  waʻa has deviated from its intended reference course.
     </p>
   </introduction>
   <subsection xml:id="core-standards-CCSS_MATH_CONTENT_HSG_SRT_C_6">
