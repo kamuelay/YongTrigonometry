@@ -1726,7 +1726,7 @@ node[pos=0.8,right] {\(y_1\)};
           <caption>Swells moving towards the northeast pass under the waka Paikea heading.</caption>
           <image xml:id="fig-star-compass-railing" width="40%">
             <latex-image>
-              \begin{tikzpicture}[scale=0.25,cap=round,>=latex]
+              \begin{tikzpicture}[scale=1,cap=round,>=latex]
 \fill[waacolor,fill=waacolor,fill opacity=0.10000000149011612] (-1.55,4) -- (-1.15,6) -- (-0.75,4) -- (-0.75,3) -- (-1.55,3) -- cycle;
 \fill[waacolor,fill=waacolor,fill opacity=0.10000000149011612] (1.55,4) -- (1.15,6) -- (0.75,4) -- (0.75,3) -- (1.55,3) -- cycle;
 \fill[waacolor,fill=waacolor,fill opacity=0.10000000149011612] (-1.55,-4) -- (-1.15,-6) -- (-0.75,-4) -- cycle;
