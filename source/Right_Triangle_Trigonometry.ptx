@@ -1717,16 +1717,71 @@ node[pos=0.8,right] {\(y_1\)};
       </answer>
     </exercise>
     </exercisegroup>
-
+    <exercisegroup>
+      <introduction>
+        <p>
+          One way to determine your bearing on a canoe is by observing and comparing the positions of celestial and other markers relative to your canoe. To facilitate this, you can mark the locations of the Star Compass on the opposite railings from the navigator's seat in the back corner of the canoe. However, since the Star Compass is circular and the canoe is rectangular, accurately placing the markings can be challenging. If 
+        </p>
+        <figure xml:id="waa-star-compass-railing">
+          <caption>Swells moving towards the northeast pass under the waka Paikea heading.</caption>
+          <image xml:id="fig-star-compass-railing" width="40%">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.25,cap=round,>=latex]
+\fill[waacolor,fill=waacolor,fill opacity=0.10000000149011612] (-1.55,4) -- (-1.15,6) -- (-0.75,4) -- (-0.75,3) -- (-1.55,3) -- cycle;
+\fill[waacolor,fill=waacolor,fill opacity=0.10000000149011612] (1.55,4) -- (1.15,6) -- (0.75,4) -- (0.75,3) -- (1.55,3) -- cycle;
+\fill[waacolor,fill=waacolor,fill opacity=0.10000000149011612] (-1.55,-4) -- (-1.15,-6) -- (-0.75,-4) -- cycle;
+\fill[waacolor,fill=waacolor,fill opacity=0.10000000149011612] (1.55,-4) -- (1.15,-6) -- (0.75,-4) -- cycle;
+\fill[waacolor,fill=waacolor,fill opacity=0.04] (-1.55,-4) -- (1.55,-4) -- (1.55,3) -- (-1.55,3) -- cycle;
+\draw [waacolor] (-1.15,6)-- (-1.55,4);
+\draw [waacolor] (-1.55,4)-- (-1.55,-4);
+\draw [waacolor] (-1.55,-4)-- (-1.15,-6);
+\draw [waacolor] (-1.15,-6)-- (-0.75,-4);
+\draw [waacolor] (-0.75,3)-- (-0.75,4);
+\draw [waacolor] (-0.75,4)-- (-1.15,6);
+\draw [waacolor] (1.15,6)-- (1.55,4);
+\draw [waacolor] (1.55,4)-- (1.55,-4);
+\draw [waacolor] (1.55,-4)-- (1.15,-6);
+\draw [waacolor] (1.15,-6)-- (0.75,-4);
+\draw [waacolor] (0.75,3)-- (0.75,4);
+\draw [waacolor] (0.75,4)-- (1.15,6);
+\draw [waacolor] (-1.55,-4)-- (1.55,-4);
+\draw [waacolor] (1.55,3)-- (-1.55,3);
+\draw [waacolor] (-0.25,3)-- (0.25,3);
+\draw [waacolor] (-0.75,4)-- (0.75, 4);
+\draw (-1.55,-4) -- (1.55,{3.1*tan(5.625)-4});
+\draw (-1.55,-4) -- (1.55,{3.1*tan(16.875)-4});
+\draw (-1.55,-4) -- (1.55,{3.1*tan(28.125)-4});
+\draw (-1.55,-4) -- (1.55,{3.1*tan(39.375)-4});
+\draw (-1.55,-4) -- (1.55,{3.1*tan(50.625)-4});
+\draw (-1.55,-4) -- (1.55,{3.1*tan(61.875)-4});
+\draw (-1.55,-4) -- ({7/tan(73.125)-1.55},3);
+\draw (-1.55,-4) -- ({7/tan(84.375)-1.55},3);
+\end{tikzpicture}
+            </latex-image>
+          </image>
+        </figure>
+        <p>
+          Calculate the location for a canoe with dimensions <m>l=7.4</m> m, <m>w=5.35</m> and for each boundary of house for theta1=5.625, theta2=...
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>\theta=5.625^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
 
     <exercisegroup>
       <introduction>
         <p>
-    Using the right triangle
-          (not drawn to scale)
-          shown below.
-          Solve the right triangle with the given information.
-          Round your answers to two decimal places.
+          Using the right triangle (not drawn to scale) shown below. Solve the right triangle with the given information. Round your answers to two decimal places.
         </p>
       <image>
         <latex-image>
