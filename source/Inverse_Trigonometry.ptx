@@ -47,7 +47,7 @@
             \draw[line width=2pt,blue,-stealth,shorten >=3] (150:0.433012701892) -- ([shift=(150:0.433012701892)]60:0.25);
             \draw[line width=2pt,blue,-stealth,shorten >=3] (-30:0.433012701892) -- ([shift=(-30:0.433012701892)]60:0.25);
             \draw[line width=2pt,blue,-stealth,shorten >=3] (-30:0.866025403784) -- ([shift=(-30:0.866025403784)]60:0.25);
-            \draw ([shift=(-90:0.09)]0,0) pic {waa1-top={waacolor}{0}{0.12}};
+            \draw ([shift=(-90:0.09)]0,0) pic {waa1-hale-top={waacolor}{0}{0.12}};
           \end{tikzpicture}
         </latex-image>
       </image>
