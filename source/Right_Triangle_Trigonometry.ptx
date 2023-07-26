@@ -1074,7 +1074,7 @@
     </example>
   </subsection>
   <exercises>
-    <exercisegroup>
+    <exercisegroup cols="2">
       <introduction>
         <p>
           Find the exact values of the six trigonometric functions of the angle
@@ -1268,7 +1268,7 @@
       </exercise>
     </exercisegroup>
 
-    <exercisegroup>
+    <exercisegroup cols="2">
       <introduction>
         <p>
           For each of the following problems, calculate
@@ -1355,7 +1355,7 @@
       </exercise>
     </exercisegroup>
 
-    <exercisegroup>
+    <exercisegroup cols="3">
       <introduction>
         <p>
           Use the Cofunction Identities to determine the value of
@@ -1437,7 +1437,7 @@
     </exercisegroup>
 
 
-    <exercisegroup xml:id="ques-deviation">
+    <exercisegroup xml:id="ques-deviation" cols="2">
       <introduction>
         <p>
           In <xref ref="ex-deviation">Example</xref>
@@ -1583,7 +1583,7 @@
     </exercisegroup>
 
 
-    <exercisegroup>
+    <exercisegroup cols="2">
       <introduction>
         <p>
           In
@@ -1723,7 +1723,7 @@ node[pos=0.8,right] {\(y_1\)};
           One way to determine your bearing on a canoe is by observing and comparing the positions of celestial and other markers relative to your canoe. To facilitate this, you can mark the locations of the Star Compass on the opposite railings from the navigator's seat in the back corner of the canoe. However, since the Star Compass is circular and the canoe is rectangular, accurately placing the markings can be challenging. If 
         </p>
         <figure xml:id="waa-star-compass-railing">
-          <caption>Swells moving towards the northeast pass under the waka Paikea heading.</caption>
+          <caption>The deck of a canoe can have Star Compass markings to help crew and navigators.</caption>
           <image xml:id="fig-star-compass-railing" width="40%">
             <latex-image>
               \begin{tikzpicture}[scale=1,cap=round,>=latex]
@@ -1778,7 +1778,7 @@ node[pos=0.8,right] {\(y_1\)};
       </exercise>
     </exercisegroup>
 
-    <exercisegroup>
+    <exercisegroup cols="2">
       <introduction>
         <p>
           Using the right triangle (not drawn to scale) shown below. Solve the right triangle with the given information. Round your answers to two decimal places.
@@ -2027,7 +2027,7 @@ node[pos=0.8,right] {\(y_1\)};
       </answer>
     </exercise>
 
-    <exercisegroup>
+    <exercisegroup cols="2">
       <introduction>
         <p>
           In 2013-2017, Hōkūleʻa circumnavigated the globe with a voyage mission to
