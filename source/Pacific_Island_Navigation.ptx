@@ -3,38 +3,18 @@
   <title>Pacific Island Navigation</title>
     <introduction>
   <p>
-    Pacific Islanders have been navigating across long distances in the Pacific long 
-    before the magnetic compasses or other modern instruments were introduced. 
-    Navigators relied on observations of the stars, sun, ocean, winds, habits of sea 
-    and winged creatures, and other terrestrial and marine signs from nature to 
-    determine their position relative to the direction of known or meaningful 
-    locales – islands, reefs, continents – around them. Through time, much of the art 
-    and science of traditional navigating was lost across the Pacific, except in some 
-    islands, mostly in Micronesia and on the island of Taumako in the Solomon Islands, 
-    where traditional schools continued to produce ocean going canoes and 
-    individuals – navigators – capable of voyaging long distances through the 
-    instrumentalization of deep knowledge about the natural world. 
+    Pacific Islanders have been navigating across long distances in the Pacific for centuries, even before the use of magnetic compasses or modern instruments. They relied on observations of celestial bodies, such as stars and the sun, as well as natural elements like ocean patterns, winds, bird behaviors, and other environmental cues to determine their position relative to known landmarks such as islands, reefs, and continents. Over time, much of this traditional navigational knowledge was lost in many parts of the Pacific. However, some islands, particularly in Micronesia and on Taumako Island in the Solomon Islands, managed to preserve the art and science of traditional navigation. These places continued to uphold the practice, teaching new generations to build ocean-going canoes and develop navigational skills based on profound knowledge of the natural world.
   </p>
     </introduction>
   <subsection xml:id="subsec-Micronesia">
     <title>Micronesia</title>
 
     <p>
-      Navigators in Micronesia use the <em>paafu</em><idx><h>paafu</h></idx> mat or 
-      map (shown in <xref ref="paafu">Figure</xref>), often mistranslated and misconstrued as a Star 
-      <q>Compass</q> for its use of stars and constellations to discern direction, but 
-      paafu is similar but not equivalent to the use of stars to mark cardinal 
-      directionality (the familiar marking of space in terms of North, South, East and 
-      West <q>cardinal points</q> for which compasses are known). Instead, paafu is a 
-      learning and teaching tool that was developed to begin to teach the locational 
-      position of an island (or a locale, or even a canoe) relative to other locales 
-      as these are <q>marked</q> by rising and setting points of stars and constellations. 
+      Navigators in Micronesia utilize the paafu<idx><h>Star Compass</h><h>paafu</h></idx><idx>paafu</idx> mat or map (shown in <xref ref="paafu">Figure</xref>). It is often misunderstood and misinterpreted as a Star <q>Compass</q> due to its use of stars and constellations for direction finding. However, paafu serves a different purpose and is not equivalent to the cardinal directionality marked by compasses (North, South, East, and West). Instead, it is a learning and teaching tool designed to teach the locational positions of islands, locales, or canoes relative to other places. This is achieved by observing the rising and setting points of stars and constellations, which act as markers for different locations.
     </p>
 
       <figure xml:id="paafu">
-    <caption>The paafu, or Micronesian Star Compass. Stars are identified using the Polowat 
-    dialect of the Chuukese language as it is used by members of the Weriyeng School of 
-    navigation.</caption>
+    <caption>The paafu, or Micronesian Star Compass. Stars are identified using the Polowat dialect of the Chuukese language as it is used by members of the Weriyeng School of navigation.</caption>
     <image xml:id="fig-paafu">
       <latex-image>
 \begin{tikzpicture}[scale=4.25,cap=round,>=latex]
@@ -141,46 +121,22 @@
       \end{tikzpicture}
 </latex-image>
     </image>
-  </figure>
-
-
-
-<p>
-A constellation is a cluster of stars whose shapes and meanings reflect and carry 
-cultural meanings or significance, such as the cluster of stars, prominent in the 
-southern hemisphere, that is cruciform in shape and is commonly referred to in modern 
-society as the <q>Southern Cross.</q> The same constellation for the Polowatese and other 
-islanders from the Central Carolines region in the western Pacific islands resembles 
-for them the trigger fish Pup, and so is named as such. In the Central Carolines, the 
-general location in the celestial sky where stars appear to rise after sundown is 
-referred to as <q><em>tan</em>,</q> which is often mistranslated as <q>east</q> since 
-modern society refers to stars (like the sun) as <q>rising</q> in the east. Indeed, tan 
-means <q>rising.</q> It does not mean <q>Eastward.</q>
-</p>
-
-<p>
-<xref ref="paafu">Figure</xref> orients the cardinal direction known as <q>east</q> at the top of 
-the page, and so the top half of this diagram is also identified as <q>tan</q> – where 
-stars appear to rise. Following an apparent <q>path</q> across the sky each night and 
-day (although most stars are not visible during the day) and across a year – in this 
-system, the rising and presence of specific stars across the sky mark months, the same 
-stars will eventually set at a point horizontally opposite where they rose. 
-Corresponding to the cardinal direction point called <q>west,</q> this part of the circle 
-is referred to as <q><em>tolon</em></q> or where the stars <q>set</q> or go down. In the 
-paafu <q>map</q> in <xref ref="paafu">Figure</xref>, whose center is the figure of a canoe, the 
-star called Mailap (Altair) marks due east. Where and when Mailap rises is referred 
-to as Tan Mailap (rising Mailap) and when and where it sets is referred to as Tolon 
-Mailap (setting Mailap). In <xref ref="paafu">Figure</xref>, east or the rising points of the 
-navigation or paafu stars is situated at the top of the circle, and west or the setting 
-points of these stars is situated at the bottom of the circle. As a map, paafu uses the 
-rising and setting points of stars to mark places around any given locale that would be 
-placed in the center of the circle (see <xref ref="tab_paafu">Table</xref>). Paafu can also be used 
-to identify the direction that moving objects, like canoes, or creatures, like birds, 
-fish, and humans, are heading or coming from. In this version of paafu, the stars are 
-identified using the Polowat dialect of the Chuukese language as it is used by members 
-of the Weriyeng School of navigation.
+    </figure>
+    <p>
+      A constellation is a cluster of stars whose shapes and meanings reflect and carry cultural significance. In modern society, a well-known cluster of stars in the southern hemisphere, shaped like a cruciform, is commonly referred to as the <q>Southern Cross.</q> However, for the Polowatese and other islanders from the Central Carolines region in the western Pacific islands, this same constellation resembles the triggerfish Pup, and so it is named accordingly.
     </p>
-
+    <p>
+      In the Central Carolines, the general location in the celestial sky where stars appear to rise after sundown is referred to as <q>tan.</q> This term is often mistakenly translated as <q>east</q> due to the modern association of stars (like the sun) with <q>rising</q> in the east. However, it's important to note that <q>tan</q> means <q>rising</q> and not <q>Eastward.</q>
+    </p>
+    <p>
+      <xref ref="paafu">Figure</xref> orients the cardinal direction known as <q>east</q> at the top of the page, and so the top half of this diagram is also identified as <q>tan</q> – where stars appear to rise. The diagram illustrates the apparent path of stars across the sky each night and day (though most stars are not visible during the day) and throughout a year. In this system, the rising and presence of specific stars mark months, and these same stars will eventually set at a point horizontally opposite to where they rose. This point corresponds to the cardinal direction known as <q>west,</q> which is referred to as <q>tolon</q> – the area where the stars <q>set</q> or go down.
+    </p>
+    <p>
+      In the paafu <q>map</q> shown in <xref ref="paafu">Figure</xref>, a canoe is placed at the center, and the star called Mailap (Altair) marks due east. The time and location when Mailap rises are referred to as <q>Tan Mailap</q> (rising Mailap), while the time and place it sets are referred to as <q>Tolon Mailap</q> (setting Mailap). The map's orientation places east, or the rising points of the navigation or paafu stars, at the top of the circle, and west, or the setting points of these stars, at the bottom of the circle. As a map, paafu uses the rising and setting points of stars to mark places around a given locale, which is placed at the center of the circle (see <xref ref="tab_paafu">Table</xref>).
+    </p>
+    <p>
+      Paafu can also be used to identify the direction in which moving objects, such as canoes, or creatures like birds, fish, and humans, are heading or coming from. This version of paafu utilizes the Polowat dialect of the Chuukese language, as used by members of the Weriyeng School of navigation.
+    </p>
  <table xml:id="tab_paafu">
     <title>Star and constellation names in order of rising during sailing season in Polowat (Third week of March).</title>
     <tabular>
@@ -272,17 +228,12 @@ of the Weriyeng School of navigation.
   <subsection xml:id="subsec-Hawaii">
     <title>Hawaiʻi</title>
     <p>
-Wanting to revive wayfinding in Hawaiʻi, Nainoa Thompson traveled to the island 
-of Satawal in the Federated States of Micronesia to learn from navigator Mau Piailug, 
-who affectionately became known as Papa Mau. Thompson adopted the paafu, resulting in 
-the Hawaiian <em>Star Compass</em><idx><h>Star Compass</h><h>Hawaiian</h></idx>, also known as the 
-<em>Kūkuluokalani</em><idx><h>Kūkuluokalani</h></idx> (<xref ref="star-compass-32-compass-rose">Figure</xref>).
+      With the aim of reviving wayfinding in Hawaiʻi, Nainoa Thompson journeyed to the island of Satawal in the Federated States of Micronesia to learn from the master navigator Mau Piailug, affectionately known as Papa Mau. Using this knowledge, Thompson adopted the paafu method, leading to the creation of the Hawaiian <em>Star Compass</em><idx><h>Star Compass</h><h>Hawaiian</h></idx>, also referred to as the <em>Kūkuluokalani</em><idx><h>Kūkuluokalani</h></idx> (<xref ref="star-compass-32-compass-rose">Figure</xref>).
 </p>
-
-  <figure xml:id="star-compass-32-compass-rose">
-    <caption>Hawaiian Star Compass.</caption>
-    <image xml:id="fig-star-compass-32-compass-rose">
-      <latex-image>
+<figure xml:id="star-compass-32-compass-rose">
+  <caption>Hawaiian Star Compass.</caption>
+  <image xml:id="fig-star-compass-32-compass-rose">
+    <latex-image>
 \begin{tikzpicture}[x=5.3cm,y=5.3cm,cap=round,>=latex]
 \draw[&lt;-,dashed] (-1.2,0) -- (-0.96,0);
 \draw[dashed] (-0.45,0) -- (0.65,0);
@@ -384,13 +335,12 @@ the Hawaiian <em>Star Compass</em><idx><h>Star Compass</h><h>Hawaiian</h></idx>,
 \draw (0,0) pic {iwa={0.1}};
 \end{tikzpicture}
 </latex-image>
-    </image>
-  </figure>
+  </image>
+</figure>
   <table xml:id="tab_compass">
     <title>The houses of the Hawaiian Star Compass and the corresponding points on the 32-wind compass rose.</title>
     <tabular>
       <row bottom="minor">
-        <cell></cell>
         <cell></cell>
         <cell></cell>
         <cell></cell>
@@ -572,103 +522,48 @@ the Hawaiian <em>Star Compass</em><idx><h>Star Compass</h><h>Hawaiian</h></idx>,
   </table>
 
   <p>
-    In the star compass, whose center is the figure of an ʻiwa or great frigatebird, 
-    Thompson divides the visual horizon into 32 equidistant points around a circle, 
-    called houses. The houses in the Hawaiian Star Compass represent a space on the 
-    horizon (<m>11.25^{\circ}</m>) where celestial bodies such as the sun, stars, 
-    moon, and planets rise and set. In the same way that we have addresses to help 
-    people find our homes, each celestial body has its own address represented with 
-    these houses.
+    In the star compass, featuring the figure of an ʻiwa or great frigatebird at its center, Thompson divides the visual horizon into 32 equidistant points around a circle, referred to as houses. Each house in the Hawaiian Star Compass represents a specific space on the horizon (<m>11.25^{\circ}</m>) where celestial bodies such as the sun, stars, moon, and planets rise and set. In the same way that we use addresses to locate homes, each celestial body has its own address represented by these houses.
   </p>
   <p>
-    The four cardinal points correspond to a house.
-    The stars arrive from the horizon called <em>Hikina</em>
-    (<q>To Arrive</q>) or East and enter the horizon called <em>Komohana</em>
-    (<q>To Enter</q>) or West.
-    If you stand with your back towards Hikina (East) and face Komohana (West),
-    your right will point towards <em>ʻĀkau</em>
-    (<q>Right</q>) or North and your left will point towards <em>Hema</em>
-    (<q>Left</q>) or South. The Hawaiian Star Compass is oriented with North at 
-    the top of the compass.
+    The four cardinal points align with particular houses. Stars rise from the horizon called Hikina <em>Hikina</em> (<q>To Arrive</q>) or East and set on the horizon called <em>Komohana</em> (<q>To Enter</q>) or West.  If you face Komohana (West) with your back towards Hikina (East), your right will point towards <em>ʻĀkau</em> (<q>Right</q>) or North, and your left will point towards <em>Hema</em> (<q>Left</q>) or South. The Hawaiian Star Compass is oriented with North at the top.
   </p>
   <p>
-    These four cardinal points divide the compass into four quadrants.
-    Each quadrant is named after winds in Hawaiʻi.
-    <em>Koʻolau</em> is the Northeast quadrant named for the trade winds;
-    <em>Hoʻolua</em> is the Northwest quadrant,
-    <em>Kona</em> is the Southwest quadrant;
-    and <em>Malanai</em> is the Southeast quadrant.
+    The star compass is divided into four quadrants, each named after winds in Hawaiʻi. <em>Koʻolau</em> is the Northeast quadrant named for the trade winds; <em>Hoʻolua</em> is the Northwest quadrant, <em>Kona</em> is the Southwest quadrant; and <em>Malanai</em> is the Southeast quadrant.
   </p>
   <p>
-    Each house on the compass has a name.
-    The corresponding houses in the east and in the west share a name.
-    Starting in the east or west and moving northwards and southwards 
-    is the first house positioned on either side of Hikina (East) and Komohana (West).
-    This is the house Lā (Sun).
-    It is followed by ʻĀina (Land), Noio (Tern), Manu (Bird), Nālani (Heavens), Nā Leo (Voices),
-    and Haka (Empty).
-    The 32 houses in the Hawaiian Star Compass correspond to the points of the 32-wind compass rose
-    (<xref ref="tab_compass">Table</xref>).
-    The celestial bodies move in parallel paths across the sky from East to West,
-    rising and setting in the same house,
-    remaining in its hemisphere
-    (<xref ref="fig_celestial-sphere">Figure</xref>).
+    Each house on the star compass is given a name. The corresponding houses in the east and west share the same name. Starting from the east or west and moving northwards and southwards, the first house on either side of Hikina (East) and Komohana (West) is called <em>Lā</em> (Sun). It is followed by <em>ʻĀina</em> (Land), <em>Noio</em> (Tern), <em>Manu</em> (Bird), <em>Nālani</em> (Heavens), <em>Nā Leo</em> (Voices), and <em>Haka</em> (Empty). The 32 houses in the Hawaiian Star Compass correspond to the points of the 32-wind compass rose (<xref ref="tab_compass">Table</xref>). Celestial bodies move along parallel paths across the sky from East to West, rising and setting in the same house, remaining in its hemisphere (<xref ref="fig_celestial-sphere">Figure</xref>).
   </p>
   
   <p>
-    For example,
-    if a star arrives in the Koʻolau (northeastern) quadrant in the star house ʻĀina,
-    it will arc overhead,
-    staying in the northern hemisphere and enters the horizon in the same house it arrived in, ʻĀina,
-    but in the Hoʻolua (northwest) quadrant, see Figure <xref ref="fig_celestial-sphere"/>.
-    If a star arrives in the Malanai (southeast) quadrant in the house Lā, it will remain in the southern hemisphere as it arcs overhead and enters the horizon in the house Lā in the Kona (southwestern) quadrant.
+    For example, if a star arrives in the Koʻolau (northeastern) quadrant in the star house ʻĀina, it will arc overhead, staying in the northern hemisphere, and enter the horizon in the same house it arrived in, ʻĀina, but in the Hoʻolua (northwestern) quadrant (see Figure <xref ref="fig_celestial-sphere"/>). Similarly, if a star arrives in the Malanai (southeastern) quadrant in the house Lā, it will remain in the southern hemisphere as it arcs overhead and enters the horizon in the house Lā in the Kona (southwestern) quadrant.
   </p>
   <figure xml:id="fig_celestial-sphere">
     <caption>
-      In the Celestial Sphere, stars rise in the East, move over the sky and set in the West. 
-      A star will rise and set in the same house.
+      In the celestial sphere, stars rise in the east, arc across the sky, and set in the west. Each star will both rise and set in the same house.
     </caption>
     <interactive geogebra="nmjdg3kb" aspect="1.75:1"/>
   </figure>
   <p>
-    The star compass is also used to determine direction based on wind and ocean swells.
-    As the wind and swells move, they cross the star compass diagonally.
-    If a wind is blowing from the house Noio in the Koʻolau (northeast) quadrant,
-    it would blow in the direction of the Kona (southwest) quadrant and exit at the same house it originated from, Noio.
+    The star compass also serves as a guide for determining direction based on wind and ocean swells. As the wind and swells move, they intersect the star compass diagonally. For example, if a wind blows from the house Noio in the Koʻolau (northeast) quadrant, it will blow in the direction of the Kona (southwest) quadrant and eventually exit in the same house, Noio.
   </p>
   <p>
-    Now that we know the star compass,
-    you may be asking how do we tell direction?
-    To do this, we use observations.
-    At night, Thompson uses about 220 stars to tell direction,
-    memorizing where they rise and set on horizon.
-    During the day when the sun is low on the horizon,
-    we can use the sun but as it gets higher,
-    you no longer are able to tell where on the horizon it came from.
-    You can also memorize where the wind and waves are coming from and check to see if it has changed direction between sunrise and sunset.
+    Observations play a key role in determining direction using the star compass. At night, Thompson relies on approximately 220 stars, memorizing where they rise and set on the horizon to navigate. During the day, we can use the sun's position on the horizon to gauge direction, but this method is only effective when the sun is near the horizon at sunrise and sunset. Alternatively, one can memorize the wind and wave directions, checking for any changes between sunrise and sunset to establish their current direction.
   </p>
 </subsection>
 <subsection xml:id="subsec-marshall-islands">
   <title>Marshall Islands</title>
   <p>
-    The Marshallese people use stick charts as navigational tools. These stick charts are indeed constructed using a 
-    lattice-like structure made from curved and straight sticks, typically formed by tying together the midribs of 
-    coconut fronds. The curved sticks represent the islands and how they bend and refract the ocean swells, 
-    while the straight sticks symbolize the major wave patterns in the surrounding waters.
+    The Marshallese people use stick charts<idx>stick chart</idx> as navigational tools. These stick charts are indeed constructed using a 
+    lattice-like structure made from curved and straight sticks, typically formed by tying together the midribs of coconut fronds. The curved sticks represent the islands and how they bend and refract the ocean swells, while the straight sticks symbolize the major wave patterns in the surrounding waters.
   </p>
   <p>
-    The shells placed on the sticks indicate the relative locations of islands within the Marshall Islands archipelago. 
-    These shells serve as markers, helping navigators remember the positions of specific islands along their voyages.
+    The shells placed on the sticks indicate the relative locations of islands within the Marshall Islands archipelago. These shells serve as markers, helping navigators remember the positions of specific islands along their voyages.
   </p>
   <p>
-    Each stick chart is unique to its creator, reflecting their individual knowledge and experiences. 
-    The personalization of the stick charts allows navigators to develop a deep understanding of the ocean currents, 
-    wave patterns, and island locations in their specific region.
+    Each stick chart is unique to its creator, reflecting their individual knowledge and experiences. The personalization of the stick charts allows navigators to develop a deep understanding of the ocean currents, wave patterns, and island locations in their specific region.
   </p>
   <p>
-    The stick charts serve as mental maps or navigational aids, allowing experienced navigators to visualize and 
-    recall the complex information while on their journeys. Navigators would memorize the stick charts, 
-    internalizing the knowledge embedded within them, enabling them to navigate the open ocean.
+    The stick charts serve as mental maps or navigational aids, allowing experienced navigators to visualize and recall the complex information while on their journeys. Navigators would memorize the stick charts, internalizing the knowledge embedded within them, enabling them to navigate the open ocean.
   </p>
   <p>
     <figure width="75%" xml:id="marshallese-stick-chart">
@@ -683,10 +578,7 @@ the Hawaiian <em>Star Compass</em><idx><h>Star Compass</h><h>Hawaiian</h></idx>,
     
   </p>
   <p>
-    In addition to the star compass,
-    many cultures across the Pacific use a
-    <em>wind compass</em>.
-    Similar to the star compass, the wind compass is also a mental construct.
+    In addition to the star compass, many cultures across the Pacific use a <em>wind compass</em>. Similar to the star compass, the wind compass is also a mental construct.
   </p>
   <p>
     Other Pacific Island cultures have also adapted the modern Hawaiian Star Compass to their languages, as illustrated in <xref ref="other-pacific-star-compass-32-compass-rose">Figure</xref>.
@@ -695,7 +587,7 @@ the Hawaiian <em>Star Compass</em><idx><h>Star Compass</h><h>Hawaiian</h></idx>,
   <figure xml:id="other-pacific-star-compass-32-compass-rose">
     <caption>Examples of Star Compasses across the Pacific.</caption>
   <sidebyside>
-  <figure xml:id="cook-island-star-compass-32-compass-rose">
+  <figure xml:id="cook-island-star-compass-32-compass-rose"><idx><h>Star Compass</h><h>Cook Island</h></idx>
     <caption>The Cook Islands.</caption>
     <image xml:id="fig-cook-island-star-compass-32-compass-rose">
       <latex-image>
@@ -762,7 +654,7 @@ the Hawaiian <em>Star Compass</em><idx><h>Star Compass</h><h>Hawaiian</h></idx>,
 </latex-image>
     </image>
   </figure>
-  <figure xml:id="maori-star-compass-32-compass-rose">
+  <figure xml:id="maori-star-compass-32-compass-rose"><idx><h>Star Compass</h><h>M&#257;ori</h></idx>
     <caption>The M&#257;ori.</caption>
     <image xml:id="fig-maori-star-compass-32-compass-rose">
       <latex-image>
@@ -829,7 +721,7 @@ the Hawaiian <em>Star Compass</em><idx><h>Star Compass</h><h>Hawaiian</h></idx>,
 </latex-image>
     </image>
   </figure>
-  <figure xml:id="samoan-star-compass-32-compass-rose">
+  <figure xml:id="samoan-star-compass-32-compass-rose"><idx><h>Star Compass</h><h>S&#257;moan</h></idx>
     <caption>The S&#257;moan.</caption>
     <image xml:id="fig-samoan-star-compass-32-compass-rose">
       <latex-image>
@@ -918,10 +810,7 @@ the Hawaiian <em>Star Compass</em><idx><h>Star Compass</h><h>Hawaiian</h></idx>,
     <exercise>
       <statement>
         <p>
-          The Hawaiian Star Compass was based on the Micronesian Star Compass,
-        known as the
-          <em>paafu</em>
-          .
+          The Hawaiian Star Compass was based on the Micronesian Star Compass, known as the <em>paafu</em>.
         Who shared the paafu with the Hawaiians?
         </p>
       </statement>
@@ -934,8 +823,7 @@ the Hawaiian <em>Star Compass</em><idx><h>Star Compass</h><h>Hawaiian</h></idx>,
     <exercise>
       <introduction>
         <p>
-          According to the Hawaiian Star Compass,
-          what is the name for
+          According to the Hawaiian Star Compass, what is the name for
         </p>
       </introduction>
       <task>
@@ -1045,8 +933,7 @@ the Hawaiian <em>Star Compass</em><idx><h>Star Compass</h><h>Hawaiian</h></idx>,
     <exercisegroup>
       <introduction>
         <p>
-          For each direction, identify the Hawaiian names of the corresponding house 
-          and quadrant in the Hawaiian Star Compass
+          For each direction, identify the Hawaiian names of the corresponding house and quadrant in the Hawaiian Star Compass
         </p>
       </introduction>
       <exercise>
@@ -1161,30 +1048,20 @@ the Hawaiian <em>Star Compass</em><idx><h>Star Compass</h><h>Hawaiian</h></idx>,
     <exercise>
       <statement>
         <p>
-        The winter solstice in the southern hemisphere,
-
-        which occurs on June 22,
-        is when the sun is at its lowest elevation in the sky,
-        resulting in the shortest daylight of the year.
-        During the winter solstice,
-        the sun rises from its northernmost position ʻĀina Koʻolau.
-        What house does the sun set in the winter solstice in the southern hemisphere?
-      </p>
+          The winter solstice in the southern hemisphere occurs around June 22. It is the time when the sun is at its lowest elevation in the sky, resulting in the shortest daylight of the year. During the winter solstice, the sun rises from its northernmost position, ʻĀina Koʻolau What house does the sun set in the winter solstice in the southern hemisphere?
+        </p>
       </statement>
       <answer>
         <p>
-
-        ʻĀina Hoʻolua
-      </p>
+          ʻĀina Hoʻolua
+        </p>
       </answer>
     </exercise>
     <exercise>
       <statement>
         <p>
-        The winter solstice in the northern hemisphere occurs on December 22 when the sun rises from its southernmost position ʻĀina Malanai.
-
-        What house does the sun set in the winter solstice in the northern hemisphere?
-      </p>
+          The winter solstice in the northern hemisphere occurs around December 22 when the sun rises from its southernmost position, ʻĀina Malanai. What house does the sun set in the winter solstice in the northern hemisphere?
+        </p>
       </statement>
       <answer>
         <p>
@@ -1195,27 +1072,25 @@ the Hawaiian <em>Star Compass</em><idx><h>Star Compass</h><h>Hawaiian</h></idx>,
     <exercise>
       <statement>
         <p>
-        Wind is coming from Nā Leo Kona.
-        In what direction is the wind blowing towards?
-      </p>
+          Wind is coming from Nā Leo Kona. In what direction is the wind blowing towards?
+        </p>
       </statement>
       <answer>
         <p>
-        Nā Leo Koʻolau 
-      </p>
+          Nā Leo Koʻolau 
+        </p>
       </answer>
     </exercise>
     <exercise>
       <statement>
         <p>
-        Current is coming from Noio Hoʻolua.
-        In what direction is the current heading towards?
-      </p>
+          Current is coming from Noio Hoʻolua. In what direction is the current heading towards?
+        </p>
       </statement>
       <answer>
         <p>
-        Noio Malanai
-      </p>
+          Noio Malanai
+        </p>
       </answer>
     </exercise>
 
