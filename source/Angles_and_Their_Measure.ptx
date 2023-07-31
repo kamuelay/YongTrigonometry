@@ -2,19 +2,8 @@
 <section xml:id="Angles_and_Their_Measure">
   <title>Angles and Their Measure</title>
   <introduction>
-    <p> One method people use to identify their position is by looking at the <em>latitude</em>. <idx>
-        <h>latitude</h>
-      </idx> These imaginary lines that form circles around the Earth run
-      parallel to the Equator. The latitude of a place is defined as the angle between a line drawn
-      from the center of the earth to that point and the equatorial plane. For any point in the
-      Northern Hemisphere, a navigator can measure their latitude by determining the angle <em>
-      Hōkūpaʻa</em> (also known as <em>Kūmau</em>, North Star, or Polaris) makes with the horizon. 
+    <p> One method people use to identify their position is by looking at the <em>latitude</em>. <idx><h>latitude</h></idx> These imaginary lines form circles around the Earth and run parallel to the Equator. The latitude of a place is defined as the angle between a line drawn from the center of the Earth to that point and the equatorial plane. For any point in the Northern Hemisphere, a navigator can measure their latitude by determining the angle that <em>Hōkūpaʻa</em> (also known as <em>Kūmau</em>, <em>Fuesemagut</em>, North Star, or Polaris) makes with the horizon. 
     </p>
-      <!-- <p>
-        Names of Polaris (cannot find sources): "Litokne Kabroa" in the Chuukese language, "Aelōñ in Majel" in Marshallese, and "Ulluch Palau" in Palauan.
-        Wenenwenenfuhmwaket in Polowat
-      </p> -->
-
     <image xml:id="angles-Hokupaa" width="100%">
       <latex-image>
         \begin{tikzpicture}[scale=6]
@@ -30,20 +19,14 @@
       </latex-image>
     </image>
     <p>
-      When voyaging,
-      knowing correct angles can be the difference between finding and missing your destination.
-      Navigators pay close attention to angles on the Hawaiian Star Compass to determine where
-      celestial bodies enter and exit the sky as well as where wind and current come from.
-      In this section,
-      we will examine the properties of angles and their measure.
+      During voyages, knowing the correct angles can make the difference between reaching your destination or missing it. Navigators carefully observe angles on the Hawaiian Star Compass to determine the entry and exit points of celestial bodies in the sky, as well as the direction of wind and current. In this section, we will explore the properties of angles and their measure.
     </p>
     <definition>
       <statement>
-        <p> A <term>ray</term>
-          <idx>
-            <h>ray</h>
-          </idx> is a part of a line that begins at a point <m>O</m> and
-          extends in one direction. </p>
+        <p> 
+          A <term>ray</term><idx><h>ray</h></idx> is a part of a line that begins at a point <m>O</m> and
+          extends in one direction.
+        </p>
         <image xml:id="fig-ray" width="85%">
           <latex-image>
             \begin{tikzpicture}
@@ -58,20 +41,9 @@
     </definition>
     <definition>
       <statement>
-        <p> We can create an <term>angle</term><idx>
-            <h>angle</h>
-          </idx>, <m>\theta</m>, by rotating rays. 
-        First, we begin with two rays lying on top of each other and beginning at <m>O</m>. 
-        We let one ray be fixed and will rotate the second ray about the point <m>O</m>. 
-        The ray that is fixed is called the <term>initial
-          side</term>
-          <idx>
-            <h>initial side</h>
-          </idx> 
-        and the ray that is rotated is called the <term>terminal side</term>
-          <idx>
-            <h>terminal side</h>
-          </idx>. 
+        <p>
+          We can create an <term>angle</term><idx><h>angle</h></idx>, <m>\theta</m>, by rotating rays. First, we begin with two rays lying on top of each other and beginning at <m>O</m>. We let one ray be fixed and will rotate the second ray about the point <m>O</m>. The ray that is fixed is called the <term>initial
+          side</term><idx><h>initial side</h></idx> and the ray that is rotated is called the <term>terminal side</term><idx><h>terminal side</h></idx>. 
         </p>
         <image xml:id="fig-initial-terminal-side" width="50%">
           <latex-image>
@@ -90,27 +62,19 @@
       </statement>
     </definition>
     <remark>
-      <p> Greek letters are often used to measure angles. The Greek letters commonly used are <m>
-        \theta</m>, <m>\phi</m>, <m>\alpha</m>, <m>\beta</m>, and <m>\gamma</m>. </p>
+      <p>
+        Angles are often measured using Greek letters. The commonly used Greek letters include <m>\theta</m>, <m>\phi</m>, <m>\alpha</m>, <m>\beta</m>, and <m>\gamma</m>.
+      </p>
     </remark>
   </introduction>
   <subsection>
     <title>Degree</title>
-    <p> The <term>measure</term>
-      <idx>
-        <h>measure</h>
-      </idx> of an angle is the amount of rotation from the initial side to
-      the terminal side. One unit of measuring angles is the degree. One <term>degree</term>, <idx>
-        <h>degree</h>
-      </idx> denoted by <m>1^{\circ}</m>, is <m>\frac{1}{360}</m> of a complete circular
-      revolution, so one full revolution is <m>360^{\circ}</m>. </p>
-    <p> Since the Hawaiian Star Compass has 32 houses, we see that each house has <m>
-      \frac{360^{\circ}}
-        {32}=11.25^{\circ}</m>. If we assume due East corresponds to <m>0^{\circ}</m> and the center
-      of the House of Hikina points due East, the border between Hikina and Lā Koʻolau will be half
-      the angle of the house, <m>\frac{11.25^{\circ}}{2}=5.625^{\circ}</m>. The angles for the
-      remaining boundaries on the Hawaiian Star Compass are shown in <xref
-        ref="star-compass-with-angles">Figure</xref>. </p>
+    <p>
+      The <term>measure</term><idx><h>measure</h></idx> of an angle is the amount of rotation from the initial side to the terminal side. One unit of measuring angles is the degree. One <term>degree</term>, <idx><h>degree</h></idx> denoted by <m>1^{\circ}</m>, is <m>\frac{1}{360}</m> of a complete circular revolution, so one full revolution is <m>360^{\circ}</m>.
+    </p>
+    <p>
+      The Hawaiian Star Compass consists of 32 houses, each spanning <m>11.25^{\circ}</m> (<m>\frac{360^{\circ}}{32}</m>). Assuming due East corresponds to <m>0^{\circ}</m> and the center of the House of Hikina points due East, the border between Hikina and Lā Koʻolau will be half the angle of the house, <m>5.625^{\circ}</m> (<m>\frac{11.25^{\circ}}{2}</m>). The angles for the other boundaries on the Hawaiian Star Compass are shown in <xref ref="star-compass-with-angles">Figure</xref>.
+    </p>
     <figure xml:id="star-compass-with-angles">
       <caption>The Star Compass with the angles indicating the boundaries for each House.</caption>
       <image xml:id="fig-star-compass-with-angles">
@@ -118,10 +82,10 @@
           \begin{tikzpicture}[scale=5.3,cap=round,>=latex]
           % draw the coordinates
           \draw[&lt;-,dashed] (-1.2,0) -- (-0.96,0);
-          \draw[dashed] (-0.46,0) -- (0.66,0);
+          \draw[dashed] (-0.36,0) -- (0.6,0);
           \draw[->,dashed] (0.96,0) -- (1.2,0);
           \draw[&lt;-,dashed] (0,-1.2) -- (0,-0.96);
-          \draw[dashed] (0,-0.69) -- (0,0.69);
+          \draw[dashed] (0,-0.65) -- (0,0.63);
           \draw[->,dashed] (0,0.96) -- (0,1.2);
           % draw the unit circle
           \draw[thick] (0cm,0cm) circle(1cm);
@@ -153,92 +117,6 @@
           % draw each angle in degrees
           \draw (\x:1.2cm) node[rotate=\x] {$\x^\circ$};
           }
-          \foreach \x/\xtext in {
-          11.25/L\={a},
-          22.5/`\={A}ina,
-          33.75/Noio,
-          45/Manu,
-          56.25/N\={a}lani,
-          67.5/N\={a} Leo,
-          78.75/Haka,
-          281.25/Haka,
-          292.5/N\={a} Leo,
-          303.75/N\={a}lani,
-          315/Manu,
-          326.25/Noio,
-          337.5/`\={A}ina,
-          348.75/L\={a}
-          }
-          \draw[left] (\x:0.98) node[rotate=\x] {\xtext};
-          \foreach \x/\xtext in {
-          101.25/Haka,
-          112.5/N\={a} Leo,
-          123.75/N\={a}lani,
-          135/Manu,
-          146.25/Noio,
-          157.5/`\={A}ina,
-          168.75/L\={a},
-          191.25/L\={a},
-          202.5/`\={A}ina,
-          213.75/Noio,
-          225/Manu,
-          236.25/N\={a}lani,
-          247.5/N\={a} Leo,
-          258.75/Haka
-          }
-          \draw[right] (\x:0.98) node[rotate=180+\x] {\xtext};
-          \draw (0,0) pic {iwa={0.53}};
-          \end{tikzpicture}
-        </latex-image>
-      </image>
-    </figure>
-    <p>
-      ***Now we will look at the Hawaiian Star Compass where the angles correspond to the azmuth***
-    </p>
-    <figure xml:id="star-compass-with-heading-angles">
-      <caption>The Star Compass with the angles indicating the boundaries for each House.</caption>
-      <image xml:id="fig-star-compass-with-heading-angles">
-        <latex-image>
-          \begin{tikzpicture}[scale=5.3,cap=round,>=latex]
-          % draw the coordinates
-          \draw[&lt;-,dashed] (-1.2,0) -- (-0.96,0);
-          \draw[dashed] (-0.46,0) -- (0.66,0);
-          \draw[->,dashed] (0.96,0) -- (1.2,0);
-          \draw[&lt;-,dashed] (0,-1.2) -- (0,-0.96);
-          \draw[dashed] (0,-0.69) -- (0,0.69);
-          \draw[->,dashed] (0,0.96) -- (0,1.2);
-          % draw the unit circle
-          \draw[thick] (0cm,0cm) circle(1cm);
-          \draw[left] (0:0.98) node{\large HIKINA};
-          \draw[left] (90:0.98) node[rotate=90] {\large `\={A}KAU};
-          \draw[right] (180:0.98cm) node{\large KOMOHANA};
-          \draw[left] (270:0.98) node[rotate=-90] {\large HEMA};
-          \foreach \x in {5.625,16.875,...,90} {
-          % lines from center to point
-          \draw[gray] (0cm,0cm) -- (\x:1cm);% node[fill=white,left,sloped] {$\x^\circ$};
-          % dots at each point
-          \filldraw[black] (\x:1cm) circle(0.4pt);
-          \draw (\x:1.2cm) node[rotate=\x] {${90-\x}^\circ$};
-          }
-          \foreach \x in {95.625,106.875,...,270} {
-          % lines from center to point
-          \draw[gray] (0cm,0cm) -- (\x:1cm);% node[fill=white,left,sloped] {$\x^\circ$};
-          % dots at each point
-          \filldraw[black] (\x:1cm) circle(0.4pt);
-          }
-          \foreach \x in {275.625,286.875,...,360} {
-          % lines from center to point
-          \draw[gray] (0cm,0cm) -- (\x:1cm);% node[fill=white,left,sloped] {$\x^\circ$};
-          % dots at each point
-          \filldraw[black] (\x:1cm) circle(0.4pt);
-          }
-          \foreach \x/\xtext in {
-            5.625/{$84.375^\circ$},
-            16.875/{$73.125^\circ$},
-            28.125/{$61.875^\circ$},
-            39.375/{$50.625^\circ$}
-            }
-            \draw[right] (\x:1.05) node[rotate=\x] {\xtext};
           \foreach \x/\xtext in {
           11.25/L\={a},
           22.5/`\={A}ina,
@@ -468,45 +346,51 @@
       <title>Determine the corresponding house and quadrant in the Star Compass</title>
       <statement>
         <p> Determine the quadrant in which each angle lies and name the corresponding House and
-          quadrant in the Star Compass (<xref ref="star-compass-with-angles">Figure</xref>). </p>
-        <task>
-          <p>
-            <m>140^{\circ}</m>
-          </p>
-          <solution>
-            <p> Since <m>90^{\circ}\lt 140^{\circ}\lt 180^{\circ}</m>, <m>140^{\circ}</m> lies in
-              Quadrant II, or Manu Ho&#699;olua. </p>
-          </solution>
-        </task>
-        <task>
-          <p>
-            <m>-770^{\circ}</m>
-          </p>
-          <solution>
-            <p> Since <m>-770^{\circ}\lt 0^{\circ}</m>, we first add <m>3\times360</m> to <m>
-              -770^{\circ}</m> to obtain an angle <m>0^{\circ}</m> and <m>360^{\circ}</m>, <me>
-              -770^{\circ}+3\times360^{\circ}=310^{\circ}
-              </me> So <m>
-              310^{\circ}</m> and <m>-770^{\circ}</m> are coterminal. Since <m>270^{\circ}\lt
-              310^{\circ}\lt 360^{\circ}</m>, <m>310^{\circ}</m> lies in Quadrant IV, or Manu
-              Malanai. </p>
-          </solution>
-        </task>
-        <task>
-          <p>
-            <m>923^{\circ}</m>
-          </p>
-          <solution>
-            <p> Since <m>923^{\circ}>360^{\circ}</m> we begin by subtracting <m>2\times360^{\circ}</m>
-              <me>
-              923^{\circ}-2\times360^{\circ}=203^{\circ}
-              </me> So <m>
-              203^{\circ}</m> and <m>923^{\circ }</m> are coterminal. Since <m>180^{\circ}\lt
-              203^{\circ}\lt 270^{\circ}</m>, <m>923^{\circ}</m> lies in Quadrant III or
-              &#699;&#256;ina Kona. </p>
-          </solution>
-        </task>
+          quadrant in the Star Compass (<xref ref="star-compass-with-angles">Figure</xref>). 
+        </p>
+        <ol>
+          <li>
+            <p>
+              <m>140^{\circ}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <p>
+                <m>-770^{\circ}</m>
+              </p>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>923^{\circ}</m>
+            </p>
+          </li>
+        </ol>
       </statement>
+      <solution>
+        <ol>
+          <li>
+            <p>
+              Since <m>90^{\circ}\lt 140^{\circ}\lt 180^{\circ}</m>, <m>140^{\circ}</m> lies in Quadrant II, or Manu Ho&#699;olua.
+            </p>
+          </li>
+          <li>
+            <p>
+              Since <m>-770^{\circ}\lt 0^{\circ}</m>, we first add <m>3\times360</m> to <m>-770^{\circ}</m> to obtain an angle <m>0^{\circ}</m> and <m>360^{\circ}</m>, 
+              <me>-770^{\circ}+3\times360^{\circ}=310^{\circ}</me>
+              So <m>310^{\circ}</m> and <m>-770^{\circ}</m> are coterminal. Since <m>270^{\circ}\lt 310^{\circ}\lt 360^{\circ}</m>, <m>310^{\circ}</m> lies in Quadrant IV, or Manu Malanai.
+            </p>
+          </li>
+          <li>
+            <p>
+              Since <m>923^{\circ}>360^{\circ}</m> we begin by subtracting <m>2\times360^{\circ}</m>
+              <me>923^{\circ}-2\times360^{\circ}=203^{\circ}</me>
+              So <m>203^{\circ}</m> and <m>923^{\circ }</m> are coterminal. Since <m>180^{\circ}\lt 203^{\circ}\lt 270^{\circ}</m>, <m>923^{\circ}</m> lies in Quadrant III or &#699;&#256;ina Kona.
+            </p>
+          </li>
+        </ol>
+      </solution>
     </example>
     <example>
       <title>Determine the corresponding quadrant given its location in the Star Compass</title>
@@ -545,6 +429,160 @@
         </image>
       </statement>
     </definition>
+    <remark>
+      <p>
+        In navigation, the direction a waʻa is pointed to is referred to as the <term>heading</term><idx>heading</idx>. Unlike in trigonometry, where it is conventional to define an angle in standard position, i.e., <m>0^{\circ}</m> lies along the positive <m>x</m>-axis, in navigation, North corresponds to a heading of <m>0^{\circ}</m> and positive angles are measured in a clockwise rotation (see <xref ref="heading-compass">Figure</xref>).
+      </p>
+      <figure xml:id="heading-compass">
+        <caption>The cardinal directions for headings are as follows: <m>0^{\circ}</m>  (or <m>360^{\circ}</m>) points north, <m>90^{\circ}</m> points east, <m>180^{\circ}</m> points south, and <m>270^{\circ}</m> points west.</caption>
+        <image width="67%" xml:id="fig-heading-compass">
+          <latex-image>
+            \begin{tikzpicture}[scale=3,cap=round,>=latex]
+            \draw[dashed] (0:0.7) -- (180:0.67);
+            \draw[dashed] (45:0.78) -- (225:0.7);
+            \draw[dashed] (90:0.8) -- (270:0.8);
+            \draw[dashed] (135:0.75) -- (315:0.8);
+            \draw[thick] (0,0) circle(1);
+            \draw[centered] (90:1.15) node[rotate=0] {North};
+            \draw[centered] (90:0.9) node[rotate=0] {$0^{\circ}$ or $360^{\circ}$};
+            \draw[centered] (45:1.15) node[rotate=0] {NE};
+            \draw[centered] (45:0.9) node[rotate=0] {$45^{\circ}$};
+            \draw[right] (0:1.05) node[rotate=0] {East};
+            \draw[left] (0:0.98) node[rotate=0] {$90^{\circ}$};
+            \draw[centered] (315:1.15) node[rotate=0] {SE};
+            \draw[centered] (315:0.9) node[rotate=0] {$90^{\circ}$};
+            \draw[centered] (270:1.15) node[rotate=0] {South};
+            \draw[centered] (270:0.9) node[rotate=0] {$180^{\circ}$};
+            \draw[centered] (225:1.15) node[rotate=0] {SW};
+            \draw[centered] (225:0.85) node[rotate=0] {$225^{\circ}$};
+            \draw[left] (180:1.02) node[rotate=0] {West};
+            \draw[right] (180:0.98) node[rotate=0] {$270^{\circ}$};
+            \draw[centered] (135:1.15) node[rotate=0] {NW};
+            \draw[centered] (135:0.85) node[rotate=0] {$315^{\circ}$};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </figure>
+      <p>
+        The Star Compass can now be presented in terms of heading angles, as demonstrated in <xref ref="star-compass-with-heading-angles">Figure</xref>.
+      </p>
+      <figure xml:id="star-compass-with-heading-angles">
+        <caption>The Star Compass is presented in terms of heading, with the angles indicating the boundaries for each House.</caption>
+        <image xml:id="fig-star-compass-with-heading-angles">
+          <latex-image>
+            \begin{tikzpicture}[scale=5.3,cap=round,>=latex]
+            % draw the coordinates
+            \draw[&lt;-,dashed] (-1.2,0) -- (-0.96,0);
+            \draw[dashed] (-0.36,0) -- (0.6,0);
+            \draw[->,dashed] (0.96,0) -- (1.2,0);
+            \draw[&lt;-,dashed] (0,-1.2) -- (0,-0.96);
+            \draw[dashed] (0,-0.65) -- (0,0.63);
+            \draw[->,dashed] (0,0.96) -- (0,1.2);
+            % draw the unit circle
+            \draw[thick] (0cm,0cm) circle(1cm);
+            \draw[left] (0:0.98) node{\large HIKINA};
+            \draw[left] (90:0.98) node[rotate=90] {\large `\={A}KAU};
+            \draw[right] (180:0.98cm) node{\large KOMOHANA};
+            \draw[left] (270:0.98) node[rotate=-90] {\large HEMA};
+            \foreach \x in {5.625,16.875,...,90} {
+            % lines from center to point
+            \draw[gray] (0cm,0cm) -- (\x:1cm);% node[fill=white,left,sloped] {$\x^\circ$};
+            % dots at each point
+            \filldraw[black] (\x:1cm) circle(0.4pt);
+            }
+            \foreach \x in {95.625,106.875,...,270} {
+            % lines from center to point
+            \draw[gray] (0cm,0cm) -- (\x:1cm);% node[fill=white,left,sloped] {$\x^\circ$};
+            % dots at each point
+            \filldraw[black] (\x:1cm) circle(0.4pt);
+            }
+            \foreach \x in {275.625,286.875,...,360} {
+            % lines from center to point
+            \draw[gray] (0cm,0cm) -- (\x:1cm);% node[fill=white,left,sloped] {$\x^\circ$};
+            % dots at each point
+            \filldraw[black] (\x:1cm) circle(0.4pt);
+            }
+            \foreach \x/\xtext in {
+              5.625/{$84.375^\circ$},
+              16.875/{$73.125^\circ$},
+              28.125/{$61.875^\circ$},
+              39.375/{$50.625^\circ$},
+              50.625/{$39.375^\circ$},
+              61.875/{$28.125^\circ$},
+              73.125/{$16.875^\circ$},
+              84.375/{$5.625^\circ$},
+              275.625/{$174.375^\circ$},
+              286.875/{$163.125^\circ$},
+              298.125/{$151.875^\circ$},
+              309.375/{$140.625^\circ$},
+              320.625/{$129.375^\circ$},
+              331.875/{$118.125^\circ$},
+              343.125/{$106.875^\circ$},
+              354.375/{$95.625^\circ$}
+              }
+              \draw[right] (\x:1.05) node[rotate=\x] {\xtext};
+            \foreach \x/\xtext in {
+              95.625/{$354.375^\circ$},
+              106.875/{$343.125^\circ$},
+              118.125/{$331.875^\circ$},
+              129.375/{$320.625^\circ$},
+              140.625/{$309.375^\circ$},
+              151.875/{$298.125^\circ$},
+              163.125/{$286.875^\circ$},
+              174.375/{$275.625^\circ$},
+              185.625/{$264.375^\circ$},
+              196.875/{$253.125^\circ$},
+              208.125/{$241.875^\circ$},
+              219.375/{$230.625^\circ$},
+              230.625/{$219.375^\circ$},
+              241.875/{$208.125^\circ$},
+              253.125/{$196.875^\circ$},
+              264.375/{$185.625^\circ$}
+              }
+              \draw[left] (\x:1.05) node[rotate=180+\x] {\xtext};
+            \foreach \x/\xtext in {
+            11.25/L\={a},
+            22.5/`\={A}ina,
+            33.75/Noio,
+            45/Manu,
+            56.25/N\={a}lani,
+            67.5/N\={a} Leo,
+            78.75/Haka,
+            281.25/Haka,
+            292.5/N\={a} Leo,
+            303.75/N\={a}lani,
+            315/Manu,
+            326.25/Noio,
+            337.5/`\={A}ina,
+            348.75/L\={a}
+            }
+            \draw[left] (\x:0.98) node[rotate=\x] {\xtext};
+            \foreach \x/\xtext in {
+            101.25/Haka,
+            112.5/N\={a} Leo,
+            123.75/N\={a}lani,
+            135/Manu,
+            146.25/Noio,
+            157.5/`\={A}ina,
+            168.75/L\={a},
+            191.25/L\={a},
+            202.5/`\={A}ina,
+            213.75/Noio,
+            225/Manu,
+            236.25/N\={a}lani,
+            247.5/N\={a} Leo,
+            258.75/Haka
+            }
+            \draw[right] (\x:0.98) node[rotate=180+\x] {\xtext};
+            \draw (0,0) pic {iwa={0.53}};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </figure>
+      <p>
+        Unless specified otherwise to use the heading angle (in which case, refer to <xref ref="star-compass-with-heading-angles">Figure</xref>), this book will use <xref ref="star-compass-with-angles">Figure</xref> for the angles of the Star Compass.
+      </p>
+    </remark>
   </subsection>
   <subsection>
     <title>Radian</title>
@@ -641,10 +679,7 @@
           \draw[blue] (171.9:1cm) arc (171.9:229.2:1cm) node[midway,left] {$r$};
           \draw[blue] (229.2:1cm) arc (229.2:286.5:1cm) node[midway,below] {$r$};
           \draw[blue] (286.5:1cm) arc (286.5:343.8:1cm) node[midway,below] {$r$};
-          \filldraw[blue] (1cm,0) circle(1pt) node[black, above right,yshift=0.1cm] {0 radians,
-          $2\pi\approx6.28$ radians};
-          %\filldraw[blue] (1cm,0) circle(1pt) node[black, above right,yshift=0.1cm, align=left] {0
-          radians,\\ $2\pi\approx6.28$ radians (one rotation)};
+          \filldraw[blue] (1cm,0) circle(1pt) node[black, above right,yshift=0.1cm] {0 radians,$2\pi\approx6.28$ radians};
           \filldraw[blue] (57.3:1cm) circle(1pt) node[black, above right] {1 radian};
           \filldraw[blue] (114.6:1cm) circle(1pt) node[black, above left] {2 radians};
           \filldraw[blue] (171.9:1cm) circle(1pt) node[black, left] {3 radians};
