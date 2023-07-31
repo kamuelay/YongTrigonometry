@@ -10,124 +10,127 @@
     <title>Micronesia</title>
 
     <p>
-      Navigators in Micronesia utilize the paafu<idx><h>Star Compass</h><h>paafu</h></idx><idx>paafu</idx> mat or map (shown in <xref ref="paafu">Figure</xref>). It is often misunderstood and misinterpreted as a Star <q>Compass</q> due to its use of stars and constellations for direction finding. However, paafu serves a different purpose and is not equivalent to the cardinal directionality marked by compasses (North, South, East, and West). Instead, it is a learning and teaching tool designed to teach the locational positions of islands, locales, or canoes relative to other places. This is achieved by observing the rising and setting points of stars and constellations, which act as markers for different locations.
+      Navigators in Micronesia utilize the paafu<idx><h>Star Compass</h><h>paafu</h></idx><idx>paafu</idx> mat or map (shown in <xref ref="paafu-mat">Figure</xref>). It is often misunderstood and misinterpreted as a Star <q>Compass</q> due to its use of stars and constellations for direction finding. However, paafu serves a different purpose and is not equivalent to the cardinal directionality marked by compasses (North, South, East, and West). Instead, it is a learning and teaching tool designed to teach the locational positions of islands, locales, or canoes relative to other places. This is achieved by observing the rising and setting points of stars and constellations, which act as markers for different locations.
     </p>
-
-      <figure xml:id="paafu">
-    <caption>The paafu, or Micronesian Star Compass. Stars are identified using the Polowat dialect of the Chuukese language as it is used by members of the Weriyeng School of navigation.</caption>
-    <image xml:id="fig-paafu">
-      <latex-image>
-\begin{tikzpicture}[scale=4.25,cap=round,>=latex]
-       \node[above,align=center, text width=1.7cm] at (0,1.45) {{\Large Tan}  Rising};
-        \node[below,align=center, text width=1.7cm] at (0,-1.45) {{\Large Tolon}  Setting};
-
-        \draw[thick] (0cm,0cm) circle(1cm);
-        \draw[thick] (0cm,0cm) circle(1.1cm);
-        
-
-        \foreach \x in {5.625,16.875,...,90} {
-                \draw[gray] (\x:1.1cm) -- (\x:1cm);% node[fill=white,left,sloped] {$\x^\circ$};
-                }
-        \foreach \x in {95.625,106.875,...,270} {
-                \draw[gray] (\x:1.1cm) -- (\x:1cm);% node[fill=white,left,sloped] {$\x^\circ$};
-                
-        }
-        \foreach \x in {275.625,286.875,...,360} {
-                \draw[gray] (\x:1.1cm) -- (\x:1cm);% node[fill=white,left,sloped] {$\x^\circ$};
-        }
-
-        \foreach \x/\xtext in {
-            0/\footnotesize Crux at Meridian,
-            11.25/\footnotesize Crux Rising at $45^{\circ}$,
-            22.5/\footnotesize Rising Crux,
-            33.75/\footnotesize Shaula,
-            45/\footnotesize Antares,
-            56.25/\footnotesize Gamma Corvus,
-            67.5/\footnotesize Orion's Belt,
-            78.75/\footnotesize Beta Aquila,
-            90/\footnotesize Altair,
-            270/\footnotesize Altar,
-            281.25/\footnotesize Beta Aquila,
-            292.5/\footnotesize Orion's Belta,
-            303.75/\footnotesize Gamma Corvus,
-            315/\footnotesize Antares,
-            326.25/\footnotesize Shaula,
-            337.5/\footnotesize Setting Crux,
-            348.75/\footnotesize Crux Setting at $45^{\circ}$
-            }
-            \draw[left] (\x:0.98cm) node[rotate=\x] {\xtext};
-            
-
-        \foreach \x/\xtext in {
-            0/\small Wenenwenenup,
-            11.25/\small Machemeas,
-            22.5/\small Tan Up,
-            33.75/\small Maharuw,
-            45/\small Tumur,
-            56.25/\small Harapwel,
-            67.5/\small Oluol,
-            78.75/\small Paior,
-            90/\small Mailap,
-            270/\small Mailap,
-            281.25/\small Paior,
-            292.5/\small Oluol,
-            303.75/\small Harapwel,
-            315/\small Tumur,
-            326.25/\small Maharuw,
-            337.5/\small Tolon Up,
-            348.75/\small Machemeas
-            }
-            \draw[right] (\x:1.12cm) node[rotate=\x,text width=2.7cm] {\xtext};
-            
-        \foreach \x/\xtext in {
-            101.25/\footnotesize Gamma Aquila,
-            112.5/\footnotesize Aldebaran,
-            123.75/\footnotesize Pleiades,
-            135/\footnotesize Vega,
-            146.25/\footnotesize Alpha Cassiopeia,
-            157.5/\footnotesize Alpha Ursa Major,
-            168.75/\footnotesize Beta Ursa Minor,
-            180/\footnotesize Polaris,
-            191.25/\footnotesize Beta Ursa Minor,
-            202.5/\footnotesize Alpha Ursa Major,
-            213.75/\footnotesize Alpha Cassiopeia,
-            225/\footnotesize Vega,
-            236.25/\footnotesize Pleiades,
-            247.5/\footnotesize Aldebaran,
-            258.75/\footnotesize Gamma Aquila
-            }
-            \draw[right] (\x:0.98cm) node[rotate=180+\x] {\xtext};
-            
-        \foreach \x/\xtext in {
-            101.25/\small Paiefung,
-            112.5/\small Un, 
-            123.75/\small Mwarikar,
-            135/\small Mol,
-            146.25/\small Ukinik,
-            157.5/\small Welo,
-            168.75/\small Mailapenefung,
-            180/\small Wenenwenenfuhmwaket,
-            191.25/\small Mailapenefung,
-            202.5/\small Welo,
-            213.75/\small Ukinik,
-            225/\small Mol,
-            236.25/\small Mwarikar,
-            247.5/\small Un,
-            258.75/\small Paiefung
-            }
-            \draw[left] (\x:1.12cm) node[rotate=180+\x] {\xtext};
-            \draw (0,0) pic {micronesian-canoe={waacolor}{0}{0.45}};
-
-      \end{tikzpicture}
-</latex-image>
-    </image>
+    <figure xml:id="paafu-mat">
+      <caption>Paafu mat or map - Photo courtesy of Kānehūnāmoku Voyaging Academy</caption>
+      <image source="paafu-mat.jpg"/>
     </figure>
     <p>
-      A constellation is a cluster of stars whose shapes and meanings reflect and carry cultural significance. In modern society, a well-known cluster of stars in the southern hemisphere, shaped like a cruciform, is commonly referred to as the <q>Southern Cross.</q> However, for the Polowatese and other islanders from the Central Carolines region in the western Pacific islands, this same constellation resembles the triggerfish Pup, and so it is named accordingly.
+      A constellation is a cluster of stars whose shapes and meanings reflect and carry cultural significance. In modern society, a well-known cluster of stars in the southern hemisphere, shaped like a cruciform, is commonly referred to as the <q>Southern Cross.</q> However, for the Polowatese and other islanders from the Central Carolines region in the western Pacific islands, this same constellation resembles the triggerfish, and so it is named accordingly.
     </p>
     <p>
-      In the Central Carolines, the general location in the celestial sky where stars appear to rise after sundown is referred to as <q>tan.</q> This term is often mistakenly translated as <q>east</q> due to the modern association of stars (like the sun) with <q>rising</q> in the east. However, it's important to note that <q>tan</q> means <q>rising</q> and not <q>Eastward.</q>
+      In the Central Carolines, the general location in the celestial sky where stars appear to rise after sundown is referred to as <q>tan.</q> This term is often mistakenly translated as <q>east</q> due to the modern association of stars (like the sun) with <q>rising</q> in the east. However, it's important to note that <q>tan</q> means <q>rising</q> and not <q>eastward.</q>
     </p>
+    <figure xml:id="paafu">
+      <caption>The paafu, or Micronesian Star Compass. Stars are identified using the Polowat dialect of the Chuukese language as it is used by members of the Weriyeng School of navigation.</caption>
+      <image xml:id="fig-paafu">
+        <latex-image>
+  \begin{tikzpicture}[scale=4.25,cap=round,>=latex]
+         \node[above,align=center, text width=1.7cm] at (0,1.45) {{\Large Tan}  Rising};
+          \node[below,align=center, text width=1.7cm] at (0,-1.45) {{\Large Tolon}  Setting};
+  
+          \draw[thick] (0cm,0cm) circle(1cm);
+          \draw[thick] (0cm,0cm) circle(1.1cm);
+          
+  
+          \foreach \x in {5.625,16.875,...,90} {
+                  \draw[gray] (\x:1.1cm) -- (\x:1cm);% node[fill=white,left,sloped] {$\x^\circ$};
+                  }
+          \foreach \x in {95.625,106.875,...,270} {
+                  \draw[gray] (\x:1.1cm) -- (\x:1cm);% node[fill=white,left,sloped] {$\x^\circ$};
+                  
+          }
+          \foreach \x in {275.625,286.875,...,360} {
+                  \draw[gray] (\x:1.1cm) -- (\x:1cm);% node[fill=white,left,sloped] {$\x^\circ$};
+          }
+  
+          \foreach \x/\xtext in {
+              0/\footnotesize Crux at Meridian,
+              11.25/\footnotesize Crux Rising at $45^{\circ}$,
+              22.5/\footnotesize Rising Crux,
+              33.75/\footnotesize Shaula,
+              45/\footnotesize Antares,
+              56.25/\footnotesize Gamma Corvus,
+              67.5/\footnotesize Orion's Belt,
+              78.75/\footnotesize Beta Aquila,
+              90/\footnotesize Altair,
+              270/\footnotesize Altar,
+              281.25/\footnotesize Beta Aquila,
+              292.5/\footnotesize Orion's Belta,
+              303.75/\footnotesize Gamma Corvus,
+              315/\footnotesize Antares,
+              326.25/\footnotesize Shaula,
+              337.5/\footnotesize Setting Crux,
+              348.75/\footnotesize Crux Setting at $45^{\circ}$
+              }
+              \draw[left] (\x:0.98cm) node[rotate=\x] {\xtext};
+              
+  
+          \foreach \x/\xtext in {
+              0/\small Wenenwenenup,
+              11.25/\small Machemeas,
+              22.5/\small Tan Up,
+              33.75/\small Maharuw,
+              45/\small Tumur,
+              56.25/\small Harapwel,
+              67.5/\small Oluol,
+              78.75/\small Paior,
+              90/\small Mailap,
+              270/\small Mailap,
+              281.25/\small Paior,
+              292.5/\small Oluol,
+              303.75/\small Harapwel,
+              315/\small Tumur,
+              326.25/\small Maharuw,
+              337.5/\small Tolon Up,
+              348.75/\small Machemeas
+              }
+              \draw[right] (\x:1.12cm) node[rotate=\x,text width=2.7cm] {\xtext};
+              
+          \foreach \x/\xtext in {
+              101.25/\footnotesize Gamma Aquila,
+              112.5/\footnotesize Aldebaran,
+              123.75/\footnotesize Pleiades,
+              135/\footnotesize Vega,
+              146.25/\footnotesize Alpha Cassiopeia,
+              157.5/\footnotesize Alpha Ursa Major,
+              168.75/\footnotesize Beta Ursa Minor,
+              180/\footnotesize Polaris,
+              191.25/\footnotesize Beta Ursa Minor,
+              202.5/\footnotesize Alpha Ursa Major,
+              213.75/\footnotesize Alpha Cassiopeia,
+              225/\footnotesize Vega,
+              236.25/\footnotesize Pleiades,
+              247.5/\footnotesize Aldebaran,
+              258.75/\footnotesize Gamma Aquila
+              }
+              \draw[right] (\x:0.98cm) node[rotate=180+\x] {\xtext};
+              
+          \foreach \x/\xtext in {
+              101.25/\small Paiefung,
+              112.5/\small Un, 
+              123.75/\small Mwarikar,
+              135/\small Mol,
+              146.25/\small Ukinik,
+              157.5/\small Welo,
+              168.75/\small Mailapenefung,
+              180/\small Wenenwenenfuhmwaket,
+              191.25/\small Mailapenefung,
+              202.5/\small Welo,
+              213.75/\small Ukinik,
+              225/\small Mol,
+              236.25/\small Mwarikar,
+              247.5/\small Un,
+              258.75/\small Paiefung
+              }
+              \draw[left] (\x:1.12cm) node[rotate=180+\x] {\xtext};
+              \draw (0,0) pic {micronesian-canoe={waacolor}{0}{0.45}};
+  
+        \end{tikzpicture}
+  </latex-image>
+      </image>
+      </figure>
     <p>
       <xref ref="paafu">Figure</xref> orients the cardinal direction known as <q>east</q> at the top of the page, and so the top half of this diagram is also identified as <q>tan</q> – where stars appear to rise. The diagram illustrates the apparent path of stars across the sky each night and day (though most stars are not visible during the day) and throughout a year. In this system, the rising and presence of specific stars mark months, and these same stars will eventually set at a point horizontally opposite to where they rose. This point corresponds to the cardinal direction known as <q>west,</q> which is referred to as <q>tolon</q> – the area where the stars <q>set</q> or go down.
     </p>
@@ -138,7 +141,7 @@
       Paafu can also be used to identify the direction in which moving objects, such as canoes, or creatures like birds, fish, and humans, are heading or coming from. This version of paafu utilizes the Polowat dialect of the Chuukese language, as used by members of the Weriyeng School of navigation.
     </p>
  <table xml:id="tab_paafu">
-    <title>Star and constellation names in order of rising during sailing season in Polowat (Third week of March).</title>
+    <caption>Star and constellation names in order of rising during sailing season in Polowat (Third week of March).</caption>
     <tabular>
       <row bottom="minor">
         <cell></cell>
@@ -178,7 +181,9 @@
       </row>
       <row>
         <cell>Machemeas [Matche-may-ess] </cell>
-        <cell> Crux or S. Cross at <m>45^{\circ}</m>.<aside>The <q>Tan</q> prefix is not used for this position, because it is no longer rising</aside></cell>
+        <cell> Crux or S. Cross at <m>45^{\circ}</m>.<fn>
+          The <q>Tan</q> prefix is not used for this position, because it is no longer rising
+          </fn></cell>
       </row>
       <row>
         <cell>Tan Welo [Well-Ah] </cell>
@@ -354,9 +359,9 @@
         <cell></cell>
         <cell>Star Compass</cell>
         <cell>32 Point Compass</cell>
+        <cell></cell>
       </row>
       <row bottom="minor">
-        <cell></cell>
         <cell></cell>
         <cell></cell>
         <cell></cell>
@@ -373,7 +378,6 @@
         <cell>Name</cell>
       </row>
       <row bottom="minor">
-        <cell></cell>
         <cell></cell>
         <cell></cell>
         <cell></cell>
@@ -516,7 +520,6 @@
         <cell></cell>
         <cell></cell>
         <cell></cell>
-        <cell></cell>
       </row>
     </tabular>
   </table>
@@ -533,7 +536,6 @@
   <p>
     Each house on the star compass is given a name. The corresponding houses in the east and west share the same name. Starting from the east or west and moving northwards and southwards, the first house on either side of Hikina (East) and Komohana (West) is called <em>Lā</em> (Sun). It is followed by <em>ʻĀina</em> (Land), <em>Noio</em> (Tern), <em>Manu</em> (Bird), <em>Nālani</em> (Heavens), <em>Nā Leo</em> (Voices), and <em>Haka</em> (Empty). The 32 houses in the Hawaiian Star Compass correspond to the points of the 32-wind compass rose (<xref ref="tab_compass">Table</xref>). Celestial bodies move along parallel paths across the sky from East to West, rising and setting in the same house, remaining in its hemisphere (<xref ref="fig_celestial-sphere">Figure</xref>).
   </p>
-  
   <p>
     For example, if a star arrives in the Koʻolau (northeastern) quadrant in the star house ʻĀina, it will arc overhead, staying in the northern hemisphere, and enter the horizon in the same house it arrived in, ʻĀina, but in the Hoʻolua (northwestern) quadrant (see Figure <xref ref="fig_celestial-sphere"/>). Similarly, if a star arrives in the Malanai (southeastern) quadrant in the house Lā, it will remain in the southern hemisphere as it arcs overhead and enters the horizon in the house Lā in the Kona (southwestern) quadrant.
   </p>
@@ -566,7 +568,7 @@
     The stick charts serve as mental maps or navigational aids, allowing experienced navigators to visualize and recall the complex information while on their journeys. Navigators would memorize the stick charts, internalizing the knowledge embedded within them, enabling them to navigate the open ocean.
   </p>
   <p>
-    <figure width="75%" xml:id="marshallese-stick-chart">
+    <figure xml:id="marshallese-stick-chart">
       <caption>Marshallese stick chart.</caption>
       <image source="stick-chart.jpg"/>
     </figure>
