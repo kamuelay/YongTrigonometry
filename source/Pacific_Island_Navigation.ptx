@@ -10,7 +10,7 @@
     <title>Micronesia</title>
 
     <p>
-      Navigators in Micronesia utilize the paafu<idx><h>Star Compass</h><h>paafu</h></idx><idx>paafu</idx> mat or map (shown in <xref ref="paafu-mat">Figure</xref>). It is often misunderstood and misinterpreted as a Star <q>Compass</q> due to its use of stars and constellations for direction finding. However, paafu serves a different purpose and is not equivalent to the cardinal directionality marked by compasses (North, South, East, and West). Instead, it is a learning and teaching tool designed to teach the locational positions of islands, locales, or canoes relative to other places. This is achieved by observing the rising and setting points of stars and constellations, which act as markers for different locations.
+      Navigators in Micronesia utilize the <em>paafu</em><idx><h>Star Compass</h><h>paafu</h></idx><idx>paafu</idx> mat or map (shown in <xref ref="paafu-mat">Figure</xref>). It is often misunderstood and misinterpreted as a Star <q>Compass</q> due to its use of stars and constellations for direction finding. However, paafu serves a different purpose and is not equivalent to the cardinal directionality marked by compasses (North, South, East, and West). Instead, it is a learning and teaching tool designed to teach the locational positions of islands, locales, or canoes relative to other places. This is achieved by observing the rising and setting points of stars and constellations, which act as markers for different locations.
     </p>
     <figure xml:id="paafu-mat">
       <caption>Paafu mat or map - Photo courtesy of Kānehūnāmoku Voyaging Academy</caption>
@@ -20,7 +20,7 @@
       A constellation is a cluster of stars whose shapes and meanings reflect and carry cultural significance. In modern society, a well-known cluster of stars in the southern hemisphere, shaped like a cruciform, is commonly referred to as the <q>Southern Cross.</q> However, for the Polowatese and other islanders from the Central Carolines region in the western Pacific islands, this same constellation resembles the triggerfish, and so it is named accordingly.
     </p>
     <p>
-      In the Central Carolines, the general location in the celestial sky where stars appear to rise after sundown is referred to as <q>tan.</q> This term is often mistakenly translated as <q>east</q> due to the modern association of stars (like the sun) with <q>rising</q> in the east. However, it's important to note that <q>tan</q> means <q>rising</q> and not <q>eastward.</q>
+      In the Central Carolines, the general location in the celestial sky where stars appear to rise after sundown is referred to as <q><em>tan</em>.</q> This term is often mistakenly translated as <q>east</q> due to the modern association of stars (like the sun) with <q>rising</q> in the east. However, it's important to note that <q>tan</q> means <q>rising</q> and not <q>eastward.</q>
     </p>
     <figure xml:id="paafu">
       <caption>The paafu, or Micronesian Star Compass. Stars are identified using the Polowat dialect of the Chuukese language as it is used by members of the Weriyeng School of navigation.</caption>
@@ -132,218 +132,231 @@
       </image>
       </figure>
     <p>
-      <xref ref="paafu">Figure</xref> orients the cardinal direction known as <q>east</q> at the top of the page, and so the top half of this diagram is also identified as <q>tan</q> – where stars appear to rise. The diagram illustrates the apparent path of stars across the sky each night and day (though most stars are not visible during the day) and throughout a year. In this system, the rising and presence of specific stars mark months, and these same stars will eventually set at a point horizontally opposite to where they rose. This point corresponds to the cardinal direction known as <q>west,</q> which is referred to as <q>tolon</q> – the area where the stars <q>set</q> or go down.
+      <xref ref="paafu">Figure</xref> orients the cardinal direction known as <q>east</q> at the top of the page, and so the top half of this diagram is also identified as <q>tan</q> – where stars appear to rise. The diagram illustrates the apparent path of stars across the sky each night and day (though most stars are not visible during the day) and throughout a year. In this system, the rising and presence of specific stars mark months, and these same stars will eventually set at a point horizontally opposite to where they rose. This point corresponds to the cardinal direction known as <q>west,</q> which is referred to as <q><em>tolon</em></q> – the area where the stars <q>set</q> or go down.
     </p>
     <p>
-      In the paafu <q>map</q> shown in <xref ref="paafu">Figure</xref>, a canoe is placed at the center, and the star called Mailap (Altair) marks due east. The time and location when Mailap rises are referred to as <q>Tan Mailap</q> (rising Mailap), while the time and place it sets are referred to as <q>Tolon Mailap</q> (setting Mailap). The map's orientation places east, or the rising points of the navigation or paafu stars, at the top of the circle, and west, or the setting points of these stars, at the bottom of the circle. As a map, paafu uses the rising and setting points of stars to mark places around a given locale, which is placed at the center of the circle (see <xref ref="tab_paafu">Table</xref>).
+      In the paafu <q>map</q> shown in <xref ref="paafu">Figure</xref>, a canoe is placed at the center, and the star called Mailap (Altair) marks due east. The time and location when Mailap rises are referred to as <q>Tan Mailap</q> (rising Mailap), while the time and place it sets are referred to as <q>Tolon Mailap</q> (setting Mailap). The map's orientation places east, or the rising points of the navigation or paafu stars, at the top of the circle, and west, or the setting points of these stars, at the bottom of the circle. As a map, paafu uses the rising and setting points of stars to mark places around a given locale, which is placed at the center of the circle. <xref ref="tab_paafu">Table</xref> displays the star and constellation names, provided in both Polowat and according to the International Astronomical Union, listed in the order of their rising during the third week of March in Polowat.
     </p>
+    <table xml:id="tab_paafu">
+      <title>Star and constellation names in Polowat</title>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row bottom="minor">
+          <cell>Polowat</cell>
+          <cell>International Astronomical Union</cell>
+        </row>
+        <row>
+          <cell>Wenenwenenfuhmwaket </cell>
+          <cell> Polaris (always above the horizon)</cell>
+        </row>
+        <row>
+          <cell>Tan Mwarikar  [Mahrah-ker] </cell>
+          <cell> Pleiades aka Seven Sisters</cell>
+        </row>
+        <row>
+          <cell>Tan Un  [Oon] </cell>
+          <cell> Aldebaran</cell>
+        </row>
+        <row>
+          <cell>Tan Uliul  [Ooh-lee-ool] </cell>
+          <cell> Orion’s Belt</cell>
+        </row>
+        <row>
+          <cell>Tan Harapwel  [Ah-rah-pwol] </cell>
+          <cell> Gamma Corvus</cell>
+        </row>
+        <row>
+          <cell>Tan Mailapenefang [My Lap in a Fang] </cell>
+          <cell> Beta Ursa Minor in Big Dipper</cell>
+        </row>
+        <row>
+          <cell>Tan Up [Oop]  </cell>
+          <cell> Crux or Southern Cross at Rising</cell>
+        </row>
+        <row>
+          <cell>Machemeas [Matche-may-ess] </cell>
+          <cell> Crux or S. Cross at <m>45^{\circ}</m> <fn>
+            The <q>Tan</q> prefix is not used for this position, because it is no longer rising
+            </fn></cell>
+        </row>
+        <row>
+          <cell>Tan Welo [Well-Ah] </cell>
+          <cell> Alpha Ursa Major in Big Dipper</cell>
+        </row>
+        <row>
+          <cell>Wenenwenenup  [Wehneh wehnen Oop] </cell>
+          <cell> Crux  or S. Cross at Meridian or upright </cell>
+        </row>
+        <row>
+          <cell>Tan Tumur  [Two More] </cell>
+          <cell> Antares or Scorpio’s tail</cell>
+        </row>
+        <row>
+          <cell>Tan Maharuw [Maa-Haa-Roo] </cell>
+          <cell> Shaula or Scorpio’s stinger</cell>
+        </row>
+        <row>
+          <cell>Tan Mol  [Mohl] </cell>
+          <cell> Vega</cell>
+        </row>
+        <row>
+          <cell>Tan Mailap [My Lap] </cell>
+          <cell> Altair</cell>
+        </row>
+        <row>
+          <cell>Tan Paiefung [Pie Efung] </cell>
+          <cell> Gamma Aquila</cell>
+        </row>
+        <row>
+          <cell>Tan Paior [Pie Or] </cell>
+          <cell> Beta Aquila</cell>
+        </row>
+        <row>
+          <cell>Tan Ukinik [Icky Nick] </cell>
+          <cell> Cassioepea</cell>
+        </row>
+              <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+    </table>
     <p>
       Paafu can also be used to identify the direction in which moving objects, such as canoes, or creatures like birds, fish, and humans, are heading or coming from. This version of paafu utilizes the Polowat dialect of the Chuukese language, as used by members of the Weriyeng School of navigation.
     </p>
- <table xml:id="tab_paafu">
-    <caption>Star and constellation names in order of rising during sailing season in Polowat (Third week of March).</caption>
-    <tabular>
-      <row bottom="minor">
-        <cell></cell>
-        <cell></cell>
-      </row>
-      <row bottom="minor">
-        <cell>Star and Constellation Names (Polowat)</cell>
-        <cell>International Astronomical Union</cell>
-      </row>
-      <row>
-        <cell>Wenenwenenfuhmwaket </cell>
-        <cell> Polaris (always above the horizon)</cell>
-      </row>
-      <row>
-        <cell>Tan Mwarikar  [Mahrah-ker] </cell>
-        <cell> Pleiades aka Seven Sisters</cell>
-      </row>
-      <row>
-        <cell>Tan Un  [Oon] </cell>
-        <cell> Aldebaran</cell>
-      </row>
-      <row>
-        <cell>Tan Uliul  [Ooh-lee-ool] </cell>
-        <cell> Orion’s Belt</cell>
-      </row>
-      <row>
-        <cell>Tan Harapwel  [Ah-rah-pwol] </cell>
-        <cell> Gamma Corvus</cell>
-      </row>
-      <row>
-        <cell>Tan Mailapenefang [My Lap in a Fang] </cell>
-        <cell> Beta Ursa Minor in Big Dipper</cell>
-      </row>
-      <row>
-        <cell>Tan Up [Oop]  </cell>
-        <cell> Crux or Southern Cross at Rising</cell>
-      </row>
-      <row>
-        <cell>Machemeas [Matche-may-ess] </cell>
-        <cell> Crux or S. Cross at <m>45^{\circ}</m>.<fn>
-          The <q>Tan</q> prefix is not used for this position, because it is no longer rising
-          </fn></cell>
-      </row>
-      <row>
-        <cell>Tan Welo [Well-Ah] </cell>
-        <cell> Alpha Ursa Major in Big Dipper</cell>
-      </row>
-      <row>
-        <cell>Wenenwenenup  [Wehneh wehnen Oop] </cell>
-        <cell> Crux  or S. Cross at Meridian or upright </cell>
-      </row>
-      <row>
-        <cell>Tan Tumur  [Two More] </cell>
-        <cell> Antares or Scorpio’s tail</cell>
-      </row>
-      <row>
-        <cell>Tan Maharuw [Maa-Haa-Roo] </cell>
-        <cell> Shaula or Scorpio’s stinger</cell>
-      </row>
-      <row>
-        <cell>Tan Mol  [Mohl] </cell>
-        <cell> Vega</cell>
-      </row>
-      <row>
-        <cell>Tan Mailap [My Lap] </cell>
-        <cell> Altair</cell>
-      </row>
-      <row>
-        <cell>Tan Paiefung [Pie Efung] </cell>
-        <cell> Gamma Aquila</cell>
-      </row>
-      <row>
-        <cell>Tan Paior [Pie Or] </cell>
-        <cell> Beta Aquila</cell>
-      </row>
-      <row>
-        <cell>Tan Ukinik [Icky Nick] </cell>
-        <cell> Cassioepea</cell>
-      </row>
-            <row bottom="minor">
-        <cell></cell>
-        <cell></cell>
-      </row>
-    </tabular>
-  </table>
+    
 
   </subsection>
   
   <subsection xml:id="subsec-Hawaii">
     <title>Hawaiʻi</title>
     <p>
-      With the aim of reviving wayfinding in Hawaiʻi, Nainoa Thompson journeyed to the island of Satawal in the Federated States of Micronesia to learn from the master navigator Mau Piailug, affectionately known as Papa Mau. Using this knowledge, Thompson adopted the paafu method, leading to the creation of the Hawaiian <em>Star Compass</em><idx><h>Star Compass</h><h>Hawaiian</h></idx>, also referred to as the <em>Kūkuluokalani</em><idx><h>Kūkuluokalani</h></idx> (<xref ref="star-compass-32-compass-rose">Figure</xref>).
-</p>
-<figure xml:id="star-compass-32-compass-rose">
-  <caption>Hawaiian Star Compass.</caption>
-  <image xml:id="fig-star-compass-32-compass-rose">
-    <latex-image>
-\begin{tikzpicture}[x=5.3cm,y=5.3cm,cap=round,>=latex]
-\draw[&lt;-,dashed] (-1.2,0) -- (-0.96,0);
-\draw[dashed] (-0.45,0) -- (0.65,0);
-\draw[->,dashed] (0.96,0) -- (1.2,0);
-\draw[&lt;-,dashed] (0,-1.2) -- (0,-0.96);
-\draw[dashed] (0,-0.7) -- (0,0.7);
-\draw[->,dashed] (0,0.96) -- (0,1.2);
-\node[right] at (1.2,0) {\Large E};
-\node[above] at (0,1.2) {\Large N};
-\node[left] at (-1.2,0) {\Large W};
-\node[below] at (0,-1.2) {\Large S};
-\draw[thick] (0,0) circle(1 );
-\draw[thick] (0,0) circle(1.1 );
-\draw[left] (0:0.98) node{\large HIKINA};
-\draw[left] (90:0.98) node[rotate=90] {\large `&#256;KAU};
-\draw[right] (180:0.98) node{\large KOMOHANA};
-\draw[left] (270:0.98) node[rotate=-90] {\large HEMA};
-\draw (45:0.5 ) node[rotate=-45] {\huge Ko`olau};
-\draw (135:0.5 ) node[rotate=45] {\huge Ho`olua};
-\draw (225:0.5 ) node[rotate=315] {\huge Kona};
-\draw (-45:0.5 ) node[rotate=45] {\huge Malanai};
-\foreach \x in {5.625,16.875,...,90} {
-\draw[gray] (\x:1.1 ) -- (\x:1 );
-}
-\foreach \x in {95.625,106.875,...,270} {
-\draw[gray] (\x:1.1 ) -- (\x:1 );
-}
-\foreach \x in {275.625,286.875,...,360} {
-\draw[gray] (\x:1.1 ) -- (\x:1 );
-}
-\foreach \x/\xtext in {
-11.25/L&#257;,
-22.5/`&#256;ina,
-33.75/Noio,
-45/Manu,
-56.25/N&#257;lani,
-67.5/N&#257; Leo,
-78.75/Haka,
-281.25/Haka,
-292.5/N&#257; Leo,
-303.75/N&#257;lani,
-315/Manu,
-326.25/Noio,
-337.5/`&#256;ina,
-348.75/L&#257;
-}
-\draw[left] (\x:0.98 ) node[rotate=\x] {\xtext};
-\foreach \x/\xtext in {
-11.25/EbN,
-22.5/ENE,
-33.75/NEbE,
-45/NE,
-56.25/NEbN,
-67.5/NNE,
-78.75/NbE,
-281.25/SbE,
-292.5/SSE,
-303.75/SEbS,
-315/SE,
-326.25/SEbE,
-337.5/ESE,
-348.75/EbS
-}
-\draw[right] (\x:1.12 ) node[rotate=\x] {\xtext};
-\foreach \x/\xtext in {
-101.25/Haka,
-112.5/N&#257; Leo,
-123.75/N&#257;lani,
-135/Manu,
-146.25/Noio,
-157.5/`&#256;ina,
-168.75/L&#257;,
-191.25/L&#257;,
-202.5/`&#256;ina,
-213.75/Noio,
-225/Manu,
-236.25/N&#257;lani,
-247.5/N&#257; Leo,
-258.75/Haka
-}
-\draw[right] (\x:0.98 ) node[rotate=180+\x] {\xtext};
-\foreach \x/\xtext in {
-101.25/NbW,
-112.5/NNW,
-123.75/NWbN,
-135/NW,
-146.25/NWbW,
-157.5/WNW,
-168.75/WbN,
-191.25/WbS,
-202.5/WSW,
-213.75/SWbW,
-225/SW,
-236.25/SWbS,
-247.5/SSW,
-258.75/SbW
-}
-\draw[left] (\x:1.12 ) node[rotate=180+\x] {\xtext};
-\draw (0,0) pic {iwa={0.1}};
-\end{tikzpicture}
-</latex-image>
-  </image>
-</figure>
+      With the aim of reviving wayfinding in Hawaiʻi, Nainoa Thompson journeyed to the island of Satawal in the Federated States of Micronesia to learn from master navigator Mau Piailug, affectionately known as Papa Mau. Using this knowledge, Thompson adopted the paafu method, leading to the creation of the Hawaiian Star Compass<idx><h>Star Compass</h><h>Hawaiian</h></idx>, also referred to as the <em>Kūkuluokalani</em><idx><h>Kūkuluokalani</h></idx> (<xref ref="star-compass-32-compass-rose">Figure</xref>).
+    </p>
+  <p>
+    In the star compass, featuring the figure of an ʻiwa or great frigatebird at its center, Thompson divides the visual horizon into 32 equidistant points around a circle, referred to as houses. Each house in the Hawaiian Star Compass represents a specific space on the horizon (<m>11.25^{\circ}</m>) where celestial bodies such as the sun, stars, moon, and planets rise and set. In the same way that we use addresses to locate homes, each celestial body has its own address represented by these houses.
+  </p>
+  <figure xml:id="star-compass-32-compass-rose">
+    <caption>Hawaiian Star Compass, also known as the Kūkuluokalani.</caption>
+    <image xml:id="fig-star-compass-32-compass-rose">
+      <latex-image>
+  \begin{tikzpicture}[x=5.3cm,y=5.3cm,cap=round,>=latex]
+  \draw[&lt;-,dashed] (-1.2,0) -- (-0.96,0);
+  \draw[dashed] (-0.45,0) -- (0.65,0);
+  \draw[->,dashed] (0.96,0) -- (1.2,0);
+  \draw[&lt;-,dashed] (0,-1.2) -- (0,-0.96);
+  \draw[dashed] (0,-0.7) -- (0,0.7);
+  \draw[->,dashed] (0,0.96) -- (0,1.2);
+  \node[right] at (1.2,0) {\Large E};
+  \node[above] at (0,1.2) {\Large N};
+  \node[left] at (-1.2,0) {\Large W};
+  \node[below] at (0,-1.2) {\Large S};
+  \draw[thick] (0,0) circle(1 );
+  \draw[thick] (0,0) circle(1.1 );
+  \draw[left] (0:0.98) node{\large HIKINA};
+  \draw[left] (90:0.98) node[rotate=90] {\large `&#256;KAU};
+  \draw[right] (180:0.98) node{\large KOMOHANA};
+  \draw[left] (270:0.98) node[rotate=-90] {\large HEMA};
+  \draw (45:0.5 ) node[rotate=-45] {\huge Ko`olau};
+  \draw (135:0.5 ) node[rotate=45] {\huge Ho`olua};
+  \draw (225:0.5 ) node[rotate=315] {\huge Kona};
+  \draw (-45:0.5 ) node[rotate=45] {\huge Malanai};
+  \foreach \x in {5.625,16.875,...,90} {
+  \draw[gray] (\x:1.1 ) -- (\x:1 );
+  }
+  \foreach \x in {95.625,106.875,...,270} {
+  \draw[gray] (\x:1.1 ) -- (\x:1 );
+  }
+  \foreach \x in {275.625,286.875,...,360} {
+  \draw[gray] (\x:1.1 ) -- (\x:1 );
+  }
+  \foreach \x/\xtext in {
+  11.25/L&#257;,
+  22.5/`&#256;ina,
+  33.75/Noio,
+  45/Manu,
+  56.25/N&#257;lani,
+  67.5/N&#257; Leo,
+  78.75/Haka,
+  281.25/Haka,
+  292.5/N&#257; Leo,
+  303.75/N&#257;lani,
+  315/Manu,
+  326.25/Noio,
+  337.5/`&#256;ina,
+  348.75/L&#257;
+  }
+  \draw[left] (\x:0.98 ) node[rotate=\x] {\xtext};
+  \foreach \x/\xtext in {
+  11.25/EbN,
+  22.5/ENE,
+  33.75/NEbE,
+  45/NE,
+  56.25/NEbN,
+  67.5/NNE,
+  78.75/NbE,
+  281.25/SbE,
+  292.5/SSE,
+  303.75/SEbS,
+  315/SE,
+  326.25/SEbE,
+  337.5/ESE,
+  348.75/EbS
+  }
+  \draw[right] (\x:1.12 ) node[rotate=\x] {\xtext};
+  \foreach \x/\xtext in {
+  101.25/Haka,
+  112.5/N&#257; Leo,
+  123.75/N&#257;lani,
+  135/Manu,
+  146.25/Noio,
+  157.5/`&#256;ina,
+  168.75/L&#257;,
+  191.25/L&#257;,
+  202.5/`&#256;ina,
+  213.75/Noio,
+  225/Manu,
+  236.25/N&#257;lani,
+  247.5/N&#257; Leo,
+  258.75/Haka
+  }
+  \draw[right] (\x:0.98 ) node[rotate=180+\x] {\xtext};
+  \foreach \x/\xtext in {
+  101.25/NbW,
+  112.5/NNW,
+  123.75/NWbN,
+  135/NW,
+  146.25/NWbW,
+  157.5/WNW,
+  168.75/WbN,
+  191.25/WbS,
+  202.5/WSW,
+  213.75/SWbW,
+  225/SW,
+  236.25/SWbS,
+  247.5/SSW,
+  258.75/SbW
+  }
+  \draw[left] (\x:1.12 ) node[rotate=180+\x] {\xtext};
+  \draw (0,0) pic {iwa={0.1}};
+  \end{tikzpicture}
+  </latex-image>
+    </image>
+  </figure>
+  <p>
+    The four cardinal points align with particular houses. Stars rise from the horizon called <em>Hikina</em> (<q>To Arrive</q>) or East and set on the horizon called <em>Komohana</em> (<q>To Enter</q>) or West. If you face Komohana (West) with your back towards Hikina (East), your right will point towards <em>ʻĀkau</em> (<q>Right</q>) or North, and your left will point towards <em>Hema</em> (<q>Left</q>) or South. The Hawaiian Star Compass is oriented with North at the top.
+  </p>
+  <p>
+    The star compass is divided into four quadrants, each named after winds in Hawaiʻi. <em>Koʻolau</em> is the Northeast quadrant named for the trade winds; <em>Hoʻolua</em> is the Northwest quadrant, <em>Kona</em> is the Southwest quadrant; and <em>Malanai</em> is the Southeast quadrant.
+  </p>
+  <p>
+    Each house on the star compass is given a name. The corresponding houses in the east and west share the same name. Starting from the east or west and moving northwards and southwards, the first house on either side of Hikina (East) and Komohana (West) is called <em>Lā</em> (Sun). It is followed by <em>ʻĀina</em> (Land), <em>Noio</em> (Tern), <em>Manu</em> (Bird), <em>Nālani</em> (Heavens), <em>Nā Leo</em> (Voices), and <em>Haka</em> (Empty). The 32 houses in the Hawaiian Star Compass correspond to the points of the 32-wind compass rose (<xref ref="tab_compass">Table</xref>).
+  </p>
   <table xml:id="tab_compass">
-    <title>The houses of the Hawaiian Star Compass and the corresponding points on the 32-wind compass rose.</title>
+    <title>The houses of the Hawaiian Star Compass and the corresponding points on the 32-wind compass rose.</title>>
     <tabular>
       <row bottom="minor">
         <cell></cell>
@@ -355,11 +368,9 @@
       </row>
       <row>
         <cell>Star Compass</cell>
-        <cell>32 Point Compass</cell>
-        <cell></cell>
+        <cell colspan="2">32 Point Compass</cell>
         <cell>Star Compass</cell>
-        <cell>32 Point Compass</cell>
-        <cell></cell>
+        <cell colspan="2">32 Point Compass</cell>
       </row>
       <row bottom="minor">
         <cell></cell>
@@ -523,21 +534,8 @@
       </row>
     </tabular>
   </table>
-
   <p>
-    In the star compass, featuring the figure of an ʻiwa or great frigatebird at its center, Thompson divides the visual horizon into 32 equidistant points around a circle, referred to as houses. Each house in the Hawaiian Star Compass represents a specific space on the horizon (<m>11.25^{\circ}</m>) where celestial bodies such as the sun, stars, moon, and planets rise and set. In the same way that we use addresses to locate homes, each celestial body has its own address represented by these houses.
-  </p>
-  <p>
-    The four cardinal points align with particular houses. Stars rise from the horizon called Hikina <em>Hikina</em> (<q>To Arrive</q>) or East and set on the horizon called <em>Komohana</em> (<q>To Enter</q>) or West.  If you face Komohana (West) with your back towards Hikina (East), your right will point towards <em>ʻĀkau</em> (<q>Right</q>) or North, and your left will point towards <em>Hema</em> (<q>Left</q>) or South. The Hawaiian Star Compass is oriented with North at the top.
-  </p>
-  <p>
-    The star compass is divided into four quadrants, each named after winds in Hawaiʻi. <em>Koʻolau</em> is the Northeast quadrant named for the trade winds; <em>Hoʻolua</em> is the Northwest quadrant, <em>Kona</em> is the Southwest quadrant; and <em>Malanai</em> is the Southeast quadrant.
-  </p>
-  <p>
-    Each house on the star compass is given a name. The corresponding houses in the east and west share the same name. Starting from the east or west and moving northwards and southwards, the first house on either side of Hikina (East) and Komohana (West) is called <em>Lā</em> (Sun). It is followed by <em>ʻĀina</em> (Land), <em>Noio</em> (Tern), <em>Manu</em> (Bird), <em>Nālani</em> (Heavens), <em>Nā Leo</em> (Voices), and <em>Haka</em> (Empty). The 32 houses in the Hawaiian Star Compass correspond to the points of the 32-wind compass rose (<xref ref="tab_compass">Table</xref>). Celestial bodies move along parallel paths across the sky from East to West, rising and setting in the same house, remaining in its hemisphere (<xref ref="fig_celestial-sphere">Figure</xref>).
-  </p>
-  <p>
-    For example, if a star arrives in the Koʻolau (northeastern) quadrant in the star house ʻĀina, it will arc overhead, staying in the northern hemisphere, and enter the horizon in the same house it arrived in, ʻĀina, but in the Hoʻolua (northwestern) quadrant (see Figure <xref ref="fig_celestial-sphere"/>). Similarly, if a star arrives in the Malanai (southeastern) quadrant in the house Lā, it will remain in the southern hemisphere as it arcs overhead and enters the horizon in the house Lā in the Kona (southwestern) quadrant.
+    Celestial bodies move along parallel paths across the sky from East to West, rising and setting in the same house, remaining in its hemisphere. For example, if a star arrives in the Koʻolau (northeastern) quadrant in the star house ʻĀina, it will arc overhead, staying in the northern hemisphere, and enter the horizon in the same house it arrived in, ʻĀina, but in the Hoʻolua (northwestern) quadrant (see Figure <xref ref="fig_celestial-sphere"/>). Similarly, if a star arrives in the Malanai (southeastern) quadrant in the house Lā, it will remain in the southern hemisphere as it arcs overhead and enters the horizon in the house Lā in the Kona (southwestern) quadrant.
   </p>
   <figure xml:id="fig_celestial-sphere">
     <caption>
@@ -555,8 +553,7 @@
 <subsection xml:id="subsec-marshall-islands">
   <title>Marshall Islands</title>
   <p>
-    The Marshallese people use stick charts<idx>stick chart</idx> as navigational tools. These stick charts are indeed constructed using a 
-    lattice-like structure made from curved and straight sticks, typically formed by tying together the midribs of coconut fronds. The curved sticks represent the islands and how they bend and refract the ocean swells, while the straight sticks symbolize the major wave patterns in the surrounding waters.
+    The Marshallese people use stick charts<idx>stick chart</idx> as navigational tools. These stick charts are  constructed using a lattice-like structure made from curved and straight sticks, typically formed by tying together the midribs of coconut fronds. The curved sticks represent the islands and how they bend and refract the ocean swells, while the straight sticks symbolize the major wave patterns in the surrounding waters.
   </p>
   <p>
     The shells placed on the sticks indicate the relative locations of islands within the Marshall Islands archipelago. These shells serve as markers, helping navigators remember the positions of specific islands along their voyages.
@@ -577,220 +574,221 @@
 <subsection xml:id="subsec-elsewhere-in-pacific">
   <title>Elsewhere in the Pacific</title>
   <p>
-    
-  </p>
-  <p>
     In addition to the star compass, many cultures across the Pacific use a <em>wind compass</em>. Similar to the star compass, the wind compass is also a mental construct.
   </p>
   <p>
     Other Pacific Island cultures have also adapted the modern Hawaiian Star Compass to their languages, as illustrated in <xref ref="other-pacific-star-compass-32-compass-rose">Figure</xref>.
   </p>
-
   <figure xml:id="other-pacific-star-compass-32-compass-rose">
     <caption>Examples of Star Compasses across the Pacific.</caption>
-  <sidebyside>
-  <figure xml:id="cook-island-star-compass-32-compass-rose"><idx><h>Star Compass</h><h>Cook Island</h></idx>
-    <caption>The Cook Islands.</caption>
-    <image xml:id="fig-cook-island-star-compass-32-compass-rose">
-      <latex-image>
-\begin{tikzpicture}[x=5.3cm,y=5.3cm,cap=round]
-\node[right] at (1.15,0) {\Large E};
-\node[above] at (0,1.15) {\Large N};
-\node[left] at (-1.15,0) {\Large W};
-\node[below] at (0,-1.15) {\Large S};
-\draw[thick] (0,0) circle(1 );
-\draw[thick] (0,0) circle(1.1 );
-\draw[left] (0:0.98) node{\large ITINGA};
-\draw[left] (90:0.98) node[rotate=90] {\large AKARUA};
-\draw[right] (180:0.98) node{\large OPUNGA};
-\draw[left] (270:0.98) node[rotate=-90] {\large TONGA};
-\draw (45:1.25 ) node[rotate=-45] {\huge Maoake};
-\draw (135:1.25 ) node[rotate=45] {\huge Tokerau};
-\draw (225:1.25 ) node[rotate=315] {\huge Iku};
-\draw (-45:1.25 ) node[rotate=45] {\huge Muri};
-\foreach \x in {5.625,16.875,...,90} {
-\draw[gray] (\x:1.1 ) -- (\x:1 );
-}
-\foreach \x in {95.625,106.875,...,270} {
-\draw[gray] (\x:1.1 ) -- (\x:1 );
-}
-\foreach \x in {275.625,286.875,...,360} {
-\draw[gray] (\x:1.1 ) -- (\x:1 );
-}
-\foreach \x/\xtext in {
-11.25/R&#257;,
-22.5/K&#257;ina,
-33.75/Ngoio,
-45/Manu,
-56.25/Ng&#257; Rangi,
-67.5/Ng&#257; Reo,
-78.75/Haka,
-281.25/Haka,
-292.5/Ng&#257; Reo,
-303.75/Ng&#257; Rangi,
-315/Manu,
-326.25/Ngoio,
-337.5/K&#257;ina,
-348.75/R&#257;
-}
-\draw[left] (\x:0.98 ) node[rotate=\x] {\xtext};
-\foreach \x/\xtext in {
-101.25/Haka,
-112.5/Ng&#257; Reo,
-123.75/Ng&#257; Rangi,
-135/Manu,
-146.25/Ngoio,
-157.5/K&#257;ina,
-168.75/R&#257;,
-191.25/R&#257;,
-202.5/K&#257;ina,
-213.75/Ngoio,
-225/Manu,
-236.25/Ng&#257; Rangi,
-247.5/Ng&#257; Reo,
-258.75/Haka
-}
-\draw[right] (\x:0.98 ) node[rotate=180+\x] {\xtext};
-\draw (0,0) pic {iwa={0.1}};
-\end{tikzpicture}
-</latex-image>
-    </image>
-  </figure>
-  <figure xml:id="maori-star-compass-32-compass-rose"><idx><h>Star Compass</h><h>M&#257;ori</h></idx>
-    <caption>The M&#257;ori.</caption>
-    <image xml:id="fig-maori-star-compass-32-compass-rose">
-      <latex-image>
-\begin{tikzpicture}[x=5.3cm,y=5.3cm,cap=round]
-\node[right] at (1.15,0) {\Large E};
-\node[above] at (0,1.15) {\Large N};
-\node[left] at (-1.15,0) {\Large W};
-\node[below] at (0,-1.15) {\Large S};
-\draw[thick] (0,0) circle(1 );
-\draw[thick] (0,0) circle(1.1 );
-\draw[left] (0:0.98) node{\large WHITINGA};
-\draw[left] (90:0.98) node[rotate=90] {\large RAKI};
-\draw[right] (180:0.98) node{\large TOMOKANGA};
-\draw[left] (270:0.98) node[rotate=-90] {\large TONGA};
-\draw (45:1.25 ) node[rotate=-45] {\huge Tokerau};
-\draw (135:1.25 ) node[rotate=45] {\huge Whakararo};
-\draw (225:1.25 ) node[rotate=315] {\huge Whakarunga};
-\draw (-45:1.25 ) node[rotate=45] {\huge Marangai};
-\foreach \x in {5.625,16.875,...,90} {
-\draw[gray] (\x:1.1 ) -- (\x:1 );
-}
-\foreach \x in {95.625,106.875,...,270} {
-\draw[gray] (\x:1.1 ) -- (\x:1 );
-}
-\foreach \x in {275.625,286.875,...,360} {
-\draw[gray] (\x:1.1 ) -- (\x:1 );
-}
-\foreach \x/\xtext in {
-11.25/R&#257;,
-22.5/K&#257;ina,
-33.75/Ngoi,
-45/Manu,
-56.25/Ng&#257; Rangi,
-67.5/Ng&#257; Reo,
-78.75/Haka,
-281.25/Haka,
-292.5/Ng&#257; Reo,
-303.75/Ng&#257; Rangi,
-315/Manu,
-326.25/Ngoi,
-337.5/K&#257;ina,
-348.75/R&#257;
-}
-\draw[left] (\x:0.98 ) node[rotate=\x] {\xtext};
-\foreach \x/\xtext in {
-101.25/Haka,
-112.5/Ng&#257; Reo,
-123.75/Ng&#257; Rangi,
-135/Manu,
-146.25/Ngoi,
-157.5/K&#257;ina,
-168.75/R&#257;,
-191.25/R&#257;,
-202.5/K&#257;ina,
-213.75/Ngoi,
-225/Manu,
-236.25/Ng&#257; Rangi,
-247.5/Ng&#257; Reo,
-258.75/Haka
-}
-\draw[right] (\x:0.98 ) node[rotate=180+\x] {\xtext};
-\draw (0,0) pic {iwa={0.1}};
-\end{tikzpicture}
-</latex-image>
-    </image>
-  </figure>
-  <figure xml:id="samoan-star-compass-32-compass-rose"><idx><h>Star Compass</h><h>S&#257;moan</h></idx>
-    <caption>The S&#257;moan.</caption>
-    <image xml:id="fig-samoan-star-compass-32-compass-rose">
-      <latex-image>
-\begin{tikzpicture}[x=5.3cm,y=5.3cm,cap=round]
-\node[right] at (1.15,0) {\Large E};
-\node[above] at (0,1.15) {\Large N};
-\node[left] at (-1.15,0) {\Large W};
-\node[below] at (0,-1.15) {\Large S};
-\draw[thick] (0,0) circle(1 );
-\draw[thick] (0,0) circle(1.1 );
-\draw[left] (0:0.98) node{\large SASA`E};
-\draw[left] (90:0.98) node[rotate=90] {\large MATU};
-\draw[right] (180:0.98) node{\large SISIFO};
-\draw[left] (270:0.98) node[rotate=-90] {\large TONGA};
-\draw (45:1.25 ) node[rotate=-45] {\huge Toelau};
-\draw (135:1.25 ) node[rotate=45] {\huge Lai};
-\draw (225:1.25 ) node[rotate=315] {\huge Tuaoloa};
-\draw (-45:1.25 ) node[rotate=45] {\huge Matau Upolu};
-\foreach \x in {5.625,16.875,...,90} {
-\draw[gray] (\x:1.1 ) -- (\x:1 );
-}
-\foreach \x in {95.625,106.875,...,270} {
-\draw[gray] (\x:1.1 ) -- (\x:1 );
-}
-\foreach \x in {275.625,286.875,...,360} {
-\draw[gray] (\x:1.1 ) -- (\x:1 );
-}
-\foreach \x/\xtext in {
-11.25/L&#257;,
-22.5/&#256;iga,
-33.75/Gogo,
-45/Manu,
-56.25/Tali`ilagi,
-67.5/Leo,
-78.75/Ata,
-281.25/Ata,
-292.5/Leo,
-303.75/Tali`ilagi,
-315/Manu,
-326.25/Gogo,
-337.5/&#256;iga,
-348.75/L&#257;
-}
-\draw[left] (\x:0.98 ) node[rotate=\x] {\xtext};
-\foreach \x/\xtext in {
-101.25/Ata,
-112.5/Leo,
-123.75/Tali`ilagi,
-135/Manu,
-146.25/Gogo,
-157.5/&#256;iga,
-168.75/L&#257;,
-191.25/L&#257;,
-202.5/&#256;iga,
-213.75/Gogo,
-225/Manu,
-236.25/Tali`ilagi,
-247.5/Leo,
-258.75/Ata
-}
-\draw[right] (\x:0.98 ) node[rotate=180+\x] {\xtext};
-\draw (0,0) pic {iwa={0.1}};
-\end{tikzpicture}
-</latex-image>
-    </image>
-  </figure>
-</sidebyside>
+    <sbsgroup widths="45% 45%">
+      <sidebyside>
+        <figure xml:id="cook-island-star-compass-32-compass-rose"><idx><h>Star Compass</h><h>Cook Island</h></idx>
+          <caption> Cook Islands.</caption>
+          <image xml:id="fig-cook-island-star-compass-32-compass-rose">
+            <latex-image>
+      \begin{tikzpicture}[x=5.3cm,y=5.3cm,cap=round]
+      \node[right] at (1.15,0) {\Large E};
+      \node[above] at (0,1.15) {\Large N};
+      \node[left] at (-1.15,0) {\Large W};
+      \node[below] at (0,-1.15) {\Large S};
+      \draw[thick] (0,0) circle(1 );
+      \draw[thick] (0,0) circle(1.1 );
+      \draw[left] (0:0.98) node{\large ITINGA};
+      \draw[left] (90:0.98) node[rotate=90] {\large AKARUA};
+      \draw[right] (180:0.98) node{\large OPUNGA};
+      \draw[left] (270:0.98) node[rotate=-90] {\large TONGA};
+      \draw (45:1.25 ) node[rotate=-45] {\huge Maoake};
+      \draw (135:1.25 ) node[rotate=45] {\huge Tokerau};
+      \draw (225:1.25 ) node[rotate=315] {\huge Iku};
+      \draw (-45:1.25 ) node[rotate=45] {\huge Muri};
+      \foreach \x in {5.625,16.875,...,90} {
+      \draw[gray] (\x:1.1 ) -- (\x:1 );
+      }
+      \foreach \x in {95.625,106.875,...,270} {
+      \draw[gray] (\x:1.1 ) -- (\x:1 );
+      }
+      \foreach \x in {275.625,286.875,...,360} {
+      \draw[gray] (\x:1.1 ) -- (\x:1 );
+      }
+      \foreach \x/\xtext in {
+      11.25/R&#257;,
+      22.5/K&#257;ina,
+      33.75/Ngoio,
+      45/Manu,
+      56.25/Ng&#257; Rangi,
+      67.5/Ng&#257; Reo,
+      78.75/Haka,
+      281.25/Haka,
+      292.5/Ng&#257; Reo,
+      303.75/Ng&#257; Rangi,
+      315/Manu,
+      326.25/Ngoio,
+      337.5/K&#257;ina,
+      348.75/R&#257;
+      }
+      \draw[left] (\x:0.98 ) node[rotate=\x] {\xtext};
+      \foreach \x/\xtext in {
+      101.25/Haka,
+      112.5/Ng&#257; Reo,
+      123.75/Ng&#257; Rangi,
+      135/Manu,
+      146.25/Ngoio,
+      157.5/K&#257;ina,
+      168.75/R&#257;,
+      191.25/R&#257;,
+      202.5/K&#257;ina,
+      213.75/Ngoio,
+      225/Manu,
+      236.25/Ng&#257; Rangi,
+      247.5/Ng&#257; Reo,
+      258.75/Haka
+      }
+      \draw[right] (\x:0.98 ) node[rotate=180+\x] {\xtext};
+      \draw (0,0) pic {iwa={0.1}};
+      \end{tikzpicture}
+      </latex-image>
+          </image>
+        </figure>
+        <figure xml:id="maori-star-compass-32-compass-rose"><idx><h>Star Compass</h><h>M&#257;ori</h></idx>
+          <caption>M&#257;ori.</caption>
+          <image xml:id="fig-maori-star-compass-32-compass-rose">
+            <latex-image>
+      \begin{tikzpicture}[x=5.3cm,y=5.3cm,cap=round]
+      \node[right] at (1.15,0) {\Large E};
+      \node[above] at (0,1.15) {\Large N};
+      \node[left] at (-1.15,0) {\Large W};
+      \node[below] at (0,-1.15) {\Large S};
+      \draw[thick] (0,0) circle(1 );
+      \draw[thick] (0,0) circle(1.1 );
+      \draw[left] (0:0.98) node{\large WHITINGA};
+      \draw[left] (90:0.98) node[rotate=90] {\large RAKI};
+      \draw[right] (180:0.98) node{\large TOMOKANGA};
+      \draw[left] (270:0.98) node[rotate=-90] {\large TONGA};
+      \draw (45:1.25 ) node[rotate=-45] {\huge Tokerau};
+      \draw (135:1.25 ) node[rotate=45] {\huge Whakararo};
+      \draw (225:1.25 ) node[rotate=315] {\huge Whakarunga};
+      \draw (-45:1.25 ) node[rotate=45] {\huge Marangai};
+      \foreach \x in {5.625,16.875,...,90} {
+      \draw[gray] (\x:1.1 ) -- (\x:1 );
+      }
+      \foreach \x in {95.625,106.875,...,270} {
+      \draw[gray] (\x:1.1 ) -- (\x:1 );
+      }
+      \foreach \x in {275.625,286.875,...,360} {
+      \draw[gray] (\x:1.1 ) -- (\x:1 );
+      }
+      \foreach \x/\xtext in {
+      11.25/R&#257;,
+      22.5/K&#257;ina,
+      33.75/Ngoi,
+      45/Manu,
+      56.25/Ng&#257; Rangi,
+      67.5/Ng&#257; Reo,
+      78.75/Haka,
+      281.25/Haka,
+      292.5/Ng&#257; Reo,
+      303.75/Ng&#257; Rangi,
+      315/Manu,
+      326.25/Ngoi,
+      337.5/K&#257;ina,
+      348.75/R&#257;
+      }
+      \draw[left] (\x:0.98 ) node[rotate=\x] {\xtext};
+      \foreach \x/\xtext in {
+      101.25/Haka,
+      112.5/Ng&#257; Reo,
+      123.75/Ng&#257; Rangi,
+      135/Manu,
+      146.25/Ngoi,
+      157.5/K&#257;ina,
+      168.75/R&#257;,
+      191.25/R&#257;,
+      202.5/K&#257;ina,
+      213.75/Ngoi,
+      225/Manu,
+      236.25/Ng&#257; Rangi,
+      247.5/Ng&#257; Reo,
+      258.75/Haka
+      }
+      \draw[right] (\x:0.98 ) node[rotate=180+\x] {\xtext};
+      \draw (0,0) pic {iwa={0.1}};
+      \end{tikzpicture}
+      </latex-image>
+          </image>
+        </figure>
+      </sidebyside>
+      <sidebyside>
+        <figure xml:id="samoan-star-compass-32-compass-rose"><idx><h>Star Compass</h><h>S&#257;moan</h></idx>
+          <caption>S&#257;moan.</caption>
+          <image xml:id="fig-samoan-star-compass-32-compass-rose">
+            <latex-image>
+      \begin{tikzpicture}[x=5.3cm,y=5.3cm,cap=round]
+      \node[right] at (1.15,0) {\Large E};
+      \node[above] at (0,1.15) {\Large N};
+      \node[left] at (-1.15,0) {\Large W};
+      \node[below] at (0,-1.15) {\Large S};
+      \draw[thick] (0,0) circle(1 );
+      \draw[thick] (0,0) circle(1.1 );
+      \draw[left] (0:0.98) node{\large SASA`E};
+      \draw[left] (90:0.98) node[rotate=90] {\large MATU};
+      \draw[right] (180:0.98) node{\large SISIFO};
+      \draw[left] (270:0.98) node[rotate=-90] {\large TONGA};
+      \draw (45:1.25 ) node[rotate=-45] {\huge Toelau};
+      \draw (135:1.25 ) node[rotate=45] {\huge Lai};
+      \draw (225:1.25 ) node[rotate=315] {\huge Tuaoloa};
+      \draw (-45:1.25 ) node[rotate=45] {\huge Matau Upolu};
+      \foreach \x in {5.625,16.875,...,90} {
+      \draw[gray] (\x:1.1 ) -- (\x:1 );
+      }
+      \foreach \x in {95.625,106.875,...,270} {
+      \draw[gray] (\x:1.1 ) -- (\x:1 );
+      }
+      \foreach \x in {275.625,286.875,...,360} {
+      \draw[gray] (\x:1.1 ) -- (\x:1 );
+      }
+      \foreach \x/\xtext in {
+      11.25/L&#257;,
+      22.5/&#256;iga,
+      33.75/Gogo,
+      45/Manu,
+      56.25/Tali`ilagi,
+      67.5/Leo,
+      78.75/Ata,
+      281.25/Ata,
+      292.5/Leo,
+      303.75/Tali`ilagi,
+      315/Manu,
+      326.25/Gogo,
+      337.5/&#256;iga,
+      348.75/L&#257;
+      }
+      \draw[left] (\x:0.98 ) node[rotate=\x] {\xtext};
+      \foreach \x/\xtext in {
+      101.25/Ata,
+      112.5/Leo,
+      123.75/Tali`ilagi,
+      135/Manu,
+      146.25/Gogo,
+      157.5/&#256;iga,
+      168.75/L&#257;,
+      191.25/L&#257;,
+      202.5/&#256;iga,
+      213.75/Gogo,
+      225/Manu,
+      236.25/Tali`ilagi,
+      247.5/Leo,
+      258.75/Ata
+      }
+      \draw[right] (\x:0.98 ) node[rotate=180+\x] {\xtext};
+      \draw (0,0) pic {iwa={0.1}};
+      \end{tikzpicture}
+      </latex-image>
+          </image>
+        </figure>
+        <p></p>
+      </sidebyside>
+    </sbsgroup>
   </figure>
 
 
@@ -932,7 +930,7 @@
         </answer>
       </task>
     </exercise>
-    <exercisegroup>
+    <exercisegroup cols="2">
       <introduction>
         <p>
           For each direction, identify the Hawaiian names of the corresponding house and quadrant in the Hawaiian Star Compass
@@ -1034,7 +1032,7 @@
           </p>
         </answer>
       </exercise>
-            <exercise>
+      <exercise>
         <statement>
           <p>
             South-southeast
@@ -1043,6 +1041,145 @@
         <answer>
           <p>
             Nā Leo Malanai
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            West-southwest
+          </p>
+        </statement>
+        <answer>
+          <p>
+            ʻĀina Kona
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          Identify the corresponding point on the 32-wind compass for each house on the Hawaiian Star Compass
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            Nā Leo Kona
+          </p>
+        </statement>
+        <answer>
+          <p>
+            South-southwest
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            ʻĀina Malanai
+          </p>
+        </statement>
+        <answer>
+          <p>
+            East-southeast
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            ʻĀina Hoʻolua
+          </p>
+        </statement>
+        <answer>
+          <p>
+            West-northwest
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Lā Koʻolau
+          </p>
+        </statement>
+        <answer>
+          <p>
+            East by North
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Manu Koʻolau
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Northeast
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Haka Malanai
+          </p>
+        </statement>
+        <answer>
+          <p>
+            South by East
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Nālani Kona
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Southwest by South
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Haka Hoʻolua
+          </p>
+        </statement>
+        <answer>
+          <p>
+            North by West
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Noio Hoʻolua
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Northwest by West
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Noio Koʻolau
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Northeast by East
           </p>
         </answer>
       </exercise>
