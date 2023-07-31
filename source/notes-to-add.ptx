@@ -1,5 +1,10 @@
 Always replace ʻokina with the "backquote"
+Always replace ".svg" with ".pdf"
 
 Section 1.1
 Captions in tables are not allowed
 Star Compass for Cook Islands, Maori, Samoa - sidebyside
+
+Section 1.2
+external images must be ".svg" for Web but must be ".pdf" for Latex
+make the heading compass nicer
