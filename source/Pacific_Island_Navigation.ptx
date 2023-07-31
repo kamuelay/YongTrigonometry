@@ -243,107 +243,109 @@
     <caption>Hawaiian Star Compass, also known as the Kūkuluokalani.</caption>
     <image xml:id="fig-star-compass-32-compass-rose">
       <latex-image>
-  \begin{tikzpicture}[x=5.3cm,y=5.3cm,cap=round,>=latex]
-  \draw[&lt;-,dashed] (-1.2,0) -- (-0.96,0);
-  \draw[dashed] (-0.45,0) -- (0.65,0);
-  \draw[->,dashed] (0.96,0) -- (1.2,0);
-  \draw[&lt;-,dashed] (0,-1.2) -- (0,-0.96);
-  \draw[dashed] (0,-0.7) -- (0,0.7);
-  \draw[->,dashed] (0,0.96) -- (0,1.2);
-  \node[right] at (1.2,0) {\Large E};
-  \node[above] at (0,1.2) {\Large N};
-  \node[left] at (-1.2,0) {\Large W};
-  \node[below] at (0,-1.2) {\Large S};
-  \draw[thick] (0,0) circle(1 );
-  \draw[thick] (0,0) circle(1.1 );
-  \draw[left] (0:0.98) node{\large HIKINA};
-  \draw[left] (90:0.98) node[rotate=90] {\large `&#256;KAU};
-  \draw[right] (180:0.98) node{\large KOMOHANA};
-  \draw[left] (270:0.98) node[rotate=-90] {\large HEMA};
-  \draw (45:0.5 ) node[rotate=-45] {\huge Ko`olau};
-  \draw (135:0.5 ) node[rotate=45] {\huge Ho`olua};
-  \draw (225:0.5 ) node[rotate=315] {\huge Kona};
-  \draw (-45:0.5 ) node[rotate=45] {\huge Malanai};
-  \foreach \x in {5.625,16.875,...,90} {
-  \draw[gray] (\x:1.1 ) -- (\x:1 );
-  }
-  \foreach \x in {95.625,106.875,...,270} {
-  \draw[gray] (\x:1.1 ) -- (\x:1 );
-  }
-  \foreach \x in {275.625,286.875,...,360} {
-  \draw[gray] (\x:1.1 ) -- (\x:1 );
-  }
-  \foreach \x/\xtext in {
-  11.25/L&#257;,
-  22.5/`&#256;ina,
-  33.75/Noio,
-  45/Manu,
-  56.25/N&#257;lani,
-  67.5/N&#257; Leo,
-  78.75/Haka,
-  281.25/Haka,
-  292.5/N&#257; Leo,
-  303.75/N&#257;lani,
-  315/Manu,
-  326.25/Noio,
-  337.5/`&#256;ina,
-  348.75/L&#257;
-  }
-  \draw[left] (\x:0.98 ) node[rotate=\x] {\xtext};
-  \foreach \x/\xtext in {
-  11.25/EbN,
-  22.5/ENE,
-  33.75/NEbE,
-  45/NE,
-  56.25/NEbN,
-  67.5/NNE,
-  78.75/NbE,
-  281.25/SbE,
-  292.5/SSE,
-  303.75/SEbS,
-  315/SE,
-  326.25/SEbE,
-  337.5/ESE,
-  348.75/EbS
-  }
-  \draw[right] (\x:1.12 ) node[rotate=\x] {\xtext};
-  \foreach \x/\xtext in {
-  101.25/Haka,
-  112.5/N&#257; Leo,
-  123.75/N&#257;lani,
-  135/Manu,
-  146.25/Noio,
-  157.5/`&#256;ina,
-  168.75/L&#257;,
-  191.25/L&#257;,
-  202.5/`&#256;ina,
-  213.75/Noio,
-  225/Manu,
-  236.25/N&#257;lani,
-  247.5/N&#257; Leo,
-  258.75/Haka
-  }
-  \draw[right] (\x:0.98 ) node[rotate=180+\x] {\xtext};
-  \foreach \x/\xtext in {
-  101.25/NbW,
-  112.5/NNW,
-  123.75/NWbN,
-  135/NW,
-  146.25/NWbW,
-  157.5/WNW,
-  168.75/WbN,
-  191.25/WbS,
-  202.5/WSW,
-  213.75/SWbW,
-  225/SW,
-  236.25/SWbS,
-  247.5/SSW,
-  258.75/SbW
-  }
-  \draw[left] (\x:1.12 ) node[rotate=180+\x] {\xtext};
-  \draw (0,0) pic {iwa={0.1}};
-  \end{tikzpicture}
-  </latex-image>
+        \begin{tikzpicture}[scale=5.3,cap=round,>=latex]
+        % draw the coordinates
+        \draw[&lt;-,dashed] (-1.2,0) -- (-0.96,0);
+        \draw[dashed] (-0.36,0) -- (0.6,0);
+        \draw[->,dashed] (0.96,0) -- (1.2,0);
+        \draw[&lt;-,dashed] (0,-1.2) -- (0,-0.96);
+        \draw[dashed] (0,-0.65) -- (0,0.63);
+        \draw[->,dashed] (0,0.96) -- (0,1.2);
+        % draw the unit circle
+        \node[right] at (1.2,0) {\Large E};
+        \node[above] at (0,1.2) {\Large N};
+        \node[left] at (-1.2,0) {\Large W};
+        \node[below] at (0,-1.2) {\Large S};
+        \draw[thick] (0,0) circle(1 );
+        \draw[thick] (0,0) circle(1.1 );
+        \draw[left] (0:0.98) node{\large HIKINA};
+        \draw[left] (90:0.98) node[rotate=90] {\large `&#256;KAU};
+        \draw[right] (180:0.98) node{\large KOMOHANA};
+        \draw[left] (270:0.98) node[rotate=-90] {\large HEMA};
+        \draw (45:0.5 ) node[rotate=-45] {\huge Ko`olau};
+        \draw (135:0.5 ) node[rotate=45] {\huge Ho`olua};
+        \draw (225:0.5 ) node[rotate=315] {\huge Kona};
+        \draw (-45:0.5 ) node[rotate=45] {\huge Malanai};
+        \foreach \x in {5.625,16.875,...,90} {
+        \draw[gray] (\x:1.1 ) -- (\x:1 );
+        }
+        \foreach \x in {95.625,106.875,...,270} {
+        \draw[gray] (\x:1.1 ) -- (\x:1 );
+        }
+        \foreach \x in {275.625,286.875,...,360} {
+        \draw[gray] (\x:1.1 ) -- (\x:1 );
+        }
+        \foreach \x/\xtext in {
+        11.25/L&#257;,
+        22.5/`&#256;ina,
+        33.75/Noio,
+        45/Manu,
+        56.25/N&#257;lani,
+        67.5/N&#257; Leo,
+        78.75/Haka,
+        281.25/Haka,
+        292.5/N&#257; Leo,
+        303.75/N&#257;lani,
+        315/Manu,
+        326.25/Noio,
+        337.5/`&#256;ina,
+        348.75/L&#257;
+        }
+        \draw[left] (\x:0.98 ) node[rotate=\x] {\xtext};
+        \foreach \x/\xtext in {
+        11.25/EbN,
+        22.5/ENE,
+        33.75/NEbE,
+        45/NE,
+        56.25/NEbN,
+        67.5/NNE,
+        78.75/NbE,
+        281.25/SbE,
+        292.5/SSE,
+        303.75/SEbS,
+        315/SE,
+        326.25/SEbE,
+        337.5/ESE,
+        348.75/EbS
+        }
+        \draw[right] (\x:1.12 ) node[rotate=\x] {\xtext};
+        \foreach \x/\xtext in {
+        101.25/Haka,
+        112.5/N&#257; Leo,
+        123.75/N&#257;lani,
+        135/Manu,
+        146.25/Noio,
+        157.5/`&#256;ina,
+        168.75/L&#257;,
+        191.25/L&#257;,
+        202.5/`&#256;ina,
+        213.75/Noio,
+        225/Manu,
+        236.25/N&#257;lani,
+        247.5/N&#257; Leo,
+        258.75/Haka
+        }
+        \draw[right] (\x:0.98 ) node[rotate=180+\x] {\xtext};
+        \foreach \x/\xtext in {
+        101.25/NbW,
+        112.5/NNW,
+        123.75/NWbN,
+        135/NW,
+        146.25/NWbW,
+        157.5/WNW,
+        168.75/WbN,
+        191.25/WbS,
+        202.5/WSW,
+        213.75/SWbW,
+        225/SW,
+        236.25/SWbS,
+        247.5/SSW,
+        258.75/SbW
+        }
+        \draw[left] (\x:1.12 ) node[rotate=180+\x] {\xtext};
+        \draw (0,0) pic {iwa={0.1}};
+        \end{tikzpicture}
+      </latex-image>
     </image>
   </figure>
   <p>
