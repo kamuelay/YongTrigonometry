@@ -161,10 +161,12 @@
     </p>
     <remark>
       <title>Conversion Between Degree, Minutes, and Seconds</title>
-      <md>
-        <mrow>1^{\circ}\amp =60' \amp 1'\amp =\left(\frac{1}{60}\right)^{\circ} \amp 1''\amp=\left(\frac{1}{3600}\right)^{\circ}</mrow>
-        <mrow>1^{\circ}\amp =3600'' \amp 1'\amp =60'' \amp 1''\amp =\left(\frac{1}{60}\right)'</mrow>
-      </md>
+      <p>
+        <md>
+          <mrow>1^{\circ}\amp =60' \amp 1'\amp =\left(\frac{1}{60}\right)^{\circ} \amp 1''\amp=\left(\frac{1}{3600}\right)^{\circ}</mrow>
+          <mrow>1^{\circ}\amp =3600'' \amp 1'\amp =60'' \amp 1''\amp =\left(\frac{1}{60}\right)'</mrow>
+        </md>
+      </p>
     </remark>
     <example>
       <title>Convert angle from decimal degrees to degrees/minutes/seconds</title>
