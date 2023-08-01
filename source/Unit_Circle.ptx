@@ -196,23 +196,27 @@
         <p>
           Find the exact values of the six trigonometric functions for
         </p>
+        <ol>
+          <li>
+            <p>
+              <m>\theta=0</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\theta=\frac{3\pi}{2}</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>\theta=5\pi</m>
+            </p>
+          </li>
+        </ol>
       </statement>
-      <ol>
-        <li>
-          <p>
-            <m>\theta=0</m>
-          </p>
-        </li>
-      </ol>
-      <statement>
-        <p>
-          Find the exact values of the six trigonometric functions for
-        </p>
-        <task>
-          <p>
-            <m>\theta=0</m>
-          </p>
-          <solution>
+      <solution>
+        <ol>
+          <li>
             <p>
               When <m>\theta=0</m> radians (<m>0^{\circ}</m>),
               the point on the circle is <m>P(1,0)</m>.
@@ -234,13 +238,8 @@
                 <mrow>\tan 0\amp =\tan 0^{\circ}=0, \amp \cot 0 \amp =\cot  0^{\circ}=\mbox{undefined}.</mrow>
               </md>
             </p>
-          </solution>
-        </task>
-        <task>
-          <p>
-            <m>\theta=\frac{3\pi}{2}</m>
-          </p>
-          <solution>
+          </li>
+          <li>
             <p>
               When <m>\theta=\frac{3\pi}{2}</m>
               radians (<m>270^{\circ}</m>),
@@ -263,13 +262,8 @@
                 <mrow>\tan \frac{3\pi}{2}\amp =\tan 270^{\circ}=\mbox{undefined}, \amp \cot \frac{3\pi}{2}\amp =\cot  270^{\circ}=0</mrow>
               </md>
             </p>
-          </solution>
-        </task>
-        <task>
-          <p>
-            <m>\theta=5\pi</m>
-          </p>
-          <solution>
+          </li>
+          <li>
             <p>
               Since <m>\theta=5\pi>2\pi</m>, our angle is greater than one full rotation of a circle.
               We first subtract <m>\theta</m> by one rotation, <m>2\pi</m>, to get
@@ -301,9 +295,9 @@
                 <mrow>\csc 5\pi\amp =\mbox{undefined}, \amp  \sec 5\pi\amp =-1, \amp  \cot 5\pi\amp =\mbox{undefined}. </mrow>
               </md>
             </p>
-          </solution>
-        </task>
-      </statement>
+          </li>
+        </ol>
+      </solution>
     </example>
     <example>
       <title>Finding the Exact Values of the Trigonometric Functions for <m>\theta=45^{\circ}</m></title>
