@@ -2,7 +2,7 @@
 <section xml:id="Angles_and_Their_Measure">
   <title>Angles and Their Measure</title>
   <introduction>
-    <p> One method people use to identify their position is by looking at the <em>latitude</em>. <idx><h>latitude</h></idx> These imaginary lines form circles around the Earth and run parallel to the Equator. The latitude of a place is defined as the angle between a line drawn from the center of the Earth to that point and the equatorial plane. For any point in the Northern Hemisphere, a navigator can measure their latitude by determining the angle that <em>Hōkūpaʻa</em> (also known as <em>Kūmau</em>, <em>Fuesemagut</em>, North Star, or Polaris) makes with the horizon. 
+    <p> One method people use to identify their position is by looking at the <em>latitude</em>. <idx><h>latitude</h></idx> These imaginary lines form circles around the Earth and run parallel to the Equator. The latitude of a place is defined as the angle between a line drawn from the center of the Earth to that point and the equatorial plane. For any point in the Northern Hemisphere, a navigator can measure their latitude by determining the angle that <em>Hōkūpaʻa</em> (also known as <em>Kūmau</em>, <em>Wuli wulifasmughet</em>, <em>Fuesemagut</em>, North Star, or Polaris) makes with the horizon. 
     </p>
     <image xml:id="angles-Hokupaa" width="100%">
       <latex-image>
@@ -156,35 +156,22 @@
         </latex-image>
       </image>
     </figure>
-    <p> Although we often use decimals to represent the fractional parts of a degree, it was
-      traditionally represented in minutes and seconds. One <term>minute</term>
-      <idx>
-        <h>minute</h>
-      </idx> or <em>arc minute</em>, <idx>
-        <h>arc minute</h>
-      </idx> denoted <m>1'</m>, is defined as <m>\frac{1}{60}(1^{\circ})</m>
-      and one <term>second</term>
-      <idx>
-        <h>second</h>
-      </idx> or <em>arc second</em>, <idx>
-        <h>arc second</h>
-      </idx> denoted <m>1''</m>, is defined as <m>\frac{1}{60}(1')</m>. </p>
+    <p>
+      Although decimals are commonly used to represent fractional parts of a degree, traditionally, degrees were represented in minutes and seconds. One <term>minute</term><idx><h>minute</h></idx> or <term>arc minute</term><idx><h>arc minute</h></idx>, denoted as <m>1'</m>, is equal to <m>\frac{1}{60}</m> degrees, and one <term>second</term><idx><h>second</h></idx> or <term>arc second</term><idx><h>arc second</h></idx>, denoted as <m>1''</m>, is equal to <m>\frac{1}{60}</m> minutes.
+    </p>
     <remark>
-      <title>Conversion Between Degree, Minutes,
-        and Seconds</title>
+      <title>Conversion Between Degree, Minutes, and Seconds</title>
       <md>
-        <mrow>1^{\circ}\amp =60' \amp 1'\amp =\left(\frac{1}{60}\right)^{\circ} \amp 1''\amp
-          =\left(\frac{1}{3600}\right)^{\circ}</mrow>
+        <mrow>1^{\circ}\amp =60' \amp 1'\amp =\left(\frac{1}{60}\right)^{\circ} \amp 1''\amp=\left(\frac{1}{3600}\right)^{\circ}</mrow>
         <mrow>1^{\circ}\amp =3600'' \amp 1'\amp =60'' \amp 1''\amp =\left(\frac{1}{60}\right)'</mrow>
       </md>
     </remark>
     <example>
       <title>Convert angle from decimal degrees to degrees/minutes/seconds</title>
       <statement>
-        <p> In the Star Compass (<xref ref="star-compass-with-angles">Figure</xref>), the angle that
-          divides the houses Manu Hoʻolua (northwest) and Noio Hoʻolua (northwest by west) is <m>
-          140.625^{\circ}</m>. Represent <m>140.625^{\circ}</m> in degrees, minutes, and seconds. </p>
-
+        <p>
+          In the Star Compass (<xref ref="star-compass-with-angles">Figure</xref>), the angle between the houses Manu Hoʻolua (northwest) and Noio Hoʻolua (northwest by west) measures <m>140.625^{\circ}</m>. Represent this angle in degrees, minutes, and seconds.
+        </p>
       </statement>
       <solution>
         <p> First we will convert <m>0.625^{\circ}</m> to minutes using the conversion <m>
@@ -431,7 +418,7 @@
     </definition>
     <remark>
       <p>
-        In navigation, the direction a waʻa is pointed to is referred to as the <term>heading</term><idx>heading</idx>. Unlike in trigonometry, where it is conventional to define an angle in standard position, i.e., <m>0^{\circ}</m> lies along the positive <m>x</m>-axis, in navigation, North corresponds to a heading of <m>0^{\circ}</m> and positive angles are measured in a clockwise rotation (see <xref ref="heading-compass">Figure</xref>).
+        In navigation, the direction a waʻa is pointed towards is referred to as the <term>heading</term><idx>heading</idx>. Unlike in trigonometry, where it is conventional to define an angle in standard position, i.e., <m>0^{\circ}</m> lies along the positive <m>x</m>-axis, in navigation, North corresponds to a heading of <m>0^{\circ}</m> and positive angles are measured in a clockwise rotation (see <xref ref="heading-compass">Figure</xref>).
       </p>
       <figure xml:id="heading-compass">
         <caption>The cardinal directions for headings are as follows: <m>0^{\circ}</m>  (or <m>360^{\circ}</m>) points north, <m>90^{\circ}</m> points east, <m>180^{\circ}</m> points south, and <m>270^{\circ}</m> points west.</caption>
@@ -588,7 +575,7 @@
     <title>Radian</title>
     <p> Another way to measure an angle is with <em>radians</em> which measure the the arc of a
       circle that is formed from an angle. </p>
-    <definition xml:id="core-standards-CCSS_MATH_CONTENT_HSF_TF_A_1">
+    <definition xml:id="core-standards-CCSS_MATH_CONTENT_HSF_TF_A_1-HSG_C_B_5">
       <title>Definition of a Radian</title>
       <statement>
         <p> The <term>radian measure</term>
