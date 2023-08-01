@@ -9,20 +9,15 @@
             <main regular="CMU Serif" />
         </fonts>
     </latex>
-    <!-- below makes webwork files dynamic in exercises-->
-    <!-- <html>
-        <webwork divisional="dynamic" />
-    </html> -->
     <!-- <common>
-        <watermark scale="0.22">DRAFT 2022-12-16</watermark>
+        <watermark scale="0.22">DRAFT 2023-08-10</watermark>
     </common> -->
     <html>
         <analytics google-gst="G-6JP58041KD" />
-    </html>
-    <!-- <html>
         <knowl example="no" />
-    </html> -->
-    <!-- <html>
         <knowl example-solution="no" />
-    </html> -->
+        
+        <!-- below makes webwork files dynamic in exercises-->
+        <webwork divisional="dynamic" />
+    </html> 
 </publication>
