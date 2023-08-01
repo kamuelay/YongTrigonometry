@@ -110,6 +110,52 @@
     <p>
       Extend the domain of trigonometric functions using the unit circle.
     </p>
+
+    <tabular>
+      <row>
+        <cell>
+          <!-- <p> -->
+            <xref ref="core-standards-CCSS_MATH_CONTENT_HSF_TF_A_1-HSG_C_B_5">HSF.TF.A.1</xref>
+          <!-- </p> -->
+        </cell>
+        <cell>
+          <!-- <p> -->
+            Understand radian measure of an angle as the length of the arc on the unit circle subtended by the angle.
+          <!-- </p> -->
+        </cell>
+      </row>
+    </tabular>
+    <p>
+      High School: Functions: Trigonometric Functions
+    </p>
+    <p>
+      Extend the domain of trigonometric functions using the unit circle
+    </p>
+    <p>
+      <ul>
+        <li>
+          <p>
+            <url href="http://www.thecorestandards.org/Math/Content/HSF/TF/A/1/">CCSS.MATH.CONTENT.HSF.TF.A.1</url>: Understand radian measure of an angle as the length of the arc on the unit circle subtended by the angle. (<xref ref="core-standards-CCSS_MATH_CONTENT_HSF_TF_A_1-HSG_C_B_5">Definition</xref>)
+          </p>
+        </li>
+      </ul>
+    </p>
+    <p>
+      High School: Geometry : Circles
+    </p>
+    <p>
+      Find arc lengths and areas of sectors of circles
+    </p>
+    <p>
+      <ul>
+        <li>
+          <p>
+            <url href="http://www.thecorestandards.org/Math/Content/HSG/C/B/5/">CCSS.MATH.CONTENT.HSG.C.B.5</url>: Derive using similarity the fact that the length of the arc intercepted by an angle is proportional to the radius, and define the radian measure of the angle as the constant of proportionality; derive the formula for the area of a sector. (<xref ref="core-standards-CCSS_MATH_CONTENT_HSF_TF_A_1-HSG_C_B_5">Definition</xref>)
+          </p>
+        </li>
+      </ul>
+    </p>
+    
     <!-- <ul>
       <li>
         <p>
