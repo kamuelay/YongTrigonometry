@@ -343,7 +343,7 @@
         258.75/SbW
         }
         \draw[left] (\x:1.12 ) node[rotate=180+\x] {\xtext};
-        \draw (0,0) pic {iwa={0.1}};
+        \draw (0,0) pic {iwa={0.5}};
         \end{tikzpicture}
       </latex-image>
     </image>
@@ -537,7 +537,7 @@
     </tabular>
   </table>
   <p>
-    Celestial bodies move along parallel paths across the sky from East to West, rising and setting in the same house, remaining in its hemisphere. For example, if a star arrives in the Koʻolau (northeastern) quadrant in the star house ʻĀina, it will arc overhead, staying in the northern hemisphere, and enter the horizon in the same house it arrived in, ʻĀina, but in the Hoʻolua (northwestern) quadrant (see Figure <xref ref="fig_celestial-sphere"/>). Similarly, if a star arrives in the Malanai (southeastern) quadrant in the house Lā, it will remain in the southern hemisphere as it arcs overhead and enters the horizon in the house Lā in the Kona (southwestern) quadrant.
+    Celestial bodies move along parallel paths across the sky from East to West, rising and setting in the same house, remaining in its hemisphere. For example, if a star arrives in the Koʻolau (northeastern) quadrant in the star house ʻĀina, it will arc overhead, staying in the northern hemisphere, and enter the horizon in the same house it arrived in, ʻĀina, but in the Hoʻolua (northwestern) quadrant (see <xref ref="fig_celestial-sphere"/>). Similarly, if a star arrives in the Malanai (southeastern) quadrant in the house Lā, it will remain in the southern hemisphere as it arcs overhead and enters the horizon in the house Lā in the Kona (southwestern) quadrant.
   </p>
   <figure xml:id="fig_celestial-sphere">
     <caption>
@@ -551,6 +551,58 @@
   <p>
     Observations play a key role in determining direction using the star compass. At night, Thompson relies on approximately 220 stars, memorizing where they rise and set on the horizon to navigate. During the day, we can use the sun's position on the horizon to gauge direction, but this method is only effective when the sun is near the horizon at sunrise and sunset. Alternatively, one can memorize the wind and wave directions, checking for any changes between sunrise and sunset to establish their current direction.
   </p>
+
+  <p>
+    The canoe itself can serve as a compass, as shown in <xref ref="compass-bearings-on-canoe"/>. From the navigator's seat on either back corner of the deck, you can observe things like the location of the rising sun and mark it on the Star Compass located on the canoe. However, it's important to remember that in this Star Compass, the locations of the houses are relative to the canoe, not to the map. For instance, Hikina will always be to the right of the canoe, but it may not precisely point to the East, as it depends on the canoe's facing direction.
+  </p>
+
+  <figure xml:id="compass-bearings-on-canoe">
+    <caption>The deck of a canoe can have Star Compass markings to help crew and navigators.</caption>
+    <image xml:id="fig-compass-bearings-on-canoe" width="40%">
+      <latex-image>
+        \begin{tikzpicture}[scale=1,cap=round,>=latex]
+\fill[waacolor,fill=waacolor,fill opacity=0.10000000149011612] (-1.55,4) -- (-1.15,6) -- (-0.75,4) -- (-0.75,3) -- (-1.55,3) -- cycle;
+\fill[waacolor,fill=waacolor,fill opacity=0.10000000149011612] (1.55,4) -- (1.15,6) -- (0.75,4) -- (0.75,3) -- (1.55,3) -- cycle;
+\fill[waacolor,fill=waacolor,fill opacity=0.10000000149011612] (-1.55,-4) -- (-1.15,-6) -- (-0.75,-4) -- cycle;
+\fill[waacolor,fill=waacolor,fill opacity=0.10000000149011612] (1.55,-4) -- (1.15,-6) -- (0.75,-4) -- cycle;
+\fill[waacolor,fill=waacolor,fill opacity=0.04] (-1.55,-4) -- (1.55,-4) -- (1.55,3) -- (-1.55,3) -- cycle;
+\draw [waacolor] (-1.15,6)-- (-1.55,4);
+\draw [waacolor] (-1.55,4)-- (-1.55,-4);
+\draw [waacolor] (-1.55,-4)-- (-1.15,-6);
+\draw [waacolor] (-1.15,-6)-- (-0.75,-4);
+\draw [waacolor] (-0.75,3)-- (-0.75,4);
+\draw [waacolor] (-0.75,4)-- (-1.15,6);
+\draw [waacolor] (1.15,6)-- (1.55,4);
+\draw [waacolor] (1.55,4)-- (1.55,-4);
+\draw [waacolor] (1.55,-4)-- (1.15,-6);
+\draw [waacolor] (1.15,-6)-- (0.75,-4);
+\draw [waacolor] (0.75,3)-- (0.75,4);
+\draw [waacolor] (0.75,4)-- (1.15,6);
+\draw [waacolor] (-1.55,-4)-- (1.55,-4);
+\draw [waacolor] (1.55,3)-- (-1.55,3);
+\draw [waacolor] (-0.25,3)-- (0.25,3);
+\draw [waacolor] (-0.75,4)-- (0.75, 4);
+\draw (-1.55,-4) -- (1.55,{3.1*tan(5.625)-4});
+\draw (-1.55,-4) -- (1.55,{3.1*tan(16.875)-4});
+\draw (-1.55,-4) -- (1.55,{3.1*tan(28.125)-4});
+\draw (-1.55,-4) -- (1.55,{3.1*tan(39.375)-4});
+\draw (-1.55,-4) -- (1.55,{3.1*tan(50.625)-4});
+\draw (-1.55,-4) -- (1.55,{3.1*tan(61.875)-4});
+\draw (-1.55,-4) -- ({7/tan(73.125)-1.55},3);
+\draw (-1.55,-4) -- ({7/tan(84.375)-1.55},3);
+\draw[right] (1.55,-4) node[rotate=0] {Hikina};
+\draw[right] (1.55,{3.1*tan(11.25)-4}) node[rotate=0] {L\={a}};
+\draw[right] (1.55,{3.1*tan(11.25*2)-4}) node[rotate=0] {`\={A}ina};
+\draw[right] (1.55,{3.1*tan(11.25*3)-4}) node[rotate=0] {Noio};
+\draw[right] (1.55,{3.1*tan(11.25*4)-4}) node[rotate=0] {Manu};
+\draw[right] (1.55,{3.1*tan(11.25*5)-4}) node[rotate=0] {N\={a}lani};
+\draw[right] (1.55,2.5) node[rotate=0] {N\={a} Leo};
+\draw[right] ({7/tan(11.25*7)-1.55},2.9) node[rotate=90] {Haka};
+\draw[right] (-1.3,2.9) node[rotate=90] {`\={A}kau};
+\end{tikzpicture}
+      </latex-image>
+    </image>
+  </figure>
 </subsection>
 <subsection xml:id="subsec-marshall-islands">
   <title>Marshall Islands</title>
@@ -566,12 +618,10 @@
   <p>
     The stick charts serve as mental maps or navigational aids, allowing experienced navigators to visualize and recall the complex information while on their journeys. Navigators would memorize the stick charts, internalizing the knowledge embedded within them, enabling them to navigate the open ocean.
   </p>
-  <p>
-    <figure xml:id="marshallese-stick-chart">
-      <caption>Marshallese stick chart.</caption>
-      <image source="stick-chart.jpg"/>
-    </figure>
-  </p>
+  <figure xml:id="marshallese-stick-chart">
+    <caption>Marshallese stick chart.</caption>
+    <image source="stick-chart.jpg"/>
+  </figure>
 </subsection>
 <subsection xml:id="subsec-elsewhere-in-pacific">
   <title>Elsewhere in the Pacific</title>
@@ -1189,7 +1239,7 @@
     <exercise>
       <statement>
         <p>
-          The winter solstice in the southern hemisphere occurs around June 22. It is the time when the sun is at its lowest elevation in the sky, resulting in the shortest daylight of the year. During the winter solstice, the sun rises from its northernmost position, ʻĀina Koʻolau What house does the sun set in the winter solstice in the southern hemisphere?
+          The winter solstice in the southern hemisphere occurs around June 22. It is the time when the sun is at its lowest elevation in the sky, resulting in the shortest daylight of the year. During the winter solstice, the sun rises from its northernmost position, ʻĀina Koʻolau. In what house does the sun set during the winter solstice in the southern hemisphere?
         </p>
       </statement>
       <answer>
@@ -1201,7 +1251,7 @@
     <exercise>
       <statement>
         <p>
-          The winter solstice in the northern hemisphere occurs around December 22 when the sun rises from its southernmost position, ʻĀina Malanai. What house does the sun set in the winter solstice in the northern hemisphere?
+          The winter solstice in the northern hemisphere occurs around December 22 when the sun rises from its southernmost position, ʻĀina Malanai. In which house does the sun set during the winter solstice in the northern hemisphere?
         </p>
       </statement>
       <answer>
@@ -1213,7 +1263,7 @@
     <exercise>
       <statement>
         <p>
-          Wind is coming from Nā Leo Kona. In what direction is the wind blowing towards?
+          Wind is coming from Nā Leo Kona. In what direction is the wind blowing ?
         </p>
       </statement>
       <answer>
@@ -1225,7 +1275,7 @@
     <exercise>
       <statement>
         <p>
-          Current is coming from Noio Hoʻolua. In what direction is the current heading towards?
+          Current is coming from Noio Hoʻolua. In what direction is the current heading?
         </p>
       </statement>
       <answer>
