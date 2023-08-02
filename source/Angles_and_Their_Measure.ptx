@@ -190,8 +190,7 @@
         </p>
       </solution>
     </example>
-    <exercise>
-      <!--
+    <!-- <exercise>
       <webwork>
         <pg-code> $d = Compute(random(0,359)); $m = Compute(random(0,59)); $s =
           Compute(random(0,59)); 
@@ -221,8 +220,7 @@
                 name="$b" /></m>. </p>
         </solution>
       </webwork>
-      -->
-    </exercise>
+    </exercise> -->
     <example>
       <title>Convert angle from degrees/minutes/seconds to decimal degrees</title>
       <statement>
@@ -243,34 +241,38 @@
     <definition>
       <statement>
         <p>
-          If an angle is drawn on the <m>xy</m>-plane and the vertex is at the origin and theinitial side is on the positive <m>x</m>-axis, then that angle is said to be in <term>standard position</term>.<idx><h>standard position</h></idx> If the angle is measured in a counterclockwise rotation, the angle is said to be a <term>positive angle</term><idx><h>positive angle</h></idx> and if the angle is measured in a clockwise rotation, the angle is said to be a <term>negative angle</term>. <idx><h>negative angle</h></idx>
+          If an angle is drawn on the <m>xy</m>-plane, and the vertex is at the origin, and the initial side is on the positive <m>x</m>-axis, then that angle is said to be in <term>standard position</term>.<idx><h>standard position</h></idx> If the angle is measured in a counterclockwise rotation, the angle is said to be a <term>positive angle</term>,<idx><h>positive angle</h></idx> and if the angle is measured in a clockwise rotation, the angle is said to be a <term>negative angle</term>. <idx><h>negative angle</h></idx>
         </p>
-        <image xml:id="fig-positive-negative-angles">
-          <latex-image>
-            \begin{tikzpicture}[scale=1.25]
-            \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
-            \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
-            \filldraw[blue] (1cm,0) circle(1pt);
-            \filldraw[blue] (60:1.2cm) circle(1pt);
-            \draw[line width=2pt,blue] (0,0) -- (1,0);
-            \draw[line width=2pt,blue] (0,0) -- (60:1.2);
-            \draw[->, line width=1.25pt] (0:0.7cm) arc (0:60:0.7cm) node[midway,
-            right,xshift=0.05cm,yshift=0.2cm] {positive angle};
-            \end{tikzpicture}
-          </latex-image>
-          <latex-image>
-            \begin{tikzpicture}[x=1.25cm,y=1.25cm]
-            \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
-            \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
-            \filldraw[blue] (1cm,0) circle(1pt);
-            \filldraw[blue] (-60:1.2cm) circle(1pt);
-            \draw[line width=2pt,blue] (0,0) -- (1,0);
-            \draw[line width=2pt,blue] (0,0) -- (-60:1.2);
-            \draw[->, line width=1.25pt] (0:0.7cm) arc (0:-60:0.7cm) node[midway,
-            right,xshift=0.05cm,yshift=-0.2cm] {negative angle};
-            \end{tikzpicture}
-          </latex-image>
-        </image>
+        <sidebyside>
+          <image xml:id="fig-positive-angles">
+            <latex-image>
+              \begin{tikzpicture}[scale=1.25]
+              \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+              \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+              \filldraw[blue] (1cm,0) circle(1pt);
+              \filldraw[blue] (60:1.2cm) circle(1pt);
+              \draw[line width=2pt,blue] (0,0) -- (1,0);
+              \draw[line width=2pt,blue] (0,0) -- (60:1.2);
+              \draw[->, line width=1.25pt] (0:0.7cm) arc (0:60:0.7cm) node[midway,
+              right,xshift=0.05cm,yshift=0.2cm] {positive angle};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+          <image xml:id="fig-negative-angles">
+            <latex-image>
+              \begin{tikzpicture}[x=1.25cm,y=1.25cm]
+              \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+              \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+              \filldraw[blue] (1cm,0) circle(1pt);
+              \filldraw[blue] (-60:1.2cm) circle(1pt);
+              \draw[line width=2pt,blue] (0,0) -- (1,0);
+              \draw[line width=2pt,blue] (0,0) -- (-60:1.2);
+              \draw[->, line width=1.25pt] (0:0.7cm) arc (0:-60:0.7cm) node[midway,
+              right,xshift=0.05cm,yshift=-0.2cm] {negative angle};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </sidebyside>
       </statement>
     </definition>
     <definition>
@@ -323,48 +325,50 @@
         <p>
           Determine the quadrant in which each angle lies and name the corresponding House and quadrant in the Star Compass (<xref ref="star-compass-with-angles">Figure</xref>). 
         </p>
-        <ol>
-          <li>
-            <p>
-              <m>140^{\circ}</m>
-            </p>
-          </li>
-          <li>
-            <p>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>140^{\circ}</m>
+              </p>
+            </li>
+            <li>
               <p>
                 <m>-770^{\circ}</m>
               </p>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>923^{\circ}</m>
-            </p>
-          </li>
-        </ol>
+            </li>
+            <li>
+              <p>
+                <m>923^{\circ}</m>
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
       <solution>
-        <ol>
-          <li>
-            <p>
-              Since <m>90^{\circ}\lt 140^{\circ}\lt 180^{\circ}</m>, <m>140^{\circ}</m> lies in Quadrant II, or Manu Ho&#699;olua.
-            </p>
-          </li>
-          <li>
-            <p>
-              Since <m>-770^{\circ}\lt 0^{\circ}</m>, we first add <m>3\times360</m> to <m>-770^{\circ}</m> to obtain an angle <m>0^{\circ}</m> and <m>360^{\circ}</m>, 
-              <me>-770^{\circ}+3\times360^{\circ}=310^{\circ}</me>
-              So <m>310^{\circ}</m> and <m>-770^{\circ}</m> are coterminal. Since <m>270^{\circ}\lt 310^{\circ}\lt 360^{\circ}</m>, <m>310^{\circ}</m> lies in Quadrant IV, or Manu Malanai.
-            </p>
-          </li>
-          <li>
-            <p>
-              Since <m>923^{\circ}>360^{\circ}</m> we begin by subtracting <m>2\times360^{\circ}</m>
-              <me>923^{\circ}-2\times360^{\circ}=203^{\circ}</me>
-              So <m>203^{\circ}</m> and <m>923^{\circ }</m> are coterminal. Since <m>180^{\circ}\lt 203^{\circ}\lt 270^{\circ}</m>, <m>923^{\circ}</m> lies in Quadrant III or &#699;&#256;ina Kona.
-            </p>
-          </li>
-        </ol>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Since <m>90^{\circ}\lt 140^{\circ}\lt 180^{\circ}</m>, <m>140^{\circ}</m> lies in Quadrant II, or Manu Ho&#699;olua.
+              </p>
+            </li>
+            <li>
+              <p>
+                Since <m>-770^{\circ}\lt 0^{\circ}</m>, we first add <m>3\times360</m> to <m>-770^{\circ}</m> to obtain an angle <m>0^{\circ}</m> and <m>360^{\circ}</m>, 
+                <me>-770^{\circ}+3\times360^{\circ}=310^{\circ}</me>
+                So <m>310^{\circ}</m> and <m>-770^{\circ}</m> are coterminal. Since <m>270^{\circ}\lt 310^{\circ}\lt 360^{\circ}</m>, <m>310^{\circ}</m> lies in Quadrant IV, or Manu Malanai.
+              </p>
+            </li>
+            <li>
+              <p>
+                Since <m>923^{\circ}>360^{\circ}</m> we begin by subtracting <m>2\times360^{\circ}</m>
+                <me>923^{\circ}-2\times360^{\circ}=203^{\circ}</me>
+                So <m>203^{\circ}</m> and <m>923^{\circ }</m> are coterminal. Since <m>180^{\circ}\lt 203^{\circ}\lt 270^{\circ}</m>, <m>923^{\circ}</m> lies in Quadrant III or &#699;&#256;ina Kona.
+              </p>
+            </li>
+          </ol>
+        </p>
       </solution>
     </example>
     <example>
@@ -564,7 +568,7 @@
   <subsection>
     <title>Radian</title>
     <p>
-      Another way to measure an angle is with <em>radians</em> which measure the the arc of a circle that is formed from an angle.
+      Another way to measure an angle is with <em>radians</em>, which measure the the arc of a circle that is formed from an angle.
     </p>
     <definition xml:id="core-standards-CCSS_MATH_CONTENT_HSF_TF_A_1-HSG_C_B_5">
       <title>Definition of a Radian</title>
@@ -602,47 +606,51 @@
     <p>
       The measure of a central angle obtained when the length of the arc is also equal to the radius, <m>r</m>, is called <em>one radian</em> (1 rad). Similarly, if <m>\theta=2</m> rad, then the arc length equals <m>2r</m>.
     </p>
-    <image xml:id="fig-radians">
-      <latex-image>
-        \begin{tikzpicture}[scale=2.2]
-        \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
-        \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
-        \draw (0,0) circle (1cm);
-        \draw[blue] (57.3:0.95cm) -- (57.3:1.05cm);
-        \draw[line width=2pt,blue] (0:1cm) arc (0:57.3:1cm)
-        node[midway,above,yshift=0.15cm,xshift=0.2cm] {$r$};
-        \filldraw[blue] (1cm,0) circle(1pt);
-        \filldraw[blue] (57.3:1cm) circle(1pt);
-        \draw[line width=2pt,blue] (0,0) -- (1,0) node[midway,below,yshift=-0.1cm]{$r$};
-        \draw[line width=2pt,blue] (0,0) -- (57.3:1);
-        \draw (0:0.3cm) arc (0:57.3:0.3cm) node[midway,right,xshift=-0.1cm,yshift=0.1cm]{$\theta$=1
-        rad};
-        \end{tikzpicture}
-      </latex-image>
-      <latex-image>
-        \begin{tikzpicture}[scale=2.2]
-        \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
-        \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
-        \draw (0,0) circle (1cm);
-        \draw[blue] (57.3:0.95cm) -- (57.3:1.05cm);
-        \draw[line width=2pt,blue] (0:1cm) arc (0:57.3:1cm)
-        node[midway,above,yshift=0.15cm,xshift=0.2cm] {$r$};
-        \draw[line width=2pt,blue] (57.3:1cm) arc (57.3:114.6:1cm)
-        node[midway,above,xshift=0.15cm,yshift=0.1cm] {$r$};
-        \filldraw[blue] (1cm,0) circle(1pt);
-        \filldraw[blue] (57.3:1cm) circle(1pt);
-        \filldraw[blue] (114.6:1cm) circle(1pt);
-        \draw[line width=2pt,blue] (0,0) -- (1,0) node[midway,below,yshift=-0.1cm]{$r$};
-        \draw[line width=2pt,blue] (0,0) -- (114.6:1);
-        \draw (0:0.3cm) arc (0:114.6:0.3cm) node[midway,above,xshift=0.5cm,yshift=0.0cm]{$\theta$=2
-        rad};
-        \end{tikzpicture}
-      </latex-image>
-    </image>
+    <sidebyside>
+      <image xml:id="fig-1radian">
+        <latex-image>
+          \begin{tikzpicture}[scale=2.2]
+          \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+          \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+          \draw (0,0) circle (1cm);
+          \draw[blue] (57.3:0.95cm) -- (57.3:1.05cm);
+          \draw[line width=2pt,blue] (0:1cm) arc (0:57.3:1cm)
+          node[midway,above,yshift=0.15cm,xshift=0.2cm] {$r$};
+          \filldraw[blue] (1cm,0) circle(1pt);
+          \filldraw[blue] (57.3:1cm) circle(1pt);
+          \draw[line width=2pt,blue] (0,0) -- (1,0) node[midway,below,yshift=-0.1cm]{$r$};
+          \draw[line width=2pt,blue] (0,0) -- (57.3:1);
+          \draw (0:0.3cm) arc (0:57.3:0.3cm) node[midway,right,xshift=-0.1cm,yshift=0.1cm]{$\theta$=1
+          rad};
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+      <image xml:id="fig-2radians">
+        <latex-image>
+          \begin{tikzpicture}[scale=2.2]
+          \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+          \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+          \draw (0,0) circle (1cm);
+          \draw[blue] (57.3:0.95cm) -- (57.3:1.05cm);
+          \draw[line width=2pt,blue] (0:1cm) arc (0:57.3:1cm)
+          node[midway,above,yshift=0.15cm,xshift=0.2cm] {$r$};
+          \draw[line width=2pt,blue] (57.3:1cm) arc (57.3:114.6:1cm)
+          node[midway,above,xshift=0.15cm,yshift=0.1cm] {$r$};
+          \filldraw[blue] (1cm,0) circle(1pt);
+          \filldraw[blue] (57.3:1cm) circle(1pt);
+          \filldraw[blue] (114.6:1cm) circle(1pt);
+          \draw[line width=2pt,blue] (0,0) -- (1,0) node[midway,below,yshift=-0.1cm]{$r$};
+          \draw[line width=2pt,blue] (0,0) -- (114.6:1);
+          \draw (0:0.3cm) arc (0:114.6:0.3cm) node[midway,above,xshift=0.5cm,yshift=0.0cm]{$\theta$=2
+          rad};
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </sidebyside>
     <p>
-      The circumference of a circle is <m>C=2\pi r</m>. This means that the circumference is <m>2\pi\approx6.28</m> times the radius. This means that if we were to use a piece of string with the length of the radius, we would use six pieces of string plus a fractional piece of the string.
+      The circumference of a circle is <m>C=2\pi r</m>. This means that the circumference is <m>2\pi\approx6.28</m> times the radius. Consequently, if we were to use a piece of string with the length of the radius, we would need six pieces of string plus a fractional piece of the string, as shown in <xref ref="2pi-radians">Figure</xref>.
     </p>
-    <figure>
+    <figure xml:id="2pi-radians">
       <caption> One rotation of the unit circle is <m>2\pi\approx6.28</m> radians. </caption>
       <image xml:id="fig-2pi-radians">
         <latex-image>
@@ -671,10 +679,15 @@
     <remark>
       <title>Relationships Between Degrees and Radians</title>
       <p>
-        If a circle with radius 1 is drawn, there are <m>360^{\circ}</m> and the full arc length is the circumference, which is <m>2\pi</m> . Therefore,the relationship between degrees and radians is:
+        If a circle with radius 1 is drawn, it has <m>360^{\circ}</m>, and the full arc length is the circumference, which is <m>2\pi</m>. Therefore,the relationship between degrees and radians is:
         <me>360^{\circ}=2\pi \mbox{ radian} , \mbox{or } 180^{\circ}=\pi\mbox{radian}</me>
         <me>1\mbox{ radian} =\frac{180^{\circ}}{\pi}</me>
         <me>1^{\circ}=\frac{\pi}{180}\mbox{ radian}</me>
+      </p>
+    </remark>
+    <remark>
+      <title>Converting Between Degrees and Radians</title>
+      <p>
         <ol>
           <li>
             <p>
@@ -683,7 +696,7 @@
           </li>
           <li>
             <p>
-              To convert radians to degrees, multiply by <m>\dfrac{360^{\circ}}{2\pi\mbox{radians} }</m> or <m>\dfrac{180^{\circ}}{\pi\mbox{radian} }</m>
+              To convert radians to degrees, multiply by <m>\dfrac{360^{\circ}}{2\pi\mbox{radians} }</m> or <m>\dfrac{180^{\circ}}{\pi\mbox{ radian} }</m>
             </p>
           </li>
         </ol>
@@ -710,19 +723,12 @@
       </solution>
     </example>
     <p>
-      Using this method, we can obtain the following table of common angles used in trigonometry and the corresponding radian and degree measures.
+      Using this method, we can obtain <xref ref="tab-common-angles">Table</xref> of common angles used in trigonometry and the corresponding radian and degree measures.
     </p>
-    <table>
+    <table xml:id="tab-common-angles">
+      <title>Commonly Used Angles in Trigonometry: Degrees and Radians</title>
       <tabular>
         <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
           <cell></cell>
           <cell></cell>
           <cell></cell>
@@ -765,14 +771,6 @@
           </cell>
         </row>
         <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
           <cell></cell>
           <cell></cell>
           <cell></cell>
@@ -827,14 +825,6 @@
           <cell></cell>
           <cell></cell>
           <cell></cell>
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
         </row>
         <row>
           <cell>
@@ -869,14 +859,6 @@
           </cell>
         </row>
         <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
           <cell></cell>
           <cell></cell>
           <cell></cell>
@@ -931,14 +913,6 @@
           <cell></cell>
           <cell></cell>
           <cell></cell>
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
         </row>
       </tabular>
     </table>
@@ -946,7 +920,7 @@
   <subsection>
     <title>Arc Length</title>
     <p>
-      Recall the definition of a radian is the ratio of the arc length to the radius of a circle, <m>\theta=\frac{s}{r}</m>. Rearranging this, we can obtain a formula for the arc length of a circle.
+      Recall that the definition of a radian is the ratio of the arc length to the radius of a circle, <m>\theta=\frac{s}{r}</m>. By rearranging this formula, we can obtain a formula for the arc length of a circle.
     </p>
     <theorem xml:id="thm_arc-length">
       <statement>
@@ -1050,15 +1024,17 @@
     <title>Area of a Sector of a Circle</title>
     <definition>
       <title>Area of a Sector</title>
-      <p>
-        <idx>
-          <h>area</h>
-          <h>of a sector</h>
-        </idx> The <term>area of the sector</term> of a circle of radius <m>r</m> formed by a central angle of <m>\theta</m> is <md>
-          <mrow>A\amp =\frac{\theta}{360^{\circ}}\cdot\pi\cdot r^2,\mbox{ when \(\theta\) is in degrees}</mrow>
-          <mrow>A\amp =\frac{1}{2}r^2\theta,\mbox{ when \(\theta\) is in radians}</mrow>
-        </md>
-      </p>
+      <statement>
+        <p>
+          <idx>
+            <h>area</h>
+            <h>of a sector</h>
+          </idx> The <term>area of the sector</term> of a circle of radius <m>r</m> formed by a central angle of <m>\theta</m> is <md>
+            <mrow>A\amp =\frac{\theta}{360^{\circ}}\cdot\pi\cdot r^2,\mbox{ when \(\theta\) is in degrees}</mrow>
+            <mrow>A\amp =\frac{1}{2}r^2\theta,\mbox{ when \(\theta\) is in radians}</mrow>
+          </md>
+        </p>
+      </statement>
     </definition>
     <p>
       Notice the ratio <m>\displaystyle\frac{\theta}{360^{\circ}}</m> is the proportion of the angle <m>\theta</m> (in degrees) to one complete circle. Additionally, the circumference of a circle is given by <m>2\pi r</m>. Therefore, the arc length is simply the proportion of the central angle to the whole circle multiplied by the circumference of the circle.
@@ -1122,7 +1098,7 @@
       <solution>
         <p>
           The angle is <m>\theta=2\cdot67^{\circ}=134^{\circ}</m> and the radius is <m>r=50</m> miles. So the area is given by
-          <me>A=\frac{\theta}{360^{\circ}}\pi\cdot r^2=\frac{134}{360}\pi\cdot 50^2\approx2,923\mbox{square miles}</me>
+          <me>A=\frac{\theta}{360^{\circ}}\pi\cdot r^2=\frac{134}{360}\pi\cdot 50^2\approx2,923\mbox{ square miles}</me>
         </p>
       </solution>
     </example>
@@ -1218,7 +1194,7 @@
           </latex-image>
         </image>
         <p>
-          One method a waʻa uses to change direction is with the <em>hoe uli</em>, or the steering paddle. When a sharp turn is needed for maneuvers such as tacking, the steersperson will turn the handle of the hoe uli in a circular motion, as a lever to scoop the paddle in the water and change the heading of a vessel. This move called <em>une</em> (prounced oo-NAY although it is often mispronounced as oo-NEE)literally translates to <q>lever.</q> If the steerperson is performing an une at a rate of 25 rotations per minute and the radius of the circular movement is 2 feet, calculate
+          One method a waʻa uses to change direction is with the <em>hoe uli</em>, or the steering paddle. When a sharp turn is needed for maneuvers such as tacking, the steersperson will turn the handle of the hoe uli in a circular motion, as a lever to scoop the paddle in the water and change the heading of a vessel. This move called <em>une</em> (prounced oo-NAY although it is often mispronounced as oo-NEE) literally translates to <q>lever.</q> If the steerperson is performing an une at a rate of 25 rotations per minute and the radius of the circular movement is 2 feet, calculate
           <ol>
             <li>
               <p>
@@ -1246,23 +1222,20 @@
             <li>
               <p> We are given the angular speed is <m>\omega=25</m> revolutions per minute. To
                 convert our angular speed to radians per minute, we use the fact that one revolution
-                is <m>2\pi</m> radians to get <me>
-                  \omega=25\frac{\mbox{revolution} }{\mbox{minute} }=25\frac{\mbox{rev}
-                }{\mbox{minute} }\cdot2\pi\frac{\mbox{radians} }{\mbox{revolution}
-                }=50\pi\frac{\mbox{radians} }{\mbox{minute} }
+                is <m>2\pi</m> radians to get 
+                <me>
+                  \omega=25\frac{\mbox{revolution} }{\mbox{minute} }=25\frac{\mbox{rev}}{\mbox{minute} }\cdot2\pi\frac{\mbox{radians} }{\mbox{revolution}}=50\pi\frac{\mbox{radians} }{\mbox{minute} }
                 </me>
                 Thus the hoe uli is moving at an angular speed of <m>50\pi</m> radians per second. </p>
             </li>
             <li>
-              <p> Since the radius is <m>r=2</m> ft and the angular speed is <m>\omega=180</m> is
-                measure in radians per minute we can <xref ref="def_linear-speed">Definition</xref>
-                to calculate the linear speed <me>
-                  v=r\omega=2\mbox{ft} \cdot50\pi\frac{\mbox{rad} }{\mbox{min}
-                }\cdot\frac{\mbox{mile} }{5280\mbox{ft} }\cdot\frac{60\mbox{min} }{\mbox{hr}
-                }\approx3.57\frac{\mbox{miles} }{\mbox{hour} }
+              <p>
+                Since the radius is <m>r=2</m> ft and the angular speed is <m>50\pi</m> radians per minute, we can use <xref ref="def_linear-speed">Definition</xref> to calculate the linear speed
+                <me>
+                  v=r\omega=2\mbox{ft} \cdot50\pi\frac{\mbox{rad} }{\mbox{min}}\cdot\frac{\mbox{mile} }{5280\mbox{ft} }\cdot\frac{60\mbox{min} }{\mbox{hr}}\approx3.57\frac{\mbox{miles} }{\mbox{hour} }
                 </me>
-                Thus the steersperson is moving the hoe uli at a linear speed of 3.57 mph. </p>
-              <!-- <video youtube="uzD2k-CqbDE?t=504" /> -->
+                Thus the steersperson is moving the hoe uli at a linear speed of 3.57 mph.
+              </p>
             </li>
           </ol>
         </p>
@@ -1442,42 +1415,42 @@
       <introduction>
         <p> 
           Recall the Star Compass with the boundaries for each House. Write the angles for the boundaries between the following houses in the Koʻolau quadrant in terms of degrees, minutes, and seconds.
-          <image xml:id="star-compass-first-quadrant" width="75%">
-            <latex-image>
-              \begin{tikzpicture}[scale=6.75]
-              % draw the coordinates
-              \draw[dashed] (0cm,0cm) -- (0.73cm,0cm);
-              \draw[->,dashed] (0.97cm,0cm) -- (1.1cm,0cm);
-              \draw[dashed] (0cm,0cm) -- (0cm,0.76cm);
-              \draw[->,dashed] (0cm,0.98cm) -- (0cm,1.1cm);
-              % draw the unit circle
-              \draw[thick] (0:1cm) arc (0:90:1cm);
-              \draw[left] (0:0.98) node[rotate=0] {\large HIKINA};
-              \draw[left] (90:0.98) node[rotate=90] {\large `\={A}KAU};
-              \foreach \x in {5.625,16.875,...,90} {
-              % lines from center to point
-              \draw[gray] (0cm,0cm) -- (\x:1cm);% node[fill=white,left,sloped] {$\x^\circ$};
-              }
-              \foreach \x in {5.625,16.875,...,39.375} {
-              % dots at each point
-              \filldraw[black] (\x:1cm) circle(0.4pt);
-              % draw each angle in degrees
-              \draw (\x:1.125cm) node[rotate=\x] {$\x^\circ$};
-              }
-              \foreach \x/\xtext in {
-              11.25/L\={a},
-              22.5/`\={A}ina,
-              33.75/Noio,
-              45/Manu,
-              56.25/N\={a}lani,
-              67.5/N\={a} Leo,
-              78.75/Haka
-              }
-              \draw[left] (\x:0.98) node[rotate=\x] {\xtext};
-              \end{tikzpicture}
-            </latex-image>
-          </image>
         </p>
+        <image xml:id="star-compass-first-quadrant" width="75%">
+          <latex-image>
+            \begin{tikzpicture}[scale=6.75]
+            % draw the coordinates
+            \draw[dashed] (0cm,0cm) -- (0.73cm,0cm);
+            \draw[->,dashed] (0.97cm,0cm) -- (1.1cm,0cm);
+            \draw[dashed] (0cm,0cm) -- (0cm,0.76cm);
+            \draw[->,dashed] (0cm,0.98cm) -- (0cm,1.1cm);
+            % draw the unit circle
+            \draw[thick] (0:1cm) arc (0:90:1cm);
+            \draw[left] (0:0.98) node[rotate=0] {\large HIKINA};
+            \draw[left] (90:0.98) node[rotate=90] {\large `\={A}KAU};
+            \foreach \x in {5.625,16.875,...,90} {
+            % lines from center to point
+            \draw[gray] (0cm,0cm) -- (\x:1cm);% node[fill=white,left,sloped] {$\x^\circ$};
+            }
+            \foreach \x in {5.625,16.875,...,39.375} {
+            % dots at each point
+            \filldraw[black] (\x:1cm) circle(0.4pt);
+            % draw each angle in degrees
+            \draw (\x:1.125cm) node[rotate=\x] {$\x^\circ$};
+            }
+            \foreach \x/\xtext in {
+            11.25/L\={a},
+            22.5/`\={A}ina,
+            33.75/Noio,
+            45/Manu,
+            56.25/N\={a}lani,
+            67.5/N\={a} Leo,
+            78.75/Haka
+            }
+            \draw[left] (\x:0.98) node[rotate=\x] {\xtext};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
       </introduction>
       <exercise>
         <statement>
@@ -1737,21 +1710,19 @@
           </p>
         </statement>
         <answer>
-          <p>
-            <image xml:id="fig-standard-position-60">
-              <latex-image>
-                \begin{tikzpicture}[x=1.5cm,y=1.5cm]
-                \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
-                \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
-                \filldraw[blue] (1,0) circle(1pt);
-                \filldraw[blue] (60:1.2) circle(1pt);
-                \draw[blue] (0,0) -- (1,0);
-                \draw[blue] (0,0) -- (60:1.2);
-                \draw[->] (0:0.4) arc (0:60:0.4);
-                \end{tikzpicture}
-              </latex-image>
-            </image>
-          </p>
+          <image xml:id="fig-standard-position-60">
+            <latex-image>
+              \begin{tikzpicture}[x=1.5cm,y=1.5cm]
+              \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+              \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+              \filldraw[blue] (1,0) circle(1pt);
+              \filldraw[blue] (60:1.2) circle(1pt);
+              \draw[blue] (0,0) -- (1,0);
+              \draw[blue] (0,0) -- (60:1.2);
+              \draw[->] (0:0.4) arc (0:60:0.4);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
         </answer>
       </exercise>
       <exercise>
@@ -1761,21 +1732,19 @@
           </p>
         </statement>
         <answer>
-          <p>
-            <image xml:id="fig-standard-position-135">
-              <latex-image>
-                \begin{tikzpicture}[x=1.5cm,y=1.5cm]
-                \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
-                \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
-                \filldraw[blue] (1,0) circle(1pt);
-                \filldraw[blue] (135:1.2) circle(1pt);
-                \draw[blue] (0,0) -- (1,0);
-                \draw[blue] (0,0) -- (135:1.2);
-                \draw[->] (0:0.4) arc (0:135:0.4);
-                \end{tikzpicture}
-              </latex-image>
-            </image>
-          </p>
+          <image xml:id="fig-standard-position-135">
+            <latex-image>
+              \begin{tikzpicture}[x=1.5cm,y=1.5cm]
+              \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+              \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+              \filldraw[blue] (1,0) circle(1pt);
+              \filldraw[blue] (135:1.2) circle(1pt);
+              \draw[blue] (0,0) -- (1,0);
+              \draw[blue] (0,0) -- (135:1.2);
+              \draw[->] (0:0.4) arc (0:135:0.4);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
         </answer>
       </exercise>
       <exercise>
@@ -1785,21 +1754,19 @@
           </p>
         </statement>
         <answer>
-          <p>
-            <image xml:id="fig-standard-position-neg30">
-              <latex-image>
-                \begin{tikzpicture}[x=1.5cm,y=1.5cm]
-                \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
-                \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
-                \filldraw[blue] (1,0) circle(1pt);
-                \filldraw[blue] (-30:1.2) circle(1pt);
-                \draw[blue] (0,0) -- (1,0);
-                \draw[blue] (0,0) -- (-30:1.2);
-                \draw[->] (0:0.4) arc (0:-30:0.4);
-                \end{tikzpicture}
-              </latex-image>
-            </image>
-          </p>
+          <image xml:id="fig-standard-position-neg30">
+            <latex-image>
+              \begin{tikzpicture}[x=1.5cm,y=1.5cm]
+              \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+              \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+              \filldraw[blue] (1,0) circle(1pt);
+              \filldraw[blue] (-30:1.2) circle(1pt);
+              \draw[blue] (0,0) -- (1,0);
+              \draw[blue] (0,0) -- (-30:1.2);
+              \draw[->] (0:0.4) arc (0:-30:0.4);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
         </answer>
       </exercise>
       <exercise>
@@ -1809,22 +1776,20 @@
           </p>
         </statement>
         <answer>
-          <p>
-            <image xml:id="fig-standard-position-495">
-              <latex-image>
-                \begin{tikzpicture}[x=1.5cm,y=1.5cm]
-                \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
-                \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
-                \filldraw[blue] (1,0) circle(1pt);
-                \filldraw[blue] (495:1.2) circle(1pt);
-                \draw[blue] (0,0) -- (1,0);
-                \draw[blue] (0,0) -- (495:1.2);
-                \draw [->,domain=0:8.63937979737,variable=\t,smooth,samples=75]
-                plot ({\t r}: {0.1+0.07*\t});
-                \end{tikzpicture}
-              </latex-image>
-            </image>
-          </p>
+          <image xml:id="fig-standard-position-495">
+            <latex-image>
+              \begin{tikzpicture}[x=1.5cm,y=1.5cm]
+              \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+              \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+              \filldraw[blue] (1,0) circle(1pt);
+              \filldraw[blue] (495:1.2) circle(1pt);
+              \draw[blue] (0,0) -- (1,0);
+              \draw[blue] (0,0) -- (495:1.2);
+              \draw [->,domain=0:8.63937979737,variable=\t,smooth,samples=75]
+              plot ({\t r}: {0.1+0.07*\t});
+              \end{tikzpicture}
+            </latex-image>
+          </image>
         </answer>
       </exercise>
       <exercise>
@@ -1834,21 +1799,19 @@
           </p>
         </statement>
         <answer>
-          <p>
-            <image xml:id="fig-standard-position-neg240">
-              <latex-image>
-                \begin{tikzpicture}[x=1.5cm,y=1.5cm]
-                \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
-                \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
-                \filldraw[blue] (1,0) circle(1pt);
-                \filldraw[blue] (-240:1.2) circle(1pt);
-                \draw[blue] (0,0) -- (1,0);
-                \draw[blue] (0,0) -- (-240:1.2);
-                \draw[->] (0:0.4) arc (0:-240:0.4);
-                \end{tikzpicture}
-              </latex-image>
-            </image>
-          </p>
+          <image xml:id="fig-standard-position-neg240">
+            <latex-image>
+              \begin{tikzpicture}[x=1.5cm,y=1.5cm]
+              \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+              \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+              \filldraw[blue] (1,0) circle(1pt);
+              \filldraw[blue] (-240:1.2) circle(1pt);
+              \draw[blue] (0,0) -- (1,0);
+              \draw[blue] (0,0) -- (-240:1.2);
+              \draw[->] (0:0.4) arc (0:-240:0.4);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
         </answer>
       </exercise>
       <exercise>
@@ -1858,21 +1821,19 @@
           </p>
         </statement>
         <answer>
-          <p>
-            <image xml:id="fig-standard-position-800">
-              <latex-image>
-                \begin{tikzpicture}[x=1.5cm,y=1.5cm]
-                \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
-                \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
-                \filldraw[blue] (1,0) circle(1pt);
-                \filldraw[blue] (800:1.2) circle(1pt);
-                \draw[blue] (0,0) -- (1,0);
-                \draw [->,domain=0:13.962634016,variable=\t,smooth,samples=75]
-                plot ({\t r}: {0.1+0.05*\t});
-                \end{tikzpicture}
-              </latex-image>
-            </image>
-          </p>
+          <image xml:id="fig-standard-position-800">
+            <latex-image>
+              \begin{tikzpicture}[x=1.5cm,y=1.5cm]
+              \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+              \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+              \filldraw[blue] (1,0) circle(1pt);
+              \filldraw[blue] (800:1.2) circle(1pt);
+              \draw[blue] (0,0) -- (1,0);
+              \draw [->,domain=0:13.962634016,variable=\t,smooth,samples=75]
+              plot ({\t r}: {0.1+0.05*\t});
+              \end{tikzpicture}
+            </latex-image>
+          </image>
         </answer>
       </exercise>
       <exercise>
@@ -1882,21 +1843,19 @@
           </p>
         </statement>
         <answer>
-          <p>
-            <image xml:id="fig-standard-position-pi4">
-              <latex-image>
-                \begin{tikzpicture}[x=1.5cm,y=1.5cm]
-                \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
-                \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
-                \filldraw[blue] (1,0) circle(1pt);
-                \filldraw[blue] (45:1.2) circle(1pt);
-                \draw[blue] (0,0) -- (1,0);
-                \draw[blue] (0,0) -- (45:1.2);
-                \draw[->] (0:0.4) arc (0:45:0.4);
-                \end{tikzpicture}
-              </latex-image>
-            </image>
-          </p>
+          <image xml:id="fig-standard-position-pi4">
+            <latex-image>
+              \begin{tikzpicture}[x=1.5cm,y=1.5cm]
+              \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+              \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+              \filldraw[blue] (1,0) circle(1pt);
+              \filldraw[blue] (45:1.2) circle(1pt);
+              \draw[blue] (0,0) -- (1,0);
+              \draw[blue] (0,0) -- (45:1.2);
+              \draw[->] (0:0.4) arc (0:45:0.4);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
         </answer>
       </exercise>
       <exercise>
@@ -1906,21 +1865,19 @@
           </p>
         </statement>
         <answer>
-          <p>
-            <image xml:id="fig-standard-position-5pi6">
-              <latex-image>
-                \begin{tikzpicture}[x=1.5cm,y=1.5cm]
-                \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
-                \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
-                \filldraw[blue] (1,0) circle(1pt);
-                \filldraw[blue] (150:1.2) circle(1pt);
-                \draw[blue] (0,0) -- (1,0);
-                \draw[blue] (0,0) -- (150:1.2);
-                \draw[->] (0:0.4) arc (0:150:0.4);
-                \end{tikzpicture}
-              </latex-image>
-            </image>
-          </p>
+          <image xml:id="fig-standard-position-5pi6">
+            <latex-image>
+              \begin{tikzpicture}[x=1.5cm,y=1.5cm]
+              \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+              \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+              \filldraw[blue] (1,0) circle(1pt);
+              \filldraw[blue] (150:1.2) circle(1pt);
+              \draw[blue] (0,0) -- (1,0);
+              \draw[blue] (0,0) -- (150:1.2);
+              \draw[->] (0:0.4) arc (0:150:0.4);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
         </answer>
       </exercise>
       <exercise>
@@ -1930,21 +1887,19 @@
           </p>
         </statement>
         <answer>
-          <p>
-            <image xml:id="fig-standard-position-negpi3">
-              <latex-image>
-                \begin{tikzpicture}[x=1.5cm,y=1.5cm]
-                \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
-                \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
-                \filldraw[blue] (1,0) circle(1pt);
-                \filldraw[blue] (-60:1.2) circle(1pt);
-                \draw[blue] (0,0) -- (1,0);
-                \draw[blue] (0,0) -- (-60:1.2);
-                \draw[->] (0:0.4) arc (0:-60:0.4);
-                \end{tikzpicture}
-              </latex-image>
-            </image>
-          </p>
+          <image xml:id="fig-standard-position-negpi3">
+            <latex-image>
+              \begin{tikzpicture}[x=1.5cm,y=1.5cm]
+              \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+              \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+              \filldraw[blue] (1,0) circle(1pt);
+              \filldraw[blue] (-60:1.2) circle(1pt);
+              \draw[blue] (0,0) -- (1,0);
+              \draw[blue] (0,0) -- (-60:1.2);
+              \draw[->] (0:0.4) arc (0:-60:0.4);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
         </answer>
       </exercise>
       <exercise>
@@ -1954,22 +1909,20 @@
           </p>
         </statement>
         <answer>
-          <p>
-            <image xml:id="fig-standard-position-10pi3">
-              <latex-image>
-                \begin{tikzpicture}[x=1.5cm,y=1.5cm]
-                \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
-                \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
-                \filldraw[blue] (1,0) circle(1pt);
-                \filldraw[blue] (600:1.2) circle(1pt);
-                \draw[blue] (0,0) -- (1,0);
-                \draw[blue] (0,0) -- (600:1.2);
-                \draw [->,domain=0:10.471975512,variable=\t,smooth,samples=75]
-                plot ({\t r}: {0.1+0.06*\t}); %20.94395=1200*pi/180
-                \end{tikzpicture}
-              </latex-image>
-            </image>
-          </p>
+          <image xml:id="fig-standard-position-10pi3">
+            <latex-image>
+              \begin{tikzpicture}[x=1.5cm,y=1.5cm]
+              \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+              \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+              \filldraw[blue] (1,0) circle(1pt);
+              \filldraw[blue] (600:1.2) circle(1pt);
+              \draw[blue] (0,0) -- (1,0);
+              \draw[blue] (0,0) -- (600:1.2);
+              \draw [->,domain=0:10.471975512,variable=\t,smooth,samples=75]
+              plot ({\t r}: {0.1+0.06*\t}); %20.94395=1200*pi/180
+              \end{tikzpicture}
+            </latex-image>
+          </image>
         </answer>
       </exercise>
       <exercise>
@@ -1979,21 +1932,19 @@
           </p>
         </statement>
         <answer>
-          <p>
-            <image xml:id="fig-standard-position-11pi6">
-              <latex-image>
-                \begin{tikzpicture}[x=1.5cm,y=1.5cm]
-                \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
-                \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
-                \filldraw[blue] (1,0) circle(1pt);
-                \filldraw[blue] (330:1.2) circle(1pt);
-                \draw[blue] (0,0) -- (1,0);
-                \draw[blue] (0,0) -- (330:1.2);
-                \draw[->] (0:0.4) arc (0:330:0.4);
-                \end{tikzpicture}
-              </latex-image>
-            </image>
-          </p>
+          <image xml:id="fig-standard-position-11pi6">
+            <latex-image>
+              \begin{tikzpicture}[x=1.5cm,y=1.5cm]
+              \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+              \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+              \filldraw[blue] (1,0) circle(1pt);
+              \filldraw[blue] (330:1.2) circle(1pt);
+              \draw[blue] (0,0) -- (1,0);
+              \draw[blue] (0,0) -- (330:1.2);
+              \draw[->] (0:0.4) arc (0:330:0.4);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
         </answer>
       </exercise>
       <exercise>
@@ -2003,21 +1954,19 @@
           </p>
         </statement>
         <answer>
-          <p>
-            <image xml:id="fig-standard-position-neg2pi3">
-              <latex-image>
-                \begin{tikzpicture}[x=1.5cm,y=1.5cm]
-                \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
-                \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
-                \filldraw[blue] (1,0) circle(1pt);
-                \filldraw[blue] (-120:1.2) circle(1pt);
-                \draw[blue] (0,0) -- (1,0);
-                \draw[blue] (0,0) -- (-120:1.2);
-                \draw[->] (0:0.4) arc (0:-120:0.4);
-                \end{tikzpicture}
-              </latex-image>
-            </image>
-          </p>
+          <image xml:id="fig-standard-position-neg2pi3">
+            <latex-image>
+              \begin{tikzpicture}[x=1.5cm,y=1.5cm]
+              \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
+              \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{$y$};
+              \filldraw[blue] (1,0) circle(1pt);
+              \filldraw[blue] (-120:1.2) circle(1pt);
+              \draw[blue] (0,0) -- (1,0);
+              \draw[blue] (0,0) -- (-120:1.2);
+              \draw[->] (0:0.4) arc (0:-120:0.4);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
         </answer>
       </exercise>
     </exercisegroup>
@@ -2233,8 +2182,32 @@
           </p>
         </answer>
       </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>-807^{\circ}</m>, <m>93^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            No
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>-757^{\circ}</m>, <m>683^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Yes
+          </p>
+        </answer>
+      </exercise>
     </exercisegroup>
-    <exercisegroup cols="4">
+    <exercisegroup cols="3">
       <introduction>
         <p>
           Find an angle between <m>0^{\circ}</m> and <m>360^{\circ}</m> that is coterminal with the given angle
@@ -2288,6 +2261,30 @@
           </p>
         </answer>
       </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>381^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>21^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>-754^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>326^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
     </exercisegroup>
     <exercisegroup cols="2">
       <introduction>
@@ -2324,17 +2321,19 @@
           </p>
         </statement>
         <answer>
-          <ol>
-            <li>
-              <p>
-                <m>2.0944</m> m; </p>
-            </li>
-            <li>
-              <p>
-                <m>26.1799</m> m<m>^2</m>
-              </p>
-            </li>
-          </ol>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  <m>2.0944</m> m; </p>
+              </li>
+              <li>
+                <p>
+                  <m>26.1799</m> m<m>^2</m>
+                </p>
+              </li>
+            </ol>
+          </p>
         </answer>
       </exercise>
       <exercise>
@@ -2343,17 +2342,19 @@
             <m>r=3</m> mi, <m>\theta=\frac{\pi}{3}</m> radians </p>
         </statement>
         <answer>
-          <ol>
-            <li>
-              <p>
-                <m>3.1416</m> mi; </p>
-            </li>
-            <li>
-              <p>
-                <m>4.7124</m> mi<m>^2</m>
-              </p>
-            </li>
-          </ol>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  <m>3.1416</m> mi; </p>
+              </li>
+              <li>
+                <p>
+                  <m>4.7124</m> mi<m>^2</m>
+                </p>
+              </li>
+            </ol>
+          </p>
         </answer>
       </exercise>
       <exercise>
@@ -2362,24 +2363,26 @@
             <m>r=8</m> cm, <m>\theta=2</m> radians </p>
         </statement>
         <answer>
-          <ol>
-            <li>
-              <p>
-                <m>16</m> cm; </p>
-            </li>
-            <li>
-              <p>
-                <m>64</m> cm<m>^2</m>
-              </p>
-            </li>
-          </ol>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  <m>16</m> cm; </p>
+              </li>
+              <li>
+                <p>
+                  <m>64</m> cm<m>^2</m>
+                </p>
+              </li>
+            </ol>
+          </p>
         </answer>
       </exercise>
     </exercisegroup>
     <exercisegroup>
       <introduction>
         <p>
-          At the start of this section you learned that the <em>latitude</em> <idx><h>latitude</h></idx> of a place is the angle between a line drawn from the center of the earth to that point and the equatorial plane. If the radius of the earth is 3,959 miles, calculate the arc length, <m>s</m>, along the surface of the earth for
+          At the start of this section, you learned that the <term>latitude</term> <idx><h>latitude</h></idx> of a place is the angle between a line drawn from the center of the earth to that point and the equatorial plane. If the radius of the Earth is 3,959 miles, calculate the arc length, <m>s</m>, along the surface of the earth for each value of <m>\theta</m>:
         </p>
         <image width="75%" source="fig-globe.svg" />
       </introduction>
@@ -2422,7 +2425,7 @@
     <exercise>
       <introduction>
         <p>
-          The <em>oeoe</em>, or Hawaiian bullroarer, is made by drilling holes into a kamani seed or coconut shell, then threading a long string through the holes to securing it. When the oeoe is swung by the string, a whistling sound is produced, similar to the sound of the  wind on the top of mountains. If a girl is swinging an oeoe at the end of 3 foot long rope at a rate of 180 revolutions per minute, calculate 
+          The <em>oeoe</em>, or Hawaiian bullroarer, is made by drilling holes into a kamani seed or coconut shell, then threading a long string through the holes to secure it. When the oeoe is swung by the string, a whistling sound is produced, similar to the sound of the  wind on the top of mountains. If a girl is swinging an oeoe at the end of 3 foot long rope at a rate of 180 revolutions per minute, calculate 
         </p>
       </introduction>
       <task>
@@ -2452,7 +2455,7 @@
     <exercise>
       <introduction>
         <p>
-          Earth completes one rotation around the Sun approximately every 365.25 days. Assume the orbit is a circle and that the Earth is <m>92.9</m> million miles from the Sun.
+          Earth completes one rotation around the Sun approximately every 365.25 days. We will assume the orbit is a circle, and that the Earth is  <m>92.9</m> million miles from the Sun.
         </p>
       </introduction>
       <task>
@@ -2496,7 +2499,7 @@
       <task>
         <statement>
           <p>
-            What is the linear speed of Earth as orbits the Sun? Express your answer in miles per hour.
+            What is the linear speed of Earth as it orbits the Sun? Express your answer in miles per hour.
           </p>
         </statement>
         <answer>
@@ -2534,7 +2537,7 @@
     <exercise>
       <introduction>
         <p>
-          In <xref ref="example-sail-into-wind">Example</xref>, we learned that wa‘a cannot sail directly into the wind. For each of the following wa‘a and distance traveled, determine the area of the sector that cannot be sailed? Recall that 1 house = <m>11.25</m>. Round your answer  to the nearest square mile.  
+          In <xref ref="example-sail-into-wind">Example</xref>, we learned that wa‘a cannot sail directly into the wind. For each of the following wa‘a and distance traveled, determine the area of the sector that cannot be sailed? Recall that 1 house = <m>11.25^{\circ}</m>. Round your answer  to the nearest square mile.  
         </p>
       </introduction>
       <task>
@@ -2562,14 +2565,13 @@
     </exercise>
     <exercise>
       <statement>
-        <p>The position of the rising sun changes throughout the year. A navigator can use their knowledge of the rising sun to help orient themselves. For example, during the December solstice, around December 22, the sun will rise from its most southern position, 23.5 degrees south of due east. So if the navigator identifies where the sun rises on the equinox, she can measure 23.5 degrees north to identify East. On the December solstice, 
-
-
-          What is the azimuth of the sun?
-          What house does the sun rise in?
-          What house does the sun set in? Hint: Celestial bodies rise and set in the same house but different quadrants.
-          If the canoe is sailing with the sun rising on the port side (left) and the navigator measures the angle between the direction of the canoe and the sun as being 90 degrees, what is the heading of the canoe?
-          What house is the canoe sailing in?
+        <p>
+          The position of the rising sun changes throughout the year. A navigator can use their knowledge of the rising sun to help orient themselves. For example, during the December solstice, around December 22, the sun will rise from its most southern position, 23.5 degrees south of due east. So if the navigator identifies where the sun rises on the equinox, she can measure 23.5 degrees north to identify East. On the December solstice,
+          1) What is the azimuth of the sun?
+          2) What house does the sun rise in?
+          3) What house does the sun set in? Hint: Celestial bodies rise and set in the same house but different quadrants.
+          4) If the canoe is sailing with the rising sun on the port side (left) and the navigator measures the angle between the direction of the canoe and the sun as being 90 degrees, what is the heading of the canoe?
+          5) What house is the canoe sailing in?
           </p>
       </statement>
     </exercise>
