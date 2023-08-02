@@ -16,7 +16,6 @@
         <analytics google-gst="G-6JP58041KD" />
         <knowl example="no" />
         <knowl example-solution="no" />
-        
         <!-- below makes webwork files dynamic in exercises-->
         <webwork divisional="dynamic" />
     </html> 
