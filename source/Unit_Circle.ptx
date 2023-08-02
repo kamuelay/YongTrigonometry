@@ -196,107 +196,111 @@
         <p>
           Find the exact values of the six trigonometric functions for
         </p>
-        <ol>
-          <li>
-            <p>
-              <m>\theta=0</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\theta=\frac{3\pi}{2}</m>
-            </p>
-          </li>
-          <li>
-            <p>
-              <m>\theta=5\pi</m>
-            </p>
-          </li>
-        </ol>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>\theta=0</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\theta=\frac{3\pi}{2}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\theta=5\pi</m>
+              </p>
+            </li>
+          </ol>
+        </p>
       </statement>
       <solution>
-        <ol>
-          <li>
-            <p>
-              When <m>\theta=0</m> radians (<m>0^{\circ}</m>),
-              the point on the circle is <m>P(1,0)</m>.
-              <image xml:id="exmp-6trig-0" width="55%">
-                <latex-image>
-                  \begin{tikzpicture}[scale=2.25]
-                  \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-                  \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
-                  \draw (0,0) circle (1);
-                  \draw[blue,line width=2pt] (0,0) -- (1,0) node[black,above right,yshift=0.1] {P(1,0)};
-                  \filldraw[blue,line width=2pt] (0:1) circle(1pt);
-                  \end{tikzpicture}
-                </latex-image>
-              </image>
-              Then <m>x=1</m> and <m>y=0</m> gives us
-              <md>
-                <mrow>\sin 0\amp =\sin 0^{\circ}=0, \amp \csc 0\amp =\csc  0^{\circ}=\mbox{undefined},</mrow>
-                <mrow>\cos 0\amp =\cos 0^{\circ}=1, \amp \sec 0\amp =\sec  0^{\circ}=1,</mrow>
-                <mrow>\tan 0\amp =\tan 0^{\circ}=0, \amp \cot 0 \amp =\cot  0^{\circ}=\mbox{undefined}.</mrow>
-              </md>
-            </p>
-          </li>
-          <li>
-            <p>
-              When <m>\theta=\frac{3\pi}{2}</m>
-              radians (<m>270^{\circ}</m>),
-              the point on the circle is
-              <m>P(0,-1)</m>.
-              <image xml:id="exmp-6trig-3pi2" width="55%">
-                <latex-image> \begin{tikzpicture}[scale=2.25]
-                  \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-                  \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
-                  \draw (0,0) circle (1);
-                  \draw[blue,line width=2pt] (0,0) -- (0,-1) node[black,below right,xshift=0.1] {P(0,-1)};
-                  \filldraw[blue,line width=2pt] (270:1) circle(1pt); \draw[->] (0:0.3) arc (0:270:0.3);
-                  \end{tikzpicture}
-                </latex-image>
-              </image>
-              Then <m>x=0</m> and <m>y=-1</m> gives us
-              <md>
-                <mrow>\sin \frac{3\pi}{2}\amp =\sin 270^{\circ}=-1, \amp \csc \frac{3\pi}{2}\amp =\csc  270^{\circ}=-1,</mrow>
-                <mrow>\cos \frac{3\pi}{2}\amp =\cos 270^{\circ}=0, \amp  \sec \frac{3\pi}{2}\amp =\sec  270^{\circ}=\mbox{undefined},</mrow>
-                <mrow>\tan \frac{3\pi}{2}\amp =\tan 270^{\circ}=\mbox{undefined}, \amp \cot \frac{3\pi}{2}\amp =\cot  270^{\circ}=0</mrow>
-              </md>
-            </p>
-          </li>
-          <li>
-            <p>
-              Since <m>\theta=5\pi>2\pi</m>, our angle is greater than one full rotation of a circle.
-              We first subtract <m>\theta</m> by one rotation, <m>2\pi</m>, to get
-              <me>
-                5\pi-2\pi-=3\pi
-              </me>
-              Again, since we are greater than one rotation,
-              we can repeat the previous step
-              <me>
-                3\pi-2\pi=\pi
-              </me>
-              The values of the six trigonometric functions when
-              <m>\theta=5\pi</m> is equal to that when <m>\theta=\pi</m>.
-              Notice, <m>5\pi</m> and <m>\pi</m> are
-              <em>coterminal angles</em> ending with the point<m>P(-1,0)</m>.
-              <image xml:id="exmp-6trig-5pi" width="55%">
-                <latex-image> \begin{tikzpicture}[scale=2.25]
-                  \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-                  \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
-                  \draw (0,0) circle (1);
-                  \draw[blue,line width=2pt] (0,0) -- (-1,0) node[black,above left,xshift=-0.1] {P(-1,0)};
-                  \filldraw[blue,line width=2pt] (180:1) circle(1pt); \draw [->,domain=0:5*pi,variable=\t,smooth,samples=75] plot ({\t r}: {0.1+0.03*\t});
-                  \end{tikzpicture}
-                </latex-image>
-              </image>
-              Since <m>x=-1</m> and <m>y=0</m> we we
-              <md>
-                <mrow>\sin 5\pi\amp =0, \amp  \cos 5\pi\amp =-1, \amp  \tan 5\pi\amp =0,</mrow>
-                <mrow>\csc 5\pi\amp =\mbox{undefined}, \amp  \sec 5\pi\amp =-1, \amp  \cot 5\pi\amp =\mbox{undefined}. </mrow>
-              </md>
-            </p>
-          </li>
-        </ol>
+        <p>
+          <ol>
+            <li>
+              <p>
+                When <m>\theta=0</m> radians (<m>0^{\circ}</m>),
+                the point on the circle is <m>P(1,0)</m>.
+                <image xml:id="exmp-6trig-0" width="55%">
+                  <latex-image>
+                    \begin{tikzpicture}[scale=2.25]
+                    \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+                    \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+                    \draw (0,0) circle (1);
+                    \draw[blue,line width=2pt] (0,0) -- (1,0) node[black,above right,yshift=0.1] {P(1,0)};
+                    \filldraw[blue,line width=2pt] (0:1) circle(1pt);
+                    \end{tikzpicture}
+                  </latex-image>
+                </image>
+                Then <m>x=1</m> and <m>y=0</m> gives us
+                <md>
+                  <mrow>\sin 0\amp =\sin 0^{\circ}=0, \amp \csc 0\amp =\csc  0^{\circ}=\mbox{undefined},</mrow>
+                  <mrow>\cos 0\amp =\cos 0^{\circ}=1, \amp \sec 0\amp =\sec  0^{\circ}=1,</mrow>
+                  <mrow>\tan 0\amp =\tan 0^{\circ}=0, \amp \cot 0 \amp =\cot  0^{\circ}=\mbox{undefined}.</mrow>
+                </md>
+              </p>
+            </li>
+            <li>
+              <p>
+                When <m>\theta=\frac{3\pi}{2}</m>
+                radians (<m>270^{\circ}</m>),
+                the point on the circle is
+                <m>P(0,-1)</m>.
+                <image xml:id="exmp-6trig-3pi2" width="55%">
+                  <latex-image> \begin{tikzpicture}[scale=2.25]
+                    \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+                    \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+                    \draw (0,0) circle (1);
+                    \draw[blue,line width=2pt] (0,0) -- (0,-1) node[black,below right,xshift=0.1] {P(0,-1)};
+                    \filldraw[blue,line width=2pt] (270:1) circle(1pt); \draw[->] (0:0.3) arc (0:270:0.3);
+                    \end{tikzpicture}
+                  </latex-image>
+                </image>
+                Then <m>x=0</m> and <m>y=-1</m> gives us
+                <md>
+                  <mrow>\sin \frac{3\pi}{2}\amp =\sin 270^{\circ}=-1, \amp \csc \frac{3\pi}{2}\amp =\csc  270^{\circ}=-1,</mrow>
+                  <mrow>\cos \frac{3\pi}{2}\amp =\cos 270^{\circ}=0, \amp  \sec \frac{3\pi}{2}\amp =\sec  270^{\circ}=\mbox{undefined},</mrow>
+                  <mrow>\tan \frac{3\pi}{2}\amp =\tan 270^{\circ}=\mbox{undefined}, \amp \cot \frac{3\pi}{2}\amp =\cot  270^{\circ}=0</mrow>
+                </md>
+              </p>
+            </li>
+            <li>
+              <p>
+                Since <m>\theta=5\pi>2\pi</m>, our angle is greater than one full rotation of a circle.
+                We first subtract <m>\theta</m> by one rotation, <m>2\pi</m>, to get
+                <me>
+                  5\pi-2\pi-=3\pi
+                </me>
+                Again, since we are greater than one rotation,
+                we can repeat the previous step
+                <me>
+                  3\pi-2\pi=\pi
+                </me>
+                The values of the six trigonometric functions when
+                <m>\theta=5\pi</m> is equal to that when <m>\theta=\pi</m>.
+                Notice, <m>5\pi</m> and <m>\pi</m> are
+                <em>coterminal angles</em> ending with the point<m>P(-1,0)</m>.
+                <image xml:id="exmp-6trig-5pi" width="55%">
+                  <latex-image> \begin{tikzpicture}[scale=2.25]
+                    \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+                    \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+                    \draw (0,0) circle (1);
+                    \draw[blue,line width=2pt] (0,0) -- (-1,0) node[black,above left,xshift=-0.1] {P(-1,0)};
+                    \filldraw[blue,line width=2pt] (180:1) circle(1pt); \draw [->,domain=0:5*pi,variable=\t,smooth,samples=75] plot ({\t r}: {0.1+0.03*\t});
+                    \end{tikzpicture}
+                  </latex-image>
+                </image>
+                Since <m>x=-1</m> and <m>y=0</m> we we
+                <md>
+                  <mrow>\sin 5\pi\amp =0, \amp  \cos 5\pi\amp =-1, \amp  \tan 5\pi\amp =0,</mrow>
+                  <mrow>\csc 5\pi\amp =\mbox{undefined}, \amp  \sec 5\pi\amp =-1, \amp  \cot 5\pi\amp =\mbox{undefined}. </mrow>
+                </md>
+              </p>
+            </li>
+          </ol>
+        </p>
       </solution>
     </example>
     <example>
