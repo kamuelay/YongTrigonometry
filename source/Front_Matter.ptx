@@ -140,6 +140,44 @@
             <url href="http://www.thecorestandards.org/Math/Content/HSF/TF/A/1/">CCSS.MATH.CONTENT.HSF.TF.A.1</url>: Understand radian measure of an angle as the length of the arc on the unit circle subtended by the angle. (<xref ref="core-standards-CCSS_MATH_CONTENT_HSF_TF_A_1-HSG_C_B_5">Definition</xref>)
           </p>
         </li>
+        <li>
+          <p>
+            HSF.TF.A.2 <xref ref="core-standards-CCSS.MATH.CONTENT.HSF.TF.A.2"/>
+    
+    Explain how the unit circle in the coordinate plane enables the extension of trigonometric functions to all real numbers, interpreted as radian measures of angles traversed counterclockwise around the unit circle.
+    (CCSS.MATH.CONTENT.HSF.TF.A.2)
+          </p>
+        </li>
+        <li>
+          <p>
+            HSF.TF.A.3
+    <xref ref="core-standards-CCSS.MATH.CONTENT.HSF.TF.A.3"/>
+    <xref ref="core-standards-CCSS.MATH.CONTENT.HSF.TF.A.3-reference-angles"/>
+    Use special triangles to determine geometrically the values of sine, cosine, tangent for <m>\pi/3</m>, <m>\pi/4</m> and <m>\pi/6</m>, and use the unit circle to express the values of sine, cosine, and tangent for <m>x</m>, <m>\pi+x</m>>, and <m>2\pi-x</m>> in terms of their values for <m>x</m>>, where <m>x</m> is any real number. (CCSS.MATH.CONTENT.HSF.TF.A.3)
+          </p>
+        </li>
+        <li>
+          <p>
+            HSF.TF.A.4
+    <xref ref="core-standardsCCSS.MATH.CONTENT.HSF.TF.A.4-a"/>, <xref ref="core-standardsCCSS.MATH.CONTENT.HSF.TF.A.4-b"/>
+    Use the unit circle to explain symmetry (odd and even) and periodicity of trigonometric functions.
+    Model periodic phenomena with trigonometric functions. (CCSS.MATH.CONTENT.HSF.TF.A.4)
+          </p>
+        </li>
+      </ul>
+    </p>
+    <p>
+      Prove and apply trigonometric identities
+    </p>
+    <p>
+      <ul>
+        <li>
+          <p>
+            HSF.TF.C.8 <xref ref="core-standards-CCSS.MATH.CONTENT.HSF.TF.C.8"/>
+Prove the Pythagorean identity <m>\sin^2\theta+\cos^2\theta = 1</m> and use it to find <m>\sin\theta</m>, <m>\cos\theta</m>, or <m>\tan\theta</m> given <m>\sin\theta</m>, <m>\cos\theta</m>, or <m>\tan\theta</m> and the quadrant of the angle. 
+(CCSS.MATH.CONTENT.HSF.TF.C.8)
+          </p>
+        </li>
       </ul>
     </p>
     <p>
@@ -155,12 +193,31 @@
             <url href="http://www.thecorestandards.org/Math/Content/HSG/C/B/5/">CCSS.MATH.CONTENT.HSG.C.B.5</url>: Derive using similarity the fact that the length of the arc intercepted by an angle is proportional to the radius, and define the radian measure of the angle as the constant of proportionality; derive the formula for the area of a sector. (<xref ref="core-standards-CCSS_MATH_CONTENT_HSF_TF_A_1-HSG_C_B_5">Definition</xref>,<xref xml:id="core-standards-CCSS_MATH_CONTENT_HSF_TF_A_1-HSG_C_B_5"/>)
           </p>
         </li>
-
-        
-
+        <li>
+          <p>
+            HSG.SRT.C.7 <xref ref="core-standars-CCSS.MATH.CONTENT.HSG.SRT.C.7"/>
+Explain and use the relationship between the sine and cosine of complementary angles.
+          </p>
+        </li>
+        <li>
+          <p>
+            HSG.SRT.C.8 <xref ref="core-standars-CCSS.MATH.CONTENT.HSG.SRT.C.8"/>
+Use trigonometric ratios and the Pythagorean Theorem to solve right triangles in applied problems.
+          </p>
+        </li>
       </ul>
     </p>
     
+    
+    
+
+
+    
+    
+    
+
+
+
     <!-- <ul>
       <li>
         <p>
