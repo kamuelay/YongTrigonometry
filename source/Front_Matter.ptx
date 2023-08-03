@@ -62,8 +62,10 @@
     <p>
       This project is partially supported by NSF grant #1853533 and the University of Hawaiʻi System. 
       Additionally, I would like to thank BarbaraJean Kahawaii and Dr. Walter Kahumoku, III for their patience, encouragement, and sharing their knowledge. 
-      Leighton Manalo for his input and help writing this book. Bonnie Kahapea and the crew of Kānehūnāmoku Voyaging Academy. 
-      The Friends of Hōkūleʻa and Hawaiʻiloa. Peia Patai and the crew of Paikea.
+      Bonnie Kahapea and the crew of Kānehūnāmoku Voyaging Academy;
+      Kala Baybayan Tanaka and the crew from Hui o Waʻa Kaulua;
+      Peia Patai and the crew from Te Puna Marama;
+      the Friends of Hōkūleʻa and Hawaiʻiloa.
       Carina Chernisky and UHWO OER committee. 
       I truly valued the discussions I have had with Vicente Diaz, Linda Furuto, Kekai Lee, and so many more. 
     </p>
@@ -150,9 +152,12 @@
       <ul>
         <li>
           <p>
-            <url href="http://www.thecorestandards.org/Math/Content/HSG/C/B/5/">CCSS.MATH.CONTENT.HSG.C.B.5</url>: Derive using similarity the fact that the length of the arc intercepted by an angle is proportional to the radius, and define the radian measure of the angle as the constant of proportionality; derive the formula for the area of a sector. (<xref ref="core-standards-CCSS_MATH_CONTENT_HSF_TF_A_1-HSG_C_B_5">Definition</xref>)
+            <url href="http://www.thecorestandards.org/Math/Content/HSG/C/B/5/">CCSS.MATH.CONTENT.HSG.C.B.5</url>: Derive using similarity the fact that the length of the arc intercepted by an angle is proportional to the radius, and define the radian measure of the angle as the constant of proportionality; derive the formula for the area of a sector. (<xref ref="core-standards-CCSS_MATH_CONTENT_HSF_TF_A_1-HSG_C_B_5">Definition</xref>,<xref xml:id="core-standards-CCSS_MATH_CONTENT_HSF_TF_A_1-HSG_C_B_5"/>)
           </p>
         </li>
+
+        
+
       </ul>
     </p>
     
