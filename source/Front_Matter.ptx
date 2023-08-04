@@ -113,20 +113,16 @@
       Extend the domain of trigonometric functions using the unit circle.
     </p>
 
-    <tabular>
+    <!-- <tabular>
       <row>
         <cell>
-          <!-- <p> -->
             <xref ref="core-standards-CCSS_MATH_CONTENT_HSF_TF_A_1-HSG_C_B_5">HSF.TF.A.1</xref>
-          <!-- </p> -->
         </cell>
         <cell>
-          <!-- <p> -->
             Understand radian measure of an angle as the length of the arc on the unit circle subtended by the angle.
-          <!-- </p> -->
         </cell>
       </row>
-    </tabular>
+    </tabular> -->
     <p>
       High School: Functions: Trigonometric Functions
     </p>
@@ -137,7 +133,7 @@
       <ul>
         <li>
           <p>
-            <url href="http://www.thecorestandards.org/Math/Content/HSF/TF/A/1/">CCSS.MATH.CONTENT.HSF.TF.A.1</url>: Understand radian measure of an angle as the length of the arc on the unit circle subtended by the angle. (<xref ref="core-standards-CCSS_MATH_CONTENT_HSF_TF_A_1-HSG_C_B_5">Definition</xref>)
+            <url href="http://www.thecorestandards.org/Math/Content/HSF/TF/A/1/">CCSS.MATH.CONTENT.HSF.TF.A.1</url>: Understand radian measure of an angle as the length of the arc on the unit circle subtended by the angle. (<xref ref="def_radian"/>)
           </p>
         </li>
         <li>
@@ -190,7 +186,10 @@ Prove the Pythagorean identity <m>\sin^2\theta+\cos^2\theta = 1</m> and use it t
       <ul>
         <li>
           <p>
-            <url href="http://www.thecorestandards.org/Math/Content/HSG/C/B/5/">CCSS.MATH.CONTENT.HSG.C.B.5</url>: Derive using similarity the fact that the length of the arc intercepted by an angle is proportional to the radius, and define the radian measure of the angle as the constant of proportionality; derive the formula for the area of a sector. (<xref ref="core-standards-CCSS_MATH_CONTENT_HSF_TF_A_1-HSG_C_B_5">Definition</xref>,<xref xml:id="core-standards-CCSS_MATH_CONTENT_HSF_TF_A_1-HSG_C_B_5"/>)
+            <url href="http://www.thecorestandards.org/Math/Content/HSG/C/B/5/">CCSS.MATH.CONTENT.HSG.C.B.5</url>: Derive using similarity the fact that the length of the arc intercepted by an angle is proportional to the radius, and define the radian measure of the angle as the constant of proportionality; derive the formula for the area of a sector. (<xref ref="def_radian">Definition</xref>, <xref ref="thm_arc-length"/>, <xref ref="def_area-sector">Definition</xref>)
+
+            
+            
           </p>
         </li>
         <li>
