@@ -5,6 +5,11 @@ Always replace ".svg" with ".pdf"
             external images must be ".svg" for Web but must be ".pdf" for Latex
             make the heading compass nicer
 
+
+CoreStandards
+Rename all idx from ccss to more descriptive names. Check that if something/def/thm has 2 core standards that only one idx is used.
+On FrontMatter, add url to link to the core standards site
+
 Section 1.1
 Captions in tables are not allowed
 Star Compass for Cook Islands, Maori, Samoa - sidebyside
