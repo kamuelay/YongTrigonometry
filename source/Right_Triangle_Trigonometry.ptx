@@ -1717,7 +1717,7 @@ node[pos=0.8,right] {\(y_1\)};
       </answer>
     </exercise>
     </exercisegroup>
-    <exercisegroup>
+    <exercisegroup cols="4">
       <introduction>
         <p>
           One way to determine your bearing on a canoe is by observing and comparing the positions of celestial and other markers relative to your canoe. To facilitate this, you can mark the locations of the Star Compass on the opposite railings from the navigator's seat in the back corner of the canoe. However, since the Star Compass is circular and the canoe is rectangular, accurately placing the markings can be challenging. If 
@@ -1761,13 +1761,97 @@ node[pos=0.8,right] {\(y_1\)};
           </image>
         </figure>
         <p>
-          Calculate the location for a canoe with dimensions <m>l=7.4</m> m, <m>w=5.35</m> and for each boundary of house for theta1=5.625, theta2=...
+          Calculate the location for a canoe with dimensions <m>l=7.4</m> m, <m>w=5.35</m> and for each boundary of house for
         </p>
       </introduction>
       <exercise>
         <statement>
           <p>
             <m>\theta=5.625^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\theta=16.875^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\theta=28.125^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\theta=39.375^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\theta=50.625^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\theta=61.875^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\theta=73.125^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\theta=84.375^{\circ}</m>
           </p>
         </statement>
         <answer>
