@@ -6,10 +6,10 @@
       Swells are one of the most consistent navigational tools for maintaining a straight course due to their consistency over longer periods of time. Unlike stars that may be obscured during the day or on cloudy nights, and winds that can frequently change direction, swells tend to remain relatively constant. By keeping the angle at which the swell passes the canoe constant, crew members can navigate on a straight course.
     </p>
     <p>
-      Even in poor visibility, when the crew may not be able to see the swells, they can still feel them. Parts of the waka (canoe) will lift and then lower as the swells pass beneath. Skilled navigators can use these movements to maintain course, even without directly seeing the waves.
+      Even in poor visibility, when the crew may not be able to see the swells, they can still feel them. Parts of the vaka (canoe) will lift and then lower as the swells pass beneath. Skilled navigators can use these movements to maintain course, even without directly seeing the waves.
     </p>
     <p>
-      The side-to-side rocking motion of the canoe is known as <term>roll</term>. This motion occurs when a swell approaches from either the port (left) or starboard (right) side, causing the waka to initially lift the corresponding hull (port or starboard), followed by the opposite hull, depending on the direction of the swell.
+      The side-to-side rocking motion of the canoe is known as <term>roll</term>. This motion occurs when a swell approaches from either the port (left) or starboard (right) side, causing the vaka to initially lift the corresponding hull (port or starboard), followed by the opposite hull, depending on the direction of the swell.
     </p>
     <p>
       When a swell approaches from the bow (front) of the canoe, it lifts the front, causing the canoe to tilt backward before tilting forward. This motion is known as <term>pitch.</term> Conversely, if the swell comes from the stern (back), the canoe tilts forward and then backward.
@@ -18,22 +18,22 @@
       When a swell approaches the canoe from an angle that is not perpendicular to any side, a combination of pitch and roll occurs. The specific motion experienced depends on the precise angle of the swell. For instance, if the swell comes from an angle and lifts the starboard bow (front right), it may subsequently lift the port bow, followed by the starboard stern, and finally the port stern. However, with a slightly different angle, the sequence may change as well. After lifting the starboard bow, it could lead to the starboard stern being lifted next, followed by the port bow, and finally the port stern. This twisting motion is referred to as a <term>corkscrew</term> effect due to its combination of motions.
     </p>
     <p>
-      The video in <xref ref="video-swell-movement">Figure</xref> shows hows a waka moves as swells pass under the hulls. A change in waka motion can indicate either a change in the canoe's direction or a shift in the direction of ocean swells. In such cases, the crew must assess the situation and when conditions allow, utilize celestial markers, such as the rising and setting of stars, to determine the direction of the swells.
+      The video in <xref ref="video-swell-movement">Figure</xref> shows hows a vaka moves as swells pass under the hulls. A change in vaka motion can indicate either a change in the canoe's direction or a shift in the direction of ocean swells. In such cases, the crew must assess the situation and when conditions allow, utilize celestial markers, such as the rising and setting of stars, to determine the direction of the swells.
     </p>
     <figure xml:id="video-swell-movement">
       <caption>
-        As swells pass under the Waka Paikea, the canoe pitches, rolls, and corkscrews, depending on the angle of the swell. A navigator can use these movements to keep a straight course.
+        As swells pass under the vaka Paikea, the canoe pitches, rolls, and corkscrews, depending on the angle of the swell. A navigator can use these movements to keep a straight course.
       </caption>
       <video youtube="fUTlW9RWGLA"/>
     </figure>
     <p>
-      As the waka Paikea sails north in the Cook Islands from Rarotonga to Aitutaki with a heading of <m>0^{\circ}</m>, the swells are approaching the waka from the southwest and moving towards the northeast. Referring to <xref ref="star-compass-with-heading-angles">Figure</xref>, which provides heading angles, we observe that the swells have a heading ranging between <m>0^{\circ}</m> (north) and <m>90^{\circ}</m> (east).
+      As the vaka Paikea sails north in the Cook Islands from Rarotonga to Aitutaki with a heading of <m>0^{\circ}</m>, the swells are approaching the vaka from the southwest and moving towards the northeast. Referring to <xref ref="star-compass-with-heading-angles">Figure</xref>, which provides heading angles, we observe that the swells have a heading ranging between <m>0^{\circ}</m> (north) and <m>90^{\circ}</m> (east).
     </p> 
     <p>
       Additional observations of the crew reveal the swells hit Paikea in the following order: 1) port stern (back left); 2) starboard stern (back right); 3) port bow (front left); and 4) starboard bow (front right), as shown in <xref ref="waa-currents">Figure</xref>. If Paikea is 14.8 m (50 ft) in length and 6.2 m (20 ft) in width, what is the possible range of headings from which the swells may be approaching?
     </p>
     <figure xml:id="waa-currents">
-      <caption>Swells moving towards the northeast pass under the waka Paikea heading.</caption>
+      <caption>Swells moving towards the northeast pass under the vaka Paikea heading.</caption>
       <image xml:id="fig-waa-currents" width="80%">
         <latex-image>
           \begin{tikzpicture}[x=4cm,y=4cm]
@@ -53,10 +53,10 @@
       </image>
     </figure>
    <p>
-    To determine the range of headings, we start by considering one boundary, which occurs when the swells are moving directly north with a heading of <m>0^{\circ}</m>. To identify the other boundary, we want to find the angle at which the swell intersects both the starboard stern and port bow simultaneously as it passes beneath the waka. Essentially, we want to find the angle that diagonally traverses the canoe from one corner to another. To simplify this, we represent the waka as a rectangle and create a triangle by connecting the corners. The angle, denoted as <m>\theta</m>, is formed between the side adjacent to the 14.8 m length of the canoe and the diagonal. This angle corresponds to the heading of the swells, as shown in <xref ref="waa-currents-dimensions">Figure</xref>.
+    To determine the range of headings, we start by considering one boundary, which occurs when the swells are moving directly north with a heading of <m>0^{\circ}</m>. To identify the other boundary, we want to find the angle at which the swell intersects both the starboard stern and port bow simultaneously as it passes beneath the vaka. Essentially, we want to find the angle that diagonally traverses the canoe from one corner to another. To simplify this, we represent the vaka as a rectangle and create a triangle by connecting the corners. The angle, denoted as <m>\theta</m>, is formed between the side adjacent to the 14.8 m length of the canoe and the diagonal. This angle corresponds to the heading of the swells, as shown in <xref ref="waa-currents-dimensions">Figure</xref>.
    </p>
     <figure xml:id="waa-currents-dimensions">
-      <caption>The deck of the waka Paikea can be simplified to a rectangle, and its diagonal represents the threshold between different sequences of motions as swells pass. The angle <m>\theta</m> corresponds to the heading of the swells.</caption>
+      <caption>The deck of the vaka Paikea can be simplified to a rectangle, and its diagonal represents the threshold between different sequences of motions as swells pass. The angle <m>\theta</m> corresponds to the heading of the swells.</caption>
       <image xml:id="fig-waa-currents-dimensions" width="33%">
         <latex-image>
           \begin{tikzpicture}[scale=0.5]
