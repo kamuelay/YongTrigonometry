@@ -375,12 +375,12 @@
       <title>Determine the corresponding quadrant given its location in the Star Compass</title>
       <statement>
         <p>
-          What is the corresponding quadrant for Nalani Kona?
+          What is the corresponding quadrant for Nālani Kona?
         </p>
       </statement>
       <solution>
         <p>
-          Locating Nalani Kona in the Star Compass, we see it is in Quadrant III.
+          Locating Nālani Kona in the Star Compass, we see it is in Quadrant III.
         </p>
       </solution>
     </example>
@@ -570,7 +570,7 @@
     <p>
       Another way to measure an angle is with <em>radians</em>, which measure the the arc of a circle that is formed from an angle.
     </p>
-    <definition xml:id="core-standards-CCSS_MATH_CONTENT_HSF_TF_A_1-HSG_C_B_5">
+    <definition xml:id="def_radian">
       <title>Definition of a Radian</title>
       <statement>
         <p>
@@ -1020,9 +1020,9 @@
     </exercise>
     -->
   </subsection>
-  <subsection xml:id="core-standards-CCSS_MATH_CONTENT_HSG_C_B_5-c">
+  <subsection>
     <title>Area of a Sector of a Circle</title>
-    <definition>
+    <definition xml:id="def_area-sector">
       <title>Area of a Sector</title>
       <statement>
         <p>
@@ -2564,30 +2564,110 @@
       </task>
     </exercise>
     <exercise>
-      <statement>
-        <p>
-          The position of the rising sun changes throughout the year. A navigator can use their knowledge of the rising sun to help orient themselves. For example, during the December solstice, around December 22, the sun will rise from its most southern position, 23.5 degrees south of due east. So if the navigator identifies where the sun rises on the equinox, she can measure 23.5 degrees north to identify East. On the December solstice,
-          1) What is the celestial declination of the sun?
-          2) What house does the sun rise in?
-          3) What house does the sun set in? Hint: Celestial bodies rise and set in the same house but different quadrants.
-          4) If the canoe is sailing with the rising sun on the port side (left) and the navigator measures the angle between the direction of the canoe and the sun as being 90 degrees, what is the heading of the canoe?
-          5) What house is the canoe sailing in?
+        <title>Navigating by the Sun: Using Solar Declination and Rising Sun to Orient on a Canoe</title>
+        <introduction>
+          <p>
+            The position of the rising or setting sun changes throughout the year. <term>Solar declination</term><idx><h>solar declination</h></idx><idx><h>declination</h><h>solar</h></idx> (denoted as δ) is the angle between the direction where the Sun rises (or sets) and due east (or due west) on the horizon. It represents how far north or south the Sun is from the celestial equator, projected onto the Earth's equatorial plane. Solar declinations to the north are positive, while those to the south are negative. At the Equinoxes (around March 20th and September 22nd), the solar declination is <m>0^{\circ}</m> (<m>\delta=0^{\circ}</m>), as the Sun is directly above the equator. During the December solstice, around December 22, the Sun rises from its most southern position, 23.5 degrees south of due east (<m>\delta=-23.5^{\circ}</m>), and during the June solstice, around June 22, the Sun rises from its most northern position, 23.5 degrees north of due east (<m>\delta=23.5^{\circ}</m>).
           </p>
-      </statement>
+          <p>
+            A navigator can use their knowledge of the rising sun to help orient themselves. For example, on May 22, the solar declination is <m>\delta=20^{\circ}16'</m>. If the navigator identifies where the Sun rises on the equinox, she can measure <m>20^{\circ}16'</m> south to identify East and can then orient herself accordingly.
+          </p>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              What is the azimuth of the sun?
+            </p>
+          </statement>
+        </task>
+        <task>
+          <statement>
+            <p>
+              What house is the sun rising in?
+            </p>
+          </statement>
+        </task>
+        <task>
+          <statement>
+            <p>
+              What house does the sun set in? Hint: Celestial bodies rise and set in the same house but different quadrants.
+            </p>
+          </statement>
+        </task>
+        <task>
+          <statement>
+            <p>
+              If the canoe is sailing with the rising sun on the port side (left) and the navigator measures the angle between the direction of the canoe and the sun as being 90 degrees, what is the heading of the canoe?
+            </p>
+          </statement>
+        </task>
+        <task>
+          <statement>
+            <p>
+              What house is the canoe sailing in?
+            </p>
+          </statement>
+        </task>
     </exercise>
     <exercise>
       <statement>
         <p>
-          Swells are one of the most consistent navigational tools used to keep on a course because they can remain constant over time. While sailing on the Waka Paikea, you finished your shift and are ready to take a nap. Before you lay down, you take note that the canoe has a heading of (insert) and the swells are coming from (insert). When you wake, you noticed the swells are now hitting the canoe from (insert). You are aware that the swells couldnʻt have changed this fast and conclude that while you were asleep, the canoe changed its heading. Assuming the swell was constant, determine your new heading.
+          Swells are one of the most consistent navigational tools used to keep on a course because they can remain constant over time. On 27 May 2023, while sailing on the vaka Paikea from Rarotonga to Apia, you finished your shift and are ready to take a nap. Before you lay down, you take note that the canoe has a heading of 310 degrees and the swells are coming from the southeast (Manu Kona) and hitting the canoe at 5 degree above straight from the left of the canoe. When you wake, you noticed the swells are now hitting the canoe from 25 degrees to the left of straight in front (Nā Leo Hoʻolua). You are aware that the swells couldnʻt have changed this fast and conclude that while you were asleep, the canoe changed its heading. Assuming the swell was constant, determine your new heading.
         </p>
       </statement>
+      <hint>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Start by drawing a diagram that represents the heading of the canoe before the nap. Mark the initial heading as 310 degrees.
+              </p>
+            </li>
+            <li>
+              <p>
+                Next, draw the direction of the swells with respect to the canoe on the same diagram. The swells are coming from the southeast (Manu Kona) and hitting the canoe at 5 degrees above straight from the left of the canoe.
+              </p>
+            </li>
+            <li>
+              <p>
+                Now, draw another diagram of the swells and the canoe, but this time, represent the swells hitting the canoe from 25 degrees to the left of straight in front (Nā Leo Hoʻolua).
+              </p>
+            </li>
+            <li>
+              <p>
+                Observe that the swells couldn't have changed direction so fast while you were asleep. Thus, the change in the direction of the swells must be due to the canoe changing its heading.
+              </p>
+            </li>
+            <li>
+              <p>
+                Use the relationship between the angle of the swell and the angle between the swell and the canoe to determine the angle by which the canoe's heading changed.
+              </p>
+            </li>
+            <li>
+              <p>
+                Finally, update the initial heading of 310 degrees with the angle of change to find the new heading of the canoe after the nap.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </hint>
+      <answer>
+        <p>
+          <m>250^{\circ}</m>
+        </p>
+      </answer>
     </exercise>
     <exercise>
       <statement>
         <p>
-          The canoe is sailing with a heading of (insert) and wind is coming to the canoe approaching the canoe from (insert). What house is the wind coming from?
+          After spending 6 weeks in Samoa, vaka Paikea is making his way back from Apia to Rarotonga. On July 14, 2023, the canoe is sailing with a heading of <m>50^{\circ}</m>, and the wind is coming to the canoe from <m>60^{\circ}</m> to the right of the front of the canoe (Noio Koʻolau). to the right of the front of the canoe (Noio Koʻolau). What is the heading/azimuth and house from which the wind is coming?
         </p>
       </statement>
+      <answer>
+        <p>
+          <m>110^{circ}</m>; ʻĀina Malanai
+        </p>
+      </answer>
     </exercise>
   </exercises>
 </section> 
