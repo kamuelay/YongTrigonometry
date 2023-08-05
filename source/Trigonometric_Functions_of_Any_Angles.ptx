@@ -873,7 +873,7 @@
   </example>
 
   </subsection>
-  <subsection xml:id="core-standards-CCSS_MATH_CONTENT_HSF_TF_A_3-reference-angles">
+  <subsection xml:id="subsec_evaluating-using-reference-angles">
     <title>Evaluating Trigonometric Functions Using Reference Angles</title>
     <p>
       To evaluate trigonometric functions in any quadrant using reference angles,
@@ -1137,7 +1137,7 @@
       </solution>
     </example>
   </subsection>
-  <subsection xml:id="core-standardsCCSS_MATH_CONTENT_HSF_TF_A_4-a">
+  <subsection xml:id="subsec_periodic-functions">
     <title>Periodic Functions</title>
     <p>
       In <xref ref="exmp-trig-20pi3">Figure</xref>
@@ -1590,7 +1590,7 @@
   </subsection>
   <subsection>
     <title>Pythagorean Identities</title>
-    <definition xml:id="pythagorean-identity"><title>Pythagorean Identities</title>
+    <definition xml:id="def_pythagorean-identity"><title>Pythagorean Identities</title>
     <statement>
     <p>
       <ol>
@@ -1617,7 +1617,7 @@
       <p>
         We will use the Pythagorean Theorem to prove the reciprocal identities.
       </p>
-      <image xml:id="fig-pythagorean-identity-proof" width="75%">
+      <image xml:id="fig-def_pythagorean-identity-proof" width="75%">
 <latex-image>
 \begin{tikzpicture}[scale=3.5]
 \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
@@ -1689,7 +1689,7 @@
       </solution>
     </example>
   </subsection>
-  <subsection xml:id="core-standardsCCSS_MATH_CONTENT_HSF_TF_A_4-b">
+  <subsection xml:id="subsec_even-odd-trig-functions">
     <title>Even and Odd Trigonometric Functions</title>
     <p>
       Recall that a function <m>f</m> is even if
@@ -2432,7 +2432,7 @@
 <exercise>
   <statement>
     <p>
-      Prove the second <xref ref="pythagorean-identity"> Pythagorean Identity</xref>: <m>1+\tan^2\theta=\sec^2\theta.</m>
+      Prove the second <xref ref="def_pythagorean-identity"> Pythagorean Identity</xref>: <m>1+\tan^2\theta=\sec^2\theta.</m>
     </p>
   </statement>
   <hint>
@@ -2444,7 +2444,7 @@
 <exercise>
   <statement>
     <p>
-      Prove the third <xref ref="pythagorean-identity"> Pythagorean Identity</xref>: <m>1+\cot^2\theta+1=\csc^2\theta.</m>
+      Prove the third <xref ref="def_pythagorean-identity"> Pythagorean Identity</xref>: <m>1+\cot^2\theta+1=\csc^2\theta.</m>
     </p>
   </statement>
   <hint>
