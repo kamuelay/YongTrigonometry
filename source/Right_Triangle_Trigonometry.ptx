@@ -29,9 +29,9 @@
       from the intended course. This involves measuring the angle of deviation from the reference course (in units of houses) and calculating the distance traveled. In this section, we will explore how to calculate trigonometric functions using right triangles. These calculations will allow us to determine the distance a  waʻa has deviated from its intended reference course.
     </p>
   </introduction>
-  <subsection xml:id="core-standards-CCSS_MATH_CONTENT_HSG_SRT_C_6">
+  <subsection>
     <title>Trigonometric Ratios</title>
-    <definition>
+    <definition xml:id="def_trig-ratios">
         <title>Trigonometric Ratios</title>
     <statement>
     <p>
@@ -183,7 +183,7 @@
       </solution>
     </example>
   </subsection>
-  <subsection xml:id="core-standards-CCSS_MATH_CONTENT_HSF_TF_A_3">
+  <subsection xml:id="subsec_special-triangles">
     <title>Special Triangles</title>
     <p>
       The angles
@@ -384,7 +384,7 @@
       </tabular>
     </table>
   </subsection>
-  <subsection xml:id="core-standars-CCSS_MATH_CONTENT_HSG_SRT_C_7">
+  <subsection >
     <title>Cofunctions</title>
     <p>
       <idx>
@@ -500,7 +500,7 @@
       <m>\theta</m>,
       we get our cofunction identities.
     </p>
-    <definition><title>Cofunction Identities</title>
+    <definition xml:id="def_cofunction-identities"><title>Cofunction Identities</title>
     <statement>
     <p>
       The cofunction identities 
@@ -938,7 +938,7 @@
       </solution>
     </example>
   </subsection>
-  <subsection xml:id="core-standars-CCSS_MATH_CONTENT_HSG_SRT_C_8">
+  <subsection xml:id="subsec_applied-right-triangles">
     <title>Solving Applied Problems</title>
     <example xml:id="ex-deviation">
       <title>Deviation</title>
