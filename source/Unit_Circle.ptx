@@ -8,7 +8,7 @@
   </introduction>
   <subsection>
     <title>Unit Circle</title>
-    <definition>
+    <definition xml:id="def_unit-circle">
       <title>Unit Circe</title>
       <statement>
         <p>
@@ -27,7 +27,7 @@
     </definition>
     <p>
       Let <m>t</m> be a real number.
-      Recall from <xref ref="core-standards-CCSS_MATH_CONTENT_HSF_TF_A_1">Definition</xref> 
+      Recall from <xref ref="def_radian">Definition</xref> 
       that a radian measure of a central angle, <m>t</m>,
       is defined as the ratio of the arc length
       <m>s</m> to the radius <m>r</m>.
@@ -91,7 +91,7 @@
       We call <m>P(x,y)</m> the <em>point on the unit circle that corresponds to <m>t</m></em>.
     </p>
   </subsection>
-  <subsection xml:id="core-standards-CCSS_MATH_CONTENT_HSF_TF_A_2">
+  <subsection xml:id="subsec_trig-functions">
     <title>Trigonometric Functions</title>
     <p>
       <idx>
