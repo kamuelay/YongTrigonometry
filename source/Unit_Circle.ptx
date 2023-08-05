@@ -3,7 +3,7 @@
   <title>Unit Circle</title>
   <introduction>
     <p>
-      In this section we will introduce the trigonometric functions using the Unit Circle.
+      In this section, we will introduce the trigonometric functions using the Unit Circle.
     </p>
   </introduction>
   <subsection>
@@ -16,9 +16,7 @@
           <idx>
             <h>unit circle</h>
           </idx>
-          is a circle whose radius is 1 and whose center is at the origin of a rectangular plane
-          (or <m>xy</m>-plane).
-          The equation for the unit circle is
+          is a circle whose radius is 1 and whose center is at the origin of a rectangular plane (or <m>xy</m>-plane). The equation for the unit circle is
           <me>
             x^2+y^2=1
           </me>
@@ -26,16 +24,7 @@
       </statement>
     </definition>
     <p>
-      Let <m>t</m> be a real number.
-      Recall from <xref ref="def_radian">Definition</xref> 
-      that a radian measure of a central angle, <m>t</m>,
-      is defined as the ratio of the arc length
-      <m>s</m> to the radius <m>r</m>.
-      In other words, <m>t=\frac{s}{r}</m>.
-      In the unit circle, the radius is
-      <m>r=1</m>, and the angle in radians is equal to the arc length, <m>t=s</m>.
-      We will let <m>t</m> be in radians.
-      The circumference of the unit circle is
+      Let <m>t</m> be a real number. Recall from <xref ref="def_radian">Definition</xref> that a radian measure of a central angle, <m>t</m>, is defined as the ratio of the arc length <m>s</m> to the radius <m>r</m>. In other words, <m>t=\frac{s}{r}</m>. In the unit circle, the radius is <m>r=1</m>, and the angle in radians is equal to the arc length, <m>t=s</m>. We will let <m>t</m> be in radians. The circumference of the unit circle is
       <m>2\pi r=2\pi \cdot 1=2\pi</m>.
     </p>
     <image xml:id="fig-unit-circle-with-arc-length" width="60%">
@@ -51,12 +40,8 @@
       </latex-image>
     </image>
     <p>
-      If <m>t\geq0</m>,
-      we can imagine wrapping a line around the unit circle and mark off a distance of
-      <m>t</m> in a counterclockwise direction,
-      and label that point <m>P(x,y)</m>.
-      Here, <m>P(x,y)</m> is the terminal point.
-      If <m>t\lt 0</m> then we would wrap in a clockwise direction.
+      If <m>t\geq0</m>, we can imagine wrapping a line around the unit circle, marking off a distance of <m>t</m> in a counterclockwise direction,
+      and labeling that point <m>P(x,y)</m>, whic becomes the terminal point. If <m>t\lt 0</m> then we would wrap in a clockwise direction.
     </p>
     <image xml:id="fig-unit-circle-with-arc-length-wrapped" width="55%">
       <latex-image>
@@ -99,11 +84,16 @@
       </idx>
       The <m>x</m>- and <m>y</m>-coordinates for <m>P(x,y)</m>
       can then be used to define the six trigonometric functions of a real number
-      <m>t</m>.
+      <m>t</m>:
     </p>
-    <p class="center">
-      <em>sine</em>, <em>cosine</em>, <em>tangent</em>, <em>cosecant</em>, <em>secant</em>, <em>cotangent</em>
-    </p>
+    <tabular><row>
+      <cell><em>sine</em></cell>
+      <cell><em>cosine</em></cell>
+      <cell><em>tangent</em></cell>
+      <cell><em>cosecant</em></cell>
+      <cell><em>secant</em></cell>
+      <cell><em>cotangent</em></cell>
+    </row></tabular>
     <p>
       which are abbreviated as
       <em>sin</em>, <em>cos</em>, <em>tan</em>,
@@ -116,9 +106,7 @@
             <h>Trigonometric Functions</h>
             <h>of real numbers</h>
           </idx>
-          Let <m>t</m> be any real number and let
-          <m>P(x,y)</m> be the terminal point on the unit circle associated with
-          <m>t</m>. Then
+          Let <m>t</m> be any real number and let <m>P(x,y)</m> be the terminal point on the unit circle associated with <m>t</m>. Then
           <md>
             <mrow>\sin t\amp =y \amp  \cos t\amp =x \amp  \tan t\amp =\frac{y}{x},~(x\neq0)</mrow>
             <mrow>\csc t\amp =\frac{1}{y},~(y\neq0) \amp  \sec t\amp =\frac{1}{x},~(x\neq0) \amp  \cot t\amp =\frac{x}{y},~(y\neq0)</mrow>
@@ -140,27 +128,19 @@
           </latex-image>
         </image>
         <p>
-          Notice that <m>\tan t</m> and <m>\sec t</m>
-          are undefined when <m>x=0</m> and <m>\csc t</m>
-          and <m>\cot t</m> are undefined when <m>y=0</m>.
+          Notice that <m>\tan t</m> and <m>\sec t</m> re undefined when <m>x=0</m> and <m>\csc t</m> and <m>\cot t</m> are undefined when <m>y=0</m>.
         </p>
       </statement>
     </definition>
     <example>
       <statement>
         <p>
-          Let <m>t</m> be the angle that corresponds to the point
-          <m>P(\frac{\sqrt{3}}{2},-\frac{1}{2})</m>.
-          Find the exact values of the six trigonometric functions corresponding to
-          <m>t</m>:
-          <m>\sin t</m>, <m>\cos t</m>, <m>\tan t</m>, <m>\csc t</m>, <m>\sec t</m>, <m>\cot t</m>.
+          Let <m>t</m> be the angle that corresponds to the point <m>P(\frac{\sqrt{3}}{2},-\frac{1}{2})</m>. Find the exact values of the six trigonometric functions corresponding to <m>t</m>: <m>\sin t</m>, <m>\cos t</m>, <m>\tan t</m>, <m>\csc t</m>, <m>\sec t</m>, <m>\cot t</m>.
         </p>
       </statement>
       <solution>
         <p>
-          The point <m>P(\frac{\sqrt{3}}{2},-\frac{1}{2})</m>
-          gives us <m>x=\frac{\sqrt{3}}{2}</m> and <m>y=-\frac{1}{2}</m>.
-          Then we have
+          The point <m>P(\frac{\sqrt{3}}{2},-\frac{1}{2})</m> gives us <m>x=\frac{\sqrt{3}}{2}</m> and <m>y=-\frac{1}{2}</m>. Then we have
           <md>
             <mrow> \sin \theta\amp =y=-\frac{1}{2},\amp \csc \theta\amp =\frac{1}{y}=\frac{1}{-\frac{1}{2}}=-2,</mrow>
             <mrow> \cos \theta\amp =x=\frac{\sqrt{3}}{2}, \amp \sec \theta\amp =\frac{1}{x}=\frac{1}{\frac{\sqrt{3}}{2}}=\frac{2}{\sqrt{3}}=\frac{2\sqrt{3}}{3},</mrow>
@@ -180,10 +160,8 @@
             <h>Trigonometric Functions</h>
             <h>of angles</h>
           </idx>
-          If <m>\theta</m> is an angle with radian measure
-          <m>t</m>, then the
-          <term>six trigonometric functions</term>
-          become
+          If <m>\theta</m> is an angle with radian measure <m>t</m>, then the
+          <term>six trigonometric functions</term> become
           <md>
             <mrow>\sin \theta\amp =y \amp  \cos \theta\amp =x \amp  \tan \theta\amp =\frac{y}{x},~(x\neq0)</mrow>
             <mrow>\csc \theta\amp =\frac{1}{y},~(y\neq0) \amp  \sec \theta\amp =\frac{1}{x},~(x\neq0) \amp  \cot \theta\amp =\frac{x}{y},~(y\neq0)</mrow>
@@ -221,8 +199,9 @@
           <ol>
             <li>
               <p>
-                When <m>\theta=0</m> radians (<m>0^{\circ}</m>),
-                the point on the circle is <m>P(1,0)</m>.
+                When <m>\theta=0</m> radians (<m>0^{\circ}</m>), the point on the circle is <m>P(1,0)</m>.
+              </p>
+              <p>
                 <image xml:id="exmp-6trig-0" width="55%">
                   <latex-image>
                     \begin{tikzpicture}[scale=2.25]
@@ -234,6 +213,8 @@
                     \end{tikzpicture}
                   </latex-image>
                 </image>
+              </p>
+              <p>
                 Then <m>x=1</m> and <m>y=0</m> gives us
                 <md>
                   <mrow>\sin 0\amp =\sin 0^{\circ}=0, \amp \csc 0\amp =\csc  0^{\circ}=\mbox{undefined},</mrow>
