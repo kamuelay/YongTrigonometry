@@ -648,11 +648,11 @@
       </image>
     </sidebyside>
     <p>
-      The circumference of a circle is <m>C=2\pi r</m>. This means that the circumference is <m>2\pi\approx6.28</m> times the radius. Consequently, if we were to use a piece of string with the length of the radius, we would need six pieces of string plus a fractional piece of the string, as shown in <xref ref="2pi-radians">Figure</xref>.
+      The circumference of a circle is <m>C=2\pi r</m>. This means that the circumference is <m>2\pi\approx6.28</m> times the radius. Consequently, if we were to use a piece of string with the length of the radius, we would need six pieces of string plus a fractional piece of the string, as shown in <xref ref="circ-2pi-radians">Figure</xref>.
     </p>
-    <figure xml:id="2pi-radians">
+    <figure xml:id="circ-2pi-radians">
       <caption> One rotation of the unit circle is <m>2\pi\approx6.28</m> radians. </caption>
-      <image xml:id="fig-2pi-radians">
+      <image xml:id="fig-circ-2pi-radians">
         <latex-image>
           \begin{tikzpicture}[scale=2]
           \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{$x$};
