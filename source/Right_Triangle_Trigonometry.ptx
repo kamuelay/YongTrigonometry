@@ -16,10 +16,10 @@
       </latex-image>
     </image>
     <p>
-      During a voyage, a navigator utilizes a r<em>reference course</em>
+      During a voyage, a navigator utilizes a <em>reference course</em>
       <idx>
         <h>reference course</h>
-      </idx>—a line connecting the starting point and destination—to monitor their position. When the waʻa (canoe) encounters winds that veer it off course, the navigator mentally plots their position relative to the reference course. To ensure the destination isn't missed, navigators must track their deviation from the intended course, involving measurement of the angle of deviation from the reference course (in units of houses) and calculation of the distance traveled. This section explores the calculation of trigonometric functions using right triangles, enabling us to determine how far the waʻa has strayed from its intended reference course.
+      </idx>—a line connecting the starting point and destination—to monitor their position. When the waʻa (canoe) encounters winds that veer it off course, the navigator mentally plots their position relative to the reference course. To ensure the destination isn't missed, navigators must monitor their deviation from the intended course, involving measurement of the angle of deviation from the reference course (in units of houses) and determining the distance traveled. This section explores the calculation of trigonometric functions using right triangles, enabling us to assess how much the waʻa has strayed from its intended reference course.
     </p>
   </introduction>
   <subsection>
@@ -28,17 +28,17 @@
         <title>Trigonometric Ratios</title>
     <statement>
     <p>
-      Consider a right triangle with
-      <m>\theta</m>
-      as one of its acute angles.
-      The trigonometric ratios 
+      Consider a right triangle with <m>\theta</m> as one of its acute angles. The trigonometric ratios 
       <idx>
-        <h>Trigonometric Functions</h>
+        <h>trigonometric functions</h>
         <h>ratios</h>
       </idx> 
       are defined as follows:
     </p>
-    <image width="60%" xml:id="fig-right-triangle-opp-adj-hyp">
+    <p>
+      
+    </p>
+    <image xml:id="fig-right-triangle-opp-adj-hyp" width="60%">
       <latex-image>
         \begin{tikzpicture}
         \draw (0,0) -- (5,0) node[midway, below] {adjacent};
@@ -186,7 +186,7 @@
       (<m>\frac{\pi}{6}, \frac{\pi}{4}, \frac{\pi}{3}</m>)
       give special values 
       <idx>
-        <h>Trigonometric Functions</h>
+        <h>trigonometric functions</h>
         <h>special</h>
       </idx>
       for trigonometric functions.
@@ -389,13 +389,7 @@
       <idx>
         <h>cofunctions</h>
       </idx>
-      You may recognize the symmetry of
-      <m>\sin\theta</m>
-      and <m>\cos\theta</m>
-      if you reverse order of the values of sine and cosine from
-      <m>90^{\circ}</m>
-      to <m>0^{\circ}</m>.
-      This symmetry gives us
+      The symmetry between <m>\sin\theta</m> and <m>\cos\theta</m>  becomes evident when reversing the order of sine and cosine values from <m>90^{\circ}</m> to <m>0^{\circ}</m>. This symmetry yields
       <m>\sin0^{\circ}=\cos90^{\circ}</m>,
       <m>\sin30^{\circ}=\cos60^{\circ}</m>,
       <m>\sin45^{\circ}=\cos45^{\circ}</m>,
@@ -404,20 +398,8 @@
       <m>\sin90^{\circ}=\cos0^{\circ}</m>.
     </p>
     <p>
-      This pattern between sine and cosine is no coincidence.
-      The three angles in a triangle sum to
-      <m>180^{\circ}</m>
-      or
-      <m>\pi</m>
-      radians.
-      If we look at a right triangle,
-      the two remaining angles will sum to
-      <m>90^{\circ}</m>
-      or
-      <m>\frac{\pi}{2}</m>
-      radians,
-      meaning they are
-      <em>complementary angles</em>.
+      This pattern between sine and cosine is no coincidence; it emerges because the three angles in a triangle add up to <m>180^{\circ}</m> or <m>\pi</m>
+      radians. When considering a right triangle, the remaining two angles combine to form <m>90^{\circ}</m> or <m>\frac{\pi}{2}</m> radians, making them <em>complementary angles</em>.
       <idx>
         <h>complementary angles</h>
       </idx>
@@ -435,30 +417,7 @@
       </latex-image>
     </image>
     <p>
-      Consider the right triangle in
-      <xref ref="fig-cofunction">Figure</xref>,
-      where angles
-      <m>\alpha</m>
-      and
-      <m>\beta</m>
-      are complementary angles,
-      side
-      <m>a</m>
-      is opposite of angle
-      <m>\alpha</m>,
-      and side
-      <m>b</m>
-      is opposite of angle
-      <m>\beta</m>.
-      Notice that we can also describe side
-      <m>b</m>
-      as adjacent to angle
-      <m>\alpha</m>
-      and side
-      <m>a</m>
-      as adjacent to angle
-      <m>\beta</m>.
-      Therefore,
+      Consider the right triangle in the figure above, where angles <m>\alpha</m> and <m>\beta</m> are complementary angles. Side <m>a</m>is opposite of angle <m>\alpha</m>, and side <m>b</m> is opposite of angle <m>\beta</m>.  Notice that we can also describe side <m>b</m> as adjacent to angle <m>\alpha</m> and side <m>a</m> as adjacent to angle <m>\beta</m>. Therefore,
       <me>
         \sin\alpha=\dfrac{\mbox{opposite} }{\mbox{hypotenuse} }=\dfrac{a}{c}\mbox{~and~} \cos\beta=\dfrac{\mbox{adjacent} }{\mbox{hypotenuse} }=\dfrac{a}{c}
       </me>
@@ -769,8 +728,7 @@
       </statement>
       <solution>
         <p>
-          We make sure our calculator is in degree or radian mode.
-          For simplicity, we will round our answers to four decimals.
+          Before proceeding, we confirm that our calculator is set to either degree or radian mode. Additionally, for the sake of simplicity, we will round our answers to four decimal places.
           <ol>
             <li>
               <p>
@@ -809,9 +767,7 @@
           </ol>
         </p>
         <p>
-          Notice that
-          <m>\cos5^{\circ}\neq\cos5\mbox{ rad}</m>.
-          This is why it is important to double check if your calculator is on degree or radian mode.
+          Observe that <m>\cos5^{\circ}\neq\cos5\mbox{ rad}</m>. This emphasizes the significance of verifying whether your calculator is in degree or radian mode.
         </p>
       </solution>
     </example>
@@ -831,12 +787,7 @@
       </latex-image>
     </image>
     <p>
-      Consider the following right triangle where side
-      <m>a</m> is opposite angle <m>\alpha</m>,
-      side <m>b</m> is opposite angle <m>\beta</m>,
-      and side <m>c</m> is the hypotenuse.
-      Since <m>\alpha</m> and <m>\beta</m>
-      are complementary angles, we have
+      Consider the following right triangle where side <m>a</m> is opposite angle <m>\alpha</m>, side <m>b</m> is opposite angle <m>\beta</m>, and side <m>c</m> is the hypotenuse. Since <m>\alpha</m> and <m>\beta</m> are complementary angles, we have
       <me>
         \alpha+\beta=90^{\circ}
       </me>
@@ -850,29 +801,28 @@
     <definition>
       <statement>
         <p>
-          To
-          <term>solve a triangle</term>
+          To <term>solve a triangle</term>
           <idx>
-            <h>Triangles</h>
-            <h>Solving</h>
+            <h>triangles</h>
+            <h>solving</h>
           </idx>
-          means to determine the values for all three lengths of its sides and the measures of all three angles given some information about the triangle.
+          is the process of determining the values for all three lengths of its sides and the measures of all three angles, based on provided information about the triangle.
         </p>
       </statement>
     </definition>
-    <p>
-      To solve a right triangle, it is useful to use the following
-      <me>
-        \alpha+\beta=90^{\circ}, \qquad a^2+b^2=c^2
-      </me>
-    </p>
-    <p>
-    </p>
+    <remark>
+      <title>Solving Right Triangles</title>
+      <p>
+        In solving a right triangle, the following relationships are useful:
+        <me>
+          \alpha+\beta=90^{\circ}, \qquad a^2+b^2=c^2
+        </me>
+      </p>
+    </remark>
     <example>
       <statement>
         <p>
-          Solve the right triangle.
-          Round your answer to two decimal places.
+          Solve the right triangle. Round your answer to two decimal places.
         </p>
         <image xml:id="solving-rt-triangle-ex" width="50%">
           <latex-image>
@@ -889,23 +839,14 @@
       </statement>
       <solution>
         <p>
-          Since this is a right triangle, we know one angle is
-          <m>90^{\circ}</m>, we also know another angle is
-          <m>50^{\circ}</m> and the adjacent side is 16.
-          To solve this triangle, we will need to determine the values of
-          <m>a</m>, <m>c</m>, and <m>\beta</m>.
-          We begin by finding <m>\beta</m>.
-          Since <m>50^{\circ}+\beta=90^{\circ}</m> we have
+          Given that this is a right triangle, we already know one angle is <m>90^{\circ}</m>, and we have an additional angle of<m>50^{\circ}</m> along with an adjacent side length of 16. To solve this triangle, we need to determine the values of sides <m>a</m>, <m>c</m>, and <m>\beta</m>. We begin by finding the measure of angle <m>\beta</m>. Since <m>50^{\circ}+\beta=90^{\circ}</m> we have
           <me>
             \beta=90^{\circ}-50^{\circ}=40^{\circ}
           </me>
         </p>
         <p>
-          Next, we will solve for<m>a</m>.
-          If we use the angle <m>50^{\circ}</m>,
-          the adjacent side is 16 and <m>a</m>
-          is the opposite side to the angle.
-          The trigonometric function that relates the opposite and adjacentsides is tangent:
+          Next, we will solve for side <m>a</m>. Using the angle <m>50^{\circ}</m>, where the adjacent side is 16 and side <m>a</m>
+          is the side opposite to the angle, we can apply the tangent function, which relates the opposite and adjacent sides:
           <me>
             \tan50^{\circ}=\frac{a}{16}
           </me>
