@@ -1258,9 +1258,9 @@
           <cell>0</cell>
           <cell>1</cell>
           <cell>0</cell>
-          <cell>undefined</cell>
+          <cell>undef</cell>
           <cell>1</cell>
-          <cell>undefined</cell>
+          <cell>undef</cell>
         </row>
         <row bottom="minor">
           <cell></cell>
@@ -1337,9 +1337,9 @@
           <cell><m>\dfrac{\pi}{2}</m></cell>
           <cell>1</cell>
           <cell>0</cell>
-          <cell>undefined</cell>
+          <cell>undef</cell>
           <cell>1</cell>
-          <cell>undefined</cell>
+          <cell>undef</cell>
           <cell>0</cell>
         </row>
         <row bottom="minor">
@@ -1418,9 +1418,9 @@
           <cell>0</cell>
           <cell><m>-1</m></cell>
           <cell>0</cell>
-          <cell>undefined</cell>
+          <cell>undef</cell>
           <cell><m>-1</m></cell>
-          <cell>undefined</cell>
+          <cell>undef</cell>
         </row>
         <row bottom="minor">
           <cell></cell>
@@ -1497,9 +1497,9 @@
           <cell><m>\dfrac{3\pi}{2}</m></cell>
           <cell><m>-1</m></cell>
           <cell>0</cell>
-          <cell>undefined</cell>
+          <cell>undef</cell>
           <cell><m>-1</m></cell>
-          <cell>undefined</cell>
+          <cell>undef</cell>
           <cell>0</cell>
         </row>
         <row bottom="minor">
