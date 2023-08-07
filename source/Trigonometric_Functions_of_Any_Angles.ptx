@@ -258,8 +258,9 @@
         </li>
       </ul>
       </p>
-          <p>
+      <p>
       Quadrant I:
+      </p>
       <image xml:id="fig-calculate-ref-angle-q1" width="50%">
         <latex-image>
           \begin{tikzpicture}[scale=2]
@@ -274,12 +275,14 @@
           \end{tikzpicture}
         </latex-image>
       </image>
+      <p>
       <md>
         <mrow>t' \amp =t</mrow>
       </md>
     </p>
     <p>
       Quadrant II:
+    </p>
       <image xml:id="fig-calculate-ref-angle-q2" width="50%">
         <latex-image>
           \begin{tikzpicture}[scale=1.75]
@@ -292,8 +295,9 @@
           \draw[line width=2pt,blue] (0,0) -- (60:1);
           \draw[->] (0:0.4) arc (0:60:0.4) node[midway, right,xshift=0.05] {\(t=t'\)};
           \end{tikzpicture}
-      </latex-image>
+        </latex-image>
       </image>
+    <p>
       <md>
         <mrow>t' \amp=\pi-t</mrow>
         <mrow>t' \amp=180^{\circ}-t</mrow>
@@ -301,6 +305,7 @@
     </p>
     <p>
       Quadrant III:
+    </p>
       <image xml:id="fig-calculate-ref-angle-q3" width="50%">
         <latex-image>
           \begin{tikzpicture}[scale=1.75]
@@ -315,8 +320,9 @@
           \draw[->] (0:0.3) arc (0:240:0.3) node[midway, left,xshift=-0.1] {\(t\)};
           \draw[->] (180:0.6) arc (180:240:0.6) node[midway, left,xshift=-0.1] {\(t'\)};
           \end{tikzpicture}
-      </latex-image>
+        </latex-image>
       </image>
+    <p>
       <md>
         <mrow>t' \amp=t-\pi</mrow>
         <mrow>t' \amp=t-180^{\circ}</mrow>
@@ -324,6 +330,7 @@
     </p>
     <p>
       Quadrant IV:
+    </p>
       <image xml:id="fig-calculate-ref-angle-q4" width="50%">
         <latex-image>
           \begin{tikzpicture}[scale=1.75]
@@ -337,8 +344,9 @@
           \draw[->] (0:0.3) arc (0:300:0.3) node[midway, left,xshift=-0.1] {\(t\)};
           \draw[->] (360:0.6) arc (360:300:0.6) node[midway, right,xshift=0.1] {\(t'\)};
           \end{tikzpicture}
-      </latex-image>
+        </latex-image>
       </image>
+    <p>
       <md>
         <mrow>t' \amp =2\pi-t</mrow>
         <mrow>t' \amp =360^{\circ}-t</mrow>
@@ -356,20 +364,20 @@
         <statement>
           <p>
             <m>t=\frac{\pi}{3}</m>
-              <image xml:id="fig-find-ref-angles-pi3" width="50%">
-                <latex-image> 
-                  \begin{tikzpicture}[scale=1.75]
-                  \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
-                  \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
-                  \draw (0,0) circle (1); \filldraw[blue] (1,0) circle(1pt); 
-                  \filldraw[blue] (60:1) circle(1pt); 
-                  \draw[line width=2pt,blue] (0,0) -- (1,0); 
-                  \draw[line width=2pt,blue] (0,0) -- (60:1); 
-                  \draw[->] (0:0.4) arc (0:60:0.4) node[midway, right,xshift=0.05] {\(\frac{\pi}{3}\)};
-                  \end{tikzpicture} 
-                </latex-image>
-            </image>
           </p>
+          <image xml:id="fig-find-ref-angles-pi3" width="50%">
+            <latex-image> 
+              \begin{tikzpicture}[scale=1.75]
+              \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
+              \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
+              \draw (0,0) circle (1); \filldraw[blue] (1,0) circle(1pt); 
+              \filldraw[blue] (60:1) circle(1pt); 
+              \draw[line width=2pt,blue] (0,0) -- (1,0); 
+              \draw[line width=2pt,blue] (0,0) -- (60:1); 
+              \draw[->] (0:0.4) arc (0:60:0.4) node[midway, right,xshift=0.05] {\(\frac{\pi}{3}\)};
+              \end{tikzpicture} 
+            </latex-image>
+          </image>
         </statement>
         <solution>
           <p>
@@ -382,23 +390,23 @@
         <statement>
           <p>
             <m>t=\frac{3\pi}{4}</m>
-              <image xml:id="fig-find-ref-angles-3pi4" width="50%">
-                <latex-image> 
-                  \begin{tikzpicture}[scale=1.75]
-                  \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
-                  \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
-                  \draw (0,0) circle (1); 
-                  \filldraw[blue] (1,0) circle(1pt); 
-                  \filldraw[blue] (135:1) circle(1pt); 
-                  \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); 
-                  \draw[line width=2pt,blue] (0,0) -- (1,0); 
-                  \draw[line width=2pt,blue] (0,0) -- (135:1); 
-                  \draw[->] (0:0.4) arc (0:135:0.4) node[midway, right,xshift=0.2] {\(\frac{3\pi}{4}\)}; 
-                  \draw[->] (180:0.4) arc (180:135:0.4) node[midway, left,xshift=-0.1,yshift=0.1] {\(t'\)};
-                  \end{tikzpicture} 
-                </latex-image>
-              </image>
           </p>
+          <image xml:id="fig-find-ref-angles-3pi4" width="50%">
+            <latex-image> 
+              \begin{tikzpicture}[scale=1.75]
+              \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
+              \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
+              \draw (0,0) circle (1); 
+              \filldraw[blue] (1,0) circle(1pt); 
+              \filldraw[blue] (135:1) circle(1pt); 
+              \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); 
+              \draw[line width=2pt,blue] (0,0) -- (1,0); 
+              \draw[line width=2pt,blue] (0,0) -- (135:1); 
+              \draw[->] (0:0.4) arc (0:135:0.4) node[midway, right,xshift=0.2] {\(\frac{3\pi}{4}\)}; 
+              \draw[->] (180:0.4) arc (180:135:0.4) node[midway, left,xshift=-0.1,yshift=0.1] {\(t'\)};
+              \end{tikzpicture} 
+            </latex-image>
+          </image>
         </statement>
         <solution>
           <p>
@@ -411,22 +419,22 @@
         <statement>
           <p>
             <m>t=-\frac{3\pi}{4}</m>
-                <image xml:id="fig-find-ref-angles-neg3pi4" width="50%">
-                   <latex-image> 
-                      \begin{tikzpicture}[scale=1.75]
-                      \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
-                      \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
-                      \draw (0,0) circle (1); 
-                      \filldraw[blue] (1,0) circle(1pt); 
-                      \filldraw[blue] (-135:1) circle(1pt); 
-                      \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); 
-                      \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (-135:1); 
-                      \draw[->] (0:0.4) arc (0:-135:0.4) node[midway, below ,xshift=0.2,yshift=0.1] {\(-\frac{3\pi}{4}\)}; 
-                      \draw[->] (-180:0.4) arc (-180:-135:0.4) node[midway, left,xshift=-0.1,yshift=-0.1] {\(t'\)};
-                      \end{tikzpicture} 
-                    </latex-image>
-                </image>
           </p>
+          <image xml:id="fig-find-ref-angles-neg3pi4" width="50%">
+            <latex-image> 
+              \begin{tikzpicture}[scale=1.75]
+              \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
+              \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
+              \draw (0,0) circle (1); 
+              \filldraw[blue] (1,0) circle(1pt); 
+              \filldraw[blue] (-135:1) circle(1pt); 
+              \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); 
+              \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (-135:1); 
+              \draw[->] (0:0.4) arc (0:-135:0.4) node[midway, below ,xshift=0.2,yshift=0.1] {\(-\frac{3\pi}{4}\)}; 
+              \draw[->] (-180:0.4) arc (-180:-135:0.4) node[midway, left,xshift=-0.1,yshift=-0.1] {\(t'\)};
+              \end{tikzpicture} 
+            </latex-image>
+          </image>
         </statement>
         <solution>
           <p>
@@ -444,21 +452,21 @@
         <statement>
           <p>
             <m>t=240^{\circ}</m>
-                <image xml:id="fig-find-ref-angles-240" width="50%">
-                   <latex-image> 
-                      \begin{tikzpicture}[scale=1.75]
-                      \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
-                      \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1); 
-                      \filldraw[blue] (1,0) circle(1pt); 
-                      \filldraw[blue] (240:1) circle(1pt); 
-                      \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0);
-                      \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (240:1); 
-                      \draw[->] (0:0.3) arc (0:240:0.3) node[midway, left,xshift=-0.1] {\(240^{\circ}\)}; 
-                      \draw[->] (180:0.6) arc (180:240:0.6) node[midway, left,xshift=-0.1] {\(t'\)};
-                      \end{tikzpicture} 
-                    </latex-image>
-                </image>
           </p>
+          <image xml:id="fig-find-ref-angles-240" width="50%">
+            <latex-image> 
+              \begin{tikzpicture}[scale=1.75]
+              \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
+              \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1); 
+              \filldraw[blue] (1,0) circle(1pt); 
+              \filldraw[blue] (240:1) circle(1pt); 
+              \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0);
+              \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (240:1); 
+              \draw[->] (0:0.3) arc (0:240:0.3) node[midway, left,xshift=-0.1] {\(240^{\circ}\)}; 
+              \draw[->] (180:0.6) arc (180:240:0.6) node[midway, left,xshift=-0.1] {\(t'\)};
+              \end{tikzpicture} 
+            </latex-image>
+          </image>
         </statement>
         <solution>
           <p>
@@ -471,21 +479,21 @@
         <statement>
           <p>
             <m>t=\frac{11\pi}{6}</m>
-                <image xml:id="fig-find-ref-angles-11pi6" width="50%">
-                   <latex-image> 
-                      \begin{tikzpicture}[scale=1.75]
-                      \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
-                      \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1); 
-                      \filldraw[blue] (1,0) circle(1pt); 
-                      \filldraw[blue] (330:1) circle(1pt); 
-                      \draw[line width=2pt,blue] (0,0) -- (1,0); 
-                      \draw[line width=2pt,blue] (0,0) -- (330:1); 
-                      \draw[->] (0:0.3) arc (0:330:0.3) node[midway, left,xshift=0.1,yshift=7] {\(\frac{11\pi}{6}\)}; 
-                      \draw[->] (360:0.6) arc (360:330:0.6) node[midway, right,xshift=0.1] {\(t'\)};
-                      \end{tikzpicture} 
-                    </latex-image>
-                </image>
           </p>
+          <image xml:id="fig-find-ref-angles-11pi6" width="50%">
+            <latex-image> 
+              \begin{tikzpicture}[scale=1.75]
+              \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
+              \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1); 
+              \filldraw[blue] (1,0) circle(1pt); 
+              \filldraw[blue] (330:1) circle(1pt); 
+              \draw[line width=2pt,blue] (0,0) -- (1,0); 
+              \draw[line width=2pt,blue] (0,0) -- (330:1); 
+              \draw[->] (0:0.3) arc (0:330:0.3) node[midway, left,xshift=0.1,yshift=7] {\(\frac{11\pi}{6}\)}; 
+              \draw[->] (360:0.6) arc (360:330:0.6) node[midway, right,xshift=0.1] {\(t'\)};
+              \end{tikzpicture} 
+            </latex-image>
+          </image>
         </statement>
         <solution>
           <p>
@@ -498,22 +506,22 @@
         <statement>
           <p>
             <m>t=\frac{2\pi}{3}</m>
-                <image xml:id="fig-find-ref-angles-2pi3" width="50%">
-                   <latex-image> 
-                      \begin{tikzpicture}[scale=1.75]
-                      \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
-                      \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
-                      \draw (0,0) circle (1); \filldraw[blue] (1,0) circle(1pt); 
-                      \filldraw[blue] (120:1) circle(1pt); 
-                      \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); 
-                      \draw[line width=2pt,blue] (0,0) -- (1,0); 
-                      \draw[line width=2pt,blue] (0,0) -- (120:1); 
-                      \draw[->] (0:0.4) arc (0:120:0.4) node[midway, right,xshift=0.2] {\(\frac{2\pi}{3}\)}; 
-                      \draw[->] (180:0.4) arc (180:120:0.4) node[midway, left,xshift=-0.1,yshift=0.1] {\(t'\)};
-                      \end{tikzpicture} 
-                    </latex-image>
-                </image>
           </p>
+          <image xml:id="fig-find-ref-angles-2pi3" width="50%">
+              <latex-image> 
+              \begin{tikzpicture}[scale=1.75]
+              \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
+              \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
+              \draw (0,0) circle (1); \filldraw[blue] (1,0) circle(1pt); 
+              \filldraw[blue] (120:1) circle(1pt); 
+              \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); 
+              \draw[line width=2pt,blue] (0,0) -- (1,0); 
+              \draw[line width=2pt,blue] (0,0) -- (120:1); 
+              \draw[->] (0:0.4) arc (0:120:0.4) node[midway, right,xshift=0.2] {\(\frac{2\pi}{3}\)}; 
+              \draw[->] (180:0.4) arc (180:120:0.4) node[midway, left,xshift=-0.1,yshift=0.1] {\(t'\)};
+              \end{tikzpicture} 
+            </latex-image>
+          </image>
         </statement>
         <solution>
           <p>
@@ -524,12 +532,12 @@
       </task>
     </example>
     <remark><title>Calculate an angle in standard position given its quadrant and reference angle</title>
-        <p>
-      To calculate an angle in standard position, <m>t</m>,
-      given the quadrant that <m>t</m> lies in and the reference angle <m>t'</m>,
-    </p>
-    <p>
-      Quadrant I:
+      <p>
+        To calculate an angle in standard position, <m>t</m>, given the quadrant that <m>t</m> lies in and the reference angle <m>t'</m>,
+      </p>
+      <p>
+        Quadrant I:
+      </p>
       <image xml:id="fig-calculate-angle-from-ref-angle-q1" width="50%">
         <latex-image>
           \begin{tikzpicture}[scale=2]
@@ -544,12 +552,14 @@
           \end{tikzpicture}
         </latex-image>
       </image>
-      <md>
-        <mrow>t \amp =t'</mrow>
-      </md>
-    </p>
-    <p>
-      Quadrant II:
+      <p>
+        <md>
+          <mrow>t \amp =t'</mrow>
+        </md>
+      </p>
+      <p>
+        Quadrant II:
+      </p>
       <image xml:id="fig-calculate-angle-from-ref-angle-q2" width="50%">
         <latex-image>
           \begin{tikzpicture}[scale=1.75]
@@ -566,13 +576,15 @@
           \end{tikzpicture}
         </latex-image>
       </image>
-      <md>
-        <mrow>t \amp=\pi-t'</mrow>
-        <mrow>t \amp=180^{\circ}-t'</mrow>
-      </md>
-    </p>
-    <p>
-      Quadrant III:
+      <p>
+        <md>
+          <mrow>t \amp=\pi-t'</mrow>
+          <mrow>t \amp=180^{\circ}-t'</mrow>
+        </md>
+      </p>
+      <p>
+        Quadrant III:
+      </p>
       <image xml:id="fig-calculate-angle-from-ref-angle-q3" width="50%">
         <latex-image>
           \begin{tikzpicture}[scale=1.75]
@@ -589,13 +601,15 @@
           \end{tikzpicture}
         </latex-image>
       </image>
-      <md>
-        <mrow>t \amp=t'-\pi</mrow>
-        <mrow>t \amp=t'-180^{\circ}</mrow>
-      </md>
-    </p>
-    <p>
-      Quadrant IV:
+      <p>
+        <md>
+          <mrow>t \amp=t'-\pi</mrow>
+          <mrow>t \amp=t'-180^{\circ}</mrow>
+        </md>
+      </p>
+      <p>
+        Quadrant IV:
+      </p>
       <image xml:id="fig-calculate-angle-from-ref-angle-q4" width="50%">
         <latex-image>
           \begin{tikzpicture}[scale=1.75]
@@ -611,30 +625,31 @@
           \end{tikzpicture}
         </latex-image>
       </image>
-      <md>
-        <mrow>t \amp =2\pi-t'</mrow>
-        <mrow>t \amp =360^{\circ}-t'</mrow>
-      </md>
-    </p>
-    <p>
-      For radians only: If the reference angle
-      (in radians)
-      is of the form <m>t'=\frac{a\pi}{b}</m>,
-      then the associated angle in standard position,
-      <m>t</m>, can be calculated by
-    </p>
-    <image xml:id="reference-angle-radians" width="75%">
-      <latex-image>
-      \begin{tikzpicture}[scale=1.25]
-      \draw[&lt;->] (-2,0)--(2,0) node[right]{\(x\)};
-      \draw[&lt;->] (0,-2)--(0,2) node[above]{\(y\)};
-      \node at (1,1) [ align=center] {I \\ \(t=t'=\frac{a\pi}{b}\)};
-      \node at (-1,1) [ align=center]{II \\ \(t=\frac{(b-a)\pi}{b}\)};
-      \node at (-1,-1) [ align=center] {III \\ \(t=\frac{(b+a)\pi}{b}\)};
-      \node at (1,-1) [ align=center] {IV \\ \(t=\frac{(2b-a)\pi}{b}\)};
-      \end{tikzpicture}
-      </latex-image>
-    </image>
+      <p>
+        <md>
+          <mrow>t \amp =2\pi-t'</mrow>
+          <mrow>t \amp =360^{\circ}-t'</mrow>
+        </md>
+      </p>
+      <p>
+        For radians only: If the reference angle
+        (in radians)
+        is of the form <m>t'=\frac{a\pi}{b}</m>,
+        then the associated angle in standard position,
+        <m>t</m>, can be calculated by
+      </p>
+      <image xml:id="reference-angle-radians" width="75%">
+        <latex-image>
+        \begin{tikzpicture}[scale=1.25]
+        \draw[&lt;->] (-2,0)--(2,0) node[right]{\(x\)};
+        \draw[&lt;->] (0,-2)--(0,2) node[above]{\(y\)};
+        \node at (1,1) [ align=center] {I \\ \(t=t'=\frac{a\pi}{b}\)};
+        \node at (-1,1) [ align=center]{II \\ \(t=\frac{(b-a)\pi}{b}\)};
+        \node at (-1,-1) [ align=center] {III \\ \(t=\frac{(b+a)\pi}{b}\)};
+        \node at (1,-1) [ align=center] {IV \\ \(t=\frac{(2b-a)\pi}{b}\)};
+        \end{tikzpicture}
+        </latex-image>
+      </image>
     </remark>
   <example>
     <title>Calculate an angle given its reference angle and quadrant </title>
@@ -647,21 +662,21 @@
       <introduction>
         <p>
           <m>t'=\frac{\pi}{6}</m>
-          <image xml:id="fig-angle-pi6" width="50%">
-            <latex-image> 
-              \begin{tikzpicture}[scale=1.75]
-              \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
-              \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
-              \draw (0,0) circle (1); 
-              \filldraw[blue] (1,0) circle(1pt); 
-              \filldraw[blue] (60:1) circle(1pt); 
-              \draw[line width=2pt,blue] (0,0) -- (1,0); 
-              \draw[line width=2pt,blue] (0,0) -- (60:1); 
-              \draw[->] (0:0.4) arc (0:60:0.4) node[midway, right,xshift=0.05] {\(\frac{\pi}{6}\)};
-              \end{tikzpicture} 
-            </latex-image>
-          </image>
         </p>
+        <image xml:id="fig-angle-pi6" width="50%">
+          <latex-image> 
+            \begin{tikzpicture}[scale=1.75]
+            \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
+            \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
+            \draw (0,0) circle (1); 
+            \filldraw[blue] (1,0) circle(1pt); 
+            \filldraw[blue] (60:1) circle(1pt); 
+            \draw[line width=2pt,blue] (0,0) -- (1,0); 
+            \draw[line width=2pt,blue] (0,0) -- (60:1); 
+            \draw[->] (0:0.4) arc (0:60:0.4) node[midway, right,xshift=0.05] {\(\frac{\pi}{6}\)};
+            \end{tikzpicture} 
+          </latex-image>
+        </image>
       </introduction>
             <task>
         <statement>
@@ -678,23 +693,21 @@
             Alternative solution: Since <m>t'=\frac{\pi}{6}=\frac{1\pi}{6}</m>,
             then <m>t'=\frac{(6-1)\pi}{6}=\frac{5\pi}{6}</m>
           </p> 
-          <p>
-            <image xml:id="fig-angle-pi6-q2" width="50%">
-              <latex-image>
-                \begin{tikzpicture}[scale=1.75]
-                \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-                \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
-                \draw (0,0) circle (1); 
-                \filldraw[blue] (1,0) circle(1pt); 
-                \filldraw[blue] (150:1) circle(1pt); \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); 
-                \draw[line width=2pt,blue] (0,0) -- (1,0); 
-                \draw[line width=2pt,blue] (0,0) -- (150:1); 
-                \draw[->] (0:0.4) arc (0:150:0.4) node[midway, right,xshift=0.2] {\(\frac{5\pi}{6}\)}; 
-                \draw[->] (180:0.4) arc (180:150:0.4) node[midway, left,xshift=-0.25,yshift=0.1] {\(\frac{\pi}{6}\)};
-                \end{tikzpicture} 
-              </latex-image>
-            </image>
-          </p>
+          <image xml:id="fig-angle-pi6-q2" width="50%">
+            <latex-image>
+              \begin{tikzpicture}[scale=1.75]
+              \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+              \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
+              \draw (0,0) circle (1); 
+              \filldraw[blue] (1,0) circle(1pt); 
+              \filldraw[blue] (150:1) circle(1pt); \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); 
+              \draw[line width=2pt,blue] (0,0) -- (1,0); 
+              \draw[line width=2pt,blue] (0,0) -- (150:1); 
+              \draw[->] (0:0.4) arc (0:150:0.4) node[midway, right,xshift=0.2] {\(\frac{5\pi}{6}\)}; 
+              \draw[->] (180:0.4) arc (180:150:0.4) node[midway, left,xshift=-0.25,yshift=0.1] {\(\frac{\pi}{6}\)};
+              \end{tikzpicture} 
+            </latex-image>
+          </image>
         </solution>
       </task>
       <task>
@@ -712,23 +725,21 @@
             Alternative solution:
             <m>t'=\frac{(6+1)\pi}{6}=\frac{7\pi}{6}</m>
           </p>
-          <p>
-            <image xml:id="fig-angle-pi6-q3" width="50%">
-              <latex-image>
-                \begin{tikzpicture}[scale=1.75]
-                \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
-                \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
-                \draw (0,0) circle (1); \filldraw[blue] (1,0) circle(1pt); 
-                \filldraw[blue] (210:1) circle(1pt); 
-                \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); 
-                \draw[line width=2pt,blue] (0,0) -- (1,0); 
-                \draw[line width=2pt,blue] (0,0) -- (210:1); 
-                \draw[->] (0:0.3) arc (0:210:0.3) node[midway, left,xshift=-0.1] {\(\frac{7\pi}{6}\)}; 
-                \draw[->] (180:0.6) arc (180:210:0.6) node[midway, left,xshift=-0.1,yshift=-0.1] {\(\frac{\pi}{6}\)};
-                \end{tikzpicture} 
-              </latex-image>
-            </image>
-          </p>
+          <image xml:id="fig-angle-pi6-q3" width="50%">
+            <latex-image>
+              \begin{tikzpicture}[scale=1.75]
+              \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
+              \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+              \draw (0,0) circle (1); \filldraw[blue] (1,0) circle(1pt); 
+              \filldraw[blue] (210:1) circle(1pt); 
+              \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); 
+              \draw[line width=2pt,blue] (0,0) -- (1,0); 
+              \draw[line width=2pt,blue] (0,0) -- (210:1); 
+              \draw[->] (0:0.3) arc (0:210:0.3) node[midway, left,xshift=-0.1] {\(\frac{7\pi}{6}\)}; 
+              \draw[->] (180:0.6) arc (180:210:0.6) node[midway, left,xshift=-0.1,yshift=-0.1] {\(\frac{\pi}{6}\)};
+              \end{tikzpicture} 
+            </latex-image>
+          </image>
         </solution>
       </task>
       <task>
@@ -745,22 +756,22 @@
           <p>
             Alternative solution:
             <m>t'=\frac{(2\cdot6-1)\pi}{6}=\frac{11\pi}{6}</m>
-            <image xml:id="fig-angle-pi6-q4" width="50%">
-              <latex-image> 
-                \begin{tikzpicture}[scale=1.75]
-                \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
-                \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
-                \draw (0,0) circle (1); 
-                \filldraw[blue] (1,0) circle(1pt); 
-                \filldraw[blue] (330:1) circle(1pt); 
-                \draw[line width=2pt,blue] (0,0) -- (1,0); 
-                \draw[line width=2pt,blue] (0,0) -- (330:1); 
-                \draw[->] (0:0.3) arc (0:330:0.3) node[midway, left,xshift=0.1,yshift=0.2] {\(\frac{11\pi}{6}\)}; 
-                \draw[->] (360:0.6) arc (360:330:0.6) node[midway, right,xshift=0.1,yshift=-0.1] {\(\frac{\pi}{6}\)};
-                \end{tikzpicture} 
-              </latex-image>
-            </image>
           </p>
+          <image xml:id="fig-angle-pi6-q4" width="50%">
+            <latex-image> 
+              \begin{tikzpicture}[scale=1.75]
+              \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
+              \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
+              \draw (0,0) circle (1); 
+              \filldraw[blue] (1,0) circle(1pt); 
+              \filldraw[blue] (330:1) circle(1pt); 
+              \draw[line width=2pt,blue] (0,0) -- (1,0); 
+              \draw[line width=2pt,blue] (0,0) -- (330:1); 
+              \draw[->] (0:0.3) arc (0:330:0.3) node[midway, left,xshift=0.1,yshift=0.2] {\(\frac{11\pi}{6}\)}; 
+              \draw[->] (360:0.6) arc (360:330:0.6) node[midway, right,xshift=0.1,yshift=-0.1] {\(\frac{\pi}{6}\)};
+              \end{tikzpicture} 
+            </latex-image>
+          </image>
         </solution>
       </task>
     </task>
@@ -768,21 +779,21 @@
       <introduction>
         <p>
           <m>t'=45^{\circ}</m>
-          <image xml:id="fig-angle-45" width="50%">
-            <latex-image>
-              \begin{tikzpicture}[scale=1.75]
-              \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
-              \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
-              \draw (0,0) circle (1); 
-              \filldraw[blue] (1,0) circle(1pt); 
-              \filldraw[blue] (45:1) circle(1pt); 
-              \draw[line width=2pt,blue] (0,0) -- (1,0); 
-              \draw[line width=2pt,blue] (0,0) -- (45:1); 
-              \draw[->] (0:0.4) arc (0:45:0.4) node[midway, right,xshift=0.05] {\(45^{\circ}\)};
-              \end{tikzpicture} 
-            </latex-image>
-          </image>
         </p>
+        <image xml:id="fig-angle-45" width="50%">
+          <latex-image>
+            \begin{tikzpicture}[scale=1.75]
+            \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
+            \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
+            \draw (0,0) circle (1); 
+            \filldraw[blue] (1,0) circle(1pt); 
+            \filldraw[blue] (45:1) circle(1pt); 
+            \draw[line width=2pt,blue] (0,0) -- (1,0); 
+            \draw[line width=2pt,blue] (0,0) -- (45:1); 
+            \draw[->] (0:0.4) arc (0:45:0.4) node[midway, right,xshift=0.05] {\(45^{\circ}\)};
+            \end{tikzpicture} 
+          </latex-image>
+        </image>
       </introduction>
       <task>
         <statement>
@@ -794,23 +805,21 @@
           <p>
             In Quadrant II, the associated angle is <m>t=180^{\circ}-45^{\circ}=135^{\circ}</m>
           </p>
-          <p>
-            <image xml:id="fig-angle-45-q2" width="50%">
-              <latex-image> 
-                \begin{tikzpicture}[scale=1.75]
-                \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
-                \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
-                \draw (0,0) circle (1); \filldraw[blue] (1,0) circle(1pt); 
-                \filldraw[blue] (135:1) circle(1pt); 
-                \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); 
-                \draw[line width=2pt,blue] (0,0) -- (1,0); 
-                \draw[line width=2pt,blue] (0,0) -- (135:1); 
-                \draw[->] (0:0.4) arc (0:135:0.4) node[midway, right,xshift=0.1] {\(135^{\circ}\)}; 
-                \draw[->] (180:0.4) arc (180:135:0.4) node[midway, left,xshift=-0.0,yshift=0.1] {\(45^{\circ}\)};
-                \end{tikzpicture} 
-              </latex-image>
-            </image>
-          </p>
+          <image xml:id="fig-angle-45-q2" width="50%">
+            <latex-image> 
+              \begin{tikzpicture}[scale=1.75]
+              \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
+              \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
+              \draw (0,0) circle (1); \filldraw[blue] (1,0) circle(1pt); 
+              \filldraw[blue] (135:1) circle(1pt); 
+              \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); 
+              \draw[line width=2pt,blue] (0,0) -- (1,0); 
+              \draw[line width=2pt,blue] (0,0) -- (135:1); 
+              \draw[->] (0:0.4) arc (0:135:0.4) node[midway, right,xshift=0.1] {\(135^{\circ}\)}; 
+              \draw[->] (180:0.4) arc (180:135:0.4) node[midway, left,xshift=-0.0,yshift=0.1] {\(45^{\circ}\)};
+              \end{tikzpicture} 
+            </latex-image>
+          </image>
         </solution>
       </task>
       <task>
@@ -823,23 +832,21 @@
           <p>
             In Quadrant III, the associated angle is <m>t=180^{\circ}+45^{\circ}=225^{\circ}</m>
           </p>
-          <p>
-            <image xml:id="fig-angle-45-q3" width="50%">
-              <latex-image> \begin{tikzpicture}[scale=1.75]
-                \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
-                \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
-                \draw (0,0) circle (1); 
-                \filldraw[blue] (1,0) circle(1pt); 
-                \filldraw[blue] (225:1) circle(1pt); 
-                \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); 
-                \draw[line width=2pt,blue] (0,0) -- (1,0); 
-                \draw[line width=2pt,blue] (0,0) -- (225:1); 
-                \draw[->] (0:0.3) arc (0:225:0.3) node[midway, left,xshift=-0.0] {\(225^{\circ}\)}; 
-                \draw[->] (180:0.5) arc (180:225:0.5) node[midway, left,xshift=0.0,yshift=-0.0] {\(45^{\circ}\)};
-                \end{tikzpicture} 
-              </latex-image>
-            </image>
-          </p>
+          <image xml:id="fig-angle-45-q3" width="50%">
+            <latex-image> \begin{tikzpicture}[scale=1.75]
+              \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
+              \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
+              \draw (0,0) circle (1); 
+              \filldraw[blue] (1,0) circle(1pt); 
+              \filldraw[blue] (225:1) circle(1pt); 
+              \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); 
+              \draw[line width=2pt,blue] (0,0) -- (1,0); 
+              \draw[line width=2pt,blue] (0,0) -- (225:1); 
+              \draw[->] (0:0.3) arc (0:225:0.3) node[midway, left,xshift=-0.0] {\(225^{\circ}\)}; 
+              \draw[->] (180:0.5) arc (180:225:0.5) node[midway, left,xshift=0.0,yshift=-0.0] {\(45^{\circ}\)};
+              \end{tikzpicture} 
+            </latex-image>
+          </image>
         </solution>
       </task>
       <task>
@@ -852,21 +859,19 @@
           <p>
             In Quadrant IV, the associated angle is <m>t=360^{\circ}-45^{\circ}=315^{\circ}</m>
           </p>
-          <p>
-            <image xml:id="fig-angle-45-q4" width="50%">
-              <latex-image> 
-                \begin{tikzpicture}[scale=1.75]
-                \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
-                \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1); 
-                \filldraw[blue] (1,0) circle(1pt); 
-                \filldraw[blue] (315:1) circle(1pt); 
-                \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (315:1); 
-                \draw[->] (0:0.3) arc (0:315:0.3) node[midway, left,xshift=0.0,yshift=0.0] {\(315^{\circ}\)}; 
-                \draw[->] (360:0.5) arc (360:315:0.5) node[midway, right,xshift=0.05,yshift=-0.0] {\(45^{\circ}\)};
-                \end{tikzpicture} 
-              </latex-image>
-            </image>
-          </p>
+          <image xml:id="fig-angle-45-q4" width="50%">
+            <latex-image> 
+              \begin{tikzpicture}[scale=1.75]
+              \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
+              \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1); 
+              \filldraw[blue] (1,0) circle(1pt); 
+              \filldraw[blue] (315:1) circle(1pt); 
+              \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (315:1); 
+              \draw[->] (0:0.3) arc (0:315:0.3) node[midway, left,xshift=0.0,yshift=0.0] {\(315^{\circ}\)}; 
+              \draw[->] (360:0.5) arc (360:315:0.5) node[midway, right,xshift=0.05,yshift=-0.0] {\(45^{\circ}\)};
+              \end{tikzpicture} 
+            </latex-image>
+          </image>
         </solution>
       </task>
     </task>
@@ -1004,11 +1009,9 @@
           </p>
           <task><title>Step 1</title>
             <statement>
-              <p>
-                <image xml:id="exmp-6trig-ref-ang-210" width="75%">
-                    <latex-image> \begin{tikzpicture}[scale=4]\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1); \filldraw[blue] (1,0) circle(1pt); \filldraw[blue] (210:1) circle(1pt) node [left] {\(P\)}; \draw[blue] (0,0) -- (1,0); \draw[blue] (0,0) -- (210:1) node[midway,below] {\(r\)}; \draw[->] (0:0.2) arc (0:210:0.2) node[midway, right,xshift=0.2] {\(\theta\)}; \draw[->] (180:0.4) arc (180:210:0.4) node[midway, left,xshift=-0.1] {\(\theta'\)};\end{tikzpicture} </latex-image>
-                </image>
-              </p>
+              <image xml:id="exmp-6trig-ref-ang-210" width="75%">
+                <latex-image> \begin{tikzpicture}[scale=4]\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1); \filldraw[blue] (1,0) circle(1pt); \filldraw[blue] (210:1) circle(1pt) node [left] {\(P\)}; \draw[blue] (0,0) -- (1,0); \draw[blue] (0,0) -- (210:1) node[midway,below] {\(r\)}; \draw[->] (0:0.2) arc (0:210:0.2) node[midway, right,xshift=0.2] {\(\theta\)}; \draw[->] (180:0.4) arc (180:210:0.4) node[midway, left,xshift=-0.1] {\(\theta'\)};\end{tikzpicture} </latex-image>
+              </image>
             </statement>
           </task>
           <task><title>Step 2</title>
@@ -1051,11 +1054,9 @@
             We will use the steps for evaluating trigonometric functions using reference angles.
           </p>
           <task><title>Step 1</title>
-            <p>
-              <image xml:id="exmp-6trig-ref-ang-7pi4" width="75%">
-                  <latex-image> \begin{tikzpicture}[scale=4]\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1); \filldraw (0.4,0) circle(1pt); \filldraw[blue] (1,0) circle(1pt); \filldraw[blue] (315:1) circle(1pt) node [right] {\(P\)}; \draw[blue] (0,0) -- (1,0); \draw[blue] (0,0) -- (315:1) node[midway,below] {\(r\)}; \draw[->] (0:0.4) arc (0:315:0.4) node[midway, left,xshift=-0.1] {\(\theta\)}; \draw[->] (360:0.4) arc (360:315:0.4) node[midway, right,xshift=0.1] {\(\theta'\)};\end{tikzpicture} </latex-image>
-              </image>
-                </p>
+            <image xml:id="exmp-6trig-ref-ang-7pi4" width="75%">
+              <latex-image> \begin{tikzpicture}[scale=4]\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1); \filldraw (0.4,0) circle(1pt); \filldraw[blue] (1,0) circle(1pt); \filldraw[blue] (315:1) circle(1pt) node [right] {\(P\)}; \draw[blue] (0,0) -- (1,0); \draw[blue] (0,0) -- (315:1) node[midway,below] {\(r\)}; \draw[->] (0:0.4) arc (0:315:0.4) node[midway, left,xshift=-0.1] {\(\theta\)}; \draw[->] (360:0.4) arc (360:315:0.4) node[midway, right,xshift=0.1] {\(\theta'\)};\end{tikzpicture} </latex-image>
+            </image>
           </task>
           <task><title>Step 2</title>
             <p>
@@ -1091,14 +1092,26 @@
       <solution>
         <task><title>Step 1</title>
           <statement>
-            <p>
-                <figure xml:id="exmp-trig-20pi3" width="75">
-                  <caption>The angle <m>\theta=\frac{20\pi}{3}</m> makes three rotations before ending in Quadrant II.</caption>
-                  <image>
-                     <latex-image> \begin{tikzpicture}[scale=4] \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1); \filldraw[blue] (1,0) circle(1pt); \filldraw[blue] (120:1) circle(1pt) node [left] {\(P\)}; \draw[blue] (0,0) -- (1,0); \draw[blue] (0,0) -- (120:1); \draw[->,domain=0:20.94395,variable=\t,smooth,samples=75] plot ({\t r}: {0.1+0.03*\t}); \node at (60:0.8) {\(\theta\)}; \draw[->] (180:0.7283) arc (180:120:0.7283) node[midway, left,xshift=-0.0] {\(\theta'\)}; \filldraw[blue] (120:0.162831853072) circle(1pt); \filldraw[blue] (120:0.351327412287) circle(1pt); \filldraw[blue] (120:0.539822971503) circle(1pt); \filldraw[blue] (120:0.7283) circle(1pt);\end{tikzpicture} </latex-image>
-                  </image>
-                </figure>
-              </p>
+            <figure xml:id="exmp-trig-20pi3" width="75">
+              <caption>The angle <m>\theta=\frac{20\pi}{3}</m> makes three rotations before ending in Quadrant II.</caption>
+              <image>
+                <latex-image> 
+                  \begin{tikzpicture}[scale=4] 
+                  \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
+                  \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
+                  \draw (0,0) circle (1); \filldraw[blue] (1,0) circle(1pt); 
+                  \filldraw[blue] (120:1) circle(1pt) node [left] {\(P\)}; 
+                  \draw[blue] (0,0) -- (1,0); \draw[blue] (0,0) -- (120:1); 
+                  \draw[->,domain=0:20.94395,variable=\t,smooth,samples=75] plot ({\t r}: {0.1+0.03*\t}); 
+                  \node at (60:0.8) {\(\theta\)}; \draw[->] (180:0.7283) arc (180:120:0.7283) node[midway, left,xshift=-0.0] {\(\theta'\)}; 
+                  \filldraw[blue] (120:0.162831853072) circle(1pt); 
+                  \filldraw[blue] (120:0.351327412287) circle(1pt); 
+                  \filldraw[blue] (120:0.539822971503) circle(1pt); 
+                  \filldraw[blue] (120:0.7283) circle(1pt);
+                  \end{tikzpicture} 
+                </latex-image>
+              </image>
+            </figure>
           </statement>
         </task>
         <task><title>Step 2</title>
@@ -1171,7 +1184,7 @@
       Thus, the values of sine and cosine for all angles corresponding to point <m>P</m> are equal.
       In other words
     </p>
-      <definition xml:id="def-Periodic-Properties-sincos"><idx><h>periodic properties</h></idx><title>Periodic Properties</title>
+      <definition xml:id="def-Periodic-Properties-sincos"><title>Periodic Properties</title><idx><h>periodic properties</h></idx>
       
       
         <statement>
@@ -1879,19 +1892,19 @@
   </introduction>
   <exercise>
     <statement>
-      <p>
-        <image xml:id="exer-6trig-P-86" width="75%">
-<latex-image>
-\begin{tikzpicture}[scale=1.5]\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-\draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
-\filldraw[blue] (1,0) circle(1pt);
-\filldraw[blue] (126.869897646:1.2) circle(1pt);
-\draw[blue] (0,0) -- (1,0);
-\draw[blue] (0,0) -- (126.869897646:1.2) node[left]{P(-8,6)};
-\draw[->] (0:0.7) arc (0:126.869897646:0.7) node[midway,above] {\(\theta\)};\end{tikzpicture}
-</latex-image>
-        </image>
-      </p>
+      <image xml:id="exer-6trig-P-86" width="75%">
+        <latex-image>
+          \begin{tikzpicture}[scale=1.5]
+          \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+          \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+          \filldraw[blue] (1,0) circle(1pt);
+          \filldraw[blue] (126.869897646:1.2) circle(1pt);
+          \draw[blue] (0,0) -- (1,0);
+          \draw[blue] (0,0) -- (126.869897646:1.2) node[left]{P(-8,6)};
+          \draw[->] (0:0.7) arc (0:126.869897646:0.7) node[midway,above] {\(\theta\)};
+          \end{tikzpicture}
+        </latex-image>
+      </image>
     </statement>
     <answer>
       <p>
@@ -1901,19 +1914,18 @@
   </exercise>
   <exercise>
     <statement>
-      <p>
-        <image xml:id="exer-6trig-P6-7" width="75%">
-<latex-image>
-\begin{tikzpicture}[scale=1.5]\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-\draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
-\filldraw[blue] (1,0) circle(1pt);
-\filldraw[blue] (310.601294645:1.2) circle(1pt);
-\draw[blue] (0,0) -- (1,0);
-\draw[blue] (0,0) -- (310.601294645:1.2) node[right]{P(6,-7)};
-\draw[->] (0:0.7) arc (0:310.601294645:0.7) node[midway,left] {\(\theta\)};\end{tikzpicture}
-</latex-image>
-        </image> 
-      </p>
+      <image xml:id="exer-6trig-P6-7" width="75%">
+        <latex-image>
+          \begin{tikzpicture}[scale=1.5]
+          \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+          \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+          \filldraw[blue] (1,0) circle(1pt);
+          \filldraw[blue] (310.601294645:1.2) circle(1pt);
+          \draw[blue] (0,0) -- (1,0);
+          \draw[blue] (0,0) -- (310.601294645:1.2) node[right]{P(6,-7)};
+          \draw[->] (0:0.7) arc (0:310.601294645:0.7) node[midway,left] {\(\theta\)};\end{tikzpicture}
+        </latex-image>
+      </image>
     </statement>
     <answer>
       <p>
@@ -2822,8 +2834,7 @@
     <p>
       The Makaliʻi<idx><h>Makaliʻi</h></idx> is sailing along the Kohala Coast, keeping two nautical miles off shore. An observer at Mahukona watches as Makaliʻi passes. Let <m>d</m> represent the distance of the line connecting the Makali`i to the observer at Mahukona. If <m>\theta</m> is the angle formed between <m>d</m> and the shore, calculate to one decimal place Makaliʻi's distance, <m>d</m>, from the observer for each <m>\theta</m>.
     </p> 
-    <p>
-      <image xml:id="exer-makalii-distance">
+    <image xml:id="exer-makalii-distance">
       <latex-image>
       \begin{tikzpicture}[scale=6]
       \node[below,yshift=-5] at (0,0) {Mahukona};
@@ -2835,8 +2846,7 @@
       \draw (-1.3,0.1) -- (-1.2,0.1) -- (-1.2,0);
       \end{tikzpicture}
       </latex-image>
-      </image>
-    </p>
+    </image>
   </introduction>
   <exercise>
     <statement>
