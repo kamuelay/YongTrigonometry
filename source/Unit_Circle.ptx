@@ -103,7 +103,7 @@
       <statement>
         <p>
           <idx>
-            <h>Trigonometric Functions</h>
+            <h>trigonometric functions</h>
             <h>of real numbers</h>
           </idx>
           Let <m>t</m> be any real number and let <m>P(x,y)</m> be the terminal point on the unit circle associated with <m>t</m>. Then
@@ -157,7 +157,7 @@
       <statement>
         <p>
           <idx>
-            <h>Trigonometric Functions</h>
+            <h>trigonometric functions</h>
             <h>of angles</h>
           </idx>
           If <m>\theta</m> is an angle with radian measure <m>t</m>, then the
@@ -769,7 +769,7 @@
       A fourth form of symmetry involves reflecting points across the diagonal line <m>y=x</m>, where the <m>x</m>- and <m>y</m>-values are equal.
     </p>
     <p>
-      <ol marker="4">
+      <ol>
         <li>
           <p>
             <m>T(y,x)</m>: Symmetry about the line <m>y=x</m>. This is accomplished by interchanging the <m>x</m>- and <m>y</m>-values.
@@ -1019,7 +1019,7 @@
       <statement>
         <p>
           <idx>
-            <h>Trigonometric Functions</h>
+            <h>trigonometric functions</h>
             <h>
               circle of radius
               <m>r</m>
