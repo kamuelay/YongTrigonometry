@@ -16,17 +16,10 @@
       </latex-image>
     </image>
     <p>
-      During a voyage, a navigator uses a
-      <em>reference course</em>
+      During a voyage, a navigator utilizes a r<em>reference course</em>
       <idx>
         <h>reference course</h>
-      </idx>
-      which is a line connecting the starting point and the destination, to track their position. If the wa&#699; a (canoe) encounters winds that push it off its intended course, the navigator can mentally plot their position in relation to the reference course. To prevent missing the destination, navigators must monitor how far they 
-      <em>deviate</em>
-      <idx>
-        <h>deviation</h>
-      </idx>
-      from the intended course. This involves measuring the angle of deviation from the reference course (in units of houses) and calculating the distance traveled. In this section, we will explore how to calculate trigonometric functions using right triangles. These calculations will allow us to determine the distance a  waʻa has deviated from its intended reference course.
+      </idx>—a line connecting the starting point and destination—to monitor their position. When the waʻa (canoe) encounters winds that veer it off course, the navigator mentally plots their position relative to the reference course. To ensure the destination isn't missed, navigators must track their deviation from the intended course, involving measurement of the angle of deviation from the reference course (in units of houses) and calculation of the distance traveled. This section explores the calculation of trigonometric functions using right triangles, enabling us to determine how far the waʻa has strayed from its intended reference course.
     </p>
   </introduction>
   <subsection>
@@ -55,14 +48,16 @@
         \end{tikzpicture}
       </latex-image>
     </image>
-    <md>
-      <mrow>\sin\theta\amp =\frac{\mbox{opposite} }{\mbox{hypotenuse} }
-      \amp \cos\theta\amp =\frac{\mbox{adjacent} }{\mbox{hypotenuse} }
-      \amp \tan\theta\amp =\frac{\mbox{opposite} }{\mbox{adjacent} }</mrow>
-      <mrow>\csc\theta\amp =\frac{\mbox{hypotenuse} }{\mbox{opposite} }
-      \amp \sec\theta\amp =\frac{\mbox{hypotenuse} }{\mbox{adjacent} }
-      \amp \cot\theta\amp =\frac{\mbox{adjacent} }{\mbox{opposite} }</mrow>
-    </md>
+    <p>
+      <md>
+        <mrow>\sin\theta\amp =\frac{\mbox{opposite} }{\mbox{hypotenuse} }
+        \amp \cos\theta\amp =\frac{\mbox{adjacent} }{\mbox{hypotenuse} }
+        \amp \tan\theta\amp =\frac{\mbox{opposite} }{\mbox{adjacent} }</mrow>
+        <mrow>\csc\theta\amp =\frac{\mbox{hypotenuse} }{\mbox{opposite} }
+        \amp \sec\theta\amp =\frac{\mbox{hypotenuse} }{\mbox{adjacent} }
+        \amp \cot\theta\amp =\frac{\mbox{adjacent} }{\mbox{opposite} }</mrow>
+      </md>
+    </p>
     <p>
       A common mnemonic for remembering these relationships is SOHCAHTOA, formed from the first letters of
       <q>
@@ -197,37 +192,41 @@
       for trigonometric functions.
       The following figures are used to calculate trigonometric values.
     </p>
-    <image xml:id="fig-special-triangles" width="100%">
-      <latex-image>
-        \begin{tikzpicture}[scale=5]
-        \draw[red,line width=2pt] (0,0) -- (1,0) node[midway,below,black] {1};
-        \draw[red,line width=2pt] (1,0) -- (1,1) node[midway,right,black] {1};
-        \draw[blue] (1,1) -- (0,1);
-        \draw[blue] (0,1) -- (0,0);
-        \draw[red,line width=2pt] (0,0) -- (1,1) node[midway,above,xshift=-02,yshift=2,black] {\(\sqrt{2}\)};
-        \draw ([shift=(0:0.2)]0,0) arc (0:45:0.2);
-        \draw ([shift=(225:0.2)]1,1) arc (225:270:0.2);
-        \node at (0.3,0.1) {\(45^{\circ}\)};
-        \node at (0.88,0.75) {\(45^{\circ}\)};
-        \draw (0.9,0) -- (0.9,0.1) -- (1,0.1);
-        \end{tikzpicture}
-      </latex-image>
-      <latex-image>
-        \begin{tikzpicture}[scale=5]
-        \draw[red,line width=2pt] (0,0) -- (60:1) node[midway,above,yshift=0.2,black] {1};
-        \draw[red,line width=2pt] (0,0) -- (0.5,0) node[midway, below,black] {\(\frac{1}{2}\)};
-        \draw[blue] (0.5,0) -- (1,0) node[midway, below,black] {\(\frac{1}{2}\)};
-        \draw[blue] (1,0) -- (0.5,0.866025403784) node[midway,right,yshift=0.2,black] {\(1\)};
-        \draw[red,line width=2pt] (0.5,0) -- (0.5,0.866025403784) node[midway,right,xshift=-1.5,yshift=-3,black] {\(\frac{\sqrt{3}}{2}\)};
-        \draw ([shift=(0:0.2)]0,0) arc (0:60:0.2) node[midway,right,xshift=0.04] {\(60^{\circ}\)};
-        \draw ([shift=(120:0.2)]1,0) arc (120:180:0.2) node[midway,left,xshift=-0.04] {\(60^{\circ}\)};
-        \draw ([shift=(240:0.2)]60:1) arc (240:270:0.2) node[midway,below,xshift=-1.5,yshift=-0.5] {\(30^{\circ}\)};
-        \draw ([shift=(270:0.2)]60:1) arc (270:300:0.2) node[midway,below,xshift=3,yshift=-0.5] {\(30^{\circ}\)};
-        \draw (0.4,0) -- (0.4,0.1);
-        \draw (0.4,0.1) -- (0.5,0.1);
-        \end{tikzpicture}
-      </latex-image>
-    </image>
+    <sidebyside>
+      <image xml:id="fig-special-triangles-45-45-90" width="100%">
+        <latex-image>
+          \begin{tikzpicture}[scale=5]
+          \draw[red,line width=2pt] (0,0) -- (1,0) node[midway,below,black] {1};
+          \draw[red,line width=2pt] (1,0) -- (1,1) node[midway,right,black] {1};
+          \draw[blue] (1,1) -- (0,1);
+          \draw[blue] (0,1) -- (0,0);
+          \draw[red,line width=2pt] (0,0) -- (1,1) node[midway,above,xshift=-02,yshift=2,black] {\(\sqrt{2}\)};
+          \draw ([shift=(0:0.2)]0,0) arc (0:45:0.2);
+          \draw ([shift=(225:0.2)]1,1) arc (225:270:0.2);
+          \node at (0.3,0.1) {\(45^{\circ}\)};
+          \node at (0.88,0.75) {\(45^{\circ}\)};
+          \draw (0.9,0) -- (0.9,0.1) -- (1,0.1);
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+      <image xml:id="fig-special-triangles-30-60-90" width="100%">
+        <latex-image>
+          \begin{tikzpicture}[scale=5]
+          \draw[red,line width=2pt] (0,0) -- (60:1) node[midway,above,yshift=0.2,black] {1};
+          \draw[red,line width=2pt] (0,0) -- (0.5,0) node[midway, below,black] {\(\frac{1}{2}\)};
+          \draw[blue] (0.5,0) -- (1,0) node[midway, below,black] {\(\frac{1}{2}\)};
+          \draw[blue] (1,0) -- (0.5,0.866025403784) node[midway,right,yshift=0.2,black] {\(1\)};
+          \draw[red,line width=2pt] (0.5,0) -- (0.5,0.866025403784) node[midway,right,xshift=-1.5,yshift=-3,black] {\(\frac{\sqrt{3}}{2}\)};
+          \draw ([shift=(0:0.2)]0,0) arc (0:60:0.2) node[midway,right,xshift=0.04] {\(60^{\circ}\)};
+          \draw ([shift=(120:0.2)]1,0) arc (120:180:0.2) node[midway,left,xshift=-0.04] {\(60^{\circ}\)};
+          \draw ([shift=(240:0.2)]60:1) arc (240:270:0.2) node[midway,below,xshift=-1.5,yshift=-0.5] {\(30^{\circ}\)};
+          \draw ([shift=(270:0.2)]60:1) arc (270:300:0.2) node[midway,below,xshift=3,yshift=-0.5] {\(30^{\circ}\)};
+          \draw (0.4,0) -- (0.4,0.1);
+          \draw (0.4,0.1) -- (0.5,0.1);
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </sidebyside>
     <p>
       The trigonometric values for the special angles
       <m>0, 30^{\circ}, 45^{\circ}, 60^{\circ}, 90^{\circ}</m>
@@ -423,20 +422,18 @@
         <h>complementary angles</h>
       </idx>
     </p>
-    <figure xml:id="fig-cofunction">
-      <image xml:id="fig-cofunction1" width="50%">
-        <latex-image>
-          \begin{tikzpicture}[scale=1]
-          \draw (0,0) -- (4,0) node[midway,below]{\(b\)};
-          \draw(0,0) -- (4,3) node[midway,above left]{\(c\)};
-          \draw(4,0) -- (4,3) node[midway,right]{\(a\)};
-          \draw(3.7,0) -- (3.7,0.3) -- (4,0.3);
-          \draw ([shift=(0:0.5)]0,0) arc (0:36.8698976458:0.5cm) node[midway,right,xshift=0.1cm] {\(\alpha\)};
-          \draw ([shift=({180+atan(3/4)}:0.5)]4,3) arc (216.869897646:270:0.5) node[midway,below,xshift=-0.1] {\(\beta\)};
-          \end{tikzpicture}
-        </latex-image>
-      </image>
-    </figure>
+    <image xml:id="fig-cofunction" width="50%">
+      <latex-image>
+        \begin{tikzpicture}[scale=1]
+        \draw (0,0) -- (4,0) node[midway,below]{\(b\)};
+        \draw(0,0) -- (4,3) node[midway,above left]{\(c\)};
+        \draw(4,0) -- (4,3) node[midway,right]{\(a\)};
+        \draw(3.7,0) -- (3.7,0.3) -- (4,0.3);
+        \draw ([shift=(0:0.5)]0,0) arc (0:36.8698976458:0.5cm) node[midway,right,xshift=0.1cm] {\(\alpha\)};
+        \draw ([shift=({180+atan(3/4)}:0.5)]4,3) arc (216.869897646:270:0.5) node[midway,below,xshift=-0.1] {\(\beta\)};
+        \end{tikzpicture}
+      </latex-image>
+    </image>
     <p>
       Consider the right triangle in
       <xref ref="fig-cofunction">Figure</xref>,
@@ -693,36 +690,34 @@
       Depending on your calculator,
       you may see the following keys for
     </p>
-    <table>
-      <tabular>
-        <row>
-          <cell>Function</cell>
-          <cell>Calculator Key</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell>sine</cell>
-          <cell>
-            <em>SIN</em>
-          </cell>
-        </row>
-        <row>
-          <cell>cosine</cell>
-          <cell>
-            <em>COS</em>
-          </cell>
-        </row>
-        <row>
-          <cell>tangent</cell>
-          <cell>
-            <em>TAN</em>
-          </cell>
-        </row>
-      </tabular>
-    </table>
+    <tabular>
+      <row>
+        <cell>Function</cell>
+        <cell>Calculator Key</cell>
+      </row>
+      <row bottom="minor">
+        <cell></cell>
+        <cell></cell>
+      </row>
+      <row>
+        <cell>sine</cell>
+        <cell>
+          <em>SIN</em>
+        </cell>
+      </row>
+      <row>
+        <cell>cosine</cell>
+        <cell>
+          <em>COS</em>
+        </cell>
+      </row>
+      <row>
+        <cell>tangent</cell>
+        <cell>
+          <em>TAN</em>
+        </cell>
+      </row>
+    </tabular>
     <p>
       To calculate cosecant, secant, and cotangent,
       you will need to use the identity
@@ -823,22 +818,18 @@
   </subsection>
   <subsection>
     <title>Solving Right Triangles</title>
-    <figure>
-      \vspace{-0.9cm}
-      <image xml:id="solving-rt-triangle" width="60%">
-        <latex-image>
-          \begin{tikzpicture}[scale=1]
-          \draw (0,0) -- (4,0) node[midway,below]{\(b\)};
-          \draw(0,0) -- (4,3) node[midway,above left]{\(c\)};
-          \draw(4,0) -- (4,3) node[midway,right]{\(a\)};
-          \draw(3.7,0) -- (3.7,0.3) -- (4,0.3);
-          \draw ([shift=(0:0.5cm)]0,0) arc (0:36.8698976458:0.5cm) node[midway,right,xshift=0.1cm] {\(\alpha\)};
-          \draw ([shift=(216.869897646:0.5cm)]4,3) arc (216.86989:270:0.5cm) node[midway,below,xshift=-0.1cm] {\(\beta\)};
-          \end{tikzpicture}
-        </latex-image>
-      </image>
-      \vspace{-0.3cm}
-    </figure>
+    <image xml:id="solving-rt-triangle" width="60%">
+      <latex-image>
+        \begin{tikzpicture}[scale=1]
+        \draw (0,0) -- (4,0) node[midway,below]{\(b\)};
+        \draw(0,0) -- (4,3) node[midway,above left]{\(c\)};
+        \draw(4,0) -- (4,3) node[midway,right]{\(a\)};
+        \draw(3.7,0) -- (3.7,0.3) -- (4,0.3);
+        \draw ([shift=(0:0.5cm)]0,0) arc (0:36.8698976458:0.5cm) node[midway,right,xshift=0.1cm] {\(\alpha\)};
+        \draw ([shift=(216.869897646:0.5cm)]4,3) arc (216.86989:270:0.5cm) node[midway,below,xshift=-0.1cm] {\(\beta\)};
+        \end{tikzpicture}
+      </latex-image>
+    </image>
     <p>
       Consider the following right triangle where side
       <m>a</m> is opposite angle <m>\alpha</m>,
@@ -1722,44 +1713,41 @@ node[pos=0.8,right] {\(y_1\)};
         <p>
           One way to determine your bearing on a canoe is by observing and comparing the positions of celestial and other markers relative to your canoe. To facilitate this, you can mark the locations of the Star Compass on the opposite railings from the navigator's seat in the back corner of the canoe. However, since the Star Compass is circular and the canoe is rectangular, accurately placing the markings can be challenging. If 
         </p>
-        <figure xml:id="waa-star-compass-railing">
-          <caption>The deck of a canoe can have Star Compass markings to help crew and navigators.</caption>
-          <image xml:id="fig-star-compass-railing" width="40%">
-            <latex-image>
-              \begin{tikzpicture}[scale=1,cap=round,>=latex]
-\fill[waacolor,fill=waacolor,fill opacity=0.10000000149011612] (-1.55,4) -- (-1.15,6) -- (-0.75,4) -- (-0.75,3) -- (-1.55,3) -- cycle;
-\fill[waacolor,fill=waacolor,fill opacity=0.10000000149011612] (1.55,4) -- (1.15,6) -- (0.75,4) -- (0.75,3) -- (1.55,3) -- cycle;
-\fill[waacolor,fill=waacolor,fill opacity=0.10000000149011612] (-1.55,-4) -- (-1.15,-6) -- (-0.75,-4) -- cycle;
-\fill[waacolor,fill=waacolor,fill opacity=0.10000000149011612] (1.55,-4) -- (1.15,-6) -- (0.75,-4) -- cycle;
-\fill[waacolor,fill=waacolor,fill opacity=0.04] (-1.55,-4) -- (1.55,-4) -- (1.55,3) -- (-1.55,3) -- cycle;
-\draw [waacolor] (-1.15,6)-- (-1.55,4);
-\draw [waacolor] (-1.55,4)-- (-1.55,-4);
-\draw [waacolor] (-1.55,-4)-- (-1.15,-6);
-\draw [waacolor] (-1.15,-6)-- (-0.75,-4);
-\draw [waacolor] (-0.75,3)-- (-0.75,4);
-\draw [waacolor] (-0.75,4)-- (-1.15,6);
-\draw [waacolor] (1.15,6)-- (1.55,4);
-\draw [waacolor] (1.55,4)-- (1.55,-4);
-\draw [waacolor] (1.55,-4)-- (1.15,-6);
-\draw [waacolor] (1.15,-6)-- (0.75,-4);
-\draw [waacolor] (0.75,3)-- (0.75,4);
-\draw [waacolor] (0.75,4)-- (1.15,6);
-\draw [waacolor] (-1.55,-4)-- (1.55,-4);
-\draw [waacolor] (1.55,3)-- (-1.55,3);
-\draw [waacolor] (-0.25,3)-- (0.25,3);
-\draw [waacolor] (-0.75,4)-- (0.75, 4);
-\draw (-1.55,-4) -- (1.55,{3.1*tan(5.625)-4});
-\draw (-1.55,-4) -- (1.55,{3.1*tan(16.875)-4});
-\draw (-1.55,-4) -- (1.55,{3.1*tan(28.125)-4});
-\draw (-1.55,-4) -- (1.55,{3.1*tan(39.375)-4});
-\draw (-1.55,-4) -- (1.55,{3.1*tan(50.625)-4});
-\draw (-1.55,-4) -- (1.55,{3.1*tan(61.875)-4});
-\draw (-1.55,-4) -- ({7/tan(73.125)-1.55},3);
-\draw (-1.55,-4) -- ({7/tan(84.375)-1.55},3);
-\end{tikzpicture}
-            </latex-image>
-          </image>
-        </figure>
+        <image xml:id="fig-star-compass-railing" width="40%">
+          <latex-image>
+            \begin{tikzpicture}[scale=1,cap=round,>=latex]
+          \fill[waacolor,fill=waacolor,fill opacity=0.10000000149011612] (-1.55,4) -- (-1.15,6) -- (-0.75,4) -- (-0.75,3) -- (-1.55,3) -- cycle;
+          \fill[waacolor,fill=waacolor,fill opacity=0.10000000149011612] (1.55,4) -- (1.15,6) -- (0.75,4) -- (0.75,3) -- (1.55,3) -- cycle;
+          \fill[waacolor,fill=waacolor,fill opacity=0.10000000149011612] (-1.55,-4) -- (-1.15,-6) -- (-0.75,-4) -- cycle;
+          \fill[waacolor,fill=waacolor,fill opacity=0.10000000149011612] (1.55,-4) -- (1.15,-6) -- (0.75,-4) -- cycle;
+          \fill[waacolor,fill=waacolor,fill opacity=0.04] (-1.55,-4) -- (1.55,-4) -- (1.55,3) -- (-1.55,3) -- cycle;
+          \draw [waacolor] (-1.15,6)-- (-1.55,4);
+          \draw [waacolor] (-1.55,4)-- (-1.55,-4);
+          \draw [waacolor] (-1.55,-4)-- (-1.15,-6);
+          \draw [waacolor] (-1.15,-6)-- (-0.75,-4);
+          \draw [waacolor] (-0.75,3)-- (-0.75,4);
+          \draw [waacolor] (-0.75,4)-- (-1.15,6);
+          \draw [waacolor] (1.15,6)-- (1.55,4);
+          \draw [waacolor] (1.55,4)-- (1.55,-4);
+          \draw [waacolor] (1.55,-4)-- (1.15,-6);
+          \draw [waacolor] (1.15,-6)-- (0.75,-4);
+          \draw [waacolor] (0.75,3)-- (0.75,4);
+          \draw [waacolor] (0.75,4)-- (1.15,6);
+          \draw [waacolor] (-1.55,-4)-- (1.55,-4);
+          \draw [waacolor] (1.55,3)-- (-1.55,3);
+          \draw [waacolor] (-0.25,3)-- (0.25,3);
+          \draw [waacolor] (-0.75,4)-- (0.75, 4);
+          \draw (-1.55,-4) -- (1.55,{3.1*tan(5.625)-4});
+          \draw (-1.55,-4) -- (1.55,{3.1*tan(16.875)-4});
+          \draw (-1.55,-4) -- (1.55,{3.1*tan(28.125)-4});
+          \draw (-1.55,-4) -- (1.55,{3.1*tan(39.375)-4});
+          \draw (-1.55,-4) -- (1.55,{3.1*tan(50.625)-4});
+          \draw (-1.55,-4) -- (1.55,{3.1*tan(61.875)-4});
+          \draw (-1.55,-4) -- ({7/tan(73.125)-1.55},3);
+          \draw (-1.55,-4) -- ({7/tan(84.375)-1.55},3);
+          \end{tikzpicture}
+          </latex-image>
+        </image>
         <p>
           Calculate the location for a canoe with dimensions <m>l=7.4</m> m, <m>w=5.35</m> and for each boundary of house for
         </p>
@@ -2011,18 +1999,19 @@ node[pos=0.8,right] {\(y_1\)};
           for help determining the number of houses and use the fact that one house is
           <m>11.25^{\circ}</m>.
         </p>
+        <image xml:id="fig-waa-right-triangle-distance-traveled" width="70%">
+          <latex-image>
+            \begin{tikzpicture}[x=4cm,y=4cm]
+            \draw[line width=2pt,-stealth] (0,0) -- (123.75:1.2cm) node[midway,left,xshift=-0.2cm] {120 mi};
+            \draw[line width=2pt,dashed] (0,0.997763534763) -- (-0.666684279624,0.997763534763) node[midway,above,yshift=0.1cm] {west};
+            \draw[line width=2pt, dashed] (0,0) -- (0,0.997763534763) node[midway,right,xshift=0.1cm] {north};
+            \draw ([shift=(90:0.2cm)]0,0) arc (90:123.75:0.2cm) node[midway,above,xshift=-1,yshift=3] {\(\theta\)};
+            \draw ([shift=(123.75:-0.15cm)]0,0) pic {waa-top={waacolor}{(33.75)}{0.1}};
+            \draw (-0.1,0.997763534763) -- (-0.1,0.897763534763) -- (0,0.897763534763);
+            \end{tikzpicture}
+          </latex-image>
+        </image>
       </statement>
-      <image xml:id="fig-waa-right-triangle-distance-traveled" width="70%">
-        <latex-image>
-          \begin{tikzpicture}[x=4cm,y=4cm]
-    \draw[line width=2pt,-stealth] (0,0) -- (123.75:1.2cm) node[midway,left,xshift=-0.2cm] {120 mi};
-    \draw[line width=2pt,dashed] (0,0.997763534763) -- (-0.666684279624,0.997763534763) node[midway,above,yshift=0.1cm] {west};
-    \draw[line width=2pt, dashed] (0,0) -- (0,0.997763534763) node[midway,right,xshift=0.1cm] {north};
-    \draw ([shift=(90:0.2cm)]0,0) arc (90:123.75:0.2cm) node[midway,above,xshift=-1,yshift=3] {\(\theta\)};
-    \draw ([shift=(123.75:-0.15cm)]0,0) pic {waa-top={waacolor}{(33.75)}{0.1}};
-    \draw (-0.1,0.997763534763) -- (-0.1,0.897763534763) -- (0,0.897763534763);\end{tikzpicture}
-        </latex-image>
-      </image>
       <answer>
         <p>
         66.7 NM west; 99.8 NM north
