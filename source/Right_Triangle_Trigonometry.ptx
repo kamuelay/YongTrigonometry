@@ -35,9 +35,7 @@
       </idx> 
       are defined as follows:
     </p>
-    <p>
-      
-    </p>
+    <p></p>
     <image xml:id="fig-right-triangle-opp-adj-hyp" width="60%">
       <latex-image>
         \begin{tikzpicture}
@@ -845,8 +843,7 @@
           </me>
         </p>
         <p>
-          Next, we will solve for side <m>a</m>. Using the angle <m>50^{\circ}</m>, where the adjacent side is 16 and side <m>a</m>
-          is the side opposite to the angle, we can apply the tangent function, which relates the opposite and adjacent sides:
+          Next, we will solve for side <m>a</m>. Using the angle <m>50^{\circ}</m>, where the adjacent side is 16 and side <m>a</m> is the side opposite to the angle, we can apply the tangent function, which  relates the opposite and adjacent sides:
           <me>
             \tan50^{\circ}=\frac{a}{16}
           </me>
@@ -876,12 +873,9 @@
       <title>Deviation</title>
       <statement>
         <p>
-          We are now ready to calculate the deviation example proposed at the start of this section.
-          In an average day of sailing,
-          a waʻa sails for 120 nautical miles (NM).
-          If Hikianalia is supposed to sail in the direction of Hikina (East),
-          but currents have deviated her course by one house so she actually sailed in the house L&#257;, how far off the course has H&#333;k&#363;le&#699;a deviated?
+          We are now ready to calculate the deviation example proposed at the start of this section. In an average day of sailing, a waʻa sails for 120 nautical miles (NM). If Hikianalia is supposed to sail in the direction of Hikina (East), but currents have deviated her course by one house so she actually sailed in the house Lā, how far off the course has Hikianalia deviated?
         </p>
+        <p></p>
         <image xml:id="deviation-example" width="100%">
           <latex-image>
             \begin{tikzpicture}[scale=7]
@@ -892,22 +886,16 @@
             \draw[dashed] (1.17694233648,0) -- (1.17694233648,0.234108386419) node[midway,right,xshift=0.1] {deviation};
             \draw ([shift=(0:0.3)]0,0) arc (0:11.25:0.3) node[midway,right,xshift=12,yshift=2] {1 House};
             \draw ([shift=(11.25:-0.1)]0,0) pic {waa-top={waacolor}{-78.75}{0.1}};
-            \draw (1.17694233648-0.06,0) -- (1.11694233648,0.06) -- (1.17694233648,0.06);\end{tikzpicture}
+            \draw (1.17694233648-0.06,0) -- (1.11694233648,0.06) -- (1.17694233648,0.06);
+            \end{tikzpicture}
           </latex-image>
         </image>
       </statement>
       <solution>
         <p>
-          From the Star Compass
-          (<xref ref="star-compass-32-compass-rose">Figure</xref>),
-          the house Lā is one house (
-          <m>11.25^{\circ}</m>
-          ) from Hikina.
-          If we let
-          <m>y</m>
-          denote the distance deviated from the reference course,
-          our right triangle becomes:
+          From the Star Compass (<xref ref="star-compass-32-compass-rose">Figure</xref>), the house Lā is one house (<m>11.25^{\circ}</m>) from Hikina. If we let <m>y</m> denote the distance deviated from the reference course, our right triangle becomes:
         </p>
+        <p></p>
         <image xml:id="deviation-example-soln" width="100%">
           <latex-image>
             \begin{tikzpicture}[scale=7]
@@ -943,20 +931,7 @@
       <title>Solar panels</title>
       <statement>
         <p>
-          Solar panels use the sun's energy to produce electricity.
-          In order to maximize the energy output,
-          solar panels should be installed perpendicular to the sun's light.
-          The angle of elevation of the sun varies by latitude and in Hawaiʻi,
-          south facing solar panels should have a pitch of
-          <m>21^{\circ}</m> to be perpendicular to the sun's rays.
-          When installing a solar panel,
-          it may be difficult to determine the pitch,
-          so instead of measure the angle,
-          you can measure the height of the top of the panel.
-          What height should a south facing solar panel that is 65 in in length 
-          be installed to achieve the optimal angle of
-          <m>21^{\circ}</m>?
-          Round your answer to the nearest tenth of an inch.
+          Solar panels harness the sun's energy to generate electricity, and for optimal energy output, they should be oriented perpendicularly to the sun's light. The sun's angle of elevation varies based on latitude, and in Hawai‘i, for instance, south-facing solar panels are recommended to have a pitch of <m>21^{\circ}</m> to align with the sun's rays. When installing a solar panel, determining its pitch might pose challenges. Instead of measuring the angle directly, an alternative approach involves measuring the height of the panel's top. What height should a south-facing solar panel, measuring 65 inches in length, be installed at to achieve the desired angle of <m>21^{\circ}</m>? Round your answer to the nearest tenth of an inch.
         </p>
         <image xml:id="fig-solar">
           <latex-image>
@@ -992,15 +967,14 @@
           </latex-image>
         </image>
         <p>
-          Since we know the desired angle of pitch of the solar panel and the length of the panel,
-          we can set up the following equation
+          Since we know the desired angle of pitch of the solar panel and the length of the panel, we can set up the following equation
           <md>
             <mrow>\sin21^{\circ}\amp =\amp \frac{\mbox{opposite} }{\mbox{hypotenuse} }=\frac{\mbox{height} }{65\mbox{ in} }</mrow>
             <mrow>\mbox{height} \amp =\amp 65\mbox{ in} \cdot\sin21^{\circ}\approx23.3\mbox{ in}</mrow>
           </md>
         </p>
         <p>
-          So when installing the solar panel in Hawai`i, the top of the solar should should be 23.3 inches above the bottom in order to maximize the energy output.
+          Thus, when installing a solar panel in Hawai‘i, the top of the solar panel should be positioned 23.3 inches above the bottom to optimize energy output.
         </p>
       </solution>
     </example>
@@ -1016,13 +990,15 @@
       </introduction>
       <exercise>
         <statement>
-          <image width="33%">
+          <image width="75%">
             <latex-image>
-              \begin{tikzpicture}\draw (0,0) -- (3,0) node[midway,below]{3};
-          \draw(0,0) -- (3,4) node[midway,above left]{5};
-          \draw(3,0) -- (3,4) node[midway,right]{4};
-          \draw(2.7,0) -- (2.7,0.3) -- (3,0.3);
-          \draw ([shift=(0:0.5)]0,0) arc (0:53.1301023542:0.5) node[midway,right,xshift=0.1,yshift=0.2] {\(\theta\)};\end{tikzpicture}
+              \begin{tikzpicture}
+              \draw (0,0) -- (3,0) node[midway,below]{3};
+              \draw(0,0) -- (3,4) node[midway,above left]{5};
+              \draw(3,0) -- (3,4) node[midway,right]{4};
+              \draw(2.7,0) -- (2.7,0.3) -- (3,0.3);
+              \draw ([shift=(0:0.5)]0,0) arc (0:53.1301023542:0.5) node[midway,right,xshift=0.1,yshift=0.2] {\(\theta\)};
+              \end{tikzpicture}
             </latex-image>
           </image>
         </statement>
@@ -1039,13 +1015,15 @@
       </exercise>
       <exercise>
         <statement>
-          <image width="33%">
+          <image width="75%">
             <latex-image>
-              \begin{tikzpicture}\draw (0,0) -- (5,0) node[midway,below]{5};
-          \draw(0,0) -- (5,7) node[midway,above left]{\(\sqrt{74}\)};
-          \draw(5,0) -- (5,7) node[midway,right]{7};
-          \draw(4.25,0) -- (4.25,0.75) -- (5,0.75);
-          \draw ([shift=(234.462322208:1.75)]5,7) arc (234.462322208:270:1.75) node[midway,below,xshift=-0.2] {\(\theta\)};\end{tikzpicture}
+              \begin{tikzpicture}
+              \draw (0,0) -- (5,0) node[midway,below]{5};
+              \draw(0,0) -- (5,7) node[midway,above left]{\(\sqrt{74}\)};
+              \draw(5,0) -- (5,7) node[midway,right]{7};
+              \draw(4.25,0) -- (4.25,0.75) -- (5,0.75);
+              \draw ([shift=(234.462322208:1.75)]5,7) arc (234.462322208:270:1.75) node[midway,below,xshift=-0.2] {\(\theta\)};
+              \end{tikzpicture}
             </latex-image>
           </image>
         </statement>
@@ -1062,13 +1040,15 @@
       </exercise>
       <exercise>
         <statement>
-          <image width="33%">
+          <image width="75%">
             <latex-image>
-              \begin{tikzpicture}\draw (0,0) -- (-4,0) node[midway,below]{4};
-          \draw(0,0) -- (-4,6);
-          \draw(-4,0) -- (-4,6) node[midway,left]{6};
-          \draw(-3.4,0) -- (-3.4,0.6) -- (-4,0.6);
-          \draw ([shift=(180:1)]0,0) arc (180:123.690067526:1) node[midway,left,xshift=-0.1] {\(\theta\)};\end{tikzpicture}
+              \begin{tikzpicture}
+              \draw (0,0) -- (-4,0) node[midway,below]{4};
+              \draw(0,0) -- (-4,6);
+              \draw(-4,0) -- (-4,6) node[midway,left]{6};
+              \draw(-3.4,0) -- (-3.4,0.6) -- (-4,0.6);
+              \draw ([shift=(180:1)]0,0) arc (180:123.690067526:1) node[midway,left,xshift=-0.1] {\(\theta\)};
+              \end{tikzpicture}
             </latex-image>
           </image>
         </statement>
@@ -1085,13 +1065,15 @@
       </exercise>
       <exercise>
         <statement>
-          <image width="33%">
+          <image width="75%">
             <latex-image>
-              \begin{tikzpicture}\draw (0,0) -- (-5,0);
-          \draw(0,0) -- (-5,12) node[midway,above right]{13};
-          \draw(-5,0) -- (-5,12) node[midway,left]{12};
-          \draw(-4,0) -- (-4,1) -- (-5,1);
-          \draw ([shift=(270:2.5)]-5,12) arc (270:292.619864948:2.5) node[midway,below,xshift=0.1,yshift=-0.1] {\(\theta\)};\end{tikzpicture}
+              \begin{tikzpicture}
+              \draw (0,0) -- (-5,0);
+              \draw(0,0) -- (-5,12) node[midway,above right]{13};
+              \draw(-5,0) -- (-5,12) node[midway,left]{12};
+              \draw(-4,0) -- (-4,1) -- (-5,1);
+              \draw ([shift=(270:2.5)]-5,12) arc (270:292.619864948:2.5) node[midway,below,xshift=0.1,yshift=-0.1] {\(\theta\)};
+              \end{tikzpicture}
             </latex-image>
           </image>
         </statement>
@@ -1108,13 +1090,15 @@
       </exercise>
       <exercise>
         <statement>
-          <image width="33%">
+          <image width="75%">
             <latex-image>
-              \begin{tikzpicture}\draw (0,0) -- (-7,0) node[midway,below]{7};
-          \draw(0,0) -- (-7,14);
-          \draw(-7,0) -- (-7,14) node[midway,left]{14};
-          \draw(-5.8,0) -- (-5.8,1.2) -- (-7,1.2);
-          \draw ([shift=(180:2)]0,0) arc (180:116.565051177:2) node[midway,left,xshift=-0.1] {\(\theta\)};\end{tikzpicture}
+              \begin{tikzpicture}
+              \draw (0,0) -- (-7,0) node[midway,below]{7};
+              \draw(0,0) -- (-7,14);
+              \draw(-7,0) -- (-7,14) node[midway,left]{14};
+              \draw(-5.8,0) -- (-5.8,1.2) -- (-7,1.2);
+              \draw ([shift=(180:2)]0,0) arc (180:116.565051177:2) node[midway,left,xshift=-0.1] {\(\theta\)};
+              \end{tikzpicture}
             </latex-image>
           </image>
         </statement>
@@ -1131,13 +1115,15 @@
       </exercise>
       <exercise>
         <statement>
-          <image width="33%">
+          <image width="75%">
             <latex-image>
-              \begin{tikzpicture}\draw (0,0) -- (4,0) node[midway,below]{4};
-          \draw(0,0) -- (4,4);
-          \draw(4,0) -- (4,4) node[midway,right]{4};
-          \draw(3.5,0) -- (3.5,0.5) -- (4,0.5);
-          \draw ([shift=(225:0.6)]4,4) arc (225:270:0.6) node[midway,below,xshift=-0.1,yshift=-0.1] {\(\theta\)};\end{tikzpicture}
+              \begin{tikzpicture}
+              \draw (0,0) -- (4,0) node[midway,below]{4};
+              \draw(0,0) -- (4,4);
+              \draw(4,0) -- (4,4) node[midway,right]{4};
+              \draw(3.5,0) -- (3.5,0.5) -- (4,0.5);
+              \draw ([shift=(225:0.6)]4,4) arc (225:270:0.6) node[midway,below,xshift=-0.1,yshift=-0.1] {\(\theta\)};
+              \end{tikzpicture}
             </latex-image>
           </image>
         </statement>
@@ -1154,13 +1140,15 @@
       </exercise>
       <exercise>
         <statement>
-          <image width="33%">
+          <image width="75%">
             <latex-image>
-              \begin{tikzpicture}\draw (0,0) -- (-2,0) node[midway,below]{2};
-          \draw(0,0) -- (-2,2.44948974278) node[midway,above right]{\(\sqrt{10}\)};
-          \draw(-2,0) -- (-2,2.44948974278);
-          \draw(-1.7,0) -- (-1.7,0.3) -- (-2,0.3);
-          \draw ([shift=(180:0.5)]0,0) arc (180:129.231520484:0.5) node[midway,left,xshift=-0.1] {\(\theta\)};\end{tikzpicture}
+              \begin{tikzpicture}
+              \draw (0,0) -- (-2,0) node[midway,below]{2};
+              \draw(0,0) -- (-2,2.44948974278) node[midway,above right]{\(\sqrt{10}\)};
+              \draw(-2,0) -- (-2,2.44948974278);
+              \draw(-1.7,0) -- (-1.7,0.3) -- (-2,0.3);
+              \draw ([shift=(180:0.5)]0,0) arc (180:129.231520484:0.5) node[midway,left,xshift=-0.1] {\(\theta\)};
+              \end{tikzpicture}
             </latex-image>
           </image>
         </statement>
@@ -1177,13 +1165,15 @@
       </exercise>
       <exercise>
         <statement>
-          <image width="33%">
+          <image width="75%">
             <latex-image>
-              \begin{tikzpicture}\draw (0,0) -- (2,0) node[midway,below]{2};
-          \draw(0,0) -- (2,3);
-          \draw(2,0) -- (2,3) node[midway,right]{3};
-          \draw(1.7,0) -- (1.7,0.3) -- (2,0.3);
-          \draw ([shift=(236.309932474:0.5)]2,3) arc (234.462322208:270:0.5) node[midway,below,xshift=-0.1] {\(\theta\)};\end{tikzpicture}
+              \begin{tikzpicture}
+              \draw (0,0) -- (2,0) node[midway,below]{2};
+              \draw(0,0) -- (2,3);
+              \draw(2,0) -- (2,3) node[midway,right]{3};
+              \draw(1.7,0) -- (1.7,0.3) -- (2,0.3);
+              \draw ([shift=(236.309932474:0.5)]2,3) arc (234.462322208:270:0.5) node[midway,below,xshift=-0.1] {\(\theta\)};
+              \end{tikzpicture}
             </latex-image>
           </image>
         </statement>
@@ -1206,35 +1196,29 @@
           For each of the following problems, calculate
           <ol>
             <li>
-              <m>\cos\alpha</m>
-              and
-              <m>\sin\beta</m>
-              ;
+              <m>\cos\alpha</m> and <m>\sin\beta</m>;
             </li>
             <li>
-              <m>\tan\alpha</m>
-              and
-              <m>\cot\beta</m>
-              ;
+              <m>\tan\alpha</m> and <m>\cot\beta</m>;
             </li>
             <li>
-              <m>\csc\alpha</m>
-              and
-              <m>\sec\beta</m>
+              <m>\csc\alpha</m> and <m>\sec\beta</m>
             </li>
           </ol>
         </p>
       </introduction>
       <exercise>
         <statement>
-          <image width="50%">
+          <image width="75%">
             <latex-image>
-              \begin{tikzpicture}\draw (0,0) -- (5,0) node[midway,below]{5};
-          \draw(0,0) -- (5,3);
-          \draw(5,0) -- (5,3) node[midway,right]{3};
-          \draw(4.6,0) -- (4.6,0.4) -- (5,0.4);
-          \draw ([shift=(210.963756532:0.75)]5,3) arc (210.963756532:270:0.75) node[midway,below,xshift=-0.1] {\(\beta\)};
-          \draw ([shift=(0:1)]0,0) arc (0:30.9637565321:1) node[midway,right,xshift=0.1,yshift=0.3] {\(\alpha\)};\end{tikzpicture}
+              \begin{tikzpicture}
+              \draw (0,0) -- (5,0) node[midway,below]{5};
+              \draw(0,0) -- (5,3);
+              \draw(5,0) -- (5,3) node[midway,right]{3};
+              \draw(4.6,0) -- (4.6,0.4) -- (5,0.4);
+              \draw ([shift=(210.963756532:0.75)]5,3) arc (210.963756532:270:0.75) node[midway,below,xshift=-0.1] {\(\beta\)};
+              \draw ([shift=(0:1)]0,0) arc (0:30.9637565321:1) node[midway,right,xshift=0.1,yshift=0.3] {\(\alpha\)};
+              \end{tikzpicture}
             </latex-image>
           </image>
         </statement>
@@ -1256,14 +1240,16 @@
       </exercise>
       <exercise>
         <statement>
-          <image width="50%">
+          <image width="75%">
             <latex-image>
-              \begin{tikzpicture}\draw (0,0) -- (-7,0) node[midway,below]{7};
-          \draw(0,0) -- (-7,3.87298334621) node[midway,above right]{8};
-          \draw(-7,0) -- (-7,3.87298334621);
-          \draw(-6.5,0) -- (-6.5,0.5) -- (-7,0.5);
-          \draw ([shift=(180:1)]0,0) arc (180:151.044975628:1) node[midway,left,xshift=-0.1] {\(\alpha\)};
-          \draw ([shift=(270:1)]-7,3.87298334621) arc (270:331.044975628:1) node[midway,below,xshift=0.1,yshift=-0.1] {\(\beta\)};\end{tikzpicture}
+              \begin{tikzpicture}
+              \draw (0,0) -- (-7,0) node[midway,below]{7};
+              \draw(0,0) -- (-7,3.87298334621) node[midway,above right]{8};
+              \draw(-7,0) -- (-7,3.87298334621);
+              \draw(-6.5,0) -- (-6.5,0.5) -- (-7,0.5);
+              \draw ([shift=(180:1)]0,0) arc (180:151.044975628:1) node[midway,left,xshift=-0.1] {\(\alpha\)};
+              \draw ([shift=(270:1)]-7,3.87298334621) arc (270:331.044975628:1) node[midway,below,xshift=0.1,yshift=-0.1] {\(\beta\)};
+              \end{tikzpicture}
             </latex-image>
           </image>
         </statement>
@@ -1372,15 +1358,7 @@
     <exercisegroup xml:id="ques-deviation" cols="2">
       <introduction>
         <p>
-          In <xref ref="ex-deviation">Example</xref>
-          we calculated when a waʻa sails for one day (120 nautical miles) and 
-          deviates from its course by 1 House,
-          the waʻa is <m>23.4</m> NM from its reference course.
-          Calculate the deviation, <m>x</m>,
-          for the remaining 7 angles.
-          Round your answer to the nearest tenth of a nautical mile.
-          Note that one house is
-          <m>11.25^{\circ}</m>.
+          In <xref ref="ex-deviation">Example</xref>, we calculated that when a wa‘a sails for one day (120 nautical miles) and deviates from its course by 1 House, the wa‘a is <m>23.4</m> NM from its reference course. Now, calculate the deviation, <m>x</m>, for the remaining 7 angles. Round your answer to the nearest tenth of a nautical mile.  Keep in mind that one house corresponds to <m>11.25^{\circ}</m>.
         </p>
         <image xml:id="fig-deviation-x" width="100%">
           <latex-image>
@@ -1423,8 +1401,7 @@
         </statement>
         <answer>
           <p>
-            <m>x_2=45.9</m>
-            NM
+            <m>x_2=45.9</m> NM
           </p>
         </answer>
       </exercise>
@@ -1437,8 +1414,7 @@
         </statement>
         <answer>
           <p>
-            <m>x_3=66.7</m>
-            NM
+            <m>x_3=66.7</m> NM
           </p>
         </answer>
       </exercise>
@@ -1451,8 +1427,7 @@
         </statement>
         <answer>
           <p>
-            <m>x_4=84.5</m>
-            NM
+            <m>x_4=84.5</m> NM
           </p>
         </answer>
       </exercise>
@@ -1465,8 +1440,7 @@
         </statement>
         <answer>
           <p>
-            <m>x_5=99.8</m>
-            NM
+            <m>x_5=99.8</m> NM
           </p>
         </answer>
       </exercise>
@@ -1479,8 +1453,7 @@
         </statement>
         <answer>
           <p>
-            <m>x_6=110.9</m>
-            NM
+            <m>x_6=110.9</m> NM
           </p>
         </answer>
       </exercise>
@@ -1493,8 +1466,7 @@
         </statement>
         <answer>
           <p>
-            <m>x_7=117.7</m>
-            NM
+            <m>x_7=117.7</m> NM
           </p>
         </answer>
       </exercise>
@@ -1507,53 +1479,44 @@
         </statement>
         <answer>
           <p>
-            <m>x_8=120</m>
-            NM
+            <m>x_8=120</m> NM
           </p>
         </answer>
       </exercise>
     </exercisegroup>
 
-
     <exercisegroup cols="2">
       <introduction>
         <p>
-          In
-          <xref ref="ques-deviation">Exercise</xref>
-          we calculated the deviation of waʻa after sailing for one day (120 nautical miles).
-          Calculate how far along the reference course (north) the waʻa has traveled for each deviation,
-          <m>y</m>.
-          Round your answer to the nearest tenth of a nautical mile.
-          Note that one house is
-          <m>11.25^{\circ}</m>
+          In <xref ref="ques-deviation">Exercise</xref>  we determined the deviation of a wa‘a following a day of sailing (120 nautical miles). Your task now is to calculate the distance the wa‘a has progressed along the reference course (north) for each deviation, denoted as <m>y</m>. Round your answer to the nearest tenth of a nautical mile and remember that one house corresponds to <m>11.25^{\circ}</m>.
         </p>
       <image xml:id="fig-deviation-y" width="100%">
         <latex-image>
           \begin{tikzpicture}[scale=7]
           \draw[line width=1pt,-stealth] (0,0) -- (0:1.2cm) node[midway,sloped,below] {120 NM};
-\draw[line width=1pt,-stealth] (0,0) -- (11.25:1.2cm) node[right] {7 House};
-\draw[line width=1pt,-stealth] (0,0) -- (22.5:1.2cm) node[right] {6 Houses};
-\draw[line width=1pt,-stealth] (0,0) -- (33.75:1.2cm) node[right] {5 Houses};
-\draw[line width=1pt,-stealth] (0,0) -- (45:1.2cm) node[right] {4 Houses};
-\draw[line width=1pt,-stealth] (0,0) -- (56.65:1.2cm) node[right] {3 Houses};
-\draw[line width=1pt,-stealth] (0,0) -- (67.5:1.2cm) node[right] {2 Houses};
-\draw[line width=1pt,-stealth] (0,0) -- (78.75:1.2cm) node[right] {1 House};
-\draw[line width=1pt,-stealth] (0,0) -- (90:1.2cm) node[midway,sloped,above] {Reference Course, 120 NM};
-\draw[dashed] (1.17694233648,0) -- (1.17694233648,0.234108386419)
-node[midway,right] {\(y_7\)};
-\draw[dashed] (1.10865543901,0) -- (1.10865543901,0.459220118838)
-node[pos=0.7,right] {\(y_6\)};
-\draw[dashed] (0.997763534763,0) -- (0.997763534763,0.666684279624)
-node[pos=0.8,right] {\(y_5\)};
-\draw[dashed] (0.848528137424,0) -- (0.848528137424,0.848528137424)
-node[pos=0.8,right] {\(y_4\)};
-\draw[dashed] (0.666684279624,0) -- (0.666684279624,0.997763534763)
-node[pos=0.8,right] {\(y_3\)};
-\draw[dashed] (0.459220118838,0) -- (0.459220118838,1.10865543901)
-node[pos=0.8,right] {\(y_2\)};
-\draw[dashed] (0.234108386419,0) -- (0.234108386419,1.17694233648)
-node[pos=0.8,right] {\(y_1\)};
-\draw ([shift=(45:-0.1cm)]0,0) pic {waa-top={waacolor}{(-45)}{0.1}};\end{tikzpicture}
+          \draw[line width=1pt,-stealth] (0,0) -- (11.25:1.2cm) node[right] {7 House};
+          \draw[line width=1pt,-stealth] (0,0) -- (22.5:1.2cm) node[right] {6 Houses};
+          \draw[line width=1pt,-stealth] (0,0) -- (33.75:1.2cm) node[right] {5 Houses};
+          \draw[line width=1pt,-stealth] (0,0) -- (45:1.2cm) node[right] {4 Houses};
+          \draw[line width=1pt,-stealth] (0,0) -- (56.65:1.2cm) node[right] {3 Houses};
+          \draw[line width=1pt,-stealth] (0,0) -- (67.5:1.2cm) node[right] {2 Houses};
+          \draw[line width=1pt,-stealth] (0,0) -- (78.75:1.2cm) node[right] {1 House};
+          \draw[line width=1pt,-stealth] (0,0) -- (90:1.2cm) node[midway,sloped,above] {Reference Course, 120 NM};
+          \draw[dashed] (1.17694233648,0) -- (1.17694233648,0.234108386419)
+          node[midway,right] {\(y_7\)};
+          \draw[dashed] (1.10865543901,0) -- (1.10865543901,0.459220118838)
+          node[pos=0.7,right] {\(y_6\)};
+          \draw[dashed] (0.997763534763,0) -- (0.997763534763,0.666684279624)
+          node[pos=0.8,right] {\(y_5\)};
+          \draw[dashed] (0.848528137424,0) -- (0.848528137424,0.848528137424)
+          node[pos=0.8,right] {\(y_4\)};
+          \draw[dashed] (0.666684279624,0) -- (0.666684279624,0.997763534763)
+          node[pos=0.8,right] {\(y_3\)};
+          \draw[dashed] (0.459220118838,0) -- (0.459220118838,1.10865543901)
+          node[pos=0.8,right] {\(y_2\)};
+          \draw[dashed] (0.234108386419,0) -- (0.234108386419,1.17694233648)
+          node[pos=0.8,right] {\(y_1\)};
+          \draw ([shift=(45:-0.1cm)]0,0) pic {waa-top={waacolor}{(-45)}{0.1}};\end{tikzpicture}
         </latex-image>
       </image>
     </introduction>
