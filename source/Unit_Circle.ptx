@@ -201,19 +201,17 @@
               <p>
                 When <m>\theta=0</m> radians (<m>0^{\circ}</m>), the point on the circle is <m>P(1,0)</m>.
               </p>
-              <p>
-                <image xml:id="exmp-6trig-0" width="55%">
-                  <latex-image>
-                    \begin{tikzpicture}[scale=2.25]
-                    \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-                    \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
-                    \draw (0,0) circle (1);
-                    \draw[blue,line width=2pt] (0,0) -- (1,0) node[black,above right,yshift=0.1] {P(1,0)};
-                    \filldraw[blue,line width=2pt] (0:1) circle(1pt);
-                    \end{tikzpicture}
-                  </latex-image>
-                </image>
-              </p>
+              <image xml:id="exmp-6trig-0" width="55%">
+                <latex-image>
+                  \begin{tikzpicture}[scale=2.25]
+                  \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+                  \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+                  \draw (0,0) circle (1);
+                  \draw[blue,line width=2pt] (0,0) -- (1,0) node[black,above right,yshift=0.1] {P(1,0)};
+                  \filldraw[blue,line width=2pt] (0:1) circle(1pt);
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
               <p>
                 Then <m>x=1</m> and <m>y=0</m> gives us
                 <md>
@@ -229,16 +227,18 @@
                 radians (<m>270^{\circ}</m>),
                 the point on the circle is
                 <m>P(0,-1)</m>.
-                <image xml:id="exmp-6trig-3pi2" width="55%">
-                  <latex-image> \begin{tikzpicture}[scale=2.25]
-                    \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-                    \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
-                    \draw (0,0) circle (1);
-                    \draw[blue,line width=2pt] (0,0) -- (0,-1) node[black,below right,xshift=0.1] {P(0,-1)};
-                    \filldraw[blue,line width=2pt] (270:1) circle(1pt); \draw[->] (0:0.3) arc (0:270:0.3);
-                    \end{tikzpicture}
-                  </latex-image>
-                </image>
+              </p>
+              <image xml:id="exmp-6trig-3pi2" width="55%">
+                <latex-image> \begin{tikzpicture}[scale=2.25]
+                  \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+                  \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+                  \draw (0,0) circle (1);
+                  \draw[blue,line width=2pt] (0,0) -- (0,-1) node[black,below right,xshift=0.1] {P(0,-1)};
+                  \filldraw[blue,line width=2pt] (270:1) circle(1pt); \draw[->] (0:0.3) arc (0:270:0.3);
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+              <p>
                 Then <m>x=0</m> and <m>y=-1</m> gives us
                 <md>
                   <mrow>\sin \frac{3\pi}{2}\amp =\sin 270^{\circ}=-1, \amp \csc \frac{3\pi}{2}\amp =\csc  270^{\circ}=-1,</mrow>
@@ -261,16 +261,18 @@
                 <m>\theta=5\pi</m> are equal to those when <m>\theta=\pi</m>.
                 Notice that <m>5\pi</m> and <m>\pi</m> are
                 <em>coterminal angles</em>, both ending at the point<m>P(-1,0)</m>.
-                <image xml:id="exmp-6trig-5pi" width="55%">
-                  <latex-image> \begin{tikzpicture}[scale=2.25]
-                    \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-                    \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
-                    \draw (0,0) circle (1);
-                    \draw[blue,line width=2pt] (0,0) -- (-1,0) node[black,above left,xshift=-0.1] {P(-1,0)};
-                    \filldraw[blue,line width=2pt] (180:1) circle(1pt); \draw [->,domain=0:5*pi,variable=\t,smooth,samples=75] plot ({\t r}: {0.1+0.03*\t});
-                    \end{tikzpicture}
-                  </latex-image>
-                </image>
+              </p>
+              <image xml:id="exmp-6trig-5pi" width="55%">
+                <latex-image> \begin{tikzpicture}[scale=2.25]
+                  \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+                  \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+                  \draw (0,0) circle (1);
+                  \draw[blue,line width=2pt] (0,0) -- (-1,0) node[black,above left,xshift=-0.1] {P(-1,0)};
+                  \filldraw[blue,line width=2pt] (180:1) circle(1pt); \draw [->,domain=0:5*pi,variable=\t,smooth,samples=75] plot ({\t r}: {0.1+0.03*\t});
+                  \end{tikzpicture}
+                </latex-image>
+              </image>
+              <p>
                 Since <m>x=-1</m> and <m>y=0</m> we have
                 <md>
                   <mrow>\sin 5\pi\amp =0, \amp  \cos 5\pi\amp =-1, \amp  \tan 5\pi\amp =0,</mrow>
@@ -376,37 +378,40 @@
           Notice this now gives us one larger triangle whose angles are all <m>60^{\circ}</m>.
           Thus we have an equilateral triangle, with each side of length 1.
         </p>
-        <image xml:id="fig-two-30-60-90-derive">
-          <latex-image>
-            \begin{tikzpicture}[scale=6]
-            \draw[line width=2pt] (0,0) -- (30:1) node[midway,above,yshift=0.2] {1};
-            \draw[line width=2pt] (0,0) -- (-30:1) node[midway,below,yshift=-0.1] {1};
-            \draw[line width=2pt] (0,0) -- (0.866025403784,0) node[midway,below,yshift=-0.1] {\(x\)};
-            \draw[line width=2pt] (0.866025403784,0) -- (0.866025403784,0.5) node[midway,left,yshift=-0.2] {\(y\)};
-            \draw[line width=2pt] (0.866025403784,0) -- (0.866025403784,-0.5) node[midway,left,yshift=0.2] {\(y\)};
-            \filldraw[black] (30:1) circle(0.5pt) node[left,xshift=-10] {\(P(x,y)\)};
-            \draw ([shift=(0:0.15)]0,0) arc (0:30:0.15) node[midway,right,xshift=0.04,yshift=0.1] {\(30^{\circ}\)};
-            \draw ([shift=(0:0.15)]0,0) arc (0:-30:0.15) node[midway,right,xshift=0.0,yshift=-0.1] {\(30^{\circ}\)};
-            \draw ([shift=(210:0.15)]30:1) arc (210:270:0.15) node[midway,below,xshift=-0.1] {\(60^{\circ}\)};
-            \draw ([shift=(90:0.15)]-30:1) arc (90:150:0.15) node[midway,above,xshift=-0.1] {\(60^{\circ}\)};
-            \draw (0.786025403784,0) -- (0.786025403784,0.08) -- (0.866025403784,0.08);
-            \end{tikzpicture}
-          </latex-image>
-          <latex-image>
-            \begin{tikzpicture}[scale=6]
-            \draw[line width=2pt] (0,0) -- (30:1) node[midway,above,yshift=0.2] {1};
-            \draw[line width=2pt] (0,0) -- (-30:1) node[midway,below,yshift=-0.1] {1};
-            \draw[line width=2pt] (0.866025403784,-0.5) -- (0.866025403784,0.5) node[midway,left,yshift=-0.2] {\(1=2y\)};
-            \filldraw[black] (30:1) circle(0.5pt) node[left,xshift=-10] {\(P(x,y)\)};
-            \draw ([shift=(-30:0.15)]0,0) arc (-30:30:0.15) node[midway,right,xshift=0.04] {\(60^{\circ}\)};
-            \draw ([shift=(210:0.15)]30:1) arc (210:270:0.15) node[midway,below,xshift=-0.1] {\(60^{\circ}\)};
-            \draw ([shift=(90:0.15)]-30:1) arc (90:150:0.15) node[midway,above,xshift=-0.1] {\(60^{\circ}\)};
-            \end{tikzpicture}
-          </latex-image>
-        </image>
+        <sidebyside>
+          <image xml:id="fig-30-60-90-derive-two">
+            <latex-image>
+              \begin{tikzpicture}[scale=6]
+              \draw[line width=2pt] (0,0) -- (30:1) node[midway,above,yshift=0.2] {1};
+              \draw[line width=2pt] (0,0) -- (-30:1) node[midway,below,yshift=-0.1] {1};
+              \draw[line width=2pt] (0,0) -- (0.866025403784,0) node[midway,below,yshift=-0.1] {\(x\)};
+              \draw[line width=2pt] (0.866025403784,0) -- (0.866025403784,0.5) node[midway,left,yshift=-0.2] {\(y\)};
+              \draw[line width=2pt] (0.866025403784,0) -- (0.866025403784,-0.5) node[midway,left,yshift=0.2] {\(y\)};
+              \filldraw[black] (30:1) circle(0.5pt) node[left,xshift=-10] {\(P(x,y)\)};
+              \draw ([shift=(0:0.15)]0,0) arc (0:30:0.15) node[midway,right,xshift=0.04,yshift=0.1] {\(30^{\circ}\)};
+              \draw ([shift=(0:0.15)]0,0) arc (0:-30:0.15) node[midway,right,xshift=0.0,yshift=-0.1] {\(30^{\circ}\)};
+              \draw ([shift=(210:0.15)]30:1) arc (210:270:0.15) node[midway,below,xshift=-0.1] {\(60^{\circ}\)};
+              \draw ([shift=(90:0.15)]-30:1) arc (90:150:0.15) node[midway,above,xshift=-0.1] {\(60^{\circ}\)};
+              \draw (0.786025403784,0) -- (0.786025403784,0.08) -- (0.866025403784,0.08);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+          <image xml:id="fig-30-60-90-derive-one">
+            <latex-image>
+              \begin{tikzpicture}[scale=6]
+              \draw[line width=2pt] (0,0) -- (30:1) node[midway,above,yshift=0.2] {1};
+              \draw[line width=2pt] (0,0) -- (-30:1) node[midway,below,yshift=-0.1] {1};
+              \draw[line width=2pt] (0.866025403784,-0.5) -- (0.866025403784,0.5) node[midway,left,yshift=-0.2] {\(1=2y\)};
+              \filldraw[black] (30:1) circle(0.5pt) node[left,xshift=-10] {\(P(x,y)\)};
+              \draw ([shift=(-30:0.15)]0,0) arc (-30:30:0.15) node[midway,right,xshift=0.04] {\(60^{\circ}\)};
+              \draw ([shift=(210:0.15)]30:1) arc (210:270:0.15) node[midway,below,xshift=-0.1] {\(60^{\circ}\)};
+              \draw ([shift=(90:0.15)]-30:1) arc (90:150:0.15) node[midway,above,xshift=-0.1] {\(60^{\circ}\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </sidebyside>
         <p>
-          We see that <m>1=2y</m> so <m>y=\frac{1}{2}</m>.
-          Then by the Pythagorean Theorem,
+          We see that <m>1=2y</m> so <m>y=\frac{1}{2}</m>. Then by the Pythagorean Theorem,
           <md>
             <mrow>x^2+y^2\amp = 1^2</mrow>
             <mrow>x^2+\left(\frac{1}{2}\right)^2\amp = 1</mrow>
@@ -465,23 +470,22 @@
           \filldraw[black] (60:1) circle(0.5pt) node[right,xshift=4,yshift=-0.3] {\(P(x,y)=P\left(\frac{1}{2},\frac{\sqrt{3}}{2}\right)\)};
           \draw ([shift=(0:0.1)]0,0) arc (0:60:0.1) node[midway,right,xshift=0.04] {\(60^{\circ}\)};
           \draw ([shift=(120:0.1)]1,0) arc (120:180:0.1) node[midway,left,xshift=-0.04] {\(60^{\circ}\)};
-          \draw ([shift=(240:0.1)]60:1) arc (240:270:0.1) node[midway,below,xshift=-4,yshift=-5] {\(30^{\circ}\)};
-          \draw ([shift=(270:0.1)]60:1) arc (270:300:0.1) node[midway,below,xshift=4,yshift=-5] {\(30^{\circ}\)};
+          \draw ([shift=(240:0.1)]60:1) arc (240:270:0.1) node[midway,below,xshift=-4,yshift=-12] {\(30^{\circ}\)};
+          \draw ([shift=(270:0.1)]60:1) arc (270:300:0.1) node[midway,below,xshift=4,yshift=-12] {\(30^{\circ}\)};
           \draw (0.44,0) -- (0.44,0.06) -- (0.5,0.06);
           \end{tikzpicture}
         </latex-image>
       </image>
     </remark>
     <p>
-      We now summarize what we know about the six trigonometric functions for special angles.
-      Note the trigonometric functions for <m>\theta=\frac{\pi}{2}</m> 
+      We now summarize what we know about the six trigonometric functions for special angles.<idx>
+        <h>trigonometric functions</h>
+        <h>special values</h>
+      </idx> Note the trigonometric functions for <m>\theta=\frac{\pi}{2}</m> 
       and <m>\theta=\frac{\pi}{3}</m> are left as exercises.
     </p>
     <table>
-      <idx>
-        <h>Trigonometric Functions</h>
-        <h>special values</h>
-      </idx>
+      <title>Trigonometric functions for special angles</title>
       <tabular halign="center">
         <row bottom="minor">
           <cell></cell>
@@ -539,9 +543,9 @@
           <cell>0</cell>
           <cell>1</cell>
           <cell>0</cell>
-          <cell>undefined</cell>
+          <cell>undef</cell>
           <cell>1</cell>
-          <cell>undefined</cell>
+          <cell>undef</cell>
         </row>
         <row bottom="minor">
           <cell></cell>
@@ -662,9 +666,9 @@
           </cell>
           <cell>1</cell>
           <cell>0</cell>
-          <cell>undefined</cell>
+          <cell>undef</cell>
           <cell>1</cell>
-          <cell>undefined</cell>
+          <cell>undef</cell>
           <cell>0</cell>
         </row>
         <row bottom="minor">
@@ -684,8 +688,7 @@
   <subsection>
     <title>Symmetry on the Unit Circle</title>
     <p>
-      If the point <m>P(x,y)</m> is a point on the unit circle,
-      then the following symmetric points are also on the unit circle:
+      If the point <m>P(x,y)</m> lies on the unit circle, the following symmetric points also lie on the unit circle:
       <ol>
         <li>
           <p>
@@ -705,78 +708,76 @@
       </ol>
     </p>
     <p>
-      The symmetry in the unit circle is similar to that in the Star Compass.
-      When a star enters the sky in the east, the house that it arrives in will be 
-      the same house it will set in on the west.
-      For example, if a star enters the horizon in the house Nālani in the Koʻolau quadrant (northeast),
-      it will arc over the sky and enter the horizon in the Hoʻolua quadrant (northwest).
-      This is similar to the symmetry of <m>P(x,y)</m> and <m>Q(-x,y)</m>.
-      Additionally, if an ocean swell or wind comes from the house of Nālani in the Malanai quadrant (southeast),
-      it will leave the waʻa in the opposite direction towards the Hoʻolua quadrant
-      (northwest).
-      This is similar to the symmetry of <m>S(x,-y)</m> and <m>Q(-x,y)</m>.
+      This symmetry within the unit circle resembles the pattern observed in the Star Compass. When a star emerges in the eastern sky, it will eventually descend and set in the corresponding house of the western sky. For instance, if a star rises above the horizon in the Nālani house of the Ko‘olau quadrant (northeast), it will journey across the sky and set in the equivalent house within the Ho‘olua quadrant (northwest). This similarity aligns with the symmetry between points <m>P(x,y)</m> and <m>Q(-x,y)</m>.
+
+      Additionally, if an ocean swell or wind originates from the Nālani house in the Malanai quadrant (southeast), it will pass the wa‘a and exit in the opposite direction toward the Ho‘olua quadrant (northwest), still within the Nālani house. This mirrors the symmetry between points <m>S(x,-y)</m> and <m>Q(-x,y)</m>.
     </p>
-    <image xml:id="fig-unit-circle-symmetry">
-      <latex-image>
-        \begin{tikzpicture}[scale=5]
-        \draw[&lt;->] (-1.1,0)--(1.1,0) node[below]{\(x\)};
-        \draw[&lt;->] (0,-1.1)--(0,1.1) node[above]{\(y\)};
-        \node[below] at (0,-1.1) {};
-        \draw (0,0) circle (1);
-        \filldraw[black] (60:1) circle(1pt);
-        \filldraw[black] (120:1) circle(1pt);
-        \filldraw[black] (240:1) circle(1pt);
-        \filldraw[black] (300:1) circle(1pt);
-        \draw (60:1.2) node {\(P(x,y)\)};
-        \draw (120:1.2) node {\(Q(-x,y)\)};
-        \draw (240:1.2) node {\(R(-x,-y)\)};
-        \draw (300:1.2) node {\(S(x,-y)\)};
-        \draw[gray,dashed] (60:1) -- (240:1);
-        \draw[gray,dashed] (120:1) -- (300:1);
-        \draw[gray,dashed] (60:1) -- (120:1);
-        \draw[gray,dashed] (120:1) -- (240:1);
-        \draw[gray,dashed] (240:1) -- (300:1);
-        \draw[gray,dashed] (300:1) -- (60:1);
-        \end{tikzpicture}
-      </latex-image>
-    </image>
-    <image xml:id="fig-star-compass-symmetry">
-      <latex-image>
-        \begin{tikzpicture}[scale=5]
-        \draw[&lt;->] (-1.1,0)--(1.1,0);
-        \node[rotate=-90] at (1.15,0) {Hikina};
-        \node[rotate=90] at (-1.15,0) {Komohana};
-        \node[below] at (0,-1.1) {Hema};
-        \draw[&lt;->] (0,-1.1)--(0,1.1) node[above]{ʻĀkau};
-        \draw (0,0) circle (1);
-        \filldraw[black] (60:1) circle(1pt);
-        \filldraw[black] (120:1) circle(1pt);
-        \filldraw[black] (240:1) circle(1pt);
-        \filldraw[black] (300:1) circle(1pt);
-        \draw (60:1.2) node {Nālani};
-        \draw (120:1.2) node {Nālani};
-        \draw (240:1.2) node {Nālani};
-        \draw (300:1.2) node {Nālani};
-        \draw[gray,dashed] (60:1) -- (240:1);
-        \draw[gray,dashed] (120:1) -- (300:1);
-        \draw[gray,dashed] (60:1) -- (120:1);
-        \draw[gray,dashed] (120:1) -- (240:1);
-        \draw[gray,dashed] (240:1) -- (300:1);
-        \draw[gray,dashed] (300:1) -- (60:1);
-        \draw (0,0) pic {waa1-top={waacolor}{-60}{0.03}};
-        \end{tikzpicture}
-      </latex-image>
-    </image>
-    <ol>
-      <li value="4">
-        <p>
-          <m>T(y,x)</m>: Symmetry about the line <m>y=x</m>.
-          This is accomplished by interchanging the
-          <m>x</m>- and <m>y</m>-values.
-        </p>
-      </li>
-    </ol>
-    <image xml:id="fig-unit-circle-symmetry-xy">
+    <sidebyside>
+      <image xml:id="fig-unit-circle-symmetry">
+        <latex-image>
+          \begin{tikzpicture}[scale=5]
+          \draw[&lt;->] (-1.1,0)--(1.1,0) node[below]{\(x\)};
+          \draw[&lt;->] (0,-1.1)--(0,1.1) node[above]{\(y\)};
+          \node[below] at (0,-1.1) {};
+          \draw (0,0) circle (1);
+          \filldraw[black] (60:1) circle(1pt);
+          \filldraw[black] (120:1) circle(1pt);
+          \filldraw[black] (240:1) circle(1pt);
+          \filldraw[black] (300:1) circle(1pt);
+          \draw (60:1.2) node {\(P(x,y)\)};
+          \draw (120:1.2) node {\(Q(-x,y)\)};
+          \draw (240:1.2) node {\(R(-x,-y)\)};
+          \draw (300:1.2) node {\(S(x,-y)\)};
+          \draw[gray,dashed] (60:1) -- (240:1);
+          \draw[gray,dashed] (120:1) -- (300:1);
+          \draw[gray,dashed] (60:1) -- (120:1);
+          \draw[gray,dashed] (120:1) -- (240:1);
+          \draw[gray,dashed] (240:1) -- (300:1);
+          \draw[gray,dashed] (300:1) -- (60:1);
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+      <image xml:id="fig-star-compass-symmetry">
+        <latex-image>
+          \begin{tikzpicture}[scale=5]
+          \draw[&lt;->] (-1.1,0)--(1.1,0);
+          \node[rotate=-90] at (1.15,0) {Hikina};
+          \node[rotate=90] at (-1.15,0) {Komohana};
+          \node[below] at (0,-1.1) {Hema};
+          \draw[&lt;->] (0,-1.1)--(0,1.1) node[above]{ʻĀkau};
+          \draw (0,0) circle (1);
+          \filldraw[black] (60:1) circle(1pt);
+          \filldraw[black] (120:1) circle(1pt);
+          \filldraw[black] (240:1) circle(1pt);
+          \filldraw[black] (300:1) circle(1pt);
+          \draw (60:1.2) node {Nālani};
+          \draw (120:1.2) node {Nālani};
+          \draw (240:1.2) node {Nālani};
+          \draw (300:1.2) node {Nālani};
+          \draw[gray,dashed] (60:1) -- (240:1);
+          \draw[gray,dashed] (120:1) -- (300:1);
+          \draw[gray,dashed] (60:1) -- (120:1);
+          \draw[gray,dashed] (120:1) -- (240:1);
+          \draw[gray,dashed] (240:1) -- (300:1);
+          \draw[gray,dashed] (300:1) -- (60:1);
+          \draw (0,0) pic {waa1-top={waacolor}{-60}{0.3}};
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </sidebyside>
+    <p>
+      A fourth form of symmetry involves reflecting points across the diagonal line <m>y=x</m>, where the <m>x</m>- and <m>y</m>-values are equal.
+    </p>
+    <p>
+      <ol marker="4">
+        <li>
+          <p>
+            <m>T(y,x)</m>: Symmetry about the line <m>y=x</m>. This is accomplished by interchanging the <m>x</m>- and <m>y</m>-values.
+          </p>
+        </li>
+      </ol>
+    </p>
+    <image xml:id="fig-unit-circle-symmetry-xy" width="50%">
       <latex-image>
         \begin{tikzpicture}[scale=5]
         \draw[&lt;->] (-1.1,0)--(1.1,0) node[below]{\(x\)};
@@ -790,15 +791,9 @@
       </latex-image>
     </image>
     <p>
-      On the Unit Circle,
-      notice that the radius extending from the center at an angle of
-      <m>30^{\circ}</m> to the point
-      <m>T(x,y)=\left(\frac{1}{2},\frac{\sqrt{3}}{2}\right)</m>
-      is symmetric about the line <m>y=x</m>
-      to the radius extending from the center at an angle of
-      <m>60^{\circ}</m> to the point <m>P(x,y)</m>.
+      Notice on the Unit Circle that the radius extending from the center at an angle of <m>30^{\circ}</m> to the point <m>T(x,y)=\left(\frac{1}{2},\frac{\sqrt{3}}{2}\right)</m> is symmetric about the line <m>y=x</m>, in relation to the radius extending from the center at an angle of <m>60^{\circ}</m> to the point <m>P(x,y)</m>.
     </p>
-    <image xml:id="fig-unit-circle-symmetry-30-60">
+    <image xml:id="fig-unit-circle-symmetry-30-60" width="50%">
       <latex-image>
         \begin{tikzpicture}[scale=5]
         \draw[&lt;->] (-1.1,0)--(1.1,0) node[right]{\(x\)};
@@ -815,118 +810,110 @@
       </latex-image>
     </image>
     <p>
-      Using symmetry about the <m>x</m>-axis, symmetry about the <m>y</m>-axis,
-      and symmetry about the origin, we can complete the unit circle,
-      as long as we remember that the
-      <m>x</m>-values in Quadrants II and III are negative while the
-      <m>y</m>-values in Quadrants III and IV are negative.
+      Using symmetry about the <m>x</m>-axis, symmetry about the <m>y</m>-axis, and symmetry about the origin, we can complete the unit circle, as long as we remember that the <m>x</m>-values in Quadrants II and III are negative while the <m>y</m>-values in Quadrants III and IV are negative.
     </p>
-    <image xml:id="unit-circle-45">
-      <latex-image>
-        \begin{tikzpicture}[scale=5]
-        \draw[&lt;-] (-1.15,0) -- (-0.7,0);
-        \draw[->] (0.7,0) -- (1.15,0) node[below] {\(x\)};
-        \draw[&lt;-] (0,-1.15) -- (0,-0.7);
-        \draw[->] (0,0.7) -- (0,1.15) node[left] {\(y\)};
-        \draw (0,-0.5) -- (0,0.5);
-        \draw (-0.5,0) -- (0.5,0);
-        \draw[thick] (0,0) circle(1);
-        \foreach \x in {0,45,...,360} {
-        \draw[gray] (0,0) -- (\x:0.5);
-        \draw[gray] (\x:0.7) -- (\x:1);
-        \filldraw[black] (\x:1) circle(0.4pt);
-        }
-        \draw (0,0) -- (0:0.45);
-        \draw (0:0.75) -- (0:1);
-        \draw (0,0) -- (90:0.45);
-        \draw (90:0.75) -- (90:1);
-        \draw (0,0) -- (180:0.45);
-        \draw (180:0.75) -- (180:1);
-        \draw (0,0) -- (270:0.45);
-        \draw (270:0.75) -- (270:1);
-        \foreach \x/\xtext in {
-        45/\frac{\pi}{4},
-        90/\frac{\pi}{2},
-        135/\frac{3\pi}{4},
-        180/\pi,
-        225/\frac{5\pi}{4},
-        270/\frac{3\pi}{2},
-        315/\frac{7\pi}{4},
-        360/2\pi}
-        \draw (\x:0.6) node {\(\xtext\)};
-        \foreach \x/\xtext/\y in {
-        45/\frac{\sqrt{2}}{2}/\frac{\sqrt{2}}{2},
-        135/-\frac{\sqrt{2}}{2}/\frac{\sqrt{2}}{2},
-        225/-\frac{\sqrt{2}}{2}/-\frac{\sqrt{2}}{2},
-        315/\frac{\sqrt{2}}{2}/-\frac{\sqrt{2}}{2}}
-        \draw (\x:1.35) node {\(\left(\xtext,\y\right)\)};
-        \draw (-1.25,0) node[above=1pt] {\((-1,0)\)}
-        (1.25,0)  node[above=1pt] {\((1,0)\)}
-        (0,-1.25) node {\((0,-1)\)}
-        (0,1.25)  node {\((0,1)\)};
-        \end{tikzpicture}
-      </latex-image>
-    </image>
-        \draw[thick] (0,0) circle(1);
-    <image xml:id="unit-circle-30-60">
-      <latex-image>
-        \begin{tikzpicture}[scale=5]
-        \draw[&lt;-] (-1.15,0) -- (-0.7,0);
-        \draw[->] (0.7,0) -- (1.15,0) node[below] {\(x\)};
-        \draw[&lt;-] (0,-1.15) -- (0,-0.7);
-        \draw[->] (0,0.7) -- (0,1.15) node[left] {\(y\)};
-        \draw (0,-0.5) -- (0,0.5);
-        \draw (-0.5,0) -- (0.5,0);
-        \draw[thick] (0,0) circle(1);
-        \foreach \x in {0,30,...,360} {
-        \draw[gray] (0,0) -- (\x:0.5);
-        \draw[gray] (\x:0.7) -- (\x:1);
-        \filldraw[black] (\x:1) circle(0.4pt);
-        }
-        \foreach \x/\xtext in {
-        30/\frac{\pi}{6},
-        60/\frac{\pi}{3},
-        90/\frac{\pi}{2},
-        120/\frac{2\pi}{3},
-        150/\frac{5\pi}{6},
-        180/\pi,
-        210/\frac{7\pi}{6},
-        240/\frac{4\pi}{3},
-        270/\frac{3\pi}{2},
-        300/\frac{5\pi}{3},
-        330/\frac{11\pi}{6},
-        360/2\pi}
-        \draw (\x:0.6) node {\(\xtext\)};
-        \foreach \x/\xtext/\y in {
-        30/\frac{\sqrt{3}}{2}/\frac{1}{2},
-        60/\frac{1}{2}/\frac{\sqrt{3}}{2},
-        150/-\frac{\sqrt{3}}{2}/\frac{1}{2},
-        120/-\frac{1}{2}/\frac{\sqrt{3}}{2},
-        210/-\frac{\sqrt{3}}{2}/-\frac{1}{2},
-        240/-\frac{1}{2}/-\frac{\sqrt{3}}{2},
-        330/\frac{\sqrt{3}}{2}/-\frac{1}{2},
-        300/\frac{1}{2}/-\frac{\sqrt{3}}{2}}
-        \draw (\x:1.25) node {\(\left(\xtext,\y\right)\)};
-        \draw (-1.25,0) node[above=1pt] {\((-1,0)\)}
-        (1.25,0)  node[above=1pt] {\((1,0)\)}
-        (0,-1.25) node {\((0,-1)\)}
-        (0,1.25)  node {\((0,1)\)};
-        \end{tikzpicture}
-      </latex-image>
-    </image>
+    <sidebyside>
+      <image xml:id="unit-circle-45">
+        <latex-image>
+          \begin{tikzpicture}[scale=5]
+          \draw[&lt;-] (-1.15,0) -- (-0.7,0);
+          \draw[->] (0.7,0) -- (1.15,0) node[below] {\(x\)};
+          \draw[&lt;-] (0,-1.15) -- (0,-0.7);
+          \draw[->] (0,0.7) -- (0,1.15) node[left] {\(y\)};
+          \draw (0,-0.5) -- (0,0.5);
+          \draw (-0.5,0) -- (0.5,0);
+          \draw[thick] (0,0) circle(1);
+          \foreach \x in {0,45,...,360} {
+          \draw[gray] (0,0) -- (\x:0.5);
+          \draw[gray] (\x:0.7) -- (\x:1);
+          \filldraw[black] (\x:1) circle(0.4pt);
+          }
+          \draw (0,0) -- (0:0.45);
+          \draw (0:0.75) -- (0:1);
+          \draw (0,0) -- (90:0.45);
+          \draw (90:0.75) -- (90:1);
+          \draw (0,0) -- (180:0.45);
+          \draw (180:0.75) -- (180:1);
+          \draw (0,0) -- (270:0.45);
+          \draw (270:0.75) -- (270:1);
+          \foreach \x/\xtext in {
+          45/\frac{\pi}{4},
+          90/\frac{\pi}{2},
+          135/\frac{3\pi}{4},
+          180/\pi,
+          225/\frac{5\pi}{4},
+          270/\frac{3\pi}{2},
+          315/\frac{7\pi}{4},
+          360/2\pi}
+          \draw (\x:0.6) node {\(\xtext\)};
+          \foreach \x/\xtext/\y in {
+          45/\frac{\sqrt{2}}{2}/\frac{\sqrt{2}}{2},
+          135/-\frac{\sqrt{2}}{2}/\frac{\sqrt{2}}{2},
+          225/-\frac{\sqrt{2}}{2}/-\frac{\sqrt{2}}{2},
+          315/\frac{\sqrt{2}}{2}/-\frac{\sqrt{2}}{2}}
+          \draw (\x:1.35) node {\(\left(\xtext,\y\right)\)};
+          \draw (-1.25,0) node[above=1pt] {\((-1,0)\)}
+          (1.25,0)  node[above=1pt] {\((1,0)\)}
+          (0,-1.25) node {\((0,-1)\)}
+          (0,1.25)  node {\((0,1)\)};
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+      <image xml:id="unit-circle-30-60">
+        <latex-image>
+          \begin{tikzpicture}[scale=5]
+          \draw[&lt;-] (-1.15,0) -- (-0.7,0);
+          \draw[->] (0.7,0) -- (1.15,0) node[below] {\(x\)};
+          \draw[&lt;-] (0,-1.15) -- (0,-0.7);
+          \draw[->] (0,0.7) -- (0,1.15) node[left] {\(y\)};
+          \draw (0,-0.5) -- (0,0.5);
+          \draw (-0.5,0) -- (0.5,0);
+          \draw[thick] (0,0) circle(1);
+          \foreach \x in {0,30,...,360} {
+          \draw[gray] (0,0) -- (\x:0.5);
+          \draw[gray] (\x:0.7) -- (\x:1);
+          \filldraw[black] (\x:1) circle(0.4pt);
+          }
+          \foreach \x/\xtext in {
+          30/\frac{\pi}{6},
+          60/\frac{\pi}{3},
+          90/\frac{\pi}{2},
+          120/\frac{2\pi}{3},
+          150/\frac{5\pi}{6},
+          180/\pi,
+          210/\frac{7\pi}{6},
+          240/\frac{4\pi}{3},
+          270/\frac{3\pi}{2},
+          300/\frac{5\pi}{3},
+          330/\frac{11\pi}{6},
+          360/2\pi}
+          \draw (\x:0.6) node {\(\xtext\)};
+          \foreach \x/\xtext/\y in {
+          30/\frac{\sqrt{3}}{2}/\frac{1}{2},
+          60/\frac{1}{2}/\frac{\sqrt{3}}{2},
+          150/-\frac{\sqrt{3}}{2}/\frac{1}{2},
+          120/-\frac{1}{2}/\frac{\sqrt{3}}{2},
+          210/-\frac{\sqrt{3}}{2}/-\frac{1}{2},
+          240/-\frac{1}{2}/-\frac{\sqrt{3}}{2},
+          330/\frac{\sqrt{3}}{2}/-\frac{1}{2},
+          300/\frac{1}{2}/-\frac{\sqrt{3}}{2}}
+          \draw (\x:1.25) node {\(\left(\xtext,\y\right)\)};
+          \draw (-1.25,0) node[above=1pt] {\((-1,0)\)}
+          (1.25,0)  node[above=1pt] {\((1,0)\)}
+          (0,-1.25) node {\((0,-1)\)}
+          (0,1.25)  node {\((0,1)\)};
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </sidebyside>
     <p>
-      Finally, we tie everything together and look at the entire Unit Circle.
-      At first glance it may seem intimidating,
-      however, similar to the Star Compass,
-      there is a lot of symmetry (<m>x</m>-axis, <m>y</m>-axis, origin,
-      about the line <m>y=x</m>) and it can help by focusing on one quadrant,
-      and use symmetry to fill out the rest of the circle.
+      Finally, we tie everything together and look at the entire Unit Circle. At first glance it may seem intimidating, however, similar to the Star Compass, there is a lot of symmetry (<m>x</m>-axis, <m>y</m>-axis, origin, about the line <m>y=x</m>) and it can help by focusing on one quadrant, and use symmetry to fill out the rest of the circle.
     </p>
     <figure xml:id="trig-unit-circle-deg-rad">
       <caption>
         The Unit Circle for common angles in radians and degrees.
       </caption>
-      <image>
+      <image xml:id="fig-trig-unit-circle-deg-rad">
         <latex-image>
           \begin{tikzpicture}[scale=5]
           \draw[&lt;-] (-1.15,0) -- (-0.92,0);
