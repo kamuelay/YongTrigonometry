@@ -76,7 +76,7 @@
       Based on the definition of the six trigonometric functions,
       we have the following trigonometric identities.
     </p>
-      <definition>
+      <definition xml:id="def_reciprocal-identities">
         <title>Reciprocal Identities</title>
         <statement>
           <p>
@@ -91,7 +91,7 @@
         </statement>
       </definition>
 
-    <definition>
+    <definition xml:id="def_quotient-identities">
       <title>Quotient Identities</title>
       <statement>
         <p>
