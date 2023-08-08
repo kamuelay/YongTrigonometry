@@ -990,7 +990,7 @@
       </introduction>
       <exercise>
         <statement>
-          <image width="75%">
+          <image xml:id="exer-1-4-1" width="75%">
             <latex-image>
               \begin{tikzpicture}
               \draw (0,0) -- (3,0) node[midway,below]{3};
@@ -1015,9 +1015,9 @@
       </exercise>
       <exercise>
         <statement>
-          <image width="75%">
+          <image xml:id="exer-1-4-2" width="75%">
             <latex-image>
-              \begin{tikzpicture}
+              \begin{tikzpicture}[scale=0.75]
               \draw (0,0) -- (5,0) node[midway,below]{5};
               \draw(0,0) -- (5,7) node[midway,above left]{\(\sqrt{74}\)};
               \draw(5,0) -- (5,7) node[midway,right]{7};
@@ -1040,7 +1040,7 @@
       </exercise>
       <exercise>
         <statement>
-          <image width="75%">
+          <image xml:id="exer-1-4-3" width="75%">
             <latex-image>
               \begin{tikzpicture}
               \draw (0,0) -- (-4,0) node[midway,below]{4};
@@ -1065,7 +1065,7 @@
       </exercise>
       <exercise>
         <statement>
-          <image width="75%">
+          <image xml:id="exer-1-4-4" width="75%">
             <latex-image>
               \begin{tikzpicture}
               \draw (0,0) -- (-5,0);
@@ -1090,9 +1090,9 @@
       </exercise>
       <exercise>
         <statement>
-          <image width="75%">
+          <image xml:id="exer-1-4-5" width="75%">
             <latex-image>
-              \begin{tikzpicture}
+              \begin{tikzpicture}[scale=0.5]
               \draw (0,0) -- (-7,0) node[midway,below]{7};
               \draw(0,0) -- (-7,14);
               \draw(-7,0) -- (-7,14) node[midway,left]{14};
@@ -1115,7 +1115,7 @@
       </exercise>
       <exercise>
         <statement>
-          <image width="75%">
+          <image xml:id="exer-1-4-6" width="75%">
             <latex-image>
               \begin{tikzpicture}
               \draw (0,0) -- (4,0) node[midway,below]{4};
@@ -1140,9 +1140,9 @@
       </exercise>
       <exercise>
         <statement>
-          <image width="75%">
+          <image xml:id="exer-1-4-7" width="75%">
             <latex-image>
-              \begin{tikzpicture}
+              \begin{tikzpicture}[scale=2]
               \draw (0,0) -- (-2,0) node[midway,below]{2};
               \draw(0,0) -- (-2,2.44948974278) node[midway,above right]{\(\sqrt{10}\)};
               \draw(-2,0) -- (-2,2.44948974278);
@@ -1165,9 +1165,9 @@
       </exercise>
       <exercise>
         <statement>
-          <image width="75%">
+          <image xml:id="exer-1-4-8" width="75%">
             <latex-image>
-              \begin{tikzpicture}
+              \begin{tikzpicture}[scale=2]
               \draw (0,0) -- (2,0) node[midway,below]{2};
               \draw(0,0) -- (2,3);
               \draw(2,0) -- (2,3) node[midway,right]{3};
@@ -1641,25 +1641,25 @@
           \draw [waacolor] (1.55,3)-- (-1.55,3);
           \draw [waacolor] (-0.25,3)-- (0.25,3);
           \draw [waacolor] (-0.75,4)-- (0.75, 4);
-          \draw (-1.55,-4) -- (1.55,{3.1*tan(5.625)-4});
-          \draw (-1.55,-4) -- (1.55,{3.1*tan(16.875)-4});
-          \draw (-1.55,-4) -- (1.55,{3.1*tan(28.125)-4});
-          \draw (-1.55,-4) -- (1.55,{3.1*tan(39.375)-4});
-          \draw (-1.55,-4) -- (1.55,{3.1*tan(50.625)-4});
-          \draw (-1.55,-4) -- (1.55,{3.1*tan(61.875)-4});
-          \draw (-1.55,-4) -- ({7/tan(73.125)-1.55},3);
-          \draw (-1.55,-4) -- ({7/tan(84.375)-1.55},3);
+          \draw (-1.55,-4) -- (1.55,{3.1*tan(5.625)-4}) node[right] {$y_1$};
+          \draw (-1.55,-4) -- (1.55,{3.1*tan(16.875)-4}) node[right] {$y_2$};
+          \draw (-1.55,-4) -- (1.55,{3.1*tan(28.125)-4}) node[right] {$y_3$};
+          \draw (-1.55,-4) -- (1.55,{3.1*tan(39.375)-4}) node[right] {$y_4$};
+          \draw (-1.55,-4) -- (1.55,{3.1*tan(50.625)-4}) node[right] {$y_5$};
+          \draw (-1.55,-4) -- (1.55,{3.1*tan(61.875)-4}) node[right] {$y_6$};
+          \draw (-1.55,-4) -- ({7/tan(73.125)-1.55},3) node[above] {$x_7$};
+          \draw (-1.55,-4) -- ({7/tan(84.375)-1.55},3) node[above] {$x_8$};
           \end{tikzpicture}
           </latex-image>
         </image>
         <p>
-          Calculate the location for a canoe with dimensions <m>l=7.4</m> m, <m>w=5.35</m> and for each boundary of house for
+          Given a canoe with dimensions <m>l=7.4</m> m and <m>w=5.35</m>, calculate the position on the deck (distance in the <m>x</m>- or <m>y</m>-y direction from the corner of the navigator's seat) for the boundary between two houses for a given angle, <m>\theta</m>>.
         </p>
       </introduction>
       <exercise>
         <statement>
           <p>
-            <m>\theta=5.625^{\circ}</m>
+            <m>\theta=5.625^{\circ}</m> (between Hikina and Lā); <m>y_1</m>
           </p>
         </statement>
         <answer>
