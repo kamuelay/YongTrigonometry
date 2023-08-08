@@ -953,7 +953,7 @@
         <p> 
           Kiritimati, also known as Christmas Island, is an atoll in the Republic of Kiribati. Kiritimati's location west of the International Date Line makes it one of the first places in the world to welcome the New Year, while Hawaiʻi is one of the last places. Although Kiritimati and Molokaʻi share the same longitude at <m>157^{\circ}12'</m> west (meaning Molokaʻi is directly north of Kiritimati), both islands are 24 hours apart. For example, if the time on Oʻahu is 3:00 pm on Thursday, then at that same moment it is 3:00 pm on Friday in Kiritimati. Find the distance between Kiritimati ( <m>1^{\circ}45'</m> north latitude) and Molokaʻi (<m>21^{\circ}08'</m> north latitude). Assume the radius of Earth is 3,960 miles and that the central angle between the two islands is the difference in their laititudes.
         </p>
-        <image width="75%" source="fig-globe-kiritimati.svg" />
+        <image width="75%" source="fig-globe-kiritimati" />
       </statement>
       <solution>
         <p>
@@ -2384,7 +2384,7 @@
         <p>
           At the start of this section, you learned that the <term>latitude</term> <idx><h>latitude</h></idx> of a place is the angle between a line drawn from the center of the earth to that point and the equatorial plane. If the radius of the Earth is 3,959 miles, calculate the arc length, <m>s</m>, along the surface of the earth for each value of <m>\theta</m>:
         </p>
-        <image width="75%" source="fig-globe.svg" />
+        <image width="75%" source="fig-globe" />
       </introduction>
       <exercise>
         <statement>
