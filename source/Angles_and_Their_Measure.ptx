@@ -4,9 +4,9 @@
   <introduction>
     <p> One method people use to identify their position is by looking at the <em>latitude</em>. <idx><h>latitude</h></idx> These imaginary lines form circles around the Earth and run parallel to the Equator. The latitude of a place is defined as the angle between a line drawn from the center of the Earth to that point and the equatorial plane. For any point in the Northern Hemisphere, a navigator can measure their latitude by determining the angle that <em>Hōkūpaʻa</em> (also known as <em>Kūmau</em>, <em>Wuli wulifasmughet</em>, <em>Fuesemagut</em>, North Star, or Polaris) makes with the horizon. 
     </p>
-    <image xml:id="angles-Hokupaa" width="100%">
+    <image xml:id="angles-Hokupaa" width="70%">
       <latex-image>
-        \begin{tikzpicture}[scale=6]
+        \begin{tikzpicture}[scale=5]
         \draw (0,0)--(-0.5,0);
         \draw[line width=2pt] (0,0) -- (1.1,0) node[right,xshift=0.1] {Horizon};
         \draw[line width=2pt] (0,0) -- (30:1.2);
@@ -29,7 +29,7 @@
         </p>
         <image xml:id="fig-ray" width="85%">
           <latex-image>
-            \begin{tikzpicture}
+            \begin{tikzpicture}[scale=1.5]
             \draw[&lt;-] (-5,0) -- (0,0);
             \draw[->, line width=2pt,blue,-stealth](0,0) -- (5,0) node[black,midway,below]{Ray};
             \node[circle,fill=blue,inner sep=2pt,minimum size=2pt,label=below:{\(O\)}] (a) at (0,0)
@@ -47,7 +47,7 @@
         </p>
         <image xml:id="fig-initial-terminal-side" width="50%">
           <latex-image>
-            \begin{tikzpicture}[scale=1]
+            \begin{tikzpicture}[scale=1.5]
             \draw[->, line width=2pt,blue,-stealth](0,0) -- (5,0) node[black,midway,below]{Initial
             Side};
             \draw[->, line width=2pt,blue,-stealth](0,0) -- (40:5)
@@ -561,7 +561,7 @@
       <p>
         In astronomy and navigation, the position of a celestial body as it rises or sets on the horizon can be measured using the <term>azimuth</term><idx>azimuth</idx>, which indicates the direction of celestial objects relative to an observer's position. Similar to heading, azimuth starts from the north and increases clockwise.
 
-        Unless specified otherwise to use the heading or azimuth angle (in which case, refer to <xref ref="star-compass-with-heading-angles">Figure</xref>), this book will use <xref ref="star-compass-with-angles">Figure</xref> for the angles of the Star Compass.
+        In navigation, <q>heading</q> typically denotes the direction an object like a canoe or wind is pointed, whereas <q>azimuth</q> pertains to the angular measurement of celestial bodies on the horizontal plane. Both <q>heading</q> and <q>azimuth</q> measure angles in degrees, beginning from north and progressing clockwise. Unless specified otherwise to use the heading or azimuth angle (in which case, refer to <xref ref="star-compass-with-heading-angles">Figure</xref>), this book will use <xref ref="star-compass-with-angles">Figure</xref> for the angles of the Star Compass.
       </p>
     </remark>
   </subsection>
@@ -2579,6 +2579,11 @@
               What is the azimuth of the sun?
             </p>
           </statement>
+          <answer>
+            <p>
+              <m>69^{\circ}44'</m>
+            </p>
+          </answer>
         </task>
         <task>
           <statement>
@@ -2586,20 +2591,40 @@
               What house is the sun rising in?
             </p>
           </statement>
+          <answer>
+            <p>
+              ʻĀina Koʻolau
+            </p>
+          </answer>
         </task>
         <task>
           <statement>
             <p>
-              What house does the sun set in? Hint: Celestial bodies rise and set in the same house but different quadrants.
+              What house does the sun set in?
             </p>
           </statement>
+          <hint>
+            <p>
+              Celestial bodies rise and set in the same house but different quadrants.
+            </p>
+          </hint>
+          <answer>
+            <p>
+              ʻĀina Hoʻolua
+            </p>
+          </answer>
         </task>
         <task>
           <statement>
             <p>
-              If the canoe is sailing with the rising sun on the port side (left) and the navigator measures the angle between the direction of the canoe and the sun as being 90 degrees, what is the heading of the canoe?
+              If the canoe is sailing with the rising sun on the port side (left) and the navigator measures the angle between the direction of the canoe and the sun as being <m>90^{\circ}</m>, what is the heading of the canoe?
             </p>
           </statement>
+          <answer>
+            <p>
+              <m>159^{\circ}44'</m>
+            </p>
+          </answer>
         </task>
         <task>
           <statement>
@@ -2607,12 +2632,17 @@
               What house is the canoe sailing in?
             </p>
           </statement>
+          <answer>
+            <p>
+              Nā Leo Malanai
+            </p>
+          </answer>
         </task>
     </exercise>
     <exercise>
       <statement>
         <p>
-          Swells are one of the most consistent navigational tools used to keep on a course because they can remain constant over time. On 27 May 2023, while sailing on the vaka Paikea from Rarotonga to Apia, you finished your shift and are ready to take a nap. Before you lay down, you take note that the canoe has a heading of 310 degrees and the swells are coming from the southeast (Manu Kona) and hitting the canoe at 5 degree above straight from the left of the canoe. When you wake, you noticed the swells are now hitting the canoe from 25 degrees to the left of straight in front (Nā Leo Hoʻolua). You are aware that the swells couldnʻt have changed this fast and conclude that while you were asleep, the canoe changed its heading. Assuming the swell was constant, determine your new heading.
+          Swells are one of the most consistent navigational tools used to keep on a course because they can remain constant over time. On 27 May 2023, while sailing on the vaka Paikea from Rarotonga to Apia, you finished your shift and are ready to take a nap. Before you lay down, you take note that the canoe has a heading of <m>310^{\circ}</m> and the swells are coming from the southwest (Manu Kona) and hitting the canoe at <m>5^{\circ}</m> above directly left of the canoe. When you wake, you noticed the swells are now hitting the canoe from <m>25^{\circ}</m> to the left of your heading. You are aware that the swells couldn't have changed this fast and conclude that while you were asleep, the canoe changed its heading. Assuming the swell was constant, determine your new heading.
         </p>
       </statement>
       <hint>
@@ -2620,17 +2650,17 @@
           <ol>
             <li>
               <p>
-                Start by drawing a diagram that represents the heading of the canoe before the nap. Mark the initial heading as 310 degrees.
+                Start by drawing a diagram that represents the heading of the canoe before the nap. Mark the initial heading as <m>^{\circ}</m>>.
               </p>
             </li>
             <li>
               <p>
-                Next, draw the direction of the swells with respect to the canoe on the same diagram. The swells are coming from the southeast (Manu Kona) and hitting the canoe at 5 degrees above straight from the left of the canoe.
+                Next, draw the direction of the swells with respect to the canoe on the same diagram. The swells are coming from the southeast (Manu Kona) and hitting the canoe at <m>^{\circ}</m>> above straight from the left of the canoe.
               </p>
             </li>
             <li>
               <p>
-                Now, draw another diagram of the swells and the canoe, but this time, represent the swells hitting the canoe from 25 degrees to the left of straight in front (Nā Leo Hoʻolua).
+                Now, draw another diagram of the swells and the canoe, but this time, represent the swells hitting the canoe from <m>^{\circ}</m>> to the left of straight in front (Nā Leo Hoʻolua).
               </p>
             </li>
             <li>
@@ -2660,7 +2690,7 @@
     <exercise>
       <statement>
         <p>
-          After spending 6 weeks in Samoa, vaka Paikea is making his way back from Apia to Rarotonga. On July 14, 2023, the canoe is sailing with a heading of <m>50^{\circ}</m>, and the wind is coming to the canoe from <m>60^{\circ}</m> to the right of the front of the canoe (Noio Koʻolau). to the right of the front of the canoe (Noio Koʻolau). What is the heading/azimuth and house from which the wind is coming?
+          After spending 6 weeks in Samoa, vaka Paikea is making his way back from Apia to Rarotonga. On July 14, 2023, the canoe is sailing with a heading of <m>50^{\circ}</m>, and the wind is coming to the canoe from <m>60^{\circ}</m> to the right of the your heading. What is the heading and house from which the wind is coming?
         </p>
       </statement>
       <answer>
