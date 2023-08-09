@@ -289,17 +289,17 @@
     </frontmatter> -->
     <xi:include href="./Front_Matter.ptx" />
     <xi:include href="./Trigonometry.ptx" />
-    <xi:include href="./Graphs_of_the_Trigonometric_Functions.ptx"/>
+    <!-- <xi:include href="./Graphs_of_the_Trigonometric_Functions.ptx"/> -->
     <!-- <xi:include href="./Analytic_Trigonometry.ptx"/> -->
     <!-- <xi:include href="./Applications_of_Trigonometry.ptx"/> -->
     <!-- <xi:include href="./Polar_and_Parametric_Equations.ptx"/> -->
     <!-- <xi:include href="./Analytic_Geometry.ptx"/> -->
     <!-- <xi:include href="./Solutions.ptx"/> -->
     <backmatter>
-      <xi:include href="./bibliography.ptx" />
-      <glossary>
-        <title>Glossary</title>
-      </glossary>
+      <!-- <xi:include href="./bibliography.ptx" /> -->
+      <!-- <glossary> -->
+        <!-- <title>Glossary</title> -->
+      <!-- </glossary> -->
       <index>
         <title>Index</title>
         <index-list />
