@@ -560,7 +560,8 @@
       </figure>
       <p>
         In astronomy and navigation, the position of a celestial body as it rises or sets on the horizon can be measured using the <term>azimuth</term><idx>azimuth</idx>, which indicates the direction of celestial objects relative to an observer's position. Similar to heading, azimuth starts from the north and increases clockwise.
-
+      </p>
+      <p>
         In navigation, <q>heading</q> typically denotes the direction an object like a canoe or wind is pointed, whereas <q>azimuth</q> pertains to the angular measurement of celestial bodies on the horizontal plane. Both <q>heading</q> and <q>azimuth</q> measure angles in degrees, beginning from north and progressing clockwise. Unless specified otherwise to use the heading or azimuth angle (in which case, refer to <xref ref="star-compass-with-heading-angles">Figure</xref>), this book will use <xref ref="star-compass-with-angles">Figure</xref> for the angles of the Star Compass.
       </p>
     </remark>
