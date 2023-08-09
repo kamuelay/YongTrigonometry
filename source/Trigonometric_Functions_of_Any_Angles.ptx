@@ -974,7 +974,18 @@
                   First we draw the angle
                 </p>
                 <image xml:id="exmp-6trig-ref-ang-210" width="75%">
-                  <latex-image> \begin{tikzpicture}[scale=4]\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1); \filldraw[blue] (1,0) circle(1pt); \filldraw[blue] (210:1) circle(1pt) node [left] {\(P\)}; \draw[blue] (0,0) -- (1,0); \draw[blue] (0,0) -- (210:1) node[midway,below] {\(r\)}; \draw[->] (0:0.2) arc (0:210:0.2) node[midway, right,xshift=0.2] {\(\theta\)}; \draw[->] (180:0.4) arc (180:210:0.4) node[midway, left,xshift=-0.1] {\(\theta'\)};\end{tikzpicture} </latex-image>
+                  <latex-image> 
+                    \begin{tikzpicture}[scale=2]
+                    \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
+                    \draw (0,0) circle (1); 
+                    \filldraw[blue] (1,0) circle(1pt); 
+                    \filldraw[blue] (210:1) circle(1pt) node [left] {\(P\)}; 
+                    \draw[blue] (0,0) -- (1,0); 
+                    \draw[blue] (0,0) -- (210:1) node[midway,below] {\(r\)}; 
+                    \draw[->] (0:0.2) arc (0:210:0.2) node[midway, right,xshift=0.2] {\(\theta\)}; 
+                    \draw[->] (180:0.4) arc (180:210:0.4) node[midway, left,xshift=-0.1] {\(\theta'\)};
+                    \end{tikzpicture} 
+                  </latex-image>
                 </image>
               </li>
               <li>
@@ -1019,7 +1030,19 @@
                 First we draw the angle
               </p>
               <image xml:id="exmp-6trig-ref-ang-7pi4" width="75%">
-              <latex-image> \begin{tikzpicture}[scale=4]\draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1); \filldraw (0.4,0) circle(1pt); \filldraw[blue] (1,0) circle(1pt); \filldraw[blue] (315:1) circle(1pt) node [right] {\(P\)}; \draw[blue] (0,0) -- (1,0); \draw[blue] (0,0) -- (315:1) node[midway,below] {\(r\)}; \draw[->] (0:0.4) arc (0:315:0.4) node[midway, left,xshift=-0.1] {\(\theta\)}; \draw[->] (360:0.4) arc (360:315:0.4) node[midway, right,xshift=0.1] {\(\theta'\)};\end{tikzpicture} </latex-image>
+                <latex-image>
+                  \begin{tikzpicture}[scale=2]
+                  \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
+                  \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
+                  \draw (0,0) circle (1); \filldraw (0.4,0) circle(1pt); 
+                  \filldraw[blue] (1,0) circle(1pt); 
+                  \filldraw[blue] (315:1) circle(1pt) node [right] {\(P\)}; 
+                  \draw[blue] (0,0) -- (1,0); 
+                  \draw[blue] (0,0) -- (315:1) node[midway,below] {\(r\)}; 
+                  \draw[->] (0:0.4) arc (0:315:0.4) node[midway, left,xshift=-0.1] {\(\theta\)}; 
+                  \draw[->] (360:0.4) arc (360:315:0.4) node[midway, right,xshift=0.1] {\(\theta'\)};
+                  \end{tikzpicture} 
+                </latex-image>
             </image>
             </li>
             <li>
@@ -1065,7 +1088,7 @@
                 <caption>The angle <m>\theta=\frac{20\pi}{3}</m> makes three rotations before ending in Quadrant II.</caption>
                 <image width="75%">
                   <latex-image> 
-                    \begin{tikzpicture}[scale=4] 
+                    \begin{tikzpicture}[scale=2] 
                     \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
                     \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
                     \draw (0,0) circle (1); \filldraw[blue] (1,0) circle(1pt); 
@@ -2085,7 +2108,7 @@
 <exercisegroup cols="2">
   <introduction>
     <p>
-      Given a reference angle, <m>t'</m>, compute the associated angle, <m>t</m>, in standard position as well as the values of  <m>\sin t</m>, <m>\cos t</m>, and <m>\tan t</m> for
+      Given a reference angle, <m>t'</m>, calculate the corresponding angle, <m>t</m>, in standard position, along with the values of  <m>\sin t</m>, <m>\cos t</m>, and <m>\tan t</m> for
     </p>
     <p>
       <ol>
@@ -2141,7 +2164,7 @@
       <ol>
         <li>
           <p>
-            Determine the quadrant <m>\theta</m> lies in
+            Determine the quadrant in which <m>\theta</m> lies.
           </p>
         </li>
         <li>
@@ -2403,7 +2426,7 @@
 <exercisegroup cols="2">
   <introduction>
     <p>
-      Use the Pythagorean Identities to write the first trigonometric function of <m>\theta</m> in terms of the second  function given the quadrant.
+      Use the Pythagorean Identities to express the first trigonometric function of <m>\theta</m> in terms of the second function, given the quadrant.
     </p>
   </introduction>
   <exercise>
@@ -2688,7 +2711,7 @@
 <exercisegroup cols="4">
   <introduction>
     <p>
-      The Makaliʻi<idx><h>Makaliʻi</h></idx> is sailing along the Kohala Coast, keeping two nautical miles off shore. An observer at Mahukona watches as Makaliʻi passes. Let <m>d</m> represent the distance of the line connecting the Makali`i to the observer at Mahukona. If <m>\theta</m> is the angle formed between <m>d</m> and the shore, calculate to one decimal place Makaliʻi's distance, <m>d</m>, from the observer for each <m>\theta</m>.
+      The Makaliʻi<idx><h>Makaliʻi</h></idx> is sailing along the Kohala Coast, maintaining a distance of two nautical miles from the shore. An observer at Mahukona is monitoring Makaliʻi's passage. Let <m>d</m> denote the length of the line connecting Makali‘i to the Mahukona observer. Given <m>\theta</m> as the angle formed between <m>d</m> and the shore, determine Makali‘i’s distance, <m>d</m>, from the observer for each value of <m>\theta</m>, rounded to one decimal place.
     </p> 
     <image xml:id="exer-makalii-distance">
       <latex-image>
