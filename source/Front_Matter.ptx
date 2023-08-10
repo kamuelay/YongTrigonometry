@@ -143,12 +143,12 @@
         </li>
         <li>
           <p>
-            <url href="http://www.thecorestandards.org/Math/Content/HSF/TF/B/6/">HSF.TF.B.6</url>: Understand that restricting a trigonometric function to a domain on which it is always increasing or always decreasing allows its inverse to be constructed.
+            <url href="http://www.thecorestandards.org/Math/Content/HSF/TF/B/6/">HSF.TF.B.6</url>: Understand that restricting a trigonometric function to a domain on which it is always increasing or always decreasing allows its inverse to be constructed. (<xref ref="subsec_inverse-trig-functions"/>)
           </p>
         </li>
         <li>
           <p>
-            <url href="http://www.thecorestandards.org/Math/Content/HSF/TF/B/6/">HSF.TF.B.6</url>: Use inverse functions to solve trigonometric equations that arise in modeling contexts; evaluate the solutions using technology, and interpret them in terms of the context.
+            <url href="http://www.thecorestandards.org/Math/Content/HSF/TF/B/7/">HSF.TF.B.7</url>: Use inverse functions to solve trigonometric equations that arise in modeling contexts; evaluate the solutions using technology, and interpret them in terms of the context. (<xref ref="exmp-gift-for-mau"/>, <xref ref="example_finding-land"/>)
           </p>
         </li>
       </ul>
