@@ -80,37 +80,7 @@
     </p>
   </introduction>
 
-
-  <subsection xml:id="subsec-alternate-introduction">
-    <title>Alternate Introduction</title>
-    <p>
-      When Mau Pialug sailed to his home on the Makali`i in 1999, the people of Satawal, Micronesia were impressed with such a large waʻa. As a gift to the man who shared his knowledge of navigation, Nā Kālai Waʻa at Kawaihae Harbor built a 56-foot long double-hulled voyaging canoe called the  Alingano Maisu. In 2007, the Alingano Maisu, accompanied by the Hōkūleʻa, embarked on her maiden voyage to her new home in Satawal so Papa Mau can carry on his legacy of navigation in his home islands. Leaving Hawai`i, Hōkūleʻa led the way to Johnston Atoll. From there, the Alingano Maisu took the lead as they entered Micronesia by first stopping at Majuro, Marshall Islands before continuing on to her new home in Satawal. It is known that the island of Majuro is 1,108 nautical miles to the east and 575 nautical miles to the south of Johnston Atoll. What house do you need to sail towards and what distance will you need to sail? If the waʻa travels at 5 knots, how many days will it take to reach the destination? Note that 1 knot = 1 nautical mile/hour.
-    </p>
-    <image>
-<latex-image>
-\begin{tikzpicture}\node[below left, yshift=0.2cm] at (-11,-5.75) {Majuro};
-\node[below] at (2,-0.5) {Johnston Atoll};
-\draw[line width=2pt] (0,0) -- (-11,-5.75) node[midway,sloped,below,yshift=-0.1cm] {course};
-\draw[dashed] (-11,0) -- (0,0) node[midway,above,yshift=0.1cm] {1,108 NM};
-\draw[dashed] (-11,-5.75) -- (-11,0) node[midway,left,xshift=-0.1cm] {575 NM};
-\draw ([shift=(180:2)]0,0) arc (180:207.597295869:2) node[midway,right,xshift=-15,yshift=-1] {\(\theta\)};
-\draw (-10.25,0) -- (-10.25,-0.75);
-\draw (-11,-0.75) -- (-10.25,-0.75);
-\draw ([shift=(207.597295869:-1cm)]0,0) pic {waa1-top={waacolor}{117.597295869}{0.1}};\end{tikzpicture}
-</latex-image>
-    </image>
-    <p>
-      You may notice that for our given angle, <m>\theta</m>, we have the opposite side, 575 NM, and the adjacent side, 1,100 NM, which  are all related with the tangent function
-      <me>
-        \tan\theta=\frac{575}{1,100}
-      </me>
-    </p>
-    <p>
-      Up until now, we were given the angles for the trigonometric problems we've encountered. To solve for the angle <m>\theta</m>, we cannot simply divide by <q>tan</q> because it is part of the tangent function where we input an  angle and the output is a ratio of sides. Instead, we will need to use the inverse function in which we input the  ratio of sides and output an angle.
-    </p>
-  </subsection>
-
-  <subsection xml:id="core-standards-CCSS_MATH_CONTENT_HSF_TF_B_6">
+  <subsection xml:id="subsec_inverse-trig-functions">
     <title>Inverse Trigonometric Functions</title>
     <p>
       Recall from algebra that for a function <m>f</m> and its inverse function <m>f^{-1}</m> we have
@@ -466,15 +436,54 @@
           </row>
         </tabular>
     </remark>
-    <example>
-      <title>Either the introduction topics go here</title>
+    <example xml:id="exmp-gift-for-mau">
+      <title>A gift for Mau</title>
       <statement>
         <p>
-          fill in here
+          When Mau Pialug sailed to his home on the Makaliʻi in 1999, the people of Satawal, Micronesia were impressed with such a large waʻa. As a gift to the man who shared his knowledge of navigation, Nā Kālai Waʻa at Kawaihae Harbor built a 56-foot long double-hulled voyaging canoe called the  Alingano Maisu. In 2007, the Alingano Maisu, accompanied by the Hōkūleʻa, embarked on her maiden voyage to her new home in Satawal so Papa Mau can carry on his legacy of navigation in his home islands. Leaving Hawaiʻi, Hōkūleʻa led the way to Johnston Atoll. From there, the Alingano Maisu took the lead as they entered Micronesia by first stopping at Majuro, Marshall Islands before continuing on to her new home in Satawal. It is known that the island of Majuro is 1,108 nautical miles to the east and 575 nautical miles to the south of Johnston Atoll. What house do you need to sail towards and what distance will you need to sail? If the waʻa travels at 5 knots, how many days will it take to reach the destination? Note that 1 knot = 1 nautical mile/hour.
+        </p>
+        <image>
+          <latex-image>
+            \begin{tikzpicture}
+            \node[below left, yshift=0.2cm] at (-11,-5.75) {Majuro};
+            \node[below] at (2,-0.5) {Johnston Atoll};
+            \draw[line width=2pt] (0,0) -- (-11,-5.75) node[midway,sloped,below,yshift=-0.1cm] {course};
+            \draw[dashed] (-11,0) -- (0,0) node[midway,above,yshift=0.1cm] {1,108 NM};
+            \draw[dashed] (-11,-5.75) -- (-11,0) node[midway,left,xshift=-0.1cm] {575 NM};
+            \draw ([shift=(180:2)]0,0) arc (180:207.597295869:2) node[midway,right,xshift=-15,yshift=-1] {\(\theta\)};
+            \draw (-10.25,0) -- (-10.25,-0.75);
+            \draw (-11,-0.75) -- (-10.25,-0.75);
+            \draw ([shift=(207.597295869:-1cm)]0,0) pic {waa1-top={waacolor}{117.597295869}{0.1}};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+        <p>
+          We will use the tangent function because we are given the side opposite to <m>\theta</m> (575 NM) and the side adjacent to <m>\theta</m> (1,100 NM) and express it as
+          <me>
+            \tan\theta=\frac{575}{1,100}
+          </me>
         </p>
       </statement>
+      <solution>
+        <p>
+          Since we were able to write <m>\tan\theta=\frac{575}{1,108}</m>, we can use a calculator or other technology to evaluate the inverse tangent to find our angle:
+          <me>
+            \theta=\tan^{-1}\left(\frac{575}{1,108}\right)\approx27.4^{\circ}.
+          </me>
+          Because this angle is in Quadrant III, we find its value on the Unit Circle by adding <m>180^{\circ}+27.4^{\circ}=207.4^{\circ}</m>. Next we refer to the Star Compass with angles (<xref ref="star-compass-with-angles">Figure></xref>) to conclude we will need to sail towards the House ʻĀina Kona.
+        </p>
+        <p>
+          To determine the distance, <m>d</m>, we use the Pythagorean Theorem:
+          <me>
+            d=\sqrt{575^2+1,108^2}\approx1,248 \mbox{NM}.
+          </me>
+          Finally, we note that since (speed) = (distance)/(duration), we can rearrange the terms to get (duration) = (distance)/(speed). If we travel at 5 knots (5 NM/hr), we can calculate the duration as
+          <me>
+            \mbox{duration}=\frac{1,248.3\mbox{ NM}}{5\mbox{ kt}}=\frac{1,248.3\mbox{ NM}}{5\mbox{ NM/hr}}=249.7\mbox{ hours}=249.7\mbox{ hours}\cdot\frac{\mbox{day}}{24\mbox{ hours}}\approx10.4\mbox{ days}.
+          </me>
+        </p>
+      </solution>
     </example>
-
     <example xml:id="example_finding-land">
       <title>Finding Land</title>
       <statement>
@@ -891,7 +900,7 @@
         </statement>
         <solution>
           <p>
-            Let <m>\theta</m> be an angle in the range of <m>\tan^{-1}</m>, that is, let <m>\theta</m> be in the interval <m>\left(-\frac{\pi}{2},\frac{\pi}{2}\right)</m> such that <m>\theta=\tan^{-1}\frac{4}{3}</m>. This equation is equivalent to <m>\tan\theta=\frac{4}{3}</m>. Since <m>\tan\theta>0</m>, we know that <m>\theta</m> must be in Quadrant I <m>\left(0<\theta<\frac{\pi}{2}\right)</m>. Let <m>(x,y)</m> be a point on the terminal side of <m>\theta</m>, then by the trigonometric ratios,
+            Let <m>\theta</m> be an angle in the range of <m>\tan^{-1}</m>, that is, let <m>\theta</m> be in the interval <m>\left(-\frac{\pi}{2},\frac{\pi}{2}\right)</m> such that <m>\theta=\tan^{-1}\frac{4}{3}</m>. This equation is equivalent to <m>\tan\theta=\frac{4}{3}</m>. Since <m>\tan\theta>0</m>, we know that <m>\theta</m> must be in Quadrant I <m>\left(0&lt;\theta&lt;\frac{\pi}{2}\right)</m>. Let <m>(x,y)</m> be a point on the terminal side of <m>\theta</m>, then by the trigonometric ratios,
             <me>
               \tan\theta=\frac{\mbox{opposite}}{\mbox{adjacent}}=\frac{y}{x}
             </me>
@@ -932,7 +941,7 @@
         </statement>
         <solution>
           <p>
-            Let <m>\theta</m> be an angle in the range of <m>\cos^{-1}</m>, that is, let <m>\theta</m> be in the interval <m>\left[0,\pi\right]</m> such that <m>\theta=\cos^{-1}\left(-\frac{3}{8}\right)</m>. This equation is equivalent to <m>\cos\theta=-\frac{3}{8}</m>. Since <m>\cos\theta<0</m>, we know that <m>\theta</m> must be in Quadrant II <m>\left(\frac{\pi}{2}\leq\theta\leq\pi\right)</m>. Let <m>(x,y)</m> be a point on the terminal side of <m>\theta</m>, then by the trigonometric ratios,
+            Let <m>\theta</m> be an angle in the range of <m>\cos^{-1}</m>, that is, let <m>\theta</m> be in the interval <m>\left[0,\pi\right]</m> such that <m>\theta=\cos^{-1}\left(-\frac{3}{8}\right)</m>. This equation is equivalent to <m>\cos\theta=-\frac{3}{8}</m>. Since <m>\cos\theta&lt;0</m>, we know that <m>\theta</m> must be in Quadrant II <m>\left(\frac{\pi}{2}\leq\theta\leq\pi\right)</m>. Let <m>(x,y)</m> be a point on the terminal side of <m>\theta</m>, then by the trigonometric ratios,
             <me>
               \cos\theta=\frac{\mbox{adjacent}}{\mbox{hypotenuse}}=\frac{x}{r}
             </me>
@@ -959,12 +968,12 @@
               \sin\theta=\frac{\mbox{opposite}}{\mbox{hypotenuse}}=\frac{y}{8},
             </me>
             where 
-            \begin{eqnarray*}
-            r^2&=&x^2+y^2\\
-            8^2&=&(-3)^2+y^2\\
-            64&=&9+y^2\\
-            y^2&=&55
-            \end{eqnarray*}
+            <md>
+              <mrow>r^2 \amp = x^2+y^2</mrow>
+              <mrow>8^2 \amp = (-3)^2+y^2</mrow>
+              <mrow>64 \amp = 9+y^2</mrow>
+              <mrow>y^2 \amp = 55</mrow>
+            </md>
             Thus <m>y=\sqrt{55}</m>. So,
             <me>
               \sin\left(\cos^{-1}\frac{-3}{8}\right)=\sin\theta=\frac{\sqrt{55}}{8}
@@ -975,6 +984,104 @@
       </task>
     </example>
   </subsection>
+  <exercises xml:id="inverse-trigonometry-exercises">
+    <exercise>
+      <statement>
+        <p>
+          question one
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <title>Sunrise on Mauna Kea</title>
+      <introduction>
+        <p>
+          The summit of Mauna Kea is the highest point in Hawaiʻi and sits 13,803 ft above the sea level. If you stand at the summit, you will be able to see the sun rise before someone standing at the sea level just north or south of Mauna Kea (at the same latitude). In fact, you will see the sunrise at the same time as someone at sea level sailing in a waʻa to the east of Mauna Kea.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            How far is the horizon when someone 5 ft tall stands on the summit to watch the sun rise?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            How much faster will you see the sun rise than someone standing nearby at sea level?
+          </p>
+        </statement>
+        <hint>
+          <p>
+            The ratio of your previous answer to the circumference of the Earth is equal to the ratio of the time to the 24 hours in Earth's rotation.
+          </p>
+        </hint>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </task>
+    </exercise>
+    <exercise>
+      <title>Maui Capturing the Sun</title>
+      <introduction>
+        <p>
+          According to moʻolelo, or legend, the sun traveled very fast across the sky, leaving people with days so short there was not enough time to carry on with their daily lives. Determined to slow the sun, the demigod Maui climbed to the summit of Haleakalā, which stands at 10,023 feet, to snare the sun. Assume the radius of the earth is at Haleakalā is 3961.527 miles.
+        </p>
+        <image>
+          <latex-image>
+            \begin{tikzpicture}[scale=4]
+              \draw ([shift=(30:1)]0,0) arc (30:150:1);
+              \draw[blue] (0,0) -- (0,1) node[midway, right] {$R$};
+              \draw (-0.839099631177,1) -- (1.66427948235,1);
+              \draw (0,0.9) -- (-0.1,0.9) -- (-0.1,1);
+              \draw[blue] (0,0) -- (-0.642787609687,0.766044443119) node[midway, left,xshift=-2] {$R$};
+              \draw[red] (-0.642787609687,0.766044443119) -- (-0.839099631177,1) node[midway,left,xshift=-14,yshift=-4] {$h$};
+              \draw ([shift=(90:0.2)]0,0) arc (90:130:0.2) node[above,xshift=4,yshift=3] {$\theta$};
+              \node at (110:0.9) {$s$};
+              \draw[red] ([shift=(90:1)]0,0) arc (90:110:1);
+              \node[rotate=40] at (130:1.26){\Strichmaxerl[2][20][-20][-30][30]};
+              \draw[green] (140:1) -- (130:1.2) -- (120:1);
+              \fill[color=green,opacity=0.1] (130:1.2) -- (-0.5,0.866025403784) arc(120:140:1);
+              \filldraw [yellow] (1.66427948235,1) circle (4pt);
+              \node at (1.66427948235,1) {Sun};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            How far is the horizon when Maui stands at the summit? Assume Maui's eyes are 5 ft from the ground.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            How much faster would Maui see the sun emerge over the horizon than someone 5 ft tall and standing at the seashore?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </task>
+    </exercise>
+  </exercises>
 </section>
 
 
