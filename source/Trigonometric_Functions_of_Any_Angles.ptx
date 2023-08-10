@@ -627,7 +627,7 @@
         Given a reference angle, <m>t</m>, compute the associated angle in standard position for Quadrant II, III, and IV.
       </p>
     </introduction>
-        <task>
+    <task>
       <introduction>
         <p>
           <m>t'=\frac{\pi}{6}</m>
@@ -647,7 +647,7 @@
           </latex-image>
         </image>
       </introduction>
-            <task>
+      <task>
         <statement>
           <p>
             Quadrant II
