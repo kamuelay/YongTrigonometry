@@ -32,9 +32,9 @@
       \pgfmathsetmacro\angVis{asin(min(1,max(\sinVis,-1)))} \draw[current plane] (\angVis:1) arc
       (\angVis:-\angVis-180:1); \draw[current plane,dashed] (180-\angVis:1) arc
       (180-\angVis:\angVis:1); } \newcommand{\sectionbreak}{\clearpage} </macros>
-    <latex-image-preamble> \usepackage{tikz} \usepackage{tkz-graph} \usepackage{tkz-euclide}
+    <latex-image-preamble> \usepackage{tikz,pgfplots} \usepackage{tkz-graph} \usepackage{tkz-euclide}
       \usetikzlibrary{patterns} \usetikzlibrary{positioning} \usetikzlibrary{matrix,arrows}
-      \usetikzlibrary{calc} \usetikzlibrary{shapes}
+      \usetikzlibrary{calc} \usetikzlibrary{shapes} \usepackage{tikzsymbols}
       \usetikzlibrary{through,intersections,decorations,shadows,fadings} \usepackage{pgfplots} <!--Globe
       Design-->
 
