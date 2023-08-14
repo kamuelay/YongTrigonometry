@@ -980,7 +980,7 @@
     </example>
   </subsection>
   <exercises>
-    <exercisegroup cols="2">
+    <exercisegroup cols="2" xml:id="exer_1-4_triangles">
       <introduction>
         <p>
           Find the exact values of the six trigonometric functions of the angle
