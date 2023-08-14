@@ -360,6 +360,7 @@
   <subsection>
     <title>Finding the Exact Value of an Inverse Trigonometric Function</title>
     <example>
+      <title>Evaluating Inverse Trigonometric Functions</title>
       <introduction>
         <p>
           Find the exact value
@@ -415,7 +416,7 @@
     <remark>
       <title>Using a Calculator</title>
       <p>
-        Using a calculator for inverse trigonometric functions: Most calculators will have a special button for the inverse sine, cosine, and tangent functions. Depending on your calculator, you may see the following keys for inverse the inverse trigonometric functions
+        Using a calculator for inverse trigonometric functions: Most calculators will have a special key for the inverse sine, cosine, and tangent functions. Depending on your calculator, you may see the following keys for inverse the inverse trigonometric functions
       </p>
         <tabular>
           <row bottom="minor">
@@ -424,18 +425,78 @@
           </row>
           <row>
             <cell>inverse sine</cell>
-            <cell><em>SIN<m>^{-1}</m></em>, <em>ARCSIN</em>, or <em>ASIN</em></cell>
+            <cell><c>SIN^{-1}</c>, <c>INV</c><c>SIN</c>, <c>ARCSIN</c>, or <c>ASIN</c></cell>
           </row>
           <row>
             <cell>inverse cosine</cell>
-            <cell><em>COS<m>^{-1}</m></em>, <em>ARCCOS</em>, or <em>ACOS</em></cell>
+            <cell><c>COS^{-1}</c>, <c>INV</c><c>COS</c>, <c>ARCCOS</c>, or <c>ACOS</c></cell>
           </row>
           <row bottom="minor">
             <cell>inverse tangent</cell>
-            <cell><em>TAN<m>^{-1}</m></em>, <em>ARCTAN</em>, or <em>ATAN</em></cell>
+            <cell><c>TAN^{-1}</c>, <c>INV</c><c>TAN</c>, <c>ARCTAN</c>, or <c>ATAN</c></cell>
           </row>
         </tabular>
+        <p>
+          Often, the inverse trigonometry key can be found by first pressing <c>2nd</c> or <c>SHIFT</c>, followed by the trigonometry function key. For example, to get the <c>SIN^{-1}</c> key, press <c>2nd</c><c>SIN</c> or <c>SHIFT</c><c>SIN</c>.
+        </p>
     </remark>
+    <example>
+      <title>Finding an Approximate Value of Inverse Trigonometric Functions</title>
+      <introduction>
+        <p>
+          Use a calculator to approximate the value of each expression in radians, rounded to two decimals.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>\cos^{-1}(-0.39)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            First verify the mode of the calculator is in radians. Then, press the following keys <c>COS^{-1}</c><c>(</c><c>(-)</c>0.39<c>)</c><c>ENTER</c> to get
+            <me>
+              \cos^{-1}(-0.39)\approx1.9714279195
+            </me>
+            If your calculator does not have the <c>COS^{-1}</c> key, then use the appropriate key(s) for inverse cosine, such as <c>INV</c><c>COS</c>, <c>ARCCOS</c>, or <c>ACOS</c>.
+          </p>
+          <p>
+            On some calculators, <c>COS^{-1}</c> is pressed first, then <c>(</c><c>(-)</c>0.39<c>)</c>; while other calculators the sequence is reversed with <c>(</c><c>(-)</c>0.39<c>)</c> pressed first, then <c>COS^{-1}</c>. Verify with your calculator's manual.
+          </p>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\tan^{-1}12</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            First verify the mode of the calculator is in radians. Then, using the appropriate key for inverse tangent, press the following keys <c>TAN^{-1}</c><c>(</c>12<c>)</c><c>ENTER</c> to get
+            <me>
+              \cos^{-1}(-0.39)\approx1.48765509491
+            </me>
+          </p>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\sin^{-1}0.8</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            First verify the mode of the calculator is in radians. Then, using the appropriate key for inverse sine, press the following keys <c>SIN^{-1}</c><c>(</c>0.8<c>)</c><c>ENTER</c> to get
+            <me>
+              \cos^{-1}(-0.39)\approx0.927295218002
+            </me>
+          </p>
+        </solution>
+      </task>
+    </example>
     <example xml:id="exmp-gift-for-mau">
       <title>A gift for Mau</title>
       <statement>
@@ -552,7 +613,7 @@
                 <me>
                   \cos\theta_1=\frac{R}{R+h}=\frac{20,911,171}{20,911,171+9}=\frac{20,911,171}{20,911,180}.
                 </me>
-                To solve for $\theta_1$, we use the inverse cosine
+                To solve for <m>\theta_1</m>, we use the inverse cosine
                 <me>
                   \theta_1=\cos^{-1}\left(\frac{20,911,171}{20,911,180}\right)\approx0.053^{\circ}.
                 </me>
@@ -766,7 +827,7 @@
           </row>
           <row>
             <cell><m>\sin^{-1}(\sin x)=x</m></cell>
-            <cell>when</cell>
+            <cell><em>only when</em></cell>
             <cell><m>-\frac{\pi}{2}\leq x\leq\frac{\pi}{2}</m></cell>
           </row>
           <row>
@@ -1152,12 +1213,12 @@
       <exercise>
         <statement>
           <p>
-            <m>\sin^{-1}\left(\frac{\sqrt{3}}{2}\right)</m>
+            <m>\sin^{-1}\left(1\right)</m>
           </p>
         </statement>
         <answer>
           <p>
-            <m>\frac{\pi}{3}</m>
+            <m>\frac{\pi}{2}</m>
           </p>
         </answer>
       </exercise>
@@ -1176,12 +1237,12 @@
       <exercise>
         <statement>
           <p>
-            <m>\cos^{-1}\left(\frac{1}{2}\right)</m>
+            <m>\cos^{-1}\left(-\frac{1}{2}\right)</m>
           </p>
         </statement>
         <answer>
           <p>
-            <m>\frac{\pi}{3}</m>
+            <m>\frac{2\pi}{3}</m>
           </p>
         </answer>
       </exercise>
@@ -1513,6 +1574,466 @@
           <p>
             <m>33.69^{\circ}</m>
           </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="3">
+      <introduction>
+        <p>
+          Use properties of composition of trigonometric functions to find the exact value of each expression. Write <q>not defined</q> if no value exists.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin^{-1}\left(\sin\frac{\pi}{7}\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{\pi}{7}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos^{-1}\left(\cos\left(-\frac{\pi}{7}\right)\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{\pi}{7}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin(\sin^{-1}(-0.8))</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>-0.8</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan^{-1}\left(\tan\left(-\frac{2\pi}{9}\right)\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>-\frac{2\pi}{9}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos(\cos^{-1}1.4)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Not defined
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin(\sin^{-1}0.74)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>0.74</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan(\tan^{-1}24)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>24</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos^{-1}\left(\cos\left(-\frac{\pi}{5}\right)\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{\pi}{5}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan(\tan^{-1}(-4.3))</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>-4.3</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan^{-1}\left(\tan\frac{\pi}{8}\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{\pi}{8}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos(\cos^{-1}0.39)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>0.39</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin^{-1}\left(\sin\frac{4\pi}{5}\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{\pi}{5}</m>
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          Find the exact value of each composite function. Write <q>not defined</q> if no value exists.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin\left(\cos^{-1}\frac{1}{2}\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{\sqrt{3}}{2}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cot\left(\sin^{-1}\left(-\frac{\sqrt{3}}{2}\right)\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>-\frac{\sqrt{3}}{3}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\csc\left(\tan^{-1}1\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\sqrt{2}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sec\left(\sin^{-1}\left(-\frac{1}{2}\right)\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{2\sqrt{3}}{3}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos\left(\tan^{-1}\left(-\sqrt{3}\right)\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{1}{2}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan\left(\cos^{-1}0\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Not defined
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin\left(\tan^{-1}\frac{3}{4}\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{3}{5}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\csc\left(\cos^{-1}\frac{\sqrt{3}}{7}\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{7\sqrt{46}}{46}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sec\left(\tan^{-1}\left(-\sqrt{5}\right)\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\sqrt{6}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos\left(\sin^{-1}\frac{\sqrt{7}}{3}\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{\sqrt{2}}{3}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan\left(\sin^{-1}\left(-\frac{1}{3}\right)\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>-\frac{\sqrt{8}}{8}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cot\left(\cos^{-1}\left(-\frac{2}{5}\right)\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>-\frac{2\sqrt{21}}{21}</m>
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="3">
+      <introduction>
+        <p>
+          Utilizing the fact that <m>x=\frac{x}{1}</m> and sketching a right triangle, find the exact value of the expression in terms of <m>x</m>.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos\left(\tan^{-1}x\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{\sqrt{x^2+1}}{x^2+1}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin\left(\cos^{-1}x\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\sqrt{1-x^2}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sec\left(\sin^{-1}x\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{\sqrt{1-x^2}}{1-x^2}</m>
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          Graph the function.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>y=4\cos^{-1}x</m>
+          </p>
+        </statement>
+        <answer>
+          <image xml:id="exer_graph-4invcos">
+            <latex-image>
+              \begin{tikzpicture}[scale=1.25]
+              \begin{axis}[
+              axis lines=middle,clip=false,
+                xmin=-1.1,xmax=1.1,ymin=-pi/2,ymax=4.5*pi,
+                ytick={0,pi,2*pi,3*pi,4*pi},
+                xtick={-1,-0.5,0,0.5,1},
+                xticklabel style={black},
+                yticklabels={0,$\pi$,$2\pi$,$3\pi$,$4\pi$},
+                yticklabel style={black},
+                xlabel=$x$,
+                ylabel=$y$]
+                \addplot[domain=-1:1,samples=200,cyan,line width=1pt]{4*acos(x)*pi/180};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>y=\tan^{-1}x+\frac{\pi}{2}</m>
+          </p>
+        </statement>
+        <answer>
+          <image xml:id="exer_graph-invtan">
+            <latex-image>
+              \begin{tikzpicture}[scale=1.25]
+              \begin{axis}[
+              axis lines=middle,clip=false,
+                xmin=-11,xmax=11,ymin=-pi,ymax=2*pi,
+                ytick={-pi/2,0,pi/2,pi,3*pi/2},
+                xtick={-10,-5,0,5,10},
+                xticklabel style={black},
+                yticklabels={$-\frac{\pi}{2}$,0,$\frac{\pi}{2}$,$\pi$,$\frac{3\pi}{2}$},
+                yticklabel style={black},
+                xlabel=$x$,
+                ylabel=$y$]
+                \addplot[domain=-10:10,samples=200,cyan,&lt;->,line width=1pt]{atan(x)*pi/180+pi/2};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>y=\sin^{-1}(\frac{1}{2}x)</m>
+          </p>
+        </statement>
+        <answer>
+          <image xml:id="exer_graph-invsin-half">
+            <latex-image>
+              \begin{tikzpicture}[scale=1.25]
+              \begin{axis}[
+              axis lines=middle,clip=false,
+                xmin=-2.2,xmax=2.2,ymin=-2*pi/3,ymax=2*pi/3,
+                ytick={-pi/2,-pi/4,0,pi/4,pi/2},
+                xtick={-2,-1,0,1,2},
+                xticklabel style={black},
+                yticklabels={$-\frac{\pi}{2}$,$-\frac{\pi}{4}$,0,$\frac{\pi}{4}$,$\frac{\pi}{2}$},
+                yticklabel style={black},
+                xlabel=$x$,
+                ylabel=$y$]
+                \addplot[domain=-2:2,samples=200,cyan,line width=1pt]{asin(x/2)*pi/180};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>y=-\sin^{-1}(x-1)</m>
+          </p>
+        </statement>
+        <answer>
+          <image xml:id="exer_graph-invsin-xshift">
+            <latex-image>
+              \begin{tikzpicture}[scale=1.25]
+              \begin{axis}[
+              axis lines=middle,clip=false,
+                xmin=-0.2,xmax=2.2,ymin=-2*pi/3,ymax=2*pi/3,
+                ytick={-pi/2,-pi/4,0,pi/4,pi/2},
+                xtick={0,0.5,1,1.5,2},
+                xticklabel style={black},
+                yticklabels={$-\frac{\pi}{2}$,$-\frac{\pi}{4}$,0,$\frac{\pi}{4}$,$\frac{\pi}{2}$},
+                yticklabel style={black},
+                xlabel=$x$,
+                ylabel=$y$]
+                \addplot[domain=-0:2,samples=200,cyan,line width=1pt]{-asin(x-1)*pi/180};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
         </answer>
       </exercise>
     </exercisegroup>
