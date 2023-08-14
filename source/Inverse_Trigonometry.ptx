@@ -986,12 +986,538 @@
   </subsection>
   <exercises xml:id="inverse-trigonometry-exercises">
     <exercise>
-      <statement>
+      <introduction>
         <p>
-          question one
+          What are the domain and range of
         </p>
-      </statement>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>y=\sin x</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            D: <m>-\infty\lt x\lt\infty</m>; R: <m>-1\leq y\leq1</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>y=\sin^{-1}x</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            D: <m>-1\leq y\leq1</m>; R: <m>-\frac{\pi}{2}\leq y\leq\frac{\pi}{2}</m>
+          </p>
+        </answer>
+      </task>
     </exercise>
+    <exercise>
+      <introduction>
+        <p>
+          What are the domain and range of
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>y=\cos x</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            D: <m>-\infty\lt x\lt\infty</m>; R: <m>-1\leq y\leq1</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>y=\cos^{-1}x</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            D: <m>-1\leq y\leq1</m>; R: <m>-0\leq y\leq\pi</m>
+          </p>
+        </answer>
+      </task>
+    </exercise>
+    <exercisegroup cols="3">
+      <introduction>
+        <p>
+          Determine the exact value of each expression, expressed in radians.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan^{-1}\left(0\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>0</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan^{-1}\left(-\sqrt{3}\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>-\frac{\pi}{3}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos^{-1}\left(-\frac{\sqrt{2}}{2}\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{3\pi}{4}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin^{-1}\left(\frac{\sqrt{2}}{2}\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{\pi}{4}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan^{-1}\left(-1\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>-\frac{\pi}{4}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin^{-1}\left(\frac{\sqrt{3}}{2}\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{\pi}{3}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos^{-1}\left(-1\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\pi</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos^{-1}\left(\frac{\sqrt{2}}{2}\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{\pi}{4}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin^{-1}\left(\frac{\sqrt{3}}{2}\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{\pi}{3}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin^{-1}\left(-\frac{\sqrt{3}}{2}\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>-\frac{\pi}{3}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos^{-1}\left(\frac{1}{2}\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{\pi}{3}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan^{-1}\left(\frac{\sqrt{3}}{3}\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{\pi}{6}</m>
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="3">
+      <introduction>
+        <p>
+          Use a calculator to approximate each expression. Provide your answer in radians, rounding to two decimal places.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos^{-1}\left(\frac{\sqrt{5}}{3}\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>0.73</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin^{-1}\left(0.63\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>0.68</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan^{-1}\left(\sqrt{7}\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>1.21</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin^{-1}\left(\frac{\sqrt{2}}{9}\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>0.16</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan^{-1}\left(0.7\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>0.61</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos^{-1}\left(-0.9\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>2.69</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin^{-1}\left(-0.6\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>-0.64</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos^{-1}\left(\frac{1}{4}\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>1.32</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos^{-1}\left(-0.4\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>1.98</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan^{-1}\left(-45.6\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>-1.55</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin^{-1}\left(-0.8\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>-0.93</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan^{-1}\left(78.9\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>1.56</m>
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          In <xref ref="exer_1-4_triangles">Exercises</xref>, we determined the values of the six trigonometric functions for each triangle. Now, use a calculator to find the value of <m>\theta</m> in degrees, rounding to two decimal places.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <image xml:id="exer-inverse-trig-triangle-1" width="75%">
+            <latex-image>
+              \begin{tikzpicture}
+              \draw (0,0) -- (3,0) node[midway,below]{3};
+              \draw(0,0) -- (3,4) node[midway,above left]{5};
+              \draw(3,0) -- (3,4) node[midway,right]{4};
+              \draw(2.7,0) -- (2.7,0.3) -- (3,0.3);
+              \draw ([shift=(0:0.5)]0,0) arc (0:53.1301023542:0.5) node[midway,right,xshift=0.1,yshift=0.2] {\(\theta\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </statement>
+        <answer>
+          <p>
+            <m>53.13^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <image xml:id="exer-inverse-trig-triangle-2" width="75%">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.75]
+              \draw (0,0) -- (5,0) node[midway,below]{5};
+              \draw(0,0) -- (5,7) node[midway,above left]{\(\sqrt{74}\)};
+              \draw(5,0) -- (5,7) node[midway,right]{7};
+              \draw(4.25,0) -- (4.25,0.75) -- (5,0.75);
+              \draw ([shift=(234.462322208:1.75)]5,7) arc (234.462322208:270:1.75) node[midway,below,xshift=-0.2] {\(\theta\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </statement>
+        <answer>
+          <p>
+            <m>35.54^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <image xml:id="exer-inverse-trig-triangle-3" width="75%">
+            <latex-image>
+              \begin{tikzpicture}
+              \draw (0,0) -- (-4,0) node[midway,below]{4};
+              \draw(0,0) -- (-4,6);
+              \draw(-4,0) -- (-4,6) node[midway,left]{6};
+              \draw(-3.4,0) -- (-3.4,0.6) -- (-4,0.6);
+              \draw ([shift=(180:1)]0,0) arc (180:123.690067526:1) node[midway,left,xshift=-0.1] {\(\theta\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </statement>
+        <answer>
+          <p>
+            <m>56.31^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <image xml:id="exer-inverse-trig-triangle-4" width="75%">
+            <latex-image>
+              \begin{tikzpicture}
+              \draw (0,0) -- (-5,0);
+              \draw(0,0) -- (-5,12) node[midway,above right]{13};
+              \draw(-5,0) -- (-5,12) node[midway,left]{12};
+              \draw(-4,0) -- (-4,1) -- (-5,1);
+              \draw ([shift=(270:2.5)]-5,12) arc (270:292.619864948:2.5) node[midway,below,xshift=0.1,yshift=-0.1] {\(\theta\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </statement>
+        <answer>
+          <p>
+            <m>22.62</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <image xml:id="exer-inverse-trig-triangle-5" width="75%">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.5]
+              \draw (0,0) -- (-7,0) node[midway,below]{7};
+              \draw(0,0) -- (-7,14);
+              \draw(-7,0) -- (-7,14) node[midway,left]{14};
+              \draw(-5.8,0) -- (-5.8,1.2) -- (-7,1.2);
+              \draw ([shift=(180:2)]0,0) arc (180:116.565051177:2) node[midway,left,xshift=-0.1] {\(\theta\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </statement>
+        <answer>
+          <p>
+            <m>63.43^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <image xml:id="exer-inverse-trig-triangle-6" width="75%">
+            <latex-image>
+              \begin{tikzpicture}
+              \draw (0,0) -- (4,0) node[midway,below]{4};
+              \draw(0,0) -- (4,4);
+              \draw(4,0) -- (4,4) node[midway,right]{4};
+              \draw(3.5,0) -- (3.5,0.5) -- (4,0.5);
+              \draw ([shift=(225:0.6)]4,4) arc (225:270:0.6) node[midway,below,xshift=-0.1,yshift=-0.1] {\(\theta\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </statement>
+        <answer>
+          <p>
+            <m>45^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <image xml:id="exer-inverse-trig-triangle-7" width="75%">
+            <latex-image>
+              \begin{tikzpicture}[scale=2]
+              \draw (0,0) -- (-2,0) node[midway,below]{2};
+              \draw(0,0) -- (-2,2.44948974278) node[midway,above right]{\(\sqrt{10}\)};
+              \draw(-2,0) -- (-2,2.44948974278);
+              \draw(-1.7,0) -- (-1.7,0.3) -- (-2,0.3);
+              \draw ([shift=(180:0.5)]0,0) arc (180:129.231520484:0.5) node[midway,left,xshift=-0.1] {\(\theta\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </statement>
+        <answer>
+          <p>
+            <m>50.77^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <image xml:id="exer-inverse-trig-triangle-8" width="75%">
+            <latex-image>
+              \begin{tikzpicture}[scale=2]
+              \draw (0,0) -- (2,0) node[midway,below]{2};
+              \draw(0,0) -- (2,3);
+              \draw(2,0) -- (2,3) node[midway,right]{3};
+              \draw(1.7,0) -- (1.7,0.3) -- (2,0.3);
+              \draw ([shift=(236.309932474:0.5)]2,3) arc (234.462322208:270:0.5) node[midway,below,xshift=-0.1] {\(\theta\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </statement>
+        <answer>
+          <p>
+            <m>33.69^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+
+
     <exercise>
       <title>Sunrise on Mauna Kea</title>
       <introduction>
