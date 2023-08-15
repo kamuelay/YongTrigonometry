@@ -1731,7 +1731,7 @@
     <exercisegroup cols="2">
       <introduction>
         <p>
-          Find the exact value of each composite function. Write <q>not defined</q> if no value exists.
+          Find the exact value of each composite function. Write <q>not defined</q> if no value exists. You may find <xref ref="tab_trig-table">Table</xref> useful.
         </p>
       </introduction>
       <exercise>
@@ -1806,6 +1806,13 @@
           </p>
         </answer>
       </exercise>
+    </exercisegroup>
+    <exercisegroup>
+      <introduction>
+        <p>
+          Find the exact value of each composite function. Write <q>not defined</q> if no value exists. 
+        </p>
+      </introduction>
       <exercise>
         <statement>
           <p>
@@ -2127,6 +2134,17 @@
           </p>
         </answer>
       </task>
+    </exercise>
+    <exercise>
+      <statement>
+        <image xml:id="compile-not-working">
+          <latex-image>
+            \begin{tikzpicture}
+              \draw (0,0) -- (4,0) -- (4,4) -- (0,4) -- (0,0);
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </statement>
     </exercise>
   </exercises>
 </section>
