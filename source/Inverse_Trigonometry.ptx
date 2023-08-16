@@ -425,19 +425,19 @@
           </row>
           <row>
             <cell>inverse sine</cell>
-            <cell><c>SIN^{-1}</c>, <c>INV</c><c>SIN</c>, <c>ARCSIN</c>, or <c>ASIN</c></cell>
+            <cell><kbd>SIN^-1</kbd>, <kbd>INV</kbd><kbd>SIN</kbd>, <kbd>ARCSIN</kbd>, or <kbd>ASIN</kbd></cell>
           </row>
           <row>
             <cell>inverse cosine</cell>
-            <cell><c>COS^{-1}</c>, <c>INV</c><c>COS</c>, <c>ARCCOS</c>, or <c>ACOS</c></cell>
+            <cell><kbd>COS^-1</kbd>, <kbd>INV</kbd><kbd>COS</kbd>, <kbd>ARCCOS</kbd>, or <kbd>ACOS</kbd></cell>
           </row>
           <row bottom="minor">
             <cell>inverse tangent</cell>
-            <cell><c>TAN^{-1}</c>, <c>INV</c><c>TAN</c>, <c>ARCTAN</c>, or <c>ATAN</c></cell>
+            <cell><kbd>TAN^-1</kbd>, <kbd>INV</kbd><kbd>TAN</kbd>, <kbd>ARCTAN</kbd>, or <kbd>ATAN</kbd></cell>
           </row>
         </tabular>
         <p>
-          Often, the inverse trigonometry key can be found by first pressing <c>2nd</c> or <c>SHIFT</c>, followed by the trigonometry function key. For example, to get the <c>SIN^{-1}</c> key, press <c>2nd</c><c>SIN</c> or <c>SHIFT</c><c>SIN</c>.
+          Often, the inverse trigonometry key can be found by first pressing <kbd>2nd</kbd> or <kbd>SHIFT</kbd>, followed by the trigonometry function key. For example, to get the <kbd>SIN^-1</kbd> key, press <kbd>2nd</kbd><kbd>SIN</kbd> or <kbd>SHIFT</kbd><kbd>SIN</kbd>.
         </p>
     </remark>
     <example>
@@ -455,14 +455,14 @@
         </statement>
         <solution>
           <p>
-            First verify the mode of the calculator is in radians. Then, press the following keys <c>COS^{-1}</c><c>(</c><c>(-)</c>0.39<c>)</c><c>ENTER</c> to get
+            First verify the mode of the calculator is in radians. Then, press the following keys <kbd>COS^-1</kbd><kbd>(</kbd><kbd>(-)</kbd>0.39<kbd>)</kbd><kbd>ENTER</kbd> to get
             <me>
               \cos^{-1}(-0.39)\approx1.9714279195
             </me>
-            If your calculator does not have the <c>COS^{-1}</c> key, then use the appropriate key(s) for inverse cosine, such as <c>INV</c><c>COS</c>, <c>ARCCOS</c>, or <c>ACOS</c>.
+            If your calculator does not have the <kbd>COS^-1</kbd> key, then use the appropriate key(s) for inverse cosine, such as <kbd>INV</kbd><kbd>COS</kbd>, <kbd>ARCCOS</kbd>, or <kbd>ACOS</kbd>.
           </p>
           <p>
-            On some calculators, <c>COS^{-1}</c> is pressed first, then <c>(</c><c>(-)</c>0.39<c>)</c>; while other calculators the sequence is reversed with <c>(</c><c>(-)</c>0.39<c>)</c> pressed first, then <c>COS^{-1}</c>. Verify with your calculator's manual.
+            On some calculators, <kbd>COS^-1</kbd> is pressed first, then <kbd>(</kbd><kbd>(-)</kbd>0.39<kbd>)</kbd>; while other calculators the sequence is reversed with <kbd>(</kbd><kbd>(-)</kbd>0.39<kbd>)</kbd> pressed first, then <kbd>COS^-1</kbd>. Verify with your calculator's manual.
           </p>
         </solution>
       </task>
@@ -474,7 +474,7 @@
         </statement>
         <solution>
           <p>
-            First verify the mode of the calculator is in radians. Then, using the appropriate key for inverse tangent, press the following keys <c>TAN^{-1}</c><c>(</c>12<c>)</c><c>ENTER</c> to get
+            First verify the mode of the calculator is in radians. Then, using the appropriate key for inverse tangent, press the following keys <kbd>TAN^-1</kbd><kbd>(</kbd>12<kbd>)</kbd><kbd>ENTER</kbd> to get
             <me>
               \cos^{-1}(-0.39)\approx1.48765509491
             </me>
@@ -489,7 +489,7 @@
         </statement>
         <solution>
           <p>
-            First verify the mode of the calculator is in radians. Then, using the appropriate key for inverse sine, press the following keys <c>SIN^{-1}</c><c>(</c>0.8<c>)</c><c>ENTER</c> to get
+            First verify the mode of the calculator is in radians. Then, using the appropriate key for inverse sine, press the following keys <kbd>SIN^-1</kbd><kbd>(</kbd>0.8<kbd>)</kbd><kbd>ENTER</kbd> to get
             <me>
               \cos^{-1}(-0.39)\approx0.927295218002
             </me>
@@ -539,9 +539,23 @@
             d=\sqrt{575^2+1,108^2}\approx1,248 \mbox{NM}.
           </me>
           Finally, we note that since (speed) = (distance)/(duration), we can rearrange the terms to get (duration) = (distance)/(speed). If we travel at 5 knots (5 NM/hr), we can calculate the duration as
-          <me>
-            \mbox{duration}=\frac{1,248.3\mbox{ NM}}{5\mbox{ kt}}=\frac{1,248.3\mbox{ NM}}{5\mbox{ NM/hr}}=249.7\mbox{ hours}=249.7\mbox{ hours}\cdot\frac{\mbox{day}}{24\mbox{ hours}}\approx10.4\mbox{ days}.
-          </me>
+          <md>
+            <mrow>
+              \mbox{duration }= \amp \frac{1,248.3\mbox{ NM}}{5\mbox{ kt}} \amp\amp \frac{\mbox{distance}}{\mbox{speed}} 
+            </mrow>
+            <mrow>
+              = \amp \frac{1,248.3\mbox{ NM}}{5\mbox{ NM/hr}} \amp\amp \mbox{1 kt=1 NM/hr}
+            </mrow>
+            <mrow>
+              = \amp 249.7\mbox{ hours} \amp\amp \frac{\mbox{NM}}{\mbox{NM/hr}}=\mbox{NM}\cdot\frac{\mbox{hr}}{\mbox{NM}}=\mbox{hr}
+            </mrow>
+            <mrow>
+              = \amp 249.7\mbox{ hours}\cdot\frac{\mbox{day}}{24\mbox{ hours}}
+            </mrow>
+            <mrow>
+              \approx \amp 10.4\mbox{ days}.
+            </mrow>
+          </md>
         </p>
       </solution>
     </example>
