@@ -4,6 +4,9 @@
     <source>
         <directories external="../assets" generated="../generated-assets" />
     </source>
+    <!-- front and back covers-->
+    <covers front="external/fontcover.pdf" back="external/backcover.pdf"/>
+    <!-- latex fonts for Hawaiian characters -->
     <latex>
         <fonts>
             <main regular="CMU Serif" />
