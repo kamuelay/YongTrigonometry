@@ -6,11 +6,6 @@ Always replace ".svg" with ".pdf"
             make the heading compass nicer
 
 
-            <docinfo xmlns:xi="http://www.w3.org/2001/XInclude">
-            <brandlogo url="http://discrete.openmathbooks.org/dmoi3.html" source="images/cover.png"/>
-              
-            <covers front="external/images/front.pdf" back="external/images/back.pdf"/>
-
 
 CoreStandards
 Rename all idx from ccss to more descriptive names. Check that if something/def/thm has 2 core standards that only one idx is used.
