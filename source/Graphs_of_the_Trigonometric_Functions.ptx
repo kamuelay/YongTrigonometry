@@ -2,7 +2,7 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="Graphs_of_the_Trigonometric_Functions">
   <title>Graphs of the Trigonometric Functions</title>
   <xi:include  href="Graphs_of_the_Sine_and_Cosine_Functions.ptx"/>
-  <!-- <xi:include  href="Graphs_of_Other_Trigonometric_Functions.ptx"/> -->
-  <!-- <xi:include  href="Phase_Shifts_and_Sinusoidal_Curve_Fitting.ptx"/> -->
+  <xi:include  href="Graphs_of_Other_Trigonometric_Functions.ptx"/>
+  <xi:include  href="Phase_Shifts_and_Sinusoidal_Curve_Fitting.ptx"/>
   <xi:include  href="Inverse_Trigonometry.ptx"/>
 </chapter>
