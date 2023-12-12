@@ -1821,7 +1821,7 @@
         </answer>
       </exercise>
     </exercisegroup>
-    <exercisegroup>
+    <exercisegroup cols="2">
       <introduction>
         <p>
           Find the exact value of each composite function. Write <q>not defined</q> if no value exists. 
@@ -1896,6 +1896,36 @@
         <answer>
           <p>
             <m>-\frac{2\sqrt{21}}{21}</m>
+          </p>
+        </answer>
+      </exercise>
+
+
+
+
+
+
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan\left(\csc^{-1}\left(\frac{9}{8}\right)\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{8\sqrt{17}}{17}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sec\left(\sin^{-1}\left(-\frac{2}{5}\right)\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{3\sqrt{2}}{4}</m>
           </p>
         </answer>
       </exercise>
