@@ -55,7 +55,7 @@
     </convention>
     
     <p>
-      The sine function, as discussed in <xref ref="core-standardsCCSS_MATH_CONTENT_HSF_TF_A_4-a">Section</xref>, is a periodic functions with period <m>2\pi</m>. To graph <m>y=\sin x</m>, we can focus on the interval <m>[0,2\pi]</m>. By plotting this interval, we can then repeat the values to complete the remaining graph.
+      The sine function, as discussed in <xref ref="subsec_periodic-functions"/>, is a periodic functions with period <m>2\pi</m>. To graph <m>y=\sin x</m>, we can focus on the interval <m>[0,2\pi]</m>. By plotting this interval, we can then repeat the values to complete the remaining graph.
     </p>
     <p>
       Recall from <xref ref="def-of-trig-functions">Definition</xref> that on the unit circle, <m>\sin \theta</m> is defined to be the <m>y</m>-value of the terminal point <m>P(x,y)</m> on the unit circle associated with the angle <m>t</m>. As the angle increases from <m>0</m> to <m>\frac{\pi}{2}</m>, the <m>y</m>-value also increases from <m>0</m> to <m>1</m>. When the angle continues from <m>\frac{\pi}{2}</m> to <m>\frac{3\pi}{2}</m>, the <m>y</m>-value decreases from <m>1</m> to <m>-1</m>. Finally, as the angle approaches <m>2\pi</m>, the <m>y</m>-value increases to <m>0</m>. This behavior is shown in <xref ref="sine-graph-animation">Figure</xref>.
