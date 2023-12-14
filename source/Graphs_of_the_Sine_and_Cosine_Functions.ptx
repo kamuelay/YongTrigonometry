@@ -62,9 +62,9 @@
     </p>
     <figure xml:id="sine-graph-animation">
       <caption>
-        The sketch of the <m>y=\sin x</m> can be drawn by plotting the corresponding <m>y</m>-value for each corresponding angle <m>x</m>. In this interactive figure, select Sine or Cosine to draw the function and click Start Animation to begin.
+        As <m>\theta</m> moves from <m>0^{\circ}</m> to <m>360^{\circ}</m>, this figure plots the values of <m>y = \sin \theta</m>. Note that while we will generally be using radians when graphing trigonometric functions, this figure uses degrees to help visualize the angle. For example, you may not be aware that <m>2</m> radians lies in Quadrant II.
       </caption>
-      <interactive geogebra="G9mjcC7D" aspect="1.75:1"/>
+      <interactive geogebra="cjtfbek8" aspect="1.75:0.75"/>
     </figure>
     <p>
       Next we recall known values for the sine function listed on <xref ref="tab_sine-graph-values">Table</xref>. 
