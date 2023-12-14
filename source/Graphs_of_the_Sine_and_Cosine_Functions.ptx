@@ -174,9 +174,10 @@
           xlabel=\(x\),
           ylabel=\(y\)]
           \addplot[domain=0:2*pi+0.5,samples=200,blue,line width=1pt]{sin(deg(x))}node[right,pos=0.35]{\(y=\sin x\)};
-          \addplot coordinates {(0,0) (pi/4,0) (pi/2,1)};
+          <!-- \addplot coordinates {(0,0), (pi/4,0), (pi/2,1)}; -->
+          <!-- \addplot+ [only marks] {(0,0), (pi/4,0), (pi/2,1))}; -->
+          \addplot+ [only marks] {sin(deg(x))};
           \end{axis}
-          \filldraw[black] (1,1) circle(2pt);
           \end{tikzpicture}
         </latex-image>
       </image>
@@ -199,9 +200,9 @@
           xlabel=\(x\),
           ylabel=\(y\)]
           \addplot[stealth-stealth,domain=-2*pi:3*pi,samples=200,blue,line width=1pt]{sin(deg(x))}node[right,pos=0.35]{\(y=\sin x\)};
-          \filldraw[black] (2,1) circle(2pt);
+          <!-- \filldraw[black] (2,1) circle(2pt); -->
           \end{axis}
-          \filldraw[black] (1,1) circle(2pt);
+          <!-- \filldraw[black] (1,1) circle(2pt); -->
           \end{tikzpicture}
         </latex-image>
       </image>
