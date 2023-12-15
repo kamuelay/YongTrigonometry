@@ -8,7 +8,8 @@
       \usepackage{tikz,pgfplots} \usepackage{tkz-graph} \usepackage{tkz-euclide}
       \usetikzlibrary{patterns} \usetikzlibrary{positioning} \usetikzlibrary{matrix,arrows}
       \usetikzlibrary{calc} \usetikzlibrary{shapes} \usepackage{tikzsymbols}
-      \usetikzlibrary{through,intersections,decorations,shadows,fadings} \usepackage{pgfplots} <!--Globe
+      \usetikzlibrary{through,intersections,decorations,shadows,fadings} \pgfplotsset{compat=1.17}
+      <!--Globe
       Design-->
 
       <!--WAA
