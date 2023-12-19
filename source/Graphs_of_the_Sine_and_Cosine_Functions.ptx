@@ -417,7 +417,7 @@
       </solution>
     </example>
 
-    <example>
+    <example xml:id="ex_vert-stretch-compression">
       <title>Vertical Stretches and Compressions</title>
       <statement>
         <p>Graph each function</p>
@@ -460,52 +460,9 @@
     </example>
 
     <p>
-      The term multiplied in the front affecting the factor of stretching and compressing is an important factor. It determines 
-
-      After graphing the functions 
-y
-=
-2
-cos
-⁡
-(
-x
-)
-y=2cos(x) and 
-y
-=
-1
-2
-cos
-⁡
-(
-x
-)
-y= 
-2
-1
-​	
- cos(x), let's introduce and define the concept of amplitude. In these graphs, the amplitude is a measure of the vertical extent of the oscillation. For 
-y
-=
-2
-cos
-⁡
-(
-x
-)
-y=2cos(x), the amplitude is 2, indicating a vertical stretch by a factor of 2 compared to the standard cosine function. Conversely, for 
-
- cos(x), the amplitude is 
- 
-​	
- , representing a vertical compression by a factor of 
- 
- . Amplitude is a crucial parameter in sinusoidal functions, determining the maximum distance from the midline to the peak or trough of the wave.
-
+      The term multiplied in the front affecting the factor of stretching and compressing is an important factor, known as the <term>amplitude</term>. It measures maximum vertical distance from the midline to the peak or trough of a sinusoidal wave. In <xref ref="ex_vert-stretch-compression">Example</xref>, the amplitude of <m>y=2\cos(x)</m> is 2, indicating a vertical stretch by a factor of 2 compared to the standard cosine function. Conversely, for <m>y=\frac{1}{2}\cos(x)</m>, the amplitude is <m>\frac{1}[2}</m>, which represented a vertical compression by a factor of <m>\frac{1}{2}</m>.
     </p>
 
-    
     <p>Amplitude - definition</p>
     <definition>
       <title>Amplitude</title>
@@ -546,7 +503,8 @@ y=2cos(x), the amplitude is 2, indicating a vertical stretch by a factor of 2 co
           The amplitude is <m>|-4|=4</m>.
         </p>
         <figure width="100%" xml:id="sin-amplitudes">
-          <caption>The graph of <m>y = -4\sin(x)</m> is achieved by vertically stretching the <m>y</m>-values of <m>y = \cos(x)</m> by a factor of 2. Similarly, the graph of <m>y = \frac{1}{2}\cos(x)</m> is obtained by vertically compressing the <m>y</m>-values of <m>y = \cos(x)</m> by a factor of <m>\frac{1}{2}</m>.</caption>
+          <caption>Since the amplitude of <m>y = -4\sin(x)</m> is <m>4</m>, the graph is stretched by a factor of 4 and will oscillate between <m>-4</m> and <m>4</m>. Additionally, the negative sign indicates that the graph is reflected about the <m>x</m>-axis.
+          </caption>
           <image xml:id="fig-sin-amplitudes">
             <latex-image>
               \begin{tikzpicture}
@@ -572,13 +530,78 @@ y=2cos(x), the amplitude is 2, indicating a vertical stretch by a factor of 2 co
 
 
     <example>
-      <title>Horizontal Stretched and Compressions</title>
+      <title>Horizontal Stretches and Compressions</title>
       <statement>
+        <p>Graph each function</p>
         <p>
-          examples
+          <ol>
+            <li>
+              <p><m>y=\sin(2x)</m></p>
+            </li>
+            <li>
+              <p><m>y=\cos\left(\frac{1}{2}x\right)</m></p>
+            </li>
+          </ol>
         </p>
       </statement>
-      
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <figure width="100%" xml:id="sin-amplitudes">
+                <caption>Since the amplitude of <m>y = -4\sin(x)</m> is <m>4</m>, the graph is stretched by a factor of 4 and will oscillate between <m>-4</m> and <m>4</m>. Additionally, the negative sign indicates that the graph is reflected about the <m>x</m>-axis.
+                </caption>
+                <image xml:id="fig-sin-amplitudes">
+                  <latex-image>
+                    \begin{tikzpicture}
+                    \begin{axis}[
+                    axis lines=middle,clip=false,
+                    xmin=-2*pi-0.5,xmax=3*pi+0.5,ymin=-4.2,ymax=4.2,
+                    ytick={-4,-3-2,-1,1,2,3,4},
+                    minor ytick={-3.5,-2.5,-1.5,-0.5,0.5,1.5,2.5,3.5},
+                    xtick={-2*pi,-pi,0,pi,2*pi,3*pi},
+                    xticklabels={\(-2\pi\),\(-\pi\),\(0\),\(\pi\),\(2\pi\),\(3\pi\)},
+                    xticklabel style={black},
+                    xlabel=\(x\),
+                    ylabel=\(y\)]
+                    \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt]{sin(deg(x))}node[right,pos=1]{\(y=\sin x\)};
+                    \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,red,line width=1pt]{-4*sin(deg(x))}node[right,pos=1]{\(y=-4\sin x\)};
+                    \end{axis}
+                    \end{tikzpicture}
+                  </latex-image>
+                </image>
+              </figure>
+            </li>
+            <li>
+              <figure width="100%" xml:id="sin-amplitudes">
+          <caption>add caption and redo the graph
+          </caption>
+          <image xml:id="fig-sin-amplitudes">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=-2*pi-0.5,xmax=3*pi+0.5,ymin=-4.2,ymax=4.2,
+              ytick={-4,-3-2,-1,1,2,3,4},
+              minor ytick={-3.5,-2.5,-1.5,-0.5,0.5,1.5,2.5,3.5},
+              xtick={-2*pi,-pi,0,pi,2*pi,3*pi},
+              xticklabels={\(-2\pi\),\(-\pi\),\(0\),\(\pi\),\(2\pi\),\(3\pi\)},
+              xticklabel style={black},
+              xlabel=\(x\),
+              ylabel=\(y\)]
+              \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt]{sin(deg(x))}node[right,pos=1]{\(y=\sin x\)};
+              \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,red,line width=1pt]{-4*sin(deg(x))}node[right,pos=1]{\(y=-4\sin x\)};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </figure>
+            </li>
+          </ol>
+        </p>
+            
+
+      </solution>
     </example>
 
 
