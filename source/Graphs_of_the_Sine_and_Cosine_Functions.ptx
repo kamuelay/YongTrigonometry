@@ -159,7 +159,7 @@
     <p>
       Now that we have a visual understanding of the graph for <m>y=\sin x</m>, we can utilize the data from <xref ref="tab_sine-graph-values">Table</xref> to map out the points. This process enables us to construct the graph illustrated in <xref ref="sin-points-labeled">Figure</xref>, representing one complete period of the sine function.
     </p>
-    <figure width="100%" xml:id="sin-points-labeled">
+    <figure xml:id="sin-points-labeled">
       <caption>
         The values in <xref ref="tab_sine-graph-values">Table</xref>  plotted on a graph with a smooth curve connecting the points to make the curve for <m>y=\sin(x)</m>.
       </caption>
@@ -192,7 +192,7 @@
     <p>
       Since the graph in <xref ref="sin-points-labeled">Figure</xref> represents one period, we can now complete the graph of <m>y=\sin x</m> by extending the pattern in both directions to obtain <xref ref="sin-graph-extended">Figure</xref>.
     </p>
-    <figure width="100%" xml:id="sin-graph-extended">
+    <figure xml:id="sin-graph-extended">
       <caption>The plot for <m>y=\sin(x)</m>.</caption>
       <image xml:id="fig-sin-graph-extended">
         <latex-image>
@@ -228,7 +228,7 @@
     <p>
       Plotting points for <m>y=\cos x</m> and using the fact that the cosine function is periodic, we obtain the graph for cosine in <xref ref="cos-graph-extended">Figure</xref>.
     </p>
-    <figure width="100%" xml:id="cos-graph-extended">
+    <figure xml:id="cos-graph-extended">
       <caption>The plot for <m>y=\cos(x)</m>.</caption>
       <image xml:id="fig-cos-graph-extended">
         <latex-image>
@@ -332,7 +332,7 @@
         <p>
           <ol>
             <li>
-              <figure width="100%" xml:id="sin-vshift">
+              <figure xml:id="sin-vshift">
                 <caption>The graph of <m>y=\sin(x)+2</m> is the same as the graph of <m>y=\sin(x)</m> but shifted up by 2 units.</caption>
                 <image xml:id="fig-sin-vshift">
                   <latex-image>
@@ -357,7 +357,7 @@
               </figure>
             </li>
             <li>
-              <figure width="100%" xml:id="cos-vshift">
+              <figure xml:id="cos-vshift">
                 <caption>The graph of <m>y=\cos(x)-1</m> is the same as the graph of <m>y=\cos(x)</m> but shifted down by 1 unit.</caption>
                 <image xml:id="fig-cos-vshift">
                   <latex-image>
@@ -392,7 +392,7 @@
         <p>Graph <m>y=-\sin(x)</m></p>
       </statement>
       <solution>
-        <figure width="100%" xml:id="sin-x-axis-reflect">
+        <figure xml:id="sin-x-axis-reflect">
           <caption>The graph <m>y = -\sin(x)</m> is obtained by multiplying every <m>y-</m>value of the <m>y = \sin(x)</m> graph by <m>-1</m>. This transformation reflects all points across the x-axis, turning positive values negative and negative values positive. As a result, the graph of <m>y = -\sin(x)</m> is the reflection of <m>y = \sin(x)</m> about the x-axis.</caption>
           <image xml:id="fig-sin-x-axis-reflect">
             <latex-image>
@@ -433,7 +433,7 @@
         </p>
       </statement>
       <solution>
-        <figure width="100%" xml:id="cos-amplitudes">
+        <figure xml:id="cos-amplitudes">
           <caption>The graph of <m>y = 2\cos(x)</m> is achieved by vertically stretching the <m>y</m>-values of <m>y = \cos(x)</m> by a factor of 2. Similarly, the graph of <m>y = \frac{1}{2}\cos(x)</m> is obtained by vertically compressing the <m>y</m>-values of <m>y = \cos(x)</m> by a factor of <m>\frac{1}{2}</m>.</caption>
           <image xml:id="fig-cos-amplitudes">
             <latex-image>
@@ -460,37 +460,39 @@
     </example>
 
     <p>
-      The term multiplied in the front affecting the factor of stretching and compressing is an important factor, known as the <term>amplitude</term>. It measures maximum vertical distance from the midline to the peak or trough of a sinusoidal wave. In <xref ref="ex_vert-stretch-compression">Example</xref>, the amplitude of <m>y=2\cos(x)</m> is 2, indicating a vertical stretch by a factor of 2 compared to the standard cosine function. Conversely, for <m>y=\frac{1}{2}\cos(x)</m>, the amplitude is <m>\frac{1}[2}</m>, which represented a vertical compression by a factor of <m>\frac{1}{2}</m>.
+      The factor multiplied at the front of the cosine function plays a crucial role in stretching and compressing the graph. This factor is known as the <term>amplitude</term>, measuring the maximum vertical distance from the midline to the peak or trough of a sinusoidal wave. In <xref ref="ex_vert-stretch-compression">Example</xref>, the amplitude of <m>y=2\cos(x)</m> is 2, indicating a vertical stretch by a factor of 2 compared to the standard cosine function. Conversely, for <m>y=\frac{1}{2}\cos(x)</m>, the amplitude is <m>\frac{1}{2}</m>, which represented a vertical compression by a factor of <m>\frac{1}{2}</m>.
     </p>
 
-    <p>Amplitude - definition</p>
     <definition>
       <title>Amplitude</title>
       <statement>
         <p>
-          Let <m>f</m> be a periodic function. Let <m>M</m> and <m>N</m> be the maximum and minimum values of <m>f</m>, respectively. Then the <term>amplitude</term>,<idx><h>amplitude</h></idx> of <m>f</m> is defined as
-        </p>
-        <me>
-          \frac{M-N}{2}
-        </me>
-        <p>
-          The amplitude can be thought of as the height of the function.
-        </p>
-
-
-
-
-        <p>
-          For a graph centered about the <m>x</m>-axis, the amplitude is the maximum value of <m>f</m>.
+          Let <m>f</m> be a periodic function with <m>M</m> and <m>N</m> as the maximum and minimum values, respectively. The <term>amplitude</term>,<idx><h>amplitude</h></idx> of <m>f</m> is defined as
         </p>
         <p>
-          Let <m>f</m> be a periodic function, with <m>M</m> and <m>N</m> representing its maximum and minimum values, respectively. The <term>amplitude</term>,<idx><h>amplitude</h></idx> of <m>f</m> is defined as
+          <me>
+            \frac{M-N}{2}.
+          </me>
         </p>
-        <me>
-          \frac{M - N}{2}
-        </me>
         <p>
-          The amplitude is a measure of the function's vertical extent and can be visualized as half the distance between its maximum and minimum values. For a graph centered about the <m>x</m>-axis, the amplitude is simply the maximum value of <m>f</m>.
+          The amplitude can be thought of as the height of the function, representing half the distance between its maximum and minimum values. For a graph centered about the <m>x</m>-axis, the amplitude is simply the maximum value of <m>f</m>.
+        </p>
+        <p>
+          In general, for
+        </p>
+        <p>
+          <me>y = A \cdot \sin(x) \quad \mbox{or} \quad = A \cdot \cos(x)</me>
+        </p>
+        <p>
+          the amplitude is given by the absolute value of <m>A</m>, denoted as
+        </p>
+        <p>
+          <me>
+            \mbox{amplitude}=|A|.
+          </me>
+        </p>
+        <p>
+          This absolute value ensures that amplitude is always a positive value, representing the magnitude of the vertical stretching or compression.
         </p>
       </statement>
     </definition>
@@ -502,7 +504,7 @@
         <p>
           The amplitude is <m>|-4|=4</m>.
         </p>
-        <figure width="100%" xml:id="sin-amplitudes">
+        <figure xml:id="sin-amplitudes">
           <caption>Since the amplitude of <m>y = -4\sin(x)</m> is <m>4</m>, the graph is stretched by a factor of 4 and will oscillate between <m>-4</m> and <m>4</m>. Additionally, the negative sign indicates that the graph is reflected about the <m>x</m>-axis.
           </caption>
           <image xml:id="fig-sin-amplitudes">
@@ -533,6 +535,7 @@
       <title>Horizontal Stretches and Compressions</title>
       <statement>
         <p>Graph each function</p>
+        <p><m>y=\sin x</m>,<m>y=\sin 2x</m>,<m>y=\sin \frac{1}{2}x</m>,<m>y=\sin \frac{1}{3}x</m></p>
         <p>
           <ol>
             <li>
@@ -548,7 +551,7 @@
         <p>
           <ol>
             <li>
-              <figure width="100%" xml:id="sin-amplitudes">
+              <figure xml:id="sin-amplitudes">
                 <caption>Since the amplitude of <m>y = -4\sin(x)</m> is <m>4</m>, the graph is stretched by a factor of 4 and will oscillate between <m>-4</m> and <m>4</m>. Additionally, the negative sign indicates that the graph is reflected about the <m>x</m>-axis.
                 </caption>
                 <image xml:id="fig-sin-amplitudes">
@@ -573,7 +576,7 @@
               </figure>
             </li>
             <li>
-              <figure width="100%" xml:id="sin-amplitudes">
+              <figure xml:id="sin-amplitudes">
           <caption>add caption and redo the graph
           </caption>
           <image xml:id="fig-sin-amplitudes">
@@ -615,9 +618,11 @@
     </example>
     
 
-    <me>
-      y=A\sin(B(x+C))+D
-    </me>
+    <p>
+      <me>
+        y=A\sin(B(x+C))+D
+      </me>
+    </p>
     <p>A-amplitude; B-period=2pi/B (frequency or angular frequency); C-phase shift; D-vertical shift</p>
     
     <p>Define a phase shift is the horizontal shift</p>
