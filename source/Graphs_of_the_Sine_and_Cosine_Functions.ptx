@@ -311,7 +311,7 @@
   <subsection>
     <title>Graphing Transformations of Sine and Cosine</title>
     <p>
-      Now that we've become familiar with the sine and cosine graphs, let's apply algebraic graphing techniques to these functions. Recall that when <m>D gt 0</m>, the graph of <m>y = f(x) + D</m> shifts the graph of <m>y = f(x)</m> upward by <m>D</m> units, and the graph of <m>y = f(x) - D</m> shifts the graph of <m>y = f(x)</m> downward by <m>D</m> units.
+      Now that we've become familiar with the sine and cosine graphs, let's apply algebraic graphing techniques to these functions. Recall that when <m>D \gt 0</m>, the graph of <m>y = f(x) + D</m> shifts the graph of <m>y = f(x)</m> upward by <m>D</m> units, and the graph of <m>y = f(x) - D</m> shifts the graph of <m>y = f(x)</m> downward by <m>D</m> units.
     </p>
     <definition>
       <title>Vertical Shift</title>
@@ -687,10 +687,30 @@
             </latex-image>
           </image>
         </figure>
-            
-
       </solution>
     </example>
+
+    <p>
+      Our final transformation involves functions of the form <m>y = f(x - c)</m>. When <m>c \gt 0</m>, the graph of <m>y = f(x)</m> is shifted <m>c</m> units to the right; when <m>c \lt 0</m>, it is shifted <m>|c|</m> units to the left.
+    </p>
+    <definition>
+      <title>Phase Shift</title>
+      <statement>
+        <p>
+          The functions
+        </p>
+        <p>
+          <me>
+            y = \sin(B(x - C)) \quad \mbox{and} \quad y = \cos(B(x - C))
+          </me>
+        </p>
+        <p>
+          undergo a <term>horizontal shift</term><idx><h>horizontal shift</h></idx>, also referred to as <term>phase shift</term><idx><h>phase shift</h></idx>, of <m>C</m> units. If <m>C \gt 0</m>, the phase shift is to the right; if <m>C \lt 0</m>, the phase shift is to the left.
+        </p>
+      </statement>
+    </definition>
+
+    
 
 
     <example>
