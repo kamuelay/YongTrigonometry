@@ -311,8 +311,35 @@
   <subsection>
     <title>Graphing Transformations of Sine and Cosine</title>
     <p>
-      Now we know what the graphs of sine and cosine look like, we are ready to apply graphing techniques from algebra to these functions.
+      Now that we've become familiar with the sine and cosine graphs, let's apply algebraic graphing techniques to these functions. Recall that when <m>D gt 0</m>, the graph of <m>y = f(x) + D</m> shifts the graph of <m>y = f(x)</m> upward by <m>D</m> units, and the graph of <m>y = f(x) - D</m> shifts the graph of <m>y = f(x)</m> downward by <m>D</m> units.
     </p>
+    <definition>
+      <title>Vertical Shift</title>
+      <statement>
+        <p>
+          The graphs of the functions
+        </p>
+        <p>
+          <me>
+            y=\sin x+D \quad \mbox{and } \quad y=\cos x+D
+          </me>
+        </p>
+        <p>
+          represent an <term>upward vertical shift</term><idx><h>vertical shift</h></idx> of the graphs <m>y = \sin(x)</m> and <m>y = \cos(x)</m> by <m>D</m> units, respectively.
+        </p>
+        <p>
+          Similarly, the functions
+        </p>
+        <p>
+          <me>
+            y=\sin x-D \quad \mbox{and } \quad y=\cos x-D
+          </me>
+        </p>
+        <p>
+          depict the graphs of <m>y = \sin(x)</m> and <m>y = \cos(x)</m> with a <term>downward vertical shift</term> by <m>D</m> units, respectively.
+        </p>
+      </statement>
+    </definition>
     <example>
       <title>Vertical Shifts</title>
       <statement>
@@ -385,7 +412,25 @@
         </p>
       </solution>
     </example>
-
+    <p>
+      Additionally, remember that the graph <m>y = -f(x)</m> reflects the graph of <m>y = f(x)</m> about the <m>x</m>-axis.
+    </p>
+    <definition>
+      <title>Reflection about the <m>x</m>-axis</title>
+      <statement>
+        <p>
+          The functions
+        </p>
+        <p>
+          <me>
+            y=-\sin x \quad \mbox{and} \quad y=-\cos x
+          </me>
+        </p>
+        <p>
+          represent the graphs of <m>y = \sin(x)</m> and <m>y = \cos(x)</m> with a <term>reflection</term><idx><h>reflection</h><h>about <m>x</m>-axis</h></idx> about the <m>x</m>-axis, respectively.
+        </p>
+      </statement>
+    </definition>
     <example>
       <title>Reflections about the <m>x</m>-axis</title>
       <statement>
@@ -460,7 +505,7 @@
     </example>
 
     <p>
-      The factor multiplied at the front of the cosine function plays a crucial role in stretching and compressing the graph. This factor is known as the <term>amplitude</term>, measuring the maximum vertical distance from the midline to the peak or trough of a sinusoidal wave. In <xref ref="ex_vert-stretch-compression">Example</xref>, the amplitude of <m>y=2\cos(x)</m> is 2, indicating a vertical stretch by a factor of 2 compared to the standard cosine function. Conversely, for <m>y=\frac{1}{2}\cos(x)</m>, the amplitude is <m>\frac{1}{2}</m>, which represented a vertical compression by a factor of <m>\frac{1}{2}</m>.
+      The factor multiplied at the front of the cosine function plays a crucial role in stretching and compressing the graph. This factor is known as the <term>amplitude</term>, measuring the maximum vertical distance from the midline to the peak or trough of a sinusoidal wave. In <xref ref="ex_vert-stretch-compression">Example</xref>, the amplitude of <m>y=2\cos(x)</m> is 2, indicating a <term>vertical stretch</term><idx><h>vertical stretch</h></idx> by a factor of 2 compared to the standard cosine function. Conversely, for <m>y=\frac{1}{2}\cos(x)</m>, the amplitude is <m>\frac{1}{2}</m>, which represented a <term>vertical compression</term><idx><h>vertical compression</h></idx> by a factor of <m>\frac{1}{2}</m>.
     </p>
 
     <definition>
@@ -481,7 +526,7 @@
           In general, for
         </p>
         <p>
-          <me>y = A \cdot \sin(x) \quad \mbox{or} \quad = A \cdot \cos(x)</me>
+          <me>y = A \cdot \sin(x) \quad \mbox{or} \quad y= A \cdot \cos(x)</me>
         </p>
         <p>
           the amplitude is given by the absolute value of <m>A</m>, denoted as
@@ -568,23 +613,58 @@
     <example>
       <title>Horizontal Stretches and Compressions</title>
       <statement>
-        <p>Graph each function</p>
-        <p><m>y=\sin x</m>,<m>y=\sin 2x</m>,<m>y=\sin \frac{1}{2}x</m>,<m>y=\sin \frac{1}{3}x</m></p>
+        <p>Identify the period and graph one period for each of the following functions:</p>
         <p>
           <ol>
             <li>
               <p><m>y=\sin(2x)</m></p>
             </li>
             <li>
-              <p><m>y=\cos\left(\frac{1}{2}x\right)</m></p>
+              <p><m>y=\sin\left(\frac{1}{2}x\right)</m></p>
+            </li>
+            <li>
+              <p><m>y=\sin\left(\frac{1}{3}x\right)</m></p>
             </li>
           </ol>
         </p>
       </statement>
       <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                The period for <m>y=\sin(2x)</m> is
+              </p>
+              <p>
+                <me>
+                  \mbox{period}=\frac{2\pi}{2}=\pi
+                </me>
+              </p>
+            </li>
+            <li>
+              <p>
+                The period for <m>y=\sin\left(\frac{1}{2}x\right)</m> is
+              </p>
+              <p>
+                <me>
+                  \mbox{period}=\frac{2\pi}{\frac{1}{2}}=2\pi\cdot\frac{2}{1}=4\pi
+                </me>
+              </p>
+            </li>
+            <li>
+              <p>
+                The period for <m>y=\sin\left(\frac{1}{3}x\right)</m> is
+              </p>
+              <p>
+                <me>
+                  \mbox{period}=\frac{2\pi}{\frac{1}{3}}=2\pi\cdot\frac{3}{1}=6\pi
+                </me>
+              </p>
+            </li>
+          </ol>
+        </p>
         <figure xml:id="sin-period">
-          <caption>***add caption***
-          </caption>
+          <caption>One period each of <m>y=\sin(2x)</m>, <m>y=\sin\left(\frac{1}{2}x\right)</m>, and <m>y=\sin\left(\frac{1}{3}x\right)</m> compared to the standard <m>y=\sin(x)</m> graph. Observe the distinct effects of horizontal compression (when <m>B=2</m>, reducing the period to <m>\frac{\pi}{2}</m>) and stretching (when <m>B=\frac{1}{2}</m> and <m>B=\frac{1}{3}</m>, increasing the period to <m>4\pi</m> and <m>6\pi</m>, respectively).</caption>
           <image xml:id="fig-sin-period">
             <latex-image>
               \begin{tikzpicture}
@@ -600,8 +680,8 @@
               ylabel=\(y\)]
               \addplot[domain=0:2*pi,samples=200,blue,line width=1pt]{sin(deg(x))}node[above,pos=0.25]{\(y=\sin x\)};
               \addplot[domain=0:pi,samples=200,red,line width=1pt]{sin(deg(2*x))}node[below,pos=0.75]{\(y=\sin 2x\)};
-              \addplot[domain=0:4*pi,samples=200,purple,line width=1pt]{sin(deg(x/2))}node[below,pos=0.75]{\(y=\sin \frac{x}{2}\)};
-              \addplot[domain=0:6*pi,samples=200,orange,line width=1pt]{sin(deg(x/3))}node[below,pos=0.75]{\(y=\sin \frac{x}{3}\)};
+              \addplot[domain=0:4*pi,samples=200,purple,line width=1pt]{sin(deg(x/2))}node[below,pos=0.75]{\(y=\sin \frac{1}{2}x\)};
+              \addplot[domain=0:6*pi,samples=200,orange,line width=1pt]{sin(deg(x/3))}node[below,pos=0.75]{\(y=\sin \frac{1}{3}x\)};
               \end{axis}
               \end{tikzpicture}
             </latex-image>
