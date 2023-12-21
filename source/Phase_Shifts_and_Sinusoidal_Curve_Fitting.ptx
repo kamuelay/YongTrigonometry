@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="Phase_Shifts_and_Sinusoidal_Curve_Fitting">
   <title>Harmonic Motion/Phase shift/Sinusoidal Curve Fitting</title>
-  <p>
-    EMPTY SECTION
-  </p>
+  <introduction>
+    <p>
+      introduction...
+    </p>
+  </introduction>
+  <subsection xml:id="subsec-phase-shift">
+    <example>
+      <title>Horizonal Shift</title>
+      <statement>
+        <p>
+          example
+        </p>
+      </statement>
+    </example>
+    
+
+    <p>
+      <me>
+        y=A\sin(B(x+C))+D
+      </me>
+    </p>
+    <p>A-amplitude; B-period=2pi/B (frequency or angular frequency); C-phase shift; D-vertical shift</p>
+    
+    <p>Define a phase shift is the horizontal shift</p>
+    <p>the phase shift is represented by the value 
+      C
+      C. A positive value of 
+      C
+      C indicates a shift to the right, and a negative value indicates a shift to the left.
+      
+      In simpler terms, a phase shift moves the entire graph of a trigonometric function horizontally, altering its starting position along the x-axis.</p>
+  </subsection>
 </section>
