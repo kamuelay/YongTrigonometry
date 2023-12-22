@@ -374,7 +374,7 @@
                     xticklabel style={black},
                     xlabel=\(x\),
                     ylabel=\(y\)]
-                    \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt]{sin(deg(x))}node[right,pos=1]{\(y=\sin x\)};
+                    \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt,opacity=0.5]{sin(deg(x))}node[right,pos=1]{\(y=\sin x\)};
                     \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,red,line width=1pt]{2+sin(deg(x))}node[right,pos=1]{\(y=\sin(x)+2\)};
                     \addplot [dashed,red,fill=red!90!black,opacity=0.5] coordinates {(-2*pi,2) (3*pi,2)};
                     \end{axis}
@@ -399,7 +399,7 @@
                     xticklabel style={black},
                     xlabel=\(x\),
                     ylabel=\(y\)]
-                    \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt]{cos(deg(x))}node[right,pos=1]{\(y=\cos x\)};
+                    \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt,opacity=0.5]{cos(deg(x))}node[right,pos=1]{\(y=\cos x\)};
                     \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,red,line width=1pt]{-1+cos(deg(x))}node[right,pos=1]{\(y=\cos(x)-1\)};
                     \addplot [dashed,red,fill=red!90!black,opacity=0.5] coordinates {(-2*pi,-1) (3*pi,-1)};
                     \end{axis}
@@ -452,7 +452,7 @@
               xticklabel style={black},
               xlabel=\(x\),
               ylabel=\(y\)]
-              \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt]{sin(deg(x))}node[right,pos=1]{\(y=\sin x\)};
+              \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt,opacity=0.5]{sin(deg(x))}node[right,pos=1]{\(y=\sin x\)};
               \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,red,line width=1pt]{-sin(deg(x))}node[right,pos=1]{\(y=-\sin(x)\)};
               \end{axis}
               \end{tikzpicture}
@@ -493,7 +493,7 @@
               xticklabel style={black},
               xlabel=\(x\),
               ylabel=\(y\)]
-              \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt]{cos(deg(x))}node[right,pos=1]{\(y=\cos x\)};
+              \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt,opacity=0.5]{cos(deg(x))}node[right,pos=1]{\(y=\cos x\)};
               \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,red,line width=1pt]{2*cos(deg(x))}node[right,pos=1]{\(y=2\cos x\)};
               \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,orange,line width=1pt]{0.5*cos(deg(x))}node[right,pos=1]{\(y=\frac{1}{2}\cos x\)};
               \end{axis}
@@ -565,7 +565,7 @@
               xticklabel style={black},
               xlabel=\(x\),
               ylabel=\(y\)]
-              \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt]{sin(deg(x))}node[right,pos=1]{\(y=\sin x\)};
+              \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt,opacity=0.5]{sin(deg(x))}node[right,pos=1]{\(y=\sin x\)};
               \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,red,line width=1pt]{-4*sin(deg(x))}node[right,pos=1]{\(y=-4\sin x\)};
               \end{axis}
               \end{tikzpicture}
@@ -678,7 +678,7 @@
               xticklabel style={black},
               xlabel=\(x\),
               ylabel=\(y\)]
-              \addplot[domain=0:2*pi,samples=200,blue,line width=1pt]{sin(deg(x))}node[above,pos=0.25]{\(y=\sin x\)};
+              \addplot[domain=0:2*pi,samples=200,blue,line width=1pt,opacity=0.5]{sin(deg(x))}node[above,pos=0.25]{\(y=\sin x\)};
               \addplot[domain=0:pi,samples=200,red,line width=1pt]{sin(deg(2*x))}node[below,pos=0.75]{\(y=\sin 2x\)};
               \addplot[domain=0:4*pi,samples=200,purple,line width=1pt]{sin(deg(x/2))}node[below,pos=0.75]{\(y=\sin \frac{1}{2}x\)};
               \addplot[domain=0:6*pi,samples=200,orange,line width=1pt]{sin(deg(x/3))}node[below,pos=0.75]{\(y=\sin \frac{1}{3}x\)};
@@ -700,44 +700,211 @@
           The functions
         </p>
         <p>
-          <me>
+          <men xml:id="eqn:phase-shift1">
             y = \sin(B(x - C)) \quad \mbox{and} \quad y = \cos(B(x - C))
-          </me>
+          </men>
         </p>
         <p>
-          undergo a <term>horizontal shift</term><idx><h>horizontal shift</h></idx>, also referred to as <term>phase shift</term><idx><h>phase shift</h></idx>, of <m>C</m> units. If <m>C \gt 0</m>, the phase shift is to the right; if <m>C \lt 0</m>, the phase shift is to the left.
+          undergo a <term>horizontal shift</term><idx><h>horizontal shift</h></idx>, also known as <term>phase shift</term><idx><h>phase shift</h></idx>, of <m>C</m> units. If <m>C \gt 0</m>, the phase shift is to the right; if <m>C \lt 0</m>, it is to the left.
         </p>
       </statement>
     </definition>
-
-    
-
-
+    <remark>
+      <title>Functions of the form <m>y = \sin(Bx - E)</m> and <m>y = \cos(Bx - E)</m></title>
+      <p>
+        Note that you may see functions written in the form
+      </p>
+      <p>
+        <men xml:id="eqn:phase-shift2">
+          y = \sin(Bx - E) \quad \mbox{and} \quad y = \cos(Bx - E).
+        </men>
+      </p>
+      <p>
+        There is a subtle yet important difference between <xref ref="eqn:phase-shift1"/> and <xref ref="eqn:phase-shift2"/>. In <xref ref="eqn:phase-shift1"/>, the term <m>B</m>, affecting the period, is multiplied by both <m>x</m> and <m>C</m>, the phase shift. In <xref ref="eqn:phase-shift2"/>, <m>B</m> is only multiplied by <m>x</m>. We can rewrite <xref ref="eqn:phase-shift2"/> by factoring out <m>B</m> as
+      </p>
+      <p>
+        <me>
+          y = \sin\left(B\left(x - \frac{E}{B}\right)\right) \quad \mbox{and} \quad y = \cos\left(B\left(x - \frac{E}{B}\right)\right).
+        </me>
+      </p>
+      <p>
+        This form aligns with <xref ref="eqn:phase-shift1"/>. Therefore, for equations of the form
+      </p>
+      <p>
+        <me>
+          y = \sin(Bx - E) \quad \mbox{and} \quad y = \cos(Bx - E)
+        </me>
+      </p>
+      <p>
+        the phase shift is <m>\frac{E}{B}</m> units.
+      </p>
+    </remark>
     <example>
       <title>Horizonal Shift</title>
       <statement>
+        <p>Identify the period and phase shift of each function, and graph the function</p>
         <p>
-          example
+          <ol>
+            <li>
+              <p><m>y=\cos(x-\pi)</m></p>
+            </li>
+            <li>
+              <p><m>y=\sin\left(\frac{\pi}{6}(x+2)\right)</m></p>
+            </li>
+          </ol>
         </p>
       </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Since this equation is of the form <p><m>y=\cos(Bx-E)</m></p>, we have <m>B=1</m> and <m>E=\pi</m>. Therefore,
+              </p>
+              <p>
+                <me>\mbox{period}=\frac{2\pi}{B}=\frac{2\pi}{1}=2\pi</me>
+              </p>
+              <p>
+                and
+              </p>
+              <p>
+                <me>\mbox{phase shift}=\frac{E}{B}=\frac{\pi}{1}=\pi \mbox{ (positive value indicates a shift to the right)}.</me>
+              </p>
+              <p>
+                A positive value for the phase shift indicates a shift to the right. It's important to note that, given <m>B=1</m>, the phase shift is simply <m>E=\pi</m>.
+              </p>
+              <figure xml:id="cos-phase-shift">
+                <caption>The graph of <m>y=\cos(x-\pi)</m> is the graph of <m>y=\cos x</m> with a phase shift of <m>\pi</m> units to the right.</caption>
+                <image xml:id="fig-cos-phase-shift">
+                  <latex-image>
+                    \begin{tikzpicture}
+                    \begin{axis}[
+                    axis lines=middle,clip=false,
+                    xmin=-2*pi-0.5,xmax=4*pi+0.5,ymin=-2.2,ymax=2.2,
+                    ytick={-1,1},
+                    minor ytick={-0.5,0.5},
+                    xtick={-2*pi,-pi,0,pi,2*pi,3*pi,4*pi},
+                    xticklabels={\(-2\pi\),\(-\pi\),\(0\),\(\pi\),\(2\pi\),\(3\pi\),\(4\pi\)},
+                    xticklabel style={black},
+                    xlabel=\(x\),
+                    ylabel=\(y\)]
+                    \addplot[domain=-2*pi-0.5:4*pi+0.5,samples=200,blue,line width=1pt,opacity=0.5]{cos(deg(x))}node[below,pos=0.18]{\(y=\cos x\)};
+                    \addplot[domain=-2*pi-0.5:4*pi+0.5,samples=200,red,line width=1pt]{cos(deg(x-pi))}node[below,pos=0.65]{\(y=\cos (x-\pi)\)};
+                    \addplot [dashed,black] coordinates {(0,1) (pi,1)}node[above,pos=0.5]{\(\pi\)};
+                    \end{axis}
+                    \end{tikzpicture}
+                  </latex-image>
+                </image>
+              </figure>
+            </li>
+            <li>
+              <p>
+                Since the given equation is in the form <m>y = \sin\left(\frac{\pi}{6}(x + 2)\right)</m>, we can identify <m>B = \frac{\pi}{6}</m> and <m>C = -2</m>. Consequently,
+              </p>
+              <p>
+                <me>\mbox{period}=\frac{2\pi}{B}=\frac{2\pi}{\frac{\pi}{6}}=2\pi\cdot\frac{6}{\pi}=12</me>
+              </p>
+              <p>
+                and
+              </p>
+              <p>
+                <me>\mbox{phase shift}=C=-2.</me>
+              </p>
+              <p>
+                The negative sign indicates a phase shift to the left by 2 units.
+              </p>
+              <p>
+                To graph <m>y=\sin\left(\frac{\pi}{6}(x+2)\right)</m>, begin by graphing the sine function <m>y=\sin\left(\frac{\pi}{6}x\right)</m> with a period of 12. Then, apply a phase shift of 2 units to the left on the resulting graph.
+              </p>
+              <figure xml:id="sin-phase-shift1">
+                <caption>The graph of <m>y=\sin\left(\frac{\pi}{6}x\right)</m> represents the since function <m>y=\sin x</m> with a horizontal stretch, resulting in a period of 12.</caption>
+                <image xml:id="fig-sin-phase-shift1">
+                  <latex-image>
+                    \begin{tikzpicture}
+                    \begin{axis}[
+                    axis lines=middle,clip=false,
+                    xmin=-6-0.5,xmax=12+0.5,ymin=-2.2,ymax=2.2,
+                    ytick={-1,1},
+                    minor ytick={-0.5,0.5},
+                    xtick={-6,-4,...,12},
+                    %xticklabels={\(-2\pi\),\(-\pi\),\(0\),\(\pi\),\(2\pi\),\(3\pi\),\(4\pi\)},
+                    minor xtick={-5,-3,...,11},
+                    xticklabel style={black},
+                    xlabel=\(x\),
+                    ylabel=\(y\)]
+                    \addplot[domain=-6-0.5:12+0.5,samples=200,blue,line width=1pt,opacity=0.5]{sin(deg(x))}node[above,pos=0.1]{\(y=\sin x\)};
+                    \addplot[domain=-6-0.5:12+0.5,samples=200,red,line width=1pt]{sin(deg(pi/6*x))}node[below,pos=0.16]{\(y=\sin \left(\frac{\pi}{6}x\right)\)};
+                    \addplot [dashed,blue,opacity=0.5] coordinates {(0,1.2) (2*pi,1.2)}node[above,pos=0.5]{period=\(2\pi\approx6.28\)};
+                    \addplot [dashed,blue,opacity=0.5] coordinates {(0,0) (0,1.2)};
+                    \addplot [dashed,blue,opacity=0.5] coordinates {(2*pi,1.2) (2*pi,0)};
+                    \addplot [dashed,red] coordinates {(0,-1.2) (12,-1.2)}node[below,pos=0.5]{period=\(12\)};
+                    \addplot [dashed,red] coordinates {(0,-0) (0,-1.2)};
+                    \addplot [dashed,red] coordinates {(12,-1.2) (12,0)};
+                    \end{axis}
+                    \end{tikzpicture}
+                  </latex-image>
+                </image>
+              </figure>
+              <figure xml:id="sin-phase-shift2">
+                <caption>Shifting the graph of <m>y=\sin\left(\frac{\pi}{6}x\right)</m> 2 units to the left results in the graph of <m>y=\sin\left(\frac{\pi}{6}(x+2)\right)</m>.</caption>
+                <image xml:id="fig-sin-phase-shift2">
+                  <latex-image>
+                    \begin{tikzpicture}
+                    \begin{axis}[
+                    axis lines=middle,clip=false,
+                    xmin=-6-0.5,xmax=12+0.5,ymin=-2.2,ymax=2.2,
+                    ytick={-1,1},
+                    minor ytick={-0.5,0.5},
+                    xtick={-6,-4,...,12},
+                    %xticklabels={\(-2\pi\),\(-\pi\),\(0\),\(\pi\),\(2\pi\),\(3\pi\),\(4\pi\)},
+                    minor xtick={-5,-3,...,11},
+                    xticklabel style={black},
+                    xlabel=\(x\),
+                    ylabel=\(y\)]
+                    \addplot[domain=-6-0.5:12+0.5,samples=200,red,line width=1pt,opacity=0.5]{sin(deg(pi/6*x))}node[below,pos=0.16]{\(y=\sin \left(\frac{\pi}{6}x\right)\)};
+                    \addplot[domain=-6-0.5:12+0.5,samples=200,blue,line width=1pt]{sin(deg(pi/6*(x+2)))}node[below,pos=0.7]{\(y=\sin \left(\frac{\pi}{6}(x+2)\right)\)};
+                    \addplot [dashed,black] coordinates {(3,1) (1,1)}node[above,pos=0.5]{\(2\)};
+                    \end{axis}
+                    \end{tikzpicture}
+                  </latex-image>
+                </image>
+              </figure>
+            </li>
+          </ol>
+        </p>
+      </solution>
     </example>
     
-
     <p>
-      <me>
-        y=A\sin(B(x+C))+D
-      </me>
+      We will now summarize the transformations by consolidating them into a single equation.
     </p>
-    <p>A-amplitude; B-period=2pi/B (frequency or angular frequency); C-phase shift; D-vertical shift</p>
+    <remark>
+      <title>Transformations of Sine and Cosine</title>
+      <p>
+        For functions of the form
+      </p>
+      <p>
+        <me>
+          y=A\cdot\sin(B(x-C))+D \quad \mbox{and} \quad y=A\cdot\cos(B(x-C))+D
+        </me>
+      </p>
+      <p>
+        we can express the transformations as follows:
+      </p>
+      <p>
+        <ul>
+          <li>Amplitude: <m>|A|</m></li>
+          <li>Period: <m>\frac{2\pi}{B}</m></li>
+          <li>Phase Shift: <m>C</m></li>
+          <li>Vertical Shift: <m>D</m></li>
+        </ul>
+      </p>
+      <p>
+        Understanding these transformations allows us to manipulate and interpret sine and cosine functions, providing valuable insights into their behavior.
+      </p>
+    </remark>
     
-    <p>Define a phase shift is the horizontal shift</p>
-    <p>the phase shift is represented by the value 
-      C
-      C. A positive value of 
-      C
-      C indicates a shift to the right, and a negative value indicates a shift to the left.
-      
-      In simpler terms, a phase shift moves the entire graph of a trigonometric function horizontally, altering its starting position along the x-axis.</p>
+    
 
   </subsection>
 
