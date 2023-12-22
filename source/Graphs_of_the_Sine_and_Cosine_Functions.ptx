@@ -700,7 +700,7 @@
           The functions
         </p>
         <p>
-          <men xml:id="eqn:phase-shift1">
+          <men xml:id="eqn-phase-shift1">
             y = \sin(B(x - C)) \quad \mbox{and} \quad y = \cos(B(x - C))
           </men>
         </p>
@@ -715,12 +715,12 @@
         Note that you may see functions written in the form
       </p>
       <p>
-        <men xml:id="eqn:phase-shift2">
+        <men xml:id="eqn-phase-shift2">
           y = \sin(Bx - E) \quad \mbox{and} \quad y = \cos(Bx - E).
         </men>
       </p>
       <p>
-        There is a subtle yet important difference between <xref ref="eqn:phase-shift1"/> and <xref ref="eqn:phase-shift2"/>. In <xref ref="eqn:phase-shift1"/>, the term <m>B</m>, affecting the period, is multiplied by both <m>x</m> and <m>C</m>, the phase shift. In <xref ref="eqn:phase-shift2"/>, <m>B</m> is only multiplied by <m>x</m>. We can rewrite <xref ref="eqn:phase-shift2"/> by factoring out <m>B</m> as
+        There is a subtle yet important difference between <xref ref="eqn-phase-shift1"/> and <xref ref="eqn-phase-shift2"/>. In <xref ref="eqn-phase-shift1"/>, the term <m>B</m>, affecting the period, is multiplied by both <m>x</m> and <m>C</m>, the phase shift. In <xref ref="eqn-phase-shift2"/>, <m>B</m> is only multiplied by <m>x</m>. We can rewrite <xref ref="eqn-phase-shift2"/> by factoring out <m>B</m> as
       </p>
       <p>
         <me>
@@ -728,7 +728,7 @@
         </me>
       </p>
       <p>
-        This form aligns with <xref ref="eqn:phase-shift1"/>. Therefore, for equations of the form
+        This form aligns with <xref ref="eqn-phase-shift1"/>. Therefore, for equations of the form
       </p>
       <p>
         <me>
@@ -903,7 +903,7 @@
         Understanding these transformations allows us to manipulate and interpret sine and cosine functions, providing valuable insights into their behavior.
       </p>
     </remark>
-    
+
     
 
   </subsection>
