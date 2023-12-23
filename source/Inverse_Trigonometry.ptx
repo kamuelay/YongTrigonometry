@@ -3,10 +3,10 @@
   <title>Inverse Trigonometric Functions</title>
   <introduction>
     <p>
-      Swells are one of the most consistent navigational tools for maintaining a straight course due to their consistency over longer periods of time. Unlike stars that may be obscured during the day or on cloudy nights, and winds that can frequently change direction, swells tend to remain relatively constant. By keeping the angle at which the swell passes the canoe constant, crew members can navigate on a straight course.
+      Swells are a crucial navigational tool, providing a consistent means of maintaining a straight course over extended periods. Unlike stars, which may be obscured during the day or on cloudy nights, or winds that can change direction frequently, swells tend to remain relatively constant. Crew members can navigate a straight course by keeping the angle at which the swell passes the canoe constant.
     </p>
     <p>
-      Even in poor visibility, when the crew may not be able to see the swells, they can still feel them. Parts of the vaka (canoe) will lift and then lower as the swells pass beneath. Skilled navigators can use these movements to maintain course, even without directly seeing the waves.
+      Even in poor visibility, when the crew may not see the swells, they can feel them. Parts of the vaka (canoe) lift and lower as the swells pass beneath. Skilled navigators use these movements to maintain course, even without directly seeing the waves.
     </p>
     <p>
       The side-to-side rocking motion of the canoe is known as <term>roll</term>. This motion occurs when a swell approaches from either the port (left) or starboard (right) side, causing the vaka to initially lift the corresponding hull (port or starboard), followed by the opposite hull, depending on the direction of the swell.
@@ -18,7 +18,7 @@
       When a swell approaches the canoe from an angle that is not perpendicular to any side, a combination of pitch and roll occurs. The specific motion experienced depends on the precise angle of the swell. For instance, if the swell comes from an angle and lifts the starboard bow (front right), it may subsequently lift the port bow, followed by the starboard stern, and finally the port stern. However, with a slightly different angle, the sequence may change as well. After lifting the starboard bow, it could lead to the starboard stern being lifted next, followed by the port bow, and finally the port stern. This twisting motion is referred to as a <term>corkscrew</term> effect due to its combination of motions.
     </p>
     <p>
-      The video in <xref ref="video-swell-movement">Figure</xref> shows hows a vaka moves as swells pass under the hulls. A change in vaka motion can indicate either a change in the canoe's direction or a shift in the direction of ocean swells. In such cases, the crew must assess the situation and when conditions allow, utilize celestial markers, such as the rising and setting of stars, to determine the direction of the swells.
+      The video in <xref ref="video-swell-movement">Figure</xref> demonstrates how the vaka Paikea moves as swells pass under the hulls. A change in vaka motion can indicate either a change in the canoe's direction or a shift in the direction of ocean swells. In such cases, the crew must assess the situation and, when conditions allow, utilize celestial markers, such as the rising and setting of stars, to determine the direction of the swells.
     </p>
     <figure xml:id="video-swell-movement">
       <caption>
@@ -455,14 +455,14 @@
         </statement>
         <solution>
           <p>
-            First verify the mode of the calculator is in radians. Then, press the following keys <kbd>COS^-1</kbd><kbd>(</kbd><kbd>(-)</kbd>0.39<kbd>)</kbd><kbd>ENTER</kbd> to get
+            First verify the mode of the calculator is in radians. Then, press the following keys <kbd>COS^-1</kbd><kbd>(</kbd><kbd>(-)</kbd><m>0.39</m><kbd>)</kbd><kbd>ENTER</kbd> to get
             <me>
               \cos^{-1}(-0.39)\approx1.9714279195
             </me>
             If your calculator does not have the <kbd>COS^-1</kbd> key, then use the appropriate key(s) for inverse cosine, such as <kbd>INV</kbd><kbd>COS</kbd>, <kbd>ARCCOS</kbd>, or <kbd>ACOS</kbd>.
           </p>
           <p>
-            On some calculators, <kbd>COS^-1</kbd> is pressed first, then <kbd>(</kbd><kbd>(-)</kbd>0.39<kbd>)</kbd>; while other calculators the sequence is reversed with <kbd>(</kbd><kbd>(-)</kbd>0.39<kbd>)</kbd> pressed first, then <kbd>COS^-1</kbd>. Verify with your calculator's manual.
+            On some calculators, <kbd>COS^-1</kbd> is pressed first, then <kbd>(</kbd><kbd>(-)</kbd><m>0.39</m><kbd>)</kbd>; while other calculators the sequence is reversed with <kbd>(</kbd><kbd>(-)</kbd><m>0.39</m><kbd>)</kbd> pressed first, then <kbd>COS^-1</kbd>. Verify with your calculator's manual.
           </p>
         </solution>
       </task>
@@ -474,9 +474,9 @@
         </statement>
         <solution>
           <p>
-            First verify the mode of the calculator is in radians. Then, using the appropriate key for inverse tangent, press the following keys <kbd>TAN^-1</kbd><kbd>(</kbd>12<kbd>)</kbd><kbd>ENTER</kbd> to get
+            First verify the mode of the calculator is in radians. Then, using the appropriate key for inverse tangent, press the following keys <kbd>TAN^-1</kbd><kbd>(</kbd><m>12</m><kbd>)</kbd><kbd>ENTER</kbd> to get
             <me>
-              \cos^{-1}(-0.39)\approx1.48765509491
+              \tan^{-1}12\approx1.48765509491
             </me>
           </p>
         </solution>
@@ -489,19 +489,57 @@
         </statement>
         <solution>
           <p>
-            First verify the mode of the calculator is in radians. Then, using the appropriate key for inverse sine, press the following keys <kbd>SIN^-1</kbd><kbd>(</kbd>0.8<kbd>)</kbd><kbd>ENTER</kbd> to get
+            First verify the mode of the calculator is in radians. Then, using the appropriate key for inverse sine, press the following keys <kbd>SIN^-1</kbd><kbd>(</kbd><m>0.8</m><kbd>)</kbd><kbd>ENTER</kbd> to get
             <me>
-              \cos^{-1}(-0.39)\approx0.927295218002
+              \sin^{-1}0.8\approx0.927295218002
             </me>
           </p>
         </solution>
       </task>
     </example>
+    <example>
+      <title>Swells Approaching Paikea</title>
+      <statement>
+        <p>
+          At the start of this section, we discussed the swells passing through Paikea in the following order: 1) port stern (back left); 2) starboard stern (back right); 3) port bow (front left); and 4) starboard bow (front right). Given that Paikea is 14.8 m (50 ft) in length and 6.2 m (20 ft) in width, what is the possible range of headings from which the swells may be approaching?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          If the swells are moving directly north, the heading will be <m>0^{\circ}</m>.
+        </p>
+        <p>
+          To find the other boundary, we want to determine the angle at which the swell simultaneously intersects both the starboard stern and port bow as it passes beneath the vaka. This angle, denoted as <m>\theta</m>, is formed between the side adjacent to the 14.8 m length of the canoe and the diagonal. Using the tangent function we have:
+        </p>
+        <p>
+          <me>
+              \tan\theta = \frac{14.8}{6.2}
+          </me>
+      </p>
+      <p>
+        Solving for <m>\theta</m> using the inverse tangent function we get:
+    </p>
+        <p>
+          <me>
+            \tan^{-1}\left(\frac{14.8}{6.2}\right)\approx67.27^{\circ}
+          </me>
+        </p>
+        <p>
+          Therefore, the possible range of headings from which the swells may be approaching is between <m>0^{\circ}</m> (directly north) and approximately <m>67.27^{\circ}</m>.
+        </p>
+      </solution>
+    </example>
     <example xml:id="exmp-gift-for-mau">
       <title>A gift for Mau</title>
       <statement>
         <p>
-          When Mau Pialug sailed to his home on the Makaliʻi in 1999, the people of Satawal, Micronesia were impressed with such a large waʻa. As a gift to the man who shared his knowledge of navigation, Nā Kālai Waʻa at Kawaihae Harbor built a 56-foot long double-hulled voyaging canoe called the  Alingano Maisu. In 2007, the Alingano Maisu, accompanied by the Hōkūleʻa, embarked on her maiden voyage to her new home in Satawal so Papa Mau can carry on his legacy of navigation in his home islands. Leaving Hawaiʻi, Hōkūleʻa led the way to Johnston Atoll. From there, the Alingano Maisu took the lead as they entered Micronesia by first stopping at Majuro, Marshall Islands before continuing on to her new home in Satawal. It is known that the island of Majuro is 1,108 nautical miles to the east and 575 nautical miles to the south of Johnston Atoll. What house do you need to sail towards and what distance will you need to sail? If the waʻa travels at 5 knots, how many days will it take to reach the destination? Note that 1 knot = 1 nautical mile/hour.
+          In 1999, after Mau Pialug, also known as Papa Mau, sailed from Hawaiʻi to his home in Satawal, Micronesia aboard the Makaliʻi, the crew of Nā Kālai Waʻa expressed their gratitude to the man who shared his knowledge of navigation by constructing a sister canoe to Makaliʻi. This vessel, named the Alingano Maisu, was a 56-foot long double-hulled voyaging canoe. In 2007, accompanied by the Hōkūleʻa, the Alingano Maisu embarked on its inaugural journey to Satawal, continuing Papa Mau's legacy of navigation in his home islands.
+        </p>
+        <p>
+          During this journey, the canoes sailed directly towards Johnston Atoll, using it as a sighting point without making a stop, before proceeding to their first destination in Majuro, Marshall Islands. The island of Majuro is situated 1,108 nautical miles west and 575 nautical miles south of Johnston Atoll.
+        </p>
+        <p>
+          What house do you need to sail in and what distance will you need to sail? If the waʻa travels at 5 knots, how many days will it take to reach the destination? Note that 1 knot = 1 nautical mile/hour.
         </p>
         <image>
           <latex-image>
@@ -563,11 +601,13 @@
       <title>Finding Land</title>
       <statement>
         <p>
-          As Hōkūleʻa is sailing towards Rapa Nui, the navigator uses a process called dead reckoning to determine their position based on the latitude, measured by the stars, and other factors such as the estimated distance traveled, speed, and direction. Once the navigator has determined they are in the vicinity of land, her attention is now focused on looking for signs of land. One method navigators will use is to look for land-based seabirds such as the manu-o-kū (fairy tern) and the noio (noddy tern), which go out to sea in the morning to fish and return to land at night. However, Rapa Nui's seabird population has been reduced so she will look for other signs such as drifting land vegetation; clouds that form over islands; the loom of the island when white sand and still lagoons reflect the sun or moon upwards; and distinctive patterns of swells bending (refracting) around and/or reflecting off islands. Land will be spotted when the navigator first sees Maunga Terevaka, the tallest point in Rapa Nui, which stands at 1,665 ft. <xref ref="gif_finding-land">Figure</xref> depicts the relation between the canoe and island (left) as well as what is seen from the deck of the canoe (right).
+          As Hōkūleʻa is sailing towards Rapa Nui, the navigator uses a process called dead reckoning to determine their position based on the latitude, measured by the stars, and other factors such as the estimated distance traveled, speed, and direction. Once the navigator has determined they are in the vicinity of land, her attention is now focused on looking for signs of land. One method navigators will use is to look for land-based seabirds such as the manu-o-kū (fairy tern) and the noio (noddy tern), which go out to sea in the morning to fish and return to land at night. However, Rapa Nui's seabird population has been reduced so she will look for other signs such as drifting land vegetation; clouds that form over islands; the loom of the island when white sand and still lagoons reflect the sun or moon upwards; and distinctive patterns of swells bending (refracting) around and/or reflecting off islands. Land will be spotted when the navigator first sees Maunga Terevaka, the tallest point in Rapa Nui, which stands at 1,665 ft. <xref ref="video-finding-land">Figure</xref> depicts the relation between the canoe and island (left) as well as what is seen from the deck of the canoe (right).
         </p>
-        <figure xml:id="gif_finding-land">
-          <caption>As the canoe approaches land, the island appears to emerge from the ocea. The image on the left depicts the cross-section of the earth and the image on the right depicts what the navigator sees from the canoe.</caption>
-          <image source="finding_land.png"/>
+        <figure xml:id="video-finding-land">
+          <caption>
+            Watch as the canoe approaches an island from two different views. On the left, see a side view as the island gradually comes into sight over the horizon. On the right, experience the perspective from the canoe's deck, observing the island appearing to rise from the water. This dual perspective provides a unique glimpse into the legend of Maui, the demigod who pulled the islands from the ocean with his fish-hook.
+          </caption>
+          <video youtube="https://youtu.be/D9qv5TKhIEM"/>
         </figure>
         <p>
           <ol>
@@ -703,18 +743,18 @@
   <subsection>
     <title>Graphs of Inverse Trigonometric Functions</title>
     <p>
-      Recall from Unit 1 that
+      Recall from algebra that
     </p>
     <p>
       <ol>
         <li>
           <p>
-            The point $(a,b)$ is on the graph of $f$ if and only if the point $(b,a)$ is on the graph of $f^{-1}$
+            The point <m>(a,b)</m> is on the graph of <m>f</m> if and only if the point <m>(b,a)</m> is on the graph of <m>f^{-1}</m>.
           </p>
         </li>
         <li>
           <p>
-            The graphs of $f^{-1}$ and $f$ are reflections of each other about the line $y=x$
+            The graphs of <m>f^{-1}</m> and <m>f</m> are reflections of each other about the line <m>y=x</m>
           </p>
         </li>
       </ol>
