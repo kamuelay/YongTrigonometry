@@ -37,7 +37,7 @@
     </figure> -->
     <figure>
         <caption>Illustration shows the relative positions and timing of solstice, equinox and seasons in relation to the Earth's orbit around the Sun and the axial tilt. During the June solstice, the northern hemisphere is tilted towards the Sun, while the southern hemisphere is tilted away. Conversely, during the December solstice, the southern hemisphere is tilted towards the Sun, and the northern hemisphere is tilted away. During the March and September equinoxes, the Earth's axis is perpendicular to the line connecting the Earth to the Sun, causing the Sun to appear directly above the equator. As a result, day and night are approximately equal in length all over the world.</caption>
-        <image source="planets-seasons.svg"/>
+        <image source="planets-seasons"/>
     </figure>
     <p>
       The position where the Sun rises throughout the year exhibits a repeating pattern, characterized as a <term>periodic function</term> with a cycle of about one year. This function can be mathematically represented as either a sine or cosine function. Graphically, it illustrates the sunrise position on the horizon relative to the east (Hikina) as time progresses. By examining this function, we can observe the gradual northward and southward movement of the sunrise position throughout the year. Key dates such as the equinoxes and solstices mark significant points in this pattern, providing insights into the changing seasons and variations in daylight hours.
@@ -308,7 +308,7 @@
       </tabular>
     </table>
   </subsection>
-  <subsection>
+  <subsection  xml:id="subsec_graphing-sinusoidal-transformations">
     <title>Graphing Transformations of Sine and Cosine</title>
     <p>
       Now that we've become familiar with the sine and cosine graphs, let's apply algebraic graphing techniques to these functions. Recall that when <m>D \gt 0</m>, the graph of <m>y = f(x) + D</m> shifts the graph of <m>y = f(x)</m> upward by <m>D</m> units, and the graph of <m>y = f(x) - D</m> shifts the graph of <m>y = f(x)</m> downward by <m>D</m> units.
@@ -790,7 +790,7 @@
                     ylabel=\(y\)]
                     \addplot[domain=-2*pi-0.5:4*pi+0.5,samples=200,blue,line width=1pt,opacity=0.5]{cos(deg(x))}node[below,pos=0.18]{\(y=\cos x\)};
                     \addplot[domain=-2*pi-0.5:4*pi+0.5,samples=200,red,line width=1pt]{cos(deg(x-pi))}node[below,pos=0.65]{\(y=\cos (x-\pi)\)};
-                    \addplot [dashed,black] coordinates {(0,1) (pi,1)}node[above,pos=0.5]{\(\pi\)};
+                    \addplot [-stealth,dashed,black] coordinates {(0,1) (pi,1)}node[above,pos=0.5]{\(\pi\)};
                     \end{axis}
                     \end{tikzpicture}
                   </latex-image>
@@ -817,7 +817,7 @@
                 To graph <m>y=\sin\left(\frac{\pi}{6}(x+2)\right)</m>, begin by graphing the sine function <m>y=\sin\left(\frac{\pi}{6}x\right)</m> with a period of 12. Then, apply a phase shift of 2 units to the left on the resulting graph.
               </p>
               <figure xml:id="sin-phase-shift1">
-                <caption>The graph of <m>y=\sin\left(\frac{\pi}{6}x\right)</m> represents the since function <m>y=\sin x</m> with a horizontal stretch, resulting in a period of 12.</caption>
+                <caption>The graph of <m>y=\sin\left(\frac{\pi}{6}x\right)</m> represents the sine function <m>y=\sin x</m> with a horizontal stretch, resulting in a period of 12.</caption>
                 <image xml:id="fig-sin-phase-shift1">
                   <latex-image>
                     \begin{tikzpicture}
@@ -863,7 +863,7 @@
                     ylabel=\(y\)]
                     \addplot[domain=-6-0.5:12+0.5,samples=200,red,line width=1pt,opacity=0.5]{sin(deg(pi/6*x))}node[below,pos=0.16]{\(y=\sin \left(\frac{\pi}{6}x\right)\)};
                     \addplot[domain=-6-0.5:12+0.5,samples=200,blue,line width=1pt]{sin(deg(pi/6*(x+2)))}node[below,pos=0.7]{\(y=\sin \left(\frac{\pi}{6}(x+2)\right)\)};
-                    \addplot [dashed,black] coordinates {(3,1) (1,1)}node[above,pos=0.5]{\(2\)};
+                    \addplot [stealth-,dashed,black] coordinates {(3,1) (1,1)}node[above,pos=0.5]{\(2\)};
                     \end{axis}
                     \end{tikzpicture}
                   </latex-image>
@@ -881,7 +881,7 @@
     <remark>
       <title>Transformations of Sine and Cosine</title>
       <p>
-        For functions of the form
+        When dealing with functions in the form
       </p>
       <p>
         <me>
@@ -903,13 +903,16 @@
         Understanding these transformations allows us to manipulate and interpret sine and cosine functions, providing valuable insights into their behavior.
       </p>
     </remark>
-
-    
-
+    <p>
+      Explore the effects of various transformations using the interactive features in <xref ref="sinusoidal-transformation">Figure</xref>.
+    </p>
+    <figure xml:id="sinusoidal-transformation">
+      <caption>
+        Manipulate the graphs of sine and cosine by adjusting the sliders for <m>A</m>, <m>B</m>, <m>C</m>, and <m>D</m>. Observe the effects on amplitude, period, phase shift, and vertical shift.
+      </caption>
+      <interactive geogebra="u75zdnr8" aspect="1.75:0.75"/>
+    </figure>
   </subsection>
-
-
-
 
   <exercises>
     <exercisegroup>
