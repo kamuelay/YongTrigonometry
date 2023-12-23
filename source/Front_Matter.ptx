@@ -32,7 +32,7 @@
       <year>
         2022
         <ndash />
-        2022
+        2024
       </year>
       <holder>Kamuela E Yong</holder>
       <minilicense>
@@ -54,7 +54,7 @@
 
   <dedication>
     <p>
-      For Tasha and Kamuela
+      For my family
     </p>
   </dedication>
 
@@ -65,6 +65,7 @@
       Bonnie Kahapea and the crew of Kānehūnāmoku Voyaging Academy;
       Kala Baybayan Tanaka and the crew from Hui o Waʻa Kaulua;
       Peia Patai and the crew from Te Puna Marama;
+      the crew of Nā Kālai Waʻa;
       the Friends of Hōkūleʻa and Hawaiʻiloa.
       Carina Chernisky and UHWO OER committee. 
       I truly valued the discussions I have had with Vicente Diaz, Linda Furuto, Kekai Lee, and so many more. 
@@ -138,7 +139,7 @@
       <ul>
         <li>
           <p>
-            <url href="http://www.thecorestandards.org/Math/Content/HSF/TF/B/5/">HSF.TF.B.5</url>: Choose trigonometric functions to model periodic phenomena with specified amplitude, frequency, and midline.
+            <url href="http://www.thecorestandards.org/Math/Content/HSF/TF/B/5/">HSF.TF.B.5</url>: Choose trigonometric functions to model periodic phenomena with specified amplitude, frequency, and midline. (<xref ref="subsec_graphing-sinusoidal-transformations"/>)
           </p>
         </li>
         <li>
