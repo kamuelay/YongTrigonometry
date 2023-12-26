@@ -1,12 +1,148 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="Graphs_of_Other_Trigonometric_Functions">
   <title>Graphs of Other Trigonometric Functions</title>
+  <introduction>
+    <p>
+      This section explores the graphs of tangent, cotangent, cosecant, and secant, including their periodic behaviors and transformations.
+    </p>
+  </introduction>
+  <subsection xml:id="subsec-sine-function">
+    <title>The Tangent Function</title>
+    <p>
+      In <xref ref="subsec_periodic-functions"/> we learned that tangent is a periodic function with a period of <m>\pi</m>. To graph <m>y=\tan x</m>, we can focus on plotting one period and then repeat those values to complete the graph. Before choosing an interval for plotting, let's revisit the definition of tangent:
+    </p>
+    <p>
+      <me>
+        \tan x = \frac{\sin x}{\cos x}
+      </me>
+    </p>
+    <p>
+      However, issues arise when the denominator is zero, i.e., when <m>\cos x=0</m>. This leads to undefined points at <m>\ldots, -\frac{3\pi}{2}, -\frac{\pi}{2}, \frac{\pi}{2}, \frac{3\pi}{2}, \frac{5\pi}{2}, \ldots</m>. In general, any angle of the form <m>n\frac{\pi}{2}</m>, where <m>n</m> is an odd integer, should be excluded from the domain since tangent is undefined at these values.
+    </p>
+    <p>
+      Now that we know where tangent is undefined, we will choose the interval <m>\left(-\frac{\pi}{2},\frac{\pi}{2}\right)</m> to plot our points for tangent. This interval has a length of <m>\pi</m> (one period), allowing us to repeat the values to complete the graph of tangent. <xref ref="tab_tan-graph-values">Table</xref> lists the values of tangent for known angles.
+    </p>
+    <table xml:id="tab_tan-graph-values">
+      <title>Values for 
+        <m>y=\sin x</m>
+      </title>
+      <tabular halign="center">
+        <row bottom="major">
+          <cell><m>x</m></cell>
+          <cell><m>\tan x</m></cell>
+          <cell><m>(x,y)</m></cell>
+        </row>
+        <row>
+          <cell><m>-\frac{\pi}{3}</m></cell>
+          <cell><m>-\sqrt{3}</m></cell>
+          <cell><m>\left(-\frac{\pi}{3},-\sqrt{3}\right)</m></cell>
+        </row>
+        <row>
+          <cell><m>-\frac{\pi}{4}</m></cell>
+          <cell><m>-1</m></cell>
+          <cell><m>\left(-\frac{\pi}{4},-1\right)</m></cell>
+        </row>
+        <row>
+          <cell><m>-\frac{\pi}{6}</m></cell>
+          <cell><m>-\frac{\sqrt{3}}{3}</m></cell>
+          <cell><m>\left(-\frac{\pi}{6},-\frac{\sqrt{3}}{3}\right)</m></cell>
+        </row>
+        <row>
+          <cell><m>0</m></cell>
+          <cell><m>0</m></cell>
+          <cell><m>(0,0)</m></cell>
+        </row>
+        <row>
+          <cell><m>\frac{\pi}{6}</m></cell>
+          <cell><m>\frac{\sqrt{3}}{3}</m></cell>
+          <cell><m>\left(\frac{\pi}{6},\frac{\sqrt{3}}{3}\right)</m></cell>
+        </row>
+        <row>
+          <cell><m>\frac{\pi}{4}</m></cell>
+          <cell><m>1</m></cell>
+          <cell><m>\left(\frac{\pi}{4},1\right)</m></cell>
+        </row>
+        <row>
+          <cell><m>\frac{\pi}{3}</m></cell>
+          <cell><m>\sqrt{3}</m></cell>
+          <cell><m>\left(\frac{\pi}{3},\sqrt{3}\right)</m></cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell></cell>
+          <cell right="major"></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <figure xml:id="tan-points-labeled">
+      <caption>
+        The values in <xref ref="tab_tan-graph-values">Table</xref>  plotted on a graph with a smooth curve connecting the points to make the curve for <m>y=\sin(x)</m>.
+      </caption>
+      <image xml:id="fig-sin-points-labeled">
+        <!-- <description><p></p></description> -->
+        <latex-image>
+          \begin{tikzpicture}
+          \begin{axis}[
+          axis lines=middle,clip=false,
+          xmin=-pi/2-0.5,xmax=pi/2+0.5,ymin=-2.2,ymax=2.2,
+          ytick={-sqrt(3),-1,-sqrt(3)/3,sqrt(3)/3,1,sqrt(3)},
+          yticklabels={\(-\sqrt{3}\),\(-1\),\(-\frac{\sqrt{3}}{3}\),\(\frac{\sqrt{3}}{3}\),\(1\),\(\sqrt{3}\)},
+          xtick={-pi/2,-pi/3,-pi/4,-pi/6,0,pi/6,pi/4,pi/3,pi/2},
+          minor xtick={-3*pi/2,-pi/2,pi/2,3*pi/2,5*pi/2},
+          xticklabels={\(-\frac{\pi}{2}\),\(-\frac{\pi}{3}\),\(-\frac{\pi}{4}\),\(-\frac{\pi}{6}\),\(0\),\(\frac{\pi}{6}\),\(\frac{\pi}{4}\),\(\frac{\pi}{3}\),\(\frac{\pi}{2}\)},
+          xticklabel style={black},
+          xlabel=\(x\),
+          ylabel=\(y\)]
+          \addplot[,domain=-pi/3:pi/3,samples=200,blue,line width=1pt]{tan(deg(x))}node[right,pos=1]{\(y =\tan(x)\)};
+          \pgfplotsinvokeforeach{-pi/3,-pi/4,-pi/6,0,pi/6,pi/4,pi/3}{
+            \fill[red] (#1,{tan(#1 r)}) circle (2pt);}
+          \end{axis}
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </figure>
+
+
+    <figure xml:id="tangent-graph-animation1">
+      <caption>
+        Add caption.
+      </caption>
+      <interactive geogebra="uwxqym67" aspect="1.75:0.75"/>
+    </figure>
+    
+
+
+
+    <figure xml:id="tangent-graph-animation">
+      <caption>
+        Add caption.
+      </caption>
+      <interactive geogebra="hbquvj2f" aspect="1.75:0.75"/>
+    </figure>
+
+    
+  </subsection>
+  <subsection>
+    <title>next topic</title>
+    <p>
+      Tangent then cotangent
+    </p>
+    <p>
+      Transformations of the two
+    </p>
+    <p>
+      cosecant and secant
+    </p>
+    <p>
+      transformations
+    </p>
+  </subsection>
   <p>
     EMPTY SECTION
   </p>
   <p>
-    Recall that if <m>\theta</m> is an angle with radian measure <m>t</m>,
-    then the <term>six trigonometric functions</term> become
+    Recall that if <m>\theta</m> is an angle with radian measure <m>t</m>, then the <term>six trigonometric functions</term> become
     <md>
       <mrow>\sin \theta\amp =y \amp  \cos \theta\amp =x \amp  \tan \theta\amp =\frac{y}{x}  (x\neq0)</mrow>
       <mrow>\csc \theta\amp =\frac{1}{y}  (y\neq0) \amp  \sec \theta\amp =\frac{1}{x}  (x\neq0) \amp  \cot \theta\amp =\frac{x}{y}  (y\neq0)</mrow>
@@ -14,46 +150,29 @@
   </p>
   <image xml:id="fig-unitcircle-theta" width="50%">
   <latex-image>
-  <![CDATA[\begin{tikzpicture}[scale=2.5]\draw[<->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-  \draw[<->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+  \begin{tikzpicture}[scale=2.5]
+  \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+  \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
   \draw (0,0) circle (1cm);
   \draw[line width=2pt] (0,0) -- (45:1cm) node[midway,above,yshift=0.2cm] {1};
-  \draw[line width=2pt] (0,0) -- (0.707106781187,0) -- (0.707106781187,0.707106781187);
+  \draw[line width=2pt] (0,0) -- (0.707106781187,0) node[midway,below] {$x$};
+  \draw[line width=2pt] (0.707106781187,0) -- (0.707106781187,0.707106781187) node[midway,right] {$y$};
   \filldraw[black] (45:1cm) circle(1pt) node[above right] {\(P(x,y)\)};
-  \draw ([shift=(0:0.25cm)]0,0) arc (0:45:0.25cm) node[midway,right,xshift=0.1cm,yshift=0.1cm] {\(\theta\)};\end{tikzpicture}]]>
+  \draw ([shift=(0:0.25cm)]0,0) arc (0:45:0.25cm) node[midway,right,xshift=0.1cm,yshift=0.1cm] {\(\theta\)};
+  \end{tikzpicture}
   </latex-image>
   </image>
   <p>
-    Division is not required for the trigonometric functions <m>\sin\theta</m> and
-    <m>\cos\theta</m> and so we do not need to worry about dividing by zero,
-    thus <m>\theta</m> can be any angle.
-    In other words, the domains for <m>\sin\theta</m> and
-    <m>\cos\theta</m> consist of the set of all real numbers.
+    Division is not required for the trigonometric functions <m>\sin\theta</m> and <m>\cos\theta</m> and so we do not need to worry about dividing by zero,
+    thus <m>\theta</m> can be any angle. In other words, the domains for <m>\sin\theta</m> and <m>\cos\theta</m> consist of the set of all real numbers.
   </p>
   <p>
-    However, looking at <m>\tan\theta</m> and <m>\sec\theta</m>,
-    you may notice there is division by <m>x</m>.
-    We run into problems when <m>x=0</m> because it would result in dividing by 0.
-    These are the points when the terminal side of <m>\theta</m> lies on the <m>y</m>-axis.
-    On the unit circle, the points are <m>(0,1)</m> and <m>(0,-1)</m>.
-    These points correspond to the angles <m>\frac{\pi}{2}</m> and
-    <m>\frac{3\pi}{2}</m> (<m>90^{\circ}</m> and <m>270^{\circ}</m>),
-    as well as all their coterminal angles:
-    <m>\ldots, -\frac{3\pi}{2}, \frac{-\pi}{2}, \frac{\pi}{2}, \frac{3\pi}{2}, \frac{5\pi}{2}, \ldots</m>
-    (<m>\ldots, -270^{\circ}, -90^{\circ}, 90^{\circ}, 270^{\circ}, 450^{\circ}, \ldots</m>).
-    In general, any angle of the form
-    <m>\frac{\pi}{2}+n\pi</m> (<m>90^{\circ}+180^{\circ}\cdot n</m>) for some integer <m>n</m> should be excluded from the domain.
+    However, looking at <m>\tan\theta</m> and <m>\sec\theta</m>, you may notice there is division by <m>x</m>. We run into problems when the denominator is zero, in other words, <m>x=0</m> would result in dividing by 0. These are the points when the terminal side of <m>\theta</m> lies on the <m>y</m>-axis. On the unit circle, the points are <m>(0,1)</m> and <m>(0,-1)</m>. These points correspond to the angles <m>\frac{\pi}{2}</m> and<m>\frac{3\pi}{2}</m>, as well as all their coterminal angles:
+    <m>\ldots, -\frac{3\pi}{2}, \frac{-\pi}{2}, \frac{\pi}{2}, \frac{3\pi}{2}, \frac{5\pi}{2}, \ldots</m>. In general, any angle of the form
+    <m>\frac{\pi}{2}+n\pi</m> for some integer <m>n</m> should be excluded from the domain.
   </p>
   <p>
-    Similarly, we run into problems for <m>\csc\theta</m> and
-    <m>\cot\theta</m> when <m>y=0</m> since we would divide by 0.
-    This corresponds to when the terminal side of <m>\theta</m> lies on the <m>x</m>-axis.
-    These points on the unit circle are <m>(1,0)</m> and <m>(-1,0)</m> and have corresponding angles <m>0</m> and <m>\pi</m>,
-    as well as all their coterminal angles:
-    <m>\ldots, -2\pi, -\pi, 0, \pi, 2\pi, \ldots</m>
-    (<m>\ldots, -360^{\circ}, -180^{\circ}, 0^{\circ}, 180^{\circ}, 360^{\circ}, \ldots</m>).
-    In general, any angle of the form
-    <m>\pi\cdot n</m> (<m>180^{\circ}\cdot n</m>) for some integer <m>n</m> should be excluded from the domain.
+    Similarly, we run into problems for <m>\csc\theta</m> and <m>\cot\theta</m> when <m>y=0</m> since we would divide by 0. This corresponds to when the terminal side of <m>\theta</m> lies on the <m>x</m>-axis. These points on the unit circle are <m>(1,0)</m> and <m>(-1,0)</m> and have corresponding angles <m>0</m> and <m>\pi</m>, as well as all their coterminal angles: <m>\ldots, -2\pi, -\pi, 0, \pi, 2\pi, \ldots</m>. In general, any angle of the form <m>\pi\cdot n</m> for some integer <m>n</m> should be excluded from the domain.
   </p>
   <example xml:id="example-sun-declination">
     <title>Rising Sun</title>
@@ -136,11 +255,7 @@
     </tabular>
   </table>
   <p>
-    Next we look at the range for each of the trigonometric functions.
-    If <m>P(x,y)</m> is a point on the unit circle,
-    then we have <m>-1\leq x\leq1</m> and <m>-1\leq y\le1</m>.
-    Since <m>\sin\theta=y</m> and <m>\cos\theta=x</m>,
-    it follows that <m>-1\leq\sin\theta\leq1</m> and <m>-1\leq\cos\theta\leq1</m>.
+    Next we look at the range for each of the trigonometric functions. If <m>P(x,y)</m> is a point on the unit circle, then we have <m>-1\leq x\leq1</m> and <m>-1\leq y\le1</m>. Since <m>\sin\theta=y</m> and <m>\cos\theta=x</m>, it follows that <m>-1\leq\sin\theta\leq1</m> and <m>-1\leq\cos\theta\leq1</m>.
   </p>
   <p>
     **Look at Sullivan p384 for csc sec, cot/tan
@@ -211,10 +326,7 @@
     </tabular>
   </table>
   <p>
-    Recall that <m>\cos(0)=0</m> but so do <m>\cos(0+2\pi)=\cos2\pi=0</m>.
-    In fact, if we add or subtract any multiple of <m>2\pi</m> to our angle,
-    we will obtain the same value for cosine.
-    Functions such as these are known as
+    Recall that <m>\cos(0)=0</m> but so do <m>\cos(0+2\pi)=\cos2\pi=0</m>. In fact, if we add or subtract any multiple of <m>2\pi</m> to our angle, we will obtain the same value for cosine. Functions such as these are known as
     <em>periodic functions</em>
   </p>
   <definition>
@@ -227,10 +339,7 @@
         <me>
           f(\theta+p)=f(x)
         </me>
-        for all <m>\theta</m> in the domain of <m>f</m>.
-        The smallest value of the number <m>p</m> is called the <term>period</term>
-            <idx><h>period</h></idx>
-        of <m>f</m>.
+        for all <m>\theta</m> in the domain of <m>f</m>. The smallest value of the number <m>p</m> is called the <term>period</term><idx><h>period</h></idx> of <m>f</m>.
       </p>
     </statement>
   </definition>
