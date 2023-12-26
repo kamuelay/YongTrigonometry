@@ -43,7 +43,7 @@
       The position where the Sun rises throughout the year exhibits a repeating pattern, characterized as a <term>periodic function</term> with a cycle of about one year. This function can be mathematically represented as either a sine or cosine function. Graphically, it illustrates the sunrise position on the horizon relative to the east (Hikina) as time progresses. By examining this function, we can observe the gradual northward and southward movement of the sunrise position throughout the year. Key dates such as the equinoxes and solstices mark significant points in this pattern, providing insights into the changing seasons and variations in daylight hours.
     </p>
     <p>
-      In this section, we will explore the graphs of the sine and cosine functions through their periodic nature. Studying the graphs of sine and cosine functions provides valuable insights into the world around us. The graphs of the remaining trigonometric functions will be covered in <xref ref="Graphs_of_Other_Trigonometric_Functions">Section</xref>.
+      In this section, we will explore the periodic nature of sine and cosine functions and study their transformations. Studying the graphs of sine and cosine functions provides valuable insights into the world around us. The graphs of the remaining trigonometric functions will be covered in <xref ref="Graphs_of_Other_Trigonometric_Functions">Section</xref>.
     </p>
   </introduction>
   <subsection xml:id="subsec-sine-function">
@@ -918,31 +918,755 @@
     <exercisegroup>
       <introduction>
         <p>
-          Determine the amplitude and period for each graph.
+          Graph the function.
         </p>
       </introduction>
-    
       <exercise>
         <statement>
           <p>
-            
+            <m>y = \sin(x) - 3</m>
           </p>
         </statement>
+        <answer>
+          <image xml:id="exer-vshift-amp1">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=-2*pi-0.5,xmax=3*pi+0.5,ymin=-5.2,ymax=1.2,
+              ytick={-5,-4,-3,-2,-1,0,1},
+              minor ytick={-4.5,-3.5,-2.5,-1.5-0.5,0.5},
+              xtick={-2*pi,-pi,0,pi,2*pi,3*pi},
+              xticklabels={\(-2\pi\),\(-\pi\),\(0\),\(\pi\),\(2\pi\),\(3\pi\)},
+              xticklabel style={black},
+              xlabel=\(x\),
+              ylabel=\(y\)]
+              \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt]{sin(deg(x))-3}node[right,pos=1]{\(y = \sin(x) - 3\)};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>y = -2 \sin(x)</m>
+          </p>
+        </statement>
+        <answer>
+          <image xml:id="exer-vshift-amp2">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=-2*pi-0.5,xmax=3*pi+0.5,ymin=-2.2,ymax=2.2,
+              ytick={-2,-1,1,2},
+              minor ytick={-1.5,-0.5,0.5,1.5},
+              xtick={-2*pi,-pi,0,pi,2*pi,3*pi},
+              xticklabels={\(-2\pi\),\(-\pi\),\(0\),\(\pi\),\(2\pi\),\(3\pi\)},
+              xticklabel style={black},
+              xlabel=\(x\),
+              ylabel=\(y\)]
+              \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt]{-2*sin(deg(x))}node[right,pos=1]{\(y=-2\sin(x)\)};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>y = 4 \cos(x)</m>
+          </p>
+        </statement>
+        <answer>
+          <image xml:id="exer-vshift-amp3">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=-2*pi-0.5,xmax=3*pi+0.5,ymin=-4.2,ymax=4.2,
+              ytick={-4,-3,-2,-1,1,2,3,4},
+              minor ytick={-3.5,-2.5,-1.5,-0.5,0.5,1.5,2.5,3.5},
+              xtick={-2*pi,-pi,0,pi,2*pi,3*pi},
+              xticklabels={\(-2\pi\),\(-\pi\),\(0\),\(\pi\),\(2\pi\),\(3\pi\)},
+              xticklabel style={black},
+              xlabel=\(x\),
+              ylabel=\(y\)]
+              \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt]{4*cos(deg(x))}node[right,pos=1]{\(y = 4 \cos(x)\)};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>y = \cos(x) + 1</m>
+          </p>
+        </statement>
+        <answer>
+          <image xml:id="exer-vshift-amp4">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=-2*pi-0.5,xmax=3*pi+0.5,ymin=-2.2,ymax=2.2,
+              ytick={-2,-1,1,2},
+              minor ytick={-1.5,-0.5,0.5,1.5},
+              xtick={-2*pi,-pi,0,pi,2*pi,3*pi},
+              xticklabels={\(-2\pi\),\(-\pi\),\(0\),\(\pi\),\(2\pi\),\(3\pi\)},
+              xticklabel style={black},
+              xlabel=\(x\),
+              ylabel=\(y\)]
+              \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt]{cos(deg(x))+1}node[right,pos=1]{\(y = \cos(x) + 1\)};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>y = \frac{1}{2} \sin(x)</m>
+          </p>
+        </statement>
+        <answer>
+          <image xml:id="exer-vshift-amp5">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=-2*pi-0.5,xmax=3*pi+0.5,ymin=-2.2,ymax=2.2,
+              ytick={-2,-1,1,2},
+              minor ytick={-1.5,-0.5,0.5,1.5},
+              xtick={-2*pi,-pi,0,pi,2*pi,3*pi},
+              xticklabels={\(-2\pi\),\(-\pi\),\(0\),\(\pi\),\(2\pi\),\(3\pi\)},
+              xticklabel style={black},
+              xlabel=\(x\),
+              ylabel=\(y\)]
+              \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt]{-0.5*sin(deg(x))}node[right,pos=1]{\(y = \frac{1}{2} \sin(x)\)};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>y = 5 \cos(x)</m>
+          </p>
+        </statement>
+        <answer>
+          <image xml:id="exer-vshift-amp6">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=-2*pi-0.5,xmax=3*pi+0.5,ymin=-6.2,ymax=6.2,
+              ytick={-6,-5,-4,-3,-2,-1,1,2,3,4,5,6},
+              minor ytick={-5.5,-4.5,-3.5,-2.5,-1.5,-0.5,0.5,1.5,2.5,3.5,4.5,5.5},
+              xtick={-2*pi,-pi,0,pi,2*pi,3*pi},
+              xticklabels={\(-2\pi\),\(-\pi\),\(0\),\(\pi\),\(2\pi\),\(3\pi\)},
+              xticklabel style={black},
+              xlabel=\(x\),
+              ylabel=\(y\)]
+              \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt]{5*cos(deg(x))}node[right,pos=1]{\(y = 5 \cos(x)\)};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>y = \sin(x) + 2</m>
+          </p>
+        </statement>
+        <answer>
+          <image xml:id="exer-vshift-amp7">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=-2*pi-0.5,xmax=3*pi+0.5,ymin=-0.2,ymax=4.2,
+              ytick={0,1,2,3,4},
+              minor ytick={0.5,1.5,2.5,3.5},
+              xtick={-2*pi,-pi,0,pi,2*pi,3*pi},
+              xticklabels={\(-2\pi\),\(-\pi\),\(0\),\(\pi\),\(2\pi\),\(3\pi\)},
+              xticklabel style={black},
+              xlabel=\(x\),
+              ylabel=\(y\)]
+              \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt]{sin(deg(x))+2}node[right,pos=1]{\(y = \sin(x) + 2\)};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>y = -4 \cos(x) - 2</m>
+          </p>
+        </statement>
+        <answer>
+          <image xml:id="exer-vshift-amp8">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=-2*pi-0.5,xmax=3*pi+0.5,ymin=-6.2,ymax=6.2,
+              ytick={-6,-5,-4,-3,-2,-1,1,2,3,4,5,6},
+              minor ytick={-5.5,-4.5,-3.5,-2.5,-1.5,-0.5,0.5,1.5,2.5,3.5,4.5,5.5},
+              xtick={-2*pi,-pi,0,pi,2*pi,3*pi},
+              xticklabels={\(-2\pi\),\(-\pi\),\(0\),\(\pi\),\(2\pi\),\(3\pi\)},
+              xticklabel style={black},
+              xlabel=\(x\),
+              ylabel=\(y\)]
+              \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt]{-4*cos(deg(x))-2}node[right,pos=1]{\(y = -4 \cos(x) - 2\)};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>y = -3 \sin(x) + 2</m>
+          </p>
+        </statement>
+        <answer>
+          <image xml:id="exer-vshift-amp9">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=-2*pi-0.5,xmax=3*pi+0.5,ymin=-3.2,ymax=6.2,
+              ytick={-3,-2,-1,1,2,3,4,5,6},
+              minor ytick={-2.5,-1.5,-0.5,0.5,1.5,2.5,3.5,4.5,5.5},
+              xtick={-2*pi,-pi,0,pi,2*pi,3*pi},
+              xticklabels={\(-2\pi\),\(-\pi\),\(0\),\(\pi\),\(2\pi\),\(3\pi\)},
+              xticklabel style={black},
+              xlabel=\(x\),
+              ylabel=\(y\)]
+              \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt]{-3*sin(deg(x))+2}node[right,pos=1]{\(y = -3 \sin(x) + 2\)};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>y = 4 \cos(x) - 1</m>
+          </p>
+        </statement>
+        <answer>
+          <image xml:id="exer-vshift-amp10">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=-2*pi-0.5,xmax=3*pi+0.5,ymin=-5.2,ymax=5.2,
+              ytick={-5,-4,-3,-2,-1,1,2,3,4,5},
+              minor ytick={-4.5,-3.5,-2.5,-1.5,-0.5,0.5,1.5,2.5,3.5,4.5},
+              xtick={-2*pi,-pi,0,pi,2*pi,3*pi},
+              xticklabels={\(-2\pi\),\(-\pi\),\(0\),\(\pi\),\(2\pi\),\(3\pi\)},
+              xticklabel style={black},
+              xlabel=\(x\),
+              ylabel=\(y\)]
+              \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt]{4*cos(deg(x))-1}node[right,pos=1]{\(y = 4 \cos(x) - 1\)};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>y = 2 \sin(x) - 4</m>
+          </p>
+        </statement>
+        <answer>
+          <image xml:id="exer-vshift-amp11">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=-2*pi-0.5,xmax=3*pi+0.5,ymin=-6.2,ymax=1.2,
+              ytick={-6,-5,-4,-3,-2,-1,1},
+              minor ytick={-5.5,-4.5,-3.5,-2.5,-1.5,-0.5,0.5},
+              xtick={-2*pi,-pi,0,pi,2*pi,3*pi},
+              xticklabels={\(-2\pi\),\(-\pi\),\(0\),\(\pi\),\(2\pi\),\(3\pi\)},
+              xticklabel style={black},
+              xlabel=\(x\),
+              ylabel=\(y\)]
+              \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt]{2*sin(deg(x))-4}node[right,pos=1]{\(y = 2 \sin(x) - 4\)};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>y = -\frac{1}{2} \cos(x) - 1</m>
+          </p>
+        </statement>
+        <answer>
+          <image xml:id="exer-vshift-amp12">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=-2*pi-0.5,xmax=3*pi+0.5,ymin=-2.2,ymax=1.2,
+              ytick={-2,-1,1},
+              minor ytick={-1.5,-0.5,0.5},
+              xtick={-2*pi,-pi,0,pi,2*pi,3*pi},
+              xticklabels={\(-2\pi\),\(-\pi\),\(0\),\(\pi\),\(2\pi\),\(3\pi\)},
+              xticklabel style={black},
+              xlabel=\(x\),
+              ylabel=\(y\)]
+              \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt]{-0.5*cos(deg(x))-1}node[right,pos=1]{\(y = -\frac{1}{2} \cos(x) - 1\)};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup>
+      <introduction>
+        <p>
+          Determine the amplitude and period for each function, and sketch the graph.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>y = -2\sin(3x)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Amplitude: <m>2</m>;
+            Period: <m>\frac{2\pi}{3}</m>;
+          </p>
+          <image xml:id="exer-amp-per1">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=-2*pi-0.5,xmax=3*pi+0.5,ymin=-2.2,ymax=2.2,
+              ytick={-2,-1,1,2},
+              minor ytick={-1.5,-0.5,0.5,1.5},
+              xtick={-2*pi,-pi,0,pi,2*pi,3*pi},
+              minor xtick={-3*pi/2,-pi/2,pi/2,3*pi/2,5*pi/2},
+              xticklabels={\(-2\pi\),\(-\pi\),\(0\),\(\pi\),\(2\pi\),\(3\pi\)},
+              xticklabel style={black},
+              xlabel=\(x\),
+              ylabel=\(y\)]
+              \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt]{-2*sin(deg(3*x))}node[right,pos=1]{\(y = -2\sin(3x)\)};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>y = 3 \cos\left(\frac{\pi}{4}x\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Amplitude: <m>3</m>;
+            Period: <m>8</m>;
+          </p>
+          <image xml:id="exer-amp-per2">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=-6.5,xmax=10.5,ymin=-3.2,ymax=3.2,
+              ytick={-3,-2,-1,1,2,3},
+              minor ytick={-1.5,-0.5,0.5,1.5},
+              xtick={-6,-4,...,10},
+              minor xtick={-5,-3,...,9},
+              xticklabel style={black},
+              xlabel=\(x\),
+              ylabel=\(y\)]
+              \addplot[stealth-stealth,domain=-6.5:10.5,samples=200,blue,line width=1pt]{3*cos(deg(pi/4*x))}node[right,pos=0.65]{\(y = 3\cos\left(\frac{\pi}{4}x\right)\)};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>y = \frac{1}{2} \sin\left(\frac{\pi}{6}x\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Amplitude: <m>\frac{1}{2}</m>;
+            Period: <m>12</m>;
+          </p>
+          <image xml:id="exer-amp-per3">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=-6.5,xmax=18.5,ymin=-1.7,ymax=1.7,
+              ytick={-1.5,-1,...,1.5},
+              minor ytick={-1.25,-0.75,...,1.25},
+              xtick={-6,-4,...,18},
+              minor xtick={-5,-3,...,17},
+              xticklabel style={black},
+              xlabel=\(x\),
+              ylabel=\(y\)]
+              \addplot[stealth-stealth,domain=-6.5:18.5,samples=200,blue,line width=1pt]{1/2*sin(deg(pi/6*x))}node[below,pos=0.6 ]{\(y = \frac{1}{2} \sin\left(\frac{\pi}{6}x\right)\)};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>y = -4\cos(2x)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Amplitude: <m>4</m>;
+            Period: <m>\pi</m>;
+          </p>
+          <image xml:id="exer-amp-per4">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=-2*pi-0.5,xmax=3*pi+0.5,ymin=-4.2,ymax=4.2,
+              ytick={-4,-3,...,4},
+              minor ytick={-3.5,-2.5,...,3.5},
+              xtick={-2*pi,-pi,0,pi,2*pi,3*pi},
+              minor xtick={-3*pi/2,-pi/2,pi/2,3*pi/2,5*pi/2},
+              xticklabels={\(-2\pi\),\(-\pi\),\(0\),\(\pi\),\(2\pi\),\(3\pi\)},
+              xticklabel style={black},
+              xlabel=\(x\),
+              ylabel=\(y\)]
+              \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt]{-4*cos(deg(2*x))}node[right,pos=1]{\(y = -4\cos(2x)\)};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>y = -\frac{2}{3} \sin\left(\frac{\pi}{2}x\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Amplitude: <m>\frac{2}{3}</m>;
+            Period: <m>4</m>;
+          </p>
+          <image xml:id="exer-amp-per5">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=-4.5,xmax=8.5,ymin=-1.2,ymax=1.2,
+              ytick={-1,-2/3,...,1},
+              yticklabels={\(-1\),\(-\frac{2}{3}\),\(-\frac{1}{3}\),\(0\),\(\frac{1}{3}\),\(\frac{2}{3}\),\(1\)},
+              xtick={-4,-2,...,8},
+              minor xtick={-3,-1,...,7},
+              xticklabels={\(-2\pi\),\(-\pi\),\(0\),\(\pi\),\(2\pi\),\(3\pi\),\(4\pi\)},
+              xticklabel style={black},
+              xlabel=\(x\),
+              ylabel=\(y\)]
+              \addplot[stealth-stealth,domain=-4.5:8.5,samples=200,blue,line width=1pt]{-2/3*sin(deg(pi/2*x))}node[below,pos=0.73]{\(y = -\frac{2}{3} \sin\left(\frac{\pi}{2}x\right)\)};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>y = \frac{5}{4} \cos\left(\frac{\pi}{3}x\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Amplitude: <m>\frac{5}{4}</m>;
+            Period: <m>6</m>;
+          </p>
+          <image xml:id="exer-amp-per6">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=-6.5,xmax=12.5,ymin=-1.7,ymax=1.7,
+              ytick={-1.25,-0.75,...,1.25},
+              minor ytick={-1.5,-1,...,1.5},
+              yticklabels={\(-\frac{5}{4}\),\(-\frac{3}{4}\),\(-\frac{1}{4}\),\(\frac{1}{4}\),\(\frac{3}{4}\),\(\frac{5}{4}\)},
+              xtick={-6,-2,...,12},
+              minor xtick={-5,-3,...,11},
+              xticklabel style={black},
+              xlabel=\(x\),
+              ylabel=\(y\)]
+              \addplot[stealth-stealth,domain=-6.5:12.5,samples=200,blue,line width=1pt]{5/4*cos(deg(pi/3*x))}node[below,pos=0.73]{\(y = \frac{5}{4} \cos\left(\frac{\pi}{3}x\right)\)};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>y = \frac{2}{7}\sin(3x)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>y = -\frac{3}{5} \cos\left(\frac{\pi}{8}x\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+
+          </p>
+        </answer>
       </exercise>
     
     </exercisegroup>
-    <exercise>
-      <p>Graph the function</p>
-    </exercise>
-    <exercise>
-      <p>
-        Identify the amplitude and period, then graph the function.
-      </p>
-    </exercise>
-    <exercise>
-      <p>
-        Find amplitude, period, and horizontal shift.
-      </p>
-    </exercise>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Identify the amplitude and period for each given graph, and match the graph to one of the functions below.
+        </p>
+        <ul>
+          <li>
+            <p>
+              <m>y = -\frac{4}{3} \cdot \sin\left(\frac{\pi}{5}x\right)</m>
+<m>y = 2 \cdot \cos(4x)</m>
+<m>y = -\frac{3}{2} \cdot \sin\left(\frac{\pi}{7}x\right)</m>
+<m>y = \frac{5}{4} \cdot \cos\left(\frac{\pi}{6}x\right)</m>
+<m>y = 2 \cdot \sin\left(\frac{\pi}{3}x\right)</m>
+<m>y = -\frac{1}{2} \cdot \cos(5x)</m>
+<m>y = 3 \cdot \sin\left(\frac{\pi}{4}x\right)</m>
+<m>y = -\frac{2}{5} \cdot \cos(3x)</m>
+            </p>
+          </li>
+        </ul>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>graph goes here</p>
+        </statement>
+        <answer>
+          <p>
+            answer goes here
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Find the amplitude, period, and phase shift of each function and sketch the graph.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>y = 2 \cdot \sin\left(3x - \frac{\pi}{4}\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>y = -\frac{1}{2} \cdot \cos\left(\frac{\pi}{2}(2x - 1)\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>y = \frac{3}{4} \cdot \sin\left(\frac{\pi}{3}(4x - 2)\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>y = -\frac{4}{5} \cdot \cos(2x + \pi)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>y = \frac{1}{2} \cdot \sin\left(\frac{\pi}{6}(3x - 2)\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>y = 3 \cdot \cos\left(\frac{\pi}{4}(5x + 1)\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>y = -\frac{2}{3} \cdot \sin\left(2x - \frac{\pi}{3}\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>y = \frac{5}{4} \cdot \cos\left(\frac{\pi}{5}(6x + \frac{\pi}{2})\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>y = -\sin\left(2x - \frac{\pi}{6}\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>y = 4 \cdot \cos\left(\frac{\pi}{2}(3x + 2)\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+
+
+    <exercisegroup>
+      <introduction>
+        <p>
+          Write the equation of a sine function with the following characteristics:
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            Amplitude = 2; Period = <m>\pi</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            answer here
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup>
+      <introduction>
+        <p>
+          For each given graph, identify the amplitude, period, and phase shift. Write an equation that represents these characteristics.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            graph here
+          </p>
+        </statement>
+        <answer>
+          <p>
+            amplitude, period, phase shift, and equations
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
   </exercises>
 </section>
