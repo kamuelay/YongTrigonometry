@@ -870,7 +870,7 @@
     <p>
       We will now summarize the transformations by consolidating them into a single equation.
     </p>
-    <remark>
+    <remark xml:id="sine-cosine-transformations">
       <title>Transformations of Sine and Cosine</title>
       <p>
         When dealing with functions in the form
@@ -888,6 +888,25 @@
           <li>Amplitude: <m>|A|</m></li>
           <li>Period: <m>\frac{2\pi}{B}</m></li>
           <li>Phase Shift: <m>C</m></li>
+          <li>Vertical Shift: <m>D</m></li>
+        </ul>
+      </p>
+      <p>
+        When dealing with functions in the form
+      </p>
+      <p>
+        <me>
+          y=A\cdot\sin(Bx-E)+D \quad \mbox{and} \quad y=A\cdot\cos(Bx-E)+D
+        </me>
+      </p>
+      <p>
+        we can express the transformations as follows:
+      </p>
+      <p>
+        <ul>
+          <li>Amplitude: <m>|A|</m></li>
+          <li>Period: <m>\frac{2\pi}{B}</m></li>
+          <li>Phase Shift: <m>\frac{E}{B}</m></li>
           <li>Vertical Shift: <m>D</m></li>
         </ul>
       </p>
