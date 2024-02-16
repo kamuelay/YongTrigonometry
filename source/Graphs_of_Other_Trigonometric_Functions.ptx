@@ -6,7 +6,7 @@
       This section explores the graphs of tangent, cotangent, cosecant, and secant, including their periodic behaviors and transformations.
     </p>
   </introduction>
-  <subsection xml:id="subsec-sine-function">
+  <subsection xml:id="subsec-tangent-function">
     <title>The Tangent Function</title>
     <p>
       In <xref ref="subsec_periodic-functions"/> we learned that tangent is a periodic function with a period of <m>\pi</m>. To graph <m>y=\tan x</m>, we can focus on plotting one period and then repeat those values to complete the graph. Before choosing an interval for plotting, let's revisit the definition of tangent:
@@ -79,7 +79,7 @@
       <caption>
         The values in <xref ref="tab_tan-graph-values">Table</xref>  plotted on a graph with a smooth curve connecting the points to make the curve for <m>y=\sin(x)</m>.
       </caption>
-      <image xml:id="fig-sin-points-labeled">
+      <image xml:id="fig-sin-points-labeled2">
         <!-- <description><p></p></description> -->
         <latex-image>
           \begin{tikzpicture}
