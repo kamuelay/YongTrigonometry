@@ -607,7 +607,7 @@
           <caption>
             Watch as the canoe approaches an island from two different views. On the left, see a side view as the island gradually comes into sight over the horizon. On the right, experience the perspective from the canoe's deck, observing the island appearing to rise from the water. This dual perspective provides a unique glimpse into the legend of Maui, the demigod who pulled the islands from the ocean with his fish-hook.
           </caption>
-          <video youtube="https://youtu.be/D9qv5TKhIEM"/>
+          <video youtube="D9qv5TKhIEM"/>
         </figure>
         <p>
           <ol>
@@ -636,7 +636,7 @@
                   \begin{tikzpicture}[scale=4]
                   \draw ([shift=(30:1)]0,0) arc (30:150:1);
                   \draw[blue] (0,0) -- (0,1) node[midway, right] {$R$};
-                  \draw (-0.363970234266,1 -- (0.839099631177,1);
+                  \draw (-0.363970234266,1) -- (0.839099631177,1);
                   \draw pic at (-0.342020143326,0.939692620786) {waa-side={waacolor}{20}{0.1}};
                   \draw (0,0.9) -- (-0.1,0.9) -- (-0.1,1);
                   \draw[blue] (0,0) -- (-0.342020143326,0.939692620786) node[midway, left,xshift=-2] {$R$};
