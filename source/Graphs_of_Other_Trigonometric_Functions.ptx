@@ -20,7 +20,7 @@
       However, issues arise when the denominator is zero, i.e., when <m>\cos x=0</m>. This leads to undefined points at <m>\ldots, -\frac{3\pi}{2}, -\frac{\pi}{2}, \frac{\pi}{2}, \frac{3\pi}{2}, \frac{5\pi}{2}, \ldots</m>. In general, any angle of the form <m>n\frac{\pi}{2}</m>, where <m>n</m> is an odd integer, should be excluded from the domain since tangent is undefined at these values. In fact, any line of the form <m>x=n\frac{\pi}{2}</m> (e.g. <m>x=-\frac{\pi}{2}</m> and <m>x=\frac{\pi}{2}</m>) is a <term>vertical asymptote</term><idx><h>vertical asymptote</h></idx> 
     </p>
     <p>
-      Now that we know where tangent is undefined, we will choose the interval <m>\left(-\frac{\pi}{2},\frac{\pi}{2}\right)</m> to plot our points for tangent. This interval has a length of <m>\pi</m> (one period), allowing us to repeat the values to complete the graph of tangent. Values of tangent for known angles are listed in <xref ref="tab_tan-graph-values">Table</xref> and plotted in <xref="tan-points-labeled">Figure</xref>. 
+      Now that we know where tangent is undefined, we will choose the interval <m>\left(-\frac{\pi}{2},\frac{\pi}{2}\right)</m> to plot our points for tangent. This interval has a length of <m>\pi</m> (one period), allowing us to repeat the values to complete the graph of tangent. Values of tangent for known angles are listed in <xref ref="tab_tan-graph-values">Table</xref> and plotted in <xref ref="tan-points-labeled">Figure</xref>. 
     </p>
     <table xml:id="tab_tan-graph-values">
       <title>Values for 
@@ -104,7 +104,7 @@
     </figure>
 
 
-    <figure xml:id="tangent-graph-animation1">
+    <figure xml:id="tangent-graph-animation">
       <caption>
         Add caption.
       </caption>
@@ -113,15 +113,46 @@
     
 
 
-
-    <figure xml:id="tangent-graph-animation">
+    
+  </subsection>
+  <subsection xml:id="subsec-cotangent-function">
+    <title>The Cotangent Function</title>
+    <p>
+      In <xref ref="subsec_periodic-functions"/> we learned that tangent is a periodic function with a period of <m>\pi</m>. To graph <m>y=\tan x</m>, we can focus on plotting one period and then repeat those values to complete the graph. Before choosing an interval for plotting, let's revisit the definition of tangent:
+    </p>
+    <figure xml:id="cotangent-graph-animation">
       <caption>
         Add caption.
       </caption>
-      <interactive geogebra="hbquvj2f" aspect="1.75:0.75"/>
+      <interactive geogebra="mhzmakps" aspect="1.75:0.75"/>
     </figure>
 
-    
+  </subsection>
+  <subsection xml:id="subsec-cosecant-function">
+    <title>The Cosecant Function</title>
+    <p>
+      In <xref ref="subsec_periodic-functions"/> we learned that tangent is a periodic function with a period of <m>\pi</m>. To graph <m>y=\tan x</m>, we can focus on plotting one period and then repeat those values to complete the graph. Before choosing an interval for plotting, let's revisit the definition of tangent:
+    </p>
+    <figure xml:id="cosecant-graph-animation">
+      <caption>
+        Add caption.
+      </caption>
+      <interactive geogebra="b4zc4xwu" aspect="1.75:0.75"/>
+    </figure>
+
+  </subsection>
+  <subsection xml:id="subsec-secant-function">
+    <title>The Secant Function</title>
+    <p>
+      In <xref ref="subsec_periodic-functions"/> we learned that tangent is a periodic function with a period of <m>\pi</m>. To graph <m>y=\tan x</m>, we can focus on plotting one period and then repeat those values to complete the graph. Before choosing an interval for plotting, let's revisit the definition of tangent:
+    </p>
+    <figure xml:id="secant-graph-animation">
+      <caption>
+        Add caption.
+      </caption>
+      <interactive geogebra="dpng7xuu" aspect="1.75:0.75"/>
+    </figure>
+
   </subsection>
   <subsection>
     <title>next topic</title>
@@ -141,6 +172,8 @@
       transformations
     </p>
   </subsection>
+  <subsection>
+    <title>next topic</title>
   <p>
     EMPTY SECTION
   </p>
@@ -533,4 +566,5 @@ Problem 55, p540 in Abramson's book: Standing on the shore of a lake,
     </p>
   </answer>
   </exercise>
+</subsection>
 </section>
