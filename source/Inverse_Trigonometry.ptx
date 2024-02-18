@@ -115,11 +115,11 @@
     </remark>
     <p>
       Also recall from algebra that for a function, <m>f</m>, to have an inverse, <m>f^{-1}</m>, it must be one-to-one,meaning no horizontal line intersects the graph more than once. Since this is not true for trigonometric functions, they do not have inverses. We need functions to be one-to-one because both <m>\sin\frac{\pi}{4}=\frac{\sqrt{2}}{2}</m> and <m>\sin\frac{3\pi}{4}=\frac{\sqrt{2}}{2}</m> but if we took the inverse of sine,
-      would we wouldn't know to use <m>\sin^{-1}\left(\frac{\sqrt{2}}{2}\right)=\frac{\pi}{4}</m> or <m>\sin^{-1}\left(\frac{\sqrt{2}}{2}\right)=\frac{3\pi}{4}</m>. To avoid this confusion and to ensure the function is one-to-one, we can put restrictions on the domains of each trigonometric function so they attain all the values in the range only once, making the function one-to-one, and thus have an inverse (see <xref ref="fig_sine-not-one-to-one">Figure</xref>).
+      would we wouldn't know to use <m>\sin^{-1}\left(\frac{\sqrt{2}}{2}\right)=\frac{\pi}{4}</m> or <m>\sin^{-1}\left(\frac{\sqrt{2}}{2}\right)=\frac{3\pi}{4}</m>. To avoid this confusion and to ensure the function is one-to-one, we can put restrictions on the domains of each trigonometric function so they attain all the values in the range only once, making the function one-to-one, and thus have an inverse (see <xref ref="sine-not-one-to-one">Figure</xref>).
     </p>
-    <figure xml:id="fig_sine-not-one-to-one">
+    <figure xml:id="sine-not-one-to-one">
       <caption>The graph of <m>f(x)=\sin x</m> does not pass the horizontal line test and is not one-to-one. If we restrict the graph to <m>-\frac{\pi}{2}\leq x\leq\frac{\pi}{2}</m> so that each value in the range <m>[-1,1]</m> is attained only once, then the function is one-to-one and has an inverse.</caption>
-      <image>
+      <image xml:id="fig-sine-not-one-to-one" width="80%">
         <latex-image>
         \begin{tikzpicture}
         \begin{axis}[
