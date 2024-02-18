@@ -258,7 +258,9 @@
       <me>-1\leq \sin\theta\leq1, \quad -1\leq \cos\theta\leq1</me>.
       Since the range of a function consists of all its outputs, we conclude that the range of both the sine and cosine functions spans all real numbers between -1 and 1.
     </p>
-    <xref ref="tab_sin-cos-domain-range">Table</xref> summarizes the domains and ranges for the sine and cosine functions.
+    <p>
+      <xref ref="tab_sin-cos-domain-range">Table</xref> summarizes the domains and ranges for the sine and cosine functions.
+    </p>
     <table xml:id="tab_sin-cos-domain-range">
       <title>Domains and Ranges of Sine and Cosine</title>
       <tabular>
@@ -535,7 +537,7 @@
     </definition>
     <example>
       <statement>
-        <p>Graph <m>y=-4\sin x</m></p> and identify the amplitude.
+        <p>Graph <m>y=-4\sin x</m> and identify the amplitude.</p>
       </statement>
       <solution>
         <p>
@@ -751,7 +753,7 @@
           <ol>
             <li>
               <p>
-                Since this equation is of the form <p><m>y=\cos(Bx-E)</m></p>, we have <m>B=1</m> and <m>E=\pi</m>. Therefore,
+                Since this equation is of the form <m>y=\cos(Bx-E)</m>, we have <m>B=1</m> and <m>E=\pi</m>. Therefore,
               </p>
               <p>
                 <me>\mbox{period}=\frac{2\pi}{B}=\frac{2\pi}{1}=2\pi</me>
