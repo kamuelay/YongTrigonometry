@@ -20,7 +20,22 @@
       However, issues arise when the denominator is zero, i.e., when <m>\cos x=0</m>. This leads to undefined points at <m>\ldots, -\frac{3\pi}{2}, -\frac{\pi}{2}, \frac{\pi}{2}, \frac{3\pi}{2}, \frac{5\pi}{2}, \ldots</m>. In general, any angle of the form <m>n\frac{\pi}{2}</m>, where <m>n</m> is an odd integer, should be excluded from the domain since tangent is undefined at these values. In fact, any line of the form <m>x=n\frac{\pi}{2}</m> (e.g. <m>x=-\frac{\pi}{2}</m> and <m>x=\frac{\pi}{2}</m>) is a <term>vertical asymptote</term><idx><h>vertical asymptote</h></idx> 
     </p>
     <p>
-      Now that we know where tangent is undefined, we will choose the interval <m>\left(-\frac{\pi}{2},\frac{\pi}{2}\right)</m> to plot our points for tangent. This interval has a length of <m>\pi</m> (one period), allowing us to repeat the values to complete the graph of tangent. Values of tangent for known angles are listed in <xref ref="tab_tan-graph-values">Table</xref> and plotted in <xref ref="tan-points-labeled">Figure</xref>. 
+      Now that we know where tangent is undefined, we will choose the interval <m>\left(-\frac{\pi}{2},\frac{\pi}{2}\right)</m> to plot our points for tangent. This interval has a length of <m>\pi</m> (one period), allowing us to repeat the values to complete the graph of tangent.
+    </p>
+    <p>
+      Recall from <xref ref="def-of-trig-functions">Definition</xref> that on the unit circle, the expression <m>\tan\theta=\frac{y}{x}</m> denotes the ratio of the <m>y</m>-coordinate to the <m>x</m>-coordinate of a point <m>P(x, y)</m> associated with an angle <m>\theta</m>. This ratio changes dynamically as <m>\theta</m> varies from zero to <m>\frac{\pi}{2}</m>.
+    </p>
+    <p>
+      As <m>\theta</m> approaches zero, the <m>y</m>-value tends to zero, and <m>x</m> approaches 1, resulting in <m>\tan\theta</m> being a small fraction. Conversely, as <m>\theta</m> approaches <m>\frac{\pi}{2}</m>, the <m>y</m>-value approaches 1, while <m>x</m> becomes extremely small and near zero. This causes <m>\tan\theta</m> to evaluate as a fraction divided by a very small number, producing a large number. A similar effect occurs when <m>\theta</m> is between <m>-\frac{\pi}{2}</m> and zero, except <m>\tan\theta</m> is negative in this range. This behavior is shown in <xref ref="tangent-graph-animation">Figure</xref>.
+    </p>
+    <figure xml:id="tangent-graph-animation">
+      <caption>
+        As <m>\theta</m> moves from <m>-90^{\circ}</m> to <m>90^{\circ}</m>, this figure plots the values of <m>y = \tan \theta</m>. Note that while we will generally be using radians when graphing trigonometric functions, this figure uses degrees to help visualize the angle. For example, you may not be aware that <m>1</m> radians (<m>\approx57.3^{\circ}</m>) lies in Quadrant I.
+      </caption>
+      <interactive geogebra="uwxqym67" aspect="1.75:0.75"/>
+    </figure>
+    <p>
+      Next we recall values of tangent for known angles, which are listed in <xref ref="tab_tan-graph-values">Table</xref> and plotted in <xref ref="tan-points-labeled">Figure</xref>. 
     </p>
     <table xml:id="tab_tan-graph-values">
       <title>Values for 
@@ -79,7 +94,7 @@
       <caption>
         The values in <xref ref="tab_tan-graph-values">Table</xref>  plotted on a graph with a smooth curve connecting the points to make the curve for <m>y=\tan(x)</m>.
       </caption>
-      <image xml:id="fig-sin-points-labeled2">
+      <image xml:id="fig-tan-points-labeled">
         <!-- <description><p></p></description> -->
         <latex-image>
           \begin{tikzpicture}
@@ -102,18 +117,10 @@
         </latex-image>
       </image>
     </figure>
+    <p>
+      Notice the symmetrical nature of the tangent function's graph with respect  to the origin, a feature explained in <xref ref="subsec_even-odd-trig-functions">Section</xref>, where we learned that tangent is an odd function.
+    </p>
 
-
-    <figure xml:id="tangent-graph-animation">
-      <caption>
-        Add caption.
-      </caption>
-      <interactive geogebra="uwxqym67" aspect="1.75:0.75"/>
-    </figure>
-    
-
-
-    
   </subsection>
   <subsection xml:id="subsec-cotangent-function">
     <title>The Cotangent Function</title>
