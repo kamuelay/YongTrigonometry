@@ -528,94 +528,177 @@
       </p>
     </statement>
   </example>
-  <exercise>
-      
-<task>
-<introduction>
-<p>
-  Find the equation for the time that Makalii (Pleiades) emerges over the horizon over time throughout the year.
-        Talk about the importance of this and how when it rises at sunset,
-        it coincides with the start of Makahiki season.
-        Then using an example that we already worked with the sun and the time the sun sets over the year,
-        find the intersection of these two equations to determine when Makahiki season will begin.
-</p>
-</introduction>
-<statement>
-<p>
-Find the equation for the time that Makalii (Pleiades) emerges over the horizon over time throughout the year.
-        Talk about the importance of this and how when it rises at sunset,
-        it coincides with the start of Makahiki season.
-        Then using an example that we already worked with the sun and the time the sun sets over the year,
-        find the intersection of these two equations to determine when Makahiki season will begin.
-    </p>
-  </statement>
-  <answer>
-    <p>
-      MYANSWER
-    </p>
-  </answer>
-</task>
+
+
+
+
+
+
+
+
+
+<exercises xml:id="exercises-graphs-of-other-trig-functions">
+  
+  <exercisegroup cols="2">
+    <introduction>
       <p>
-        ``The rising of Makali`i
-        (the constellation Pleiades)
-        at sunset marks the beginning of the Hawaiian new year,
-        known as Makahiki.
-        Makahiki usally begins mid-November and ends in late January or February,
-        aligning with the rainy season.
-        It is a time set aside for tribute, harvest, sport,
-        and play. " "<url href="\1"/>
-      </p>
-<task>     
-<introduction>
-<p>
-  Problem 55, p540 in Abramson's book: Standing on the shore of a lake,
-        a fisherman sights a boat far in the distance to his left.
-        Let x, measured in radians,
-        be the angle formed by the line of sight to the ship and a line due north from his position.
-        Assume due north is 0 and x is measured negative to the left and positive to the right.
-        (See Figure 19.)
-        The boat travels from due west to due east and,
-        ignoring the curvature of the Earth,
-        the distance d(x), in kilometers,
-        from the fisherman to the boat is given by the function d(x) = 1.5sec(x).
-</p>
-</introduction>
-<statement>
-<p>
-Problem 55, p540 in Abramson's book: Standing on the shore of a lake,
-        a fisherman sights a boat far in the distance to his left.
-        Let x, measured in radians,
-        be the angle formed by the line of sight to the ship and a line due north from his position.
-        Assume due north is 0 and x is measured negative to the left and positive to the right.
-        (See Figure 19.)
-        The boat travels from due west to due east and,
-        ignoring the curvature of the Earth,
-        the distance d(x), in kilometers,
-        from the fisherman to the boat is given by the function d(x) = 1.5sec(x).
-    </p>
-  </statement>
-  <answer>
-    <p>
-      MYANSWER
-    </p>
-  </answer>
-</task>
-      <p>
-        a. What is a reasonable domain for d(x)? b.
-        Graph d(x) on this domain. c.
-        Find and discuss the meaning of any vertical asymptotes on the graph of d(x). d.
-        Calculate and interpret <mdash/> . Round to the e.
-        Calculate and interpret <mdash/>.
-        Round to the second decimal place. f.
-        What is the minimum distance between the fisherman and the boat?
-        When does this occur?
-      </p>
-      
-  <answer>
-    <p>
-      MYANSWER
-    </p>
-  </answer>
-  </exercise>
+        An observer on Rangiroa spots the Faʻafaite, a double-hulled voyaging canoe from Tahiti, sailing off the north coast of the atoll, maintaining a distance of three nautical miles from the shore and traveling east. Let <m>x</m> represent the angle formed between the line from the observer to the vaʻa and a line extending due north from the observer, measured in radians. The angle <m>x</m> is negative if the vaʻa is to the left of the observer and positive when to the right. This is illustrated in <xref ref="exer-faafaite-distance"/>. The distance (in nautical miles), denoted by <m>d(x)</m> from Faʻafaite to the observer is given by the function
+        <me>
+          d(x)=3\sec(x).
+        </me>
+      </p> 
+      <image xml:id="exer-faafaite-distance">
+        <latex-image>
+          \begin{tikzpicture}[scale=6]
+          \node[below,yshift=-5] at (0,0) {Rangiroa};
+          \draw[dashed] (0,0) -- (-1.3,0.5) node[midway,left,xshift=-5,yshift=-5] {$d$};
+          \draw[dashed] (0,0) -- (1.3,0.5);
+          \draw[-stealth] (-1.3,0.5) -- (1.3,0.5);
+          \draw (-1,0) -- (1,0);
+          \draw[dashed] (0,0) -- (0,0.5) node[rotate=90,midway,below,yshift=-5] {North $\rightarrow$};
+          \draw ([shift=(90:0.2)]0,0) arc (90:158.9625:0.2) node[midway,left,xshift=-5] {$x$};
+          \draw (-1.3,0.5) pic {waa-side={waacolor}{0}{0.2}};
+          \draw (-0.1,0.5) -- (-0.1,0.4) -- (0,0.4);
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </introduction>
+    <exercise>
+      <statement>
+        <p>
+          Calculate <m>d\left(-\frac{\pi}{3}\right)</m>, in nautical miles, rounded to two decimals.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>6.00</m> NM
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Calculate <m>d\left(-\frac{\pi}{4}\right)</m>, in nautical miles, rounded to two decimals.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>4.24</m> NM
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Calculate <m>d\left(-\frac{\pi}{6}\right)</m>, in nautical miles, rounded to two decimals.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>3.46</m> NM
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Calculate <m>d\left(0\right)</m>, in nautical miles, rounded to two decimals.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>6.00</m> NM
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Calculate <m>d\left(\frac{\pi}{6}\right)</m>, in nautical miles, rounded to two decimals.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>3.46</m> NM
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Calculate <m>d\left(\frac{\pi}{4}\right)</m>, in nautical miles, rounded to two decimals.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>4.24</m> NM
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Calculate <m>d\left(\frac{\pi}{3}\right)</m>, in nautical miles, rounded to two decimals.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>6.00</m> NM
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Graph the function <m>d(x)</m> on the domain <m>-\frac{\pi}{3}\leq x\leq\frac{\pi}{3}</m>.
+        </p>
+      </statement>
+      <answer>
+        <image xml:id="exer-faataite-sec">
+          <latex-image>
+            \begin{tikzpicture}
+            \begin{axis}[
+            axis lines=middle,clip=false,
+            xmin=-pi/3-0.1,xmax=pi/3+0.1,ymin=-0.2,ymax=6.25,
+            ytick={1,2,3,4,5,6},
+            minor ytick={0.5,1.5,...,6},
+            xtick={-pi/3,-pi/4,-pi/6,pi/6,pi/4,pi/3},
+            xticklabels={\(-\frac{\pi}{3}\),\(-\frac{\pi}{4}\),\(-\frac{\pi}{6}\),\(\frac{\pi}{6}\),\(\frac{\pi}{4}\),\(\frac{\pi}{3}\)},
+            xticklabel style={black},
+            xlabel=\(x\),
+            ylabel=\(y\)]
+              \addplot[stealth-stealth,domain=-pi/3:pi/3,samples=200,blue,line width=1pt]{3*sec(deg(x))}node[right,pos=0.6]{\(d(x)=3\sec(x)\)};
+            \end{axis}
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          What happens to <m>d</m> as <m>x</m> approaches <m>\frac{\pi}{2}</m>?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          As <m>x</m> approaches <m>\frac{\pi}{2}</m>, the function <m>d(x)=3\sec(x)</m> approaches positive infinity.
+        </p>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          What is the closest distance Faʻafaite comes to shore? Where does this occur?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>3</m> NM, when Faʻafaite is directly north of the observer (<m>x=0</m>)
+        </p>
+      </answer>
+    </exercise>
+  </exercisegroup>
+</exercises>
 </subsection>
 </section>
