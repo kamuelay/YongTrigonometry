@@ -222,10 +222,10 @@
       Since we learned in <xref ref="subsec_periodic-functions"/> that the cosecant function is periodic with a period of <m>2\pi</m>, we can focus on one period, such as <m>0\lt x \lt2\pi</m>, and repeat the pattern. In this interval, we have vertical asymptotes at <m>x=0</m>, <m>x=\pi</m>, and <m>x=2\pi</m>.
     </p>
     <p>
-      As <m>x</m> approaches zero, sine is a small number nearing zero, causing cosecant to become large, approaching positive infinity. When <m>x</m> increases towards <m>\frac{\pi}{2}</m>,  sine increases to <m>1</m>, and cosecant decreases to <m>1</m>. As <m>x</m> moves from <m>\frac{\pi}{2}</m> to <m>\pi</m> sine approaches zero, and cosecant approaches infinity.
+      As <m>x</m> approaches zero, sine is a small number nearing zero, causing cosecant to become large, approaching positive infinity. When <m>x</m> increases towards <m>\frac{\pi}{2}</m>,  <m>\sin(x)</m>> increases to <m>1</m>, and cosecant decreases to <m>1</m>. As <m>x</m> moves from <m>\frac{\pi}{2}</m> to <m>\pi</m>, <m>\sin(x)</m> approaches zero, and <m>\csc(x)</m> approaches infinity.
     </p>
     <p>
-      Similarly, for <m>x\gt\pi</m>, nearing <m>\pi</m>, sine is a small, negative number near zero, resulting in cosecant becoming a large negative number, approaching negative infinity. As <m>x</m> increases to <m>\frac{3\pi}{2}</m>, sine decreases to <m>-1</m>, and cosecant increases to <m>-1</m>. Finally, as <m>x</m> moves from <m>\frac{3\pi}{2}</m> to <m>2\pi</m>,  sine once again approaches a small negative number, causing cosecant to approach negative infinity. This behavior is shown in <xref ref="cosecant-graph-animation"/>
+      Similarly, for <m>x\gt\pi</m>, nearing <m>\pi</m>, <m>\sin(x)</m> is a small, negative number near zero, resulting in <m>\csc(x)</m> becoming a large negative number, approaching negative infinity. As <m>x</m> increases to <m>\frac{3\pi}{2}</m>, <m>\sin(x)</m> decreases to <m>-1</m>, and <m>\csc(x)</m> increases to <m>-1</m>. Finally, as <m>x</m> moves from <m>\frac{3\pi}{2}</m> to <m>2\pi</m>, <m>\sin(x)</m> once again approaches a small negative number, causing cosecant to approach negative infinity. This behavior is shown in <xref ref="cosecant-graph-animation"/>
     </p>
     <figure xml:id="cosecant-graph-animation">
       <caption>
@@ -323,7 +323,6 @@
         </row>
       </tabular>
     </table>
-
     <figure xml:id="csc-points-labeled">
       <caption>
         The values in <xref ref="tab_csc-graph-values">Table</xref>  plotted on a graph with a smooth curve connecting the points to make the curve for <m>y=\csc(x)</m>.
@@ -335,7 +334,6 @@
           axis lines=middle,clip=false,
           xmin=-0.5,xmax=2*pi+0.5,ymin=-5.2,ymax=5.2,
           ytick={0,1,...,4},
-%          yticklabels={\(-\sqrt{3}\),\(-1\),\(-\frac{\sqrt{3}}{3}\),\(\frac{\sqrt{3}}{3}\),\(1\),\(\sqrt{3}\)},
           xtick={pi/4,pi/2,...,2*pi},
           xticklabels={\(\frac{\pi}{4}\),\(\frac{\pi}{2}\),\(\frac{3\pi}{4}\),\(\pi\),\(\frac{5\pi}{4}\),\(\frac{3\pi}{2}\),\(\frac{7\pi}{4}\),\(2\pi\)},
           xticklabel style={black},
@@ -357,53 +355,169 @@
       </image>
     </figure>
     <p>
-      Notice the symmetrical nature of the tangent function's graph with respect  to the origin, a feature explained in <xref ref="subsec_even-odd-trig-functions">Section</xref>, where we learned that tangent is an odd function.
-    </p>
-    <p>
       Since the graph in <xref ref="csc-points-labeled"/> represents one period, we can complete the graph of <m>y=\csc x</m> by extending the pattern in both directions to obtain <xref ref="csc-graph-extended"/>.
     </p>
     <figure xml:id="csc-graph-extended">
-      <caption>The plot for <m>y=\csc(x)</m>, with .</caption>
+      <caption>The plot for <m>y=\sin(x)</m> and <m>y=\csc(x)</m>.</caption>
       <image xml:id="fig-csc-graph-extended">
         <latex-image>
           \begin{tikzpicture}
           \begin{axis}[
           axis lines=middle,clip=false,
-          xmin=-5*pi/2-0.5,xmax=5*pi/2+0.5,ymin=-3.3,ymax=3.3,
-          xtick={-2*pi,-pi,...,3*pi},
-          xticklabels={\(-2\pi\),\(-\pi\),,\(\pi\),\(2\pi\),\(3\pi\)},
+          xmin=-2*pi-0.5,xmax=4*pi+0.5,ymin=-5.3,ymax=5.3,
+          xtick={-3*pi/2,-pi/2,...,7*pi/2},
+          xticklabels={\(-\frac{3\pi}{2}\),\(-\frac{\pi}{2}\),\(\frac{\pi}{2}\),\(\frac{3\pi}{2}\),\(\frac{5\pi}{2}\),\(\frac{7\pi}{2}\)},
           xticklabel style={black},
           xlabel=\(x\),
           ylabel=\(y\)]
-          \addplot[stealth-stealth,domain=-5*pi/2+0.3:-3*pi/2-0.3,samples=200,blue,line width=1pt]{tan(deg(x))};
-          \addplot[stealth-stealth,domain=-3*pi/2+0.3:-pi/2-0.3,samples=200,blue,line width=1pt]{tan(deg(x))};
-          \addplot[stealth-stealth,domain=-pi/2+0.3:pi/2-0.3,samples=200,blue,line width=1pt]{tan(deg(x))};
-          \addplot[stealth-stealth,domain=pi/2+0.3:3*pi/2-0.3,samples=200,blue,line width=1pt]{tan(deg(x))};
-          \addplot[stealth-stealth,domain=3*pi/2+0.3:5*pi/2-0.3,samples=200,blue,line width=1pt]{tan(deg(x))};
-          \draw [dashed,red] (-5*pi/2,-3.3) -- (-5*pi/2,3.3) node[below,pos=0]{$x=-\frac{5\pi}{2}$};
-          \draw [dashed,red] (-3*pi/2,-3.3) -- (-3*pi/2,3.3) node[above,pos=1]{$x=-\frac{3\pi}{2}$};
-          \draw [dashed,red] (-pi/2,-3.3) -- (-pi/2,3.3) node[below,pos=0]{$y=-\frac{\pi}{2}$};
-          \draw [dashed,red] (pi/2,-3.3) -- (pi/2,3.3) node[above,pos=1]{$y=\frac{\pi}{2}$};
-          \draw [dashed,red] (3*pi/2,-3.3) -- (3*pi/2,3.3) node[below,pos=0]{$y=\frac{3\pi}{2}$};
-          \draw [dashed,red] (5*pi/2,-3.3) -- (5*pi/2,3.3) node[above,pos=1]{$y=\frac{5\pi}{2}$};
+          \addplot[stealth-stealth,domain=-2*pi-0.2:4*pi+0.2,samples=200,red,line width=1pt]{sin(deg(x))}node[right,pos=0.8,yshift=7]{\(y =\sin(x)\)};
+          \addplot[stealth-stealth,domain=-2*pi+0.2:-pi-0.2,samples=200,blue,line width=1pt]{1/sin(deg(x))};
+          \addplot[stealth-stealth,domain=-pi+0.2:0-0.2,samples=200,blue,line width=1pt]{1/sin(deg(x))};
+          \addplot[stealth-stealth,domain=0+0.2:pi-0.2,samples=200,blue,line width=1pt]{1/sin(deg(x))};
+          \addplot[stealth-stealth,domain=pi+0.2:2*pi-0.2,samples=200,blue,line width=1pt]{1/sin(deg(x))};
+          \addplot[stealth-stealth,domain=2*pi+0.2:3*pi-0.2,samples=200,blue,line width=1pt]{1/sin(deg(x))}node[right,pos=1]{\(y =\csc(x)\)};
+          \addplot[stealth-stealth,domain=3*pi+0.2:4*pi-0.2,samples=200,blue,line width=1pt]{1/sin(deg(x))};
+          \draw [dashed,red] (-2*pi,-5.2) -- (-2*pi,5.2) node[below,pos=0]{$x=-2\pi$};
+          \draw [dashed,red] (-pi,-5.2) -- (-pi,5.2) node[above,pos=1]{$x=-\pi$};
+          \draw [dashed,red] (0,-5.2) -- (0,5.2) node[below,pos=0]{$x=0$};
+          \draw [dashed,red] (pi,-5.2) -- (pi,5.2) node[above,pos=1]{$x=\pi$};
+          \draw [dashed,red] (2*pi,-5.2) -- (2*pi,5.2) node[below,pos=0]{$x=2\pi$};
+          \draw [dashed,red] (3*pi,-5.2) -- (3*pi,5.2) node[above,pos=1]{$x=3\pi$};
+          \draw [dashed,red] (4*pi,-5.2) -- (4*pi,5.2) node[below,pos=0]{$x=4\pi$};
           \end{axis}
           \end{tikzpicture}
         </latex-image>
       </image>
     </figure>
-
-
+    <p>
+      Notice the graph of the cosecant function is symmetric with respect to the origin, confirming what we learned in <xref ref="subsec_even-odd-trig-functions">Section</xref>, that cosecant is an odd function.
+    </p>
   </subsection>
   <subsection xml:id="subsec-secant-function">
     <title>The Secant Function</title>
     <p>
-      In <xref ref="subsec_periodic-functions"/> we learned that tangent is a periodic function with a period of <m>\pi</m>. To graph <m>y=\tan x</m>, we can focus on plotting one period and then repeat those values to complete the graph. Before choosing an interval for plotting, let's revisit the definition of tangent:
+      The Reciprocal Identity for the secant function (<xref ref="def_reciprocal-identities"/>) states that
+    </p>
+    <p>
+      <me>\sec x=\frac{1}{\cos x}.</me>
+    </p>
+    <p>
+      Similarly to how we constructed the graph of cosecant from the graph of sine, we can construct the graph of secant from the graph of cosine, shown in <xref ref="secant-graph-animation"/>.
     </p>
     <figure xml:id="secant-graph-animation">
       <caption>
-        Add caption.
+        As <m>\theta</m> moves from <m>0^{\circ}</m> to <m>360^{\circ}</m>, this figure plots the values of <m>y=\cos x</m> and <m>y = \sec \theta</m>. Note that while we will generally be using radians when graphing trigonometric functions, this figure uses degrees to help visualize the angle.
       </caption>
       <interactive geogebra="dpng7xuu" aspect="1.75:0.75"/>
+    </figure>
+    <p>
+      Plotting points for <m>y=\sec x</m> and using the fact that the secant function is periodic, we obtain the graph for secant in <xref ref="sec-graph-extended"/>.
+    </p>
+    <figure xml:id="sec-graph-extended">
+      <caption>The plot for <m>y=\cos(x)</m> and <m>y=\sec(x)</m>.</caption>
+      <image xml:id="fig-sec-graph-extended">
+        <latex-image>
+          \begin{tikzpicture}
+          \begin{axis}[
+          axis lines=middle,clip=false,
+          xmin=-5*pi/2-0.5,xmax=7*pi/2+0.5,ymin=-5.3,ymax=5.3,
+          xtick={-2*pi,-pi,...,3*pi},
+          xticklabels={\(-2\pi\),\(-\pi\),,\(\pi\),\(2\pi\),\(3\pi\)},
+          xticklabel style={black},
+          xlabel=\(x\),
+          ylabel=\(y\)]
+          \addplot[stealth-stealth,domain=-2.5*pi-0.2:3.5*pi+0.2,samples=200,red,line width=1pt]{cos(deg(x))}node[right,pos=0.8,yshift=7]{\(y =\cos(x)\)};
+          \addplot[stealth-stealth,domain=-5*pi/2+0.2:-3*pi/2-0.2,samples=200,blue,line width=1pt]{1/cos(deg(x))};
+          \addplot[stealth-stealth,domain=-3*pi/2+0.2:-pi/2-0.2,samples=200,blue,line width=1pt]{1/cos(deg(x))};
+          \addplot[stealth-stealth,domain=-pi/2+0.2:pi/2-0.2,samples=200,blue,line width=1pt]{1/cos(deg(x))};
+          \addplot[stealth-stealth,domain=pi/2+0.2:3*pi/2-0.2,samples=200,blue,line width=1pt]{1/cos(deg(x))};
+          \addplot[stealth-stealth,domain=3*pi/2+0.2:5*pi/2-0.2,samples=200,blue,line width=1pt]{1/cos(deg(x))};
+          \addplot[stealth-stealth,domain=5*pi/2+0.2:7*pi/2-0.2,samples=200,blue,line width=1pt]{1/cos(deg(x))}node[right,pos=1]{\(y =\sec(x)\)};
+          \draw [dashed,red] (-5*pi/2,-5.2) -- (-5*pi/2,5.2) node[below,pos=0]{$x=-\frac{5\pi}{2}$};
+          \draw [dashed,red] (-3*pi/2,-5.2) -- (-3*pi/2,5.2) node[above,pos=1]{$x=-\frac{3\pi}{2}$};
+          \draw [dashed,red] (-pi/2,-5.2) -- (-pi/2,5.2) node[below,pos=0]{$y=-\frac{\pi}{2}$};
+          \draw [dashed,red] (pi/2,-5.2) -- (pi/2,5.2) node[above,pos=1]{$y=\frac{\pi}{2}$};
+          \draw [dashed,red] (3*pi/2,-5.2) -- (3*pi/2,5.2) node[below,pos=0]{$y=\frac{3\pi}{2}$};
+          \draw [dashed,red] (5*pi/2,-5.2) -- (5*pi/2,5.2) node[above,pos=1]{$y=\frac{5\pi}{2}$};
+          \draw [dashed,red] (7*pi/2,-5.2) -- (7*pi/2,5.2) node[below,pos=0]{$y=\frac{5\pi}{2}$};
+          \end{axis}
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </figure>
+    <p>
+      Notice the graph of the secant function is symmetric about the <m>y</m>-axis, and thus secant is an even function, confirming what we learned in <xref ref="subsec_even-odd-trig-functions">Section</xref>.
+    </p>
+
+  </subsection>
+  <subsection xml:id="subsec-domain-range-other-trig-functions">
+    <title>Domain and Range of Other Trigonometric Functions</title>
+    <p>
+      ADD DOMAIN AND RANGE HERE
+    </p>
+  </subsection>
+  <subsection xml:id="subsec-transformations-other-trig-functions">
+    <title>Graphing Transformations of Other Trigonometric Functions</title>
+    <p>
+      We can also have transformations...
+    </p>
+    <p>
+      Go into detail for the tangent transformations
+    </p>
+    <p>
+      Here is something to start with
+    </p>
+    <p>
+      <title>Tangent Function Transformations:</title>
+      <p>
+        <b>Vertical Stretch/Compression:</b>
+        If <m>y = A \tan(x)</m>, where <m>A</m> is a constant, it results in a vertical stretch or compression.
+        If <m>|A| \gt 1</m>, it's a stretch; if <m>0 \lt |A| \lt 1</m>, it's a compression.
+      </p>
+      <p>
+        <b>Vertical Shift:</b>
+        For <m>y = \tan(x) + D</m>, the graph is vertically shifted up or down by <m>D</m> units.
+        Positive <m>D</m> shifts upward, and negative <m>D</m> shifts downward.
+      </p>
+      <p>
+        <b>Horizontal Stretch/Compression:</b>
+        If <m>y = \tan(Bx)</m>, where <m>B</m> is a constant, it causes a horizontal stretch or compression.
+        If <m>|B| \gt 1</m>, it's a compression; if <m>0 \lt |B| \lt 1</m>, it's a stretch.
+      </p>
+      <p>
+        <b>Horizontal Shift:</b>
+        For <m>y = \tan(x - C)</m>, the graph is horizontally shifted right or left by <m>C</m> units.
+        Positive <m>C</m> shifts to the right, and negative <m>C</m> shifts to the left.
+      </p>
+      <p>
+        <b>Reflection:</b>
+        Adding a negative sign outside the function, <m>y = -\tan(x)</m>, reflects the graph across the x-axis.
+        If the negative sign is inside, <m>y = \tan(-x)</m>, it reflects across the y-axis.
+      </p>
+    </p>    
+    <p>
+      The transformations for cotangent, cosecant, and secant are similar to those of tangent, with corresponding changes in the vertical stretch/compression, vertical shift, horizontal stretch/compression, horizontal shift, and reflection.
+    </p>
+    <p>
+      Let's sum up all of the transformations into one equation for tan/cot/csc/sec.
+    </p>
+    <p>
+      Throw in 3-4 examples
+    </p>
+    <p>
+      Introduce the last figures
+    </p>
+    <figure xml:id="tangent-cotangent-transformation-animation">
+      <caption>
+        As <m>\theta</m> moves from <m>-90^{\circ}</m> to <m>90^{\circ}</m>, this figure plots the values of <m>y = \tan \theta</m>. Note that while we will generally be using radians when graphing trigonometric functions, this figure uses degrees to help visualize the angle.
+      </caption>
+      <interactive geogebra="p3vf25da" aspect="1.75:0.75"/>
+    </figure>
+    <figure xml:id="cosecant-secant-transformation-animation">
+      <caption>
+        As <m>\theta</m> moves from <m>-90^{\circ}</m> to <m>90^{\circ}</m>, this figure plots the values of <m>y = \tan \theta</m>. Note that while we will generally be using radians when graphing trigonometric functions, this figure uses degrees to help visualize the angle.
+      </caption>
+      <interactive geogebra="p7awsjqv" aspect="1.75:0.75"/>
     </figure>
 
   </subsection>
@@ -430,39 +544,7 @@
   <p>
     EMPTY SECTION
   </p>
-  <p>
-    Recall that if <m>\theta</m> is an angle with radian measure <m>t</m>, then the <term>six trigonometric functions</term> become
-    <md>
-      <mrow>\sin \theta\amp =y \amp  \cos \theta\amp =x \amp  \tan \theta\amp =\frac{y}{x}  (x\neq0)</mrow>
-      <mrow>\csc \theta\amp =\frac{1}{y}  (y\neq0) \amp  \sec \theta\amp =\frac{1}{x}  (x\neq0) \amp  \cot \theta\amp =\frac{x}{y}  (y\neq0)</mrow>
-    </md>
-  </p>
-  <image xml:id="fig-unitcircle-theta" width="50%">
-  <latex-image>
-  \begin{tikzpicture}[scale=2.5]
-  \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-  \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
-  \draw (0,0) circle (1cm);
-  \draw[line width=2pt] (0,0) -- (45:1cm) node[midway,above,yshift=0.2cm] {1};
-  \draw[line width=2pt] (0,0) -- (0.707106781187,0) node[midway,below] {$x$};
-  \draw[line width=2pt] (0.707106781187,0) -- (0.707106781187,0.707106781187) node[midway,right] {$y$};
-  \filldraw[black] (45:1cm) circle(1pt) node[above right] {\(P(x,y)\)};
-  \draw ([shift=(0:0.25cm)]0,0) arc (0:45:0.25cm) node[midway,right,xshift=0.1cm,yshift=0.1cm] {\(\theta\)};
-  \end{tikzpicture}
-  </latex-image>
-  </image>
-  <p>
-    Division is not required for the trigonometric functions <m>\sin\theta</m> and <m>\cos\theta</m> and so we do not need to worry about dividing by zero,
-    thus <m>\theta</m> can be any angle. In other words, the domains for <m>\sin\theta</m> and <m>\cos\theta</m> consist of the set of all real numbers.
-  </p>
-  <p>
-    However, looking at <m>\tan\theta</m> and <m>\sec\theta</m>, you may notice there is division by <m>x</m>. We run into problems when the denominator is zero, in other words, <m>x=0</m> would result in dividing by 0. These are the points when the terminal side of <m>\theta</m> lies on the <m>y</m>-axis. On the unit circle, the points are <m>(0,1)</m> and <m>(0,-1)</m>. These points correspond to the angles <m>\frac{\pi}{2}</m> and<m>\frac{3\pi}{2}</m>, as well as all their coterminal angles:
-    <m>\ldots, -\frac{3\pi}{2}, \frac{-\pi}{2}, \frac{\pi}{2}, \frac{3\pi}{2}, \frac{5\pi}{2}, \ldots</m>. In general, any angle of the form
-    <m>\frac{\pi}{2}+n\pi</m> for some integer <m>n</m> should be excluded from the domain.
-  </p>
-  <p>
-    Similarly, we run into problems for <m>\csc\theta</m> and <m>\cot\theta</m> when <m>y=0</m> since we would divide by 0. This corresponds to when the terminal side of <m>\theta</m> lies on the <m>x</m>-axis. These points on the unit circle are <m>(1,0)</m> and <m>(-1,0)</m> and have corresponding angles <m>0</m> and <m>\pi</m>, as well as all their coterminal angles: <m>\ldots, -2\pi, -\pi, 0, \pi, 2\pi, \ldots</m>. In general, any angle of the form <m>\pi\cdot n</m> for some integer <m>n</m> should be excluded from the domain.
-  </p>
+  
   <example xml:id="example-sun-declination">
     <title>Rising Sun</title>
     <p>In example, introduce the concept of declination, put figure/gif of the sun's rising position and the different dates <m>23.44^{\circ}</m></p>
