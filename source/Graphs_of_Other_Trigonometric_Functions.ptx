@@ -9,6 +9,124 @@
   <subsection xml:id="subsec-domain-range-tangent-cotangent-functions">
     <title>Domain and Range of the Tangent and Cotangent Functions</title>
     <p>
+      Recall the Quotient Identity for tangent (<xref ref="def_quotient-identities"/>):
+    </p>
+    <p>
+      <me>
+        \tan x = \frac{\sin x}{\cos x}
+      </me>
+    </p>
+    <p>
+      Issues arise when the denominator is zero, i.e., when <m>\cos x=0</m>. This leads to undefined points at <m>\ldots, -\frac{3\pi}{2}, -\frac{\pi}{2}, \frac{\pi}{2}, \frac{3\pi}{2}, \frac{5\pi}{2}, \ldots</m>. In general, any angle of the form <m>n\frac{\pi}{2}</m>, where <m>n</m> is an odd integer, should be excluded from the domain since tangent is undefined at these values.
+    </p>
+    <p>
+      Similarly, we defined the cotangent function as
+    </p>
+    <p>
+      <me>\cot x=\frac{\cos x}{\sin x}</me>
+    </p>
+    <p>
+      The denominator becomes zero when <m>\sin x=0</m>, corresponding to <m>x=\ldots,-\pi,0,\pi,2\pi,\ldots</m>. In general, <m>\cot x</m> is undefined for angles of the form <m>n\pi</m>, where <m>n</m> is an integer. These angles should be excluded from the domain of cotangent.
+    </p>
+
+
+    <p>
+      To determine the range of the tangent function, consider the point <m>P(x, y)</m> on the unit circle corresponding to the angle <m>\theta</m>, and let <m>a</m> be a real number such that <m>a = \tan\theta = \frac{y}{x}</m>.
+    </p>
+    <p>
+      Multiplying both sides by <m>x</m>, we obtain:
+    </p>
+    <p>
+      <me>y = ax</me>
+    </p>
+    <p>
+      Squaring both sides yields:
+    </p>
+    <p>
+      <me>y^2 = a^2x^2</me>
+    </p>
+    <p>
+      Substituting into the Pythagorean Identity (<xref ref="def_pythagorean-identity"/>), we have:
+    </p>
+    <p>
+      <me>1 = x^2 + y^2 = x^2 + a^2yx^2 = x^2(1 + a^2)</me>
+    </p>
+    <p>
+      Dividing both sides by <m>1 + a^2</m> and taking the square root gives:
+    </p>
+    <p>
+      <me>x = \pm\frac{1}{\sqrt{1 + a^2}}</me>
+    </p>
+    <p>
+      Similarly, we obtain:
+    </p>
+    <p>
+      <me>y = \pm\frac{a}{\sqrt{1 + a^2}}</me>
+    </p>
+    <p>
+      Thus, we conclude:
+    </p>
+    <p>
+      <me>\tan\theta = \frac{y}{x} = \frac{\frac{a}{\sqrt{1 + a^2}}}{\frac{1}{\sqrt{1 + a^2}}} = a</me>
+    </p>
+    <p>
+      In other words, since <m>a</m> can be any real number and <m>\tan\theta = a</m>, the range of the tangent function consists of all real numbers. A similar method can be employed to show that the range of the cotangent function is also the set of all real numbers.
+    </p>
+    
+
+
+
+
+    <p>
+      To find the range of the tangent function, consider the point <m>P(x,y)</m> on the unit circle corresponding to the angle <m>\theta</m> and let <m>a</m> be a real number such that <m>a=\tan\theta=\frac{y}{x}</m>.
+    </p>
+    <p>
+      Multiplying both sides by <m>x</m> we get
+    </p>
+    <p>
+      <me>y=ax</me>
+    </p>
+    <p>
+      Squaring boths sides we get
+    </p>
+    <p>
+      <me>y^2=a^2x^2</me>
+    </p>
+    <p>
+      Substituting into the Pythagorean Identity (<xref ref="def_pythagorean-identity"/>), we get
+    </p>
+    <p>
+      <me>1=x^2+y^2=x^2+a^2yx^2=x^2(1+a^2)</me>.
+    </p>
+    <p>
+      Diving both sides by <m>1+a^2</m> and taking the square root, we get
+    </p>
+    <p>
+      <me>x=\pm\frac{1}{\sqrt{1+a^2}}</me>
+    </p>
+    <p>
+      Similarly, we can get
+    </p>
+    <p>
+      <me>y=\pm\frac{a}{\sqrt{1+a^2}}</me>
+    </p>
+    <p>
+      Thus, we have
+    </p>
+    <p>
+      <me>\tan\theta=\frac{y}{x}=\frac{\frac{a}{\sqrt{1+a^2}}}{\frac{1}{\sqrt{1+a^2}}}=a</me>
+    </p>
+    <p>
+      In other words, since <m>a</m> was any real number and <m>\tan\theta=a</m>, the range of tangent consists of the set of all real numbers. We can use a similar method to show that the range of cotngent is also the set of all real numbers.
+    </p>
+
+
+    
+
+
+
+
+    <p>
       The 
     </p>
     <table xml:id="tab_tan-cot-domain">
@@ -299,18 +417,13 @@
   <subsection xml:id="subsec-tangent-function">
     <title>The Tangent Function</title>
     <p>
-      In <xref ref="subsec_periodic-functions"/> we learned that tangent is a periodic function with a period of <m>\pi</m>. To graph <m>y=\tan x</m>, we can focus on plotting one period and then repeat those values to complete the graph. Before choosing an interval for plotting, let's revisit the Quotient Identity for tangent (<xref ref="def_quotient-identities"/>):
+      In <xref ref="subsec_periodic-functions"/>, we learned that the tangent function is periodic with a period of <m>\pi</m>. To graph <m>y = \tan x</m>, we focus on plotting one period and then repeat those values to complete the graph.
     </p>
     <p>
-      <me>
-        \tan x = \frac{\sin x}{\cos x}
-      </me>
+      We also know that the domain of tangent includes all real numbers except any angle of the form <m>n\frac{\pi}{2}</m>, where <m>n</m> is an odd integer. These values are excluded since tangent is undefined there. In fact, any line of the form <m>x=n\frac{\pi}{2}</m> (e.g. <m>x=-\frac{\pi}{2}</m> and <m>x=\frac{\pi}{2}</m>) is a <term>vertical asymptote</term><idx><h>vertical asymptote</h></idx> 
     </p>
     <p>
-      However, issues arise when the denominator is zero, i.e., when <m>\cos x=0</m>. This leads to undefined points at <m>\ldots, -\frac{3\pi}{2}, -\frac{\pi}{2}, \frac{\pi}{2}, \frac{3\pi}{2}, \frac{5\pi}{2}, \ldots</m>. In general, any angle of the form <m>n\frac{\pi}{2}</m>, where <m>n</m> is an odd integer, should be excluded from the domain since tangent is undefined at these values. In fact, any line of the form <m>x=n\frac{\pi}{2}</m> (e.g. <m>x=-\frac{\pi}{2}</m> and <m>x=\frac{\pi}{2}</m>) is a <term>vertical asymptote</term><idx><h>vertical asymptote</h></idx> 
-    </p>
-    <p>
-      Now that we know where tangent is undefined, we will choose the interval <m>\left(-\frac{\pi}{2},\frac{\pi}{2}\right)</m> to plot our points for tangent. This interval has a length of <m>\pi</m> (one period), allowing us to repeat the values to complete the graph of tangent.
+      Knowing the location of the vertical asymptotes, we choose the interval <m>\left(-\frac{\pi}{2},\frac{\pi}{2}\right)</m> to plot our points for tangent. This interval has a length of <m>\pi</m> (one period), allowing us to repeat the values to complete the graph of tangent over the entire domain.
     </p>
     <p>
       Recall from <xref ref="def-of-trig-functions">Definition</xref> that on the unit circle, the expression <m>\tan\theta=\frac{y}{x}</m> denotes the ratio of the <m>y</m>-coordinate to the <m>x</m>-coordinate of a point <m>P(x, y)</m> associated with an angle <m>\theta</m>. This ratio changes dynamically as <m>\theta</m> varies from zero to <m>\frac{\pi}{2}</m>.
@@ -446,13 +559,7 @@
   <subsection xml:id="subsec-cotangent-function">
     <title>The Cotangent Function</title>
     <p>
-      Recall that the Quotient Identity (<xref ref="def_quotient-identities"/>) for the cotangent function is defined as
-    </p>
-    <p>
-      <me>\cot x=\frac{\cos x}{\sin x}</me>
-    </p>
-    <p>
-      The denominator becomes zero when <m>\sin x=0</m>, corresponding to <m>x=\ldots,-\pi,0,\pi,2\pi,\ldots</m>. In general, <m>\cot x</m> is undefined for angles of the form <m>n\pi</m>, where <m>n</m> is an integer, leading to vertical asymptotes. Additionally, as we learned in <xref ref="subsec_periodic-functions"/> the cotangent function has a period of <m>\pi</m>. We can construct a plot for it in a manner similar to how we constructed the tangent function. This is illustrated in <xref ref="cotangent-graph-animation"/>.
+      The domain of the cotangent function is defined for all angles except those of the form <m>n\pi</m>, where <m>n</m> is an integer. These excluded values correspond to vertical asymptotes. In fact, any line of the form <m>x = n\pi</m>, where <m>n</m> is an integer, serves as a vertical asymptote. Additionally, as we learned in <xref ref="subsec_periodic-functions"/>, the cotangent function has a period of <m>\pi</m>. We can construct a plot for it in a manner similar to how we constructed the tangent function, as illustrated in <xref ref="cotangent-graph-animation"/>.
     </p>
     <figure xml:id="cotangent-graph-animation">
       <caption>
