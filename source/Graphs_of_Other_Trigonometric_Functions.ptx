@@ -229,7 +229,7 @@
     </p>
     <figure xml:id="cosecant-graph-animation">
       <caption>
-        Add caption.
+        As <m>\theta</m> moves from <m>0^{\circ}</m> to <m>360^{\circ}</m>, this figure plots the values of <m>y=\sin x</m> and <m>y = \csc \theta</m>. Note that while we will generally be using radians when graphing trigonometric functions, this figure uses degrees to help visualize the angle.
       </caption>
       <interactive geogebra="b4zc4xwu" aspect="1.75:0.75"/>
     </figure>
