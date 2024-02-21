@@ -251,7 +251,7 @@
       </statement>
     </definition>
   </subsection>
-  <subsection>
+  <subsection xml:id="subsec-domain-range-sine-cosine-functions">
     <title>Domain and Range of Sine and Cosine</title>
     <p>
       The domains for <m>\sin(\theta)</m> and <m>\cos(\theta)</m> consist of the set of the inputs of the functions. Since any angle <m>\theta</m> can be input into sine and cosine and still have these functions defined, the domain for both sine and coseine is all real numbers. Recall that in <xref ref="Unit_Circle">Section</xref>, if <m>P(x,y)</m> is any point on the unit circle that corresponds to the angle <m>\theta</m>, we defined <m>\sin\theta=y</m> and <m>\cos\theta=x</m>. Given the constraints on the unit circle, <m>-1\leq x\leq1</m> and <m>-1\leq y\leq1</m>, and thus
