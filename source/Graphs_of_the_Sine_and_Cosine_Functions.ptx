@@ -2137,16 +2137,17 @@
       </exercise>
     
     </exercisegroup>
+    <exercise>
+      <p>
+        Find the equation for the time that Makalii (Pleiades) emerges over the horizon over time throughout the year.
+              Talk about the importance of this and how when it rises at sunset,
+              it coincides with the start of Makahiki season.
+              Then using an example that we already worked with the sun and the time the sun sets over the year,
+              find the intersection of these two equations to determine when Makahiki season will begin.
+      </p>
+    </exercise>
   </exercises>
-  <exercise>
-    <p>
-      Find the equation for the time that Makalii (Pleiades) emerges over the horizon over time throughout the year.
-            Talk about the importance of this and how when it rises at sunset,
-            it coincides with the start of Makahiki season.
-            Then using an example that we already worked with the sun and the time the sun sets over the year,
-            find the intersection of these two equations to determine when Makahiki season will begin.
-    </p>
-  </exercise>
+  
   <references xml:id="refs-graphs-sin-cos">
     <biblio type="bibtex" xml:id="CF">
       <author>J. B. Conrey and D. W. Farmer</author>
