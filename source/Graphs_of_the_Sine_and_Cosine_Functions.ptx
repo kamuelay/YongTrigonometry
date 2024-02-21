@@ -38,16 +38,66 @@
       In this section, we will explore the periodic nature of sine and cosine functions and study their transformations. Studying the graphs of sine and cosine functions provides valuable insights into the world around us. The graphs of the remaining trigonometric functions will be covered in <xref ref="Graphs_of_Other_Trigonometric_Functions">Section</xref>.
     </p>
   </introduction>
-  <subsection xml:id="subsec-sine-function">
+  <subsection xml:id="subsec-domain-range-sine-cosine-functions">
+    <title>Domain and Range of Sine and Cosine</title>
+    <p>
+      The domains for <m>\sin(\theta)</m> and <m>\cos(\theta)</m> consist of the set of the inputs of the functions. Since any angle <m>\theta</m> can be input into sine and cosine and still have these functions defined, the domain for both sine and coseine is all real numbers. Recall that in <xref ref="Unit_Circle">Section</xref>, if <m>P(x,y)</m> is any point on the unit circle that corresponds to the angle <m>\theta</m>, we defined <m>\sin\theta=y</m> and <m>\cos\theta=x</m>. Given the constraints on the unit circle, <m>-1\leq x\leq1</m> and <m>-1\leq y\leq1</m>, and thus
+      <me>-1\leq \sin\theta\leq1, \quad -1\leq \cos\theta\leq1</me>.
+      Since the range of a function consists of all its outputs, we conclude that the range of both the sine and cosine functions spans all real numbers between -1 and 1.
+    </p>
+    <p>
+      <xref ref="tab_sin-cos-domain-range">Table</xref> summarizes the domains and ranges for the sine and cosine functions.
+    </p>
+    <table xml:id="tab_sin-cos-domain-range">
+      <title>Domains and Ranges of Sine and Cosine</title>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Function</cell>
+          <cell>Domain</cell>
+          <cell>Range</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\sin\theta</m></cell>
+          <cell>all real numbers, <m>(-\infty,\infty)</m></cell>
+          <cell>all real numbers from -1 to 1, <m>[-1,1]</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\cos\theta</m></cell>
+          <cell>all real numbers, <m>(-\infty,\infty)</m></cell>
+          <cell>all real numbers from -1 to 1, <m>[-1,1]</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+    </table>
+  </subsection>
+  <subsection xml:id="subsec-graphing-sine-function">
     <title>The Sine Function</title>
     <convention>
       <p>
         In <xref ref="Trigonometry">Chapter</xref>, trigonometric functions typically use <m>\theta</m> or <m>t</m> as the variable in the domain, such as <m>y=\cos\theta</m> and <m>y=\sin t</m>. However, when graphing functions on the Cartesian plane (<m>xy</m>-coordinate system), <m>x</m> is conventionally used as the variable in the domain. Therefore, when graphing trigonometric functions, we will use <m>x</m> as the variable, for example <m>y=\cos x</m> and <m>y=\sin x</m>.
       </p>
     </convention>
-    
     <p>
-      The sine function, as discussed in <xref ref="subsec_periodic-functions"/>, is a periodic functions with period <m>2\pi</m>. To graph <m>y=\sin x</m>, we can focus on the interval <m>[0,2\pi]</m>. By plotting this interval, we can then repeat the values to complete the remaining graph.
+      The sine function, as discussed in <xref ref="subsec_periodic-functions"/>, is a periodic functions with period <m>2\pi</m>. To graph <m>y=\sin x</m>, we can focus on the interval <m>[0,2\pi]</m>. By plotting this interval, we can then repeat the values over the entire domain to complete the remaining graph.
     </p>
     <p>
       Recall from <xref ref="def-of-trig-functions">Definition</xref> that on the unit circle, <m>\sin \theta</m> is defined to be the <m>y</m>-value of the terminal point <m>P(x,y)</m> on the unit circle associated with the angle <m>\theta</m>. As the angle increases from <m>0</m> to <m>\frac{\pi}{2}</m>, the <m>y</m>-value also increases from <m>0</m> to <m>1</m>. When the angle continues from <m>\frac{\pi}{2}</m> to <m>\frac{3\pi}{2}</m>, the <m>y</m>-value decreases from <m>1</m> to <m>-1</m>. Finally, as the angle approaches <m>2\pi</m>, the <m>y</m>-value increases to <m>0</m>. This behavior is shown in <xref ref="sine-graph-animation">Figure</xref>.
@@ -208,7 +258,7 @@
       Notice the graph of the sine function's symmetry with respect to the origin, a characteristic supported in <xref ref="subsec_even-odd-trig-functions">Section</xref>, where we learned that sine is an odd function.
     </p>
   </subsection>
-  <subsection xml:id="subsec-cosine-function">
+  <subsection xml:id="subsec-graphing-cosine-function">
     <title>The Cosine Function</title>
     <p>Similarly, we can construct a plot for the cosine function, shown in <xref ref="cosine-graph-animation">Figure</xref>.</p>
     <figure xml:id="cosine-graph-animation">
@@ -218,7 +268,7 @@
       <interactive geogebra="hbzpjddt" aspect="1.75:0.75"/>
     </figure>
     <p>
-      Plotting points for <m>y=\cos x</m> and using the fact that the cosine function is periodic, we obtain the graph for cosine in <xref ref="cos-graph-extended">Figure</xref>.
+      By plotting points for <m>y=\cos x</m> and using the fact that the cosine function is periodic, we obtain the graph for cosine over the entire domain. This is shown in <xref ref="cos-graph-extended">Figure</xref>.
     </p>
     <figure xml:id="cos-graph-extended">
       <caption>The plot for <m>y=\cos(x)</m>.</caption>
@@ -250,57 +300,6 @@
         </p>
       </statement>
     </definition>
-  </subsection>
-  <subsection xml:id="subsec-domain-range-sine-cosine-functions">
-    <title>Domain and Range of Sine and Cosine</title>
-    <p>
-      The domains for <m>\sin(\theta)</m> and <m>\cos(\theta)</m> consist of the set of the inputs of the functions. Since any angle <m>\theta</m> can be input into sine and cosine and still have these functions defined, the domain for both sine and coseine is all real numbers. Recall that in <xref ref="Unit_Circle">Section</xref>, if <m>P(x,y)</m> is any point on the unit circle that corresponds to the angle <m>\theta</m>, we defined <m>\sin\theta=y</m> and <m>\cos\theta=x</m>. Given the constraints on the unit circle, <m>-1\leq x\leq1</m> and <m>-1\leq y\leq1</m>, and thus
-      <me>-1\leq \sin\theta\leq1, \quad -1\leq \cos\theta\leq1</me>.
-      Since the range of a function consists of all its outputs, we conclude that the range of both the sine and cosine functions spans all real numbers between -1 and 1.
-    </p>
-    <p>
-      <xref ref="tab_sin-cos-domain-range">Table</xref> summarizes the domains and ranges for the sine and cosine functions.
-    </p>
-    <table xml:id="tab_sin-cos-domain-range">
-      <title>Domains and Ranges of Sine and Cosine</title>
-      <tabular>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell>Function</cell>
-          <cell>Domain</cell>
-          <cell>Range</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\sin\theta</m></cell>
-          <cell>all real numbers, <m>(-\infty,\infty)</m></cell>
-          <cell>all real numbers from -1 to 1, <m>[-1,1]</m></cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\cos\theta</m></cell>
-          <cell>all real numbers, <m>(-\infty,\infty)</m></cell>
-          <cell>all real numbers from -1 to 1, <m>[-1,1]</m></cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-        </row>
-      </tabular>
-    </table>
   </subsection>
   <subsection  xml:id="subsec_graphing-sinusoidal-transformations">
     <title>Graphing Transformations of Sine and Cosine</title>
@@ -926,7 +925,6 @@
       <interactive geogebra="u75zdnr8" aspect="1.75:0.75"/>
     </figure>
   </subsection>
-
   <exercises>
     <exercisegroup cols="2">
       <introduction>
