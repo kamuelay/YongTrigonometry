@@ -6,6 +6,296 @@
       This section explores the graphs of tangent, cotangent, cosecant, and secant, including their periodic behaviors and transformations.
     </p>
   </introduction>
+  <subsection xml:id="subsec-domain-range-tangent-cotangent-functions">
+    <title>Domain and Range of the Tangent and Cotangent Functions</title>
+    <p>
+      The 
+    </p>
+    <table xml:id="tab_tan-cot-domain">
+      <title>Domains of the trigonometric functions</title>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Function</cell>
+          <cell>Domain</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\sin\theta</m></cell>
+          <cell>all real numbers</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\cos\theta</m></cell>
+          <cell>all real numbers</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\tan\theta</m></cell>
+          <cell>all real numbers except <m>\frac{\pi}{2}+n\pi</m> (<m>90^{\circ}+180^{\circ}\cdot n</m>) for some integer <m>n</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\csc\theta</m></cell>
+          <cell>all real numbers except <m>\pi\cdot n</m> (<m>180^{\circ}\cdot n</m>) for some integer <m>n</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\sec\theta</m></cell>
+          <cell>all real numbers except <m>\frac{\pi}{2}+n\pi</m> (<m>90^{\circ}+180^{\circ}\cdot n</m>) for some integer <m>n</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\cot\theta</m></cell>
+          <cell>all real numbers except (<m>180^{\circ}\cdot n</m>) <m>\pi\cdot n</m> for some integer <m>n</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+    </table>
+    <p>
+      Next we look at the range for each of the trigonometric functions. If <m>P(x,y)</m> is a point on the unit circle, then we have <m>-1\leq x\leq1</m> and <m>-1\leq y\le1</m>. Since <m>\sin\theta=y</m> and <m>\cos\theta=x</m>, it follows that <m>-1\leq\sin\theta\leq1</m> and <m>-1\leq\cos\theta\leq1</m>.
+    </p>
+    <p>
+      **Look at Sullivan p384 for csc sec, cot/tan
+    </p>
+    <table xml:id="tab_tan-cot-range">
+      <title>Ranges of the trigonometric functions</title>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Function</cell>
+          <cell>Range</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\sin\theta</m></cell>
+          <cell>all real numbers from -1 to 1</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\cos\theta</m></cell>
+          <cell>all real numbers from -1 to 1</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\tan\theta</m></cell>
+          <cell>all real numbers</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\csc\theta</m></cell>
+          <cell>all real numbers greater than or equal to 1 or less than or equal to -1</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\sec\theta</m></cell>
+          <cell>all real numbers greater than or equal to 1 or less than or equal to -1</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\cot\theta</m></cell>
+          <cell>all real numbers</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+    </table>
+  </subsection>
+  <subsection xml:id="subsec-domain-range-cosecant-secant-functions">
+    <title>Domain and Range of the Cosecant and Secant Functions</title>
+    <p>
+      In <xref ref="subsec-domain-range-sine-cosine-functions"/>, we learned that the function <m>y=\sin x</m> has a range of 
+      <me>-1\leq \sin x\leq1, \quad -1\leq \cos x\leq1</me>.
+      If the angle is not an integer multiple of <m>\pi</m>, i.e. <m>x\neq n\pi</m>, where <m>n</m> is an integer, then by the Reciprocal Identity,
+      <me>\csc x=\frac{1}{\sin x}</me>.
+      Therefore, taking the reciprocal of the range of sine we get
+      <me>\csc x\leq-1\mbox{ or }\csc x\geq1</me>.
+      In other words, the range of the cosecant function is all real numbers less than or equal to <m>-1</m> or greater than or equal to <m>1</m>.
+    </p>
+    <table xml:id="tab_csc-sec-domain">
+      <title>Domains of the trigonometric functions</title>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Function</cell>
+          <cell>Domain</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\sin\theta</m></cell>
+          <cell>all real numbers</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\cos\theta</m></cell>
+          <cell>all real numbers</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\tan\theta</m></cell>
+          <cell>all real numbers except <m>\frac{\pi}{2}+n\pi</m> (<m>90^{\circ}+180^{\circ}\cdot n</m>) for some integer <m>n</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\csc\theta</m></cell>
+          <cell>all real numbers except <m>\pi\cdot n</m> (<m>180^{\circ}\cdot n</m>) for some integer <m>n</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\sec\theta</m></cell>
+          <cell>all real numbers except <m>\frac{\pi}{2}+n\pi</m> (<m>90^{\circ}+180^{\circ}\cdot n</m>) for some integer <m>n</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\cot\theta</m></cell>
+          <cell>all real numbers except (<m>180^{\circ}\cdot n</m>) <m>\pi\cdot n</m> for some integer <m>n</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+    </table>
+    <p>
+      Next we look at the range for each of the trigonometric functions. If <m>P(x,y)</m> is a point on the unit circle, then we have <m>-1\leq x\leq1</m> and <m>-1\leq y\le1</m>. Since <m>\sin\theta=y</m> and <m>\cos\theta=x</m>, it follows that <m>-1\leq\sin\theta\leq1</m> and <m>-1\leq\cos\theta\leq1</m>.
+    </p>
+    <p>
+      **Look at Sullivan p384 for csc sec, cot/tan
+    </p>
+    <table xml:id="tab_csc-sec-range">
+      <title>Ranges of the trigonometric functions</title>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Function</cell>
+          <cell>Range</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\sin\theta</m></cell>
+          <cell>all real numbers from -1 to 1</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\cos\theta</m></cell>
+          <cell>all real numbers from -1 to 1</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\tan\theta</m></cell>
+          <cell>all real numbers</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\csc\theta</m></cell>
+          <cell>all real numbers greater than or equal to 1 or less than or equal to -1</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\sec\theta</m></cell>
+          <cell>all real numbers greater than or equal to 1 or less than or equal to -1</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\cot\theta</m></cell>
+          <cell>all real numbers</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+    </table>
+  </subsection>
   <subsection xml:id="subsec-tangent-function">
     <title>The Tangent Function</title>
     <p>
@@ -450,290 +740,7 @@
     </p>
 
   </subsection>
-  <subsection xml:id="subsec-domain-range-tangent-cotangent-functions">
-    <title>Domain and Range of the Tangent and Cotangent Functions</title>
-    <p>
-      ADD DOMAIN AND RANGE HERE
-    </p>
-    <table xml:id="tab_tan-cot-domain">
-      <title>Domains of the trigonometric functions</title>
-      <tabular>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell>Function</cell>
-          <cell>Domain</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\sin\theta</m></cell>
-          <cell>all real numbers</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\cos\theta</m></cell>
-          <cell>all real numbers</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\tan\theta</m></cell>
-          <cell>all real numbers except <m>\frac{\pi}{2}+n\pi</m> (<m>90^{\circ}+180^{\circ}\cdot n</m>) for some integer <m>n</m></cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\csc\theta</m></cell>
-          <cell>all real numbers except <m>\pi\cdot n</m> (<m>180^{\circ}\cdot n</m>) for some integer <m>n</m></cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\sec\theta</m></cell>
-          <cell>all real numbers except <m>\frac{\pi}{2}+n\pi</m> (<m>90^{\circ}+180^{\circ}\cdot n</m>) for some integer <m>n</m></cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\cot\theta</m></cell>
-          <cell>all real numbers except (<m>180^{\circ}\cdot n</m>) <m>\pi\cdot n</m> for some integer <m>n</m></cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-      </tabular>
-    </table>
-    <p>
-      Next we look at the range for each of the trigonometric functions. If <m>P(x,y)</m> is a point on the unit circle, then we have <m>-1\leq x\leq1</m> and <m>-1\leq y\le1</m>. Since <m>\sin\theta=y</m> and <m>\cos\theta=x</m>, it follows that <m>-1\leq\sin\theta\leq1</m> and <m>-1\leq\cos\theta\leq1</m>.
-    </p>
-    <p>
-      **Look at Sullivan p384 for csc sec, cot/tan
-    </p>
-    <table xml:id="tab_tan-cot-range">
-      <title>Ranges of the trigonometric functions</title>
-      <tabular>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell>Function</cell>
-          <cell>Range</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\sin\theta</m></cell>
-          <cell>all real numbers from -1 to 1</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\cos\theta</m></cell>
-          <cell>all real numbers from -1 to 1</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\tan\theta</m></cell>
-          <cell>all real numbers</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\csc\theta</m></cell>
-          <cell>all real numbers greater than or equal to 1 or less than or equal to -1</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\sec\theta</m></cell>
-          <cell>all real numbers greater than or equal to 1 or less than or equal to -1</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\cot\theta</m></cell>
-          <cell>all real numbers</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-      </tabular>
-    </table>
-  </subsection>
-  <subsection xml:id="subsec-domain-range-cosecant-secant-functions">
-    <title>Domain and Range of the Cosecant and Secant Functions</title>
-    <p>
-      In <xref ref="subsec-domain-range-sine-cosine-functions"/>
-    </p>
-    <table xml:id="tab_csc-sec-domain">
-      <title>Domains of the trigonometric functions</title>
-      <tabular>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell>Function</cell>
-          <cell>Domain</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\sin\theta</m></cell>
-          <cell>all real numbers</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\cos\theta</m></cell>
-          <cell>all real numbers</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\tan\theta</m></cell>
-          <cell>all real numbers except <m>\frac{\pi}{2}+n\pi</m> (<m>90^{\circ}+180^{\circ}\cdot n</m>) for some integer <m>n</m></cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\csc\theta</m></cell>
-          <cell>all real numbers except <m>\pi\cdot n</m> (<m>180^{\circ}\cdot n</m>) for some integer <m>n</m></cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\sec\theta</m></cell>
-          <cell>all real numbers except <m>\frac{\pi}{2}+n\pi</m> (<m>90^{\circ}+180^{\circ}\cdot n</m>) for some integer <m>n</m></cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\cot\theta</m></cell>
-          <cell>all real numbers except (<m>180^{\circ}\cdot n</m>) <m>\pi\cdot n</m> for some integer <m>n</m></cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-      </tabular>
-    </table>
-    <p>
-      Next we look at the range for each of the trigonometric functions. If <m>P(x,y)</m> is a point on the unit circle, then we have <m>-1\leq x\leq1</m> and <m>-1\leq y\le1</m>. Since <m>\sin\theta=y</m> and <m>\cos\theta=x</m>, it follows that <m>-1\leq\sin\theta\leq1</m> and <m>-1\leq\cos\theta\leq1</m>.
-    </p>
-    <p>
-      **Look at Sullivan p384 for csc sec, cot/tan
-    </p>
-    <table xml:id="tab_csc-sec-range">
-      <title>Ranges of the trigonometric functions</title>
-      <tabular>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell>Function</cell>
-          <cell>Range</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\sin\theta</m></cell>
-          <cell>all real numbers from -1 to 1</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\cos\theta</m></cell>
-          <cell>all real numbers from -1 to 1</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\tan\theta</m></cell>
-          <cell>all real numbers</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\csc\theta</m></cell>
-          <cell>all real numbers greater than or equal to 1 or less than or equal to -1</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\sec\theta</m></cell>
-          <cell>all real numbers greater than or equal to 1 or less than or equal to -1</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\cot\theta</m></cell>
-          <cell>all real numbers</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-      </tabular>
-    </table>
-  </subsection>
+  
   <subsection xml:id="subsec-transformations-other-trig-functions">
     <title>Graphing Transformations of Other Trigonometric Functions</title>
     <p>
