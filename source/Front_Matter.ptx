@@ -18,10 +18,11 @@
   <colophon>
 
     <website>
-      <name>
-        <c>kamuelayong.com</c>
-      </name>
-      <address>https://www.kamuelayong.com/trigonometry/</address>
+      <url
+        href="https://www.kamuelayong.com/trigonometry/"
+        visual="https://www.kamuelayong.com/trigonometry/">
+        kamuelayong.com
+      </url>
     </website>
 
 
