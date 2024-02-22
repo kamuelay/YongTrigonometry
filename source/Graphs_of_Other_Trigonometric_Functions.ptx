@@ -6,8 +6,8 @@
       This section explores the graphs of tangent, cotangent, cosecant, and secant, including their periodic behaviors and transformations.
     </p>
   </introduction>
-  <subsection xml:id="subsec-domain-range-tangent-cotangent-functions">
-    <title>Domains and Ranges of the Tangent and Cotangent Functions</title>
+  <subsection xml:id="subsec-domain-tangent-cotangent-functions">
+    <title>Domains of the Tangent and Cotangent Functions</title>
     <p>
       Recall the Quotient Identity for tangent (<xref ref="def_quotient-identities"/>):
     </p>
@@ -17,7 +17,7 @@
       </me>
     </p>
     <p>
-      Issues arise when the denominator is zero, i.e., when <m>\cos x=0</m>. This leads to undefined points at <m>\ldots, -\frac{3\pi}{2}, -\frac{\pi}{2}, \frac{\pi}{2}, \frac{3\pi}{2}, \frac{5\pi}{2}, \ldots</m>. In general, any angle of the form <m>n\frac{\pi}{2}</m>, where <m>n</m> is an odd integer, should be excluded from the domain since tangent is undefined at these values.
+      Issues arise when the denominator is zero, i.e., when <m>\cos x=0</m>. This leads to undefined points at <m>x=\ldots, -\frac{3\pi}{2}, -\frac{\pi}{2}, \frac{\pi}{2}, \frac{3\pi}{2}, \frac{5\pi}{2}, \ldots</m>. In general, any angle of the form <m>n\frac{\pi}{2}</m>, where <m>n</m> is an odd integer, should be excluded from the domain since tangent is undefined at these values.
     </p>
     <p>
       Similarly, we defined the cotangent function as
@@ -28,6 +28,48 @@
     <p>
       The denominator becomes zero when <m>\sin x=0</m>, corresponding to <m>x=\ldots,-\pi,0,\pi,2\pi,\ldots</m>. In general, <m>\cot x</m> is undefined for angles of the form <m>n\pi</m>, where <m>n</m> is an integer. These angles should be excluded from the domain of cotangent.
     </p>
+    <remark>
+      <title>Domains for Tangent and Cotangent</title>
+      <p>
+        The domains for tangent and cotangent functions are given in <xref ref="tab_tan-cot-domain"/>
+      </p>
+      <table xml:id="tab_tan-cot-domain">
+        <title>Domains of the tangent and cotangent functions</title>
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>Function</cell>
+            <cell>Domain</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>\tan\theta</m></cell>
+            <cell>All real numbers except odd multiples of <m>\frac{\pi}{2}</m> (<m>90^{\circ}</m>)</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>\cot\theta</m></cell>
+            <cell>All real numbers except integer multiples of <m>\pi</m> (<m>180^{\circ}</m>)</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+      </table>
+    </remark>
+  </subsection>
+  <subsection xml:id="subsec-range-tangent-cotangent-functions">
+    <title>Ranges of the Tangent and Cotangent Functions</title>
     <p>
       To determine the range of the tangent function, consider the point <m>P(x, y)</m> on the unit circle corresponding to the angle <m>\theta</m>, and let <m>a</m> be a real number such that <m>a = \tan\theta = \frac{y}{x}</m>.
     </p>
@@ -71,45 +113,6 @@
       In other words, since <m>a</m> can be any real number and <m>\tan\theta = a</m>, the range of the tangent function consists of all real numbers. A similar method can be used to show that the range of the cotangent function is also the set of all real numbers.
     </p>
     <remark>
-      <title>Domains for Tangent and Cotangent</title>
-      <p>
-        The domains for tangent and cotangent functions are given in <xref ref="tab_tan-cot-domain"/>
-      </p>
-      <table xml:id="tab_tan-cot-domain">
-        <title>Domains of the tangent and cotangent functions</title>
-        <tabular>
-          <row bottom="minor">
-            <cell></cell>
-            <cell></cell>
-          </row>
-          <row>
-            <cell>Function</cell>
-            <cell>Domain</cell>
-          </row>
-          <row bottom="minor">
-            <cell></cell>
-            <cell></cell>
-          </row>
-          <row>
-            <cell><m>\tan\theta</m></cell>
-            <cell>all real numbers except <m>n\frac{\pi}{2}</m> for some odd integer <m>n</m></cell>
-          </row>
-          <row bottom="minor">
-            <cell></cell>
-            <cell></cell>
-          </row>
-          <row>
-            <cell><m>\cot\theta</m></cell>
-            <cell>all real numbers except <m>n\pi</m> for some integer <m>n</m></cell>
-          </row>
-          <row bottom="minor">
-            <cell></cell>
-            <cell></cell>
-          </row>
-        </tabular>
-      </table>
-    </remark>
-    <remark>
       <title>Ranges for Tangent and Cotangent</title>
       <p>
         The ranges for tangent and cotangent functions are given in <xref ref="tab_tan-cot-range"/>
@@ -131,7 +134,7 @@
           </row>
           <row>
             <cell><m>\tan\theta</m></cell>
-            <cell>all real numbers</cell>
+            <cell>All real numbers</cell>
           </row>
           <row bottom="minor">
             <cell></cell>
@@ -139,7 +142,7 @@
           </row>
           <row>
             <cell><m>\cot\theta</m></cell>
-            <cell>all real numbers</cell>
+            <cell>All real numbers</cell>
           </row>
           <row bottom="minor">
             <cell></cell>
@@ -149,153 +152,121 @@
       </table>
     </remark>
   </subsection>
-  <subsection xml:id="subsec-domain-range-cosecant-secant-functions">
-    <title>Domain and Range of the Cosecant and Secant Functions</title>
+  <subsection xml:id="subsec-domain-cosecant-secant-functions">
+    <title>Domains of the Cosecant and Secant Functions</title>
     <p>
-      In <xref ref="subsec-domain-range-sine-cosine-functions"/>, we learned that the function <m>y=\sin x</m> has a range of 
-      <me>-1\leq \sin x\leq1, \quad -1\leq \cos x\leq1</me>.
-      If the angle is not an integer multiple of <m>\pi</m>, i.e. <m>x\neq n\pi</m>, where <m>n</m> is an integer, then by the Reciprocal Identity,
+      Consider the Reciprocal Identity for the cosecant function (<xref ref="def_reciprocal-identities"/>):
+    </p>
+    <p>
+      <me>\csc x=\frac{1}{\sin x}</me>
+    </p>
+    <p>
+      When <m>\sin x=0</m>, corresponding to <m>x=\ldots,-\pi,0,\pi,2\pi,\ldots</m>, the denominator becomes zero. In general, <m>\csc x</m> is undefined for angles of the form <m>n\pi</m>, where <m>n</m> is an integer, and these values should be excluded from the domain.
+    </p>
+    <p>
+      Similarly, since the cosecant function is defined as
+    </p>
+    <p>
+      <me>\sec x=\frac{1}{\cos x}</me>
+    </p>
+    <p>
+      we see that <m>\sec x</m> is undefined when <m>\cos x=0</m>. This occurs at <m>x=\ldots, -\frac{3\pi}{2}, -\frac{\pi}{2}, \frac{\pi}{2}, \frac{3\pi}{2}, \frac{5\pi}{2}, \ldots</m>, and thus any angle of the general form <m>n\frac{\pi}{2}</m>, where <m>n</m> is an odd integer, should be excluded from the domain of <m>\sec x</m>.
+    </p>
+    <remark>
+      <title>Domains for Cosecant and Secant</title>
+      <p>
+        The domains for cosecant and secant functions are given in <xref ref="tab_csc-sec-domain"/>
+      </p>
+      <table xml:id="tab_csc-sec-domain">
+        <title>Domains of the trigonometric functions</title>
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>Function</cell>
+            <cell>Domain</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>\csc\theta</m></cell>
+            <cell>All real numbers except integer multiples of <m>\pi</m> (<m>180^{\circ}</m>)</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>\sec\theta</m></cell>
+            <cell>All real numbers except integer multiples of <m>\frac{\pi}{2}</m> (<m>90^{\circ}</m>)</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+      </table>
+    </remark>
+  </subsection>
+  <subsection xml:id="subsec-range-cosecant-secant-functions">
+    <title>Ranges of the Cosecant and Secant Functions</title>
+    <p>
+      If the angle is not an integer multiple of <m>\pi</m>, i.e. <m>x\neq n\pi</m>, where <m>n</m> is an integer, then the Reciprocal Identity allows us to define cosecant as
       <me>\csc x=\frac{1}{\sin x}</me>.
-      Therefore, taking the reciprocal of the range of sine we get
+      In <xref ref="subsec-domain-range-sine-cosine-functions"/>, we learned that the function <m>y=\sin x</m> has a range of
+      <me>-1\leq \sin x\leq1</me>.
+      Therefore, taking the reciprocal of the range of sine, we get
       <me>\csc x\leq-1\mbox{ or }\csc x\geq1</me>.
       In other words, the range of the cosecant function is all real numbers less than or equal to <m>-1</m> or greater than or equal to <m>1</m>.
     </p>
-    <table xml:id="tab_csc-sec-domain">
-      <title>Domains of the trigonometric functions</title>
-      <tabular>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell>Function</cell>
-          <cell>Domain</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\sin\theta</m></cell>
-          <cell>all real numbers</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\cos\theta</m></cell>
-          <cell>all real numbers</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\tan\theta</m></cell>
-          <cell>all real numbers except <m>\frac{\pi}{2}+n\pi</m> (<m>90^{\circ}+180^{\circ}\cdot n</m>) for some integer <m>n</m></cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\csc\theta</m></cell>
-          <cell>all real numbers except <m>\pi\cdot n</m> (<m>180^{\circ}\cdot n</m>) for some integer <m>n</m></cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\sec\theta</m></cell>
-          <cell>all real numbers except <m>\frac{\pi}{2}+n\pi</m> (<m>90^{\circ}+180^{\circ}\cdot n</m>) for some integer <m>n</m></cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\cot\theta</m></cell>
-          <cell>all real numbers except (<m>180^{\circ}\cdot n</m>) <m>\pi\cdot n</m> for some integer <m>n</m></cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-      </tabular>
-    </table>
     <p>
-      Next we look at the range for each of the trigonometric functions. If <m>P(x,y)</m> is a point on the unit circle, then we have <m>-1\leq x\leq1</m> and <m>-1\leq y\le1</m>. Since <m>\sin\theta=y</m> and <m>\cos\theta=x</m>, it follows that <m>-1\leq\sin\theta\leq1</m> and <m>-1\leq\cos\theta\leq1</m>.
+      Similarly, since <m>-1\leq \cos x\leq1</m>, we can get the range for the secant funcation as
+      <me>\sec x\leq-1\mbox{ or }\sec x\geq1</me>
+      or all real numbers less than or equal to <m>-1</m> or greater than or equal to <m>1</m>.
     </p>
-    <p>
-      **Look at Sullivan p384 for csc sec, cot/tan
-    </p>
-    <table xml:id="tab_csc-sec-range">
-      <title>Ranges of the trigonometric functions</title>
-      <tabular>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell>Function</cell>
-          <cell>Range</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\sin\theta</m></cell>
-          <cell>all real numbers from -1 to 1</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\cos\theta</m></cell>
-          <cell>all real numbers from -1 to 1</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\tan\theta</m></cell>
-          <cell>all real numbers</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\csc\theta</m></cell>
-          <cell>all real numbers greater than or equal to 1 or less than or equal to -1</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\sec\theta</m></cell>
-          <cell>all real numbers greater than or equal to 1 or less than or equal to -1</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\cot\theta</m></cell>
-          <cell>all real numbers</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-        </row>
-      </tabular>
-    </table>
+    <remark>
+      <title>Ranges for Cosecant and Secant</title>
+      <p>
+        The ranges for cosecant and secant functions are given in <xref ref="tab_csc-sec-range"/>
+      </p>
+      <table xml:id="tab_csc-sec-range">
+        <title>Ranges of the cosecant and secant functions</title>
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>Function</cell>
+            <cell>Range</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>\csc\theta</m></cell>
+            <cell>All real numbers greater than or equal to <m>1</m> or less than or equal to <m>-1</m></cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>\sec\theta</m></cell>
+            <cell>All real numbers greater than or equal to <m>1</m> or less than or equal to <m>-1</m></cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+      </table>
+    </remark>
   </subsection>
   <subsection xml:id="subsec-tangent-function">
     <title>The Tangent Function</title>
@@ -490,23 +461,24 @@
   <subsection xml:id="subsec-cosecant-function">
     <title>The Cosecant Function</title>
     <p>
-      Recall that the Reciprocal Identity for the cosecant function (<xref ref="def_reciprocal-identities"/>) is given by:
+      The cosecant function has vertical asymptotes at points <m>n\pi</m>, where <m>n</m> is an integer, corresponding to the values where the function is undefined. These points are the same ones excluded from the domain of <m>\csc x</m>. As discussed in <xref ref="subsec_periodic-functions"/>, the cosecant function has a period of <m>2\pi</m>. Given this, we choose to examine its behavior within one period, specifically from <m>0</m> to <m>2\pi</m>, since this interval spans one complete period of the cosecant function.
     </p>
     <p>
-      <me>\csc x=\frac{1}{\sin x}</me>
+      Consider the Reciprocal Identity for the cosecant function (<xref ref="def_reciprocal-identities"/>):
+      <me>\csc x=\frac{1}{\sin x}</me>.
+      As <m>x</m> approaches zero, sine decreases to zero, making cosecant approach positive infinity. Increasing <m>x</m> towards <m>\frac{\pi}{2}</m>,  <m>\sin(x)</m> increases to <m>1</m>, and cosecant decreases to <m>1</m>. As <m>x</m> moves from <m>\frac{\pi}{2}</m> to <m>\pi</m>, sine approaches zero, causing <m>\csc(x)</m> to approach infinity.
     </p>
     <p>
-      When <m>\sin x=0</m>, corresponding to <m>x=\ldots,-\pi,0,\pi,2\pi,\ldots</m>, the denominator becomes zero, leading to vertical asympototes. In general, <m>\csc x</m> is undefined for angles of the form <m>n\pi</m>, where <m>n</m> is an integer.
+      Similarly, for <m>x\gt\pi</m> nearing <m>\pi</m>, <m>\sin(x)</m> becomes a small, negative number near zero, resulting in <m>\csc(x)</m> approaching negative infinity. 
+      As <m>x</m> increases to <m>\frac{3\pi}{2}</m>, <m>\sin(x)</m> decreases to <m>-1</m>, and <m>\csc(x)</m> increases to <m>-1</m>. 
+      Finally, from <m>\frac{3\pi}{2}</m> to <m>2\pi</m>, <m>\sin(x)</m> approaches a small negative number, causing cosecant to approach negative infinity.
+      This behavior is shown in <xref ref="cosecant-graph-animation"/>.
     </p>
-    <p>
-      Since we learned in <xref ref="subsec_periodic-functions"/> that the cosecant function is periodic with a period of <m>2\pi</m>, we can focus on one period, such as <m>0\lt x \lt2\pi</m>, and repeat the pattern. In this interval, we have vertical asymptotes at <m>x=0</m>, <m>x=\pi</m>, and <m>x=2\pi</m>.
-    </p>
-    <p>
-      As <m>x</m> approaches zero, sine is a small number nearing zero, causing cosecant to become large, approaching positive infinity. When <m>x</m> increases towards <m>\frac{\pi}{2}</m>,  <m>\sin(x)</m>> increases to <m>1</m>, and cosecant decreases to <m>1</m>. As <m>x</m> moves from <m>\frac{\pi}{2}</m> to <m>\pi</m>, <m>\sin(x)</m> approaches zero, and <m>\csc(x)</m> approaches infinity.
-    </p>
-    <p>
-      Similarly, for <m>x\gt\pi</m>, nearing <m>\pi</m>, <m>\sin(x)</m> is a small, negative number near zero, resulting in <m>\csc(x)</m> becoming a large negative number, approaching negative infinity. As <m>x</m> increases to <m>\frac{3\pi}{2}</m>, <m>\sin(x)</m> decreases to <m>-1</m>, and <m>\csc(x)</m> increases to <m>-1</m>. Finally, as <m>x</m> moves from <m>\frac{3\pi}{2}</m> to <m>2\pi</m>, <m>\sin(x)</m> once again approaches a small negative number, causing cosecant to approach negative infinity. This behavior is shown in <xref ref="cosecant-graph-animation"/>
-    </p>
+    
+    
+
+
+
     <figure xml:id="cosecant-graph-animation">
       <caption>
         As <m>\theta</m> moves from <m>0^{\circ}</m> to <m>360^{\circ}</m>, this figure plots the values of <m>y=\sin x</m> and <m>y = \csc \theta</m>. Note that while we will generally be using radians when graphing trigonometric functions, this figure uses degrees to help visualize the angle.
@@ -676,13 +648,7 @@
   <subsection xml:id="subsec-secant-function">
     <title>The Secant Function</title>
     <p>
-      The Reciprocal Identity for the secant function (<xref ref="def_reciprocal-identities"/>) states that
-    </p>
-    <p>
-      <me>\sec x=\frac{1}{\cos x}.</me>
-    </p>
-    <p>
-      Similarly to how we constructed the graph of cosecant from the graph of sine, we can construct the graph of secant from the graph of cosine, shown in <xref ref="secant-graph-animation"/>.
+      As discussed earlier in this section, the secant function has a domain for all real numbers except angles of <m>n\frac{\pi}{2}</m>, where <m>n</m> is an integer. These excluded values correspond to the vertical asymptotes of the secant function. With a period of <m>2\pi</m>, we can focus on the interval <m>0</m> to <m>2\pi</m>. The construction of the secant function plot follows a similar approach to that used for the cosecant function, as illustrated in <xref ref="secant-graph-animation"/>.
     </p>
     <figure xml:id="secant-graph-animation">
       <caption>
@@ -813,24 +779,10 @@
     </figure>
 
   </subsection>
-  <subsection>
-    <title>next topic</title>
-    <p>
-      complete graph of tan, for -2pi to 4pi
-    </p>
-    <p>
-      Tangent then cotangent. same thing
-    </p>
-    <p>
-      Transformations of the two
-    </p>
-    <p>
-      cosecant and secant
-    </p>
-    <p>
-      transformations
-    </p>
-  </subsection>
+
+
+
+
   <subsection>
     <title>next topic</title>
   <p>
@@ -848,41 +800,9 @@
     <p>
       June 20 December 21 March 20 September 22
     </p>
-
-
   </example>
 
   
-  <p>
-    Recall that <m>\cos(0)=0</m> but so do <m>\cos(0+2\pi)=\cos2\pi=0</m>. In fact, if we add or subtract any multiple of <m>2\pi</m> to our angle, we will obtain the same value for cosine. Functions such as these are known as
-    <em>periodic functions</em>
-  </p>
-  <definition>
-    <title>Periodic Function</title>
-    <statement>
-      <p>
-        A function <m>f</m> is said to be <term>periodic</term>
-            <idx><h>periodic</h></idx>
-        if there exists a number <m>p>0</m> such that
-        <me>
-          f(\theta+p)=f(x)
-        </me>
-        for all <m>\theta</m> in the domain of <m>f</m>. The smallest value of the number <m>p</m> is called the <term>period</term><idx><h>period</h></idx> of <m>f</m>.
-      </p>
-    </statement>
-  </definition>
-  <definition xml:id="def-periodic-properties">
-  <title>Periodic Properties</title>
-    <statement>
-      <p>
-        The six trigonometric functions are periodic functions.
-        <md>
-          <mrow>\sin(\theta+2\pi)\amp =\sin\theta \amp  \cos(\theta+2\pi)\amp =\cos\theta \amp  \tan(\theta+\pi)\amp =\tan\theta</mrow>
-          <mrow>\csc(\theta+2\pi)\amp =\csc\theta \amp  \sec(\theta+2\pi)\amp =\sec\theta \amp  \cot(\theta+\pi)\amp =\cot\theta</mrow>
-        </md>
-      </p>
-    </statement>
-  </definition>
   <example>
     <statement>
       <p>
@@ -971,6 +891,8 @@
   </example>
 
 </subsection>
+
+
 <exercises xml:id="exercises-graphs-of-other-trig-functions">
   
   <exercisegroup cols="2">
