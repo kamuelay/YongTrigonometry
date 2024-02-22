@@ -86,8 +86,8 @@
           </row>
           <row>
             <cell><m>\sin\theta</m></cell>
-            <cell>all real numbers, <m>(-\infty,\infty)</m></cell>
-            <cell>all real numbers from -1 to 1, <m>[-1,1]</m></cell>
+            <cell>All real numbers, <m>(-\infty,\infty)</m></cell>
+            <cell>All real numbers from -1 to 1, <m>[-1,1]</m></cell>
           </row>
           <row bottom="minor">
             <cell></cell>
@@ -96,8 +96,8 @@
           </row>
           <row>
             <cell><m>\cos\theta</m></cell>
-            <cell>all real numbers, <m>(-\infty,\infty)</m></cell>
-            <cell>all real numbers from -1 to 1, <m>[-1,1]</m></cell>
+            <cell>All real numbers, <m>(-\infty,\infty)</m></cell>
+            <cell>All real numbers from -1 to 1, <m>[-1,1]</m></cell>
           </row>
           <row bottom="minor">
             <cell></cell>
