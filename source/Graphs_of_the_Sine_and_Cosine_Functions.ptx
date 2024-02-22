@@ -45,49 +45,68 @@
       <me>-1\leq \sin\theta\leq1, \quad -1\leq \cos\theta\leq1</me>.
       Since the range of a function consists of all its outputs, we conclude that the range of both the sine and cosine functions spans all real numbers between -1 and 1.
     </p>
-    <p>
-      <xref ref="tab_sin-cos-domain-range">Table</xref> summarizes the domains and ranges for the sine and cosine functions.
-    </p>
-    <table xml:id="tab_sin-cos-domain-range">
-      <title>Domains and Ranges of Sine and Cosine</title>
-      <tabular>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell>Function</cell>
-          <cell>Domain</cell>
-          <cell>Range</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\sin\theta</m></cell>
-          <cell>all real numbers, <m>(-\infty,\infty)</m></cell>
-          <cell>all real numbers from -1 to 1, <m>[-1,1]</m></cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell><m>\cos\theta</m></cell>
-          <cell>all real numbers, <m>(-\infty,\infty)</m></cell>
-          <cell>all real numbers from -1 to 1, <m>[-1,1]</m></cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-        </row>
-      </tabular>
-    </table>
+    <remark>
+      <title>Domain and Range for the Sine and Cosine Functions</title>
+      <idx>
+        <h>sine</h>
+        <h>domain</h>
+      </idx>
+      <idx>
+        <h>sine</h>
+        <h>range</h>
+      </idx>
+      <idx>
+        <h>cosine</h>
+        <h>domain</h>
+      </idx>
+      <idx>
+        <h>cosine</h>
+        <h>range</h>
+      </idx>
+      <p>
+        <xref ref="tab_sin-cos-domain-range">Table</xref> summarizes the domains and ranges for the sine and cosine functions.
+      </p>
+      <table xml:id="tab_sin-cos-domain-range">
+        <title>Domains and Ranges of Sine and Cosine</title>
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>Function</cell>
+            <cell>Domain</cell>
+            <cell>Range</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>\sin\theta</m></cell>
+            <cell>all real numbers, <m>(-\infty,\infty)</m></cell>
+            <cell>all real numbers from -1 to 1, <m>[-1,1]</m></cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>\cos\theta</m></cell>
+            <cell>all real numbers, <m>(-\infty,\infty)</m></cell>
+            <cell>all real numbers from -1 to 1, <m>[-1,1]</m></cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+      </table>
+    </remark>
   </subsection>
   <subsection xml:id="subsec-graphing-sine-function">
     <title>The Sine Function</title>
