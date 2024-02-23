@@ -595,7 +595,7 @@
       </me>
     </p>
     <p>
-      where we assume <m>B\gt0</m>. You may recall from algebra that for functions of the form <m>y=f(Bx)</m>, a key factor emerges: when <m>B \gt 1</m>, the graph undergoes horizontal compression by a factor of <m>\frac{1}{B}</m>; conversely, when <m>0 \lt B \lt 1</m>, the graph is horizontally stretched by a factor of <m>\frac{1}{B}</m>. Given that sine and cosine complete one period in <m>2\pi</m>, the horizontal stretching or compressing of a period will be by a factor of <m>\frac{1}{B}</m>.
+      You may recall from algebra that for functions of the form <m>y=f(Bx)</m>, a key factor emerges: when <m>\B\ \gt 1</m>, the graph undergoes horizontal compression by a factor of <m>\frac{1}{|B|}</m>; conversely, when <m>0 \lt |B| \lt 1</m>, the graph is horizontally stretched by a factor of <m>\frac{1}{|B|}</m>. Given that sine and cosine complete one period in <m>2\pi</m>, the horizontal stretching or compressing of a period will be by a factor of <m>\frac{1}{|B|}</m>.
     </p>
     <definition>
       <title>Period</title>
@@ -605,7 +605,7 @@
         </p>
         <p>
           <me>
-            y=\sin Bx \quad \mbox{and} \quad y=\cos Bx \quad (\mbox{assume }B\gt 0)
+            y=\sin Bx \quad \mbox{and} \quad y=\cos Bx
           </me>
         </p>
         <p>
@@ -613,11 +613,11 @@
         </p>
         <p>
           <me>
-            \mbox{period}=\frac{2\pi}{B}
+            \mbox{period}=\frac{2\pi}{|B|}
           </me>
         </p>
         <p>
-          Thus, if <m>B\gt 1</m>, the period is compressed; if <m>0\lt B\lt 1</m>, the period is stretched.
+          Thus, if <m>|B|\gt 1</m>, the period is compressed; if <m>0\lt |B|\lt 1</m>, the period is stretched.
         </p>
       </statement>
     </definition>
@@ -717,7 +717,7 @@
           </men>
         </p>
         <p>
-          undergo a <term>horizontal shift</term><idx><h>horizontal shift</h></idx>, also known as <term>phase shift</term><idx><h>phase shift</h></idx>, of <m>C</m> units. If <m>C \gt 0</m>, the phase shift is to the right; if <m>C \lt 0</m>, it is to the left.
+          undergo a <term>horizontal shift</term><idx><h>horizontal shift</h></idx>, known as <term>phase shift</term><idx><h>phase shift</h></idx>, of <m>C</m> units. If <m>C \gt 0</m>, the phase shift is to the right; if <m>C \lt 0</m>, it is to the left.
         </p>
       </statement>
     </definition>
@@ -752,7 +752,7 @@
       </p>
     </remark>
     <example>
-      <title>Horizonal Shift</title>
+      <title>Phase Shift</title>
       <statement>
         <p>Identify the period and phase shift of each function, and graph the function</p>
         <p>
@@ -774,7 +774,7 @@
                 Since this equation is of the form <m>y=\cos(Bx-E)</m>, we have <m>B=1</m> and <m>E=\pi</m>. Therefore,
               </p>
               <p>
-                <me>\mbox{period}=\frac{2\pi}{B}=\frac{2\pi}{1}=2\pi</me>
+                <me>\mbox{period}=\frac{2\pi}{|B|}=\frac{2\pi}{1}=2\pi</me>
               </p>
               <p>
                 and
@@ -814,7 +814,7 @@
                 Since the given equation is in the form <m>y = \sin\left(\frac{\pi}{6}(x + 2)\right)</m>, we can identify <m>B = \frac{\pi}{6}</m> and <m>C = -2</m>. Consequently,
               </p>
               <p>
-                <me>\mbox{period}=\frac{2\pi}{B}=\frac{2\pi}{\frac{\pi}{6}}=2\pi\cdot\frac{6}{\pi}=12</me>
+                <me>\mbox{period}=\frac{2\pi}{|B|}=\frac{2\pi}{\frac{\pi}{6}}=2\pi\cdot\frac{6}{\pi}=12</me>
               </p>
               <p>
                 and
@@ -906,7 +906,7 @@
       <p>
         <ul>
           <li>Amplitude: <m>|A|</m></li>
-          <li>Period: <m>\frac{2\pi}{B}</m></li>
+          <li>Period: <m>\frac{2\pi}{|B|}</m></li>
           <li>Phase Shift: <m>C</m></li>
           <li>Vertical Shift: <m>D</m></li>
         </ul>
@@ -925,7 +925,7 @@
       <p>
         <ul>
           <li>Amplitude: <m>|A|</m></li>
-          <li>Period: <m>\frac{2\pi}{B}</m></li>
+          <li>Period: <m>\frac{2\pi}{|B|}</m></li>
           <li>Phase Shift: <m>\frac{E}{B}</m></li>
           <li>Vertical Shift: <m>D</m></li>
         </ul>
