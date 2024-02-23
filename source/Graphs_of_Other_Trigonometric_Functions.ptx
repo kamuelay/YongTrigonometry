@@ -767,13 +767,13 @@
     </p>
     <figure xml:id="tangent-cotangent-transformation-animation">
       <caption>
-        As <m>\theta</m> moves from <m>-90^{\circ}</m> to <m>90^{\circ}</m>, this figure plots the values of <m>y = \tan \theta</m>. Note that while we will generally be using radians when graphing trigonometric functions, this figure uses degrees to help visualize the angle.
+        Manipulate the graphs of sine and cosine by adjusting the sliders for <m>A</m>, <m>B</m>, <m>C</m>, and <m>D</m>. Observe the effects on amplitude, period, phase shift, and vertical shift. Additionally, you can toggle between the sine and cosine graphs by selecting the corresponding function.
       </caption>
       <interactive geogebra="p3vf25da" aspect="1.75:0.75"/>
     </figure>
     <figure xml:id="cosecant-secant-transformation-animation">
       <caption>
-        As <m>\theta</m> moves from <m>-90^{\circ}</m> to <m>90^{\circ}</m>, this figure plots the values of <m>y = \tan \theta</m>. Note that while we will generally be using radians when graphing trigonometric functions, this figure uses degrees to help visualize the angle.
+        Manipulate the graphs of sine and cosine by adjusting the sliders for <m>A</m>, <m>B</m>, <m>C</m>, and <m>D</m>. Observe the effects on amplitude, period, phase shift, and vertical shift. Additionally, you can toggle between the sine and cosine graphs by selecting the corresponding function.
       </caption>
       <interactive geogebra="p7awsjqv" aspect="1.75:0.75"/>
     </figure>
