@@ -939,7 +939,7 @@
     </p>
     <figure xml:id="sinusoidal-transformation">
       <caption>
-        Manipulate the graphs of sine and cosine by adjusting the sliders for <m>A</m>, <m>B</m>, <m>C</m>, and <m>D</m>. Observe the effects on amplitude, period, phase shift, and vertical shift.
+        Manipulate the graphs of sine and cosine by adjusting the sliders for <m>A</m>, <m>B</m>, <m>C</m>, and <m>D</m>. Observe the effects on amplitude, period, phase shift, and vertical shift. Additionally, you can toggle between the sine and cosine graphs by selecting the corresponding function.
       </caption>
       <interactive geogebra="u75zdnr8" aspect="1.75:0.75"/>
     </figure>
