@@ -699,60 +699,102 @@
   <subsection xml:id="subsec-transformations-other-trig-functions">
     <title>Graphing Transformations of Other Trigonometric Functions</title>
     <p>
-      We can also have transformations...
+      Similar to the graphs of sine and cosine, the graphs of the other trigonometric functions can undergo vertical stretching and compressing, horizontal stretching and compressing, phase shift, and vertical shift transformations. 
     </p>
     <p>
-      Go into detail for the tangent transformations. Then discuss FEATURES OF THE GRAPH OF Y = ATAN(BX−C)+D. See Abramson.
+      Talk about Vertical Stretch/Compression
     </p>
     <p>
-      Stretching factor is |A|
+      Functions of the form
+      <me>y=A\tan(x)\quad y=A\cot(x)\quad y=A\csc(x)\quad y=A\sec(x)</me>
+      undergo a Vertical Stretch or Compression. If <m>|A| \gt 1</m>, it's a stretch; if <m>0 \lt |A| \lt 1</m>, it's a compression.
     </p>
-    <p>
-      Period is pi/|B|
-    </p>
-    <p>
-      domain is x neq C/B+pi/|B| *k
-    </p>
-    <p>
-      Range -infty to infty
-    </p>
-    <p>
-      Vertical asymptotes at x=C/B+pi/(2|B|) *k
-    </p>
-    <p>
-      No amplitude
-    </p>
-    <p>
-      Here is something to start with
-    </p>
-    <p>
-      <title>Tangent Function Transformations:</title>
+    <remark>
+      <title>Transformations of the Tangent and Cotangent Functions</title>
       <p>
-        <b>Vertical Stretch/Compression:</b>
-        If <m>y = A \tan(x)</m>, where <m>A</m> is a constant, it results in a vertical stretch or compression.
-        If <m>|A| \gt 1</m>, it's a stretch; if <m>0 \lt |A| \lt 1</m>, it's a compression.
+        Tangent and cotangent functions of the form 
+        <me>y=A\cdot\tan(B(x-C))+D \mbox{ and } y=A\cdot\cot(B(x-C))+D</me> 
+        undergo the following transformations:
       </p>
+      <ul>
+        <li>
+          <p>Stretching/compressing factor: <m>|A|</m></p>
+        </li>
+        <li>
+          <p>Period: <m>\frac{\pi}{|B|}</m></p>
+        </li>
+        <li>
+          <p>Phase Shift: <m>C</m></p>
+        </li>
+        <li>
+          <p>Vertical Shift: <m>D</m></p>
+        </li>
+      </ul>
+    
       <p>
-        <b>Vertical Shift:</b>
-        For <m>y = \tan(x) + D</m>, the graph is vertically shifted up or down by <m>D</m> units.
-        Positive <m>D</m> shifts upward, and negative <m>D</m> shifts downward.
+        The tangent function has vertical asymptotes at
+        <me>x=C+\frac{\pi}{|B|}n</me>,
+        and the cotangent function has vertical asymptotes at
+        <me>x=C+\frac{\pi}{2|B|}n</me>,
+        where <m>n</m> is an integer.
       </p>
+    
       <p>
-        <b>Horizontal Stretch/Compression:</b>
-        If <m>y = \tan(Bx)</m>, where <m>B</m> is a constant, it causes a horizontal stretch or compression.
-        If <m>|B| \gt 1</m>, it's a compression; if <m>0 \lt |B| \lt 1</m>, it's a stretch.
+        Tangent and cotangent functions of the form
+        <me>y=A\cdot\tan(Bx-E)+D \quad y=A\cdot\cot(Bx-E)+D</me>
+        undergo the following transformations:
       </p>
+      <ul>
+        <li>
+          <p>Stretching/compressing factor: <m>|A|</m></p>
+        </li>
+        <li>
+          <p>Period: <m>\frac{\pi}{|B|}</m></p>
+        </li>
+        <li>
+          <p>Phase Shift: <m>\frac{E}{B}</m></p>
+        </li>
+        <li>
+          <p>Vertical Shift: <m>D</m></p>
+        </li>
+      </ul>
+    
       <p>
-        <b>Horizontal Shift:</b>
-        For <m>y = \tan(x - C)</m>, the graph is horizontally shifted right or left by <m>C</m> units.
-        Positive <m>C</m> shifts to the right, and negative <m>C</m> shifts to the left.
+        The tangent function has vertical asymptotes at
+        <me>x=\frac{E}{B}+\frac{\pi}{|B|}n</me>,
+        and the cotangent function has vertical asymptotes at
+        <me>x=\frac{E}{B}+\frac{\pi}{2|B|}n</me>,
+        where <m>n</m> is an integer.
       </p>
-      <p>
-        <b>Reflection:</b>
-        Adding a negative sign outside the function, <m>y = -\tan(x)</m>, reflects the graph across the x-axis.
-        If the negative sign is inside, <m>y = \tan(-x)</m>, it reflects across the y-axis.
-      </p>
-    </p>    
+    </remark>
+    <p>
+      Give an example that involes a few of these transformations
+    </p>
+    <p>
+      <b>Vertical Stretch/Compression:</b>
+      If <m>y = A \tan(x)</m>, where <m>A</m> is a constant, it results in a vertical stretch or compression.
+      If <m>|A| \gt 1</m>, it's a stretch; if <m>0 \lt |A| \lt 1</m>, it's a compression.
+    </p>
+    <p>
+      <b>Vertical Shift:</b>
+      For <m>y = \tan(x) + D</m>, the graph is vertically shifted up or down by <m>D</m> units.
+      Positive <m>D</m> shifts upward, and negative <m>D</m> shifts downward.
+    </p>
+    <p>
+      <b>Horizontal Stretch/Compression:</b>
+      If <m>y = \tan(Bx)</m>, where <m>B</m> is a constant, it causes a horizontal stretch or compression.
+      If <m>|B| \gt 1</m>, it's a compression; if <m>0 \lt |B| \lt 1</m>, it's a stretch.
+    </p>
+    <p>
+      <b>Horizontal Shift:</b>
+      For <m>y = \tan(x - C)</m>, the graph is horizontally shifted right or left by <m>C</m> units.
+      Positive <m>C</m> shifts to the right, and negative <m>C</m> shifts to the left.
+    </p>
+    <p>
+      <b>Reflection:</b>
+      Adding a negative sign outside the function, <m>y = -\tan(x)</m>, reflects the graph across the x-axis.
+      If the negative sign is inside, <m>y = \tan(-x)</m>, it reflects across the y-axis.
+    </p> 
     <p>
       The transformations for cotangent, cosecant, and secant are similar to those of tangent, with corresponding changes in the vertical stretch/compression, vertical shift, horizontal stretch/compression, horizontal shift, and reflection.
     </p>
