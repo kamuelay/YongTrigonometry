@@ -699,123 +699,256 @@
   <subsection xml:id="subsec-transformations-other-trig-functions">
     <title>Graphing Transformations of Other Trigonometric Functions</title>
     <p>
-      Similar to the graphs of sine and cosine, the graphs of the other trigonometric functions can undergo vertical stretching and compressing, horizontal stretching and compressing, phase shift, and vertical shift transformations. 
+      Similar to the graphs of sine and cosine, the graphs of the other trigonometric functions can undergo vertical stretching and compressing, horizontal stretching and compressing, phase shifts, vertical shift transformations, and reflections about the <m>x</m>- and <m>y</m>-axes. However, unlike the sine and cosine functions, there is no amplitude for the other trigonometric functions. These transformations are listed in <xref ref="def-transformations-other-trig-functions"/>.
     </p>
-    <p>
-      Talk about Vertical Stretch/Compression
-    </p>
-    <p>
-      Functions of the form
-      <me>y=A\tan(x)\quad y=A\cot(x)\quad y=A\csc(x)\quad y=A\sec(x)</me>
-      undergo a Vertical Stretch or Compression. If <m>|A| \gt 1</m>, it's a stretch; if <m>0 \lt |A| \lt 1</m>, it's a compression.
-    </p>
+    <definition xml:id="def-transformations-other-trig-functions">
+      <title>Transformations of the Tangent, Cotangent, Cosecant, and Secant Functions</title>
+      <statement>
+        <p>
+          For functions of the form
+          <me>
+              y = A \cdot \tan(B(x - C)) + D, \quad y = A \cdot \cot(B(x - C)) + D,
+          </me>
+          <me>
+            \quad y = A \cdot \csc(B(x - C)) + D, \quad \mbox{and} \quad y = A \cdot \sec(B(x - C)) + D
+        </me>,
+          we can express the transformations as follows:
+      </p>
+      <p>
+        <ul>
+          <li>
+            <p>
+              Amplitude and Vertical Compression/Stretch: <m>|A|</m>
+            </p>
+            <p>
+              <ul>
+                <li>
+                  <p><m>|A|</m> is the value of the vertical stretch/compression.</p>
+                </li>
+                <li>
+                  <p>If <m>|A| \gt 1</m>, there is vertical stretching.</p>
+                </li>
+                <li>
+                  <p>If <m>0 \lt |A| \lt 1</m>, there is vertical compression.</p>
+                </li>
+              </ul>
+            </p>
+          </li>
+          <li>
+            <p>
+              Period and Horizontal Stretch/Compression: <m>|B|</m>
+            </p>
+            <p>
+              <ul>
+                <li>
+                  <p>The period is <m>\frac{\pi}{|B|}</m> for tangent and cotangent, and <m>\frac{2\pi}{|B|}</m> for cosecant and secant.</p>
+                </li>
+                <li>
+                  <p>If <m>|B| \gt 1</m>, there is horizontal compression, and the period is shortened.</p>
+                </li>
+                <li>
+                  <p>If <m>0 \lt |B| \lt 1</m>, there is horizontal stretching, and the period is lengthened.</p>
+                </li>
+              </ul>
+            </p>
+          </li>
+          <li>
+            <p>
+              Phase Shift: <m>C</m>
+            </p>
+            <p>
+              <ul>
+                <li>
+                  <p>If <m>C</m> is positive, there is a shift to the right.</p>
+                </li>
+                <li>
+                  <p>If <m>C</m> is negative, there is a shift to the left.</p>
+                </li>
+              </ul>
+            </p>
+          </li>
+          <li>
+            <p>
+              Vertical Shift: <m>D</m>
+            </p>
+            <p>
+              <ul>
+                <li>
+                  <p>If <m>D</m> is positive, there is a shift upward.</p>
+                </li>
+                <li>
+                  <p>If <m>D</m> is negative, there is a shift downward.</p>
+                </li>
+              </ul>
+            </p>
+          </li>
+          <li>
+            <p>
+              Reflection about the <m>x</m>-axis:
+            </p>
+            <p>
+              <ul>
+                <li>
+                  <p>If <m>A</m> is negative (<m>A \lt 0</m>), there is a reflection about the <m>x</m>-axis.</p>
+                </li>
+              </ul>
+            </p>
+          </li>
+          <li>
+            <p>
+              Reflection about the <m>y</m>-axis:
+            </p>
+            <p>
+              <ul>
+                <li>
+                  <p>If <m>B</m> is negative (<m>B \lt 0</m>), there is a reflection about the <m>y</m>-axis.</p>
+                </li>
+              </ul>
+            </p>
+          </li>
+          <li>
+            <p>
+              Vertical Asymptotes:
+            </p>
+            <p>
+              <ul>
+                <li>
+                  <p>
+                    For tangent and cotangent, vertical asymptotes occur at 
+                    <me>x = C + \frac{\pi}{|B|}n</me>,
+                    where <m>n</m> is an integer.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    For cosecant and secant, vertical asymptotes occur at
+                    <me>x = C + \frac{\pi}{2|B|}n</me>, 
+                    where <m>n</m> is an integer.
+                  </p>
+                </li>
+              </ul>
+            </p>
+          </li>
+        </ul>
+      </p>
+      </statement>
+    </definition>
     <remark>
-      <title>Transformations of the Tangent and Cotangent Functions</title>
+      <title>Other Forms of Transformations</title>
       <p>
-        Tangent and cotangent functions of the form 
-        <me>y=A\cdot\tan(B(x-C))+D \mbox{ and } y=A\cdot\cot(B(x-C))+D</me> 
-        undergo the following transformations:
+        For functions of the form
+        <me>
+          y = A \cdot \tan(Bx - E) + D, \quad y = A \cdot \cot(Bx - E) + D,
+      </me>
+      <me>
+        \quad y = A \cdot \csc(Bx - E) + D, \quad \mbox{and} \quad y = A \cdot \sec(Bx - E) + D
+    </me>,
+        the transformations are the same as above, except for the phase shift and vertical asymptotes where you replace <m>C</m> with <m>\frac{E}{B}</m>. If <m>\frac{E}{B} \lt0</m> the phase shift is to the right, and if <m>\frac{E}{B} \gt 0</m> it is to the left. 
       </p>
-      <ul>
-        <li>
-          <p>Stretching/compressing factor: <m>|A|</m></p>
-        </li>
-        <li>
-          <p>Period: <m>\frac{\pi}{|B|}</m></p>
-        </li>
-        <li>
-          <p>Phase Shift: <m>C</m></p>
-        </li>
-        <li>
-          <p>Vertical Shift: <m>D</m></p>
-        </li>
-      </ul>
-    
       <p>
-        The tangent function has vertical asymptotes at
-        <me>x=C+\frac{\pi}{|B|}n</me>,
-        and the cotangent function has vertical asymptotes at
-        <me>x=C+\frac{\pi}{2|B|}n</me>,
-        where <m>n</m> is an integer.
-      </p>
-    
-      <p>
-        Tangent and cotangent functions of the form
-        <me>y=A\cdot\tan(Bx-E)+D \quad y=A\cdot\cot(Bx-E)+D</me>
-        undergo the following transformations:
-      </p>
-      <ul>
-        <li>
-          <p>Stretching/compressing factor: <m>|A|</m></p>
-        </li>
-        <li>
-          <p>Period: <m>\frac{\pi}{|B|}</m></p>
-        </li>
-        <li>
-          <p>Phase Shift: <m>\frac{E}{B}</m></p>
-        </li>
-        <li>
-          <p>Vertical Shift: <m>D</m></p>
-        </li>
-      </ul>
-    
-      <p>
-        The tangent function has vertical asymptotes at
-        <me>x=\frac{E}{B}+\frac{\pi}{|B|}n</me>,
-        and the cotangent function has vertical asymptotes at
-        <me>x=\frac{E}{B}+\frac{\pi}{2|B|}n</me>,
-        where <m>n</m> is an integer.
+        <ul>
+          <li>
+            <p>
+              For tangent and cotangent, vertical asymptotes occur at 
+              <me>x = \frac{E}{B} + \frac{\pi}{|B|}n</me>,
+              where <m>n</m> is an integer.
+            </p>
+          </li>
+          <li>
+            <p>
+              For cosecant and secant, vertical asymptotes occur at
+              <me>x = \frac{E}{B} + \frac{\pi}{2|B|}n</me>, 
+              where <m>n</m> is an integer.
+            </p>
+          </li>
+        </ul>
       </p>
     </remark>
+    <example>
+      <title>Horizontal Stretch/Compression and Reflection about the <m>y</m>-axis</title>
+      <statement>
+        <p>Identify the period and graph one period for each of the following functions:</p>
+        <p>
+          <ol>
+            <li>
+              <p><m>y=\cot(x)</m></p>
+            </li>
+            <li>
+              <p><m>y=\cot(2x)</m></p>
+            </li>
+            <li>
+              <p><m>y=\cot\left(\frac{1}{2}x\right)</m></p>
+            </li>
+            <li>
+              <p><m>y=\cot(-x)</m></p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>The period for <m>y=\cot(x)</m> is <m>\pi</m></p>
+            </li>
+            <li>
+              <p>The period for <m>y=\cot(2x)</m> is</p>
+              <p><me>\mbox{period}=\frac{\pi}{|2|}=\frac{\pi}{2}</me></p>
+            </li>
+            <li>
+              <p>The period for <m>y=\cot\left(\frac{1}{2}x\right)</m> is</p>
+              <p><me>\mbox{period}=\frac{\pi}{\left|\frac{1}{2}\right|}=2\pi</me></p>
+            </li>
+            <li>
+              <p>The period for <m>y=\cot(-x)</m> is </p>
+              <p><me>\mbox{period}=\frac{\pi}{|-1|}=\pi</me></p>
+            </li>
+          </ol>
+        </p>
+        <figure xml:id="cot-stretch">
+          <caption>The transformations of the cotangent function graph, starting with a baseline of <m>y=\cot(x)</m> along with graphs with a horizontal stretch, a horizontal compression, and a reflection about the <m>y</m>-axis.</caption>
+          <image xml:id="fig-cot-stretch">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=-pi-0.5,xmax=2*pi+0.5,ymin=-3.3,ymax=3.3,
+              xtick={-pi,-pi/2,...,2*pi},
+%              minor xtick={-pi/2,0,...,3*pi/2},
+              xticklabels={\(-\pi\),\(-\frac{\pi}{2}\),,\(\frac{\pi}{2}\),\(\pi\),\(\frac{3\pi}{2}\),\(2\pi\)},
+              xticklabel style={black},
+              xlabel=\(x\),
+              ylabel=\(y\)]
+              \addplot[stealth-stealth,domain=0+0.3:pi-0.3,samples=200,black,line width=1pt]{cot(deg(x))}node[right,pos=0.95]{$y=\cot(x)$};
+              \addplot[stealth-stealth,domain=0+0.15:pi/2-0.15,samples=200,red,line width=1pt]{cot(deg(2*x))}node[left,pos=0.95]{$y=\cot(2x)$};
+              \addplot[stealth-stealth,domain=0+0.6:2*pi-0.6,samples=200,blue,line width=1pt]{cot(deg(0.5*x))}node[right,pos=0.25]{$y=\cot\left(\frac{1}{2}x\right)$};
+              \addplot[stealth-stealth,domain=-pi+0.3:0-0.3,samples=200,magenta,line width=1pt]{cot(deg(-x))}node[left,pos=0.7]{$y=\cot(-x)$};
+              \draw [dashed,magenta] (-pi,-3.3) -- (-pi,3.3) node[below,pos=0]{$x=-\pi$};
+              \draw [dashed,red] (pi/2,-3.3) -- (pi/2,3.3) node[above,pos=1]{$x=\frac{\pi}{2}$};
+              \draw [dashed,black] (pi,-3.3) -- (pi,3.3) node[below,pos=0]{$x=\pi$};
+              \draw [dashed,blue] (2*pi,-3.3) -- (2*pi,3.3) node[above,pos=1]{$x=2\pi$};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </figure>
+      </solution>
+    </example>
     <p>
-      Give an example that involes a few of these transformations
-    </p>
-    <p>
-      <b>Vertical Stretch/Compression:</b>
-      If <m>y = A \tan(x)</m>, where <m>A</m> is a constant, it results in a vertical stretch or compression.
-      If <m>|A| \gt 1</m>, it's a stretch; if <m>0 \lt |A| \lt 1</m>, it's a compression.
-    </p>
-    <p>
-      <b>Vertical Shift:</b>
-      For <m>y = \tan(x) + D</m>, the graph is vertically shifted up or down by <m>D</m> units.
-      Positive <m>D</m> shifts upward, and negative <m>D</m> shifts downward.
-    </p>
-    <p>
-      <b>Horizontal Stretch/Compression:</b>
-      If <m>y = \tan(Bx)</m>, where <m>B</m> is a constant, it causes a horizontal stretch or compression.
-      If <m>|B| \gt 1</m>, it's a compression; if <m>0 \lt |B| \lt 1</m>, it's a stretch.
-    </p>
-    <p>
-      <b>Horizontal Shift:</b>
-      For <m>y = \tan(x - C)</m>, the graph is horizontally shifted right or left by <m>C</m> units.
-      Positive <m>C</m> shifts to the right, and negative <m>C</m> shifts to the left.
-    </p>
-    <p>
-      <b>Reflection:</b>
-      Adding a negative sign outside the function, <m>y = -\tan(x)</m>, reflects the graph across the x-axis.
-      If the negative sign is inside, <m>y = \tan(-x)</m>, it reflects across the y-axis.
-    </p> 
-    <p>
-      The transformations for cotangent, cosecant, and secant are similar to those of tangent, with corresponding changes in the vertical stretch/compression, vertical shift, horizontal stretch/compression, horizontal shift, and reflection.
-    </p>
-    <p>
-      Let's sum up all of the transformations into one equation for tan/cot/csc/sec.
-    </p>
-    <p>
-      Throw in 3-4 examples
+      Need example for csc and sec. Include vertical and horizontal shift
     </p>
     <p>
       Introduce the last figures
     </p>
     <figure xml:id="tangent-cotangent-transformation-animation">
       <caption>
-        Manipulate the graphs of sine and cosine by adjusting the sliders for <m>A</m>, <m>B</m>, <m>C</m>, and <m>D</m>. Observe the effects on amplitude, period, phase shift, and vertical shift. Additionally, you can toggle between the sine and cosine graphs by selecting the corresponding function.
+        Manipulate the graphs of sine and cosine by adjusting the sliders for <m>A</m>, <m>B</m>, <m>C</m>, and <m>D</m>. Observe the effects on period, phase shift, and vertical shift. Additionally, you can toggle between the sine and cosine graphs by selecting the corresponding function.
       </caption>
       <interactive geogebra="p3vf25da" aspect="1.75:0.75"/>
     </figure>
     <figure xml:id="cosecant-secant-transformation-animation">
       <caption>
-        Manipulate the graphs of sine and cosine by adjusting the sliders for <m>A</m>, <m>B</m>, <m>C</m>, and <m>D</m>. Observe the effects on amplitude, period, phase shift, and vertical shift. Additionally, you can toggle between the sine and cosine graphs by selecting the corresponding function.
+        Manipulate the graphs of sine and cosine by adjusting the sliders for <m>A</m>, <m>B</m>, <m>C</m>, and <m>D</m>. Observe the effects on period, phase shift, and vertical shift. Additionally, you can toggle between the sine and cosine graphs by selecting the corresponding function.
       </caption>
       <interactive geogebra="p7awsjqv" aspect="1.75:0.75"/>
     </figure>
