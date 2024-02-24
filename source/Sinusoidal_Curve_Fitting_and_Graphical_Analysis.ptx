@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="Sinusoidal_Curve_Fitting_and_Graphical_Analysis">
+  <title>Sinusoidal Curve Fitting and Graphical Analysis</title>
+  <introduction>
+    <p>
+      introduction...
+    </p>
+  </introduction>
+  <subsection xml:id="subsec-phase-shift">
+    <title>The title goes here</title>
+    <p>
+      Hours of daylight/darkness plotted for various latitudes across the pacific, include Micronesia
+    </p>
+    <p>
+      Sun declination (already in 2.1)
+    </p>
+    <p>
+      Moon Phase
+    </p>
+    <p>
+      Moon rising time
+    </p>
+    <p>
+      Planet rising time
+    </p>
+    <p>
+      Annual temperature
+    </p>
+    <p>
+      Daily Temperature
+    </p>
+    <p>
+      Rainfall <url href="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:trig/x2ec2f6f830c9fb89:sinusoidal-models/e/modeling-with-periodic-functions"></url>
+    </p>
+    <p>
+      Modeling with sinusoidal functions: phase shift
+CCSS.Math: HSA.CED.A.2, HSF.BF.A.1, HSF.TF.B.5, HSF.TF.B
+    </p>
+    <p>
+      CCSS.MATH.CONTENT.HSA.CED.A.2
+Create equations in two or more variables to represent relationships between quantities; graph equations on coordinate axes with labels and scales. <url href="https://www.thecorestandards.org/Math/Content/HSA/CED/A/2/"></url>
+    </p>
+    <example>
+      <title>Horizonal Shift</title>
+      <statement>
+        <p>
+          example
+        </p>
+      </statement>
+    </example>
+    
+
+    <p>
+      <me>
+        y=A\sin(B(x+C))+D
+      </me>
+    </p>
+    <p>A-amplitude; B-period=2pi/B (frequency or angular frequency); C-phase shift; D-vertical shift</p>
+    
+    <p>Define a phase shift is the horizontal shift</p>
+    <p>the phase shift is represented by the value 
+      C
+      C. A positive value of 
+      C
+      C indicates a shift to the right, and a negative value indicates a shift to the left.
+      
+      In simpler terms, a phase shift moves the entire graph of a trigonometric function horizontally, altering its starting position along the x-axis.</p>
+  </subsection>
+
+
+
+  <exercises>
+    <exercisegroup>
+      <introduction>
+        <p>
+          Write the equation of a sine function with the following characteristics:
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            Amplitude = 2; Period = <m>\pi</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            answer here
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup>
+      <introduction>
+        <p>
+          For each given graph, identify the amplitude, period, and phase shift. Write an equation that represents these characteristics.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            graph here
+          </p>
+        </statement>
+        <answer>
+          <p>
+            amplitude, period, phase shift, and equations
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+  </exercises>
+</section>
