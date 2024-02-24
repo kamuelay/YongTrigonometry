@@ -439,33 +439,33 @@
           </me>
         </p>
         <p>
-          represent the graphs of <m>y = \sin(x)</m> and <m>y = \cos(x)</m> with a <term>reflection</term><idx><h>reflection</h><h>about <m>x</m>-axis</h></idx> about the <m>x</m>-axis, respectively.
+          represent the graphs of <m>y = \sin(x)</m> and <m>y = \cos(x)</m> with a <term>reflection about the <m>x</m>-axis</term>,<idx><h>reflection</h><h>about <m>x</m>-axis</h></idx> respectively.
         </p>
       </statement>
     </definition>
     <example>
       <title>Reflections about the <m>x</m>-axis</title>
       <statement>
-        <p>Graph <m>y=-\sin(x)</m></p>
+        <p>Graph <m>y=-\cos(x)</m></p>
       </statement>
       <solution>
-        <figure xml:id="sin-x-axis-reflect">
-          <caption>The graph <m>y = -\sin(x)</m> is obtained by multiplying every <m>y-</m>value of the <m>y = \sin(x)</m> graph by <m>-1</m>. This transformation reflects all points across the x-axis, turning positive values negative and negative values positive. As a result, the graph of <m>y = -\sin(x)</m> is the reflection of <m>y = \sin(x)</m> about the x-axis.</caption>
-          <image xml:id="fig-sin-x-axis-reflect">
+        <figure xml:id="cos-x-axis-reflect">
+          <caption>The graph <m>y = -\cos(x)</m> is obtained by multiplying every <m>y-</m>value of the <m>y = \cos(x)</m> graph by <m>-1</m>. This transformation reflects all points across the x-axis, turning positive values negative and negative values positive.</caption>
+          <image xml:id="fig-cos-x-axis-reflect">
             <latex-image>
               \begin{tikzpicture}
               \begin{axis}[
               axis lines=middle,clip=false,
               xmin=-2*pi-0.5,xmax=3*pi+0.5,ymin=-1.2,ymax=1.2,
               ytick={-1,1},
-              minor ytick={-0.5,0.5,1.5,2.5},
+              minor ytick={-0.5,0.5},
               xtick={-2*pi,-pi,0,pi,2*pi,3*pi},
               xticklabels={\(-2\pi\),\(-\pi\),\(0\),\(\pi\),\(2\pi\),\(3\pi\)},
               xticklabel style={black},
               xlabel=\(x\),
               ylabel=\(y\)]
-              \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt,opacity=0.5]{sin(deg(x))}node[right,pos=1]{\(y=\sin x\)};
-              \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,red,line width=1pt]{-sin(deg(x))}node[right,pos=1]{\(y=-\sin(x)\)};
+              \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt,opacity=0.5]{cos(deg(x))}node[right,pos=1]{\(y=\cos x\)};
+              \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,red,line width=1pt]{-cos(deg(x))}node[right,pos=1]{\(y=-\cos(x)\)};
               \end{axis}
               \end{tikzpicture}
             </latex-image>
@@ -473,7 +473,57 @@
         </figure>
       </solution>
     </example>
-
+    <p>
+      Similarly, recall that the graph of <m>y=f(-x)</m> reflects the graph of <m>y=f(x)</m> about the <m>y</m>-axis.
+    </p>
+    <definition>
+      <title>Reflection about the <m>y</m>-axis</title>
+      <statement>
+        <p>
+          The functions
+        </p>
+        <p>
+          <me>
+            y=\sin(-x) \quad \mbox{and} \quad y=\cos(-x)
+          </me>
+        </p>
+        <p>
+          represent the graphs of <m>y = \sin(x)</m> and <m>y = \cos(x)</m> with a <term>reflection about the <m>y</m>-axis</term>,<idx><h>reflection</h><h>about <m>y</m>-axis</h></idx> respectively.
+        </p>
+      </statement>
+    </definition>
+    <example>
+      <title>Reflections about the <m>y</m>-axis</title>
+      <statement>
+        <p>Graph <m>y=\sin(-x)+1</m></p>
+      </statement>
+      <solution>
+        <figure xml:id="sin-y-axis-reflect">
+          <caption>
+            The graph <m>y = \sin(-x) + 1</m> is obtained by reflecting the graph of <m>y = \sin(x)</m> about the <m>y</m>-axis and then vertically shifting it upward by <m>1</m>. This transformation turns positive values of <m>x</m> negative and negative values positive, and increases every <m>y</m>-value by <m>1</m>.
+          </caption>
+          <image xml:id="fig-sin-y-axis-reflect">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=-2*pi-0.5,xmax=3*pi+0.5,ymin=-0.2,ymax=2.2,
+              ytick={-0,1,2},
+              minor ytick={0.5,1.5,2.5},
+              xtick={-2*pi,-pi,0,pi,2*pi,3*pi},
+              xticklabels={\(-2\pi\),\(-\pi\),\(0\),\(\pi\),\(2\pi\),\(3\pi\)},
+              xticklabel style={black},
+              xlabel=\(x\),
+              ylabel=\(y\)]
+              \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt,opacity=0.5]{sin(deg(x))+1}node[right,pos=1]{\(y=\sin(x)+1\)};
+              \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,red,line width=1pt]{sin(deg(-x))+1}node[right,pos=1]{\(y=\sin(-x)+1\)};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </figure>
+      </solution>
+    </example>
     <example xml:id="ex_vert-stretch-compression">
       <title>Vertical Stretches and Compressions</title>
       <statement>
@@ -553,6 +603,22 @@
         </p>
       </statement>
     </definition>
+    <definition xml:id="def-sin-cos-vert-stretch-compress">
+      <title>Vertical Strech/Compression</title>
+      <statement>
+        <p>
+          The functions
+          <me>y=A\sin x\quad\mbox{and}\quad y=A\cos x </me>
+          represents a sine and consine function, respectively with an amplitude of <m>|A|</m>. The amplitude determines the vertical stretch or compression of the graph. 
+        </p>
+        <p>
+          If <m>|A| \gt 1</m>, the graph undergoes a vertical stretch, making the peaks and troughs higher.
+        </p>
+        <p>
+          If <m>0 \lt |A| \lt 1</m>, the graph undergoes a vertical compression, reducing the distance between the peaks and troughs.
+        </p>
+      </statement>
+    </definition>
     <example>
       <statement>
         <p>Graph <m>y=-4\sin x</m> and identify the amplitude.</p>
@@ -595,7 +661,7 @@
       </me>
     </p>
     <p>
-      You may recall from algebra that for functions of the form <m>y=f(Bx)</m>, a key factor emerges: when <m>\B\ \gt 1</m>, the graph undergoes horizontal compression by a factor of <m>\frac{1}{|B|}</m>; conversely, when <m>0 \lt |B| \lt 1</m>, the graph is horizontally stretched by a factor of <m>\frac{1}{|B|}</m>. Given that sine and cosine complete one period in <m>2\pi</m>, the horizontal stretching or compressing of a period will be by a factor of <m>\frac{1}{|B|}</m>.
+      You may recall from algebra that for functions of the form <m>y=f(Bx)</m>, a key factor emerges: when <m>|B| \gt 1</m>, the graph undergoes horizontal compression by a factor of <m>\frac{1}{|B|}</m>; conversely, when <m>0 \lt |B| \lt 1</m>, the graph is horizontally stretched by a factor of <m>\frac{1}{|B|}</m>. Given that sine and cosine complete one period in <m>2\pi</m>, the horizontal stretching or compressing of a period will be by a factor of <m>\frac{1}{|B|}</m>.
     </p>
     <definition>
       <title>Period</title>
@@ -619,6 +685,22 @@
         <p>
           Thus, if <m>|B|\gt 1</m>, the period is compressed; if <m>0\lt |B|\lt 1</m>, the period is stretched.
         </p>
+      </statement>
+    </definition>
+    <definition xml:id="def-sin-cos-horizontal-stretch-compress">
+      <title>Horizontal Strech/Compression</title>
+      <statement>
+        <p>
+          The graphs functions
+          <me>y=\sin Bx \quad \mbox{and} \quad y=\cos Bx</me>,
+          undergo a horizontal stretch or compression by a value of <m>\frac{1}{|B|}</m>.
+      </p>
+      <p>
+          If <m>|B| \gt 1</m>, the graph undergoes a horizontal compression, making the period shorter.
+      </p>
+      <p>
+          If <m>0 \lt |B| \lt1</m>, the graph undergoes a horizontal stretch, making the period longer.
+      </p>
       </statement>
     </definition>
     
@@ -905,33 +987,119 @@
       </p>
       <p>
         <ul>
-          <li>Amplitude: <m>|A|</m></li>
-          <li>Period: <m>\frac{2\pi}{|B|}</m></li>
-          <li>Phase Shift: <m>C</m></li>
-          <li>Vertical Shift: <m>D</m></li>
+          <li>
+            <p>
+              Amplitude and Vertical Compression/Stretch: <m>|A|</m>
+            </p>
+            <p>
+              <ul>
+                <li>
+                  <p><m>|A|</m> is the value of the amplitude.</p>
+                </li>
+                <li>
+                  <p>If <m>|A| \gt 1</m>, there is vertical stretching.</p>
+                </li>
+                <li>
+                  <p>If <m>0 \lt |A| \lt 1</m>, there is vertical compression.</p>
+                </li>
+              </ul>
+            </p>
+          </li>
+          <li>
+            <p>
+              Period and Horizontal Stretch/Compression: <m>|B|</m>
+            </p>
+            <p>
+              <ul>
+                <li>
+                  <p>The period is <m>\frac{2\pi}{|B|}</m>.</p>
+                </li>
+                <li>
+                  <p>If <m>|B| \gt 1</m>, there is horizontal compression and the period is shortened.</p>
+                </li>
+                <li>
+                  <p>If <m>0 \lt |B| \lt 1</m>, there is horizontal stretching and the period is lengthened.</p>
+                </li>
+              </ul>
+            </p>
+          </li>
+          <li>
+            <p>
+              Phase Shift: <m>C</m>
+            </p>
+            <p>
+              <ul>
+                <li>
+                  <p>
+                    If <m>C</m> is positive, there is a shift to the right.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    If <m>C</m> is negative, there is a shift to the left.
+                  </p>
+                </li>
+              </ul>
+            </p>
+          </li>
+          <li>
+            <p>
+              Vertical Shift: <m>D</m>
+            </p>
+            <p>
+              <ul>
+                <li>
+                  <p>
+                    If <m>D</m> is positive, there is a shift upward.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    If <m>D</m> is negative, there is a shift downward.
+                  </p>
+                </li>
+              </ul>
+            </p>
+          </li>
+          <li>
+            <p>
+              Reflection about the <m>x</m>-axis:
+            </p>
+            <p>
+              <ul>
+                <li>
+                  <p>
+                    If <m>A</m> is negative (<m>A\lt0</m>), there is a reflection about the <m>x</m>-axis.
+                  </p>
+                </li>
+              </ul>
+            </p>
+          </li>
+          <li>
+            <p>
+              Reflection about the <m>y</m>-axis:
+            </p>
+            <p>
+              <ul>
+                <li>
+                  <p>
+                    If <m>B</m> is negative (<m>B\lt0</m>), there is a reflection about the <m>y</m>-axis.
+                  </p>
+                </li>
+              </ul>
+            </p>
+          </li>
         </ul>
       </p>
+    </remark>
+    <remark>
+      <title>Transformations of the form <m>y=A\cdot\sin(Bx-E)+D</m> and <m>y=A\cdot\cos(Bx-E)+D</m></title>
       <p>
-        When dealing with functions in the form
-      </p>
-      <p>
+        For functions of the form
         <me>
           y=A\cdot\sin(Bx-E)+D \quad \mbox{and} \quad y=A\cdot\cos(Bx-E)+D
         </me>
-      </p>
-      <p>
-        we can express the transformations as follows:
-      </p>
-      <p>
-        <ul>
-          <li>Amplitude: <m>|A|</m></li>
-          <li>Period: <m>\frac{2\pi}{|B|}</m></li>
-          <li>Phase Shift: <m>\frac{E}{B}</m></li>
-          <li>Vertical Shift: <m>D</m></li>
-        </ul>
-      </p>
-      <p>
-        Understanding these transformations allows us to manipulate and interpret sine and cosine functions, providing valuable insights into their behavior.
+        the transformations are the same as above, except for the phase shift where you replace <m>C</m> with <m>\frac{E}{B}</m>. If <m>\frac{E}{B} \lt0</m> the phase shift is to the right, and if <m>\frac{E}{B} \gt 0</m> it is to the left.
       </p>
     </remark>
     <p>
