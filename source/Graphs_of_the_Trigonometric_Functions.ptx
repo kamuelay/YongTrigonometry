@@ -3,6 +3,6 @@
   <title>Graphs of the Trigonometric Functions</title>
   <xi:include  href="Graphs_of_the_Sine_and_Cosine_Functions.ptx"/>
   <xi:include  href="Graphs_of_Other_Trigonometric_Functions.ptx"/>
-  <xi:include  href="Curve_Fitting_and_Graphical_Analysis.ptx"/>
+  <xi:include  href="Sinusoidal_Curve_Fitting_and_Graphical_Analysis.ptx"/>
   <xi:include  href="Inverse_Trigonometry.ptx"/>
 </chapter>
