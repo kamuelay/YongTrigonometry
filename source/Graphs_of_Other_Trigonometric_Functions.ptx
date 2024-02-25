@@ -1052,18 +1052,328 @@
 
   </subsection>
 <exercises xml:id="exercises-graphs-of-other-trig-functions">
-  <exercise>
-    <statement>
+  <exercisegroup cols="2">
+    <introduction>
       <p>
-        
+        Graph the function.
       </p>
-    </statement>
-    <answer>
+    </introduction>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = \tan(x) + 2</m>
+        </p>
+      </statement>
+      <answer>
+        <image xml:id="exer-vshift-comp01">
+          <latex-image>
+            \begin{tikzpicture}
+            \draw(0,0);
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = \cot(x) - 1</m>
+        </p>
+      </statement>
+      <answer>
+        <image xml:id="exer-vshift-comp02">
+          <latex-image>
+            \begin{tikzpicture}
+            \draw(0,0);
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = \csc(x) + 3</m>
+        </p>
+      </statement>
+      <answer>
+        <image xml:id="exer-vshift-comp03">
+          <latex-image>
+            \begin{tikzpicture}
+            \draw(0,0);
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = \sec(x) - 4</m>
+        </p>
+      </statement>
+      <answer>
+        <image xml:id="exer-vshift-comp04">
+          <latex-image>
+            \begin{tikzpicture}
+            \draw(0,0);
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = \frac{1}{2} \tan(x)</m>
+        </p>
+      </statement>
+      <answer>
+        <image xml:id="exer-vshift-comp05">
+          <latex-image>
+            \begin{tikzpicture}
+            \draw(0,0);
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = 2 \cot(x)</m>
+        </p>
+      </statement>
+      <answer>
+        <image xml:id="exer-vshift-comp06">
+          <latex-image>
+            \begin{tikzpicture}
+            \draw(0,0);
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = -3 \csc(x)</m>
+        </p>
+      </statement>
+      <answer>
+        <image xml:id="exer-vshift-comp07">
+          <latex-image>
+            \begin{tikzpicture}
+            \draw(0,0);
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = 4 \sec(x)</m>
+        </p>
+      </statement>
+      <answer>
+        <image xml:id="exer-vshift-comp08">
+          <latex-image>
+            \begin{tikzpicture}
+            \draw(0,0);
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = -\frac{1}{2} \tan(2x) + 2</m>
+        </p>
+      </statement>
+      <answer>
+        <image xml:id="exer-vshift-comp09">
+          <latex-image>
+            \begin{tikzpicture}
+            \draw(0,0);
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = 3 \cot\left(\frac{1}{2}x\right) - 1</m>
+        </p>
+      </statement>
+      <answer>
+        <image xml:id="exer-vshift-comp10">
+          <latex-image>
+            \begin{tikzpicture}
+            \draw(0,0);
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = 2 \csc(3x) + 3</m>
+        </p>
+      </statement>
+      <answer>
+        <image xml:id="exer-vshift-comp11">
+          <latex-image>
+            \begin{tikzpicture}
+            \draw(0,0);
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = -4 \sec(4x) - 4</m>
+        </p>
+      </statement>
+      <answer>
+        <image xml:id="exer-vshift-comp12">
+          <latex-image>
+            \begin{tikzpicture}
+            \draw(0,0);
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </answer>
+    </exercise>
+  </exercisegroup>
+  <exercisegroup cols="2">
+    <introduction>
       <p>
-        
+        Determine the period for each function, and sketch the graph.
       </p>
-    </answer>
-  </exercise>
+    </introduction>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = \cot\left(\frac{1}{2}x\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Period: <m>2\pi</m>
+        </p>
+        <image xml:id="exer-other-trig-period01">
+          <latex-image>
+            \begin{tikzpicture}
+            \draw(0,0);
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = \sec\left(\frac{\pi}{4}x\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Period: <m>8</m>
+        </p>
+        <image xml:id="exer-other-trig-period02">
+          <latex-image>
+            \begin{tikzpicture}
+            \draw(0,0);
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = \tan\left(\frac{\pi}{3}x\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Period: <m>3</m>
+        </p>
+        <image xml:id="exer-other-trig-period03">
+          <latex-image>
+            \begin{tikzpicture}
+            \draw(0,0);
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = \csc\left(\frac{\pi}{6}x\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Period: <m>12</m>
+        </p>
+        <image xml:id="exer-other-trig-period04">
+          <latex-image>
+            \begin{tikzpicture}
+            \draw(0,0);
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = \tan(2x)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Period: <m>\frac{\pi}{2}</m>
+        </p>
+        <image xml:id="exer-other-trig-period05">
+          <latex-image>
+            \begin{tikzpicture}
+            \draw(0,0);
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = \sec\left(\frac{\pi}{2}x\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Period: <m>4\pi</m>
+        </p>
+        <image xml:id="exer-other-trig-period06">
+          <latex-image>
+            \begin{tikzpicture}
+            \draw(0,0);
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </answer>
+    </exercise>
+    
+  
+  </exercisegroup>
 
   <exercisegroup cols="2">
     <title>Navigating with Shadows</title>
