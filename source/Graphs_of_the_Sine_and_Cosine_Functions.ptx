@@ -3,7 +3,7 @@
   <title>Graphs of the Sine and Cosine Functions</title>
   <introduction>
     <p>
-      Sunrise and sunset are vital markers for navigational orientation and course corrections. During sunrise, you can determine the direction and observe the origin of wind and waves. As the sun rises higher, steering by the sun becomes impractical, and you must instead depend on swells to keep your course. At sunset, you can reassess your position and take note of any changes in wind and swell patterns. Although the general pattern is for the sun to rise in the east and set in the west, its exact position on the horizon varies throughout the year.<xref ref="CF"/>
+      Sunrise and sunset are vital markers for navigational orientation and course corrections. During sunrise, you can determine the direction and observe the origin of wind and waves. As the sun rises higher, steering by the sun becomes impractical, and you must instead depend on swells to keep your course. At sunset, you can reassess your position and take note of any changes in wind and swell patterns. Although the general pattern is for the sun to rise in the east and set in the west, its exact position on the horizon varies throughout the year.
     </p>
     <p>
       To understand why the position changes, we must first learn about Earth's <term>axial tilt</term>, <idx><h>axial tilt</h></idx> which represents the angle between the Earth's rotational axis and its orbital plane around the Sun. To conceptualize this tilt, envision a pole passing through the Earth's center, extending from the North to South Pole, with the Earth revolving around this axis. Each complete rotation of the Earth on this axis corresponds to one day. As the Earth travels along its orbit around the Sun with a constant tilt, the orientation of the Earth's axial tilt causes either the North Pole or the South Pole to tilt toward the Sun. This tilt varies depending on the Earth's location in its orbit relative to the Sun.
@@ -1714,10 +1714,10 @@
         </answer>
       </exercise>
     </exercisegroup>
-    <exercisegroup>
+    <exercisegroup cols="2">
       <introduction>
         <p>
-          Match the guven function to one of the graphs below.
+          Match the given function to one of the graphs below.
         </p>
         <sidebyside>
           <image xml:id="exer-match-graph1">
@@ -2284,7 +2284,7 @@
           In terms of navigation, knowing the solar declination angle for a specific time of year allows observers to measure the same angle down or up from where the sun rose during sunrise, thereby determining the direction of east.
         </p>
         <p>
-          To approximate the solar declination angle <m>\delta</m> in degrees, we can use the equation:
+          To approximate the solar declination angle <m>\delta</m> in degrees, we can use the following equation derived in <xref ref="Dixon"/>
         </p>
         <p>
           <me>\delta=-23.45^{\circ}\cdot\cos\left(\frac{360}{365}\cdot(N+10)\right)</me>
@@ -2334,13 +2334,12 @@
   </exercises>
   
   <references xml:id="refs-graphs-sin-cos">
-    <biblio type="bibtex" xml:id="CF">
-      <author>J. B. Conrey and D. W. Farmer</author>
-      <title>Mean values of <m>L</m>-functions and symmetry</title>
-      <journal>Internat. Math. Res. Notices</journal>
-      <year>2000</year>
-      <volume>17</volume>
-      <pages start="883" end="908"/>
-      </biblio>
+    <biblio type="bibtex" xml:id="Dixon">
+      <author>A. E. Dixon and J. D. Leslie</author>
+      <title>Solar Energy Conversio</title>
+      <publisher>Pergamon</publisher>
+      <year>1979</year>
+    </biblio>
+
   </references>
 </section>
