@@ -1279,12 +1279,12 @@
     <exercise>
       <statement>
         <p>
-          <m>y = \sec\left(\frac{\pi}{4}x\right)</m>
+          <m>y = \tan\left(\frac{\pi}{3}x\right)</m>
         </p>
       </statement>
       <answer>
         <p>
-          Period: <m>8</m>
+          Period: <m>3</m>
         </p>
         <image xml:id="exer-other-trig-period02">
           <latex-image>
@@ -1298,12 +1298,12 @@
     <exercise>
       <statement>
         <p>
-          <m>y = \tan\left(\frac{\pi}{3}x\right)</m>
+          <m>y = \sec\left(\frac{\pi}{4}x\right)</m>
         </p>
       </statement>
       <answer>
         <p>
-          Period: <m>3</m>
+          Period: <m>8</m>
         </p>
         <image xml:id="exer-other-trig-period03">
           <latex-image>
@@ -1360,9 +1360,47 @@
       </statement>
       <answer>
         <p>
-          Period: <m>4\pi</m>
+          Period: <m>4</m>
         </p>
         <image xml:id="exer-other-trig-period06">
+          <latex-image>
+            \begin{tikzpicture}
+            \draw(0,0);
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = \csc\left(\frac{1}{4}x\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Period: <m>8\pi</m>
+        </p>
+        <image xml:id="exer-other-trig-period07">
+          <latex-image>
+            \begin{tikzpicture}
+            \draw(0,0);
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </answer>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>y = \cot\left(\frac{\pi}{6}x\right)</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Period: <m>6</m>
+        </p>
+        <image xml:id="exer-other-trig-period08">
           <latex-image>
             \begin{tikzpicture}
             \draw(0,0);
@@ -1469,7 +1507,6 @@
         </image>
       </answer>
     </exercise>
-  
   </exercisegroup>
   <exercisegroup cols="2">
     <introduction>
