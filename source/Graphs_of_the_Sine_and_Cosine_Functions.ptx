@@ -1855,7 +1855,7 @@
       <exercise>
         <statement>
           <p>
-            <m>y = 2 \cdot \sin(x) + 1</m>
+            <m>y = 2 \sin(x) + 1</m>
           </p>
         </statement>
         <answer>
@@ -1867,7 +1867,7 @@
       <exercise>
         <statement>
           <p>
-            <m>y = 3 \cdot \cos(4x)</m>
+            <m>y = 3 \cos(4x)</m>
           </p>
         </statement>
         <answer>
@@ -1879,7 +1879,7 @@
       <exercise>
         <statement>
           <p>
-            <m>y = -2 \cdot \sin(2x)</m>
+            <m>y = -2 \sin(2x)</m>
           </p>
         </statement>
         <answer>
@@ -1891,7 +1891,7 @@
       <exercise>
         <statement>
           <p>
-            <m>y = 3\cdot\sin\left(\frac{1}{2}x\right)</m>
+            <m>y = 3\sin\left(\frac{1}{2}x\right)</m>
           </p>
         </statement>
         <answer>
@@ -1934,7 +1934,7 @@
       <exercise>
         <statement>
           <p>
-            <m>y = \frac{3}{4} \cdot \sin\left(\frac{\pi}{3}(x - 2)\right)</m>
+            <m>y = \frac{3}{4} \sin\left(\frac{\pi}{3}(x - 2)\right)</m>
           </p>
         </statement>
         <answer>
@@ -1956,7 +1956,7 @@
               xticklabel style={black},
               xlabel=\(x\),
               ylabel=\(y\)]
-              \addplot[stealth-stealth,domain=-3.5:8.5,samples=200,blue,line width=1pt]{3/4*sin(deg(pi/3*(x-2)))}node[above,pos=0.6]{\(y = \frac{3}{4} \cdot \sin\left(\frac{\pi}{3}(x - 2)\right)\)};
+              \addplot[stealth-stealth,domain=-3.5:8.5,samples=200,blue,line width=1pt]{3/4*sin(deg(pi/3*(x-2)))}node[above,pos=0.6]{\(y = \frac{3}{4} \sin\left(\frac{\pi}{3}(x - 2)\right)\)};
               \end{axis}
               \end{tikzpicture}
             </latex-image>
@@ -1966,7 +1966,7 @@
       <exercise>
         <statement>
           <p>
-            <m>y = -2 \cdot \cos\left(\frac{\pi}{2}\left(x - \frac{1}{2}\right)\right)</m>
+            <m>y = -2 \cos\left(\frac{\pi}{2}\left(x - \frac{1}{2}\right)\right)</m>
           </p>
         </statement>
         <answer>
@@ -1989,7 +1989,7 @@
               xticklabel style={black},
               xlabel=\(x\),
               ylabel=\(y\)]
-              \addplot[stealth-stealth,domain=-3.5:8.5,samples=200,blue,line width=1pt]{-2*cos(deg(pi/2*(x-0.5)))}node[above,pos=0.5]{\(y = -2 \cdot \cos\left(\frac{\pi}{2}\left(x - \frac{1}{2}\right)\right)\)};
+              \addplot[stealth-stealth,domain=-3.5:8.5,samples=200,blue,line width=1pt]{-2*cos(deg(pi/2*(x-0.5)))}node[above,pos=0.5]{\(y = -2 \cos\left(\frac{\pi}{2}\left(x - \frac{1}{2}\right)\right)\)};
               \end{axis}
               \end{tikzpicture}
             </latex-image>
@@ -1999,7 +1999,7 @@
       <exercise>
         <statement>
           <p>
-            <m>y = 2 \cdot \sin\left(3x - \pi\right)</m>
+            <m>y = 2 \sin\left(3x - \pi\right)</m>
           </p>
         </statement>
         <answer>
@@ -2023,7 +2023,7 @@
               xticklabel style={black},
               xlabel=\(x\),
               ylabel=\(y\)]
-              \addplot[stealth-stealth,domain=-2*pi/3-0.5:pi+0.5,samples=200,blue,line width=1pt]{2*sin(deg(3*x-pi))}node[below,pos=0.17]{\(y = 2 \cdot \sin\left(3x - \pi\right)\)};
+              \addplot[stealth-stealth,domain=-2*pi/3-0.5:pi+0.5,samples=200,blue,line width=1pt]{2*sin(deg(3*x-pi))}node[below,pos=0.17]{\(y = 2 \sin\left(3x - \pi\right)\)};
               \end{axis}
               \end{tikzpicture}
             </latex-image>
@@ -2033,7 +2033,7 @@
       <exercise>
         <statement>
           <p>
-            <m>y = -3 \cdot \cos\left(2x + \frac{\pi}{3}\right)</m>
+            <m>y = -3 \cos\left(2x + \frac{\pi}{3}\right)</m>
           </p>
         </statement>
         <answer>
@@ -2057,7 +2057,7 @@
               xticklabel style={black},
               xlabel=\(x\),
               ylabel=\(y\)]
-              \addplot[stealth-stealth,domain=-pi-0.5:pi+0.5,samples=200,blue,line width=1pt]{-3*cos(deg(2*x+pi/3))}node[above,pos=0.64]{\(y = -3 \cdot \cos\left(2x + \frac{\pi}{3}\right)\)};
+              \addplot[stealth-stealth,domain=-pi-0.5:pi+0.5,samples=200,blue,line width=1pt]{-3*cos(deg(2*x+pi/3))}node[above,pos=0.64]{\(y = -3 \cos\left(2x + \frac{\pi}{3}\right)\)};
               \end{axis}
               \end{tikzpicture}
             </latex-image>
@@ -2067,7 +2067,7 @@
       <exercise>
         <statement>
           <p>
-            <m>y = \frac{1}{2} \cdot \sin\left(\pi(x - 1)+\frac{3}{2}\right)</m>
+            <m>y = \frac{1}{2} \sin\left(\pi(x - 1)+\frac{3}{2}\right)</m>
           </p>
         </statement>
         <answer>
@@ -2090,7 +2090,7 @@
               xticklabel style={black},
               xlabel=\(x\),
               ylabel=\(y\)]
-              \addplot[stealth-stealth,domain=-2.5:4.5,samples=200,blue,line width=1pt]{1/2*sin(deg(pi*(x-1)))+3/2}node[below,pos=0.7]{\(y = \frac{1}{2} \cdot \sin\left(\pi(x - 1)\right)+\frac{3}{2}\)};
+              \addplot[stealth-stealth,domain=-2.5:4.5,samples=200,blue,line width=1pt]{1/2*sin(deg(pi*(x-1)))+3/2}node[below,pos=0.7]{\(y = \frac{1}{2} \sin\left(\pi(x - 1)\right)+\frac{3}{2}\)};
               \end{axis}
               \end{tikzpicture}
             </latex-image>
@@ -2100,7 +2100,7 @@
       <exercise>
         <statement>
           <p>
-            <m>y = 3 \cdot \cos\left(\frac{\pi}{4}(x + 2)\right)-2</m>
+            <m>y = 3 \cos\left(\frac{\pi}{4}(x + 2)\right)-2</m>
           </p>
         </statement>
         <answer>
@@ -2123,7 +2123,7 @@
               xticklabel style={black},
               xlabel=\(x\),
               ylabel=\(y\)]
-              \addplot[stealth-stealth,domain=-3.5:13.5,samples=200,blue,line width=1pt]{3*cos(deg(pi/4*(x+2)))-2}node[above,pos=0.55]{\(y = 3 \cdot \cos\left(\frac{\pi}{4}(x + 2)\right)-2\)};
+              \addplot[stealth-stealth,domain=-3.5:13.5,samples=200,blue,line width=1pt]{3*cos(deg(pi/4*(x+2)))-2}node[above,pos=0.55]{\(y = 3 \cos\left(\frac{\pi}{4}(x + 2)\right)-2\)};
               \end{axis}
               \end{tikzpicture}
             </latex-image>
@@ -2133,7 +2133,7 @@
       <exercise>
         <statement>
           <p>
-            <m>y = -\frac{2}{3} \cdot \sin\left(2x - \frac{\pi}{3}\right)+\frac{2}{3}</m>
+            <m>y = -\frac{2}{3} \sin\left(2x - \frac{\pi}{3}\right)+\frac{2}{3}</m>
           </p>
         </statement>
         <answer>
@@ -2157,7 +2157,7 @@
               xticklabel style={black},
               xlabel=\(x\),
               ylabel=\(y\)]
-              \addplot[stealth-stealth,domain=-1.2:4.3,samples=200,blue,line width=1pt]{-2/3*sin(deg(2*x-pi/3))+2/3}node[above,pos=0.75]{\(y = -\frac{2}{3} \cdot \sin\left(2x - \frac{\pi}{3}\right)+\frac{2}{3}\)};
+              \addplot[stealth-stealth,domain=-1.2:4.3,samples=200,blue,line width=1pt]{-2/3*sin(deg(2*x-pi/3))+2/3}node[above,pos=0.75]{\(y = -\frac{2}{3} \sin\left(2x - \frac{\pi}{3}\right)+\frac{2}{3}\)};
               \end{axis}
               \end{tikzpicture}
             </latex-image>
@@ -2167,7 +2167,7 @@
       <exercise>
         <statement>
           <p>
-            <m>y = \frac{5}{3} \cdot \cos\left(\frac{4\pi}{5}(x + 2)\right)</m>
+            <m>y = \frac{5}{3} \cos\left(\frac{4\pi}{5}(x + 2)\right)</m>
           </p>
         </statement>
         <answer>
@@ -2191,7 +2191,7 @@
               xticklabel style={black},
               xlabel=\(x\),
               ylabel=\(y\)]
-              \addplot[stealth-stealth,domain=-2.2:3.2,samples=200,blue,line width=1pt]{5/3*cos(deg(4*pi/5*(x+2)))}node[below,pos=0.75]{\(y = \frac{5}{3} \cdot \cos\left(\frac{4\pi}{5}(x+2)\right)\)};
+              \addplot[stealth-stealth,domain=-2.2:3.2,samples=200,blue,line width=1pt]{5/3*cos(deg(4*pi/5*(x+2)))}node[below,pos=0.75]{\(y = \frac{5}{3} \cos\left(\frac{4\pi}{5}(x+2)\right)\)};
               \end{axis}
               \end{tikzpicture}
             </latex-image>
@@ -2236,7 +2236,7 @@
       <exercise>
         <statement>
           <p>
-            <m>y = 4 \cdot \cos\left(\frac{1}{2}\left(x + \frac{2\pi}{3}\right)\right)+3</m>
+            <m>y = 4 \cos\left(\frac{1}{2}\left(x + \frac{2\pi}{3}\right)\right)+3</m>
           </p>
         </statement>
         <answer>
@@ -2422,6 +2422,55 @@
         </answer>
       </exercise>
     </exercisegroup>
+    <exercisegroup>
+      <title>Rough Seas</title>
+      <introduction>
+        <p>
+          Wave heights in the open ocean can vary. However, the height of the wave alone does not necessarily indicate a calm or choppy sailing conditions. Another important factor is the <term>wave period</term><idx><h>period</h><h>wave</h></idx><idx><h>wave period</h></idx>, representing the time between waves, which affects the smoothness of sailing. For each given equation, where <m>h(t)</m> is the height(in meters) of the of wave above te mean sea level at <m>t</m> seconds, calculate: a) the wave heigh (the vertical distance between the crest and trough of a wave); b) the wave period; c) Plot the wave height for two periods.
+        </p>
+        <p>
+          ADD FIGURE HERE OF THE PERIOD WITH A WAA SAILING, indicate crest and trough,
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>h(t)=2.25\cos\left(\frac{\pi}{9}t\right)</m>, where <m>h</m> is measured in 
+          </p>
+        </statement>
+        <answer>
+          <p>
+            a) <m>5.5</m> meters; b) <m>18</m> seconds
+          </p>
+          <p>
+            ADD FIGURE, 
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>h(t)=2.25\cos\left(\frac{\pi}{9}t\right)</m>, where <m>h</m> is measured in 
+          </p>
+        </statement>
+        <answer>
+          <p>
+            a) <m>5.5</m> meters; b) <m>18</m> seconds
+          </p>
+          <p>
+            ADD FIGURE
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            More equations
+          </p>
+        </statement>
+      </exercise>
+    
+    </exercisegroup>
 
 
     
@@ -2439,13 +2488,7 @@
         </p>
       </introduction>
     
-      <exercise>
-        <statement>
-          <p>
-            
-          </p>
-        </statement>
-      </exercise>
+      
     
     </exercisegroup>
     <exercise>
