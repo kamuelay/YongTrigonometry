@@ -2269,8 +2269,9 @@
         </answer>
       </exercise>
     </exercisegroup>
-    <exercise>
-      <statement>
+    <exercisegroup cols="2">
+      <title>Solar Declination</title>
+      <introduction>
         <p>
           At the start of this section, we explored the effects of axial tilt on Earth's seasons, considering the sun's declination—the angle between the equator and a line drawn from the center of the Earth to the center of the Sun. When observing the sunrise, the sun's declination is the angle from the sunrise to due east.
         </p>
@@ -2285,26 +2286,151 @@
         </p>
         <p>
           To approximate the solar declination angle <m>\delta</m> in degrees, we can use the following equation derived in <xref ref="Dixon"/>
-        </p>
-        <p>
           <me>\delta=-23.45^{\circ}\cdot\cos\left(\frac{360}{365}\cdot(N+10)\right)</me>
-        </p>
-        <p>
           where <m>N</m> represents the day of the year, with January 1 denoted as <m>N=1</m>, and December 31 as <m>N=365</m>.
         </p>
-        <p>
-          Graph the solar declination angle over time. Use the horizontal axis for <m>N</m>, the day of the year, and the vertical axis for <m>\delta</m>, representing the solar declination angle in degrees.
-        </p>
-        <p>
-          NEED ANSWER. ALSO CHANGE TO X AND Y
-        </p>
-      </statement>
-      <answer>
-        <p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            Calculate the solar declination on the 81st day of the year, which is typically March 22nd. Round your answer to two decimals.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\delta=-0.10^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Calculate the solar declination on the 172nd day of the year, which is typically June 21st. Round your answer to two decimals.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\delta=23.45^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Calculate the solar declination on the 264th day of the year, which is typically September 21st. Round your answer to two decimals.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\delta=-0.10^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Calculate the solar declination on the 355th day of the year, which is typically December 21st. Round your answer to two decimals.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\delta=-23.45^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Calculate the solar declination on the 91st day of the year, which is typically April 1st. Round your answer to one-tenth of a degree
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\delta=3.92^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Calculate the solar declination on the 246th day of the year, which is typically September 3rd. Round your answer to two decimals.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\delta=7.05^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Calculate the solar declination on the 148th day of the year, which is typically May 28th. Round your answer to two decimals.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\delta=21.40^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Calculate the solar declination on the 327th day of the year, which is typically November 23rd. Round your answer to two decimals.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\delta=-20.8^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            What are significant about March 22nd, June 21st, September 21st, and December 21st?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            They are the equinoxes and soltices.
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Graph the solar declination angle over time. Use the <m>x</m>-axis for <m>N</m>, the day of the year, and the <m>y</m>-axis for <m>\delta</m>, representing the solar declination angle in degrees.
+          </p>
+        </statement>
+        <answer>
+          <image xml:id="exer-solar-declination">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=-0-5,xmax=365+5,ymin=-25,ymax=25,
+              xticklabel style={black},
+              xlabel=\(x\),
+              ylabel=\(y\)]
+              \addplot[stealth-stealth,domain=0:365,samples=200,blue,line width=1pt,]{-23.45*cos(deg(360/365*pi/180*(x+10)))};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+    </exercisegroup>
 
-        </p>
-      </answer>
-    </exercise>
+
+    
+
+    
+
+    
+
+
     <exercisegroup>
       <introduction>
         <p>
