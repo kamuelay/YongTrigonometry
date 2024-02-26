@@ -3,7 +3,7 @@
   <title>Graphs of the Sine and Cosine Functions</title>
   <introduction>
     <p>
-      Sunrise and sunset are vital markers for navigational orientation and course corrections. During sunrise, you can determine the direction and observe the origin of wind and waves. As the sun rises higher, steering by the sun becomes impractical, and you must instead depend on swells to keep your course. At sunset, you can reassess your position and take note of any changes in wind and swell patterns. Although the general pattern is for the sun to rise in the east and set in the west, its exact position on the horizon varies throughout the year.
+      Sunrise and sunset are vital markers for navigational orientation and course corrections. During sunrise, you can determine the direction and observe the origin of wind and waves. As the sun rises higher, steering by the sun becomes impractical, and you must instead depend on swells to keep your course. At sunset, you can reassess your position and take note of any changes in wind and swell patterns. Although the general pattern is for the sun to rise in the east and set in the west, its exact position on the horizon, known as <term>solar declination</term>,<idx><h>solar declination</h></idx><idx><h>declination</h><h>solar</h></idx> varies throughout the year.
     </p>
     <p>
       To understand why the position changes, we must first learn about Earth's <term>axial tilt</term>, <idx><h>axial tilt</h></idx> which represents the angle between the Earth's rotational axis and its orbital plane around the Sun. To conceptualize this tilt, envision a pole passing through the Earth's center, extending from the North to South Pole, with the Earth revolving around this axis. Each complete rotation of the Earth on this axis corresponds to one day. As the Earth travels along its orbit around the Sun with a constant tilt, the orientation of the Earth's axial tilt causes either the North Pole or the South Pole to tilt toward the Sun. This tilt varies depending on the Earth's location in its orbit relative to the Sun.
@@ -42,7 +42,7 @@
     <title>Domain and Range of Sine and Cosine</title>
     <p>
       The domains for <m>\sin(\theta)</m> and <m>\cos(\theta)</m> consist of the set of the inputs of the functions. Since any angle <m>\theta</m> can be input into sine and cosine and still have these functions defined, the domain for both sine and coseine is all real numbers. Recall that in <xref ref="Unit_Circle">Section</xref>, if <m>P(x,y)</m> is any point on the unit circle that corresponds to the angle <m>\theta</m>, we defined <m>\sin\theta=y</m> and <m>\cos\theta=x</m>. Given the constraints on the unit circle, <m>-1\leq x\leq1</m> and <m>-1\leq y\leq1</m>, and thus
-      <me>-1\leq \sin\theta\leq1, \quad -1\leq \cos\theta\leq1</me>.
+      <me>-1\leq \sin\theta\leq1, \quad \mbox{and} \quad -1\leq \cos\theta\leq1</me>.
       Since the range of a function consists of all its outputs, we conclude that the range of both the sine and cosine functions spans all real numbers between -1 and 1.
     </p>
     <remark>
@@ -265,6 +265,7 @@
           xtick={-2*pi,-pi,0,pi,2*pi,3*pi},
           xticklabels={\(-2\pi\),\(-\pi\),\(0\),\(\pi\),\(2\pi\),\(3\pi\)},
           xticklabel style={black},
+          minor xtick={-2*pi,-1.5*pi,...,3*pi},
           xlabel=\(x\),
           ylabel=\(y\)]
           \addplot[stealth-stealth,domain=-2*pi-0.07:3*pi+0.07,samples=200,blue,line width=1pt]{sin(deg(x))}node[right,pos=0.53]{\(y=\sin x\)};
@@ -301,6 +302,7 @@
           xtick={-2*pi,-pi,0,pi,2*pi,3*pi},
           xticklabels={\(-2\pi\),\(-\pi\),\(0\),\(\pi\),\(2\pi\),\(3\pi\)},
           xticklabel style={black},
+          minor xtick={-2*pi,-1.5*pi,...,3*pi},
           xlabel=\(x\),
           ylabel=\(y\)]
           \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt]{cos(deg(x))}node[right,pos=0.42]{\(y=\cos x\)};
@@ -323,31 +325,23 @@
   <subsection  xml:id="subsec_graphing-sinusoidal-transformations">
     <title>Graphing Transformations of Sine and Cosine</title>
     <p>
-      Now that we've become familiar with the sine and cosine graphs, let's apply algebraic graphing techniques to these functions. Recall that when <m>D \gt 0</m>, the graph of <m>y = f(x) + D</m> shifts the graph of <m>y = f(x)</m> upward by <m>D</m> units, and the graph of <m>y = f(x) - D</m> shifts the graph of <m>y = f(x)</m> downward by <m>D</m> units.
+      Now that we've become familiar with the graphs of the sine and cosine functions, let's apply algebraic graphing techniques to these functions. Recall that when <m>D \gt 0</m>, the graph of <m>y = f(x) + D</m> shifts the graph of <m>y = f(x)</m> upward by <m>D</m> units, and the graph of <m>y = f(x) - D</m> shifts the graph of <m>y = f(x)</m> downward by <m>D</m> units.
     </p>
     <definition>
       <title>Vertical Shift</title>
       <statement>
         <p>
           The graphs of the functions
-        </p>
-        <p>
           <me>
             y=\sin x+D \quad \mbox{and } \quad y=\cos x+D
           </me>
-        </p>
-        <p>
           represent an <term>upward vertical shift</term><idx><h>vertical shift</h></idx> of the graphs <m>y = \sin(x)</m> and <m>y = \cos(x)</m> by <m>D</m> units, respectively.
         </p>
         <p>
           Similarly, the functions
-        </p>
-        <p>
           <me>
             y=\sin x-D \quad \mbox{and } \quad y=\cos x-D
           </me>
-        </p>
-        <p>
           depict the graphs of <m>y = \sin(x)</m> and <m>y = \cos(x)</m> with a <term>downward vertical shift</term> by <m>D</m> units, respectively.
         </p>
       </statement>
@@ -513,6 +507,7 @@
               xtick={-2*pi,-pi,0,pi,2*pi,3*pi},
               xticklabels={\(-2\pi\),\(-\pi\),\(0\),\(\pi\),\(2\pi\),\(3\pi\)},
               xticklabel style={black},
+              minor xtick={-2*pi,-1.5*pi,...,3*pi},
               xlabel=\(x\),
               ylabel=\(y\)]
               \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt,opacity=0.5]{sin(deg(x))+1}node[right,pos=1]{\(y=\sin(x)+1\)};
@@ -551,6 +546,7 @@
               ytick={-2,-1,1,2},
               minor ytick={-1.5,-0.5,0.5,1.5},
               xtick={-2*pi,-pi,0,pi,2*pi,3*pi},
+              minor xtick={-2*pi,-1.5*pi,...,3*pi},
               xticklabels={\(-2\pi\),\(-\pi\),\(0\),\(\pi\),\(2\pi\),\(3\pi\)},
               xticklabel style={black},
               xlabel=\(x\),
@@ -586,11 +582,7 @@
         </p>
         <p>
           In general, for
-        </p>
-        <p>
           <me>y = A \cdot \sin(x) \quad \mbox{or} \quad y= A \cdot \cos(x)</me>
-        </p>
-        <p>
           the amplitude is given by the absolute value of <m>A</m>, denoted as
         </p>
         <p>
@@ -639,6 +631,7 @@
               ytick={-4,-3-2,-1,1,2,3,4},
               minor ytick={-3.5,-2.5,-1.5,-0.5,0.5,1.5,2.5,3.5},
               xtick={-2*pi,-pi,0,pi,2*pi,3*pi},
+              minor xtick={-2*pi,-1.5*pi,...,3*pi},
               xticklabels={\(-2\pi\),\(-\pi\),\(0\),\(\pi\),\(2\pi\),\(3\pi\)},
               xticklabel style={black},
               xlabel=\(x\),
@@ -668,16 +661,10 @@
       <statement>
         <p>
           For sine and cosine functions of the form
-        </p>
-        <p>
           <me>
             y=\sin Bx \quad \mbox{and} \quad y=\cos Bx
           </me>
-        </p>
-        <p>
           the <term>period</term><idx><h>period</h></idx> is defined as
-        </p>
-        <p>
           <me>
             \mbox{period}=\frac{2\pi}{|B|}
           </me>
@@ -797,8 +784,6 @@
           <men xml:id="eqn-phase-shift1">
             y = \sin(B(x - C)) \quad \mbox{and} \quad y = \cos(B(x - C))
           </men>
-        </p>
-        <p>
           undergo a <term>horizontal shift</term><idx><h>horizontal shift</h></idx>, known as <term>phase shift</term><idx><h>phase shift</h></idx>, of <m>C</m> units. If <m>C \gt 0</m>, the phase shift is to the right; if <m>C \lt 0</m>, it is to the left.
         </p>
       </statement>
@@ -828,8 +813,6 @@
         <me>
           y = \sin(Bx - E) \quad \mbox{and} \quad y = \cos(Bx - E)
         </me>
-      </p>
-      <p>
         the phase shift is <m>\frac{E}{B}</m> units.
       </p>
     </remark>
@@ -976,13 +959,9 @@
       <title>Transformations of Sine and Cosine</title>
       <p>
         When dealing with functions in the form
-      </p>
-      <p>
         <me>
           y=A\cdot\sin(B(x-C))+D \quad \mbox{and} \quad y=A\cdot\cos(B(x-C))+D
         </me>
-      </p>
-      <p>
         we can express the transformations as follows:
       </p>
       <p>
