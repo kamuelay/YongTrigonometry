@@ -1706,6 +1706,7 @@
         </p>
           <image xml:id="exer-other-amp-per-phase02">
             <latex-image>
+              \begin{tikzpicture}
               \begin{axis}[
               axis lines=middle,clip=false,
               xmin=-2*pi-0.5,xmax=4*pi+0.5,ymin=-10,ymax=10,
