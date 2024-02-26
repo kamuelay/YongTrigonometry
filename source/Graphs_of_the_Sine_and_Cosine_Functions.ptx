@@ -2401,7 +2401,7 @@
       <exercise>
         <statement>
           <p>
-            Graph the solar declination angle over time. Use the <m>x</m>-axis for <m>N</m>, the day of the year, and the <m>y</m>-axis for <m>\delta</m>, representing the solar declination angle in degrees.
+            Graph the solar declination angle over time. Use the horizontal axis for <m>N</m>, the day of the year, and the vertical axis for <m>\delta</m>, representing the solar declination angle in degrees.
           </p>
         </statement>
         <answer>
@@ -2412,8 +2412,8 @@
               axis lines=middle,clip=false,
               xmin=-0-5,xmax=365+5,ymin=-25,ymax=25,
               xticklabel style={black},
-              xlabel=\(x\),
-              ylabel=\(y\)]
+              xlabel=\(N\),
+              ylabel=\(\delta\)]
               \addplot[stealth-stealth,domain=0:365,samples=200,blue,line width=1pt,]{-23.45*cos(deg(360/365*pi/180*(x+10)))};
               \end{axis}
               \end{tikzpicture}
@@ -2426,83 +2426,120 @@
       <title>Rough Seas</title>
       <introduction>
         <p>
-          Wave heights in the open ocean can vary. However, the height of the wave alone does not necessarily indicate a calm or choppy sailing conditions. Another important factor is the <term>wave period</term><idx><h>period</h><h>wave</h></idx><idx><h>wave period</h></idx>, representing the time between waves, which affects the smoothness of sailing. For each given equation, where <m>h(t)</m> is the height(in meters) of the of wave above te mean sea level at <m>t</m> seconds, calculate: a) the wave heigh (the vertical distance between the crest and trough of a wave); b) the wave period; c) Plot the wave height for two periods.
+          <term>Wave heights</term>,<idx><h>wave height</h></idx> defined as the vertical distance between the crest and the trough of a wave, can vary in the open ocean. However, the height of the wave alone does not necessarily indicate a calm or choppy sailing conditions. Another important factor is the <term>wave period</term><idx><h>period</h><h>wave</h></idx><idx><h>wave period</h></idx>, representing the time between waves, which affects the smoothness of sailing. For each given equation, where <m>w(t)</m> is the number of feet the wave is above the mean sea level at <m>t</m> seconds, calculate: a) the wave heigh; b) the wave period; c) Plot the wave height for two periods.
         </p>
-        <p>
-          ADD FIGURE HERE OF THE PERIOD WITH A WAA SAILING, indicate crest and trough,
-        </p>
-        <p>
-          Maybe indicate that all the plots should be on the same dimensions, y axis limit is -6 to 6, x-axis is 0 to 20
-        </p>
+        <image xml:id="exer-waa-wave">
+          <latex-image>
+            \begin{tikzpicture}
+            \begin{axis}[
+            axis lines=middle,clip=false,
+            xmin=0,xmax=40,ymin=-20,ymax=20,
+            xtick={0},
+            xticklabel style={black},
+            ytick={0},
+            xlabel=\(\),
+            ylabel=\(\)]
+            \addplot[stealth-stealth,domain=0:40,samples=200,blue,line width=1pt,]{10*sin(deg(pi/20*x))};
+            \draw[stealth-stealth] (20,-10) -- (20,10) node[right,pos=0.95]{Wave Height};
+            \draw[-stealth] (10,0) -- (10,10) node[below,pos=0]{Peak};
+            \draw[-stealth] (30,0) -- (30,-10) node[above,pos=0]{Trough};
+            \end{axis}
+            \draw pic at (1.1,4.1) {waa-side={waacolor}{30}{0.1}};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
       </introduction>
       <exercise>
         <statement>
           <p>
-            <m>h(t)=2.25\cos\left(\frac{\pi}{9}t\right)</m>, where <m>h</m> is measured in 
+            <m>w(t)=4\cos\left(\frac{\pi}{8}t\right)</m>
           </p>
         </statement>
         <answer>
           <p>
-            a) <m>5.5</m> meters; b) <m>18</m> seconds
+            a) <m>8</m> feet; b) <m>16</m> seconds
           </p>
-          <p>
-            ADD FIGURE, 
-          </p>
+          <image xml:id="exer-wave-heigh-period-1">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=0,xmax=40,ymin=-10,ymax=10,
+              xticklabel style={black},
+              xlabel=\(t\),
+              ylabel=\(w\)]
+              \addplot[stealth-stealth,domain=0:40,samples=200,blue,line width=1pt,]{4*cos(deg(pi/8*x))};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>h(t)=2.25\cos\left(\frac{\pi}{9}t\right)</m>, where <m>h</m> is measured in 
+            <m>w(t)=9\cos\left(\frac{\pi}{8}t\right)</m>
           </p>
         </statement>
         <answer>
           <p>
-            a) <m>5.5</m> meters; b) <m>18</m> seconds
+            a) <m>18</m> feet; b) <m>16</m> seconds
           </p>
-          <p>
-            ADD FIGURE
-          </p>
+          <image xml:id="exer-wave-heigh-period-2">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=0,xmax=40,ymin=-10,ymax=10,
+              xticklabel style={black},
+              xlabel=\(t\),
+              ylabel=\(w\)]
+              \addplot[stealth-stealth,domain=0:40,samples=200,blue,line width=1pt,]{9*cos(deg(pi/8*x))};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            More equations
+            <m>w(t)=4\cos\left(\frac{\pi}{4}t\right)</m>
           </p>
         </statement>
+        <answer>
+          <p>
+            a) <m>18</m> feet; b) <m>8</m> seconds
+          </p>
+          <image xml:id="exer-wave-heigh-period-3">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=0,xmax=40,ymin=-10,ymax=10,
+              xticklabel style={black},
+              xlabel=\(t\),
+              ylabel=\(w\)]
+              \addplot[stealth-stealth,domain=0:40,samples=200,blue,line width=1pt,]{4*cos(deg(pi/4*x))};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
       </exercise>
-    
+      <exercise>
+        <statement>
+          <p>
+            Which of the three waves above would give the smoothest sailing?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>w(t)=4\cos\left(\frac{\pi}{8}t\right)</m>
+          </p>
+        </answer>
+      </exercise>
     </exercisegroup>
-
-
-    
-
-    
-
-    
-
-
-    <exercisegroup>
-      <introduction>
-        <p>
-          Hours of daylight/darkness plotted for various latitudes across the pacific, include Micronesia
-
-        </p>
-      </introduction>
-    
-      
-    
-    </exercisegroup>
-    <exercise>
-      <p>
-        Find the equation for the time that Makalii (Pleiades) emerges over the horizon over time throughout the year.
-              Talk about the importance of this and how when it rises at sunset,
-              it coincides with the start of Makahiki season.
-              Then using an example that we already worked with the sun and the time the sun sets over the year,
-              find the intersection of these two equations to determine when Makahiki season will begin.
-      </p>
-    </exercise>
   </exercises>
   
   <references xml:id="refs-graphs-sin-cos">
