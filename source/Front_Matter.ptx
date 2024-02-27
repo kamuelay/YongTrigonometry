@@ -156,12 +156,12 @@
                         <ul>
                           <li>
                             <p>
-                              HSF.IF.C.7: Graph functions expressed symbolically and show key features of the graph, by hand in simple cases and using technology for more complicated cases. (2.1, 2.2)
+                              HSF.IF.C.7: Graph functions expressed symbolically and show key features of the graph, by hand in simple cases and using technology for more complicated cases. (<xref ref="Graphs_of_the_Sine_and_Cosine_Functions"/>, <xref ref="Graphs_of_Other_Trigonometric_Functions"/>)
                             </p>
                           </li>
                           <li>
                             <p>
-                              HSF.IF.C.7.e: Graph exponential and logarithmic functions, showing intercepts and end behavior, and trigonometric functions, showing period, midline, and amplitude. (2.1, 2.2)
+                              HSF.IF.C.7.e: Graph exponential and logarithmic functions, showing intercepts and end behavior, and trigonometric functions, showing period, midline, and amplitude. (<xref ref="Graphs_of_the_Sine_and_Cosine_Functions"/>, <xref ref="Graphs_of_Other_Trigonometric_Functions"/>)
                             </p>
                           </li>
                         </ul>
@@ -198,7 +198,7 @@
                         <ul>
                           <li>
                             <p>
-                              HSF.BF.B.3: Identify the effect on the graph of replacing <m>f(x)</m> by <m>f(x) + k</m>, <m>k f(x)</m>, <m>f(kx)</m>, and <m>f(x + k)</m> for specific values of <m>k</m> (both positive and negative); find the value of <m>k</m> given the graphs. Experiment with cases and illustrate an explanation of the effects on the graph using technology. Include recognizing even and odd functions from their graphs and algebraic expressions for them. (2.1 and 2.2)
+                              HSF.BF.B.3: Identify the effect on the graph of replacing <m>f(x)</m> by <m>f(x) + k</m>, <m>k f(x)</m>, <m>f(kx)</m>, and <m>f(x + k)</m> for specific values of <m>k</m> (both positive and negative); find the value of <m>k</m> given the graphs. Experiment with cases and illustrate an explanation of the effects on the graph using technology. Include recognizing even and odd functions from their graphs and algebraic expressions for them. (<xref ref="subsec_graphing-sinusoidal-transformations"/>, <xref ref="subsec-transformations-other-trig-functions"/>)
                             </p>
                           </li>
                         </ul>
@@ -261,7 +261,7 @@
                           <li>
                             <p>
                               HSF.TF.B.7: Use inverse functions to solve trigonometric equations that arise in modeling contexts; evaluate the solutions using technology, and interpret them in terms of the context. 
-                              (<xref ref="exmp-gift-for-mau"/>, <xref ref="example_finding-land"/>, <xref ref="examp-inverse-trig-swells"/>)
+                              (<xref ref="exer-solar-declination"/>, <xref ref="exer-wave-height"/>, <xref ref="exer-moving-shadow"/>, <xref ref="exer-faafaite-distance"/>, <xref ref="exmp-gift-for-mau"/>, <xref ref="example_finding-land"/>, <xref ref="examp-inverse-trig-swells"/>)
                             </p>
                           </li>
                         </ul>
