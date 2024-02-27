@@ -1064,7 +1064,23 @@
         <image xml:id="exer-vshift-comp01">
           <latex-image>
             \begin{tikzpicture}
-            \draw(0,0);
+            \begin{axis}[
+            axis lines=middle,clip=false,
+            xmin=-1.5*pi-0.5,xmax=1.5*pi+0.5,ymin=-10,ymax=10,
+            xtick={-1.5*pi,-pi,...,1.5*pi},
+            xticklabels={\(-\frac{3\pi}{2}\),\(-\pi\),\(-\frac{\pi}{2}\),,\(\frac{\pi}{2}\),\(\pi\),\(\frac{3\pi}{2}\)},
+            minor xtick = {-1.5*pi,-1.25*pi,...,1.5*pi},
+            xticklabel style={black},
+            xlabel=\(x\),
+            ylabel=\(y\)]
+            \addplot[stealth-stealth,domain=-1.5*pi+0.08:-0.5*pi-0.13,samples=200,blue,line width=1pt]{tan(deg(x))+2};
+            \addplot[stealth-stealth,domain=-0.5*pi+0.08:0.5*pi-0.13,samples=200,blue,line width=1pt]{tan(deg(x))+2};
+            \addplot[stealth-stealth,domain=0.5*pi+0.08:1.5*pi-0.13,samples=200,blue,line width=1pt]{tan(deg(x))+2};
+            \draw [dashed,red] (-1.5*pi,-10) -- (-1.5*pi,10);
+            \draw [dashed,red] (-0.5*pi,-10) -- (-0.5*pi,10);
+            \draw [dashed,red] (0.5*pi,-10) -- (0.5*pi,10);
+            \draw [dashed,red] (1.5*pi,-10) -- (1.5*pi,10);
+            \end{axis}
             \end{tikzpicture}
           </latex-image>
         </image>
@@ -1128,7 +1144,23 @@
         <image xml:id="exer-vshift-comp05">
           <latex-image>
             \begin{tikzpicture}
-            \draw(0,0);
+            \begin{axis}[
+            axis lines=middle,clip=false,
+            xmin=-1.5*pi-0.5,xmax=1.5*pi+0.5,ymin=-10,ymax=10,
+            xtick={-1.5*pi,-pi,...,1.5*pi},
+            xticklabels={\(-\frac{3\pi}{2}\),\(-\pi\),\(-\frac{\pi}{2}\),,\(\frac{\pi}{2}\),\(\pi\),\(\frac{3\pi}{2}\)},
+            minor xtick = {-1.5*pi,-1.25*pi,...,1.5*pi},
+            xticklabel style={black},
+            xlabel=\(x\),
+            ylabel=\(y\)]
+            \addplot[stealth-stealth,domain=-1.5*pi+0.05:-0.5*pi-0.05,samples=200,blue,line width=1pt]{0.5*tan(deg(x))};
+            \addplot[stealth-stealth,domain=-0.5*pi+0.05:0.5*pi-0.05,samples=200,blue,line width=1pt]{0.5*tan(deg(x))};
+            \addplot[stealth-stealth,domain=0.5*pi+0.05:1.5*pi-0.05,samples=200,blue,line width=1pt]{0.5*tan(deg(x))};
+            \draw [dashed,red] (-1.5*pi,-10) -- (-1.5*pi,10);
+            \draw [dashed,red] (-0.5*pi,-10) -- (-0.5*pi,10);
+            \draw [dashed,red] (0.5*pi,-10) -- (0.5*pi,10);
+            \draw [dashed,red] (1.5*pi,-10) -- (1.5*pi,10);
+            \end{axis}
             \end{tikzpicture}
           </latex-image>
         </image>
@@ -1192,7 +1224,27 @@
         <image xml:id="exer-vshift-comp09">
           <latex-image>
             \begin{tikzpicture}
-            \draw(0,0);
+            \begin{axis}[
+            axis lines=middle,clip=false,
+            xmin=-1.25*pi-0.5,xmax=1.25*pi+0.5,ymin=-10,ymax=10,
+            xtick={-1.5*pi,-pi,...,1.5*pi},
+            xticklabels={\(-\frac{3\pi}{2}\),\(-\pi\),\(-\frac{\pi}{2}\),,\(\frac{\pi}{2}\),\(\pi\),\(\frac{3\pi}{2}\)},
+            minor xtick = {-1.5*pi,-1.25*pi,...,1.5*pi},
+            xticklabel style={black},
+            xlabel=\(x\),
+            ylabel=\(y\)]
+            \addplot[stealth-stealth,domain=-1.25*pi+0.033:-0.75*pi-0.02,samples=200,blue,line width=1pt]{-0.5*tan(deg(2*x))+2};
+            \addplot[stealth-stealth,domain=-0.75*pi+0.033:-0.25*pi-0.02,samples=200,blue,line width=1pt]{-0.5*tan(deg(2*x))+2};
+            \addplot[stealth-stealth,domain=-0.25*pi+0.033:0.25*pi-0.02,samples=200,blue,line width=1pt]{-0.5*tan(deg(2*x))+2};
+            \addplot[stealth-stealth,domain=0.25*pi+0.033:0.75*pi-0.02,samples=200,blue,line width=1pt]{-0.5*tan(deg(2*x))+2};
+            \addplot[stealth-stealth,domain=0.75*pi+0.033:1.25*pi-0.02,samples=200,blue,line width=1pt]{-0.5*tan(deg(2*x))+2};
+            \draw [dashed,red] (-1.25*pi,-10) -- (-1.25*pi,10);
+            \draw [dashed,red] (-0.75*pi,-10) -- (-0.75*pi,10);
+            \draw [dashed,red] (-0.25*pi,-10) -- (-0.25*pi,10);
+            \draw [dashed,red] (0.25*pi,-10) -- (0.25*pi,10);
+            \draw [dashed,red] (0.75*pi,-10) -- (0.75*pi,10);
+            \draw [dashed,red] (1.25*pi,-10) -- (1.25*pi,10);
+            \end{axis}
             \end{tikzpicture}
           </latex-image>
         </image>
@@ -1285,7 +1337,21 @@
         <image xml:id="exer-other-trig-period02">
           <latex-image>
             \begin{tikzpicture}
-            \draw(0,0);
+            \begin{axis}[
+            axis lines=middle,clip=false,
+            xmin=-4.5-0.5,xmax=4.5+0.5,ymin=-10,ymax=10,
+            minor xtick ={-4.5,-4,...,4.5},
+            xticklabel style={black},
+            xlabel=\(x\),
+            ylabel=\(y\)]
+            \addplot[stealth-stealth,domain=-4.5+0.096:-1.5-0.096,samples=200,blue,line width=1pt]{tan(deg(pi/3*x))};
+            \addplot[stealth-stealth,domain=-1.5+0.096:1.5-0.096,samples=200,blue,line width=1pt]{tan(deg(pi/3*x))};
+            \addplot[stealth-stealth,domain=1.5+0.096:4.5-0.096,samples=200,blue,line width=1pt]{tan(deg(pi/3*x))};
+            \draw [dashed,red] (-4.5,-10) -- (-4.5,10);
+            \draw [dashed,red] (-1.5,-10) -- (-1.5,10);
+            \draw [dashed,red] (1.5,-10) -- (1.5,10);
+            \draw [dashed,red] (4.5,-10) -- (4.5,10);
+            \end{axis}
             \end{tikzpicture}
           </latex-image>
         </image>
@@ -1342,7 +1408,29 @@
         <image xml:id="exer-other-trig-period05">
           <latex-image>
             \begin{tikzpicture}
-            \draw(0,0);
+            \begin{tikzpicture}
+            \begin{axis}[
+            axis lines=middle,clip=false,
+            xmin=-1.25*pi-0.5,xmax=1.25*pi+0.5,ymin=-10,ymax=10,
+            xtick={-pi,-0.5*pi,...,pi},
+            xticklabels={\(-\pi\),\(-\frac{\pi}{2}\),,\(\frac{\pi}{2}\),\(\pi\)},
+            minor xtick = {-1.25*pi,-1*pi,...,pi},,
+            xticklabel style={black},
+            xlabel=\(x\),
+            ylabel=\(y\)]
+            \addplot[stealth-stealth,domain=-1.25*pi+0.05:-0.75*pi-0.05,samples=200,blue,line width=1pt]{tan(deg(2*x))};
+            \addplot[stealth-stealth,domain=-0.75*pi+0.05:-0.25*pi-0.05,samples=200,blue,line width=1pt]{tan(deg(2*x))};
+            \addplot[stealth-stealth,domain=-0.25*pi+0.05:0.25*pi-0.05,samples=200,blue,line width=1pt]{tan(deg(2*x))};
+            \addplot[stealth-stealth,domain=0.25*pi+0.05:0.75*pi-0.05,samples=200,blue,line width=1pt]{tan(deg(2*x))};
+            \addplot[stealth-stealth,domain=0.75*pi+0.05:1.25*pi-0.05,samples=200,blue,line width=1pt]{tan(deg(2*x))};
+            \draw [dashed,red] (-1.25*pi,-10) -- (-1.25*pi,10);
+            \draw [dashed,red] (-0.75*pi,-10) -- (-0.75*pi,10);
+            \draw [dashed,red] (-0.25*pi,-10) -- (-0.25*pi,10);
+            \draw [dashed,red] (0.25*pi,-10) -- (0.25*pi,10);
+            \draw [dashed,red] (0.75*pi,-10) -- (0.75*pi,10);
+            \draw [dashed,red] (1.25*pi,-10) -- (1.25*pi,10);
+            \end{axis}
+            \end{tikzpicture}
             \end{tikzpicture}
           </latex-image>
         </image>
@@ -1986,13 +2074,13 @@
       <p>
         When navigating the open ocean, maintaining a straight course poses challenges due to limited visual markers. One technique involves the steersperson using the positions of shadows cast by objects on the canoe—such as crew members, railings, and sails—to keep them fixed on the deck, ensuring a straight trajectory. However, if the canoe veers off course, the changing position of the canoe relative to the sun leads to a shift in the shadows. Observing these shadow movements allows the steersperson to make course corrections. It's important to note that this method is effective only over a short duration, as the sun's continuous movement across the sky causes ongoing changes in shadow positions. To illustrate the limitations over extended periods, consider the example of the Samoan double-hulled voyaging vaʻa, Gaualofa, with a 14-meter-high mast. The length of the shadow is modeled by
         <me>l(t)=14\left|\cot\left(\frac{\pi}{12}t\right)\right|</me>,
-        where <m>l</m> is the shadow length in meters and <m>t</m> represents the hours since 6 am (assuming sunrise at 6 am and sunset at 6 pm).
+        where <m>l</m> is the shadow length in meters and <m>t</m> represents the hours since 6 am (assuming sunrise at 6 am and sunset at 6 pm). In each of the following questions, calculate the length of the shadow, rounded to the nearest tenth of a meter, for the given time.
       </p>
     </introduction>
     <exercise>
       <statement>
         <p>
-          What is the length of the shadow at 7:00am? Round your answer to the nearest tenth of a meter.
+          7:00am
         </p>
       </statement>
       <answer>
@@ -2004,7 +2092,7 @@
     <exercise>
       <statement>
         <p>
-          What is the length of the shadow at 10:00am? Round your answer to the nearest tenth of a meter.
+          10:00am
         </p>
       </statement>
       <answer>
@@ -2016,7 +2104,7 @@
     <exercise>
       <statement>
         <p>
-          What is the length of the shadow at 12:00pm? Round your answer to the nearest tenth of a meter.
+          12:00pm
         </p>
       </statement>
       <answer>
@@ -2028,7 +2116,7 @@
     <exercise>
       <statement>
         <p>
-          What is the length of the shadow at 3:00pm? Round your answer to the nearest tenth of a meter.
+          3:00pm
         </p>
       </statement>
       <answer>
@@ -2040,7 +2128,7 @@
     <exercise>
       <statement>
         <p>
-          What is the length of the shadow at 4:00pm? Round your answer to the nearest tenth of a meter.
+          4:00pm
         </p>
       </statement>
       <answer>
@@ -2098,11 +2186,14 @@
           d(\theta)=3\sec(\theta).
         </me>
       </p> 
+      <p>
+        In each of the following questions, calculate the distance from the observer to Faʻafaite, <m>d(\theta)</m>, in nautical miles, for the given angle <m>\theta</m>. Round your answer to two decimal places.
+      </p>
     </introduction>
     <exercise>
       <statement>
         <p>
-          Calculate <m>d\left(-\frac{\pi}{3}\right)</m>, in nautical miles, rounded to two decimals.
+          <m>\theta=-\frac{\pi}{3}</m>
         </p>
       </statement>
       <answer>
@@ -2114,7 +2205,7 @@
     <exercise>
       <statement>
         <p>
-          Calculate <m>d\left(-\frac{\pi}{4}\right)</m>, in nautical miles, rounded to two decimals.
+          <m>\theta=-\frac{\pi}{4}</m>
         </p>
       </statement>
       <answer>
@@ -2126,7 +2217,7 @@
     <exercise>
       <statement>
         <p>
-          Calculate <m>d\left(-\frac{\pi}{6}\right)</m>, in nautical miles, rounded to two decimals.
+          <m>\theta=-\frac{\pi}{6}</m>
         </p>
       </statement>
       <answer>
@@ -2138,7 +2229,7 @@
     <exercise>
       <statement>
         <p>
-          Calculate <m>d\left(0\right)</m>, in nautical miles, rounded to two decimals.
+          <m>\theta=0</m>
         </p>
       </statement>
       <answer>
@@ -2150,7 +2241,7 @@
     <exercise>
       <statement>
         <p>
-          Calculate <m>d\left(\frac{\pi}{6}\right)</m>, in nautical miles, rounded to two decimals.
+          <m>\theta=\frac{\pi}{6}</m>
         </p>
       </statement>
       <answer>
@@ -2162,7 +2253,7 @@
     <exercise>
       <statement>
         <p>
-          Calculate <m>d\left(\frac{\pi}{4}\right)</m>, in nautical miles, rounded to two decimals.
+          <m>\theta=\frac{\pi}{4}</m>
         </p>
       </statement>
       <answer>
@@ -2174,7 +2265,7 @@
     <exercise>
       <statement>
         <p>
-          Calculate <m>d\left(\frac{\pi}{3}\right)</m>, in nautical miles, rounded to two decimals.
+          <m>\theta=\frac{\pi}{3}</m>
         </p>
       </statement>
       <answer>
@@ -2213,12 +2304,12 @@
     <exercise>
       <statement>
         <p>
-          What happens to <m>d</m> as <m>x</m> approaches <m>\frac{\pi}{2}</m>?
+          What happens to <m>d</m> as <m>\theta</m> approaches <m>\frac{\pi}{2}</m>?
         </p>
       </statement>
       <answer>
         <p>
-          As <m>x</m> approaches <m>\frac{\pi}{2}</m>, the function <m>d(x)=3\sec(x)</m> approaches positive infinity.
+          As <m>\theta</m> approaches <m>\frac{\pi}{2}</m>, the function <m>d(\theta)=3\sec(\theta)</m> approaches positive infinity.
         </p>
       </answer>
     </exercise>
@@ -2230,7 +2321,7 @@
       </statement>
       <answer>
         <p>
-          <m>3</m> NM, when Faʻafaite is directly north of the observer (<m>x=0</m>)
+          <m>3</m> NM, when Faʻafaite is directly north of the observer (<m>\theta=0</m>)
         </p>
       </answer>
     </exercise>
