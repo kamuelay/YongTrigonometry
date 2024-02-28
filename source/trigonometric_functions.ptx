@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="trigonometric_functions">
+  <title>Trigonometric Functions</title>
+  <xi:include  href="pacific_island_navigation.ptx"/>
+  <xi:include  href="angles_and_their_measure.ptx"/>
+  <xi:include  href="unit_circle.ptx"/>
+  <xi:include  href="right_triangle_trigonometry.ptx"/>
+  <xi:include  href="trigonometric_functions_of_any_angles.ptx"/>
+</chapter>

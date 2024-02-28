@@ -1,8 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- This frontmatter division will contain all content before the -->
-<!-- first chapter.  Fill in and comment/uncomment to see how this -->
-<!-- works.                                                        -->
-
 <frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="meta_frontmatter">
   <titlepage>
     <author>
@@ -156,12 +152,12 @@
                         <ul>
                           <li>
                             <p>
-                              HSF.IF.C.7: Graph functions expressed symbolically and show key features of the graph, by hand in simple cases and using technology for more complicated cases. (<xref ref="Graphs_of_the_Sine_and_Cosine_Functions"/>, <xref ref="Graphs_of_Other_Trigonometric_Functions"/>)
+                              HSF.IF.C.7: Graph functions expressed symbolically and show key features of the graph, by hand in simple cases and using technology for more complicated cases. (<xref ref="graphs_of_the_sine_and_cosine_functions"/>, <xref ref="graphs_of_other_trigonometric_functions"/>)
                             </p>
                           </li>
                           <li>
                             <p>
-                              HSF.IF.C.7.e: Graph exponential and logarithmic functions, showing intercepts and end behavior, and trigonometric functions, showing period, midline, and amplitude. (<xref ref="Graphs_of_the_Sine_and_Cosine_Functions"/>, <xref ref="Graphs_of_Other_Trigonometric_Functions"/>)
+                              HSF.IF.C.7.e: Graph exponential and logarithmic functions, showing intercepts and end behavior, and trigonometric functions, showing period, midline, and amplitude. (<xref ref="graphs_of_the_sine_and_cosine_functions"/>, <xref ref="graphs_of_other_trigonometric_functions"/>)
                             </p>
                           </li>
                         </ul>

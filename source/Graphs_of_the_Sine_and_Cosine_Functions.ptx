@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<section xml:id="Graphs_of_the_Sine_and_Cosine_Functions">
+<section xml:id="graphs_of_the_sine_and_cosine_functions">
   <title>Graphs of the Sine and Cosine Functions</title>
   <introduction>
     <p>
@@ -35,13 +35,13 @@
       The position where the Sun rises throughout the year exhibits a repeating pattern, characterized as a <term>periodic function</term> with a cycle of about one year. This function can be mathematically represented as either a sine or cosine function. Graphically, it illustrates the sunrise position on the horizon relative to the east (Hikina) as time progresses. By examining this function, we can observe the gradual northward and southward movement of the sunrise position throughout the year. Key dates such as the equinoxes and solstices mark significant points in this pattern, providing insights into the changing seasons and variations in daylight hours.
     </p>
     <p>
-      In this section, we will explore the periodic nature of sine and cosine functions and study their transformations. Studying the graphs of sine and cosine functions provides valuable insights into the world around us. The graphs of the remaining trigonometric functions will be covered in <xref ref="Graphs_of_Other_Trigonometric_Functions">Section</xref>.
+      In this section, we will explore the periodic nature of sine and cosine functions and study their transformations. Studying the graphs of sine and cosine functions provides valuable insights into the world around us. The graphs of the remaining trigonometric functions will be covered in <xref ref="graphs_of_other_trigonometric_functions">Section</xref>.
     </p>
   </introduction>
   <subsection xml:id="subsec-domain-range-sine-cosine-functions">
     <title>Domain and Range of Sine and Cosine</title>
     <p>
-      The domains for <m>\sin(\theta)</m> and <m>\cos(\theta)</m> consist of the set of the inputs of the functions. Since any angle <m>\theta</m> can be input into sine and cosine and still have these functions defined, the domain for both sine and coseine is all real numbers. Recall that in <xref ref="Unit_Circle">Section</xref>, if <m>P(x,y)</m> is any point on the unit circle that corresponds to the angle <m>\theta</m>, we defined <m>\sin\theta=y</m> and <m>\cos\theta=x</m>. Given the constraints on the unit circle, <m>-1\leq x\leq1</m> and <m>-1\leq y\leq1</m>, and thus
+      The domains for <m>\sin(\theta)</m> and <m>\cos(\theta)</m> consist of the set of the inputs of the functions. Since any angle <m>\theta</m> can be input into sine and cosine and still have these functions defined, the domain for both sine and coseine is all real numbers. Recall that in <xref ref="unit_circle">Section</xref>, if <m>P(x,y)</m> is any point on the unit circle that corresponds to the angle <m>\theta</m>, we defined <m>\sin\theta=y</m> and <m>\cos\theta=x</m>. Given the constraints on the unit circle, <m>-1\leq x\leq1</m> and <m>-1\leq y\leq1</m>, and thus
       <me>-1\leq \sin\theta\leq1, \quad \mbox{and} \quad -1\leq \cos\theta\leq1</me>.
       Since the range of a function consists of all its outputs, we conclude that the range of both the sine and cosine functions spans all real numbers between -1 and 1.
     </p>
@@ -112,7 +112,7 @@
     <title>The Sine Function</title>
     <convention>
       <p>
-        In <xref ref="Trigonometry">Chapter</xref>, trigonometric functions typically use <m>\theta</m> or <m>t</m> as the variable in the domain, such as <m>y=\cos\theta</m> and <m>y=\sin t</m>. However, when graphing functions on the Cartesian plane (<m>xy</m>-coordinate system), <m>x</m> is conventionally used as the variable in the domain. Therefore, when graphing trigonometric functions, we will use <m>x</m> as the variable, for example <m>y=\cos x</m> and <m>y=\sin x</m>.
+        In <xref ref="trigonometric_functions">Chapter</xref>, trigonometric functions typically use <m>\theta</m> or <m>t</m> as the variable in the domain, such as <m>y=\cos\theta</m> and <m>y=\sin t</m>. However, when graphing functions on the Cartesian plane (<m>xy</m>-coordinate system), <m>x</m> is conventionally used as the variable in the domain. Therefore, when graphing trigonometric functions, we will use <m>x</m> as the variable, for example <m>y=\cos x</m> and <m>y=\sin x</m>.
       </p>
     </convention>
     <p>

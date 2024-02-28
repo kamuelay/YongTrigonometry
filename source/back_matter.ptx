@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<backmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="back_matter">
+    <!-- <xi:include href="./bibliography.ptx" /> -->
+    <!-- <glossary> -->
+      <!-- <title>Glossary</title> -->
+    <!-- </glossary> -->
+    <glossary>
+      <title>Glossary (Math)</title>
+      <gi>
+        <title>amplitude</title>
+        <p>
+          definition
+        </p>
+      </gi>
+      <gi>
+        <title>period</title>
+        <p>
+          definition
+        </p>
+      </gi>
+    </glossary>
+    <glossary>
+      <title>Glossary (Canoe and Wayfinding)</title>
+      <gi>
+        <title>heading</title>
+        <p>
+          definition
+        </p>
+      </gi>
+      <gi>
+        <title>latitude sailing</title>
+        <p>
+          definition
+        </p>
+      </gi>
+
+    </glossary>
+
+    <index>
+      <title>Index</title>
+      <index-list />
+    </index>
+  </backmatter>

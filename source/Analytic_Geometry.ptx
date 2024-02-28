@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="Analytic_Geometry">
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="analytic_geometry">
   <title>Analytic Geometry</title>
-  <xi:include  href="Parabols.ptx"/>
-  <xi:include  href="Ellipses.ptx"/>
-  <xi:include  href="Hyperbolas.ptx"/>
+  <xi:include  href="parabolas.ptx"/>
+  <xi:include  href="ellipses.ptx"/>
+  <xi:include  href="hyperbolas.ptx"/>
 </chapter>

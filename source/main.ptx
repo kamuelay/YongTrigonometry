@@ -255,30 +255,15 @@
   </docinfo>
   <book>
     <title>Trigonometry Through Wayfinding and Navigation Across the Pacific</title>
-    <!-- <frontmatter>
-      <titlepage>
-        <author>
-          <personname>Kamuela E Yong</personname>
-        </author>
-      </titlepage>
-    </frontmatter> -->
-    <xi:include href="./Front_Matter.ptx" />
-    <xi:include href="./Trigonometry.ptx" />
-    <xi:include href="./Graphs_of_the_Trigonometric_Functions.ptx"/>
-    <!-- <xi:include href="./Analytic_Trigonometry.ptx"/> -->
-    <!-- <xi:include href="./Applications_of_Trigonometry.ptx"/> -->
-    <!-- <xi:include href="./Polar_and_Parametric_Equations.ptx"/> -->
-    <!-- <xi:include href="./Analytic_Geometry.ptx"/> -->
-    <!-- <xi:include href="./Solutions.ptx"/> -->
-    <backmatter>
-      <!-- <xi:include href="./bibliography.ptx" /> -->
-      <!-- <glossary> -->
-        <!-- <title>Glossary</title> -->
-      <!-- </glossary> -->
-      <index>
-        <title>Index</title>
-        <index-list />
-      </index>
-    </backmatter>
+
+    <xi:include href="./front_matter.ptx" />
+    <xi:include href="./trigonometric_functions.ptx" />
+    <xi:include href="./graphs_of_the_trigonometric_functions.ptx"/>
+    <!-- <xi:include href="./analytic_trigonometry.ptx"/> -->
+    <!-- <xi:include href="./applications_of_trigonometry.ptx"/> -->
+    <!-- <xi:include href="./polar_and_parametric_equations.ptx"/> -->
+    <!-- <xi:include href="./analytic_geometry.ptx"/> -->
+    <!-- <xi:include href="./solutions.ptx"/> -->
+    <xi:include href="./back_matter.ptx" />
   </book>
 </pretext>
