@@ -2128,24 +2128,22 @@
         </answer>
       </exercise>
     </exercisegroup>
-
-
     <exercise>
       <title>Sunrise on Mauna Kea</title>
       <introduction>
         <p>
-          The summit of Mauna Kea is the highest point in Hawaiʻi and sits 13,803 ft above the sea level. If you stand at the summit, you will be able to see the sun rise before someone standing at the sea level just north or south of Mauna Kea (at the same latitude). In fact, you will see the sunrise at the same time as someone at sea level sailing in a waʻa to the east of Mauna Kea.
+          The summit of Mauna Kea is the highest point in Hawaiʻi and sits 13,803 ft above the sea level. If you stand at the summit, you will be able to see the sun rise before someone standing at the sea level just north or south of Mauna Kea (at the same latitude). In fact, you will see the sunrise at the same time as someone at sea level sailing in a waʻa to the east of Mauna Kea. Assume the radius of the earth is 3961.527 miles.
         </p>
       </introduction>
       <task>
         <statement>
           <p>
-            How far is the horizon when someone 5 ft tall stands on the summit to watch the sun rise?
+            How far is the horizon when someone 5 ft tall stands on the summit to watch the sun rise? Round your answer to the nearest tenth of a mile.
           </p>
         </statement>
         <answer>
           <p>
-            
+            <m>143.9</m> miles
           </p>
         </answer>
       </task>
