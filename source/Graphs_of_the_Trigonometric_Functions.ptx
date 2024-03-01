@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="graphs_of_the_trigonometric_functions">
   <title>Graphs of the Trigonometric Functions</title>
-  <xi:include  href="graphs_of_the_sine_and_cosine_functions.ptx"/>
-  <xi:include  href="graphs_of_other_trigonometric_functions.ptx"/>
+  <!-- <xi:include  href="graphs_of_the_sine_and_cosine_functions.ptx"/> -->
+  <!-- <xi:include  href="graphs_of_other_trigonometric_functions.ptx"/> -->
   <xi:include  href="sinusoidal_curve_fitting_and_graphical_analysis.ptx"/>
-  <xi:include  href="inverse_trigonometry.ptx"/>
+  <!-- <xi:include  href="inverse_trigonometry.ptx"/> -->
 </chapter>

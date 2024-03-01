@@ -543,7 +543,7 @@
     <caption>
       In the celestial sphere, stars rise in the east, arc across the sky, and set in the west. Each star will both rise and set in the same house.
     </caption>
-    <interactive geogebra="nmjdg3kb" aspect="1.75:1"/>
+    <interactive geogebra="nmjdg3kb" aspect="1.75:1" label="geogebra-celestial-sphere"/>
   </figure>
   <p>
     The star compass also serves as a guide for determining direction based on wind and ocean swells. As the wind and swells move, they intersect the star compass diagonally. For example, if a wind blows from the house Noio in the Koʻolau (northeast) quadrant, it will blow in the direction of the Kona (southwest) quadrant and eventually exit in the same house, Noio.

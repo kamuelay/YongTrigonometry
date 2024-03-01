@@ -125,7 +125,7 @@
       <caption>
         As <m>\theta</m> moves from <m>0^{\circ}</m> to <m>360^{\circ}</m>, this figure plots the values of <m>y = \sin \theta</m>. Move the slider for <m>\theta</m> to see how changing the angle affects <m>\sin\theta</m>. Note that while we will generally be using radians when graphing trigonometric functions, this figure uses degrees to help visualize the angle. For example, you may not be aware that <m>2</m> radians (<m>\approx114.6^{\circ}</m>) lies in Quadrant II.
       </caption>
-      <interactive geogebra="cjtfbek8" aspect="1.75:0.75"/>
+      <interactive geogebra="cjtfbek8" aspect="1.75:0.75" label="geogebra-sine-animation"/>
     </figure>
     <p>
       Next we recall known values for the sine function listed on <xref ref="tab_sine-graph-values">Table</xref>. 
@@ -285,7 +285,7 @@
       <caption>
         As <m>\theta</m> moves from <m>0^{\circ}</m> to <m>360^{\circ}</m>, this figure plots the values of <m>y = \cos \theta</m>. Move the slider for <m>\theta</m> to see how changing the angle affects <m>\cos\theta</m>. Note that while we will generally be using radians when graphing trigonometric functions, this figure uses degrees to help visualize the angle.
       </caption>
-      <interactive geogebra="hbzpjddt" aspect="1.75:0.75"/>
+      <interactive geogebra="hbzpjddt" aspect="1.75:0.75" label="geogebra-cosine-animation"/>
     </figure>
     <p>
       By plotting points for <m>y=\cos x</m> and using the fact that the cosine function is periodic, we obtain the graph for cosine over the entire domain. This is shown in <xref ref="cos-graph-extended">Figure</xref>.
@@ -1088,7 +1088,7 @@
       <caption>
         Manipulate the graphs of sine and cosine by adjusting the sliders for <m>A</m>, <m>B</m>, <m>C</m>, and <m>D</m>. Observe the effects on amplitude, period, phase and vertical shifts, as well as reflections about the <m>x</m>- and <m>y</m>-axes. Additionally, you can toggle between the sine and cosine graphs by selecting the corresponding function.
       </caption>
-      <interactive geogebra="u75zdnr8" aspect="1.75:0.75"/>
+      <interactive geogebra="u75zdnr8" aspect="1.75:0.75" label="geogebra-sinusoidal-transformation-animation"/>
     </figure>
   </subsection>
   <exercises>

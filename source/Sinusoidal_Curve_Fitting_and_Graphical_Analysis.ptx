@@ -81,7 +81,7 @@ Create equations in two or more variables to represent relationships between qua
 
 
   <exercises>
-    <exercisegroup>
+    <exercisegroup cols="2">
       <introduction>
         <p>
           Write the equation of a sine function with the following characteristics:
@@ -90,24 +90,48 @@ Create equations in two or more variables to represent relationships between qua
       <exercise>
         <statement>
           <p>
-            Amplitude = 2; Period = <m>\pi</m>.
+            Amplitude: 2; Period: <m>\pi</m>.
           </p>
         </statement>
         <answer>
           <p>
-            <m>y=2\sin(2x)</m>>
+            <m>y=2\sin\left(2x\right))</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            Amplitude = 3; Period = <m>\frac{\pi}{2}</m>.
+            Amplitude: 3; Period: <m>\frac{\pi}{2}</m>.
           </p>
         </statement>
         <answer>
           <p>
-            <m>f(x) = 3\sin\left(\frac{4}{\pi}x\right)</m>
+            <m>f(x) = 3\sin\left(4x\right)</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Amplitude: 1.5; Period: <m>=\frac{\pi}{6}</m>; Reflection in the <m>x</m>-axis.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>f(x) = -1.5\sin\left(12x\right))</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Amplitude = 2; Period <m>=3\pi</m>; Reflection in the <m>x</m>-axis.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>f(x) = -2\sin\left(\frac{2}{3}x\right)</m>
           </p>
         </answer>
       </exercise>
@@ -132,19 +156,6 @@ Create equations in two or more variables to represent relationships between qua
         <answer>
           <p>
             <m>f(x) = 4\sin\left(\frac{2\pi}{\frac{2\pi}{3}}x\right) + 2</m>
-          </p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            Amplitude = 1.5; Period <m>=\pi</m>; Reflection in the <m>x</m>-axis.
-          </p>
-        </statement>
-        <answer>
-          <p>
-            <m>f(x) = -1.5\sin(x)</m>
-
           </p>
         </answer>
       </exercise>
