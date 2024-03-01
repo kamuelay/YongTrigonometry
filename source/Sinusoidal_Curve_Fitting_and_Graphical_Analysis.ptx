@@ -90,16 +90,146 @@ Create equations in two or more variables to represent relationships between qua
       <exercise>
         <statement>
           <p>
-            Amplitude = 2; Period = <m>\pi</m>
+            Amplitude = 2; Period = <m>\pi</m>.
           </p>
         </statement>
         <answer>
           <p>
-            answer here
+            <m>y=2\sin(2x)</m>>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Amplitude = 3; Period = <m>\frac{\pi}{2}</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>f(x) = 3\sin\left(\frac{4}{\pi}x\right)</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Amplitude = 1; Period  <m>=2\pi</m>; Phase Shift <m>=\frac{\pi}{4}</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>f(x) = \sin\left(\frac{2\pi}{2\pi}x - \frac{\pi}{4}\right)</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Amplitude = 4; Period <m>=\frac{2\pi}{3}</m>; Vertical Shift = 2.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>f(x) = 4\sin\left(\frac{2\pi}{\frac{2\pi}{3}}x\right) + 2</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Amplitude = 1.5; Period <m>=\pi</m>; Reflection in the <m>x</m>-axis.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>f(x) = -1.5\sin(x)</m>
+
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Amplitude = 2, Period = <m>\frac{3\pi}{2}</m>; Phase Shift <m>=\frac{\pi}{3}</m>; Vertical Shift = -1.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>f(x) = 2\sin\left(\frac{2}{3}\pi x - \frac{\pi}{3}\right) - 1</m>
           </p>
         </answer>
       </exercise>
     </exercisegroup>
+    <exercisegroup>
+      <introduction>
+        <p>
+          Write the equation of a cosine function with the following characteristics:
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            Amplitude = 3; Period = <m>\frac{3\pi}{2}</m>; Phase Shift <m>=\frac{\pi}{6}</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>g(x) = 3\cos\left(\frac{4}{3}\pi x - \frac{\pi}{6}\right)</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Amplitude = 2.5; Period = <m>\frac{\pi}{4}</m>; Vertical Shift = 1.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>g(x) = 2.5\cos\left(\frac{8}{\pi}x\right) + 1</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Amplitude = 4; Period <m>=\frac{5\pi}{3}</m>; Vertical Shift = -3.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>g(x) = 4\cos\left(\frac{2\pi}{\frac{5\pi}{3}}x\right) - 3</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Amplitude = 1.5; Period <m>=\frac{4\pi}{5}</m>; Reflection in the <m>y</m>-axis.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>g(x) = -1.5\cos\left(\frac{2\pi}{\frac{4\pi}{5}}x\right)</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Amplitude = 2; Period = <m>3\pi</m>; Phase Shift <m>=-\frac{\pi}{2}</m>; Vertical Shift = 2.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>g(x) = 2\cos\left(\frac{2}{3}\pi x + \frac{\pi}{2}\right) + 2</m>
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    
+    
     <exercisegroup>
       <introduction>
         <p>
