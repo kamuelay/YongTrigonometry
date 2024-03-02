@@ -90,7 +90,7 @@ Create equations in two or more variables to represent relationships between qua
       <exercise>
         <statement>
           <p>
-            Amplitude: 2; Period: <m>\pi</m>.
+            Amplitude: <m>2</m>; Period: <m>\pi</m>.
           </p>
         </statement>
         <answer>
@@ -102,77 +102,113 @@ Create equations in two or more variables to represent relationships between qua
       <exercise>
         <statement>
           <p>
-            Amplitude: 3; Period: <m>\frac{\pi}{2}</m>.
+            Amplitude: <m>3</m>; Period: <m>\frac{\pi}{2}</m>.
           </p>
         </statement>
         <answer>
           <p>
-            <m>f(x) = 3\sin\left(4x\right)</m>
+            <m>y = 3\sin\left(4x\right)</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            Amplitude: 1.5; Period: <m>=\frac{\pi}{6}</m>; Reflection in the <m>x</m>-axis.
+            Amplitude: <m>1.5</m>; Period: <m>\frac{\pi}{6}</m>; Reflection about the <m>x</m>-axis.
           </p>
         </statement>
         <answer>
           <p>
-            <m>f(x) = -1.5\sin\left(12x\right))</m>
+            <m>y = -1.5\sin\left(12x\right)</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            Amplitude = 2; Period <m>=3\pi</m>; Reflection in the <m>x</m>-axis.
+            Amplitude: <m>2</m>; Period: <m>3\pi</m>; Reflection about the <m>x</m>-axis.
           </p>
         </statement>
         <answer>
           <p>
-            <m>f(x) = -2\sin\left(\frac{2}{3}x\right)</m>
+            <m>y = -2\sin\left(\frac{2}{3}x\right)</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            Amplitude = 1; Period  <m>=2\pi</m>; Phase Shift <m>=\frac{\pi}{4}</m>.
+            Amplitude: <m>4</m>; Period: <m>\frac{2\pi}{3}</m>; Vertical Shift <m>2</m>.
           </p>
         </statement>
         <answer>
           <p>
-            <m>f(x) = \sin\left(\frac{2\pi}{2\pi}x - \frac{\pi}{4}\right)</m>
+            <m>y = 4\sin\left(3x\right) + 2</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            Amplitude = 4; Period <m>=\frac{2\pi}{3}</m>; Vertical Shift = 2.
+            Amplitude: <m>3</m>; Period: <m>\frac{5}{2}</m>; Vertical Shift: <m>-\frac{2}{3}</m>.
           </p>
         </statement>
         <answer>
           <p>
-            <m>f(x) = 4\sin\left(\frac{2\pi}{\frac{2\pi}{3}}x\right) + 2</m>
+            <m>y = 3\sin\left(\frac{4\pi}{5}x\right) - \frac{2}{3}</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            Amplitude = 2, Period = <m>\frac{3\pi}{2}</m>; Phase Shift <m>=\frac{\pi}{3}</m>; Vertical Shift = -1.
+            Amplitude =<m>\frac{1}{2}</m>; Period  <m>=2\pi</m>; Phase Shift <m>=\frac{\pi}{4}</m>.
           </p>
         </statement>
         <answer>
           <p>
-            <m>f(x) = 2\sin\left(\frac{2}{3}\pi x - \frac{\pi}{3}\right) - 1</m>
+            <m>y = \frac{1}{2}\sin\left(x - \frac{\pi}{4}\right)</m>
           </p>
         </answer>
       </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Amplitude: <m>1</m>; Period:  <m>\frac{5\pi}{3}</m>; Phase Shift: <m>\frac{\pi}{6}</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>y = \sin\left(\frac{6}{5}\left(x - \frac{\pi}{6}\right)\right)</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Amplitude: <m>2</m>, Period: <m>\frac{3\pi}{2}</m>; Phase Shift <m>=\frac{\pi}{3}</m>; Vertical Shift = <m>-1</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>y = 2\sin\left(\frac{4}{3} \left(x - \frac{\pi}{3}\right)\right) - 1</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Amplitude = 2, Period = <m>20</m>; Phase Shift <m>=-\frac{\pi}{4}</m>; Vertical Shift = 3.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>y = 2\sin\left(\frac{\pi}{10}\left(x + \frac{\pi}{4}\right)\right) + 3</m>
+          </p>
+        </answer>
+      </exercise>      
     </exercisegroup>
-    <exercisegroup>
+    <exercisegroup cols="2">
       <introduction>
         <p>
           Write the equation of a cosine function with the following characteristics:
@@ -181,24 +217,48 @@ Create equations in two or more variables to represent relationships between qua
       <exercise>
         <statement>
           <p>
-            Amplitude = 3; Period = <m>\frac{3\pi}{2}</m>; Phase Shift <m>=\frac{\pi}{6}</m>.
+            Amplitude = 1.8; Period = <m>2\pi</m>.
           </p>
         </statement>
         <answer>
           <p>
-            <m>g(x) = 3\cos\left(\frac{4}{3}\pi x - \frac{\pi}{6}\right)</m>
+            <m>y = 1.8\cos\left(x\right)</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            Amplitude = 2.5; Period = <m>\frac{\pi}{4}</m>; Vertical Shift = 1.
+            Amplitude = 2.5; Period = <m>\frac{\pi}{4}</m>.
           </p>
         </statement>
         <answer>
           <p>
-            <m>g(x) = 2.5\cos\left(\frac{8}{\pi}x\right) + 1</m>
+            <m>y = 2.5\cos\left(8x\right)</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Amplitude = 2; Period <m>=\frac{7\pi}{4}</m>; Reflection in the <m>x</m>-axis.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>y = -2\cos\left(\frac{8\pi}{7}x\right)</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Amplitude = 1.5; Period <m>=\frac{4\pi}{5}</m>; Reflection in the <m>x</m>-axis.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>y = -1.5\cos\left(\frac{5}{2}x\right)</m>
           </p>
         </answer>
       </exercise>
@@ -210,19 +270,43 @@ Create equations in two or more variables to represent relationships between qua
         </statement>
         <answer>
           <p>
-            <m>g(x) = 4\cos\left(\frac{2\pi}{\frac{5\pi}{3}}x\right) - 3</m>
+            <m>y = 4\cos\left(\frac{6}{5}x\right) - 3</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            Amplitude = 1.5; Period <m>=\frac{4\pi}{5}</m>; Reflection in the <m>y</m>-axis.
+            Amplitude = 3.5; Period <m>=\frac{4\pi}{3}</m>; Vertical Shift = 2.
           </p>
         </statement>
         <answer>
           <p>
-            <m>g(x) = -1.5\cos\left(\frac{2\pi}{\frac{4\pi}{5}}x\right)</m>
+            <m>y = 3.5\cos\left(\frac{3}{2}x\right) + 2</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Amplitude = 3; Period = <m>\frac{3\pi}{2}</m>; Phase Shift <m>=\frac{\pi}{6}</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>y = 3\cos\left(\frac{4}{3}\left() x - \frac{\pi}{6}\right)\right)</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Amplitude = 2.5; Period = <m>\frac{\pi}{3}</m>; Phase Shift <m>=\frac{\pi}{4}</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>y = 2.5\cos\left(6\left*x - \frac{\pi}{4}\right)\right)</m>
           </p>
         </answer>
       </exercise>
@@ -234,7 +318,19 @@ Create equations in two or more variables to represent relationships between qua
         </statement>
         <answer>
           <p>
-            <m>g(x) = 2\cos\left(\frac{2}{3}\pi x + \frac{\pi}{2}\right) + 2</m>
+            <m>y = 2\cos\left(\frac{2}{3}\left() x + \frac{\pi}{2}\right)\right) + 2</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Amplitude = 1.2; Period = <m>\frac{5\pi}{2}</m>; Phase Shift <m>=-\frac{\pi}{3}</m>; Vertical Shift = 3.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>y = 1.2\cos\left(\frac{4}{5}\left() x + \frac{\pi}{3}\right)\right) + 3</m>
           </p>
         </answer>
       </exercise>
