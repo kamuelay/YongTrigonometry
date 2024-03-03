@@ -3,9 +3,373 @@
   <title>Sinusoidal Curve Fitting and Graphical Analysis</title>
   <introduction>
     <p>
-      introduction...
+      In this chapter, we have learned that sinusoidal patterns exist in various aspects throughout our world. One example is the moon, which undergoes phases oscillating from no illumination, to waxing (increasing illumination), reaching a fully lit moon, and then waning (decreasing illumination) until it completes its cycle with no illumination again. Indigenous cultures across the world have deeply connected with these lunar cycles, shaping cultural practices aligned with the moon's phases. For example, the Māori of New Zealand and the Hopi Tribe in northeastern Arizona, USA, both time activities like planting and harvesting specific plants for each moon cycle based on generations of lunar observations.
+    </p>
+    <p>
+      In Section 2.1 (graphs_of_the_sine_and_cosine_functions), we graphed sinusoidal functions and determined their values at any given time. The ability to formulate a sinusoidal equation modeling the moon's phases allows us to predict the moon's phase on any date. In this section, we will explore the process of developing sinusoidal functions based on provided information. This will enable us to model real-world phenomena using real data.
     </p>
   </introduction>
+  <subsection xml:id="subsec-finding-sinusoidal-equations-from-characteristics">
+    <title>Finding Sinusoidal Equations from Characteristics</title>
+    <p>
+      To begin finding sinusoidal equations of the form
+      <me>
+        y=A\cdot\sin(B(x-C))+D \quad \mbox{and} \quad y=A\cdot\cos(B(x-C))+D
+      </me>
+      we will refer to the characteristics of the sine and cosine functions described in ("sine-cosine-transformations") and given below to help us determine the parameter values for <m>A</m>, <m>B</m>, <m>C</m>, and <m>D</m>.
+    </p>
+    <p>
+      <ul>
+        <li>
+          <p>
+            Amplitude and Vertical Compression/Stretch: <m>|A|</m>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <p><m>|A|</m> is the value of the amplitude.</p>
+              </li>
+              <li>
+                <p>If <m>|A| \gt 1</m>, there is vertical stretching.</p>
+              </li>
+              <li>
+                <p>If <m>0 \lt |A| \lt 1</m>, there is vertical compression.</p>
+              </li>
+            </ul>
+          </p>
+        </li>
+        <li>
+          <p>
+            Period and Horizontal Stretch/Compression: <m>|B|</m>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <p>The period is <m>\frac{2\pi}{|B|}</m>.</p>
+              </li>
+              <li>
+                <p>If <m>|B| \gt 1</m>, there is horizontal compression and the period is shortened.</p>
+              </li>
+              <li>
+                <p>If <m>0 \lt |B| \lt 1</m>, there is horizontal stretching and the period is lengthened.</p>
+              </li>
+            </ul>
+          </p>
+        </li>
+        <li>
+          <p>
+            Phase Shift: <m>C</m>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <p>
+                  If <m>C</m> is positive, there is a shift to the right.
+                </p>
+              </li>
+              <li>
+                <p>
+                  If <m>C</m> is negative, there is a shift to the left.
+                </p>
+              </li>
+            </ul>
+          </p>
+        </li>
+        <li>
+          <p>
+            Vertical Shift: <m>D</m>
+          </p>
+          <p>
+            <ul>
+              <li>
+                <p>
+                  If <m>D</m> is positive, there is a shift upward.
+                </p>
+              </li>
+              <li>
+                <p>
+                  If <m>D</m> is negative, there is a shift downward.
+                </p>
+              </li>
+            </ul>
+          </p>
+        </li>
+        <li>
+          <p>
+            Reflection about the <m>x</m>-axis:
+          </p>
+          <p>
+            <ul>
+              <li>
+                <p>
+                  If <m>A</m> is negative (<m>A\lt0</m>), there is a reflection about the <m>x</m>-axis.
+                </p>
+              </li>
+            </ul>
+          </p>
+        </li>
+        <li>
+          <p>
+            Reflection about the <m>y</m>-axis:
+          </p>
+          <p>
+            <ul>
+              <li>
+                <p>
+                  If <m>B</m> is negative (<m>B\lt0</m>), there is a reflection about the <m>y</m>-axis.
+                </p>
+              </li>
+            </ul>
+          </p>
+        </li>
+      </ul>
+    </p>
+    <example>
+      <title>Finding an Equation of a Sine Function Using its Characteristics</title>
+      <statement>
+        <p>
+          Write an equation of a sine function with an amplitude of 2, period of 8, phase shift of <m>\frac{\pi}{3}</m>, and vertical shift of 4.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          To determine an equation of the form
+          <me>
+            f(x)=A\cdot\sin(B(x-C))+D
+          </me>
+          we first note that since <m>|A|</m> represents the value of the amplitude, and since we are given that the amplitude is 2, we get
+          <me>
+            |A|=2
+          </me>.
+          Additionally, since we are not given a reflection about the <m>x</m>-axis, we can conclude that <m>A</m> is not negative, thus
+          <me>
+            A=2
+          </me>.
+        </p>
+        <p>
+          Next, since we know the period is 8 and the period of a since function is given by <m>\frac{2\pi}{|B|}</m>, we get
+          <me>
+            \frac{2\pi}{|B|}=8
+          </me>.
+          Solving for <m>|B|</m>, we get
+          <me>
+            |B|=\frac{2\pi}{8}=\frac{\pi}{4}
+          </me>
+          Since there is no reflection about the <m>y</m>-axis, we have that <m>B</m> is not negative, and get
+          <me>
+            B=\frac{\pi}{4}.
+          </me>
+        </p>
+        <p>
+          Finally, since <m>C</m> and <m>D</m> represent the phase shift and vertical shift, respectively, we get
+          <me>
+            C=\frac{\pi}{3},\quad D=4
+          </me>.
+        </p>
+        <p>
+          Combining these, the sine function is:
+          <me>
+            f(x)=2\sin\left(\frac{\pi}{4}\left(x-\frac{\pi}{3}\right)\right)+4
+          </me>.
+        </p>
+      </solution>
+    </example>
+  </subsection>
+  <subsection xml:id="subsec-finding-sinusoidal-equations-from-graphs">
+    <title>Finding Sinusoidal Equations from Graphs</title>
+    <p>
+      
+    </p>
+    <example>
+      <title>Finding an Equation of a Sine Function Using its Graphs</title>
+      <statement>
+        <p>
+          Find an equation that represents the following graph of the form
+          <ol>
+            <li>
+              <p>
+                <me>f(x)=A\sin(B(x-C))+D</me>
+              </p>
+            </li>
+            <li>
+              <p>
+                <me>g(x)=A\cos(B(x-C))+D</me>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          
+        </p>
+      </solution>
+    </example>
+    <example>
+      <title>Modeling the Moon Cycles</title>
+      <statement>
+        <p>
+          According to the Astronomical Almanac, the average moon cycle is about 29.53059 days, that is, it takes approximately 29 days, 12 hours, 44 minutes, and 2.9 seconds for the moon to complete its cycle. Across the Pacific, from Chamorro, to Samoan, to Māori, and Tahitian culture, traditional practices including navigation as well as planting and fishing are tied to the moon phases. Develop a cosine function of the form
+          <me>
+            f(x)=A\cos(B(x-C))+D
+          </me>
+          to determine the percent of the moon that is illuminated as a function of time, where Day 0, representing the start of the moon cycle is the new moon with <m>0\%</m> illuminated, increasing until <m>100\%</m> of the moon is illuminated, and then decreasing back to <m>0%</m> illuminated, completing the cycle after 29.53059 days. Using the function you developed, determine what percent of the moon is illuminated (rounded to the nearest tenth of a percent) on Day 100, that is 100 days after the initial new moon.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          First we will sketch the function to help us visualize the function, and determine its characteristics.
+        </p>
+        <image xml:id="example-moon-cycle">
+          <latex-image>
+            \begin{tikzpicture}
+            \begin{axis}[
+            axis lines=middle,clip=false,
+            xmin=0,xmax=29.53059,ymin=0,ymax=100,
+            ytick={0,50,100},
+            xtick={0,29.53059},
+            xticklabels={0,29.53059},
+            xticklabel style={black},
+            xlabel=\(x\),
+            ylabel=\(y\)]
+            \addplot[domain=0:29.53059,samples=200,blue,line width=1pt]{-50*cos(deg(2*pi/29.53059*x))+50};
+            \draw [dashed,red] (0,50) -- (29.53059,50);
+            \end{axis}
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+        <p>
+          We see that the midline is at <m>50</m>.
+        </p>
+        <p>
+          The characteristic of a cosine function is that at Next we will determine if we will use a sine or cosine function
+        </p>
+        <p>
+          To determine an equation of the form
+          <me>
+            f(x)=A\cdot\cos(B(x-C))+D
+          </me>
+        </p>
+        <p>
+          To model the moon cycle, we want the function to range from <m>0\%</m> illuminated to <m>100\%</m>, representing the minimum and maximum values of the function, respectively. From (Definition 2.1.24), the amplitude, <m>|A|</m> is half the distance between its maximum and minimum values:
+          <me>
+            |A|=\frac{100-0}{2}=50
+          </me>.
+        </p>
+        <p>
+          Similarly, we also have that the midline is at <m>50\%</m>, representing a vertical shift of <m>D=50</m>.
+        </p>
+        <p>
+          Next, we know that the moonʻs cycle, or period is 29.53059 days. Therefore, we have
+          <me>
+            \frac{2\pi}{|B|}=29.53059
+          </me>.
+        </p>
+        
+
+        <p>
+          We get our answer
+          <me>
+            f(x)=50\cos\left(\frac{2\pi}{29.53059}x\right)+50
+          </me>.
+        </p>
+        <p>
+          To determine the moon phase 100 days after the initial new moon, we evaluate our function at <m>x=100</m>:
+          <me>
+            f(100)=50\cos\left(\frac{2\pi}{29.53059}\cdot100\right)+50=87.8\%
+          </me>.
+        </p>
+
+      </solution>
+    </example>
+  </subsection>
+  <subsection xml:id="subsec-finding-sinusoidal-equations-from-data">
+    <title>Finding Sinusoidal Equations from Data</title>
+    <p>
+      As we have seen in this chapter, many things in our world follow a sinusoidal pattern. One such thing is the moon, whose phases which oscilate from no illumination of the moon to waxing, or increasing illumination, until a fully lit moon, and then waning, or decreasing illumination until it completes its cycle with no illumination. Throughout the world, many Indigenous cultures have observed the moonʻs cycles, and through careful observations, have developed cultural practices based on the moon cycle. These observations inform people which day of the moon cycle is better for planting or harvesting, and which plants. (can you give an example). In Section 2.1, we graphed sinusoidal functions and determined the value of the function at any time. If we can develop a sinusoidal equation that models the phases of the moon, we can then predict the moon phase at any date. 
+    </p>
+    <p>
+      In this section, we will develop sinusoidal functions based off given information. We can then use these functions to model phenomena in the world around us with real data.
+    </p>
+    <p>
+      In Sections 2.1 we learned that Earth's axis is tilted and as the Earth orbits the sun, this axial tilt causes seasons, which is periodic. Another affect of the axial tilt and orbit is the amount of daylight each part of Earth experiences. Like the seasons, this is also periodic. 
+       we graphed sinusoidal functions and transformations of their functions. 
+    </p>
+    <table xml:id="tab_munda-daylight-hours">
+      <title>Hours of daylight for Munda, Solomon Islands captured on the first of each month for the year 2024. Source: NOAA Solar Calculator, U.S. National Oceanic and Atmospheric Administration
+      </title>
+      <tabular halign="center">
+        <row bottom="major">
+          <cell>Month, <m>x</m></cell>
+          <cell>Total number of daylight hours</cell>
+        </row>
+        <row>
+          <cell>January, <m>1</m></cell>
+          <cell><m>12.60</m></cell>
+        </row>
+        <row>
+          <cell>February, <m>2</m></cell>
+          <cell><m>12.47</m></cell>
+        </row>
+        <row>
+          <cell>March, <m>3</m></cell>
+          <cell><m>12.27</m></cell>
+        </row>
+        <row>
+          <cell>April, <m>4</m></cell>
+          <cell><m>12.02</m></cell>
+        </row>
+        <row>
+          <cell>May, <m>5</m></cell>
+          <cell><m>11.80</m></cell>
+        </row>
+        <row>
+          <cell>June, <m>6</m></cell>
+          <cell><m>11.67</m></cell>
+        </row>
+        <row>
+          <cell>July, <m>7</m></cell>
+          <cell><m>11.65</m></cell>
+        </row>
+        <row>
+          <cell>August, <m>8</m></cell>
+          <cell><m>11.75</m></cell>
+        </row>
+        <row>
+          <cell>September, <m>9</m></cell>
+          <cell><m>11.95</m></cell>
+        </row>
+        <row>
+          <cell>October, <m>10</m></cell>
+          <cell><m>12.18</m></cell>
+        </row>
+        <row>
+          <cell>November, <m>11</m></cell>
+          <cell><m>12.42</m></cell>
+        </row>
+        <row>
+          <cell>December, <m>12</m></cell>
+          <cell><m>12.57</m></cell>
+        </row>
+      </tabular>
+    </table>
+    
+
+    <figure xml:id="fig-desmos-munda-laylight"><caption>Input the width, <m>w</m> and length <m>l</m> of a canoe to get the locations of the Star Compass along the sides of a canoe. You can switch between the center of the house and the boundaries between houses.</caption><interactive desmos="vseiurdmq2" label="desmos-munda-daylight"/></figure>
+
+
+    <p>
+      Access the data for total dayligt here <url href="https://gml.noaa.gov/grad/solcalc/"></url>
+    </p>
+  </subsection>
+
+
+
+
+
+
+
+
   <subsection xml:id="subsec-phase-shift">
     <title>The title goes here</title>
     <p>
@@ -80,6 +444,8 @@ Create equations in two or more variables to represent relationships between qua
 
 
 
+  
+
   <exercises>
     <exercisegroup cols="2">
       <introduction>
@@ -95,7 +461,7 @@ Create equations in two or more variables to represent relationships between qua
         </statement>
         <answer>
           <p>
-            <m>y=2\sin\left(2x\right))</m>
+            <m>y=2\sin\left(2x\right)</m>
           </p>
         </answer>
       </exercise>
@@ -246,7 +612,7 @@ Create equations in two or more variables to represent relationships between qua
         </statement>
         <answer>
           <p>
-            <m>y = -2\cos\left(\frac{8\pi}{7}x\right)</m>
+            <m>y = -2\cos\left(\frac{8}{7}x\right)</m>
           </p>
         </answer>
       </exercise>
@@ -294,7 +660,7 @@ Create equations in two or more variables to represent relationships between qua
         </statement>
         <answer>
           <p>
-            <m>y = 3\cos\left(\frac{4}{3}\left() x - \frac{\pi}{6}\right)\right)</m>
+            <m>y = 3\cos\left(\frac{4}{3}\left( x - \frac{\pi}{6}\right)\right)</m>
           </p>
         </answer>
       </exercise>
@@ -306,7 +672,7 @@ Create equations in two or more variables to represent relationships between qua
         </statement>
         <answer>
           <p>
-            <m>y = 2.5\cos\left(6\left*x - \frac{\pi}{4}\right)\right)</m>
+            <m>y = 2.5\cos\left(6\left(x - \frac{\pi}{4}\right)\right)</m>
           </p>
         </answer>
       </exercise>
@@ -318,7 +684,7 @@ Create equations in two or more variables to represent relationships between qua
         </statement>
         <answer>
           <p>
-            <m>y = 2\cos\left(\frac{2}{3}\left() x + \frac{\pi}{2}\right)\right) + 2</m>
+            <m>y = 2\cos\left(\frac{2}{3}\left( x + \frac{\pi}{2}\right)\right) + 2</m>
           </p>
         </answer>
       </exercise>
@@ -330,7 +696,7 @@ Create equations in two or more variables to represent relationships between qua
         </statement>
         <answer>
           <p>
-            <m>y = 1.2\cos\left(\frac{4}{5}\left() x + \frac{\pi}{3}\right)\right) + 3</m>
+            <m>y = 1.2\cos\left(\frac{4}{5}\left( x + \frac{\pi}{3}\right)\right) + 3</m>
           </p>
         </answer>
       </exercise>
@@ -340,7 +706,7 @@ Create equations in two or more variables to represent relationships between qua
     <exercisegroup>
       <introduction>
         <p>
-          For each given graph, identify the amplitude, period, and phase shift. Write an equation that represents these characteristics.
+          For each given graph, identify the amplitude, period, vertical shift, and phase shift. Write an equation that represents these characteristics.
         </p>
       </introduction>
       <exercise>
