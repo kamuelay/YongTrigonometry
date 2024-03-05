@@ -137,7 +137,10 @@
           <me>
             f(x)=A\cdot\sin(B(x-C))+D
           </me>
-          we first note that since <m>|A|</m> represents the value of the amplitude, and since we are given that the amplitude is 2, we get
+          we first examine the information that we are given: amplitude of 2, period of 8, phase shift of <m>\frac{\pi}{3}</m>, and vertical shift of 4.
+        </p>
+        <p>
+          Since <m>|A|</m> represents the value of the amplitude, we get
           <me>
             |A|=2
           </me>.
@@ -147,7 +150,7 @@
           </me>.
         </p>
         <p>
-          Next, since we know the period is 8 and the period of a since function is given by <m>\frac{2\pi}{|B|}</m>, we get
+          Next, since the period of a sine function is given by <m>\frac{2\pi}{|B|}</m>, we get
           <me>
             \frac{2\pi}{|B|}=8
           </me>.
@@ -218,7 +221,7 @@
       </statement>
       <solution>
         <p>
-          First we will sketch the function to help us visualize the function, and determine its characteristics.
+          Analyzing the question we see that a period, or cycle of the moon is 29.53059 days. We also have that the function will range from <m>0\%</m> to <m>100\%</m> illumination, representing the minimum and maximum of the functions. With this information, we will first sketch the function to help us visualize the function, and determine its characteristics.
         </p>
         <image xml:id="example-moon-cycle">
           <latex-image>
@@ -239,10 +242,12 @@
           </latex-image>
         </image>
         <p>
-          We see that the midline is at <m>50</m>.
+          We see that the midline is at <m>50</m>, since it is halfway between <m>0\%</m> and <m>100\%</m>.
         </p>
         <p>
-          The characteristic of a cosine function is that at Next we will determine if we will use a sine or cosine function
+          The characteristic of a cosine function is that at <m>x=0</m> the function is at its maximum value, before decreasing to its minimum value, and then back up to its maximum, completing one period. This curve, however, begins at its minimum value, increases to its maximum, before decreasing to its minimum. This change in pattern represents a reflection about the <m>x</m>-axis.
+          
+          at Next we will determine if we will use a sine or cosine function
         </p>
         <p>
           To determine an equation of the form
@@ -363,6 +368,16 @@
     </p>
   </subsection>
 
+
+  <subsection xml:id="subsec-removelater">
+    <title>Citing NOAA data</title>
+    <p>
+      At the bottom of this NOAA site <url href="https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/global/time-series"></url> it says how to cite that page. It might be a good example of how to cite it for other NOAA sites
+    </p>
+    <p>
+      NOAA National Centers for Environmental information, Climate at a Glance: Global Time Series, published February 2024, retrieved on March 4, 2024 from <url href="https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/global/time-series"></url>
+    </p>
+  </subsection>
 
 
 
