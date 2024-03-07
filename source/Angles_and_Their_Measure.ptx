@@ -321,55 +321,51 @@
     </p>
     <example>
       <title>Determine the corresponding house and quadrant in the Star Compass</title>
-      <statement>
+      <introduction>
         <p>
-          Determine the quadrant in which each angle lies and name the corresponding House and quadrant in the Star Compass (<xref ref="star-compass-with-angles">Figure</xref>). 
+          Determine the quadrant in which each angle lies and name the corresponding House and quadrant in the Star Compass (<xref ref="star-compass-with-angles">Figure</xref>).
         </p>
-        <p>
-          <ol>
-            <li>
-              <p>
-                <m>140^{\circ}</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>-770^{\circ}</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>923^{\circ}</m>
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <ol>
-            <li>
-              <p>
-                Since <m>90^{\circ}\lt 140^{\circ}\lt 180^{\circ}</m>, <m>140^{\circ}</m> lies in Quadrant II, or Manu Ho&#699;olua.
-              </p>
-            </li>
-            <li>
-              <p>
-                Since <m>-770^{\circ}\lt 0^{\circ}</m>, we first add <m>3\times360</m> to <m>-770^{\circ}</m> to obtain an angle <m>0^{\circ}</m> and <m>360^{\circ}</m>, 
-                <me>-770^{\circ}+3\times360^{\circ}=310^{\circ}</me>
-                So <m>310^{\circ}</m> and <m>-770^{\circ}</m> are coterminal. Since <m>270^{\circ}\lt 310^{\circ}\lt 360^{\circ}</m>, <m>310^{\circ}</m> lies in Quadrant IV, or Manu Malanai.
-              </p>
-            </li>
-            <li>
-              <p>
-                Since <m>923^{\circ}>360^{\circ}</m> we begin by subtracting <m>2\times360^{\circ}</m>
-                <me>923^{\circ}-2\times360^{\circ}=203^{\circ}</me>
-                So <m>203^{\circ}</m> and <m>923^{\circ }</m> are coterminal. Since <m>180^{\circ}\lt 203^{\circ}\lt 270^{\circ}</m>, <m>923^{\circ}</m> lies in Quadrant III or &#699;&#256;ina Kona.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </solution>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>140^{\circ}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Since <m>90^{\circ}\lt 140^{\circ}\lt 180^{\circ}</m>, <m>140^{\circ}</m> lies in Quadrant II, or Manu Ho&#699;olua.
+          </p>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>-770^{\circ}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Since <m>-770^{\circ}\lt 0^{\circ}</m>, we first add <m>3\times360</m> to <m>-770^{\circ}</m> to obtain an angle <m>0^{\circ}</m> and <m>360^{\circ}</m>, 
+            <me>-770^{\circ}+3\times360^{\circ}=310^{\circ}</me>
+            So <m>310^{\circ}</m> and <m>-770^{\circ}</m> are coterminal. Since <m>270^{\circ}\lt 310^{\circ}\lt 360^{\circ}</m>, <m>310^{\circ}</m> lies in Quadrant IV, or Manu Malanai.
+          </p>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>923^{\circ}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Since <m>923^{\circ}>360^{\circ}</m> we begin by subtracting <m>2\times360^{\circ}</m>
+            <me>923^{\circ}-2\times360^{\circ}=203^{\circ}</me>
+            So <m>203^{\circ}</m> and <m>923^{\circ }</m> are coterminal. Since <m>180^{\circ}\lt 203^{\circ}\lt 270^{\circ}</m>, <m>923^{\circ}</m> lies in Quadrant III or &#699;&#256;ina Kona.
+          </p>
+        </solution>
+      </task>
     </example>
     <example>
       <title>Determine the corresponding quadrant given its location in the Star Compass</title>
@@ -1173,7 +1169,7 @@
     </definition>
     <example xml:id="example_une">
       <title>Une</title>
-      <statement>
+      <introduction>
         <image xml:id="une-fig">
           <latex-image>
             \begin{tikzpicture}
@@ -1195,52 +1191,50 @@
           </latex-image>
         </image>
         <p>
-          One method a waʻa uses to change direction is with the <em>hoe uli</em>, or the steering paddle. When a sharp turn is needed for maneuvers such as tacking, the steersperson will turn the handle of the hoe uli in a circular motion, as a lever to scoop the paddle in the water and change the heading of a vessel. This move called <em>une</em> (prounced oo-NAY although it is often mispronounced as oo-NEE) literally translates to <q>lever.</q> If the steerperson is performing an une at a rate of 25 rotations per minute and the radius of the circular movement is 2 feet, calculate
-          <ol>
-            <li>
-              <p>
-                the angular speed measured in radians per minute
-              </p>
-            </li>
-            <li>
-              <p>
-                the linear speed of the hoe uli in miles per hour (round your answer to two decimal places)
-              </p>
-            </li>
-          </ol>
+          One method a waʻa uses to change direction is with the <em>hoe uli</em>, or the steering paddle. When a sharp turn is needed for maneuvers such as tacking, the steersperson will turn the handle of the hoe uli in a circular motion, as a lever to scoop the paddle in the water and change the heading of a vessel. This move called <em>une</em> (prounced oo-NAY although it is often mispronounced as oo-NEE) literally translates to <q>lever.</q>
         </p>
         <figure xml:id="vide-une">
           <caption>
             A waʻa (canoe) can change directions by rotating the hoe uli (steering sweep) in a process known as une.
           </caption>
-          <video youtube="1A2UDMDE3Uc" />
+          <video youtube="1A2UDMDE3Uc" label="youtube-une-video"/>
         </figure>
-        
-      </statement>
-      <solution>
         <p>
-          <ol>
-            <li>
-              <p> We are given the angular speed is <m>\omega=25</m> revolutions per minute. To
-                convert our angular speed to radians per minute, we use the fact that one revolution
-                is <m>2\pi</m> radians to get 
-                <me>
-                  \omega=25\frac{\mbox{revolution} }{\mbox{minute} }=25\frac{\mbox{rev}}{\mbox{minute} }\cdot2\pi\frac{\mbox{radians} }{\mbox{revolution}}=50\pi\frac{\mbox{radians} }{\mbox{minute} }
-                </me>
-                Thus the hoe uli is moving at an angular speed of <m>50\pi</m> radians per second. </p>
-            </li>
-            <li>
-              <p>
-                Since the radius is <m>r=2</m> ft and the angular speed is <m>50\pi</m> radians per minute, we can use <xref ref="def_linear-speed">Definition</xref> to calculate the linear speed
-                <me>
-                  v=r\omega=2\mbox{ft} \cdot50\pi\frac{\mbox{rad} }{\mbox{min}}\cdot\frac{\mbox{mile} }{5280\mbox{ft} }\cdot\frac{60\mbox{min} }{\mbox{hr}}\approx3.57\frac{\mbox{miles} }{\mbox{hour} }
-                </me>
-                Thus the steersperson is moving the hoe uli at a linear speed of 3.57 mph.
-              </p>
-            </li>
-          </ol>
+          If the steerperson is performing an une at a rate of 25 rotations per minute and the radius of the circular movement is 2 feet, calculate:
         </p>
-      </solution>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            The angular speed measured in radians per minute.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We are given the angular speed is <m>\omega=25</m> revolutions per minute. To convert our angular speed to radians per minute, we use the fact that one revolution is <m>2\pi</m> radians to get 
+            <me>
+              \omega=25\frac{\mbox{revolution} }{\mbox{minute} }=25\frac{\mbox{rev}}{\mbox{minute} }\cdot2\pi\frac{\mbox{radians} }{\mbox{revolution}}=50\pi\frac{\mbox{radians} }{\mbox{minute} }
+            </me>
+            Thus the hoe uli is moving at an angular speed of <m>50\pi</m> radians per second.
+          </p>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            The linear speed of the hoe uli in miles per hour (round your answer to two decimal places).
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Since the radius is <m>r=2</m> ft and the angular speed is <m>50\pi</m> radians per minute, we can use <xref ref="def_linear-speed">Definition</xref> to calculate the linear speed
+            <me>
+              v=r\omega=2\mbox{ft} \cdot50\pi\frac{\mbox{rad} }{\mbox{min}}\cdot\frac{\mbox{mile} }{5280\mbox{ft} }\cdot\frac{60\mbox{min} }{\mbox{hr}}\approx3.57\frac{\mbox{miles} }{\mbox{hour} }
+            </me>
+            Thus the steersperson is moving the hoe uli at a linear speed of 3.57 mph.
+          </p>
+        </solution>
+      </task>
     </example>
   </subsection>
   <exercises xml:id="angles-and-their-measure-exercises">

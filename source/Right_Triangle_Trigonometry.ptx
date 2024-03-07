@@ -697,78 +697,82 @@
       and not 0.70710678.
     </p>
     <example>
-      <statement>
+      <introduction>
         <p>
           Use a calculator to evaluate
-          <ol>
-            <li>
-              <p>
-                <m>\sin22^{\circ}</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>\cos5^{\circ}</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>\cot53^{\circ}</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>\cos5\mbox{ rad}</m>
-              </p>
-            </li>
-          </ol>
         </p>
-      </statement>
-      <solution>
-        <p>
-          Before proceeding, we confirm that our calculator is set to either degree or radian mode. Additionally, for the sake of simplicity, we will round our answers to four decimal places.
-          <ol>
-            <li>
-              <p>
-                Input:
-                <em>SIN</em>
-                (22); Output:
-                <m>0.3746</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                Input:
-                <em>COS</em>
-                (5); Output:
-                <m>0.9962</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                Since most calculators do not have a key for cotangent,
-                we Input: (1/
-                <em>TAN</em>
-                (53)); Output:
-                <m>\dfrac{1}{1.3270}\approx0.7536</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                Since this problem uses radians,
-                we must change the mode on our calculator then Input:
-                <em>COS</em>
-                (5); Output:
-                <m>0.2837</m>.
-              </p>
-            </li>
-          </ol>
-        </p>
-        <p>
-          Observe that <m>\cos5^{\circ}\neq\cos5\mbox{ rad}</m>. This emphasizes the significance of verifying whether your calculator is in degree or radian mode.
-        </p>
-      </solution>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>\sin22^{\circ}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Before proceeding, we confirm that our calculator is set to either degree or radian mode. Additionally, for the sake of simplicity, we will round our answers to four decimal places.
+          </p>
+          <p>
+            Input:
+            <em>SIN</em>
+            (22); Output:
+            <m>0.3746</m>
+          </p>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\cos5^{\circ}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Input:
+            <em>COS</em>
+            (5); Output:
+            <m>0.9962</m>
+          </p>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\cot53^{\circ}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Since most calculators do not have a key for cotangent,
+            we Input: (1/
+            <em>TAN</em>
+            (53)); Output:
+            <m>\dfrac{1}{1.3270}\approx0.7536</m>
+          </p>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\cos5\mbox{ rad}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Since this problem uses radians,
+            we must change the mode on our calculator then Input:
+            <em>COS</em>
+            (5); Output:
+            <m>0.2837</m>.
+          </p>
+        </solution>
+      </task>
     </example>
+    <remark>
+      <p>
+        Observe that <m>\cos5^{\circ}\neq\cos5\mbox{ rad}</m>. This emphasizes the significance of verifying whether your calculator is in degree or radian mode.
+      </p>
+    </remark>
   </subsection>
   <subsection>
     <title>Solving Right Triangles</title>
