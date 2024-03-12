@@ -144,7 +144,7 @@
           <me>
             |A|=2
           </me>.
-          Additionally, since we are not given a reflection about the <m>x</m>-axis, we can conclude that <m>A</m> is not negative, thus
+          Thus we either have <m>A=2</m> or <m>A=-2</m>. Since we are not given a reflection about the <m>x</m>-axis, we can conclude that <m>A</m> is not negative, thus
           <me>
             A=2
           </me>.
@@ -158,7 +158,7 @@
           <me>
             |B|=\frac{2\pi}{8}=\frac{\pi}{4}
           </me>
-          Since there is no reflection about the <m>y</m>-axis, we have that <m>B</m> is not negative, and get
+          Since there is no reflection about the <m>y</m>-axis, we have that <m>B</m> must be positive:
           <me>
             B=\frac{\pi}{4}.
           </me>
@@ -181,7 +181,7 @@
   <subsection xml:id="subsec-finding-sinusoidal-equations-from-graphs">
     <title>Finding Sinusoidal Equations from Graphs</title>
     <p>
-      
+      Sometimes we are not explicitly given the characteristics of the function, but are provided with the graph. Examining a graph can reveal its characteristics, allowing us to find the equation of a function.
     </p>
     <example>
       <title>Finding an Equation of a Sine Function Using its Graphs</title>

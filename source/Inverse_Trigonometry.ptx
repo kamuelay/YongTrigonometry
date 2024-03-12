@@ -24,7 +24,7 @@
       <caption>
         As swells pass under the vaka Paikea, the canoe pitches, rolls, and corkscrews, depending on the angle of the swell. A navigator can use these movements to keep a straight course.
       </caption>
-      <video youtube="fUTlW9RWGLA"/>
+      <video youtube="fUTlW9RWGLA" label="youtube-swell-movement"/>
     </figure>
     <p>
       As the vaka Paikea sails north in the Cook Islands from Rarotonga to Aitutaki with a heading of <m>0^{\circ}</m>, the swells are approaching the vaka from the southwest and moving towards the northeast. Referring to <xref ref="star-compass-with-heading-angles">Figure</xref>, which provides heading angles, we observe that the swells have a heading ranging between <m>0^{\circ}</m> (north) and <m>90^{\circ}</m> (east).
@@ -607,7 +607,7 @@
           <caption>
             Watch as the canoe approaches an island from two different views. On the left, see a side view as the island gradually comes into sight over the horizon. On the right, experience the perspective from the canoe's deck, observing the island appearing to rise from the water. This dual perspective provides a unique glimpse into the legend of Maui, the demigod who pulled the islands from the ocean with his fish-hook.
           </caption>
-          <video youtube="D9qv5TKhIEM"/>
+          <video youtube="D9qv5TKhIEM" label="youtube-finding-land"/>
         </figure>
         <p>
           <ol>
