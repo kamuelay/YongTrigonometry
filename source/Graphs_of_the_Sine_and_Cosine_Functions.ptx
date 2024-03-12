@@ -566,7 +566,7 @@
       The factor multiplied at the front of the cosine function plays a crucial role in stretching and compressing the graph. This factor is known as the <term>amplitude</term>, measuring the maximum vertical distance from the midline to the peak or trough of a sinusoidal wave. In <xref ref="ex_vert-stretch-compression">Example</xref>, the amplitude of <m>y=2\cos(x)</m> is 2, indicating a <term>vertical stretch</term><idx><h>vertical stretch</h></idx> by a factor of 2 compared to the standard cosine function. Conversely, for <m>y=\frac{1}{2}\cos(x)</m>, the amplitude is <m>\frac{1}{2}</m>, which represented a <term>vertical compression</term><idx><h>vertical compression</h></idx> by a factor of <m>\frac{1}{2}</m>.
     </p>
 
-    <definition>
+    <definition xml:id="def-amplitude">
       <title>Amplitude</title>
       <statement>
         <p>
