@@ -185,28 +185,96 @@
     </p>
     <example>
       <title>Finding an Equation of a Sine Function Using its Graphs</title>
-      <statement>
+      <introduction>
         <p>
           Find an equation that represents the following graph of the form
-          <ol>
-            <li>
-              <p>
-                <me>f(x)=A\sin(B(x-C))+D</me>
-              </p>
-            </li>
-            <li>
-              <p>
-                <me>g(x)=A\cos(B(x-C))+D</me>
-              </p>
-            </li>
-          </ol>
         </p>
-      </statement>
-      <solution>
-        <p>
-          
-        </p>
-      </solution>
+        <image xml:id="example-eqn-from-graph">
+          <latex-image>
+            \begin{tikzpicture}
+            \begin{axis}[
+            axis lines=middle,clip=false,
+            xmin=-40,xmax=80,ymin=0,ymax=16,
+            ytick={0,4,...,16},
+            xtick={-40,-20,...,80},
+            minor xtick ={-30,-10,...,80},
+            xticklabel style={black},
+            xlabel=\(x\),
+            ylabel=\(y\)]
+            \addplot[domain=-40:80,samples=200,blue,line width=1pt]{8*sin(deg(2*pi/40*x))+8};
+            \end{axis}
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <me>f(x)=A\sin(B(x-C))+D</me>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <em>Amplitude</em>: Recall from Definition "def-amplitude" that if  <m>M</m> and <m>N</m> are the maximum and minimum values, respectively, the amplitude is defined as
+            <me>\frac{M-N}{2}</me>
+          </p>
+          <p>
+            Since the maximum of the graph is 16 and the minimum is 0, we get the amplitude is
+            <me>|A|=\frac{16-0}{2}=8.</me>
+          </p>
+          <p>
+            Alternatively, we can identify the midline on the graph, then measure the distance from the midline to the maximum or minimum values.
+          </p>
+          <image xml:id="example-eqn-from-graph-midline">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=-40,xmax=80,ymin=0,ymax=16,
+              ytick={0,4,...,16},
+              xtick={-40,-20,...,80},
+              minor xtick ={-30,-10,...,80},
+              xticklabel style={black},
+              xlabel=\(x\),
+              ylabel=\(y\)]
+              \addplot[domain=-40:80,samples=200,blue,line width=1pt]{8*sin(deg(2*pi/40*x))+8};
+              \draw [dashed,red] (-40,8) -- (80,8);
+              \draw [dashed] (-30,8) -- (-30,16) node[right,pos=0.5]{8};
+              \draw [dashed] (-30,0) -- (-30,8) node[right,pos=0.5]{8};
+              \draw [dashed] (10,16) -- (50,16) node[above,pos=0.5]{period=40};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+          <p>
+            We can see the midline is the horizontal line <m>y=8</m>, and since the distance from the midline to the maximum or minimum values is also 8, we get the amplitude is <m>|A|=8</m>
+          </p>
+          <p>
+            <em>Vertical Shift</em>: The midline at <m>y=8</m> represents the vertical shift of the graph and thus
+            <me>D=8</me>.
+          </p>
+          <p>
+            <em>Period</em> The period of the graph is 
+
+            The period of the graph is the horizontal distance between two consecutive maximum or minimum points. From the graph, it appears that one complete cycle occurs between x=0 and x=40
+          </p>
+          <p>
+            <em>Horizontal Shift (<m>C</m>)</em>: The horizontal shift of the graph is the phase shift, which determines the horizontal translation of the function. Since the graph starts at (0,8), it doesn't appear to be shifted left or right. Therefore
+          </p>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <me>g(x)=A\cos(B(x-C))+D</me>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            
+          </p>
+        </solution>
+      </task>
     </example>
     <example>
       <title>Modeling the Moon Cycles</title>
