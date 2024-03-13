@@ -656,7 +656,7 @@
     <p>
       You may recall from algebra that for functions of the form <m>y=f(Bx)</m>, a key factor emerges: when <m>|B| \gt 1</m>, the graph undergoes horizontal compression by a factor of <m>\frac{1}{|B|}</m>; conversely, when <m>0 \lt |B| \lt 1</m>, the graph is horizontally stretched by a factor of <m>\frac{1}{|B|}</m>. Given that sine and cosine complete one period in <m>2\pi</m>, the horizontal stretching or compressing of a period will be by a factor of <m>\frac{1}{|B|}</m>.
     </p>
-    <definition>
+    <definition xml:id="def-period">
       <title>Period</title>
       <statement>
         <p>
