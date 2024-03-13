@@ -183,7 +183,7 @@
     <p>
       Sometimes we are not explicitly given the characteristics of the function, but are provided with the graph. Examining a graph can reveal its characteristics, allowing us to find the equation of a function.
     </p>
-    <example>
+    <example xml:id="example-sinusoidal-eqn-from-graph">
       <title>Finding an Equation of a Sine Function Using its Graphs</title>
       <introduction>
         <p>
@@ -215,12 +215,8 @@
         </statement>
         <solution>
           <p>
-            <em>Amplitude</em>: Recall from Definition "def-amplitude" that if  <m>M</m> and <m>N</m> are the maximum and minimum values, respectively, the amplitude is defined as
-            <me>\frac{M-N}{2}</me>
-          </p>
-          <p>
-            Since the maximum of the graph is 16 and the minimum is 0, we get the amplitude is
-            <me>|A|=\frac{16-0}{2}=8.</me>
+            <em>Amplitude (<m>A</m>)</em>: Recall from Definition "def-amplitude" that the amplitude is defined as half the difference between the maximum and minimum values of the function. Here, the maximum value is 16 and the minimum value is 0, so the amplitude is:
+            <me>|A| = \frac{16 - 0}{2} = 8.</me>
           </p>
           <p>
             Alternatively, we can identify the midline on the graph, then measure the distance from the midline to the maximum or minimum values.
@@ -247,19 +243,40 @@
             </latex-image>
           </image>
           <p>
-            We can see the midline is the horizontal line <m>y=8</m>, and since the distance from the midline to the maximum or minimum values is also 8, we get the amplitude is <m>|A|=8</m>
+            We can see the midline is the horizontal line <m>y = 8</m>, and since the distance from the midline to both the maximum and minimum values is also 8, the amplitude is <m>|A| = 8</m>.
           </p>
           <p>
-            <em>Vertical Shift</em>: The midline at <m>y=8</m> represents the vertical shift of the graph and thus
+            <em>Period (<m>B</m>)</em>: The period of a function is the length of one cycle. You can identify the period on the graph by measuring the horizontal distance between corresponding points where the graph completes a cycle. In this case, we'll use two corresponding peaks at <m>x = 10</m> and <m>x = 50</m> to obtain:
+            <me>
+              \mbox{period }=50-10=40.
+            </me>
+            Note that other points on the graph, such as the minimum values or where the graph crosses the midline, could also be used to determine the period.
+          </p>
+          <p>
+            Since Definition "def-period" defines a period as <m>\frac{2\pi}{|B|}</m>, we have:
+            <me>
+              40=\frac{2\pi}{|B|}
+            </me>
+            Thus,
+            <me>
+              |B|=\frac{2\pi}{40}=\frac{\pi}{20}.
+            </me>
+          </p>
+          <p>
+            <em>Phase Shift (<m>C</m>)</em>: The phase shift of the graph refers to its horizontal translation. The characteristics of a sine function typically start at <m>x = 0</m> on the midline, increase to the maximum, decrease, pass the midline to the minimum, and then complete a cycle back at the midline. Since this graph follows these characteristics without any horizontal translation, there is no phase shift. Therefore, <m>C = 0</m>.
+          </p>
+          <p>
+            <em>Vertical Shift (<m>D</m>)</em>: The midline at <m>y=8</m> represents the vertical shift of the graph and thus
             <me>D=8</me>.
           </p>
           <p>
-            <em>Period</em> The period of the graph is 
-
-            The period of the graph is the horizontal distance between two consecutive maximum or minimum points. From the graph, it appears that one complete cycle occurs between x=0 and x=40
+            <em>Reflections</em>: Since this graph follows the characteristics of the sine function, there are no reflections about the <m>y</m>-axis, which means the amplitude <m>A</m> is positive. Similarly, there are no reflections about the <m>x</m>-axis, indicating that <m>B</m> is also positive. Therefore, we determine <m>A = 8</m> and <m>B = \frac{\pi}{20}</m>.
           </p>
           <p>
-            <em>Horizontal Shift (<m>C</m>)</em>: The horizontal shift of the graph is the phase shift, which determines the horizontal translation of the function. Since the graph starts at (0,8), it doesn't appear to be shifted left or right. Therefore
+            Thus, the graph can be described by the following sine function:
+            <me>
+              y=8\sin\left(\frac{\pi}{20}x\right)+8
+            </me>
           </p>
         </solution>
       </task>
@@ -271,7 +288,25 @@
         </statement>
         <solution>
           <p>
-            
+            <em>Amplitude (<m>A</m>)</em>: The amplitude of a cosine function is the same as that of the corresponding sine function. Thus, <m>|A| = 8</m>.
+          </p>
+          <p>
+            <em>Period (<m>B</m>)</em>: The period of a cosine function is also the same as that of the corresponding sine function. In this case, <m>|B| = \frac{\pi}{20}</m>.
+          </p>
+          <p>
+            <em>Phase Shift (<m>C</m>)</em>: The phase shift of a cosine function refers to its horizontal translation, similar to that of a sine function. However, the starting point of a cosine function's cycle is at its maximum value, unlike the starting point of a sine function's cycle, which is at its midline. Therefore, the phase shift for the cosine function might differ from that of the sine function. In this case, the graph has a horizontal shift to the right of 10 units. Thus, <m>C = 10</m>.
+          </p>
+          <p>
+            <em>Vertical Shift (<m>D</m>)</em>: The vertical shift of a cosine function is the same as that of the corresponding sine function. Thus, <m>D = 8</m>.
+          </p>
+          <p>
+            <em>Reflections</em>: Similar to the sine function, this graph follows the characteristics of the cosine function. Thus, there are no reflections about the <m>y</m>-axis or the <m>x</m>-axis. Therefore, as with the sine function, we determine <m>A = 8</m> and <m>B = \frac{\pi}{20}</m>.
+          </p>
+          <p>
+            Therefore, the graph can be described by the following cosine function:
+            <me>
+              y=8\cos\left(\frac{\pi}{20}\left(x-10\right)\right)+8
+            </me>
           </p>
         </solution>
       </task>
