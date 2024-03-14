@@ -183,6 +183,16 @@
     <p>
       Sometimes we are not explicitly given the characteristics of the function, but are provided with the graph. Examining a graph can reveal its characteristics, allowing us to find the equation of a function.
     </p>
+    <p>
+      Make an example that given the graph of y=sin(x), find the equation of the graph of a cosine function. Make a remark that all sine functions can be written as cosine functions, and vice versa.
+    </p>
+    <example>
+      <statement>
+        <p>
+          add example
+        </p>
+      </statement>
+    </example>
     <example xml:id="example-sinusoidal-eqn-from-graph">
       <title>Finding an Equation of a Sine Function Using its Graphs</title>
       <introduction>
@@ -215,7 +225,10 @@
         </statement>
         <solution>
           <p>
-            <em>Amplitude (<m>A</m>)</em>: Recall from Definition "def-amplitude" that the amplitude is defined as half the difference between the maximum and minimum values of the function. Here, the maximum value is 16 and the minimum value is 0, so the amplitude is:
+            <em>Amplitude (<m>A</m>)</em>: Recall from 
+            ******
+            <!-- <xref ref="def-amplitude"/> -->
+            that the amplitude is defined as half the difference between the maximum and minimum values of the function. Here, the maximum value is 16 and the minimum value is 0, so the amplitude is:
             <me>|A| = \frac{16 - 0}{2} = 8.</me>
           </p>
           <p>
@@ -253,7 +266,10 @@
             Note that other points on the graph, such as the minimum values or where the graph crosses the midline, could also be used to determine the period.
           </p>
           <p>
-            Since Definition "def-period" defines a period as <m>\frac{2\pi}{|B|}</m>, we have:
+            Since  
+            *****
+            <!-- <xref ref=""def-period""/> -->
+            defines a period as <m>\frac{2\pi}{|B|}</m>, we have:
             <me>
               40=\frac{2\pi}{|B|}
             </me>
@@ -275,7 +291,7 @@
           <p>
             Thus, the graph can be described by the following sine function:
             <me>
-              y=8\sin\left(\frac{\pi}{20}x\right)+8
+              f(x)=8\sin\left(\frac{\pi}{20}x\right)+8
             </me>
           </p>
         </solution>
@@ -305,13 +321,13 @@
           <p>
             Therefore, the graph can be described by the following cosine function:
             <me>
-              y=8\cos\left(\frac{\pi}{20}\left(x-10\right)\right)+8
+              g(x)=8\cos\left(\frac{\pi}{20}\left(x-10\right)\right)+8
             </me>
           </p>
         </solution>
       </task>
     </example>
-    <example>
+    <example xml:id="example-sinusoidal-eqn-moon">
       <title>Modeling the Moon Cycles</title>
       <statement>
         <p>
@@ -324,7 +340,7 @@
       </statement>
       <solution>
         <p>
-          Analyzing the question we see that a period, or cycle of the moon is 29.53059 days. We also have that the function will range from <m>0\%</m> to <m>100\%</m> illumination, representing the minimum and maximum of the functions. With this information, we will first sketch the function to help us visualize the function, and determine its characteristics.
+          Analyzing the question, we see that a period, or cycle of the moon, is 29.53059 days. The function will range from 0% to 100% illumination, representing the minimum and maximum of the function, respectively. To visualize the function and determine its characteristics, we first sketch the function.
         </p>
         <image xml:id="example-moon-cycle">
           <latex-image>
@@ -345,63 +361,72 @@
           </latex-image>
         </image>
         <p>
-          We see that the midline is at <m>50</m>, since it is halfway between <m>0\%</m> and <m>100\%</m>.
+          We see that the midline is at <m>50</m>, halfway between 0% and 100%.
         </p>
         <p>
-          The characteristic of a cosine function is that at <m>x=0</m> the function is at its maximum value, before decreasing to its minimum value, and then back up to its maximum, completing one period. This curve, however, begins at its minimum value, increases to its maximum, before decreasing to its minimum. This change in pattern represents a reflection about the <m>x</m>-axis.
-          
-          at Next we will determine if we will use a sine or cosine function
-        </p>
-        <p>
-          To determine an equation of the form
-          <me>
-            f(x)=A\cdot\cos(B(x-C))+D
-          </me>
-        </p>
-        <p>
-          To model the moon cycle, we want the function to range from <m>0\%</m> illuminated to <m>100\%</m>, representing the minimum and maximum values of the function, respectively. From (Definition 2.1.24), the amplitude, <m>|A|</m> is half the distance between its maximum and minimum values:
+          From the definition of amplitude (
+            ******
+            <!-- <xref ref="def-amplitude"/> -->
+            ),
           <me>
             |A|=\frac{100-0}{2}=50
           </me>.
         </p>
         <p>
-          Similarly, we also have that the midline is at <m>50\%</m>, representing a vertical shift of <m>D=50</m>.
+          The characteristic of a cosine function is that at <m>x=0</m> the function is at its maximum value, before decreasing to its minimum value, and then back up to its maximum, completing one period. This curve, however, begins at its minimum value, increases to its maximum, before decreasing to its minimum. This change in pattern represents a reflection about the <m>x</m>-axis, thus the value for <m>A</m> is negative, giving us
+          <me>
+            A=-50
+          </me>.
         </p>
         <p>
           Next, we know that the moonʻs cycle, or period is 29.53059 days. Therefore, we have
           <me>
             \frac{2\pi}{|B|}=29.53059
+          </me>
+          which leads to
+          <me>
+            |B|=\frac{2\pi}{29.53059}
           </me>.
         </p>
-        
-
         <p>
-          We get our answer
+          Since there is no reflection about the y-axis, <m>B</m> is positive, resulting in
           <me>
-            f(x)=50\cos\left(\frac{2\pi}{29.53059}x\right)+50
+            B=\frac{2\pi}{29.53059}
+          </me>.
+        </p>
+        <p>
+          There is no phase shift (<m>C=0</m>) since the curve follows the characteristics of the cosine equation.
+        </p>
+        <p>
+          The midline is at <m>50\%</m>, representing a vertical shift of 50, so  <m>D=50</m>.
+        </p>
+        <p>
+          Therefore, the equation of the function is
+          <me>
+            f(x)=-50\cos\left(\frac{2\pi}{29.53059}x\right)+50
           </me>.
         </p>
         <p>
           To determine the moon phase 100 days after the initial new moon, we evaluate our function at <m>x=100</m>:
           <me>
-            f(100)=50\cos\left(\frac{2\pi}{29.53059}\cdot100\right)+50=87.8\%
+            f(100)=-50\cos\left(\frac{2\pi}{29.53059}\cdot100\right)+50=87.8\%
           </me>.
         </p>
-
       </solution>
     </example>
+    <remark>
+      <p>
+        It's worth noting that while we used a reflection about the <m>x</m>-axis to determine the equation of the cosine function in this example, an alternative approach could have been to introduce a phase shift to the right. Since the maximum of the graph occurs halfway through the period of 29.53059 days, shifting the graph to the right by half of this period would give us another valid equation describing the same graph. In fact, there are infinitely many equations that can describe this graph, demonstrating the flexibility and variability of representing periodic functions.
+      </p>
+    </remark>
   </subsection>
   <subsection xml:id="subsec-finding-sinusoidal-equations-from-data">
     <title>Finding Sinusoidal Equations from Data</title>
     <p>
-      As we have seen in this chapter, many things in our world follow a sinusoidal pattern. One such thing is the moon, whose phases which oscilate from no illumination of the moon to waxing, or increasing illumination, until a fully lit moon, and then waning, or decreasing illumination until it completes its cycle with no illumination. Throughout the world, many Indigenous cultures have observed the moonʻs cycles, and through careful observations, have developed cultural practices based on the moon cycle. These observations inform people which day of the moon cycle is better for planting or harvesting, and which plants. (can you give an example). In Section 2.1, we graphed sinusoidal functions and determined the value of the function at any time. If we can develop a sinusoidal equation that models the phases of the moon, we can then predict the moon phase at any date. 
-    </p>
-    <p>
-      In this section, we will develop sinusoidal functions based off given information. We can then use these functions to model phenomena in the world around us with real data.
-    </p>
-    <p>
-      In Sections 2.1 we learned that Earth's axis is tilted and as the Earth orbits the sun, this axial tilt causes seasons, which is periodic. Another affect of the axial tilt and orbit is the amount of daylight each part of Earth experiences. Like the seasons, this is also periodic. 
-       we graphed sinusoidal functions and transformations of their functions. 
+      In 
+      **********
+      <!-- <xref ref="graphs_of_the_sine_and_cosine_functions"/> -->
+      we learned that Earth's axis is tilted and as the Earth orbits the sun, this axial tilt causes seasons, which is periodic. Another affect of the axial tilt and orbit is the amount of daylight each part of Earth experiences. Like the seasons, this is also periodic. 
     </p>
     <table xml:id="tab_munda-daylight-hours">
       <title>Hours of daylight for Munda, Solomon Islands captured on the first of each month for the year 2024. Source: NOAA Solar Calculator, U.S. National Oceanic and Atmospheric Administration
