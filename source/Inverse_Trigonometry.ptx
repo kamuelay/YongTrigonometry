@@ -9,16 +9,16 @@
       Even in poor visibility, when the crew may not see the swells, they can feel them. Parts of the vaka (canoe) lift and lower as the swells pass beneath. Skilled navigators use these movements to maintain course, even without directly seeing the waves.
     </p>
     <p>
-      The side-to-side rocking motion of the canoe is known as <term>roll</term>. This motion occurs when a swell approaches from either the port (left) or starboard (right) side, causing the vaka to initially lift the corresponding hull (port or starboard), followed by the opposite hull, depending on the direction of the swell.
+      The side-to-side rocking motion of the canoe is known as <term>roll</term><idx><h>roll</h></idx>. This motion occurs when a swell approaches from either the port (left) or starboard (right) side, causing the vaka to initially lift the corresponding hull (port or starboard), followed by the opposite hull, depending on the direction of the swell.
     </p>
     <p>
-      When a swell approaches from the bow (front) of the canoe, it lifts the front, causing the canoe to tilt backward before tilting forward. This motion is known as <term>pitch.</term> Conversely, if the swell comes from the stern (back), the canoe tilts forward and then backward.
+      When a swell approaches from the bow (front) of the canoe, it lifts the front, causing the canoe to tilt backward before tilting forward. This motion is known as <term>pitch.</term><idx><h>pitch</h></idx> Conversely, if the swell comes from the stern (back), the canoe tilts forward and then backward.
     </p>
     <p>
-      When a swell approaches the canoe from an angle that is not perpendicular to any side, a combination of pitch and roll occurs. The specific motion experienced depends on the precise angle of the swell. For instance, if the swell comes from an angle and lifts the starboard bow (front right), it may subsequently lift the port bow, followed by the starboard stern, and finally the port stern. However, with a slightly different angle, the sequence may change as well. After lifting the starboard bow, it could lead to the starboard stern being lifted next, followed by the port bow, and finally the port stern. This twisting motion is referred to as a <term>corkscrew</term> effect due to its combination of motions.
+      When a swell approaches the canoe from an angle that is not perpendicular to any side, a combination of pitch and roll occurs. The specific motion experienced depends on the precise angle of the swell. For instance, if the swell comes from an angle and lifts the starboard bow (front right), it may subsequently lift the port bow, followed by the starboard stern, and finally the port stern. However, with a slightly different angle, the sequence may change as well. After lifting the starboard bow, it could lead to the starboard stern being lifted next, followed by the port bow, and finally the port stern. This twisting motion is referred to as a <term>corkscrew</term><idx><h>corkscrew</h></idx> effect due to its combination of motions.
     </p>
     <p>
-      The video in <xref ref="video-swell-movement">Figure</xref> demonstrates how the vaka Paikea moves as swells pass under the hulls. A change in vaka motion can indicate either a change in the canoe's direction or a shift in the direction of ocean swells. In such cases, the crew must assess the situation and, when conditions allow, utilize celestial markers, such as the rising and setting of stars, to determine the direction of the swells.
+      The video in <xref ref="video-swell-movement"/> demonstrates how the vaka Paikea moves as swells pass under the hulls. A change in vaka motion can indicate either a change in the canoe's direction or a shift in the direction of ocean swells. In such cases, the crew must assess the situation and, when conditions allow, utilize celestial markers, such as the rising and setting of stars, to determine the direction of the swells.
     </p>
     <figure xml:id="video-swell-movement">
       <caption>
@@ -27,10 +27,10 @@
       <video youtube="fUTlW9RWGLA" label="youtube-swell-movement"/>
     </figure>
     <p>
-      As the vaka Paikea sails north in the Cook Islands from Rarotonga to Aitutaki with a heading of <m>0^{\circ}</m>, the swells are approaching the vaka from the southwest and moving towards the northeast. Referring to <xref ref="star-compass-with-heading-angles">Figure</xref>, which provides heading angles, we observe that the swells have a heading ranging between <m>0^{\circ}</m> (north) and <m>90^{\circ}</m> (east).
+      As the vaka Paikea sails north in the Cook Islands from Rarotonga to Aitutaki with a heading of <m>0^{\circ}</m>, the swells are approaching the vaka from the southwest and moving towards the northeast. Referring to <xref ref="star-compass-with-heading-angles"/>, which provides heading angles, we observe that the swells have a heading ranging between <m>0^{\circ}</m> (north) and <m>90^{\circ}</m> (east).
     </p> 
     <p>
-      Additional observations of the crew reveal the swells hit Paikea in the following order: 1) port stern (back left); 2) starboard stern (back right); 3) port bow (front left); and 4) starboard bow (front right), as shown in <xref ref="waa-currents">Figure</xref>. If Paikea is 14.8 m (50 ft) in length and 6.2 m (20 ft) in width, what is the possible range of headings from which the swells may be approaching?
+      Additional observations of the crew reveal the swells hit Paikea in the following order: 1) port stern (back left); 2) starboard stern (back right); 3) port bow (front left); and 4) starboard bow (front right), as shown in <xref ref="waa-currents"/>. If Paikea is 14.8 m (50 ft) in length and 6.2 m (20 ft) in width, what is the possible range of headings from which the swells may be approaching?
     </p>
     <figure xml:id="waa-currents">
       <caption>Swells moving towards the northeast pass under the vaka Paikea heading.</caption>
@@ -53,7 +53,7 @@
       </image>
     </figure>
    <p>
-    To determine the range of headings, we start by considering one boundary, which occurs when the swells are moving directly north with a heading of <m>0^{\circ}</m>. To identify the other boundary, we want to find the angle at which the swell intersects both the starboard stern and port bow simultaneously as it passes beneath the vaka. Essentially, we want to find the angle that diagonally traverses the canoe from one corner to another. To simplify this, we represent the vaka as a rectangle and create a triangle by connecting the corners. The angle, denoted as <m>\theta</m>, is formed between the side adjacent to the 14.8 m length of the canoe and the diagonal. This angle corresponds to the heading of the swells, as shown in <xref ref="waa-currents-dimensions">Figure</xref>.
+    To determine the range of headings, we start by considering one boundary, which occurs when the swells are moving directly north with a heading of <m>0^{\circ}</m>. To identify the other boundary, we want to find the angle at which the swell intersects both the starboard stern and port bow simultaneously as it passes beneath the vaka. Essentially, we want to find the angle that diagonally traverses the canoe from one corner to another. To simplify this, we represent the vaka as a rectangle and create a triangle by connecting the corners. The angle, denoted as <m>\theta</m>, is formed between the side adjacent to the 14.8 m length of the canoe and the diagonal. This angle corresponds to the heading of the swells, as shown in <xref ref="waa-currents-dimensions"/>.
    </p>
     <figure xml:id="waa-currents-dimensions">
       <caption>The deck of the vaka Paikea can be simplified to a rectangle, and its diagonal represents the threshold between different sequences of motions as swells pass. The angle <m>\theta</m> corresponds to the heading of the swells.</caption>
@@ -115,7 +115,7 @@
     </remark>
     <p>
       Also recall from algebra that for a function, <m>f</m>, to have an inverse, <m>f^{-1}</m>, it must be one-to-one,meaning no horizontal line intersects the graph more than once. Since this is not true for trigonometric functions, they do not have inverses. We need functions to be one-to-one because both <m>\sin\frac{\pi}{4}=\frac{\sqrt{2}}{2}</m> and <m>\sin\frac{3\pi}{4}=\frac{\sqrt{2}}{2}</m> but if we took the inverse of sine,
-      would we wouldn't know to use <m>\sin^{-1}\left(\frac{\sqrt{2}}{2}\right)=\frac{\pi}{4}</m> or <m>\sin^{-1}\left(\frac{\sqrt{2}}{2}\right)=\frac{3\pi}{4}</m>. To avoid this confusion and to ensure the function is one-to-one, we can put restrictions on the domains of each trigonometric function so they attain all the values in the range only once, making the function one-to-one, and thus have an inverse (see <xref ref="sine-not-one-to-one">Figure</xref>).
+      would we wouldn't know to use <m>\sin^{-1}\left(\frac{\sqrt{2}}{2}\right)=\frac{\pi}{4}</m> or <m>\sin^{-1}\left(\frac{\sqrt{2}}{2}\right)=\frac{3\pi}{4}</m>. To avoid this confusion and to ensure the function is one-to-one, we can put restrictions on the domains of each trigonometric function so they attain all the values in the range only once, making the function one-to-one, and thus have an inverse (see <xref ref="sine-not-one-to-one"/>).
     </p>
     <figure xml:id="sine-not-one-to-one">
       <caption>The graph of <m>f(x)=\sin x</m> does not pass the horizontal line test and is not one-to-one. If we restrict the graph to <m>-\frac{\pi}{2}\leq x\leq\frac{\pi}{2}</m> so that each value in the range <m>[-1,1]</m> is attained only once, then the function is one-to-one and has an inverse.</caption>
@@ -145,7 +145,7 @@
       </image>
     </figure>
     <p>
-      We will restrict the domain of <m>y=\sin x</m> to the interval <m>[-\frac{\pi}{2},\frac{\pi}{2}]</m>, the domain of <m>y=\cos x</m> to <m>[0,\pi]</m>, and the domain of <m>y=\tan x</m> to the interval <m>(-\frac{\pi}{2},\frac{\pi}{2})</m>. Notice that the domain for each trigonometric function includes one quadrant where the function is positive and one quadrant where it is negative. The domains and the corresponding graphs for sine, cosine, and tangent are shown in <xref ref="fig_sin-domain-graph">Figure</xref>, <xref ref="fig_cos-domain-graph">Figure</xref>, and <xref ref="fig_tan-domain-graph">Figure</xref>, respectively.
+      We will restrict the domain of <m>y=\sin x</m> to the interval <m>[-\frac{\pi}{2},\frac{\pi}{2}]</m>, the domain of <m>y=\cos x</m> to <m>[0,\pi]</m>, and the domain of <m>y=\tan x</m> to the interval <m>(-\frac{\pi}{2},\frac{\pi}{2})</m>. Notice that the domain for each trigonometric function includes one quadrant where the function is positive and one quadrant where it is negative. The domains and the corresponding graphs for sine, cosine, and tangent are shown in <xref ref="fig_sin-domain-graph"/>, <xref ref="fig_cos-domain-graph"/>, and <xref ref="fig_tan-domain-graph"/>, respectively.
     </p>
     <figure xml:id="fig_sin-domain-graph">
       <caption>The domain of <m>y=\sin x</m> (left) and its graph on the restricted domain (right).</caption>
@@ -297,7 +297,7 @@
       <title>Inverse Cosecant, Secant, and Cotangent</title>
       <statement>
         <p>
-          Inverse cosecant, inverse secant, and inverse cotangent functions are not as common as the other trigonometric functions so we will just summarize  them and not consider any examples in this book.
+          Inverse cosecant, inverse secant, and inverse cotangent functions are not as common as the other trigonometric functions and we will just summarize them.
           <md>
             <mrow>y=\csc^{-1}x \amp \amp  \mbox{means}  \amp \amp  x=\csc y</mrow>
             <mrow>y=\sec^{-1}x \amp \amp  \mbox{means}  \amp \amp  x=\sec y</mrow>
@@ -307,7 +307,7 @@
       </statement>
     </definition>
     <definition>
-      <title>Domain and Range for Inverse Trigonometric FUnctions</title>
+      <title>Domain and Range for Inverse Trigonometric Functions</title>
       <statement>
         <p>
           The domain and range for each function is
@@ -369,16 +369,16 @@
       <task>
         <statement>
           <p>
-            <m>\cos^{-1}\frac{1}{2}</m>
+            <m>\cos^{-1}\left(\frac{1}{2}\right)</m>
           </p>
         </statement>
         <solution>
           <p>
-            Let <m>\theta=\cos^{-1}\frac{1}{2}</m>. Then evaluating the problem  is the same as determining the angle, <m>\theta</m>, for which
+            Let <m>\theta=\cos^{-1}\left(\frac{1}{2}\right)</m>. Then evaluating the problem  is the same as determining the angle, <m>\theta</m>, for which
             <me>
               \cos\theta=\frac{1}{2}.
             </me>
-            Although there are infinite values of <m>\theta</m> that satisfy the equation, such as <m>\theta=\frac{\pi}{3}</m> and <m>\theta=\frac{5\pi}{3}</m>, there is only one value that lies in the interval <m>[0,\pi]</m>. Thus, <m>\cos^{-1}\frac{1}{2}=\frac{\pi}{3}</m>.
+            Although there are infinite values of <m>\theta</m> that satisfy the equation, such as <m>\theta=\frac{\pi}{3}</m> and <m>\theta=\frac{5\pi}{3}</m>, there is only one value that lies in the interval <m>[0,\pi]</m>. Thus, <m>\cos^{-1}\left(\frac{1}{2}\right)=\frac{\pi}{3}</m>.
           </p>
         </solution>
       </task>
@@ -418,27 +418,48 @@
       <p>
         Using a calculator for inverse trigonometric functions: Most calculators will have a special key for the inverse sine, cosine, and tangent functions. Depending on your calculator, you may see the following keys for inverse the inverse trigonometric functions
       </p>
-        <tabular>
-          <row bottom="minor">
-            <cell>Function</cell>
-            <cell>Calculator Key</cell>
-          </row>
-          <row>
-            <cell>inverse sine</cell>
-            <cell><kbd>SIN^-1</kbd>, <kbd>INV</kbd><kbd>SIN</kbd>, <kbd>ARCSIN</kbd>, or <kbd>ASIN</kbd></cell>
-          </row>
-          <row>
-            <cell>inverse cosine</cell>
-            <cell><kbd>COS^-1</kbd>, <kbd>INV</kbd><kbd>COS</kbd>, <kbd>ARCCOS</kbd>, or <kbd>ACOS</kbd></cell>
-          </row>
-          <row bottom="minor">
-            <cell>inverse tangent</cell>
-            <cell><kbd>TAN^-1</kbd>, <kbd>INV</kbd><kbd>TAN</kbd>, <kbd>ARCTAN</kbd>, or <kbd>ATAN</kbd></cell>
-          </row>
-        </tabular>
-        <p>
-          Often, the inverse trigonometry key can be found by first pressing <kbd>2nd</kbd> or <kbd>SHIFT</kbd>, followed by the trigonometry function key. For example, to get the <kbd>SIN^-1</kbd> key, press <kbd>2nd</kbd><kbd>SIN</kbd> or <kbd>SHIFT</kbd><kbd>SIN</kbd>.
-        </p>
+      <tabular>
+        <row bottom="minor">
+          <cell>Function</cell>
+          <cell>Calculator Key</cell>
+        </row>
+        <row>
+          <cell>inverse sine</cell>
+          <cell><kbd>SIN^-1</kbd>, <kbd>INV</kbd><kbd>SIN</kbd>, <kbd>ARCSIN</kbd>, or <kbd>ASIN</kbd></cell>
+        </row>
+        <row>
+          <cell>inverse cosine</cell>
+          <cell><kbd>COS^-1</kbd>, <kbd>INV</kbd><kbd>COS</kbd>, <kbd>ARCCOS</kbd>, or <kbd>ACOS</kbd></cell>
+        </row>
+        <row bottom="minor">
+          <cell>inverse tangent</cell>
+          <cell><kbd>TAN^-1</kbd>, <kbd>INV</kbd><kbd>TAN</kbd>, <kbd>ARCTAN</kbd>, or <kbd>ATAN</kbd></cell>
+        </row>
+      </tabular>
+      <p>
+        Often, the inverse trigonometry key can be found by first pressing <kbd>2nd</kbd> or <kbd>SHIFT</kbd>, followed by the trigonometry function key. For example, to get the <kbd>SIN^-1</kbd> key, press <kbd>2nd</kbd><kbd>SIN</kbd> or <kbd>SHIFT</kbd><kbd>SIN</kbd>.
+      </p>
+      <p>
+        Many calculators do not have specific keys for the inverse cosecant, secant, and cotangent functions. Instead, you can the Reciprocal Identities (<xref ref="def_reciprocal-identities"/>) to get 
+      </p>
+      <tabular>
+        <row bottom="minor">
+          <cell>Function</cell>
+          <cell>Calculator Key</cell>
+        </row>
+        <row>
+          <cell>inverse cosecant</cell>
+          <cell><kbd>1</kbd><kbd>/</kbd><kbd>SIN^-1</kbd></cell>
+        </row>
+        <row>
+          <cell>inverse secant</cell>
+          <cell><kbd>1</kbd><kbd>/</kbd><kbd>COS^-1</kbd></cell>
+        </row>
+        <row bottom="minor">
+          <cell>inverse cotangent</cell>
+          <cell><kbd>1</kbd><kbd>/</kbd><kbd>TAN^-1</kbd></cell>
+        </row>
+      </tabular>
     </remark>
     <example>
       <title>Finding an Approximate Value of Inverse Trigonometric Functions</title>
@@ -455,14 +476,14 @@
         </statement>
         <solution>
           <p>
-            First verify the mode of the calculator is in radians. Then, press the following keys <kbd>COS^-1</kbd><kbd>(</kbd><kbd>(-)</kbd><m>0.39</m><kbd>)</kbd><kbd>ENTER</kbd> to get
+            First verify the mode of the calculator is in radians. Then, press the following keys <kbd>COS^-1</kbd><kbd>(</kbd><kbd>(-)</kbd><kbd>0.39</kbd><kbd>)</kbd><kbd>ENTER</kbd> to get
             <me>
               \cos^{-1}(-0.39)\approx1.9714279195
             </me>
             If your calculator does not have the <kbd>COS^-1</kbd> key, then use the appropriate key(s) for inverse cosine, such as <kbd>INV</kbd><kbd>COS</kbd>, <kbd>ARCCOS</kbd>, or <kbd>ACOS</kbd>.
           </p>
           <p>
-            On some calculators, <kbd>COS^-1</kbd> is pressed first, then <kbd>(</kbd><kbd>(-)</kbd><m>0.39</m><kbd>)</kbd>; while other calculators the sequence is reversed with <kbd>(</kbd><kbd>(-)</kbd><m>0.39</m><kbd>)</kbd> pressed first, then <kbd>COS^-1</kbd>. Verify with your calculator's manual.
+            On some calculators, <kbd>COS^-1</kbd> is pressed first, then <kbd>(</kbd><kbd>(-)</kbd><kbd>0.39</kbd><kbd>)</kbd>; while other calculators the sequence is reversed with <kbd>(</kbd><kbd>(-)</kbd><kbd>0.39</kbd><kbd>)</kbd> pressed first, then <kbd>COS^-1</kbd>. Verify with your calculator's manual.
           </p>
         </solution>
       </task>
@@ -474,7 +495,7 @@
         </statement>
         <solution>
           <p>
-            First verify the mode of the calculator is in radians. Then, using the appropriate key for inverse tangent, press the following keys <kbd>TAN^-1</kbd><kbd>(</kbd><m>12</m><kbd>)</kbd><kbd>ENTER</kbd> to get
+            First verify the mode of the calculator is in radians. Then, using the appropriate key for inverse tangent, press the following keys <kbd>TAN^-1</kbd><kbd>(</kbd><kbd>12</kbd><kbd>)</kbd><kbd>ENTER</kbd> to get
             <me>
               \tan^{-1}12\approx1.48765509491
             </me>
@@ -489,7 +510,7 @@
         </statement>
         <solution>
           <p>
-            First verify the mode of the calculator is in radians. Then, using the appropriate key for inverse sine, press the following keys <kbd>SIN^-1</kbd><kbd>(</kbd><m>0.8</m><kbd>)</kbd><kbd>ENTER</kbd> to get
+            First verify the mode of the calculator is in radians. Then, using the appropriate key for inverse sine, press the following keys <kbd>SIN^-1</kbd><kbd>(</kbd><kbd>0.8</kbd><kbd>)</kbd><kbd>ENTER</kbd> to get
             <me>
               \sin^{-1}0.8\approx0.927295218002
             </me>
@@ -541,7 +562,7 @@
         <p>
           What house do you need to sail in and what distance will you need to sail? If the waʻa travels at 5 knots, how many days will it take to reach the destination? Note that 1 knot = 1 nautical mile/hour.
         </p>
-        <image>
+        <image xml:id="fig-johnston-majuro">
           <latex-image>
             \begin{tikzpicture}
             \node[below left, yshift=0.2cm] at (-11,-5.75) {Majuro};
@@ -569,7 +590,7 @@
           <me>
             \theta=\tan^{-1}\left(\frac{575}{1,108}\right)\approx27.4^{\circ}.
           </me>
-          Because this angle is in Quadrant III, we find its value on the Unit Circle by adding <m>180^{\circ}+27.4^{\circ}=207.4^{\circ}</m>. Next we refer to the Star Compass with angles (<xref ref="star-compass-with-angles">Figure></xref>) to conclude we will need to sail towards the House ʻĀina Kona.
+          Because this angle is in Quadrant III, we find its value on the Unit Circle by adding <m>180^{\circ}+27.4^{\circ}=207.4^{\circ}</m>. Next we refer to the Star Compass with angles (<xref ref="star-compass-with-angles"/>) to conclude we will need to sail towards the House ʻĀina Kona.
         </p>
         <p>
           To determine the distance, <m>d</m>, we use the Pythagorean Theorem:
@@ -601,7 +622,7 @@
       <title>Finding Land</title>
       <statement>
         <p>
-          As Hōkūleʻa is sailing towards Rapa Nui, the navigator uses a process called dead reckoning to determine their position based on the latitude, measured by the stars, and other factors such as the estimated distance traveled, speed, and direction. Once the navigator has determined they are in the vicinity of land, her attention is now focused on looking for signs of land. One method navigators will use is to look for land-based seabirds such as the manu-o-kū (fairy tern) and the noio (noddy tern), which go out to sea in the morning to fish and return to land at night. However, Rapa Nui's seabird population has been reduced so she will look for other signs such as drifting land vegetation; clouds that form over islands; the loom of the island when white sand and still lagoons reflect the sun or moon upwards; and distinctive patterns of swells bending (refracting) around and/or reflecting off islands. Land will be spotted when the navigator first sees Maunga Terevaka, the tallest point in Rapa Nui, which stands at 1,665 ft. <xref ref="video-finding-land">Figure</xref> depicts the relation between the canoe and island (left) as well as what is seen from the deck of the canoe (right).
+          As Hōkūleʻa is sailing towards Rapa Nui, the navigator uses a process called <term>dead reckoning</term><idx><h>dead reckoning</h></idx> to determine their position based on the latitude, measured by the stars, and other factors such as the estimated distance traveled, speed, and direction. Once the navigator has determined they are in the vicinity of land, her attention is now focused on looking for signs of land. One method navigators will use is to look for land-based seabirds such as the manu-o-kū (fairy tern) and the noio (noddy tern), which go out to sea in the morning to fish and return to land at night. However, Rapa Nui's seabird population has been reduced so she will look for other signs such as drifting land vegetation; clouds that form over islands; the loom of the island when white sand and still lagoons reflect the sun or moon upwards; and distinctive patterns of swells bending (refracting) around and/or reflecting off islands. Land will be spotted when the navigator first sees Maunga Terevaka, the tallest point in Rapa Nui, which stands at 1,665 ft. <xref ref="video-finding-land"/> depicts the relation between the canoe and island (left) as well as what is seen from the deck of the canoe (right).
         </p>
         <figure xml:id="video-finding-land">
           <caption>
@@ -648,7 +669,7 @@
                 </latex-image>
               </image>
               <p>
-                Here <m>h=9</m> ft, represents the height of the navigator's eye above sea level, <m>R=3,960.449</m> miles (20,911,171 ft) is the radius of the earth at Rapa Nui, and <m>s_1</m> is the arc length or distance along the surface of the earth from the navigator to the horizon. We have written the distances in feet since the height of the navigator is in feet. Recall from Theorem \ref{thm:arc-length} the formula for finding the arc length is <m>s_1=2\pi R\cdot\left(\frac{\theta_1}{360}\right)</m>. Since we know <m>R</m>, we only need to find <m>\theta_1</m>. Notice this forms a right triangle.
+                Here <m>h=9</m> ft, represents the height of the navigator's eye above sea level, <m>R=3,960.449</m> miles (20,911,171 ft) is the radius of the earth at Rapa Nui, and <m>s_1</m> is the arc length or distance along the surface of the earth from the navigator to the horizon. We have written the distances in feet since the height of the navigator is in feet. Recall from <xref ref="thm_arc-length"/> the formula for finding the arc length is <m>s_1=2\pi R\cdot\left(\frac{\theta_1}{360}\right)</m>. Since we know <m>R</m>, we only need to find <m>\theta_1</m>. Notice this forms a right triangle.
               </p>
               <image xml:id="fig-finding-land-triangle-person" width="80%">
                 <latex-image>
@@ -760,7 +781,7 @@
       </ol>
     </p>
     <p>
-      The graph of each inverse trigonometric function can be obtained by reflecting the graph of the original function about the line $y=x$.
+      The graph of each inverse trigonometric function can be obtained by reflecting the graph of the original function about the line <m>y=x</m>.
     </p>
     <image xml:id="graph-sin-inverse">
       <latex-image>
@@ -841,7 +862,7 @@
   <subsection>
     <title>Composition of Inverse Trigonometric Functions</title>
     <p>
-      Recall (from Unit 1) that if <m>f</m> is a one-to-one function with inverse <m>f^{-1}</m>, then
+      Recall Algebra that if <m>f</m> is a one-to-one function with inverse <m>f^{-1}</m>, then
     </p>
     <p>
       <ol>
@@ -957,9 +978,9 @@
         </statement>
         <solution>
           <p>
-            Note that <m>\frac{5\pi}{7}</m> is not in the interval <m>\left[-\frac{\pi}{2},\frac{\pi}{2}\right]</m>. In order to evaluate the expression, we first need to find an angle, <m>\theta</m>, such that <m>-\frac{\pi}{2}\leq\theta\leq\frac{\pi}{2}</m> and <m>\sin\frac{5\pi}{7}=\sin\theta</m>. Since <m>\frac{\pi}{2}&lt;\frac{5\pi}{7}&lt;\pi</m> means <m>\frac{5\pi}{7}</m> is in Quadrant II. Recall from <xref ref="unit_circle">Section</xref> that our reference angle is <m>\theta=\pi-\frac{5\pi}{7}=\frac{2\pi}{7}</m>.
+            Note that <m>\frac{5\pi}{7}</m> is not in the interval <m>\left[-\frac{\pi}{2},\frac{\pi}{2}\right]</m>. In order to evaluate the expression, we first need to find an angle, <m>\theta</m>, such that <m>-\frac{\pi}{2}\leq\theta\leq\frac{\pi}{2}</m> and <m>\sin\frac{5\pi}{7}=\sin\theta</m>. Since <m>\frac{\pi}{2}&lt;\frac{5\pi}{7}&lt;\pi</m> means <m>\frac{5\pi}{7}</m> is in Quadrant II. Recall from <xref ref="unit_circle"/> that our reference angle is <m>\theta=\pi-\frac{5\pi}{7}=\frac{2\pi}{7}</m>.
           </p>
-          <image>
+          <image xml:id="examp-composite-inverse-sin-sin">
             <latex-image>
               \begin{tikzpicture}[scale=2]
                   \draw[&lt;->] (-1.15,0)--(1.15,0) node[right]{$x$};
@@ -1010,18 +1031,18 @@
       <task>
         <statement>
           <p>
-            <m>\cos\left(\tan^{-1}\frac{4}{3}\right)</m>
+            <m>\cos\left(\tan^{-1}\left(\frac{4}{3}\right)\right)</m>
           </p>
         </statement>
         <solution>
           <p>
-            Let <m>\theta</m> be an angle in the range of <m>\tan^{-1}</m>, that is, let <m>\theta</m> be in the interval <m>\left(-\frac{\pi}{2},\frac{\pi}{2}\right)</m> such that <m>\theta=\tan^{-1}\frac{4}{3}</m>. This equation is equivalent to <m>\tan\theta=\frac{4}{3}</m>. Since <m>\tan\theta>0</m>, we know that <m>\theta</m> must be in Quadrant I <m>\left(0&lt;\theta&lt;\frac{\pi}{2}\right)</m>. Let <m>(x,y)</m> be a point on the terminal side of <m>\theta</m>, then by the trigonometric ratios,
+            Let <m>\theta</m> be an angle in the range of <m>\tan^{-1}</m>, that is, let <m>\theta</m> be in the interval <m>\left(-\frac{\pi}{2},\frac{\pi}{2}\right)</m> such that <m>\theta=\tan^{-1}\left(\frac{4}{3}\right)</m>. This equation is equivalent to <m>\tan\theta=\frac{4}{3}</m>. Since <m>\tan\theta>0</m>, we know that <m>\theta</m> must be in Quadrant I <m>\left(0&lt;\theta&lt;\frac{\pi}{2}\right)</m>. Let <m>(x,y)</m> be a point on the terminal side of <m>\theta</m>, then by the trigonometric ratios,
             <me>
               \tan\theta=\frac{\mbox{opposite}}{\mbox{adjacent}}=\frac{y}{x}
             </me>
             Since we have <m>\tan\theta=\frac{4}{3}</m>, we get <m>x=3</m> and <m>y=4</m>, as shown in the figure below.
           </p>
-          <image>
+          <image xml:id="examp-composite-cos-inverse-tan">
             <latex-image>
               \begin{tikzpicture}[scale=1]
                 \draw[->] (-0.15,0)--(3.5,0) node[right]{$x$};
@@ -1062,7 +1083,7 @@
             </me>
             Since we have <m>\cos\theta=-\frac{3}{8}</m>, we get <m>\frac{x}{r}=-\frac{3}{8}</m> which gives us either <m>x=-3</m> and <m>r=8</m> or <m>x=3</m> and <m>r=-8</m>. Since <m>\theta</m> is in Quadrant II, we know that <m>x</m> is negative, thus <m>x=-3</m> and <m>r=8</m>, as shown in the figure below.
           </p>
-          <image>
+          <image xml:id="examp-composite-sin-inverse-cos">
             <latex-image>
               \begin{tikzpicture}[scale=1]
                 \draw[->] (-3.5,0)--(1.15,0) node[right]{$x$};
@@ -1467,7 +1488,7 @@
     <exercisegroup cols="2">
       <introduction>
         <p>
-          In <xref ref="exer_1-4_triangles">Exercises</xref>, we determined the values of the six trigonometric functions for each triangle. Now, use a calculator to find the value of <m>\theta</m> in degrees, rounding to two decimal places.
+          In <xref ref="exer_1-4_triangles"/>, we determined the values of the six trigonometric functions for each triangle. Now, use a calculator to find the value of <m>\theta</m> in degrees, rounding to two decimal places.
         </p>
       </introduction>
       <exercise>
@@ -1785,7 +1806,7 @@
     <exercisegroup cols="2">
       <introduction>
         <p>
-          Find the exact value of each composite function. Write <q>not defined</q> if no value exists. You may find <xref ref="tab_trig-table">Table</xref> useful.
+          Find the exact value of each composite function. Write <q>not defined</q> if no value exists. You may find <xref ref="tab_trig-table"/> useful.
         </p>
       </introduction>
       <exercise>
@@ -2171,7 +2192,7 @@
         <p>
           According to moʻolelo, or legend, the sun traveled very fast across the sky, leaving people with days so short there was not enough time to carry on with their daily lives. Determined to slow the sun, the demigod Maui climbed to the summit of Haleakalā, which stands at 10,023 feet, to snare the sun. Assume the radius of the earth is at Haleakalā is 3961.527 miles.
         </p>
-        <image>
+        <image xml:id="exer-maui-sun">
           <latex-image>
             \begin{tikzpicture}[scale=4]
               \draw ([shift=(30:1)]0,0) arc (30:150:1);
@@ -2179,7 +2200,7 @@
               \draw (-0.839099631177,1) -- (1.66427948235,1);
               \draw (0,0.9) -- (-0.1,0.9) -- (-0.1,1);
               \draw[blue] (0,0) -- (-0.642787609687,0.766044443119) node[midway, left,xshift=-2] {$R$};
-              \draw[red] (-0.642787609687,0.766044443119) -- (-0.839099631177,1) node[midway,left,xshift=-14,yshift=-4] {$h$};
+              \draw[red] (-0.642787609687,0.766044443119) -- (-0.839099631177,1) node[midway,left,xshift=8,yshift=-8] {$h$};
               \draw ([shift=(90:0.2)]0,0) arc (90:130:0.2) node[above,xshift=4,yshift=3] {$\theta$};
               \node at (110:0.9) {$s$};
               \draw[red] ([shift=(90:1)]0,0) arc (90:110:1);
@@ -2216,19 +2237,6 @@
           </p>
         </answer>
       </task>
-    </exercise>
-    <exercise>
-      <statement>
-        <image xml:id="compile-not-working">
-          <latex-image>
-            \begin{tikzpicture}
-              \draw (0,0) -- (4,0) -- (4,4) -- (0,4) -- (0,0);
-              \draw (0,0) -- (4,4);
-              \draw (4,0) -- (0,4);
-            \end{tikzpicture}
-          </latex-image>
-        </image>
-      </statement>
     </exercise>
   </exercises>
 </section>
