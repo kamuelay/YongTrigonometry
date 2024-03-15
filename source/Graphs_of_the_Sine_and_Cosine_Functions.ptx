@@ -570,28 +570,20 @@
       <title>Amplitude</title>
       <statement>
         <p>
-          Let <m>f</m> be a periodic function with <m>M</m> and <m>N</m> as the maximum and minimum values, respectively. The <term>amplitude</term>,<idx><h>amplitude</h></idx> of <m>f</m> is defined as
+          For a sinusoidal function, the <term>amplitude</term>, <idx><h>amplitude</h></idx>, denoted as <m>|A|</m>, is the height of the function, representing half the distance between its maximum and minimum values:
         </p>
         <p>
           <me>
-            \frac{M-N}{2}.
+            |A| = \mbox{amplitude} = \frac{\mbox{maximum} - \mbox{minimum}}{2}.
           </me>
         </p>
         <p>
-          The amplitude can be thought of as the height of the function, representing half the distance between its maximum and minimum values. For a graph centered about the <m>x</m>-axis, the amplitude is simply the maximum value of <m>f</m>.
+          i.e., the amplitude is the vertical distance from the <term>midline</term><idx><h>midline</h></idx> to the maximum or minimum value of the function. The midline is the horizontal line representing the average value of the function. For a graph centered about the <m>x</m>-axis, the amplitude is simply the maximum value of the function.
         </p>
         <p>
           In general, for
-          <me>y = A \cdot \sin(x) \quad \mbox{or} \quad y= A \cdot \cos(x)</me>
-          the amplitude is given by the absolute value of <m>A</m>, denoted as
-        </p>
-        <p>
-          <me>
-            \mbox{amplitude}=|A|.
-          </me>
-        </p>
-        <p>
-          This absolute value ensures that amplitude is always a positive value, representing the magnitude of the vertical stretching or compression.
+          <me>y = A \cdot \sin(x) \quad \mbox{or} \quad y = A \cdot \cos(x)</me>,
+          the amplitude is given by <m>|A|</m>. This absolute value ensures that amplitude is always a positive value, representing the magnitude of the vertical stretching or compression.
         </p>
       </statement>
     </definition>
