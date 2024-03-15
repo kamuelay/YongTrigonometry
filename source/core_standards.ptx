@@ -30,7 +30,7 @@
                         <ul>
                           <li>
                             <p>
-                              HSA.CED.A.2: Create equations in two or more variables to represent relationships between quantities; graph equations on coordinate axes with labels and scales.(curve fitting section 2.3)
+                              HSA.CED.A.2: Create equations in two or more variables to represent relationships between quantities; graph equations on coordinate axes with labels and scales.(<xref ref="sinusoidal_curve_fitting_and_graphical_analysis"/>)
                             </p>
                           </li>
                         </ul>
@@ -90,7 +90,7 @@
                         <ul>
                           <li>
                             <p>
-                              HSF.BF.A.1: Write a function that describes a relationship between two quantities.
+                              HSF.BF.A.1: Write a function that describes a relationship between two quantities. (<xref ref="sinusoidal_curve_fitting_and_graphical_analysis"/>)
                             </p>
                           </li>
                         </ul>
@@ -156,7 +156,7 @@
                         <ul>
                           <li>
                             <p>
-                              HSF.TF.B.5: Choose trigonometric functions to model periodic phenomena with specified amplitude, frequency, and midline. (<xref ref="subsec_graphing-sinusoidal-transformations"/>)
+                              HSF.TF.B.5: Choose trigonometric functions to model periodic phenomena with specified amplitude, frequency, and midline. (<xref ref="subsec_graphing-sinusoidal-transformations"/>, <xref ref="sinusoidal_curve_fitting_and_graphical_analysis"/>)
                             </p>
                           </li>
                           <li>
