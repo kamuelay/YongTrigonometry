@@ -184,15 +184,93 @@
       Sometimes we are not explicitly given the characteristics of the function, but are provided with the graph. Examining a graph can reveal its characteristics, allowing us to find the equation of a function.
     </p>
     <p>
-      Make an example that given the graph of y=sin(x), find the equation of the graph of a cosine function. Make a remark that all sine functions can be written as cosine functions, and vice versa.
+      In this next example, we'll explore how to find an equation of a cosine function based on the graph of a sine function.
     </p>
-    <example>
+    <example xml:id="example-cos-eqn-from-sin-graph">
+      <title>Finding an Equation of a Cosine Function Using the Graph of a Sine Function</title>
       <statement>
         <p>
-          add example
+          Below is the graph of <m>y=\sin(x)</m>.
+        </p>
+        <image xml:id="fig-example-cos-eqn-from-sin-graph">
+          <latex-image>
+            \begin{tikzpicture}
+            \begin{axis}[
+            axis lines=middle,clip=false,
+            xmin=0,xmax=4*pi,ymin=-1,ymax=1,
+            xtick={0.5*pi,pi,...,4*pi},
+            minor xtick ={0,0.25*pi,...,4*pi},
+            xticklabels={\(\frac{\pi}{2}\),\(\pi\),\(\frac{3\pi}{2}\),\(2\pi\),\(\frac{5\pi}{2}\),\(3\pi\),\(\frac{7\pi}{2}\),\(4\pi\)},
+            xticklabel style={black},
+            xlabel=\(x\),
+            ylabel=\(y\)]
+            \addplot[domain=0*pi:4*pi,samples=200,blue,line width=1pt]{sin(deg(x))};
+            \end{axis}
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+        <p>
+          Find an equation of the form <m>y = A\cos(B(x - C)) + D</m> that fits the graph.
         </p>
       </statement>
+      <solution>
+        <p>
+          <em>Amplitude (<m>A</m>)</em>: Since the amplitude of the cosine function will be the same as the amplitude of the sine function, which is 1, we have  <m>|A| = 1</m>. Therefore <m>A = 1</m>.
+        </p>
+        <p>
+          <em>Period (|B|)</em>: The period of the cosine function will also be the same as the period of the sine function, which is <m>2\pi</m>. Since <m>2\pi=\frac{2\pi}{|B|}</m>, we have <m>|B| = 1</m>, leading to <m>B = 1</m>.
+        </p>
+        <p>
+          <em>Vertical Shift (D)</em>: The vertical shift of the cosine function will be the same as that of the sine function, which is 0. So, we have <m>D = 0</m>.
+        </p>
+        <p>
+          Therefore, we have
+          <me>
+            y=1\cos(1x)+0=\cos(x)
+          </me>.
+          Overlapping the graph of <m>y=\cos(x)</m> onto the original graph will help us determine the phase shift.
+        </p>
+        <image xml:id="fig-example-cos-sin-graph-overlap">
+          <latex-image>
+            \begin{tikzpicture}
+            \begin{axis}[
+            axis lines=middle,clip=false,
+            xmin=0,xmax=4*pi,ymin=-1,ymax=1,
+            xtick={0.5*pi,pi,...,4*pi},
+            minor xtick ={0,0.25*pi,...,4*pi},
+            xticklabels={\(\frac{\pi}{2}\),\(\pi\),\(\frac{3\pi}{2}\),\(2\pi\),\(\frac{5\pi}{2}\),\(3\pi\),\(\frac{7\pi}{2}\),\(4\pi\)},
+            xticklabel style={black},
+            xlabel=\(x\),
+            ylabel=\(y\)]
+            \addplot[domain=0*pi:4*pi,samples=200,blue,line width=1pt]{sin(deg(x))} node[right] {$y=\sin(x)$};
+            \addplot[domain=0*pi:4*pi,samples=200,red,line width=1pt]{cos(deg(x))} node[right] {$y=\cos(x)$};
+            \draw (0,1) -- (pi/2,1) node[midway,above] {phase shift};
+            \end{axis}
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+        <p>
+          <em>Phase Shift (C)</em>: From the graph, the cosine function will have a phase shift of <m>\frac{\pi}{2}</m> radians to the right compared to the sine function. This is because the cosine function reaches its maximum value at <m>x = 0</m>, while the sine function reaches its maximum at <m>x = \frac{\pi}{2}</m>. So, we have <m>C = \frac{\pi}{2}</m>.
+        </p>
+        <p>
+          Therefore, the equation of the cosine function that fits the graph of <m>y = \sin(x)</m> is:
+          <me>
+            y = \cos\left(x - \frac{\pi}{2}\right)
+          </me>
+        </p>
+      </solution>
     </example>
+    <remark>
+      <p>
+        Since this graph is also the graph of <m>y=\sin(x)</m>, we get
+        <me>
+          \sin(x)=\cos\left(x-\frac{\pi}{2}\right)
+        </me>.
+      </p>
+      <p>
+        This solution demonstrates that any sine function can also be written as a cosine function, with an appropriate phase shift. In this case, the phase shift of <m>\frac{\pi}{2}</m> radians to the right converts the sine function to its corresponding cosine function.
+      </p>
+    </remark>
     <example xml:id="example-sinusoidal-eqn-from-graph">
       <title>Finding an Equation of a Sine Function Using its Graphs</title>
       <introduction>
@@ -310,16 +388,41 @@
             <em>Period (<m>B</m>)</em>: The period of a cosine function is also the same as that of the corresponding sine function. In this case, <m>|B| = \frac{\pi}{20}</m>.
           </p>
           <p>
-            <em>Phase Shift (<m>C</m>)</em>: The phase shift of a cosine function refers to its horizontal translation, similar to that of a sine function. However, the starting point of a cosine function's cycle is at its maximum value, unlike the starting point of a sine function's cycle, which is at its midline. Therefore, the phase shift for the cosine function might differ from that of the sine function. In this case, the graph has a horizontal shift to the right of 10 units. Thus, <m>C = 10</m>.
-          </p>
-          <p>
             <em>Vertical Shift (<m>D</m>)</em>: The vertical shift of a cosine function is the same as that of the corresponding sine function. Thus, <m>D = 8</m>.
           </p>
           <p>
             <em>Reflections</em>: Similar to the sine function, this graph follows the characteristics of the cosine function. Thus, there are no reflections about the <m>y</m>-axis or the <m>x</m>-axis. Therefore, as with the sine function, we determine <m>A = 8</m> and <m>B = \frac{\pi}{20}</m>.
           </p>
           <p>
-            Therefore, the graph can be described by the following cosine function:
+            Before we examine the phase shift, let's summarize what we found so far:
+            <me>
+              g(x)=8\cos\left(\frac{\pi}{20}\left(x\right)\right)+8
+            </me>
+            and overlap this graph with the graph of the original.
+          </p>
+          <image xml:id="example-eqn-from-graph-cos-phase-shift">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=-40,xmax=80,ymin=0,ymax=16,
+              ytick={0,4,...,16},
+              xtick={-40,-20,...,80},
+              minor xtick ={-30,-10,...,80},
+              xticklabel style={black},
+              xlabel=\(x\),
+              ylabel=\(y\)]
+              \addplot[domain=-40:80,samples=200,blue,line width=1pt]{8*sin(deg(2*pi/40*x))+8};
+              \addplot[domain=-40:80,samples=200,red,line width=1pt]{8*cos(deg(2*pi/40*x))+8};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+          <p>
+            <em>Phase Shift (<m>C</m>)</em>: From the graph, we see that the starting point of the cosine function's cycle is at its maximum value, unlike the starting point of a sine function's cycle, which is at its midline. In this case, the graph has a horizontal shift to the right of 10 units. Thus, <m>C = 10</m>.
+          </p>
+          <p>
+            We can now describe the graph with the following cosine function:
             <me>
               g(x)=8\cos\left(\frac{\pi}{20}\left(x-10\right)\right)+8
             </me>
@@ -844,25 +947,263 @@ Create equations in two or more variables to represent relationships between qua
         </answer>
       </exercise>
     </exercisegroup>
-    
-    
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          For each given graph, identify the amplitude, period, phase shift, and vertical shift. Write an equation that represents these characteristics of the form <m>y=A\sin(B(x-C))+D</m>.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <image xml:id="fig-exer-eqn-from-sin1">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=-4,xmax=8,ymin=-4,ymax=4,
+              ytick={-4,-2,...,4},
+              minor ytick={-3,-1,...,3},
+              xtick={-4,-2,...,8},
+              minor xtick={-3,-1,...,7},
+              xticklabel style={black},
+              xlabel=\(x\),
+              ylabel=\(y\)]
+              \addplot[domain=-4:8,samples=200,blue,line width=1pt]{4*sin(deg(pi/4*x))};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </statement>
+        <answer>
+          <p>
+            Amplitude: <m>A = 4</m>; Period: <m>8</m>; Phase Shift: <m>C = 0</m>; Vertical Shift: <m>D = 0</m>; <m>y = 4 \sin\left(\frac{\pi}{4}x\right)</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <image xml:id="fig-exer-eqn-from-sin2">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=-pi,xmax=2*pi,ymin=-2,ymax=4,
+              ytick={-2,-1,...,4},
+              xtick={-pi,-0.5*pi,...,4*pi},
+              minor xtick ={-pi,-0.75*pi,...,4*pi},
+              xticklabels={\(-\pi\),\(-\frac{\pi}{2}\),,\(\frac{\pi}{2}\),\(\pi\),\(\frac{3\pi}{2}\),\(2\pi\)},
+              xticklabel style={black},
+              xlabel=\(x\),
+              ylabel=\(y\)]
+              \addplot[domain=-pi:2*pi,samples=200,blue,line width=1pt]{3*sin(deg(2*x))+1};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </statement>
+        <answer>
+          <p>
+            Amplitude: <m>A = 3</m>; Period: <m>\pi</m>; Phase Shift: <m>C = 0</m>; Vertical Shift: <m>D = 1</m>; <m>y = 3 \sin(2x) + 1</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <image xml:id="fig-exer-eqn-from-sin3">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=-pi/2,xmax=2*pi,ymin=-3,ymax=1,
+              ytick={-3,-2,...,1},
+              minor ytick={-3,-2.5,...,1},
+              xtick={-pi/2,0,...,2*pi},
+              minor xtick ={-pi/2,-pi/4,...,2*pi},
+              xticklabels={\(-\frac{\pi}{2}\),,\(\frac{\pi}{2}\),\(\pi\),\(\frac{3\pi}{2}\),\(2\pi\)},
+              xticklabel style={black},
+              xlabel=\(x\),
+              ylabel=\(y\)]
+              \addplot[domain=-pi/3:2*pi,samples=200,blue,line width=1pt]{1.5*sin(deg(2*(x-pi/2)))-1};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </statement>
+        <answer>
+          <p>
+            Amplitude: <m>A = 1.5</m>; Period: <m>\pi</m>; Phase Shift: <m>C = \frac{\pi}{2}</m>; Vertical Shift: <m>D = -1</m>; <m>y = 1.5 \sin\left(2\left(x - \frac{\pi}{2}\right)\right) - 1</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <image xml:id="fig-exer-eqn-from-sin4">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=0,xmax=16,ymin=-4,ymax=6,
+              ytick={-2,0,...,6},
+              minor ytick={-4,-3,...,6},
+              xtick={0,2,...,16},
+              minor xtick={0,1,...,16},
+              xticklabel style={black},
+              xlabel=\(x\),
+              ylabel=\(y\)]
+              \addplot[domain=0:16,samples=200,blue,line width=1pt]{4*sin(deg(pi/6*(x-3)))+2};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </statement>
+        <answer>
+          <p>
+            Amplitude: <m>A = 4</m>; Period: <m>12 </m>; Phase Shift: <m>C = 3</m>; Vertical Shift: <m>D = 2</m>; <m>y = 4 \sin\left(\frac{\pi}{6}\left(x - 3\right)\right) + 2</m>
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          For each given graph, identify the amplitude, period, phase shift, and vertical shift. Write an equation that represents these characteristics of the form <m>y=A\cos(B(x-C))+D</m>.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <image xml:id="fig-exer-eqn-from-cos1">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=0,xmax=pi,ymin=-1,ymax=3,
+              ytick={-2,-1,...,4},
+              xtick={0,pi/3,...,pi},
+              minor xtick={0,pi/6,...,pi},
+              xticklabels={,\(\frac{\pi}{3}\),\(\frac{2\pi}{3}\),\(\pi\)},
+              xticklabel style={black},
+              xlabel=\(x\),
+              ylabel=\(y\)]
+              \addplot[domain=0:pi,samples=200,blue,line width=1pt]{2*sin(deg(3*x))+1};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </statement>
+        <answer>
+          <p>
+            Amplitude: <m>A = 5</m>; Period: <m>\frac{2\pi}{3}</m>; Phase Shift: <m>C = 0</m>; Vertical Shift: <m>D = 1</m>; <m>y = 5 \cos(3x) + 1</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <image xml:id="fig-exer-eqn-from-cos2">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=0,xmax=16,ymin=-4,ymax=6,
+              ytick={-4,-2,...,6},
+              minor ytick={-4,-3,...,6},
+              xtick={0,2,...,16},
+              minor xtick={0,1,...,16},
+              xticklabel style={black},
+              xlabel=\(x\),
+              ylabel=\(y\)]
+              \addplot[domain=0:16,samples=200,blue,line width=1pt]{5*sin(deg(pi/6*(x-3)))+1};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </statement>
+        <answer>
+          <p>
+            Amplitude: <m>A = 2</m>; Period: <m>12\pi</m>; Phase Shift: <m>C = 2\pi</m>; Vertical Shift: <m>D = 0</m>; <m>y = 2 \cos\left(\frac{\pi}{6}(x - 2\pi)\right)</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <image xml:id="fig-exer-eqn-from-cos3">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=0,xmax=16,ymin=-4,ymax=6,
+              ytick={-4,-2,...,6},
+              minor ytick={-4,-3,...,6},
+              xtick={0,2,...,16},
+              minor xtick={0,1,...,16},
+              xticklabel style={black},
+              xlabel=\(x\),
+              ylabel=\(y\)]
+              \addplot[domain=0:16,samples=200,blue,line width=1pt]{5*sin(deg(pi/6*(x-3)))+1};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </statement>
+        <answer>
+          <p>
+            Amplitude: <m>A = 2</m>; Period: <m>4\pi</m>; Phase Shift: <m>C = \pi</m>; Vertical Shift: <m>D = -4</m>; <m>y = 2 \cos\left(\frac{1}{2}(x - \pi)\right) - 4</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <image xml:id="fig-exer-eqn-from-cos4">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=0,xmax=16,ymin=-4,ymax=6,
+              ytick={-4,-2,...,6},
+              minor ytick={-4,-3,...,6},
+              xtick={0,2,...,16},
+              minor xtick={0,1,...,16},
+              xticklabel style={black},
+              xlabel=\(x\),
+              ylabel=\(y\)]
+              \addplot[domain=0:16,samples=200,blue,line width=1pt]{5*sin(deg(pi/6*(x-3)))+1};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </statement>
+        <answer>
+          <p>
+            Amplitude: <m>A = 4</m>; Period: <m>8\pi</m>; Phase Shift: <m>C = \pi</m>; Vertical Shift: <m>D = 5</m>; <m>y = 4 \cos\left(\frac{1}{4}x - \frac{\pi}{2}\right) + 5</m>
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
     <exercisegroup>
       <introduction>
         <p>
-          For each given graph, identify the amplitude, period, vertical shift, and phase shift. Write an equation that represents these characteristics.
+          Temperate by island
         </p>
       </introduction>
       <exercise>
         <statement>
           <p>
-            graph here
+            
           </p>
         </statement>
-        <answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup>
+      <introduction>
+        <p>
+          Daylight hours by island
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
           <p>
-            amplitude, period, phase shift, and equations
+            
           </p>
-        </answer>
+        </statement>
       </exercise>
     </exercisegroup>
   </exercises>
