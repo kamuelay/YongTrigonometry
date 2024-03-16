@@ -1084,7 +1084,7 @@ Create equations in two or more variables to represent relationships between qua
               xticklabel style={black},
               xlabel=\(x\),
               ylabel=\(y\)]
-              \addplot[domain=0:pi,samples=200,blue,line width=1pt]{2*sin(deg(3*x))+1};
+              \addplot[domain=0:pi,samples=200,blue,line width=1pt]{2*cos(deg(3*x))+1};
               \end{axis}
               \end{tikzpicture}
             </latex-image>
@@ -1092,7 +1092,7 @@ Create equations in two or more variables to represent relationships between qua
         </statement>
         <answer>
           <p>
-            Amplitude: <m>A = 5</m>; Period: <m>\frac{2\pi}{3}</m>; Phase Shift: <m>C = 0</m>; Vertical Shift: <m>D = 1</m>; <m>y = 5 \cos(3x) + 1</m>
+            Amplitude: <m>A = 2</m>; Period: <m>\frac{2\pi}{3}</m>; Phase Shift: <m>C = 0</m>; Vertical Shift: <m>D = 1</m>; <m>y = 2 \cos(3x) + 1</m>
           </p>
         </answer>
       </exercise>
@@ -1103,15 +1103,13 @@ Create equations in two or more variables to represent relationships between qua
               \begin{tikzpicture}
               \begin{axis}[
               axis lines=middle,clip=false,
-              xmin=0,xmax=16,ymin=-4,ymax=6,
-              ytick={-4,-2,...,6},
-              minor ytick={-4,-3,...,6},
-              xtick={0,2,...,16},
-              minor xtick={0,1,...,16},
+              xmin=0,xmax=20,ymin=-5,ymax=5,
+              ytick={-5,-2.5,...,5},
+              xtick={0,2,...,20},
               xticklabel style={black},
               xlabel=\(x\),
               ylabel=\(y\)]
-              \addplot[domain=0:16,samples=200,blue,line width=1pt]{5*sin(deg(pi/6*(x-3)))+1};
+              \addplot[domain=0:20,samples=200,blue,line width=1pt]{5*cos(deg(pi/6*(x-2)))};
               \end{axis}
               \end{tikzpicture}
             </latex-image>
@@ -1119,7 +1117,7 @@ Create equations in two or more variables to represent relationships between qua
         </statement>
         <answer>
           <p>
-            Amplitude: <m>A = 2</m>; Period: <m>12\pi</m>; Phase Shift: <m>C = 2\pi</m>; Vertical Shift: <m>D = 0</m>; <m>y = 2 \cos\left(\frac{\pi}{6}(x - 2\pi)\right)</m>
+            Amplitude: <m>A = 5</m>; Period: <m>12\pi</m>; Phase Shift: <m>C = 2\pi</m>; Vertical Shift: <m>D = 0</m>; <m>y = 5 \cos\left(\frac{\pi}{6}(x - 2\pi)\right)</m>
           </p>
         </answer>
       </exercise>
