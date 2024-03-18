@@ -6,7 +6,9 @@
       In this chapter, we have learned that sinusoidal patterns exist in various aspects throughout our world. One example is the moon, which undergoes phases oscillating from no illumination, to waxing (increasing illumination), reaching a fully lit moon, and then waning (decreasing illumination) until it completes its cycle with no illumination again. Indigenous cultures across the world have deeply connected with these lunar cycles, shaping cultural practices aligned with the moon's phases. For example, the Māori of New Zealand and the Hopi Tribe in northeastern Arizona, USA, both time activities like planting and harvesting specific plants for each moon cycle based on generations of lunar observations.
     </p>
     <p>
-      In Section 2.1 (graphs_of_the_sine_and_cosine_functions), we graphed sinusoidal functions and determined their values at any given time. The ability to formulate a sinusoidal equation modeling the moon's phases allows us to predict the moon's phase on any date. In this section, we will explore the process of developing sinusoidal functions based on provided information. This will enable us to model real-world phenomena using real data.
+      In Section 2.1 (graphs_of_the_sine_and_cosine_functions)
+      *********
+      , we graphed sinusoidal functions and determined their values at any given time. The ability to formulate a sinusoidal equation modeling the moon's phases allows us to predict the moon's phase on any date. In this section, we will explore the process of developing sinusoidal functions based on provided information. This will enable us to model real-world phenomena using real data.
     </p>
   </introduction>
   <subsection xml:id="subsec-finding-sinusoidal-equations-from-characteristics">
@@ -170,7 +172,7 @@
           </me>.
         </p>
         <p>
-          Combining these, the sine function is:
+          Combining these, the sine function becomes:
           <me>
             f(x)=2\sin\left(\frac{\pi}{4}\left(x-\frac{\pi}{3}\right)\right)+4
           </me>.
@@ -218,7 +220,7 @@
           <em>Amplitude (<m>A</m>)</em>: Since the amplitude of the cosine function will be the same as the amplitude of the sine function, which is 1, we have  <m>|A| = 1</m>. Therefore <m>A = 1</m>.
         </p>
         <p>
-          <em>Period (|B|)</em>: The period of the cosine function will also be the same as the period of the sine function, which is <m>2\pi</m>. Since <m>2\pi=\frac{2\pi}{|B|}</m>, we have <m>|B| = 1</m>, leading to <m>B = 1</m>.
+          <em>Period (B)</em>: The period of the cosine function will also be the same as the period of the sine function, which is <m>2\pi</m>. Since <m>2\pi=\frac{2\pi}{|B|}</m>, we have <m>|B| = 1</m>, leading to <m>B = 1</m>.
         </p>
         <p>
           <em>Vertical Shift (D)</em>: The vertical shift of the cosine function will be the same as that of the sine function, which is 0. So, we have <m>D = 0</m>.
@@ -425,11 +427,19 @@
             We can now describe the graph with the following cosine function:
             <me>
               g(x)=8\cos\left(\frac{\pi}{20}\left(x-10\right)\right)+8
-            </me>
+            </me>.
           </p>
         </solution>
       </task>
     </example>
+    <remark>
+      <p>
+        It's worth noting that while we used a reflection about the <m>x</m>-axis to determine the equation of the cosine function in this example, an alternative approach could have been to introduce a phase shift to the right. Since the maximum of the graph occurs halfway through the period of 29.53059 days, shifting the graph to the right by half of this period would give us another valid equation describing the same graph. In fact, there are infinitely many equations that can describe this graph, demonstrating the flexibility and variability of representing periodic functions.
+      </p>
+    </remark>
+  </subsection>
+  <subsection xml:id="subsec-finding-sinusoidal-equations-from-data">
+    <title>Finding Sinusoidal Equations from Data</title>
     <example xml:id="example-sinusoidal-eqn-moon">
       <title>Modeling the Moon Cycles</title>
       <statement>
@@ -452,6 +462,7 @@
             axis lines=middle,clip=false,
             xmin=0,xmax=29.53059,ymin=0,ymax=100,
             ytick={0,50,100},
+            yticklabels={\(0\%\),\(50\%\),\(100\%\)},
             xtick={0,29.53059},
             xticklabels={0,29.53059},
             xticklabel style={black},
@@ -463,9 +474,6 @@
             \end{tikzpicture}
           </latex-image>
         </image>
-        <p>
-          We see that the midline is at <m>50</m>, halfway between 0% and 100%.
-        </p>
         <p>
           From the definition of amplitude (
             ******
@@ -482,7 +490,7 @@
           </me>.
         </p>
         <p>
-          Next, we know that the moonʻs cycle, or period is 29.53059 days. Therefore, we have
+          Next, we know that the moon's cycle, or period is 29.53059 days. Therefore, we have
           <me>
             \frac{2\pi}{|B|}=29.53059
           </me>
@@ -501,7 +509,7 @@
           There is no phase shift (<m>C=0</m>) since the curve follows the characteristics of the cosine equation.
         </p>
         <p>
-          The midline is at <m>50\%</m>, representing a vertical shift of 50, so  <m>D=50</m>.
+          The midline is at <m>50\%</m>, halfway between 0% and 100%, and representing a vertical shift of 50, so  <m>D=50</m>.
         </p>
         <p>
           Therefore, the equation of the function is
@@ -517,20 +525,10 @@
         </p>
       </solution>
     </example>
-    <remark>
-      <p>
-        It's worth noting that while we used a reflection about the <m>x</m>-axis to determine the equation of the cosine function in this example, an alternative approach could have been to introduce a phase shift to the right. Since the maximum of the graph occurs halfway through the period of 29.53059 days, shifting the graph to the right by half of this period would give us another valid equation describing the same graph. In fact, there are infinitely many equations that can describe this graph, demonstrating the flexibility and variability of representing periodic functions.
-      </p>
-    </remark>
-  </subsection>
-  <subsection xml:id="subsec-finding-sinusoidal-equations-from-data">
-    <title>Finding Sinusoidal Equations from Data</title>
-    <p>
-      In 
-      **********
-      <!-- <xref ref="graphs_of_the_sine_and_cosine_functions"/> -->
-      we learned that Earth's axis is tilted and as the Earth orbits the sun, this axial tilt causes seasons, which is periodic. Another affect of the axial tilt and orbit is the amount of daylight each part of Earth experiences. Like the seasons, this is also periodic. 
-    </p>
+
+
+
+
     <table xml:id="tab_munda-daylight-hours">
       <title>Hours of daylight for Munda, Solomon Islands captured on the first of each month for the year 2024. Source: NOAA Solar Calculator, U.S. National Oceanic and Atmospheric Administration
       </title>
@@ -619,10 +617,6 @@
   <subsection xml:id="subsec-phase-shift">
     <title>The title goes here</title>
     <p>
-      Hours of daylight/darkness plotted for various latitudes across the pacific, include Micronesia
-
-    </p>
-    <p>
       Find the equation for the time that Makalii (Pleiades) emerges over the horizon over time throughout the year.
       Talk about the importance of this and how when it rises at sunset,
       it coincides with the start of Makahiki season.
@@ -630,13 +624,7 @@
       find the intersection of these two equations to determine when Makahiki season will begin.
     </p>
     <p>
-      Hours of daylight/darkness plotted for various latitudes across the pacific, include Micronesia
-    </p>
-    <p>
       Sun declination (already in 2.1)
-    </p>
-    <p>
-      Moon Phase
     </p>
     <p>
       Moon rising time
@@ -653,39 +641,7 @@
     <p>
       Rainfall <url href="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:trig/x2ec2f6f830c9fb89:sinusoidal-models/e/modeling-with-periodic-functions"></url>
     </p>
-    <p>
-      Modeling with sinusoidal functions: phase shift
-CCSS.Math: HSA.CED.A.2, HSF.BF.A.1, HSF.TF.B.5, HSF.TF.B
-    </p>
-    <p>
-      CCSS.MATH.CONTENT.HSA.CED.A.2
-Create equations in two or more variables to represent relationships between quantities; graph equations on coordinate axes with labels and scales. <url href="https://www.thecorestandards.org/Math/Content/HSA/CED/A/2/"></url>
-    </p>
-    <example>
-      <title>Horizonal Shift</title>
-      <statement>
-        <p>
-          example
-        </p>
-      </statement>
-    </example>
-    
 
-    <p>
-      <me>
-        y=A\sin(B(x+C))+D
-      </me>
-    </p>
-    <p>A-amplitude; B-period=2pi/B (frequency or angular frequency); C-phase shift; D-vertical shift</p>
-    
-    <p>Define a phase shift is the horizontal shift</p>
-    <p>the phase shift is represented by the value 
-      C
-      C. A positive value of 
-      C
-      C indicates a shift to the right, and a negative value indicates a shift to the left.
-      
-      In simpler terms, a phase shift moves the entire graph of a trigonometric function horizontally, altering its starting position along the x-axis.</p>
   </subsection>
 
 
@@ -1117,7 +1073,7 @@ Create equations in two or more variables to represent relationships between qua
         </statement>
         <answer>
           <p>
-            Amplitude: <m>A = 5</m>; Period: <m>12\pi</m>; Phase Shift: <m>C = 2\pi</m>; Vertical Shift: <m>D = 0</m>; <m>y = 5 \cos\left(\frac{\pi}{6}(x - 2\pi)\right)</m>
+            Amplitude: <m>A = 5</m>; Period: <m>12</m>; Phase Shift: <m>C = 2</m>; Vertical Shift: <m>D = 0</m>; <m>y = 5 \cos\left(\frac{\pi}{6}(x - 2)\right)</m>
           </p>
         </answer>
       </exercise>
@@ -1128,15 +1084,15 @@ Create equations in two or more variables to represent relationships between qua
               \begin{tikzpicture}
               \begin{axis}[
               axis lines=middle,clip=false,
-              xmin=0,xmax=16,ymin=-4,ymax=6,
-              ytick={-4,-2,...,6},
-              minor ytick={-4,-3,...,6},
-              xtick={0,2,...,16},
-              minor xtick={0,1,...,16},
+              xmin=0,xmax=6*pi,ymin=-6,ymax=0.5,
+              ytick={-6,-4,...,0},
+              minor ytick = {-5,-3,-1},
+              xtick={0,pi,...,6*pi},
+              xticklabels={\(0\),\(\pi\),\(2\pi\),\(3\pi\),\(4\pi\),\(5\pi\),\(6\pi\)},
               xticklabel style={black},
               xlabel=\(x\),
               ylabel=\(y\)]
-              \addplot[domain=0:16,samples=200,blue,line width=1pt]{5*sin(deg(pi/6*(x-3)))+1};
+              \addplot[domain=0:6*pi,samples=200,blue,line width=1pt]{2*cos(deg(1/2*(x-pi)))-4};
               \end{axis}
               \end{tikzpicture}
             </latex-image>
@@ -1155,15 +1111,15 @@ Create equations in two or more variables to represent relationships between qua
               \begin{tikzpicture}
               \begin{axis}[
               axis lines=middle,clip=false,
-              xmin=0,xmax=16,ymin=-4,ymax=6,
-              ytick={-4,-2,...,6},
-              minor ytick={-4,-3,...,6},
-              xtick={0,2,...,16},
-              minor xtick={0,1,...,16},
+              xmin=0,xmax=10*pi,ymin=-2,ymax=6,
+              ytick={-2,0,...,6},
+              minor ytick = {-5,-3,-1},
+              xtick={0,2*pi,...,10*pi},
+              xticklabels={\(0\),\(2\pi\),\(4\pi\),\(6\pi\),\(8\pi\),\(10\pi\)},
               xticklabel style={black},
               xlabel=\(x\),
               ylabel=\(y\)]
-              \addplot[domain=0:16,samples=200,blue,line width=1pt]{5*sin(deg(pi/6*(x-3)))+1};
+              \addplot[domain=0:10*pi,samples=200,blue,line width=1pt]{4*cos(deg(1/4*(x-2*pi)))+2};
               \end{axis}
               \end{tikzpicture}
             </latex-image>
@@ -1171,11 +1127,33 @@ Create equations in two or more variables to represent relationships between qua
         </statement>
         <answer>
           <p>
-            Amplitude: <m>A = 4</m>; Period: <m>8\pi</m>; Phase Shift: <m>C = \pi</m>; Vertical Shift: <m>D = 5</m>; <m>y = 4 \cos\left(\frac{1}{4}x - \frac{\pi}{2}\right) + 5</m>
+            Amplitude: <m>A = 4</m>; Period: <m>8\pi</m>; Phase Shift: <m>C = 2\pi</m>; Vertical Shift: <m>D = 2</m>; <m>y = 4 \cos\left(\frac{1}{4}\left(x - 2\pi\right)\right) + 2</m>
           </p>
         </answer>
       </exercise>
     </exercisegroup>
+    <exercisegroup>
+      <title>Hours of daylight</title>
+      <introduction>
+        <p>
+          In 
+          **********
+          <!-- <xref ref="graphs_of_the_sine_and_cosine_functions"/> -->
+          we learned that Earth's axis is tilted and as the Earth orbits the sun, this axial tilt causes seasons, which is periodic. Another affect of the axial tilt and orbit is the amount of daylight each part of Earth experiences. Like the seasons, this is also periodic. 
+        </p>
+        <p>
+          For each problem, the graphs of the total hours of daylight are provided
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+      </exercise>
+    </exercisegroup>
+  </exercises>
     <exercisegroup>
       <introduction>
         <p>
@@ -1190,19 +1168,5 @@ Create equations in two or more variables to represent relationships between qua
         </statement>
       </exercise>
     </exercisegroup>
-    <exercisegroup>
-      <introduction>
-        <p>
-          Daylight hours by island
-        </p>
-      </introduction>
-      <exercise>
-        <statement>
-          <p>
-            
-          </p>
-        </statement>
-      </exercise>
-    </exercisegroup>
-  </exercises>
+    
 </section>
