@@ -574,11 +574,15 @@
         </p>
         <p>
           <me>
-            |A| = \mbox{amplitude} = \frac{\mbox{maximum} - \mbox{minimum}}{2}.
-          </me>
+            |A| = \text{amplitude} = \frac{\text{maximum} - \text{minimum}}{2}
+          </me>.
         </p>
         <p>
-          i.e., the amplitude is the vertical distance from the <term>midline</term><idx><h>midline</h></idx> to the maximum or minimum value of the function. The midline is the horizontal line representing the average value of the function. For a graph centered about the <m>x</m>-axis, the amplitude is simply the maximum value of the function.
+          In other words, the amplitude is the vertical distance from the midline to the maximum or minimum value of the function. The <term>midline</term><idx><h>midline</h></idx> is a horizontal line representing the average value of the function. It can be calculated by:
+          <me>
+            y = \frac{\text{maximum} + \text{minimum}}{2}
+          </me>.
+          For a graph centered about the <m>x</m>-axis, the amplitude is simply the maximum value of the function.
         </p>
         <p>
           In general, for

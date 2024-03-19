@@ -6,9 +6,7 @@
       In this chapter, we have learned that sinusoidal patterns exist in various aspects throughout our world. One example is the moon, which undergoes phases oscillating from no illumination, to waxing (increasing illumination), reaching a fully lit moon, and then waning (decreasing illumination) until it completes its cycle with no illumination again. Indigenous cultures across the world have deeply connected with these lunar cycles, shaping cultural practices aligned with the moon's phases. For example, the Māori of New Zealand and the Hopi Tribe in northeastern Arizona, USA, both time activities like planting and harvesting specific plants for each moon cycle based on generations of lunar observations.
     </p>
     <p>
-      In Section 2.1 (graphs_of_the_sine_and_cosine_functions)
-      *********
-      , we graphed sinusoidal functions and determined their values at any given time. The ability to formulate a sinusoidal equation modeling the moon's phases allows us to predict the moon's phase on any date. In this section, we will explore the process of developing sinusoidal functions based on provided information. This will enable us to model real-world phenomena using real data.
+      In <xref ref="graphs_of_the_sine_and_cosine_functions"/>, we graphed sinusoidal functions and determined their values at any given time. The ability to formulate a sinusoidal equation modeling the moon's phases allows us to predict the moon's phase on any date. In this section, we will explore the process of developing sinusoidal functions based on provided information. This will enable us to model real-world phenomena using real data.
     </p>
   </introduction>
   <subsection xml:id="subsec-finding-sinusoidal-equations-from-characteristics">
@@ -217,13 +215,16 @@
       </statement>
       <solution>
         <p>
-          <em>Amplitude (<m>A</m>)</em>: Since the amplitude of the cosine function will be the same as the amplitude of the sine function, which is 1, we have  <m>|A| = 1</m>. Therefore <m>A = 1</m>.
+          The characteristics of the cosine start its maximum when <m>x=0</m>, decrease to its minimum at <m>x=\pi</m>, and then increase before completing one period at <m>2\pi</m>. This graph starts at 0 when <m>x=0</m>, then increases to its maximum at <m>x=\frac{\pi}{2}</m>, and then follows the characteristics of the cosine graph. This represents a phase shift to the right. There no reflections about the <m>x</m>-axis or <m>y</m>-axis. We will find the equation of a function with characteristics of a phase shift to the right.
         </p>
         <p>
-          <em>Period (B)</em>: The period of the cosine function will also be the same as the period of the sine function, which is <m>2\pi</m>. Since <m>2\pi=\frac{2\pi}{|B|}</m>, we have <m>|B| = 1</m>, leading to <m>B = 1</m>.
+          <em>Amplitude (<m>A</m>)</em>: Since the amplitude of the cosine function will be the same as the amplitude of the sine function, which is 1, we have  <m>|A| = 1</m>. Since there is no reflection about the <m>x</m>-axis, we choose to positive value to get <m>A = 1</m>.
         </p>
         <p>
           <em>Vertical Shift (D)</em>: The vertical shift of the cosine function will be the same as that of the sine function, which is 0. So, we have <m>D = 0</m>.
+        </p>
+        <p>
+          <em>Period (B)</em>: The period of the cosine function will also be the same as the period of the sine function, which is <m>2\pi</m>. Since <m>2\pi=\frac{2\pi}{|B|}</m>, we have <m>|B| = 1</m>. Since there is no reflection about the <m>y</m>-axis, we get <m>B = 1</m>.
         </p>
         <p>
           Therefore, we have
@@ -305,38 +306,17 @@
         </statement>
         <solution>
           <p>
-            <em>Amplitude (<m>A</m>)</em>: Recall from 
-            ******
-            <!-- <xref ref="def-amplitude"/> -->
-            that the amplitude is defined as half the difference between the maximum and minimum values of the function. Here, the maximum value is 16 and the minimum value is 0, so the amplitude is:
-            <me>|A| = \frac{16 - 0}{2} = 8.</me>
+            The characteristics of the sine function start at the origin, increase to its maximum when <m>x=\frac{\pi}{2}</m>, decrease to its minimum at <m>x=\frac{3\pi}{2}</m>, and then increase again before completing one period at <m>2\pi</m>. In the given graph, the function starts at 8 when <m>x=0</m>, then increases to its maximum value of 16 at <m>x=10</m>, following the characteristics of the sine graph, before completing one period at <m>x=40</m>. This indicates a vertical shift, a vertical stretch, and a horizontal stretching of the period. There are no reflections about the <m>x</m>-axis or <m>y</m>-axis. Therefore, we need to find the equation of a function with these characteristics. 
           </p>
           <p>
-            Alternatively, we can identify the midline on the graph, then measure the distance from the midline to the maximum or minimum values.
+            <em>Amplitude (<m>A</m>)</em>: Recall from <xref ref="def-amplitude"/> that the amplitude is defined as half the difference between the maximum and minimum values of the function. Here, the maximum value is 16 and the minimum value is 0, so the amplitude is:
+            <me>|A| = \frac{16 - 0}{2} = 8</me>.
           </p>
-          <image xml:id="example-eqn-from-graph-midline">
-            <latex-image>
-              \begin{tikzpicture}
-              \begin{axis}[
-              axis lines=middle,clip=false,
-              xmin=-40,xmax=80,ymin=0,ymax=16,
-              ytick={0,4,...,16},
-              xtick={-40,-20,...,80},
-              minor xtick ={-30,-10,...,80},
-              xticklabel style={black},
-              xlabel=\(x\),
-              ylabel=\(y\)]
-              \addplot[domain=-40:80,samples=200,blue,line width=1pt]{8*sin(deg(2*pi/40*x))+8};
-              \draw [dashed,red] (-40,8) -- (80,8);
-              \draw [dashed] (-30,8) -- (-30,16) node[right,pos=0.5]{8};
-              \draw [dashed] (-30,0) -- (-30,8) node[right,pos=0.5]{8};
-              \draw [dashed] (10,16) -- (50,16) node[above,pos=0.5]{period=40};
-              \end{axis}
-              \end{tikzpicture}
-            </latex-image>
-          </image>
           <p>
-            We can see the midline is the horizontal line <m>y = 8</m>, and since the distance from the midline to both the maximum and minimum values is also 8, the amplitude is <m>|A| = 8</m>.
+            Since there are no reflections about the <m>x</m>-axis, we use the postive value to get <m>A = 8</m>.
+          </p>
+          <p>
+            <em>Vertical Shift (<m>D</m>)</em>: The midline, calculated as <me>y=\frac{\mbox{max}+\mbox{min}}{2}=\frac{16+0}{2}=8</me>, represents the vertical shift of the graph. Therefore, <me>D=8</me>.
           </p>
           <p>
             <em>Period (<m>B</m>)</em>: The period of a function is the length of one cycle. You can identify the period on the graph by measuring the horizontal distance between corresponding points where the graph completes a cycle. In this case, we'll use two corresponding peaks at <m>x = 10</m> and <m>x = 50</m> to obtain:
@@ -346,27 +326,22 @@
             Note that other points on the graph, such as the minimum values or where the graph crosses the midline, could also be used to determine the period.
           </p>
           <p>
-            Since  
-            *****
-            <!-- <xref ref=""def-period""/> -->
-            defines a period as <m>\frac{2\pi}{|B|}</m>, we have:
+            Since <xref ref="def-period"/> defines a period as <m>\frac{2\pi}{|B|}</m>, we have:
             <me>
               40=\frac{2\pi}{|B|}
             </me>
             Thus,
             <me>
-              |B|=\frac{2\pi}{40}=\frac{\pi}{20}.
-            </me>
+              |B|=\frac{2\pi}{40}=\frac{\pi}{20}
+            </me>.
+          </p>
+          <p>
+            Since there are no reflections about the <m>y</m>-axis, we get <m>B = \frac{\pi}{20}</m>.
           </p>
           <p>
             <em>Phase Shift (<m>C</m>)</em>: The phase shift of the graph refers to its horizontal translation. The characteristics of a sine function typically start at <m>x = 0</m> on the midline, increase to the maximum, decrease, pass the midline to the minimum, and then complete a cycle back at the midline. Since this graph follows these characteristics without any horizontal translation, there is no phase shift. Therefore, <m>C = 0</m>.
           </p>
           <p>
-            <em>Vertical Shift (<m>D</m>)</em>: The midline at <m>y=8</m> represents the vertical shift of the graph and thus
-            <me>D=8</me>.
-          </p>
-          <p>
-            <em>Reflections</em>: Since this graph follows the characteristics of the sine function, there are no reflections about the <m>y</m>-axis, which means the amplitude <m>A</m> is positive. Similarly, there are no reflections about the <m>x</m>-axis, indicating that <m>B</m> is also positive. Therefore, we determine <m>A = 8</m> and <m>B = \frac{\pi}{20}</m>.
           </p>
           <p>
             Thus, the graph can be described by the following sine function:
@@ -384,16 +359,16 @@
         </statement>
         <solution>
           <p>
-            <em>Amplitude (<m>A</m>)</em>: The amplitude of a cosine function is the same as that of the corresponding sine function. Thus, <m>|A| = 8</m>.
+            Since the cosine function starts at the maximum value when <m>x=0</m> before decreasing to its minimum and then increasing to complete one period, the graph provides several options for phase shifts. By selecting a peak and determining the direction and value of the phase shift needed for the cosine function to reach that peak, we can align it with the desired position. For example, if we choose the peak at <m>x=-30</m>, the cosine function will shift 30 units to the left. Similarly, for peaks at <m>x=10</m> or <m>x=50</m>, the cosine function would need to shift 10 or 50 units, respectively, to the right. Since the peak at <m>x=10</m> aligns closely with the peak of the original cosine function when <m>x=0</m>, we opt for this phase shift. Additionally, similar to the graph of the sine function, there is a vertical shift, a vertical stretch, and a horizontal stretch, with no reflections about the <m>y</m>-axis or the <m>x</m>-axis.
           </p>
           <p>
-            <em>Period (<m>B</m>)</em>: The period of a cosine function is also the same as that of the corresponding sine function. In this case, <m>|B| = \frac{\pi}{20}</m>.
+            <em>Amplitude (<m>A</m>)</em>: The amplitude of a cosine function is the same as that of the corresponding sine function. Thus, <m>|A| = 8</m>. Since there are no reflections about the <m>x</m>-axis, we use the positive value to get <m>A = 8</m>.
           </p>
           <p>
             <em>Vertical Shift (<m>D</m>)</em>: The vertical shift of a cosine function is the same as that of the corresponding sine function. Thus, <m>D = 8</m>.
           </p>
           <p>
-            <em>Reflections</em>: Similar to the sine function, this graph follows the characteristics of the cosine function. Thus, there are no reflections about the <m>y</m>-axis or the <m>x</m>-axis. Therefore, as with the sine function, we determine <m>A = 8</m> and <m>B = \frac{\pi}{20}</m>.
+            <em>Period (<m>B</m>)</em>: The period of a cosine function is also the same as that of the corresponding sine function. In this case, <m>|B| = \frac{\pi}{20}</m>. Since there are no reflections about the <m>y</m>-axis, we determine <m>B = \frac{\pi}{20}</m>.
           </p>
           <p>
             Before we examine the phase shift, let's summarize what we found so far:
@@ -432,15 +407,285 @@
         </solution>
       </task>
     </example>
-    <remark>
-      <p>
-        It's worth noting that while we used a reflection about the <m>x</m>-axis to determine the equation of the cosine function in this example, an alternative approach could have been to introduce a phase shift to the right. Since the maximum of the graph occurs halfway through the period of 29.53059 days, shifting the graph to the right by half of this period would give us another valid equation describing the same graph. In fact, there are infinitely many equations that can describe this graph, demonstrating the flexibility and variability of representing periodic functions.
-      </p>
-    </remark>
   </subsection>
   <subsection xml:id="subsec-finding-sinusoidal-equations-from-data">
     <title>Finding Sinusoidal Equations from Data</title>
-    <example xml:id="example-sinusoidal-eqn-moon">
+    <example xml:id="example-sinusoidal-eqn-munda-daylight">
+      <title>Modeling the Daylight Hours in Munda</title>
+      <statement>
+        <p>
+          In <xref ref="graphs_of_the_sine_and_cosine_functions"/> we learned that Earth's axis is tilted, and as the Earth orbits the sun, this axial tilt causes seasons, which are periodic. Another effect of the axial tilt and orbit is the amount of daylight each part of Earth experiences, which is also periodic.
+
+        </p>
+        <p>
+          The total sunlight duration in Munda, on the island of New Georgia in the Solomon Islands in 2025, is plotted in <xref ref="fig-ex-munda-daylight"/>. On the 21st of June 2025 (the 172nd day of the year), which is the shortest day of the year in Munda, the total sunlight duration is 11 hours, 38 minutes, and 15 seconds (approximately 11.64 hours). Conversely, on the 22nd of December 2025 (the 356th day of the year), which is the longest day of the year, the total sunlight duration is 12 hours, 36 minutes, and 28 seconds (approximately 12.61 hours). Find a function of the form <m>y=A\cos(B(x-C))+D</m> to model the total hours of daylight in Munda in 2025, assuming that one period represents one year or 365 days.
+        </p>
+        <figure xml:id="fig-ex-munda-daylight">
+          <caption>Hours of daylight in Munda, Solomon Islands. Source: NOAA Solar Calculator.</caption>
+          <image xml:id="example-munda-daylight">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=0,xmax=365,ymin=11.5,ymax=12.8,
+              ytick={11.6,11.8,...,13},
+              xtick={1, 32, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335},
+              xticklabels={Jan, ,Mar, ,May, ,Jul,, Sep,, Nov},
+              xticklabel style={black},
+              xlabel=month,
+              ylabel=hours]
+              \addplot[domain=0:365,samples=200,blue,line width=1pt]{0.484865*cos(deg(0.0164988*(x+17.7112)))+12.1299};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </figure>
+        <!-- Data from NOAA Solar Calculator was put into Desmos to find the sinusoidal regression, which was then plotted. -->
+      </statement>
+      <solution>
+        <p>
+          <em>Amplitdue (<m>A</m>)</em>: From the definition of amplitude (<xref ref="def-amplitude"/>),
+          <me>
+            |A| = \frac{\text{max} - \text{min}}{2} = \frac{12.61 - 11.64}{2} = 0.485
+          </me>.
+          Assuming no reflections about the <m>x</m>-axis, we have:
+          <me>
+            A=0.485
+          </me>.
+        </p>
+        <p>
+          <em>Period (<m>B</m>)</em>: We assume a period of one year or 365 days. Additionally, we can assume no reflections about the <m>y</m>-axis, leading to a positive value for <m>B</m>. Thus we have <m>\frac{2\pi}{B}=365</m> or
+          <me>
+            B=\frac{2\pi}{365}\approx0.0172
+          </me>.
+        </p>
+        <p>
+          <em>Phase Shift (<m>C</m>)</em>: The characteristic of a cosine function is that at <m>x=0</m>, the function is at its maximum value. However, in this case, the maximum value occurs on Day 356. This represents a phase shift to the right by 356 days, thus:
+          <me>C=356</me>.
+        </p>
+        <p>
+          <em>Vertical Shift (<m>D</m>)</em>: The value of the midline represents the average duration of daylight, which is the vertical shift:
+          <me>
+            D = \frac{\text{max} + \text{min}}{2} = \frac{12.61 + 11.64}{2} = 12.125
+          </me>.
+        </p>
+        <p>
+          Therefore, the equation of our function is
+          <me>
+            y = 0.485\cos(0.0172(x - 356)) + 12.125
+          </me>.
+        </p>
+      </solution>
+    </example>
+    <remark>
+      <p>
+        It's important to note that the average duration of daylight is not exactly 12 hours but instead approximately 12.125 hours. This discrepancy arises due to atmospheric refractions, which cause the apparent sunrise and sunset to occur slightly before and after, respectively, the sun crosses the horizon—the actual sunrise and sunset times.
+      </p>
+    </remark>
+    <example xml:id="example-temp-christchurch">
+      <title>Modeling the Temperate in Christchurch</title>
+      <statement>
+        <p>
+          Another effect of axial tilt besides daylight hours is temperature, which is also periodic. The average monthly temperature for Christchurch, New Zealand is given in <xref ref="tab_christchurch-temperature"/> (Source: National Institute of Water and Atmospheric Research (NIWA). Retrieved 18 March 2024). Find a sinusoidal function of the form <m>y = A \cos(B(x - C)) + D</m> to model the average monthly temperature of Christchurch.
+        </p>
+        <table xml:id="tab_christchurch-temperature">
+          <title>The average monthly temperature for Christchurch, New Zealand.
+          </title>
+          <tabular halign="center">
+            <row bottom="major">
+              <cell>Month, <m>x</m></cell>
+              <cell>Temperature (<m>^{\circ}</m>C)</cell>
+            </row>
+            <row>
+              <cell>January, <m>1</m></cell>
+              <cell><m>17.5</m></cell>
+            </row>
+            <row>
+              <cell>February, <m>2</m></cell>
+              <cell><m>17.2</m></cell>
+            </row>
+            <row>
+              <cell>March, <m>3</m></cell>
+              <cell><m>15.5</m></cell>
+            </row>
+            <row>
+              <cell>April, <m>4</m></cell>
+              <cell><m>12.7</m></cell>
+            </row>
+            <row>
+              <cell>May, <m>5</m></cell>
+              <cell><m>9.8</m></cell>
+            </row>
+            <row>
+              <cell>June, <m>6</m></cell>
+              <cell><m>7.1</m></cell>
+            </row>
+            <row>
+              <cell>July, <m>7</m></cell>
+              <cell><m>6.6</m></cell>
+            </row>
+            <row>
+              <cell>August, <m>8</m></cell>
+              <cell><m>7.9</m></cell>
+            </row>
+            <row>
+              <cell>September, <m>9</m></cell>
+              <cell><m>10.3</m></cell>
+            </row>
+            <row>
+              <cell>October, <m>10</m></cell>
+              <cell><m>12.2</m></cell>
+            </row>
+            <row>
+              <cell>November, <m>11</m></cell>
+              <cell><m>14.1</m></cell>
+            </row>
+            <row>
+              <cell>December, <m>12</m></cell>
+              <cell><m>16.1</m></cell>
+            </row>
+          </tabular>
+        </table>
+      </statement>
+      <solution>
+        <p>
+          We begin by plotting the points in <xref ref="tab_christchurch-temperature"/>.
+        </p>
+        <image xml:id="example-christchurch-temp">
+          <latex-image>
+            \begin{tikzpicture}
+            \begin{axis}[
+            axis lines=middle,clip=false,
+            xmin=0,xmax=12,ymin=0,ymax=20,
+            xticklabel style={black},
+            xlabel=x,
+            ylabel=y]
+            \filldraw[black] (1,17.5) circle(1pt);
+            \filldraw[black] (2,17.2) circle(1pt);
+            \filldraw[black] (3,15.5) circle(1pt);
+            \filldraw[black] (4,12.7) circle(1pt);
+            \filldraw[black] (5,9.8) circle(1pt);
+            \filldraw[black] (6,7.1) circle(1pt);
+            \filldraw[black] (7,6.6) circle(1pt);
+            \filldraw[black] (8,7.9) circle(1pt);
+            \filldraw[black] (9,10.3) circle(1pt);
+            \filldraw[black] (10,12.2) circle(1pt);
+            \filldraw[black] (11,14.1) circle(1pt);
+            \filldraw[black] (12,16.1) circle(1pt);
+            \end{axis}
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+        <p>
+          Examining the plot of the data points, we see this looks like the graph of a cosine function with no reflections about the <m>x</m>-axis or <m>y</m>-axis.
+        </p>
+        <p>
+          <em>Amplitude (<m>A</m>)</em>: The amplitude is
+          <me>
+            |A|=\frac{\mbox{max}-\mbox{min}}{2}=\frac{17.5-6.6}{2}=5.45
+          </me>.
+          Since there are no reflections about the <m>x</m>-axis, we get <m>A=5.45</m>
+        </p>
+        <p>
+          <em>Period (|B|)</em>: Since the temperatures repeat every 12 months, the period is 12 and so <m>\frac{2\pi}{|B|}=12</m>. Since there are no reflections about the <m>y</m>-axis, we keep the positive value to obtain
+          <me>B=\frac{2\pi}{12}=\frac{\pi}{6}</me>.
+        </p>
+        <p>
+          <em>Vertical Shift (<m>D</m>)</em>: The vertical shift is the value of the average data:
+          <me>
+            D=\frac{\mbox{max}+\mbox{min}}{2}=\frac{17.5+6.6}{2}=12.05
+          </me>.
+        </p>
+        <p>
+          <em>Phase Shift (<m>C</m>)</em>: The maximum temperature in the data occurs in January (<m>x=1</m>). However, since the graph of cosine reaches its maximum value at <m>x=0</m>, we have a phase shift of 1 to the right to align the peak with the maximum temperature data point. Thus, <m>C=1</m>.
+        </p>
+        <p>
+          Our function now becomes
+          <me>
+            y=5.45\cos\left(\frac{\pi}{6}\left(x-1\right)\right)+12.05
+          </me>.
+        </p>
+        <p>
+          Finally, we plot our function and the data together.
+        </p>
+        <image xml:id="example-christchurch-temp-data-curve">
+          <latex-image>
+            \begin{tikzpicture}
+            \begin{axis}[
+            axis lines=middle,clip=false,
+            xmin=0,xmax=12,ymin=0,ymax=20,
+            xticklabel style={black},
+            xlabel=x,
+            ylabel=y]
+            \addplot[domain=0:12,samples=200,blue,line width=1pt]{5.45*cos(deg(pi/6*(x-1)))+12.05};
+            \filldraw[black] (1,17.5) circle(1pt);
+            \filldraw[black] (2,17.2) circle(1pt);
+            \filldraw[black] (3,15.5) circle(1pt);
+            \filldraw[black] (4,12.7) circle(1pt);
+            \filldraw[black] (5,9.8) circle(1pt);
+            \filldraw[black] (6,7.1) circle(1pt);
+            \filldraw[black] (7,6.6) circle(1pt);
+            \filldraw[black] (8,7.9) circle(1pt);
+            \filldraw[black] (9,10.3) circle(1pt);
+            \filldraw[black] (10,12.2) circle(1pt);
+            \filldraw[black] (11,14.1) circle(1pt);
+            \filldraw[black] (12,16.1) circle(1pt);
+            \end{axis}
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </solution>
+    </example>
+    <remark>
+      <title>Steps for Deriving Sinusoidal Models from Data</title>
+      <p>
+        <ol>
+          <li>
+            <p>
+              Graph the data points.
+            </p>
+          </li>
+          <li>
+            <p>
+              Determine the characteristics of the data, including vertical and horizontal stretching, phase shifts, vertical shifts, and reflections about the <m>x</m>-axis or <m>y</m>-axis.
+            </p>
+          </li>
+          <li>
+            <p>
+              <em>Amplitude</em>: Calculate the amplitude using the formula
+              <me>
+                |A|=\frac{\mbox{max}-\mbox{min}}{2}
+              </me>.
+              Use the positive value if there is no reflection about the <m>x</m>-axis, and use the negative value if there is a reflection.
+            </p>
+          </li>
+          <li>
+            <p>
+              <em>Vertical Shift</em>: Determine the vertical shift which is the average value of the data, using the formula
+              <me>
+                D=\frac{\mbox{max}+\mbox{min}}{2}
+              </me>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <em>Period</em>: Calculate the period from the data, then find
+              <me>
+                |B|=\frac{2\pi}{\mbox{period}}
+              </me>.
+              Use the positive value if there is no reflection about the <m>y</m>-axis, and use the negative value if there is a reflection.
+            </p>
+          </li>
+          <li>
+            <p>
+              <em>Phase Shift</em>: Determine the phase shift by comparing points from the data to those on the sine and cosine function, such as maximum and minimum values as well as those values at the midline. This information will give you the phase shift, <m>C</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </remark>
+    
+    <!-- <example xml:id="example-sinusoidal-eqn-moon">
       <title>Modeling the Moon Cycles</title>
       <statement>
         <p>
@@ -469,16 +714,13 @@
             xlabel=\(x\),
             ylabel=\(y\)]
             \addplot[domain=0:29.53059,samples=200,blue,line width=1pt]{-50*cos(deg(2*pi/29.53059*x))+50};
-            \draw [dashed,red] (0,50) -- (29.53059,50);
+            \draw [dashed,red] (0,50) - (29.53059,50);
             \end{axis}
             \end{tikzpicture}
           </latex-image>
         </image>
         <p>
-          From the definition of amplitude (
-            ******
-            <!-- <xref ref="def-amplitude"/> -->
-            ),
+          From the definition of amplitude (<xref ref="def-amplitude"/>),
           <me>
             |A|=\frac{100-0}{2}=50
           </me>.
@@ -524,129 +766,63 @@
           </me>.
         </p>
       </solution>
+    </example> -->
+  </subsection>
+  <subsection xml:id="subsec-finding-sinusoidal-equations-with-technology">
+    <title>Finding Sinusoidal Equations with Technology</title>
+    <p>
+      Some graphing utilities, such as the TI-83 calculator or <url
+      href="https://www.desmos.com/calculator"
+      visual="Desmos Graphing Calculator">
+      </url>, have functions that allow you to find a sinusoidal best-fit function given data. While some devices can find the best-fit for both sine and cosine functions, others only calculate the best-fit line for sine. For example, the TI-83 uses the <kbd>SinReg</kbd> function to calculate the sine function.
+    </p>
+    <example>
+      <title>Finding the Sinusoidal Equation using Desmos</title>
+      <statement>
+        <p>
+          Utilize a graphing utility to determine the best-fit cosine function for the data provided in <xref ref="tab_christchurch-temperature"/>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Open a new table in the Desmos Graphing Calculator by either typing "table" in a blank expression line or clicking the Add Item menu in the upper left corner and selecting Table.
+              </p>
+            </li>
+            <li>
+              <p>
+                Enter the values from <xref ref="tab_christchurch-temperature"/> into the table, where <m>x_1</m> represents the month and <m>y_1</m> represents the temperature.
+              </p>
+            </li>
+            <li>
+              <p>
+                Use the Zoom Fit icon (a magnifying glass with a + symbol) at the bottom left corner of the table to automatically adjust the graph settings window to best display your data.
+              </p>
+            </li>
+            <li>
+              <p>
+                In a blank expression line, type <q><m>y_1 \sim A \cos(B(x_1 - C)) + D</m></q> to fit a cosine function to the data.
+              </p>
+            </li>
+            <li>
+              <p>
+                The parameters for the best-fit function will be returned: <m>A=5.2141</m>, <m>B=0.534145</m>, <m>C=1.19926</m>, <m>D=12.1509</m>. Thus, the best-fit cosine function is:
+                <me>
+                  y = 5.2141 \cos(0.534145(x - 1.19926)) + 12.1509
+                </me>.
+              </p>
+            </li>
+          </ol>
+        </p>
+        <p>
+          <xref ref="fig-desmos-christchurch-temp"/> displays an interactive Desmos Graphing Calculator with the completed table and the line of best fit plotted together.
+        </p>
+        <figure xml:id="fig-desmos-christchurch-temp"><caption>Given data points in a table, Desmos can create a sinusoidal function to model the data.</caption><interactive desmos="30ampt5obd" aspect="0.67:1.0" label="desmos-christchurch-temp"/></figure>
+      </solution>
     </example>
-
-
-
-
-    <table xml:id="tab_munda-daylight-hours">
-      <title>Hours of daylight for Munda, Solomon Islands captured on the first of each month for the year 2024. Source: NOAA Solar Calculator, U.S. National Oceanic and Atmospheric Administration
-      </title>
-      <tabular halign="center">
-        <row bottom="major">
-          <cell>Month, <m>x</m></cell>
-          <cell>Total number of daylight hours</cell>
-        </row>
-        <row>
-          <cell>January, <m>1</m></cell>
-          <cell><m>12.60</m></cell>
-        </row>
-        <row>
-          <cell>February, <m>2</m></cell>
-          <cell><m>12.47</m></cell>
-        </row>
-        <row>
-          <cell>March, <m>3</m></cell>
-          <cell><m>12.27</m></cell>
-        </row>
-        <row>
-          <cell>April, <m>4</m></cell>
-          <cell><m>12.02</m></cell>
-        </row>
-        <row>
-          <cell>May, <m>5</m></cell>
-          <cell><m>11.80</m></cell>
-        </row>
-        <row>
-          <cell>June, <m>6</m></cell>
-          <cell><m>11.67</m></cell>
-        </row>
-        <row>
-          <cell>July, <m>7</m></cell>
-          <cell><m>11.65</m></cell>
-        </row>
-        <row>
-          <cell>August, <m>8</m></cell>
-          <cell><m>11.75</m></cell>
-        </row>
-        <row>
-          <cell>September, <m>9</m></cell>
-          <cell><m>11.95</m></cell>
-        </row>
-        <row>
-          <cell>October, <m>10</m></cell>
-          <cell><m>12.18</m></cell>
-        </row>
-        <row>
-          <cell>November, <m>11</m></cell>
-          <cell><m>12.42</m></cell>
-        </row>
-        <row>
-          <cell>December, <m>12</m></cell>
-          <cell><m>12.57</m></cell>
-        </row>
-      </tabular>
-    </table>
-    
-
-    <figure xml:id="fig-desmos-munda-laylight"><caption>Input the width, <m>w</m> and length <m>l</m> of a canoe to get the locations of the Star Compass along the sides of a canoe. You can switch between the center of the house and the boundaries between houses.</caption><interactive desmos="vseiurdmq2" label="desmos-munda-daylight"/></figure>
-
-
-    <p>
-      Access the data for total dayligt here <url href="https://gml.noaa.gov/grad/solcalc/"></url>
-    </p>
   </subsection>
-
-
-  <subsection xml:id="subsec-removelater">
-    <title>Citing NOAA data</title>
-    <p>
-      At the bottom of this NOAA site <url href="https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/global/time-series"></url> it says how to cite that page. It might be a good example of how to cite it for other NOAA sites
-    </p>
-    <p>
-      NOAA National Centers for Environmental information, Climate at a Glance: Global Time Series, published February 2024, retrieved on March 4, 2024 from <url href="https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/global/time-series"></url>
-    </p>
-  </subsection>
-
-
-
-
-
-
-
-  <subsection xml:id="subsec-phase-shift">
-    <title>The title goes here</title>
-    <p>
-      Find the equation for the time that Makalii (Pleiades) emerges over the horizon over time throughout the year.
-      Talk about the importance of this and how when it rises at sunset,
-      it coincides with the start of Makahiki season.
-      Then using an example that we already worked with the sun and the time the sun sets over the year,
-      find the intersection of these two equations to determine when Makahiki season will begin.
-    </p>
-    <p>
-      Sun declination (already in 2.1)
-    </p>
-    <p>
-      Moon rising time
-    </p>
-    <p>
-      Planet rising time
-    </p>
-    <p>
-      Annual temperature
-    </p>
-    <p>
-      Daily Temperature
-    </p>
-    <p>
-      Rainfall <url href="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:trig/x2ec2f6f830c9fb89:sinusoidal-models/e/modeling-with-periodic-functions"></url>
-    </p>
-
-  </subsection>
-
-
-
-  
 
   <exercises>
     <exercisegroup cols="2">
@@ -1136,37 +1312,543 @@
       <title>Hours of daylight</title>
       <introduction>
         <p>
-          In 
-          **********
-          <!-- <xref ref="graphs_of_the_sine_and_cosine_functions"/> -->
-          we learned that Earth's axis is tilted and as the Earth orbits the sun, this axial tilt causes seasons, which is periodic. Another affect of the axial tilt and orbit is the amount of daylight each part of Earth experiences. Like the seasons, this is also periodic. 
-        </p>
-        <p>
-          For each problem, the graphs of the total hours of daylight are provided
+          For each of the following questions, the number of daylight hours for a pair of islands in 2025 is given. These islands share the same latitude or are close to it, with one island located north of the equator and the other south of it. Find a sinusoidal function of the form <m>y=A\cos(B(x-C))+D</m> to model the daylight hours for each island. This data is sourced from the NOAA Solar Calculator.
         </p>
       </introduction>
       <exercise>
         <statement>
           <p>
-            
+            Pohnpei, situated at 6.9° North latitude in the Federated States of Micronesia, experiences its longest day, lasting 12.52 hours, on 21 June 2025 (the 172nd day of the year), and its shortest day, lasting 11.72 hours, on 22 December 2025 (the 356th day of the year).
+          </p>
+          <p>
+            Nanumanga, located at 6.3° South latitude in Tuvalu, experiences its longest day, lasting 12.49 hours, on 22 December 2025 (the 356th day of the year), and its shortest day, lasting 11.76 hours, on 21 June 2025 (the 172nd day of the year).
+          </p>
+          <image xml:id="pohnpei-nanumanga-daylight">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=0,xmax=365,ymin=10.5,ymax=13.5,
+              ytick={10.5,11,...,13.5},
+              xtick={1, 32, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335},
+              xticklabels={Jan, ,Mar, ,May, ,Jul,, Sep,, Nov},
+              xticklabel style={black},
+              xlabel=month,
+              ylabel=hours]
+              \addplot[domain=0:365,samples=200,blue,line width=1pt]{0.39184*cos(deg(0.0169897*(x-172.679)))+12.1183} node[above,pos=0.5]{Pohnpei};
+              \addplot[domain=0:365,samples=200,red,line width=1pt]{0.36581*cos(deg(0.016428*(x+18.485)))+12.1278} node[below,pos=0.5]{Nanumanga};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </statement>
+        <answer>
+          <p>
+            Pohnpei: <m>y=0.4\cos(0.0172(x-172))+12.12</m>; Nanumanga: <m>y=0.365\cos(0.0172(x-356))+12.125</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Saipan, positioned at 15.2° North latitude in the Northern Mariana Islands, has its longest day, lasting 13.03 hours, on 21 June 2025 (the 172nd day of the year), and its shortest day, lasting 11.23 hours, on 22 December 2025 (the 356th day of the year).
+          </p>
+          <p>
+            Espiritu Santo, located at 15.4° South latitude in Vanuatu, experiences its longest day, lasting 13.04 hours, on 22 December 2025 (the 356th day of the year), and its shortest day, lasting 11.21 hours, on 21 June 2025 (the 172nd day of the year).
+          </p>
+          <image xml:id="saipan-espiritu-santo-daylight">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=0,xmax=365,ymin=10.5,ymax=13.5,
+              ytick={10.5,11,...,13.5},
+              xtick={1, 32, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335},
+              xticklabels={Jan, ,Mar, ,May, ,Jul,, Sep,, Nov},
+              xticklabel style={black},
+              xlabel=month,
+              ylabel=hours]
+              \addplot[domain=0:365,samples=200,blue,line width=1pt]{0.889926*cos(deg(0.0168509*(x-172.642)))+12.1165} node[above,pos=0.5]{Saipan};
+              \addplot[domain=0:365,samples=200,red,line width=1pt]{0.909387*cos(deg(0.016591*(x+16.6586)))+12.1391} node[below,pos=0.5]{Espiritu Santo};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </statement>
+        <answer>
+          <p>
+            Saipan: <m>y=0.9\cos(0.0172(x-172))+12.13</m>; Espiritu Santo: <m>y=0.915\cos(0.0172(x-356))+12.125</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Kauaʻi, situated at 22.1° North latitude in Hawaiʻi, has its longest day, lasting 13.48 hours, on 20 June 2025 (the 171st day of the year), and its shortest day, lasting 10.78 hours, on 21 December 2025 (the 355th day of the year).
+          </p>
+          <p>
+            Mangai, located at 21.9° South latitude in the Cook Islands, experiences its longest day, lasting 13.47 hours, on 21 December 2025 (the 355th day of the year), and its shortest day, lasting 10.79 hours, on 20 June 2025 (the 171st day of the year).
+          </p>
+          <p>
+            It's noteworthy that Kauaʻi and Mangai are situated east of the International Date Line, causing them to experience the winter and summer solstice one day earlier than islands located west of the International Date Line.
+          </p>
+          <image xml:id="kauai-mangaia-daylight">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=0,xmax=365,ymin=10.5,ymax=13.5,
+              ytick={10.5,11,...,13.5},
+              xtick={1, 32, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335},
+              xticklabels={Jan, ,Mar, ,May, ,Jul,, Sep,, Nov},
+              xticklabel style={black},
+              xlabel=month,
+              ylabel=hours]
+              \addplot[domain=0:365,samples=200,blue,line width=1pt]{1.33515*cos(deg(0.0168198*(x-171.809)))+12.1177} node[above,pos=0.5]{Kaua`i};
+              \addplot[domain=0:365,samples=200,red,line width=1pt]{1.33264*cos(deg(0.0166238*(x+17.1641)))+12.1502} node[below,pos=0.5]{Mangaia};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </statement>
+        <answer>
+          <p>
+            Kauaʻi: <m>y=1.35\cos(0.0172(x-171))+12.13</m>; Mangaia: <m>y=1.34\cos(0.0172(x-355))+12.13</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            What patterns do you observe when comparing the graphs of daylight hours for pairs of islands across different latitudes? Additionally, how does the variation in daylight hours change as latitude moves from closer to the equator to further away?
           </p>
         </statement>
+        <answer>
+          <p>
+            Antipodal islands exhibit mirrored patterns in daylight hours, where one island experiences longer days while the other experiences shorter days. This is due to their opposite positions relative to the equator.
+          </p>
+          <p>
+            As latitude increases (moving away from the equator), the variation in daylight hours also increases. Islands closer to the equator experience less variation in daylight hours throughout the year, while islands further away from the equator experience more significant changes in daylight hours between seasons.
+          </p>
+        </answer>
       </exercise>
+      
     </exercisegroup>
-  </exercises>
     <exercisegroup>
       <introduction>
         <p>
-          Temperate by island
+          The islands of Oʻahu and Rarotonga are located at similar distances from the equator. However, they experience different climates due to their locations relative to the equator. Oʻahu is situated at a latitude of 21.3 degrees north, and Rarotonga is located at a latitude of 21.2 degrees south. The table below gives the average monthly temperatures (in °C) for each island. Use the data in the table to answer the following questions. Source: <url href="http://www.worldclimate.com"></url>, retrieved on 18 March, 2024.
         </p>
+        <tabular halign="center">
+          <row bottom="major">
+            <cell>Month (<m>x</m>)</cell>
+            <cell>Oʻahu (21.3° N)</cell>
+            <cell>Rarotonga (21.2° S)</cell>
+          </row>
+          <row>
+            <cell>January (1)</cell>
+            <cell>22.7</cell>
+            <cell>25.7</cell>
+          </row>
+          <row>
+            <cell>February (2)</cell>
+            <cell>22.7</cell>
+            <cell>26.1</cell>
+          </row>
+          <row>
+            <cell>March (3)</cell>
+            <cell>23.5</cell>
+            <cell>25.8</cell>
+          </row>
+          <row>
+            <cell>April (4)</cell>
+            <cell>24.3</cell>
+            <cell>24.9</cell>
+          </row>
+          <row>
+            <cell>May (5)</cell>
+            <cell>25.2</cell>
+            <cell>23.5</cell>
+          </row>
+          <row>
+            <cell>June (6)</cell>
+            <cell>26.3</cell>
+            <cell>22.3</cell>
+          </row>
+          <row>
+            <cell>July (7)</cell>
+            <cell>26.9</cell>
+            <cell>21.7</cell>
+          </row>
+          <row>
+            <cell>August (8)</cell>
+            <cell>27.4</cell>
+            <cell>21.6</cell>
+          </row>
+          <row>
+            <cell>September (9)</cell>
+            <cell>27.2</cell>
+            <cell>22.1</cell>
+          </row>
+          <row>
+            <cell>October (10)</cell>
+            <cell>26.4</cell>
+            <cell>22.9</cell>
+          </row>
+          <row>
+            <cell>November (11)</cell>
+            <cell>25.1</cell>
+            <cell>23.8</cell>
+          </row>
+          <row>
+            <cell>December (12)</cell>
+            <cell>23.3</cell>
+            <cell>24.8</cell>
+          </row>
+        </tabular>
       </introduction>
       <exercise>
         <statement>
           <p>
-            
+            Determine a sinusoidal function of the form <m>y=A\sin(B(x-C))+D</m> to represent the average monthly temperatures provided in the table for each island.
           </p>
         </statement>
+        <answer>
+          <p>
+            Oʻahu: <m>y=2.35\sin(0.5236(x-5))+25.05</m>; Rarotonga: <m>y=2.25\sin(0.5236(x-11))+23.85</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Utilize a graphing utility to identify the best-fit sinusoidal function of the form <m>y=A\sin(B(x-C))+D</m> for each island.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Oʻahu: <m>y=2.3727\sin(0.502443(x-4.72583))+25.005</m>; Rarotonga: <m>y=2.24202\sin(0.521233(x+1.16396))+23.7744</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            How do the temperature patterns of Oʻahu, situated in the northern hemisphere, compare with those of Rarotonga, positioned in the southern hemisphere?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            During Oʻahu's winter, Rarotonga experiences its summer, and similarly, during Oʻahu's summer, Rarotonga experiences its winter.
+          </p>
+        </answer>
       </exercise>
     </exercisegroup>
-    
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          Use the table below, which gives the average monthly temperatures (in Celsius) at various latitudes in the South Pacific, to answer the following questions. Express your answers in the form <m>y=A\sin(B(x-C))+D</m>. Source: Data for Apia, Suva, Nukuʻalofa, and Rapa Nui obtained from <url href="http://www.worldclimate.com"></url>, retrieved on 18 March 2024; Data for Whangārei and Dunedin obtained from <url href="https://niwa.co.nz/education-and-training/schools/resources/climate/meanairtemp"
+          visual="National Institute of Water and Atmospheric Research (NIWA)"></url>, retrieved on 18 March 2024.
+        </p>
+        <tabular halign="center">
+          <row>
+            <cell></cell>
+            <cell>Apia</cell>
+            <cell>Suva</cell>
+            <cell>Nukuʻalofa</cell>
+            <cell>Rapa Nui</cell>
+            <cell>Whangārei</cell>
+            <cell>Dunedin</cell>
+          </row>
+          <row bottom="major">
+            <cell>Month</cell>
+            <cell>13.8°S</cell>
+            <cell>18.1°S</cell>
+            <cell>21.1°S</cell>
+            <cell>27.1°S</cell>
+            <cell>35.7°S</cell>
+            <cell>45.9°S</cell>
+          </row>
+          <row>
+            <cell>Jan (1)</cell>
+            <cell>27.6</cell>
+            <cell>26.7</cell>
+            <cell>25.6</cell>
+            <cell>23.3</cell>
+            <cell>19.9</cell>
+            <cell>15.3</cell>
+          </row>
+          <row>
+            <cell>Feb (2)</cell>
+            <cell>27.6</cell>
+            <cell>26.9</cell>
+            <cell>26</cell>
+            <cell>23.7</cell>
+            <cell>20.2</cell>
+            <cell>15</cell>
+          </row>
+          <row>
+            <cell>Mar (3)</cell>
+            <cell>27.8</cell>
+            <cell>26.7</cell>
+            <cell>25.8</cell>
+            <cell>23.1</cell>
+            <cell>18.8</cell>
+            <cell>13.7</cell>
+          </row>
+          <row>
+            <cell>Apr (4)</cell>
+            <cell>27.8</cell>
+            <cell>26</cell>
+            <cell>24.9</cell>
+            <cell>21.9</cell>
+            <cell>16.6</cell>
+            <cell>11.7</cell>
+          </row>
+          <row>
+            <cell>May (5)</cell>
+            <cell>27.4</cell>
+            <cell>24.8</cell>
+            <cell>23.1</cell>
+            <cell>20.1</cell>
+            <cell>14.4</cell>
+            <cell>9.3</cell>
+          </row>
+          <row>
+            <cell>Jun (6)</cell>
+            <cell>27.1</cell>
+            <cell>24</cell>
+            <cell>22.4</cell>
+            <cell>18.9</cell>
+            <cell>12.4</cell>
+            <cell>7.3</cell>
+          </row>
+          <row>
+            <cell>Jul (7)</cell>
+            <cell>26.7</cell>
+            <cell>23.2</cell>
+            <cell>21.3</cell>
+            <cell>18</cell>
+            <cell>11.6</cell>
+            <cell>6.6</cell>
+          </row>
+          <row>
+            <cell>Aug (8)</cell>
+            <cell>26.5</cell>
+            <cell>23.2</cell>
+            <cell>21.2</cell>
+            <cell>17.9</cell>
+            <cell>11.9</cell>
+            <cell>7.7</cell>
+          </row>
+          <row>
+            <cell>Sep (9)</cell>
+            <cell>26.7</cell>
+            <cell>23.7</cell>
+            <cell>21.7</cell>
+            <cell>18.3</cell>
+            <cell>13.3</cell>
+            <cell>9.5</cell>
+          </row>
+          <row>
+            <cell>Oct (10)</cell>
+            <cell>27</cell>
+            <cell>24.4</cell>
+            <cell>22.4</cell>
+            <cell>19</cell>
+            <cell>14.6</cell>
+            <cell>10.9</cell>
+          </row>
+          <row>
+            <cell>Nov (11)</cell>
+            <cell>27.4</cell>
+            <cell>25.2</cell>
+            <cell>23.5</cell>
+            <cell>20.4</cell>
+            <cell>16.4</cell>
+            <cell>12.4</cell>
+          </row>
+          <row>
+            <cell>Dec (12)</cell>
+            <cell>27.4</cell>
+            <cell>26.1</cell>
+            <cell>24.7</cell>
+            <cell>21.8</cell>
+            <cell>18.5</cell>
+            <cell>13.9</cell>
+          </row>
+        </tabular>        
+      </introduction>
+      <exercise>
+        <introduction>
+          <p>
+            Determine a sinusoidal function to represent the average monthly temperature in
+          </p>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              Apia, Sāmoa (13.8°S)
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>y=0.65\sin(0.5236(x-11))+27.15</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Suva, Fiji (8.1°S)
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>y=1.85\sin(0.5236(x-11))+25.05</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Nukuʻalofa, Tonga (21.1°S)
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>y=2.4\sin(0.5236(x-11))+23.6</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Rapa Nui (27.1°S)
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>y=2.9\sin(0.5236(x-11))+20.8</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Whangārei, New Zealand (35.7°S)
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>y=4.3\sin(0.5236(x-11))+15.9</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Dunedin, New Zealand (45.9°S)
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>y=4.35\sin(0.5236(x-11))+10.95</m>
+            </p>
+          </answer>
+        </task>
+      </exercise>
+      <exercise>
+        <introduction>
+          <p>
+            Utilize a graphing utility to identify the best-fit sinusoidal function in
+          </p>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              Apia, Sāmoa (13.8°S)
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>y=0.599155\sin(0.590429(x-0.197373))+27.2133</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Suva, Fiji (8.1°S)
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>y=1.86982\sin(0.532431(x+1.0423))+25.0509</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Nukuʻalofa, Tonga (21.1°S)
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>y=2.41339\sin(0.521333(x+1.07987))+23.5577</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Rapa Nui (27.1°S)
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>y=2.93283\sin(0.494705(x+1.55737))+20.6621</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Whangārei, New Zealand (35.7°S)
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>y=4.27205\sin(0.503071(x+1.88988))+15.8716</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Dunedin, New Zealand (45.9°S)
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>y=4.07644\sin(0.524652(x+1.8183))+11.1006</m>
+            </p>
+          </answer>
+        </task>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Based on the sinusoidal functions that you found, what can you conclude about the relationship between temperature and latitude?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            As latitude increases (moving away from the equator towards the poles), the sinusoidal function's amplitude increases, signifying greater temperature variability, while its vertical shift decreases, indicating lower average temperatures at higher latitudes.
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+  </exercises>
 </section>

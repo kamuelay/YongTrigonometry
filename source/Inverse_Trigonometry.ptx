@@ -634,7 +634,7 @@
           <ol>
             <li>
               <p>
-                On the deck of Hōkūleʻa, a navigator stands at 9 ft above sea level. If she looks out to the sea, how far is she from horizon? Assume the radius of the earth at Rapa Nui is 3,960.449 miles.
+                On the deck of Hōkūleʻa, a navigator stands at 9 ft above sea level. If she looks out to the sea, how far is she from horizon? Assume the radius of the earth at Rapa Nui is 20,911,171 feet.
               </p>
             </li>
             <li>
@@ -669,7 +669,7 @@
                 </latex-image>
               </image>
               <p>
-                Here <m>h=9</m> ft, represents the height of the navigator's eye above sea level, <m>R=3,960.449</m> miles (20,911,171 ft) is the radius of the earth at Rapa Nui, and <m>s_1</m> is the arc length or distance along the surface of the earth from the navigator to the horizon. We have written the distances in feet since the height of the navigator is in feet. Recall from <xref ref="thm_arc-length"/> the formula for finding the arc length is <m>s_1=2\pi R\cdot\left(\frac{\theta_1}{360}\right)</m>. Since we know <m>R</m>, we only need to find <m>\theta_1</m>. Notice this forms a right triangle.
+                Here <m>h=9</m> ft, represents the height of the navigator's eye above sea level, <m>R=20,911,171</m> ft is the radius of the earth at Rapa Nui, and <m>s_1</m> is the arc length or distance along the surface of the earth from the navigator to the horizon. We have written the distances in feet since the height of the navigator is in feet. Recall from <xref ref="thm_arc-length"/> the formula for finding the arc length is <m>s_1=2\pi R\cdot\left(\frac{\theta_1}{360}\right)</m>. Since we know <m>R</m>, we only need to find <m>\theta_1</m>. Notice this forms a right triangle.
               </p>
               <image xml:id="fig-finding-land-triangle-person" width="80%">
                 <latex-image>
@@ -692,9 +692,13 @@
                 <me>
                   \theta_1=\cos^{-1}\left(\frac{20,911,171}{20,911,180}\right)\approx0.053^{\circ}.
                 </me>
-                Now we are ready to calculate the arc length, <m>s_1</m>. To give our answer in miles, we will use <m>R=3,960.449</m> miles and calculate the following
+                Now we are ready to calculate the arc length, <m>s_1</m>:
                 <me>
-                  s_1=2\pi\cdot\frac{0.053^{\circ}}{360^{\circ}}\cdot3,960.449\approx3.7\mbox{ miles}
+                  s_1=2\pi\cdot\frac{0.053^{\circ}}{360^{\circ}}\cdot20,911,171\mbox{ feet}\approx19,343\mbox{ feet}.
+                </me>
+                Converting to miles we get
+                <me>
+                  s_1\approx19,401\mbox{ feet}\cdot\frac{1\mbox{ mile}}{5,280\mbox{ feet}}\approx3.7\mbox{miles}.
                 </me>
                 So the horizon is 3.7 miles from the navigator.
               </p>
@@ -751,7 +755,7 @@
                 </md>
                 We conclude that the distance from Maunga Terevaka to the horizon is
                 <me>
-                  s_2=2\pi\cdot\frac{0.723^{\circ}}{360^{\circ}}\cdot3,960.449\approx50.0\mbox{ miles}
+                  s_2=2\pi\cdot\frac{0.723^{\circ}}{360^{\circ}}\cdot(20,911,171\mbox{ feet})\cdot\frac{1\mbox{ mile}}{5,280\mbox{ feet}}\approx50.0\mbox{ miles}
                 </me>
                 Therefore, the total distance between the navigator and Maunga Terevaka is <m>s_1+s_2=3.7+50.0=53.7</m> miles. Please note that this is the distance when the island may first be seen, however, weather conditions may reduce visibility.
               </p>
@@ -1121,13 +1125,13 @@
     </example>
   </subsection>
   <exercises xml:id="inverse-trigonometry-exercises">
-    <exercise>
+    <exercisegroup cols="2">
       <introduction>
         <p>
           What are the domain and range of
         </p>
       </introduction>
-      <task>
+      <exercise>
         <statement>
           <p>
             <m>y=\sin x</m>
@@ -1138,8 +1142,8 @@
             D: <m>-\infty\lt x\lt\infty</m>; R: <m>-1\leq y\leq1</m>
           </p>
         </answer>
-      </task>
-      <task>
+      </exercise>
+      <exercise>
         <statement>
           <p>
             <m>y=\sin^{-1}x</m>
@@ -1150,15 +1154,8 @@
             D: <m>-1\leq y\leq1</m>; R: <m>-\frac{\pi}{2}\leq y\leq\frac{\pi}{2}</m>
           </p>
         </answer>
-      </task>
-    </exercise>
-    <exercise>
-      <introduction>
-        <p>
-          What are the domain and range of
-        </p>
-      </introduction>
-      <task>
+      </exercise>
+      <exercise>
         <statement>
           <p>
             <m>y=\cos x</m>
@@ -1169,8 +1166,8 @@
             D: <m>-\infty\lt x\lt\infty</m>; R: <m>-1\leq y\leq1</m>
           </p>
         </answer>
-      </task>
-      <task>
+      </exercise>
+      <exercise>
         <statement>
           <p>
             <m>y=\cos^{-1}x</m>
@@ -1181,8 +1178,8 @@
             D: <m>-1\leq y\leq1</m>; R: <m>-0\leq y\leq\pi</m>
           </p>
         </answer>
-      </task>
-    </exercise>
+      </exercise>
+    </exercisegroup>
     <exercisegroup cols="3">
       <introduction>
         <p>
@@ -2033,6 +2030,18 @@
           </p>
         </answer>
       </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin\left(\sec^{-1}x\right)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{\sqrt{x^2-1}{x}}</m>
+          </p>
+        </answer>
+      </exercise>
     </exercisegroup>
     <exercisegroup cols="2">
       <introduction>
@@ -2153,13 +2162,25 @@
       <title>Sunrise on Mauna Kea</title>
       <introduction>
         <p>
-          The summit of Mauna Kea is the highest point in Hawaiʻi and sits 13,803 ft above the sea level. If you stand at the summit, you will be able to see the sun rise before someone standing at the sea level just north or south of Mauna Kea (at the same latitude). In fact, you will see the sunrise at the same time as someone at sea level sailing in a waʻa to the east of Mauna Kea. Assume the radius of the earth is 3961.527 miles.
+          The summit of Mauna Kea is the highest point in Hawaiʻi and sits 13,803 ft above the sea level. If you stand at the summit, you will be able to see the sun rise before someone standing at the sea level just north or south of Mauna Kea (at the same latitude). In fact, you will see the sunrise at the same time as someone at sea level sailing in a waʻa to the east of Mauna Kea. Assume the radius of the earth is 20,917,655 feet.
         </p>
       </introduction>
       <task>
         <statement>
           <p>
-            How far is the horizon when someone 5 ft tall stands on the summit to watch the sun rise? Round your answer to the nearest tenth of a mile.
+            How far is the horizon when someone 5 ft tall stands at sea level to watch the sun rise? Round your answer to the nearest tenth of a mile.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>2.7</m> miles
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            How far is the horizon when someone 5 ft tall stands on the summit to watch the sunrise? Round your answer to the nearest tenth of a mile.
           </p>
         </statement>
         <answer>
@@ -2171,17 +2192,17 @@
       <task>
         <statement>
           <p>
-            How much faster will you see the sun rise than someone standing nearby at sea level?
+            How much faster would someone 5 ft tall standing on the top of the mountain see the sunrise than someone 5 ft tall standing at sea level? Express your answer in minutes, rounded to one decimal place.
           </p>
         </statement>
         <hint>
           <p>
-            The ratio of your previous answer to the circumference of the Earth is equal to the ratio of the time to the 24 hours in Earth's rotation.
+            The ratio of the distance to the horizon (your previous answers) to the circumference of the Earth (<m>2\pi R</m>) is equal to the ratio of the time it takes to see the sunrise to the 24 hours (1,440 minutes) in Earth's rotation. Compute the time it takes to see the sunrise from the top of the mountain and the shore, then calculate the difference.
           </p>
         </hint>
         <answer>
           <p>
-            
+            8.2 minutes
           </p>
         </answer>
       </task>
@@ -2190,7 +2211,7 @@
       <title>Maui Capturing the Sun</title>
       <introduction>
         <p>
-          According to moʻolelo, or legend, the sun traveled very fast across the sky, leaving people with days so short there was not enough time to carry on with their daily lives. Determined to slow the sun, the demigod Maui climbed to the summit of Haleakalā, which stands at 10,023 feet, to snare the sun. Assume the radius of the earth is at Haleakalā is 3961.527 miles.
+          According to moʻolelo, or legend, the sun traveled very fast across the sky, leaving people with days so short there was not enough time to carry on with their daily lives. Determined to slow the sun, the demigod Maui climbed to the summit of Haleakalā, which stands at 10,023 feet, to snare the sun. Assume the radius of the Earth at Haleakalā is the same as Mauna Kea at 20,917,655 feet.
         </p>
         <image xml:id="exer-maui-sun">
           <latex-image>
@@ -2216,36 +2237,27 @@
       <task>
         <statement>
           <p>
-            How far is the horizon when Maui stands at the summit? Assume Maui's eyes are 5 ft from the ground.
+            How far is the horizon when Maui stands at the summit? Assume Maui's eyes are 5 ft from the ground. Round your answer to the nearest tenth of a mile.
           </p>
         </statement>
         <answer>
           <p>
-            
+            122.6 miles
           </p>
         </answer>
       </task>
       <task>
         <statement>
           <p>
-            How much faster would Maui see the sun emerge over the horizon than someone 5 ft tall and standing at the seashore?
+            How much faster would Maui see the sun emerge over the horizon than someone 5 ft tall and standing at the seashore? Espress your answer in minutes, rounded to one decimal place.
           </p>
         </statement>
         <answer>
           <p>
-            
+            6.9 minutes
           </p>
         </answer>
       </task>
     </exercise>
   </exercises>
 </section>
-
-
-
-
-
-
-
-
-
