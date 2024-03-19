@@ -5,4 +5,5 @@
   <xi:include  href="graphs_of_other_trigonometric_functions.ptx"/>
   <xi:include  href="sinusoidal_curve_fitting_and_graphical_analysis.ptx"/>
   <xi:include  href="inverse_trigonometry.ptx"/>
+  <!-- <xi:include href="project-graphs-of-the-trigonometric-functions" /> -->
 </chapter>

@@ -1988,7 +1988,7 @@
         </answer>
       </exercise>
     </exercisegroup>
-    <exercisegroup cols="3">
+    <exercisegroup cols="2">
       <introduction>
         <p>
           Utilizing the fact that <m>x=\frac{x}{1}</m> and sketching a right triangle, find the exact value of the expression in terms of <m>x</m>.
@@ -2038,7 +2038,7 @@
         </statement>
         <answer>
           <p>
-            <m>\frac{\sqrt{x^2-1}{x}}</m>
+            <m>\frac{\sqrt{x^2-1}}{x}</m>
           </p>
         </answer>
       </exercise>

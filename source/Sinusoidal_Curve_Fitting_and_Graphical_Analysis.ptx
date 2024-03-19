@@ -587,7 +587,7 @@
           Since there are no reflections about the <m>x</m>-axis, we get <m>A=5.45</m>
         </p>
         <p>
-          <em>Period (|B|)</em>: Since the temperatures repeat every 12 months, the period is 12 and so <m>\frac{2\pi}{|B|}=12</m>. Since there are no reflections about the <m>y</m>-axis, we keep the positive value to obtain
+          <em>Period (B)</em>: Since the temperatures repeat every 12 months, the period is 12 and so <m>\frac{2\pi}{|B|}=12</m>. Since there are no reflections about the <m>y</m>-axis, we keep the positive value to obtain
           <me>B=\frac{2\pi}{12}=\frac{\pi}{6}</me>.
         </p>
         <p>
@@ -788,7 +788,7 @@
           <ol>
             <li>
               <p>
-                Open a new table in the Desmos Graphing Calculator by either typing "table" in a blank expression line or clicking the Add Item menu in the upper left corner and selecting Table.
+                Open a new table in the Desmos Graphing Calculator by either typing <q>table</q> in a blank expression line or clicking the Add Item menu in the upper left corner and selecting Table.
               </p>
             </li>
             <li>

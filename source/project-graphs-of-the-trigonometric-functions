@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="project-graphs-of-the-trigonometric-functions">
+  <title>Project: Finding Islands</title>
+  <introduction>
+    <p>
+        The curvature of the Earth limits our visibility of distant objects, as they may fall below the horizon. The diagram below illustrates this.
+        </p>
+        
+        <image xml:id="proj-horizon-h">
+            <latex-image>
+                \begin{tikzpicture}[scale=4]
+                \draw ([shift=(30:1)]0,0) arc (30:150:1);
+                \draw[blue] (0,0) -- (0,1) node[midway, right] {$R$};
+                \draw ({1/tan(110)},1) -- (0,1);
+                \draw (0,0.9) -- (-0.1,0.9) -- (-0.1,1);
+                \draw[blue] (0,0) -- ({cos(110)},{sin(110)}) node[midway, left,xshift=-2] {$R$};
+                \draw[red] ({cos(110)},{sin(110)}) -- ({1/tan(110)},1) node[midway,left] {$h$};
+                \draw ([shift=(90:0.2)]0,0) arc (90:110:0.2) node[above, left] {$\theta_h$};
+                \node at (100:0.9) {$s_h$};
+                \end{tikzpicture}
+            </latex-image>
+          </image>
+        
+        <p>
+        A right triangle is formed with the central angle <m>\theta_h</m> by extending a line from the observer to the horizon and the center of the Earth. The trigonometric relation is given by:
+        </p>
+        
+        <me> \cos\theta_h = \frac{R}{R+h} </me>
+        
+        <p>
+        Where <m>R</m> is the radius of the Earth and <m>h</m> is the height of the observer. Using inverse trigonometry, we obtain the expression for <m>\theta_h</m>:
+        </p>
+        
+        <me> \theta_h = \cos^{-1}\left(\frac{R}{R+h}\right) </me>
+        
+        <p>
+        The distance from the horizon to a person, denoted by <m>s_h</m>, represents the <em>arc length</em> subtended by the central angle <m>\theta_h</m>. If our angle <m>\theta_h</m> is in degrees, <xref ref="thm_arc-length"/> states the arc length is
+        <me>s_h=2\pi R\cdot\left(\frac{\theta_h}{360}\right)=2\pi R\cdot\frac{\cos^{-1}\left(\frac{R}{R+h}\right)}{360}.</me>
+        </p>
+        <p>
+        Given the radius of Earth at O`ahu, <m>R=20,916,466</m> feet, we can use the conversion factor that <m>1</m> mile is <m>5,280</m> feet to determine <m>s_h</m> for an observer whose eyes are at a height of <m>h=5</m> feet above sea level:
+        </p>
+        
+        <me> s_h = \frac{\cos^{-1}\left(\frac{R}{R+h}\right)}{360^{\circ}} \cdot \frac{2\pi R}{5280} </me>
+        
+        <p>
+        For a mountain with height <m>H</m>, the distance in miles between the summit of the mountain and the horizon is given by:
+        </p>
+        
+        <me> s_H = \frac{\cos^{-1}\left(\frac{R}{R+H}\right)}{360^{\circ}} \cdot \frac{2\pi R}{5280} </me>
+        
+        <p>
+        The furthest point a person can see the mountain is when the mountain aligns with the horizon, given by <m>s_h+s_H</m>.
+        </p>
+        
+        <image xml:id="proj-horizon-h-H">
+            <latex-image>
+                \begin{tikzpicture}[scale=4]
+                \draw ([shift=(30:1)]0,0) arc (30:150:1);
+                \draw[blue] (0,0) -- (0,1) node[midway, right] {$R$};
+                \draw[blue] (0,0) -- ({cos(50)},{sin(50)}) node[midway, right,xshift=4] {$R$};
+                \fill[green,fill opacity=0.10000000149011612] ({1/tan(50)},1) -- ({cos(40)},{sin(40)}) -- ([shift=(40:1)]0,0) arc (40:60:1) -- cycle;
+                \draw[red] ({cos(50)},{sin(50)}) -- ({1/tan(50)},1) node[midway,right] {$H$};
+                \draw ({1/tan(110)},1) -- ({1/tan(50)},1);
+                \draw[green] ({cos(60)},{sin(60)}) -- ({1/tan(50)},1);
+                \draw[green] ({cos(40)},{sin(40)}) -- ({1/tan(50)},1);
+                \fill[color=green,opacity=0.1] ({1/tan(50)},1) -- ({cos(40)},{sin(40)}) arc(40:60:1);
+                \draw (0,0.9) -- (0.1,0.9) -- (0.1,1);
+                \draw ([shift=(50:0.2)]0,0) arc (50:90:0.2) node[above right] {$\theta_H$};
+                \draw[blue] (0,0) -- ({cos(110)},{sin(110)}) node[midway, left,xshift=-2] {$R$};
+                \draw[red] ({cos(110)},{sin(110)}) -- ({1/tan(110)},1) node[midway,left] {$h$};
+                \draw ([shift=(90:0.2)]0,0) arc (90:110:0.2) node[above, left] {$\theta_h$};
+                \node at (70:0.9) {$s_H$};
+                \node at (100:0.9) {$s_h$};
+                \end{tikzpicture}
+            </latex-image>
+          </image>
+        <p>
+
+        <ol>
+          <li>
+            <p>
+              If a person's eyes are 5 feet above sea level on the shore of O`ahu, they can see the mountain on another island if <m>d \leq s_h+s_H</m>, where <m>d</m> is the distance from the observer to the mountain.
+            </p>
+        
+            <p>
+              For the following mountains, determine if they are visible from O`ahu:
+            </p>
+        
+            <ol>
+              <li>Mauna Kea: <m>H=13,803</m> ft, <m>d=174.7</m> mi.</li>
+              <li>Haleakalā: <m>H=10,023</m> ft, <m>d=105</m> mi.</li>
+              <li>Lāna`ihale: <m>H=3,366</m> ft, <m>d=60.8</m> mi.</li>
+              <li>Kamakou: <m>H=4,961</m> ft, <m>d=52.9</m> mi.</li>
+              <li>Kawaikini: <m>H=5,243</m> ft, <m>d=86.6</m> mi.</li>
+            </ol>
+          </li>
+        
+          <li>
+            <p>
+              At 3,150 feet tall, Konahuanui is the highest point in the Ko`olau Mountains on O`ahu. If someone climbs to the summit, their eyes will be at a height of <m>h=3,155</m> feet above sea level. Calculate the new distance from the observer to the horizon, <m>s_h</m>:
+            </p>
+        
+            <me> s_h = \frac{\cos^{-1}\left(\frac{R}{R+h}\right)}{360^{\circ}}\cdot \frac{2\pi R}{5280} </me>
+        
+            <p>
+              and determine if an observer at the summit of Konahuanui will be able to see each of the mountains mentioned earlier.
+            </p>
+        
+            <ol>
+              <li>Mauna Kea: <m>d=183.7</m> mi.</li>
+              <li>Haleakalā: <m>d=114</m> mi.</li>
+              <li>Lāna`ihale: <m>d=69.8</m> mi.</li>
+              <li>Kamakou: <m>d=61.7</m> mi.</li>
+              <li>Kawaikini: <m>d=119.9</m> mi.</li>
+            </ol>
+          </li>
+        
+          <li>
+            <p>
+                From the top of a mountain, the horizon appears much farther than from sea level. Consequently, an observer on a mountaintop will witness the sunrise over the horizon before someone standing at the seashore.
+            </p>
+
+            <p>The distance from a mountain's summit to the horizon can be visualized as an arc length of the Earth. The proportion of this arc length to the total Earth circumference is equivalent to the ratio of the time it takes for the Earth to rotate that arc length to the time it takes for the Earth to complete one full rotation (which is 24 hours or 1,440 minutes). The circumference of Earth can be calculated using the formula: <m>c = 2\pi R</m>.</p>
+
+<p>To determine the time difference <m>t</m> (in minutes) between an observer on the summit witnessing the sunrise and someone at sea level, you can use the formula:</p>
+
+<me>\frac{s_H}{2\pi R} = \frac{t}{1,440\ \text{min}}</me>
+
+<p>For each of the previously mentioned mountains, determine how much sooner someone standing at the summit will witness the sunrise compared to someone at sea level:</p>
+
+
+
+
+            <ol>
+                <li>Mauna Kea: <m>H=13,803</m> ft.</li>
+                <li>Haleakalā: <m>H=10,023</m> ft.</li>
+                <li>Lāna`ihale: <m>H=3,366</m> ft.</li>
+                <li>Kamakou: <m>H=4,961</m> ft.</li>
+                <li>Kawaikini: <m>H=5,243</m> ft.</li>
+            </ol>
+        </li>
+        </ol>
+    </p>      
+
+
+        <p>
+
+Help me organize this project prompt. You can break it into multiple questions with different parts to it.
+Based on the curvature of the Earth, objects in the distance will disappear over the horizon. If an object is big enough, it might be visible from far distances. I illustrate this by saying that a person who height is h=5 ft stands on the shore and we will determine how far that person can see (the horizon). We assume R is the radius of the Earth. We begin by forming a right triangle from the person, to the center of the earth and then to the horizon to get the relation cos(theta_h)=R/(R+h) where theta is the angle formed from the person to the center of the earth and then to the horizon. Using inverse cosine, we can solve for theta_h. The distance to the horizon and now just the arc length, s_h=theta_h/360*2*pi*R.
+
+Now we talk about the islands in Hawaii and determine which islands, if any, can we see from Oʻahu.
+
+To do this we will first need to explain that the maximum distance an island can be is when the top of the island lies on the same line as from the observer to the horizon. If the highest point on the island is low, then the furthest distance the island can be is closer compared to tallest islands which can be further. 
+
+We will need to repeat the process of calculating the horizon but this time for the mountain. Letʻs say we found the angle and the distance and call it theta_m and s_m, respectively.
+
+We also know the actual distance from the observer, call it d_h. Now the absolute furthest the mountain can be and still be seen by the observe is when it lines up with the horizon, so this distance is s_h+s_m. If the actual distance is closer than this, we can see the mountain, i.e. if <m>d_m\lt s_h+s_m</m> then we can see the mountain.
+
+I want my students to determine if you can see each of the following mountains from Oʻahu, given the height of the mountain and the distance from the observer (note the distance provided is the closest distance on Oʻahu to the mountain and can change for each question):
+
+<ol>
+    <li>Mauna Kea: <m>H=13,803</m> ft, <m>d=174.7</m> mi.</li>
+    <li>Haleakalā: <m>H=10,023</m> ft, <m>d=105</m> mi.</li>
+    <li>Lāna`ihale: <m>H=3,366</m> ft, <m>d=60.8</m> mi.</li>
+    <li>Kamakou: <m>H=4,961</m> ft, <m>d=52.9</m> mi.</li>
+    <li>Kawaikini: <m>H=5,243</m> ft, <m>d=86.6</m> mi.</li>
+  </ol>
+
+
+  The next part is to stan on top of a mountain on Oʻahu, centrally located. This mountain is called Konahuanui and determine which, if any, mountains from the other islands you can see. In this case, you are no longer standing on the seashore where your eyes are 5ft, but you are on a mountain whose height is 3,150 ft plus you are 5ft tall so you need to go back to where you calculated s_h and change the 5 ft too 3150+5 to get your new s_h.
+
+  The new distances to each mountain on the other islands is:
+  <ol>
+    <li>Mauna Kea: <m>d=183.7</m> mi.</li>
+    <li>Haleakalā: <m>d=114</m> mi.</li>
+    <li>Lāna`ihale: <m>d=69.8</m> mi.</li>
+    <li>Kamakou: <m>d=61.7</m> mi.</li>
+    <li>Kawaikini: <m>d=119.9</m> mi.</li>
+  </ol>
+
+
+  ----
+  How do I write this up.
+        </p>
+        
+        <p>
+            <emph render="italic">Introduction to Earth's Curvature and Horizon:</emph>
+        </p>
+
+
+                <p>
+                  Discuss how the curvature of the Earth affects our ability to see distant objects.
+                </p>
+ 
+                <p>
+                  Introduce the concept of the horizon and how it limits visibility.
+                </p>
+    
+                <p>
+                  Explain the formation of a right triangle from an observer to the Earth's center and then to the horizon, leading to the relationship <m>cos(θ<sub>h</sub>) = R / (R + h)</m>.
+                </p>
+      
+                <p>
+                  Define <me>h</me> as the height of the observer, <me>R</me> as the radius of the Earth, and <me>θ<sub>h</sub></me> as the angle to the horizon.
+                </p>
+        
+                <p>
+                  Use inverse cosine to solve for <me>θ<sub>h</sub></me> and calculate the distance to the horizon, <me>s<sub>h</sub> = (θ<sub>h</sub> / 360) * 2πR</me>.
+                </p>
+      
+    
+          <p>
+            <emph render="italic">Visibility of Islands from Oʻahu:</emph>
+        </p>
+        
+                <p>
+                  Explain the procedure for determining which islands in Hawaii are visible from Oʻahu.
+                </p>
+                
+                <p>
+                  Discuss that the furthest distance an island can be seen is when the top of the island aligns with the horizon.
+                </p>
+                
+                <p>
+                  Introduce the concept of calculating the horizon for the mountain on each island using similar trigonometric principles.
+                </p>
+
+                <p>
+                  State that if the actual distance (<me>d<sub>h</sub></me>) from Oʻahu to the mountain is less than the sum of the distances to the horizon and mountain (<me>s<sub>h</sub> + s<sub>m</sub></me>), then the mountain is visible from Oʻahu.
+                </p>
+                
+                <p>
+                  Provide the heights (<me>H</me>) and distances (<me>d</me>) for each mountain to be analyzed.
+                </p>
+          <p>
+            <emph render="italic">Analysis of Visibility from Konahuanui:</emph>
+        </p>
+        
+                <p>
+                  Introduce the mountain on Oʻahu called Konahuanui and its height (3,150 ft).
+                </p>
+                
+                <p>
+                  Mention that observers on Konahuanui are 5 ft tall.
+                </p>
+                
+                <p>
+                  Instruct students to recalculate the distance to the horizon (<me>s<sub>h</sub></me>) using the new observer height (3,150+5 ft).
+                </p>
+                
+                <p>
+                  Provide the new distances (<me>d</me>) to each mountain from Konahuanui for analysis.
+                </p>
+                
+          <p>
+            <emph render="italic">Questions for Students:</emph>
+        </p>
+        <p>
+                  List the mountains from other islands and ask students to determine if they are visible from Oʻahu and Konahuanui, based on the provided heights and distances.
+                </p>
+                <p>
+                  Encourage students to explain their reasoning and calculations.
+                </p>
+          
+  </introduction>
+
+</section>
