@@ -14,15 +14,15 @@
     <image xml:id="trig-functions-QII-triangle" width="75%">
         <latex-image>
         \begin{tikzpicture}[scale=3]
-        \draw[&lt;-&gt;] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-        \draw[&lt;-&gt;] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+        \draw[stealth-stealth] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+        \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[above]{\(y\)};
         \draw (0,0) circle (1);
         \filldraw[blue] (1,0) circle(1pt);
         \filldraw[blue] (135:1) circle(1pt);
         \node at (-0.5,0.3) {\(r\)};
         \draw[line width=2pt,blue] (0,0) -- (1,0);
         \draw[line width=2pt,blue] (0,0) -- (135:1) node[black,above,xshift=-12]{\(P(x,y)\)};
-        \draw[-&gt;, line width=1.25pt] (0:0.4) arc (0:135:0.4) node[midway, right,xshift=5] {\(\theta\)};
+        \draw[-stealth, line width=1.25pt] (0:0.4) arc (0:135:0.4) node[midway, right,xshift=5] {\(\theta\)};
         \draw[dashed] (135:1) -- (-0.707106781187,0) node[midway,left] {\(y\)};
         \draw[dashed] (-0.707106781187,0) -- (0,0) node[midway,below] {\(x\)};
         \draw (-0.557106781187,0) -- (-0.557106781187,0.15) -- (-0.707106781187,0.15);
@@ -99,8 +99,8 @@
         <image xml:id="fig-trig-signs-sin" width="100%">
           <latex-image>
             \begin{tikzpicture}
-            \draw[&lt;-&gt;] (-2,0)--(2,0) node[right]{\(x\)};
-            \draw[&lt;-&gt;] (0,-2)--(0,2) node[above]{\(y\)};
+            \draw[stealth-stealth] (-2,0)--(2,0) node[right]{\(x\)};
+            \draw[stealth-stealth] (0,-2)--(0,2) node[above]{\(y\)};
             \node at (1,1) [ align=center] {+};
             \node at (-1,1) [ align=center]{+};
             \node at (-1,-1) [ align=center] {-};
@@ -112,8 +112,8 @@
         <image xml:id="fig-trig-signs-cos" width="100%">
           <latex-image>
             \begin{tikzpicture}
-            \draw[&lt;-&gt;] (-2,0)--(2,0) node[right]{\(x\)};
-            \draw[&lt;-&gt;] (0,-2)--(0,2) node[above]{\(y\)};
+            \draw[stealth-stealth] (-2,0)--(2,0) node[right]{\(x\)};
+            \draw[stealth-stealth] (0,-2)--(0,2) node[above]{\(y\)};
             \node at (1,1) [ align=center] {+};
             \node at (-1,1) [ align=center]{-};
             \node at (-1,-1) [ align=center] {+};
@@ -125,8 +125,8 @@
         <image xml:id="fig-trig-signs-tan" width="100%">
           <latex-image>
             \begin{tikzpicture}
-            \draw[&lt;-&gt;] (-2,0)--(2,0) node[right]{\(x\)};
-            \draw[&lt;-&gt;] (0,-2)--(0,2) node[above]{\(y\)};
+            \draw[stealth-stealth] (-2,0)--(2,0) node[right]{\(x\)};
+            \draw[stealth-stealth] (0,-2)--(0,2) node[above]{\(y\)};
             \node at (1,1) [ align=center] {+};
             \node at (-1,1) [ align=center]{-};
             \node at (-1,-1) [ align=center] {-};
@@ -172,8 +172,8 @@
     <image width="50%" xml:id="all-students-take-calculus">
       <latex-image>
         \begin{tikzpicture}
-        \draw[&lt;-&gt;] (-2,0)--(2,0) node[right]{\(x\)};
-        \draw[&lt;-&gt;] (0,-2)--(0,2) node[above]{\(y\)};
+        \draw[stealth-stealth] (-2,0)--(2,0) node[right]{\(x\)};
+        \draw[stealth-stealth] (0,-2)--(0,2) node[above]{\(y\)};
         \node at (1,1) [ align=center] {{\Large \textbf A}ll\\ };
         \node at (-1,1) [ align=center]{{\Large \textbf S}in\\ (Csc)};
         \node at (-1,-1) [ align=center] {{\Large \textbf T}an\\ (Cot)};
@@ -249,14 +249,14 @@
           <image xml:id="fig-calculate-ref-angle-q1" width="100%">
             <latex-image>
               \begin{tikzpicture}[scale=2]
-              \draw[&lt;-&gt;] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-              \draw[&lt;-&gt;] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+              \draw[stealth-stealth] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+              \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[above]{\(y\)};
               \draw (0,0) circle (1);
               \filldraw[blue] (1,0) circle(1pt);
               \filldraw[blue] (60:1) circle(1pt);
               \draw[line width=2pt,blue] (0,0) -- (1,0);
               \draw[line width=2pt,blue] (0,0) -- (60:1);
-              \draw[-&gt;] (0:0.4) arc (0:60:0.4) node[midway, right,xshift=0.05] {\(t=t'\)};
+              \draw[-stealth] (0:0.4) arc (0:60:0.4) node[midway, right,xshift=0.05] {\(t=t'\)};
               \end{tikzpicture}
             </latex-image>
           </image>
@@ -270,14 +270,14 @@
           <image xml:id="fig-calculate-ref-angle-q2" width="100%">
             <latex-image>
               \begin{tikzpicture}[scale=1.75]
-              \draw[&lt;-&gt;] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-              \draw[&lt;-&gt;] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+              \draw[stealth-stealth] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+              \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[above]{\(y\)};
               \draw (0,0) circle (1);
               \filldraw[blue] (1,0) circle(1pt);
               \filldraw[blue] (60:1) circle(1pt);
               \draw[line width=2pt,blue] (0,0) -- (1,0);
               \draw[line width=2pt,blue] (0,0) -- (60:1);
-              \draw[-&gt;] (0:0.4) arc (0:60:0.4) node[midway, right,xshift=0.05] {\(t=t'\)};
+              \draw[-stealth] (0:0.4) arc (0:60:0.4) node[midway, right,xshift=0.05] {\(t=t'\)};
               \end{tikzpicture}
             </latex-image>
           </image>
@@ -293,16 +293,16 @@
             <image xml:id="fig-calculate-ref-angle-q3" width="50%">
               <latex-image>
                 \begin{tikzpicture}[scale=1.75]
-                \draw[&lt;-&gt;] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-                \draw[&lt;-&gt;] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+                \draw[stealth-stealth] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+                \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[above]{\(y\)};
                 \draw (0,0) circle (1);
                 \filldraw[blue] (1,0) circle(1pt);
                 \filldraw[blue] (240:1) circle(1pt);
                 \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0);
                 \draw[line width=2pt,blue] (0,0) -- (1,0);
                 \draw[line width=2pt,blue] (0,0) -- (240:1);
-                \draw[-&gt;] (0:0.3) arc (0:240:0.3) node[midway, left,xshift=-0.1] {\(t\)};
-                \draw[-&gt;] (180:0.6) arc (180:240:0.6) node[midway, left,xshift=-0.1] {\(t'\)};
+                \draw[-stealth] (0:0.3) arc (0:240:0.3) node[midway, left,xshift=-0.1] {\(t\)};
+                \draw[-stealth] (180:0.6) arc (180:240:0.6) node[midway, left,xshift=-0.1] {\(t'\)};
                 \end{tikzpicture}
               </latex-image>
             </image>
@@ -316,15 +316,15 @@
             <image xml:id="fig-calculate-ref-angle-q4" width="50%">
               <latex-image>
                 \begin{tikzpicture}[scale=1.75]
-                \draw[&lt;-&gt;] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-                \draw[&lt;-&gt;] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+                \draw[stealth-stealth] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+                \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[above]{\(y\)};
                 \draw (0,0) circle (1);
                 \filldraw[blue] (1,0) circle(1pt);
                 \filldraw[blue] (300:1) circle(1pt);
                 \draw[line width=2pt,blue] (0,0) -- (1,0);
                 \draw[line width=2pt,blue] (0,0) -- (300:1);
-                \draw[-&gt;] (0:0.3) arc (0:300:0.3) node[midway, left,xshift=-0.1] {\(t\)};
-                \draw[-&gt;] (360:0.6) arc (360:300:0.6) node[midway, right,xshift=0.1] {\(t'\)};
+                \draw[-stealth] (0:0.3) arc (0:300:0.3) node[midway, left,xshift=-0.1] {\(t\)};
+                \draw[-stealth] (360:0.6) arc (360:300:0.6) node[midway, right,xshift=0.1] {\(t'\)};
                 \end{tikzpicture}
               </latex-image>
             </image>
@@ -346,13 +346,13 @@
           <image xml:id="fig-find-ref-angles-pi3" width="50%">
             <latex-image> 
               \begin{tikzpicture}[scale=1.75]
-              \draw[&lt;-&gt;] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
-              \draw[&lt;-&gt;] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
+              \draw[stealth-stealth] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
+              \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
               \draw (0,0) circle (1); \filldraw[blue] (1,0) circle(1pt); 
               \filldraw[blue] (60:1) circle(1pt); 
               \draw[line width=2pt,blue] (0,0) -- (1,0); 
               \draw[line width=2pt,blue] (0,0) -- (60:1); 
-              \draw[-&gt;] (0:0.4) arc (0:60:0.4) node[midway, right,xshift=0.05] {\(\frac{\pi}{3}\)};
+              \draw[-stealth] (0:0.4) arc (0:60:0.4) node[midway, right,xshift=0.05] {\(\frac{\pi}{3}\)};
               \end{tikzpicture} 
             </latex-image>
           </image>
@@ -372,16 +372,16 @@
           <image xml:id="fig-find-ref-angles-3pi4" width="50%">
             <latex-image> 
               \begin{tikzpicture}[scale=1.75]
-              \draw[&lt;-&gt;] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
-              \draw[&lt;-&gt;] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
+              \draw[stealth-stealth] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
+              \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
               \draw (0,0) circle (1); 
               \filldraw[blue] (1,0) circle(1pt); 
               \filldraw[blue] (135:1) circle(1pt); 
               \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); 
               \draw[line width=2pt,blue] (0,0) -- (1,0); 
               \draw[line width=2pt,blue] (0,0) -- (135:1); 
-              \draw[-&gt;] (0:0.4) arc (0:135:0.4) node[midway, right,xshift=0.2] {\(\frac{3\pi}{4}\)}; 
-              \draw[-&gt;] (180:0.4) arc (180:135:0.4) node[midway, left,xshift=-0.1,yshift=0.1] {\(t'\)};
+              \draw[-stealth] (0:0.4) arc (0:135:0.4) node[midway, right,xshift=0.2] {\(\frac{3\pi}{4}\)}; 
+              \draw[-stealth] (180:0.4) arc (180:135:0.4) node[midway, left,xshift=-0.1,yshift=0.1] {\(t'\)};
               \end{tikzpicture} 
             </latex-image>
           </image>
@@ -401,15 +401,15 @@
           <image xml:id="fig-find-ref-angles-neg3pi4" width="50%">
             <latex-image> 
               \begin{tikzpicture}[scale=1.75]
-              \draw[&lt;-&gt;] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
-              \draw[&lt;-&gt;] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
+              \draw[stealth-stealth] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
+              \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
               \draw (0,0) circle (1); 
               \filldraw[blue] (1,0) circle(1pt); 
               \filldraw[blue] (-135:1) circle(1pt); 
               \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); 
               \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (-135:1); 
-              \draw[-&gt;] (0:0.4) arc (0:-135:0.4) node[midway, below ,xshift=0.2,yshift=0.1] {\(-\frac{3\pi}{4}\)}; 
-              \draw[-&gt;] (-180:0.4) arc (-180:-135:0.4) node[midway, left,xshift=-0.1,yshift=-0.1] {\(t'\)};
+              \draw[-stealth] (0:0.4) arc (0:-135:0.4) node[midway, below ,xshift=0.2,yshift=0.1] {\(-\frac{3\pi}{4}\)}; 
+              \draw[-stealth] (-180:0.4) arc (-180:-135:0.4) node[midway, left,xshift=-0.1,yshift=-0.1] {\(t'\)};
               \end{tikzpicture} 
             </latex-image>
           </image>
@@ -434,14 +434,14 @@
           <image xml:id="fig-find-ref-angles-240" width="50%">
             <latex-image> 
               \begin{tikzpicture}[scale=1.75]
-              \draw[&lt;-&gt;] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
-              \draw[&lt;-&gt;] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1); 
+              \draw[stealth-stealth] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
+              \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1); 
               \filldraw[blue] (1,0) circle(1pt); 
               \filldraw[blue] (240:1) circle(1pt); 
               \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0);
               \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (240:1); 
-              \draw[-&gt;] (0:0.3) arc (0:240:0.3) node[midway, left,xshift=-0.1] {\(240^{\circ}\)}; 
-              \draw[-&gt;] (180:0.6) arc (180:240:0.6) node[midway, left,xshift=-0.1] {\(t'\)};
+              \draw[-stealth] (0:0.3) arc (0:240:0.3) node[midway, left,xshift=-0.1] {\(240^{\circ}\)}; 
+              \draw[-stealth] (180:0.6) arc (180:240:0.6) node[midway, left,xshift=-0.1] {\(t'\)};
               \end{tikzpicture} 
             </latex-image>
           </image>
@@ -460,14 +460,14 @@
           <image xml:id="fig-find-ref-angles-11pi6" width="50%">
             <latex-image> 
               \begin{tikzpicture}[scale=1.75]
-              \draw[&lt;-&gt;] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
-              \draw[&lt;-&gt;] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1); 
+              \draw[stealth-stealth] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
+              \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1); 
               \filldraw[blue] (1,0) circle(1pt); 
               \filldraw[blue] (330:1) circle(1pt); 
               \draw[line width=2pt,blue] (0,0) -- (1,0); 
               \draw[line width=2pt,blue] (0,0) -- (330:1); 
-              \draw[-&gt;] (0:0.3) arc (0:330:0.3) node[midway, left,xshift=0.1,yshift=7] {\(\frac{11\pi}{6}\)}; 
-              \draw[-&gt;] (360:0.6) arc (360:330:0.6) node[midway, right,xshift=0.1] {\(t'\)};
+              \draw[-stealth] (0:0.3) arc (0:330:0.3) node[midway, left,xshift=0.1,yshift=7] {\(\frac{11\pi}{6}\)}; 
+              \draw[-stealth] (360:0.6) arc (360:330:0.6) node[midway, right,xshift=0.1] {\(t'\)};
               \end{tikzpicture} 
             </latex-image>
           </image>
@@ -486,15 +486,15 @@
           <image xml:id="fig-find-ref-angles-2pi3" width="50%">
               <latex-image> 
               \begin{tikzpicture}[scale=1.75]
-              \draw[&lt;-&gt;] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
-              \draw[&lt;-&gt;] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
+              \draw[stealth-stealth] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
+              \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
               \draw (0,0) circle (1); \filldraw[blue] (1,0) circle(1pt); 
               \filldraw[blue] (120:1) circle(1pt); 
               \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); 
               \draw[line width=2pt,blue] (0,0) -- (1,0); 
               \draw[line width=2pt,blue] (0,0) -- (120:1); 
-              \draw[-&gt;] (0:0.4) arc (0:120:0.4) node[midway, right,xshift=0.2] {\(\frac{2\pi}{3}\)}; 
-              \draw[-&gt;] (180:0.4) arc (180:120:0.4) node[midway, left,xshift=-0.1,yshift=0.1] {\(t'\)};
+              \draw[-stealth] (0:0.4) arc (0:120:0.4) node[midway, right,xshift=0.2] {\(\frac{2\pi}{3}\)}; 
+              \draw[-stealth] (180:0.4) arc (180:120:0.4) node[midway, left,xshift=-0.1,yshift=0.1] {\(t'\)};
               \end{tikzpicture} 
             </latex-image>
           </image>
@@ -521,14 +521,14 @@
           <image xml:id="fig-calculate-angle-from-ref-angle-q1" width="50%">
             <latex-image>
               \begin{tikzpicture}[scale=2]
-              \draw[&lt;-&gt;] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-              \draw[&lt;-&gt;] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+              \draw[stealth-stealth] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+              \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[above]{\(y\)};
               \draw (0,0) circle (1);
               \filldraw[blue] (1,0) circle(1pt);
               \filldraw[blue] (60:1) circle(1pt);
               \draw[line width=2pt,blue] (0,0) -- (1,0);
               \draw[line width=2pt,blue] (0,0) -- (60:1);
-              \draw[-&gt;] (0:0.4) arc (0:60:0.4) node[midway, right,xshift=0.05] {\(t=t'\)};
+              \draw[-stealth] (0:0.4) arc (0:60:0.4) node[midway, right,xshift=0.05] {\(t=t'\)};
               \end{tikzpicture}
             </latex-image>
           </image>
@@ -542,16 +542,16 @@
           <image xml:id="fig-calculate-angle-from-ref-angle-q2" width="50%">
             <latex-image>
               \begin{tikzpicture}[scale=1.75]
-              \draw[&lt;-&gt;] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-              \draw[&lt;-&gt;] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+              \draw[stealth-stealth] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+              \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[above]{\(y\)};
               \draw (0,0) circle (1);
               \filldraw[blue] (1,0) circle(1pt);
               \filldraw[blue] (120:1) circle(1pt);
               \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0);
               \draw[line width=2pt,blue] (0,0) -- (1,0);
               \draw[line width=2pt,blue] (0,0) -- (120:1);
-              \draw[-&gt;] (0:0.4) arc (0:120:0.4) node[midway, right,xshift=0.2] {\(t\)};
-              \draw[-&gt;] (180:0.4) arc (180:120:0.4) node[midway, left,xshift=-0.1] {\(t'\)};
+              \draw[-stealth] (0:0.4) arc (0:120:0.4) node[midway, right,xshift=0.2] {\(t\)};
+              \draw[-stealth] (180:0.4) arc (180:120:0.4) node[midway, left,xshift=-0.1] {\(t'\)};
               \end{tikzpicture}
             </latex-image>
           </image>
@@ -567,16 +567,16 @@
           <image xml:id="fig-calculate-angle-from-ref-angle-q3" width="50%">
             <latex-image>
               \begin{tikzpicture}[scale=1.75]
-              \draw[&lt;-&gt;] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-              \draw[&lt;-&gt;] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+              \draw[stealth-stealth] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+              \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[above]{\(y\)};
               \draw (0,0) circle (1);
               \filldraw[blue] (1,0) circle(1pt);
               \filldraw[blue] (240:1) circle(1pt);
               \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0);
               \draw[line width=2pt,blue] (0,0) -- (1,0);
               \draw[line width=2pt,blue] (0,0) -- (240:1);
-              \draw[-&gt;] (0:0.3) arc (0:240:0.3) node[midway, left,xshift=-0.1] {\(t\)};
-              \draw[-&gt;] (180:0.6) arc (180:240:0.6) node[midway, left,xshift=-0.1] {\(t'\)};
+              \draw[-stealth] (0:0.3) arc (0:240:0.3) node[midway, left,xshift=-0.1] {\(t\)};
+              \draw[-stealth] (180:0.6) arc (180:240:0.6) node[midway, left,xshift=-0.1] {\(t'\)};
               \end{tikzpicture}
             </latex-image>
           </image>
@@ -590,15 +590,15 @@
           <image xml:id="fig-calculate-angle-from-ref-angle-q4" width="50%">
             <latex-image>
               \begin{tikzpicture}[scale=1.75]
-              \draw[&lt;-&gt;] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-              \draw[&lt;-&gt;] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+              \draw[stealth-stealth] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+              \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[above]{\(y\)};
               \draw (0,0) circle (1);
               \filldraw[blue] (1,0) circle(1pt);
               \filldraw[blue] (300:1) circle(1pt);
               \draw[line width=2pt,blue] (0,0) -- (1,0);
               \draw[line width=2pt,blue] (0,0) -- (300:1);
-              \draw[-&gt;] (0:0.3) arc (0:300:0.3) node[midway, left,xshift=-0.1] {\(t\)};
-              \draw[-&gt;] (360:0.6) arc (360:300:0.6) node[midway, right,xshift=0.1] {\(t'\)};
+              \draw[-stealth] (0:0.3) arc (0:300:0.3) node[midway, left,xshift=-0.1] {\(t\)};
+              \draw[-stealth] (360:0.6) arc (360:300:0.6) node[midway, right,xshift=0.1] {\(t'\)};
               \end{tikzpicture}
             </latex-image>
           </image>
@@ -610,8 +610,8 @@
       <image xml:id="reference-angle-radians" width="75%">
         <latex-image>
         \begin{tikzpicture}[scale=1.25]
-        \draw[&lt;-&gt;] (-2,0)--(2,0) node[right]{\(x\)};
-        \draw[&lt;-&gt;] (0,-2)--(0,2) node[above]{\(y\)};
+        \draw[stealth-stealth] (-2,0)--(2,0) node[right]{\(x\)};
+        \draw[stealth-stealth] (0,-2)--(0,2) node[above]{\(y\)};
         \node at (1,1) [ align=center] {I \\ \(t=t'=\frac{a\pi}{b}\)};
         \node at (-1,1) [ align=center]{II \\ \(t=\frac{(b-a)\pi}{b}\)};
         \node at (-1,-1) [ align=center] {III \\ \(t=\frac{(b+a)\pi}{b}\)};
@@ -635,14 +635,14 @@
         <image xml:id="fig-angle-pi6" width="50%">
           <latex-image> 
             \begin{tikzpicture}[scale=1.75]
-            \draw[&lt;-&gt;] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
-            \draw[&lt;-&gt;] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
+            \draw[stealth-stealth] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
+            \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
             \draw (0,0) circle (1); 
             \filldraw[blue] (1,0) circle(1pt); 
             \filldraw[blue] (60:1) circle(1pt); 
             \draw[line width=2pt,blue] (0,0) -- (1,0); 
             \draw[line width=2pt,blue] (0,0) -- (60:1); 
-            \draw[-&gt;] (0:0.4) arc (0:60:0.4) node[midway, right,xshift=0.05] {\(\frac{\pi}{6}\)};
+            \draw[-stealth] (0:0.4) arc (0:60:0.4) node[midway, right,xshift=0.05] {\(\frac{\pi}{6}\)};
             \end{tikzpicture} 
           </latex-image>
         </image>
@@ -660,15 +660,15 @@
           <image xml:id="fig-angle-pi6-q2" width="50%">
             <latex-image>
               \begin{tikzpicture}[scale=1.75]
-              \draw[&lt;-&gt;] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-              \draw[&lt;-&gt;] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
+              \draw[stealth-stealth] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+              \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
               \draw (0,0) circle (1); 
               \filldraw[blue] (1,0) circle(1pt); 
               \filldraw[blue] (150:1) circle(1pt); \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); 
               \draw[line width=2pt,blue] (0,0) -- (1,0); 
               \draw[line width=2pt,blue] (0,0) -- (150:1); 
-              \draw[-&gt;] (0:0.4) arc (0:150:0.4) node[midway, right,xshift=0.2] {\(\frac{5\pi}{6}\)}; 
-              \draw[-&gt;] (180:0.4) arc (180:150:0.4) node[midway, left,xshift=-0.25,yshift=0.1] {\(\frac{\pi}{6}\)};
+              \draw[-stealth] (0:0.4) arc (0:150:0.4) node[midway, right,xshift=0.2] {\(\frac{5\pi}{6}\)}; 
+              \draw[-stealth] (180:0.4) arc (180:150:0.4) node[midway, left,xshift=-0.25,yshift=0.1] {\(\frac{\pi}{6}\)};
               \end{tikzpicture} 
             </latex-image>
           </image>
@@ -693,15 +693,15 @@
           <image xml:id="fig-angle-pi6-q3" width="50%">
             <latex-image>
               \begin{tikzpicture}[scale=1.75]
-              \draw[&lt;-&gt;] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
-              \draw[&lt;-&gt;] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+              \draw[stealth-stealth] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
+              \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[above]{\(y\)};
               \draw (0,0) circle (1); \filldraw[blue] (1,0) circle(1pt); 
               \filldraw[blue] (210:1) circle(1pt); 
               \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); 
               \draw[line width=2pt,blue] (0,0) -- (1,0); 
               \draw[line width=2pt,blue] (0,0) -- (210:1); 
-              \draw[-&gt;] (0:0.3) arc (0:210:0.3) node[midway, left,xshift=-0.1] {\(\frac{7\pi}{6}\)}; 
-              \draw[-&gt;] (180:0.6) arc (180:210:0.6) node[midway, left,xshift=-0.1,yshift=-0.1] {\(\frac{\pi}{6}\)};
+              \draw[-stealth] (0:0.3) arc (0:210:0.3) node[midway, left,xshift=-0.1] {\(\frac{7\pi}{6}\)}; 
+              \draw[-stealth] (180:0.6) arc (180:210:0.6) node[midway, left,xshift=-0.1,yshift=-0.1] {\(\frac{\pi}{6}\)};
               \end{tikzpicture} 
             </latex-image>
           </image>
@@ -726,15 +726,15 @@
           <image xml:id="fig-angle-pi6-q4" width="50%">
             <latex-image> 
               \begin{tikzpicture}[scale=1.75]
-              \draw[&lt;-&gt;] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
-              \draw[&lt;-&gt;] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
+              \draw[stealth-stealth] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
+              \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
               \draw (0,0) circle (1); 
               \filldraw[blue] (1,0) circle(1pt); 
               \filldraw[blue] (330:1) circle(1pt); 
               \draw[line width=2pt,blue] (0,0) -- (1,0); 
               \draw[line width=2pt,blue] (0,0) -- (330:1); 
-              \draw[-&gt;] (0:0.3) arc (0:330:0.3) node[midway, left,xshift=0.1,yshift=0.2] {\(\frac{11\pi}{6}\)}; 
-              \draw[-&gt;] (360:0.6) arc (360:330:0.6) node[midway, right,xshift=0.1,yshift=-0.1] {\(\frac{\pi}{6}\)};
+              \draw[-stealth] (0:0.3) arc (0:330:0.3) node[midway, left,xshift=0.1,yshift=0.2] {\(\frac{11\pi}{6}\)}; 
+              \draw[-stealth] (360:0.6) arc (360:330:0.6) node[midway, right,xshift=0.1,yshift=-0.1] {\(\frac{\pi}{6}\)};
               \end{tikzpicture} 
             </latex-image>
           </image>
@@ -754,14 +754,14 @@
         <image xml:id="fig-angle-45" width="50%">
           <latex-image>
             \begin{tikzpicture}[scale=1.75]
-            \draw[&lt;-&gt;] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
-            \draw[&lt;-&gt;] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
+            \draw[stealth-stealth] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
+            \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
             \draw (0,0) circle (1); 
             \filldraw[blue] (1,0) circle(1pt); 
             \filldraw[blue] (45:1) circle(1pt); 
             \draw[line width=2pt,blue] (0,0) -- (1,0); 
             \draw[line width=2pt,blue] (0,0) -- (45:1); 
-            \draw[-&gt;] (0:0.4) arc (0:45:0.4) node[midway, right,xshift=0.05] {\(45^{\circ}\)};
+            \draw[-stealth] (0:0.4) arc (0:45:0.4) node[midway, right,xshift=0.05] {\(45^{\circ}\)};
             \end{tikzpicture} 
           </latex-image>
         </image>
@@ -779,15 +779,15 @@
           <image xml:id="fig-angle-45-q2" width="50%">
             <latex-image> 
               \begin{tikzpicture}[scale=1.75]
-              \draw[&lt;-&gt;] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
-              \draw[&lt;-&gt;] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
+              \draw[stealth-stealth] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
+              \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
               \draw (0,0) circle (1); \filldraw[blue] (1,0) circle(1pt); 
               \filldraw[blue] (135:1) circle(1pt); 
               \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); 
               \draw[line width=2pt,blue] (0,0) -- (1,0); 
               \draw[line width=2pt,blue] (0,0) -- (135:1); 
-              \draw[-&gt;] (0:0.4) arc (0:135:0.4) node[midway, right,xshift=0.1] {\(135^{\circ}\)}; 
-              \draw[-&gt;] (180:0.4) arc (180:135:0.4) node[midway, left,xshift=-0.0,yshift=0.1] {\(45^{\circ}\)};
+              \draw[-stealth] (0:0.4) arc (0:135:0.4) node[midway, right,xshift=0.1] {\(135^{\circ}\)}; 
+              \draw[-stealth] (180:0.4) arc (180:135:0.4) node[midway, left,xshift=-0.0,yshift=0.1] {\(45^{\circ}\)};
               \end{tikzpicture} 
             </latex-image>
           </image>
@@ -805,16 +805,16 @@
           </p>
           <image xml:id="fig-angle-45-q3" width="50%">
             <latex-image> \begin{tikzpicture}[scale=1.75]
-              \draw[&lt;-&gt;] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
-              \draw[&lt;-&gt;] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
+              \draw[stealth-stealth] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
+              \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
               \draw (0,0) circle (1); 
               \filldraw[blue] (1,0) circle(1pt); 
               \filldraw[blue] (225:1) circle(1pt); 
               \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); 
               \draw[line width=2pt,blue] (0,0) -- (1,0); 
               \draw[line width=2pt,blue] (0,0) -- (225:1); 
-              \draw[-&gt;] (0:0.3) arc (0:225:0.3) node[midway, left,xshift=-0.0] {\(225^{\circ}\)}; 
-              \draw[-&gt;] (180:0.5) arc (180:225:0.5) node[midway, left,xshift=0.0,yshift=-0.0] {\(45^{\circ}\)};
+              \draw[-stealth] (0:0.3) arc (0:225:0.3) node[midway, left,xshift=-0.0] {\(225^{\circ}\)}; 
+              \draw[-stealth] (180:0.5) arc (180:225:0.5) node[midway, left,xshift=0.0,yshift=-0.0] {\(45^{\circ}\)};
               \end{tikzpicture} 
             </latex-image>
           </image>
@@ -833,13 +833,13 @@
           <image xml:id="fig-angle-45-q4" width="50%">
             <latex-image> 
               \begin{tikzpicture}[scale=1.75]
-              \draw[&lt;-&gt;] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
-              \draw[&lt;-&gt;] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1); 
+              \draw[stealth-stealth] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
+              \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[above]{\(y\)}; \draw (0,0) circle (1); 
               \filldraw[blue] (1,0) circle(1pt); 
               \filldraw[blue] (315:1) circle(1pt); 
               \draw[line width=2pt,blue] (0,0) -- (1,0); \draw[line width=2pt,blue] (0,0) -- (315:1); 
-              \draw[-&gt;] (0:0.3) arc (0:315:0.3) node[midway, left,xshift=0.0,yshift=0.0] {\(315^{\circ}\)}; 
-              \draw[-&gt;] (360:0.5) arc (360:315:0.5) node[midway, right,xshift=0.05,yshift=-0.0] {\(45^{\circ}\)};
+              \draw[-stealth] (0:0.3) arc (0:315:0.3) node[midway, left,xshift=0.0,yshift=0.0] {\(315^{\circ}\)}; 
+              \draw[-stealth] (360:0.5) arc (360:315:0.5) node[midway, right,xshift=0.05,yshift=-0.0] {\(45^{\circ}\)};
               \end{tikzpicture} 
             </latex-image>
           </image>
@@ -858,15 +858,15 @@
     <image xml:id="fig-using-ref-angles" width="75%">
       <latex-image>
         \begin{tikzpicture}[scale=3]
-        \draw[&lt;-&gt;] (-1.2,0)--(1.2,0) node[right]{\(x\)};
-        \draw[&lt;-&gt;] (0,-1.2)--(0,1.2) node[right]{\(y\)};
+        \draw[stealth-stealth] (-1.2,0)--(1.2,0) node[right]{\(x\)};
+        \draw[stealth-stealth] (0,-1.2)--(0,1.2) node[right]{\(y\)};
         \draw (0,0) circle (1);
         \filldraw[blue] (1,0) circle(1pt);
         \filldraw[blue] (150:1) circle(1pt) node [left] {\(P\)};
         \draw[blue] (0,0) -- (1,0);
         \draw[blue] (0,0) -- (150:1) node[midway,above] {\(r\)};
-        \draw[-&gt;] (0:0.4) arc (0:150:0.4) node[midway, right,xshift=0.2] {\(\theta\)};
-        \draw[-&gt;] (180:0.4) arc (180:150:0.4) node[midway, left,xshift=-0.1] {\(\theta'\)};
+        \draw[-stealth] (0:0.4) arc (0:150:0.4) node[midway, right,xshift=0.2] {\(\theta\)};
+        \draw[-stealth] (180:0.4) arc (180:150:0.4) node[midway, left,xshift=-0.1] {\(\theta'\)};
         \end{tikzpicture}
       </latex-image>
     </image>
@@ -883,9 +883,9 @@
     <image xml:id="fig-using-ref-angles2" width="95%">
       <latex-image>
         \begin{tikzpicture}[scale=3]
-        \draw[&lt;-] (-1.15,0)--(-0.866025403784,0);
-        \draw[-&gt;] (0.866025403784,0)--(1.15,0) node[right]{\(x\)};
-        \draw[&lt;-&gt;] (0,-1.15)--(0,1.15) node[right]{\(y\)};
+        \draw[stealth-] (-1.15,0)--(-0.866025403784,0);
+        \draw[-stealth] (0.866025403784,0)--(1.15,0) node[right]{\(x\)};
+        \draw[stealth-stealth] (0,-1.15)--(0,1.15) node[right]{\(y\)};
         \draw (0,0) circle (1);
         \filldraw[blue] (30:1) circle(1pt) node[right] {\(P'(x',y')\)};
         \filldraw[blue] (150:1) circle(1pt) node [left] {\(P(x,y)\)};
@@ -896,8 +896,8 @@
         \draw[blue,dashed] (0,0) -- (0.866025403784,0) node[midway,below] {\(x'\)};
         \draw[blue,dashed] (30:1) -- (0.866025403784,0) node[midway,left] {\(y'\)};
         \draw[blue,dashed] (150:1) -- (-0.866025403784,0) node[midway,right] {\(y\)};
-        \draw[-&gt;] (0:0.4) arc (0:30:0.4) node[midway, right,xshift=0.0] {\(\theta'\)};
-        \draw[-&gt;] (0:0.2) arc (0:150:0.2) node[midway, above,xshift=0.1] {\(\theta\)};
+        \draw[-stealth] (0:0.4) arc (0:30:0.4) node[midway, right,xshift=0.0] {\(\theta'\)};
+        \draw[-stealth] (0:0.2) arc (0:150:0.2) node[midway, above,xshift=0.1] {\(\theta\)};
         \end{tikzpicture}
       </latex-image>
     </image>
@@ -976,14 +976,14 @@
                 <image xml:id="exmp-6trig-ref-ang-210" width="75%">
                   <latex-image> 
                     \begin{tikzpicture}[scale=2]
-                    \draw[&lt;-&gt;] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[&lt;-&gt;] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
+                    \draw[stealth-stealth] (-1.25,0)--(1.25,0) node[right]{\(x\)}; \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
                     \draw (0,0) circle (1); 
                     \filldraw[blue] (1,0) circle(1pt); 
                     \filldraw[blue] (210:1) circle(1pt) node [left] {\(P\)}; 
                     \draw[blue] (0,0) -- (1,0); 
                     \draw[blue] (0,0) -- (210:1) node[midway,below] {\(r\)}; 
-                    \draw[-&gt;] (0:0.2) arc (0:210:0.2) node[midway, right,xshift=0.2] {\(\theta\)}; 
-                    \draw[-&gt;] (180:0.4) arc (180:210:0.4) node[midway, left,xshift=-0.1] {\(\theta'\)};
+                    \draw[-stealth] (0:0.2) arc (0:210:0.2) node[midway, right,xshift=0.2] {\(\theta\)}; 
+                    \draw[-stealth] (180:0.4) arc (180:210:0.4) node[midway, left,xshift=-0.1] {\(\theta'\)};
                     \end{tikzpicture} 
                   </latex-image>
                 </image>
@@ -1032,15 +1032,15 @@
               <image xml:id="exmp-6trig-ref-ang-7pi4" width="75%">
                 <latex-image>
                   \begin{tikzpicture}[scale=2]
-                  \draw[&lt;-&gt;] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
-                  \draw[&lt;-&gt;] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
+                  \draw[stealth-stealth] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
+                  \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
                   \draw (0,0) circle (1); \filldraw (0.4,0) circle(1pt); 
                   \filldraw[blue] (1,0) circle(1pt); 
                   \filldraw[blue] (315:1) circle(1pt) node [right] {\(P\)}; 
                   \draw[blue] (0,0) -- (1,0); 
                   \draw[blue] (0,0) -- (315:1) node[midway,below] {\(r\)}; 
-                  \draw[-&gt;] (0:0.4) arc (0:315:0.4) node[midway, left,xshift=-0.1] {\(\theta\)}; 
-                  \draw[-&gt;] (360:0.4) arc (360:315:0.4) node[midway, right,xshift=0.1] {\(\theta'\)};
+                  \draw[-stealth] (0:0.4) arc (0:315:0.4) node[midway, left,xshift=-0.1] {\(\theta\)}; 
+                  \draw[-stealth] (360:0.4) arc (360:315:0.4) node[midway, right,xshift=0.1] {\(\theta'\)};
                   \end{tikzpicture} 
                 </latex-image>
             </image>
@@ -1089,13 +1089,13 @@
                 <image width="75%">
                   <latex-image> 
                     \begin{tikzpicture}[scale=2] 
-                    \draw[&lt;-&gt;] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
-                    \draw[&lt;-&gt;] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
+                    \draw[stealth-stealth] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
+                    \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
                     \draw (0,0) circle (1); \filldraw[blue] (1,0) circle(1pt); 
                     \filldraw[blue] (120:1) circle(1pt) node [left] {\(P\)}; 
                     \draw[blue] (0,0) -- (1,0); \draw[blue] (0,0) -- (120:1); 
-                    \draw[-&gt;,domain=0:20.94395,variable=\t,smooth,samples=75] plot ({\t r}: {0.1+0.03*\t}); 
-                    \node at (60:0.8) {\(\theta\)}; \draw[-&gt;] (180:0.7283) arc (180:120:0.7283) node[midway, left,xshift=-0.0] {\(\theta'\)}; 
+                    \draw[-stealth,domain=0:20.94395,variable=\t,smooth,samples=75] plot ({\t r}: {0.1+0.03*\t}); 
+                    \node at (60:0.8) {\(\theta\)}; \draw[-stealth] (180:0.7283) arc (180:120:0.7283) node[midway, left,xshift=-0.0] {\(\theta'\)}; 
                     \filldraw[blue] (120:0.162831853072) circle(1pt); 
                     \filldraw[blue] (120:0.351327412287) circle(1pt); 
                     \filldraw[blue] (120:0.539822971503) circle(1pt); 
@@ -1596,8 +1596,8 @@
       <image xml:id="fig-def_pythagorean-identity-proof" width="75%">
         <latex-image>
         \begin{tikzpicture}[scale=3.5]
-        \draw[&lt;-&gt;] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-        \draw[&lt;-&gt;] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+        \draw[stealth-stealth] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+        \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[above]{\(y\)};
         \draw (0,0) circle (1);
         \draw[line width=2pt] (0,0) -- (45:1) node[midway,above,yshift=0.2] {\(r\)};
         \draw[line width=2pt] (0,0) -- (0.707106781187,0) node[midway,below,yshift=-0.1] {\(x=\cos \theta\)};
@@ -1690,8 +1690,8 @@
       <image xml:id="fig-even-odd-property-proof" width="75%">
         <latex-image>
         \begin{tikzpicture}[scale=3.5]
-        \draw[&lt;-&gt;] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-        \draw[&lt;-&gt;] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+        \draw[stealth-stealth] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+        \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[above]{\(y\)};
         \draw (0,0) circle (1);
         \node at (-0.1,-0.1) {0};
         \draw[line width=2pt,blue] (0,0) -- (1,0) node[black,below,xshift=-0.2]{1};
@@ -1701,8 +1701,8 @@
         \filldraw (40:1) circle(1pt);
         \filldraw (0,0) circle(1pt);
         \filldraw (1,0) circle(1pt);
-        \draw[-&gt;, line width=1.25pt] (0:0.3) arc (0:-40:0.3) node[midway, right,yshift=0.1,xshift=0.1] {\(-\theta\)};
-        \draw[-&gt;, line width=1.25pt] (0:0.4) arc (0:40:0.4) node[midway, right,xshift=0.1] {\(\theta\)};\end{tikzpicture}
+        \draw[-stealth, line width=1.25pt] (0:0.3) arc (0:-40:0.3) node[midway, right,yshift=0.1,xshift=0.1] {\(-\theta\)};
+        \draw[-stealth, line width=1.25pt] (0:0.4) arc (0:40:0.4) node[midway, right,xshift=0.1] {\(\theta\)};\end{tikzpicture}
         </latex-image>
       </image>
       <p>
@@ -1843,13 +1843,13 @@
       <image xml:id="exer-6trig-P-86" width="75%">
         <latex-image>
           \begin{tikzpicture}[scale=1.5]
-          \draw[&lt;-&gt;] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-          \draw[&lt;-&gt;] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+          \draw[stealth-stealth] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+          \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[above]{\(y\)};
           \filldraw[blue] (1,0) circle(1pt);
           \filldraw[blue] (126.869897646:1.2) circle(1pt);
           \draw[blue] (0,0) -- (1,0);
           \draw[blue] (0,0) -- (126.869897646:1.2) node[left]{P(-8,6)};
-          \draw[-&gt;] (0:0.7) arc (0:126.869897646:0.7) node[midway,above] {\(\theta\)};
+          \draw[-stealth] (0:0.7) arc (0:126.869897646:0.7) node[midway,above] {\(\theta\)};
           \end{tikzpicture}
         </latex-image>
       </image>
@@ -1865,13 +1865,13 @@
       <image xml:id="exer-6trig-P6-7" width="75%">
         <latex-image>
           \begin{tikzpicture}[scale=1.5]
-          \draw[&lt;-&gt;] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-          \draw[&lt;-&gt;] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+          \draw[stealth-stealth] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+          \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[above]{\(y\)};
           \filldraw[blue] (1,0) circle(1pt);
           \filldraw[blue] (310.601294645:1.2) circle(1pt);
           \draw[blue] (0,0) -- (1,0);
           \draw[blue] (0,0) -- (310.601294645:1.2) node[right]{P(6,-7)};
-          \draw[-&gt;] (0:0.7) arc (0:310.601294645:0.7) node[midway,left] {\(\theta\)};\end{tikzpicture}
+          \draw[-stealth] (0:0.7) arc (0:310.601294645:0.7) node[midway,left] {\(\theta\)};\end{tikzpicture}
         </latex-image>
       </image>
     </statement>

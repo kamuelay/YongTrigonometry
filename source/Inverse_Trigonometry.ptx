@@ -154,10 +154,10 @@
           <latex-image>
           \begin{tikzpicture}
           \draw [fill=orange, opacity=0.2] (0,-1.25) rectangle (1.25,1.25);
-          \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-          \draw[&lt;->] (0,-1.25)--(0,1.25) node[right,yshift=-5]{\(y\)};
+          \draw[stealth-stealth] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+          \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[right,yshift=-5]{\(y\)};
           \draw (0,0) circle (1cm);
-          \draw[&lt;->,line width=1pt,blue] (-90:0.4cm) arc (-90:90:0.4cm);
+          \draw[stealth-stealth,line width=1pt,blue] (-90:0.4cm) arc (-90:90:0.4cm);
           \node at (0.25,0.15) {\(\theta\)};
           \end{tikzpicture}
           </latex-image>
@@ -190,10 +190,10 @@
           <latex-image>
           \begin{tikzpicture}
           \draw [fill=orange, opacity=0.2] (-1.25,0) rectangle (1.25,1.25);
-          \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-          \draw[&lt;->] (0,-1.25)--(0,1.25) node[right,yshift=-5]{\(y\)};
+          \draw[stealth-stealth] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+          \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[right,yshift=-5]{\(y\)};
           \draw (0,0) circle (1cm);
-          \draw[&lt;->,line width=1pt,blue] (0:0.4cm) arc (0:180:0.4cm);
+          \draw[stealth-stealth,line width=1pt,blue] (0:0.4cm) arc (0:180:0.4cm);
           \node at (0.25,0.15) {\(\theta\)};
           \end{tikzpicture}
           </latex-image>
@@ -226,10 +226,10 @@
           <latex-image>
           \begin{tikzpicture}
           \draw [fill=orange, opacity=0.2] (0,-1.25) rectangle (1.25,1.25);
-          \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-          \draw[&lt;->] (0,-1.25)--(0,1.25) node[right,yshift=-5]{\(y\)};
+          \draw[stealth-stealth] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+          \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[right,yshift=-5]{\(y\)};
           \draw (0,0) circle (1cm);
-          \draw[&lt;->,line width=1pt,blue] (-90:0.4cm) arc (-90:90:0.4cm);
+          \draw[stealth-stealth,line width=1pt,blue] (-90:0.4cm) arc (-90:90:0.4cm);
           \node at (0.25,0.15) {\(\theta\)};
           \end{tikzpicture}
           </latex-image>
@@ -246,7 +246,7 @@
           xticklabel style={black},
           xlabel=\(x\),
           ylabel=\(y\)]
-          \addplot[domain=-1.37:1.37,samples=200,magenta,line width=1pt,&lt;->]{tan(deg(x))}node[left,pos=0.8,font=]{\(f(x)=\tan x\)};
+          \addplot[domain=-1.37:1.37,samples=200,magenta,line width=1pt,stealth-stealth]{tan(deg(x))}node[left,pos=0.8,font=]{\(f(x)=\tan x\)};
           \end{axis}
           \end{tikzpicture}
           </latex-image>
@@ -851,8 +851,8 @@
                 yticklabel style={black},
                 xlabel=$x$,
                 ylabel=$y$]
-            \addplot[domain=-1.164:1.164,samples=200,cyan,line width=1pt,&lt;->]{tan(deg(x))}node[right,pos=1,font=\footnotesize,left,xshift=10,yshift=4]{$f(x)=\tan x$};
-            \addplot[domain=-pi/2-0.75:pi/2+0.75,samples=200,orange,line width=1pt,&lt;->]{atan(x)/180*pi}node[right,pos=0.9,yshift=-5,font=\footnotesize]{$f(x)=\tan^{-1} x$};
+            \addplot[domain=-1.164:1.164,samples=200,cyan,line width=1pt,stealth-stealth]{tan(deg(x))}node[right,pos=1,font=\footnotesize,left,xshift=10,yshift=4]{$f(x)=\tan x$};
+            \addplot[domain=-pi/2-0.75:pi/2+0.75,samples=200,orange,line width=1pt,stealth-stealth]{atan(x)/180*pi}node[right,pos=0.9,yshift=-5,font=\footnotesize]{$f(x)=\tan^{-1} x$};
             \draw[dashed] (-pi/2-1,-pi/2) -- (pi/2+1,-pi/2) node[right] {$y=-\frac{\pi}{2}$};
             \draw[dashed] (-pi/2-1,pi/2) -- (pi/2+1,pi/2) node[right] {$y=\frac{\pi}{2}$};
             \draw[dashed] (-pi/2,pi/2+1) -- (-pi/2,-pi/2-1) node[below] {$x=-\frac{\pi}{2}$};
@@ -987,8 +987,8 @@
           <image xml:id="examp-composite-inverse-sin-sin">
             <latex-image>
               \begin{tikzpicture}[scale=2]
-                  \draw[&lt;->] (-1.15,0)--(1.15,0) node[right]{$x$};
-                  \draw[&lt;->] (0,-1.15)--(0,1.15) node[above]{$y$};
+                  \draw[stealth-stealth] (-1.15,0)--(1.15,0) node[right]{$x$};
+                  \draw[stealth-stealth] (0,-1.15)--(0,1.15) node[above]{$y$};
                   \draw (0,0) circle (1);
                   \draw[line width=0.5pt,blue] (0,0) -- (129:1);
                   \draw[line width=0.5pt,blue] (0,0) -- (51:1);
@@ -1049,8 +1049,8 @@
           <image xml:id="examp-composite-cos-inverse-tan">
             <latex-image>
               \begin{tikzpicture}[scale=1]
-                \draw[->] (-0.15,0)--(3.5,0) node[right]{$x$};
-                \draw[->] (0,-0.15)--(0,4.15) node[above]{$y$};
+                \draw[-stealth] (-0.15,0)--(3.5,0) node[right]{$x$};
+                \draw[-stealth] (0,-0.15)--(0,4.15) node[above]{$y$};
                 \draw[dashed] (3,0) -- (3,4);
                 \draw[line width=1pt,blue] (0,0) -- (3,4);
                 \draw[-stealth] (0:0.75) arc (0:53.1301023542:0.75) node[midway, right,xshift=-0.1] {$\theta$};
@@ -1090,8 +1090,8 @@
           <image xml:id="examp-composite-sin-inverse-cos">
             <latex-image>
               \begin{tikzpicture}[scale=1]
-                \draw[->] (-3.5,0)--(1.15,0) node[right]{$x$};
-                \draw[->] (0,-0.15)--(0,8) node[above]{$y$};
+                \draw[-stealth] (-3.5,0)--(1.15,0) node[right]{$x$};
+                \draw[-stealth] (0,-0.15)--(0,8) node[above]{$y$};
                 \draw[dashed] (-3,0) -- (-3,7.4161984871);
                 \draw[line width=1pt,blue] (0,0) -- (-3,{sqrt(55)});
                 \draw[-stealth] (0:0.75) arc (0:112.024312837:0.75) node[midway, right,xshift=5] {$\theta$};
@@ -2096,7 +2096,7 @@
                 yticklabel style={black},
                 xlabel=$x$,
                 ylabel=$y$]
-                \addplot[domain=-10:10,samples=200,cyan,&lt;->,line width=1pt]{atan(x)*pi/180+pi/2};
+                \addplot[domain=-10:10,samples=200,cyan,stealth-stealth,line width=1pt]{atan(x)*pi/180+pi/2};
               \end{axis}
               \end{tikzpicture}
             </latex-image>
