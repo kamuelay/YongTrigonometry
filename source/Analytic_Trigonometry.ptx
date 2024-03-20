@@ -8,7 +8,7 @@
   </introduction>
   <xi:include  href="trigonometric_identities.ptx"/>
   <xi:include  href="sum_and_difference_formulas.ptx"/>
-  <xi:include  href="double-angle_and_half-angle_formulas.ptx"/>
+  <!-- <xi:include  href="double-angle_and_half-angle_formulas.ptx"/> -->
   <xi:include  href="product-to-sum_and_sum-to-product_formulas.ptx"/>
   <xi:include  href="trigonometric_equations.ptx"/>
 </chapter>
