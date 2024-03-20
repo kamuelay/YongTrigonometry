@@ -3,8 +3,58 @@
   <title>Sum and Difference Formulas</title>
   <introduction>
     <p>
-      *need intro/motivation, need examples, and expand on the math*
+      Recall in <xref ref="right_triangle_trigonometry"/> that we used right triangle trigonometry to calculate how far a waʻa has deviated from its course given the angle of deviation. 
+      Talk about from Right Triangle Trig when you sail for one day for 120 nautical miles and deviate from your course by two houses (11.25*2=22.5deg), you will have deviated from your course by 45.9 NM. You would think that if you deviated by twice the angle, then you will be off course by twice the distance. However, if you instead deviated by 4 houses (4*11.25=45 deg), you will have deviated by 84.9 NM.
+      However, if you deviate by twice the angle, the distance you deviate from your course is not simply twice the distance. In this section, we will the formulas for evaluating trigonometric where the angles are given by adding and subtracting angles.
+      <me>
+        \mbox{deviation}=(120\mbox{ NM})\cdot\sin(\theta)
+      </me>
+      
     </p>
+    <image xml:id="upwind" width="75%">
+      <latex-image>
+        \begin{tikzpicture}[x=3.25cm,y=3.25cm]
+        \draw (0,0) circle (1);
+        \draw[->] (0,0) -- (157:1.5);
+        \draw[-&gt;] (0,0) -- (23:1.2);
+        \fill[blue,fill opacity=0.1] (157:1) -- (0,0) -- (23:1) arc (23:157:1);
+        \filldraw[blue] (0,0) circle(1pt);
+        \draw[&lt;-&gt;] (23:0.3) arc (23:90:0.3)
+        node[midway,above,xshift=0.3,yshift=-0.]{$67^{\circ}$};
+        \draw[&lt;-&gt;] (90:0.3) arc (90:157:0.3)
+        node[midway,above,xshift=-0.3,yshift=-0.]{$67^{\circ}$};
+        \draw[&lt;-&gt;] (-1.2,0) -- (1.2,0);
+        \draw[&lt;-] (0,-1.15) -- (0,1);
+        \draw[-&gt;] (0,0) -- (-45:1.2);
+        \draw[-&gt;] (0,0) -- (225:1.2);
+        \draw[line width=2pt,-&gt;] (0,0.9) -- (0,0.5);
+        \draw[line width=2pt,-&gt;] (0.2,0.9) -- (0.2,0.5);
+        \draw[line width=2pt,-&gt;] (-0.2,0.9) -- (-0.2,0.5);
+        \node at (0,-1.2) {Downwind};
+        \node at (0,1.2) {Upwind};
+        \draw ([shift=(23:0.6)]0,0) pic {waa1-top={waacolor}{-67}{0.03}};
+        \draw ([shift=(157:0.6)]0,0) pic {waa1-top={waacolor}{67}{0.03}};
+        \draw ([shift=(0:0.6)]0,0) pic {waa1-top={waacolor}{-90}{0.03}};
+        \draw ([shift=(180:0.6)]0,0) pic {waa1-top={waacolor}{90}{0.03}};
+        \draw ([shift=(-45:0.6)]0,0) pic {waa1-top={waacolor}{-135}{0.03}};
+        \draw ([shift=(225:0.6)]0,0) pic {waa1-top={waacolor}{135}{0.03}};
+        \draw ([shift=(-90:0.6)]0,0) pic {waa1-top={waacolor}{180}{0.03}};
+        \end{tikzpicture}
+      </latex-image>
+    </image>
+    <image xml:id="deviation-sum-formula" width="100%">
+      <latex-image>
+        \begin{tikzpicture}[scale=7]
+        \node[above,yshift=2] at (0,0) {start};
+        \node[above right] at (11.25:1.2) {end};
+        \draw[line width=2pt,-stealth] (0,0) -- (11.25:1.2) node[midway,sloped,above] {120 NM};
+        \draw[dashed] (0,0) -- (1.17694233648,0) node[midway,below,yshift=-0.1] {reference course};
+        \draw[dashed] (1.17694233648,0) -- (1.17694233648,0.234108386419) node[midway,right,xshift=0.1] {deviation};
+        \draw ([shift=(0:0.3)]0,0) arc (0:11.25:0.3) node[midway,right,xshift=12,yshift=2] {$\theta$};
+        \draw ([shift=(11.25:-0.1)]0,0) pic {waa-top={waacolor}{-78.75}{0.1}};
+        \draw (1.17694233648-0.06,0) -- (1.11694233648,0.06) -- (1.17694233648,0.06);\end{tikzpicture}
+      </latex-image>
+    </image>
     <p>
       use example that introduces this section compute the angle for 15 degrees
     </p>
@@ -123,6 +173,7 @@
         </md>
       </p>
     </proof>
+    
     <example>
       <statement>
         <p>
@@ -401,4 +452,11 @@
       </solution>
     </example>
   </subsection>
+  <subsection xml:id="subsec-tbd-delete">
+    <title>tbd delete</title>
+    <p>
+      Core Standard: HSF.TF.C.9 Prove the addition and subtraction formulas for sine, cosine, and tangent and use them to solve problems.
+    </p>
+  </subsection>
+
 </section>
