@@ -3,14 +3,7 @@
   <title>Analytic Trigonometry</title>
   <introduction>
     <p>
-      At this point we know how to calculate the values of functions at specials angles.
-      For example,
-      if we sail in the direction of the house of Manu Ko&#699;olau (NW), the angle is <m>45^{\circ}</m>.
-      We can complete this triangle because we know the values of the right triangle for <m>45^{\circ}</m>.
-      However, we do not know the exact value for the house of L&#257;
-      (<m>22.5^{\circ}</m>).
-      In this chapter,
-      we will learn tools to help us further utilize the trigonometry in the previous chapters.
+      At this point we know how to calculate the values of functions at specials angles. For example, if we sail in the direction of the house of Manu Koʻolau (NW), the angle is <m>45^{\circ}</m>. We can complete this triangle because we know the values of the right triangle for <m>45^{\circ}</m>. However, we do not know the exact value for the house of Lā (<m>22.5^{\circ}</m>). In this chapter, we will learn tools to help us  further utilize the trigonometry in the previous chapters.
     </p>
   </introduction>
   <xi:include  href="trigonometric_identities.ptx"/>

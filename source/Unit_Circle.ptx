@@ -30,8 +30,8 @@
     <image xml:id="fig-unit-circle-with-arc-length" width="60%">
       <latex-image>
         \begin{tikzpicture}[scale=2.25]
-        \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-        \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+        \draw[&lt;-&gt;] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+        \draw[&lt;-&gt;] (0,-1.25)--(0,1.25) node[above]{\(y\)};
         \draw (0,0) circle (1);r
         \draw (0,0) -- (57.3:1);
         \draw ([shift=(0:0.25)]0,0) arc (0:57.3:0.25) node[midway,right,xshift=0.1] {\(t\)};
@@ -46,10 +46,10 @@
     <image xml:id="fig-unit-circle-with-arc-length-wrapped" width="55%">
       <latex-image>
         \begin{tikzpicture}[scale=2.25]
-        \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-        \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+        \draw[&lt;-&gt;] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+        \draw[&lt;-&gt;] (0,-1.25)--(0,1.25) node[above]{\(y\)};
         \draw (0,0) circle (1);
-        \draw[->] (1,0) -- (1,1.25);
+        \draw[-&gt;] (1,0) -- (1,1.25);
         \draw[blue] (0.95,0.25) -- (1.05,0.25);
         \draw[blue] (0.95,0.5) -- (1.05,0.5);
         \draw[blue] (0.95,0.75) -- (1.05,0.75);
@@ -115,8 +115,8 @@
         <image xml:id="fig-def-trig-function-unit-circle" width="75%">
           <latex-image>
             \begin{tikzpicture}[scale=3.5]
-            \draw[&lt;->] (-1.15,0)--(1.15,0) node[right]{\(x\)};
-            \draw[&lt;->] (0,-1.15)--(0,1.15) node[above]{\(y\)};
+            \draw[&lt;-&gt;] (-1.15,0)--(1.15,0) node[right]{\(x\)};
+            \draw[&lt;-&gt;] (0,-1.15)--(0,1.15) node[above]{\(y\)};
             \draw (0,0) circle (1);
             \draw[line width=2pt] (0,0) -- (45:1) node[midway,above,yshift=5] {1};
             \draw[line width=2pt] (0,0) -- (0.707106781187,0) node[midway,below,yshift=-2] {\(\cos t\)};
@@ -188,8 +188,8 @@
           <image xml:id="exmp-6trig-0" width="55%">
             <latex-image>
               \begin{tikzpicture}[scale=2.25]
-              \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-              \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+              \draw[&lt;-&gt;] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+              \draw[&lt;-&gt;] (0,-1.25)--(0,1.25) node[above]{\(y\)};
               \draw (0,0) circle (1);
               \draw[blue,line width=2pt] (0,0) -- (1,0) node[black,above right,yshift=0.1] {P(1,0)};
               \filldraw[blue,line width=2pt] (0:1) circle(1pt);
@@ -221,11 +221,11 @@
           </p>
           <image xml:id="exmp-6trig-3pi2" width="55%">
             <latex-image> \begin{tikzpicture}[scale=2.25]
-              \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-              \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+              \draw[&lt;-&gt;] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+              \draw[&lt;-&gt;] (0,-1.25)--(0,1.25) node[above]{\(y\)};
               \draw (0,0) circle (1);
               \draw[blue,line width=2pt] (0,0) -- (0,-1) node[black,below right,xshift=0.1] {P(0,-1)};
-              \filldraw[blue,line width=2pt] (270:1) circle(1pt); \draw[->] (0:0.3) arc (0:270:0.3);
+              \filldraw[blue,line width=2pt] (270:1) circle(1pt); \draw[-&gt;] (0:0.3) arc (0:270:0.3);
               \end{tikzpicture}
             </latex-image>
           </image>
@@ -262,11 +262,11 @@
           </p>
           <image xml:id="exmp-6trig-5pi" width="55%">
             <latex-image> \begin{tikzpicture}[scale=2.25]
-              \draw[&lt;->] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-              \draw[&lt;->] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+              \draw[&lt;-&gt;] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+              \draw[&lt;-&gt;] (0,-1.25)--(0,1.25) node[above]{\(y\)};
               \draw (0,0) circle (1);
               \draw[blue,line width=2pt] (0,0) -- (-1,0) node[black,above left,xshift=-0.1] {P(-1,0)};
-              \filldraw[blue,line width=2pt] (180:1) circle(1pt); \draw [->,domain=0:5*pi,variable=\t,smooth,samples=75] plot ({\t r}: {0.1+0.03*\t});
+              \filldraw[blue,line width=2pt] (180:1) circle(1pt); \draw [-&gt;,domain=0:5*pi,variable=\t,smooth,samples=75] plot ({\t r}: {0.1+0.03*\t});
               \end{tikzpicture}
             </latex-image>
           </image>
@@ -297,8 +297,8 @@
         <image xml:id="fig-1st-quad-triangle-45" width="55%">
           <latex-image>
             \begin{tikzpicture}[scale=4.5]
-            \draw[->] (0,0)--(1.1,0) node[right]{\(x\)};
-            \draw[->] (0,0)--(0,1.1) node[above]{\(y\)};
+            \draw[-&gt;] (0,0)--(1.1,0) node[right]{\(x\)};
+            \draw[-&gt;] (0,0)--(0,1.1) node[above]{\(y\)};
             \draw (0:1) arc (0:90:1);
             \draw[line width=2pt] (0,0) -- (45:1) node[midway,above,yshift=5] {1};
             \draw[line width=2pt] (0,0) -- (0.707106781187,0) node[midway,below,yshift=-3] {\(x\)};
@@ -355,8 +355,8 @@
         <image xml:id="fig-1st-quad-triangle-30" width="75%">
           <latex-image>
           \begin{tikzpicture}[scale=3.25]
-          \draw[&lt;->] (-1.15,0)--(1.15,0) node[right]{\(x\)};
-          \draw[&lt;->] (0,-1.15)--(0,1.15) node[above]{\(y\)};
+          \draw[&lt;-&gt;] (-1.15,0)--(1.15,0) node[right]{\(x\)};
+          \draw[&lt;-&gt;] (0,-1.15)--(0,1.15) node[above]{\(y\)};
           \draw (0,0) circle (1);
           \draw[line width=2pt] (0,0) -- (30:1) node[midway,above,yshift=0.2] {1};
           \draw[line width=2pt] (0,0) -- (-30:1) node[midway,below,yshift=-0.1] {1};
@@ -422,8 +422,8 @@
         <image xml:id="fig-30-60-90-sides" width="55%">
           <latex-image>
             \begin{tikzpicture}[scale=4.5]
-            \draw[->] (0,0)--(1.1,0) node[right]{\(x\)};
-            \draw[->] (0,0)--(0,1.1) node[left]{\(y\)};
+            \draw[-&gt;] (0,0)--(1.1,0) node[right]{\(x\)};
+            \draw[-&gt;] (0,0)--(0,1.1) node[left]{\(y\)};
             \draw (0:1) arc (0:90:1);
             \draw[line width=2pt] (0,0) -- (30:1) node[midway,above,yshift=0.2] {1};
             \draw[line width=2pt] (0,0) -- (0.866025403784,0) node[midway,below,yshift=-0.1] {\(\frac{\sqrt{3}}{2}\)};
@@ -454,8 +454,8 @@
       <image xml:id="fig-60-60-60-sides" width="55%">
         <latex-image>
           \begin{tikzpicture}[scale=5.5]
-          \draw[->] (0,0)--(1.05,0) node[below]{\(x\)};
-          \draw[->] (0,0)--(0,1.05) node[above]{\(y\)};
+          \draw[-&gt;] (0,0)--(1.05,0) node[below]{\(x\)};
+          \draw[-&gt;] (0,0)--(0,1.05) node[above]{\(y\)};
           \draw (0:1) arc (0:90:1);
           \draw[line width=2pt] (0,0) -- (60:1) node[midway,left,yshift=2] {1};
           \draw[line width=2pt] (0,0) -- (1,0);
@@ -712,8 +712,8 @@
       <image xml:id="fig-unit-circle-symmetry">
         <latex-image>
           \begin{tikzpicture}[scale=5]
-          \draw[&lt;->] (-1.1,0)--(1.1,0) node[below]{\(x\)};
-          \draw[&lt;->] (0,-1.1)--(0,1.1) node[above]{\(y\)};
+          \draw[&lt;-&gt;] (-1.1,0)--(1.1,0) node[below]{\(x\)};
+          \draw[&lt;-&gt;] (0,-1.1)--(0,1.1) node[above]{\(y\)};
           \node[below] at (0,-1.1) {};
           \draw (0,0) circle (1);
           \filldraw[black] (60:1) circle(1pt);
@@ -736,11 +736,11 @@
       <image xml:id="fig-star-compass-symmetry">
         <latex-image>
           \begin{tikzpicture}[scale=5]
-          \draw[&lt;->] (-1.1,0)--(1.1,0);
+          \draw[&lt;-&gt;] (-1.1,0)--(1.1,0);
           \node[rotate=-90] at (1.15,0) {Hikina};
           \node[rotate=90] at (-1.15,0) {Komohana};
           \node[below] at (0,-1.1) {Hema};
-          \draw[&lt;->] (0,-1.1)--(0,1.1) node[above]{ʻĀkau};
+          \draw[&lt;-&gt;] (0,-1.1)--(0,1.1) node[above]{ʻĀkau};
           \draw (0,0) circle (1);
           \filldraw[black] (60:1) circle(1pt);
           \filldraw[black] (120:1) circle(1pt);
@@ -776,8 +776,8 @@
     <image xml:id="fig-unit-circle-symmetry-xy" width="50%">
       <latex-image>
         \begin{tikzpicture}[scale=5]
-        \draw[&lt;->] (-1.1,0)--(1.1,0) node[below]{\(x\)};
-        \draw[&lt;->] (0,-1.1)--(0,1.1) node[above]{\(y\)};
+        \draw[&lt;-&gt;] (-1.1,0)--(1.1,0) node[below]{\(x\)};
+        \draw[&lt;-&gt;] (0,-1.1)--(0,1.1) node[above]{\(y\)};
         \draw (0,0) circle (1);
         \filldraw[black] (60:1) circle(1pt);
         \filldraw[black] (30:1) circle(1pt);
@@ -792,8 +792,8 @@
     <image xml:id="fig-unit-circle-symmetry-30-60" width="50%">
       <latex-image>
         \begin{tikzpicture}[scale=5]
-        \draw[&lt;->] (-1.1,0)--(1.1,0) node[right]{\(x\)};
-        \draw[&lt;->] (0,-1.1)--(0,1.1) node[above]{\(y\)};
+        \draw[&lt;-&gt;] (-1.1,0)--(1.1,0) node[right]{\(x\)};
+        \draw[&lt;-&gt;] (0,-1.1)--(0,1.1) node[above]{\(y\)};
         \draw (0,0) circle (1);
         \filldraw[black] (60:1) circle(1pt);
         \filldraw[black] (30:1) circle(1pt);
@@ -813,9 +813,9 @@
         <latex-image>
           \begin{tikzpicture}[scale=5]
           \draw[&lt;-] (-1.15,0) -- (-0.7,0);
-          \draw[->] (0.7,0) -- (1.15,0) node[below] {\(x\)};
+          \draw[-&gt;] (0.7,0) -- (1.15,0) node[below] {\(x\)};
           \draw[&lt;-] (0,-1.15) -- (0,-0.7);
-          \draw[->] (0,0.7) -- (0,1.15) node[left] {\(y\)};
+          \draw[-&gt;] (0,0.7) -- (0,1.15) node[left] {\(y\)};
           \draw (0,-0.5) -- (0,0.5);
           \draw (-0.5,0) -- (0.5,0);
           \draw[thick] (0,0) circle(1);
@@ -859,9 +859,9 @@
         <latex-image>
           \begin{tikzpicture}[scale=5]
           \draw[&lt;-] (-1.15,0) -- (-0.7,0);
-          \draw[->] (0.7,0) -- (1.15,0) node[below] {\(x\)};
+          \draw[-&gt;] (0.7,0) -- (1.15,0) node[below] {\(x\)};
           \draw[&lt;-] (0,-1.15) -- (0,-0.7);
-          \draw[->] (0,0.7) -- (0,1.15) node[left] {\(y\)};
+          \draw[-&gt;] (0,0.7) -- (0,1.15) node[left] {\(y\)};
           \draw (0,-0.5) -- (0,0.5);
           \draw (-0.5,0) -- (0.5,0);
           \draw[thick] (0,0) circle(1);
@@ -913,9 +913,9 @@
         <latex-image>
           \begin{tikzpicture}[scale=5]
           \draw[&lt;-] (-1.15,0) -- (-0.92,0);
-          \draw[->] (0.92,0) -- (1.15,0) node[below] {\(x\)};
+          \draw[-&gt;] (0.92,0) -- (1.15,0) node[below] {\(x\)};
           \draw[&lt;-] (0,-1.15) -- (0,-0.92);
-          \draw[->] (0,0.92) -- (0,1.15) node[left] {\(y\)};
+          \draw[-&gt;] (0,0.92) -- (0,1.15) node[left] {\(y\)};
           \draw (0,0) -- (0.4,0);
           \draw (0.7,0) -- (0.8,0);
           \draw[thick] (0,0) circle(1);

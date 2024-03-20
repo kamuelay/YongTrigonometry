@@ -5,25 +5,25 @@
     *needs motivation/intro, needs examples,
     and needs to expand on the math*
   </p>
-  <p>
-    \begin{mybox}[Product-to-Sum Formulas]
-        <idx><h>product-to-sum formulas</h></idx>
-    <me>
-      \sin\alpha\cos\beta=\frac{1}{2}[\sin(\alpha+\beta)+\sin(\alpha-\beta)]
-    </me>
-    <me>
-      \cos\alpha\sin\beta=\frac{1}{2}[\sin(\alpha+\beta)-\sin(\alpha-\beta)]
-    </me>
-    <me>
-      \cos\alpha\cos\beta=\frac{1}{2}[\cos(\alpha+\beta)+\cos(\alpha-\beta)]
-    </me>
-    <me>
-      \sin\alpha\sin\beta=\frac{1}{2}[\cos(\alpha-\beta)-\cos(\alpha+\beta)]
-    </me>
-  </p>
-  <p>
-    \end{mybox}
-  </p>
+  <definition xml:id="def-product-to-sum">
+    <title>Product-to-Sum Formulas</title><idx><h>product-to-sum formulas</h></idx>
+    <statement>
+      <p>
+        <me>
+          \sin\alpha\cos\beta=\frac{1}{2}[\sin(\alpha+\beta)+\sin(\alpha-\beta)]
+        </me>
+        <me>
+          \cos\alpha\sin\beta=\frac{1}{2}[\sin(\alpha+\beta)-\sin(\alpha-\beta)]
+        </me>
+        <me>
+          \cos\alpha\cos\beta=\frac{1}{2}[\cos(\alpha+\beta)+\cos(\alpha-\beta)]
+        </me>
+        <me>
+          \sin\alpha\sin\beta=\frac{1}{2}[\cos(\alpha-\beta)-\cos(\alpha+\beta)]
+        </me>
+      </p>
+    </statement>
+  </definition>
   <proof>
     <p>
       We add the sum and difference formula for cosine:
@@ -97,19 +97,19 @@
       </p>
     </solution>
   </example>
-  <p>
-    \begin{mybox}[Sum-to-Product Formula]
-        <idx><h>sum-to-product formula</h></idx>
-    <md>
-      <mrow>\sin\alpha+\sin\beta\amp =\amp 2\sin\left(\frac{\alpha+\beta}{2}\right)\cos\left(\frac{\alpha-\beta}{2}\right)</mrow>
-      <mrow>\sin\alpha-\sin\beta\amp =\amp 2\cos\left(\frac{\alpha+\beta}{2}\right)\sin\left(\frac{\alpha-\beta}{2}\right)</mrow>
-      <mrow>\cos\alpha+\cos\beta\amp =\amp 2\cos\left(\frac{\alpha+\beta}{2}\right)\cos\left(\frac{\alpha-\beta}{2}\right)</mrow>
-      <mrow>\cos\alpha-\cos\beta\amp =\amp -2\sin\left(\frac{\alpha+\beta}{2}\right)\sin\left(\frac{\alpha-\beta}{2}\right)</mrow>
-    </md>
-  </p>
-  <p>
-    \end{mybox}
-  </p>
+  <definition xml:id="def-sum-to-product">
+    <title>Sum-to-Product Formula</title><idx><h>sum-to-product formula</h></idx>
+    <statement>
+      <p>
+        <md>
+          <mrow>\sin\alpha+\sin\beta\amp =\amp 2\sin\left(\frac{\alpha+\beta}{2}\right)\cos\left(\frac{\alpha-\beta}{2}\right)</mrow>
+          <mrow>\sin\alpha-\sin\beta\amp =\amp 2\cos\left(\frac{\alpha+\beta}{2}\right)\sin\left(\frac{\alpha-\beta}{2}\right)</mrow>
+          <mrow>\cos\alpha+\cos\beta\amp =\amp 2\cos\left(\frac{\alpha+\beta}{2}\right)\cos\left(\frac{\alpha-\beta}{2}\right)</mrow>
+          <mrow>\cos\alpha-\cos\beta\amp =\amp -2\sin\left(\frac{\alpha+\beta}{2}\right)\sin\left(\frac{\alpha-\beta}{2}\right)</mrow>
+        </md>
+      </p>
+    </statement>
+  </definition>
   <proof>
     <p>
       We first let <m>\alpha=\frac{u+v}{2}</m> and <m>\beta=\frac{u-v}{2}</m>.
