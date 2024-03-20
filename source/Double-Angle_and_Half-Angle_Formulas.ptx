@@ -424,9 +424,11 @@
         </p>
       </statement>
       <solution>
-        <me>
-          \tan\frac{\theta}{2}=\frac{1-\cos\theta}{\sin\theta}=\frac{1-\left(-\frac{12}{13}\right)}{-\frac{5}{13}}=\frac{\frac{25}{13}}{-\frac{5}{13}}=\frac{25}{13}\cdot\left(-\frac{13}{5}\right)=-5
-        </me>
+        <p>
+          <me>
+            \tan\frac{\theta}{2}=\frac{1-\cos\theta}{\sin\theta}=\frac{1-\left(-\frac{12}{13}\right)}{-\frac{5}{13}}=\frac{\frac{25}{13}}{-\frac{5}{13}}=\frac{25}{13}\cdot\left(-\frac{13}{5}\right)=-5
+          </me>
+        </p>
       </solution>
     </example>
     <p>
