@@ -3,6 +3,9 @@
   <title>Double-Angle and Half-Angle Formulas</title>
   <introduction>
     <p>
+      Change this introduction so that we discuss the Star Compass and the angles of the houses, but this time we are trying to find the x and y values. What is the value of 22.5 Save the deviation for homework.
+    </p>
+    <p>
       In <xref ref="right_triangle_trigonometry">Section</xref> we learned about <em>deviation</em> and how to calculate how far a wa&#699;a has traveled off course. For example, if a wa&#699;a traveled for one day of sailing at 5 knots  or 120 nautical miles and was off course by 2 Houses or <m>22.5^{\circ}</m>, how far have they deviated?
     </p>
     <image>
@@ -37,8 +40,8 @@
       Consider the case when the two angles are equal. We will call this angle <m>\theta</m>, so let <m>\alpha=\theta</m> and <m>\beta=\theta</m>.
       Then <xref ref="eq_double-angle1">Eq</xref> becomes
       <md>
-        <mrow>\sin(\theta+\theta)\amp =\amp \sin \theta \cos \theta + \cos \theta \sin \theta</mrow>
-        <mrow>\sin (2\theta)\amp =\amp 2\sin \theta \cos \theta</mrow>
+        <mrow>\sin(\theta+\theta)\amp = \sin \theta \cos \theta + \cos \theta \sin \theta</mrow>
+        <mrow>\sin (2\theta)\amp = 2\sin \theta \cos \theta</mrow>
       </md>
     </p>
     <p>
@@ -49,15 +52,15 @@
       <statement>
         <p>          
           <md>
-            <mrow>\sin 2\theta \amp =\amp  2\sin \theta \cos \theta</mrow>
+            <mrow>\sin 2\theta \amp =  2\sin \theta \cos \theta</mrow>
           </md>
           <md>
             <mrow>\cos 2\theta \amp  =\amp   \cos^2 \theta - \sin^2 \theta</mrow>
-            <mrow>\amp =\amp 1-2\sin^2 \theta</mrow>
-            <mrow>\amp =\amp 2\cos^2 \theta-1</mrow>
+            <mrow>\amp = 1-2\sin^2 \theta</mrow>
+            <mrow>\amp = 2\cos^2 \theta-1</mrow>
           </md>
           <md>
-            <mrow>\tan 2 \theta \amp =\amp  \frac{2\tan \theta}{1-\tan^2 \theta}</mrow>
+            <mrow>\tan 2 \theta \amp =  \frac{2\tan \theta}{1-\tan^2 \theta}</mrow>
           </md>
         </p>
       </statement>
@@ -84,8 +87,8 @@
         <image>
           <latex-image>
             \begin{tikzpicture}
-            \draw[&lt;-&gt;] (-4.5,0)--(0.5,0) node[right]{\(x\)};
-            \draw[&lt;-&gt;] (0,-0.5)--(0,3.5) node[above]{\(y\)};
+            \draw[stealth-stealth] (-4.5,0)--(0.5,0) node[right]{\(x\)};
+            \draw[stealth-stealth] (0,-0.5)--(0,3.5) node[above]{\(y\)};
             \draw[line width=1pt] (0,0) -- (-4,0) node[midway,below]{-4};
             \draw[line width=1pt] (-4,0) -- (-4,3) node[midway,left]{y};
             \draw[line width=1pt] (-4,3) -- (0,0) node[midway,above]{5};
@@ -97,10 +100,10 @@
         <p>
           Using the Pythagorean Theorem, we can solve the triangle:
           <md>
-            <mrow>(-4)^2+y^2\amp =\amp 5^2</mrow>
-            <mrow>16+y^2\amp =\amp 25</mrow>
-            <mrow>y^2\amp =\amp 9</mrow>
-            <mrow>y\amp =\amp 3</mrow>
+            <mrow>(-4)^2+y^2\amp = 5^2</mrow>
+            <mrow>16+y^2\amp = 25</mrow>
+            <mrow>y^2\amp = 9</mrow>
+            <mrow>y\amp = 3</mrow>
           </md>
         </p>
         <p>
@@ -295,8 +298,8 @@
         <image>
           <latex-image>
             \begin{tikzpicture}
-            \draw[&lt;-&gt;] (-13,0)--(1,0) node[right]{\(x\)};
-            \draw[&lt;-&gt;] (0,-6)--(0,1) node[above]{\(y\)};
+            \draw[stealth-stealth] (-13,0)--(1,0) node[right]{\(x\)};
+            \draw[stealth-stealth] (0,-6)--(0,1) node[above]{\(y\)};
             \draw[line width=1pt] (0,0) -- (-12,0) node[midway,above]{-x};
             \draw[line width=1pt] (-12,0) -- (-12,-5) node[midway,left]{-5};
             \draw[line width=1pt] (-12,-5) -- (0,0) node[midway,below]{13};
@@ -308,10 +311,10 @@
         <p>
           Using the Pythagorean Theorem, we can solve the triangle:
           <md>
-            <mrow>x^2+(-5)^2\amp =\amp 13^2</mrow>
-            <mrow>x^2+25\amp =\amp 169</mrow>
-            <mrow>x^2\amp =\amp 144</mrow>
-            <mrow>x\amp =\amp 12</mrow>
+            <mrow>x^2+(-5)^2\amp = 13^2</mrow>
+            <mrow>x^2+25\amp = 169</mrow>
+            <mrow>x^2\amp = 144</mrow>
+            <mrow>x\amp = 12</mrow>
           </md>
         </p>
         <p>
@@ -331,12 +334,12 @@
                 we first note that because <m>\frac{\theta}{2}</m> lies in Quadrant II,
                 <m>\sin\frac{\theta}{2}>0</m> so we will choose the positive (+) sign in the Half-Angle Formula:
                 <md>
-                  <mrow>\sin\frac{\theta}{2}\amp =\amp \sqrt{\frac{1-\cos\theta}{2}}</mrow>
-                  <mrow>\amp =\amp \sqrt{\frac{1-\left(-\frac{12}{13}\right)}{2}}</mrow>
-                  <mrow>\amp =\amp \sqrt{\frac{1+\frac{12}{13}}{2}}</mrow>
-                  <mrow>\amp =\amp \sqrt{\frac{\frac{13}{13}+\frac{12}{13}}{2}}</mrow>
-                  <mrow>\amp =\amp \sqrt{\frac{\frac{25}{13}}{2}}</mrow>
-                  <mrow>\amp =\amp \sqrt{\frac{25}{26}}</mrow>
+                  <mrow>\sin\frac{\theta}{2}\amp = \sqrt{\frac{1-\cos\theta}{2}}</mrow>
+                  <mrow>\amp = \sqrt{\frac{1-\left(-\frac{12}{13}\right)}{2}}</mrow>
+                  <mrow>\amp = \sqrt{\frac{1+\frac{12}{13}}{2}}</mrow>
+                  <mrow>\amp = \sqrt{\frac{\frac{13}{13}+\frac{12}{13}}{2}}</mrow>
+                  <mrow>\amp = \sqrt{\frac{\frac{25}{13}}{2}}</mrow>
+                  <mrow>\amp = \sqrt{\frac{25}{26}}</mrow>
                 </md>
               </p>
             </li>
@@ -345,12 +348,12 @@
                 Since <m>\frac{\theta}{2}</m> is in Quadrant II, we know that
                 <m>\cos\frac{\theta}{2}\lt 0</m> so we will choose the negative (-) sign in the Half-Angle Formula:
                 <md>
-                  <mrow>\cos\frac{\theta}{2}\amp =\amp -\sqrt{\frac{1+\cos\theta}{2}}</mrow>
-                  <mrow>\amp =\amp -\sqrt{\frac{1+\left(-\frac{12}{13}\right)}{2}}</mrow>
-                  <mrow>\amp =\amp -\sqrt{\frac{1-\frac{12}{13}}{2}}</mrow>
-                  <mrow>\amp =\amp -\sqrt{\frac{\frac{13}{13}-\frac{12}{13}}{2}}</mrow>
-                  <mrow>\amp =\amp -\sqrt{\frac{\frac{1}{13}}{2}}</mrow>
-                  <mrow>\amp =\amp -\sqrt{\frac{1}{26}}</mrow>
+                  <mrow>\cos\frac{\theta}{2}\amp = -\sqrt{\frac{1+\cos\theta}{2}}</mrow>
+                  <mrow>\amp = -\sqrt{\frac{1+\left(-\frac{12}{13}\right)}{2}}</mrow>
+                  <mrow>\amp = -\sqrt{\frac{1-\frac{12}{13}}{2}}</mrow>
+                  <mrow>\amp = -\sqrt{\frac{\frac{13}{13}-\frac{12}{13}}{2}}</mrow>
+                  <mrow>\amp = -\sqrt{\frac{\frac{1}{13}}{2}}</mrow>
+                  <mrow>\amp = -\sqrt{\frac{1}{26}}</mrow>
                 </md>
               </p>
             </li>
@@ -359,14 +362,14 @@
                 Since <m>\frac{\theta}{2}</m> is in Quadrant II, we know that
                 <m>\tan\frac{\theta}{2}\lt 0</m> so we will choose the negative (-) sign in the Half-Angle Formula:
                 <md>
-                  <mrow>\tan\frac{\theta}{2}\amp =\amp -\sqrt{\frac{1-\cos\theta}{1+\cos\theta}}</mrow>
-                  <mrow>\amp =\amp -\sqrt{\frac{1-\left(-\frac{12}{13}\right)}{1+\left(-\frac{12}{13}\right)}}</mrow>
-                  <mrow>\amp =\amp -\sqrt{\frac{1+\frac{12}{13}}{1-\frac{12}{13}}}</mrow>
-                  <mrow>\amp =\amp -\sqrt{\frac{\frac{13}{13}+\frac{12}{13}}{\frac{13}{13}-\frac{12}{13}}}</mrow>
-                  <mrow>\amp =\amp -\sqrt{\frac{\frac{25}{13}}{\frac{1}{13}}}</mrow>
-                  <mrow>\amp =\amp -\sqrt{\frac{25}{13}\cdot\frac{13}{1}}</mrow>
-                  <mrow>\amp =\amp -\sqrt{25}</mrow>
-                  <mrow>\amp =\amp -5</mrow>
+                  <mrow>\tan\frac{\theta}{2}\amp = -\sqrt{\frac{1-\cos\theta}{1+\cos\theta}}</mrow>
+                  <mrow>\amp = -\sqrt{\frac{1-\left(-\frac{12}{13}\right)}{1+\left(-\frac{12}{13}\right)}}</mrow>
+                  <mrow>\amp = -\sqrt{\frac{1+\frac{12}{13}}{1-\frac{12}{13}}}</mrow>
+                  <mrow>\amp = -\sqrt{\frac{\frac{13}{13}+\frac{12}{13}}{\frac{13}{13}-\frac{12}{13}}}</mrow>
+                  <mrow>\amp = -\sqrt{\frac{\frac{25}{13}}{\frac{1}{13}}}</mrow>
+                  <mrow>\amp = -\sqrt{\frac{25}{13}\cdot\frac{13}{1}}</mrow>
+                  <mrow>\amp = -\sqrt{25}</mrow>
+                  <mrow>\amp = -5</mrow>
                 </md>
               </p>
             </li>
@@ -692,4 +695,15 @@ Use the sum formula,
         </p>
       </statement>
     </exercise>
+
+
+  <exercises>
+    <exercise>
+      <statement>
+        <p>
+          In an exercise group, calculate the exact values of cos(22.5) and tan(22.5). Check your answers with the decimal approximation in the star compass in Chapter 1.
+        </p>
+      </statement>
+    </exercise>
+  </exercises>
 </section>
