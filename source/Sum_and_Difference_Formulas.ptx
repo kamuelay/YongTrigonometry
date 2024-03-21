@@ -3,45 +3,16 @@
   <title>Sum and Difference Formulas</title>
   <introduction>
     <p>
-      Recall in <xref ref="right_triangle_trigonometry"/> that we used right triangle trigonometry to calculate how far a waʻa has deviated from its course given the angle of deviation. 
-      Talk about from Right Triangle Trig when you sail for one day for 120 nautical miles and deviate from your course by two houses (11.25*2=22.5deg), you will have deviated from your course by 45.9 NM. You would think that if you deviated by twice the angle, then you will be off course by twice the distance. However, if you instead deviated by 4 houses (4*11.25=45 deg), you will have deviated by 84.9 NM.
-      However, if you deviate by twice the angle, the distance you deviate from your course is not simply twice the distance. In this section, we will the formulas for evaluating trigonometric where the angles are given by adding and subtracting angles.
-      <me>
-        \mbox{deviation}=(120\mbox{ NM})\cdot\sin(\theta)
-      </me>
-      
+      In ***********
     </p>
-    <image xml:id="upwind" width="75%">
-      <latex-image>
-        \begin{tikzpicture}[x=3.25cm,y=3.25cm]
-        \draw (0,0) circle (1);
-        \draw[->] (0,0) -- (157:1.5);
-        \draw[-&gt;] (0,0) -- (23:1.2);
-        \fill[blue,fill opacity=0.1] (157:1) -- (0,0) -- (23:1) arc (23:157:1);
-        \filldraw[blue] (0,0) circle(1pt);
-        \draw[&lt;-&gt;] (23:0.3) arc (23:90:0.3)
-        node[midway,above,xshift=0.3,yshift=-0.]{$67^{\circ}$};
-        \draw[&lt;-&gt;] (90:0.3) arc (90:157:0.3)
-        node[midway,above,xshift=-0.3,yshift=-0.]{$67^{\circ}$};
-        \draw[&lt;-&gt;] (-1.2,0) -- (1.2,0);
-        \draw[&lt;-] (0,-1.15) -- (0,1);
-        \draw[-&gt;] (0,0) -- (-45:1.2);
-        \draw[-&gt;] (0,0) -- (225:1.2);
-        \draw[line width=2pt,-&gt;] (0,0.9) -- (0,0.5);
-        \draw[line width=2pt,-&gt;] (0.2,0.9) -- (0.2,0.5);
-        \draw[line width=2pt,-&gt;] (-0.2,0.9) -- (-0.2,0.5);
-        \node at (0,-1.2) {Downwind};
-        \node at (0,1.2) {Upwind};
-        \draw ([shift=(23:0.6)]0,0) pic {waa1-top={waacolor}{-67}{0.03}};
-        \draw ([shift=(157:0.6)]0,0) pic {waa1-top={waacolor}{67}{0.03}};
-        \draw ([shift=(0:0.6)]0,0) pic {waa1-top={waacolor}{-90}{0.03}};
-        \draw ([shift=(180:0.6)]0,0) pic {waa1-top={waacolor}{90}{0.03}};
-        \draw ([shift=(-45:0.6)]0,0) pic {waa1-top={waacolor}{-135}{0.03}};
-        \draw ([shift=(225:0.6)]0,0) pic {waa1-top={waacolor}{135}{0.03}};
-        \draw ([shift=(-90:0.6)]0,0) pic {waa1-top={waacolor}{180}{0.03}};
-        \end{tikzpicture}
-      </latex-image>
-    </image>
+      <!-- In <xref ref="right_triangle_trigonometry"/>,  -->
+
+    <p>
+      In Section ***********, we used right triangles to determine the deviation of a waʻa (canoe) from its course based on the angle of deviation. If a waʻa sails for 120 nautical miles (NM), we were able to calculate the deviation from its course using right triangles to get the equation:
+      <me>
+        \mbox{deviation} = (120\mbox{ NM})\cdot\sin(\theta)
+      </me>.        
+    </p>
     <image xml:id="deviation-sum-formula" width="100%">
       <latex-image>
         \begin{tikzpicture}[scale=7]
@@ -54,9 +25,31 @@
         \draw ([shift=(11.25:-0.1)]0,0) pic {waa-top={waacolor}{-78.75}{0.1}};
         \draw (1.17694233648-0.06,0) -- (1.11694233648,0.06) -- (1.17694233648,0.06);\end{tikzpicture}
       </latex-image>
-    </image>
+    </image>    
     <p>
-      use example that introduces this section compute the angle for 15 degrees
+      Before setting sail, a voyager studies a table listing the deviation distances corresponding to different houses of deviation. It's crucial to understand that while adding angles may yield a third angle, adding their corresponding deviations will not accurately determine the total deviation. In other words:
+      <me>
+        \sin(\alpha) + \sin(\beta) \neq \sin(\alpha + \beta)
+      </me>
+      for some angles of deviation <m>\alpha</m> and <m>\beta</m>.
+    </p>
+    <p>
+      To illustrate this, let's calculate the deviation distances for 1, 2, and 3 houses respectively. Using the given formula, we have:
+      <md>
+        <mrow>120 \sin(1 \mbox{ house}) \amp = 120 \sin(11.25^{\circ}) \approx 23.4 \mbox{ NM}</mrow>
+        <mrow>120 \sin(2 \mbox{ houses})\amp = 120 \sin(22.5^{\circ}) \approx 45.9 \mbox{ NM}</mrow>
+        <mrow>120 \sin(3 \mbox{ houses}) \amp = 120 \sin(33.75^{\circ}) \approx 66.7 \mbox{ NM}</mrow>
+      </md>
+    </p>
+    <p>
+      However,
+      <me>
+        120 \sin(1 \mbox{ house}) + 120 \sin(2 \mbox{ houses}) \approx 23.4 + 45.9 \mbox{ NM} \approx 69.3 \mbox{ NM}
+      </me>,
+      which is not 66.7 NM.        
+    </p>
+    <p>
+      hese calculations demonstrate that the deviation distances for multiple houses cannot be determined by simply adding individual deviations, highlighting the importance of understanding trigonometric principles for accurate navigation. In this section, we will explore formulas for the addition and subtraction of angles in trigonometric functions.
     </p>
   </introduction>
   <subsection>
@@ -66,8 +59,8 @@
       <statement>
         <p>
           <md>
-            <mrow>\cos(\alpha+\beta)\amp =\amp \cos\alpha\cos\beta-\sin\alpha\sin\beta</mrow>
-            <mrow>\cos(\alpha-\beta)\amp =\amp \cos\alpha\cos\beta+\sin\alpha\sin\beta</mrow>
+            <mrow>\cos(\alpha+\beta)\amp = \cos\alpha\cos\beta-\sin\alpha\sin\beta</mrow>
+            <mrow>\cos(\alpha-\beta)\amp = \cos\alpha\cos\beta+\sin\alpha\sin\beta</mrow>
           </md>
         </p>
       </statement>
@@ -85,35 +78,35 @@
       <image xml:id="fig-cos-diff-proof1">
         <latex-image>
           \begin{tikzpicture}[scale=3]
-          \draw[&lt;-&gt;,] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-          \draw[&lt;-&gt;,] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+          \draw[stealth-stealth] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+          \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[above]{\(y\)};
           \draw (0,0) circle (1cm);
           \node at (-0.1,-0.1) {\(O\)};
-          \draw[line width=2pt,blue] (0,0) -- (115:1) node[black,above,xshift=-0.2cm]{\(Q\)};
-          \draw[line width=2pt,blue] (0,0) -- (40:1) node[black,right,xshift=0.2cm]{\(P\)};
+          \draw[line width=2pt,blue] (0,0) -- (115:1) node[black,above,xshift=-0.2cm]{\(Q(\cos\alpha,\sin\alpha)\)};
+          \draw[line width=2pt,blue] (0,0) -- (40:1) node[black,right,xshift=0.2cm]{\(P(\cos\beta,\sin\beta)\)};
           \draw[line width=2pt,red] (115:1) -- (40:1);
           \filldraw (115:1cm) circle(1pt);
           \filldraw (40:1cm) circle(1pt);
           \filldraw (0,0) circle(1pt);
-          \draw[-&gt;,, line width=1.25pt] (0:0.2cm) arc (0:115:0.2cm) node[midway, above,yshift=0.1cm,xshift=-0.1cm] {\(\alpha\)};
-          \draw[-&gt;,, line width=1.25pt] (0:0.4cm) arc (0:40:0.4cm) node[midway, right,xshift=0.1cm] {\(\beta\)};
-          \draw[-&gt;,, line width=1.25pt] (40:0.5cm) arc (40:115:0.5cm) node[midway, above,xshift=0.2cm] {\(\alpha-\beta\)};
+          \draw[-stealth, line width=1.25pt] (0:0.2cm) arc (0:115:0.2cm) node[midway, above,yshift=0.1cm,xshift=-0.1cm] {\(\alpha\)};
+          \draw[-stealth, line width=1.25pt] (0:0.4cm) arc (0:40:0.4cm) node[midway, right,xshift=0.1cm] {\(\beta\)};
+          \draw[-stealth, line width=1.25pt] (40:0.5cm) arc (40:115:0.5cm) node[midway, above,xshift=0.2cm] {\(\alpha-\beta\)};
           \end{tikzpicture}
         </latex-image>
       </image>
       <p>
         We use the Distance Formula to calculate the distance between <m>P</m> and <m>Q</m> to get
         <md>
-          <mrow>d(P,Q)\amp =\amp \sqrt{(\cos\alpha-\cos\beta)^2+(\sin\alpha-\sin\beta)^2}</mrow>
-          <mrow>\amp =\amp \sqrt{\cos^2\alpha-2\cos\alpha\cos\beta+\cos^2\beta+\sin^2\alpha-2\sin\alpha\sin\beta+\sin^2\beta}</mrow>
-          <mrow>\amp =\amp \sqrt{(\cos^2\alpha+\sin^2\alpha)+(\cos^2\beta+\sin^2\beta)-2\cos\alpha\cos\beta-2\sin\alpha\sin\beta}</mrow>
+          <mrow>d(P,Q)\amp = \sqrt{(\cos\alpha-\cos\beta)^2+(\sin\alpha-\sin\beta)^2}</mrow>
+          <mrow>\amp = \sqrt{\cos^2\alpha-2\cos\alpha\cos\beta+\cos^2\beta+\sin^2\alpha-2\sin\alpha\sin\beta+\sin^2\beta}</mrow>
+          <mrow>\amp = \sqrt{(\cos^2\alpha+\sin^2\alpha)+(\cos^2\beta+\sin^2\beta)-2\cos\alpha\cos\beta-2\sin\alpha\sin\beta}</mrow>
         </md>
       </p>
       <p>
         Then by the Pythagorean Identify,
         <md>
-          <mrow>d(P,Q)\amp =\amp \sqrt{1+1-2\cos\alpha\cos\beta-2\sin\alpha\sin\beta}</mrow>
-          <mrow>\amp =\amp \sqrt{2-2\cos\alpha\cos\beta-2\sin\alpha\sin\beta}</mrow>
+          <mrow>d(P,Q) \amp = \sqrt{1+1-2\cos\alpha\cos\beta-2\sin\alpha\sin\beta}</mrow>
+          <mrow>\amp = \sqrt{2-2\cos\alpha\cos\beta-2\sin\alpha\sin\beta}</mrow>
         </md>
       </p>
       <p>
@@ -124,38 +117,38 @@
       <image xml:id="fig-cos-diff-proof2">
         <latex-image>
           \begin{tikzpicture}[scale=3]
-          \draw[&lt;-&gt;,] (-1.25,0)--(1.25,0) node[right]{\(x\)};
-          \draw[&lt;-&gt;,] (0,-1.25)--(0,1.25) node[above]{\(y\)};
-          \draw (0,0) circle (1cm);
+          \draw[stealth-stealth] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+          \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+          \draw (0,0) circle (1);
           \node at (-0.1,-0.1) {\(O\)};
-          \draw[line width=2pt,blue] (0,0) -- (1,0) node[black,above,xshift=0.3cm,yshift=0.1cm]{\(A\)};
-          \draw[line width=2pt,blue] (0,0) -- (75:1) node[black,above,xshift=0.2cm,yshift=0.1cm]{\(B\)};
+          \draw[line width=2pt,blue] (0,0) -- (1,0) node[black,above,xshift=15,yshift=1]{\(A(1,0)\)};
+          \draw[line width=2pt,blue] (0,0) -- (75:1) node[black,right,xshift=4,yshift=2]{\(B(\cos(\alpha-\beta),\sin(\alpha-\beta))\)};
           \draw[line width=2pt,red] (1,0) -- (75:1);
           \filldraw (1cm,0) circle(1pt);
           \filldraw (75:1cm) circle(1pt);
           \filldraw (0,0) circle(1pt);
-          \draw[-&gt;,line width=1.25pt] (0:0.2cm) arc (0:75:0.2cm) node[midway, right,xshift=0.1cm] {\(\alpha-\beta\)};
+          \draw[-stealth,line width=1.25pt] (0:0.2cm) arc (0:75:0.2cm) node[midway, right,xshift=0.1cm] {\(\alpha-\beta\)};
           \end{tikzpicture}
         </latex-image>
       </image>
       <p>
         The distance between <m>A</m> and <m>B</m> is
         <md>
-          <mrow>d(A,B)\amp =\amp \sqrt{(\cos(\alpha-\beta)-1)^2+(\sin(\alpha-\beta)-0)^2}</mrow>
-          <mrow>\amp =\amp \sqrt{\cos^2(\alpha-\beta)-2\cos(\alpha-\beta)+1+\sin^2(\alpha-\beta)}</mrow>
-          <mrow>\amp =\amp \sqrt{(\cos^2(\alpha-\beta)+\sin^2(\alpha-\beta))-2\cos(\alpha-\beta)+1}</mrow>
-          <mrow>\amp =\amp \sqrt{1-2\cos(\alpha-\beta)+1}</mrow>
-          <mrow>\amp =\amp \sqrt{2-2\cos(\alpha-\beta)}</mrow>
+          <mrow>d(A,B)\amp = \sqrt{(\cos(\alpha-\beta)-1)^2+(\sin(\alpha-\beta)-0)^2}</mrow>
+          <mrow>\amp = \sqrt{\cos^2(\alpha-\beta)-2\cos(\alpha-\beta)+1+\sin^2(\alpha-\beta)}</mrow>
+          <mrow>\amp = \sqrt{(\cos^2(\alpha-\beta)+\sin^2(\alpha-\beta))-2\cos(\alpha-\beta)+1}</mrow>
+          <mrow>\amp = \sqrt{1-2\cos(\alpha-\beta)+1}</mrow>
+          <mrow>\amp = \sqrt{2-2\cos(\alpha-\beta)}</mrow>
         </md>
       </p>
       <p>
         Note that since <m>OP</m>, <m>OQ</m>, <m>OA</m>, and <m>OB</m> are lines from the center to points on the unit circle,
         they are congruent and have length of 1. Also note that <m>\angle POB=\angle AOB=\alpha-\beta</m>. Then since two sides and the included angle of <m>\Delta OPQ</m> and <m>\Delta OAB</m> are equivalent, we can conclude by side-angle-side theorem (SAS) that the two triangles are congruent. Thus, <m>d(PQ)=d(AB)</m>. Substituting our results for <m>d(P,Q)</m> and <m>d(A,B)</m> we get
         <md>
-          <mrow>d(PQ)\amp =\amp d(AB)</mrow>
-          <mrow>\sqrt{2-2\cos\alpha\cos\beta-2\sin\alpha\sin\beta}\amp =\amp \sqrt{2-2\cos(\alpha-\beta)}</mrow>
-          <mrow>2-2\cos\alpha\cos\beta-2\sin\alpha\sin\beta\amp =\amp 2-2\cos(\alpha-\beta)</mrow>
-          <mrow>-2\cos\alpha\cos\beta-2\sin\alpha\sin\beta\amp =\amp -2\cos(\alpha-\beta)</mrow>
+          <mrow>d(PQ)\amp = d(AB)</mrow>
+          <mrow>\sqrt{2-2\cos\alpha\cos\beta-2\sin\alpha\sin\beta}\amp = \sqrt{2-2\cos(\alpha-\beta)}</mrow>
+          <mrow>2-2\cos\alpha\cos\beta-2\sin\alpha\sin\beta\amp = 2-2\cos(\alpha-\beta)</mrow>
+          <mrow>-2\cos\alpha\cos\beta-2\sin\alpha\sin\beta\amp = -2\cos(\alpha-\beta)</mrow>
         </md>
       </p>
       <p>
@@ -167,9 +160,9 @@
       <p>
         To prove the Sum Formula for Cosine, replace <m>\beta</m> with <m>-\beta</m> in the Difference Formula and use the Even-Odd Identities where <m>\sin(-\beta)=-\sin\beta</m> and <m>\cos(-\beta)=\cos\beta</m> to get
         <md>
-          <mrow>\cos\alpha\cos(-\beta)+\sin\alpha\sin(-\beta)\amp =\amp \cos(\alpha-(-\beta))</mrow>
-          <mrow>\cos\alpha\cos(\beta)+\sin\alpha(-\sin\beta)\amp =\amp \cos(\alpha+\beta)</mrow>
-          <mrow>\cos\alpha\cos\beta-\sin\alpha\sin\beta\amp =\amp \cos(\alpha+\beta)</mrow>
+          <mrow>\cos\alpha\cos(-\beta)+\sin\alpha\sin(-\beta)\amp = \cos(\alpha-(-\beta))</mrow>
+          <mrow>\cos\alpha\cos(\beta)+\sin\alpha(-\sin\beta)\amp = \cos(\alpha+\beta)</mrow>
+          <mrow>\cos\alpha\cos\beta-\sin\alpha\sin\beta\amp = \cos(\alpha+\beta)</mrow>
         </md>
       </p>
     </proof>
@@ -184,10 +177,10 @@
         <p>
           First note that <m>105^{\circ}=60^{\circ}+45^{\circ}</m>. Now, using the Sum Formula for Cosine,
           <md>
-            <mrow>\cos105^{\circ}\amp =\amp \cos(60^{\circ}+45^{\circ})</mrow>
-            <mrow>\amp =\amp \cos60^{\circ}\cos45^{\circ}-\sin60^{\circ}\sin45^{\circ}</mrow>
-            <mrow>\amp =\amp \frac{1}{2}\cdot\frac{\sqrt{2}}{2}-\frac{\sqrt{3}}{2}\frac{\sqrt{2}}{2}</mrow>
-            <mrow>\amp =\amp \frac{1}{4}\left(\sqrt{2}-\sqrt{6}\right)</mrow>
+            <mrow>\cos105^{\circ}\amp = \cos(60^{\circ}+45^{\circ})</mrow>
+            <mrow>\amp = \cos60^{\circ}\cos45^{\circ}-\sin60^{\circ}\sin45^{\circ}</mrow>
+            <mrow>\amp = \frac{1}{2}\cdot\frac{\sqrt{2}}{2}-\frac{\sqrt{3}}{2}\frac{\sqrt{2}}{2}</mrow>
+            <mrow>\amp = \frac{1}{4}\left(\sqrt{2}-\sqrt{6}\right)</mrow>
           </md>
         </p>
       </solution>
@@ -202,9 +195,9 @@
         <p>
           Using the Difference Formula for Cosine we get
           <md>
-            <mrow>\cos\left(\frac{\pi}{4}-\frac{\pi}{6}\right)\amp =\amp \cos\frac{\pi}{4}\cos\frac{\pi}{6}+\sin\frac{\pi}{4}\sin\frac{\pi}{6}</mrow>
-            <mrow>\amp =\amp \frac{\sqrt{2}}{2}\cdot\frac{\sqrt{3}}{2}+\frac{\sqrt{2}}{2}\cdot\frac{1}{2}</mrow>
-            <mrow>\amp =\amp \frac{1}{4}\left(\sqrt{6}+\sqrt{2}\right)</mrow>
+            <mrow>\cos\left(\frac{\pi}{4}-\frac{\pi}{6}\right)\amp = \cos\frac{\pi}{4}\cos\frac{\pi}{6}+\sin\frac{\pi}{4}\sin\frac{\pi}{6}</mrow>
+            <mrow>\amp = \frac{\sqrt{2}}{2}\cdot\frac{\sqrt{3}}{2}+\frac{\sqrt{2}}{2}\cdot\frac{1}{2}</mrow>
+            <mrow>\amp = \frac{1}{4}\left(\sqrt{6}+\sqrt{2}\right)</mrow>
           </md>
         </p>
       </solution>
@@ -229,8 +222,8 @@
       <statement>
         <p>
           <md>
-            <mrow>\sin(\alpha+\beta)\amp =\amp \sin\alpha\cos\beta+\cos\alpha\sin\beta</mrow>
-            <mrow>\sin(\alpha-\beta)\amp =\amp \sin\alpha\cos\beta-\cos\alpha\sin\beta</mrow>
+            <mrow>\sin(\alpha+\beta)\amp = \sin\alpha\cos\beta+\cos\alpha\sin\beta</mrow>
+            <mrow>\sin(\alpha-\beta)\amp = \sin\alpha\cos\beta-\cos\alpha\sin\beta</mrow>
           </md>
         </p>
       </statement>
@@ -239,7 +232,7 @@
       We will prove the Sum Formula for Sine in <xref ref="sum-formula-sine-proof"/>
       and the Difference Formula can be established using the Even-Odd Identities.
     </p>
-    <example xml:id="ex-cofunction-identify-cos">
+    <example xml:id="ex-cofunction-identity-cos">
       <statement>
         <p>
           Use the Difference Formula for Sine to establish the identity <m>\cos\theta=\sin\left(\frac{\pi}{2}-\theta\right)</m>
@@ -292,7 +285,7 @@
           <latex-image>
             \begin{tikzpicture}[scale=1]
             \draw (-0.5,0)--(5.5,0) node[right]{\(x\)};
-            \draw[&lt;-&gt;,] (0,0.5)--(0,-13.5) node[below]{\(y\)};
+            \draw[stealth-stealth] (0,0.5)--(0,-13.5) node[below]{\(y\)};
             \draw[line width=1pt] (0,0) -- (5,0) node[midway,above]{x};
             \draw[line width=1pt] (5,0) -- (5,-12) node[midway,right]{-12};
             \draw[line width=1pt] (5,-12) -- (0,0) node[midway,above,xshift=5]{13};
@@ -304,8 +297,8 @@
         <image xml:id="ex-sum-formula2">
           <latex-image>
             \begin{tikzpicture}[scale=1]
-            \draw[&lt;-&gt;,] (-3.5,0)--(0.5,0) node[right]{\(x\)};
-            \draw[&lt;-&gt;,] (0,-0.5)--(0,4.5) node[above]{\(y\)};
+            \draw[stealth-stealth] (-3.5,0)--(0.5,0) node[right]{\(x\)};
+            \draw[stealth-stealth] (0,-0.5)--(0,4.5) node[above]{\(y\)};
             \draw[line width=1pt] (0,0) -- (-3,0) node[midway,below]{-3};
             \draw[line width=1pt] (-3,0) -- (-3,4) node[midway,left]{y};
             \draw[line width=1pt] (-3,4) -- (0,0) node[midway,above,xshift=3]{5};
@@ -317,10 +310,10 @@
         <p>
           Next, using the Pythagorean Theorem, we solve for the missing sides on the triangles
           <md>
-            <mrow>x^2+(-12)^2\amp =\amp 13^2</mrow>
-            <mrow>x+144\amp =\amp 169</mrow>
-            <mrow>x^2\amp =\amp 25</mrow>
-            <mrow>x\amp =\amp 5</mrow>
+            <mrow>x^2+(-12)^2\amp = 13^2</mrow>
+            <mrow>x+144\amp = 169</mrow>
+            <mrow>x^2\amp = 25</mrow>
+            <mrow>x\amp = 5</mrow>
           </md>
         </p>
         <p>
@@ -329,10 +322,10 @@
             \cos\alpha=\frac{5}{13}
           </me>
           <md>
-            <mrow>(-3)^2+y^2\amp =\amp 5^2</mrow>
-            <mrow>9+y^2\amp =\amp 25</mrow>
-            <mrow>y^2\amp =\amp 16</mrow>
-            <mrow>y\amp =\amp 4</mrow>
+            <mrow>(-3)^2+y^2\amp = 5^2</mrow>
+            <mrow>9+y^2\amp = 25</mrow>
+            <mrow>y^2\amp = 16</mrow>
+            <mrow>y\amp = 4</mrow>
           </md>
         </p>
         <p>
@@ -344,10 +337,10 @@
         <p>
           We now have all the information needed to proceed.
           <md>
-            <mrow>\sin(\alpha+\beta)\amp =\amp \sin\alpha\cos\beta+\cos\alpha\sin\beta</mrow>
-            <mrow>\amp =\amp \left(-\frac{12}{13}\right)\left(-\frac{3}{5}\right)+\left(\frac{5}{13}\right)\left(\frac{4}{5}\right)</mrow>
-            <mrow>\amp =\amp \frac{36}{65}+\frac{20}{65}</mrow>
-            <mrow>\amp =\amp \frac{56}{65}</mrow>
+            <mrow>\sin(\alpha+\beta)\amp = \sin\alpha\cos\beta+\cos\alpha\sin\beta</mrow>
+            <mrow>\amp = \left(-\frac{12}{13}\right)\left(-\frac{3}{5}\right)+\left(\frac{5}{13}\right)\left(\frac{4}{5}\right)</mrow>
+            <mrow>\amp = \frac{36}{65}+\frac{20}{65}</mrow>
+            <mrow>\amp = \frac{56}{65}</mrow>
           </md>
         </p>
         <p>
@@ -360,8 +353,8 @@
       <statement>
         <p>
           <md>
-            <mrow>\tan(\alpha+\beta)\amp =\amp \frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}</mrow>
-            <mrow>\tan(\alpha-\beta)\amp =\amp \frac{\tan\alpha-\tan\beta}{1-\tan\alpha\tan\beta}</mrow>
+            <mrow>\tan(\alpha+\beta)\amp = \frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}</mrow>
+            <mrow>\tan(\alpha-\beta)\amp = \frac{\tan\alpha-\tan\beta}{1-\tan\alpha\tan\beta}</mrow>
           </md>
         </p>
       </statement>
@@ -370,13 +363,13 @@
       <p>
         Recall that <m>\tan\theta=\frac{\sin\theta}{\cos\theta}</m> as long as <m>\cos\theta\neq0</m>. Using this fact, and our new formulas for the sum of sine and cosine, we get
         <md>
-          <mrow>\tan(\alpha+\beta)\amp =\amp \frac{\sin(\alpha+\beta)}{\cos(\alpha+\beta)}</mrow>
-          <mrow>\amp =\amp \frac{\sin\alpha\cos\beta+\cos\alpha\sin\beta}{\cos\alpha\cos\beta-\sin\alpha\sin\beta}</mrow>
-          <mrow>\amp =\amp \frac{\dfrac{\sin\alpha\cos\beta+\cos\alpha\sin\beta}{\cos\alpha\cos\beta}}{\dfrac{\cos\alpha\cos\beta-\sin\alpha\sin\beta}{\cos\alpha\cos\beta}}</mrow>
-          <mrow>\amp =\amp \frac{\sin\alpha\cos\beta+\cos\alpha\sin\beta}{\cancel{\cos\alpha\cos\beta}}\cdot\frac{\cancel{\cos\alpha\cos\beta}}{\cos\alpha\cos\beta-\sin\alpha\sin\beta}</mrow>
-          <mrow>\amp =\amp \frac{\dfrac{\sin\alpha\cancel{\cos\beta}}{\cos\alpha\cancel{\cos\beta}}+\dfrac{\cancel{\cos\alpha}\sin\beta}{\cancel{\cos\alpha}\cos\beta}}{\dfrac{\cancel{\cos\alpha\cos\beta}}{\cancel{\cos\alpha\cos\beta}}-\dfrac{\sin\alpha\sin\beta}{\cos\alpha\cos\beta}}</mrow>
-          <mrow>\amp =\amp \frac{\dfrac{\sin\alpha}{\cos\alpha}+\dfrac{\sin\beta}{\cos\beta}}{1-\dfrac{\sin\alpha}{\cos\alpha}\dfrac{\sin\beta}{\cos\beta}}</mrow>
-          <mrow>\amp =\amp \frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}</mrow>
+          <mrow>\tan(\alpha+\beta)\amp = \frac{\sin(\alpha+\beta)}{\cos(\alpha+\beta)}</mrow>
+          <mrow>\amp = \frac{\sin\alpha\cos\beta+\cos\alpha\sin\beta}{\cos\alpha\cos\beta-\sin\alpha\sin\beta}</mrow>
+          <mrow>\amp = \frac{\dfrac{\sin\alpha\cos\beta+\cos\alpha\sin\beta}{\cos\alpha\cos\beta}}{\dfrac{\cos\alpha\cos\beta-\sin\alpha\sin\beta}{\cos\alpha\cos\beta}}</mrow>
+          <mrow>\amp = \frac{\sin\alpha\cos\beta+\cos\alpha\sin\beta}{\cancel{\cos\alpha\cos\beta}}\cdot\frac{\cancel{\cos\alpha\cos\beta}}{\cos\alpha\cos\beta-\sin\alpha\sin\beta}</mrow>
+          <mrow>\amp = \frac{\dfrac{\sin\alpha\cancel{\cos\beta}}{\cos\alpha\cancel{\cos\beta}}+\dfrac{\cancel{\cos\alpha}\sin\beta}{\cancel{\cos\alpha}\cos\beta}}{\dfrac{\cancel{\cos\alpha\cos\beta}}{\cancel{\cos\alpha\cos\beta}}-\dfrac{\sin\alpha\sin\beta}{\cos\alpha\cos\beta}}</mrow>
+          <mrow>\amp = \frac{\dfrac{\sin\alpha}{\cos\alpha}+\dfrac{\sin\beta}{\cos\beta}}{1-\dfrac{\sin\alpha}{\cos\alpha}\dfrac{\sin\beta}{\cos\beta}}</mrow>
+          <mrow>\amp = \frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}</mrow>
         </md>
       </p>
       <p>
@@ -419,8 +412,8 @@
     </definition>
     <proof>
       <p>
-        The proof for <m>\sin\theta</m> is given in <xref ref="ex-cofunction-identify-cos">Example</xref>
-        and the proof for <m>\cos\theta</m> is given as <xref ref="ex-cofunction-identify-sin">Exercise</xref>.
+        The proof for <m>\sin\theta</m> is given in <xref ref="ex-cofunction-identity-cos">Example</xref>
+        and the proof for <m>\cos\theta</m> is given as <xref ref="exer-cofunction-identity-sin">Exercise</xref>.
         The Cofunction Identities for <m>\tan\theta</m> and
         <m>\cot\theta</m> can be found using the Quotient and Cofunction Identities for <m>\csc\theta</m> and
         <m>\sec\theta</m> can be found using the Reciprocal Identities.
@@ -458,5 +451,16 @@
       Core Standard: HSF.TF.C.9 Prove the addition and subtraction formulas for sine, cosine, and tangent and use them to solve problems.
     </p>
   </subsection>
+
+  <exercises>
+    <exercise xml:id="exer-cofunction-identity-sin">
+      <statement>
+        <p>
+          Use the Difference Formula for Cosine to prove the Cofunction Identity for Sine: <m>\sin\theta=\cos\left(\frac{\pi}{2}-\theta\right)</m>
+        </p>
+      </statement>
+    </exercise>
+    
+  </exercises>
 
 </section>
