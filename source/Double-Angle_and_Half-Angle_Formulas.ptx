@@ -5,6 +5,41 @@
     <p>
       Change this introduction so that we discuss the Star Compass and the angles of the houses, but this time we are trying to find the x and y values. What is the value of 22.5 Save the deviation for homework.
     </p>
+    <image>
+      <latex-image>
+        \begin{tikzpicture}[scale=6.75]
+        % draw the coordinates
+        \draw[dashed] (0cm,0cm) -- (0.73cm,0cm);
+        \draw[-stealth,dashed] (0.97cm,0cm) -- (1.05cm,0cm);
+        \draw[dashed] (0cm,0cm) -- (0cm,0.76cm);
+        \draw[-stealth,dashed] (0cm,0.98cm) -- (0cm,1.05cm);
+        % draw the unit circle
+        \draw[thick] (0:1cm) arc (0:90:1cm);
+        \draw[left] (0:0.98) node[rotate=0] {\large HIKINA};
+        \draw[left] (90:0.98) node[rotate=90] {\large `\={A}KAU};
+        \foreach \x in {5.625,16.875,...,90} {
+        % lines from center to point
+        \draw[gray] (0cm,0cm) -- (\x:1cm);% node[fill=white,left,sloped] {$\x^\circ$};
+        }
+        \foreach \x in {0,11.25,...,90} {
+          % draw each angle in degrees
+        \draw (\x:1.1cm) node[rotate=\x] {$\x^\circ$};
+        % dots at each point
+        \filldraw[black] (\x:1cm) circle(0.4pt);
+        }
+        \foreach \x/\xtext in {
+        11.25/L\={a},
+        22.5/`\={A}ina,
+        33.75/Noio,
+        45/Manu,
+        56.25/N\={a}lani,
+        67.5/N\={a} Leo,
+        78.75/Haka
+        }
+        \draw[left] (\x:0.98) node[rotate=\x] {\xtext};
+        \end{tikzpicture}
+      </latex-image>      
+    </image>
     <p>
       In <xref ref="right_triangle_trigonometry">Section</xref> we learned about <em>deviation</em> and how to calculate how far a wa&#699;a has traveled off course. For example, if a wa&#699;a traveled for one day of sailing at 5 knots  or 120 nautical miles and was off course by 2 Houses or <m>22.5^{\circ}</m>, how far have they deviated?
     </p>
