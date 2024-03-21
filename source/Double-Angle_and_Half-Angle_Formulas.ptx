@@ -549,239 +549,285 @@
         </p>
       </statement>
     </exercise>
+    <exercise>
+      <introduction>
+        <p>
+          Given <m>\cos\theta=\frac{-3}{5}</m> and <m>\theta</m> is in Quadrant III, find the exact value of
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>\sin2\theta</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\cos2\theta</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\tan2\theta</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </task>
+    </exercise>
+    <exercise>
+      <introduction>
+        <p>
+          <m>\sin\theta=-\frac{8}{17}</m> and <m>270^{\circ}\lt\theta\lt360^{\circ}</m>, find the exact value of
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>\sin2\theta</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\cos2\theta</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\tan2\theta</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </task>
+    </exercise>
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          Use the Half-Angle Formula to find the exact value of each of the following
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan315^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin150^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan225^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos30^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos\frac{\pi}{8}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan\frac{11\pi}{12}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin\frac{7\pi}{12}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos\frac{3\pi}{8}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercise>
+      <introduction>
+        <p>
+          Given <m>\tan\theta=-\frac{4}{3}</m> and <m>\theta</m> is in Quadrant II, find the exact values of
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>\sin\frac{\theta}{2}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>-\frac{\sqrt{5}}{5}</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\cos\frac{\theta}{2}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{2\sqrt{5}}{5}</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\tan\frac{\theta}{2}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>-\frac{1}{2}</m>
+          </p>
+        </answer>
+      </task>
+    </exercise>
+    <exercise>
+      <introduction>
+        <p>
+          Given <m>\cos\theta=\frac{2}{3}</m> and <m>\frac{3\pi}{2}\lt\theta\lt2\pi</m>, find the exact values of
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>\sin\frac{\theta}{2}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{\sqrt}{6}</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\cos\frac{\theta}{2}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>-\sqrt{\frac{5}{6}}</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\tan\frac{\theta}{2}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>-\sqrt{\frac{\sqrt{5}}{5}}</m>
+          </p>
+        </answer>
+      </task>
+    </exercise>
+
+
 
 
 
   </exercises>
-
-  
-<subsection xml:id="delete">
-  <title>h</title>
-    
-  
-  \Question Exercise Group;Find the exact value of i) <m>\sin2\theta</m>, ii) <m>\cos2\theta</m>, and iii) <m>\tan2\theta</m> if
-  \begin{tasks}
-  \task <m>\cos\theta=\frac{-3}{5}</m> and <m>\theta</m> is in Quadrant III
-  
-  \task <m>\sin\theta=-\frac{8}{17}</m> and <m>270^{\circ}<\theta<360^{\circ}</m>
-  
-  \end{tasks}
-  
-  \Question Using the Half-Angle Formula, find the exact value of
-  \begin{tasks}(2)
-  \task <m>\tan315^{\circ}</m>
-  
-  \task <m>\sin150^{\circ}</m>
-  
-  \task <m>\tan225^{\circ}</m>
-  
-  \task <m>\cos30^{\circ}</m>
-  
-  \task <m>\cos\frac{\pi}{8}</m>
-  
-  \task <m>\tan\frac{11\pi}{12}</m>
-  
-  \task <m>\sin\frac{7\pi}{12}</m>
-  
-  \task <m>\cos\frac{3\pi}{8}</m>
-  
-  \end{tasks}
-  
-  \Question Use the Half-Angle Formulas to find the exact values of i) <m>\sin\frac{\theta}{2}</m>, ii) <m>\cos\frac{\theta}{2}</m>, and iii) <m>\tan\frac{\theta}{2}</m> if
-  \begin{tasks}
-  \task <m>\tan\theta=-\frac{4}{3}</m> and <m>\theta</m> is in Quadrant II
-  
-  \task <m>\cos\theta=\frac{2}{3}</m> and <m>\frac{3\pi}{4}<\theta<2\pi</m>
-  \end{tasks}
-  
-  \end{Exercise}
-
-  
-
-
-
-
-
-    <exercise xml:id="ex-3_3">
-      <statement>
-        <me>
-          \cos2\theta=\cos^2\theta-\sin^2\theta
-        </me>
-        
-<task>
-<introduction>
-  <p>
-    Use the Pythagorean identity (<m>\sin^2\theta+\cos^2\theta=1</m>) and the result from <xref ref="x3_3-ex1">Exercise</xref> to prove
-          <me>
-            \cos2\theta=1-2\sin^2\theta
-          </me>
-  </p>
-</introduction>
-<statement>
-<p>
-Use the Pythagorean identity (<m>\sin^2\theta+\cos^2\theta=1</m>) and the result from <xref ref="x3_3-ex1">Exercise</xref> to prove
-          <me>
-            \cos2\theta=1-2\sin^2\theta
-          </me>
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
-        
-<task>
-<introduction>
-  <p>
-    Use the Pythagorean identify (<m>\sin^2\theta+\cos^2\theta=1</m>) and the result from <xref ref="x3_3-ex1">Exercise</xref> to prove
-          <me>
-            \cos2\theta=2\cos^2\theta-1
-          </me>
-  </p>
-</introduction>
-<statement>
-<p>
-Use the Pythagorean identify (<m>\sin^2\theta+\cos^2\theta=1</m>) and the result from <xref ref="x3_3-ex1">Exercise</xref> to prove
-          <me>
-            \cos2\theta=2\cos^2\theta-1
-          </me>
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
-        
-<task>
-<introduction>
-  <p>
-    Use the sum formula,
-          <m>\tan(\alpha+\beta)=\frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}</m>,
-          to prove the double angle formula for tangent:
-          <me>
-            \tan2\theta=\frac{2\tan\theta}{1-\tan^2\theta}
-          </me>
-  </p>
-</introduction>
-<statement>
-<p>
-Use the sum formula,
-          <m>\tan(\alpha+\beta)=\frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}</m>,
-          to prove the double angle formula for tangent:
-          <me>
-            \tan2\theta=\frac{2\tan\theta}{1-\tan^2\theta}
-          </me>
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
-        
-<introduction>
-  <p>
-    Find the exact value of i)
-          <m>\sin2\theta</m>, ii) <m>\cos2\theta</m>,
-          and iii) <m>\tan2\theta</m> if 
-  </p>
-</introduction>
-  <task>
-    <statement>
-      <p>
-        
-          <m>\cos\theta=\frac{-3}{5}</m> and <m>\theta</m> is in Quadrant III
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
-        <p>
-          \task <m>\sin\theta=-\frac{8}{17}</m> and <m>270^{\circ}\lt \theta\lt 360^{\circ}</m>
-        </p>
-        <p>
-          \end{tasks}
-        </p>
-        
-<introduction>
-  <p>
-    Using the Half-Angle Formula,
-          find the exact value of 
-  </p>
-</introduction>
-  <task>
-    <statement>
-      <p>
-         <m>\tan315^{\circ}</m>
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
-        <p>
-          \task <m>\sin150^{\circ}</m>
-        </p>
-        <p>
-          \task <m>\tan225^{\circ}</m>
-        </p>
-        <p>
-          \task <m>\cos30^{\circ}</m>
-        </p>
-        <p>
-          \task <m>\cos\frac{\pi}{8}</m>
-        </p>
-        <p>
-          \task <m>\tan\frac{11\pi}{12}</m>
-        </p>
-        <p>
-          \task <m>\sin\frac{7\pi}{12}</m>
-        </p>
-        <p>
-          \task <m>\cos\frac{3\pi}{8}</m>
-        </p>
-        <p>
-          \end{tasks}
-        </p>
-        
-<introduction>
-  <p>
-    Use the Half-Angle Formulas to find the exact values of i) <m>\sin\frac{\theta}{2}</m>,
-          ii) <m>\cos\frac{\theta}{2}</m>,
-          and iii) <m>\tan\frac{\theta}{2}</m> if 
-  </p>
-</introduction>
-  <task>
-    <statement>
-      <p>
-        
-          <m>\tan\theta=-\frac{4}{3}</m> and <m>\theta</m> is in Quadrant II
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
-        <p>
-          \task <m>\cos\theta=\frac{2}{3}</m> and <m>\frac{3\pi}{4}\lt \theta\lt 2\pi</m> \end{tasks}
-        </p>
-      </statement>
-    </exercise>
-  
-</subsection>
-
-
-
 </section>
