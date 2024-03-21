@@ -46,7 +46,7 @@
       <me>
         120 \sin(1 \mbox{ house}) + 120 \sin(2 \mbox{ houses}) \approx 23.4 + 45.9 \mbox{ NM} \approx 69.3 \mbox{ NM}
       </me>,
-      which is not 66.7 NM.        
+      which differs from the actual deviation of 66.7 NM when deviating by 3 houses.  
     </p>
     <p>
       hese calculations demonstrate that the deviation distances for multiple houses cannot be determined by simply adding individual deviations, highlighting the importance of understanding trigonometric principles for accurate navigation. In this section, we will explore formulas for the addition and subtraction of angles in trigonometric functions.
@@ -103,7 +103,9 @@
         </md>
       </p>
       <p>
-        Then by the Pythagorean Identify,
+        Then by the Pythagorean Identify ************* (Definition 1.5.20)
+        <!-- (<xref ref="def_pythagorean-identity"/>), -->
+        <m>\cos^2\alpha+\sin^2\alpha=1</m> and <m>\cos^2\beta+\sin^2\beta=1</m>. Thus the distance becomes
         <md>
           <mrow>d(P,Q) \amp = \sqrt{1+1-2\cos\alpha\cos\beta-2\sin\alpha\sin\beta}</mrow>
           <mrow>\amp = \sqrt{2-2\cos\alpha\cos\beta-2\sin\alpha\sin\beta}</mrow>
@@ -143,7 +145,7 @@
       </p>
       <p>
         Note that since <m>OP</m>, <m>OQ</m>, <m>OA</m>, and <m>OB</m> are lines from the center to points on the unit circle,
-        they are congruent and have length of 1. Also note that <m>\angle POB=\angle AOB=\alpha-\beta</m>. Then since two sides and the included angle of <m>\Delta OPQ</m> and <m>\Delta OAB</m> are equivalent, we can conclude by side-angle-side theorem (SAS) that the two triangles are congruent. Thus, <m>d(PQ)=d(AB)</m>. Substituting our results for <m>d(P,Q)</m> and <m>d(A,B)</m> we get
+        they are congruent and have length of 1. Also note that <m>\angle POB=\angle AOB=\alpha-\beta</m>. Then since two sides and the included angle of <m>\Delta OPQ</m> and <m>\Delta OAB</m> are equivalent, we can conclude by the Side-Angle-Side Theorem (SAS) in geometry that the two triangles are congruent. Thus, corresponding sides have the same lengths, giving us: <m>d(PQ)=d(AB)</m>. Substituting our results for <m>d(P,Q)</m> and <m>d(A,B)</m> we get
         <md>
           <mrow>d(PQ)\amp = d(AB)</mrow>
           <mrow>\sqrt{2-2\cos\alpha\cos\beta-2\sin\alpha\sin\beta}\amp = \sqrt{2-2\cos(\alpha-\beta)}</mrow>
@@ -158,7 +160,9 @@
         </me>
       </p>
       <p>
-        To prove the Sum Formula for Cosine, replace <m>\beta</m> with <m>-\beta</m> in the Difference Formula and use the Even-Odd Identities where <m>\sin(-\beta)=-\sin\beta</m> and <m>\cos(-\beta)=\cos\beta</m> to get
+        To prove the Sum Formula for Cosine, replace <m>\beta</m> with <m>-\beta</m> in the Difference Formula and use the Even and Odd Trigonometric Properties ******(Definition 1.5.22),
+        <!-- (<xref ref="def-even-odd-trig"/>) -->
+        where <m>\sin(-\beta)=-\sin\beta</m> and <m>\cos(-\beta)=\cos\beta</m> to get
         <md>
           <mrow>\cos\alpha\cos(-\beta)+\sin\alpha\sin(-\beta)\amp = \cos(\alpha-(-\beta))</mrow>
           <mrow>\cos\alpha\cos(\beta)+\sin\alpha(-\sin\beta)\amp = \cos(\alpha+\beta)</mrow>
