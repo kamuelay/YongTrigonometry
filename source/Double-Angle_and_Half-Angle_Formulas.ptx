@@ -473,7 +473,52 @@
       Note: We obtained the same result for <m>\tan\frac{\theta}{2}</m> as we did in <xref ref="ex_half-angle">Example</xref>. In this example, we did not have to determine if <m>\tan\frac{\theta}{2}</m> was positive or negative, however, we do need to know the values of both <m>\sin\theta</m> and <m>\cos\theta</m>.
     </p>
   </subsection>
+
+
+
   <exercises xml:id="exercises-double-angle-half-angle">
+    <exercise>
+      <statement>
+        <p>
+          In an exercise group, calculate the exact values of cos(22.5) and tan(22.5). Check your answers with the decimal approximation in the star compass in Chapter 1.
+        </p>
+        <image xml:id="star-compass-Q1-angles-middle">
+          <latex-image>
+            \begin{tikzpicture}[scale=6.75]
+            % draw the coordinates
+            \draw[dashed] (0cm,0cm) -- (0.73cm,0cm);
+            \draw[-stealth,dashed] (0.97cm,0cm) -- (1.05cm,0cm);
+            \draw[dashed] (0cm,0cm) -- (0cm,0.76cm);
+            \draw[-stealth,dashed] (0cm,0.98cm) -- (0cm,1.05cm);
+            % draw the unit circle
+            \draw[thick] (0:1cm) arc (0:90:1cm);
+            \draw[left] (0:0.98) node[rotate=0] {\large HIKINA};
+            \draw[left] (90:0.98) node[rotate=90] {\large `\={A}KAU};
+            \foreach \x in {5.625,16.875,...,90} {
+            % lines from center to point
+            \draw[gray] (0cm,0cm) -- (\x:1cm);% node[fill=white,left,sloped] {$\x^\circ$};
+            }
+            \foreach \x in {0,11.25,...,90} {
+              % draw each angle in degrees
+            \draw (\x:1.1cm) node[rotate=\x] {$\x^\circ$};
+            % dots at each point
+            \filldraw[black] (\x:1cm) circle(0.4pt);
+            }
+            \foreach \x/\xtext in {
+            11.25/L\={a},
+            22.5/`\={A}ina,
+            33.75/Noio,
+            45/Manu,
+            56.25/N\={a}lani,
+            67.5/N\={a} Leo,
+            78.75/Haka
+            }
+            \draw[left] (\x:0.98) node[rotate=\x] {\xtext};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </statement>
+    </exercise>
     <exercise xml:id="exer-prove-double-angle">
       <statement>
         <p>
@@ -505,10 +550,14 @@
       </statement>
     </exercise>
 
+
+
   </exercises>
 
   
-  
+<subsection xml:id="delete">
+  <title>h</title>
+    
   
   \Question Exercise Group;Find the exact value of i) <m>\sin2\theta</m>, ii) <m>\cos2\theta</m>, and iii) <m>\tan2\theta</m> if
   \begin{tasks}
@@ -730,15 +779,9 @@ Use the sum formula,
         </p>
       </statement>
     </exercise>
+  
+</subsection>
 
 
-  <exercises>
-    <exercise>
-      <statement>
-        <p>
-          In an exercise group, calculate the exact values of cos(22.5) and tan(22.5). Check your answers with the decimal approximation in the star compass in Chapter 1.
-        </p>
-      </statement>
-    </exercise>
-  </exercises>
+
 </section>
