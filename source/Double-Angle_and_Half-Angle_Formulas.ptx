@@ -3,8 +3,41 @@
   <title>Double-Angle and Half-Angle Formulas</title>
   <introduction>
     <p>
-      Change this introduction so that we discuss the Star Compass and the angles of the houses, but this time we are trying to find the x and y values. What is the value of 22.5 Save the deviation for homework.
-    </p>
+      Suppose we want to accurately position the Hawaiian Star Compass on the Unit Circle. In Figure*******
+      <!-- <xref ref="star-compass-32-compass-rose"/>, -->
+       the house for Manu is located at halfway between Hikina and ʻĀkau, resulting in an angle of <m>45^{\circ}</m>. By applying right triangle trigonometry, we can determine the exact coordinates of Manu as <m>\cos(45^{\circ}), \sin(45^{\circ}) = \left(\frac{\sqrt{2}}{2}\right), \frac{\sqrt{2}}{2}</m>. However, as we move to the house of ʻĀina, located halfway between Manu and Hikina, we encounter a problem. The angle for ʻĀina is <m>22.5^{\circ}</m>, which is not explicitly listed listed in Table 1.5.18 ***************
+      <!-- <xref ref="tab_trig-table"/>. -->
+      Therefore, we must resort to a calculator for numerical approximations.
+     </p>
+     <image xml:id="fig-quad1-Koolau-manu-aina-angles" width="60%">
+      <latex-image>
+        \begin{tikzpicture}[scale=6.75]
+        % draw the coordinates
+        \draw[dashed] (0cm,0cm) -- (0.73cm,0cm);
+        \draw[->,dashed] (0.97cm,0cm) -- (1.05cm,0cm);
+        \draw[dashed] (0cm,0cm) -- (0cm,0.76cm);
+        \draw[->,dashed] (0cm,0.98cm) -- (0cm,1.05cm);
+        % draw the unit circle
+        \draw[thick] (0:1cm) arc (0:90:1cm);
+        \draw[left] (0:0.98) node[rotate=0] {\large HIKINA};
+        \draw[left] (90:0.98) node[rotate=90] {\large `\={A}KAU};
+        \foreach \x in {0,22.5,45,90} {
+        % dots at each point
+        \filldraw[black] (\x:1cm) circle(0.4pt);
+         % draw each angle in degrees
+        \draw (\x:1.1cm) node[rotate=\x] {$\x^\circ$};
+        }
+        \foreach \x/\xtext in {
+        22.5/`\={A}ina,
+        45/Manu
+        }
+        \draw[left] (\x:0.98) node[rotate=\x] {\xtext};
+        \end{tikzpicture}
+      </latex-image>
+    </image>
+     <p>
+      In this section, we will learn about the double and half-angle formulas for trigonometry. These formulas allow us to determine exact trigonometric function values for angles that are double or half of known values. This will enable us to use our existing knowledge of trigonometric functions at <m>45^{\circ}</m> and apply the half-angle formulas to obtain exact values at <m>22.5^{\circ}</m>.
+     </p>
     <image>
       <latex-image>
         \begin{tikzpicture}[scale=6.75]
