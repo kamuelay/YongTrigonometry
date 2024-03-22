@@ -17,13 +17,21 @@
       <latex-image>
         \begin{tikzpicture}[scale=7]
         \node[above,yshift=2] at (0,0) {start};
-        \node[above right] at (11.25:1.2) {end};
+        \node[above right] at (11.25:1.2) {1 house};
+        \node[above right] at (22.5:1.2) {2 houses};
+        \node[above right] at (33.75:1.2) {3 houses};
         \draw[line width=2pt,-stealth] (0,0) -- (11.25:1.2) node[midway,sloped,above] {120 NM};
+        \draw[line width=2pt,-stealth] (0,0) -- (22.5:1.2) node[midway,sloped,above] {120 NM};
+        \draw[line width=2pt,-stealth] (0,0) -- (33.75:1.2) node[midway,sloped,above] {120 NM};
         \draw[dashed] (0,0) -- (1.17694233648,0) node[midway,below,yshift=-0.1] {reference course};
         \draw[dashed] (1.17694233648,0) -- (1.17694233648,0.234108386419) node[midway,right,xshift=0.1] {deviation};
+        \draw[dashed] ({1.2*cos(22.5)},0) -- (22.5:1.2);
+        \draw[dashed] ({1.2*cos(33.75)},0) -- (33.75:1.2);
         \draw ([shift=(0:0.3)]0,0) arc (0:11.25:0.3) node[midway,right,xshift=12,yshift=2] {$\theta$};
+        \draw ([shift=(0:0.3)]0,0) arc (0:33.75:0.3);
         \draw ([shift=(11.25:-0.1)]0,0) pic {waa-top={waacolor}{-78.75}{0.1}};
-        \draw (1.17694233648-0.06,0) -- (1.11694233648,0.06) -- (1.17694233648,0.06);\end{tikzpicture}
+        \draw (1.17694233648-0.04,0) -- (1.17694233648-0.04,0.04) -- (1.17694233648,0.04);
+        \end{tikzpicture}
       </latex-image>
     </image>    
     <p>
