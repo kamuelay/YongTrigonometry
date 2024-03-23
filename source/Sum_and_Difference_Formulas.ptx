@@ -13,27 +13,20 @@
         \mbox{deviation} = (120\mbox{ NM})\cdot\sin(\theta)
       </me>.        
     </p>
-    <image xml:id="deviation-sum-formula" width="100%">
+    <image xml:id="deviation-sum-formula-intro" width="100%">
       <latex-image>
         \begin{tikzpicture}[scale=7]
         \node[above,yshift=2] at (0,0) {start};
-        \node[above right] at (11.25:1.2) {1 house};
-        \node[above right] at (22.5:1.2) {2 houses};
-        \node[above right] at (33.75:1.2) {3 houses};
+        \node[above right] at (11.25:1.2) {end};
         \draw[line width=2pt,-stealth] (0,0) -- (11.25:1.2) node[midway,sloped,above] {120 NM};
-        \draw[line width=2pt,-stealth] (0,0) -- (22.5:1.2) node[midway,sloped,above] {120 NM};
-        \draw[line width=2pt,-stealth] (0,0) -- (33.75:1.2) node[midway,sloped,above] {120 NM};
         \draw[dashed] (0,0) -- (1.17694233648,0) node[midway,below,yshift=-0.1] {reference course};
         \draw[dashed] (1.17694233648,0) -- (1.17694233648,0.234108386419) node[midway,right,xshift=0.1] {deviation};
-        \draw[dashed] ({1.2*cos(22.5)},0) -- (22.5:1.2);
-        \draw[dashed] ({1.2*cos(33.75)},0) -- (33.75:1.2);
         \draw ([shift=(0:0.3)]0,0) arc (0:11.25:0.3) node[midway,right,xshift=12,yshift=2] {$\theta$};
-        \draw ([shift=(0:0.3)]0,0) arc (0:33.75:0.3);
         \draw ([shift=(11.25:-0.1)]0,0) pic {waa-top={waacolor}{-78.75}{0.1}};
-        \draw (1.17694233648-0.04,0) -- (1.17694233648-0.04,0.04) -- (1.17694233648,0.04);
+        \draw (1.17694233648-0.06,0) -- (1.11694233648,0.06) -- (1.17694233648,0.06);
         \end{tikzpicture}
       </latex-image>
-    </image>    
+    </image>
     <p>
       Before setting sail, a voyager studies a table listing the deviation distances corresponding to different houses of deviation. It's crucial to understand that while adding angles may yield a third angle, adding their corresponding deviations will not accurately determine the total deviation. In other words:
       <me>
@@ -49,6 +42,22 @@
         <mrow>120 \sin(3 \mbox{ houses}) \amp = 120 \sin(33.75^{\circ}) \approx 66.7 \mbox{ NM}</mrow>
       </md>
     </p>
+    <image xml:id="deviation-sum-formula-3houses" width="100%">
+      <latex-image>
+        \begin{tikzpicture}[scale=7]
+        \node[below,yshift=0,xshift=-4] at (0,0) {start};
+        \draw[line width=2pt,-stealth] (0,0) -- (11.25:1.2) node[midway,sloped,below] {1 house, 120 NM};
+        \draw[line width=2pt,-stealth] (0,0) -- (22.5:1.2) node[midway,sloped,below] {2 houses, 120 NM};
+        \draw[line width=2pt,-stealth] (0,0) -- (33.75:1.2) node[midway,sloped,below] {3 houses, 120 NM};
+        \draw[dashed] (0,0) -- (1.17694233648,0) node[midway,below,yshift=-0.1] {reference course};
+        \draw[dashed] (1.17694233648,0) -- (1.17694233648,0.234108386419) node[midway,right,xshift=0.1] {23.4 NM};
+        \draw[dashed] ({1.2*cos(22.5)},0) -- (22.5:1.2) node[pos=0.73,right,xshift=0.1] {45.9 NM};
+        \draw[dashed] ({1.2*cos(33.75)},0) -- (33.75:1.2) node[pos=0.85,right,xshift=0.1] {66.7 NM};
+        \draw ([shift=(11.25:-0.1)]0,0) pic {waa-top={waacolor}{-78.75}{0.1}};
+        \draw (1.17694233648-0.04,0) -- (1.17694233648-0.04,0.04) -- (1.17694233648,0.04);
+        \end{tikzpicture}
+      </latex-image>
+    </image>    
     <p>
       However,
       <me>
