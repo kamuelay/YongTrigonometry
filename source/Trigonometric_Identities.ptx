@@ -1,18 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="trigonometric_identities">
   <title>Trigonometric Identities</title>
-  <p>
-    *need to begin section*
-  </p>
-  <example>
-    <statement>
-      <p>
-        Using the trig identities,
-        simplify <m>\cos\theta+\tan\theta\sin\theta</m> (from p539 in stewart)
-      </p>
-    </statement>
-  </example>
-  <p>
-    Establish the identity...
-  </p>
+  <introduction>
+    <p>
+      Need intro
+    </p>
+  </introduction>
+  <subsection xml:id="subsec-subsetion1">
+    <title>subsetion1</title>
+    <p>
+      Review of trig IDs such as Pythagorean Identities, Reciprocal Identities, Cofunctions, etc.
+    </p>
+    <p>
+      *need to begin section*
+    </p>
+    <example>
+      <statement>
+        <p>
+          Using the trig identities,
+          simplify <m>\cos\theta+\tan\theta\sin\theta</m> (from p539 in stewart)
+        </p>
+      </statement>
+    </example>
+    <p>
+      Establish the identity...
+    </p>
+  </subsection>
+  
 </section>
