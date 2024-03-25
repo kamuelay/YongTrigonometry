@@ -74,7 +74,9 @@
       </latex-image>      
     </image>
     <p>
-      In <xref ref="right_triangle_trigonometry">Section</xref> we learned about <em>deviation</em> and how to calculate how far a wa&#699;a has traveled off course. For example, if a wa&#699;a traveled for one day of sailing at 5 knots  or 120 nautical miles and was off course by 2 Houses or <m>22.5^{\circ}</m>, how far have they deviated?
+      In ***********
+      <!-- <xref ref="right_triangle_trigonometry"/> -->
+      we learned about <em>deviation</em> and how to calculate how far a wa&#699;a has traveled off course. For example, if a wa&#699;a traveled for one day of sailing at 5 knots  or 120 nautical miles and was off course by 2 Houses or <m>22.5^{\circ}</m>, how far have they deviated?
     </p>
     <image>
       <latex-image>
@@ -92,14 +94,16 @@
       </latex-image>
     </image>
     <p>
-      Using the methods of <xref ref="Right_Triangle_Trigonometry">Section</xref>, we concluded that the deviation was <m>y=120\cdot\sin22.5^{\circ}</m>. We then proceeded to obtain a numerical approximation because we could not obtain an exact value for <m>\sin22.5^{\circ}</m>. We are familiar with the value of trigonometric functions at <m>30, 45, 60^{\circ}</m> but not <m>22.5^{\circ}</m>.
+      Using the methods of 
+      <!-- <xref ref="Right_Triangle_Trigonometry"/>,  -->
+      we concluded that the deviation was <m>y=120\cdot\sin22.5^{\circ}</m>. We then proceeded to obtain a numerical approximation because we could not obtain an exact value for <m>\sin22.5^{\circ}</m>. We are familiar with the value of trigonometric functions at <m>30, 45, 60^{\circ}</m> but not <m>22.5^{\circ}</m>.
       In this section, we will examine double and half angles and will be able to calculate the exact value of <m>\sin22.5^{\circ}</m> since <m>22.5=\frac{1}{2}\cdot45</m>.
     </p>
   </introduction>
   <subsection>
     <title>Double-Angle Formulas</title>
     <p>
-      Recall the sum formula for sine:
+      Recall the addition formula for sine:
       <men xml:id="eq_double-angle1">
         \sin (\alpha+\beta)=\sin \alpha \cos \beta + \cos \alpha \sin \beta
       </men>
@@ -206,7 +210,7 @@
         <p>
           <md>
             <mrow>\sin(3\theta)\amp =\sin(2\theta+\theta)</mrow>
-            <mrow>\amp =\sin(2\theta)\cos\theta+\cos(2\theta)\sin\theta\amp \amp \mbox{sum formula}</mrow>
+            <mrow>\amp =\sin(2\theta)\cos\theta+\cos(2\theta)\sin\theta\amp \amp \mbox{addition formula}</mrow>
             <mrow>\amp =(2\sin\theta\cos\theta)\cos\theta+(\cos^2\theta-\sin^2\theta)\sin\theta\amp \amp \mbox{double-angle formula}</mrow>
             <mrow>\amp =2\sin\theta\cos^2\theta+\sin\theta\cos^2\theta-\sin^3\theta</mrow>
             <mrow>\amp =3\sin\theta\cos^2\theta-\sin^3\theta</mrow>
@@ -510,10 +514,10 @@
 
 
   <exercises xml:id="exercises-double-angle-half-angle">
-    <exercise>
-      <statement>
+    <exercisegroup>
+      <introduction>
         <p>
-          In an exercise group, calculate the exact values of cos(22.5) and tan(22.5). Check your answers with the decimal approximation in the star compass in Chapter 1.
+          For each problem, use the half-angle formula to evaluate the exact value of the given expression
         </p>
         <image xml:id="star-compass-Q1-angles-middle">
           <latex-image>
@@ -550,12 +554,72 @@
             \end{tikzpicture}
           </latex-image>
         </image>
-      </statement>
-    </exercise>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos(22.5^{\circ})</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan(22.5^{\circ})</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin(67.5^{\circ})</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos(67.5^{\circ})</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan(67.5^{\circ})</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
     <exercise xml:id="exer-prove-double-angle">
       <statement>
         <p>
-          Use the sum formula, <m>\cos(\alpha+\beta)=\cos\alpha\cos\beta-\sin\alpha\sin\beta</m>, to prove the double angle formula for cosine:
+          Use the addition formula, <m>\cos(\alpha+\beta)=\cos\alpha\cos\beta-\sin\alpha\sin\beta</m>, to prove the double angle formula for cosine:
           <me>\cos2\theta=\cos^2\theta-\sin^2\theta</me>.
         </p>
       </statement>
@@ -577,7 +641,7 @@
     <exercise>
       <statement>
         <p>
-          Use the sum formula, <m>\tan(\alpha+\beta)=\frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}</m>, to prove the double angle formula for tangent:
+          Use the addition formula, <m>\tan(\alpha+\beta)=\frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}</m>, to prove the double angle formula for tangent:
           <me>\tan2\theta=\frac{2\tan\theta}{1-\tan^2\theta}</me>.
         </p>
       </statement>
@@ -585,382 +649,107 @@
     <exercisegroup cols="2">
       <introduction>
         <p>
-          Use the Double Angle Formula to find the exact value of each of the following
+          Use the figure below for the following exercises.
         </p>
+        <image xml:id="exer-double-half-angle-triangle2" width="50%">
+          <latex-image>
+            \begin{tikzpicture}[scale=0.5]
+            \draw (0,0) -- (12,0) node[midway,below]{12};
+            \draw(0,0) -- (12,5) node[midway,above left]{13};
+            \draw(12,0) -- (12,5) node[midway,right]{5};
+            \draw(11.25,0) -- (11.25,0.75) -- (12,0.75);
+            \draw ([shift=(0:2)]0,0) arc (0:22.619864948:2) node[midway,right,xshift=2,yshift=0.5] {\(\theta\)};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
       </introduction>
       <exercise>
-        <statement>
+        <introduction>
           <p>
-            
+            Use the double angle formulas to find
           </p>
-        </statement>
-        <answer>
-          <p>
-            
-          </p>
-        </answer>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              <m>\sin(2\theta)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>\frac{120}{169}</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\cos(2\theta)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>\frac{119}{169}</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\tan(2\theta)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>\frac{120}{119}</m>
+            </p>
+          </answer>
+        </task>
       </exercise>
       <exercise>
-        <statement>
+        <introduction>
           <p>
-            
+            Use the half angle formulas to find
           </p>
-        </statement>
-        <answer>
-          <p>
-            
-          </p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            
-          </p>
-        </statement>
-        <answer>
-          <p>
-            
-          </p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            
-          </p>
-        </statement>
-        <answer>
-          <p>
-            
-          </p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            
-          </p>
-        </statement>
-        <answer>
-          <p>
-            
-          </p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            
-          </p>
-        </statement>
-        <answer>
-          <p>
-            
-          </p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            
-          </p>
-        </statement>
-        <answer>
-          <p>
-            
-          </p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            
-          </p>
-        </statement>
-        <answer>
-          <p>
-            
-          </p>
-        </answer>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              <m>\sin\left(\frac{\theta}{2}\right)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>\sqrt{\frac{1}{26}}</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\cos\left(\frac{\theta}{2}\right)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>\sqrt{\frac{25}{26}}</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\tan\left(\frac{\theta}{2}\right)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>\frac{1}{5}</m>
+            </p>
+          </answer>
+        </task>
       </exercise>
     </exercisegroup>
-    <exercise>
-      <introduction>
-        <p>
-          Given <m>\cos\theta=\frac{-3}{5}</m> and <m>\theta</m> is in Quadrant III, find the exact value of
-        </p>
-      </introduction>
-      <task>
-        <statement>
-          <p>
-            <m>\sin2\theta</m>
-          </p>
-        </statement>
-        <answer>
-          <p>
-            
-          </p>
-        </answer>
-      </task>
-      <task>
-        <statement>
-          <p>
-            <m>\cos2\theta</m>
-          </p>
-        </statement>
-        <answer>
-          <p>
-            
-          </p>
-        </answer>
-      </task>
-      <task>
-        <statement>
-          <p>
-            <m>\tan2\theta</m>
-          </p>
-        </statement>
-        <answer>
-          <p>
-            
-          </p>
-        </answer>
-      </task>
-    </exercise>
-    <exercise>
-      <introduction>
-        <p>
-          <m>\sin\theta=-\frac{8}{17}</m> and <m>270^{\circ}\lt\theta\lt360^{\circ}</m>, find the exact value of
-        </p>
-      </introduction>
-      <task>
-        <statement>
-          <p>
-            <m>\sin2\theta</m>
-          </p>
-        </statement>
-        <answer>
-          <p>
-            
-          </p>
-        </answer>
-      </task>
-      <task>
-        <statement>
-          <p>
-            <m>\cos2\theta</m>
-          </p>
-        </statement>
-        <answer>
-          <p>
-            
-          </p>
-        </answer>
-      </task>
-      <task>
-        <statement>
-          <p>
-            <m>\tan2\theta</m>
-          </p>
-        </statement>
-        <answer>
-          <p>
-            
-          </p>
-        </answer>
-      </task>
-    </exercise>
-    <exercisegroup cols="2">
-      <introduction>
-        <p>
-          Use the Half-Angle Formula to find the exact value of each of the following
-        </p>
-      </introduction>
-      <exercise>
-        <statement>
-          <p>
-            <m>\tan157.5^{\circ}</m>
-          </p>
-        </statement>
-        <answer>
-          <p>
-            <m>1-\sqrt{2}</m>
-          </p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\sin75^{\circ}</m>
-          </p>
-        </statement>
-        <answer>
-          <p>
-            <m>\sqrt{\frac{2 + \sqrt{3}}{4}}</m>
-          </p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\tan112.5^{\circ}</m>
-          </p>
-        </statement>
-        <answer>
-          <p>
-            <m>-1-\sqrt{2}</m>
-          </p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\cos15^{\circ}</m>
-          </p>
-        </statement>
-        <answer>
-          <p>
-            <m>\frac{\sqrt{2+\sqrt{3}}}{2}</m>
-          </p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\cos\frac{\pi}{8}</m>
-          </p>
-        </statement>
-        <answer>
-          <p>
-            <m>\cos\frac{\pi}{8} = \sqrt{\frac{\sqrt{2} + 2}{4}}</m>
-          </p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\tan\frac{11\pi}{12}</m>
-          </p>
-        </statement>
-        <answer>
-          <p>
-            <m>\tan\frac{11\pi}{12} = -\sqrt{2} + 1</m>
-          </p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\sin\frac{7\pi}{12}</m>
-          </p>
-        </statement>
-        <answer>
-          <p>
-            <m>\sin\frac{7\pi}{12} = \frac{\sqrt{2} - 1}{2}</m>
-          </p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\cos\frac{3\pi}{8}</m>
-          </p>
-        </statement>
-        <answer>
-          <p>
-            <m>\cos\frac{3\pi}{8} = \sqrt{\frac{\sqrt{2} + 2}{4}}</m>
-          </p>
-        </answer>
-      </exercise>
-    </exercisegroup>
-    
-    <exercise>
-      <introduction>
-        <p>
-          Given <m>\tan\theta=-\frac{4}{3}</m> and <m>\theta</m> is in Quadrant II, find the exact values of
-        </p>
-      </introduction>
-      <task>
-        <statement>
-          <p>
-            <m>\sin\frac{\theta}{2}</m>
-          </p>
-        </statement>
-        <answer>
-          <p>
-            <m>-\frac{2\sqrt{5}}{5}</m>
-          </p>
-        </answer>
-      </task>
-      <task>
-        <statement>
-          <p>
-            <m>\cos\frac{\theta}{2}</m>
-          </p>
-        </statement>
-        <answer>
-          <p>
-            <m>\frac{\sqrt{5}}{5}</m>
-          </p>
-        </answer>
-      </task>
-      <task>
-        <statement>
-          <p>
-            <m>\tan\frac{\theta}{2}</m>
-          </p>
-        </statement>
-        <answer>
-          <p>
-            <m>2</m>
-          </p>
-        </answer>
-      </task>
-    </exercise>
-    <exercise>
-      <introduction>
-        <p>
-          Given <m>\cos\theta=\frac{2}{3}</m> and <m>\frac{3\pi}{2}\lt\theta\lt2\pi</m>, find the exact values of
-        </p>
-      </introduction>
-      <task>
-        <statement>
-          <p>
-            <m>\sin\frac{\theta}{2}</m>
-          </p>
-        </statement>
-        <answer>
-          <p>
-            <m>\frac{\sqrt{6}}{6}</m>
-          </p>
-        </answer>
-      </task>
-      <task>
-        <statement>
-          <p>
-            <m>\cos\frac{\theta}{2}</m>
-          </p>
-        </statement>
-        <answer>
-          <p>
-            <m>-\sqrt{\frac{5}{6}}</m>
-          </p>
-        </answer>
-      </task>
-      <task>
-        <statement>
-          <p>
-            <m>\tan\frac{\theta}{2}</m>
-          </p>
-        </statement>
-        <answer>
-          <p>
-            <m>-\frac{\sqrt{5}}{5}</m>
-          </p>
-        </answer>
-      </task>
-    </exercise>
     <exercisegroup cols="2">
       <introduction>
         <p>
@@ -1068,24 +857,13 @@
     <exercisegroup cols="2">
       <introduction>
         <p>
-          Use the figure below for the following exercises.
+          For each problem, use the given information to find the exact value of each expression
         </p>
-        <image xml:id="exer-double-half-angle-triangle2" width="50%">
-          <latex-image>
-            \begin{tikzpicture}[scale=0.5]
-            \draw (0,0) -- (12,0) node[midway,below]{12};
-            \draw(0,0) -- (12,5) node[midway,above left]{13};
-            \draw(12,0) -- (12,5) node[midway,right]{5};
-            \draw(11.25,0) -- (11.25,0.75) -- (12,0.75);
-            \draw ([shift=(0:2)]0,0) arc (0:22.619864948:2) node[midway,right,xshift=2,yshift=0.5] {\(\theta\)};
-            \end{tikzpicture}
-          </latex-image>
-        </image>
       </introduction>
       <exercise>
         <introduction>
           <p>
-            Use the double angle formulas to find
+            <m>\cos\theta=-\frac{3}{5}</m> and <m>\theta</m> is in Quadrant III
           </p>
         </introduction>
         <task>
@@ -1096,7 +874,7 @@
           </statement>
           <answer>
             <p>
-              <m>\frac{120}{169}</m>
+              <m>\frac{24}{25}</m>
             </p>
           </answer>
         </task>
@@ -1108,7 +886,7 @@
           </statement>
           <answer>
             <p>
-              <m>\frac{119}{169}</m>
+              <m>-\frac{7}{25}</m>
             </p>
           </answer>
         </task>
@@ -1120,17 +898,10 @@
           </statement>
           <answer>
             <p>
-              <m>\frac{120}{119}</m>
+              <m>-\frac{24}{7}</m>
             </p>
           </answer>
         </task>
-      </exercise>
-      <exercise>
-        <introduction>
-          <p>
-            Use the half angle formulas to find
-          </p>
-        </introduction>
         <task>
           <statement>
             <p>
@@ -1139,7 +910,7 @@
           </statement>
           <answer>
             <p>
-              <m>\sqrt{\frac{1}{26}}</m>
+              <m>\sqrt{\frac{4}{5}}</m>
             </p>
           </answer>
         </task>
@@ -1151,7 +922,7 @@
           </statement>
           <answer>
             <p>
-              <m>\sqrt{\frac{25}{26}}</m>
+              <m>-\sqrt{\frac{1}{5}}</m>
             </p>
           </answer>
         </task>
@@ -1163,11 +934,706 @@
           </statement>
           <answer>
             <p>
-              <m>\frac{1}{5}</m>
+              <m>-2</m>
+            </p>
+          </answer>
+        </task>
+      </exercise>
+      <exercise>
+        <introduction>
+          <p>
+            <m>\sin\theta=-\frac{8}{17}</m> and <m>270^{\circ}\lt\theta\lt360^{\circ}</m>
+          </p>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              <m>\sin(2\theta)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>-\frac{240}{289}</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\cos(2\theta)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>\frac{161}{289}</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\tan(2\theta)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>-\frac{240}{161}</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\sin\left(\frac{\theta}{2}\right)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>\sqrt{\frac{1}{17}}</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\cos\left(\frac{\theta}{2}\right)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>\sqrt{\frac{16}{17}}</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\tan\left(\frac{\theta}{2}\right)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>-\frac{1}{4}</m>
+            </p>
+          </answer>
+        </task>
+      </exercise>
+      <!-- <exercise>
+        <introduction>
+          <p>
+            <m>\tan\theta=-\frac{4}{3}</m> and <m>\theta</m> is in Quadrant II
+          </p>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              <m>\sin(2\theta)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\cos(2\theta)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\tan(2\theta)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\sin\frac{\theta}{2}</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>-\frac{2\sqrt{5}}{5}</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\cos\frac{\theta}{2}</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>\frac{\sqrt{5}}{5}</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\tan\frac{\theta}{2}</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>2</m>
+            </p>
+          </answer>
+        </task>
+      </exercise> -->
+      <exercise>
+        <introduction>
+          <p>
+            <m>\cos\theta=\frac{2}{3}</m> and <m>\frac{3\pi}{2}\lt\theta\lt2\pi</m>
+          </p>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              <m>\sin(2\theta)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\cos(2\theta)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\tan(2\theta)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\sin\frac{\theta}{2}</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>\sqrt{\frac{1}{6}}</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\cos\frac{\theta}{2}</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>-\sqrt{\frac{5}{6}}</m>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\tan\frac{\theta}{2}</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <m>-\sqrt{\frac{1}{5}}</m>
+            </p>
+          </answer>
+        </task>
+      </exercise>
+
+
+      <exercise>
+        <introduction>
+          <p>
+
+          </p>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              <m>\sin(2\theta)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\cos(2\theta)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\tan(2\theta)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\sin\left(\frac{\theta}{2}\right)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\cos\left(\frac{\theta}{2}\right)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\tan\left(\frac{\theta}{2}\right)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              
+            </p>
+          </answer>
+        </task>
+      </exercise>
+      <exercise>
+        <introduction>
+          <p>
+            
+          </p>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              <m>\sin(2\theta)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\cos(2\theta)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\tan(2\theta)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\sin\left(\frac{\theta}{2}\right)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\cos\left(\frac{\theta}{2}\right)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\tan\left(\frac{\theta}{2}\right)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              
+            </p>
+          </answer>
+        </task>
+      </exercise>
+      <exercise>
+        <introduction>
+          <p>
+            
+          </p>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              <m>\sin(2\theta)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\cos(2\theta)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\tan(2\theta)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\sin\left(\frac{\theta}{2}\right)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\cos\left(\frac{\theta}{2}\right)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\tan\left(\frac{\theta}{2}\right)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              
+            </p>
+          </answer>
+        </task>
+      </exercise>
+      <exercise>
+        <introduction>
+          <p>
+            
+          </p>
+        </introduction>
+        <task>
+          <statement>
+            <p>
+              <m>\sin(2\theta)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\cos(2\theta)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\tan(2\theta)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\sin\left(\frac{\theta}{2}\right)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\cos\left(\frac{\theta}{2}\right)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              <m>\tan\left(\frac{\theta}{2}\right)</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              
             </p>
           </answer>
         </task>
       </exercise>
     </exercisegroup>
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          Use the Half-Angle Formula to find the exact value of each of the following
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan157.5^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>1-\sqrt{2}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin75^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\sqrt{\frac{2 + \sqrt{3}}{4}}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan112.5^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>-1-\sqrt{2}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos15^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{\sqrt{2+\sqrt{3}}}{2}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos\frac{\pi}{8}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\cos\frac{\pi}{8} = \sqrt{\frac{\sqrt{2} + 2}{4}}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan\frac{11\pi}{12}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\tan\frac{11\pi}{12} = -\sqrt{2} + 1</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin\frac{7\pi}{12}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\sin\frac{7\pi}{12} = \frac{\sqrt{2} - 1}{2}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos\frac{3\pi}{8}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\cos\frac{3\pi}{8} = \sqrt{\frac{\sqrt{2} + 2}{4}}</m>
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup>
+      <introduction>
+        <p>
+          Intro to deviation
+        </p>
+      </introduction>
+    
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+      </exercise>
+    
+    </exercisegroup>
+    <exercise>
+      <statement>
+        <p>
+          Use half angle to find the exact deviation for 22.5 and 67.5.
+        </p>
+        <image xml:id="deviation-half-angle-formula-2houses" width="100%">
+          <latex-image>
+            \begin{tikzpicture}[scale=7]
+            \draw[line width=2pt,-stealth] (0,0) -- (22.5:1.2) node[midway,sloped,above] {120 NM};
+            \draw[dashed] (0,0) -- ({1.2*cos(22.5)},0) node[midway,below,yshift=-0.1] {reference course};
+            \draw[dashed] ({1.2*cos(22.5)},0) -- (22.5:1.2) node[pos=0.5,right,xshift=0.1] {deviation};
+            \draw ([shift=(22.5:-0.1)]0,0) pic {waa-top={waacolor}{{-90+22.5}}{0.1}};
+            \draw ([shift=(0:0.2)]0,0) arc (0:22.5:0.2) node[midway,right,xshift=12,yshift=2] {2 Houses=$22.5^{\circ}$};
+            \draw ({1.2*cos(22.5)-0.04},0) -- ({1.2*cos(22.5)-0.04},0.04) -- ({1.2*cos(22.5)},0.04);
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </statement>
+    </exercise>
+
+    
   </exercises>
 </section>
