@@ -21,7 +21,6 @@
         \draw[thick] (0:1cm) arc (0:90:1cm);
         \draw[left] (0:0.98) node[rotate=0] {\large HIKINA};
         \draw[left] (90:0.98) node[rotate=90] {\large `\={A}KAU};
-        
         \draw (0:1.05) node[right] {$\left(\cos0^{\circ},\sin0^{\circ}\right)=(1,0)$};
         \draw (22.5:1.05) node[right] {$\left(\cos22.5^{\circ},\sin22.5^{\circ}\right)=(?,?)$};
         \draw (45:1.05) node[right] {$\left(\cos45^{\circ},\sin45^{\circ}\right)=\left(\frac{\sqrt{2}}{2},\frac{\sqrt{2}}{2}\right)$};
@@ -93,7 +92,7 @@
         </statement>
         <solution>
           <p>
-            By the double-angle formula we have <m>\sin(2\theta)=2\sin\theta\cos\theta</m>. We are given the value of <m>\sin\theta</m> but we do not have <m>\cos\theta</m>. To find <m>\cos\theta</m> we willdraw the triangle formed from <m>\sin\theta=-\frac{5}{13}</m> where <m>\theta</m> lies in Quadrant III.
+            By the double-angle formula, we have <m>\sin(2\theta)=2\sin\theta\cos\theta</m>. We are given the value of <m>\sin\theta</m>, but we do not have <m>\cos\theta</m>. To find <m>\cos\theta</m>, we will draw the triangle formed from <m>\sin\theta=-\frac{5}{13}</m> where <m>\theta</m> lies in Quadrant III.
           </p>
           <image xml:id="fig-example-double-angle-5-12-13">
             <latex-image>
@@ -120,11 +119,15 @@
           <p>
             Thus we have
             <me>
-              \cos\theta=\frac{\mbox{adjacent}}{\mbox{hypotenuse}}=-\frac{12}{13}, \quad \tan\theta=\frac{\mbox{opposite}}{\mbox{adjacent}}=\frac{5}{12}
+              \cos\theta=\frac{\mbox{adjacent}}{\mbox{hypotenuse}}=-\frac{12}{13}
+            </me>
+            and
+            <me>
+              \tan\theta=\frac{\mbox{opposite}}{\mbox{adjacent}}=\frac{5}{12}
             </me>.
           </p>
           <p>
-            With this new information, we are now ready to use the double-angle formula
+            With this new information, we can use the double-angle formula to find <m>\sin(2\theta)</m>:
             <me>
               \sin(2\theta)=2\sin\theta\cos\theta=2\left(-\frac{5}{13}\right)\left(-\frac{12}{13}\right)=\frac{120}{169}
             </me>
@@ -139,7 +142,10 @@
         </statement>
         <solution>
           <p>
-            To compute <m>\cos2\theta</m>, notice there are three different formulas: <m>\cos2\theta=\cos^\theta-\sin^2\theta</m>, <m>\cos2\theta=1-2\sin^2\theta</m>, or <m>\cos2\theta=2\cos^2\theta-1</m>. Using any of the three equations will give us the correct answer, however, if we look at the information we are given, we know that <m>\sin\theta=-\frac{5}{13}</m> so it may be easier to use <m>\cos2\theta=1-2\sin^2\theta</m> since the other two equations require us to know <m>\cos\theta</m>. Without having to draw the triangle, we could get
+            To compute <m>\cos2\theta</m>, notice there are three different formulas: <m>\cos2\theta=\cos^\theta-\sin^2\theta</m>, <m>\cos2\theta=1-2\sin^2\theta</m>, or <m>\cos2\theta=2\cos^2\theta-1</m>. Using any of the three equations will give us the correct answer. However, given that we know <m>\sin\theta=-\frac{5}{13}</m>, it may be easier to use <m>\cos2\theta=1-2\sin^2\theta</m>, since the other two equations require us to know <m>\cos\theta</m>.
+          </p>
+          <p>
+            Without having to draw the triangle, we could get
             <md>
               <mrow> \cos2\theta \amp= 1-2\sin^2\theta </mrow>
               <mrow> \amp = 1-2\left(-\frac{5}{13}\right)^2 </mrow>
@@ -158,7 +164,7 @@
         </statement>
         <solution>
           <p>
-            Using the Double-Angle Formula for Tangent, we get
+            Using the double-angle formula for tangent, we get
             <md>
               <mrow> \tan2\theta \amp =\frac{2\tan\theta}{1-\tan^2\theta} </mrow>
               <mrow> \amp = \frac{2\left(\frac{5}{12}\right)}{1-\left(\frac{5}{12}\right)^2} </mrow>
@@ -256,7 +262,7 @@
   <subsection>
     <title>Reducing Powers Formulas</title>
     <p>
-      You may notice that the double angle formula for cosine takes a trigonometric function and expresses it in terms of the square of a  trigonometric function. If we rearrange the terms, we can obtain formula for reducing the powers of sine, cosine, and tangent expressions with even powers in terms of only cosine. These formulas come in handy in calculus.
+      You may notice that the double-angle formula for cosine expresses a trigonometric function in terms of the square of another trigonometric function. By rearranging the terms, we can derive formulas for reducing the powers of sine, cosine, and tangent expressions with even powers to terms involving only cosine. These formulas are particularly useful in calculus.
     </p>
     <definition xml:id="def-formula-reducing-powers">
       <title>Formulas for Reducing Powers</title><idx><h>reducing powers formulas</h></idx>
@@ -276,7 +282,7 @@
     </definition>
     <proof>
       <p>
-        To prove the first formula, solve for <m>\sin^2\theta</m> in the Double-Angle Formula <m>\cos2\theta=1-2\sin^2\theta</m>. The second formula is obtained similarly by solving for <m>\cos^2\theta</m> in the formula  <m>\cos2\theta=2\cos^2\theta-1</m>. The first two formula can be used to obtain the third formula
+        To prove the first formula, solve for <m>\sin^2\theta</m> in the double-angle formula: <m>\cos2\theta=1-2\sin^2\theta</m>. The second formula is obtained similarly by solving for <m>\cos^2\theta</m> in the formula: <m>\cos2\theta=2\cos^2\theta-1</m>. The first two formula can be used to obtain the third formula:
         <me>
           \tan^2\theta=\frac{\sin^2\theta}{\cos^2\theta}=\frac{\dfrac{1-\cos(2\theta)}{2}}{\dfrac{1+\cos(2\theta)}{2}}=\frac{1-\cos(2\theta)}{1+\cos(2\theta)}
         </me>
@@ -326,14 +332,14 @@
     </definition>
     <proof>
       <p>
-        We take the square root on both sides of the Formulas for Reducing Powers and halve the angle (<m>\theta</m> becomes <m>\frac{\theta}{2}</m> and <m>2\theta</m> becomes <m>\theta</m>) to arrive at our formulas.
+        We take the square root on both sides of the Formulas for Reducing Powers (<xref ref="def-formula-reducing-powers"/>) and halve the angle (<m>\theta</m> becomes <m>\frac{\theta}{2}</m> and <m>2\theta</m> becomes <m>\theta</m>) to arrive at our formulas.
       </p>
     </proof>
     <example>
       <title>Locating ʻĀina</title>
       <statement>
         <p>
-          We are now ready to revisit the problem posed at the start of this section when we were asked to give the exact coordinates of the house ʻĀina on the Unit Circle.
+          We are now ready to revisit the problem posed at the start of this section when we were asked to determine the exact coordinates of the house ʻĀina on the Unit Circle.
         </p>
       </statement>
       <solution>
@@ -351,10 +357,10 @@
             <mrow> \amp = \sqrt{\frac{2-\sqrt{2}}{4}} </mrow>
             <mrow> \amp = \frac{1}{2}\cdot\sqrt{2-\sqrt{2}}</mrow>
           </md>
-          Since the half-angle formula has <m>\pm</m>, we check the quadrant. In this case, our angle is <m>22.5^{\circ}</m> which is in Quadrant I, thus we pick the opsitive value.
+          Since the half-angle formula has <m>\pm</m>, we check the quadrant. In this case, our angle is <m>22.5^{\circ}</m>, which is in Quadrant I. Therefore, we choose the positive value.
         </p>
         <p>
-          Finding the exact value of <m>\sin22.5^{\circ}</m> is left as <xref ref="exer-half-angle-sin22_5"/>.
+          Finding the exact value of <m>\sin22.5^{\circ}</m> is left for <xref ref="exer-half-angle-sin22_5"/>.
         </p>
       </solution>
     </example>
@@ -1391,7 +1397,7 @@
     <exercisegroup>
       <introduction>
         <p>
-          Intro to deviation
+          Power reducing...
         </p>
       </introduction>
     
