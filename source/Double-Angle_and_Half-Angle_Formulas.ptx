@@ -3,11 +3,7 @@
   <title>Double-Angle and Half-Angle Formulas</title>
   <introduction>
     <p>
-      Suppose we want to accurately position the Hawaiian Star Compass on the Unit Circle. In Figure*******
-      <!-- <xref ref="star-compass-32-compass-rose"/>, -->
-       the house for Manu is located at halfway between Hikina and ʻĀkau, resulting in an angle of <m>45^{\circ}</m>. By applying right triangle trigonometry, we can determine the exact coordinates of Manu as <m>\left(\cos(45^{\circ}), \sin(45^{\circ})\right) = \left(\frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2}\right)</m>. However, as we move to the house of ʻĀina, located halfway between Manu and Hikina, we encounter a problem. The angle for ʻĀina is <m>22.5^{\circ}</m>, which is not explicitly listed listed in Table 1.5.18 ***************
-      <!-- <xref ref="tab_trig-table"/>. -->
-      Therefore, we must resort to a calculator for numerical approximations.
+      Suppose we want to accurately position the Hawaiian Star Compass on the Unit Circle. In <xref ref="star-compass-32-compass-rose"/>,the house for Manu is located at halfway between Hikina and ʻĀkau, resulting in an angle of <m>45^{\circ}</m>. By applying right triangle trigonometry, we can determine the exact coordinates of Manu as <m>\left(\cos(45^{\circ}), \sin(45^{\circ})\right) = \left(\frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2}\right)</m>. However, as we move to the house of ʻĀina, located halfway between Manu and Hikina, we encounter a problem. The angle for ʻĀina is <m>22.5^{\circ}</m>, which is not explicitly listed listed in <xref ref="tab_trig-table"/>. Therefore, we must resort to a calculator for numerical approximations.
      </p>
      <image xml:id="fig-quad1-Koolau-manu-aina-angles" width="80%">
       <latex-image>
