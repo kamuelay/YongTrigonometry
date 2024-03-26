@@ -1,161 +1,255 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="product-to-sum_and_sum-to-product_formulas">
   <title>Product-to-Sum and Sum-to-Product Formulas</title>
-  <p>
-    *needs motivation/intro, needs examples,
-    and needs to expand on the math*
-  </p>
-  <definition xml:id="def-product-to-sum">
-    <title>Product-to-Sum Formulas</title><idx><h>product-to-sum formulas</h></idx>
-    <statement>
+  <introduction>
+    <p>
+      *needs motivation/intro, needs examples, and needs to expand on the math*
+    </p>
+  </introduction>
+  <subsection xml:id="subsec-product-to-sum">
+    <title>Product to Sum Formulas</title>
+    <p>
+    
+    </p>
+    <definition xml:id="def-product-to-sum">
+      <title>Product to Sum Formulas</title><idx><h>product-to-sum formulas</h></idx>
+      <statement>
+        <p>
+          <me>
+            \sin\alpha\cos\beta=\frac{1}{2}[\sin(\alpha+\beta)+\sin(\alpha-\beta)]
+          </me>
+          <me>
+            \cos\alpha\sin\beta=\frac{1}{2}[\sin(\alpha+\beta)-\sin(\alpha-\beta)]
+          </me>
+          <me>
+            \cos\alpha\cos\beta=\frac{1}{2}[\cos(\alpha+\beta)+\cos(\alpha-\beta)]
+          </me>
+          <me>
+            \sin\alpha\sin\beta=\frac{1}{2}[\cos(\alpha-\beta)-\cos(\alpha+\beta)]
+          </me>
+        </p>
+      </statement>
+    </definition>
+    <proof>
       <p>
-        <me>
-          \sin\alpha\cos\beta=\frac{1}{2}[\sin(\alpha+\beta)+\sin(\alpha-\beta)]
-        </me>
-        <me>
-          \cos\alpha\sin\beta=\frac{1}{2}[\sin(\alpha+\beta)-\sin(\alpha-\beta)]
-        </me>
-        <me>
-          \cos\alpha\cos\beta=\frac{1}{2}[\cos(\alpha+\beta)+\cos(\alpha-\beta)]
-        </me>
-        <me>
-          \sin\alpha\sin\beta=\frac{1}{2}[\cos(\alpha-\beta)-\cos(\alpha+\beta)]
-        </me>
-      </p>
-    </statement>
-  </definition>
-  <proof>
-    <p>
-      We add the addition and subtraction formulas for cosine:
-      <md>
-        <mrow> \cos(\alpha+\beta)\amp = \cos\alpha\cos\beta-\sin\alpha\sin\beta </mrow>
-        <mrow> +\cos(\alpha-\beta)\amp = \cos\alpha\cos\beta+\sin\alpha\sin\beta </mrow>
-        <mrow>\hline </mrow>
-        <mrow> \cos(\alpha+\beta)+\cos(\alpha-\beta) \amp = 2\cos\alpha\cos\beta </mrow>
-      </md>
-    </p>
-    <p>
-      Dividing both sides by 2, we get
-      <me>
-        \frac{1}{2}[\cos(\alpha+\beta)+\cos(\alpha-\beta)]=\cos\alpha\cos\beta
-      </me>
-    </p>
-    <p>
-      Next, we add the addition and subtraction formulas for sine:
-      <md>
-        <mrow> \sin(\alpha+\beta)\amp = \sin\alpha\cos\beta+\cos\alpha\sin\beta </mrow>
-        <mrow> +\sin(\alpha-\beta)\amp = \sin\alpha\cos\beta-\cos\alpha\sin\beta </mrow>
-        <mrow>\hline </mrow>
-        <mrow> \sin(\alpha+\beta)+\sin(\alpha-\beta) \amp = 2\sin\alpha\cos\beta </mrow>
-      </md>
-    </p>
-    <p>
-      Dividing both sides by 2, we get
-      <me>
-        \frac{1}{2}[\sin(\alpha+\beta)+\sin(\alpha-\beta)]=\sin\alpha\cos\beta
-      </me>
-    </p>
-    <p>
-      Next, we subtract the addition and subtraction formulas for sine:
-      <md>
-        <mrow> \sin(\alpha+\beta)\amp = \sin\alpha\cos\beta+\cos\alpha\sin\beta </mrow>
-        <mrow> -\sin(\alpha-\beta)\amp = \sin\alpha\cos\beta-\cos\alpha\sin\beta </mrow>
-        <mrow>\hline </mrow>
-        <mrow> \sin(\alpha+\beta)-\sin(\alpha-\beta) \amp = 2\sin\beta\cos\alpha </mrow>
-      </md>
-    </p>
-    <p>
-      Dividing both sides by 2, we get
-      <me>
-        \frac{1}{2}[\sin(\alpha+\beta)-\sin(\alpha-\beta)]=\sin\beta\cos\alpha
-      </me>
-    </p>
-    <p>
-      Finally, we subtract the addition and subtraction formulas for cosine:
-      <md>
-        <mrow> \cos(\alpha-\beta)\amp = \cos\alpha\cos\beta+\sin\alpha\sin\beta </mrow>
-        <mrow> -\cos(\alpha+\beta)\amp = \cos\alpha\cos\beta-\sin\alpha\sin\beta </mrow>
-        <mrow>\hline </mrow>
-        <mrow> \cos(\alpha-\beta)-\cos(\alpha+\beta) \amp = 2\sin\alpha\sin\beta </mrow>
-      </md>
-    </p>
-    <p>
-      Dividing both sides by 2, we get
-      <me>
-        \frac{1}{2}[\cos(\alpha-\beta)-\cos(\alpha+\beta)]=\sin\alpha\sin\beta
-      </me>
-    </p>
-  </proof>
-  <example>
-    <statement>
-      <p>
-        Express the product of <m>\cos(2x)\cos(5x)</m> as a sum or difference of sine and cosine with no products **fix wording**
-      </p>
-    </statement>
-    <solution>
-      <p>
-        Using the formula we get
+        We add the addition and subtraction formulas for cosine:
         <md>
-          <mrow>\cos(2x)\cos(5x)\amp = \frac{1}{2}[\cos(2x+5x)+\cos(2x-5x)]</mrow>
-          <mrow>\amp = \frac{1}{2}[\cos(7x)+\cos(-3x)]</mrow>
+          <mrow> \cos(\alpha+\beta)\amp = \cos\alpha\cos\beta-\sin\alpha\sin\beta </mrow>
+          <mrow> +\cos(\alpha-\beta)\amp = \cos\alpha\cos\beta+\sin\alpha\sin\beta </mrow>
+          <mrow>\hline </mrow>
+          <mrow> \cos(\alpha+\beta)+\cos(\alpha-\beta) \amp = 2\cos\alpha\cos\beta </mrow>
         </md>
       </p>
       <p>
-        Since cosine is even, <m>\cos(-3x)=\cos(3x)</m>.
-        Thus,
+        Dividing both sides by 2, we get
         <me>
-          \cos(2x)\cos(5x)=\frac{1}{2}[\cos(7x)+\cos(3x)]
+          \frac{1}{2}[\cos(\alpha+\beta)+\cos(\alpha-\beta)]=\cos\alpha\cos\beta
         </me>
       </p>
-    </solution>
-  </example>
-  <definition xml:id="def-sum-to-product">
-    <title>Sum-to-Product Formula</title><idx><h>sum-to-product formula</h></idx>
-    <statement>
       <p>
+        Next, we add the addition and subtraction formulas for sine:
         <md>
-          <mrow>\sin\alpha+\sin\beta\amp = 2\sin\left(\frac{\alpha+\beta}{2}\right)\cos\left(\frac{\alpha-\beta}{2}\right)</mrow>
-          <mrow>\sin\alpha-\sin\beta\amp = 2\cos\left(\frac{\alpha+\beta}{2}\right)\sin\left(\frac{\alpha-\beta}{2}\right)</mrow>
-          <mrow>\cos\alpha+\cos\beta\amp = 2\cos\left(\frac{\alpha+\beta}{2}\right)\cos\left(\frac{\alpha-\beta}{2}\right)</mrow>
-          <mrow>\cos\alpha-\cos\beta\amp = -2\sin\left(\frac{\alpha+\beta}{2}\right)\sin\left(\frac{\alpha-\beta}{2}\right)</mrow>
+          <mrow> \sin(\alpha+\beta)\amp = \sin\alpha\cos\beta+\cos\alpha\sin\beta </mrow>
+          <mrow> +\sin(\alpha-\beta)\amp = \sin\alpha\cos\beta-\cos\alpha\sin\beta </mrow>
+          <mrow>\hline </mrow>
+          <mrow> \sin(\alpha+\beta)+\sin(\alpha-\beta) \amp = 2\sin\alpha\cos\beta </mrow>
         </md>
       </p>
-    </statement>
-  </definition>
-  <proof>
+      <p>
+        Dividing both sides by 2, we get
+        <me>
+          \frac{1}{2}[\sin(\alpha+\beta)+\sin(\alpha-\beta)]=\sin\alpha\cos\beta
+        </me>
+      </p>
+      <p>
+        Next, we subtract the addition and subtraction formulas for sine:
+        <md>
+          <mrow> \sin(\alpha+\beta)\amp = \sin\alpha\cos\beta+\cos\alpha\sin\beta </mrow>
+          <mrow> -\sin(\alpha-\beta)\amp = \sin\alpha\cos\beta-\cos\alpha\sin\beta </mrow>
+          <mrow>\hline </mrow>
+          <mrow> \sin(\alpha+\beta)-\sin(\alpha-\beta) \amp = 2\sin\beta\cos\alpha </mrow>
+        </md>
+      </p>
+      <p>
+        Dividing both sides by 2, we get
+        <me>
+          \frac{1}{2}[\sin(\alpha+\beta)-\sin(\alpha-\beta)]=\sin\beta\cos\alpha
+        </me>
+      </p>
+      <p>
+        Finally, we subtract the addition and subtraction formulas for cosine:
+        <md>
+          <mrow> \cos(\alpha-\beta)\amp = \cos\alpha\cos\beta+\sin\alpha\sin\beta </mrow>
+          <mrow> -\cos(\alpha+\beta)\amp = \cos\alpha\cos\beta-\sin\alpha\sin\beta </mrow>
+          <mrow>\hline </mrow>
+          <mrow> \cos(\alpha-\beta)-\cos(\alpha+\beta) \amp = 2\sin\alpha\sin\beta </mrow>
+        </md>
+      </p>
+      <p>
+        Dividing both sides by 2, we get
+        <me>
+          \frac{1}{2}[\cos(\alpha-\beta)-\cos(\alpha+\beta)]=\sin\alpha\sin\beta
+        </me>
+      </p>
+    </proof>
+    <example>
+      <statement>
+        <p>
+          Express the product of <m>\cos(2x)\cos(5x)</m> as a sum or difference of sine and cosine with no products.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Using the formula we get
+          <md>
+            <mrow>\cos(2x)\cos(5x)\amp = \frac{1}{2}[\cos(2x+5x)+\cos(2x-5x)]</mrow>
+            <mrow>\amp = \frac{1}{2}[\cos(7x)+\cos(-3x)]</mrow>
+          </md>
+        </p>
+        <p>
+          Since cosine is even, <m>\cos(-3x)=\cos(3x)</m>.
+          Thus,
+          <me>
+            \cos(2x)\cos(5x)=\frac{1}{2}[\cos(7x)+\cos(3x)]
+          </me>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+  
+  <subsection xml:id="subsec-sum-to-product">
+    <title>Sum to Product Formulas</title>
+    <definition xml:id="def-sum-to-product">
+      <title>Sum-to-Product Formula</title><idx><h>sum-to-product formula</h></idx>
+      <statement>
+        <p>
+          <md>
+            <mrow>\sin\alpha+\sin\beta\amp = 2\sin\left(\frac{\alpha+\beta}{2}\right)\cos\left(\frac{\alpha-\beta}{2}\right)</mrow>
+            <mrow>\sin\alpha-\sin\beta\amp = 2\cos\left(\frac{\alpha+\beta}{2}\right)\sin\left(\frac{\alpha-\beta}{2}\right)</mrow>
+            <mrow>\cos\alpha+\cos\beta\amp = 2\cos\left(\frac{\alpha+\beta}{2}\right)\cos\left(\frac{\alpha-\beta}{2}\right)</mrow>
+            <mrow>\cos\alpha-\cos\beta\amp = -2\sin\left(\frac{\alpha+\beta}{2}\right)\sin\left(\frac{\alpha-\beta}{2}\right)</mrow>
+          </md>
+        </p>
+      </statement>
+    </definition>
+    <proof>
+      <p>
+        We first let <m>\alpha=\frac{u+v}{2}</m> and <m>\beta=\frac{u-v}{2}</m>.
+        Then
+        <me>
+          \alpha+\beta=\frac{u+v}{2}+\frac{u-v}{2}=\frac{2u}{2}=u
+        </me>
+        and
+        <me>
+          \alpha-\beta=\frac{u+v}{2}-\frac{u-v}{2}=\frac{2v}{2}=v
+        </me>
+      </p>
+      <p>
+        Substituting these values for <m>\alpha</m>,
+        <m>\beta</m>, <m>\alpha+\beta</m>,
+        and <m>\alpha-\beta</m> into the Product-to-Sum Formulas, we get
+        <md>
+          <mrow>\sin\left(\frac{u+v}{2}\right)\cos\left(\frac{u-v}{2}\right)\amp = \frac{1}{2}[\sin(u)+\sin(v)]</mrow>
+          <mrow>\cos\left(\frac{u+v}{2}\right)\sin\left(\frac{u-v}{2}\right)\amp = \frac{1}{2}[\sin(u)-\sin(v)]</mrow>
+          <mrow>\cos\left(\frac{u+v}{2}\right)\cos\left(\frac{u-v}{2}\right)\amp = \frac{1}{2}[\cos(u)+\cos(v)]</mrow>
+          <mrow>\sin\left(\frac{u+v}{2}\right)\sin\left(\frac{u-v}{2}\right)\amp = \frac{1}{2}[\cos(v)-\cos(u)]</mrow>
+        </md>
+      </p>
+      <p>
+        Multiplying both sides by 2 and replacing <m>u</m> with <m>\alpha</m> and <m>v</m> with <m>\beta</m> we end up with the Sum-to-Product Formula. (multiply the last equation by -1)
+      </p>
+      <p>
+        ***reword***
+      </p>
+    </proof>
     <p>
-      We first let <m>\alpha=\frac{u+v}{2}</m> and <m>\beta=\frac{u-v}{2}</m>.
-      Then
-      <me>
-        \alpha+\beta=\frac{u+v}{2}+\frac{u-v}{2}=\frac{2u}{2}=u
-      </me>
-      and
-      <me>
-        \alpha-\beta=\frac{u+v}{2}-\frac{u-v}{2}=\frac{2v}{2}=v
-      </me>
+      Example:
     </p>
     <p>
-      Substituting these values for <m>\alpha</m>,
-      <m>\beta</m>, <m>\alpha+\beta</m>,
-      and <m>\alpha-\beta</m> into the Product-to-Sum Formulas, we get
-      <md>
-        <mrow>\sin\left(\frac{u+v}{2}\right)\cos\left(\frac{u-v}{2}\right)\amp = \frac{1}{2}[\sin(u)+\sin(v)]</mrow>
-        <mrow>\cos\left(\frac{u+v}{2}\right)\sin\left(\frac{u-v}{2}\right)\amp = \frac{1}{2}[\sin(u)-\sin(v)]</mrow>
-        <mrow>\cos\left(\frac{u+v}{2}\right)\cos\left(\frac{u-v}{2}\right)\amp = \frac{1}{2}[\cos(u)+\cos(v)]</mrow>
-        <mrow>\sin\left(\frac{u+v}{2}\right)\sin\left(\frac{u-v}{2}\right)\amp = \frac{1}{2}[\cos(v)-\cos(u)]</mrow>
-      </md>
+      GPS. "<url href="\1"/>
     </p>
-    <p>
-      Multiplying both sides by 2 and replacing <m>u</m> with <m>\alpha</m> and <m>v</m> with <m>\beta</m> we end up with the Sum-to-Product Formula. (multiply the last equation by -1)
-    </p>
-    <p>
-      ***reword***
-    </p>
-  </proof>
-  <p>
-    Example:
-  </p>
-  <p>
-    GPS. "<url href="\1"/>
-  </p>
+  </subsection>
+
+
+  <exercises xml:id="exercises-product-to-sum-sum-to-product">
+    <exercisegroup>
+      <introduction>
+        <p>
+          Express each product as a sum or difference of sine and cosine with no products.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+  </exercises>
 </section>
