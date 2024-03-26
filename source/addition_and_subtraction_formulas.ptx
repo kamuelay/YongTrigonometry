@@ -3,12 +3,7 @@
   <title>Addition and Subtraction Formulas</title>
   <introduction>
     <p>
-      In ***********
-    </p>
-      <!-- In <xref ref="right_triangle_trigonometry"/>,  -->
-
-    <p>
-      In Section ***********, we used right triangles to determine the deviation of a waʻa (canoe) from its course based on the angle of deviation. If a waʻa sails for 120 nautical miles (NM), we were able to calculate the deviation from its course using right triangles to get the equation:
+      In <xref ref="right_triangle_trigonometry"/>, we used right triangles to determine the deviation of a waʻa (canoe) from its course based on the angle of deviation. If a waʻa sails for 120 nautical miles (NM), we were able to calculate the deviation from its course using right triangles to get the equation:
       <me>
         \mbox{deviation} = (120\mbox{ NM})\cdot\sin(\theta)
       </me>.        
@@ -123,9 +118,7 @@
         </md>
       </p>
       <p>
-        Then by the Pythagorean Identity ************* (Definition 1.5.20)
-        <!-- (<xref ref="def_pythagorean-identity"/>), -->
-        <m>\cos^2\alpha+\sin^2\alpha=1</m> and <m>\cos^2\beta+\sin^2\beta=1</m>. Thus the distance becomes
+        Then by the Pythagorean Identity (<xref ref="def_pythagorean-identity"/>), <m>\cos^2\alpha+\sin^2\alpha=1</m> and <m>\cos^2\beta+\sin^2\beta=1</m>. Thus the distance becomes
         <md>
           <mrow>d(P,Q) \amp = \sqrt{1+1-2\cos\alpha\cos\beta-2\sin\alpha\sin\beta}</mrow>
           <mrow>\amp = \sqrt{2-2\cos\alpha\cos\beta-2\sin\alpha\sin\beta}</mrow>
@@ -178,9 +171,7 @@
         </me>
       </p>
       <p>
-        To prove the Addition Formula for Cosine, replace <m>\beta</m> with <m>-\beta</m> in the Subtraction Formula and use the Even and Odd Trigonometric Properties ******(Definition 1.5.22),
-        <!-- (<xref ref="def-even-odd-trig"/>) -->
-        where <m>\sin(-\beta)=-\sin\beta</m> and <m>\cos(-\beta)=\cos\beta</m> to get
+        To prove the Addition Formula for Cosine, replace <m>\beta</m> with <m>-\beta</m> in the Subtraction Formula and use the Even and Odd Trigonometric Properties (<xref ref="def-even-odd-trig"/>) where <m>\sin(-\beta)=-\sin\beta</m> and <m>\cos(-\beta)=\cos\beta</m> to get
         <md>
           <mrow>\cos\alpha\cos(-\beta)+\sin\alpha\sin(-\beta)\amp = \cos(\alpha-(-\beta))</mrow>
           <mrow>\cos\alpha\cos(\beta)+\sin\alpha(-\sin\beta)\amp = \cos(\alpha+\beta)</mrow>
@@ -257,8 +248,7 @@
     </definition>
     <p>
       We will prove the Addition Formula for Sine in <xref ref="add-formula-sine-proof"/>
-      and the Subtraction Formula can be established using the Even and Odd Properties ******(Definition 1.5.22),
-      <!-- (<xref ref="def-even-odd-trig"/>). -->
+      and the Subtraction Formula can be established using the Even and Odd Properties (<xref ref="def-even-odd-trig"/>).
     </p>
     <example>
       <statement>
@@ -379,8 +369,7 @@
         </md>
       </p>
       <p>
-        The subtraction formula can be established using the Even and Odd Properties ******(Definition 1.5.22),
-        <!-- (<xref ref="def-even-odd-trig"/>). -->
+        The subtraction formula can be established using the Even and Odd Properties (<xref ref="def-even-odd-trig"/>).
       </p>
     </proof>
     <example>
@@ -408,8 +397,7 @@
   <subsection>
     <title>Cofunction Identities</title>
     <p>
-      Recall the Cofunction Identities ***********
-      <!-- (<xref ref="def_cofunction-identities"/>): -->
+      Recall the Cofunction Identities (<xref ref="def_cofunction-identities"/>):
     </p>
     <p>
       <md>
@@ -420,10 +408,7 @@
     </p>
     <proof>
       <p>
-        We will prove the Cofunction Identity for <m>\sin\theta</m> in <xref ref="ex-cofunction-identity-cos"/>. The proof for <m>\cos\theta</m> is given as <xref ref="exer-cofunction-identity-sin"/>. The Cofunction Identities for <m>\tan\theta</m> and <m>\cot\theta</m> can be found using the Quotient Identities ********
-        <!-- (<xref ref="def_quotient-identities"/>)  -->
-        for <m>\csc\theta</m> and <m>\sec\theta</m> can be found using the Reciprocal Identities *********
-        <!-- (<xref ref="def_reciprocal-identities"/>). -->
+        We will prove the Cofunction Identity for <m>\sin\theta</m> in <xref ref="ex-cofunction-identity-cos"/>. The proof for <m>\cos\theta</m> is given as <xref ref="exer-cofunction-identity-sin"/>. The Cofunction Identities for <m>\tan\theta</m> and <m>\cot\theta</m> can be found using the Quotient Identities (<xref ref="def_quotient-identities"/>) for <m>\csc\theta</m> and <m>\sec\theta</m> can be found using the Reciprocal Identities (<xref ref="def_reciprocal-identities"/>).
       </p>
     </proof>
     <example xml:id="ex-cofunction-identity-cos">
