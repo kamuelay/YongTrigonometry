@@ -79,7 +79,7 @@
         Notice that there are three variations of the double-angle formula for cosine. All three equations give the correct answer; however, one version may be more convenient depending on the given information. For example, if you are given the value of <m>\sin\theta</m>, it may be easier to select the version that solely involves <m>\sin\theta</m> and does not include <m>\cos\theta</m>.
       </p>
     </remark>
-    <example xml:id="ex_half-angle">
+    <example xml:id="ex_double-angle">
       <introduction>
         <p>
           Given <m>\sin\theta=-\frac{5}{13}</m> and <m>\theta</m> lies in Quadrant III, find the exact value of
@@ -95,7 +95,7 @@
           <p>
             By the double-angle formula we have <m>\sin(2\theta)=2\sin\theta\cos\theta</m>. We are given the value of <m>\sin\theta</m> but we do not have <m>\cos\theta</m>. To find <m>\cos\theta</m> we willdraw the triangle formed from <m>\sin\theta=-\frac{5}{13}</m> where <m>\theta</m> lies in Quadrant III.
           </p>
-          <image xml:id="example-double-angle-5-12-13">
+          <image xml:id="fig-example-double-angle-5-12-13">
             <latex-image>
               \begin{tikzpicture}
               \draw[stealth-stealth] (-13,0)--(1,0) node[right]{\(x\)};
