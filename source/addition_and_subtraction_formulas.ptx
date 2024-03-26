@@ -491,6 +491,20 @@
       </solution>
     </example>
   </subsection>
+  <subsection>
+    <title>Summary</title>
+    <p>
+      To review, the addition and subtraction formulas are
+      <md>
+        <mrow>\sin(\alpha+\beta)\amp = \sin\alpha\cos\beta+\cos\alpha\sin\beta</mrow>
+        <mrow>\sin(\alpha-\beta)\amp = \sin\alpha\cos\beta-\cos\alpha\sin\beta</mrow>
+        <mrow>\cos(\alpha+\beta)\amp = \cos\alpha\cos\beta-\sin\alpha\sin\beta</mrow>
+        <mrow>\cos(\alpha-\beta)\amp = \cos\alpha\cos\beta+\sin\alpha\sin\beta</mrow>
+        <mrow>\tan(\alpha+\beta)\amp = \frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}</mrow>
+        <mrow>\tan(\alpha-\beta)\amp = \frac{\tan\alpha-\tan\beta}{1-\tan\alpha\tan\beta}</mrow>
+      </md>
+    </p>
+  </subsection>
 
   <exercises>
     <exercisegroup cols="2">
@@ -601,7 +615,7 @@
         </hint>
         <answer>
           <p>
-            
+            <m>\frac{\sqrt{6}+\sqrt{2}}{4}</m>
           </p>
         </answer>
       </exercise>
@@ -618,7 +632,7 @@
         </hint>
         <answer>
           <p>
-            
+            <m>\frac{\sqrt{6}+\sqrt{2}}{4}</m>
           </p>
         </answer>
       </exercise>
@@ -630,12 +644,12 @@
         </statement>
         <hint>
           <p>
-            <m>\frac{13\pi}{12}=\frac{11\pi}{6}-\frac{\pi}{4}</m>
+            <m>\frac{13\pi}{12}=\frac{11\pi}{6}-\frac{3\pi}{4}</m>
           </p>
         </hint>
         <answer>
           <p>
-            
+            <m>\frac{\sqrt{2}-\sqrt{6}}{4}</m>
           </p>
         </answer>
       </exercise>
@@ -652,7 +666,7 @@
         </hint>
         <answer>
           <p>
-            
+            <m>\frac{\sqrt{2}-\sqrt{6}}{4}</m>
           </p>
         </answer>
       </exercise>
@@ -669,7 +683,7 @@
         </hint>
         <answer>
           <p>
-            
+            <m>\frac{1-\sqrt{3}}{1+\sqrt{3}}</m>
           </p>
         </answer>
       </exercise>
@@ -753,16 +767,19 @@
         </answer>
       </exercise>
     </exercisegroup>
-    <exercisegroup cols="2">
+    <exercisegroup>
       <introduction>
         <p>
-          Find the exact of each expression given <m>\sin\alpha=\frac{20}{29}</m>, <m>0\lt\alpha\lt\frac{\pi}{2}</m> and <m>\cos\beta=\frac{24}{25}</m>, <m>0\lt\beta\lt\frac{\pi}{2}</m>
+          Find the exact value of each expression given
+        </p>
+        <p>
+          INSERT IMAGE
         </p>
       </introduction>
       <exercise>
         <statement>
           <p>
-            <m>\sin(\alpha+\beta)</m>
+            <m>\sin(\alpha)</m>
           </p>
         </statement>
         <answer>
@@ -774,7 +791,67 @@
       <exercise>
         <statement>
           <p>
-            <m>\sin(\alpha-\beta)</m>
+            <m>\cos(\alpha)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan(\alpha)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin(\beta)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos(\beta)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan(\beta)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin(\alpha+\beta)</m>
           </p>
         </statement>
         <answer>
@@ -798,7 +875,149 @@
       <exercise>
         <statement>
           <p>
+            <m>\tan(\alpha+\beta)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin(\alpha-\beta)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
             <m>\cos(\alpha-\beta)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan(\alpha-\beta)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup>
+      <introduction>
+        <p>
+          Find the exact value of each expression given
+        </p>
+        <p>
+          INSERT IMAGE
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin(\alpha)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos(\alpha)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan(\alpha)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin(\beta)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos(\beta)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan(\beta)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin(\alpha+\beta)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos(\alpha+\beta)</m>
           </p>
         </statement>
         <answer>
@@ -822,12 +1041,163 @@
       <exercise>
         <statement>
           <p>
+            <m>\sin(\alpha-\beta)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos(\alpha-\beta)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
             <m>\tan(\alpha-\beta)</m>
           </p>
         </statement>
         <answer>
           <p>
             
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          Find the exact of each expression given <m>\sin\alpha=\frac{20}{29}</m>, <m>0\lt\alpha\lt\frac{\pi}{2}</m> and <m>\cos\beta=\frac{24}{25}</m>, <m>0\lt\beta\lt\frac{\pi}{2}</m>
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos(\alpha)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{21}{29}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan(\alpha)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{20}{29}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin(\beta)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{7}{25}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan(\beta)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{7}{24}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin(\alpha+\beta)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{627}{725}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin(\alpha-\beta)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{333}{725}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos(\alpha+\beta)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{364}{725}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos(\alpha-\beta)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{644}{725}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan(\alpha+\beta)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{627}{364}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan(\alpha-\beta)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{333}{644}</m>
           </p>
         </answer>
       </exercise>    
@@ -841,12 +1211,60 @@
       <exercise>
         <statement>
           <p>
+            <m>\sin(\alpha)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>-\frac{8}{17}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos(\alpha)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>-\frac{15}{17}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin(\beta)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{4}{5}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan(\beta)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>-\frac{4}{3}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
             <m>\sin(\alpha+\beta)</m>
           </p>
         </statement>
         <answer>
           <p>
-            
+            <m>-\frac{36}{85}</m>
           </p>
         </answer>
       </exercise>
@@ -858,7 +1276,7 @@
         </statement>
         <answer>
           <p>
-            
+            <m>\frac{84}{85}</m>
           </p>
         </answer>
       </exercise>
@@ -870,7 +1288,7 @@
         </statement>
         <answer>
           <p>
-            
+            <m>\frac{77}{85}</m>
           </p>
         </answer>
       </exercise>
@@ -882,7 +1300,7 @@
         </statement>
         <answer>
           <p>
-            
+            <m>\frac{13}{85}</m>
           </p>
         </answer>
       </exercise>
@@ -894,7 +1312,7 @@
         </statement>
         <answer>
           <p>
-            
+            <m>-\frac{36}{77}</m>
           </p>
         </answer>
       </exercise>
@@ -906,7 +1324,7 @@
         </statement>
         <answer>
           <p>
-            
+            <m>\frac{84}{13}</m>
           </p>
         </answer>
       </exercise>    
