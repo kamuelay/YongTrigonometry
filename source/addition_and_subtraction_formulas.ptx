@@ -416,9 +416,9 @@
     </p>
     <p>
       <md>
-        <mrow>\sin\theta\amp =\cos\left(\frac{\pi}{2}-\theta\right) \amp \cos\theta\amp =\sin\left(\frac{\pi}{2}-\theta\right)</mrow>
-        <mrow>\tan\theta\amp =\cot\left(\frac{\pi}{2}-\theta\right) \amp \cot\theta\amp =\tan\left(\frac{\pi}{2}-\theta\right)</mrow>
-        <mrow>\sec\theta\amp =\csc\left(\frac{\pi}{2}-\theta\right) \amp \csc\theta\amp =\sec\left(\frac{\pi}{2}-\theta\right)</mrow>
+        <mrow>\sin\theta\amp =\cos\left(\frac{\pi}{2}-\theta\right), \amp \cos\theta\amp =\sin\left(\frac{\pi}{2}-\theta\right)</mrow>
+        <mrow>\tan\theta\amp =\cot\left(\frac{\pi}{2}-\theta\right), \amp \cot\theta\amp =\tan\left(\frac{\pi}{2}-\theta\right)</mrow>
+        <mrow>\sec\theta\amp =\csc\left(\frac{\pi}{2}-\theta\right), \amp \csc\theta\amp =\sec\left(\frac{\pi}{2}-\theta\right)</mrow>
       </md>
     </p>
     <proof>
