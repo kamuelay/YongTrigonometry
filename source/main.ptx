@@ -3,6 +3,7 @@
   <docinfo>
     <macros>
       \newcommand{\sectionbreak}{\clearpage}
+      \usepackage{cancel}
     </macros>
     <latex-image-preamble>
       \usepackage{tikz,pgfplots} \usepackage{tkz-graph} \usepackage{tkz-euclide}
