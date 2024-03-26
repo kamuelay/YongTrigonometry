@@ -132,9 +132,7 @@
         </md>
       </p>
       <p>
-        Next, consider two additional points on a second unit circle.
-        Point <m>A</m> has coordinates at <m>(1,0)</m> and Point <m>B</m> is at an angle of
-        <m>\alpha-\beta</m> in standard position with coordinates <m>(\cos(\alpha-\beta),\sin(\alpha-\beta))</m>.
+        Next, consider two additional points on a second unit circle. Point <m>A</m> has coordinates at <m>(1,0)</m> and Point <m>B</m> is at an angle of <m>\alpha-\beta</m> in standard position with coordinates <m>(\cos(\alpha-\beta),\sin(\alpha-\beta))</m>.
       </p>
       <image xml:id="fig-cos-sub-proof2">
         <latex-image>
@@ -190,7 +188,6 @@
         </md>
       </p>
     </proof>
-    
     <example>
       <statement>
         <p>
