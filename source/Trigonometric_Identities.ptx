@@ -12,6 +12,43 @@
       Review of trig IDs such as Pythagorean Identities, Reciprocal Identities, Cofunctions, etc.
     </p>
     <p>
+      The Reciprocal Identities (<xref ref="def_reciprocal-identities"/>)
+      <md>
+        <mrow>\sin\theta\amp =\dfrac{1}{\csc\theta} \amp  \cos\theta\amp =\dfrac{1}{\sec\theta} \amp  \tan\theta\amp =\dfrac{1}{\cot\theta}</mrow>
+        <mrow>\csc\theta\amp =\dfrac{1}{\sin\theta} \amp  \sec\theta\amp =\dfrac{1}{\cos\theta} \amp  \cot\theta\amp =\dfrac{1}{\tan\theta}</mrow>
+      </md> 
+    </p>
+    <p>
+      The Quotient Identities (<xref ref="def_quotient-identities"/>)
+      <md>
+        <mrow>\tan\theta \amp =\dfrac{\sin\theta}{\cos\theta} \amp  \cot\theta\amp =\dfrac{\cos\theta}{\sin\theta}</mrow>
+      </md>
+    </p>
+    <p>
+      Pythagorean Identities (<xref ref="def_pythagorean-identity"/>)
+      <md>
+        <mrow>\sin^2\theta+\cos^2\theta \amp = 1 </mrow>
+        <mrow> 1+\tan^2\theta \amp = \sec^2\theta</mrow>
+        <mrow> 1+\cot^2\theta \amp = \csc^2\theta</mrow>
+      </md>
+    </p>
+    <p>
+      Odd-Even Properties (<xref ref="def-even-odd-trig"/>)
+    </p>
+    <p>
+      The cosine and secant functions are <term>even</term>
+      <md>
+        <mrow>\cos(-\theta)\amp =\cos\theta \amp  \sec(-\theta)\amp =\sec\theta</mrow>
+      </md>
+    </p>
+    <p>
+      The sine, cosecant, tangent, and cotangent functions are <term>odd</term>
+      <md>
+        <mrow>\sin(-\theta)\amp =-\sin\theta \amp  \csc(-\theta)\amp =-\csc(\theta)</mrow>
+        <mrow>\tan(-\theta)\amp =-\tan\theta \amp  \cot(-\theta)\amp =-\cot(\theta)</mrow>
+      </md>
+    </p>
+    <p>
       *need to begin section*
     </p>
     <example>
