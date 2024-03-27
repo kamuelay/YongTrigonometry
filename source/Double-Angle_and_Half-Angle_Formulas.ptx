@@ -57,11 +57,11 @@
       <statement>
         <p>
           <md>
-            <mrow>\sin 2\theta \amp =  2\sin \theta \cos \theta</mrow>
-            <mrow>\cos 2\theta \amp  = \cos^2 \theta - \sin^2 \theta</mrow>
-            <mrow>\amp = 1-2\sin^2 \theta</mrow>
-            <mrow>\amp = 2\cos^2 \theta-1</mrow>
-            <mrow>\tan 2 \theta \amp =  \frac{2\tan \theta}{1-\tan^2 \theta}</mrow>
+            <mrow> \sin 2\theta \amp =  2\sin \theta \cos \theta</mrow>
+            <mrow> \cos 2\theta \amp = \cos^2 \theta - \sin^2 \theta</mrow>
+            <mrow> \cos 2\theta \amp = 1-2\sin^2 \theta</mrow>
+            <mrow> \cos 2\theta \amp = 2\cos^2 \theta-1</mrow>
+            <mrow> \tan 2\theta \amp =  \frac{2\tan \theta}{1-\tan^2 \theta}</mrow>
           </md>
         </p>
       </statement>
