@@ -15,18 +15,12 @@
       <title>Product to Sum Formulas</title><idx><h>product-to-sum formulas</h></idx>
       <statement>
         <p>
-          <me>
-            \sin\alpha\cos\beta=\frac{1}{2}[\sin(\alpha+\beta)+\sin(\alpha-\beta)]
-          </me>
-          <me>
-            \cos\alpha\sin\beta=\frac{1}{2}[\sin(\alpha+\beta)-\sin(\alpha-\beta)]
-          </me>
-          <me>
-            \cos\alpha\cos\beta=\frac{1}{2}[\cos(\alpha+\beta)+\cos(\alpha-\beta)]
-          </me>
-          <me>
-            \sin\alpha\sin\beta=\frac{1}{2}[\cos(\alpha-\beta)-\cos(\alpha+\beta)]
-          </me>
+          <md>
+            <mrow> \sin\alpha\cos\beta \amp = \frac{1}{2}[\sin(\alpha+\beta)+\sin(\alpha-\beta)] </mrow>
+            <mrow> \cos\alpha\sin\beta \amp = \frac{1}{2}[\sin(\alpha+\beta)-\sin(\alpha-\beta)] </mrow>
+            <mrow> \cos\alpha\cos\beta \amp = \frac{1}{2}[\cos(\alpha+\beta)+\cos(\alpha-\beta)] </mrow>
+            <mrow> \sin\alpha\sin\beta \amp = \frac{1}{2}[\cos(\alpha-\beta)-\cos(\alpha+\beta)] </mrow>
+          </md>
         </p>
       </statement>
     </definition>
@@ -172,84 +166,212 @@
 
 
   <exercises xml:id="exercises-product-to-sum-sum-to-product">
-    <exercisegroup>
+    <exercisegroup cols="2">
       <introduction>
         <p>
-          Express each product as a sum or difference of sine and cosine with no products.
+          Express each product as a sum or difference of sine and cosine.
         </p>
       </introduction>
       <exercise>
         <statement>
           <p>
-            
+            <m>\sin(3x)\cos(5x)</m>
           </p>
         </statement>
         <answer>
           <p>
-            
+            <m>\frac{1}{2}[\sin(8x)+\sin(-2x)]</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            
+            <m>\sin(7t)\cos(-2t)</m>
           </p>
         </statement>
         <answer>
           <p>
-            
+            <m>\frac{1}{2}[\sin(5t)+\sin(9t)]</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            
+            <m>\cos(-3t)\sin(7t)</m>
           </p>
         </statement>
         <answer>
           <p>
-            
+            <m>\frac{1}{2}[\sin(4t)-\sin(-10t)]</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            
+            <m>\cos(9\theta)\sin(6\theta)</m>
           </p>
         </statement>
         <answer>
           <p>
-            
+            <m>\frac{1}{2}[\cos(15\theta)-\cos(3\theta)]</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            
+            <m>\cos(-4x)\cos(6x)</m>
           </p>
         </statement>
         <answer>
           <p>
-            
+            <m>\frac{1}{2}[\cos(2x)+\cos(-10x)]</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            
+            <m>\cos(2\theta)\cos(4\theta)</m>
           </p>
         </statement>
         <answer>
           <p>
-            
+            <m>\frac{1}{2}[\cos(6\theta)+\cos(-2\theta)]</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin(-\theta)\sin(8\theta)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{1}{2}[\cos(-9\theta)-\cos(7\theta)]</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin(6t)\sin(-3t)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{1}{2}[\cos(9t)-\cos(3t)]</m>
           </p>
         </answer>
       </exercise>
     </exercisegroup>
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          Express each sum or difference as a product.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin(-2\theta)+\sin(-9\theta)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>2\sin\left(-\frac{11\theta}{2}\right)\cos\left(\frac{7\theta}{2}\right)</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin(5x)+\sin(7x)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>2\sin\left(6x\right)\cos\left(-x\right)</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin(4\theta)-\sin(-7\theta)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>2\cos\left(\frac{11\theta}{2}\right)\sin\left(-\frac{3\theta}{2}\right)</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin(3x)-\sin(-4x)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>2\cos\left(\frac{7x}{2}\right)\sin\left(-\frac{x}{2}\right)</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos(8\theta)+\cos(-5\theta)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>2\cos\left(\frac{3\theta}{2}\right)\cos\left(\frac{13\theta}{2}\right)</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos(9t)+\cos(2t)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>2\cos\left(\frac{11t}{2}\right)\cos\left(\frac{7t}{2}\right)</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos(6\theta)-\cos(8\theta)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>-2\sin\left(7\theta\right)\sin\left(-\theta\right)</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos(6t)-\cos(-3t)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>-2\sin\left(\frac{9t}{2}\right)\sin\left(\frac{3t}{2}\right)</m>
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    
   </exercises>
 </section>
