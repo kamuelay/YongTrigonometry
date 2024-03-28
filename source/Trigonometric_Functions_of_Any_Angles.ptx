@@ -1569,6 +1569,9 @@
     <definition xml:id="def_pythagorean-identity"><title>Pythagorean Identities</title>
     <statement>
     <p>
+      <idx>
+        <h>Pythagorean identities</h>
+      </idx>
       <ol>
         <li>
           <p>
@@ -1669,6 +1672,9 @@
     <definition xml:id="def-even-odd-trig"><title>Even and Odd Trigonometric Properties</title><idx><h>even and odd trigonometric properties</h></idx>
     <statement>
     <p>
+      <idx>
+        <h>odd-even identities</h>
+      </idx>
       The cosine and secant functions are <term>even</term>
       <md>
         <mrow>\cos(-\theta)\amp =\cos\theta \amp  \sec(-\theta)\amp =\sec\theta</mrow>
