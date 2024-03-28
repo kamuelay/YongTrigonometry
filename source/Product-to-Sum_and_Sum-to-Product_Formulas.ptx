@@ -101,14 +101,22 @@
           </md>
         </p>
         <p>
-          Since cosine is even, <m>\cos(-3x)=\cos(3x)</m>.
-          Thus,
+          This satisfies the requirement of expressing the product of <m>\cos(2x)\cos(5x)</m> as a sum or difference of sine and cosine with no products. However, we can simplify it further.
+        </p>
+        <p>
+          Since cosine is an even function, <m>\cos(-3x) = \cos(3x)</m>. Thus, we can simplify the expression to:
           <me>
             \cos(2x)\cos(5x)=\frac{1}{2}[\cos(7x)+\cos(3x)]
           </me>
         </p>
       </solution>
     </example>
+    <remark>
+      <title>Negative Angles</title>
+      <p>
+        In the previous example, both forms <m>\cos(2x)\cos(5x) = \frac{1}{2}[\cos(7x)+\cos(-3x)]</m> and <m>\cos(2x)\cos(5x) = \frac{1}{2}[\cos(7x)+\cos(3x)]</m> are valid representations of the answer. However, it is more common to write the first form (where the angles are positive) because it simplifies the expression and aligns with standard conventions for representing trigonometric identities. Positive angles are often preferred for clarity and consistency in mathematical notation. Negative angles can be transformed into positive angles using the even-odd properties of trigonometric functions (<xref ref="def-even-odd-trig"/>).
+      </p>
+    </remark>
   </subsection>
   
   <subsection xml:id="subsec-sum-to-product">
@@ -180,7 +188,7 @@
         </statement>
         <answer>
           <p>
-            <m>\frac{1}{2}[\sin(8x)+\sin(-2x)]</m>
+            <m>\frac{1}{2}[\sin(8x)+\sin(-2x)]=\frac{1}{2}[\sin(8x)-\sin(2x)]</m>
           </p>
         </answer>
       </exercise>
@@ -204,7 +212,7 @@
         </statement>
         <answer>
           <p>
-            <m>\frac{1}{2}[\sin(4t)-\sin(-10t)]</m>
+            <m>\frac{1}{2}[\sin(4t)-\sin(-10t)]=\frac{1}{2}[\sin(4t)+\sin(10t)]</m>
           </p>
         </answer>
       </exercise>
@@ -228,7 +236,7 @@
         </statement>
         <answer>
           <p>
-            <m>\frac{1}{2}[\cos(2x)+\cos(-10x)]</m>
+            <m>\frac{1}{2}[\cos(2x)+\cos(-10x)]=\frac{1}{2}[\cos(2x)+\cos(10x)]</m>
           </p>
         </answer>
       </exercise>
@@ -240,7 +248,7 @@
         </statement>
         <answer>
           <p>
-            <m>\frac{1}{2}[\cos(6\theta)+\cos(-2\theta)]</m>
+            <m>\frac{1}{2}[\cos(6\theta)+\cos(-2\theta)]=\frac{1}{2}[\cos(6\theta)+\cos(2\theta)]</m>
           </p>
         </answer>
       </exercise>
@@ -252,7 +260,7 @@
         </statement>
         <answer>
           <p>
-            <m>\frac{1}{2}[\cos(-9\theta)-\cos(7\theta)]</m>
+            <m>\frac{1}{2}[\cos(-9\theta)-\cos(7\theta)]=\frac{1}{2}[\cos(9\theta)-\cos(7\theta)]</m>
           </p>
         </answer>
       </exercise>
@@ -283,7 +291,7 @@
         </statement>
         <answer>
           <p>
-            <m>2\sin\left(-\frac{11\theta}{2}\right)\cos\left(\frac{7\theta}{2}\right)</m>
+            <m>2\sin\left(-\frac{11\theta}{2}\right)\cos\left(\frac{7\theta}{2}\right)=-2\sin\left(\frac{11\theta}{2}\right)\cos\left(\frac{7\theta}{2}\right)</m>
           </p>
         </answer>
       </exercise>
@@ -295,7 +303,7 @@
         </statement>
         <answer>
           <p>
-            <m>2\sin\left(6x\right)\cos\left(-x\right)</m>
+            <m>2\sin\left(6x\right)\cos\left(-x\right)=2\sin\left(6x\right)\cos\left(x\right)</m>
           </p>
         </answer>
       </exercise>
@@ -307,7 +315,7 @@
         </statement>
         <answer>
           <p>
-            <m>2\cos\left(\frac{11\theta}{2}\right)\sin\left(-\frac{3\theta}{2}\right)</m>
+            <m>2\cos\left(\frac{11\theta}{2}\right)\sin\left(-\frac{3\theta}{2}\right)=-2\cos\left(\frac{11\theta}{2}\right)\sin\left(\frac{3\theta}{2}\right)</m>
           </p>
         </answer>
       </exercise>
@@ -319,7 +327,7 @@
         </statement>
         <answer>
           <p>
-            <m>2\cos\left(\frac{7x}{2}\right)\sin\left(-\frac{x}{2}\right)</m>
+            <m>2\cos\left(\frac{7x}{2}\right)\sin\left(-\frac{x}{2}\right)=-2\cos\left(\frac{7x}{2}\right)\sin\left(\frac{x}{2}\right)</m>
           </p>
         </answer>
       </exercise>
@@ -355,7 +363,7 @@
         </statement>
         <answer>
           <p>
-            <m>-2\sin\left(7\theta\right)\sin\left(-\theta\right)</m>
+            <m>-2\sin\left(7\theta\right)\sin\left(-\theta\right)=2\sin\left(7\theta\right)\sin\left(\theta\right)</m>
           </p>
         </answer>
       </exercise>
