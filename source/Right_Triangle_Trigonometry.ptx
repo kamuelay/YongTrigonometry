@@ -452,14 +452,14 @@
       <m>\alpha</m>
       with
       <m>\theta</m>,
-      we get our cofunction identities.
+      we get our <term>cofunction identities</term>.
     </p>
     <definition xml:id="def_cofunction-identities"><title>Cofunction Identities</title>
     <statement>
     <p>
       The cofunction identities 
       <idx>
-        <h>cofunctions identities</h>
+        <h>cofunction identities</h>
       </idx>
       in degrees are
       <md>
