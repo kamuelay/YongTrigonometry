@@ -3,19 +3,13 @@
   <title>Trigonometric Identities</title>
   <introduction>
     <p>
-      In the preceding chapters, we established a foundation in trigonometric functions, covering their definitions, properties, graphs, and how to use them to model various phenomena. Now, as we explore further into essential tools such as trigonometric identities, we will be able to algebraically manipulate and solve complex trigonometric equations, allowing us to gain more insight and more accurately model the world around us.
+      In this chapter, we explore trigonometric identities and formulas, which are essential tools for algebraically manipulating and solving complex trigonometric equations. These identities and formulas provide deeper insights and allow us to more accurately model the world around us.
     </p>
   </introduction>
   <subsection xml:id="subsec-fundamental-trig-identities">
     <title>Fundamental Trigonometric Identities</title>
     <p>
-      Review of trig IDs such as Pythagorean Identities, Reciprocal Identities, Cofunctions, etc.
-    </p>
-    <p>
-      Recall what an <term>identity</term> is. An equation that is true or satisfied by every number
-    </p>
-    <p>
-      In <xref ref="trigonometric_functions"/> , we 
+      An <term>identity</term> in mathematics is an equation that remains true for every valid values of its variables. We begin by reviewing identities from <xref ref="trigonometric_functions"/> , collectively known as the fundamental trigonometric identities.
     </p>
     <definition xml:id="def-fundamental-trig-identities">
       <statement>
