@@ -503,14 +503,7 @@
     </p>
   </subsection>
 
-  <subsection xml:id="subsec-reduction-form">
-    <title>reduction form?</title>
-    <p>
-      Do we need the reduction form
-      <me>a\sin x+b\cos x=\sqrt{a^2+b^2}\sin(x+\theta)</me>
-      where <m>\theta</m> is an angle whose terminal side contains <m>(a,b)</m>
-    </p>
-  </subsection>
+  
 
   <exercises xml:id="exercises-double-angle-half-angle">
     <exercisegroup cols="2">
