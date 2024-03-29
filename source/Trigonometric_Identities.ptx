@@ -3,13 +3,12 @@
   <title>Trigonometric Identities</title>
   <introduction>
     <p>
-      In this chapter, we explore trigonometric identities and formulas, which are essential tools for algebraically manipulating and solving complex trigonometric equations. These identities and formulas provide deeper insights and allow us to more accurately model the world around us.
-    </p>
+      In this chapter, we explore trigonometric identities and formulas, essential tools that enable us to algebraically manipulate and solve complex trigonometric equations. These identities and formulas enable us to analyze expressions in various forms, often simplifying complex expressions into ones that are easily solvable and interpretable. By doing so, we increase our ability to accurately model the world around us.    </p>
   </introduction>
   <subsection xml:id="subsec-fundamental-trig-identities">
     <title>Fundamental Trigonometric Identities</title>
     <p>
-      An <term>identity</term> in mathematics is an equation that remains true for every valid values of its variables. We begin by reviewing identities from <xref ref="trigonometric_functions"/> , collectively known as the fundamental trigonometric identities.
+      An <term>identity</term> in mathematics is an equation that remains true for every valid values of its variables. We begin by reviewing some of the basic trigonometric identities from <xref ref="trigonometric_functions"/> , collectively known as the fundamental trigonometric identities.
     </p>
     <definition xml:id="def-fundamental-trig-identities">
       <statement>
@@ -50,7 +49,7 @@
             </li>
             <li>
               <p>
-                <term>Odd-Even Properties</term> (<xref ref="def-even-odd-trig"/>)
+                <term>Odd-Even Identities</term> (<xref ref="def-even-odd-trig"/>)
               </p>
               <p>
                 The cosine and secant functions are <term>even</term>
@@ -80,26 +79,146 @@
         </p>
       </statement>
     </definition>
-
-
-
-
-
-
+  </subsection>
+  <subsection xml:id="subsec-simplifying-trigonometric-expressions">
+    <title>Simplifying Trigonometric Expressions</title>
     <p>
-      *need to begin section*
+      We use a combination of trigonometric identities, formulas, and techniques from algebra to manipulate and simplify trigonometric expressions.  
     </p>
     <example>
       <statement>
         <p>
-          Using the trig identities,
-          simplify <m>\cos\theta+\tan\theta\sin\theta</m> (from p539 in stewart)
+          Simplify <me>\tan^2(x)\cdot\csc^2(x)</me>
         </p>
       </statement>
+      <solution>
+        <p>
+          We can simplify this expression by writing each function in terms of sine and cosine functions
+          <me>\tan^2(x)\cdot\csc^2(x)=\frac{\sin^2(x)}{\cos^2(x)}\cdot\frac{1}{\sin^2(x)}=\frac{1}{\cos^2(x)}=\sec^2(x)</me>
+        </p>
+      </solution>
     </example>
+    <example>
+      <statement>
+        <p>
+          Simplify <me>\sin^2(x)(\cot^2(x) - 1)</me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We can simplify this expression by first using the Pythagorean Identity and then using the Reciprocal Identity:
+          <me>\sin^2(x)(\cot^2(x) - 1) = \sin^2(x)(-\csc^2(x)) = \sin^2(x)\left(-\frac{1}{\sin^2(x)}\right) = -1</me>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+  <subsection xml:id="subsec-verifying-trigonometric-identities">
+    <title>Verifying Trigonometric Identities</title>
     <p>
-      Establish the identity...
+      To verify trigonometric identities, we begin with an expression on one side of the equation and manipulate it using trigonometric identities and algebraic techniques until it matches the expression on the other side.
     </p>
+    <remark>
+      <title>Steps for Verifying Trigonometric Identities</title>
+      <p>
+        To verify that an equation is an identity:
+      </p>
+      <p>
+        <ol>
+          <li>
+            <p>
+              Pick an expression on one side of the equation. Often it is the more complicated expression.
+            </p>
+          </li>
+          <li>
+            <p>
+              Transform the expression using techniques such as trigonometric identities, rewriting in terms of sine and cosine functions, factoring, common denominator, or multiplying numerator and denominator by the same term.
+            </p>
+          </li>
+          <li>
+            <p>
+              Continue manipulating until the transformed expression matches the other side of the equation.
+            </p>
+          </li>
+        </ol>
+      </p>
+      <p>
+        Note: Unlike solving equations where we perform the same operation on both sides of the equal sign, when verifying trigonometric identities, we work with only one side and manipulate it to resemble the other side.
+      </p>
+    </remark>
+    <example>
+      <statement>
+        <p>
+          
+        </p>
+      </statement>
+      <solution>
+        <p>
+          
+        </p>
+      </solution>
+    </example>
   </subsection>
   
+
+  <exercises xml:id="exercises-trig-identities">
+    <exercisegroup>
+      <introduction>
+        <p>
+          Simplify the trigonometric expression using the Fundamental Trigonometric Identities.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p><m>\sin^2(x) - 1</m></p>
+        </statement>
+        <answer>
+          <p><m>\cos^2(x)</m></p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p><m>1 - \sec^2(x)</m></p>
+        </statement>
+        <answer>
+          <p><m>-\tan^2(x)</m></p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p><m>\tan(x) \cdot \cot(x)</m></p>
+        </statement>
+        <answer>
+          <p><m>1</m></p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p><m>\sin^2(x) - \sin^2(x) \cos^2(x)</m></p>
+        </statement>
+        <answer>
+          <p><m>\sin^4(x)</m></p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup>
+      <introduction>
+        <p>
+          Verify the identity.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+
+  </exercises>
 </section>
