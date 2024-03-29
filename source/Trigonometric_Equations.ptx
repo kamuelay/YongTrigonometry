@@ -1,7 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="trigonometric_equations">
   <title>Trigonometric Equations</title>
-  <p>
-    EMPTY SECTION
-  </p>
+  <introduction>
+    <p>
+      some intro
+    </p>
+  </introduction>
+  <subsection xml:id="subsec-solving-basic-trig-equations">
+    <title>solving-basic-trig-equations</title>
+    <p>
+      
+    </p>
+  </subsection>
+  <subsection xml:id="subsec-solving-trig-eq-by-factoring">
+    <title>solving-trig-eq-by-factoring and quadratic form</title>
+    <p>
+      factor
+    </p>
+    <p>
+      solve quadratic type ax^2+bx+c=0
+    </p>
+    <p>
+      2sin^2x+3cosx-3=0, first write as sinle trig function
+    </p>
+  </subsection>
+  <subsection xml:id="subsec-solving-trig-eq-by-using-fundamental-identities">
+    <title>solving-trig-eq-by-using-fundamentional-identities</title>
+    <p>
+      
+    </p>
+  </subsection>
+  <subsection xml:id="subsec-solving-trig-eq-with-multiple anglesa">
+    <title>solving-trig-eq-with-multiple anglesa</title>
+    
+  </subsection>
+  <subsection xml:id="subsec-solving-trig-eq-by-graphing-utility">
+    <title>solving-trig-eq-by-graphing-utility</title>
+    <p>
+      
+    </p>
+  </subsection>
 </section>
