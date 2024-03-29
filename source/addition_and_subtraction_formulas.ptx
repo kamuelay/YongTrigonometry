@@ -406,6 +406,9 @@
         <mrow>\sec\theta\amp =\csc\left(\frac{\pi}{2}-\theta\right), \amp \csc\theta\amp =\sec\left(\frac{\pi}{2}-\theta\right)</mrow>
       </md>
     </p>
+    <p>
+      Armed with the knowledge of the subtraction formulas, we can prove the Cofunction Identities.
+    </p>
     <proof>
       <p>
         We will prove the Cofunction Identity for <m>\sin\theta</m> in <xref ref="ex-cofunction-identity-cos"/>. The proof for <m>\cos\theta</m> is given as <xref ref="exer-cofunction-identity-sin"/>. The Cofunction Identities for <m>\tan\theta</m> and <m>\cot\theta</m> can be found using the Quotient Identities (<xref ref="def_quotient-identities"/>) for <m>\csc\theta</m> and <m>\sec\theta</m> can be found using the Reciprocal Identities (<xref ref="def_reciprocal-identities"/>).
@@ -472,6 +475,19 @@
         </p>
       </solution>
     </example>
+  </subsection>
+  
+  
+  <subsection xml:id="subsec-reduction-form">
+    <title>reduction form?</title>
+    <p>
+      Do we need the reduction form
+      <me>a\sin x+b\cos x=\sqrt{a^2+b^2}\sin(x+\theta)</me>
+      where <m>\theta</m> is an angle whose terminal side contains <m>(a,b)</m>
+    </p>
+    <p>
+      In Stewart, p550, it is sums of sines and cosines
+    </p>
   </subsection>
   <subsection>
     <title>Summary</title>
