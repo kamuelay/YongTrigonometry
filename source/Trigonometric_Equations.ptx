@@ -20,6 +20,38 @@
     <p>
       solve quadratic type ax^2+bx+c=0
     </p>
+    <example>
+      <statement>
+        <p>
+          Solve <m>\cos^2x - 4\cos x + 3 = 0</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          To solve this equation, let's make a substitution to simplify it. We'll let <m>y = \cos x</m>, so the equation becomes <m>y^2 - 4y + 3 = 0</m>.
+        </p>
+        <p>
+          We can factor the quadratic equation as <m>(y - 3)(y - 1) = 0</m>. Setting each factor equal to zero, we find:
+          <m>
+            \begin{cases}
+              y - 3 = 0 \implies y = 3 \\
+              y - 1 = 0 \implies y = 1
+            \end{cases}
+          </m>
+        </p>
+        <p>
+          Now, let's substitute back <m>\cos x</m> for <m>y</m>:
+          <m>
+            \begin{cases}
+              \cos x = 3 \quad \text{(No solution since the range of cosine is [-1, 1])} \\
+              \cos x = 1 \implies x = 2\pi n, \quad n \in \mathbb{Z} \quad \text{(General solution)}
+            \end{cases}
+          </m>
+        </p>
+      </solution>
+    </example>
+    
+    
     <p>
       2sin^2x+3cosx-3=0, first write as sinle trig function
     </p>
