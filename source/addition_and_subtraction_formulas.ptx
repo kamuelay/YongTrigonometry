@@ -99,6 +99,8 @@
           \node at (-0.1,-0.1) {\(O\)};
           \draw[line width=2pt,blue] (0,0) -- (115:1) node[black,above,xshift=-0.2cm]{\(Q(\cos\alpha,\sin\alpha)\)};
           \draw[line width=2pt,blue] (0,0) -- (40:1) node[black,right,xshift=0.2cm]{\(P(\cos\beta,\sin\beta)\)};
+          \draw[dashed] ({cos(40)},0) -- (40:1);
+          \draw[dashed] ({cos(115)},0) -- (115:1);
           \draw[line width=2pt,red] (115:1) -- (40:1);
           \filldraw (115:1cm) circle(1pt);
           \filldraw (40:1cm) circle(1pt);
@@ -137,10 +139,11 @@
           \draw[line width=2pt,blue] (0,0) -- (1,0) node[black,above,xshift=15,yshift=1]{\(A(1,0)\)};
           \draw[line width=2pt,blue] (0,0) -- (75:1) node[black,right,xshift=4,yshift=2]{\(B(\cos(\alpha-\beta),\sin(\alpha-\beta))\)};
           \draw[line width=2pt,red] (1,0) -- (75:1);
+          \draw[dashed] ({cos(75)},0) -- (75:1);
           \filldraw (1cm,0) circle(1pt);
           \filldraw (75:1cm) circle(1pt);
           \filldraw (0,0) circle(1pt);
-          \draw[-stealth,line width=1.25pt] (0:0.2cm) arc (0:75:0.2cm) node[midway, right,xshift=0.1cm] {\(\alpha-\beta\)};
+          \draw[-stealth,line width=1.25pt] (0:0.2cm) arc (0:75:0.2cm) node[midway, right,xshift=0.2cm] {\(\alpha-\beta\)};
           \end{tikzpicture}
         </latex-image>
       </image>
@@ -362,7 +365,6 @@
           <mrow>\tan(\alpha+\beta)\amp = \frac{\sin(\alpha+\beta)}{\cos(\alpha+\beta)}</mrow>
           <mrow>\amp = \frac{\sin\alpha\cos\beta+\cos\alpha\sin\beta}{\cos\alpha\cos\beta-\sin\alpha\sin\beta}</mrow>
           <mrow>\amp = \frac{\dfrac{\sin\alpha\cos\beta+\cos\alpha\sin\beta}{\cos\alpha\cos\beta}}{\dfrac{\cos\alpha\cos\beta-\sin\alpha\sin\beta}{\cos\alpha\cos\beta}}</mrow>
-          <mrow>\amp = \frac{\sin\alpha\cos\beta+\cos\alpha\sin\beta}{\cancel{\cos\alpha\cos\beta}}\cdot\frac{\cancel{\cos\alpha\cos\beta}}{\cos\alpha\cos\beta-\sin\alpha\sin\beta}</mrow>
           <mrow>\amp = \frac{\dfrac{\sin\alpha\cancel{\cos\beta}}{\cos\alpha\cancel{\cos\beta}}+\dfrac{\cancel{\cos\alpha}\sin\beta}{\cancel{\cos\alpha}\cos\beta}}{\dfrac{\cancel{\cos\alpha\cos\beta}}{\cancel{\cos\alpha\cos\beta}}-\dfrac{\sin\alpha\sin\beta}{\cos\alpha\cos\beta}}</mrow>
           <mrow>\amp = \frac{\dfrac{\sin\alpha}{\cos\alpha}+\dfrac{\sin\beta}{\cos\beta}}{1-\dfrac{\sin\alpha}{\cos\alpha}\dfrac{\sin\beta}{\cos\beta}}</mrow>
           <mrow>\amp = \frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}</mrow>
@@ -478,16 +480,90 @@
   </subsection>
   
   
-  <subsection xml:id="subsec-reduction-form">
-    <title>reduction form?</title>
+  <subsection xml:id="subsec-sums-of-sines-cosines">
+    <title>Sums of Sines and Cosines</title>
     <p>
-      Do we need the reduction form
-      <me>a\sin x+b\cos x=\sqrt{a^2+b^2}\sin(x+\theta)</me>
-      where <m>\theta</m> is an angle whose terminal side contains <m>(a,b)</m>
+      Sometimes we may come across functions of the form
+      <me>a\sin x+b\cos x</me>
+      It can often be useful to rewrite this expression as a single trigonomteric function.
     </p>
-    <p>
-      In Stewart, p550, it is sums of sines and cosines
-    </p>
+    <definition xml:id="def-sums-of-sin-cos"><idx><h>sums of sines and cosines</h></idx>
+      <statement>
+        <p>
+          For any real numbers <m>a</m> and <m>b</m>, let <m>\theta</m> be an angle in standard position where <m>P(a,b)</m> is a point on the terminal side of <m>\theta</m>. Then
+          <me>a \sin x + b \cos x = \sqrt{a^2 + b^2} \sin(x + \theta)</me>.
+        </p>
+      </statement>
+    </definition>
+    <proof>
+      <p>
+        We begin by considering the triangle formed by the angle <m>\theta</m> and point <m>P(a,b)</m>, shown in <xref ref="fig-sums-of-sines-cosines-proof"/>. By the Pythagorean Theorem, the hypotenuse of this triangle, with base <m>a</m> and height <m>b</m>, is <m>\sqrt{a^2+b^2}</m>. According to <xref ref="def_trig-ratios"/>, we have:
+        <me>
+          \cos\theta=\frac{a}{\sqrt{a^2+b^2}}, \quad \sin\theta=\frac{b}{\sqrt{a^2+b^2}}
+        </me>
+        or equivalently:
+        <me>
+          a = \sqrt{a^2+b^2}\cos\theta, \quad b= \sqrt{a^2+b^2}\sin\theta
+        </me>
+      </p>
+      <figure xml:id="fig-sums-of-sines-cosines-proof">
+        <caption>A triangle is formed by angle <m>\theta</m> and point <m>P(a,b)</m>.</caption>
+        <image xml:id="fig-sums-of-sines-cosines" width="55%">
+          <latex-image>
+            \begin{tikzpicture}[scale=2.25]
+            \draw[stealth-stealth] (-1.25,0)--(1.25,0) node[right]{\(x\)};
+            \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[above]{\(y\)};
+            \draw (0,0) circle (1);
+            \filldraw[black] (1,0) circle(1pt);
+            \filldraw[black] (57.3:1) circle(1pt) node[above,yshift=5] {\(P(a,b)\)};
+            \draw[blue,line width=1.5pt]  (0,0) -- (57.3:1) node[left,midway] {\(\sqrt{a^2+b^2}\)};
+            \draw[blue,line width=1.5pt] (0,0) -- ({cos(57.3)},0) node[below,midway] {\(a\)};
+            \draw[blue,line width=1.5pt] ({cos(57.3)},0) -- (57.3:1) node[right,midway] {\(b\)};
+            \draw ([shift=(0:0.25)]0,0) arc (0:57.3:0.25) node[midway,right,xshift=0.1] {\(\theta\)};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </figure>
+      <p>
+        Therefore, using the addition formula for sine, we get
+        <md>
+          <mrow> a \sin x + b \cos x \amp = \sqrt{a^2+b^2}\cos\theta\sin x + \sqrt{a^2+b^2}\sin\theta\cos x </mrow>
+          <mrow> \amp = \sqrt{a^2+b^2}\left(\cos\theta\sin x + \sin\theta\cos x\right) </mrow>
+          <mrow> \amp = \sqrt{a^2+b^2}\sin(x+\theta) </mrow>
+        </md>
+      </p>
+    </proof>
+    <example>
+      <statement>
+        <p>
+          Express
+          <me>
+            -\frac{\sqrt{3}}{2}\sin x+\frac{1}{2}\cos x
+          </me>
+          in terms of sine only.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          To express the given expression in terms of sine only, we will use <xref ref="def-sums-of-sin-cos"/>. Considering the point <m>P(a,b)=\left( -\frac{\sqrt{3}}{2},\frac{1}{2}\right)</m>, which lies in Quadrant II, we determine the angle <m>\theta</m>. Using either <xref ref="tab_trig-table"/> or inverse trigonometric methods where
+          <me>
+            \tan\theta=\frac{b}{a}
+          </me>,
+          we find
+          <me>
+            \theta=150^{\circ}
+          </me>.
+        </p>
+        <p>
+          Therefore, by <xref ref="def-sums-of-sin-cos"/>, we have:
+          <md>
+            <mrow> -\frac{\sqrt{3}}{2}\sin x+\frac{1}{2}\cos x \amp =\sqrt{\left(-\frac{\sqrt{3}}{2}\right)^2+\left(\frac{1}{2}\right)^2}\sin(x+150^{\circ}) </mrow>
+            <mrow> \amp =\sqrt{\frac{3}{4}+\frac{1}{4}}\sin(x+150^{\circ}) </mrow>
+            <mrow> \amp = \sin(x+150^{\circ}) </mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
   </subsection>
   <subsection>
     <title>Summary</title>
@@ -1374,6 +1450,97 @@
             <m>\sin\left(\frac{\pi}{2}-\theta\right)=\sin\left(\frac{\pi}{2}+\theta\right)</m>
           </p>
         </statement>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup>
+      <introduction>
+        <p>
+          Write each expression in terms on sine only.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
       </exercise>
     </exercisegroup>
     <exercise xml:id="exer-cofunction-identity-sin">
