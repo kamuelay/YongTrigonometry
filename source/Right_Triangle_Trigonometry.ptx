@@ -1213,7 +1213,7 @@
       </introduction>
       <exercise>
         <statement>
-          <image width="75%">
+          <image xml:id="exer-cofunctions-1" width="75%">
             <latex-image>
               \begin{tikzpicture}
               \draw (0,0) -- (5,0) node[midway,below]{5};
@@ -1244,7 +1244,7 @@
       </exercise>
       <exercise>
         <statement>
-          <image width="75%">
+          <image xml:id="exer-cofunctions-2" width="75%">
             <latex-image>
               \begin{tikzpicture}
               \draw (0,0) -- (-7,0) node[midway,below]{7};
