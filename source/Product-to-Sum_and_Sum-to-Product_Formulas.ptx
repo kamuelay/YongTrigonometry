@@ -3,7 +3,7 @@
   <title>Product-to-Sum and Sum-to-Product Formulas</title>
   <introduction>
     <p>
-      *needs motivation/intro, needs examples, and needs to expand on the math*
+      In this section, we will learn how to convert sums of trigonometric functions to products of trigonometric functions, and vice versa. These techniques provide us with tools to simplify expressions and solve equations.
     </p>
   </introduction>
   <subsection xml:id="subsec-product-to-sum">
@@ -111,6 +111,22 @@
         </p>
       </solution>
     </example>
+    <example>
+      <statement>
+        <p>
+          Express the product of <m>\sin(6\theta)\cos(4\theta)</m> as a sum or difference of sine and cosine with no products.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Using the formula we get
+          <md>
+            <mrow>\sin(6\theta)\cos(4\theta) \amp = \frac{1}{2}[\sin(6\theta+4\theta)+\sin(6\theta-4\theta)]</mrow>
+            <mrow>\amp = \frac{1}{2}[\sin(10\theta)+\cos(2\theta)]</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
     <remark>
       <title>Negative Angles</title>
       <p>
@@ -158,20 +174,45 @@
         </md>
       </p>
       <p>
-        Multiplying both sides by 2 and replacing <m>u</m> with <m>\alpha</m> and <m>v</m> with <m>\beta</m> we end up with the Sum-to-Product Formula. (multiply the last equation by -1)
-      </p>
-      <p>
-        ***reword***
+        Multiplying both sides by 2 and substituting <m>u</m> with <m>\alpha</m> and <m>v</m> with <m>\beta</m>, we arrive at the Sum-to-Product Formula, where we negate the last equation.
       </p>
     </proof>
-    <p>
-      Example:
-    </p>
-    <p>
-      GPS. "<url href="\1"/>
-    </p>
+    <example>
+      <statement>
+        <p>
+          Express the sum <m>\sin(8x)+\sin(2x)</m> as a product of sines or cosines.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Using the formula we get
+          <md>
+            <mrow>\sin(8x)+\sin(2x) \amp = 2\sin\left(\frac{8x+2x}{2}\right)\cos\left(\frac{8x-2x}{2}\right) </mrow>
+            <mrow>\amp = 2\sin\left(\frac{10x}{2}\right)\cos\left(\frac{6x}{2}\right) </mrow>
+            <mrow>\amp = 2\sin\left(5x\right)\cos\left(3x\right) </mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Express the difference <m>\cos(3t)-\cos(5t)</m> as a product of sines or cosines.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Using the formula we get
+          <md>
+            <mrow>\cos(3t)-\cos(5t) \amp = -2\sin\left(\frac{3t+5t}{2}\right)\sin\left(\frac{3t-5t}{2}\right) </mrow>
+            <mrow>\amp = -2\sin\left(\frac{8t}{2}\right)\sin\left(\frac{-2t}{2}\right) </mrow>
+            <mrow>\amp = -2\sin\left(4t\right)\sin\left(-t\right) </mrow>
+            <mrow>\amp = 2\sin\left(4t\right)\sin\left(t\right) </mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
   </subsection>
-
 
   <exercises xml:id="exercises-product-to-sum-sum-to-product">
     <exercisegroup cols="2">
