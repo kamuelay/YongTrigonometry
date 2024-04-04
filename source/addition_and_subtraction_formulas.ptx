@@ -353,7 +353,7 @@
         <p>
           <md>
             <mrow>\tan(\alpha+\beta)\amp = \frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}</mrow>
-            <mrow>\tan(\alpha-\beta)\amp = \frac{\tan\alpha-\tan\beta}{1-\tan\alpha\tan\beta}</mrow>
+            <mrow>\tan(\alpha-\beta)\amp = \frac{\tan\alpha-\tan\beta}{1+\tan\alpha\tan\beta}</mrow>
           </md>
         </p>
       </statement>
@@ -575,7 +575,7 @@
         <mrow>\cos(\alpha+\beta)\amp = \cos\alpha\cos\beta-\sin\alpha\sin\beta</mrow>
         <mrow>\cos(\alpha-\beta)\amp = \cos\alpha\cos\beta+\sin\alpha\sin\beta</mrow>
         <mrow>\tan(\alpha+\beta)\amp = \frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}</mrow>
-        <mrow>\tan(\alpha-\beta)\amp = \frac{\tan\alpha-\tan\beta}{1-\tan\alpha\tan\beta}</mrow>
+        <mrow>\tan(\alpha-\beta)\amp = \frac{\tan\alpha-\tan\beta}{1+\tan\alpha\tan\beta}</mrow>
       </md>
     </p>
   </subsection>
@@ -819,7 +819,7 @@
       <exercise>
         <statement>
           <p>
-            <m>\frac{\tan(85^{\circ})-\tan(25^{\circ})}{1-\tan(85^{\circ})\tan(25^{\circ})}</m>
+            <m>\frac{\tan(85^{\circ})-\tan(25^{\circ})}{1+\tan(85^{\circ})\tan(25^{\circ})}</m>
           </p>
         </statement>
         <answer>
@@ -861,6 +861,181 @@
         <answer>
           <p>
             <m>sqrt{3}</m>
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          Find the exact value of each expression given
+        </p>
+        <sidebyside>
+          <image xml:id="exer-sum-alpha-0" width="75%">
+            <latex-image>
+              \begin{tikzpicture}[scale=1.25]
+              \draw (0,0) -- (4,0);
+              \draw(0,0) -- (4,3) node[midway,above left]{\(5\)};
+              \draw(4,0) -- (4,3) node[midway,right]{3};
+              \draw(3.6,0) -- (3.6,0.4) -- (4,0.4);
+              \draw ([shift=(0:0.5)]0,0) arc (0:36.8698976458:0.5) node[midway,right,xshift=0.1] {\(\alpha\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+          <image xml:id="exer-sum-beta-0" width="75%">
+            <latex-image>
+              \begin{tikzpicture}[scale=2]
+              \draw (0,0) -- (2.1,0) node[midway,below]{21};
+              \draw(0,0) -- (2.1,2.0) node[midway,above left]{\(29\)};
+              \draw(2.1,0) -- (2.1,2.0);
+              \draw(1.8,0) -- (1.8,0.3) -- (2.1,0.3);
+              \draw ([shift=(0:0.5)]0,0) arc (0:43.6028189727:0.5) node[midway,right,xshift=0.1] {\(\beta\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </sidebyside>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin(\alpha)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{3}{5}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos(\alpha)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{4}{5}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan(\alpha)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{3}{4}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin(\beta)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{20}{29}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos(\beta)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{21}{29}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan(\beta)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{20}{21}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin(\alpha+\beta)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{3}{5}\cdot\frac{21}{29}+\frac{4}{5}\cdot\frac{20}{29}=\frac{143}{145}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos(\alpha+\beta)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{4}{5}\cdot\frac{21}{29}-\frac{3}{5}\cdot\frac{20}{29}=\frac{24}{145}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan(\alpha+\beta)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{\frac{3}{4}+\frac{20}{21}}{1-\frac{3}{4}\cdot\frac{20}{21}}=\frac{143}{24}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin(\alpha-\beta)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{3}{5}\cdot\frac{21}{29}-\frac{4}{5}\cdot\frac{20}{29}=-\frac{17}{145}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos(\alpha-\beta)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{4}{5}\cdot\frac{21}{29}+\frac{3}{5}\cdot\frac{20}{29}=\frac{144}{145}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan(\alpha-\beta)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{\frac{3}{4}-\frac{20}{21}}{1+\frac{3}{4}\cdot\frac{20}{21}}=-\frac{17}{24}</m>
           </p>
         </answer>
       </exercise>
@@ -1035,7 +1210,7 @@
         </statement>
         <answer>
           <p>
-            <m>\frac{\frac{\sqrt{6}}{2}-\frac{3}{2}}{1-\frac{\sqrt{6}}{2}\cdot\frac{3}{2}}=\frac{-6+5\sqrt{6}}{19}</m>
+            <m>\frac{\frac{\sqrt{6}}{2}-\frac{3}{2}}{1+\frac{\sqrt{6}}{2}\cdot\frac{3}{2}}=\frac{30-13\sqrt{6}}{19}</m>
           </p>
         </answer>
       </exercise>
@@ -1210,7 +1385,7 @@
         </statement>
         <answer>
           <p>
-            <m>\frac{\frac{3}{5}-\frac{\sqrt{15}}{7}}{1-\frac{3}{5}\cdot\frac{\sqrt{15}}{7}}=\frac{255-56\sqrt{15}}{545}</m>
+            <m>\frac{\frac{3}{5}-\frac{\sqrt{15}}{7}}{1+\frac{3}{5}\cdot\frac{\sqrt{15}}{7}}=\frac{480-119\sqrt{15}}{545}</m>
           </p>
         </answer>
       </exercise>
