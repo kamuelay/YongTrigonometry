@@ -299,8 +299,8 @@
             <mrow>\amp =\frac{1}{4}\left(1-2\cos(2\theta)+\cos^2(2\theta)\right)</mrow>
             <mrow>\amp =\frac{1}{4}\left(1-2\cos(2\theta)+\frac{1+\cos(4\theta)}{2}\right)\amp \amp \mbox{reducing powers}</mrow>
             <mrow>\amp =\frac{1}{4}\left(1-2\cos(2\theta)+\frac{1}{2}+\frac{\cos(4\theta)}{2}\right)</mrow>
-            <mrow>\amp =\frac{1}{4}\left(\frac{3}{2}-2\cos(2\theta)+\frac{\cos(4\theta)}{2}\right)</mrow>
-            <mrow>\amp =\frac{3}{8}-\frac{1}{2}\cos(2\theta)+\frac{1}{8}\cos(4\theta)</mrow>
+            <mrow>\amp =\frac{1}{4}\left(\frac{3}{2}-\frac{4}{2}\cos(2\theta)+\frac{1}{2}\cos(4\theta)\right)</mrow>
+            <mrow>\amp =\frac{1}{8}\left(3-4\cos(2\theta)+\cos(4\theta)\right)</mrow>
           </md>
         </p>
       </solution>
@@ -1109,24 +1109,24 @@
       <exercise>
         <statement>
           <p>
-            
+            <m>\sin(\theta)</m>
           </p>
         </statement>
         <answer>
           <p>
-            
+            <m>-\frac{\sqrt{5}}{3}</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            
+            <m>\tan(\theta)</m>
           </p>
         </statement>
         <answer>
           <p>
-            
+            <m>\frac{\sqrt{5}}{2}</m>
           </p>
         </answer>
       </exercise>
@@ -1138,7 +1138,7 @@
         </statement>
         <answer>
           <p>
-            
+            <m>-\frac{4\sqrt{5}}{9}</m>
           </p>
         </answer>
       </exercise>
@@ -1150,7 +1150,7 @@
         </statement>
         <answer>
           <p>
-            
+            <m>-\frac{1}{9}</m>
           </p>
         </answer>
       </exercise>
@@ -1162,7 +1162,7 @@
         </statement>
         <answer>
           <p>
-            
+            <m>-4\sqrt{5}</m>
           </p>
         </answer>
       </exercise>
@@ -1365,7 +1365,7 @@
           </p>
         </answer>
       </exercise>
-      <exercise>
+      <exercise> 
         <statement>
           <p>
             <m>\sin\frac{7\pi}{12}</m>
@@ -1390,7 +1390,7 @@
         </answer>
       </exercise>
     </exercisegroup>
-    <exercisegroup>
+    <exercisegroup cols="2">
       <introduction>
         <p>
           Write each of the following as expressions that do not involve powers of sine or cosine greater than 1.
@@ -1428,7 +1428,7 @@
         </statement>
         <answer>
           <p>
-            
+            <m>\frac{1}{16}(1+\cos(2\theta)-\cos(4\theta)-\cos(2\theta)\cos(4\theta))</m>
           </p>
         </answer>
       </exercise>
@@ -1440,11 +1440,42 @@
         </statement>
         <answer>
           <p>
-            
+            <m>\frac{1}{16}(1-\cos(2\theta)-\cos(4\theta)+\cos(2\theta)\cos(4\theta))</m>
           </p>
         </answer>
       </exercise>
     </exercisegroup>
+    <exercise>
+      <introduction>
+        <p>
+          Write <m>\sin^2\theta\cos^2\theta</m> expressions that does not involve powers of sine or cosine greater than 1.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            Using the Reducing Powers Formula (<xref ref="def-formula-reducing-powers"/>)
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{1}{8}(1-\cos(4\theta))</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Using the Double Angle Formula (<xref ref="def-double-angle-formula"/>) where <m>\sin\theta\cos\theta=\frac{1}{2}\sin2\theta</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{1}{8}(1-\cos(4\theta))</m>
+          </p>
+        </answer>
+      </task>
+    </exercise>
     <exercise>
       <introduction>
         <p>
