@@ -421,6 +421,119 @@
         </answer>
       </exercise>
     </exercisegroup>
-    
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          Find the exact value of each expression.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin(195^{\circ})\cos(105^{\circ})</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{1}{2}\left(-\frac{\sqrt{3}}{2}+1\right)</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos(225^{\circ})\cos(195^{\circ})</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{\sqrt{3}}{4}-\frac{1}{4}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin(195^{\circ})-\sin(75^{\circ})</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>-\frac{\sqrt{6}}{2}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos(165^{\circ})-\cos(105^{\circ})</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>-\frac{\sqrt{2}}{2}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin(285^{\circ})+\sin(195^{\circ})</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>-\frac{\sqrt{6}}{2}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos(255^{\circ})+\cos(15^{\circ})</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{\sqrt{2}}{2}</m>
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          Verify the identity
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+      </exercise>
+    </exercisegroup>
   </exercises>
 </section>
