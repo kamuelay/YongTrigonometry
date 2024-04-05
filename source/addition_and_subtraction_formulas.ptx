@@ -1702,6 +1702,13 @@
       <exercise>
         <statement>
           <p>
+            <m>\cos(x+y)\cos(x-y)=\cos^2x-\sin^2y</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
             <m>\frac{\sin(x+y)}{\cos x\cos y}=\tan x+\tan y</m>
           </p>
         </statement>
