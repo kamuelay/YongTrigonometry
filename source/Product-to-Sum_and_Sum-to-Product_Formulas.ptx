@@ -500,6 +500,7 @@
         </answer>
       </exercise>
     </exercisegroup>
+    
     <exercisegroup cols="2">
       <introduction>
         <p>
@@ -509,30 +510,40 @@
       <exercise>
         <statement>
           <p>
-            
+            <m>\sin\theta+\sin(3\theta)=4\sin\theta\cos^2\theta</m>
           </p>
         </statement>
       </exercise>
       <exercise>
         <statement>
           <p>
-            
+            <m>\cos(3\theta)+\cos\theta=2\left(\cos^3\theta-\sin^2\theta\cos\theta\right)</m>
           </p>
         </statement>
       </exercise>
       <exercise>
         <statement>
           <p>
-            
+            <m>\frac{\sin\theta+\sin(3\theta)}{2\sin(2\theta)}=\cos\theta</m>
           </p>
         </statement>
       </exercise>
       <exercise>
         <statement>
           <p>
-            
+            <m>\frac{\cos\theta+\cos(3\theta)}{2\cos(2\theta)}=\cos\theta</m>
           </p>
         </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{\cos\theta-\cos(3\theta)}{\sin\theta+\sin(3\theta)}=\tan\theta</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <m>6\cos(5\theta)\sin(6\theta)=3\sin(11\theta)+3\sin(\theta)</m>
       </exercise>
     </exercisegroup>
   </exercises>
