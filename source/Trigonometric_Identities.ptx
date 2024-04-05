@@ -139,6 +139,11 @@
               Continue manipulating until the transformed expression matches the other side of the equation.
             </p>
           </li>
+          <li>
+            <p>
+              If you have trouble making one side resemble the other, try manipulating both sides separately, and make them match to reach the same result.
+            </p>
+          </li>
         </ol>
       </p>
       <p>
@@ -146,44 +151,89 @@
       </p>
     </remark>
     <example>
+      <title>Verify the Identity by Rewriting in Terms of Sine and Cosine</title>
       <statement>
         <p>
-          examples involing trig identities
+          Verify the identity
+          <me>
+            \frac{\sin(x)}{\tan(x)}=\cos(x)
+          </me>
         </p>
       </statement>
       <solution>
         <p>
-          
+          We use the Quotient Identity to rewrite <m>\tan(x)</m> in terms of <m>\sin(x)</m> and <m>\cos(x)</m>:
+          <me>
+            \frac{\sin(x)}{\tan(x)}=\dfrac{\sin(x)}{\frac{\sin(x)}{\cos(x)}}=\cancel{\sin(x)}\cdot\frac{\cos(x)}{\cancel{\sin(x)}}=\cos(x)
+          </me>.
         </p>
       </solution>
     </example>
     <example>
+      <title>Verify the Identity by Factoring</title>
       <statement>
         <p>
-          examples involing factoring
+          Verify the identity
+          <me>
+            \cos^4(x)+\sin^2(x)\cos^2(x)=\cos^2(x)
+          </me>.
         </p>
       </statement>
       <solution>
         <p>
-          
+          First notice that both terms in <m>\cos^4(x)+\sin^2(x)\cos^2(x)</m> contain <m>\cos^2(x)</m>. Then
+          <md>
+            <mrow> \cos^4(x)+\sin^2(x)\cos^2(x) \amp = \cos^2(x)\cdot\cos^2(x)+\sin^2(x)\cos^2(x) </mrow>
+            <mrow> \amp = \cos^2(x)\cdot\left(\cos^2(x)+\sin^2(x)\right) </mrow>
+            <mrow> \amp = \cos^2(x)\cdot1 </mrow>
+            <mrow> \amp = \cos^2(x) </mrow>
+          </md>
         </p>
       </solution>
     </example>
     <example>
+      <title>Verify the Identity by Odd-Even Properties</title>
       <statement>
         <p>
-          examples involing even/odd
+          Verify the identity
+          <me>
+            \frac{\cos(x)-\sin(x)}{\cos(-x)+\sin(-x)}=1
+          </me>
         </p>
       </statement>
       <solution>
         <p>
+          By the Odd-Even Properties, we have <m>\sin(-x)=-\sin(x)</m> and <m>\cos(-x)=\cos(x)</m>. Thus,
+          <me>
+            \frac{\cos(x)-\sin(x)}{\cos(-x)+\sin(-x)}=\frac{\cos(x)-\sin(x)}{\cos(x)-\sin(x)}=1
+          </me>
+        </p>
+      </solution>
+    </example>
+    <example>
+      <title>Verify the Identity by Multiplying the Numerator and Denominator by the Same Term</title>
+      <statement>
+        <p>
+          Verify the identity
+          <me>
+            \frac{\sin(x)}{\sin(x)+\cos(x)}=\frac{1}{1+\cot(x)}
+          </me>
           
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Multiplying both the numerator and denominator by <m>\frac{1}{\sin(x)}</m>, we get
+          <md>
+            <mrow> \frac{\sin(x)}{\sin(x)+\cos(x)}\cdot\frac{\frac{1}{\sin(x)}}{\frac{1}{\sin(x)}} \amp = \frac{\cancel{\sin(x)}\cdot\frac{1}{\cancel{\sin(x)}}}{\cancel{\sin(x)}\cdot\frac{1}{\cancel{\sin(x)}}+\cos(x)\cdot\frac{1}{\sin(x)}} </mrow>
+            <mrow> \amp = \frac{1}{1+\frac{\cos(x)}{\sin(x)}} </mrow>
+            <mrow> \amp =\frac{1}{1+\cot(x)} </mrow>
+          </md>
         </p>
       </solution>
     </example>
   </subsection>
   
-
   <exercises xml:id="exercises-trig-identities">
     <exercisegroup>
       <introduction>
