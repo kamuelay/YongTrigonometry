@@ -312,9 +312,9 @@
       Another set of useful formulas are the half-angle formulas.
     </p>
     <definition xml:id="def-half-angle-formulas-sin-cos-tan">
-      <title>Half-Angle Formulas</title><idx><h>Half-Angle Formulas</h><h>for Sine</h></idx>
-      <idx><h>Half-Angle Formulas</h><h>for Cosine</h></idx>
-      <idx><h>Half-Angle Formulas</h><h>for Tangent</h></idx>
+      <title>Half-Angle Formulas</title><idx><h>half-angle formulas</h><h>for sine</h></idx>
+      <idx><h>half-angle formulas</h><h>for cosine</h></idx>
+      <idx><h>half-angle formulas</h><h>for tangent</h></idx>
       <statement>
         <p>
           <md>
@@ -445,7 +445,7 @@
       We can derive another formula for <m>\tan\frac{\theta}{2}</m> that does not involve <m>\pm</m>:
     </p>
     <definition xml:id="def-half-angle-formula-tangent">
-      <title>Half-Angle Formulas for Tangent</title><idx><h>Half-Angle Formulas</h><h>for Tangent</h></idx>
+      <title>Half-Angle Formulas for Tangent</title><idx><h>half-angle formulas</h><h>for tangent</h></idx>
       <statement>
         <p>
           <me>
