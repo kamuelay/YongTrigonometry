@@ -860,7 +860,7 @@
         </statement>
         <answer>
           <p>
-            <m>sqrt{3}</m>
+            <m>\sqrt{3}</m>
           </p>
         </answer>
       </exercise>
@@ -1803,6 +1803,40 @@
         </p>
       </statement>
     </exercise>
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          Verify the identity
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+      </exercise>
+    </exercisegroup>
   </exercises>
-
 </section>
