@@ -1647,7 +1647,7 @@
     <exercisegroup cols="2">
       <introduction>
         <p>
-          Prove the identity.
+          Verify the identity.
         </p>
       </introduction>
       <exercise>
@@ -1689,6 +1689,41 @@
         <statement>
           <p>
             <m>\sin\left(\frac{\pi}{2}-\theta\right)=\sin\left(\frac{\pi}{2}+\theta\right)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos\left(\theta+\frac{\pi}{3}\right)=-\sin\left(x-\frac{\pi}{6}\right)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{\sin(x+y)}{\cos x\cos y}=\tan x+\tan y</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cot(x-y)=\frac{\cot x\cot y+1}{\cot y-\cot x}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin(x+y)-\sin(x-y)=2\cos x\sin y</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos(x+y)+\cos(x-y)=2\cos x\cos y</m>
           </p>
         </statement>
       </exercise>
@@ -1803,40 +1838,5 @@
         </p>
       </statement>
     </exercise>
-    <exercisegroup cols="2">
-      <introduction>
-        <p>
-          Verify the identity
-        </p>
-      </introduction>
-      <exercise>
-        <statement>
-          <p>
-            
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            
-          </p>
-        </statement>
-      </exercise>
-    </exercisegroup>
   </exercises>
 </section>
