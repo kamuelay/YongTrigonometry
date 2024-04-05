@@ -1578,6 +1578,13 @@
       <exercise>
         <statement>
           <p>
+            <m>\cos(2\theta)=\frac{\cot\theta-\tan\theta}{\cot\theta+\tan\theta}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
             <m>(\sin^2\theta-1)^2=\cos(2\theta)+\sin^4\theta</m>
           </p>
         </statement>
@@ -1628,13 +1635,6 @@
         <statement>
           <p>
             <m>\frac{2\tan\theta}{1+\tan^2\theta}=\sin(2\theta)</m>
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\sin(3\theta)=3\sin\theta\cos^2\theta-\sin^3\theta</m>
           </p>
         </statement>
       </exercise>
