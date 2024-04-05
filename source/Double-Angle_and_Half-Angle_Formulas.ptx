@@ -350,8 +350,8 @@
             <mrow> \amp = \sqrt{\frac{1+\cos45^{\circ}}{2}} </mrow>
             <mrow> \amp = \sqrt{\frac{1+\frac{\sqrt{2}}{2}}{2}} </mrow>
             <mrow> \amp = \sqrt{\frac{\frac{2}{2}+\frac{\sqrt{2}}{2}}{2}} </mrow>
-            <mrow> \amp = \sqrt{\frac{2-\sqrt{2}}{4}} </mrow>
-            <mrow> \amp = \frac{1}{2}\cdot\sqrt{2-\sqrt{2}}</mrow>
+            <mrow> \amp = \sqrt{\frac{2+\sqrt{2}}{4}} </mrow>
+            <mrow> \amp = \frac{1}{2}\cdot\sqrt{2+\sqrt{2}}</mrow>
           </md>
           Since the half-angle formula has <m>\pm</m>, we check the quadrant. In this case, our angle is <m>22.5^{\circ}</m>, which is in Quadrant I. Therefore, we choose the positive value.
         </p>
@@ -555,7 +555,7 @@
         </statement>
         <answer>
           <p>
-            <m>\frac{1}{2}\cdot\sqrt{2+\sqrt{2}}</m>
+            <m>\frac{1}{2}\cdot\sqrt{2-\sqrt{2}}</m>
           </p>
         </answer>
       </exercise>
@@ -567,7 +567,7 @@
         </statement>
         <answer>
           <p>
-            
+            <m>\sqrt{3-2\sqrt{2}}=\sqrt{2}-1</m>
           </p>
         </answer>
       </exercise>
@@ -579,7 +579,7 @@
         </statement>
         <answer>
           <p>
-            
+            <m>\frac{1}{2}\sqrt{2+\sqrt{2}}</m>
           </p>
         </answer>
       </exercise>
@@ -591,7 +591,7 @@
         </statement>
         <answer>
           <p>
-            
+            <m>\frac{1}{2}\sqrt{2-\sqrt{2}}</m>
           </p>
         </answer>
       </exercise>
@@ -603,7 +603,7 @@
         </statement>
         <answer>
           <p>
-            
+            <m>\sqrt{3+2\sqrt{2}}=\sqrt{2}+1</m>
           </p>
         </answer>
       </exercise>
@@ -1507,24 +1507,95 @@
         </answer>
       </task>
     </exercise>
-    <exercise>
-      <statement>
+    <exercisegroup>
+      <introduction>
         <p>
-          Use half angle to find the exact deviation for 22.5 and 67.5.
+          Use half angle to find the exact deviation for the indicated angle, <m>\theta</m>.
         </p>
-        <image xml:id="deviation-half-angle-formula-2houses" width="100%">
-          <latex-image>
-            \begin{tikzpicture}[scale=7]
-            \draw[line width=2pt,-stealth] (0,0) -- (22.5:1.2) node[midway,sloped,above] {120 NM};
-            \draw[dashed] (0,0) -- ({1.2*cos(22.5)},0) node[midway,below,yshift=-0.1] {reference course};
-            \draw[dashed] ({1.2*cos(22.5)},0) -- (22.5:1.2) node[pos=0.5,right,xshift=0.1] {deviation};
-            \draw ([shift=(22.5:-0.1)]0,0) pic {waa-top={waacolor}{{-90+22.5}}{0.1}};
-            \draw ([shift=(0:0.2)]0,0) arc (0:22.5:0.2) node[midway,right,xshift=12,yshift=2] {2 Houses=$22.5^{\circ}$};
-            \draw ({1.2*cos(22.5)-0.04},0) -- ({1.2*cos(22.5)-0.04},0.04) -- ({1.2*cos(22.5)},0.04);
-            \end{tikzpicture}
-          </latex-image>
-        </image>
-      </statement>
-    </exercise>    
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            2 Houses (<m>\theta=22.5^{\circ}</m>)
+          </p>
+          <image xml:id="deviation-half-angle-formula-2houses" width="100%">
+            <latex-image>
+              \begin{tikzpicture}[scale=7]
+              \draw[line width=2pt,-stealth] (0,0) -- (22.5:1.2) node[midway,sloped,above] {120 NM};
+              \draw[dashed] (0,0) -- ({1.2*cos(22.5)},0) node[midway,below,yshift=-0.1] {reference course};
+              \draw[dashed] ({1.2*cos(22.5)},0) -- (22.5:1.2) node[pos=0.5,right,xshift=0.1] {deviation};
+              \draw ([shift=(22.5:-0.1)]0,0) pic {waa-top={waacolor}{{-90+22.5}}{0.1}};
+              \draw ([shift=(0:0.2)]0,0) arc (0:22.5:0.2) node[midway,right,xshift=12,yshift=2] {2 Houses=$22.5^{\circ}$};
+              \draw ({1.2*cos(22.5)-0.04},0) -- ({1.2*cos(22.5)-0.04},0.04) -- ({1.2*cos(22.5)},0.04);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </statement>
+        <answer>
+          <p>
+            <m>60\sqrt{2-\sqrt{2}}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            6 Houses (<m>\theta=67.5^{\circ}</m>)
+          </p>
+          <image xml:id="deviation-half-angle-formula-6houses" width="50%">
+            <latex-image>
+              \begin{tikzpicture}[scale=7]
+              \draw[line width=2pt,-stealth] (0,0) -- (67.5:1.2) node[midway,sloped,above] {120 NM};
+              \draw[dashed] (0,0) -- ({1.2*cos(67.5)},0) node[midway,below,yshift=-0.1] {reference course};
+              \draw[dashed] ({1.2*cos(67.5)},0) -- (67.5:1.2) node[pos=0.5,right,xshift=0.1] {deviation};
+              \draw ([shift=(67.5:-0.1)]0,0) pic {waa-top={waacolor}{{-90+67.5}}{0.1}};
+              \draw ([shift=(0:0.15)]0,0) arc (0:67.5:0.15) node[midway,right,xshift=-8,yshift=10] {6 Houses=$67.5^{\circ}$};
+              \draw ({1.2*cos(67.5)-0.04},0) -- ({1.2*cos(67.5)-0.04},0.04) -- ({1.2*cos(67.5)},0.04);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </statement>
+        <answer>
+          <p>
+            <m>60\sqrt{2+\sqrt{2}}</m>
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          Verify the identity
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+      </exercise>
+    </exercisegroup>
   </exercises>
 </section>
