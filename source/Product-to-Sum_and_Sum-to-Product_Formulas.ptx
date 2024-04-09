@@ -524,6 +524,13 @@
       <exercise>
         <statement>
           <p>
+            <m>6\cos(5\theta)\sin(6\theta)=3\sin(11\theta)+3\sin(\theta)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
             <m>\frac{\sin\theta+\sin(3\theta)}{2\sin(2\theta)}=\cos\theta</m>
           </p>
         </statement>
@@ -539,13 +546,6 @@
         <statement>
           <p>
             <m>\frac{\cos\theta-\cos(3\theta)}{\sin\theta+\sin(3\theta)}=\tan\theta</m>
-          </p>
-        </statement>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>6\cos(5\theta)\sin(6\theta)=3\sin(11\theta)+3\sin(\theta)</m>
           </p>
         </statement>
       </exercise>
