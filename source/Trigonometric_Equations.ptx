@@ -65,6 +65,21 @@
       </solution>
     </example>
   </subsection>
+  <subsection xml:id="subsec-solving-equations-with-square-terms">
+    <title>Solving Trigonometric Equations with Square Terms</title>
+    <example>
+      <statement>
+        <p>
+          Solve the equation <m>cos^2\theta=\frac{1}{2}</m> where <m>0\leq\theta\lt2\pi</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          
+        </p>
+      </solution>
+    </example>
+  </subsection>
   <subsection xml:id="subsec-solving-trig-eq-by-factoring">
     <title>Solving Trigonometric Equations by Factoring</title>
     <example>
@@ -141,12 +156,555 @@
     </p>
   </subsection>
   <exercises xml:id="exercises-trig-eqns">
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          Solve each equation on the interval <m>0\leq\theta\lt2\pi</m>
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin\theta=\frac{\sqrt{3}}{2}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{\pi}{3}</m>, <m>\frac{2\pi}{3}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos\theta=\frac{\sqrt{2}}{2}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{\pi}{4}</m>, <m>\frac{7\pi}{4}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan\theta=-1</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{3\pi}{4}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\csc\theta=2</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{\pi}{6}</m>, <m>\frac{5\pi}{6}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sec\theta=-2</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{2\pi}{3}</m>, <m>\frac{4\pi}{3}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cot\theta=-\sqrt{3}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{5\pi}{6}</m>, <m>\frac{11\pi}{6}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>2\sin\theta+1=0</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{7\pi}{6}</m>, <m>\frac{11\pi}{6}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>6\cos\theta+1=-2</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{2\pi}{3}</m>, <m>\frac{4\pi}{3}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>2\tan\theta+2\sqrt{3}=0</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{2\pi}{3}</m>, <m>\frac{5\pi}{3}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\csc\theta+\sqrt{2}=0</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{5\pi}{4}</m>, <m>\frac{7\pi}{4}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sec\theta-\sqrt{2}=0</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{\pi}{4}</m>, <m>\frac{7\pi}{4}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>2\cot\theta+8=6</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{3\pi}{4}</m>
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          Solve each equation, giving the general formula for each solution. List six specific solutions.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin\theta=-\frac{\sqrt{2}}{2}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{3\pi}{4}+2k\pi</m>, <m>\frac{5\pi}{4}+2k\pi</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos\theta=\frac{1}{2}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{\pi}{3}+2k\pi</m>, <m>\frac{5\pi}{3}+2k\pi</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan\theta=-1</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{\pi}{4}+k\pi</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cot\theta=-\sqrt{3}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{\pi}{6}+k\pi</m>, <m>\frac{5\pi}{6}+k\pi</m>
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
     <exercisegroup>
       <introduction>
         <p>
           
         </p>
       </introduction>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
       <exercise>
         <statement>
           <p>
