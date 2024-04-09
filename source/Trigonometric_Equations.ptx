@@ -3,23 +3,70 @@
   <title>Trigonometric Equations</title>
   <introduction>
     <p>
-      some intro
+      Equations involving trigonometric functions are called <term>trigonometric equations</term><idx><h>trigonometric equations</h></idx>. Trigonometric equations are true for certain values of the input, called <term>solutions</term> of the equation. In this section, we will learn techniques for solving trigonometric equations.
     </p>
   </introduction>
-  <subsection xml:id="subsec-solving-basic-trig-equations">
-    <title>solving-basic-trig-equations</title>
-    <p>
-      
-    </p>
+  <subsection xml:id="subsec-solving-equations-single-trig-function">
+    <title>Solving Equations with a Single Trigonometric Function</title>
+    <example>
+      <statement>
+        <p>
+          Solve the equation
+          <me>
+            \sin\theta=\frac{1}{2}
+          </me>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          To solve the equation <m>\sin\theta=\frac{1}{2}</m>, our initial instinct might lead us to take the inverse sine of both sides:
+          <me>
+            \sin^{-1}\left(\sin\theta\right)=\sin^{-1}\left(\frac{1}{2}\right)
+          </me>
+          resulting in 
+          <me>
+            \theta=\frac{\pi}{6}
+          </me>.
+          While this yields a valid solution, it's important to recognize that there are additional solutions to consider.
+        </p>
+        <p>
+            Since the sine function is positive in both Quadrant I and Quadrant II, we can find another solution in Quadrant II by using the reference angle <m>\frac{\pi}{6}</m> and the methods described in <xref ref="trigonometric_functions_of_any_angles"/>. Therefore, the equivalent angle in Quadrant II is <m>\theta=\pi-\frac{\pi}{6}=\frac{5\pi}{6}</m>.
+        </p>
+        <p>
+          However, these two angles, <m>\theta=\frac{\pi}{6}</m> or <m>\theta=\frac{5\pi}{6}</m>, are not the only solutions. Recall that the sine function has a period of <m>2\pi</m>, meaning that adding or subtracting any integer multiples of <m>2\pi</m> to these angles will also give you solutions. For example, <m>\theta=\frac{\pi}{6}+4\pi</m> and <m>\theta=\frac{5\pi}{6}-10\pi</m> are both solutions.
+        </p>
+        <p>
+          Thus, the general solution to <m>\sin\theta=\frac{1}{2}</m> can be expressed as:
+          <me>
+            \theta=\frac{\pi}{6}+2k\pi\quad\mbox{or}\quad\theta=\frac{5\pi}{6}+2k\pi
+          </me>,
+          where <m>k</m> is any integer.
+        </p>
+      </solution>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Solve the equation <m>2\cos\theta+\sqrt{2}=0</m>, <m>0\leq\theta\leq2\pi</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          First we will solve for <m>\cos\theta</m>.
+          <md>
+            <mrow> 2\cos\theta+\sqrt{2} \amp = 0 </mrow>
+            <mrow> 2\cos\theta \amp = -\sqrt{2} </mrow>
+            <mrow> \cos\theta \amp = -\frac{\sqrt{2}}{2} </mrow>
+          </md>.
+        </p>
+        <p>
+          For <m>0\leq\theta\leq2\pi</m>, we have <m>\theta=\frac{3\pi}{4}</m> or <m>\theta=\frac{5\pi}{4}</m>.
+        </p>
+      </solution>
+    </example>
   </subsection>
   <subsection xml:id="subsec-solving-trig-eq-by-factoring">
-    <title>solving-trig-eq-by-factoring and quadratic form</title>
-    <p>
-      factor
-    </p>
-    <p>
-      solve quadratic type ax^2+bx+c=0
-    </p>
+    <title>Solving Trigonometric Equations by Factoring</title>
     <example>
       <statement>
         <p>
@@ -31,47 +78,99 @@
           To solve this equation, let's make a substitution to simplify it. We'll let <m>y = \cos x</m>, so the equation becomes <m>y^2 - 4y + 3 = 0</m>.
         </p>
         <p>
-          We can factor the quadratic equation as <m>(y - 3)(y - 1) = 0</m>. Setting each factor equal to zero, we find:
-          <m>
-            \begin{cases}
-              y - 3 = 0 \implies y = 3 \\
-              y - 1 = 0 \implies y = 1
-            \end{cases}
-          </m>
+          Factoring the quadratic equation, we obtain <m>(y - 3)(y - 1) = 0</m>. Setting each factor equal to zero, we find two potential solutions: <m>y = 3</m> or <m>y = 1</m>. We are not done because we need to solve for <m>x</m> and not <m>y</m>.
         </p>
         <p>
-          Now, let's substitute back <m>\cos x</m> for <m>y</m>:
-          <m>
-            \begin{cases}
-              \cos x = 3 \quad \text{(No solution since the range of cosine is [-1, 1])} \\
-              \cos x = 1 \implies x = 2\pi n, \quad n \in \mathbb{Z} \quad \text{(General solution)}
-            \end{cases}
-          </m>
+          Substituting back <m>\cos x</m> for <m>y</m>, we find that <m>\cos x = 3</m> is not a valid solution, as the range of cosine is limited to [-1, 1]. However, <m>\cos x = 1</m> yields a solution of <m>x = 0</m> for one period.
+        </p>
+        <p>
+          Therefore, the general solution to the equation is:
+          <me>
+            x = 0+2k\pi = 2k\pi,
+          </me>
+          where <m>k</m> is any integer.
         </p>
       </solution>
     </example>
-    
-    
-    <p>
-      2sin^2x+3cosx-3=0, first write as sinle trig function
-    </p>
+    <example>
+      <statement>
+        <p>
+          Solve <m>2\sin^2x+3\cos x-3=0</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          To solve the equation <m>2\sin^2x + 3\cos x - 3 = 0</m>, we want to first write it in terms of only cosine or only sine. By the Pythagorean Identity, we substitute <m>\sin^2x=1-\cos^2x</m>, resulting in:
+          <md>
+            <mrow> 2\sin^2x+3\cos x-3 \amp =0 </mrow>
+            <mrow> 2(1-\cos^2x)+3\cos x-3 \amp =0 </mrow>
+            <mrow> 2-2\cos^2x+3\cos x-3 \amp =0 </mrow>
+            <mrow> -2\cos^2x+3\cos x-1 \amp =0 </mrow>
+            <mrow> 2\cos^2x-3\cos x+1 \amp =0 </mrow>
+            <mrow> (2\cos x-1)(\cos x-1) \amp =0 </mrow>
+          </md>
+          Thus <m>\cos x=\frac{1}{2}</m> or <m>\cos x=1</m>.
+        </p>
+        <p>
+          Solving for <m>x</m> in the first equation gives <m>x=\frac{\pi}{3}</m> or <m>\frac{5\pi}{3}</m>, while the second equations gives <m>x=0</m> for one period. Finding all solutions, we arrive at <m>x=\frac{\pi}{3}+2k\pi</m>, <m>\frac{5\pi}{3}+2k\pi</m>, or <m>x=0+2k\pi=2k\pi</m> for any integer <m>k</m>.
+        </p>
+      </solution>
+    </example>
+    <remark>
+      <p>
+        If you are having trouble factoring trigonometric functions, try substituting a simpler term and then factor. For example, consider the expression <m>2\cos^2x-3\cos x+1</m> in the previous example. If factoring this expression directly is not clear, you can use the substitution <m>A=\cos x</m>. This transforms the expression into <m>2A^2-3A+1</m>, which may be easier to factorize. Once factored, you can substitute <m>\cos x</m> back in for <m>A</m> to obtain the final solution.
+      </p>
+    </remark>
   </subsection>
   <subsection xml:id="subsec-solving-trig-eq-by-using-fundamental-identities">
-    <title>solving-trig-eq-by-using-fundamentional-identities</title>
+    <title>Solving a Trigonometric Equation by Using Fundamental Identities</title>
     <p>
       
     </p>
   </subsection>
-  <subsection xml:id="subsec-solving-trig-eq-with-multiple-anglesa">
-    <title>solving-trig-eq-with-multiple anglesa</title>
+  <subsection xml:id="subsec-solving-trig-eq-with-multiple-angles">
+    <title>Solving a Trigonometric Equatio with Multiple Angles</title>
     <p>
       
     </p>
   </subsection>
-  <subsection xml:id="subsec-solving-trig-eq-by-graphing-utility">
-    <title>solving-trig-eq-by-graphing-utility</title>
+  <subsection xml:id="subsec-solving-trig-eq-with-graphing-utility">
+    <title>Solving a Trigonometric Equatio with a Graphing Utility</title>
     <p>
-      
+      p465 sullivan
     </p>
   </subsection>
+  <exercises xml:id="exercises-trig-eqns">
+    <exercisegroup>
+      <introduction>
+        <p>
+          
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+  </exercises>
 </section>
