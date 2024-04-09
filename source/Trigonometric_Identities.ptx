@@ -232,48 +232,44 @@
         </p>
       </solution>
     </example>
+    <example>
+      <title>Verify the Identity by Manipulating Both Sides Separately</title>
+      <statement>
+        <p>
+          Verify the identity
+          <me>
+            \frac{1-\cos x}{1+\cos x}=(\csc x-\cot x)^2
+          </me>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We begin by simplifying the right-hand side of the equation
+          <md>
+            <mrow>(\csc x-\cot x)^2 \amp = \csc^2x-2\csc x\cot x+\cot^2x </mrow>
+            <mrow> \amp = \csc^2x+\cot^2x-2\csc x\cot x </mrow>
+            <mrow> \amp = \csc^2x+\cot^2x-2\frac{1}{\sin x}\frac{\cos x}{\sin x} </mrow>
+            <mrow> \amp = \csc^2x+\cot^2x-2\frac{\cos x}{\sin^2 x} </mrow>
+          </md>.
+        </p>
+        <p>
+          Next, we will manipulate the left-hand side of the equation to get it to look like <m>\csc^2x+\cot^2x-2\frac{\cos x}{\sin^2 x}</m>.
+          <md>
+            <mrow> \frac{1-\cos x}{1+\cos x} \amp = \frac{(1-\cos x)(1-\cos x)}{(1+\cos x)(1-\cos x)} </mrow>
+            <mrow> \amp = \frac{1-2\cos x+\cos^2x}{1-\cos^2x} </mrow>
+            <mrow> \amp = \frac{1+\cos^2x-2\cos x}{\sin^2x} </mrow>
+            <mrow> \amp = \frac{1}{\sin^2x}+\frac{\cos^2x}{\sin^2x}-2\frac{\cos x}{\sin^2x} </mrow>
+            <mrow> \amp = \csc^2x+\cot^2x-2\frac{\cos x}{\sin^2 x} </mrow>
+          </md>.
+        </p>
+        <p>
+          Thus, since the left-hand side and the right-hand side of the equation can both be manipulated to <m>\csc^2x+\cot^2x-2\frac{\cos x}{\sin^2 x}</m>, we have established the identity.
+        </p>
+      </solution>
+    </example>
   </subsection>
   
   <exercises xml:id="exercises-trig-identities">
-    <exercisegroup>
-      <introduction>
-        <p>
-          Simplify the trigonometric expression using the Fundamental Trigonometric Identities.
-        </p>
-      </introduction>
-      <exercise>
-        <statement>
-          <p><m>\sin^2(x) - 1</m></p>
-        </statement>
-        <answer>
-          <p><m>\cos^2(x)</m></p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p><m>1 - \sec^2(x)</m></p>
-        </statement>
-        <answer>
-          <p><m>-\tan^2(x)</m></p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p><m>\tan(x) \cdot \cot(x)</m></p>
-        </statement>
-        <answer>
-          <p><m>1</m></p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p><m>\sin^2(x) - \sin^2(x) \cos^2(x)</m></p>
-        </statement>
-        <answer>
-          <p><m>\sin^4(x)</m></p>
-        </answer>
-      </exercise>
-    </exercisegroup>
     <exercisegroup>
       <introduction>
         <p>
@@ -283,14 +279,212 @@
       <exercise>
         <statement>
           <p>
-            
+            <m>\cos\theta\sec\theta=1</m>
           </p>
         </statement>
-        <answer>
+      </exercise>
+      <exercise>
+        <statement>
           <p>
-            
+            <m>\cos x\csc x=\cot x</m>
           </p>
-        </answer>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{\cos\theta\sec\theta}{\tan\theta}=\cot\theta</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{\cot t\tan t}{\csc t}=\sin t</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(1+\tan\theta)(1-\tan\theta)+\sec^2\theta=2</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin^2(x) - 1=\cos^2(x)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>1 - \sec^2(\theta)=-\tan^2(\theta)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan(t) \cdot \cot(t)=1</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(\sin\theta+\cos\theta)^2=1+2\sin\theta\cos\theta</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(1-\cot\theta)^2=\csc^2\theta-2\cot^2\theta</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{\sin\theta}{\csc\theta}+\frac{\cos\theta}{\sec\theta}=1</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin^2 t(\csc^2 t+\cos^2 t)=\csc^2 t</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin^2(x) - \sin^2(x) \cos^2(x)=\sin^4(x)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin^2(-x)+\cos^2(-x)=1</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos(-t)+\sin(-t)=\cos(t)-\sin(t)</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(\sin^2\theta+\cos^\theta)^2-2\sin\theta\cos\theta=1</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cot^2 x(\sec^2 x-1)=1</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>(1+\sin(t))(1+\sin(-t))=\cos^2 t</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan^4\theta=\tan^2\theta\sec^2\theta-\tan^2\theta</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{1}{1-\sin x}+\frac{1}{1+\sin x}=2\sec^2x</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{1}{\csc t+1}-\frac{1}{\csc t-1}=-2\tan^2t</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{1}{1-\cos\theta}+\frac{1}{1+\cos\theta}=2\csc^2\theta</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{1-\cos^2 x}{\cos x}=\sin x\tan x</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>1-\frac{\cos^2\theta}{1+\sin\theta}=\sin\theta</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sec^2 t+\csc^2 t=\csc^2t\sec^2t</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{1+\tan x}{1-\tan x}=\frac{\cot x+1}{\cot x-1}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{\cos\theta}{1-\sin\theta}=\frac{1+\sin\theta}{\cos\theta}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>1-\frac{\cos^2 t}{1+\sin t}=\sin t</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{1+\cos\theta}{\cos\theta}=\frac{\tan^2\theta}{\sec\theta-1}</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{1}{1-\cos\theta}+\frac{1}{1+\cos\theta}=2+2\cot^2\theta</m>
+          </p>
+        </statement>
       </exercise>
     </exercisegroup>
 
