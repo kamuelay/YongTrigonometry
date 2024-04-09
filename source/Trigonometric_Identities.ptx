@@ -314,7 +314,7 @@
       <exercise>
         <statement>
           <p>
-            <m>\sin^2(x) - 1=\cos^2(x)</m>
+            <m>1- \sin^2(x) =\cos^2(x)</m>
           </p>
         </statement>
       </exercise>
@@ -342,7 +342,7 @@
       <exercise>
         <statement>
           <p>
-            <m>(1-\cot\theta)^2=\csc^2\theta-2\cot^2\theta</m>
+            <m>(1-\cot\theta)^2=\csc^2\theta-2\cot\theta</m>
           </p>
         </statement>
       </exercise>
@@ -356,7 +356,7 @@
       <exercise>
         <statement>
           <p>
-            <m>\sin^2 t(\csc^2 t+\cos^2 t)=\csc^2 t</m>
+            <m>\sin^2 t(\csc^2 t+\sec^2 t)=\sec^2 t</m>
           </p>
         </statement>
       </exercise>
@@ -384,7 +384,7 @@
       <exercise>
         <statement>
           <p>
-            <m>(\sin^2\theta+\cos^\theta)^2-2\sin\theta\cos\theta=1</m>
+            <m>(\sin\theta+\cos\theta)^2-2\sin\theta\cos\theta=1</m>
           </p>
         </statement>
       </exercise>
@@ -427,6 +427,13 @@
         <statement>
           <p>
             <m>\frac{1}{1-\cos\theta}+\frac{1}{1+\cos\theta}=2\csc^2\theta</m>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{1}{1-\cos\theta}+\frac{1}{1+\cos\theta}=2+2\cot^2\theta</m>
           </p>
         </statement>
       </exercise>
@@ -479,14 +486,6 @@
           </p>
         </statement>
       </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>\frac{1}{1-\cos\theta}+\frac{1}{1+\cos\theta}=2+2\cot^2\theta</m>
-          </p>
-        </statement>
-      </exercise>
     </exercisegroup>
-
   </exercises>
 </section>
