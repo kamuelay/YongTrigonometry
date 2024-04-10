@@ -771,10 +771,7 @@
   <subsection xml:id="subsec-finding-sinusoidal-equations-with-technology">
     <title>Finding Sinusoidal Equations with Technology</title>
     <p>
-      Some graphing utilities, such as the TI-83 calculator or <url
-      href="https://www.desmos.com/calculator"
-      visual="Desmos Graphing Calculator">
-      </url>, have functions that allow you to find a sinusoidal best-fit function given data. While some devices can find the best-fit for both sine and cosine functions, others only calculate the best-fit line for sine. For example, the TI-83 uses the <kbd>SinReg</kbd> function to calculate the sine function.
+      Some graphing utilities, such as the TI-83 calculator or <url href="https://www.desmos.com/calculator" visual="Desmos Graphing Calculator">Desmos Graphing Calculator</url>, have functions that allow you to find a sinusoidal best-fit function given data. While some devices can find the best-fit for both sine and cosine functions, others only calculate the best-fit line for sine. For example, the TI-83 uses the <kbd>SinReg</kbd> function to calculate the sine function.
     </p>
     <example>
       <title>Finding the Sinusoidal Equation using Desmos</title>
@@ -1548,7 +1545,7 @@
       <introduction>
         <p>
           Use the table below, which gives the average monthly temperatures (in Celsius) at various latitudes in the South Pacific, to answer the following questions. Express your answers in the form <m>y=A\sin(B(x-C))+D</m>. Source: Data for Apia, Suva, Nukuʻalofa, and Rapa Nui obtained from <url href="http://www.worldclimate.com"></url>, retrieved on 18 March 2024; Data for Whangārei and Dunedin obtained from <url href="https://niwa.co.nz/education-and-training/schools/resources/climate/meanairtemp"
-          visual="National Institute of Water and Atmospheric Research (NIWA)"></url>, retrieved on 18 March 2024.
+          visual="National Institute of Water and Atmospheric Research (NIWA)">National Institute of Water and Atmospheric Research (NIWA)</url>, retrieved on 18 March 2024.
         </p>
         <tabular halign="center">
           <row>
