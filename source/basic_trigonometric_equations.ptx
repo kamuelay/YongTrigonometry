@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<section xml:id="trigonometric_equations">
-  <title>Trigonometric Equations</title>
+<section xml:id="basic_trigonometric_equations">
+  <title>Basic Trigonometric Equations</title>
   <introduction>
     <p>
-      Equations involving trigonometric functions are called <term>trigonometric equations</term><idx><h>trigonometric equations</h></idx>. Trigonometric equations are true for certain values of the input, called <term>solutions</term> of the equation. In this section, we will learn techniques for solving trigonometric equations.
+      <term>Trigonometric equations</term><idx><h>trigonometric equations</h></idx> are equations involving trigonometric functions such as sine, cosine, and tangent. These equations seek to find specific values, known as <term>solutions</term>, that satisfy the equation.
+    </p>
+    <p>
+      Trigonometric functions are inherently periodic, meaning they repeat their values at regular intervals. As a result, trigonometric equations may have multiple solutions due to this periodic nature. In fact, some equations may have infinitely many solutions.
+    </p>
+    <p>
+      To address all possible solutions, we use a technique known as a <term>general solution</term><idx><h>general solution</h></idx>. This method involves initially identifying solutions within a single period of the trigonometric function. We then extend these solutions by adding integer multiples of the period of the trigonometric function.
+    </p>
+    <p>
+      In this section, we will explore various techniques for effectively solving trigonometric equations, including methods for finding general solutions.
     </p>
   </introduction>
   <subsection xml:id="subsec-solving-equations-single-trig-function">
@@ -27,10 +36,10 @@
           <me>
             \theta=\frac{\pi}{6}
           </me>.
-          While this yields a valid solution, it's important to recognize that there are additional solutions to consider.
+          While this is a valid solution, it's important to recognize that there are additional solutions to consider.
         </p>
         <p>
-            Since the sine function is positive in both Quadrant I and Quadrant II, we can find another solution in Quadrant II by using the reference angle <m>\frac{\pi}{6}</m> and the methods described in <xref ref="trigonometric_functions_of_any_angles"/>. Therefore, the equivalent angle in Quadrant II is <m>\theta=\pi-\frac{\pi}{6}=\frac{5\pi}{6}</m>.
+            Since the sine function is positive in both Quadrant I and Quadrant II, we can find another solution in Quadrant II by using the reference angle <m>\frac{\pi}{6}</m> and the methods described in <xref ref="subsec-reference-angle"/>. Therefore, the equivalent angle in Quadrant II is <m>\theta=\pi-\frac{\pi}{6}=\frac{5\pi}{6}</m>.
         </p>
         <p>
           However, these two angles, <m>\theta=\frac{\pi}{6}</m> or <m>\theta=\frac{5\pi}{6}</m>, are not the only solutions. Recall that the sine function has a period of <m>2\pi</m>, meaning that adding or subtracting any integer multiples of <m>2\pi</m> to these angles will also give you solutions. For example, <m>\theta=\frac{\pi}{6}+4\pi</m> and <m>\theta=\frac{5\pi}{6}-10\pi</m> are both solutions.
@@ -47,12 +56,12 @@
     <example>
       <statement>
         <p>
-          Solve the equation <m>2\cos\theta+\sqrt{2}=0</m>, <m>0\leq\theta\leq2\pi</m>.
+          Solve the equation <m>2\cos\theta+\sqrt{2}=0</m>, list six solutions.
         </p>
       </statement>
       <solution>
         <p>
-          First we will solve for <m>\cos\theta</m>.
+          First we will isolate <m>\cos\theta</m>.
           <md>
             <mrow> 2\cos\theta+\sqrt{2} \amp = 0 </mrow>
             <mrow> 2\cos\theta \amp = -\sqrt{2} </mrow>
@@ -60,7 +69,15 @@
           </md>.
         </p>
         <p>
-          For <m>0\leq\theta\leq2\pi</m>, we have <m>\theta=\frac{3\pi}{4}</m> or <m>\theta=\frac{5\pi}{4}</m>.
+          Thus we have the general solution <m>\theta=\frac{3\pi}{4}+2k\pi</m> or <m>\theta=\frac{5\pi}{4}+2k\pi</m> for any integer <m>k</m>.
+        </p>
+        <p>
+          To get specific solutions, we select specific values of <m>k</m>:
+          <md>
+            <mrow> k=-1: \amp \theta=\frac{3\pi}{4}+2(-1)\pi=-\frac{5\pi}{4}, \amp\amp \theta=\frac{5\pi}{4}+2(-1)\pi=-\frac{3\pi}{4} </mrow>
+            <mrow> k=0: \amp \theta=\frac{3\pi}{4}+2(0)\pi=\frac{3\pi}{4}, \amp\amp \theta=\frac{5\pi}{4}+2(0)\pi=\frac{5\pi}{4} </mrow>
+            <mrow> k=1: \amp \theta=\frac{3\pi}{4}+2(1)\pi=\frac{11\pi}{4}, \amp\amp \theta=\frac{5\pi}{4}+2(1)\pi=\frac{13\pi}{4} </mrow>
+          </md>
         </p>
       </solution>
     </example>
@@ -70,12 +87,19 @@
     <example>
       <statement>
         <p>
-          Solve the equation <m>cos^2\theta=\frac{1}{2}</m> where <m>0\leq\theta\lt2\pi</m>.
+          Solve <m>\cos^2\theta=\frac{1}{2}</m> where <m>0\leq\theta\lt2\pi</m> on the interval <m>0\leq\theta\lt2\pi</m>.
         </p>
       </statement>
       <solution>
         <p>
-          
+          We will first solve for <m>\cos\theta</m>. We begin by taking the square root of both sides of the equation and simplify:
+          <md>
+            <mrow> \sqrt{\cos^2\theta} \amp = \pm\sqrt{\frac{1}{2}} </mrow>
+            <mrow> \cos\theta \amp \pm\frac{1}{\sqrt{2}}=\pm\frac{\sqrt{2}}{2}</mrow>
+          </md>
+        </p>
+        <p>
+          From <xref ref="tab_trig-table"/>, when <m>\cos\theta=\frac{\sqrt{2}}{2}</m>, we have <m>\theta=\frac{\pi}{4}</m> or <m>\theta=\frac{7\pi}{4}</m>; and when <m>\cos\theta=-\frac{\sqrt{2}}{2}</m>, we have <m>\theta=\frac{3\pi}{4}</m> or <m>\theta=\frac{5\pi}{4}</m>.
         </p>
       </solution>
     </example>
@@ -85,7 +109,7 @@
     <example>
       <statement>
         <p>
-          Solve <m>\cos^2x - 4\cos x + 3 = 0</m>
+          Solve <m>\cos^2x - 4\cos x + 3 = 0</m>.
         </p>
       </statement>
       <solution>
@@ -110,67 +134,64 @@
     <example>
       <statement>
         <p>
-          Solve <m>2\sin^2x+3\cos x-3=0</m>.
+          Solve <m>2\cos\theta\sin\theta+\sqrt{3}\cos\theta=0</m>.
         </p>
       </statement>
       <solution>
         <p>
-          To solve the equation <m>2\sin^2x + 3\cos x - 3 = 0</m>, we want to first write it in terms of only cosine or only sine. By the Pythagorean Identity, we substitute <m>\sin^2x=1-\cos^2x</m>, resulting in:
+          We begin by factoring <m>\cos\theta</m>:
           <md>
-            <mrow> 2\sin^2x+3\cos x-3 \amp =0 </mrow>
-            <mrow> 2(1-\cos^2x)+3\cos x-3 \amp =0 </mrow>
-            <mrow> 2-2\cos^2x+3\cos x-3 \amp =0 </mrow>
-            <mrow> -2\cos^2x+3\cos x-1 \amp =0 </mrow>
-            <mrow> 2\cos^2x-3\cos x+1 \amp =0 </mrow>
-            <mrow> (2\cos x-1)(\cos x-1) \amp =0 </mrow>
+            <mrow> 2\cos\theta\sin\theta+\sqrt{3}\cos\theta \amp = 0 </mrow>
+            <mrow> \cos\theta(2\sin\theta+\sqrt{3}) \amp = 0 </mrow>
           </md>
-          Thus <m>\cos x=\frac{1}{2}</m> or <m>\cos x=1</m>.
+          Thus we get two equations: <m>\cos\theta=0</m> and <m>2\sin\theta+\sqrt{3}=0</m>.
         </p>
         <p>
-          Solving for <m>x</m> in the first equation gives <m>x=\frac{\pi}{3}</m> or <m>\frac{5\pi}{3}</m>, while the second equations gives <m>x=0</m> for one period. Finding all solutions, we arrive at <m>x=\frac{\pi}{3}+2k\pi</m>, <m>\frac{5\pi}{3}+2k\pi</m>, or <m>x=0+2k\pi=2k\pi</m> for any integer <m>k</m>.
+          From <m>\cos\theta=0</m> we get <m>\theta=\frac{\pi}{2}</m> or <m>\theta=\frac{3\pi}{2}</m>.
+        </p>
+        <p>
+          From the second equation, we isolate <m>\sin\theta</m>:
+          <md>
+            <mrow> 2\sin\theta+\sqrt{3} \amp = 0 </mrow>
+            <mrow> 2\sin\theta \amp = -\sqrt{3} </mrow>
+            <mrow> \sin\theta \amp = -\frac{\sqrt{3}}{2} </mrow>
+          </md>
+          Thus we get <m>\theta=\frac{4\pi}{3}</m> or <m>\theta=\frac{5\pi}{3}</m>.
+        </p>
+        <p>
+          We get the general solutions by adding integer multiples of <m>2\pi</m> to get
+          <me>
+            \theta=\frac{\pi}{2}+2k\pi,\quad \theta=\frac{3\pi}{2}+2k\pi,\quad \theta=\frac{4\pi}{3}+2k\pi,\quad \theta=\frac{5\pi}{3}+2k\pi
+          </me>
+          where <m>k</m> is any integer.
         </p>
       </solution>
     </example>
-    <remark>
-      <p>
-        If you are having trouble factoring trigonometric functions, try substituting a simpler term and then factor. For example, consider the expression <m>2\cos^2x-3\cos x+1</m> in the previous example. If factoring this expression directly is not clear, you can use the substitution <m>A=\cos x</m>. This transforms the expression into <m>2A^2-3A+1</m>, which may be easier to factorize. Once factored, you can substitute <m>\cos x</m> back in for <m>A</m> to obtain the final solution.
-      </p>
-    </remark>
   </subsection>
   <subsection xml:id="subsec-solving-trig-eq-with-a-calculator">
     <title>Solving a Trigonometric Equation with a Calculator</title>
     <example>
       <statement>
         <p>
-          
+          Use a calculator to solve <m>3\tan\theta=2</m> on the interval <m>0\leq\theta\lt2\pi</m>. Express your answer in radians, rounded to two decimals.
         </p>
       </statement>
       <solution>
         <p>
-          
+          We begin by isolating <m>\tan\theta:</m>
+          <me>
+            \tan\theta=\frac{2}{3}
+          </me>
+          Next, we take the inverse tangent and use a calculator to obtain
+          <me>
+            \theta=\tan^{-1}\left(\frac{2}{3}\right)\approx0.588002603548
+          </me>
+          Rounding to two decimals, we get <m>\theta=0.59</m> radians, which is in Quadrant I since <m>0\lt0.59\lt\frac{\pi}{2}</m>. Another Quadrant where <m>\tan\theta=\frac{2}{3}</m> is in Quadrant III. Using the methods in <xref ref="subsec-reference-angle"/> we get the other angle: <m>\theta=0.59+\pi</m>.
         </p>
       </solution>
     </example>
   </subsection>
-  <subsection xml:id="subsec-solving-trig-eq-by-using-fundamental-identities">
-    <title>Solving a Trigonometric Equation by Using Fundamental Identities</title>
-    <p>
-      
-    </p>
-  </subsection>
-  <subsection xml:id="subsec-solving-trig-eq-with-multiple-angles">
-    <title>Solving a Trigonometric Equatio with Multiple Angles</title>
-    <p>
-      
-    </p>
-  </subsection>
-  <subsection xml:id="subsec-solving-trig-eq-with-graphing-utility">
-    <title>Solving a Trigonometric Equatio with a Graphing Utility</title>
-    <p>
-      p465 sullivan
-    </p>
-  </subsection>
-  <exercises xml:id="exercises-trig-eqns">
+  <exercises xml:id="exercises-basic-trig-eqns">
     <exercisegroup cols="2">
       <introduction>
         <p>
@@ -192,24 +213,24 @@
       <exercise>
         <statement>
           <p>
-            <m>\cos\theta=\frac{\sqrt{2}}{2}</m>
+            <m>\tan\theta=-1</m>
           </p>
         </statement>
         <answer>
           <p>
-            <m>\frac{\pi}{4}</m>, <m>\frac{7\pi}{4}</m>
+            <m>\frac{3\pi}{4}</m>, <m>\frac{7\pi}{4}</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>\tan\theta=-1</m>
+            <m>\cot\theta=-\sqrt{3}</m>
           </p>
         </statement>
         <answer>
           <p>
-            <m>\frac{3\pi}{4}</m>
+            <m>\frac{5\pi}{6}</m>, <m>\frac{11\pi}{6}</m>
           </p>
         </answer>
       </exercise>
@@ -240,24 +261,24 @@
       <exercise>
         <statement>
           <p>
-            <m>\cot\theta=-\sqrt{3}</m>
+            <m>\cos\theta=\frac{\sqrt{2}}{2}</m>
           </p>
         </statement>
         <answer>
           <p>
-            <m>\frac{5\pi}{6}</m>, <m>\frac{11\pi}{6}</m>
+            <m>\frac{\pi}{4}</m>, <m>\frac{7\pi}{4}</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>2\sin\theta+1=0</m>
+            <m>\csc\theta+\sqrt{2}=0</m>
           </p>
         </statement>
         <answer>
           <p>
-            <m>\frac{7\pi}{6}</m>, <m>\frac{11\pi}{6}</m>
+            <m>\frac{5\pi}{4}</m>, <m>\frac{7\pi}{4}</m>
           </p>
         </answer>
       </exercise>
@@ -288,12 +309,24 @@
       <exercise>
         <statement>
           <p>
-            <m>\csc\theta+\sqrt{2}=0</m>
+            <m>2\cot\theta+8=6</m>
           </p>
         </statement>
         <answer>
           <p>
-            <m>\frac{5\pi}{4}</m>, <m>\frac{7\pi}{4}</m>
+            <m>\frac{3\pi}{4}</m>, <m>\frac{7\pi}{4}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>2\sin\theta+1=0</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{7\pi}{6}</m>, <m>\frac{11\pi}{6}</m>
           </p>
         </answer>
       </exercise>
@@ -306,18 +339,6 @@
         <answer>
           <p>
             <m>\frac{\pi}{4}</m>, <m>\frac{7\pi}{4}</m>
-          </p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>2\cot\theta+8=6</m>
-          </p>
-        </statement>
-        <answer>
-          <p>
-            <m>\frac{3\pi}{4}</m>
           </p>
         </answer>
       </exercise>
@@ -337,7 +358,7 @@
         </statement>
         <answer>
           <p>
-            <m>\frac{3\pi}{4}+2k\pi</m>, <m>\frac{5\pi}{4}+2k\pi</m>
+            <m>\frac{5\pi}{4}+2k\pi</m>, <m>\frac{7\pi}{4}+2k\pi</m>; <m>-\frac{3\pi}{4}</m>, <m>-\frac{\pi}{4}</m>, <m>\frac{5\pi}{4}</m>, <m>\frac{7\pi}{4}</m>, <m>\frac{13\pi}{4}</m>, <m>\frac{15\pi}{4}</m>
           </p>
         </answer>
       </exercise>
@@ -349,7 +370,7 @@
         </statement>
         <answer>
           <p>
-            <m>\frac{\pi}{3}+2k\pi</m>, <m>\frac{5\pi}{3}+2k\pi</m>
+            <m>\frac{\pi}{3}+2k\pi</m>, <m>\frac{5\pi}{3}+2k\pi</m>; <m>-\frac{5\pi}{3}</m>, <m>-\frac{\pi}{3}</m>, <m>\frac{\pi}{3}</m>, <m>\frac{5\pi}{3}</m>, <m>\frac{7\pi}{3}</m>, <m>\frac{11\pi}{3}</m>
           </p>
         </answer>
       </exercise>
@@ -361,7 +382,7 @@
         </statement>
         <answer>
           <p>
-            <m>\frac{\pi}{4}+k\pi</m>
+            <m>\frac{\pi}{4}+k\pi</m>; <m>-\frac{3\pi}{4}</m>,  <m>\frac{\pi}{4}</m>,  <m>\frac{5\pi}{4}</m>, <m>\frac{9\pi}{4}</m>, <m>\frac{13\pi}{4}</m>, <m>\frac{17\pi}{4}</m>
           </p>
         </answer>
       </exercise>
@@ -373,15 +394,71 @@
         </statement>
         <answer>
           <p>
-            <m>\frac{\pi}{6}+k\pi</m>, <m>\frac{5\pi}{6}+k\pi</m>
+            <m>\frac{5\pi}{6}+k\pi</m>, <m>\frac{11\pi}{6}+k\pi</m>; <m>-\frac{\pi}{6}</m>, <m>\frac{5\pi}{6}</m>, <m>\frac{11\pi}{6}</m>, <m>\frac{17\pi}{6}</m>, <m>\frac{23\pi}{6}</m>, <m>\frac{29\pi}{6}</m>
           </p>
         </answer>
       </exercise>
     </exercisegroup>
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          Solve each equation on the interval <m>0\leq\theta\lt2\pi</m>. Express your answer in radians, rounded to two decimals.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin\theta=-0.82</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>4.10</m>, <m>5.32</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos\theta=0.3</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>1.27</m>, <m>5.02</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\tan\theta=2.5</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>1.19</m>, <m>4.33</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cot\theta=-5</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>2.94</m>, <m>6.09</m>
+          </p>
+        </answer>
+      </exercise>
+    
+    </exercisegroup>
     <exercisegroup>
       <introduction>
         <p>
-          
+
         </p>
       </introduction>
       <exercise>

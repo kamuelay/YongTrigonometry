@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="trigonometric_equations-advanced_techniques">
+  <title>Trigonometric Equations - Advanced Techniques</title>
+  <introduction>
+    <p>
+      Equations involving trigonometric functions are called <term>trigonometric equations</term><idx><h>trigonometric equations</h></idx>. Trigonometric equations are true for certain values of the input, called <term>solutions</term> of the equation. In this section, we will learn techniques for solving trigonometric equations.
+    </p>
+  </introduction>
+  <subsection xml:id="subsec-solving-adv-trig-eq-by-factoring">
+    <title>Solving Trigonometric Equations by Factoring</title>
+    <example>
+      <statement>
+        <p>
+          Solve <m>2\sin^2x+3\cos x-3=0</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          To solve the equation <m>2\sin^2x + 3\cos x - 3 = 0</m>, we want to first write it in terms of only cosine or only sine. By the Pythagorean Identity, we substitute <m>\sin^2x=1-\cos^2x</m>, resulting in:
+          <md>
+            <mrow> 2\sin^2x+3\cos x-3 \amp =0 </mrow>
+            <mrow> 2(1-\cos^2x)+3\cos x-3 \amp =0 </mrow>
+            <mrow> 2-2\cos^2x+3\cos x-3 \amp =0 </mrow>
+            <mrow> -2\cos^2x+3\cos x-1 \amp =0 </mrow>
+            <mrow> 2\cos^2x-3\cos x+1 \amp =0 </mrow>
+            <mrow> (2\cos x-1)(\cos x-1) \amp =0 </mrow>
+          </md>
+          Thus <m>\cos x=\frac{1}{2}</m> or <m>\cos x=1</m>.
+        </p>
+        <p>
+          Solving for <m>x</m> in the first equation gives <m>x=\frac{\pi}{3}</m> or <m>\frac{5\pi}{3}</m>, while the second equations gives <m>x=0</m> for one period. Finding all solutions, we arrive at <m>x=\frac{\pi}{3}+2k\pi</m>, <m>\frac{5\pi}{3}+2k\pi</m>, or <m>x=0+2k\pi=2k\pi</m> for any integer <m>k</m>.
+        </p>
+      </solution>
+    </example>
+    <remark>
+      <p>
+        If you are having trouble factoring trigonometric functions, try substituting a simpler term and then factor. For example, consider the expression <m>2\cos^2x-3\cos x+1</m> in the previous example. If factoring this expression directly is not clear, you can use the substitution <m>A=\cos x</m>. This transforms the expression into <m>2A^2-3A+1</m>, which may be easier to factorize. Once factored, you can substitute <m>\cos x</m> back in for <m>A</m> to obtain the final solution.
+      </p>
+    </remark>
+  </subsection>
+  <subsection xml:id="subsec-solving-trig-eq-by-using-fundamental-identities">
+    <title>Solving a Trigonometric Equation by Using Fundamental Identities</title>
+    <p>
+      
+    </p>
+  </subsection>
+  <subsection xml:id="subsec-solving-trig-eq-with-multiple-angles">
+    <title>Solving a Trigonometric Equatio with Multiple Angles</title>
+    <p>
+      
+    </p>
+  </subsection>
+  <subsection xml:id="subsec-solving-trig-eq-with-graphing-utility">
+    <title>Solving a Trigonometric Equatio with a Graphing Utility</title>
+    <p>
+      p465 sullivan
+    </p>
+  </subsection>
+  <exercises xml:id="exercises-adv-trig-eqns">
+    <exercisegroup>
+      <introduction>
+        <p>
+          
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+  </exercises>
+</section>

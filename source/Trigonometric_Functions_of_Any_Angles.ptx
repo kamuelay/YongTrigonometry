@@ -205,7 +205,7 @@
       </solution>
     </example>
   </subsection>
-  <subsection>
+  <subsection xml:id="subsec-reference-angle">
     <title>Reference Angles</title>
     <p>
       Now that we can determine the signs of trigonometric functions, we will demonstrate how the value of any trigonometric function at any angle can be found from its value in Quadrant I (between <m>0^{\circ}</m> and <m>90^{\circ}</m> or 0 and <m>\frac{\pi}{2}</m>).
