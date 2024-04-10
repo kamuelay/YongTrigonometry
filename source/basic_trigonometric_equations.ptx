@@ -136,6 +136,12 @@
         <p>
           From <xref ref="tab_trig-table"/>, when <m>\cos\theta=\frac{\sqrt{2}}{2}</m>, we have <m>\theta=\frac{\pi}{4}</m> or <m>\theta=\frac{7\pi}{4}</m>; and when <m>\cos\theta=-\frac{\sqrt{2}}{2}</m>, we have <m>\theta=\frac{3\pi}{4}</m> or <m>\theta=\frac{5\pi}{4}</m>.
         </p>
+        <p>
+          Thus, our solutions are:
+          <me>
+            \theta=\frac{\pi}{4}, \frac{3\pi}{4}, \frac{5\pi}{4}, \frac{7\pi}{4}
+          </me>.
+        </p>
       </solution>
     </example>
   </subsection>
