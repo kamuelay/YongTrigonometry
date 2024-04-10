@@ -8,7 +8,7 @@
   <subsection xml:id="subsec-fundamental-trig-identities">
     <title>Fundamental Trigonometric Identities</title>
     <p>
-      An <term>identity</term> in mathematics is an equation that remains true for every valid values of its variables. We begin by reviewing some of the basic trigonometric identities from <xref ref="trigonometric_functions"/> , collectively known as the fundamental trigonometric identities.
+      An <term>identity</term> in mathematics is an equation that remains true for every valid values of its variables. We begin by reviewing some of the basic trigonometric identities from <xref ref="trigonometric_functions"/>, collectively known as the fundamental trigonometric identities.
     </p>
     <definition xml:id="def-fundamental-trig-identities">
       <statement>
