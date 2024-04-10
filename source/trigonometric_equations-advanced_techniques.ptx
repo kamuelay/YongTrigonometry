@@ -413,7 +413,7 @@
         </answer>
       </exercise>
     </exercisegroup>
-    <exercisegroup>
+    <exercisegroup cols="2">
       <title>Trigonometric Equations Involving Double-Angle or Half-Angle Formula</title>
       <introduction>
         <p>
@@ -423,72 +423,72 @@
       <exercise>
         <statement>
           <p>
-            
+            <m>\sin2\theta=\cos\theta</m>
           </p>
         </statement>
         <answer>
           <p>
-            
+            <m>\frac{\pi}{6}, \frac{\pi}{2},\frac{5\pi}{6}, \frac{3\pi}{2}</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            
+            <m>\cos2\theta=\cos\theta</m>
           </p>
         </statement>
         <answer>
           <p>
-            
+            <m>0, \frac{2\pi}{3}, \frac{4\pi}{3}</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            
+            <m>\cos2\theta+\cos\theta-2=0</m>
           </p>
         </statement>
         <answer>
           <p>
-            
+            <m>0</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            
+            <m>\tan2\theta=-2\sin\theta</m>
           </p>
         </statement>
         <answer>
           <p>
-            
+            <m>0, \frac{\pi}{3}, \pi, \frac{5\pi}{3}</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            
+            <m>\cos2\theta+2=2\sin^2\theta</m>
           </p>
         </statement>
         <answer>
           <p>
-            
+            <m>\frac{\pi}{3}, \frac{2\pi}{3}, \frac{4\pi}{3}, \frac{5\pi}{3}</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            
+            <m>\tan\frac{\theta}{2}=\sin\theta</m>
           </p>
         </statement>
         <answer>
           <p>
-            
+            <m>0, \frac{\pi}{2}, \frac{3\pi}{2}</m>
           </p>
         </answer>
       </exercise>
