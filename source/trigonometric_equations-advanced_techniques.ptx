@@ -3,11 +3,11 @@
   <title>Trigonometric Equations - Advanced Techniques</title>
   <introduction>
     <p>
-      Equations involving trigonometric functions are called <term>trigonometric equations</term><idx><h>trigonometric equations</h></idx>. Trigonometric equations are true for certain values of the input, called <term>solutions</term> of the equation. In this section, we will learn techniques for solving trigonometric equations.
+      In this section, we will solve trigonometric equations using various trigonometric identities, equations involving multiple angles, and graphical methods.
     </p>
   </introduction>
-  <subsection xml:id="subsec-solving-adv-trig-eq-by-factoring">
-    <title>Solving Trigonometric Equations by Factoring</title>
+  <subsection xml:id="subsec-solving-trig-eq-by-using-fundamental-identities">
+    <title>Solving a Trigonometric Equation by Using Fundamental Identities</title>
     <example>
       <statement>
         <p>
@@ -37,30 +37,387 @@
         If you are having trouble factoring trigonometric functions, try substituting a simpler term and then factor. For example, consider the expression <m>2\cos^2x-3\cos x+1</m> in the previous example. If factoring this expression directly is not clear, you can use the substitution <m>A=\cos x</m>. This transforms the expression into <m>2A^2-3A+1</m>, which may be easier to factorize. Once factored, you can substitute <m>\cos x</m> back in for <m>A</m> to obtain the final solution.
       </p>
     </remark>
-  </subsection>
-  <subsection xml:id="subsec-solving-trig-eq-by-using-fundamental-identities">
-    <title>Solving a Trigonometric Equation by Using Fundamental Identities</title>
-    <p>
-      
-    </p>
+    <example>
+      <statement>
+        <p>
+          Solve the equation <m>\sin(2\theta)+\cos\theta=0</m> on the interval <m>0\leq\theta\lt2\pi</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Notice the first term has <m>2\theta</m> so we will begin by using the double-angle formula:
+          <md>
+            <mrow> \sin(2\theta)+\cos\theta \amp = 0 </mrow>
+            <mrow> 2\sin\theta\cos\theta+\cos\theta \amp = 0 </mrow>
+          </md>
+          Then we factor our <m>cos\theta</m> from all the terms:
+          <me> \cos\theta(2\sin\theta+1) = 0 </me>.
+          Thus we get
+          <me>
+            \cos\theta=0\quad\mbox{or}\quad2\sin\theta+1=0
+          </me>.
+        </p>
+        <p>
+          When <m>\cos\theta=0</m> we get <m>\theta=\frac{\pi}{2}, \frac{3\pi}{2}</m>.
+        </p>
+        <p>
+          When <m>2\sin\theta+1=0</m>, it is equivalent to when <m>\sin\theta=-\frac{1}{2}</m>, thus we get <m>\theta=\frac{7\pi}{6}, \frac{11\pi}{6}</m>.
+        </p>
+        <p>
+          Combining these, our solutions are
+          <me>
+            \theta=\frac{\pi}{2}, \frac{3\pi}{2}, \frac{7\pi}{6}, \frac{11\pi}{6}
+          </me>.
+        </p>
+      </solution>
+    </example>
   </subsection>
   <subsection xml:id="subsec-solving-trig-eq-with-multiple-angles">
-    <title>Solving a Trigonometric Equatio with Multiple Angles</title>
-    <p>
-      
-    </p>
+    <title>Solving a Trigonometric Equation with Multiples of an Angle</title>
+    <example>
+      <statement>
+        <p>
+          Solve the equation <m>2\cos(2\theta)-\sqrt{3}=0</m> on the interval <m>0\leq\theta\lt2\pi</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          First we will isolate <m>\cos(2\theta)</m>. We begin by rearranging the equation:
+          <md>
+            <mrow> 2\cos(2\theta)-\sqrt{3} \amp = 0 </mrow>
+            <mrow> 2\cos(2\theta) \amp = \sqrt{3} </mrow>
+            <mrow> \cos(2\theta) \amp = \frac{\sqrt{3}}{2} </mrow>
+          </md>
+        </p>
+        <p>
+          Since <m>\cos(2\theta)</m> equals <m>\frac{\sqrt{3}}{2}</m> for angles <m>\frac{\pi}{6}</m> and <m>\frac{11\pi}{6}</m>, the general solutions for <m>2\theta</m> are
+          <me>
+            2\theta=\frac{\pi}{6}+2k\pi\quad\mbox{or}\quad2\theta=\frac{11\pi}{6}+2k\pi
+          </me>
+          for some integer <m>k</m>.
+        </p>
+        <p>
+          Note that we have only solved for <m>2\theta</m>. Dividing both sides by 2 to find <m>\theta</m>, we obtain:
+          <me>
+            \theta=\frac{\pi}{12}+k\pi\quad\mbox{or}\quad\theta=\frac{11\pi}{12}+k\pi
+          </me>.
+        </p>
+        <p>
+          Our restriction <m>0\leq\theta\lt2\pi</m> gives us the following solutions:
+          <me>
+            \frac{\pi}{12}, \frac{11\pi}{12}, \frac{13\pi}{12}, \frac{23\pi}{12}
+          </me>.
+        </p>
+      </solution>
+    </example>
+    <remark>
+      <p>
+        In this example, our angle was a double-angle: <m>2\theta</m>. When dealing with multiple-angle trigonometric functions, such as <m>\cos(2\theta)</m>, it's essential to understand their graphical behavior. According to <xref ref="def-sin-cos-horizontal-stretch-compress"/>, the graph of <m>\cos(2\theta)</m> undergoes a horizontal compression by a factor of 2, and its period is now <m>\frac{2\pi}{2}=\pi</m>. Since we are asked to find solutions on the interval <m>0\leq\theta\lt2\pi</m>, we will need to consider two periods. Thus, we have four solutions (2 solutions for each period):
+        <me>
+          \frac{\pi}{12}, \frac{11\pi}{12}, \frac{13\pi}{12}, \frac{23\pi}{12}
+        </me>.
+      </p>
+      <p>
+        In general, if our trigonometric function has an angle <m>k\theta</m>, for some number <m>k</m>, we will need to consider the effect of this multiple angle on the period and number of solutions, ensuring that we adjust our solutions accordingly to cover all possible solutions within the given interval.
+      </p>
+    </remark>
+    <example>
+      <statement>
+        <p>
+          Solve the equation <m>3\tan\frac{\theta}{2}-\sqrt{3}=0</m> on the interval <m>0\leq\theta\lt2\pi</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We begin by isolating <m>\tan\frac{\theta}{2}</m>:
+          <md>
+            <mrow> 3\tan\frac{\theta}{2}-\sqrt{3} \amp = 0 </mrow>
+            <mrow> 3\tan\frac{\theta}{2} \amp = \sqrt{3} </mrow>
+            <mrow> \tan\frac{\theta}{2} \amp = \frac{\sqrt{3}}{3} </mrow>
+          </md>
+        </p>
+        <p>
+          Since <m>\tan\frac{\theta}{2}</m> equals <m>\frac{\sqrt{3}}{3}</m> for angles <m>\frac{\pi}{6}</m> and <m>\frac{7\pi}{6}</m>, the general solutions for <m>\frac{\theta}{2}</m> are
+          <me>
+            \frac{\theta}{2}=\frac{\pi}{6}+k\pi\quad\mbox{and}\quad\frac{\theta}{2}=\frac{7\pi}{6}+k\pi
+          </me>
+          for some integer <m>k</m>.
+        </p>
+        <p>
+          Solving for <m>\theta</m>, we multiply both sides by 2 to obtain:
+          <me>
+            \theta=\frac{\pi}{3}+2k\pi\quad\mbox{and}\quad\theta=\frac{7\pi}{3}+2k\pi
+          </me>.
+        </p>
+        <p>
+          Considering our restriction <m>0\leq\theta\lt2\pi</m>, we only have one solution:
+          <me>
+            \theta=\frac{\pi}{3}
+          </me>.
+        </p>
+      </solution>
+    </example>
+    <remark>
+      <p>
+        In this example, our angle was <m>\frac{\theta}{2}</m>, which stretches the graph of the tangent function. When we have an angle of the form <m>\frac{\theta}{2}</m>, it effectively stretches the period of the tangent function by a factor of 2. Thus, for the given interval, we only have half a period to consider instead of the full period.
+      </p>
+    </remark>
   </subsection>
   <subsection xml:id="subsec-solving-trig-eq-with-graphing-utility">
-    <title>Solving a Trigonometric Equatio with a Graphing Utility</title>
+    <title>Solving a Trigonometric Equation with a Graphing Utility</title>
     <p>
-      p465 sullivan
+      Sometimes we will encounters equations where an exact solution is not possible. However, we may be able to get an approximation to the solution by graphing the equation.
     </p>
+    <example>
+      <statement>
+        <p>
+          Use a graphing utility to find the solutions to the equation <m>\sin x+\cos x=\frac{1}{2}x</m>. Express your answers in radians, rounded to two decimals.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          To find the solution to <m>\sin x + \cos x = \frac{1}{2}x</m>, we graph the left-hand side and the right-hand side of the equation and identify their intersections. Let <m>y_1</m> represent the curve for the left-hand side and <m>y_2</m> represent the curve for the right-hand side:
+          <me>
+            y_1=\sin x+\cos x, \quad y_2=\frac{1}{2}x
+          </me>.
+        </p>
+        <p>
+          Use a graphing utility to plot <m>y_1</m> and <m>y_2</m>.
+        </p>
+        <figure xml:id="fig-desmos-solving-trig-eqn-graphing"><caption>Plotting <m>y_1=\sin x+\cos x</m> and <m>\quad y_2=\frac{1}{2}x</m>, corresponding to the left-hand and right-hand sides of the equation, respectively.</caption><interactive desmos="lwruylxia2" aspect="1.0:0.4" label="desmos-christchurch-temp"/></figure>
+        <p>
+          Next, you may need to zoom in or out to better visualize the behavior of the curves. To find their intersection points, calculators often have a <kbd>TRACE</kbd> or <kbd>INTERSECT</kbd> button or command. In <url href="https://www.desmos.com/calculator" visual="Desmos Graphing Calculator">Desmos Graphing Calculator</url> you can click on either curve, and the points of intersection will be highlighted. Hovering your cursor over the intersection will display the coordinates of that point.
+        </p>
+        <p>
+          The equation <m>\sin x + \cos x = \frac{1}{2}x</m> has three solutions, which correspond to the points of intersection between the curves <m>y_1 = \sin x + \cos x</m> and <m>y_2 = \frac{1}{2}x</m>. The <m>x</m>-values of these intersections are:
+          <me>
+            x=-2.68, -1.24, 1.71
+          </me>.
+        </p>
+      </solution>
+    </example>
   </subsection>
   <exercises xml:id="exercises-adv-trig-eqns">
-    <exercisegroup>
+    <exercisegroup cols="2">
       <introduction>
         <p>
-          
+          Solve each equation on the interval <m>0\leq\theta\lt2\pi</m>.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin^2\theta-\cos^2\theta=0</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{\pi}{4}, \frac{3\pi}{4}, \frac{5\pi}{4}, \frac{7\pi}{4}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos^2\theta-\sin^2\theta=1+\sin\theta</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>0, \pi, \frac{7\pi}{6}, \frac{11\pi}{6}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3\cot^2\theta-4\csc\theta=1</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{\pi}{6}, \frac{5\pi}{6}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin^2\theta=5\cos\theta+5</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\pi</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos^2\theta=3-3\sin\theta</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{\pi}{2}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>2\sin^2\theta=3\cos\theta+3</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{2\pi}{3}, \pi, \frac{4\pi}{3}</m>
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <title>Trigonometric Equations Involving Multiples of an Angle</title>
+      <introduction>
+        <p>
+          Solve the given trigonometric equation on the interval <m>0\leq\theta\lt2\pi</m>.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cot2\theta=-\sqrt{3}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{5\pi}{12}, \frac{11\pi}{12}, \frac{17\pi}{12}, \frac{23\pi}{12}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin4\theta=\frac{\sqrt{3}}{2}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{\pi}{12}, \frac{\pi}{6}, \frac{7\pi}{12}, \frac{2\pi}{3}, \frac{13\pi}{12}, \frac{7\pi}{6}, \frac{19\pi}{12}, \frac{5\pi}{3}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sqrt{2}\cos2\theta=1</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{\pi}{8}, \frac{7\pi}{8}, \frac{9\pi}{8}, \frac{15\pi}{8}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\csc3\theta=2</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{\pi}{18}, \frac{5\pi}{18}, \frac{13\pi}{18}, \frac{17\pi}{18}, \frac{25\pi}{18}, \frac{29\pi}{18},</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sec\frac{3\theta}{2}=-\sqrt{2}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{\pi}{2}, \frac{5\pi}{6}, \frac{11\pi}{6}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos\frac{\theta}{2}-1=0</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>0</m>
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup>
+      <title>Trigonometric Equations Involving Addition or Subtraction Formula</title>
+      <introduction>
+        <p>
+          Use the Addition and Subtraction Formulas to solve each equation on the interval <m>0\leq\theta\lt2\pi</m>.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin\theta\cos2\theta+\cos\theta\sin2\theta=\frac{\sqrt{3}}{2}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{\pi}{9}, \frac{2\pi}{9}, \frac{7\pi}{9}, \frac{8\pi}{9}, \frac{13\pi}{9}, \frac{14\pi}{9}, </m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin3\theta\cos2\theta-\cos3\theta\sin2\theta=-\frac{1}{2}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{7\pi}{6}, \frac{11\pi}{6}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos3\theta\cos\theta+\sin3\theta\sin\theta=-\frac{\sqrt{2}}{2}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{3\pi}{8}, \frac{5\pi}{8}, \frac{11\pi}{8}, \frac{13\pi}{8}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos\theta\cos3\theta-\sin\theta\sin3\theta=1</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>0, \frac{\pi}{2}, \pi, \frac{3\pi}{2}</m>
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup>
+      <title>Trigonometric Equations Involving Double-Angle or Half-Angle Formula</title>
+      <introduction>
+        <p>
+          Use the Double-Angle and Half-Angle Formulas to solve each equation on the interval <m>0\leq\theta\lt2\pi</m>.
         </p>
       </introduction>
       <exercise>
@@ -135,291 +492,114 @@
           </p>
         </answer>
       </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <title>Trigonometric Equations Involving Sum-to-Product Formula</title>
+      <introduction>
+        <p>
+          Use the Sum-to-Product Formulas to solve each equation on the interval <m>0\leq\theta\lt2\pi</m>.
+        </p>
+      </introduction>
       <exercise>
         <statement>
           <p>
-            
+            <m>\sin3\theta+\sin\theta=0</m>
           </p>
         </statement>
         <answer>
           <p>
-            
+            <m>0, \frac{\pi}{2}, \pi, \frac{3\pi}{2}</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            
+            <m>\sin6\theta-\sin2\theta=\cos4\theta</m>
           </p>
         </statement>
         <answer>
           <p>
-            
+            <m>\frac{\pi}{12}, \frac{\pi}{8}, \frac{3\pi}{8}, \frac{5\pi}{12}, \frac{5\pi}{8}, \frac{7\pi}{8}, \frac{13\pi}{12}, \frac{9\pi}{8}, \frac{11\pi}{8}, \frac{17\pi}{12}, \frac{13\pi}{8}, \frac{15\pi}{8}</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            
+            <m>\cos4\theta-\cos2\theta=0</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>0, \frac{\pi}{3}, \frac{2\pi}{3}, \pi, \frac{4\pi}{3}, \frac{5\pi}{3}</m>
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos3\theta+\cos\theta=0</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\frac{\pi}{4}, \frac{\pi}{2}, \frac{3\pi}{4}, \frac{5\pi}{4}, \frac{3\pi}{2}, \frac{7\pi}{4}</m>
+          </p>
+        </solution>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          Use a graphing utility to solve each equation. Express your solutions in radians, rounded to two decimals.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>\sin(2x)=4\cos x+x</m>
           </p>
         </statement>
         <answer>
           <p>
-            
+            <m>x=-1.34, 2.63, 3.90</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            
+            <m>\sin x-x=\cos x</m>
           </p>
         </statement>
         <answer>
           <p>
-            
+            <m>x=-1.26</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            
+            <m>x^2=\cos x</m>
           </p>
         </statement>
         <answer>
           <p>
-            
+            <m>x=-0.82, 0.82</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            
+            <m>x^3+2x^2=\cos(2x)</m>
           </p>
         </statement>
         <answer>
           <p>
-            
-          </p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            
-          </p>
-        </statement>
-        <answer>
-          <p>
-            
-          </p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            
-          </p>
-        </statement>
-        <answer>
-          <p>
-            
-          </p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            
-          </p>
-        </statement>
-        <answer>
-          <p>
-            
-          </p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            
-          </p>
-        </statement>
-        <answer>
-          <p>
-            
-          </p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            
-          </p>
-        </statement>
-        <answer>
-          <p>
-            
-          </p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            
-          </p>
-        </statement>
-        <answer>
-          <p>
-            
-          </p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            
-          </p>
-        </statement>
-        <answer>
-          <p>
-            
-          </p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            
-          </p>
-        </statement>
-        <answer>
-          <p>
-            
-          </p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            
-          </p>
-        </statement>
-        <answer>
-          <p>
-            
-          </p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            
-          </p>
-        </statement>
-        <answer>
-          <p>
-            
-          </p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            
-          </p>
-        </statement>
-        <answer>
-          <p>
-            
-          </p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            
-          </p>
-        </statement>
-        <answer>
-          <p>
-            
-          </p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            
-          </p>
-        </statement>
-        <answer>
-          <p>
-            
-          </p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            
-          </p>
-        </statement>
-        <answer>
-          <p>
-            
-          </p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            
-          </p>
-        </statement>
-        <answer>
-          <p>
-            
-          </p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            
-          </p>
-        </statement>
-        <answer>
-          <p>
-            
-          </p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            
-          </p>
-        </statement>
-        <answer>
-          <p>
-            
-          </p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            
-          </p>
-        </statement>
-        <answer>
-          <p>
-            
+            <m>x=-2.11, -0.56, 0.48</m>
           </p>
         </answer>
       </exercise>
