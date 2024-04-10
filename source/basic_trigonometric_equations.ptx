@@ -669,6 +669,54 @@
           </p>
         </answer>
       </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\cos^2\theta+2\cos\theta+1=0</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\pi</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\csc^5\theta-4\csc\theta=0</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{\pi}{4}, \frac{3\pi}{4}, \frac{5\pi}{4}, \frac{7\pi}{4}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>2\sin^2\theta-3\sin\theta-2=0</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\frac{7\pi}{6}, \frac{11\pi}{6}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>2\cos^2\theta-3\cos\theta+1=0</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>0, \frac{\pi}{3}, \frac{5\pi}{3}</m>
+          </p>
+        </answer>
+      </exercise>
     </exercisegroup>
   </exercises>
 </section>
