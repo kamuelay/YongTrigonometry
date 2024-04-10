@@ -184,7 +184,7 @@
         <p>
           Use a graphing utility to plot <m>y_1</m> and <m>y_2</m>.
         </p>
-        <figure xml:id="fig-desmos-solving-trig-eqn-graphing"><caption>Plotting <m>y_1=\sin x+\cos x</m> and <m>\quad y_2=\frac{1}{2}x</m>, corresponding to the left-hand and right-hand sides of the equation, respectively.</caption><interactive desmos="lwruylxia2" aspect="1.0:0.4" label="desmos-christchurch-temp"/></figure>
+        <figure xml:id="fig-desmos-solving-trig-eqn-graphing"><caption>Plotting <m>y_1=\sin x+\cos x</m> and <m>\quad y_2=\frac{1}{2}x</m>, corresponding to the left-hand and right-hand sides of the equation, respectively.</caption><interactive desmos="lwruylxia2" aspect="1.0:0.4" label="desmos-solving-trig-eqn-graphing"/></figure>
         <p>
           Next, you may need to zoom in or out to better visualize the behavior of the curves. To find their intersection points, calculators often have a <kbd>TRACE</kbd> or <kbd>INTERSECT</kbd> button or command. In <url href="https://www.desmos.com/calculator" visual="Desmos Graphing Calculator">Desmos Graphing Calculator</url> you can click on either curve, and the points of intersection will be highlighted. Hovering your cursor over the intersection will display the coordinates of that point.
         </p>
