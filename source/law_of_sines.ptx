@@ -3,7 +3,7 @@
   <title>The Law of Sines</title>
   <introduction>
     <p>
-      Recall <xref ref="exmp-gift-for-mau"/> in <xref ref="inverse_trigonometry"/> where Alingano Maisu is sailing to her new home in Satawal. For the first leg of the voyage, we calculated that to sail from Johnston Atoll to Majuro, you would need to sail towards the house House ʻĀina Kona (<m>27.4^{\circ}</m>). In reality, there are currents that push the waʻa off course. Now let's consider that a current of 1 knot is flowing to the house Komohana (West). If we were to face Majuro and sail straight, the current put us to the west of our destination. To ensure we arrive at Majuro, our apparent heading will need to be a point to the west of our destination, as shown below.
+      Recall <xref ref="exmp-gift-for-mau"/> in <xref ref="inverse_trigonometry"/> where Alingano Maisu is sailing to her new home in Satawal. For the first leg of the voyage, we calculated that to sail from Johnston Atoll to Majuro, you would need to head towards House ʻĀina Kona (<m>27.4^{\circ}</m>). However, in reality, currents can push the waʻa off course. Let's consider a scenario where a current of 1 knot is flowing in the direction of the house Komohana (West). If we were to face Majuro and sail straight, the current would push us to the west of our destination. To ensure we arrive at Majuro, our apparent heading will need to be adjusted accordingly, as illustrated below.
     </p>
     <image xml:id="fig-maisu-currents">
       <latex-image>
@@ -21,7 +21,7 @@
       </latex-image>
     </image>
     <p>
-      If we sail at 5 knots, what house will we need to face in order to compensate for the current of 2 knots? First notice that by alternate interior angles, we have that <m>A=27.4^{\circ}</m>. Now we will write the triangle where the sides represent speed and we can ignore the distance.
+      Now, suppose we sail at 5 knots. What heading should we aim for to compensate for a 2-knot current? We note that by alternate interior angles, <m>A=27.4^{\circ}</m>. Let's represent this situation with a triangle where the sides represent speed of the waʻa and the current, allowing us to disregard the distance traveled.
     </p>
     <image xml:id="fig-maisu-triangle">
       <latex-image>
@@ -36,7 +36,7 @@
       </latex-image>
     </image>
     <p>
-      We cannot use the methods from previous sections to solve for this triangle because this is not a right triangle. Any triangle with no right angles is called an <em>oblique triangle</em>.<idx><h>oblique triangle</h></idx> In this section, we will learn methods to solve oblique triangles.
+      It's important to note that this triangle is not a right triangle; instead, it's classified as an <term>oblique triangle</term>,<idx><h>oblique triangle</h></idx> meaning it does not have any right angles. Triangles can be further categorized as either <em>obtuse</em> or <em>acute</em>. An <term>obtuse triangle</term><idx><h>obtuse triangle</h></idx> contains one angle greater than <m>90^{\circ}</m>, while an <term>acute triangle</term><idx><h>acute triangle</h></idx> consists of all angles less than <m>90^{\circ}</m>. Solving such triangles requires different methods than those used for solving the right triangle in previous chapters. In this chapter, we'll learn techniques for solving oblique triangles, starting with the Law of Sines and the Law of Cosines.
     </p>
     <p>
       To solve an oblique triangle, we must know the length of one side as well as two other values of the triangle. This gives us a total of 5 possible triangles.
@@ -117,10 +117,10 @@
       </ol>
     </p>
     <p>
-      In this section, we learn techniques to solving triangles of the form ASA, SAA, and SSA.
+      In this section, we learn techniques to solving triangles of the form ASA, SAA, and SSA. We will discuss triangles of the form SAS and SSS in <xref ref="law_of_cosines"/>.
     </p>
   </introduction>
-  <subsection>
+  <subsection xml:id="subsec-law-of-sines">
     <title>Law of Sines</title>
     <p>
       In any triangle, we can draw an <term>altitude</term>, <idx><h>altitude</h></idx> a line through a vertex and perpendicular to the side opposite the vertex.
@@ -746,7 +746,7 @@
     <p>
       After heavy use, you determine it's time to replace the peʻa (sail) of your waʻa. Before you buy the new peʻa, you need to determine its area. We know the length of the `ōpeʻa (spar) is <m>b=18</m> feet, the length of the paepae (boom) is <m>a=15</m> feet, and the tack or the angle between them is <m>C=44^{\circ}</m>. What is the area of the peʻa?
     </p>
-    <image xml:id="fig-area-of-sail2">
+    <image xml:id="fig-area-of-sail1">
       <latex-image>
         \begin{tikzpicture}
         \draw pic {waa-single-side={waacolor}{0}{1}};
@@ -790,12 +790,12 @@
         <image xml:id="fig-area-triangle-1">
           <latex-image>
             \begin{tikzpicture}
-            \draw[blue,line width=1] (0,0) -- (0,3) node[midway,left] {\(a=h\)};
+            \draw[blue,line width=1] (0,0) -- (0,3) node[midway,right] {\(a=h\)};
             \draw[blue,line width=1] (0,0) -- (5,0) node[midway,below,yshift=-2] {\(b\)};
             \draw[blue,line width=1] (0,3) -- (5,0) node[midway,right,yshift=4] {\(c\)};
             \filldraw[black] (5,0) circle (2pt) node[below,yshift=-2] at (5,0) {\(A\)};
             \filldraw[black] (0,0) circle (2pt) node[below,yshift=-2] {\(C\)};
-            \filldraw[black] (0,3) circle (2pt) node[above left] {\(B\)};
+            \filldraw[black] (0,3) circle (2pt) node[above right] {\(B\)};
             \draw (0,0.3) -- (0.3,0.3) -- (0.3,0);
             \end{tikzpicture}
           </latex-image>
@@ -808,7 +808,7 @@
             \draw[blue,line width=1] (1.5,3) -- (5,0) node[midway,above,xshift=4] {\(c\)};
             \filldraw[black] (5,0) circle (2pt) node[below,yshift=-2] at (5,0) {\(A\)};
             \filldraw[black] (0,0) circle (2pt) node[below,yshift=-2] {\(C\)};
-            \filldraw[black] (1.5,3) circle (2pt) node[above left] {\(B\)};
+            \filldraw[black] (1.5,3) circle (2pt) node[above right] {\(B\)};
             \draw[blue] (0.5,0) arc (0:63.4349488229:0.5);
             \draw[dashed] (1.5,0) -- (1.5,3) node[midway,right] {\(h\)};
             \draw (1.2,0) -- (1.2,0.3) -- (1.5,0.3);
@@ -821,11 +821,11 @@
             \draw[blue,line width=1] (5,0) -- (2.5,0) node[midway,below,yshift=-2] {\(b\)};
             \draw[blue,line width=1] (5,0) -- (0,3) node[midway,above,xshift=3] {\(c\)};
             \draw[blue,line width=1] (2.5,0) -- (0,3) node[midway,below,xshift=-4] {\(a\)};
-            \filldraw[black] (0,3) circle (2pt) node[above,left] at (0,3) {\(B\)};
+            \filldraw[black] (0,3) circle (2pt) node[above right] at (0,3) {\(B\)};
             \filldraw[black] (5,0) circle (2pt) node[below,yshift=-2] {\(A\)};
             \filldraw[black] (2.5,0) circle (2pt) node[below,yshift=-2] {\(C\)};
             \draw[blue] (3,0) arc (0:129.805571092:0.5);
-            \draw[dashed] (0,0) -- (0,3) node[midway,left] {\(h\)};
+            \draw[dashed] (0,0) -- (0,3) node[midway,right] {\(h\)};
             \draw[dashed] (0,0) -- (2.5,0);
             \draw (0.3,0) -- (0.3,0.3) -- (0,0.3);
             \end{tikzpicture}
