@@ -262,7 +262,7 @@
     <xi:include href="./graphs_of_the_trigonometric_functions.ptx"/>
     <xi:include href="./analytic_trigonometry.ptx"/> -->
     <xi:include href="./applications_of_trigonometry.ptx"/>
-    <!-- <xi:include href="./back_matter.ptx" /> -->
+    <!-- <xi:include href="./back_matter.ptx"/> -->
 
 
     <!-- <xi:include href="./polar_and_parametric_equations.ptx"/> -->
