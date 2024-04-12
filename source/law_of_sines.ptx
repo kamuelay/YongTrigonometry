@@ -120,54 +120,42 @@
       In this section, we learn techniques to solving triangles of the form ASA, SAA, and SSA. We will discuss triangles of the form SAS and SSS in <xref ref="law_of_cosines"/>.
     </p>
   </introduction>
+  <subsection xml:id="subsec-discuss-difference-of-triangles">
+    <title>discuss-difference-of-triangles</title>
+    <p>
+      How do you know which triangles you are given. 
+    </p>
+    <p>
+      Might need to rearrange above, talk about the number of angles and sides that are given, then discuss the names of the 5 cases. maybe 1. two angles, one side; 2. one angle, two sides; 3. three sides, no angles. Then break up two angles and one side into SAA and ASA.
+    </p>
+    <p>
+      Maybe also add a note why it is SAA and not AAS which is also correct but not conventional
+    </p>
+    <p>
+      Angle-Side-Angle (ASA): In an ASA configuration, you are given two angles and the side between them. This means you have information about the measures of two angles and the length of the side adjacent to both angles.
+Side-Angle-Angle (SAA): In an SAA configuration, you are given one side and the measures of two consecutive angles. This means you know the length of one side of the triangle and the measures of two angles that are next to each other.
+Side-Side-Angle (SSA): In an SSA configuration, you are given two sides and the angle that is not between them. This means you know the lengths of two sides of the triangle and the measure of an angle that is opposite one of the given sides.
+Side-Angle-Side (SAS): In an SAS configuration, you are given two sides and the angle between them. This means you know the lengths of two sides of the triangle and the measure of the angle formed by these two sides.
+Side-Side-Side (SSS): In an SSS configuration, you are given the lengths of all three sides of the triangle. This means you have information about the lengths of all three sides, but no information about the angles.
+    </p>
+    <p>
+      To identify which configuration you have, look for the given lengths of sides and measures of angles in the problem statement or diagram. Once you determine which information is provided, you can classify it as one of the five configurations mentioned above. This classification helps you choose the appropriate method, such as the Law of Sines or the Law of Cosines, to solve the triangle.
+    </p>
+    <p>
+      In terms of trigonometry, there is no difference between solving ASA (Angle-Side-Angle) and SAA (Side-Angle-Angle) problems. Both configurations provide the necessary information to uniquely determine the triangle.
+
+In both cases, you have two angles and one side, which is sufficient to determine the remaining side lengths and angle measures using the Law of Sines and other trigonometric principles. The sequence in which the information is presented (angles first in ASA or side first in SAA) does not affect the solution process.
+
+Therefore, whether the triangle is classified as ASA or SAA does not matter in terms of solving the problem. You would approach and solve both types of problems in the same way
+    </p>
+  </subsection>
   <subsection xml:id="subsec-law-of-sines">
     <title>Law of Sines</title>
     <p>
-      In any triangle, we can draw an <term>altitude</term>, <idx><h>altitude</h></idx> a line through a vertex and perpendicular to the side opposite the vertex.
+      The <term>Law of Sines</term> states that for any triangle, the ratios of the lengths of the sides to the sine of their corresponding opposite angles are equal. When provided with certain information about the sides and angles of a triangle, this fundamental principle becomes a valuable tool for determining the remaining sides and angles.
     </p>
-    <image>
-      <latex-image>
-        \begin{tikzpicture}
-        \draw (0,0) -- (3,4) node[midway,above] {\(b\)};
-        \draw (3,4) -- (10,0) node[midway,above] {\(a\)};
-        \draw (10,0) -- (0,0) node[midway,below] {\(c\)};
-        \node[left] at (0,0) {\(A\)};
-        \node[above] at (3,4) {\(C\)};
-        \node[right] at (10,0) {\(B\)};
-        \draw[dashed] (3,4) -- (3,0) node[midway,right] {\(h\)};
-        \draw (3,0.5) -- (3.5,0.5) -- (3.5,0);
-        \end{tikzpicture}
-      </latex-image>
-    </image>
-    <p>
-      Using the right triangles, we have <m>\sin A=\frac{h}{b}</m> and <m>\sin B=\frac{h}{a}</m>. Solving both equations for <m>h</m>, we get <m>h=b\sin A</m> and <m>h=a\sin B</m>. Since these equations both equal <m>h</m>, we can now set them equal to each other.
-      <me>
-        b\sin A = a\sin B
-      </me>
-    </p>
-    <p>
-      Dividing both sides by <m>ab</m>, we get
-      <me>
-        \frac{\sin A}{a}=\frac{\sin B}{b}
-      </me>
-    </p>
-    <p>
-      Using the same method, we can get
-      <me>
-        \frac{\sin A}{a}=\frac{\sin C}{c}\mbox{ and } \frac{\sin B}{b}=\frac{\sin C}{c}
-      </me>
-    </p>
-    <p>
-      Putting these together, we get
-      <me>
-        \frac{\sin A}{a}=\frac{\sin B}{b}=\frac{\sin C}{c}
-      </me>
-    </p>
-    <p>
-      This is known as the <em>Law of Sines</em>.<idx><h>law of sines</h></idx>
-    </p>
-    <theorem xml:id="core-standards-CCSS_MATH_CONTENT_HSG_SRT_D_10-a">
-      <title>Law of Sines</title>
+    <theorem xml:id="thm-law-of-sines">
+      <title>Law of Sines</title><idx><h>law of sines</h></idx>
       <statement>
         <p>
           In triangle <m>ABC</m>, we have
@@ -184,6 +172,49 @@
         </p>
       </statement>
     </theorem>
+    <proof>
+      <p>
+        In any triangle, we can draw an <term>altitude</term>, <idx><h>altitude</h></idx> a line through a vertex and perpendicular to the side opposite the vertex.
+      </p>
+      <image xml:id="fig-law-of-sines-proof">
+        <latex-image>
+          \begin{tikzpicture}
+          \draw (0,0) -- (3,4) node[midway,above] {\(b\)};
+          \draw (3,4) -- (10,0) node[midway,above] {\(a\)};
+          \draw (10,0) -- (0,0) node[midway,below] {\(c\)};
+          \node[left] at (0,0) {\(A\)};
+          \node[above] at (3,4) {\(C\)};
+          \node[right] at (10,0) {\(B\)};
+          \draw[dashed] (3,4) -- (3,0) node[midway,right] {\(h\)};
+          \draw (3,0.5) -- (3.5,0.5) -- (3.5,0);
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+      <p>
+        Using the right triangles, we have <m>\sin A=\frac{h}{b}</m> and <m>\sin B=\frac{h}{a}</m>. Solving both equations for <m>h</m>, we get <m>h=b\sin A</m> and <m>h=a\sin B</m>. Since these equations both equal <m>h</m>, we can now set them equal to each other.
+        <me>
+          b\sin A = a\sin B
+        </me>
+      </p>
+      <p>
+        Dividing both sides by <m>ab</m>, we get
+        <me>
+          \frac{\sin A}{a}=\frac{\sin B}{b}
+        </me>
+      </p>
+      <p>
+        Using the same method, we can get
+        <me>
+          \frac{\sin A}{a}=\frac{\sin C}{c}\mbox{ and } \frac{\sin B}{b}=\frac{\sin C}{c}
+        </me>
+      </p>
+      <p>
+        Putting these together, we get
+        <me>
+          \frac{\sin A}{a}=\frac{\sin B}{b}=\frac{\sin C}{c}
+        </me>
+      </p>
+    </proof>
     <remark>
       <p>
         When solving triangles, it is often useful to use the fact that the sum of the angles in a triangle equals <m>180^{\circ}</m>. That is,
@@ -192,13 +223,16 @@
       </me>
       </p>
     </remark>
-    <example xml:id="core-standards-CCSS_MATH_CONTENT_HSG_SRT_D_11-a">
+  </subsection>
+  <subsection xml:id="subsec-solving-asa-triangles">
+    <title>Solving ASA Triangles</title>
+    <example xml:id="example-using-law-of-sines-asa">
       <title>Using Law of Sines (ASA)</title>
       <statement>
         <p>
           The waʻa Kānehūnāmoku is returning from an afternoon sail from training students in the ways of sailing. Two observers stand 1,000 feet apart on the shore at Kāne`ohe Bay spot Kānehūnāmoku. Observer <m>A</m> determines that the angle between the waʻa and Observer <m>B</m> is <m>80^{\circ}</m> while Observer <m>B</m> determines that the angle between the waʻa and Observer <m>A</m> is <m>60^{\circ}</m>. How far is Kānehūnāmoku from each observer and what is the angle formed by the two observers (round your answer to the nearest foot)?
         </p>
-        <image>
+        <image xml:id="fig-example-using-law-of-sines-asa">
           <latex-image>
             \begin{tikzpicture}
             \draw (-5,0) -- (15,0) node[midway,below,xshift=-4] {\(c=1,000\)};
@@ -252,13 +286,16 @@
         </p>
       </solution>
     </example>
-    <example>
+  </subsection>
+  <subsection xml:id="subsec-solving-saa-triangles">
+    <title>Solving SAA Triangles</title>
+    <example xml:id="example-using-law-of-sines-saa">
       <title>Using Law of Sines (SAA)</title>
       <statement>
         <p>
           For the triangle shown below with <m>A=120^{\circ}</m>, <m>C=20^{\circ}</m>, and <m>a=5</m>, find the remaining sides. Round your answer to two decimal places.
         </p>
-        <image>
+        <image xml:id="fig-example-using-law-of-sines-saa">
           <latex-image>
             \begin{tikzpicture}
             \draw[blue] (0,0) -- (1.97,0) node[midway,below] {\(c\)};
@@ -293,8 +330,8 @@
       </solution>
     </example>
   </subsection>
-  <subsection>
-    <title>The Ambiguous Case</title>
+  <subsection xml:id="subsec-solving-ssa-triangles">
+    <title>Solving SSA Triangles: The Ambiguous Case</title>
     <p>
       Although the Law of Sines can be used to solve oblique triangles, there may be cases that would give us one triangle, two triangles, or even no solution. Such cases are known as the <em>ambiguous case</em>. <idx><h>ambiguous case</h></idx> This occurs when we know two sides and an angle that is opposite to one of the given sides.
     </p>
@@ -741,7 +778,7 @@
       </solution>
     </example>
   </subsection>
-  <subsection xml:id="core-standards-CCSS_MATH_CONTENT_HSG_SRT_D_9">
+  <subsection xml:id="subsec-area-of-an-oblique-triangle">
     <title>Area of an oblique triangle</title>
     <p>
       After heavy use, you determine it's time to replace the peʻa (sail) of your waʻa. Before you buy the new peʻa, you need to determine its area. We know the length of the `ōpeʻa (spar) is <m>b=18</m> feet, the length of the paepae (boom) is <m>a=15</m> feet, and the tack or the angle between them is <m>C=44^{\circ}</m>. What is the area of the peʻa?
@@ -917,7 +954,6 @@
       </solution>
     </example>
   </subsection>
-
   <exercises xml:id="exercises-law-of-sines">
     <exercise>
       <introduction>
