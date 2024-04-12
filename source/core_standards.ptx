@@ -242,12 +242,12 @@
                         <ul>
                           <li>
                             <p>
-                              HSG.SRT.D.9: Derive the formula <m>\mbox{Area}=\frac{1}{2}ab\sin(C)</m> for the area of a triangle by drawing an auxiliary line from a vertex perpendicular to the opposite side.
+                              HSG.SRT.D.9: Derive the formula <m>\mbox{Area}=\frac{1}{2}ab\sin(C)</m> for the area of a triangle by drawing an auxiliary line from a vertex perpendicular to the opposite side. (<xref ref="def-area-of-triangle"/>)
                             </p>
                           </li>
                           <li>
                             <p>
-                              HSG.SRT.D.9: Prove the Laws of Sines and Cosines and use them to solve problems.
+                              HSG.SRT.D.9: Prove the Laws of Sines and Cosines and use them to solve problems. (<xref ref="subsec-law-of-sines"/>, <xref ref="subsec-law-of-cosines"/>)
                             </p>
                           </li>
                           <li>
