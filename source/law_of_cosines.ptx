@@ -11,15 +11,17 @@
       How far are they from Tonga and what is the angle that they will need to turn in order to reach their destination?
     </p>
     <image>
-<latex-image>
-<![CDATA[\begin{tikzpicture}\node[left] at (0,0) {Fiji};
-\draw (0,0) -- (-16.81:4.12) node[midway, above,xshift=5] {412};
-\draw (0,0) -- (-39.31:1.2) node[midway, below,xshift=-8] {120};
-\draw[dashed] (-39.31:1.2) -- (-16.81:4.12) node[right] {Tonga};
-\draw (-16.81:0.5) arc (-16.81:-39.31:0.5) node[midway,right,xshift=6,yshift=-8] {\(22.5^{\circ}\)};
-\draw pic at (-39.31:1.2) {waa-top={waacolor}{230.69}{0.1}};
-\draw[dashed] (-39.31:1.2) -- (-39.31:2);\end{tikzpicture}]]>
-</latex-image>
+      <latex-image>
+        \begin{tikzpicture}
+        \node[left] at (0,0) {Fiji};
+        \draw (0,0) -- (-16.81:4.12) node[midway, above,xshift=5] {412};
+        \draw (0,0) -- (-39.31:1.2) node[midway, below,xshift=-8] {120};
+        \draw[dashed] (-39.31:1.2) -- (-16.81:4.12) node[right] {Tonga};
+        \draw (-16.81:0.5) arc (-16.81:-39.31:0.5) node[midway,right,xshift=6,yshift=-8] {\(22.5^{\circ}\)};
+        \draw pic at (-39.31:1.2) {waa-top={waacolor}{230.69}{0.1}};
+        \draw[dashed] (-39.31:1.2) -- (-39.31:2);
+        \end{tikzpicture}
+      </latex-image>
     </image>
     <p>
       This triangle,
@@ -32,13 +34,12 @@
       called Side-Side-Side (SSS) triangles.
     </p>
   </introduction>
-  <subsection>
+  <subsection xml:id="subsec-law-of-cosines">
     <title>Law of Cosines</title>
-    <theorem xml:id="core-standards-CCSS_MATH_CONTENT_HSG_SRT_D_10-b">
-      <title>Law of Cosines</title>
+    <theorem xml:id="thm-law-of-cosines">
+      <title>Law of Cosines</title><idx><h>law of cosines</h></idx>
       <statement>
         <p>
-              <idx><h>law of cosines</h></idx>
           Given a triangle with sides <m>a</m>, <m>b</m>, <m>c</m> and opposite angles <m>A</m>, <m>B</m>, <m>C</m>, respectively,
           <md>
             <mrow>a^2\amp =\amp b^2+c^2-2bc\cos A</mrow>
@@ -47,27 +48,24 @@
           </md>
         </p>
         <image>
-<latex-image>
-<![CDATA[\begin{tikzpicture}\draw(0,0) -- (8,0) node[midway,below,yshift=-2]{\(c\)};
-\draw(0,0) -- (2,4) node[midway,left,xshift=-2]{\(b\)};
-\draw(2,4) -- (8,0) node[midway,right,xshift=4]{\(a\)};
-\node[below] at (0,0) {\(A\)};
-\node[above] at (2,4) {\(C\)};
-\node[below] at (8,0) {\(B\)};\end{tikzpicture}]]>
-</latex-image>
+          <latex-image>
+            \begin{tikzpicture}
+            \draw(0,0) -- (8,0) node[midway,below,yshift=-2]{\(c\)};
+            \draw(0,0) -- (2,4) node[midway,left,xshift=-2]{\(b\)};
+            \draw(2,4) -- (8,0) node[midway,right,xshift=4]{\(a\)};
+            \node[below] at (0,0) {\(A\)};
+            \node[above] at (2,4) {\(C\)};
+            \node[below] at (8,0) {\(B\)};
+            \end{tikzpicture}
+          </latex-image>
         </image>
         <p>
-          Thus, in any triangle,
-          the square of one side equals the sum of the squares of the other two sides,
-          minus twice their product times the cosine of their included angle.
+          Thus, in any triangle, the square of one side equals the sum of the squares of the other two sides, minus twice their product times the cosine of their included angle.
         </p>
       </statement>
     </theorem>
     <p>
-      Note: If the triangle is a right triangle,
-      say <m>C=90^{\circ}</m>, then since <m>\cos90^{\circ}=0</m>,
-      the Law of Cosines simplifies into the Pythagorean Theorem:
-      <m>c^2=a^2+b^2</m>.
+      Note: If the triangle is a right triangle, say <m>C=90^{\circ}</m>, then since <m>\cos90^{\circ}=0</m>, the Law of Cosines simplifies into the Pythagorean Theorem: <m>c^2=a^2+b^2</m>.
     </p>
     <proof>
       <p>
@@ -76,21 +74,23 @@
         as shown below.
       </p>
       <image>
-<latex-image>
-<![CDATA[\begin{tikzpicture}\draw[->] (-1,0)--(6,0) node[right]{\(x\)};
-\draw[->] (0,-1)--(0,3.5) node[above]{\(y\)};
-\draw[blue,line width=1] (0,0) -- (2.5,0) node[midway,below,yshift=-2] {\(c\)};
-\draw[blue,line width=1] (0,0) -- (5,3) node[midway,above,xshift=-3] {\(b\)};
-\draw[blue,line width=1] (2.5,0) -- (5,3) node[midway,below,xshift=4] {\(a\)};
-\filldraw[black] (5,3) circle (2pt) node[above right] at (5,3) {\(C\)};
-\filldraw[black] (0,0) circle (2pt) node[below left] {\(A(0,0)\)};
-\filldraw[black] (2.5,0) circle (2pt) node[below left] {\(B\)};
-\draw[blue] (0.5,0) arc (0:26.5650511771:0.5);
-\draw[dashed] (5,-0.7) -- (5,3);
-\draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](0,-0.7) -- (5,-0.7) node[black,midway,below,yshift=-10] {\(b\cos A\)};
-\draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](2.5,0) -- (5,0) node[black,midway,below,yshift=-10] {\(b\cos A-c\)};
-\draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](5,0) -- (5,3) node[black,midway,right,xshift=10] {\(b\sin A\)};\end{tikzpicture}]]>
-</latex-image>
+        <latex-image>
+          \begin{tikzpicture}
+          \draw[-stealth] (-1,0)--(6,0) node[right]{\(x\)};
+          \draw[-stealth] (0,-1)--(0,3.5) node[above]{\(y\)};
+          \draw[blue,line width=1] (0,0) -- (2.5,0) node[midway,below,yshift=-2] {\(c\)};
+          \draw[blue,line width=1] (0,0) -- (5,3) node[midway,above,xshift=-3] {\(b\)};
+          \draw[blue,line width=1] (2.5,0) -- (5,3) node[midway,below,xshift=4] {\(a\)};
+          \filldraw[black] (5,3) circle (2pt) node[above right] at (5,3) {\(C\)};
+          \filldraw[black] (0,0) circle (2pt) node[below left] {\(A(0,0)\)};
+          \filldraw[black] (2.5,0) circle (2pt) node[below left] {\(B\)};
+          \draw[blue] (0.5,0) arc (0:26.5650511771:0.5);
+          \draw[dashed] (5,-0.7) -- (5,3);
+          \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](0,-0.7) -- (5,-0.7) node[black,midway,below,yshift=-10] {\(b\cos A\)};
+          \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](2.5,0) -- (5,0) node[black,midway,below,yshift=-10] {\(b\cos A-c\)};
+          \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](5,0) -- (5,3) node[black,midway,right,xshift=10] {\(b\sin A\)};
+          \end{tikzpicture}
+        </latex-image>
       </image>
       <p>
         Using right triangle trigonometry,
@@ -115,16 +115,18 @@
           described in the triangle below.
         </p>
         <image>
-<latex-image>
-<![CDATA[\begin{tikzpicture}\node[left] at (0,0) {\(A\)};
-\draw (0,0) -- (-16.81:4.12) node[midway, above,xshift=15] {\(b=412\)};
-\draw (0,0) -- (-39.31:1.2) node[midway, below,xshift=-15] {\(c=120\)};
-\draw (-39.31:1.2) -- (-16.81:4.12) node[midway,below] {\(a\)};
-\node[right] at (-16.81:4.12) {\(C\)};
-\draw (-16.81:0.5) arc (-16.81:-39.31:0.5) node[midway,right,xshift=6,yshift=-8] {\(22.5^{\circ}\)};
-\node[below left] at (-39.31:1.2) {\(B\)};
-\draw[dashed] (-39.31:1.2) -- (-39.31:2);\end{tikzpicture}]]>
-</latex-image>
+          <latex-image>
+            \begin{tikzpicture}
+            \node[left] at (0,0) {\(A\)};
+            \draw (0,0) -- (-16.81:4.12) node[midway, above,xshift=15] {\(b=412\)};
+            \draw (0,0) -- (-39.31:1.2) node[midway, below,xshift=-15] {\(c=120\)};
+            \draw (-39.31:1.2) -- (-16.81:4.12) node[midway,below] {\(a\)};
+            \node[right] at (-16.81:4.12) {\(C\)};
+            \draw (-16.81:0.5) arc (-16.81:-39.31:0.5) node[midway,right,xshift=6,yshift=-8] {\(22.5^{\circ}\)};
+            \node[below left] at (-39.31:1.2) {\(B\)};
+            \draw[dashed] (-39.31:1.2) -- (-39.31:2);
+            \end{tikzpicture}
+          </latex-image>
         </image>
         <p>
           How far are they from Tonga and what is the angle that they will need to turn in order to reach their destination?
@@ -192,14 +194,16 @@
           and <m>c=3</m>, find the angles.
         </p>
         <image>
-<latex-image>
-<![CDATA[\begin{tikzpicture}\draw[blue,line width=1] (-3,0) -- (0,0) node[midway,below] {\(c=3\)};
-\draw[blue,line width=1] (-3,0) -- (60:5) node[midway,left,xshift=-5] {\(b=7\)};
-\draw[blue,line width=1] (0,0) -- (60:5) node[midway,right,xshift=4] {\(a=5\)};
-\node[blue,above right] at (60:5) {\(C\)};
-\node[blue,below right] at (0,0) {\(B\)};
-\node[blue,below left] at (-3,0) {\(A\)};\end{tikzpicture}]]>
-</latex-image>
+          <latex-image>
+            \begin{tikzpicture}
+            \draw[blue,line width=1] (-3,0) -- (0,0) node[midway,below] {\(c=3\)};
+            \draw[blue,line width=1] (-3,0) -- (60:5) node[midway,left,xshift=-5] {\(b=7\)};
+            \draw[blue,line width=1] (0,0) -- (60:5) node[midway,right,xshift=4] {\(a=5\)};
+            \node[blue,above right] at (60:5) {\(C\)};
+            \node[blue,below right] at (0,0) {\(B\)};
+            \node[blue,below left] at (-3,0) {\(A\)};
+            \end{tikzpicture}
+          </latex-image>
         </image>
       </statement>
       <solution>
@@ -284,14 +288,16 @@
           What is the area of the Polynesian Triangle rounded to the nearest square mile?
         </p>
         <image>
-<latex-image>
-<![CDATA[\begin{tikzpicture}\node[above] at (2.5,1.9) {Ka Lae, Hawai`i};
-\node[left] at (-0.5,-3.5) {Hokianga, Aotearoa};
-\node[right] at (7.1,-2.7) {Anakena, Rapa Nui};
-\draw[sloped] (2.5,1.9) -- (-0.5,-3.5) node[midway, above] {\(4,250\)};
-\draw[sloped] (-0.5,-3.5) -- (7.1,-2.7) node[midway, below] {\(4,500\)};
-\draw[sloped] (2.5,1.9) -- (7.1,-2.7) node[midway, above] {\(4,450\)};\end{tikzpicture}]]>
-</latex-image>
+          <latex-image>
+            \begin{tikzpicture}
+            \node[above] at (2.5,1.9) {Ka Lae, Hawai`i};
+            \node[left] at (-0.5,-3.5) {Hokianga, Aotearoa};
+            \node[right] at (7.1,-2.7) {Anakena, Rapa Nui};
+            \draw[sloped] (2.5,1.9) -- (-0.5,-3.5) node[midway, above] {\(4,250\)};
+            \draw[sloped] (-0.5,-3.5) -- (7.1,-2.7) node[midway, below] {\(4,500\)};
+            \draw[sloped] (2.5,1.9) -- (7.1,-2.7) node[midway, above] {\(4,450\)};
+            \end{tikzpicture}
+          </latex-image>
         </image>
       </statement>
       <solution>
