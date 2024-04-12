@@ -3,12 +3,7 @@
   <title>The Law of Cosines</title>
   <introduction>
     <p>
-      The Fijian canoe Uto Ni Yalo is sailing from Fiji to Tonga.
-      The navigators know Tonga is 412 NM from Fiji in the House L&#257; Malanai
-      (<m>16.81^{\circ}</m>).
-      After sailing for one day and traveling 120 NM, the navigator determines they have gone off course by 2 houses
-      (<m>22.5^{\circ}</m>).
-      How far are they from Tonga and what is the angle that they will need to turn in order to reach their destination?
+      The Fijian canoe Uto Ni Yalo is sailing from Fiji to Tonga. The navigators know Tonga is 412 NM from Fiji in the House Lā; Malanai (<m>16.81^{\circ}</m>). After sailing for one day and traveling 120 NM, the navigator determines they have gone off course by 2 houses (<m>22.5^{\circ}</m>). How far are they from Tonga and what is the angle that they will need to turn in order to reach their destination?
     </p>
     <image>
       <latex-image>
@@ -24,14 +19,7 @@
       </latex-image>
     </image>
     <p>
-      This triangle,
-      where we know two sides and the angle between them,
-      is known as Side-Angle-Side (SAS).
-      Unfortunately,
-      the Law of Sines that we learned in <xref ref="The_Law_of_Sines">Section</xref>
-      only applies to ASA, AAS, and SSA. In this section,
-      we will learn how to solve SAS triangles as well as triangles where all three sides are known,
-      called Side-Side-Side (SSS) triangles.
+      This triangle, where we know two sides and the angle between them, is known as Side-Angle-Side (SAS). Unfortunately, the Law of Sines that we learned in <xref ref="The_Law_of_Sines">Section</xref> only applies to ASA, AAS, and SSA. In this section, we will learn how to solve SAS triangles as well as triangles where all three sides are known, called Side-Side-Side (SSS) triangles.
     </p>
   </introduction>
   <subsection xml:id="subsec-law-of-cosines">
@@ -69,9 +57,7 @@
     </p>
     <proof>
       <p>
-        To prove the first part,
-        we will place a triangle with <m>A</m> at the origin and <m>C</m> on the <m>x</m>-axis,
-        as shown below.
+        To prove the first part, we will place a triangle with <m>A</m> at the origin and <m>C</m> on the <m>x</m>-axis, as shown below.
       </p>
       <image>
         <latex-image>
@@ -93,9 +79,7 @@
         </latex-image>
       </image>
       <p>
-        Using right triangle trigonometry,
-        the coordinate of <m>C</m> can be written as <m>(b\cos A,b\sin A)</m>.
-        Using the Pythagorean Theorem, we get
+        Using right triangle trigonometry, the coordinate of <m>C</m> can be written as <m>(b\cos A,b\sin A)</m>. Using the Pythagorean Theorem, we get
         <md>
           <mrow>a^2\amp =\amp (b\cos A-c)^2+(b\sin A)^2</mrow>
           <mrow>\amp =\amp b^2\cos^2A-2bc\cos A+c^2+b^2\sin^2A</mrow>
@@ -103,16 +87,14 @@
           <mrow>\amp =\amp b^2(1)+c^2-2bc\cos A</mrow>
           <mrow>\amp =\amp b^2+c^2-2bc\cos A</mrow>
         </md>
-        where we used the identity <m>\cos^2A+\sin^2=1</m>.
-        The other two parts of the Law of Cosines can be proved using a similar argument.
+        where we used the identity <m>\cos^2A+\sin^2=1</m>. The other two parts of the Law of Cosines can be proved using a similar argument.
       </p>
     </proof>
-    <example xml:id="core-standards-CCSS_MATH_CONTENT_HSG_SRT_D_11-c">
+    <example>
       <title>Using Law of Cosines (SAS): Fiji to Tonga</title>
       <statement>
         <p>
-          We are now ready to return to our example where Uto Ni Yalo is sailing to Tonga,
-          described in the triangle below.
+          We are now ready to return to our example where Uto Ni Yalo is sailing to Tonga, described in the triangle below.
         </p>
         <image>
           <latex-image>
@@ -151,20 +133,11 @@
           Thus they are approximately 305 NM from their destination.
         </p>
         <p>
-          To determine the angle needed to adjust their course,
-          we will first find <m>B</m> and subtract that from <m>180^{\circ}</m>.
-          We can use either the Law of Sines or the Law of Cosines.
-          If we use the Law of Sines
+          To determine the angle needed to adjust their course, we will first find <m>B</m> and subtract that from <m>180^{\circ}</m>. We can use either the Law of Sines or the Law of Cosines. If we use the Law of Sines
           <me>
             \frac{\sin A}{a}=\frac{\sin B}{b}
           </me>
-          we know <m>a\approx304.62</m>,
-          <m>b=412</m>, and <m>A=22.5^{\circ}</m>.
-          Notice this is the case SSA for Law of Sines where we get two triangles.
-          Since we already know what the triangle looks like,
-          we want the measure for <m>B</m> that makes it obtuse.
-          However, to avoid this ambiguous case,
-          we can simply use the Law of Cosines
+          we know <m>a\approx304.62</m>, <m>b=412</m>, and <m>A=22.5^{\circ}</m>. Notice this is the case SSA for Law of Sines where we get two triangles. Since we already know what the triangle looks like, we want the measure for <m>B</m> that makes it obtuse. However, to avoid this ambiguous case, we can simply use the Law of Cosines
           <me>
             b^2=a^2+c^2-2ac\cos B
           </me>
@@ -238,8 +211,7 @@
           </me>
         </p>
         <p>
-          To find the last angle, <m>C</m>,
-          we can use the fact that the angles in a triangle sum to <m>180^{\circ}</m>:
+          To find the last angle, <m>C</m>, we can use the fact that the angles in a triangle sum to <m>180^{\circ}</m>:
           <me>
             C=180^{\circ}-A-B\approx180^{\circ}-38.21^{\circ}-120^{\circ}=21.79^{\circ}
           </me>
@@ -250,24 +222,17 @@
   <subsection>
     <title>Area of an oblique triangle</title>
     <p>
-      The Greek mathematician, Heron of Alexandria,
-      derived a formula for the area of a triangle when all three sides are given.
-      Although a more modern derivation for this formula involves the Law of Cosines,
-      it is still known as Heron's Formula.
+      The Greek mathematician, Heron of Alexandria, derived a formula for the area of a triangle when all three sides are given. Although a more modern derivation for this formula involves the Law of Cosines, it is still known as Heron's Formula.
     </p>
     <theorem>
-      <title>Heron's Formula</title>
+      <title>Heron's Formula</title><idx><h>area</h><h>of a triangle</h></idx><idx><h>Heron's formula</h></idx>
       <statement>
         <p>
-              <idx><h>Area</h><h>Triangle</h></idx>
-              <idx><h>heron's formula</h></idx>
           The area
           <me>
             \mbox{Area} =\sqrt{s(s-a)(s-b)(s-c)}
           </me>
-          where <m>s=\frac{1}{2}(a+b+c)</m> is half the perimeter of the triangle,
-          also known as the <term>semiperimeter</term>.
-              <idx><h>semiperimeter</h></idx>
+          where <m>s=\frac{1}{2}(a+b+c)</m> is half the perimeter of the triangle, also known as the <term>semiperimeter</term>.<idx><h>semiperimeter</h></idx>
         </p>
       </statement>
     </theorem>
@@ -275,17 +240,7 @@
       <title>Polynesian Triangle</title>
       <statement>
         <p>
-          The Polynesian Triangle is an area in the Pacific Ocean consisting of over 1,000 islands.
-          These islands are collectively known as Polynesia.
-          The northern corner of the Polynesian Triangle is made up of the Hawaiian Islands,
-          the southwestern corner is made up of Aotearoa,
-          and the southeastern corner is made up with Rapa Nui.
-          It is believed that the first inhabitants to the islands arrived at Ka Lae, Hawai`i; Hokianga, Aotearoa;
-          and Anakena, Rapa Nui, respectively.
-          The distance between Ka Lae, Hawai`i and Hokianga, Aotearoa is 4,250 miles,
-          the distance between Hokianga, Aotearoa and Anakena, Rapa Nui is 4,500 miles,
-          and the distance between Rapa Nui and Ka Lae, Hawai`i is 4,450 miles.
-          What is the area of the Polynesian Triangle rounded to the nearest square mile?
+          The Polynesian Triangle is an area in the Pacific Ocean consisting of over 1,000 islands. These islands are collectively known as Polynesia. The northern corner of the Polynesian Triangle is made up of the Hawaiian Islands, the southwestern corner is made up of Aotearoa, and the southeastern corner is made up with Rapa Nui. It is believed that the first inhabitants to the islands arrived at Ka Lae, Hawai`i; Hokianga, Aotearoa; and Anakena, Rapa Nui, respectively. The distance between Ka Lae, Hawai`i and Hokianga, Aotearoa is 4,250 miles, the distance between Hokianga, Aotearoa and Anakena, Rapa Nui is 4,500 miles, and the distance between Rapa Nui and Ka Lae, Hawai`i is 4,450 miles. What is the area of the Polynesian Triangle rounded to the nearest square mile?
         </p>
         <image>
           <latex-image>
@@ -316,4 +271,18 @@
       </solution>
     </example>
   </subsection>
+  <exercises xml:id="exercises-law-of-cosines">
+    <exercise>
+      <statement>
+        <p>
+          
+        </p>
+      </statement>
+      <answer>
+        <p>
+          
+        </p>
+      </answer>
+    </exercise>
+  </exercises>
 </section>
