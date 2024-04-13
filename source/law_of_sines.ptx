@@ -39,81 +39,102 @@
       It's important to note that this triangle is not a right triangle; instead, it's classified as an <term>oblique triangle</term>,<idx><h>oblique triangle</h></idx> meaning it does not have any right angles. Triangles can be further categorized as either <em>obtuse</em> or <em>acute</em>. An <term>obtuse triangle</term><idx><h>obtuse triangle</h></idx> contains one angle greater than <m>90^{\circ}</m>, while an <term>acute triangle</term><idx><h>acute triangle</h></idx> consists of all angles less than <m>90^{\circ}</m>. Solving such triangles requires different methods than those used for solving the right triangle in previous chapters. In this chapter, we'll learn techniques for solving oblique triangles, starting with the Law of Sines and the Law of Cosines.
     </p>
     <p>
-      To solve an oblique triangle, we must know the length of one side as well as two other values of the triangle. This gives us a total of 5 possible triangles.
+      To solve an oblique triangle, we need to be given three pieces of information, which can take the following forms:
       <ol>
-        <li>
-          <p>
-            <em>Angle-Side-Angle (ASA)</em>: Two angles and the side between them are known
-          </p>
-          <image xml:id="fig-triangle-angle-side-angle">
-            <latex-image>
-              \begin{tikzpicture}
-              \draw[blue, dashed] (0,0) -- (3,4); 
-              \draw[blue, dashed] (3,4) -- (10,0); 
-              \draw[blue, line width=1] (10,0) -- (0,0) node[midway,below] {\(S\)}; \draw[blue, line width=1] (1,0) arc (0:53.1301023542:1) node[midway,right,xshift=2,yshift=2] {\(A\)}; 
-              \draw[blue, line width=1] (9,0) arc (180:150.255118703:1) node[midway,right,xshift=-18,yshift=2] {\(A\)};
-              \end{tikzpicture}
-            </latex-image>
-          </image>
-        </li>
-        <li>
-          <p>
-            <em>Side-Angle-Angle (SAA)</em>: One side and two consecutive angles are known
-          </p>
-          <image xml:id="fig-triangle-side-angle-angle">
-            <latex-image>
-              \begin{tikzpicture}
-              \draw[blue, line width=1] (0,0) -- (3,4) node[midway,left,xshift=-4] {\(S\)};
-              \draw[blue, dashed] (3,4) -- (10,0);
-              \draw[blue, dashed] (10,0) -- (0,0);
-              \draw[blue, line width=1] (1,0) arc (0:53.1301023542:1) node[midway,right,xshift=2,yshift=2] {\(A\)};
-              \draw[blue, line width=1] (9,0) arc (180:150.255118703:1) node[midway,right,xshift=-18,yshift=2] {\(A\)};
-              \end{tikzpicture}
-            </latex-image>
-          </image>
-        </li>
-        <li>
-          <p>
-            <em>Side-Side-Angle (SSA)</em>: Two sides and the angle that is not between them are known
-          </p>
-          <image xml:id="fig-triangle-side-side-angle">
-            <latex-image>
-              \begin{tikzpicture}\draw[blue, line width=1] (0,0) -- (3,4) node[midway,above,xshift=-4] {\(S\)};
-              \draw[blue, line width=1] (3,4) -- (10,0) node[midway,above,xshift=2] {\(S\)};
-              \draw[blue, dashed] (10,0) -- (0,0);
-              \draw[blue, line width=1] (1,0) arc (0:53.1301023542:1) node[midway,right,xshift=2,yshift=2] {\(A\)};
-              \end{tikzpicture}
-            </latex-image>
-          </image>
-        </li>
-        <li>
-          <p>
-            <em>Side-Angle-Side (SAS)</em>: Two sides and the angle between them are known
-          </p>
-          <image xml:id="fig-triangle-side-angle-side">
-            <latex-image>
-              \begin{tikzpicture}\draw[blue, line width=1] (0,0) -- (3,4) node[midway,above,xshift=-4] {\(S\)};
-              \draw[blue, dashed] (3,4) -- (10,0);
-              \draw[blue, line width=1] (10,0) -- (0,0) node[midway,below] {\(S\)};
-              \draw[blue, line width=1] (1,0) arc (0:53.1301023542:1) node[midway,right,xshift=2,yshift=2] {\(A\)};
-              \end{tikzpicture}
-            </latex-image>
-          </image>
-        </li>
-        <li>
-          <p>
-            <em>Side-Side-Side (SSS)</em>: All three sides of a triangle are known
-          </p>
-          <image xml:id="fig-triangle-side-side-side">
-            <latex-image>
-              \begin{tikzpicture}
-              \draw[blue, line width=1] (0,0) -- (3,4) node[midway,above,xshift=-4] {\(S\)};
-              \draw[blue, line width=1] (3,4) -- (10,0) node[midway,above,xshift=2] {\(S\)};
-              \draw[blue, line width=1] (10,0) -- (0,0) node[midway,below] {\(S\)};
-              \end{tikzpicture}
-            </latex-image>
-          </image>
-        </li>
+          <li>
+              <p>One side and two angles.</p>
+              <p>
+                <ul>
+                  <li>
+                    <p>
+                      <em>Angle-Side-Angle (ASA)</em>: Two angles and the side between them are known
+                    </p>
+                    <image xml:id="fig-triangle-angle-side-angle">
+                      <latex-image>
+                        \begin{tikzpicture}
+                        \draw[blue, dashed] (0,0) -- (3,4); 
+                        \draw[blue, dashed] (3,4) -- (10,0); 
+                        \draw[blue, line width=1] (10,0) -- (0,0) node[midway,below] {\(S\)}; \draw[blue, line width=1] (1,0) arc (0:53.1301023542:1) node[midway,right,xshift=2,yshift=2] {\(A\)}; 
+                        \draw[blue, line width=1] (9,0) arc (180:150.255118703:1) node[midway,right,xshift=-18,yshift=2] {\(A\)};
+                        \end{tikzpicture}
+                      </latex-image>
+                    </image>
+                  </li>
+                  <li>
+                    <p>
+                      <em>Side-Angle-Angle (SAA)</em>: One side and two consecutive angles are known
+                    </p>
+                    <image xml:id="fig-triangle-side-angle-angle">
+                      <latex-image>
+                        \begin{tikzpicture}
+                        \draw[blue, line width=1] (0,0) -- (3,4) node[midway,left,xshift=-4] {\(S\)};
+                        \draw[blue, dashed] (3,4) -- (10,0);
+                        \draw[blue, dashed] (10,0) -- (0,0);
+                        \draw[blue, line width=1] (1,0) arc (0:53.1301023542:1) node[midway,right,xshift=2,yshift=2] {\(A\)};
+                        \draw[blue, line width=1] (9,0) arc (180:150.255118703:1) node[midway,right,xshift=-18,yshift=2] {\(A\)};
+                        \end{tikzpicture}
+                      </latex-image>
+                    </image>
+                  </li>
+              </ul>
+              </p>
+          </li>
+          <li>
+              <p>Two sides and one angle.</p>
+              <p>
+                <ul>
+                  <li>
+                    <p>
+                      <em>Side-Side-Angle (SSA)</em>: Two sides and the angle that is not between them are known
+                    </p>
+                    <image xml:id="fig-triangle-side-side-angle">
+                      <latex-image>
+                        \begin{tikzpicture}\draw[blue, line width=1] (0,0) -- (3,4) node[midway,above,xshift=-4] {\(S\)};
+                        \draw[blue, line width=1] (3,4) -- (10,0) node[midway,above,xshift=2] {\(S\)};
+                        \draw[blue, dashed] (10,0) -- (0,0);
+                        \draw[blue, line width=1] (1,0) arc (0:53.1301023542:1) node[midway,right,xshift=2,yshift=2] {\(A\)};
+                        \end{tikzpicture}
+                      </latex-image>
+                    </image>
+                  </li>
+                  <li>
+                    <p>
+                      <em>Side-Angle-Side (SAS)</em>: Two sides and the angle between them are known
+                    </p>
+                    <image xml:id="fig-triangle-side-angle-side">
+                      <latex-image>
+                        \begin{tikzpicture}\draw[blue, line width=1] (0,0) -- (3,4) node[midway,above,xshift=-4] {\(S\)};
+                        \draw[blue, dashed] (3,4) -- (10,0);
+                        \draw[blue, line width=1] (10,0) -- (0,0) node[midway,below] {\(S\)};
+                        \draw[blue, line width=1] (1,0) arc (0:53.1301023542:1) node[midway,right,xshift=2,yshift=2] {\(A\)};
+                        \end{tikzpicture}
+                      </latex-image>
+                    </image>
+                  </li>
+              </ul>
+              </p>
+          </li>
+          <li>
+              <p>Three sides.</p>
+              <p>
+                <ul>
+                  <li>
+                    <p>
+                      <em>Side-Side-Side (SSS)</em>: All three sides of the triangle are known
+                    </p>
+                    <image xml:id="fig-triangle-side-side-side">
+                      <latex-image>
+                        \begin{tikzpicture}
+                        \draw[blue, line width=1] (0,0) -- (3,4) node[midway,above,xshift=-4] {\(S\)};
+                        \draw[blue, line width=1] (3,4) -- (10,0) node[midway,above,xshift=2] {\(S\)};
+                        \draw[blue, line width=1] (10,0) -- (0,0) node[midway,below] {\(S\)};
+                        \end{tikzpicture}
+                      </latex-image>
+                    </image>
+                  </li>
+              </ul>
+              </p>
+          </li>
       </ol>
     </p>
     <p>
@@ -324,8 +345,13 @@ Therefore, whether the triangle is classified as ASA or SAA does not matter in t
           </me>
           we have
           <me>
-            b=\frac{a\sin B}{\sin A}=\frac{5\sin40^{\circ}}{\sin120^{\circ}}\approx3.71\qquad\mbox{and} \qquad c=\frac{a\sin C}{\sin A}=\frac{5\sin20^{\circ}}{\sin120^{\circ}}\approx1.97
+            b=\frac{a\sin B}{\sin A}=\frac{5\sin40^{\circ}}{\sin120^{\circ}}\approx3.71
           </me>
+          and
+          <me>
+            c=\frac{a\sin C}{\sin A}=\frac{5\sin20^{\circ}}{\sin120^{\circ}}\approx1.97
+          </me>
+          
         </p>
       </solution>
     </example>
@@ -333,24 +359,21 @@ Therefore, whether the triangle is classified as ASA or SAA does not matter in t
   <subsection xml:id="subsec-solving-ssa-triangles">
     <title>Solving SSA Triangles: The Ambiguous Case</title>
     <p>
-      Although the Law of Sines can be used to solve oblique triangles, there may be cases that would give us one triangle, two triangles, or even no solution. Such cases are known as the <em>ambiguous case</em>. <idx><h>ambiguous case</h></idx> This occurs when we know two sides and an angle that is opposite to one of the given sides.
+      Although the Law of Sines can be used to solve oblique triangles, there may be cases that would give us one triangle, two triangles, or even no solution. Such cases are known as the <em>ambiguous case</em>. This occurs when we know two sides and an angle that is opposite to one of the given sides.
     </p>
     <definition xml:id="def-ambiguous-case">
-      <title>The Ambiguous Case</title>
+      <title>The Ambiguous Case</title><idx><h>ambiguous case</h></idx>
       <statement>
         <p>
           Consider a triangle where <m>a</m>, <m>b</m>, and <m>A</m> are given. The altitude is <m>h=b\sin A</m>. Then we have the following possibilities
         </p>
-        <tabular>
-          <row bottom="minor">
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-          </row>
-          <row>
-            <cell><em>No triangle</em></cell>
-            <cell><em>One right triangle</em>
-              <image>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>A</m> is acute and <m>a\lt h=b\sin A</m>: <em>No triangle</em>
+              </p>
+              <image xml:id="fig-ssa-case1">
                 <latex-image>
                   \begin{tikzpicture}
                   \draw[blue,line width=1,dashed] (0,0) -- (5.5,0);
@@ -365,9 +388,12 @@ Therefore, whether the triangle is classified as ASA or SAA does not matter in t
                   \end{tikzpicture}
                 </latex-image>
               </image>
-            </cell>
-            <cell>
-              <image>
+            </li>
+            <li>
+              <p>
+                <m>A</m> is acute and <m>a=h=b\sin A</m>: <em>One right triangle</em>
+              </p>
+              <image xml:id="fig-ssa-case2">
                 <latex-image>
                   \begin{tikzpicture}
                   \draw[blue,line width=1,dashed] (0,0) -- (5,0);
@@ -383,21 +409,12 @@ Therefore, whether the triangle is classified as ASA or SAA does not matter in t
                   \end{tikzpicture}
                 </latex-image>
               </image>
-            </cell>
-          </row>
-          <row>
-            <cell><m>A</m> is acute and <m>a\lt h=b\sin A</m></cell>
-            <cell><m>A</m> is acute and <m>a=h=b\sin A</m></cell>
-          </row>
-          <row bottom="minor">
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-          </row>
-          <row>
-            <cell><em>Two triangles</em> (<m>\Delta ACB_1</m> and <m>\Delta ACB_2</m>)</cell>
-            <cell><em>One triangle</em>
-              <image>
+            </li>
+            <li>
+              <p>
+                <m>A</m> is acute and <m>h=b\sin A\lt a\lt b</m>:  <em>Two triangles</em> (<m>\Delta ACB_1</m> and <m>\Delta ACB_2</m>)
+              </p>
+              <image xml:id="fig-ssa-case3">
                 <latex-image>
                   \begin{tikzpicture}
                   \draw[blue,line width=1,dashed] (0,0) -- (6.5,0);
@@ -416,9 +433,46 @@ Therefore, whether the triangle is classified as ASA or SAA does not matter in t
                   \end{tikzpicture}
                 </latex-image>
               </image>
-            </cell>
-            <cell>
-              <image>
+              <sidebyside>
+                <image xml:id="fig-ssa-case3a">
+                  <latex-image>
+                    \begin{tikzpicture}
+                    \draw[blue,line width=1,dashed] (0,0) -- (6,0);
+                    \draw[dashed] (6,0) -- (6.25,0);
+                    \draw[blue,line width=1] (0,0) -- (4,3) node[midway,left,xshift=-4,yshift=3] {\(b\)};
+                    \draw[blue] (0.75,0) arc (0:36.8698976458:0.75);
+                    \node[blue,below] at (0,0) {\(A\)};
+                    \node[blue,above] at (4,3) {\(C\)};
+                    \draw (3.75,0) -- (3.75,0.25) -- (4,0.25);
+                    \draw[dashed] (4,0) -- (4,3) node[midway,right] {\(h\)};
+                    \draw[blue,line width=1] (4,3) -- (6,0) node[midway,right] {\(a_1\)};
+                    \node[blue,below] at (6,0) {\(B_1\)};
+                    \end{tikzpicture}
+                  </latex-image>
+                </image>
+                <image xml:id="fig-ssa-case3b">
+                  <latex-image>
+                    \begin{tikzpicture}
+                    \draw[blue,line width=1,dashed] (0,0) -- (2,0);
+                    \draw[dashed] (2,0) -- (6.25,0);
+                    \draw[blue,line width=1] (0,0) -- (4,3) node[midway,left,xshift=-4,yshift=3] {\(b\)};
+                    \draw[blue] (0.75,0) arc (0:36.8698976458:0.75);
+                    \node[blue,below] at (0,0) {\(A\)};
+                    \node[blue,above] at (4,3) {\(C\)};
+                    \draw (3.75,0) -- (3.75,0.25) -- (4,0.25);
+                    \draw[dashed] (4,0) -- (4,3) node[midway,right] {\(h\)};
+                    \draw[blue,line width=1] (4,3) -- (2,0) node[midway,right] {\(a_2\)};
+                    \node[blue,below] at (2,0) {\(B_2\)};
+                    \end{tikzpicture}
+                  </latex-image>
+                </image>
+              </sidebyside>
+            </li>
+            <li>
+              <p>
+                <m>A</m> is acute and <m>a\geq b</m>: <em>One triangle</em>
+              </p>
+              <image xml:id="fig-ssa-case4">
                 <latex-image>
                   \begin{tikzpicture}
                   \draw[blue,line width=1,dashed] (0,0) -- (5.25,0);
@@ -435,21 +489,12 @@ Therefore, whether the triangle is classified as ASA or SAA does not matter in t
                   \end{tikzpicture}
                 </latex-image>
               </image>
-            </cell>
-          </row>
-          <row>
-            <cell><m>A</m> is acute and <m>h=b\sin A\lt a\lt b</m></cell>
-            <cell><m>A</m> is acute and <m>a\geq b</m>.</cell>
-          </row>
-          <row bottom="minor">
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-          </row>
-          <row>
-            <cell><em>No triangle</em></cell>
-            <cell><em>One triangle</em>
-              <image>
+            </li>
+            <li>
+              <p>
+                <m>A</m> is obtuse and <m>a\leq b</m>: <em>No triangle</em>
+              </p>
+              <image xml:id="fig-ssa-case5">
                 <latex-image>
                   \begin{tikzpicture}
                   \draw[blue,line width=1,dashed] (0,0) -- (4   ,0);
@@ -463,9 +508,12 @@ Therefore, whether the triangle is classified as ASA or SAA does not matter in t
                   \end{tikzpicture}
                 </latex-image>
               </image>
-            </cell>
-            <cell>
-              <image>
+            </li>
+            <li>
+              <p>
+                <m>A</m> is obtuse and <m>a>b</m>: <em>One triangle</em>
+              </p>
+              <image xml:id="fig-ssa-case6">
                 <latex-image>
                   \begin{tikzpicture}
                   \draw[blue,line width=1,dashed] (0,0) -- (4.5,0);
@@ -478,125 +526,122 @@ Therefore, whether the triangle is classified as ASA or SAA does not matter in t
                   \end{tikzpicture}
                 </latex-image>
               </image>
-            </cell>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </definition>
+    <remark>
+      <title>Generalizing the Ambiguous Case</title>
+      <p>
+        Not every time you encounter a SSA triangle will you be given the angle <m>A</m> and sides <m>a</m> and <m>b</m>. Sometimes you may be given angle <m>B</m> and sides <m>a</m> and <m>b</m>. In these cases, you cannot use the equations and inequalities listed above to identify how many triangles you will get.
+      </p>
+      <p>
+        To generalize the ambiguous case of SSA, we are given a triangle with (1) a known angle, <m>\theta</m>; (2) a side <term>adjacent</term> to <m>\theta</m>; (3) a side <term>opposite</term> to <m>\theta</m>. If we calculate the <term>altitude</term><idx><h>altitude</h></idx> <m>h=</m> (adjacent side)<m>\sin\theta</m>, then <xref ref="tab_SSA">Table</xref> summarizes the possible cases.
+      </p>
+      <table xml:id="tab_SSA">
+        <title>Possibilities for the ambiguous case (SSA)</title>
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
           </row>
           <row>
-            <cell><m>A</m> is obtuse and <m>a\leq b</m></cell>
-            <cell><m>A</m> is obtuse and <m>a>b</m></cell>
+            <cell>Case</cell>
+            <cell><m>\theta</m></cell>
+            <cell>Condition on Opposite Side</cell>
+            <cell>Number of Triangles</cell>
           </row>
           <row bottom="minor">
             <cell></cell>
             <cell></cell>
             <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>1</cell>
+            <cell>acute</cell>
+            <cell>opposite side <m>\lt</m> altitude</cell>
+            <cell>None</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>2</cell>
+            <cell>acute</cell>
+            <cell>opposite side = altitude</cell>
+            <cell>One (right triangle)</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>3</cell>
+            <cell>acute</cell>
+            <cell>altitude <m>\lt</m> opposite side <m>\lt</m> adjacent side</cell>
+            <cell>Two</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>4</cell>
+            <cell>acute</cell>
+            <cell>opposite side <m>\geq</m> adjacent side</cell>
+            <cell>One</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>5</cell>
+            <cell>obtuse</cell>
+            <cell>opposite side <m>\leq</m> adjacent side</cell>
+            <cell>None</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>6</cell>
+            <cell>obtuse</cell>
+            <cell>opposite side <m>></m> adjacent side</cell>
+            <cell>One</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
           </row>
         </tabular>
-      </statement>
-    </definition>
-    <p>
-      To generalize the ambiguous case of SSA, we are given a triangle with (1) a known angle, <m>\theta</m>; (2) a side <term>adjacent</term> to <m>\theta</m>; (3) a side <term>opposite</term> to <m>\theta</m>. If we calculate the <term>altitude</term> <m>h=</m> (adjacent side)<m>\sin\theta</m>, then <xref ref="tab_SSA">Table</xref> summarizes the possible cases.
-    </p>
-    <table xml:id="tab_SSA">
-      <title>Possibilities for the ambiguous case (SSA)</title>
-      <tabular>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell>Case</cell>
-          <cell><m>\theta</m></cell>
-          <cell>Condition on Opposite Side</cell>
-          <cell>Number of Triangles</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell>1</cell>
-          <cell>acute</cell>
-          <cell>opposite side <m>\lt</m> altitude</cell>
-          <cell>None</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell>2</cell>
-          <cell>acute</cell>
-          <cell>opposite side = altitude</cell>
-          <cell>One (right triangle)</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell>3</cell>
-          <cell>acute</cell>
-          <cell>altitude <m>\lt</m> opposite side <m>\lt</m> adjacent side</cell>
-          <cell>Two</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell>4</cell>
-          <cell>acute</cell>
-          <cell>opposite side <m>\geq</m> adjacent side</cell>
-          <cell>One</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell>5</cell>
-          <cell>obtuse</cell>
-          <cell>opposite side <m>\leq</m> adjacent side</cell>
-          <cell>None</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-        </row>
-        <row>
-          <cell>6</cell>
-          <cell>obtuse</cell>
-          <cell>opposite side <m>></m> adjacent side</cell>
-          <cell>One</cell>
-        </row>
-        <row bottom="minor">
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-          <cell></cell>
-        </row>
-      </tabular>
-    </table>
+      </table>
+    </remark>
     <example xml:id="core-standards-CCSS_MATH_CONTENT_HSG_SRT_D_11-b">
       <title>Using Law of Sines (SSA) one-solution</title>
       <statement>
         <p>
           We can now return to the example at the start of the section where the Alingano Maisu must account for a current and we had the following triangle
         </p>
-        <image>
+        <image  xml:id="fig-ssa-maisu">
           <latex-image>
             \begin{tikzpicture}
             \draw[line width=1pt] (0,0) -- (-11,-5.75) node[midway,sloped,above,yshift=0.1cm] {\(b\)};
@@ -649,7 +694,7 @@ Therefore, whether the triangle is classified as ASA or SAA does not matter in t
         <p>
           The altitude of the triangle is <m>h=b\sin C=6\sin70^{\circ}\approx5.64</m>. Since <m>C</m> is an acute angle and the altitude (<m>h\approx5.64</m>) is greater than the side opposite of the angle (<m>c=5)</m>, then by <xref ref="tab_SSA">Table</xref>, there is no triangle.
         </p>
-        <image>
+        <image xml:id="fig-example-ssa-no-solution">
           <latex-image>
             \begin{tikzpicture}
             \draw[blue,line width=1,dashed] (0,0) -- (4,0);
@@ -679,12 +724,12 @@ Therefore, whether the triangle is classified as ASA or SAA does not matter in t
         <p>
           The altitude of the triangle is <m>h=b\sin A=7\sin40^{\circ}\approx4.50</m>. Since <m>A</m> is an acute angle and the altitude (<m>h\approx4.50</m>) is less than the opposite side (<m>a=6</m>) which is less than the adjacent side (<m>b=7)</m>, then by <xref ref="tab_SSA">Table</xref>, there are two triangles.
         </p>
-        <image>
+        <image xml:id="fig-example-ssa-2-triangles">
           <latex-image>
             \begin{tikzpicture}
             \draw[blue,line width=1,dashed] (0,0) -- (10,0);
             \draw[blue,line width=1] (0,0) -- (5.36,5) node[midway,left,xshift=-4,yshift=3] {\(b\)};
-            \draw[blue] (0.75,0) arc (0:40:0.75);
+            \draw[blue] (0.75,0) arc (0:43:0.75);
             \node[blue,below] at (0,0) {\(A\)};
             \node[blue,above] at (5.36,5) {\(C\)};
             \draw (4.96,0) -- (4.96,0.4) -- (5.36,0.4);
@@ -719,12 +764,12 @@ Therefore, whether the triangle is classified as ASA or SAA does not matter in t
         <p>
           So we now have two triangles: <m>AB_1C</m> and <m>AB_2C</m>.
         </p>
-        <image>
+        <image xml:id="fig-example-ssa-2-trianglesa">
           <latex-image>
             \begin{tikzpicture}
             \draw[blue,line width=1] (0,0) -- (9.33,0) node[midway,below] {\(c_1\)};
             \draw[blue,line width=1] (0,0) -- (5.36,5) node[midway,left,xshift=-4,yshift=3] {\(b\)};
-            \draw[blue] (0.75,0) arc (0:40:0.75);
+            \draw[blue] (0.75,0) arc (0:44:0.75);
             \node[blue,left] at (0,0) {\(A\)};
             \node[blue,above] at (5.36,5) {\(C_1\)};
             \draw[blue,line width=1] (5.36,5) -- (9.33,0) node[midway,right,xshift=4] {\(a_1\)};
@@ -732,12 +777,12 @@ Therefore, whether the triangle is classified as ASA or SAA does not matter in t
             \end{tikzpicture}
           </latex-image>
         </image>
-        <image>
+        <image xml:id="fig-example-ssa-2-trianglesb" width="60%">
           <latex-image>
             \begin{tikzpicture}
             \draw[blue,line width=1] (0,0) -- (1.39,0) node[midway,below] {\(c_2\)};
             \draw[blue,line width=1] (0,0) -- (5.36,5) node[midway,left,xshift=-4,yshift=3] {\(b\)};
-            \draw[blue] (0.75,0) arc (0:40:0.75);
+            \draw[blue] (0.75,0) arc (0:43:0.75);
             \node[blue,left] at (0,0) {\(A\)};
             \node[blue,above] at (5.36,5) {\(C_1\)};
             \draw[blue,line width=1] (5.36,5) -- (1.39,0) node[midway,right,xshift=4] {\(a_2\)};
@@ -999,7 +1044,7 @@ Therefore, whether the triangle is classified as ASA or SAA does not matter in t
         <p>
           *(check the direction of the current in real life to make this more realistic)
         </p>
-        <image>
+        <image xml:id="fig-aotearoa-rarotonga1">
           <latex-image>
             \begin{tikzpicture}
             \node[above left] at (0,0) {Aotearoa};
@@ -1023,7 +1068,7 @@ Therefore, whether the triangle is classified as ASA or SAA does not matter in t
           we have that <m>B=41.8^{\circ}</m>.
           Now we will write the triangle where the sides represents the speed.
         </p>
-        <image>
+        <image xml:id="fig-aotearoa-rarotonga2">
           <latex-image>
             \begin{tikzpicture}
             \node[left] at (0,0) {\(A\)};
