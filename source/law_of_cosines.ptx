@@ -3,6 +3,15 @@
   <title>The Law of Cosines</title>
   <introduction>
     <p>
+      Talk about Etak.
+    </p>
+    <figure xml:id="video-etak">
+      <caption>
+        In Micronesian navigation, the concept of <em>etak</em> is illustrated as islands appear to move relative to the stationary canoe. As the canoe journeys from Poluwat to Guam, Chuuk shifts from east to southeast, demonstrating the navigational perspective where islands are perceived to move while the canoe remains still.
+      </caption>
+      <video youtube="e68QeM5XvhA" label="youtube-etak"/>
+    </figure>
+    <p>
       The Fijian canoe Uto Ni Yalo is sailing from Fiji to Tonga. The navigators know Tonga is 412 NM from Fiji in the House Lā; Malanai (<m>16.81^{\circ}</m>). After sailing for one day and traveling 120 NM, the navigator determines they have gone off course by 2 houses (<m>22.5^{\circ}</m>). How far are they from Tonga and what is the angle that they will need to turn in order to reach their destination?
     </p>
     <image xml:id="fig-fiji-tonga-intro">
@@ -19,7 +28,7 @@
       </latex-image>
     </image>
     <p>
-      This triangle, where we know two sides and the angle between them, is known as Side-Angle-Side (SAS). Unfortunately, the Law of Sines that we learned in <xref ref="The_Law_of_Sines">Section</xref> only applies to ASA, AAS, and SSA. In this section, we will learn how to solve SAS triangles as well as triangles where all three sides are known, called Side-Side-Side (SSS) triangles.
+      This triangle, where we know two sides and the angle between them, is known as Side-Angle-Side (SAS). Unfortunately, the Law of Sines that we learned in <xref ref="law_of_sines"/> only applies to ASA, AAS, and SSA. In this section, we will learn how to solve SAS triangles as well as triangles where all three sides are known, called Side-Side-Side (SSS) triangles.
     </p>
   </introduction>
   <subsection xml:id="subsec-law-of-cosines">
