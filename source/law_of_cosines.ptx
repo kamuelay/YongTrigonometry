@@ -5,7 +5,7 @@
     <p>
       The Fijian canoe Uto Ni Yalo is sailing from Fiji to Tonga. The navigators know Tonga is 412 NM from Fiji in the House Lā; Malanai (<m>16.81^{\circ}</m>). After sailing for one day and traveling 120 NM, the navigator determines they have gone off course by 2 houses (<m>22.5^{\circ}</m>). How far are they from Tonga and what is the angle that they will need to turn in order to reach their destination?
     </p>
-    <image>
+    <image xml:id="fig-fiji-tonga-intro">
       <latex-image>
         \begin{tikzpicture}
         \node[left] at (0,0) {Fiji};
@@ -35,7 +35,7 @@
             <mrow>c^2\amp =\amp a^2+b^2-2ab\cos C</mrow>
           </md>
         </p>
-        <image>
+        <image xml:id="fig-law-of-cosines">
           <latex-image>
             \begin{tikzpicture}
             \draw(0,0) -- (8,0) node[midway,below,yshift=-2]{\(c\)};
@@ -59,7 +59,7 @@
       <p>
         To prove the first part, we will place a triangle with <m>A</m> at the origin and <m>C</m> on the <m>x</m>-axis, as shown below.
       </p>
-      <image>
+      <image xml:id="fig-law-of-cosines-proof">
         <latex-image>
           \begin{tikzpicture}
           \draw[-stealth] (-1,0)--(6,0) node[right]{\(x\)};
@@ -96,7 +96,7 @@
         <p>
           We are now ready to return to our example where Uto Ni Yalo is sailing to Tonga, described in the triangle below.
         </p>
-        <image>
+        <image xml:id="fig-fiji-tonga-example">
           <latex-image>
             \begin{tikzpicture}
             \node[left] at (0,0) {\(A\)};
@@ -166,7 +166,7 @@
           If the sides of a triangle are <m>a=4</m>, <m>b=6</m>,
           and <m>c=3</m>, find the angles.
         </p>
-        <image>
+        <image xml:id="fig-example-sss">
           <latex-image>
             \begin{tikzpicture}
             \draw[blue,line width=1] (-3,0) -- (0,0) node[midway,below] {\(c=3\)};
@@ -242,7 +242,7 @@
         <p>
           The Polynesian Triangle is an area in the Pacific Ocean consisting of over 1,000 islands. These islands are collectively known as Polynesia. The northern corner of the Polynesian Triangle is made up of the Hawaiian Islands, the southwestern corner is made up of Aotearoa, and the southeastern corner is made up with Rapa Nui. It is believed that the first inhabitants to the islands arrived at Ka Lae, Hawai`i; Hokianga, Aotearoa; and Anakena, Rapa Nui, respectively. The distance between Ka Lae, Hawai`i and Hokianga, Aotearoa is 4,250 miles, the distance between Hokianga, Aotearoa and Anakena, Rapa Nui is 4,500 miles, and the distance between Rapa Nui and Ka Lae, Hawai`i is 4,450 miles. What is the area of the Polynesian Triangle rounded to the nearest square mile?
         </p>
-        <image>
+        <image xml:id="fig-polynesian-triangle">
           <latex-image>
             \begin{tikzpicture}
             \node[above] at (2.5,1.9) {Ka Lae, Hawai`i};
