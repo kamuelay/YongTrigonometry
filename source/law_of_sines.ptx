@@ -996,101 +996,65 @@ Therefore, whether the triangle is classified as ASA or SAA does not matter in t
       <exercise>
         <statement>
           <p>
-            
+            <m>a=12</m>, <m>B=45^{\circ}</m>, <m>C=60^{\circ}</m>
           </p>
         </statement>
         <answer>
           <p>
-            
+            <m>b\approx8.78</m>, <m>c\approx10.76</m>, <m>A=75^{\circ}</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            
+            <m>a=10</m>, <m>A=30^{\circ}</m>, <m>B=60^{\circ}</m>
           </p>
         </statement>
         <answer>
           <p>
-            
+            <m>b\approx17.32</m>, <m>c\approx5.77</m>, <m>C=90^{\circ}</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            
+            <m>b=12</m>, <m>A=45^{\circ}</m>, <m>B=75^{\circ}</m>
           </p>
         </statement>
         <answer>
           <p>
-            
+            <m>a\approx14.55</m>, <m>c\approx17.87</m>, <m>C=60^{\circ}</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            
+            <m>c=15</m>, <m>A=60^{\circ}</m>, <m>B=30^{\circ}</m>
           </p>
         </statement>
         <answer>
           <p>
-            
+            <m>a\approx17.32</m>, <m>b\approx8.66</m>, <m>C=90^{\circ}</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            
+            <m>b=14</m>, <m>A=50^{\circ}</m>, <m>B=80^{\circ}</m>
           </p>
         </statement>
         <answer>
           <p>
-            
-          </p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            
-          </p>
-        </statement>
-        <answer>
-          <p>
-            
-          </p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            
-          </p>
-        </statement>
-        <answer>
-          <p>
-            
-          </p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            
-          </p>
-        </statement>
-        <answer>
-          <p>
-            
+            <m>a\approx19.67</m>, <m>c\approx27.21</m>, <m>C=50^{\circ}</m>
           </p>
         </answer>
       </exercise>
     </exercisegroup>
-    <exercisegroup>
+    <exercisegroup cols="2">
       <introduction>
         <p>
           Use the Law of Sines to solve each triangle.
@@ -1099,101 +1063,149 @@ Therefore, whether the triangle is classified as ASA or SAA does not matter in t
       <exercise>
         <statement>
           <p>
-            
+            <m>a=8</m>, <m>A=50^{\circ}</m>, <m>C=80^{\circ}</m>
           </p>
         </statement>
         <answer>
           <p>
-            
+            <m>b=8</m>, <m>c\approx10.28</m>, <m>B=50^{\circ}</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            
+            <m>b=12</m>, <m>B=60^{\circ}</m>, <m>C=30^{\circ}</m>
           </p>
         </statement>
         <answer>
           <p>
-            
+            <m>a\approx13.86</m>, <m>c\approx6.93</m>, <m>A=90^{\circ}</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            
+            <m>c=10</m>, <m>A=40^{\circ}</m>, <m>C=70^{\circ}</m>
           </p>
         </statement>
         <answer>
           <p>
-            
+            <m>a\approx6.84</m>, <m>b=10</m>, <m>B=70^{\circ}</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            
+            <m>a=15</m>, <m>A=40^{\circ}</m>, <m>B=100^{\circ}</m>
           </p>
         </statement>
         <answer>
           <p>
-            
+            <m>b\approx22.98</m>, <m>c=15</m>, <m>C=40^{\circ}</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            
+            <m>b=20</m>, <m>B=80^{\circ}</m>, <m>A=20^{\circ}</m>
           </p>
         </statement>
         <answer>
           <p>
-            
+            <m>a\approx6.94</m>, <m>c=20</m>, <m>C=80^{\circ}</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            
+            <m>a=8</m>, <m>A=40^{\circ}</m>, <m>B=75^{\circ}</m>
           </p>
         </statement>
         <answer>
           <p>
-            
+            <m>b\approx12.02</m>, <m>c\approx11.28</m>, <m>C=65^{\circ}</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            
+            <m>b=8</m>, <m>A=30^{\circ}</m>, <m>C=50^{\circ}</m>
           </p>
         </statement>
         <answer>
           <p>
-            
+            <m>a\approx4.06</m>, <m>c\approx6.22</m>, <m>B=100^{\circ}</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            
+            <m>c=15</m>, <m>A=70^{\circ}</m>, <m>B=45^{\circ}</m>
           </p>
         </statement>
         <answer>
           <p>
-            
+            <m>a\approx15.55</m>, <m>b\approx11.70</m>, <m>C=65^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>a=10</m>, <m>B=60^{\circ}</m>, <m>C=70^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>b\approx11.31</m>, <m>c\approx12.27</m>, <m>A=50^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>b=14</m>, <m>A=45^{\circ}</m>, <m>C=80^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>a\approx12.09</m>, <m>c\approx16.83</m>, <m>B=55^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>c=20</m>, <m>A=60^{\circ}</m>, <m>B=75^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>a\approx24.49</m>, <m>b\approx27.32</m>, <m>C=45^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>c=18</m>, <m>A=70^{\circ}</m>, <m>B=50^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>a\approx19.53</m>, <m>b\approx15.92</m>, <m>C=60^{\circ}</m>
           </p>
         </answer>
       </exercise>
     </exercisegroup>
-    <exercisegroup>
+    <exercisegroup cols="2">
       <introduction>
         <p>
           For each problem, determine the relevant case from <xref ref="tab_SSA"/> and whether it results one triangle, two triangles, or none. Solve using the Law of Sines, rounding angles to one decimal place and sides to two decimals.
@@ -1255,7 +1267,7 @@ Therefore, whether the triangle is classified as ASA or SAA does not matter in t
         </statement>
         <answer>
           <p>
-            Case 2; one triangle; <m>b=</m>, <m>B=30^{\circ}</m>, <m>C=90^{\circ}</m>
+            Case 2; one triangle; <m>b=1</m>, <m>B=30^{\circ}</m>, <m>C=90^{\circ}</m>
           </p>
         </answer>
       </exercise>
@@ -1315,7 +1327,7 @@ Therefore, whether the triangle is classified as ASA or SAA does not matter in t
         </statement>
         <answer>
           <p>
-            Case 6; one triangle; <m>c\approx5.30</m>, <m>A=\approx41.7^{\circ}</m>, <m>C\approx30.3^{\circ}</m>
+            Case 6; one triangle; <m>c\approx5.30</m>, <m>A\approx41.7^{\circ}</m>, <m>C\approx30.3^{\circ}</m>
           </p>
         </answer>
       </exercise>
