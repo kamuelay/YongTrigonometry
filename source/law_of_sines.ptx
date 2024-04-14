@@ -47,7 +47,7 @@
                 <ul>
                   <li>
                     <p>
-                      <em>Angle-Side-Angle (ASA)</em>: Two angles and the side between them are known
+                      <em>Angle-Side-Angle (ASA)</em>: Two angles and the side between them are known.
                     </p>
                     <image xml:id="fig-triangle-angle-side-angle">
                       <latex-image>
@@ -62,7 +62,7 @@
                   </li>
                   <li>
                     <p>
-                      <em>Side-Angle-Angle (SAA)</em>: One side and two consecutive angles are known
+                      <em>Side-Angle-Angle (SAA)</em>: One side and two consecutive angles are known.
                     </p>
                     <image xml:id="fig-triangle-side-angle-angle">
                       <latex-image>
@@ -85,7 +85,7 @@
                 <ul>
                   <li>
                     <p>
-                      <em>Side-Side-Angle (SSA)</em>: Two sides and the angle that is not between them are known
+                      <em>Side-Side-Angle (SSA)</em>: Two sides and the angle that is not between them are known.
                     </p>
                     <image xml:id="fig-triangle-side-side-angle">
                       <latex-image>
@@ -99,7 +99,7 @@
                   </li>
                   <li>
                     <p>
-                      <em>Side-Angle-Side (SAS)</em>: Two sides and the angle between them are known
+                      <em>Side-Angle-Side (SAS)</em>: Two sides and the angle between them are known.
                     </p>
                     <image xml:id="fig-triangle-side-angle-side">
                       <latex-image>
@@ -120,7 +120,7 @@
                 <ul>
                   <li>
                     <p>
-                      <em>Side-Side-Side (SSS)</em>: All three sides of the triangle are known
+                      <em>Side-Side-Side (SSS)</em>: All three sides of the triangle are known.
                     </p>
                     <image xml:id="fig-triangle-side-side-side">
                       <latex-image>
@@ -138,44 +138,15 @@
       </ol>
     </p>
     <p>
-      In this section, we learn techniques to solving triangles of the form ASA, SAA, and SSA. We will discuss triangles of the form SAS and SSS in <xref ref="law_of_cosines"/>.
+      In this section, we explore techniques for solving triangles when provided with one side and two angles (ASA or SAA) and when given two sides along with the angle between them (SSA). Triangles falling under the categories of SAS and SSS will be discussed in more detail in the <xref ref="law_of_cosines"/>.
     </p>
   </introduction>
-  <subsection xml:id="subsec-discuss-difference-of-triangles">
-    <title>discuss-difference-of-triangles</title>
-    <p>
-      How do you know which triangles you are given. 
-    </p>
-    <p>
-      Might need to rearrange above, talk about the number of angles and sides that are given, then discuss the names of the 5 cases. maybe 1. two angles, one side; 2. one angle, two sides; 3. three sides, no angles. Then break up two angles and one side into SAA and ASA.
-    </p>
-    <p>
-      Maybe also add a note why it is SAA and not AAS which is also correct but not conventional
-    </p>
-    <p>
-      Angle-Side-Angle (ASA): In an ASA configuration, you are given two angles and the side between them. This means you have information about the measures of two angles and the length of the side adjacent to both angles.
-Side-Angle-Angle (SAA): In an SAA configuration, you are given one side and the measures of two consecutive angles. This means you know the length of one side of the triangle and the measures of two angles that are next to each other.
-Side-Side-Angle (SSA): In an SSA configuration, you are given two sides and the angle that is not between them. This means you know the lengths of two sides of the triangle and the measure of an angle that is opposite one of the given sides.
-Side-Angle-Side (SAS): In an SAS configuration, you are given two sides and the angle between them. This means you know the lengths of two sides of the triangle and the measure of the angle formed by these two sides.
-Side-Side-Side (SSS): In an SSS configuration, you are given the lengths of all three sides of the triangle. This means you have information about the lengths of all three sides, but no information about the angles.
-    </p>
-    <p>
-      To identify which configuration you have, look for the given lengths of sides and measures of angles in the problem statement or diagram. Once you determine which information is provided, you can classify it as one of the five configurations mentioned above. This classification helps you choose the appropriate method, such as the Law of Sines or the Law of Cosines, to solve the triangle.
-    </p>
-    <p>
-      In terms of trigonometry, there is no difference between solving ASA (Angle-Side-Angle) and SAA (Side-Angle-Angle) problems. Both configurations provide the necessary information to uniquely determine the triangle.
-
-In both cases, you have two angles and one side, which is sufficient to determine the remaining side lengths and angle measures using the Law of Sines and other trigonometric principles. The sequence in which the information is presented (angles first in ASA or side first in SAA) does not affect the solution process.
-
-Therefore, whether the triangle is classified as ASA or SAA does not matter in terms of solving the problem. You would approach and solve both types of problems in the same way
-    </p>
-  </subsection>
   <subsection xml:id="subsec-law-of-sines">
     <title>Law of Sines</title>
     <p>
       The <term>Law of Sines</term> states that for any triangle, the ratios of the lengths of the sides to the sine of their corresponding opposite angles are equal. When provided with certain information about the sides and angles of a triangle, this fundamental principle becomes a valuable tool for determining the remaining sides and angles.
     </p>
-    <theorem xml:id="thm-law-of-sines">
+    <theorem xml:xid="thm-law-of-sines">
       <title>Law of Sines</title><idx><h>law of sines</h></idx>
       <statement>
         <p>
@@ -1358,12 +1329,12 @@ Therefore, whether the triangle is classified as ASA or SAA does not matter in t
         <exercise>
           <statement>
             <p>
-              
+              <m>b=7</m>, <m>c=4</m>, <m>B=35^{\circ}</m>
             </p>
           </statement>
           <answer>
             <p>
-              Case 4, one triangle; 
+              Case 4, one triangle; <m>a\approx9.89</m>, <m>A\approx125.9^{\circ}</m>, <m>C\approx19.1^{\circ}</m>
             </p>
           </answer>
         </exercise>
