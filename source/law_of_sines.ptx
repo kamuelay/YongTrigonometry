@@ -986,6 +986,13 @@
           <p>
             <m>b\approx8.78</m>, <m>c\approx10.76</m>, <m>A=75^{\circ}</m>
           </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>a=10</m>, <m>A=35^{\circ}</m>, <m>B=60^{\circ}</m>
+          </p>
           <image xml:id="exer-law-sines-2" width="75%">
             <latex-image>
               \begin{tikzpicture}[scale=0.4]
@@ -998,12 +1005,17 @@
               \end{tikzpicture}
             </latex-image>
           </image>
+        </statement>
+        <answer>
+          <p>
+            <m>b\approx15.10</m>, <m>c\approx17.73</m>, <m>C=85^{\circ}</m>
+          </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>a=10</m>, <m>A=35^{\circ}</m>, <m>B=60^{\circ}</m>
+            <m>b=12</m>, <m>A=45^{\circ}</m>, <m>B=75^{\circ}</m>
           </p>
           <image xml:id="exer-law-sines-3" width="75%">
             <latex-image>
@@ -1020,14 +1032,14 @@
         </statement>
         <answer>
           <p>
-            <m>b\approx15.10</m>, <m>c\approx17.73</m>, <m>C=85^{\circ}</m>
+            <m>a\approx8.78</m>, <m>c\approx10.76</m>, <m>C=60^{\circ}</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>b=12</m>, <m>A=45^{\circ}</m>, <m>B=75^{\circ}</m>
+            <m>c=15</m>, <m>A=65^{\circ}</m>, <m>B=45^{\circ}</m>
           </p>
           <image xml:id="exer-law-sines-4" width="75%">
             <latex-image>
@@ -1044,14 +1056,14 @@
         </statement>
         <answer>
           <p>
-            <m>a\approx8.78</m>, <m>c\approx10.76</m>, <m>C=60^{\circ}</m>
+            <m>a\approx14.47</m>, <m>b\approx11.29</m>, <m>C=70^{\circ}</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>c=15</m>, <m>A=65^{\circ}</m>, <m>B=45^{\circ}</m>
+            <m>c=14</m>, <m>A=50^{\circ}</m>, <m>C=80^{\circ}</m>
           </p>
           <image xml:id="exer-law-sines-5" width="75%">
             <latex-image>
@@ -1068,14 +1080,14 @@
         </statement>
         <answer>
           <p>
-            <m>a\approx14.47</m>, <m>b\approx11.29</m>, <m>C=70^{\circ}</m>
+            <m>a\approx10.89</m>, <m>b\approx10.05</m>, <m>B=50^{\circ}</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>c=14</m>, <m>A=50^{\circ}</m>, <m>C=80^{\circ}</m>
+            <m>b=15</m>, <m>A=50^{\circ}</m>, <m>C=70^{\circ}</m>
           </p>
           <image xml:id="exer-law-sines-6" width="75%">
             <latex-image>
@@ -1089,18 +1101,6 @@
               \end{tikzpicture}
             </latex-image>
           </image>
-        </statement>
-        <answer>
-          <p>
-            <m>a\approx10.89</m>, <m>b\approx10.05</m>, <m>B=50^{\circ}</m>
-          </p>
-        </answer>
-      </exercise>
-      <exercise>
-        <statement>
-          <p>
-            <m>b=15</m>, <m>A=50^{\circ}</m>, <m>C=70^{\circ}</m>
-          </p>
         </statement>
         <answer>
           <p>
