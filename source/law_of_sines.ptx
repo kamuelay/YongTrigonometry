@@ -987,10 +987,10 @@ Therefore, whether the triangle is classified as ASA or SAA does not matter in t
     </example>
   </subsection>
   <exercises xml:id="exercises-law-of-sines">
-    <exercisegroup>
+    <exercisegroup cols="2">
       <introduction>
         <p>
-          Use the Law of Sines to solve each triangle.
+          Use the Law of Sines to solve each triangle. Express angless in degrees, rounded to one decimal and sides rounded to two decimals.
         </p>
       </introduction>
       <exercise>
@@ -1008,12 +1008,12 @@ Therefore, whether the triangle is classified as ASA or SAA does not matter in t
       <exercise>
         <statement>
           <p>
-            <m>a=10</m>, <m>A=30^{\circ}</m>, <m>B=60^{\circ}</m>
+            <m>a=10</m>, <m>A=35^{\circ}</m>, <m>B=60^{\circ}</m>
           </p>
         </statement>
         <answer>
           <p>
-            <m>b\approx17.32</m>, <m>c\approx5.77</m>, <m>C=90^{\circ}</m>
+            <m>b\approx15.10</m>, <m>c\approx17.73</m>, <m>C=85^{\circ}</m>
           </p>
         </answer>
       </exercise>
@@ -1025,31 +1025,43 @@ Therefore, whether the triangle is classified as ASA or SAA does not matter in t
         </statement>
         <answer>
           <p>
-            <m>a\approx14.55</m>, <m>c\approx17.87</m>, <m>C=60^{\circ}</m>
+            <m>a\approx8.78</m>, <m>c\approx10.76</m>, <m>C=60^{\circ}</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>c=15</m>, <m>A=60^{\circ}</m>, <m>B=30^{\circ}</m>
+            <m>c=15</m>, <m>A=65^{\circ}</m>, <m>B=45^{\circ}</m>
           </p>
         </statement>
         <answer>
           <p>
-            <m>a\approx17.32</m>, <m>b\approx8.66</m>, <m>C=90^{\circ}</m>
+            <m>a\approx14.47</m>, <m>b\approx11.29</m>, <m>C=70^{\circ}</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>b=14</m>, <m>A=50^{\circ}</m>, <m>B=80^{\circ}</m>
+            <m>c=14</m>, <m>A=50^{\circ}</m>, <m>C=80^{\circ}</m>
           </p>
         </statement>
         <answer>
           <p>
-            <m>a\approx19.67</m>, <m>c\approx27.21</m>, <m>C=50^{\circ}</m>
+            <m>a\approx10.89</m>, <m>b\approx10.05</m>, <m>B=50^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>b=15</m>, <m>A=50^{\circ}</m>, <m>C=70^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>a\approx13.27</m>, <m>c\approx16.28</m>, <m>B=60^{\circ}</m>
           </p>
         </answer>
       </exercise>
@@ -1057,7 +1069,7 @@ Therefore, whether the triangle is classified as ASA or SAA does not matter in t
     <exercisegroup cols="2">
       <introduction>
         <p>
-          Use the Law of Sines to solve each triangle.
+          Use the Law of Sines to solve each triangle. Express angless in degrees, rounded to one decimal and sides rounded to two decimals.
         </p>
       </introduction>
       <exercise>
@@ -1208,7 +1220,7 @@ Therefore, whether the triangle is classified as ASA or SAA does not matter in t
     <exercisegroup cols="2">
       <introduction>
         <p>
-          For each problem, determine the relevant case from <xref ref="tab_SSA"/> and whether it results one triangle, two triangles, or none. Solve using the Law of Sines, rounding angles to one decimal place and sides to two decimals.
+          For each problem, determine the relevant case from <xref ref="tab_SSA"/> and whether it results one triangle, two triangles, or none. Then solve using the Law of Sines, with angles in degrees rounded to one decimal place and sides to two decimals.
         </p>
       </introduction>
       <exercise>
@@ -1224,38 +1236,38 @@ Therefore, whether the triangle is classified as ASA or SAA does not matter in t
         </answer>
       </exercise>
       <exercise>
+          <statement>
+            <p>
+              <m>b=2</m>, <m>c=7</m>, <m>B=30^{\circ}</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              Case 1; no triangles
+            </p>
+          </answer>
+        </exercise>
+      <exercise>
         <statement>
           <p>
-            <m>b=2</m>, <m>c=7</m>, <m>B=30^{\circ}</m>
+            <m>a=8</m>, <m>c=6</m>, <m>A=45^{\circ}</m>
           </p>
         </statement>
-        <exercise>
-          <statement>
-            <p>
-              <m>a=8</m>, <m>c=6</m>, <m>A=45^{\circ}</m>
-            </p>
-          </statement>
-          <answer>
-            <p>
-              Case 4; one triangle; <m>\approx</m>, <m>\approx^{\circ}</m>, <m>\approx^{\circ}</m>
-            </p>
-          </answer>
-        </exercise>
-        <exercise>
-          <statement>
-            <p>
-              <m>a=13</m>, <m>b=12</m>; <m>B=46^{\circ}</m>
-            </p>
-          </statement>
-          <answer>
-            <p>
-              Case 3; two triangles; <m>c_1\approx16.55</m>, <m>A_1\approx51.2^{\circ}</m>, <m>C_1\approx82.8^{\circ}</m>; <m>c_2\approx</m>, <m>A_2\approx^{\circ}</m>, <m>C_2\approx^{\circ}</m>
-            </p>
-          </answer>
-        </exercise>
         <answer>
           <p>
-            Case 1; no triangles
+            Case 4; one triangle; <m>b\approx11.02</m>, <m>B\approx103.0^{\circ}</m>, <m>C\approx32.0^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>a=13</m>, <m>b=12</m>; <m>B=46^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Case 3; two triangles; <m>c_1\approx16.55</m>, <m>A_1\approx51.2^{\circ}</m>, <m>C_1\approx82.8^{\circ}</m>; <m>c_2\approx16.55</m>, <m>A_2\approx36.8^{\circ}</m>, <m>C_2\approx97.2^{\circ}</m>
           </p>
         </answer>
       </exercise>
@@ -1279,7 +1291,7 @@ Therefore, whether the triangle is classified as ASA or SAA does not matter in t
         </statement>
         <answer>
           <p>
-            Case 3; two triangles; <m>b_1\approx9.63</m>, <m>A_1\approx44.4^{\circ}</m>, <m>B_1\approx105.6^{\circ}</m>; <m>b_2\approx</m>, <m>A_2\approx^{\circ}</m>, <m>B_2\approx^{\circ}</m>
+            Case 3; two triangles; <m>b_1\approx9.63</m>, <m>A_1\approx44.4^{\circ}</m>, <m>B_1\approx105.6^{\circ}</m>; <m>b_2\approx6.96</m>, <m>A_2\approx75.6^{\circ}</m>, <m>B_2\approx74.4^{\circ}</m>
           </p>
         </answer>
       </exercise>
@@ -1343,7 +1355,19 @@ Therefore, whether the triangle is classified as ASA or SAA does not matter in t
           </p>
         </answer>
       </exercise>
-    </exercisegroup>
+        <exercise>
+          <statement>
+            <p>
+              
+            </p>
+          </statement>
+          <answer>
+            <p>
+              Case 4, one triangle; 
+            </p>
+          </answer>
+        </exercise>
+      </exercisegroup>
     <exercise>
       <introduction>
         <p>
