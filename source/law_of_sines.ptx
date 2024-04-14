@@ -578,95 +578,47 @@ Therefore, whether the triangle is classified as ASA or SAA does not matter in t
       <table xml:id="tab_SSA">
         <title>Possibilities for the ambiguous case (SSA)</title>
         <tabular>
-          <row bottom="minor">
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-          </row>
-          <row>
+          <row bottom="major">
             <cell>Case</cell>
             <cell><m>\theta</m></cell>
             <cell>Condition on Opposite Side</cell>
             <cell>Number of Triangles</cell>
           </row>
           <row bottom="minor">
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-          </row>
-          <row>
             <cell>1</cell>
             <cell>acute</cell>
             <cell>opposite side <m>\lt</m> altitude</cell>
             <cell>None</cell>
           </row>
           <row bottom="minor">
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-          </row>
-          <row>
             <cell>2</cell>
             <cell>acute</cell>
             <cell>opposite side = altitude</cell>
             <cell>One (right triangle)</cell>
           </row>
           <row bottom="minor">
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-          </row>
-          <row>
             <cell>3</cell>
             <cell>acute</cell>
             <cell>altitude <m>\lt</m> opposite side <m>\lt</m> adjacent side</cell>
             <cell>Two</cell>
           </row>
           <row bottom="minor">
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-          </row>
-          <row>
             <cell>4</cell>
             <cell>acute</cell>
             <cell>opposite side <m>\geq</m> adjacent side</cell>
             <cell>One</cell>
           </row>
           <row bottom="minor">
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-          </row>
-          <row>
             <cell>5</cell>
             <cell>obtuse</cell>
             <cell>opposite side <m>\leq</m> adjacent side</cell>
             <cell>None</cell>
           </row>
           <row bottom="minor">
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-          </row>
-          <row>
             <cell>6</cell>
             <cell>obtuse</cell>
             <cell>opposite side <m>></m> adjacent side</cell>
             <cell>One</cell>
-          </row>
-          <row bottom="minor">
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
           </row>
         </tabular>
       </table>
@@ -1035,6 +987,351 @@ Therefore, whether the triangle is classified as ASA or SAA does not matter in t
     </example>
   </subsection>
   <exercises xml:id="exercises-law-of-sines">
+    <exercisegroup>
+      <introduction>
+        <p>
+          Use the Law of Sines to solve each triangle.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup>
+      <introduction>
+        <p>
+          Use the Law of Sines to solve each triangle.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup>
+      <introduction>
+        <p>
+          For each problem, determine the relevant case from <xref ref="tab_SSA"/> and whether it results one triangle, two triangles, or none. Solve using the Law of Sines, rounding angles to one decimal place and sides to two decimals.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>c=5</m>, <m>b=4</m>, <m>C=120^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Case 6; one triangle; <m>a\approx1.61</m>, <m>A\approx16.1^{\circ}</m>, <m>B\approx43.9^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>b=2</m>, <m>c=7</m>, <m>B=30^{\circ}</m>
+          </p>
+        </statement>
+        <exercise>
+          <statement>
+            <p>
+              <m>a=8</m>, <m>c=6</m>, <m>A=45^{\circ}</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              Case 4; one triangle; <m>\approx</m>, <m>\approx^{\circ}</m>, <m>\approx^{\circ}</m>
+            </p>
+          </answer>
+        </exercise>
+        <exercise>
+          <statement>
+            <p>
+              <m>a=13</m>, <m>b=12</m>; <m>B=46^{\circ}</m>
+            </p>
+          </statement>
+          <answer>
+            <p>
+              Case 3; two triangles; <m>c_1\approx16.55</m>, <m>A_1\approx51.2^{\circ}</m>, <m>C_1\approx82.8^{\circ}</m>; <m>c_2\approx</m>, <m>A_2\approx^{\circ}</m>, <m>C_2\approx^{\circ}</m>
+            </p>
+          </answer>
+        </exercise>
+        <answer>
+          <p>
+            Case 1; no triangles
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>a=\sqrt{3}</m>, <m>c=2</m>, <m>A=60^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Case 2; one triangle; <m>b=</m>, <m>B=30^{\circ}</m>, <m>C=90^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>a=7</m>, <m>c=5</m>, <m>C=30^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Case 3; two triangles; <m>b_1\approx9.63</m>, <m>A_1\approx44.4^{\circ}</m>, <m>B_1\approx105.6^{\circ}</m>; <m>b_2\approx</m>, <m>A_2\approx^{\circ}</m>, <m>B_2\approx^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>b=14</m>, <m>c=8</m>, <m>C=115^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Case 5; no triangles
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>a=4</m>, <m>b=8</m>, <m>A=30^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Case 2; one triangle; <m>c\approx6.93</m>, <m>B=90^{\circ}</m>, <m>C=60^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>b=12</m>, <m>c=4</m>, <m>C=55^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Case 1; no triangles
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>a=7</m>, <m>b=10</m>, <m>B=108^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Case 6; one triangle; <m>c\approx5.30</m>, <m>A=\approx41.7^{\circ}</m>, <m>C\approx30.3^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>a=4</m>, <m>c=5</m>, <m>A=100^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Case 5; no triangles
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
     <exercise>
       <introduction>
         <p>
