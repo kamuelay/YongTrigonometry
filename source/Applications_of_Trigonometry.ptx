@@ -3,7 +3,7 @@
   <title>Applications of Trigonometry</title>
   <xi:include  href="law_of_sines.ptx"/>
   <xi:include  href="law_of_cosines.ptx"/>
-  <!-- <xi:include  href="vectors.ptx"/> -->
+  <xi:include  href="vectors.ptx"/>
   <!-- <xi:include  href="dot_product.ptx"/> -->
   <!-- <xi:include  href="cross_psroduct.ptx"/> -->
 </chapter>
