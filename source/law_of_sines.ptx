@@ -969,11 +969,35 @@
           <p>
             <m>a=12</m>, <m>B=45^{\circ}</m>, <m>C=60^{\circ}</m>
           </p>
+          <image xml:id="exer-law-sines-1">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.4]
+              \draw (0,0) -- (12,0) node[midway,below] {\(a=12\)}; 
+              \draw (0,0) -- (45:10.76) node[midway,above left] {\(c\)}; 
+              \draw (45:10.76) -- (12,0) node[midway,above right] {\(b\)};
+              \node[above] at (45:10.76) {\(A\)}; 
+              \draw (1,0) arc (0:45:1) node[midway,right,xshift=2,yshift=2] {\(B=45^{\circ}\)}; 
+              \draw (11,0) arc (180:120:1) node[midway,left,xshift=-6,yshift=2] {\(C=60^{\circ}\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
         </statement>
         <answer>
           <p>
             <m>b\approx8.78</m>, <m>c\approx10.76</m>, <m>A=75^{\circ}</m>
           </p>
+          <image xml:id="exer-law-sines-2" width="75%">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.4]
+              \draw (0,0) -- (17.73,0) node[midway,below] {\(c\)}; 
+              \draw (0,0) -- (35:15.1) node[midway,above left] {\(b\)}; 
+              \draw (35:15.10) -- (17.73,0) node[midway,above right] {\(a=10\)};
+              \node[above] at (35:15.10) {\(C\)}; 
+              \draw (1,0) arc (0:35:1) node[midway,right,xshift=2,yshift=2] {\(A=35^{\circ}\)}; 
+              \draw (16.73,0) arc (180:120:1) node[midway,left,xshift=-6,yshift=2] {\(B=60^{\circ}\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
         </answer>
       </exercise>
       <exercise>
@@ -981,6 +1005,18 @@
           <p>
             <m>a=10</m>, <m>A=35^{\circ}</m>, <m>B=60^{\circ}</m>
           </p>
+          <image xml:id="exer-law-sines-3" width="75%">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.4]
+              \draw (0,0) -- (10.76,0) node[midway,below] {\(c\)}; 
+              \draw (0,0) -- (45:12) node[midway,above left] {\(b=12\)}; 
+              \draw (45:12) -- (10.76,0) node[midway,above right] {\(a\)};
+              \node[above] at (45:12) {\(C\)}; 
+              \draw (1,0) arc (0:45:1) node[midway,right,xshift=2,yshift=2] {\(A=45^{\circ}\)}; 
+              \draw (9.76,0) arc (180:105:1) node[midway,left,xshift=-1,yshift=8] {\(B=75^{\circ}\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
         </statement>
         <answer>
           <p>
@@ -993,6 +1029,18 @@
           <p>
             <m>b=12</m>, <m>A=45^{\circ}</m>, <m>B=75^{\circ}</m>
           </p>
+          <image xml:id="exer-law-sines-4" width="75%">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.4]
+              \draw (0,0) -- (15,0) node[midway,below] {\(c=15\)}; 
+              \draw (0,0) -- (65:11.29) node[midway,above left] {\(b\)}; 
+              \draw (65:11.29) -- (15,0) node[midway,above right] {\(a\)};
+              \node[above] at (65:11.29) {\(C\)}; 
+              \draw (1,0) arc (0:65:1) node[midway,right,xshift=2,yshift=2] {\(A=65^{\circ}\)}; 
+              \draw (14,0) arc (180:135:1) node[midway,left,xshift=-1,yshift=8] {\(B=45^{\circ}\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
         </statement>
         <answer>
           <p>
@@ -1005,6 +1053,18 @@
           <p>
             <m>c=15</m>, <m>A=65^{\circ}</m>, <m>B=45^{\circ}</m>
           </p>
+          <image xml:id="exer-law-sines-5" width="75%">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.4]
+              \draw (0,0) -- (10.05,0) node[midway,below] {\(b\)}; 
+              \draw (0,0) -- (50:14) node[midway,above left] {\(c=14\)}; 
+              \draw (50:14) -- (10.05,0) node[midway,above right] {\(a\)};
+              \node[above] at (50:14) {\(B\)}; 
+              \draw (1,0) arc (0:50:1) node[midway,right,xshift=2,yshift=2] {\(A=50^{\circ}\)}; 
+              \draw (9.05,0) arc (180:100:1) node[midway,left,xshift=-1,yshift=8] {\(C=80^{\circ}\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
         </statement>
         <answer>
           <p>
@@ -1017,6 +1077,18 @@
           <p>
             <m>c=14</m>, <m>A=50^{\circ}</m>, <m>C=80^{\circ}</m>
           </p>
+          <image xml:id="exer-law-sines-6" width="75%">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.4]
+              \draw (0,0) -- (15,0) node[midway,below] {\(b=15\)}; 
+              \draw (0,0) -- (50:16.28) node[midway,above left] {\(c\)}; 
+              \draw (50:16.28) -- (15,0) node[midway,above right] {\(a\)};
+              \node[above] at (50:16.28) {\(B\)}; 
+              \draw (1,0) arc (0:50:1) node[midway,right,xshift=2,yshift=2] {\(A=50^{\circ}\)}; 
+              \draw (14,0) arc (180:110:1) node[midway,left,xshift=-1,yshift=8] {\(C=70^{\circ}\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
         </statement>
         <answer>
           <p>
