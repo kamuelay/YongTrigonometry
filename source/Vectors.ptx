@@ -151,37 +151,42 @@
   </subsection>
   <subsection>
     <title>Vectors in Coordinates</title>
-    <p>
-      \begin{mybox}[Component Form of a Vector] If a vector, <m>\mathbf{v}</m> has initial point <m>P(x_1,y_1)</m> and terminal point <m>Q(x_2,y_2)</m>, then the following are equivalent ways to write the vector
-      <md>
-        <mrow>\mathbf{v}\amp =\amp \overrightarrow{PQ}</mrow>
-        <mrow>\amp =\amp \langle x_2-x_1,y_2-y_1\rangle</mrow>
-        <mrow>\amp =\amp \langle v_x,v_y\rangle</mrow>
-      </md>
-    </p>
-    <p>
-      The coordinates, <m>v_x</m> and <m>v_y</m> are scalars (real numbers) and represent the <em>horizontal component</em>, and <em>vertical component</em><idx><h>vectors</h><h>components of</h></idx> of <m>\mathbf{v}</m>, respectively. Note <m>v_x</m> and <m>v_y</m> are not coordinates. See <xref ref="fig_vector-component">Figure</xref> \end{mybox}
-    </p>
-    <figure xml:id="fig_vector-components">
-      <caption>Components of vectors. The following are equivalent ways of describing a vector: <m>\mathbf{v}=\overrightarrow{PQ}=\langle x_2-x_1,y_2-y_1\rangle=\langle v_x,v_y\rangle</m></caption>
-      <image xml:id="fig-vector-components">
-        <latex-image>
-          \begin{tikzpicture}
-          \draw[stealth-stealth] (-1,0)--(15,0) node[right]{\(x\)};
-          \draw[stealth-stealth] (0,-1)--(0,10) node[above]{\(y\)};
-          \draw[line width=2pt,blue,-stealth](1,3) -- (11,9) node[black,midway,above]{\(\mathbf{v}\)};
-          \node[above] at (1,3) {\(P\)};
-          \node[above] at (11,9) {\(Q\)};
-          \draw[dashed] (1,3)--(1,0) node[below]{\(x_1\)};
-          \draw[dashed] (11,9)--(11,0) node[below]{\(x_2\)};
-          \draw[dashed] (11,3)--(0,3) node[left]{\(y_1\)};
-          \draw[dashed] (11,9)--(0,9) node[left]{\(y_2\)};
-          \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](1,3) -- (11,3) node[black,midway,yshift=-0.6cm] { \(v_x=x_2-x_1\)};
-          \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=0.4pt](11,3) -- (11,9) node[black,midway,xshift=1.25cm] { \(v_y=y_2-y_1\)};
-          \end{tikzpicture}
-        </latex-image>
-      </image>
-    </figure>
+    <definition xml:id="def-component-form-of-a-vector">
+      <title>Component Form of a Vector</title>
+      <statement>
+        <p>
+          If a vector, <m>\mathbf{v}</m> has initial point <m>P(x_1,y_1)</m> and terminal point <m>Q(x_2,y_2)</m>, then the following are equivalent ways to write the vector
+          <md>
+            <mrow>\mathbf{v}\amp = \overrightarrow{PQ}</mrow>
+            <mrow>\amp = \langle x_2-x_1,y_2-y_1\rangle</mrow>
+            <mrow>\amp = \langle v_x,v_y\rangle</mrow>
+          </md>
+        </p>
+        <p>
+          The coordinates, <m>v_x</m> and <m>v_y</m> are scalars (real numbers) and represent the <term>horizontal component</term><idx><h>vectors</h><h>horizontal component</h></idx>, and <term>vertical component</term><idx><h>vectors</h><h>vertical component</h></idx>, respectively. Note <m>v_x</m> and <m>v_y</m> are not coordinates, instead they are vectors. See <xref ref="fig_vector-component">Figure</xref>.
+        </p>
+        <figure xml:id="fig_vector-components">
+          <caption>Components of vectors. The following are equivalent ways of describing a vector: <m>\mathbf{v}=\overrightarrow{PQ}=\langle x_2-x_1,y_2-y_1\rangle=\langle v_x,v_y\rangle</m></caption>
+          <image xml:id="fig-vector-components">
+            <latex-image>
+              \begin{tikzpicture}
+              \draw[stealth-stealth] (-1,0)--(15,0) node[right]{\(x\)};
+              \draw[stealth-stealth] (0,-1)--(0,10) node[above]{\(y\)};
+              \draw[line width=2pt,blue,-stealth](1,3) -- (11,9) node[black,midway,above]{\(\mathbf{v}\)};
+              \node[above] at (1,3) {\(P\)};
+              \node[above] at (11,9) {\(Q\)};
+              \draw[dashed] (1,3)--(1,0) node[below]{\(x_1\)};
+              \draw[dashed] (11,9)--(11,0) node[below]{\(x_2\)};
+              \draw[dashed] (11,3)--(0,3) node[left]{\(y_1\)};
+              \draw[dashed] (11,9)--(0,9) node[left]{\(y_2\)};
+              \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](1,3) -- (11,3) node[black,midway,yshift=-0.6cm] { \(v_x=x_2-x_1\)};
+              \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=0.4pt](11,3) -- (11,9) node[black,midway,xshift=1.25cm] { \(v_y=y_2-y_1\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </figure>
+      </statement>
+    </definition>
     <remark>
       <title>Notation</title>
       <p>
@@ -259,87 +264,76 @@
         <p>
           If <m>\mathbf{u}=\langle u_x,u_y\rangle</m>, <m>\mathbf{v}=\langle v_x,v_y\rangle</m>, and <m>c</m> is a scalar, then
           <md>
-            <mrow>\mathbf{u}+\mathbf{v}\amp =\amp \langle u_x+v_x,u_y+v_y\rangle</mrow>
-            <mrow>\mathbf{u}-\mathbf{v}\amp =\amp \langle u_x-v_x,u_y-v_y\rangle</mrow>
+            <mrow>\mathbf{u}+\mathbf{v}\amp = \langle u_x+v_x,u_y+v_y\rangle</mrow>
+            <mrow>\mathbf{u}-\mathbf{v}\amp = \langle u_x-v_x,u_y-v_y\rangle</mrow>
             <mrow>c\mathbf{u}\amp =\amp \langle cu_x,cu_y\rangle</mrow>
           </md>
         </p>
       </statement>
     </definition>
     <example>
-      <statement>
+      <introduction>
         <p>
           Let <m>\mathbf{u}=\langle 5, 1\rangle</m> and <m>\mathbf{v}=\langle 4, 6\rangle</m>. Compute the following:
-          <ol>
-            <li>
-              <p>
-                <m>\mathbf{u}+\mathbf{v}</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>\mathbf{u}-\mathbf{v}</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>3\mathbf{u}</m>
-              </p>
-            </li>
-          </ol>
         </p>
-      </statement>
-      <solution>
-        <p>
-          <ol>
-            <li>
-              <p>
-                <m>\mathbf{u}+\mathbf{v}=\langle 5, 1\rangle+\langle 4, 6\rangle=\langle 5+4,1+6\rangle=\langle 9,7\rangle</m>
-                <figure xml:id="fig_algebraic-operations-vectors-u_v">
-                  <caption><m>\mathbf{u}+\mathbf{v}</m></caption>
-                  <image xml:id="fig-algebraic-operations-vectors-u_v">
-                    <latex-image>
-                      \begin{tikzpicture}
-                      \draw[thin,gray!40] (-2,-2) grid (13,11); \draw[line width=2pt,blue,-stealth](1,1) -- (6,2) node[black,sloped,midway,above]{\(\mathbf{u}\)}; \draw[line width=2pt,blue,-stealth](6,2)--(10,8) node[black,sloped,midway,above]{\(\mathbf{v}\)}; \draw[line width=2pt,blue,-stealth](1,1)--(10,8) node[black,sloped,midway,above]{\(\mathbf{u}+\mathbf{v}\)}; \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](1,0) -- (6,0) node[black,midway,yshift=-0.6cm] { \(5\)}; \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](6,0) -- (10,0) node[black,midway,yshift=-0.6cm] { \(4\)}; \draw [decorate,decoration={brace,amplitude=10pt},xshift=0.4pt,yshift=-2cm](1,11) -- (10,11) node[black,midway,yshift=0.6cm] { \(9\)}; \draw [decorate,decoration={brace,amplitude=10pt},xshift=-0.4pt,yshift=0.4pt](0,1) -- (0,8) node[black,midway,xshift=-0.6cm] { \(7\)}; \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=-0.4pt,yshift=0.4pt](11,1) -- (11,2) node[black,midway,xshift=0.6cm] { \(1\)}; \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=-0.4pt,yshift=0.4pt](11,2) -- (11,8) node[black,midway,xshift=0.6cm] { \(6\)}; \draw[dashed] (1,0)--(1,1); \draw[dashed] (6,0)--(6,2); \draw[dashed] (10,0)--(10,8); \draw[dashed] (10,8)--(11,8); \draw[dashed] (1,1)--(11,1); \draw[dashed] (6,2)--(11,2); \draw[dashed] (0,1)--(1,1); \draw[dashed] (0,8)--(10,8); \draw[dashed] (1,1)--(1,9); \draw[dashed] (10,8)--(10,9);
-                      \end{tikzpicture}
-                    </latex-image>
-                  </image>
-                </figure>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>\mathbf{u}-\mathbf{v}=\langle 5, 1\rangle-\langle 4, 6\rangle=\langle 5-4,1-6\rangle=\langle 1,-5\rangle</m>
-                <figure xml:id="fig_algebraic-operations-vectors-u-v">
-                  <caption><m>\mathbf{u}-\mathbf{v}</m></caption>
-                  <image xml:id="fig-algebraic-operations-vectors-u-v">
-                    <latex-image>
-                      \begin{tikzpicture}
-                      \draw[thin,gray!40] (-2,-7) grid (9,5); \draw[line width=2pt,blue,-stealth](1,1) -- (6,2) node[black,sloped,midway,below]{\(\mathbf{u}\)}; \draw[line width=2pt,blue,-stealth](6,2)--(2,-4) node[black,sloped,midway,above]{\(\mathbf{v}\)}; \draw[line width=2pt,blue,-stealth](1,1)--(2,-4) node[black,sloped,midway,above]{\(\mathbf{u}-\mathbf{v}\)}; \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](1,-5) -- (2,-5) node[black,midway,yshift=-0.6cm] { \(1\)}; \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](2,-5) -- (6,-5) node[black,midway,yshift=-0.6cm] { \(4\)}; \draw [decorate,decoration={brace,amplitude=10pt},xshift=0.4pt,yshift=-2cm](1,5) -- (6,5) node[black,midway,yshift=0.6cm] { \(5\)}; \draw [decorate,decoration={brace,amplitude=10pt},xshift=-0.4pt,yshift=0.4pt](0,-4) -- (0,1) node[black,midway,xshift=-0.6cm] { \(5\)}; \draw [decorate,decoration={brace,amplitude=10pt},xshift=-0.4pt,yshift=0.4pt](0,1) -- (0,2) node[black,midway,xshift=-0.6cm] { \(1\)}; \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=-0.4pt,yshift=0.4pt](7,-4) -- (7,2) node[black,midway,xshift=0.6cm] { \(6\)}; \draw[dashed] (0,1)--(1,1); \draw[dashed] (0,2)--(6,2); \draw[dashed] (1,1)--(1,3); \draw[dashed] (6,2)--(6,3); \draw[dashed] (6,2)--(7,2); \draw[dashed] (6,2)--(6,-5); \draw[dashed] (2,-4)--(7,-4); \draw[dashed] (2,-4)--(2,-5); \draw[dashed] (2,-4)--(0,-4); \draw[dashed] (1,1)--(1,-5);
-                      \end{tikzpicture}
-                    </latex-image>
-                  </image>
-                </figure>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>3\mathbf{u}=3\langle 5,1\rangle=\langle 3\cdot5,3\cdot1\rangle=\langle 15,3\rangle</m>
-                <figure xml:id="fig_algebraic-operations-vectors-3u">
-                  <caption><m>3\mathbf{u}</m></caption>
-                  <image xml:id="fig-algebraic-operations-vectors-3u">
-                    <latex-image>
-                      \begin{tikzpicture}
-                      \draw[thin,gray!40] (-5,-7) grid (14,3); \draw[line width=2pt,blue,-stealth](1,1) -- (6,2) node[black,sloped,midway,above]{\(\mathbf{u}\)}; \draw[line width=2pt,blue,-stealth](-4,-4)--(11,-1) node[black,sloped,midway,below]{\(\mathbf{3u}\)}; \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](1,0) -- (6,0) node[black,midway,yshift=-0.6cm] { \(5\)}; \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](-4,-5) -- (11,-5) node[black,midway,yshift=-0.6cm] { \(15\)}; \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=-0.4pt,yshift=0.4pt](12,-4) -- (12,-1) node[black,midway,xshift=0.6cm] { \(3\)}; \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=-0.4pt,yshift=0.4pt](7,1) -- (7,2) node[black,midway,xshift=0.6cm] { \(1\)}; \draw[dashed] (1,0)--(1,1); \draw[dashed] (6,0)--(6,2); \draw[dashed] (1,1)--(7,1); \draw[dashed] (6,2)--(7,2); \draw[dashed] (-4,-4)--(-4,-5); \draw[dashed] (-4,-4)--(12,-4); \draw[dashed] (11,-1)--(12,-1); \draw[dashed] (11,-5)--(11,-1);
-                      \end{tikzpicture}
-                    </latex-image>
-                  </image>
-                </figure>
-              </p>
-            </li>
-          </ol>
-        </p>
-      </solution>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>\mathbf{u}+\mathbf{v}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\mathbf{u}+\mathbf{v}=\langle 5, 1\rangle+\langle 4, 6\rangle=\langle 5+4,1+6\rangle=\langle 9,7\rangle</m>
+          </p>
+          <image xml:id="fig-algebraic-operations-vectors-u_v">
+            <latex-image>
+              \begin{tikzpicture}
+              \draw[thin,gray!40] (-2,-2) grid (13,11); \draw[line width=2pt,blue,-stealth](1,1) -- (6,2) node[black,sloped,midway,above]{\(\mathbf{u}\)}; \draw[line width=2pt,blue,-stealth](6,2)--(10,8) node[black,sloped,midway,above]{\(\mathbf{v}\)}; \draw[line width=2pt,blue,-stealth](1,1)--(10,8) node[black,sloped,midway,above]{\(\mathbf{u}+\mathbf{v}\)}; \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](1,0) -- (6,0) node[black,midway,yshift=-0.6cm] { \(5\)}; \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](6,0) -- (10,0) node[black,midway,yshift=-0.6cm] { \(4\)}; \draw [decorate,decoration={brace,amplitude=10pt},xshift=0.4pt,yshift=-2cm](1,11) -- (10,11) node[black,midway,yshift=0.6cm] { \(9\)}; \draw [decorate,decoration={brace,amplitude=10pt},xshift=-0.4pt,yshift=0.4pt](0,1) -- (0,8) node[black,midway,xshift=-0.6cm] { \(7\)}; \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=-0.4pt,yshift=0.4pt](11,1) -- (11,2) node[black,midway,xshift=0.6cm] { \(1\)}; \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=-0.4pt,yshift=0.4pt](11,2) -- (11,8) node[black,midway,xshift=0.6cm] { \(6\)}; \draw[dashed] (1,0)--(1,1); \draw[dashed] (6,0)--(6,2); \draw[dashed] (10,0)--(10,8); \draw[dashed] (10,8)--(11,8); \draw[dashed] (1,1)--(11,1); \draw[dashed] (6,2)--(11,2); \draw[dashed] (0,1)--(1,1); \draw[dashed] (0,8)--(10,8); \draw[dashed] (1,1)--(1,9); \draw[dashed] (10,8)--(10,9);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\mathbf{u}-\mathbf{v}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\mathbf{u}-\mathbf{v}=\langle 5, 1\rangle-\langle 4, 6\rangle=\langle 5-4,1-6\rangle=\langle 1,-5\rangle</m>
+          </p>
+          <image xml:id="fig-algebraic-operations-vectors-u-v">
+            <latex-image>
+              \begin{tikzpicture}
+              \draw[thin,gray!40] (-2,-7) grid (9,5); \draw[line width=2pt,blue,-stealth](1,1) -- (6,2) node[black,sloped,midway,below]{\(\mathbf{u}\)}; \draw[line width=2pt,blue,-stealth](6,2)--(2,-4) node[black,sloped,midway,above]{\(\mathbf{v}\)}; \draw[line width=2pt,blue,-stealth](1,1)--(2,-4) node[black,sloped,midway,above]{\(\mathbf{u}-\mathbf{v}\)}; \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](1,-5) -- (2,-5) node[black,midway,yshift=-0.6cm] { \(1\)}; \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](2,-5) -- (6,-5) node[black,midway,yshift=-0.6cm] { \(4\)}; \draw [decorate,decoration={brace,amplitude=10pt},xshift=0.4pt,yshift=-2cm](1,5) -- (6,5) node[black,midway,yshift=0.6cm] { \(5\)}; \draw [decorate,decoration={brace,amplitude=10pt},xshift=-0.4pt,yshift=0.4pt](0,-4) -- (0,1) node[black,midway,xshift=-0.6cm] { \(5\)}; \draw [decorate,decoration={brace,amplitude=10pt},xshift=-0.4pt,yshift=0.4pt](0,1) -- (0,2) node[black,midway,xshift=-0.6cm] { \(1\)}; \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=-0.4pt,yshift=0.4pt](7,-4) -- (7,2) node[black,midway,xshift=0.6cm] { \(6\)}; \draw[dashed] (0,1)--(1,1); \draw[dashed] (0,2)--(6,2); \draw[dashed] (1,1)--(1,3); \draw[dashed] (6,2)--(6,3); \draw[dashed] (6,2)--(7,2); \draw[dashed] (6,2)--(6,-5); \draw[dashed] (2,-4)--(7,-4); \draw[dashed] (2,-4)--(2,-5); \draw[dashed] (2,-4)--(0,-4); \draw[dashed] (1,1)--(1,-5);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>3\mathbf{u}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>3\mathbf{u}=3\langle 5,1\rangle=\langle 3\cdot5,3\cdot1\rangle=\langle 15,3\rangle</m>
+          </p>
+          <image xml:id="fig-algebraic-operations-vectors-3u">
+            <latex-image>
+              \begin{tikzpicture}
+              \draw[thin,gray!40] (-5,-7) grid (14,3); \draw[line width=2pt,blue,-stealth](1,1) -- (6,2) node[black,sloped,midway,above]{\(\mathbf{u}\)}; \draw[line width=2pt,blue,-stealth](-4,-4)--(11,-1) node[black,sloped,midway,below]{\(\mathbf{3u}\)}; \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](1,0) -- (6,0) node[black,midway,yshift=-0.6cm] { \(5\)}; \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](-4,-5) -- (11,-5) node[black,midway,yshift=-0.6cm] { \(15\)}; \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=-0.4pt,yshift=0.4pt](12,-4) -- (12,-1) node[black,midway,xshift=0.6cm] { \(3\)}; \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=-0.4pt,yshift=0.4pt](7,1) -- (7,2) node[black,midway,xshift=0.6cm] { \(1\)}; \draw[dashed] (1,0)--(1,1); \draw[dashed] (6,0)--(6,2); \draw[dashed] (1,1)--(7,1); \draw[dashed] (6,2)--(7,2); \draw[dashed] (-4,-4)--(-4,-5); \draw[dashed] (-4,-4)--(12,-4); \draw[dashed] (11,-1)--(12,-1); \draw[dashed] (11,-5)--(11,-1);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </solution>
+      </task>
     </example>
   </subsection>
   <subsection>
@@ -352,7 +346,7 @@
         </p>
         <p>
           <em>Vector Addition</em>
-          <ol>
+          <ul>
             <li>
               <p>
                 <m>\mathbf{u}+\mathbf{v}=\mathbf{v}+\mathbf{u}</m>
@@ -373,21 +367,21 @@
                 <m>\mathbf{u}+(-\mathbf{u})=\mathbf{0}</m>
               </p>
             </li>
-          </ol>
+          </ul>
         </p>
         <p>
           <em>Length of a Vector</em>
-          <ol>
+          <ul>
             <li>
               <p>
                 <m>\|c\mathbf{u}\|=|c|\|\mathbf{u}\|</m>
               </p>
             </li>
-          </ol>
+          </ul>
         </p>
         <p>
           <em>Scalar Multiplication</em>
-          <ol>
+          <ul>
             <li>
               <p>
                 <m>c(\mathbf{u}+\mathbf{v})=c\mathbf{u}+c\mathbf{v}</m>
@@ -418,7 +412,7 @@
                 <m>c\mathbf{0}=\mathbf{0}</m>
               </p>
             </li>
-          </ol>
+          </ul>
         </p>
       </statement>
     </definition>
@@ -438,12 +432,20 @@
   <subsection xml:id="subsec-finding-unit-vector">
     <title>Finding a Unit Vector</title>
     <p>
-      Sometimes it is useful to look at problems involving vectors in terms of a vector in the same direction, but with a magnitude of one. Recall that a unit vector <m>\mathbf{u}</m> is a vector whose length is one, <m>\|\mathbf{u}\|=1</m>. To find a unit vector in the same direction, you will need to divide that vector by its length or magnitude. \begin{mybox} Let <m>\mathbf{v}</m> be any vector. The vector
-      <me>
-        \mathbf{u}=\frac{\mathbf{v}}{\|\mathbf{v}\|}
-      </me>
-      is a unit vector that has the same direction as <m>\mathbf{v}</m>. \end{mybox}
+      Sometimes it is useful to look at problems involving vectors in terms of a vector in the same direction, but with a magnitude of one. Recall that a unit vector <m>\mathbf{u}</m> is a vector whose length is one, <m>\|\mathbf{u}\|=1</m>. To find a unit vector in the same direction, you will need to divide that vector by its length or magnitude.
     </p>
+    <definition xml:id="def-unit-vector-same-direction">
+      <title>Unit Vector That Has the Same Direction as <m>\mathbf{v}</m></title>
+      <statement>
+        <p>
+          Let <m>\mathbf{v}</m> be any vector. The vector
+          <me>
+            \mathbf{u}=\frac{\mathbf{v}}{\|\mathbf{v}\|}
+          </me>
+          is a <term>unit vector</term><idx><h>unit vector</h><h>same direction as <m>\mathbf{v}</m></h></idx> that has the same direction as <m>\mathbf{v}</m>.
+        </p>
+      </statement>
+    </definition>
     <example>
       <statement>
         <p>
@@ -516,37 +518,39 @@
       </statement>
     </definition>
     <p>
-      We now have all the information needed to write a vector. \begin{mybox} Using Right Triangle Trigonometry we can solve for the horizontal and vertical components, <m>v_x</m> and <m>v_y</m>, respectively
-      <me>
-        a=\|\mathbf{v}\|\cos\theta, b=\|\mathbf{v}\|\sin\theta
-      </me>
+      We now have all the information needed to write a vector.
     </p>
-    <p>
-      This allows us to express <m>\mathbf{v}</m> as
-      <me>
-        \mathbf{v}=\|\mathbf{v}\|\cos\theta\mathbf{i}+\|\mathbf{v}\|\sin\theta\mathbf{j}=\langle\|\mathbf{v}\|\cos\theta,\|\mathbf{v}\|\sin\theta\rangle
-      </me>
-    </p>
-    <p>
-      \end{mybox}
-    </p>
-    <figure xml:id="fig_vector-components-angle">
-      <caption>The horizontal and vertical components of a vector</caption>
-      <image xml:id="fig-vector-components-angle">
-        <latex-image>
-          \begin{tikzpicture}
-          \draw[stealth-stealth] (-1,0)--(13,0) node[right]{\(x\)};
-          \draw[stealth-stealth] (0,-1)--(0,7) node[above]{\(y\)};
-          \draw[line width=2pt,blue,-stealth](0,0) -- (10,6) node[black,midway,above]{\(\mathbf{v}\)};
-          \draw (0,0) -- (0:0.8cm) arc (0:atan2(6,10):0.8cm) node at (15:1.3cm) {\(\theta\)} -- cycle;
-          \draw[dashed] (10,6)--(10,0);
-          \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](0,0) -- (10,0) node[black,midway,yshift=-0.6cm] { \(a=\|\mathbf{v}\|\cos\theta\)};
-          \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=0.4pt](10,0) -- (10,6) node[black,midway,xshift=1.35cm] { \(b=\|\mathbf{v}\|\sin\theta\)};
-          \draw (9.1,0) -- (9.1,0.9) -- (10,0.9);
-          \end{tikzpicture}
-        </latex-image>
-      </image>
-    </figure>
+    <definition xml:id="def-horizontal-vertical-components">
+      <title>********horizontal-vertical-components*********</title>
+      <statement>
+        <p>
+          Using Right Triangle Trigonometry we can solve for the horizontal and vertical components, <m>v_x</m> and <m>v_y</m>, respectively
+          <me>
+            a=\|\mathbf{v}\|\cos\theta, b=\|\mathbf{v}\|\sin\theta
+          </me>
+        </p>
+        <p>
+          This allows us to express <m>\mathbf{v}</m> as
+          <me>
+            \mathbf{v}=\|\mathbf{v}\|\cos\theta\mathbf{i}+\|\mathbf{v}\|\sin\theta\mathbf{j}=\langle\|\mathbf{v}\|\cos\theta,\|\mathbf{v}\|\sin\theta\rangle
+          </me>
+        </p>
+        <image xml:id="fig-vector-components-angle">
+          <latex-image>
+            \begin{tikzpicture}
+            \draw[stealth-stealth] (-1,0)--(13,0) node[right]{\(x\)};
+            \draw[stealth-stealth] (0,-1)--(0,7) node[above]{\(y\)};
+            \draw[line width=2pt,blue,-stealth](0,0) -- (10,6) node[black,midway,above]{\(\mathbf{v}\)};
+            \draw (0,0) -- (0:0.8cm) arc (0:atan2(6,10):0.8cm) node at (15:1.3cm) {\(\theta\)} -- cycle;
+            \draw[dashed] (10,6)--(10,0);
+            \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](0,0) -- (10,0) node[black,midway,yshift=-0.6cm] { \(a=\|\mathbf{v}\|\cos\theta\)};
+            \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=0.4pt](10,0) -- (10,6) node[black,midway,xshift=1.35cm] { \(b=\|\mathbf{v}\|\sin\theta\)};
+            \draw (9.1,0) -- (9.1,0.9) -- (10,0.9);
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </statement>
+    </definition>
   </subsection>
   <subsection xml:id="subsec-velocity">
     <title>Velocity</title>
@@ -605,20 +609,18 @@
           the speed of the waʻa is <m>\frac{1}{3}\cdot15=5</m> knots.
           However, if Hikianalia is sailing directly into a current of 2 knots, Hikianalia's actual speed will be slowed down to 3 knots.
         </p>
-        <figure>
-          <image xml:id="fig-vector-speed-1D">
-            <latex-image>
-              \begin{tikzpicture}
-              \draw[line width=2pt,blue,-stealth](0,3) -- (5,3) node[black,midway,above]{5 knots};
-              \draw[line width=2pt,blue,-stealth](5,1.5) -- (3,1.5) node[black,midway,above]{2 knots};
-              \draw[line width=2pt,blue,-stealth](0,0) -- (3,0) node[black,midway,above]{3 knots};
-              \node[right] at (6,3) {Speed of Hikianalia};
-              \node[right] at (6,1.5) {Speed of Current};
-              \node[right] at (6,0) {Actual speed of Hikianalia};
-              \end{tikzpicture}
-            </latex-image>
-          </image>
-        </figure>
+        <image xml:id="fig-vector-speed-1D">
+          <latex-image>
+            \begin{tikzpicture}
+            \draw[line width=2pt,blue,-stealth](0,3) -- (5,3) node[black,midway,above]{5 knots};
+            \draw[line width=2pt,blue,-stealth](5,1.5) -- (3,1.5) node[black,midway,above]{2 knots};
+            \draw[line width=2pt,blue,-stealth](0,0) -- (3,0) node[black,midway,above]{3 knots};
+            \node[right] at (6,3) {Speed of Hikianalia};
+            \node[right] at (6,1.5) {Speed of Current};
+            \node[right] at (6,0) {Actual speed of Hikianalia};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
       </statement>
     </example>
     <example xml:id="examp-leeway">
@@ -647,6 +649,12 @@
         </p>
       </statement>
     </example>
+  </subsection>
+  <subsection xml:id="subsec-vectors-force">
+    <title>vectors-force</title>
+    <p>
+      *****Add a section on force******
+    </p>
   </subsection>
   <exercises xml:id="exercises-vectors">
     <exercise>
