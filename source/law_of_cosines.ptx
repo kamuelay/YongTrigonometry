@@ -309,12 +309,12 @@
       <exercise>
         <statement>
           <p>
-            <m>a = 15</m>, <m>c = 20</m>, <m>B = 60^{\circ}</m>.
+            <m>a = 15</m>, <m>b = 20</m>, <m>C = 60^{\circ}</m>.
           </p>
         </statement>
         <answer>
           <p>
-            <m>b\approx25.3</m>, <m>A\approx45.5^{\circ}</m>, <m>C\approx79.5^{\circ}</m>
+            <m>c\approx25.3</m>, <m>A\approx45.5^{\circ}</m>, <m>B\approx79.5^{\circ}</m>
           </p>
         </answer>
       </exercise>
