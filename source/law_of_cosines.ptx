@@ -320,11 +320,6 @@
         </p>
       </introduction>
       <exercise>
-        <p>
-          These answers need to be checked.
-        </p>
-      </exercise>
-      <exercise>
         <statement>
           <p>
             <m>a = 15</m>, <m>b = 20</m>, <m>C = 60^{\circ}</m>.
@@ -344,7 +339,7 @@
         </statement>
         <answer>
           <p>
-            <m>c\approx10.58</m>, <m>A\approx40.9^{\circ}</m>, <m>B\approx79.1^{\circ}</m>
+            <m>a\approx10.58</m>, <m>B\approx40.9^{\circ}</m>, <m>C\approx79.1^{\circ}</m>
           </p>
         </answer>
       </exercise>
@@ -368,7 +363,7 @@
         </statement>
         <answer>
           <p>
-            <m>c\approx41.00</m>, <m>A\approx42.0^{\circ}</m>, <m>B\approx63.0^{\circ}</m>
+            <m>c\approx13.00</m>, <m>A\approx42.0^{\circ}</m>, <m>B\approx63.0^{\circ}</m>
           </p>
         </answer>
       </exercise>
@@ -387,12 +382,12 @@
       <exercise>
         <statement>
           <p>
-            <m>a = 15</m>, <m>c = 20</m>, <m>B = 60^{\circ}</m>.
+            <m>a = 15</m>, <m>c = 20</m>, <m>B = 55^{\circ}</m>.
           </p>
         </statement>
         <answer>
           <p>
-            <m>b\approx18.03</m>, <m>A\approx46.1^{\circ}</m>, <m>C\approx73.9^{\circ}</m>
+            <m>b\approx16.76</m>, <m>A\approx47.2^{\circ}</m>, <m>C\approx77.8^{\circ}</m>
           </p>
         </answer>
       </exercise>
