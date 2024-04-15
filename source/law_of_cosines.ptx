@@ -281,6 +281,278 @@
     </example>
   </subsection>
   <exercises xml:id="exercises-law-of-cosines">
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          Solve the triangle given figure
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+        <answer>
+          <p>
+            
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          Use the Law of Coines to solve each triangle. Express angless in degrees, rounded to one decimal and sides rounded to two decimals.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>a = 15</m>, <m>c = 20</m>, <m>B = 60^{\circ}</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>b\approx25.3</m>, <m>A\approx45.5^{\circ}</m>, <m>C\approx79.5^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>b = 8</m>, <m>c = 12</m>, <m>A = 60^{\circ}</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>a\approx6.9</m>, <m>B\approx48.8^{\circ}</m>, <m>C\approx71.2^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>a = 5</m>, <m>c = 13</m>, <m>B = 30^{\circ}</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>b\approx11.8</m>, <m>A\approx49.0^{\circ}</m>, <m>C\approx101.0^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>a = 9</m>, <m>b = 12</m>, <m>C = 75^{\circ}</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>c\approx21.3</m>, <m>A\approx29.0^{\circ}</m>, <m>B\approx75.0^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>b = 7</m>, <m>c = 10</m>, <m>A = 45^{\circ}</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>a\approx6.5</m>, <m>B\approx43.3^{\circ}</m>, <m>C\approx91.7^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>a = 15</m>, <m>c = 20</m>, <m>B = 60^{\circ}</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>b\approx17.3</m>, <m>A\approx41.5^{\circ}</m>, <m>C\approx78.5^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>a = 5</m>, <m>b = 8</m>, <m>c = 9</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>A\approx33.6^{\circ}</m>, <m>B\approx57.1^{\circ}</m>, <m>C\approx89.3^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>a = 7</m>, <m>b = 24</m>, <m>c = 25</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>A\approx20.6^{\circ}</m>, <m>B\approx69.4^{\circ}</m>, <m>C\approx90^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>a = 12</m>, <m>b = 16</m>, <m>c = 20</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>A\approx36.9^{\circ}</m>, <m>B\approx53.1^{\circ}</m>, <m>C\approx90^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>a = 15</m>, <m>b = 20</m>, <m>c = 25</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>A\approx36.9^{\circ}</m>, <m>B\approx53.1^{\circ}</m>, <m>C\approx90^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>a = 3</m>, <m>b = 4</m>, <m>c = 5</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>A\approx37^{\circ}</m>, <m>B\approx53^{\circ}</m>, <m>C\approx90^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>a = 9</m>, <m>b = 10</m>, <m>c = 17</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>A\approx39.1^{\circ}</m>, <m>B\approx52.9^{\circ}</m>, <m>C\approx88^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          Use Heron's Formula to find the semiperimeter and area of each triangle. Round your answer to the nearest tenth        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>a = 5</m>, <m>b = 6</m>, <m>c = 7</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>s=9</m>; <m>K=14.7</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>a = 9</m>, <m>b = 12</m>, <m>c = 15</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>s=18</m>; <m>K=54</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>a = 8</m>, <m>b = 10</m>, <m>c = 12</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>s=15</m>; <m>K=39.7</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>a = 7</m>, <m>b = 9</m>, <m>c = 13</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>s=14.5</m>; <m>K=30</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>a = 15</m>, <m>b = 20</m>, <m>c = 25</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>s=30</m>; <m>K=150</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>a = 12</m>, <m>b = 16</m>, <m>c = 20</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>s=24</m>; <m>K=96</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>a = 8</m>, <m>b = 15</m>, <m>c = 17</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>s=20</m>; <m>K=60</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>a = 9</m>, <m>b = 40</m>, <m>c = 41</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>s=45</m>; <m>K=180</m>
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
     <exercise>
       <statement>
         <p>
