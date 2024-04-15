@@ -146,7 +146,7 @@
     <p>
       The <term>Law of Sines</term> states that for any triangle, the ratios of the lengths of the sides to the sine of their corresponding opposite angles are equal. When provided with certain information about the sides and angles of a triangle, this fundamental principle becomes a valuable tool for determining the remaining sides and angles.
     </p>
-    <theorem xml:xid="thm-law-of-sines">
+    <theorem xml:id="thm-law-of-sines">
       <title>Law of Sines</title><idx><h>law of sines</h></idx>
       <statement>
         <p>
@@ -650,7 +650,7 @@
       </statement>
       <solution>
         <p>
-          The altitude of the triangle is <m>h=b\sin C=6\sin70^{\circ}\approx5.64</m>. Since <m>C</m> is an acute angle and the altitude (<m>h\approx5.64</m>) is greater than the side opposite of the angle (<m>c=5)</m>, then by <xref ref="tab_SSA">Table</xref>, there is no triangle.
+          The altitude of the triangle is <m>h=b\sin C=6\sin70^{\circ}\approx5.64</m>. Since <m>C</m> is an acute angle and the altitude (<m>h\approx5.64</m>) is greater than the side opposite of the angle (<m>c=5)</m>, then we have Case 1 of <xref ref="tab_SSA">Table</xref>, thus is no triangle.
         </p>
         <image xml:id="fig-example-ssa-no-solution" width="50%">
           <latex-image>
@@ -680,7 +680,7 @@
       </statement>
       <solution>
         <p>
-          The altitude of the triangle is <m>h=b\sin A=7\sin40^{\circ}\approx4.50</m>. Since <m>A</m> is an acute angle and the altitude (<m>h\approx4.50</m>) is less than the opposite side (<m>a=6</m>) which is less than the adjacent side (<m>b=7)</m>, then by <xref ref="tab_SSA">Table</xref>, there are two triangles.
+          The altitude of the triangle is <m>h=b\sin A=7\sin40^{\circ}\approx4.50</m>. Since <m>A</m> is an acute angle and the altitude (<m>h\approx4.50</m>) is less than the opposite side (<m>a=6</m>) which is less than the adjacent side (<m>b=7)</m>. This satisfies Case 3 of <xref ref="tab_SSA">Table</xref>, thus there are two triangles.
         </p>
         <image xml:id="fig-example-ssa-2-triangles">
           <latex-image>
@@ -825,53 +825,53 @@
         <p>
           In other words, the area of a triangle equals one half of the product of two sides and the sine of their included angle.
         </p>
+        <sidebyside>
+          <image xml:id="fig-area-triangle-1">
+            <latex-image>
+              \begin{tikzpicture}
+              \draw[blue,line width=1] (0,0) -- (0,3) node[midway,right] {\(a=h\)};
+              \draw[blue,line width=1] (0,0) -- (5,0) node[midway,below,yshift=-2] {\(b\)};
+              \draw[blue,line width=1] (0,3) -- (5,0) node[midway,right,yshift=4] {\(c\)};
+              \filldraw[black] (5,0) circle (2pt) node[below,yshift=-2] at (5,0) {\(A\)};
+              \filldraw[black] (0,0) circle (2pt) node[below,yshift=-2] {\(C\)};
+              \filldraw[black] (0,3) circle (2pt) node[above right] {\(B\)};
+              \draw (0,0.3) -- (0.3,0.3) -- (0.3,0);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+          <image xml:id="fig-area-triangle-2">
+            <latex-image>
+              \begin{tikzpicture}
+              \draw[blue,line width=1] (0,0) -- (1.5,3) node[midway,left,yshift=2] {\(a\)};
+              \draw[blue,line width=1] (0,0) -- (5,0) node[midway,below,yshift=-2] {\(b\)};
+              \draw[blue,line width=1] (1.5,3) -- (5,0) node[midway,above,xshift=4] {\(c\)};
+              \filldraw[black] (5,0) circle (2pt) node[below,yshift=-2] at (5,0) {\(A\)};
+              \filldraw[black] (0,0) circle (2pt) node[below,yshift=-2] {\(C\)};
+              \filldraw[black] (1.5,3) circle (2pt) node[above right] {\(B\)};
+              \draw[blue] (0.5,0) arc (0:63.4349488229:0.5);
+              \draw[dashed] (1.5,0) -- (1.5,3) node[midway,right] {\(h\)};
+              \draw (1.2,0) -- (1.2,0.3) -- (1.5,0.3);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+          <image  xml:id="fig-area-triangle-3">
+            <latex-image>
+              \begin{tikzpicture}
+              \draw[blue,line width=1] (5,0) -- (2.5,0) node[midway,below,yshift=-2] {\(b\)};
+              \draw[blue,line width=1] (5,0) -- (0,3) node[midway,above,xshift=3] {\(c\)};
+              \draw[blue,line width=1] (2.5,0) -- (0,3) node[midway,below,xshift=-4] {\(a\)};
+              \filldraw[black] (0,3) circle (2pt) node[above right] at (0,3) {\(B\)};
+              \filldraw[black] (5,0) circle (2pt) node[below,yshift=-2] {\(A\)};
+              \filldraw[black] (2.5,0) circle (2pt) node[below,yshift=-2] {\(C\)};
+              \draw[blue] (3,0) arc (0:129.805571092:0.5);
+              \draw[dashed] (0,0) -- (0,3) node[midway,right] {\(h\)};
+              \draw[dashed] (0,0) -- (2.5,0);
+              \draw (0.3,0) -- (0.3,0.3) -- (0,0.3);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </sidebyside>
       </statement>
-      <sidebyside>
-        <image xml:id="fig-area-triangle-1">
-          <latex-image>
-            \begin{tikzpicture}
-            \draw[blue,line width=1] (0,0) -- (0,3) node[midway,right] {\(a=h\)};
-            \draw[blue,line width=1] (0,0) -- (5,0) node[midway,below,yshift=-2] {\(b\)};
-            \draw[blue,line width=1] (0,3) -- (5,0) node[midway,right,yshift=4] {\(c\)};
-            \filldraw[black] (5,0) circle (2pt) node[below,yshift=-2] at (5,0) {\(A\)};
-            \filldraw[black] (0,0) circle (2pt) node[below,yshift=-2] {\(C\)};
-            \filldraw[black] (0,3) circle (2pt) node[above right] {\(B\)};
-            \draw (0,0.3) -- (0.3,0.3) -- (0.3,0);
-            \end{tikzpicture}
-          </latex-image>
-        </image>
-        <image xml:id="fig-area-triangle-2">
-          <latex-image>
-            \begin{tikzpicture}
-            \draw[blue,line width=1] (0,0) -- (1.5,3) node[midway,left,yshift=2] {\(a\)};
-            \draw[blue,line width=1] (0,0) -- (5,0) node[midway,below,yshift=-2] {\(b\)};
-            \draw[blue,line width=1] (1.5,3) -- (5,0) node[midway,above,xshift=4] {\(c\)};
-            \filldraw[black] (5,0) circle (2pt) node[below,yshift=-2] at (5,0) {\(A\)};
-            \filldraw[black] (0,0) circle (2pt) node[below,yshift=-2] {\(C\)};
-            \filldraw[black] (1.5,3) circle (2pt) node[above right] {\(B\)};
-            \draw[blue] (0.5,0) arc (0:63.4349488229:0.5);
-            \draw[dashed] (1.5,0) -- (1.5,3) node[midway,right] {\(h\)};
-            \draw (1.2,0) -- (1.2,0.3) -- (1.5,0.3);
-            \end{tikzpicture}
-          </latex-image>
-        </image>
-        <image  xml:id="fig-area-triangle-3">
-          <latex-image>
-            \begin{tikzpicture}
-            \draw[blue,line width=1] (5,0) -- (2.5,0) node[midway,below,yshift=-2] {\(b\)};
-            \draw[blue,line width=1] (5,0) -- (0,3) node[midway,above,xshift=3] {\(c\)};
-            \draw[blue,line width=1] (2.5,0) -- (0,3) node[midway,below,xshift=-4] {\(a\)};
-            \filldraw[black] (0,3) circle (2pt) node[above right] at (0,3) {\(B\)};
-            \filldraw[black] (5,0) circle (2pt) node[below,yshift=-2] {\(A\)};
-            \filldraw[black] (2.5,0) circle (2pt) node[below,yshift=-2] {\(C\)};
-            \draw[blue] (3,0) arc (0:129.805571092:0.5);
-            \draw[dashed] (0,0) -- (0,3) node[midway,right] {\(h\)};
-            \draw[dashed] (0,0) -- (2.5,0);
-            \draw (0.3,0) -- (0.3,0.3) -- (0,0.3);
-            \end{tikzpicture}
-          </latex-image>
-        </image>
-      </sidebyside>
     </definition>
     <proof>
       <p>
@@ -1398,19 +1398,122 @@
           </p>
         </answer>
       </exercise>
-        <exercise>
-          <statement>
-            <p>
-              <m>b=7</m>, <m>c=4</m>, <m>B=35^{\circ}</m>
-            </p>
-          </statement>
-          <answer>
-            <p>
-              Case 4, one triangle; <m>a\approx9.89</m>, <m>A\approx125.9^{\circ}</m>, <m>C\approx19.1^{\circ}</m>
-            </p>
-          </answer>
-        </exercise>
-      </exercisegroup>
+      <exercise>
+        <statement>
+          <p>
+            <m>b=7</m>, <m>c=4</m>, <m>B=35^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Case 4, one triangle; <m>a\approx9.89</m>, <m>A\approx125.9^{\circ}</m>, <m>C\approx19.1^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          Find the area of each triangle. Round your answer to the nearest tenth.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>a = 8</m>, <m>b = 12</m>, <m>C = 60^{\circ}</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>41.6</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+              <p>
+                <m>b = 10</m>, <m>c = 15</m>, <m>A = 45^{\circ}</m>.
+              </p>
+        </statement>
+        <answer>
+          <p>
+            <m>53.0</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>c = 6</m>, <m>a = 9</m>, <m>B = 30^{\circ}</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>13.5</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>a = 5</m>, <m>c = 8</m>, <m>B = 45^{\circ}</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>14.1</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+              <p>
+                <m>b = 7</m>, <m>c = 10</m>, <m>A = 60^{\circ}</m>.
+              </p>
+        </statement>
+        <answer>
+          <p>
+            <m>30.3</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>a = 12</m>, <m>b = 15</m>, <m>C = 75^{\circ}</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>86.9</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>b = 6</m>, <m>c = 8</m>, <m>A = 30^{\circ}</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>12.0</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>a = 9</m>, <m>c = 12</m>, <m>B = 60^{\circ}</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>46.8</m>
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
     <exercise>
       <introduction>
         <p>
