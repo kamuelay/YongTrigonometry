@@ -172,7 +172,7 @@
       <title>Using Law of Cosines (SSS)</title>
       <statement>
         <p>
-          If the sides of a triangle are <m>a=4</m>, <m>b=6</m>,
+          If the sides of a triangle are <m>a=5</m>, <m>b=7</m>,
           and <m>c=3</m>, find the angles.
         </p>
         <image xml:id="fig-example-sss">
@@ -204,29 +204,42 @@
         <p>
           Taking the inverse cosine we get
           <me>
-            A=\cos^{-1}\left(\frac{33}{42}\right)\approx38.21^{\circ}
+            A=\cos^{-1}\left(\frac{33}{42}\right)\approx38.2^{\circ}
           </me>
         </p>
         <p>
           To find <m>B</m>, we continue with the Law of Cosines to get:
           <me>
-            \cos B=\frac{a^2+c^2-b^2}{2ac}=\frac{5^2+3^2-7^2}{2\cdot5\cdot3}=\frac{15}{30}=\frac{1}{2}
+            \cos B=\frac{a^2+c^2-b^2}{2ac}=\frac{5^2+3^2-7^2}{2\cdot5\cdot3}=-\frac{15}{30}=-\frac{1}{2}
           </me>
         </p>
         <p>
           Taking the inverse cosine we get
           <me>
-            B=\cos^{-1}\left(\frac{1}{2}\right)=120^{\circ}
+            B=\cos^{-1}\left(-\frac{1}{2}\right)=120^{\circ}
           </me>
         </p>
         <p>
           To find the last angle, <m>C</m>, we can use the fact that the angles in a triangle sum to <m>180^{\circ}</m>:
           <me>
-            C=180^{\circ}-A-B\approx180^{\circ}-38.21^{\circ}-120^{\circ}=21.79^{\circ}
+            C=180^{\circ}-A-B\approx180^{\circ}-38.2^{\circ}-120^{\circ}=21.8^{\circ}
           </me>
         </p>
       </solution>
     </example>
+    <remark>
+      <p>
+        Why we should not use Law of Sines to find B (or whatever you decide to be the second angle). The reason is we would have the ambiguous case SSA. Can use Law of Sines, just need to be careful since you wonʻt know which quadrant you should be in.
+      </p>
+    </remark>
+  </subsection>
+  <subsection xml:id="subsec-to-be-deleted">
+    <title>to-be-deleted</title><p>
+      Discuss why when solving SSS then second angle should be solved using Law of Cosines again instead of Law of Sines because of the potential for the angle being greater than 90 degrees. This is the ambiguous case.
+    </p>
+    <p>
+      Discuss why when solving SSS then second angle should be solved using Law of Cosines again instead of Law of Sines because of the potential for the angle being greater than 90 degrees. This is the ambiguous case.
+    </p>
   </subsection>
   <subsection>
     <title>Area of an oblique triangle</title>
@@ -319,7 +332,7 @@
         </statement>
         <answer>
           <p>
-            <m>c\approx25.3</m>, <m>A\approx45.5^{\circ}</m>, <m>B\approx79.5^{\circ}</m>
+            <m>c\approx18.03</m>, <m>A\approx46.1^{\circ}</m>, <m>B\approx73.9^{\circ}</m>
           </p>
         </answer>
       </exercise>
@@ -331,7 +344,7 @@
         </statement>
         <answer>
           <p>
-            <m>a\approx6.9</m>, <m>B\approx48.8^{\circ}</m>, <m>C\approx71.2^{\circ}</m>
+            <m>c\approx10.58</m>, <m>A\approx40.9^{\circ}</m>, <m>B\approx79.1^{\circ}</m>
           </p>
         </answer>
       </exercise>
@@ -343,7 +356,7 @@
         </statement>
         <answer>
           <p>
-            <m>b\approx11.8</m>, <m>A\approx49.0^{\circ}</m>, <m>C\approx101.0^{\circ}</m>
+            <m>b\approx9.02</m>, <m>A\approx16.1^{\circ}</m>, <m>C\approx133.9^{\circ}</m>
           </p>
         </answer>
       </exercise>
@@ -355,7 +368,7 @@
         </statement>
         <answer>
           <p>
-            <m>c\approx21.3</m>, <m>A\approx29.0^{\circ}</m>, <m>B\approx75.0^{\circ}</m>
+            <m>c\approx41.00</m>, <m>A\approx42.0^{\circ}</m>, <m>B\approx63.0^{\circ}</m>
           </p>
         </answer>
       </exercise>
@@ -367,7 +380,7 @@
         </statement>
         <answer>
           <p>
-            <m>a\approx6.5</m>, <m>B\approx43.3^{\circ}</m>, <m>C\approx91.7^{\circ}</m>
+            <m>a\approx7.07</m>, <m>B\approx44.4^{\circ}</m>, <m>C\approx90.6^{\circ}</m>
           </p>
         </answer>
       </exercise>
@@ -379,7 +392,7 @@
         </statement>
         <answer>
           <p>
-            <m>b\approx17.3</m>, <m>A\approx41.5^{\circ}</m>, <m>C\approx78.5^{\circ}</m>
+            <m>b\approx18.03</m>, <m>A\approx46.1^{\circ}</m>, <m>C\approx73.9^{\circ}</m>
           </p>
         </answer>
       </exercise>
@@ -391,55 +404,55 @@
         </statement>
         <answer>
           <p>
-            <m>A\approx33.6^{\circ}</m>, <m>B\approx57.1^{\circ}</m>, <m>C\approx89.3^{\circ}</m>
+            <m>A\approx33.6^{\circ}</m>, <m>B\approx62.2^{\circ}</m>, <m>C\approx84.3^{\circ}</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>a = 7</m>, <m>b = 24</m>, <m>c = 25</m>.
+            <m>a = 7</m>, <m>b = 21</m>, <m>c = 25</m>.
           </p>
         </statement>
         <answer>
           <p>
-            <m>A\approx20.6^{\circ}</m>, <m>B\approx69.4^{\circ}</m>, <m>C\approx90^{\circ}</m>
+            <m>A\approx14.4^{\circ}</m>, <m>B\approx48.3^{\circ}</m>, <m>C\approx117.3^{\circ}</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>a = 12</m>, <m>b = 16</m>, <m>c = 20</m>.
+            <m>a = 12</m>, <m>b = 16</m>, <m>c = 5</m>.
           </p>
         </statement>
         <answer>
           <p>
-            <m>A\approx36.9^{\circ}</m>, <m>B\approx53.1^{\circ}</m>, <m>C\approx90^{\circ}</m>
+            <m>A\approx31.1^{\circ}</m>, <m>B\approx136.5^{\circ}</m>, <m>C\approx12.4^{\circ}</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>a = 15</m>, <m>b = 20</m>, <m>c = 25</m>.
+            <m>a = 5</m>, <m>b = 2</m>, <m>c = 4</m>.
           </p>
         </statement>
         <answer>
           <p>
-            <m>A\approx36.9^{\circ}</m>, <m>B\approx53.1^{\circ}</m>, <m>C\approx90^{\circ}</m>
+            <m>A\approx108.2^{\circ}</m>, <m>B\approx22.3^{\circ}</m>, <m>C\approx49.5^{\circ}</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            <m>a = 3</m>, <m>b = 4</m>, <m>c = 5</m>.
+            <m>a = 3</m>, <m>b = 7</m>, <m>c = 6</m>.
           </p>
         </statement>
         <answer>
           <p>
-            <m>A\approx37^{\circ}</m>, <m>B\approx53^{\circ}</m>, <m>C\approx90^{\circ}</m>
+            <m>A\approx25.2^{\circ}</m>, <m>B\approx96.4^{\circ}</m>, <m>C\approx58.4^{\circ}</m>
           </p>
         </answer>
       </exercise>
@@ -451,7 +464,7 @@
         </statement>
         <answer>
           <p>
-            <m>A\approx39.1^{\circ}</m>, <m>B\approx52.9^{\circ}</m>, <m>C\approx88^{\circ}</m>
+            <m>A\approx25.1^{\circ}</m>, <m>B\approx28.1^{\circ}</m>, <m>C\approx126.9^{\circ}</m>
           </p>
         </answer>
       </exercise>
