@@ -297,18 +297,114 @@
     <exercisegroup cols="2">
       <introduction>
         <p>
-          Solve the triangle given figure
+          Use the Law of Coines to solve each triangle. Express angless in degrees, rounded to one decimal and sides rounded to two decimals.
         </p>
       </introduction>
       <exercise>
         <statement>
           <p>
-            
+            <m>b = 8</m>,  <m>c = 10</m>, <m>A = 45^{\circ}</m>.
+          </p>
+          <image xml:id="exer-law-cosines-1">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.4]
+              \draw (0,0) -- (12,0) node[midway,below] {\(a=12\)}; 
+              \draw (0,0) -- (45:10.76) node[midway,above left] {\(c\)}; 
+              \draw (45:10.76) -- (12,0) node[midway,above right] {\(b\)};
+              \node[above] at (45:10.76) {\(A\)}; 
+              \draw (1,0) arc (0:45:1) node[midway,right,xshift=2,yshift=2] {\(B=45^{\circ}\)}; 
+              \draw (11,0) arc (180:120:1) node[midway,left,xshift=-6,yshift=2] {\(C=60^{\circ}\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </statement>
+        <answer>
+          <p>
+            <m>a\approx7.13</m>, <m>B\approx52.5^{\circ}</m>, <m>C\approx82.5^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>a = 6</m>, <m>c = 9</m>, <m>B = 60^{\circ}</m>.
           </p>
         </statement>
         <answer>
           <p>
-            
+            <m>b\approx7.94</m>, <m>A\approx40.9^{\circ}</m>, <m>C\approx79.1^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>a = 12</m>, <m>c = 15</m>, <m>B = 40^{\circ}</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>b\approx9.66</m>, <m>A\approx53.0^{\circ}</m>, <m>C\approx87.0^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>a = 10</m>, <m>c = 14</m>, <m>B = 50^{\circ}</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>b\approx10.77</m>, <m>A\approx45.3^{\circ}</m>, <m>C\approx84.7^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>a = 7</m>, <m>b = 9</m>, <m>c = 12</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>A\approx35.4^{\circ}</m>, <m>B\approx48.2^{\circ}</m>, <m>C\approx96.4^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>a = 10</m>, <m>b = 13</m>, <m>c = 15</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>A\approx41.1^{\circ}</m>, <m>B\approx58.7^{\circ}</m>, <m>C\approx80.3^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>a = 14</m>, <m>b = 12</m>, <m>c = 9</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>A\approx82.3{\circ}</m>, <m>B\approx58.1^{\circ}</m>, <m>C\approx39.6^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>a = 13</m>, <m>b = 6</m>, <m>c = 10</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>A\approx106.0^{\circ}</m>, <m>B\approx26.3^{\circ}</m>, <m>C\approx47.7^{\circ}</m>
           </p>
         </answer>
       </exercise>
