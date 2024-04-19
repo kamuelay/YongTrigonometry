@@ -2015,15 +2015,16 @@
         <image xml:id="fig-spinning-earth" width="75%">
           <latex-image>
             \begin{tikzpicture}[x=3cm,y=3cm]
-        \draw (0,0) circle (1);
-        \draw[dashed] (0,-1.1) -- (0,1.1) node[right] {Earth's Axis};
-        \draw (0,0)--(-1,0) node[left] {Equator};
-        \draw[line width=2pt] (0,0) -- (1,0) node[midway,below] {\(R\)};
-        \draw[line width=2pt] (0,0) -- (30:1) node[midway,below,yshift=0.2cm,xshift=0.25cm] {\(R\)};
-        \draw[line width=2pt] (0,0.5) -- (30:1) node[midway,above] {\(r\)};
-        \draw (0:0.3) arc (0:30:0.3) node[midway, right,xshift=0.05cm] {\(\phi\)};
-        \draw ([shift=(30:1)]180:0.3) arc (180:210:0.3) node[midway, left,xshift=-0.05] {\(\phi\)};
-        \filldraw[black] (30:1) circle(1pt) node[right,xshift=4]{Port City};\end{tikzpicture}
+            \draw (0,0) circle (1);
+            \draw[dashed] (0,-1.1) -- (0,1.1) node[right] {Earth's Axis};
+            \draw (0,0)--(-1,0) node[left] {Equator};
+            \draw[line width=2pt] (0,0) -- (1,0) node[midway,below] {\(R\)};
+            \draw[line width=2pt] (0,0) -- (30:1) node[midway,below,yshift=0.2cm,xshift=0.25cm] {\(R\)};
+            \draw[line width=2pt] (0,0.5) -- (30:1) node[midway,above] {\(r\)};
+            \draw (0:0.3) arc (0:30:0.3) node[midway, right,xshift=0.05cm] {\(\phi\)};
+            \draw ([shift=(30:1)]180:0.3) arc (180:210:0.3) node[midway, left,xshift=-0.05] {\(\phi\)};
+            \filldraw[black] (30:1) circle(1pt) node[right,xshift=4]{Port City};
+            \end{tikzpicture}
           </latex-image>
         </image>
       </introduction>
