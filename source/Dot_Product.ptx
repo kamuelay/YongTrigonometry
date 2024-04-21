@@ -11,36 +11,19 @@
       Tacking
     </p>
     <p>
-      (<em>pinching</em> if you steer the wa<sq>a at too small of an angle at the upcoming wind,
-      you will point in the upwind direction but go slow,
-      <em>footing</em> if you move at a too large of an angle then you will move fast but won</sq>t make much upwind progress.
+      <term>pinching</term><idx><h>pinching</h></idx> if you steer the waʻa at too small of an angle at the upcoming wind, you will point in the upwind direction but go slow, <term>footing</term><idx><h>footing</h></idx> if you move at a too large of an angle then you will move fast but won't make much upwind progress.
     </p>
     <p>
       When drag is negligable, 
     </p>
     <p>
-      A voyage undertaken using modern wayfinding must design a course strategy,
-      which includes a reference course for reaching the vicinity of one's destination,
-      hopefully upwind,
-      so that the canoe can sail downwind to the destination rather than having to tack into the wind to get there.
-      (Tacking involves sailing back and forth as closely as possible into the wind to make progress against the wind;
-      it's very arduous and time-consuming,
-      something to be avoided if at all possible,
-      particularly at the end of a long, difficult voyage.)
+      A voyage undertaken using modern wayfinding must design a course strategy, which includes a reference course for reaching the vicinity of one's destination, hopefully upwind, so that the canoe can sail downwind to the destination rather than having to tack into the wind to get there. (Tacking involves sailing back and forth as closely as possible into the wind to make progress against the wind;it's very arduous and time-consuming, something to be avoided if at all possible, particularly at the end of a long, difficult voyage.)
     </p>
     <p>
       "<url href="\1"/> Designing a Course Strategy
     </p>
     <p>
-      <q>Before a voyage by sail begins,
-      the wayfinder designs a course strategy and reference course for reaching the destination from the departure point,
-      given the capabilities of the vessel and the winds, currents,
-      and weather conditions anticipated along the way. (See ``Winds, Weather,
-      and Currents of the Pacific.</q>
-      ) The course strategy represents the most efficient way of getting to the destination.
-      The wayfinder also chooses the best time to go
-      (when the wind and weather conditions are the most favorable),
-      taking into account the timing of the return voyage as well."
+      "Before a voyage by sail begins, the wayfinder designs a course strategy and reference course for reaching the destination from the departure point, given the capabilities of the vessel and the winds, currents, and weather conditions anticipated along the way. (See ``Winds, Weather, ) The course strategy represents the most efficient way of getting to the destination. The wayfinder also chooses the best time to go (when the wind and weather conditions are the most favorable), taking into account the timing of the return voyage as well."
     </p>
     <figure>
       <caption>Sailing upwind</caption>
@@ -133,147 +116,106 @@
   <subsection>
     <title>The Dot Product of Two Vectors</title>
     <definition>
+      <title>The Dot Product of Two Vectors</title>
       <statement>
         <p>
           If <m>\mathbf{u}=\langle u_1,u_2\rangle</m> and <m>\mathbf{v}=\langle v_1,v_2\rangle</m> are vectors,
-          then their <term>dot product</term>,
-              <idx><h>dot product</h></idx>
-          written <m>\mathbf{u}\cdot\mathbf{v}</m> is defined as
+          then their <term>dot product</term>,<idx><h>dot product</h></idx> written <m>\mathbf{u}\cdot\mathbf{v}</m>, is defined as
           <me>
             \mathbf{u}\cdot\mathbf{v}=u_1v_1+u_2v_2
           </me>
         </p>
         <p>
-          In other words,
-          we compute the dot product by multiplying the corresponding components of the two vectors and adding the results.
-          Note: The dot product is <term>not</term> a vector,
-          but instead is a real number (a scalar)
+          In other words, we compute the dot product by multiplying the corresponding components of the two vectors and adding the results.
         </p>
       </statement>
     </definition>
+    <remark>
+      <p>
+        The dot product is <em>not</em> a vector, but instead is a real number (a scalar).
+      </p>
+    </remark>
     <example>
       <title>Finding Dot Products</title>
       <statement>
         <p>
-          Here we calculate some dot products.
-          Maybe we can calculate <m>\mathbf{u}\cdot\mathbf{v}</m>,
-          <m>\mathbf{u}\cdot\mathbf{v}</m>,
-          <m>\mathbf{u}\cdot\mathbf{u}</m>, <m>\|\mathbf{u}\|</m>
+          Here we calculate some dot products. Maybe we can calculate <m>\mathbf{u}\cdot\mathbf{v}</m>, <m>\mathbf{u}\cdot\mathbf{v}</m>, <m>\mathbf{u}\cdot\mathbf{u}</m>, <m>\|\mathbf{u}\|</m>
         </p>
       </statement>
     </example>
+    <definition xml:id="def-properties-of-dot-product">
+      <title>Properties of the Dot Product</title>
+      <statement>
+        <p>
+          Let <m>\mathbf{u}</m>, <m>\mathbf{v}</m>, and <m>\mathbf{w}</m> be vectors and let <m>c</m> be a scalar (real number). Then
+          <ol>
+            <li>
+              <p>
+                <m>\mathbf{u}\cdot\mathbf{v}=\mathbf{v}\cdot\mathbf{u}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>c(\mathbf{u}\cdot\mathbf{v})=(c\mathbf{u})\cdot\mathbf{v}=\mathbf{u}\cdot(c\mathbf{v})</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>(\mathbf{u}+\mathbf{v})\cdot\mathbf{w}=\mathbf{u}\cdot\mathbf{w}+\mathbf{v}\cdot\mathbf{w}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\mathbf{u}\cdot\mathbf{u}=\|\mathbf{u}\|^2</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\mathbf{0}\cdot\mathbf{v}=0</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </definition>
     <p>
-      \begin{mybox}[Properties of the Dot Product] Let <m>\mathbf{u}</m>,
-      <m>\mathbf{v}</m>,
-      and <m>\mathbf{w}</m> be vectors and let <m>c</m> be a scalar
-      (real number).
-      Then
-      <ol>
-        <li>
-          <p>
-            <m>\mathbf{u}\cdot\mathbf{v}=\mathbf{v}\cdot\mathbf{u}</m>
-          </p>
-        </li>
-        <li>
-          <p>
-            <m>c(\mathbf{u}\cdot\mathbf{v})=(c\mathbf{u})\cdot\mathbf{v}=\mathbf{u}\cdot(c\mathbf{v})</m>
-          </p>
-        </li>
-        <li>
-          <p>
-            <m>(\mathbf{u}+\mathbf{v})\cdot\mathbf{w}=\mathbf{u}\cdot\mathbf{w}+\mathbf{v}\cdot\mathbf{w}</m>
-          </p>
-        </li>
-        <li>
-          <p>
-            <m>\mathbf{u}\cdot\mathbf{u}=\|\mathbf{u}\|^2</m>
-          </p>
-        </li>
-        <li>
-          <p>
-            <m>\mathbf{0}\cdot\mathbf{v}=0</m>
-          </p>
-        </li>
-      </ol>
-    </p>
-    <p>
-      The proof of many of these can be left as an exercise,
-      but I should probably problem one or two. \end{mybox}
+      The proof of many of these can be left as an exercise, but I should probably problem one or two.
     </p>
   </subsection>
   <subsection>
     <title>The Angle between Two Vectors</title>
-    <p>
-      \begin{mybox}[Angle Between Two Vectors] If <m>\theta</m> is the angle between two nonzero vectors
-      <m>\mathbf{u}</m> and <m>\mathbf{v}</m>, then
-      <me>
-        \cos\theta=\frac{\mathbf{u}\cdot\mathbf{v}}{\|\mathbf{u}\|\|\mathbf{v}\|}
-      </me>
-    </p>
-    <p>
-      \end{mybox}
-    </p>
-    <definition>
+    <definition xml:id="def-angle-between-vectors">
+      <title>Angle Between Two Vectors</title>
       <statement>
         <p>
-          The vectors <m>\mathbf{u}</m> and
-          <m>\mathbf{v}</m> are <term>orthogonal</term>
-              <idx><h>orthogonal</h></idx>
-          if and only if <m>\mathbf{u}\cdot\mathbf{v}=0</m>.
+          If <m>\theta</m> is the angle between two nonzero vectors <m>\mathbf{u}</m> and <m>\mathbf{v}</m>, then
+          <me>
+            \cos\theta=\frac{\mathbf{u}\cdot\mathbf{v}}{\|\mathbf{u}\|\|\mathbf{v}\|}
+          </me>
         </p>
       </statement>
     </definition>
+    <definition xml:id="def-orthogonal">
+      <title>Orthogonal</title>
+      <statement>
+        <p>
+          The vectors <m>\mathbf{u}</m> and <m>\mathbf{v}</m> are <term>orthogonal</term><idx><h>orthogonal</h></idx> if and only if <m>\mathbf{u}\cdot\mathbf{v}=0</m>.
+        </p>
+      </statement>
+    </definition>
+  </subsection>
+  <exercises xml:id="exercises-dot-product">
     <exercise>
       <statement>
-        
-<task>
-<introduction>
-  <p>
-    first question
-  </p>
-</introduction>
-<statement>
-<p>
-first question
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
-        
-<introduction>
-  <p>
-    Second question 
-  </p>
-</introduction>
-  <task>
-    <statement>
-      <p>
-         Next 
-      </p>
-    </statement>
-    <answer>
-    <p>
-      MYANSWER
-    </p>
-    </answer>
-  </task>
-  <task>
-    <statement>
-      <p>
-         another
-      </p>
-    </statement>
-    <answer>
-      <p>
-        MYANSWER
-      </p>
-    </answer>
-  </task>
+        <p>
+          
+        </p>
       </statement>
+      <answer>
+        <p>
+          
+        </p>
+      </answer>
     </exercise>
-  </subsection>
+  </exercises>
 </section>
