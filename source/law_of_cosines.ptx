@@ -131,7 +131,7 @@
       We are now ready to revisit the problem posed at the start of this section.
     </p>
     <example>
-      <title>Etak: Moving Islands</title>
+      <title>Using Law of Cosines (SAS): Etak - Moving Islands</title>
       <statement>
         <p>
           A canoe is 200 nautical miles into a journey from Poluwat to Guam. If Chuuk is 143 nm east of Poluwat and the angle formed between Chuuk, Poluwat, and Guam is <m>124.5^{\circ}</m>, what is <m>\theta</m>, the angle the navigator moved Chuuk relative to due east? First, we note that the angle formed between the canoe, Chuuk, and Poluwat is also <m>\theta</m>, giving us a SAS triangle. If we denote the side of the triangle between Chuuk and the canoe as <m>d</m>, we have the following triangle:
@@ -166,9 +166,9 @@
           <me>
             \frac{\sin124.5^{\circ}}{143}=\frac{\sin\theta}{200}
           </me>.
-          Isolateing <m>sin\theta</m>:
+          Isolating <m>\sin\theta</m>:
           <me>
-            sin\theta=200\cdot\frac{\sin124.5^{\circ}}{304.71}
+            \sin\theta=200\cdot\frac{\sin124.5^{\circ}}{304.71}
           </me>.
           Finally, solving for <m>\theta</m> take the inverse sine of both sides to get:
           <me>
