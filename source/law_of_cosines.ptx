@@ -3,19 +3,22 @@
   <title>The Law of Cosines</title>
   <introduction>
     <p>
-      For generations, Micronesian navigators have been voyaging between low islands and atolls, traveling great distances without sighting land. This is accomplished using information on their speed and direction to form a mental map of where they are. When sailing, the navigator views the canoe as stationary and the islands as movable objects. Before they leave on their voyage, the navigator knows where they are relative to the islands between them and their destination. Not only this, they also know where where the relative position of the islands should be when they are at their destination. Once they begin their journey the navigator use the canoes Stationæry and the Islands are movable objects. When you begin, you can watch as you sail away from your origin, you can move the island behind you before it disappears over the horizon. When the island is no longer in site, you are still moving it as your voyage progresses, constantly evaluating where the canoe is as the other islands are moved. When the navigator has moved the other islands to their relative positions at the destination, the navigator will know their journey is complete, even before they sight land. This concept of moving islands is known as <term>etak</term><idx><h>etak</h></idx>.
+      For centuries, Micronesian navigators have sailed vast distances between islands, relying on ancestral knowledge passed down through generations. Using clues to determine their speed and direction, these navigators construct a mental map of their journey, viewing the canoe as stationary compared to the ever-shifting backdrop of movable islands.
     </p>
     <p>
-      For example, if the canoe travels from Poluwat to Guam, at the start, directly east in the house Wenenwenenup is Chuuk. However, the navigator will move Chuuk south until it is in the house Tolon Tumur, approximately <m>42.5^{\circ}</m> south of east. When Chuuk is moved to this position and the other islands are also moved to their respective positions, the navigator will know they have reached Guam. This process of moving islands is illustrated in <xref ref="video-etak"/>.
+      Before embarking on a voyage, navigators know relative positions of islands to the canoes at the start, along their route, and at their arrival. As the journey unfolds, the navigator's perspective from the stationary canoe will figuratively <q>move islands</q> in their mental map of the voyage. This dynamic process, known as <term>etak</term><idx><h>etak</h></idx>, allows navigators to gauge their progress and anticipate their destination even before sighting land.
+    </p>
+    <p>
+      For example, consider the voyage from Poluwat to Guam. Initially, Chuuk lies due east in the house Wenenwenenup (see <xref ref="paafu"/>). However, as the journey progresses, Chuuk gradually shifts southeastward, aligning with the house of Tolon Tumur at approximately <m>42.5^{\circ}</m> south of east upon reaching Guam. This process of moving islands is illustrated in <xref ref="video-etak"/>.
     </p>
     <figure xml:id="video-etak">
       <caption>
-        In Micronesian navigation, the concept of <em>etak</em> is illustrated as islands appear to move relative to the stationary canoe. As the canoe journeys from Poluwat to Guam, Chuuk shifts from east to southeast, demonstrating the navigational perspective where islands are perceived to move while the canoe remains still.
+        In Micronesian navigation, the concept of <em>etak</em> is illustrated as islands appear to move relative to the stationary canoe. During a voyage from Poluwat to Guam, Chuuk transitions from an eastern to southeastern position, demonstrating the navigator's perspective where islands are perceived to move while the canoe remains still.
       </caption>
       <video youtube="e68QeM5XvhA" label="youtube-etak"/>
     </figure>
     <p>
-      After sailing for 200 nautical miles, where would Chuuk (which originated due east of the canoe) have moved to relative to due east?
+      Suppose the navigator is 200 nautical miles into their journey. What is <m>\theta</m>, the angle the navigator moved Chuuk relative to due east? Assume Chuuk is 143 nm east of Poluwat and the angle formed between Chuuk, Poluwat, and Guam is <m>124.5^{\circ}</m>. We can then illustrate what is happening below:
     </p>
     <image xml:id="fig-etak-intro">
       <latex-image>
@@ -34,45 +37,23 @@
       </latex-image>
     </image>
     <p>
-      Since the line from Pulowat to Chuuk and the line due east of the canoeʻs current position are parallel (they both point due east), recall from geometry that alternate interior angles of parallel lines are equals. Thus, to find the angle of how far below east Chuuk now lies, it is equivalent to finding the angle formed from Pulowat to Chuuk to the canoe.
+      Since the line from Poluwat to Chuuk and the line due east from the canoe's current position are parallel, the angle that Chuuk has shifted below east is equivalent to the angle formed from Poluwat to Chuuk to the canoe by the <term>alternate interior angles</term> of parallel lines in geometry. This is shown in the figure below, where the lines in blue change, depending on the position of the canoe, but the distance between Poluwat and Chuuk, represented in black, remains the same.
     </p>
     <image xml:id="fig-etak-intro-triangle">
       <latex-image>
         \begin{tikzpicture}[scale=1.5]
         \draw[line width=1.5] (0,0) -- (1.43,0) node[midway,below] {143 nm};
         \draw[blue,line width=1.5] (0,0) -- (124.5:2) node[midway,below,sloped] {200 nm};
-        \draw[blue,line width=1.5] (1.43,0) -- (124.5:2) node[midway,above] {\(d\)};
+        \draw[blue,line width=1.5] (1.43,0) -- (124.5:2);
         \draw (0.2,0) arc (0:124.5:0.2) node[midway,above,xshift=4] {\(124.5^{\circ}\)}; 
         \draw[-stealth] (124.5:2) -- (1.5,{2*sin(124.5)}) node[pos=1,right] {East};
-        \draw ({2*cos(124.5)+0.4},{2*sin(124.5)}) arc (0:-32.7:0.4) node[midway,right] {\(\theta\)};
+        \draw[blue] ({2*cos(124.5)+0.4},{2*sin(124.5)}) arc (0:-32.7:0.4) node[midway,right] {\(\theta\)};
         \draw[blue] (1.03,0) arc (180:147.3:0.4) node[midway,left] {\(\theta\)};
         \end{tikzpicture}
       </latex-image>
     </image>
     <p>
-      This gives us a side-angle-side (SAS) triangle because two sides are known as well as the angle between them. Unfortunately, we cannot use the Law of Sines to solves this oblique triangle. Instead, in this section, we will learn about the Law of Cosines and how to use it to solve triangles that are SAS and SSS as well as calculating the areas of triangles, with only their sides given.
-    </p>
-    <p>
-      This should go into the example solution, but to solve for the opposite side, call it d (label it in a new figure) we get
-      <me>
-        d^2=200^2+143^2-2\cdot200\cdot143\cos124.5^{\circ}
-      </me>
-      or
-      <me>
-        d=\sqrt{200^2+143^2-2\cdot200\cdot143\cos124.5^{\circ}}\approx304.71
-      </me>
-    </p>
-    <p>
-      Then to find the angle <m>\theta</m> we can use the Law of Sines or Law of Cosines. We will choose the Law of Sines since it is simplier than the Law of Cosines will requires us to take the square root.
-      <me>
-        \frac{\sin124.5^{\circ}}{143}=\frac{\sin\theta}{200}
-      </me>
-      Solving for <m>\theta</m> we get
-      <me>
-        \theta=\sin^{-1}\left(200\cdot\frac{\sin124.5^{\circ}}{304.71}\right)\approx32.7^{\circ}
-      </me>
-      
-      
+      This now creates a triangle where two sides (the distances between Chuuk and Poluwat, and between Poluwat and the canoe) and the included angle (from Chuuk to Poluwat to the canoe) are known. This triangular configuration is a side-angle-side (SAS) scenario. Unfortunately, we cannot apply the Law of Sines to solve this oblique triangle. In this section, we learn the principles of the Law of Cosines and how to utilize it to solve triangles that are side-side-side (SSS) and side-angle-side (SAS), as well as calculating the areas of triangles with only their sides given.
     </p>
   </introduction>
   <subsection xml:id="subsec-law-of-cosines">
@@ -134,15 +115,75 @@
       <p>
         Using right triangle trigonometry, the coordinate of <m>C</m> can be written as <m>(b\cos A,b\sin A)</m>. Using the Pythagorean Theorem, we get
         <md>
-          <mrow>a^2\amp =\amp (b\cos A-c)^2+(b\sin A)^2</mrow>
-          <mrow>\amp =\amp b^2\cos^2A-2bc\cos A+c^2+b^2\sin^2A</mrow>
-          <mrow>\amp =\amp b^2(\cos^2A+\sin^2A)+c^2-2bc\cos A</mrow>
-          <mrow>\amp =\amp b^2(1)+c^2-2bc\cos A</mrow>
-          <mrow>\amp =\amp b^2+c^2-2bc\cos A</mrow>
+          <mrow>a^2\amp = (b\cos A-c)^2+(b\sin A)^2</mrow>
+          <mrow>\amp = b^2\cos^2A-2bc\cos A+c^2+b^2\sin^2A</mrow>
+          <mrow>\amp = b^2(\cos^2A+\sin^2A)+c^2-2bc\cos A</mrow>
+          <mrow>\amp = b^2(1)+c^2-2bc\cos A</mrow>
+          <mrow>\amp = b^2+c^2-2bc\cos A</mrow>
         </md>
         where we used the identity <m>\cos^2A+\sin^2=1</m>. The other two parts of the Law of Cosines can be proved using a similar argument.
       </p>
     </proof>
+  </subsection>
+  <subsection xml:id="subsec-using-law-of-cosines-sas">
+    <title>Using Law of Cosines: SAS</title>
+    <p>
+      We are now ready to revisit the problem posed at the start of this section.
+    </p>
+    <example>
+      <title>Etak: Moving Islands</title>
+      <statement>
+        <p>
+          A canoe is 200 nautical miles into a journey from Poluwat to Guam. If Chuuk is 143 nm east of Poluwat and the angle formed between Chuuk, Poluwat, and Guam is <m>124.5^{\circ}</m>, what is <m>\theta</m>, the angle the navigator moved Chuuk relative to due east? First, we note that the angle formed between the canoe, Chuuk, and Poluwat is also <m>\theta</m>, giving us a SAS triangle. If we denote the side of the triangle between Chuuk and the canoe as <m>d</m>, we have the following triangle:
+        </p>
+        <image xml:id="fig-etak-example-triangle">
+          <latex-image>
+            \begin{tikzpicture}[scale=1.5]
+            \draw[line width=1.5] (0,0) -- (1.43,0) node[midway,below] {143 nm};
+            \draw[blue,line width=1.5] (0,0) -- (124.5:2) node[midway,below,sloped] {200 nm};
+            \draw[blue,line width=1.5] (1.43,0) -- (124.5:2) node[midway,above] {\(d\)};
+            \draw (0.2,0) arc (0:124.5:0.2) node[midway,above,xshift=4] {\(124.5^{\circ}\)}; 
+            \draw[-stealth] (124.5:2) -- (1.5,{2*sin(124.5)}) node[pos=1,right] {East};
+            \draw[blue] ({2*cos(124.5)+0.4},{2*sin(124.5)}) arc (0:-32.7:0.4) node[midway,right] {\(\theta\)};
+            \draw[blue] (1.03,0) arc (180:147.3:0.4) node[midway,left] {\(\theta\)};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </statement>
+      <solution>
+        <p>
+          Since the Law of Cosines states that the square of one side equals the sum of the squares of the other two sides, minus twice their product times the cosine of their included angle we get
+          <me>
+            d^2=200^2+143^2-2\cdot200\cdot143\cos124.5^{\circ}
+          </me>.
+          Taking the square root we get:
+          <me>
+            d=\sqrt{200^2+143^2-2\cdot200\cdot143\cos124.5^{\circ}}\approx304.71
+          </me>.
+        </p>
+        <p>
+          Now, to find the angle <m>\theta</m> we can use the Law of Sines or Law of Cosines. We will choose the Law of Sines since there are fewer steps needed to isolate the angle <m>\theta</m>:
+          <me>
+            \frac{\sin124.5^{\circ}}{143}=\frac{\sin\theta}{200}
+          </me>.
+          Isolateing <m>sin\theta</m>:
+          <me>
+            sin\theta=200\cdot\frac{\sin124.5^{\circ}}{304.71}
+          </me>.
+          Finally, solving for <m>\theta</m> take the inverse sine of both sides to get:
+          <me>
+            \theta=\sin^{-1}\left(200\cdot\frac{\sin124.5^{\circ}}{304.71}\right)\approx32.7^{\circ}
+          </me>.
+        </p>
+        <p>
+          Thus, 200 nm into their voyage, the navigator has moved Chuuk <m>32.7^{\circ}</m> south of due east.
+        </p>
+      </solution>
+    </example>
+    
+    
+
+
     <example>
       <title>Using Law of Cosines (SAS): Fiji to Tonga</title>
       <statement>
