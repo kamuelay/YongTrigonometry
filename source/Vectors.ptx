@@ -22,7 +22,7 @@
     </p>
     
     <p>
-      The Hawai`iloa is a double-hulled voyaging canoe whose construction was intended to recover knowledge and skills associated with traditional Hawaiian canoe-building with native materials. A major problem arose in 1989-1990 when it was determined that the koa forests in Hawai`i no longer had trees large enough to construct such a canoe so the search had to be extended beyond Hawaiʻi. Using trees that didn't originate in Hawai`i still followed the theme of using traditional materials because during storms, large trees from the Pacific Coast of North American have been known to have been swept into the Pacific Ocean and float to islands such as Hawai`i. Such trees have traditionally been used for canoe building across the Pacific. Two trees, each 200 feet high and over 400 years old were located in Shelikof Island in Soda Bay, Prince of Wales Island, west of Ketchikan, Alaska. Traditional Hawaiian and Tlingit tree cutting ceremonies were then performed to ask permission to take the trees to build a waʻa. The trees were then cut and the logs would need to make their way 2,234 nautical miles with a heading of <m>256^{\circ}</m> to Hawai`i. This is known as a <term>vector</term>,<idx><h>vectors</h></idx> because it has both a length and a direction. We represent a vector with an arrow to indicate its <term>direction</term>.<idx><h>vectors</h><h>direction</h></idx> The length of the arrow represents the <term>magnitude</term><idx><h>Vectors</h><h>Magnitude</h></idx> of the vector. See <xref ref="fig_Juneau-to-Honolulu">Figure</xref>. Many things in physics can be represented with vectors.
+      The Hawai`iloa is a double-hulled voyaging canoe whose construction was intended to recover knowledge and skills associated with traditional Hawaiian canoe-building with native materials. A major problem arose in 1989-1990 when it was determined that the koa forests in Hawai`i no longer had trees large enough to construct such a canoe so the search had to be extended beyond Hawaiʻi. Using trees that didn't originate in Hawai`i still followed the theme of using traditional materials because during storms, large trees from the Pacific Coast of North American have been known to have been swept into the Pacific Ocean and float to islands such as Hawai`i. Such trees have traditionally been used for canoe building across the Pacific. Two trees, each 200 feet high and over 400 years old were located in Shelikof Island in Soda Bay, Prince of Wales Island, west of Ketchikan, Alaska. Traditional Hawaiian and Tlingit tree cutting ceremonies were then performed to ask permission to take the trees to build a waʻa. The trees were then cut and the logs would need to make their way 2,234 nautical miles with a heading of <m>256^{\circ}</m> to Hawai`i. This is known as a <term>vector</term>,<idx><h>vectors</h></idx> because it has both a length and a direction. We represent a vector with an arrow to indicate its <term>direction</term>.<idx><h>vectors</h><h>direction</h></idx> The length of the arrow represents the <term>magnitude</term><idx><h>vectors</h><h>magnitude</h></idx> of the vector. See <xref ref="fig_Juneau-to-Honolulu">Figure</xref>. Many things in physics can be represented with vectors.
     </p>
     <p>
       The heading is 256.3 deg, 2233.6 nautical miles
@@ -35,7 +35,7 @@
   <subsection xml:id="subsec-geometric-vectors">
     <title>Geometric Vectors</title>
     <p>
-      The vector whose path begins at the point <m>P</m> and ends at the point <m>Q</m> is written as <m>\overrightarrow{PQ}</m>, where the arrow on top indicates the direction. The point <m>P</m> is called the <em>initial point</em><idx><h>Vectors</h><h>Initial Point</h></idx> and the point <m>Q</m> is called the <em>terminal point</em><idx><h>Vectors</h><h>Terminal Point</h></idx> of the vector <m>\overrightarrow{PQ}</m>. The <term>magnitude</term><idx><h>Vectors</h><h>Magnitude</h></idx> of <m>\overrightarrow{PQ}</m> is the length or distance and is written as <m>\|\overrightarrow{PQ}\|</m>. We can also think of <m>\overrightarrow{PQ}</m> as the <term>displacement</term>.<idx><h>Vectors</h><h>displacement</h></idx> The <term>direction</term><idx><h>Vectors</h><h>Direction</h></idx> of <m>\overrightarrow{PQ}</m> is from <m>P</m> to <m>Q</m>.
+      The vector whose path begins at the point <m>P</m> and ends at the point <m>Q</m> is written as <m>\overrightarrow{PQ}</m>, where the arrow on top indicates the direction. The point <m>P</m> is called the <em>initial point</em><idx><h>vectors</h><h>initial point</h></idx> and the point <m>Q</m> is called the <em>terminal point</em><idx><h>vectors</h><h>terminal point</h></idx> of the vector <m>\overrightarrow{PQ}</m>. The <term>magnitude</term><idx><h>vectors</h><h>magnitude</h></idx> of <m>\overrightarrow{PQ}</m> is the length or distance and is written as <m>\|\overrightarrow{PQ}\|</m>. We can also think of <m>\overrightarrow{PQ}</m> as the <term>displacement</term>.<idx><h>vectors</h><h>displacement</h></idx> The <term>direction</term><idx><h>vectors</h><h>direction</h></idx> of <m>\overrightarrow{PQ}</m> is from <m>P</m> to <m>Q</m>.
     </p>
     <remark>
       <title>Notation</title>
@@ -47,7 +47,7 @@
       The <em>zero vector</em>,<idx><h>zero vector</h></idx> written as <m>\mathbf{0}</m> or <m>{\overrightarrow{\mathbf{0}}}</m>, is a vector with zero magnitude, meaning it has no displacement and it has no direction.
     </p>
     <p>
-      It is important to note that a vector only requires a magnitude and direction, but it does not have a unique location. Thus, as long as the magnitude and direction aren't changed, a vector may be <term>translated</term><idx><h>Vectors</h><h>translation</h></idx> or moved from one place to another. As a result, if two vectors <m>\mathbf{v}</m> and <m>\mathbf{w}</m> have the same direction and the same magnitude, then they are <term>equal</term>, <idx><h>Vectors</h><h>Equal</h></idx> written as
+      It is important to note that a vector only requires a magnitude and direction, but it does not have a unique location. Thus, as long as the magnitude and direction aren't changed, a vector may be <term>translated</term><idx><h>vectors</h><h>translation</h></idx> or moved from one place to another. As a result, if two vectors <m>\mathbf{v}</m> and <m>\mathbf{w}</m> have the same direction and the same magnitude, then they are <term>equal</term>, <idx><h>vectors</h><h>equal</h></idx> written as
       <me>
         \mathbf{v}=\mathbf{w}
       </me>.
@@ -72,7 +72,7 @@
           If you stand in Tahiti and face Hawaiʻi, you would be looking at the Haka Hoʻolua house or north by west (NbW). When the Hōkūleʻa sails from Tahiti to return home to Hawaiʻi, the navigator does not point Hōkūleʻa directly to Hawai`i and sail to the Haka Hoʻolua house. Instead, Hōkūleʻa sails north. When the navigator has determined that Hōkūleʻa has reached the latitude of Hawai`i, about <m>20^{\circ}</m> N, the waʻa then turns west to come home. This method of navigation is called <em>latitude sailing</em>.<idx><h>latitude sailing</h></idx> For this strategy to work, the navigator must know their latitude which can be determined by (1) measuring altitude of Hokupa'a (North Star); (2) measuring the altitude of stars as they cross the meridian; or (3) watching for pairs of stars that rise or set together.
         </p>
         <p>
-          We can represent Hōkūleʻa's path north by the vector <m>\overrightarrow{PQ}</m> and the path west by the vector <m>\overrightarrow{QR}</m> then the resulting displacement is the same as if you were to sail directly from Tahiti to Hawai`i, represented by <m>\overrightarrow{PR}</m>. See <xref ref="fig_adding-vectors">Figure</xref>. We call the vector <m>\overrightarrow{PR}</m> the <em>sum</em><idx><h>Vectors</h><h>Sum</h></idx> of the vectors <m>\overrightarrow{PQ}</m> and <m>\overrightarrow{QR}</m> and we write
+          We can represent Hōkūleʻa's path north by the vector <m>\overrightarrow{PQ}</m> and the path west by the vector <m>\overrightarrow{QR}</m> then the resulting displacement is the same as if you were to sail directly from Tahiti to Hawai`i, represented by <m>\overrightarrow{PR}</m>. See <xref ref="fig_adding-vectors">Figure</xref>. We call the vector <m>\overrightarrow{PR}</m> the <em>sum</em><idx><h>vectors</h><h>sum</h></idx> of the vectors <m>\overrightarrow{PQ}</m> and <m>\overrightarrow{QR}</m> and we write
           <me>
             \overrightarrow{PQ}+\overrightarrow{QR}=\overrightarrow{PR}
           </me>.
@@ -162,7 +162,7 @@
   <subsection>
     <title>Vector Subtraction</title>
     <definition xml:id="def-vector-subtraction">
-      <title>Vector Subtraction</title><idx><h>Vectors</h><h>Subtraction</h></idx>
+      <title>Vector Subtraction</title><idx><h>vectors</h><h>subtraction</h></idx>
       <statement>
         <p>
           Vector subtraction is defined to be the sum of one vector with the negative of another vector. In other words,
@@ -216,7 +216,7 @@
       </p>
     </remark>
     <p>
-      A vector, <m>\mathbf{v}</m> with an initial point at <m>(0,0)</m> and terminal point at <m>(a,b)</m> can be written as <m>\mathbf{v}=\langle a-0,b-0\rangle=\langle a,b\rangle</m>, and <m>\mathbf{v}</m> is said to be in <em>standard position</em>.<idx><h>Vectors</h><h>Standard Position</h></idx> A vector with an initial point at the origin is called the <em>position vector</em>.<idx><h>vectors</h><h>position vector</h></idx>
+      A vector, <m>\mathbf{v}</m> with an initial point at <m>(0,0)</m> and terminal point at <m>(a,b)</m> can be written as <m>\mathbf{v}=\langle a-0,b-0\rangle=\langle a,b\rangle</m>, and <m>\mathbf{v}</m> is said to be in <em>standard position</em>.<idx><h>vectors</h><h>standard position</h></idx> A vector with an initial point at the origin is called the <em>position vector</em>.<idx><h>vectors</h><h>position vector</h></idx>
     </p>
     <example>
       <statement>
@@ -262,7 +262,7 @@
       <statement>
         <p>
           A vector <m>\mathbf{u}</m> with magnitude 1, <m>\|\mathbf{u}\|=1</m>,
-          is called a <term>unit vector</term><idx><h>Vectors</h><h>Unit Vector</h></idx>
+          is called a <term>unit vector</term><idx><h>vectors</h><h>unit vector</h></idx>
         </p>
       </statement>
     </definition>
@@ -495,7 +495,7 @@
     <definition>
       <statement>
         <p>
-          The <term>unit vectors</term><idx><h>Vectors</h><h>Unit Vector</h></idx>
+          The <term>unit vectors</term><idx><h>vectors</h><h>unit vector</h></idx>
           <m>\mathbf{i}</m> and <m>\mathbf{j}</m> are defined as
           <me>
             \mathbf{i}=\langle1,0\rangle,\mathbf{j}=\langle0,1\rangle
