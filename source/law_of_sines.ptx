@@ -1517,25 +1517,37 @@
     <exercise>
       <introduction>
         <p>
-          (SSA) A waʻa is sailing in the direction Hikina (east) at 5 knots and spots an island in the house Lā Koʻolau. 6 hours later the navigator measures the island in the house Manu Hoʻolua.
+          A waʻa is sailing in the direction Hikina (east) at 5 knots and spots an island in the house Lā Koʻolau (<m>11/25^{\circ}</m> above due east). 6 hours later (30 nm) the navigator measures the island in the house Manu Hoʻolua (<m>45^{\circ}</m> above due west).
         </p>
       </introduction>
       <task>
         <statement>
           <p>
-            How far is the waʻa from the island at the time of its second measurement?
+            How far is the waʻa from the island at the time of its first measurement, rounded to the nearest nautical mile?
           </p>
         </statement>
         <answer>
           <p>
-            
+            124 nm
           </p>
         </answer>
       </task>
       <task>
         <statement>
           <p>
-            How close did the waʻa get to the island?
+            How far is the waʻa from the island at the time of its second measurement, rounded to the nearest nautical mile?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            26 nm
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            How close did the waʻa get to the island, rounded to the nearest nautical mile?
           </p>
         </statement>
         <hint>
@@ -1545,7 +1557,7 @@
         </hint>
         <answer>
           <p>
-            
+            5 nm
           </p>
         </answer>
       </task>
@@ -1553,6 +1565,8 @@
     <exercise>
       <statement>
         <p>
+          In Cook Island Maori mythology, Paikea was a skilled navigator, credited with leading his people safely across the ocean. In tuned with the natural world around him, Paikea turned to a whale who helped guide him and his people to the Cook Islands. The vaka motu Paikea, named after the navigator, 
+
           Recall the example from <xref ref="inverse_trigonometry"/> where Hinemoana is sailing to Rarotonga. We calculated that to sail from Aotearoa to Rarotonga, you would need to sail towards the house Manu Koʻolau (<m>41.8^{\circ}</m>). In reality, there are currents that push the waʻa off course. Now let's consider that a current of 2 knots is moving to the house Hikina (East). If we were to face Rarotonga and sail straight, the current put us to the east of our destination. To ensure we arrive at Rarotonga, our apparent heading will need to be a point to the west of our destination, as shown below.
         </p>
         <p>
