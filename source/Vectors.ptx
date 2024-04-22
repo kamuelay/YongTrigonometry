@@ -6,11 +6,17 @@
       The Hawaiʻiloa, a double-hulled voyaging canoe, was envisioned as the revival of traditional Hawaiian canoe-building techniques using native materials. However, in 1989-1990, after an extensive search throughout the state, it became apparent that Hawaiʻi's koa forests lacked accessible trees of sufficient size for the canoe's construction. To address this challenge, the search expanded beyond Hawaiʻi. Utilizing materials originating elsewhere in the Pacific aligns with the fact that storms have historically carried large trees from the Pacific Coast of North America to islands like Hawaii, where they've been used for canoe construction, and so the search expanded to North America.
     </p>
     <p>
-      Two trees, each 200 feet high and over 400 years old, were discovered on Shelikof Island in Soda Bay, Prince of Wales Island, west of Ketchikan, Alaska. Following customary Hawaiian and Tlingit tree cutting ceremonies to seek permission, the trees were felled for the canoe. The logs then embarked on a 2,234-nautical-mile journey to Hawai`i, following a heading of <m>256^{\circ}</m>. This journey exemplifies a <term>vector</term>,<idx><h>vectors</h></idx> — a quantity possessing both <term>magnitude</term><idx><h>vectors</h><h>magnitude</h></idx> and <term>direction</term>.<idx><h>vectors</h><h>direction</h></idx>
+      Two trees, each 200 feet high and over 400 years old, were discovered on Shelikof Island in Soda Bay, Prince of Wales Island, west of Ketchikan, Alaska. Following customary Hawaiian and Tlingit tree cutting ceremonies to seek permission, the trees were felled for the canoe. The logs then embarked on a 2,234-nautical-mile journey to Hawaiʻi, following a heading of <m>256^{\circ}</m>. This journey exemplifies a <term>vector</term>,<idx><h>vectors</h></idx> — a quantity possessing both <term>magnitude</term><idx><h>vectors</h><h>magnitude</h></idx> and <term>direction</term>.<idx><h>vectors</h><h>direction</h></idx>
     </p>
-    <p>
-      [image goes here]
-    </p>
+    <image xml:id="fig-hawaiiloa-vector" width="40%">
+      <latex-image>
+        \begin{tikzpicture}[scale=2]
+        \draw[-stealth] (0,0) -- (256:2.234) node[midway,above left] {\(\mathbf{v}\)};
+        \node[above] at (0,0) {Alaska};
+        \node[below] at (256:2.234) {Hawai`i};
+        \end{tikzpicture}
+      </latex-image>
+    </image>
     <p>
       In physics, vectors are often represented with arrows, denoting their direction, while the length of the arrow signifies the vector's magnitude. Vectors play a fundamental role describing various things in the world around us. For example, movement of objects requires a magnitude and direction, the force exerted on an object requires the magnitude force used and the direction of the force. In this section, we will learn how to express vectors, both geometrically and analytically as well as the various properties of vectors.
     </p>
@@ -63,10 +69,10 @@
     <example>
       <statement>
         <p>
-          If you stand in Tahiti and face Hawai`i, you would be looking at the Haka Hoʻolua house or north by west (NbW). When the H&#333;k&#363;leʻa sails from Tahiti to return home to Hawai`i, the navigator does not point H&#333;k&#363;leʻa directly to Hawai`i and sail to the Haka Hoʻolua house. Instead, H&#333;k&#363;leʻa sails north. When the navigator has determined that H&#333;k&#363;leʻa has reached the latitude of Hawai`i, about <m>20^{\circ}</m> N, the waʻa then turns west to come home. This method of navigation is called <em>latitude sailing</em>.<idx><h>latitude sailing</h></idx> For this strategy to work, the navigator must know their latitude which can be determined by (1) measuring altitude of Hokupa'a (North Star); (2) measuring the altitude of stars as they cross the meridian; or (3) watching for pairs of stars that rise or set together.
+          If you stand in Tahiti and face Hawaiʻi, you would be looking at the Haka Hoʻolua house or north by west (NbW). When the Hōkūleʻa sails from Tahiti to return home to Hawaiʻi, the navigator does not point Hōkūleʻa directly to Hawai`i and sail to the Haka Hoʻolua house. Instead, Hōkūleʻa sails north. When the navigator has determined that Hōkūleʻa has reached the latitude of Hawai`i, about <m>20^{\circ}</m> N, the waʻa then turns west to come home. This method of navigation is called <em>latitude sailing</em>.<idx><h>latitude sailing</h></idx> For this strategy to work, the navigator must know their latitude which can be determined by (1) measuring altitude of Hokupa'a (North Star); (2) measuring the altitude of stars as they cross the meridian; or (3) watching for pairs of stars that rise or set together.
         </p>
         <p>
-          We can represent H&#333;k&#363;leʻa's path north by the vector <m>\overrightarrow{PQ}</m> and the path west by the vector <m>\overrightarrow{QR}</m> then the resulting displacement is the same as if you were to sail directly from Tahiti to Hawai`i, represented by <m>\overrightarrow{PR}</m>. See <xref ref="fig_adding-vectors">Figure</xref>. We call the vector <m>\overrightarrow{PR}</m> the <em>sum</em><idx><h>Vectors</h><h>Sum</h></idx> of the vectors <m>\overrightarrow{PQ}</m> and <m>\overrightarrow{QR}</m> and we write
+          We can represent Hōkūleʻa's path north by the vector <m>\overrightarrow{PQ}</m> and the path west by the vector <m>\overrightarrow{QR}</m> then the resulting displacement is the same as if you were to sail directly from Tahiti to Hawai`i, represented by <m>\overrightarrow{PR}</m>. See <xref ref="fig_adding-vectors">Figure</xref>. We call the vector <m>\overrightarrow{PR}</m> the <em>sum</em><idx><h>Vectors</h><h>Sum</h></idx> of the vectors <m>\overrightarrow{PQ}</m> and <m>\overrightarrow{QR}</m> and we write
           <me>
             \overrightarrow{PQ}+\overrightarrow{QR}=\overrightarrow{PR}
           </me>.
