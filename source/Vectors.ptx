@@ -3,34 +3,26 @@
   <title>Vectors</title>
   <introduction>
     <p>
-      The Hawaiʻiloa, a double-hulled voyaging canoe, was envisioned as the revival of traditional Hawaiian canoe-building techniques using native materials. However, in 1989-1990, after an extensive search throughout the state, it became apparent that Hawaiʻi's koa forests lacked accessible trees of sufficient size for the canoe's construction. To address this challenge, the search expanded beyond Hawaiʻi. Utilizing materials originating elsewhere in the Pacific aligns with the fact that storms have historically carried large trees from the Pacific Coast of North America to islands like Hawaii, where they've been used for canoe construction, and so the search expanded to North America.
+      Hōkūleʻa's inaugural voyage from Hawaiʻi to Tahiti ignited a cultural resurgence in Hawaiʻi. By showcasing the effectiveness of traditional navigation techniques learned from Micronesia, it soon became clear there was a need for constructing a double-hulled voyaging canoe using traditional methods and native materials. This canoe, named Hawaiʻiloa,<idx><h>canoe</h><h>Hawaiʻiloa</h></idx> aimed to recover knowledge and skilled associated with traditional canoe building.
     </p>
     <p>
-      Two trees, each 200 feet high and over 400 years old, were discovered on Shelikof Island in Soda Bay, Prince of Wales Island, west of Ketchikan, Alaska. Following customary Hawaiian and Tlingit tree cutting ceremonies to seek permission, the trees were felled for the canoe. The logs then embarked on a 2,234-nautical-mile journey to Hawaiʻi, following a heading of <m>256^{\circ}</m>. This journey exemplifies a <term>vector</term>,<idx><h>vectors</h></idx> — a quantity possessing both <term>magnitude</term><idx><h>vectors</h><h>magnitude</h></idx> and <term>direction</term>.<idx><h>vectors</h><h>direction</h></idx>
+      However, during the years 1989-1990, an exhaustive search across Hawaiʻi revealed a significant challenge: the lack of accessible koa trees of sufficient size for constructing a canoe of this size. The search then expanded beyond Hawaiʻi. This decision was guided by historical evidence indicating that storms had transported large trees from the Pacific Coast of North America to islands like Hawaiʻi, where they were traditionally used for canoe construction. As a result, the search extended to North America in pursuit of suitable materials.
     </p>
-    <image xml:id="fig-hawaiiloa-vector" width="40%">
+    <p>
+      Two trees, each 200 feet high and over 400 years old, were discovered on Shelikof Island in Soda Bay, Prince of Wales Island, west of Ketchikan, Alaska. After conducting traditional tree-cutting ceremonies rooted in Hawaiian and Tlingit traditions to seek permission, both trees were felled to be used for constructing the canoe. The logs then embarked on a 2,235-nautical-mile journey to Hawaiʻi, following a heading of <m>256^{\circ}</m>. This journey exemplifies a <term>vector</term>,<idx><h>vectors</h></idx> — a quantity possessing both <term>magnitude</term><idx><h>vectors</h><h>magnitude</h></idx> and <term>direction</term>.<idx><h>vectors</h><h>direction</h></idx>
+    </p>
+    <image xml:id="fig-hawaiiloa-vector" width="85%">
       <latex-image>
-        \begin{tikzpicture}[scale=2]
-        \draw[-stealth] (0,0) -- (256:2.234) node[midway,above left] {\(\mathbf{v}\)};
-        \node[above] at (0,0) {Alaska};
-        \node[below] at (256:2.234) {Hawai`i};
+        \begin{tikzpicture}[scale=3]
+        \draw[-stealth,line width=2] (0,0) -- (194:2.235);
+        \node[above right] at (0,0) {Alaska};
+        \node[below left] at (194:2.234) {Hawai`i};
         \end{tikzpicture}
       </latex-image>
     </image>
     <p>
       In physics, vectors are often represented with arrows, denoting their direction, while the length of the arrow signifies the vector's magnitude. Vectors play a fundamental role describing various things in the world around us. For example, movement of objects requires a magnitude and direction, the force exerted on an object requires the magnitude force used and the direction of the force. In this section, we will learn how to express vectors, both geometrically and analytically as well as the various properties of vectors.
     </p>
-    
-    <p>
-      The Hawai`iloa is a double-hulled voyaging canoe whose construction was intended to recover knowledge and skills associated with traditional Hawaiian canoe-building with native materials. A major problem arose in 1989-1990 when it was determined that the koa forests in Hawai`i no longer had trees large enough to construct such a canoe so the search had to be extended beyond Hawaiʻi. Using trees that didn't originate in Hawai`i still followed the theme of using traditional materials because during storms, large trees from the Pacific Coast of North American have been known to have been swept into the Pacific Ocean and float to islands such as Hawai`i. Such trees have traditionally been used for canoe building across the Pacific. Two trees, each 200 feet high and over 400 years old were located in Shelikof Island in Soda Bay, Prince of Wales Island, west of Ketchikan, Alaska. Traditional Hawaiian and Tlingit tree cutting ceremonies were then performed to ask permission to take the trees to build a waʻa. The trees were then cut and the logs would need to make their way 2,234 nautical miles with a heading of <m>256^{\circ}</m> to Hawai`i. This is known as a <term>vector</term>,<idx><h>vectors</h></idx> because it has both a length and a direction. We represent a vector with an arrow to indicate its <term>direction</term>.<idx><h>vectors</h><h>direction</h></idx> The length of the arrow represents the <term>magnitude</term><idx><h>vectors</h><h>magnitude</h></idx> of the vector. See <xref ref="fig_Juneau-to-Honolulu">Figure</xref>. Many things in physics can be represented with vectors.
-    </p>
-    <p>
-      The heading is 256.3 deg, 2233.6 nautical miles
-    </p>
-    <figure xml:id="fig_Juneau-to-Honolulu">
-      <caption>The path of the logs from Alaska to Hawai`i created a vector with a direction and magnitude. (image from Wolframalpha)</caption>
-      <image width="75%" source="Pictures/Juneau-to-Honolulu.jpg"/>
-    </figure>
   </introduction>
   <subsection xml:id="subsec-geometric-vectors">
     <title>Geometric Vectors</title>
@@ -55,12 +47,29 @@
     <example>
       <statement>
         <p>
-          The average distanced travled by a waʻa in one day of sailing is 120 nautical miles. If the Nāmāhoe departed from Kaua`i, the Hawai`iloa departed from Oʻahu, the Moʻokiha departed from Maui, and the Makali`i departed from Hawai`i and all waʻa traveled for three days (<m>120\times3=360</m> miles) in the direction of Manu Koʻolau (NE), the resulting vectors from each waʻa will be equal since they all have the same direction (NE) and the same magnitude (360 miles). See <xref ref="fig_equal-vectors">Figure</xref>.
+          Seven canoes, reconstructed versions of the traditional double-hulled Polynesian voyaging vessels, were constructed in Aotearoa. These vessels, collectively referred to as Vaka Moana<idx><h>canoe</h><h>Vaka Moana</h></idx> (canoes of the ocean), were individually named Marumaru Atua<idx><h>canoe</h><h>Marumaru Atua</h></idx> (Cook Islands), Gaualofa<idx><h>canoe</h><h>Gaualofa</h></idx> (Samoa), Te Matau a Māui<idx><h>canoe</h><h>Te Matau a Māui</h></idx> (Aotearoa), Fa'afaite<idx><h>canoe</h><h>Fa'afaite</h></idx> (Tahiti), Hinemoana<idx><h>canoe</h><h>Hinemoana</h></idx> (Aotearoa), Haunui<idx><h>canoe</h><h>Haunui</h></idx> (Aotearoa), and Uto Ni Yalo<idx><h>canoe</h><h>Uto Ni Yalo</h></idx> (Fiji). In 2011-2012, these sister canoes embarked on a voyage collectively titled Te Mana o Te Moana (The Spirit of the Ocean), covering a combined distance of 200,000 nautical miles through open waters. On average, each vaka traveled 120 nautical miles per day. Suppose one day, the vaka sailed northeast in the house Manu. The resulting vectors from each vaka will be identical, as they all traveled in the same direction (NE) with the same magnitude (120 nm). This is depicted in the figure below.
         </p>
-        <figure xml:id="fig_equal-vectors">
-          <caption>The vectors created by the paths of each canoe traveling the same distance (240 miles) and in the same direction (Manu Koʻolau, NE) are all equal. (image modified from Google Maps)</caption>
-          <image width="15%" source="Pictures/equal-vectors.jpeg"/>
-        </figure>
+        <image xml:id="fig-equal-vectors">
+          <latex-image>
+            \begin{tikzpicture}
+            \draw[thin,gray!40] (-8,-4) grid (8,5);
+            \draw[line width=2pt,blue,-stealth](-5,-3) -- (-2,0) node[black,sloped,midway,above]{Marumaru Atua};
+            \draw[line width=2pt,blue,-stealth](-7,-1)--(-4,2) node[black,sloped,midway,above]{Gaualofa};
+            \draw[line width=2pt,blue,-stealth](-1,-2)--(2,1) node[black,sloped,midway,above]{Te Matau a Māui};
+            \draw[line width=2pt,blue,-stealth](2,-3)--(5,0) node[black,sloped,midway,above]{Fa'afaite};
+            \draw[line width=2pt,blue,-stealth](-3,1)--(0,4) node[black,sloped,midway,above]{Haunui};
+            \draw[line width=2pt,blue,-stealth](0,1)--(3,4) node[black,sloped,midway,above]{Hinemoana};
+            \draw[line width=2pt,blue,-stealth](4,0)--(7,3) node[black,sloped,midway,above]{Uto Ni Yalo};
+            \draw pic at (-5,-3) {waa-side={waacolor}{45}{0.1}};
+            \draw pic at (-7,-1) {waa-side={waacolor}{45}{0.1}};
+            \draw pic at (-1,-2) {waa-side={waacolor}{45}{0.1}};
+            \draw pic at (2,-3) {waa-side={waacolor}{45}{0.1}};
+            \draw pic at (-3,1) {waa-side={waacolor}{45}{0.1}};
+            \draw pic at (0,1) {waa-side={waacolor}{45}{0.1}};
+            \draw pic at (4,0) {waa-side={waacolor}{45}{0.1}};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
       </statement>
     </example>
   </subsection>
@@ -69,16 +78,16 @@
     <example>
       <statement>
         <p>
-          If you stand in Tahiti and face Hawaiʻi, you would be looking at the Haka Hoʻolua house or north by west (NbW). When the Hōkūleʻa sails from Tahiti to return home to Hawaiʻi, the navigator does not point Hōkūleʻa directly to Hawai`i and sail to the Haka Hoʻolua house. Instead, Hōkūleʻa sails north. When the navigator has determined that Hōkūleʻa has reached the latitude of Hawai`i, about <m>20^{\circ}</m> N, the waʻa then turns west to come home. This method of navigation is called <em>latitude sailing</em>.<idx><h>latitude sailing</h></idx> For this strategy to work, the navigator must know their latitude which can be determined by (1) measuring altitude of Hokupa'a (North Star); (2) measuring the altitude of stars as they cross the meridian; or (3) watching for pairs of stars that rise or set together.
+          If you stand in Tahiti and face Hawaiʻi, you would be standing in house Haka Hoʻolua or north by west (NbW). When the Hōkūleʻa<idx><h>canoe</h><h>Hōkūleʻa</h></idx> sails from Tahiti to return home to Hawaiʻi, the navigator does not point Hōkūleʻa directly to Hawaiʻi and sail to the Haka Hoʻolua house. Instead, Hōkūleʻa sails north. When the navigator has determined that Hōkūleʻa has reached the latitude of Hawaiʻi, about <m>20^{\circ}</m> N, the waʻa then turns west to come home. This method of navigation is called <em>latitude sailing</em>.<idx><h>latitude sailing</h></idx> For this strategy to work, the navigator must know their latitude which can be determined by (1) measuring altitude of Hokupa'a (North Star); (2) measuring the altitude of stars as they cross the meridian; or (3) watching for pairs of stars that rise or set together.
         </p>
         <p>
-          We can represent Hōkūleʻa's path north by the vector <m>\overrightarrow{PQ}</m> and the path west by the vector <m>\overrightarrow{QR}</m> then the resulting displacement is the same as if you were to sail directly from Tahiti to Hawai`i, represented by <m>\overrightarrow{PR}</m>. See <xref ref="fig_adding-vectors">Figure</xref>. We call the vector <m>\overrightarrow{PR}</m> the <em>sum</em><idx><h>vectors</h><h>sum</h></idx> of the vectors <m>\overrightarrow{PQ}</m> and <m>\overrightarrow{QR}</m> and we write
+          We can represent Hōkūleʻa's path north by the vector <m>\overrightarrow{PQ}</m> and the path west by the vector <m>\overrightarrow{QR}</m> then the resulting displacement is the same as if you were to sail directly from Tahiti to Hawaiʻi, represented by <m>\overrightarrow{PR}</m>. See <xref ref="fig_adding-vectors">Figure</xref>. We call the vector <m>\overrightarrow{PR}</m> the <em>sum</em><idx><h>vectors</h><h>sum</h></idx> of the vectors <m>\overrightarrow{PQ}</m> and <m>\overrightarrow{QR}</m> and we write
           <me>
             \overrightarrow{PQ}+\overrightarrow{QR}=\overrightarrow{PR}
           </me>.
         </p>
         <figure xml:id="fig_adding-vectors">
-          <caption>Adding the vector heading north with the vector heading west (similar to the path navigators use through latitude sailing) results in the same vector directly from Tahiti to Hawai`i.</caption>
+          <caption>Adding the vector heading north with the vector heading west (similar to the path navigators use through latitude sailing) results in the same vector directly from Tahiti to Hawaiʻi.</caption>
           <image xml:id="fig-vector-addition-latitude-sailing">
             <latex-image>
               \begin{tikzpicture}
@@ -624,12 +633,7 @@
     <example>
       <statement>
         <p>
-          An estimate for the speed of Hikianalia is
-          <m>\frac{1}{3}</m> the speed of the wind on a beam reach
-          (wind is at a right angle to the waʻa).
-          So if Hikianalia is sailing with winds at 15 knots,
-          the speed of the waʻa is <m>\frac{1}{3}\cdot15=5</m> knots.
-          However, if Hikianalia is sailing directly into a current of 2 knots, Hikianalia's actual speed will be slowed down to 3 knots.
+          An estimate for the speed of Hikianalia<idx><h>canoe</h><h>Hikianalia</h></idx> is <m>\frac{1}{3}</m> the speed of the wind on a beam reach (wind is at a right angle to the waʻa). So if Hikianalia is sailing with winds at 15 knots, the speed of the waʻa is <m>\frac{1}{3}\cdot15=5</m> knots. However, if Hikianalia is sailing directly into a current of 2 knots, Hikianalia's actual speed will be slowed down to 3 knots.
         </p>
         <image xml:id="fig-vector-speed-1D">
           <latex-image>
