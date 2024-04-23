@@ -126,7 +126,7 @@
     </proof>
   </subsection>
   <subsection xml:id="subsec-using-law-of-cosines-sas">
-    <title>Using Law of Cosines: SAS</title>
+    <title>Using Law of Cosines (SAS)</title>
     <p>
       We are now ready to revisit the problem posed at the start of this section.
     </p>
@@ -184,7 +184,7 @@
       <title>Using Law of Cosines (SAS): Fiji to Tonga</title>
       <statement>
         <p>
-          The Fijian canoe Uto Ni Yalo embarks on a voyage from Fiji to Tonga, a distance of 412 nautical miles, positioned in the House Lā; Malanai (<m>16.81^{\circ}</m>). However, adverse weather conditions force a deviation from their original course. After sailing for one day, covering 120 nautical miles, the canoe finds itself 2 houses (<m>22.5^{\circ}</m>) off course. Assessing the situation, the navigator determines a direct route to Tonga is now viable. At this point what is the remaining distance to Tonga, and what adjustment angle is required to navigate towards their destination?
+          The Fijian canoe Uto Ni Yalo<idx><h>canoe</h><h>Uto Ni Yalo</h></idx> embarks on a voyage from Fiji to Tonga, a distance of 412 nautical miles, positioned in the House Lā; Malanai (<m>16.81^{\circ}</m>). However, adverse weather conditions force a deviation from their original course. After sailing for one day, covering 120 nautical miles, the canoe finds itself 2 houses (<m>22.5^{\circ}</m>) off course. Assessing the situation, the navigator determines a direct route to Tonga is now viable. At this point what is the remaining distance to Tonga, and what adjustment angle is required to navigate towards their destination?
         </p>
         <image xml:id="fig-fiji-tonga-intro">
           <latex-image>
@@ -202,7 +202,7 @@
       </statement>
       <solution>
         <p>
-          This forms a side-angle-side triangle, where we are know two sides and the angle between them. Let's denote the angle between Tonga, Fiji, and the canoe as <m>A</m>, the angle between Fiji, the canoe, and Tonga as <m>B</m>, and the angle between Fiji, Tonga, and the canoe as <m>C</m>. Additionally, the side between the canoe and Tonga is denoted as <m>a</m>, the side between Fiji and Tonga as <m>b = 412</m>, and the side between Fiji and the canoe as <m>c = 120</m>. This is illustrated below:
+          This forms a side-angle-side triangle, where we know two sides and the angle between them. Let's denote the angle between Tonga, Fiji, and the canoe as <m>A</m>, the angle between Fiji, the canoe, and Tonga as <m>B</m>, and the angle between Fiji, Tonga, and the canoe as <m>C</m>. Additionally, the side between the canoe and Tonga is denoted as <m>a</m>, the side between Fiji and Tonga as <m>b = 412</m>, and the side between Fiji and the canoe as <m>c = 120</m>. This is illustrated below:
         </p>
         <image xml:id="fig-fiji-tonga-example">
           <latex-image>
@@ -240,7 +240,7 @@
           <me>
             \frac{\sin A}{a}=\frac{\sin B}{b}
           </me>
-          we know <m>a\approx304.62</m>, <m>b=412</m>, and <m>A=22.5^{\circ}</m>. Notice this is Case 3 of <xref ref="tab_SSA"/> for Law of Sines where we get two triangles. Since we already know what the triangle looks like, we want the measure for <m>B</m> that makes it obtuse. However, to avoid this ambiguous case, we can simply use the Law of Cosines
+          we know <m>a\approx304.62</m>, <m>b=412</m>, and <m>A=22.5^{\circ}</m>. Notice this is Case 3 of <xref ref="tab_SSA"/> for Law of Sines where we get two triangles, one triangle where <m>B\lt90^{\circ}</m> and one where <m>B\gt90^{\circ}</m>. Since we already know what the triangle looks like, we want the measure for <m>B\gt90^{\circ}</m>. However, to avoid this ambiguous case, we can simply use the Law of Cosines
           <me>
             b^2=a^2+c^2-2ac\cos B
           </me>.
@@ -262,16 +262,51 @@
         </p>
       </solution>
     </example>
+      <remark>
+        <title>Steps for solving SAS triangles</title>
+        <p>
+          In general, when solving SAS triangles:
+          <ol>
+            <li>
+              <p>
+                Use the Law of Cosines to solve for the remaining side.
+              </p>
+            </li>
+            <li>
+              <p>
+                To find the second angle, you may use either the Law of Cosines or Law of Sines.
+                <ul>
+                  <li>
+                    <p>
+                      Using the Law of Sines may offer a simpler method for finding the angle. Be cautious of the SSA triangle (side-side-angle), which uses the ambiguous case. Refer to <xref ref="tab_SSA"/> to determine which case you have. If you encounter Case 3 (two triangles), check if the angle you need to find is acute (<m>\lt90^{\circ}</m>) or obtuse (<m>\gt90^{\circ}</m>). If it's obtuse, subtract the angle found using the Law of Sines from <m>180^{\circ}</m>.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Using the Law of Cosines does not require verification of whether the angle is acute or obtuse, but it involves more steps to isolate the angle.
+                    </p>
+                  </li>
+                </ul>
+              </p>
+            </li>
+            <li>
+                <p>Utilize the fact that the sum of the three angles in a triangle equals <m>180^{\circ}</m> to find the third angle.</p>
+            </li>
+          </ol>
+        </p>
+      </remark>
+  </subsection>
+  <subsection xml:id="subsec-using-law-of-cosines-sss">
+    <title>Using Law of Cosines (SSS)</title>
     <example>
       <title>Using Law of Cosines (SSS)</title>
       <statement>
         <p>
-          If the sides of a triangle are <m>a=5</m>, <m>b=7</m>,
-          and <m>c=3</m>, find the angles.
+          If the sides of a triangle are <m>a=5</m>, <m>b=7</m>, and <m>c=3</m>, find the angles.
         </p>
         <image xml:id="fig-example-sss" width="75%">
           <latex-image>
-            \begin{tikzpicture}[scale=2]
+            \begin{tikzpicture}[scale=1.5]
             \draw[blue,line width=1] (-3,0) -- (0,0) node[midway,below] {\(c=3\)};
             \draw[blue,line width=1] (-3,0) -- (60:5) node[midway,left,xshift=-5] {\(b=7\)};
             \draw[blue,line width=1] (0,0) -- (60:5) node[midway,right,xshift=4] {\(a=5\)};
@@ -322,10 +357,38 @@
       </solution>
     </example>
     <remark>
+      <title>Steps for solving SSS triangles</title>
       <p>
-        After solving for a side using the Law of Cosines, we can determine the next angle by applying either the Law of Sines or the Law of Cosines. Choosing the Law of Cosines may require more steps to isolate and solve for the angle. However, selecting the Law of Sines introduces the potential for encountering the side-side-angle (SSA) triangle, the ambiguous case. Therefore, it's important to be careful if using the Law of Sines in this case.
+        When solving SSS triangles, the process is similar to that of solving SAS triangles, with a slight variation. Instead of solving for a side in Step 1, you solve for an angle. Steps 2 and 3 remain the same:
+        <ol>
+          <li>
+              <p>Use the Law of Cosines to solve for the first angle.</p>
+          </li>
+          <li>
+            <p>
+              To find the second angle, you may use either the Law of Cosines or Law of Sines.
+              <ul>
+                <li>
+                  <p>
+                    Using the Law of Sines may provide a simpler method for finding the angle. Be cautious of the SSA triangle (side-side-angle), which can lead to the ambiguous case. Refer to Table SSA to determine your case. If you encounter Case 3 (two triangles), verify if the angle you need to find is acute (<m>\lt90^{\circ}</m>) or obtuse (<m>\gt90^{\circ}</m>). For obtuse angles, subtract the angle found using the Law of Sines from <m>180^{\circ}</m>.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Using the Law of Cosines does not require verification of whether the angle is acute or obtuse, but it involves more steps to isolate the angle.
+                  </p>
+                </li> 
+              </ul>
+            </p>
+          </li>
+          <li>
+            <p>
+              Utilize the fact that the sum of the three angles in a triangle equals <m>180^{\circ}</m> to find the third angle.
+            </p>
+          </li>
+        </ol>
       </p>
-    </remark>
+  </remark>
   </subsection>
   <subsection>
     <title>Area of an oblique triangle</title>
@@ -348,17 +411,17 @@
       <title>Polynesian Triangle</title>
       <statement>
         <p>
-          The Polynesian Triangle is an expanse in the Pacific Ocean comprising over 1,000 islands collectively known as Polynesia. Positioned at its northern corner are the Hawaiian Islands, while Aotearoa marks the southwestern corner, and Rapa Nui lies at the southeastern corner. Historically, the first settlers are believed to have arrived at Ka Lae, Hawaiʻi; Hokianga, Aotearoa; and Anakena, Rapa Nui, respectively. The distances between these pivotal locations are as follows: 4,250 miles separates Ka Lae, Hawai`i from Hokianga, Aotearoa; 4,500 miles span between Hokianga, Aotearoa and Anakena, Rapa Nui; and 4,450 miles separate Rapa Nui from Ka Lae, Hawaiʻi.What is the area of the Polynesian Triangle, rounded to the nearest square mile?
+          The Polynesian Triangle is an expanse in the Pacific Ocean comprising over 1,000 islands collectively known as Polynesia. Positioned at its northern corner are the Hawaiian Islands, while Aotearoa marks the southwestern corner, and Rapa Nui lies at the southeastern corner. Historically, the first settlers are believed to have arrived at Ka Lae, Hawaiʻi; Hokianga, Aotearoa; and Anakena, Rapa Nui, respectively. The distances between these pivotal locations are as follows: 6,850 km separates Ka Lae, Hawai`i from Hokianga, Aotearoa; 7,250 km span between Hokianga, Aotearoa and Anakena, Rapa Nui; and 7,150 km separate Rapa Nui from Ka Lae, Hawaiʻi. What is the area of the Polynesian Triangle, rounded to the nearest square mile?
         </p>
         <image xml:id="fig-polynesian-triangle">
           <latex-image>
-            \begin{tikzpicture}
+            \begin{tikzpicture}[scale=0.75]
             \node[above] at (2.5,1.9) {Ka Lae, Hawai`i};
             \node[left] at (-0.5,-3.5) {Hokianga, Aotearoa};
             \node[right] at (7.1,-2.7) {Anakena, Rapa Nui};
-            \draw[sloped] (2.5,1.9) -- (-0.5,-3.5) node[midway, above] {\(4,250\)};
-            \draw[sloped] (-0.5,-3.5) -- (7.1,-2.7) node[midway, below] {\(4,500\)};
-            \draw[sloped] (2.5,1.9) -- (7.1,-2.7) node[midway, above] {\(4,450\)};
+            \draw[sloped] (2.5,1.9) -- (-0.5,-3.5) node[midway, above] {\(6,850\)};
+            \draw[sloped] (-0.5,-3.5) -- (7.1,-2.7) node[midway, below] {\(7,250\)};
+            \draw[sloped] (2.5,1.9) -- (7.1,-2.7) node[midway, above] {\(7,150\)};
             \end{tikzpicture}
           </latex-image>
         </image>
@@ -367,14 +430,14 @@
         <p>
           Using Heron's Formula, we begin by calculating the semiperimeter
           <me>
-            s=\frac{1}{2}(4,250+4,500+4,450)=6,600
+            s=\frac{1}{2}(6,850+7,250+7,150)=10,625
           </me>
         </p>
         <p>
           Then the area created by the Polynesian Triangle is
           <md>
-            <mrow> \mbox{Area} \amp = \sqrt{6,600(6,600-4,250)(6,600-4,500)(6,600-4,450)} </mrow>
-            <mrow> \amp \approx 8,368,253\mbox{mi} ^2 </mrow>
+            <mrow> \mbox{Area} \amp = \sqrt{10,625(10,625-6,850)(10,625-7,250)(10,625-7,150)} </mrow>
+            <mrow> \amp \approx 21,688,886\mbox{km} ^2 </mrow>
           </md>
         </p>
       </solution>
