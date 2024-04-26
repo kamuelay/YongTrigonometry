@@ -75,7 +75,8 @@
   </subsection>
   <subsection xml:id="subsec-vector-addition">
     <title>Vector Addition</title>
-    <example>
+    <example xml:id="latitude-sailing-example">
+      <title>Latitude Sailing</title>
       <statement>
         <p>
           If you stand in Tahiti and face Hawaiʻi, you would be standing in house Haka Hoʻolua or north by west (NbW). When the Hōkūleʻa<idx><h>canoe</h><h>Hōkūleʻa</h></idx> sails from Tahiti to return home to Hawaiʻi, the navigator does not point Hōkūleʻa directly to Hawaiʻi and sail to the Haka Hoʻolua house. Instead, Hōkūleʻa sails north. When the navigator has determined that Hōkūleʻa has reached the latitude of Hawaiʻi, about <m>20^{\circ}</m> N, the waʻa then turns west to come home. This method of navigation is called <em>latitude sailing</em>.<idx><h>latitude sailing</h></idx> For this strategy to work, the navigator must know their latitude which can be determined by (1) measuring altitude of Hokupa'a (North Star); (2) measuring the altitude of stars as they cross the meridian; or (3) watching for pairs of stars that rise or set together.
