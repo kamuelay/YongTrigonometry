@@ -75,73 +75,75 @@
   </subsection>
   <subsection xml:id="subsec-vector-addition">
     <title>Vector Addition</title>
-    <example xml:id="latitude-sailing-example">
-      <title>Latitude Sailing</title>
-      <statement>
-        <p>
-          If you stand in Tahiti and face Hawaiʻi, you would be standing in house Haka Hoʻolua or north by west (NbW). When the Hōkūleʻa<idx><h>canoe</h><h>Hōkūleʻa</h></idx> sails from Tahiti to return home to Hawaiʻi, the navigator does not point Hōkūleʻa directly to Hawaiʻi and sail to the Haka Hoʻolua house. Instead, Hōkūleʻa sails north. When the navigator has determined that Hōkūleʻa has reached the latitude of Hawaiʻi, about <m>20^{\circ}</m> N, the waʻa then turns west to come home. This method of navigation is called <em>latitude sailing</em>.<idx><h>latitude sailing</h></idx> For this strategy to work, the navigator must know their latitude which can be determined by (1) measuring altitude of Hokupa'a (North Star); (2) measuring the altitude of stars as they cross the meridian; or (3) watching for pairs of stars that rise or set together.
-        </p>
-        <p>
-          We can represent Hōkūleʻa's path north by the vector <m>\overrightarrow{PQ}</m> and the path west by the vector <m>\overrightarrow{QR}</m> then the resulting displacement is the same as if you were to sail directly from Tahiti to Hawaiʻi, represented by <m>\overrightarrow{PR}</m>. See <xref ref="fig_adding-vectors">Figure</xref>. We call the vector <m>\overrightarrow{PR}</m> the <em>sum</em><idx><h>vectors</h><h>sum</h></idx> of the vectors <m>\overrightarrow{PQ}</m> and <m>\overrightarrow{QR}</m> and we write
-          <me>
-            \overrightarrow{PQ}+\overrightarrow{QR}=\overrightarrow{PR}
-          </me>.
-        </p>
-        <figure xml:id="fig_adding-vectors">
-          <caption>Adding the vector heading north with the vector heading west (similar to the path navigators use through latitude sailing) results in the same vector directly from Tahiti to Hawaiʻi.</caption>
-          <image xml:id="fig-vector-addition-latitude-sailing">
-            <latex-image>
-              \begin{tikzpicture}
-              \draw[line width=2pt,blue,-stealth](0,0) -- (0,8) node[black,midway,right]{\(\overrightarrow{PQ}\)};
-              \draw[line width=2pt,blue,-stealth](0,8) -- (-3,8) node[black,midway,above]{\(\overrightarrow{QR}\)};
-              \draw[line width=2pt,blue,-stealth](0,0) -- (-3,8) node[black,midway,left,xshift=-4]{\(\overrightarrow{PR}=\overrightarrow{PQ}+\overrightarrow{QR}\)};
-              \node[below] at (0,0) {\(P\)};
-              \node[left] at (-3,8) {\(Q\)};
-              \node[xshift=1cm] at (0,0) {Tahiti};
-              \node[above,xshift=-1.25cm] at (-3,8) {Hawai`i};
-              \end{tikzpicture}
-            </latex-image>
-          </image>
-        </figure>
-      </statement>
-    </example>
     <p>
-      To find the <em>sum</em> of vectors <m>\mathbf{u}</m> and <m>\mathbf{v}</m>, we place the initial point of the second vector at the terminal (or end) point of the first vector. The vector formed from the initial point of the first vector to the terminal point of the second vector is the the sum of the two vectors, <m>\mathbf{u}+\mathbf{v}</m>. See <xref ref="fig_sum-of-vectors1">Figure</xref>. Since vectors can be translated, any two vectors can be added. Notice that adding the vector <m>\mathbf{v}</m> to <m>\mathbf{u}</m> results in the same vector obtained by adding <m>\mathbf{u}</m> to <m>\mathbf{v}</m>. Thus <m>\mathbf{u}+\mathbf{v}=\mathbf{v}+\mathbf{u}</m>.
+      If you stand in Tahiti and face Hawaiʻi, you would be standing in house Haka Hoʻolua or north by west (NbW). When the Hōkūleʻa<idx><h>canoe</h><h>Hōkūleʻa</h></idx> sails from Tahiti back home to Hawaiʻi, it doesn't head directly towards Hawaiʻi in the house Haka Hoʻolua. Instead, Hōkūleʻa initially sails north. Once the navigator determines that Hōkūleʻa has reached the latitude of Hawaiʻi, approximately <m>20^{\circ}</m> N, the waʻa then changes course to head westward towards home. This navigation technique is known as <term>latitude sailing</term>,<idx><h>latitude sailing</h></idx> where knowing the latitude is crucial. The navigator can determine the latitude by measuring the altitude of Hokupa'a (North Star), observing the altitude of stars as they cross the meridian, or watching for pairs of stars that rise or set together.
     </p>
-    <figure xml:id="fig_sum-of-vectors1">
-      <caption><m>\mathbf{u}+\mathbf{v}=\mathbf{v}+\mathbf{u}</m></caption>
-      <image xml:id="fig-vector-addition">
+    <p>
+      We can represent the location of Tahiti as <m>P</m> and the location of Hawaiʻi as <m>Q</m>. Then, Hōkūleʻa's northward path can be represented by the vector <m>\overrightarrow{PQ}</m>, and its westward path by the vector <m>\overrightarrow{QR}</m>. The resulting displacement is equivalent to sailing directly from Tahiti to Hawaiʻi, represented by <m>\overrightarrow{PR}</m>. See <xref ref="fig_adding-vectors">Figure</xref>. We refer to the vector <m>\overrightarrow{PR}</m> as the <term>sum</term> of the vectors <m>\overrightarrow{PQ}</m> and <m>\overrightarrow{QR}</m>, written as:
+      <me>
+        \overrightarrow{PQ}+\overrightarrow{QR}=\overrightarrow{PR}
+      </me>.
+    </p>
+    <figure xml:id="fig_adding-vectors">
+      <caption>Combining the northward and westward vectors, similar to the navigation technique of latitude sailing, results in the direct vector from Tahiti to Hawaiʻi.</caption>
+      <image xml:id="fig-vector-addition-latitude-sailing" width="50%">
         <latex-image>
           \begin{tikzpicture}
-          \draw[thin,gray!40] (1,1) grid (14,9);
-          \draw[line width=2pt,blue,-stealth](2,2) -- (5,7) node[black,sloped,midway,above]{\(\mathbf{u}\)};
-          \draw[line width=2pt,blue,-stealth](2,2) -- (10,3) node[black,sloped,midway,below]{\(\mathbf{v}\)};
-          \draw[dashed,line width=2pt,blue,-stealth](5,7) -- (13,8) node[black,sloped,midway,above]{\(\mathbf{v}\)};
-          \draw[dashed,line width=2pt,blue,-stealth](10,3) -- (13,8) node[black,sloped,midway,below]{\(\mathbf{u}\)};
-          \draw[line width=2pt,blue,-stealth](2,2) -- (13,8) node[black,sloped,midway,below]{\(\mathbf{u}+\mathbf{v}\)};
+          \draw[line width=2pt,blue,-stealth](0,0) -- (0,8) node[black,midway,right]{\(\overrightarrow{PQ}\)};
+          \draw[line width=2pt,blue,-stealth](0,8) -- (-3,8) node[black,midway,above]{\(\overrightarrow{QR}\)};
+          \draw[line width=2pt,blue,-stealth](0,0) -- (-3,8) node[black,midway,left,xshift=-4]{\(\overrightarrow{PR}=\overrightarrow{PQ}+\overrightarrow{QR}\)};
+          \node[below] at (0,0) {\(P\)};
+          \node[left] at (-3,8) {\(Q\)};
+          \node[xshift=1cm] at (0,0) {Tahiti};
+          \node[above,xshift=-1.25cm] at (-3,8) {Hawai`i};
           \end{tikzpicture}
         </latex-image>
       </image>
     </figure>
-  </subsection>
-  <subsection>
-    <title>Multiplying Vectors by a Scalar</title>
-    <p>
-      If a waʻa sails for two days at 5 knots, it will have covered 240 miles. This distance traveled is known as the magnitude of the vector and it is given as a real number. These real numbers are often referred to as <term>scalars</term>.<idx><h>scalar</h></idx> The magnitude of the vector that represents a waʻa's path for two days will be twice as big as the magnitude of the vector that represents the path a waʻa sailed for only one day. We now can define how we multiply a vector by a scalar.
-    </p>
-    <definition>
+    <definition xml:id="def-sum-of-vectors">
+      <title>Vector Addition</title>
       <statement>
         <p>
-          If <m>c</m> is a scalar (real number) and <m>\mathbf{v}</m> is a vector, then the <term>scalar multiple</term> <m>c\mathbf{v}</m> has magnitude <m>c</m> times the magnitude of <m>\mathbf{v}</m> (<m>|c|\|\mathbf{v}\|</m>) and if
+          Vector addition is the process of combining two or more vectors to produce a resultant vector. To find the <term>sum</term><idx><h>sum</h><h>of vectors</h></idx><idx><h>addition</h><h>of vectors</h></idx> of vectors <m>\mathbf{u}</m> and <m>\mathbf{v}</m>, we place the initial point of the second vector with the terminal point of the first vector. The vector formed from the initial point of the first vector to the terminal point of the second vector represents the sum of the two vectors, denoted by <m>\mathbf{u}+\mathbf{v}</m>. Since vectors can be translated, any two vectors can be added by shifting one vector's starting point to the endpoint of another vector. Importantly, adding the vector <m>\mathbf{v}</m> to <m>\mathbf{u}</m> yields the same result as adding <m>\mathbf{u}</m> to <m>\mathbf{v}</m>, as demonstrated below. Thus, we have:
+          <me>\mathbf{u}+\mathbf{v}=\mathbf{v}+\mathbf{u}</me>.
+        </p>
+        <image xml:id="fig-vector-addition">
+          <latex-image>
+            \begin{tikzpicture}
+            \draw[thin,gray!40] (1,1) grid (14,9);
+            \draw[line width=2pt,blue,-stealth](2,2) -- (5,7) node[black,sloped,midway,above]{\(\mathbf{u}\)};
+            \draw[line width=2pt,blue,-stealth](2,2) -- (10,3) node[black,sloped,midway,below]{\(\mathbf{v}\)};
+            \draw[dashed,line width=2pt,blue,-stealth](5,7) -- (13,8) node[black,sloped,midway,above]{\(\mathbf{v}\)};
+            \draw[dashed,line width=2pt,blue,-stealth](10,3) -- (13,8) node[black,sloped,midway,below]{\(\mathbf{u}\)};
+            \draw[line width=2pt,blue,-stealth](2,2) -- (13,8) node[black,sloped,midway,below]{\(\mathbf{u}+\mathbf{v}\)};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </statement>
+    </definition>
+  </subsection>
+  <subsection xml:id="subsec-multiplying-vectors-by-scalar">
+    <title>Multiplying Vectors by a Scalar</title>
+    <p>
+      When a waʻa sails for two days at 5 knots, it covers a distance of 240 miles. This distance traveled is known as the <term>magnitude</term><idx><h>magnitude</h></idx> of the vector and is represented by a real number, which we refer to as a <term>scalar</term>.<idx><h>scalar</h></idx>
+    </p>
+    <p>
+      The magnitude of the vector representing a waʻa's path for two days will be twice that of the vector representing the path sailed for only one day. We can now define scalar multiplication of vectors.
+    </p>
+    <definition xml:id="def-scalar-multiplication-vectors">
+      <title>Scalar Multiplication of Vectors</title>
+      <statement>
+        <p>
+          If <m>c</m> is a scalar (real number) and <m>\mathbf{v}</m> is a vector, then the <term>scalar multiple</term><idx><h>scalar multiplication</h></idx> <m>c\mathbf{v}</m> has magnitude equal to the absolute value of <m>c</m> times the magnitude of <m>\mathbf{v}</m> (<m>|c|\|\mathbf{v}\|</m>). Additionally:
           <ul>
             <li>
               <p>
-                <m>c>0</m> has the same direction as <m>\mathbf{v}</m>
+                If <m>c\gt0</m>, the scalar multiple has the same direction as <m>\mathbf{v}</m>.
               </p>
             </li>
             <li>
               <p>
-                <m>c\lt 0</m> has the opposite direction as <m>\mathbf{v}</m>
+                If <m>c\lt 0</m>, the scalar multiple has the opposite direction as <m>\mathbf{v}</m>
               </p>
             </li>
           </ul>
@@ -151,72 +153,95 @@
         </p>
       </statement>
     </definition>
-    <figure xml:id="fig_scalar-multiples">
-      <caption>scalar multiples</caption>
+    <example>
+      <title>Scalar Multiplication</title>
+      <p>
+        To demonstrate scalar multiplication, consider a vector <m>\mathbf{v}</m> representing the displacement of a canoe. Let's say <m>\mathbf{v}</m> is a vector with magnitude 100 miles, pointing northeast. We can visualize this vector as representing the journey of a canoe from one point to another.
+      </p>
+      <p>
+        Now, let's explore scalar multiplication applied to this vector:
+        <ul>
+          <li>
+            <p>
+              <m> 1 \cdot \mathbf{v} </m>: This represents the same direction and magnitude as <m> \mathbf{v} </m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m> \frac{1}{2} \mathbf{v} </m>: This represents half the magnitude of <m> \mathbf{v} </m>, so it would have a magnitude of 50 miles, still pointing northeast.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m> -\mathbf{v} </m>: This represents the opposite direction of <m> \mathbf{v} </m>, so it would have the same magnitude of 100 miles but pointing southwest instead.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m> 2\mathbf{v} </m>: This represents doubling the magnitude of <m> \mathbf{v} </m>, so it would have a magnitude of 200 miles, still pointing northeast.
+            </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        The figure below illustrates the original vector <m>\mathbf{v}</m> and the resulting vectors <m>1 \cdot \mathbf{v}</m>, <m> \frac{1}{2} \mathbf{v} </m>, <m> -\mathbf{v} </m>, and <m> 2\mathbf{v} </m>.
+      </p>
       <image xml:id="fig-scalar-multiples">
         <latex-image>
           \begin{tikzpicture}
           \draw[thin,gray!40] (-8,-4) grid (8,4);
-          \draw[stealth-stealth] (-8,0)--(8,0) node[right]{\(x\)};
-          \draw[stealth-stealth] (0,-4)--(0,4) node[above]{\(y\)};
-          \draw[line width=2pt,blue,-stealth](-5,-3) -- (-2,-1) node[black,sloped,midway,above]{\(\mathbf{u}\)};
-          \draw[line width=2pt,blue,-stealth](-7,1)--(-4,3) node[black,sloped,midway,above]{\(\mathbf{u}\)};
-          \draw[line width=2pt,blue,-stealth](3,3)--(0,1) node[black,sloped,midway,above]{\(-\mathbf{u}\)};
-          \draw[line width=2pt,blue,-stealth](1,-3)--(7,1) node[black,sloped,midway,above]{\(2\mathbf{u}\)};
-          \draw[line width=2pt,blue,-stealth](-3,2)--(-1.5,3) node[black,sloped,midway,above]{\(\frac{1}{2}       \mathbf{u}\)};
+          \draw[line width=2pt,blue,-stealth](-5,-3) -- (-2,-1) node[black,sloped,midway,above]{\(\mathbf{v}\)};
+          \draw[line width=2pt,blue,-stealth](-7,1)--(-4,3) node[black,sloped,midway,above]{\(1\mathbf{v}\)};
+          \draw[line width=2pt,blue,-stealth](3,3)--(0,1) node[black,sloped,midway,above]{\(-\mathbf{v}\)};
+          \draw[line width=2pt,blue,-stealth](1,-3)--(7,1) node[black,sloped,midway,above]{\(2\mathbf{v}\)};
+          \draw[line width=2pt,blue,-stealth](-3,2)--(-1.5,3) node[black,sloped,midway,above]{\(\frac{1}{2}\mathbf{v}\)};
           \end{tikzpicture}
         </latex-image>
       </image>
-    </figure>
+    </example>
   </subsection>
-  <subsection>
+  <subsection xml:id="subsec-vector-subtraction">
     <title>Vector Subtraction</title>
     <definition xml:id="def-vector-subtraction">
-      <title>Vector Subtraction</title><idx><h>vectors</h><h>subtraction</h></idx>
+      <title>Vector Subtraction</title><idx><h>subtraction</h><h>of vectors</h></idx>
       <statement>
         <p>
-          Vector subtraction is defined to be the sum of one vector with the negative of another vector. In other words,
-      <m>\mathbf{u}-\mathbf{v}=\mathbf{u}+(-\mathbf{v})</m>.
+          Vector <term>subtraction</term> is defined as the sum of one vector with the negative of another vector. In other words, <m>\mathbf{u}-\mathbf{v}=\mathbf{u}+(-\mathbf{v})</m>.
         </p>
       </statement>
     </definition>
   </subsection>
-  <subsection>
+  <subsection xml:id="subsec-vectors-in-coordinates">
     <title>Vectors in Coordinates</title>
     <definition xml:id="def-component-form-of-a-vector">
       <title>Component Form of a Vector</title>
       <statement>
         <p>
-          If a vector, <m>\mathbf{v}</m> has initial point <m>P(x_1,y_1)</m> and terminal point <m>Q(x_2,y_2)</m>, then the following are equivalent ways to write the vector
+          A vector <m>\mathbf{v}</m> with initial point <m>P(x_1,y_1)</m> and terminal point <m>Q(x_2,y_2)</m> can be expressed in various ways. One common representation is as the directed line segment from point <m>P</m> to point <m>Q</m>, denoted as <m>\overrightarrow{PQ}</m>. Alternatively, we can describe it using the changes in the <m>x-</m> and <m>y-</m> coordinates between points <m>P</m> and <m>Q</m>. These changes are referred to as the <term>horizontal component</term><idx><h>vectors</h><h>horizontal component</h></idx> and <term>vertical component</term><idx><h>vectors</h><h>vertical component</h></idx> of the vector, denoted as <m>v_x</m> and <m>v_y</m> respectively. Mathematically, these representations are all equivalent:
           <md>
             <mrow>\mathbf{v}\amp = \overrightarrow{PQ}</mrow>
             <mrow>\amp = \langle x_2-x_1,y_2-y_1\rangle</mrow>
             <mrow>\amp = \langle v_x,v_y\rangle</mrow>
           </md>
+          as illustrated in the following figure.
         </p>
-        <p>
-          The coordinates, <m>v_x</m> and <m>v_y</m> are scalars (real numbers) and represent the <term>horizontal component</term><idx><h>vectors</h><h>horizontal component</h></idx>, and <term>vertical component</term><idx><h>vectors</h><h>vertical component</h></idx>, respectively. Note <m>v_x</m> and <m>v_y</m> are not coordinates, instead they are vectors. See <xref ref="fig_vector-components">Figure</xref>.
-        </p>
-        <figure xml:id="fig_vector-components">
-          <caption>Components of vectors. The following are equivalent ways of describing a vector: <m>\mathbf{v}=\overrightarrow{PQ}=\langle x_2-x_1,y_2-y_1\rangle=\langle v_x,v_y\rangle</m></caption>
-          <image xml:id="fig-vector-components">
-            <latex-image>
-              \begin{tikzpicture}
-              \draw[stealth-stealth] (-1,0)--(15,0) node[right]{\(x\)};
-              \draw[stealth-stealth] (0,-1)--(0,10) node[above]{\(y\)};
-              \draw[line width=2pt,blue,-stealth](1,3) -- (11,9) node[black,midway,above]{\(\mathbf{v}\)};
-              \node[above] at (1,3) {\(P\)};
-              \node[above] at (11,9) {\(Q\)};
-              \draw[dashed] (1,3)--(1,0) node[below]{\(x_1\)};
-              \draw[dashed] (11,9)--(11,0) node[below]{\(x_2\)};
-              \draw[dashed] (11,3)--(0,3) node[left]{\(y_1\)};
-              \draw[dashed] (11,9)--(0,9) node[left]{\(y_2\)};
-              \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](1,3) -- (11,3) node[black,midway,yshift=-0.6cm] { \(v_x=x_2-x_1\)};
-              \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=0.4pt](11,3) -- (11,9) node[black,midway,xshift=1.25cm] { \(v_y=y_2-y_1\)};
-              \end{tikzpicture}
-            </latex-image>
-          </image>
-        </figure>
+        <image xml:id="fig-vector-components">
+          <latex-image>
+            \begin{tikzpicture}[scale=0.67]
+            \draw[stealth-stealth] (-1,0)--(15,0) node[right]{\(x\)};
+            \draw[stealth-stealth] (0,-1)--(0,10) node[above]{\(y\)};
+            \draw[line width=2pt,blue,-stealth](1,3) -- (11,9) node[black,midway,above]{\(\mathbf{v}\)};
+            \node[above] at (1,3) {\(P\)};
+            \node[above] at (11,9) {\(Q\)};
+            \draw[dashed] (1,3)--(1,0) node[below]{\(x_1\)};
+            \draw[dashed] (11,9)--(11,0) node[below]{\(x_2\)};
+            \draw[dashed] (11,3)--(0,3) node[left]{\(y_1\)};
+            \draw[dashed] (11,9)--(0,9) node[left]{\(y_2\)};
+            \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](1,3) -- (11,3) node[black,midway,yshift=-0.6cm] { \(v_x=x_2-x_1\)};
+            \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=0.4pt](11,3) -- (11,9) node[black,midway,xshift=2.25cm] { \(v_y=y_2-y_1\)};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
       </statement>
     </definition>
     <remark>
@@ -225,37 +250,63 @@
         To avoid confusion with the notation for a point and an interval, we use the symbol <m>\langle v_1,v_2\rangle</m> for an ordered pair that represents a vector. Lowercase letters are used to represent the components.
       </p>
     </remark>
-    <p>
-      A vector, <m>\mathbf{v}</m> with an initial point at <m>(0,0)</m> and terminal point at <m>(a,b)</m> can be written as <m>\mathbf{v}=\langle a-0,b-0\rangle=\langle a,b\rangle</m>, and <m>\mathbf{v}</m> is said to be in <em>standard position</em>.<idx><h>vectors</h><h>standard position</h></idx> A vector with an initial point at the origin is called the <em>position vector</em>.<idx><h>vectors</h><h>position vector</h></idx>
-    </p>
+    <definition xml:id="def-position-vector">
+      <title>Position Vector</title>
+      <statement>
+        <p>
+          A vector, <m>\mathbf{v}</m> with an initial point at <m>(0,0)</m> and terminal point at <m>(a,b)</m> is called the <term>position vector</term><idx><h>vectors</h><h>position vector</h></idx> and can be written as
+          <me>\mathbf{v}=\langle a-0,b-0\rangle=\langle a,b\rangle</me>.
+        </p>
+      </statement>
+    </definition>
+    <remark>
+      <p>
+        The position vector represents the terminal point of any vector <m>\mathbf{v}</m> when its initial point is at the origin. Essentially, it is <m>\mathbf{v}</m> translated so that its initial side starts at the origin. This translation does not change the magnitude or direction, making the two vectors equivalent. Thus, we can refer to both vectors as <m>\mathbf{v}</m>. In other words, the terminal point of a vector starting at the origin is defined by its horizontal and vertical components.
+      </p>
+    </remark>
     <example>
       <statement>
         <p>
-          The vector <m>\mathbf{v}</m> that goes from <m>P(1,7)</m> to <m>Q(11,2)</m> can be expressed as
-          <me>
-            \mathbf{v}=\overrightarrow{PQ}=\langle11-1,2-7\rangle=\langle10,-5\rangle
-          </me>
+          Find the position vector of the vector that goes from <m>P(2,-1)</m> to <m>Q(5,3)</m>.
         </p>
-        <image xml:id="fig-vector-example-P-Q">
+      </statement>
+      <solution>
+        <p>
+          From <xref ref="def-component-form-of-a-vector"/>, our original vector can be written as:
+          <me>
+            \mathbf{v}=\overrightarrow{PQ}=\langle5-2,3-(-1)\rangle=\langle3,4\rangle
+          </me>.
+          Then by <xref ref="def-position-vector"/>, the position vector is:
+          <me>
+            \mathbf{v}=\langle3,4\rangle
+          </me>.
+          This vector starts at the origin with 3 as its horizontal component and 4 as its vertical component, as illustrated in the figure below.
+        </p>
+        <image xml:id="fig-position-vector" width="50%">
           <latex-image>
-            \begin{tikzpicture}
-            \draw[thin,gray!40] (-1,1) grid (15,9);
-            \draw[line width=2pt,blue,-stealth](1,7) -- (11,2) node[black,midway,above]{\(\mathbf{v}\)};
-            \node[above] at (1,7) {\(P(1,7)\)};
-            \node[right] at (11,2) {\(Q(11,2)\)};
+            \begin{tikzpicture}[scale=1]
+            \draw[thin,gray!40] (-1,-2) grid (6,5);
+            \draw[stealth-stealth] (-1,0)--(6,0) node[right]{\(x\)};
+            \draw[stealth-stealth] (0,-2)--(0,5) node[above]{\(y\)};
+            \draw[line width=2pt,blue,-stealth](2,-1) -- (5,3) node[black,midway,left]{\(\mathbf{v}=\langle3,4\rangle\)};
+            \draw[line width=2pt,blue,-stealth](0,0) -- (3,4) node[black,midway,left]{\(\mathbf{v}=\langle3,4\rangle\)};
+            \node[below] at (2,-1) {\(P(2,-1)\)};
+            \node[above] at (5,3) {\(Q(5,3)\)};
             \end{tikzpicture}
           </latex-image>
         </image>
-      </statement>
+      </solution>
     </example>
-    <definition>
+    <definition xml:id="def-zero-vector">
+      <title>Zero Vector</title>
       <statement>
         <p>
           The <term>zero vector</term><idx><h>zero vector</h></idx> is the vector <m>\mathbf{0}=\langle0,0\rangle</m>
         </p>
       </statement>
     </definition>
-    <definition>
+    <definition xml:id="def-magnitude">
+      <title>Magnitude of a Vector</title>
       <statement>
         <p>
           Given a vector <m>\mathbf{v}=\langle v_x,v_y\rangle</m>, the <term>magnitude</term><idx><h>vectors</h><h>magnitude</h></idx> or <term>length</term><idx><h>vectors</h><h>length</h></idx> is
@@ -264,33 +315,90 @@
           </me>
         </p>
         <p>
-          This formula is derived from the Pythagorean Theorem or the distance formula.
+          This formula is derived from the Pythagorean Theorem or the distance formula where the square of the magnitude  equals the square of the horizontal component plus the square of the vertical component:
+          <me>
+            \|\mathbf{v}\|^2=v_x^2+v_y^2
+          </me>
         </p>
-      </statement>
-    </definition>
-    <definition>
-      <statement>
         <p>
-          A vector <m>\mathbf{u}</m> with magnitude 1, <m>\|\mathbf{u}\|=1</m>,
-          is called a <term>unit vector</term><idx><h>vectors</h><h>unit vector</h></idx>
+          This relationship can be visually understood using the Pythagorean Theorem, as illustrated in the following figure.
         </p>
+        <image xml:id="fig-magnitude" width="75%">
+          <latex-image>
+            \begin{tikzpicture}[scale=0.75]
+            \draw[thin,gray!40] (-1,-1) grid (11,8);
+            \draw[stealth-stealth] (-1,0)--(11,0) node[right]{\(x\)};
+            \draw[stealth-stealth] (0,-1)--(0,8) node[above]{\(y\)};
+            \draw[line width=2pt,blue,-stealth](2,3) -- (9,7) node[black,midway,below right]{\(\mathbf{v}=\langle v_x,v_y\rangle\)};
+            \draw[dashed] (2,3) -- (9,3);
+            \draw[dashed] (9,3) -- (9,7);
+            \draw (8.5,3) -- (8.5,3.5) -- (9,3.5);
+            \draw [decorate,decoration={brace,amplitude=20pt,mirror},xshift=0.4pt,yshift=0.4pt](2,3) -- (9,3) node[black,midway,yshift=-1cm] { \(v_x\)};
+            \draw [decorate,decoration={brace,amplitude=20pt,mirror},xshift=0.4pt,yshift=0.4pt](9,3) -- (9,7) node[black,midway,xshift=1.25cm] { \(v_y\)};
+            \draw [decorate,decoration={brace,amplitude=20pt,mirror},xshift=0.4pt,yshift=0.4pt](9,7) -- (2,3) node[black,midway,yshift=1cm,xshift=-0.75cm] { \(\|\mathbf{v}\|\)};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
       </statement>
     </definition>
     <example xml:id="ex_magnitude">
+      <introduction>
+        <p>
+          Find the magnitude of each vector.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>\mathbf{u}=\langle10,-5\rangle</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <me>
+              \|\mathbf{u}\|=\sqrt{10^2+(-5)^2}=\sqrt{125}=\sqrt{25\cdot5}=\sqrt{25}\cdot\sqrt{5}=5\sqrt{5}
+            </me>
+          </p>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\mathbf{v}=\langle-2,7\rangle</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <me>
+              \|\mathbf{v}\|=\sqrt{(-2)^2+7^2}=\sqrt{4+49}=\sqrt{53}
+            </me>
+          </p>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\mathbf{w}=\langle\frac{12}{13},\frac{5}{13}\rangle</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <me>
+              \|\mathbf{w}\|=\sqrt{\left(\frac{12}{13}\right)^2+\left(\frac{5}{13}\right)^2}=\sqrt{\frac{144}{169}+\frac{25}{169}}=\sqrt{\frac{169}{169}}=1
+            </me>
+          </p>
+        </solution>
+      </task>
+    </example>
+    <definition xml:id="def-unit-vector">
+      <title>Unit Vector</title>
       <statement>
         <p>
-          Find the magnitude of the vector <m>\mathbf{v}=\langle10,-5\rangle</m>
+          A vector <m>\mathbf{u}</m> with magnitude 1, <m>\|\mathbf{u}\|=1</m>, is called a <term>unit vector</term><idx><h>vectors</h><h>unit vector</h></idx>
         </p>
       </statement>
-      <solution>
-        <p>
-          <me>
-            \|\mathbf{v}\|=\sqrt{10^2+(-5)^2}=\sqrt{125}=\sqrt{25\cdot5}=\sqrt{25}\cdot\sqrt{5}=5\sqrt{5}
-          </me>
-        </p>
-      </solution>
-    </example>
-    <definition>
+    </definition>
+    <definition xml:id="def-algebraic-operations-of-vectors">
       <title>Algebraic operations of vectors</title>
       <statement>
         <p>
@@ -298,7 +406,7 @@
           <md>
             <mrow>\mathbf{u}+\mathbf{v}\amp = \langle u_x+v_x,u_y+v_y\rangle</mrow>
             <mrow>\mathbf{u}-\mathbf{v}\amp = \langle u_x-v_x,u_y-v_y\rangle</mrow>
-            <mrow>c\mathbf{u}\amp =\amp \langle cu_x,cu_y\rangle</mrow>
+            <mrow>c\mathbf{u}\amp = \langle cu_x,cu_y\rangle</mrow>
           </md>
         </p>
       </statement>
@@ -322,7 +430,26 @@
           <image xml:id="fig-algebraic-operations-vectors-u_v">
             <latex-image>
               \begin{tikzpicture}
-              \draw[thin,gray!40] (-2,-2) grid (13,11); \draw[line width=2pt,blue,-stealth](1,1) -- (6,2) node[black,sloped,midway,above]{\(\mathbf{u}\)}; \draw[line width=2pt,blue,-stealth](6,2)--(10,8) node[black,sloped,midway,above]{\(\mathbf{v}\)}; \draw[line width=2pt,blue,-stealth](1,1)--(10,8) node[black,sloped,midway,above]{\(\mathbf{u}+\mathbf{v}\)}; \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](1,0) -- (6,0) node[black,midway,yshift=-0.6cm] { \(5\)}; \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](6,0) -- (10,0) node[black,midway,yshift=-0.6cm] { \(4\)}; \draw [decorate,decoration={brace,amplitude=10pt},xshift=0.4pt,yshift=-2cm](1,11) -- (10,11) node[black,midway,yshift=0.6cm] { \(9\)}; \draw [decorate,decoration={brace,amplitude=10pt},xshift=-0.4pt,yshift=0.4pt](0,1) -- (0,8) node[black,midway,xshift=-0.6cm] { \(7\)}; \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=-0.4pt,yshift=0.4pt](11,1) -- (11,2) node[black,midway,xshift=0.6cm] { \(1\)}; \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=-0.4pt,yshift=0.4pt](11,2) -- (11,8) node[black,midway,xshift=0.6cm] { \(6\)}; \draw[dashed] (1,0)--(1,1); \draw[dashed] (6,0)--(6,2); \draw[dashed] (10,0)--(10,8); \draw[dashed] (10,8)--(11,8); \draw[dashed] (1,1)--(11,1); \draw[dashed] (6,2)--(11,2); \draw[dashed] (0,1)--(1,1); \draw[dashed] (0,8)--(10,8); \draw[dashed] (1,1)--(1,9); \draw[dashed] (10,8)--(10,9);
+              \draw[thin,gray!40] (-2,-2) grid (13,11);
+              \draw[line width=2pt,blue,-stealth](1,1) -- (6,2) node[black,sloped,midway,above]{\(\mathbf{u}\)};
+              \draw[line width=2pt,blue,-stealth](6,2)--(10,8) node[black,sloped,midway,above]{\(\mathbf{v}\)};
+              \draw[line width=2pt,blue,-stealth](1,1)--(10,8) node[black,sloped,midway,above]{\(\mathbf{u}+\mathbf{v}\)};
+              \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](1,0) -- (6,0) node[black,midway,yshift=-0.6cm] { \(5\)};
+              \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](6,0) -- (10,0) node[black,midway,yshift=-0.6cm] { \(4\)};
+              \draw [decorate,decoration={brace,amplitude=10pt},xshift=0.4pt,yshift=-2cm](1,11) -- (10,11) node[black,midway,yshift=0.6cm] { \(9\)};
+              \draw [decorate,decoration={brace,amplitude=10pt},xshift=-0.4pt,yshift=0.4pt](0,1) -- (0,8) node[black,midway,xshift=-0.6cm] { \(7\)};
+              \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=-0.4pt,yshift=0.4pt](11,1) -- (11,2) node[black,midway,xshift=0.6cm] { \(1\)};
+              \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=-0.4pt,yshift=0.4pt](11,2) -- (11,8) node[black,midway,xshift=0.6cm] { \(6\)};
+              \draw[dashed] (1,0)--(1,1);
+              \draw[dashed] (6,0)--(6,2);
+              \draw[dashed] (10,0)--(10,8);
+              \draw[dashed] (10,8)--(11,8);
+              \draw[dashed] (1,1)--(11,1);
+              \draw[dashed] (6,2)--(11,2);
+              \draw[dashed] (0,1)--(1,1);
+              \draw[dashed] (0,8)--(10,8);
+              \draw[dashed] (1,1)--(1,9);
+              \draw[dashed] (10,8)--(10,9);
               \end{tikzpicture}
             </latex-image>
           </image>
@@ -341,7 +468,26 @@
           <image xml:id="fig-algebraic-operations-vectors-u-v">
             <latex-image>
               \begin{tikzpicture}
-              \draw[thin,gray!40] (-2,-7) grid (9,5); \draw[line width=2pt,blue,-stealth](1,1) -- (6,2) node[black,sloped,midway,below]{\(\mathbf{u}\)}; \draw[line width=2pt,blue,-stealth](6,2)--(2,-4) node[black,sloped,midway,above]{\(\mathbf{v}\)}; \draw[line width=2pt,blue,-stealth](1,1)--(2,-4) node[black,sloped,midway,above]{\(\mathbf{u}-\mathbf{v}\)}; \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](1,-5) -- (2,-5) node[black,midway,yshift=-0.6cm] { \(1\)}; \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](2,-5) -- (6,-5) node[black,midway,yshift=-0.6cm] { \(4\)}; \draw [decorate,decoration={brace,amplitude=10pt},xshift=0.4pt,yshift=-2cm](1,5) -- (6,5) node[black,midway,yshift=0.6cm] { \(5\)}; \draw [decorate,decoration={brace,amplitude=10pt},xshift=-0.4pt,yshift=0.4pt](0,-4) -- (0,1) node[black,midway,xshift=-0.6cm] { \(5\)}; \draw [decorate,decoration={brace,amplitude=10pt},xshift=-0.4pt,yshift=0.4pt](0,1) -- (0,2) node[black,midway,xshift=-0.6cm] { \(1\)}; \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=-0.4pt,yshift=0.4pt](7,-4) -- (7,2) node[black,midway,xshift=0.6cm] { \(6\)}; \draw[dashed] (0,1)--(1,1); \draw[dashed] (0,2)--(6,2); \draw[dashed] (1,1)--(1,3); \draw[dashed] (6,2)--(6,3); \draw[dashed] (6,2)--(7,2); \draw[dashed] (6,2)--(6,-5); \draw[dashed] (2,-4)--(7,-4); \draw[dashed] (2,-4)--(2,-5); \draw[dashed] (2,-4)--(0,-4); \draw[dashed] (1,1)--(1,-5);
+              \draw[thin,gray!40] (-2,-7) grid (9,5);
+              \draw[line width=2pt,blue,-stealth](1,1) -- (6,2) node[black,sloped,midway,below]{\(\mathbf{u}\)};
+              \draw[line width=2pt,blue,-stealth](6,2)--(2,-4) node[black,sloped,midway,above]{\(\mathbf{v}\)};
+              \draw[line width=2pt,blue,-stealth](1,1)--(2,-4) node[black,sloped,midway,above]{\(\mathbf{u}-\mathbf{v}\)};
+              \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](1,-5) -- (2,-5) node[black,midway,yshift=-0.6cm] { \(1\)};
+              \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](2,-5) -- (6,-5) node[black,midway,yshift=-0.6cm] { \(4\)};
+              \draw [decorate,decoration={brace,amplitude=10pt},xshift=0.4pt,yshift=-2cm](1,5) -- (6,5) node[black,midway,yshift=0.6cm] { \(5\)};
+              \draw [decorate,decoration={brace,amplitude=10pt},xshift=-0.4pt,yshift=0.4pt](0,-4) -- (0,1) node[black,midway,xshift=-0.6cm] { \(5\)};
+              \draw [decorate,decoration={brace,amplitude=10pt},xshift=-0.4pt,yshift=0.4pt](0,1) -- (0,2) node[black,midway,xshift=-0.6cm] { \(1\)};
+              \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=-0.4pt,yshift=0.4pt](7,-4) -- (7,2) node[black,midway,xshift=0.6cm] { \(6\)};
+              \draw[dashed] (0,1)--(1,1);
+              \draw[dashed] (0,2)--(6,2);
+              \draw[dashed] (1,1)--(1,3);
+              \draw[dashed] (6,2)--(6,3);
+              \draw[dashed] (6,2)--(7,2);
+              \draw[dashed] (6,2)--(6,-5);
+              \draw[dashed] (2,-4)--(7,-4);
+              \draw[dashed] (2,-4)--(2,-5);
+              \draw[dashed] (2,-4)--(0,-4);
+              \draw[dashed] (1,1)--(1,-5);
               \end{tikzpicture}
             </latex-image>
           </image>
@@ -357,10 +503,24 @@
           <p>
             <m>3\mathbf{u}=3\langle 5,1\rangle=\langle 3\cdot5,3\cdot1\rangle=\langle 15,3\rangle</m>
           </p>
-          <image xml:id="fig-algebraic-operations-vectors-3u">
+          <image xml:id="fig-algebraic-operations-vectors-3u" width="95%">
             <latex-image>
-              \begin{tikzpicture}
-              \draw[thin,gray!40] (-5,-7) grid (14,3); \draw[line width=2pt,blue,-stealth](1,1) -- (6,2) node[black,sloped,midway,above]{\(\mathbf{u}\)}; \draw[line width=2pt,blue,-stealth](-4,-4)--(11,-1) node[black,sloped,midway,below]{\(\mathbf{3u}\)}; \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](1,0) -- (6,0) node[black,midway,yshift=-0.6cm] { \(5\)}; \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](-4,-5) -- (11,-5) node[black,midway,yshift=-0.6cm] { \(15\)}; \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=-0.4pt,yshift=0.4pt](12,-4) -- (12,-1) node[black,midway,xshift=0.6cm] { \(3\)}; \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=-0.4pt,yshift=0.4pt](7,1) -- (7,2) node[black,midway,xshift=0.6cm] { \(1\)}; \draw[dashed] (1,0)--(1,1); \draw[dashed] (6,0)--(6,2); \draw[dashed] (1,1)--(7,1); \draw[dashed] (6,2)--(7,2); \draw[dashed] (-4,-4)--(-4,-5); \draw[dashed] (-4,-4)--(12,-4); \draw[dashed] (11,-1)--(12,-1); \draw[dashed] (11,-5)--(11,-1);
+              \begin{tikzpicture}[scale=0.5]
+              \draw[thin,gray!40] (-5,-7) grid (14,3);
+              \draw[line width=2pt,blue,-stealth](1,1) -- (6,2) node[black,sloped,midway,above]{\(\mathbf{u}\)};
+              \draw[line width=2pt,blue,-stealth](-4,-4)--(11,-1) node[black,sloped,midway,below]{\(\mathbf{3u}\)};
+              \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](1,0) -- (6,0) node[black,midway,yshift=-0.6cm] { \(5\)};
+              \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](-4,-5) -- (11,-5) node[black,midway,yshift=-0.6cm] { \(15\)};
+              \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=-0.4pt,yshift=0.4pt](12,-4) -- (12,-1) node[black,midway,xshift=0.6cm] { \(3\)};
+              \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=-0.4pt,yshift=0.4pt](7,1) -- (7,2) node[black,midway,xshift=0.6cm] { \(1\)};
+              \draw[dashed] (1,0)--(1,1);
+              \draw[dashed] (6,0)--(6,2);
+              \draw[dashed] (1,1)--(7,1);
+              \draw[dashed] (6,2)--(7,2);
+              \draw[dashed] (-4,-4)--(-4,-5);
+              \draw[dashed] (-4,-4)--(12,-4);
+              \draw[dashed] (11,-1)--(12,-1);
+              \draw[dashed] (11,-5)--(11,-1);
               \end{tikzpicture}
             </latex-image>
           </image>
@@ -368,7 +528,7 @@
       </task>
     </example>
   </subsection>
-  <subsection>
+  <subsection xml:id="subsec-properties-of-vectors">
     <title>Properties of Addition, Length, and Scalar Multiplication</title>
     <definition xml:id="def-properties-of-vectors">
       <title>Properties of Vectors</title>
@@ -502,11 +662,11 @@
     <p>
       Two useful unit vectors are <m>\mathbf{i}</m> and <m>\mathbf{j}</m>. The vector <m>\mathbf{i}</m> represents the unit vector whose direction is along the positive <m>x</m>-axis and the vector <m>\mathbf{j}</m> represents the unit vector whose direction is along the positive <m>y</m>-axis.
     </p>
-    <definition>
+    <definition xml:id="def-i-j-vectors">
+      <title><m>mathbb{i}</m> and <m>\mathbb{j}</m></title>
       <statement>
         <p>
-          The <term>unit vectors</term><idx><h>vectors</h><h>unit vector</h></idx>
-          <m>\mathbf{i}</m> and <m>\mathbf{j}</m> are defined as
+          The unit vectors <m>\mathbf{i}</m> and <m>\mathbf{j}</m> are defined as
           <me>
             \mathbf{i}=\langle1,0\rangle,\mathbf{j}=\langle0,1\rangle
           </me>
@@ -516,7 +676,8 @@
     <p>
       We can now represent any vector using the unit vectors <m>\mathbf{i}</m> and <m>\mathbf{j}</m>.
     </p>
-    <definition>
+    <definition xml:id="def-vector-horizontal-vertical-components">
+      <title>Horizontal and Vertical Components of a Vector</title>
       <statement>
         <p>
           Let <m>\mathbf{v}</m> be any vector. Then we can express <m>\mathbf{v}</m> in terms of its <term>horizontal</term> and <term>vertical components</term><idx><h>vectors</h><h>components of</h></idx>
@@ -527,12 +688,10 @@
       </statement>
     </definition>
   </subsection>
-  <subsection>
-    <title>Components and Direction</title>
+  <subsection xml:id="subsec-vector-components-and-direction">
+    <title>Vector Components and Direction</title>
     <p>
-      Recall that a vector is composed of a direction and magnitude.
-      Earlier in this section we learned how to calculate the magnitude.
-      Now we will discuss how to calculate the direction.
+      Recall that a vector is composed of a direction and magnitude. Earlier in this section we learned how to calculate the magnitude. Now we will discuss how to calculate the direction.
     </p>
     <definition xml:base="def-direction">
       <statement>
