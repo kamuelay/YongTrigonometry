@@ -104,7 +104,7 @@
       <title>Vector Addition</title>
       <statement>
         <p>
-          Vector addition is the process of combining two or more vectors to produce a resultant vector. To find the <term>sum</term><idx><h>sum</h><h>of vectors</h></idx><idx><h>addition</h><h>of vectors</h></idx> of vectors <m>\mathbf{u}</m> and <m>\mathbf{v}</m>, we place the initial point of the second vector with the terminal point of the first vector. The vector formed from the initial point of the first vector to the terminal point of the second vector represents the sum of the two vectors, denoted by <m>\mathbf{u}+\mathbf{v}</m>. Since vectors can be translated, any two vectors can be added by shifting one vector's starting point to the endpoint of another vector. Importantly, adding the vector <m>\mathbf{v}</m> to <m>\mathbf{u}</m> yields the same result as adding <m>\mathbf{u}</m> to <m>\mathbf{v}</m>, as demonstrated below. Thus, we have:
+          Vector addition is the process of combining two or more vectors to produce a resultant vector. To find the <term>sum</term><idx><h>sum</h><h>of vectors</h></idx><idx><h>addition</h><h>of vectors</h></idx> of vectors <m>\mathbf{u}</m> and <m>\mathbf{v}</m>, we place the initial point of the second vector with the terminal point of the first vector. The vector formed from the initial point of the first vector to the terminal point of the second vector represents the sum of the two vectors, denoted by <m>\mathbf{u}+\mathbf{v}</m>. Since vectors can be translated, any two vectors can be added by shifting one vector's starting point to the endpoint of another vector. Notice that adding the vector <m>\mathbf{v}</m> to <m>\mathbf{u}</m> produces the same result as adding <m>\mathbf{u}</m> to <m>\mathbf{v}</m>, as demonstrated below. Thus, we have:
           <me>\mathbf{u}+\mathbf{v}=\mathbf{v}+\mathbf{u}</me>.
         </p>
         <image xml:id="fig-vector-addition">
@@ -188,7 +188,7 @@
       </p>
       <image xml:id="fig-scalar-multiples">
         <latex-image>
-          \begin{tikzpicture}
+          \begin{tikzpicture}[scale=0.75]
           \draw[thin,gray!40] (-8,-4) grid (8,4);
           \draw[line width=2pt,blue,-stealth](-5,-3) -- (-2,-1) node[black,sloped,midway,above]{\(\mathbf{v}\)};
           \draw[line width=2pt,blue,-stealth](-7,1)--(-4,3) node[black,sloped,midway,above]{\(1\mathbf{v}\)};
@@ -663,12 +663,12 @@
       Two useful unit vectors are <m>\mathbf{i}</m> and <m>\mathbf{j}</m>. The vector <m>\mathbf{i}</m> represents the unit vector whose direction is along the positive <m>x</m>-axis and the vector <m>\mathbf{j}</m> represents the unit vector whose direction is along the positive <m>y</m>-axis.
     </p>
     <definition xml:id="def-i-j-vectors">
-      <title><m>mathbb{i}</m> and <m>\mathbb{j}</m></title>
+      <title><m>\mathbf{i}</m> and <m>\mathbf{j}</m></title>
       <statement>
         <p>
           The unit vectors <m>\mathbf{i}</m> and <m>\mathbf{j}</m> are defined as
           <me>
-            \mathbf{i}=\langle1,0\rangle,\mathbf{j}=\langle0,1\rangle
+            \mathbf{i}=\langle1; \quad0\rangle,\mathbf{j}=\langle0,1\rangle
           </me>
         </p>
       </statement>
@@ -717,7 +717,7 @@
         <p>
           Using Right Triangle Trigonometry we can solve for the horizontal and vertical components, <m>v_x</m> and <m>v_y</m>, respectively
           <me>
-            a=\|\mathbf{v}\|\cos\theta, b=\|\mathbf{v}\|\sin\theta
+            a=\|\mathbf{v}\|\cos\theta, \quad b=\|\mathbf{v}\|\sin\theta
           </me>
         </p>
         <p>
@@ -728,14 +728,16 @@
         </p>
         <image xml:id="fig-vector-components-angle">
           <latex-image>
-            \begin{tikzpicture}
+            \begin{tikzpicture}[scale=0.75]
             \draw[stealth-stealth] (-1,0)--(13,0) node[right]{\(x\)};
             \draw[stealth-stealth] (0,-1)--(0,7) node[above]{\(y\)};
-            \draw[line width=2pt,blue,-stealth](0,0) -- (10,6) node[black,midway,above]{\(\mathbf{v}\)};
+            \draw[line width=2pt,blue,-stealth](0,0) -- (10,6) node[black,midway,below]{\(\mathbf{v}\)};
             \draw (0,0) -- (0:0.8cm) arc (0:atan2(6,10):0.8cm) node at (15:1.3cm) {\(\theta\)} -- cycle;
             \draw[dashed] (10,6)--(10,0);
             \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](0,0) -- (10,0) node[black,midway,yshift=-0.6cm] { \(a=\|\mathbf{v}\|\cos\theta\)};
             \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=0.4pt](10,0) -- (10,6) node[black,midway,xshift=1.35cm] { \(b=\|\mathbf{v}\|\sin\theta\)};
+            \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](10,6) -- (0,0) node[black,midway,yshift=0.6cm,xshift=-0.4cm] { \(\|\mathbf{v}\|\)};
+
             \draw (9.1,0) -- (9.1,0.9) -- (10,0.9);
             \end{tikzpicture}
           </latex-image>
@@ -746,12 +748,12 @@
   <subsection xml:id="subsec-velocity">
     <title>Velocity</title>
     <p>
-      Vectors can be used to represented many physical objects. For example, the velocity of a moving waʻa is presented by a vector whose direction is the direction of motion and whose magnitude is the speed of the waʻa. This vector is called the <em>velocity vector</em><idx><h>vectors</h><h>velocity</h></idx> and can also be used to describe other physical objects and phenomena such as wind and currents.
+      Vectors can be used to represented many physical objects. For example, the velocity of a moving waʻa is presented by a vector whose direction is the direction of motion and whose magnitude is the speed of the waʻa. This vector is called the <term>velocity vector</term><idx><h>vectors</h><h>velocity</h></idx> and can also be used to describe other physical objects and phenomena such as wind and currents.
     </p>
     <example>
       <statement>
         <p>
-          Wind is blowing from the house N&#257; Leo Hoʻolua (N<m>22.5^{\circ}</m>W) at 10 knots. Write the wind velocity as a vector <m>\mathbf{v}</m>.
+          Wind is blowing from the house Nā Leo Hoʻolua (N<m>22.5^{\circ}</m>W) at 10 knots. Write the wind velocity as a vector <m>\mathbf{v}</m>.
         </p>
       </statement>
       <solution>
@@ -764,8 +766,8 @@
         <p>
           To find the vector, will need the horizontal and vertical components.
           <md>
-            <mrow>v_x\amp =\amp \|\mathbf{v}\|\cos\theta=10\cos112.5^{\circ}\approx-3.8</mrow>
-            <mrow>v_y\amp =\amp \|\mathbf{v}\|\sin\theta=10\sin112.5^{\circ}\approx9.2</mrow>
+            <mrow>v_x =\amp \|\mathbf{v}\|\cos\theta=10\cos112.5^{\circ}\approx-3.8</mrow>
+            <mrow>v_y =\amp \|\mathbf{v}\|\sin\theta=10\sin112.5^{\circ}\approx9.2</mrow>
           </md>
         </p>
         <p>
@@ -774,9 +776,9 @@
             \mathbf{v}\approx-3.8\mathbf{i}+9.2\mathbf{j}=\langle-3.8,9.2\rangle
           </me>
         </p>
-        <image xml:id="fig-exampl-vector-velocity">
+        <image xml:id="fig-exampl-vector-velocity" width="50%">
           <latex-image>
-            \begin{tikzpicture}
+            \begin{tikzpicture}[scale=0.5]
             \draw[stealth-stealth] (-5,0)--(3,0) node[right]{\(x\)};
             \draw[stealth-stealth] (0,-1)--(0,10) node[above]{\(y\)};
             \draw[-stealth, line width=2pt,blue] (0,0) -- (112.5:10) node[midway,below,xshift=-3]{\(\mathbf{v}\)};
@@ -793,17 +795,23 @@
     <example>
       <statement>
         <p>
-          An estimate for the speed of Hikianalia<idx><h>canoe</h><h>Hikianalia</h></idx> is <m>\frac{1}{3}</m> the speed of the wind on a beam reach (wind is at a right angle to the waʻa). So if Hikianalia is sailing with winds at 15 knots, the speed of the waʻa is <m>\frac{1}{3}\cdot15=5</m> knots. However, if Hikianalia is sailing directly into a current of 2 knots, Hikianalia's actual speed will be slowed down to 3 knots.
+          An estimate for Hikianalia's<idx><h>canoe</h><h>Hikianalia</h></idx> speed is that it's one-third the speed of the wind when sailing on a beam reach (with the wind at a right angle to the waʻa). So, if Hikianalia is sailing with winds at 15 knots, its speed would be <m>\frac{1}{3} \times 15 = 5</m> knots. However, if Hikianalia is sailing directly into a current of 2 knots, its actual speed will be reduced to 3 knots. This scenario is similar to walking on a moving treadmill: your legs move across the treadmill, but you don't make much progress relative to the room. Similarly, Hikianalia sails over water, but the water itself moves in the form of a current.
+        </p>
+        <p>
+          This concept can be represented using vectors. Let <m>\mathbf{v}</m> denote Hikianalia's velocity vector and <m>\mathbf{w}</m> denote the velocity vector of the current. Then, the actual velocity vector of Hikianalia is given by <m>\mathbf{v}-\mathbf{w}</m>. The speed is then given by the magnitude of each vector, as illustrated in the figure below:
         </p>
         <image xml:id="fig-vector-speed-1D">
           <latex-image>
             \begin{tikzpicture}
-            \draw[line width=2pt,blue,-stealth](0,3) -- (5,3) node[black,midway,above]{5 knots};
-            \draw[line width=2pt,blue,-stealth](5,1.5) -- (3,1.5) node[black,midway,above]{2 knots};
-            \draw[line width=2pt,blue,-stealth](0,0) -- (3,0) node[black,midway,above]{3 knots};
-            \node[right] at (6,3) {Speed of Hikianalia};
-            \node[right] at (6,1.5) {Speed of Current};
-            \node[right] at (6,0) {Actual speed of Hikianalia};
+            \draw[line width=2pt,blue,-stealth](0,3) -- (5,3) node[black,midway,above]{\(\mathbf{v}\)};
+            \draw[line width=2pt,blue,-stealth](5,1.5) -- (3,1.5) node[black,midway,above]{\(\mathbf{w}\)};
+            \draw[line width=2pt,blue,-stealth](0,0) -- (3,0) node[black,midway,above]{\(\mathbf{v}-\mathbf{w}\)};
+            \node[right] at (6,3.5) {Velocity of Hikianalia};
+            \node[right] at (6,3) {\(\|\mathbf{v}\|\) = 5 knots};
+            \node[right] at (6,2) {Velocity of Current};
+            \node[right] at (6,1.5) {\(\|\mathbf{w}\|\) = 2 knots};
+            \node[right] at (6,0.5) {Actual velocity of Hikianalia};
+            \node[right] at (6,0) {\(\|\mathbf{v}\|\)-\(\|\mathbf{w}\|\)=5-2=3 knots};
             \end{tikzpicture}
           </latex-image>
         </image>
@@ -813,7 +821,7 @@
       <title>Leeway</title>
       <statement>
         <p>
-          It is very rare that a waʻa sailing on the ocean will be moving in the same direction it's pointed. One reason for this is that crosswind can push the waʻa off its course. The angle of displacement between the apparent heading of the waʻa and the direction the waʻa is actually traveling through the water is referred to as <em>leeway</em>.<idx><h>leeway</h></idx> Using vector addition, we can determine where the waʻa will actually travel. However, on the waʻa, the navigator can determine the leeway by observing the angle from the wake behind the waʻa and the apparent direction the waʻa is pointed towards.
+          When a waʻa sails on the ocean, it rarely moves precisely in the direction it's pointed. One reason for this is that crosswind can push the waʻa off its course. The angle of displacement between the apparent heading of the waʻa and the direction the waʻa is actually traveling through the water is referred to as <em>leeway</em>.<idx><h>leeway</h></idx> Using vector addition, we can determine where the waʻa will actually travel. However, on the waʻa, the navigator can determine the leeway by observing the angle from the wake behind the waʻa and the apparent direction the waʻa is pointed towards.
         </p>
         <image xml:id="fig-leeway">
           <latex-image>
@@ -831,7 +839,7 @@
           </latex-image>
         </image>
         <p>
-          In order to compensate for the wind, the navigator must steer the waʻa into the wind by the same angle as the leeway angle. For example, if the waʻa needs to sail in the direction of Manu Malanai (SE) and the wind is pushing the waʻa one house further south, the waʻa will move towards Nālani Malanai (SEbS). To maintain the course of Manu Malanai, the navigator must then point the waʻa one house north with an apparent heading in the house of Noio Malanai (SEbE) in order for the actual heading to be in the house of Manu Malanai (SE).
+          In order to compensate for the wind, the navigator must steer the waʻa into the wind by the same angle as the leeway angle. For example, if the waʻa needs to sail in the house Manu Malanai (SE) and the wind is pushing the waʻa one house further south, the waʻa will move in the house Nālani Malanai (SEbS). To maintain the course in the house Manu Malanai, the navigator must then point the waʻa one house north with an apparent heading in the house of Noio Malanai (SEbE) in order for the actual heading to be in the house of Manu Malanai (SE).
         </p>
       </statement>
     </example>
