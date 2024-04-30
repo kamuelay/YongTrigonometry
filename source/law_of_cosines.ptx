@@ -186,16 +186,18 @@
         <p>
           The Fijian canoe Uto Ni Yalo<idx><h>canoe</h><h>Uto Ni Yalo</h></idx> embarks on a voyage from Fiji to Tonga, a distance of 412 nautical miles, positioned in the House Lā; Malanai (<m>16.81^{\circ}</m>). However, adverse weather conditions force a deviation from their original course. After sailing for one day, covering 120 nautical miles, the canoe finds itself 2 houses (<m>22.5^{\circ}</m>) off course. Assessing the situation, the navigator determines a direct route to Tonga is now viable. At this point what is the remaining distance to Tonga, and what adjustment angle is required to navigate towards their destination?
         </p>
-        <image xml:id="fig-fiji-tonga-intro">
+        <image xml:id="fig-fiji-tonga-intro1">
           <latex-image>
             \begin{tikzpicture}[scale=2]
             \node[left] at (0,0) {Fiji};
             \draw (0,0) -- (-16.81:4.12) node[midway, above,xshift=5] {412};
             \draw (0,0) -- (-39.31:1.2) node[midway, below,xshift=-8] {120};
-            \draw[dashed] (-39.31:1.2) -- (-16.81:4.12) node[right] {Tonga};
-            \draw (-16.81:0.5) arc (-16.81:-39.31:0.5) node[midway,right,xshift=6,yshift=-8] {\(22.5^{\circ}\)};
+            \draw[dashed] (-39.31:1.2) -- (-16.81:4.12) node[midway,below] {\(d\)};
+            \node[right] at (-16.81:4.12) {Tonga};
             \draw pic at (-39.31:1.2) {waa-top={waacolor}{230.69}{0.1}};
+            \draw (-16.81:0.5) arc (-16.81:-39.31:0.5) node[midway,right,xshift=6,yshift=-8] {\(22.5^{\circ}\)};
             \draw[dashed] (-39.31:1.2) -- (-39.31:2);
+            \draw (-39.31:1.7) arc (-39.31:-8.14:0.5) node[midway,right] {\(\theta\)};
             \end{tikzpicture}
           </latex-image>
         </image>
@@ -915,6 +917,37 @@
         </answer>
       </exercise>
     </exercisegroup>
+    <exercisegroup>
+      <introduction>
+        <p>
+          The Fijian canoe Uto Ni Yalo<idx><h>canoe</h><h>Uto Ni Yalo</h></idx> embarks on a voyage from Fiji to Tonga, a distance of 412 nautical miles, positioned in the House Lā; Malanai (<m>16.81^{\circ}</m>). However, adverse weather conditions force a deviation from their original course. After sailing for one day, covering 120 nautical miles, the canoe finds itself 2 houses (<m>22.5^{\circ}</m>) off course. Assessing the situation, the navigator determines a direct route to Tonga is now viable. At this point what is the remaining distance to Tonga, and what adjustment angle is required to navigate towards their destination?
+        </p>
+        <image xml:id="fig-fiji-tonga-intro">
+          <latex-image>
+            \begin{tikzpicture}[scale=2]
+            \node[left] at (0,0) {Fiji};
+            \draw (0,0) -- (-16.81:4.12) node[midway, above,xshift=5] {412};
+            \draw (0,0) -- (-39.31:1.2) node[midway, below,xshift=-8] {120};
+            \draw[dashed] (-39.31:1.2) -- (-16.81:4.12) node[midway,below] {\(d\)};
+            \node[right] at (-16.81:4.12) {Tonga};
+            \draw pic at (-39.31:1.2) {waa-top={waacolor}{230.69}{0.1}};
+            \draw (-16.81:0.5) arc (-16.81:-39.31:0.5) node[midway,right,xshift=6,yshift=-8] {\(22.5^{\circ}\)};
+            \draw[dashed] (-39.31:1.2) -- (-39.31:2);
+            \draw (-39.31:1.7) arc (-39.31:-8.14:0.5) node[midway,right] {\(\theta\)};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </introduction>
+    
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+      </exercise>
+    
+    </exercisegroup>
     <exercise>
       <statement>
         <p>
@@ -926,6 +959,26 @@
           
         </p>
       </answer>
+    </exercise>
+    <exercise>
+      <title>The Legend of Paikea</title>
+      <statement>
+        <p>
+          According to Cook Island Maori legend, Paikea, a skilled fisherman, was fishing beyond the reef in Mauke when a hurricane suddenly struck. His wife, Kea, watched from the cliffs as Paikea was swept out to sea, remaining there, hopeful for his return until her passing. Paikea, after the storm subsided, found himself adrift on debris until he reached A'ua'u Enua, now known as Mangaia. From there, guided by a whale, he eventually journeyed to Aotearoa. How far did Paikea travel from the location where he was initially separated from his wife? Additionally, if Paikea were to look back to where his wife was, what direction would he need to face? It's important to note that in the Maori version of this legend, Paikea rides on the back of the whale.
+        </p>
+        <image xml:id="fig-paikea-legend" width="80%">
+          <latex-image>
+            \begin{tikzpicture}[scale=0.5]
+            \node[above] at (0,0) {Mauke};
+            \node[below right] at ({90-197}:{110/100}) {Mangaia};
+            \node[below] at ({90-229}:{1625/100}) {Aotearoa};
+            \draw (0,0) -- ({90-197}:{110/100}) node[midway, right,xshift=5] {110};
+            \draw ({90-197}:{110/100}) -- ({90-229}:{1625/100}) node[midway, below right,xshift=5] {1,625};
+            \draw (0,0) -- ({90-229}:{1625/100});
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </statement>
     </exercise>
   </exercises>
 </section>
