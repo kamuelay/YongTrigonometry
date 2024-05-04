@@ -636,8 +636,7 @@
         <p>
           From <xref ref="ex_magnitude">Example</xref>, we know <m>\|\mathbf{v}\|=5\sqrt{5}</m>. Then
           <md>
-            <mrow> \mathbf{u} \amp </mrow>
-            <mrow> \amp = \frac{\mathbf{v}}{\|\mathbf{v}\|} </mrow>
+            <mrow> \mathbf{u} \amp = \frac{\mathbf{v}}{\|\mathbf{v}\|} </mrow>
             <mrow> \amp = \frac{\langle10,-5\rangle}{5\sqrt{5}} </mrow>
             <mrow> \amp = \left\langle\frac{10}{5\sqrt{5}},-\frac{5}{5\sqrt{5}}\right\rangle </mrow>
             <mrow> \amp = \left\langle\frac{2}{\sqrt{5}},-\frac{1}{\sqrt{5}}\right\rangle </mrow>
@@ -651,7 +650,7 @@
             <mrow> \amp = \sqrt{\left(\frac{2\sqrt{5}}{5}\right)^2+\left(-\frac{\sqrt{5}}{5}\right)^2} </mrow>
             <mrow> \amp = \sqrt{\frac{4\cdot5}{25}+\frac{5}{25}} </mrow>
             <mrow> \amp = \sqrt{\frac{25}{25}} </mrow>
-            <mrow> \amp 1 </mrow>
+            <mrow> \amp = 1 </mrow>
           </md>
         </p>
       </solution>
