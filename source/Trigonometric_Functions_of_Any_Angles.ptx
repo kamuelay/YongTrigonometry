@@ -506,7 +506,7 @@
         </solution>
       </task>
     </example>
-    <remark><title>Calculate an angle in standard position given its quadrant and reference angle</title>
+    <remark xml:id="rem-calculate-angle-given-quad-reference-angle"><title>Calculate an angle in standard position given its quadrant and reference angle</title>
       <p>
         To calculate an angle in standard position, <m>t</m>, given the quadrant that <m>t</m> lies in and the reference angle <m>t'</m>,
       </p>
