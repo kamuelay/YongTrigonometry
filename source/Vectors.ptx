@@ -704,20 +704,20 @@
           The direction, <m>\theta</m> and can be calculated by
           <me>
             \theta=\tan^{-1}\left(\frac{v_y}{v_x}\right)
-          </me>
+          </me>.
         </p>
       </statement>
     </definition>
     <p>
       We now have all the information needed to write a vector.
     </p>
-    <definition xml:id="def-horizontal-vertical-components">
-      <title>********horizontal-vertical-components*********</title>
+    <definition xml:id="def-horizontal-vertical-components-from-magnitude-direction">
+      <title>Finding Horizontal and Vertical Components of Vectors from Magnitude and Direction</title>
       <statement>
         <p>
-          Using Right Triangle Trigonometry we can solve for the horizontal and vertical components, <m>v_x</m> and <m>v_y</m>, respectively
+          For vector <m>\mathbf{v}</m> with magnitude <m>\|\mathbf{v}\|</m> and direction <m>\theta</m>, we can use Right Triangle Trigonometry to solve for the horizontal and vertical components, denoted as <m>v_x</m> and <m>v_y</m>, respectively:
           <me>
-            a=\|\mathbf{v}\|\cos\theta, \quad b=\|\mathbf{v}\|\sin\theta
+            v_x=\|\mathbf{v}\|\cos\theta, \quad v_y=\|\mathbf{v}\|\sin\theta
           </me>
         </p>
         <p>
@@ -732,12 +732,11 @@
             \draw[stealth-stealth] (-1,0)--(13,0) node[right]{\(x\)};
             \draw[stealth-stealth] (0,-1)--(0,7) node[above]{\(y\)};
             \draw[line width=2pt,blue,-stealth](0,0) -- (10,6) node[black,midway,below]{\(\mathbf{v}\)};
-            \draw (0,0) -- (0:0.8cm) arc (0:atan2(6,10):0.8cm) node at (15:1.3cm) {\(\theta\)} -- cycle;
+            \draw (0,0) -- (0:1.2cm) arc (0:atan2(6,10):1.2cm) node at (15:1.6cm) {\(\theta\)} -- cycle;
             \draw[dashed] (10,6)--(10,0);
             \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](0,0) -- (10,0) node[black,midway,yshift=-0.6cm] { \(a=\|\mathbf{v}\|\cos\theta\)};
             \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=0.4pt](10,0) -- (10,6) node[black,midway,xshift=1.35cm] { \(b=\|\mathbf{v}\|\sin\theta\)};
             \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](10,6) -- (0,0) node[black,midway,yshift=0.6cm,xshift=-0.4cm] { \(\|\mathbf{v}\|\)};
-
             \draw (9.1,0) -- (9.1,0.9) -- (10,0.9);
             \end{tikzpicture}
           </latex-image>
@@ -748,7 +747,7 @@
   <subsection xml:id="subsec-velocity">
     <title>Velocity</title>
     <p>
-      Vectors can be used to represented many physical objects. For example, the velocity of a moving waʻa is presented by a vector whose direction is the direction of motion and whose magnitude is the speed of the waʻa. This vector is called the <term>velocity vector</term><idx><h>vectors</h><h>velocity</h></idx> and can also be used to describe other physical objects and phenomena such as wind and currents.
+      Vectors can represent various physical objects. For instance, the velocity of a moving waʻa (canoe) is depicted by a vector. This velocity vector indicates the direction of motion and the speed of the waʻa. It is called the <term>velocity vector</term><idx><h>vectors</h><h>velocity</h></idx> and can also describe other physical phenomena such as wind and currents.
     </p>
     <example>
       <statement>
@@ -758,13 +757,13 @@
       </statement>
       <solution>
         <p>
-          First we note that since the velocity is 10 knots, we have <m>\|\mathbf{v}\|=10</m>. Next we will need to find the direction. Since <m>\theta</m> is measured from the positive <m>x</m>-axis, we see that
+          First, we note that since the velocity is 10 knots, we have <m>\|\mathbf{v}\|=10</m>. Next, we need to find the direction. Since <m>\theta</m> is measured from the positive <m>x</m>-axis, by <xref ref="def-horizontal-vertical-components-from-magnitude-direction"/> we see that
           <me>
             \theta=90^{\circ}+22.5^{\circ}=112.5^{\circ}
           </me>
         </p>
         <p>
-          To find the vector, will need the horizontal and vertical components.
+          To find the vector, will need the horizontal and vertical components:
           <md>
             <mrow>v_x =\amp \|\mathbf{v}\|\cos\theta=10\cos112.5^{\circ}\approx-3.8</mrow>
             <mrow>v_y =\amp \|\mathbf{v}\|\sin\theta=10\sin112.5^{\circ}\approx9.2</mrow>
@@ -792,30 +791,203 @@
         </image>
       </solution>
     </example>
-    <example>
-      <statement>
+    <example xml:id="example-speed-with-current-drift">
+      <title>Calculating Canoe Velocity with Current Drift</title>
+      <introduction>
         <p>
-          An estimate for Hikianalia's<idx><h>canoe</h><h>Hikianalia</h></idx> speed is that it's one-third the speed of the wind when sailing on a beam reach (with the wind at a right angle to the waʻa). So, if Hikianalia is sailing with winds at 15 knots, its speed would be <m>\frac{1}{3} \times 15 = 5</m> knots. However, if Hikianalia is sailing directly into a current of 2 knots, its actual speed will be reduced to 3 knots. This scenario is similar to walking on a moving treadmill: your legs move across the treadmill, but you don't make much progress relative to the room. Similarly, Hikianalia sails over water, but the water itself moves in the form of a current.
+          The vaka Marumaru Atua<idx><h>canoe</h><h>Marumaru Atua</h></idx> sets sail on a voyage northward from Rarotonga to Hawaiʻi, maintaining a steady speed of 5 knots through the water. However, a 1-knot current flows in the direction of Lā Kona (a heading of 260 degrees). This current's influence resembles walking on a moving treadmill, where forward progress is limited despite moving legs. Similarly, Marumaru Atua navigates while the water, in the form of a current, also moves. The actual velocity of Marumaru Atua is the resultant of the canoe's velocity and the current's velocity. This resultant velocity vector, known as the velocity over ground (VOG), denotes the canoe's speed and direction relative to fixed objects on Earth, influenced by the current's impact on Marumaru. The magnitude of this velocity vector, called the <term>speed over ground (SOG)</term>,<idx><h>speed over ground</h></idx> represents the absolute speed of the canoe relative to fixed objects, accounting for both the canoe's speed through the water and the current's speed and direction.
         </p>
-        <p>
-          This concept can be represented using vectors. Let <m>\mathbf{v}</m> denote Hikianalia's velocity vector and <m>\mathbf{w}</m> denote the velocity vector of the current. Then, the actual velocity vector of Hikianalia is given by <m>\mathbf{v}-\mathbf{w}</m>. The speed is then given by the magnitude of each vector, as illustrated in the figure below:
-        </p>
-        <image xml:id="fig-vector-speed-1D">
+        <image xml:id="fig-marumaru-currents">
           <latex-image>
             \begin{tikzpicture}
-            \draw[line width=2pt,blue,-stealth](0,3) -- (5,3) node[black,midway,above]{\(\mathbf{v}\)};
-            \draw[line width=2pt,blue,-stealth](5,1.5) -- (3,1.5) node[black,midway,above]{\(\mathbf{w}\)};
-            \draw[line width=2pt,blue,-stealth](0,0) -- (3,0) node[black,midway,above]{\(\mathbf{v}-\mathbf{w}\)};
-            \node[right] at (6,3.5) {Velocity of Hikianalia};
-            \node[right] at (6,3) {\(\|\mathbf{v}\|\) = 5 knots};
-            \node[right] at (6,2) {Velocity of Current};
-            \node[right] at (6,1.5) {\(\|\mathbf{w}\|\) = 2 knots};
-            \node[right] at (6,0.5) {Actual velocity of Hikianalia};
-            \node[right] at (6,0) {\(\|\mathbf{v}\|\)-\(\|\mathbf{w}\|\)=5-2=3 knots};
+            \draw[thin,gray!40] (-8,-2) grid (8,6);
+            \draw[line width=2pt,black,-stealth](0,0) -- (0,5);
+            \draw[line width=1pt,blue,-stealth]([shift=(0:2)]0,0) -- ([shift=(0:2)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(30:4)]0,0) -- ([shift=(30:4)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(50:3)]0,0) -- ([shift=(50:3)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(30:7)]0,0) -- ([shift=(30:7)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(20:8)]0,0) -- ([shift=(20:8)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(10:4)]0,0) -- ([shift=(10:4)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(5:7)]0,0) -- ([shift=(5:7)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(15:6)]0,0) -- ([shift=(15:6)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(10:4)]0,0) -- ([shift=(10:4)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(-10:6)]0,0) -- ([shift=(-10:6)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(70:5)]0,0) -- ([shift=(70:5)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(40:6)]0,0) -- ([shift=(40:6)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(60:4.5)]0,0) -- ([shift=(60:4.5)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(35:8)]0,0) -- ([shift=(35:8)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(-85:1)]0,0) -- ([shift=(-85:1)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(-15:3.5)]0,0) -- ([shift=(-15:3.5)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(120:5)]0,0) -- ([shift=(120:5)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(100:4)]0,0) -- ([shift=(100:4)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(140:2)]0,0) -- ([shift=(140:2)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(135:6)]0,0) -- ([shift=(135:6)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(140:7.5)]0,0) -- ([shift=(140:7.5)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(150:4)]0,0) -- ([shift=(150:4)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(155:6.5)]0,0) -- ([shift=(155:6.5)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(115:3)]0,0) -- ([shift=(115:3)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(140:5)]0,0) -- ([shift=(140:5)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(165:5.5)]0,0) -- ([shift=(165:5.5)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(170:2.5)]0,0) -- ([shift=(170:2.5)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(180:6.25)]0,0) -- ([shift=(180:6.25)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(175:4.5)]0,0) -- ([shift=(175:4.5)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(190:5)]0,0) -- ([shift=(190:5)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(190:1)]0,0) -- ([shift=(190:1)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(200:3)]0,0) -- ([shift=(200:3)]190:1);
+            \draw pic at (0,-0) {waa-top={waacolor}{0}{0.1}};
             \end{tikzpicture}
           </latex-image>
         </image>
-      </statement>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            Express Marumaru Atua's velocity vector, represented as <m>\mathbf{v}_m</m>, and the velocity vector of the current, denoted as <m>\mathbf{v}_w</m>, in terms of their horizontal and vertical components. Round your answer to two decimal places.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            First, we draw the velocity vectors for Marumaru Atua and the current:
+          </p>
+          <image xml:id="fig-marumaru-current-vectors" width="60%">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.6]
+              \draw[thin,gray!40] (-4,-2) grid (4,6);
+              \draw[-stealth] (0,0) -- (0,6) node[above] {N};
+              \draw[-stealth] (0,0) -- (0,-2) node[below] {S};
+              \draw[-stealth] (0,0) -- (4,0) node[right] {E};
+              \draw[-stealth] (0,0) -- (-4,0) node[left] {W};
+              \draw[line width=2pt,black,-stealth](0,0) -- (0,5) node[midway,right] {\(\mathbf{v}_m\)};
+              \draw[line width=2pt,blue,-stealth](0,0) -- (190:1) node[midway,below] {\(\mathbf{v}_c\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+          <p>
+            Since Marumaru Atua is sailing north at 5 knots, the velocity is:
+            <me>
+              \mathbf{v}_m=\langle0,5\rangle.
+            </me>
+          </p>
+          <p>
+            To find the vector for the current, we need to know <m>t</m>, the angle of the velocity vector in standard position (see <xref ref="def-standard-position"/>). We begin by drawing the heading angle of <m>260^{\circ}</m> and its reference angle, <m>t'</m>.
+          </p>
+          <image xml:id="fig-marumaru-heading-reference-angle" width="60%">
+            <shortdescription>Illustration of the heading angle and its reference angle</shortdescription>
+            <latex-image>
+              \begin{tikzpicture}
+              \draw[stealth-stealth] (-3.25,0)--(3.25,0) node[right]{$x$};
+              \draw[stealth-stealth] (0,-3.25)--(0,3.25) node[above]{$y$};
+              \filldraw[blue] (3,0) circle(1pt);
+              \filldraw[blue] (190:3.2) circle(1pt);
+              \draw[line width=2pt,blue] (0,0) -- (3,0);
+              \draw[line width=2pt,blue] (0,0) -- (190:3.2);
+              \draw[-stealth, line width=1.25pt] (90:2.7) arc (90:-170:2.7) node[midway,
+              right,xshift=0.05,yshift=-0.2] {\(260^{\circ}\)};
+              \draw[-stealth, line width=1.25pt] (180:2.2) arc (180:190:2.2) node[midway,
+              right,xshift=0.05,yshift=-0.2] {\(t'\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+          <p>
+            We can see from the figure that <m>260^{\circ}+t'=270^{\circ}</m>, thus we get our reference angle as
+            <me>
+              t'=10^{\circ}
+            </me>.
+          </p>
+          <p>
+            We now draw our angle, <m>t</m>, in standard position and the reference angle, <m>t'</m>:
+          </p>
+          <image xml:id="fig-marumaru-standard-angle" width="60%">
+            <shortdescription>Illustration of the angle t in standard position and the reference angle t'</shortdescription>
+            <latex-image>
+              \begin{tikzpicture}
+              \draw[stealth-stealth] (-3.25,0)--(3.25,0) node[right]{$x$};
+              \draw[stealth-stealth] (0,-3.25)--(0,3.25) node[above]{$y$};
+              \filldraw[blue] (3,0) circle(1pt);
+              \filldraw[blue] (190:3.2) circle(1pt);
+              \draw[line width=2pt,blue] (0,0) -- (3,0);
+              \draw[line width=2pt,blue] (0,0) -- (190:3.2);
+              \draw[-stealth, line width=1.25pt] (0:2.7) arc (0:190:2.7) node[midway,
+              above] {\(t\)};
+              \draw[-stealth, line width=1.25pt] (180:2.2) arc (180:190:2.2) node[
+              below] {\(10^{\circ}\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+          <p>
+            From <xref ref="rem-calculate-angle-given-quad-reference-angle"/>, we have
+            <me>
+              t=180^{\circ}+10^{\circ}=190^{\circ}
+            </me>.
+          </p>
+          <p>
+            Thus, by <xref ref="def-horizontal-vertical-components-from-magnitude-direction"/> the velocity for the current is
+            <me>
+              \mathbf{v}_c=\langle1\cdot\cos190^{\circ},1\cdot\sin190^{\circ}\rangle\approx\langle-0.98,-0.17\rangle.
+            </me>
+          </p>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Find <m>\mathbf{v}_g</m>, the velocity of Marumaru Atua relative to fixed objects on the ground.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The velocity relative to fixed objects on the ground is the sum of the two vectors:
+            <md>
+              <mrow> \mathbf{v}_g=\mathbf{v}_m+\mathbf{v}_c \amp = \langle0,5\rangle+\langle-0.98,-0.17\rangle </mrow>
+              <mrow> \amp = \langle-0.98,5-0.17\rangle </mrow>
+              <mrow> \amp = \langle-0.98,4.83\rangle </mrow>
+            </md>
+          </p>
+          <p>
+            This can visually demonstrated in the figure below
+          </p>
+          <image xml:id="fig-marumaru-sog" width="60%">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.6]
+              \draw[thin,gray!40] (-4,-2) grid (4,6);
+              \draw[-stealth] (0,0) -- (0,6) node[above] {N};
+              \draw[-stealth] (0,0) -- (0,-2) node[below] {S};
+              \draw[-stealth] (0,0) -- (4,0) node[right] {E};
+              \draw[-stealth] (0,0) -- (-4,0) node[left] {W};
+              \draw[line width=2pt,black,-stealth](0,0) -- (0,5) node[midway,right] {\(\mathbf{v}_m\)};
+              \draw[line width=2pt,blue,-stealth]([shift=(90:5)]0,0) -- ([shift=(90:5)]190:1) node[midway,above] {\(\mathbf{v}_c\)};
+              \draw[line width=2pt,black,-stealth](0,0) -- ([shift=(90:5)]190:1) node[midway,left] {\(\mathbf{v}_g\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Find the speed over ground (SOG) and direction of Marumaru Atua, rounded to one decimal place.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The actual speed of Marumaru Atua is simply the magnitude of the velocity over ground:
+            <me>
+              \|\mathbf{v}_g\|=\|\langle-0.98,4.83\rangle\|=\sqrt{(-0.98)^2+(4.83^2)}\approx4.9\mbox{ knots}.
+            </me>
+            Thus, although the vaka sails through the water at 5 knots, its forward progress is slightly slower at 4.9 knots.
+          </p>
+          <p>
+            To find the direction of the velocity, we use <xref ref="def-direction"/> to get
+            <me>
+              \theta=\tan^{-1}\frac{v_y}{v_x}=\tan^{-1}\frac{4.83}{-0.98}\approx-78.5^{\circ}
+            </me>.
+            Since our velocity vector is in Quadrant II, we have our direction is
+            <me>
+              180^{\circ}-78.5^{\circ}=101.5^{\circ}
+            </me>.
+          </p>
+        </solution>
+      </task>
     </example>
     <example xml:id="examp-leeway">
       <title>Leeway</title>
@@ -827,9 +999,9 @@
           <latex-image>
             \begin{tikzpicture}
             \draw[thin,gray!40] (-7,-7) grid (7,7);
-            \draw[line width=1pt,-stealth,dashed](-6,5) -- (6,-5) node[black,right,xshift=-30,yshift=50,text width=1.3cm]{ Apparent Heading of Wa&#699;a};
-            \draw[line width=1pt,blue,-stealth,decorate,decoration=snake](0,0) -- (-3,6) node[black,right]{ Wake of Wa&#699;a};
-            \draw[line width=1pt,blue,dashed,-stealth](0,0) -- (3,-6) node[black,left,xshift=-15,yshift=20,text width=1.3cm]{ Actual Heading of Wa&#699;a};
+            \draw[line width=1pt,-stealth,dashed](-6,5) -- (6,-5) node[black,right,xshift=-30,yshift=50,text width=1.3cm]{ Apparent Heading of Wa`a};
+            \draw[line width=1pt,blue,-stealth,decorate,decoration=snake](0,0) -- (-3,6) node[black,right]{ Wake of Wa`a};
+            \draw[line width=1pt,blue,dashed,-stealth](0,0) -- (3,-6) node[black,left,xshift=-15,yshift=20,text width=1.3cm]{ Actual Heading of Wa`a};
             \draw[-stealth,line width=2pt](3,1) -- (0,0) node[black,sloped,midway,above]{ Wind};
             \draw[-stealth,line width=2pt](6,-5) -- (3,-6) node[black,sloped,midway,above]{ Wind};
             \draw[-stealth,line width=2pt](-3,6) -- (-6,5) node[black,sloped,midway,above]{ Wind};
