@@ -238,7 +238,7 @@
         </p>
       </solution>
     </example>
-    <definition>
+    <definition xml:id="def-standard-position">
       <statement>
         <p>
           If an angle is drawn on the <m>xy</m>-plane, and the vertex is at the origin, and the initial side is on the positive <m>x</m>-axis, then that angle is said to be in <term>standard position</term>.<idx><h>standard position</h></idx> If the angle is measured in a counterclockwise rotation, the angle is said to be a <term>positive angle</term>,<idx><h>positive angle</h></idx> and if the angle is measured in a clockwise rotation, the angle is said to be a <term>negative angle</term>. <idx><h>negative angle</h></idx>
