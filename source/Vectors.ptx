@@ -608,18 +608,6 @@
         </p>
       </statement>
     </definition>
-    <example>
-      <statement>
-        <p>
-          Prove 1, 5, 6 and leave the rest as exercises
-        </p>
-      </statement>
-      <solution>
-        <p>
-          solution
-        </p>
-      </solution>
-    </example>
   </subsection>
   <subsection xml:id="subsec-finding-unit-vector">
     <title>Finding a Unit Vector</title>
@@ -647,15 +635,24 @@
       <solution>
         <p>
           From <xref ref="ex_magnitude">Example</xref>, we know <m>\|\mathbf{v}\|=5\sqrt{5}</m>. Then
-          <me>
-            \mathbf{u}=\frac{\mathbf{v}}{\|\mathbf{v}\|}=\frac{\langle10,-5\rangle}{5\sqrt{5}}=\left\langle\frac{10}{5\sqrt{5}},-\frac{5}{5\sqrt{5}}\right\rangle=\left\langle\frac{2}{\sqrt{5}},-\frac{1}{\sqrt{5}}\right\rangle=\left\langle\frac{2\sqrt{5}}{5},-\frac{\sqrt{5}}{5}\right\rangle
-          </me>
+          <md>
+            <mrow> \mathbf{u} \amp </mrow>
+            <mrow> \amp = \frac{\mathbf{v}}{\|\mathbf{v}\|} </mrow>
+            <mrow> \amp = \frac{\langle10,-5\rangle}{5\sqrt{5}} </mrow>
+            <mrow> \amp = \left\langle\frac{10}{5\sqrt{5}},-\frac{5}{5\sqrt{5}}\right\rangle </mrow>
+            <mrow> \amp = \left\langle\frac{2}{\sqrt{5}},-\frac{1}{\sqrt{5}}\right\rangle </mrow>
+            <mrow> \amp = \left\langle\frac{2\sqrt{5}}{5},-\frac{\sqrt{5}}{5}\right\rangle </mrow>
+          </md>
         </p>
         <p>
           We can verify that this is in fact a unit vector by computing the magnitude:
-          <me>
-            \|\mathbf{u}\|=\left\|\left\langle\frac{2\sqrt{5}}{5},-\frac{\sqrt{5}}{5}\right\rangle\right\|=\sqrt{\left(\frac{2\sqrt{5}}{5}\right)^2+\left(-\frac{\sqrt{5}}{5}\right)^2}=\sqrt{\frac{4\cdot5}{25}+\frac{5}{25}}=\sqrt{\frac{25}{25}}=1
-          </me>
+          <md>
+            <mrow> \|\mathbf{u}\| \amp = \left\|\left\langle\frac{2\sqrt{5}}{5},-\frac{\sqrt{5}}{5}\right\rangle\right\| </mrow>
+            <mrow> \amp = \sqrt{\left(\frac{2\sqrt{5}}{5}\right)^2+\left(-\frac{\sqrt{5}}{5}\right)^2} </mrow>
+            <mrow> \amp = \sqrt{\frac{4\cdot5}{25}+\frac{5}{25}} </mrow>
+            <mrow> \amp = \sqrt{\frac{25}{25}} </mrow>
+            <mrow> \amp 1 </mrow>
+          </md>
         </p>
       </solution>
     </example>
