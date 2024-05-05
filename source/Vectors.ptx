@@ -3,13 +3,13 @@
   <title>Vectors</title>
   <introduction>
     <p>
-      Hōkūleʻa's inaugural voyage from Hawaiʻi to Tahiti ignited a cultural resurgence in Hawaiʻi. By showcasing the effectiveness of traditional navigation techniques learned from Micronesia, it soon became clear there was a need for constructing a double-hulled voyaging canoe using traditional methods and native materials. This canoe, named Hawaiʻiloa,<idx><h>canoe</h><h>Hawaiʻiloa</h></idx> aimed to recover knowledge and skilled associated with traditional canoe building.
+      Hōkūleʻa's inaugural voyage from Hawaiʻi to Tahiti ignited a cultural resurgence in Hawaiʻi. By showcasing the effectiveness of traditional navigation techniques learned from Micronesia, it soon became clear there was a need for constructing a double-hulled voyaging canoe using traditional methods and native materials. This canoe, named Hawaiʻiloa,<idx><h>canoe</h><h>Hawaiʻiloa</h></idx> aimed to recover knowledge and skilled associated with traditional canoe building in Hawaiʻi.
     </p>
     <p>
       However, during the years 1989-1990, an exhaustive search across Hawaiʻi revealed a significant challenge: the lack of accessible koa trees of sufficient size for constructing a canoe of this size. The search then expanded beyond Hawaiʻi. This decision was guided by historical evidence indicating that storms had transported large trees from the Pacific Coast of North America to islands like Hawaiʻi, where they were traditionally used for canoe construction. As a result, the search extended to North America in pursuit of suitable materials.
     </p>
     <p>
-      Two trees, each 200 feet high and over 400 years old, were discovered on Shelikof Island in Soda Bay, Prince of Wales Island, west of Ketchikan, Alaska. After conducting traditional tree-cutting ceremonies rooted in Hawaiian and Tlingit traditions to seek permission, both trees were felled to be used for constructing the canoe. The logs then embarked on a 2,235-nautical-mile journey to Hawaiʻi, following a heading of <m>256^{\circ}</m>. This journey exemplifies a <term>vector</term>,<idx><h>vectors</h></idx> — a quantity possessing both <term>magnitude</term><idx><h>vectors</h><h>magnitude</h></idx> and <term>direction</term>.<idx><h>vectors</h><h>direction</h></idx>
+      Two trees, each 200 feet high and over 400 years old, were discovered on Shelikof Island in Soda Bay, Prince of Wales Island, west of Ketchikan, Alaska. After conducting traditional tree-cutting ceremonies rooted in Hawaiian and Tlingit traditions to seek permission, both trees were felled to be used for constructing the canoe. The logs then embarked on a 2,235-nautical-mile journey to Hawaiʻi, following a heading of <m>256^{\circ}</m>. This journey is an example of a <term>vector</term>,<idx><h>vectors</h></idx> — a quantity possessing both <term>magnitude</term><idx><h>vectors</h><h>magnitude</h></idx> and <term>direction</term>.<idx><h>vectors</h><h>direction</h></idx>
     </p>
     <image xml:id="fig-hawaiiloa-vector" width="85%">
       <latex-image>
@@ -27,7 +27,7 @@
   <subsection xml:id="subsec-geometric-vectors">
     <title>Geometric Vectors</title>
     <p>
-      The vector whose path begins at the point <m>P</m> and ends at the point <m>Q</m> is written as <m>\overrightarrow{PQ}</m>, where the arrow on top indicates the direction. The point <m>P</m> is called the <em>initial point</em><idx><h>vectors</h><h>initial point</h></idx> and the point <m>Q</m> is called the <em>terminal point</em><idx><h>vectors</h><h>terminal point</h></idx> of the vector <m>\overrightarrow{PQ}</m>. The <term>magnitude</term><idx><h>vectors</h><h>magnitude</h></idx> of <m>\overrightarrow{PQ}</m> is the length or distance and is written as <m>\|\overrightarrow{PQ}\|</m>. We can also think of <m>\overrightarrow{PQ}</m> as the <term>displacement</term>.<idx><h>vectors</h><h>displacement</h></idx> The <term>direction</term><idx><h>vectors</h><h>direction</h></idx> of <m>\overrightarrow{PQ}</m> is from <m>P</m> to <m>Q</m>.
+      The vector whose path begins at the point <m>P</m> and ends at the point <m>Q</m> is written as <m>\overrightarrow{PQ}</m>, where the arrow on top indicates the direction. The point <m>P</m> is called the <term>initial point</term><idx><h>vectors</h><h>initial point</h></idx> and the point <m>Q</m> is called the <term>terminal point</term><idx><h>vectors</h><h>terminal point</h></idx> of the vector <m>\overrightarrow{PQ}</m>. The <term>magnitude</term><idx><h>vectors</h><h>magnitude</h></idx> of <m>\overrightarrow{PQ}</m> is the length or distance and is written as <m>\|\overrightarrow{PQ}\|</m>. We can also think of <m>\overrightarrow{PQ}</m> as the <term>displacement</term>.<idx><h>vectors</h><h>displacement</h></idx> The <term>direction</term><idx><h>vectors</h><h>direction</h></idx> of <m>\overrightarrow{PQ}</m> is from <m>P</m> to <m>Q</m>.
     </p>
     <remark>
       <title>Notation</title>
@@ -35,19 +35,30 @@
         Another way to write a vector is with a lowercase, bold faced letter (with or without an arrow), <m>\mathbf{v}</m> or <m>{\overrightarrow{\mathbf{v}}}</m>. Typically, if you are writing a vector by hand, you will want to use the arrow, since it is difficult to tell if you are writing in bold or not.
       </p>
     </remark>
-    <p>
-      The <em>zero vector</em>,<idx><h>zero vector</h></idx> written as <m>\mathbf{0}</m> or <m>{\overrightarrow{\mathbf{0}}}</m>, is a vector with zero magnitude, meaning it has no displacement and it has no direction.
-    </p>
-    <p>
-      It is important to note that a vector only requires a magnitude and direction, but it does not have a unique location. Thus, as long as the magnitude and direction aren't changed, a vector may be <term>translated</term><idx><h>vectors</h><h>translation</h></idx> or moved from one place to another. As a result, if two vectors <m>\mathbf{v}</m> and <m>\mathbf{w}</m> have the same direction and the same magnitude, then they are <term>equal</term>, <idx><h>vectors</h><h>equal</h></idx> written as
-      <me>
-        \mathbf{v}=\mathbf{w}
-      </me>.
-    </p>
+    <definition xml:id="def-zero-vector-coordinates">
+      <title>Zero Vector</title>
+      <statement>
+        <p>
+          The <term>zero vector</term>,<idx><h>zero vector</h></idx> written as <m>\mathbf{0}</m> or <m>{\overrightarrow{\mathbf{0}}}</m>, is a vector with zero magnitude, meaning it has no displacement and it has no direction.
+        </p>
+      </statement>
+    </definition>
+    <definition xml:id="def-equal-vectors">
+      <title>Equal Vectors</title>
+      <statement>
+        <p>
+          It is important to note that a vector only requires a magnitude and direction, but it does not have a unique location. Thus, as long as the magnitude and direction aren't changed, a vector may be <term>translated</term><idx><h>vectors</h><h>translation</h></idx> or moved from one place to another. As a result, if two vectors <m>\mathbf{v}</m> and <m>\mathbf{w}</m> have the same direction and the same magnitude, then they are <term>equal</term>, <idx><h>vectors</h><h>equal</h></idx> written as
+          <me>
+            \mathbf{v}=\mathbf{w}
+          </me>.
+        </p>
+      </statement>
+    </definition>
+    
     <example>
       <statement>
         <p>
-          Seven canoes, reconstructed versions of the traditional double-hulled Polynesian voyaging vessels, were constructed in Aotearoa. These vessels, collectively referred to as Vaka Moana<idx><h>canoe</h><h>Vaka Moana</h></idx> (canoes of the ocean), were individually named Marumaru Atua<idx><h>canoe</h><h>Marumaru Atua</h></idx> (Cook Islands), Gaualofa<idx><h>canoe</h><h>Gaualofa</h></idx> (Samoa), Te Matau a Māui<idx><h>canoe</h><h>Te Matau a Māui</h></idx> (Aotearoa), Fa'afaite<idx><h>canoe</h><h>Fa'afaite</h></idx> (Tahiti), Hinemoana<idx><h>canoe</h><h>Hinemoana</h></idx> (Aotearoa), Haunui<idx><h>canoe</h><h>Haunui</h></idx> (Aotearoa), and Uto Ni Yalo<idx><h>canoe</h><h>Uto Ni Yalo</h></idx> (Fiji). In 2011-2012, these sister canoes embarked on a voyage collectively titled Te Mana o Te Moana (The Spirit of the Ocean), covering a combined distance of 200,000 nautical miles through open waters. On average, each vaka traveled 120 nautical miles per day. Suppose one day, the vaka sailed northeast in the house Manu. The resulting vectors from each vaka will be identical, as they all traveled in the same direction (NE) with the same magnitude (120 nm). This is depicted in the figure below.
+          Seven canoes, reconstructed versions of the traditional double-hulled Polynesian voyaging vessels, were constructed in Aotearoa. These vessels, collectively referred to as Vaka Moana<idx><h>canoe</h><h>Vaka Moana</h></idx> (canoes of the ocean), were individually named Marumaru Atua<idx><h>canoe</h><h>Marumaru Atua</h></idx> (Cook Islands), Gaualofa<idx><h>canoe</h><h>Gaualofa</h></idx> (Samoa), Te Matau a Māui<idx><h>canoe</h><h>Te Matau a Māui</h></idx> (Aotearoa), Faʻafaite<idx><h>canoe</h><h>Faʻafaite</h></idx> (Tahiti), Hinemoana<idx><h>canoe</h><h>Hinemoana</h></idx> (Aotearoa), Haunui<idx><h>canoe</h><h>Haunui</h></idx> (Aotearoa), and Uto Ni Yalo<idx><h>canoe</h><h>Uto Ni Yalo</h></idx> (Fiji). In 2011-2012, these sister canoes embarked on a voyage collectively titled Te Mana o Te Moana (The Spirit of the Ocean), covering a combined distance of 200,000 nautical miles through open waters. On average, each vaka traveled 120 nautical miles per day. Suppose one day, the vaka sailed northeast in the house Manu. The resulting vectors from each vaka will be identical, as they all traveled in the same direction (NE) with the same magnitude (120 nm). This is depicted in the figure below.
         </p>
         <image xml:id="fig-equal-vectors">
           <latex-image>
@@ -56,7 +67,7 @@
             \draw[line width=2pt,blue,-stealth](-5,-3) -- (-2,0) node[black,sloped,midway,above]{Marumaru Atua};
             \draw[line width=2pt,blue,-stealth](-7,-1)--(-4,2) node[black,sloped,midway,above]{Gaualofa};
             \draw[line width=2pt,blue,-stealth](-1,-2)--(2,1) node[black,sloped,midway,above]{Te Matau a Māui};
-            \draw[line width=2pt,blue,-stealth](2,-3)--(5,0) node[black,sloped,midway,above]{Fa'afaite};
+            \draw[line width=2pt,blue,-stealth](2,-3)--(5,0) node[black,sloped,midway,above]{Fa`afaite};
             \draw[line width=2pt,blue,-stealth](-3,1)--(0,4) node[black,sloped,midway,above]{Haunui};
             \draw[line width=2pt,blue,-stealth](0,1)--(3,4) node[black,sloped,midway,above]{Hinemoana};
             \draw[line width=2pt,blue,-stealth](4,0)--(7,3) node[black,sloped,midway,above]{Uto Ni Yalo};
@@ -76,7 +87,7 @@
   <subsection xml:id="subsec-vector-addition">
     <title>Vector Addition</title>
     <p>
-      If you stand in Tahiti and face Hawaiʻi, you would be standing in house Haka Hoʻolua or north by west (NbW). When the Hōkūleʻa<idx><h>canoe</h><h>Hōkūleʻa</h></idx> sails from Tahiti back home to Hawaiʻi, it doesn't head directly towards Hawaiʻi in the house Haka Hoʻolua. Instead, Hōkūleʻa initially sails north. Once the navigator determines that Hōkūleʻa has reached the latitude of Hawaiʻi, approximately <m>20^{\circ}</m> N, the waʻa then changes course to head westward towards home. This navigation technique is known as <term>latitude sailing</term>,<idx><h>latitude sailing</h></idx> where knowing the latitude is crucial. The navigator can determine the latitude by measuring the altitude of Hokupa'a (North Star), observing the altitude of stars as they cross the meridian, or watching for pairs of stars that rise or set together.
+      If you stand in Tahiti and face Hawaiʻi, you would be looking in the house Haka Hoʻolua or north by west (NbW). When the Hōkūleʻa<idx><h>canoe</h><h>Hōkūleʻa</h></idx> sails from Tahiti back home to Hawaiʻi, it doesn't head directly towards Hawaiʻi in the house Haka Hoʻolua. Instead, Hōkūleʻa initially sails north. Once the navigator determines that Hōkūleʻa has reached the latitude of Hawaiʻi, approximately <m>20^{\circ}</m> N, the waʻa then changes course to head westward towards home. This navigation technique is known as <term>latitude sailing</term>,<idx><h>latitude sailing</h></idx> where knowing the latitude is crucial. The navigator can determine the latitude by measuring the altitude of Hokupaʻa (North Star), observing the altitude of stars as they cross the meridian, or watching for pairs of stars that rise or set together.
     </p>
     <p>
       We can represent the location of Tahiti as <m>P</m> and the location of Hawaiʻi as <m>Q</m>. Then, Hōkūleʻa's northward path can be represented by the vector <m>\overrightarrow{PQ}</m>, and its westward path by the vector <m>\overrightarrow{QR}</m>. The resulting displacement is equivalent to sailing directly from Tahiti to Hawaiʻi, represented by <m>\overrightarrow{PR}</m>. See <xref ref="fig_adding-vectors">Figure</xref>. We refer to the vector <m>\overrightarrow{PR}</m> as the <term>sum</term> of the vectors <m>\overrightarrow{PQ}</m> and <m>\overrightarrow{QR}</m>, written as:
@@ -134,7 +145,7 @@
       <title>Scalar Multiplication of Vectors</title>
       <statement>
         <p>
-          If <m>c</m> is a scalar (real number) and <m>\mathbf{v}</m> is a vector, then the <term>scalar multiple</term><idx><h>scalar multiplication</h></idx> <m>c\mathbf{v}</m> has magnitude equal to the absolute value of <m>c</m> times the magnitude of <m>\mathbf{v}</m> (<m>|c|\|\mathbf{v}\|</m>). Additionally:
+          If <m>c</m> is a scalar (real number) and <m>\mathbf{v}</m> is a vector, then the <term>scalar multiple</term><idx><h>scalar multiplication</h></idx> <m>c\mathbf{v}</m> has magnitude equal to the absolute value of <m>c</m> times the magnitude of <m>\mathbf{v}</m>, <m>|c|\|\mathbf{v}\|</m>. Additionally:
           <ul>
             <li>
               <p>
@@ -143,7 +154,7 @@
             </li>
             <li>
               <p>
-                If <m>c\lt 0</m>, the scalar multiple has the opposite direction as <m>\mathbf{v}</m>
+                If <m>c\lt 0</m>, the scalar multiple has the opposite direction as <m>\mathbf{v}</m>.
               </p>
             </li>
           </ul>
@@ -314,33 +325,35 @@
             \|\mathbf{v}\|=\sqrt{v_x^2+v_y^2}
           </me>
         </p>
-        <p>
-          This formula is derived from the Pythagorean Theorem or the distance formula where the square of the magnitude  equals the square of the horizontal component plus the square of the vertical component:
-          <me>
-            \|\mathbf{v}\|^2=v_x^2+v_y^2
-          </me>
-        </p>
-        <p>
-          This relationship can be visually understood using the Pythagorean Theorem, as illustrated in the following figure.
-        </p>
-        <image xml:id="fig-magnitude" width="75%">
-          <latex-image>
-            \begin{tikzpicture}[scale=0.75]
-            \draw[thin,gray!40] (-1,-1) grid (11,8);
-            \draw[stealth-stealth] (-1,0)--(11,0) node[right]{\(x\)};
-            \draw[stealth-stealth] (0,-1)--(0,8) node[above]{\(y\)};
-            \draw[line width=2pt,blue,-stealth](2,3) -- (9,7) node[black,midway,below right]{\(\mathbf{v}=\langle v_x,v_y\rangle\)};
-            \draw[dashed] (2,3) -- (9,3);
-            \draw[dashed] (9,3) -- (9,7);
-            \draw (8.5,3) -- (8.5,3.5) -- (9,3.5);
-            \draw [decorate,decoration={brace,amplitude=20pt,mirror},xshift=0.4pt,yshift=0.4pt](2,3) -- (9,3) node[black,midway,yshift=-1cm] { \(v_x\)};
-            \draw [decorate,decoration={brace,amplitude=20pt,mirror},xshift=0.4pt,yshift=0.4pt](9,3) -- (9,7) node[black,midway,xshift=1.25cm] { \(v_y\)};
-            \draw [decorate,decoration={brace,amplitude=20pt,mirror},xshift=0.4pt,yshift=0.4pt](9,7) -- (2,3) node[black,midway,yshift=1cm,xshift=-0.75cm] { \(\|\mathbf{v}\|\)};
-            \end{tikzpicture}
-          </latex-image>
-        </image>
       </statement>
     </definition>
+    <remark xml:id="remark-vector-magnitude-pythagorean-theorem">
+      <p>
+        This formula is derived from the Pythagorean Theorem or the distance formula where the square of the magnitude  equals the square of the horizontal component plus the square of the vertical component:
+        <me>
+          \|\mathbf{v}\|^2=v_x^2+v_y^2
+        </me>
+      </p>
+      <p>
+        This relationship can be visually understood using the Pythagorean Theorem, as illustrated in the following figure.
+      </p>
+      <image xml:id="fig-magnitude" width="75%">
+        <latex-image>
+          \begin{tikzpicture}[scale=0.75]
+          \draw[thin,gray!40] (-1,-1) grid (11,8);
+          \draw[stealth-stealth] (-1,0)--(11,0) node[right]{\(x\)};
+          \draw[stealth-stealth] (0,-1)--(0,8) node[above]{\(y\)};
+          \draw[line width=2pt,blue,-stealth](2,3) -- (9,7) node[black,midway,below right]{\(\mathbf{v}=\langle v_x,v_y\rangle\)};
+          \draw[dashed] (2,3) -- (9,3);
+          \draw[dashed] (9,3) -- (9,7);
+          \draw (8.5,3) -- (8.5,3.5) -- (9,3.5);
+          \draw [decorate,decoration={brace,amplitude=20pt,mirror},xshift=0.4pt,yshift=0.4pt](2,3) -- (9,3) node[black,midway,yshift=-1cm] { \(v_x\)};
+          \draw [decorate,decoration={brace,amplitude=20pt,mirror},xshift=0.4pt,yshift=0.4pt](9,3) -- (9,7) node[black,midway,xshift=1.25cm] { \(v_y\)};
+          \draw [decorate,decoration={brace,amplitude=20pt,mirror},xshift=0.4pt,yshift=0.4pt](9,7) -- (2,3) node[black,midway,yshift=1cm,xshift=-0.75cm] { \(\|\mathbf{v}\|\)};
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </remark>
     <example xml:id="ex_magnitude">
       <introduction>
         <p>
@@ -470,7 +483,7 @@
               \begin{tikzpicture}
               \draw[thin,gray!40] (-2,-7) grid (9,5);
               \draw[line width=2pt,blue,-stealth](1,1) -- (6,2) node[black,sloped,midway,below]{\(\mathbf{u}\)};
-              \draw[line width=2pt,blue,-stealth](6,2)--(2,-4) node[black,sloped,midway,above]{\(\mathbf{v}\)};
+              \draw[line width=2pt,blue,-stealth](6,2)--(2,-4) node[black,sloped,midway,above]{-\(\mathbf{v}\)};
               \draw[line width=2pt,blue,-stealth](1,1)--(2,-4) node[black,sloped,midway,above]{\(\mathbf{u}-\mathbf{v}\)};
               \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](1,-5) -- (2,-5) node[black,midway,yshift=-0.6cm] { \(1\)};
               \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](2,-5) -- (6,-5) node[black,midway,yshift=-0.6cm] { \(4\)};
@@ -664,8 +677,8 @@
         <p>
           The unit vectors <m>\mathbf{i}</m> and <m>\mathbf{j}</m> are defined as
           <me>
-            \mathbf{i}=\langle1; \quad0\rangle,\mathbf{j}=\langle0,1\rangle
-          </me>
+            \mathbf{i}=\langle1,0\rangle,\quad\mathbf{j}=\langle0,1\rangle
+          </me>.
         </p>
       </statement>
     </definition>
@@ -692,18 +705,42 @@
     <definition xml:base="def-direction">
       <statement>
         <p>
-          Let <m>\mathbf{v}=\langle v_x,v_y\rangle</m> be a vector with magnitude <m>\|\mathbf{v}\|</m>.
-          The angle <m>\theta</m> represents the <term>direction</term>
-              <idx><h>vectors</h><h>direction</h></idx>
-          of <m>\mathbf{v}</m> and is the smallest positive angle in standard position formed by the positive <m>x</m>-axis and <m>\mathbf{v}</m>
-          (<m>0^{\circ}\leq\theta\leq360^{\circ}</m>).
-          The direction, <m>\theta</m> and can be calculated by
-          <me>
-            \theta=\tan^{-1}\left(\frac{v_y}{v_x}\right)
-          </me>.
+          Let <m>\mathbf{v}=\langle v_x,v_y\rangle</m> be a vector. The angle <m>\theta</m> represents the <term>direction</term><idx><h>vectors</h><h>direction</h></idx> of <m>\mathbf{v}</m> and is the smallest positive angle in standard position formed by the positive <m>x</m>-axis and <m>\mathbf{v}</m> (<m>0^{\circ}\leq\theta\leq360^{\circ}</m>).
         </p>
       </statement>
     </definition>
+    <remark xml:id="remark-finding-vector-direction">
+      <title>Finding Direction of a Vector</title>
+      <p>
+        Recall that <m>\tan\theta=\frac{v_y}{v_x}</m>, so
+        <me>
+          \theta=\tan^{-1}\left(\frac{v_y}{v_x}\right)
+        </me>
+        where <m>-90^{\circ} \lt \theta \lt 90^{\circ}</m>.
+      </p>
+      <p>
+        To find the direction (<m>\theta</m>), first draw the vector. If <m>v_x=0</m> or <m>v_y=0</m>, then use the drawing to find <m>\theta</m>. If <m>v_x\neq0</m> and <m>v_y\neq0</m>, then note the quadrant where <m>\theta</m> lies in.
+      </p>
+      <p>
+        <ul>
+          <li>
+            <p>
+              If <m>\theta</m> is in Quadrant I, then <m>\theta=\tan^{-1}\left(\frac{v_y}{v_x}\right)</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>\theta</m> is in Quadrant II or III, then <m>\theta=\tan^{-1}\left(\frac{v_y}{v_x}\right)+180^{\circ}</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>\theta</m> is in Quadrant IV, then <m>\theta=\tan^{-1}\left(\frac{v_y}{v_x}\right)+360^{\circ}</m>.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </remark>
     <p>
       We now have all the information needed to write a vector.
     </p>
@@ -791,7 +828,13 @@
       <title>Calculating Canoe Velocity with Current Drift</title>
       <introduction>
         <p>
-          The vaka Marumaru Atua<idx><h>canoe</h><h>Marumaru Atua</h></idx> sets sail on a voyage northward from Rarotonga to Hawaiʻi, maintaining a steady speed of 5 knots through the water. However, a 1-knot current flows in the direction of Lā Kona (a heading of 260 degrees). This current's influence resembles walking on a moving treadmill, where forward progress is limited despite moving legs. Similarly, Marumaru Atua navigates while the water, in the form of a current, also moves. The actual velocity of Marumaru Atua is the resultant of the canoe's velocity and the current's velocity. This resultant velocity vector, known as the velocity over ground (VOG), denotes the canoe's speed and direction relative to fixed objects on Earth, influenced by the current's impact on Marumaru. The magnitude of this velocity vector, called the <term>speed over ground (SOG)</term>,<idx><h>speed over ground</h></idx> represents the absolute speed of the canoe relative to fixed objects, accounting for both the canoe's speed through the water and the current's speed and direction.
+          The vaka Marumaru Atua<idx><h>canoe</h><h>Marumaru Atua</h></idx> sets sail on a northward voyage from Rarotonga to Hawaiʻi, maintaining a steady speed of 5 knots through the water. However, a 1-knot current flows in the direction of Lā Kona (a heading of 260 degrees). This current's influence resembles walking on a moving treadmill, where forward progress is limited despite moving legs. Similarly, Marumaru Atua navigates while the water, in the form of a current, also moves. In sailing, the direction and speed at which the current is pushing the vaka are referred to as <term>set</term><idx><h>set</h></idx> and <term>drift</term><idx><h>drift</h></idx>, respectively. 
+        </p>
+        <p>
+          The actual velocity of Marumaru Atua is the resultant of the canoe's velocity and the current's velocity. This resultant velocity vector denotes the canoe's speed and direction relative to fixed objects on Earth, influenced by the current's impact on Marumaru. The magnitude and direction of this velocity vector are represented by the <term>speed over ground (SOG)</term><idx><h>speed over ground (SOG)</h></idx> and <term>course over ground (COG)</term>,<idx><h>course over ground (COG)</h></idx> respectively. SOG represents the speed of the canoe relative to fixed objects, accounting for both the canoe's speed through the water and the current's speed and direction. COG indicates the direction of the canoe's motion over the Earth's surface.
+        </p>
+        <p>
+          Understanding the difference between the velocity over water and the velocity relative to fixed objects illustrates how set and drift show how the current influences the vaka's course and speed over ground. Voyagers need to account for set and drift when navigating to ensure they reach their intended destination accurately and safely.
         </p>
         <image xml:id="fig-marumaru-currents">
           <latex-image>
@@ -838,7 +881,7 @@
       <task>
         <statement>
           <p>
-            Express Marumaru Atua's velocity vector, represented as <m>\mathbf{v}_m</m>, and the velocity vector of the current, denoted as <m>\mathbf{v}_w</m>, in terms of their horizontal and vertical components. Round your answer to two decimal places.
+            Express Marumaru Atua's velocity vector, represented as <m>\mathbf{v}_m</m>, and the velocity vector of the current, denoted as <m>\mathbf{v}_c</m>, in terms of their horizontal and vertical components. Round your answer to two decimal places.
           </p>
         </statement>
         <solution>
@@ -961,7 +1004,7 @@
       <task>
         <statement>
           <p>
-            Find the speed over ground (SOG) and direction of Marumaru Atua, rounded to one decimal place.
+            Find the speed over ground (SOG) and the course over ground (COG) of Marumaru Atua, rounded to one decimal place.
           </p>
         </statement>
         <solution>
@@ -970,26 +1013,74 @@
             <me>
               \|\mathbf{v}_g\|=\|\langle-0.98,4.83\rangle\|=\sqrt{(-0.98)^2+(4.83^2)}\approx4.9\mbox{ knots}.
             </me>
-            Thus, although the vaka sails through the water at 5 knots, its forward progress is slightly slower at 4.9 knots.
+            Thus, although the vaka sails through the water at 5 knots, its forward progress is slightly slower with a speed over ground at 4.9 knots.
           </p>
           <p>
-            To find the direction of the velocity, we use <xref ref="def-direction"/> to get
+            To find the course over ground, we will use <xref ref="remark-finding-vector-direction"/> to find direction of the velocity:
             <me>
               \theta=\tan^{-1}\frac{v_y}{v_x}=\tan^{-1}\frac{4.83}{-0.98}\approx-78.5^{\circ}
             </me>.
-            Since our velocity vector is in Quadrant II, we have our direction is
+            Since our velocity vector is in Quadrant II, our course over ground is
             <me>
-              180^{\circ}-78.5^{\circ}=101.5^{\circ}
+              -78.5^{\circ}+180^{\circ}=101.5^{\circ}
             </me>.
           </p>
         </solution>
       </task>
     </example>
-    <example xml:id="examp-leeway">
-      <title>Leeway</title>
+    <image xml:id="fig-leeway1">
+      <latex-image>
+        \begin{tikzpicture}
+        \draw[thin,gray!40] (-7,-4) grid (7,4);
+        \draw[line width=1pt,-stealth,dashed](-6,0) -- (6,0) node[black,sloped,pos=0.75,above]{ Apparent Heading of Wa`a};
+        \draw[line width=1pt,blue,-stealth,decorate,decoration=snake](0,0) -- (-6,3) node[black,sloped,midway,above,yshift=5]{ Wake of Wa`a};
+        \draw[line width=2pt,blue,-stealth](0,0) -- (6,-3) node[black,sloped,midway,below]{ Actual Heading of Wa`a};
+        \draw[-stealth,line width=2pt](6,0) -- (6,-3) node[black,sloped,midway,above]{Leeway};
+        \draw[-stealth,line width=2pt](0,3) -- (0,0) node[black,sloped,midway,above]{Wind};
+        \draw[-stealth,line width=2pt](-6,3) -- (-6,0) node[black,sloped,midway,above]{Wind};
+        \draw pic at (0,0) {waa-top={waacolor}{-90}{0.15}};
+        \draw[line width=2pt] (153.435:2) arc (153.435:180:2) node[midway,rotate=-13.283,left] { Angle of Leeway};
+        \end{tikzpicture}   
+      </latex-image>
+    </image>
+    <image xml:id="fig-leeway2">
+      <latex-image>
+        \begin{tikzpicture}
+        \draw[thin,gray!40] (-7,-4) grid (7,4);
+        \draw[line width=1pt,-stealth,dashed](-6,-3) -- (6,3) node[black,sloped,pos=0.75,above]{ Apparent Heading of Wa`a};
+        \draw[line width=1pt,blue,-stealth,decorate,decoration=snake](0,0) -- (-6,0) node[black,sloped,midway,above,yshift=5]{ Wake of Wa`a};
+        \draw[line width=2pt,blue,-stealth](0,0) -- (6,0) node[black,sloped,midway,below]{ Actual Heading of Wa`a};
+        \draw[-stealth,line width=2pt](6,3) -- (6,0) node[black,sloped,midway,above]{Leeway};
+        \draw[-stealth,line width=2pt](0,3) -- (0,0) node[black,sloped,midway,above]{Wind};
+        \draw[-stealth,line width=2pt](-6,0) -- (-6,-3) node[black,sloped,midway,above]{Wind};         \draw pic at (0,0) {waa-top={waacolor}{-90}{0.15}};
+        \draw[line width=2pt] (180:2) arc (180:206.565:2) node[midway,rotate=13.283,left] { Angle of Leeway};
+        \end{tikzpicture}
+      </latex-image>
+    </image>
+    
+      
+    
+  </subsection>
+  <exercises xml:id="exercises-vectors">
+    <exercise>
       <statement>
         <p>
-          When a waʻa sails on the ocean, it rarely moves precisely in the direction it's pointed. One reason for this is that crosswind can push the waʻa off its course. The angle of displacement between the apparent heading of the waʻa and the direction the waʻa is actually traveling through the water is referred to as <em>leeway</em>.<idx><h>leeway</h></idx> Using vector addition, we can determine where the waʻa will actually travel. However, on the waʻa, the navigator can determine the leeway by observing the angle from the wake behind the waʻa and the apparent direction the waʻa is pointed towards.
+          
+        </p>
+      </statement>
+      <answer>
+        <p>
+          
+        </p>
+      </answer>
+    </exercise>
+
+
+    <exercisegroup>
+      <title>Leeway</title>
+      <introduction>
+        <p>
+          When a waʻa sails on the ocean, it rarely moves precisely in the direction it's pointed. One reason for this is that crosswind can push the waʻa off its course. The angle of displacement between the apparent heading of the waʻa and the direction the waʻa is actually traveling through the water is referred to as <term>leeway</term>.<idx><h>leeway</h></idx> Using vector addition, we can determine where the waʻa will actually travel. However, on the waʻa, the navigator can determine the leeway by observing the angle from the wake behind the waʻa and the apparent direction the waʻa is pointed towards.
         </p>
         <image xml:id="fig-leeway">
           <latex-image>
@@ -1009,27 +1100,16 @@
         <p>
           In order to compensate for the wind, the navigator must steer the waʻa into the wind by the same angle as the leeway angle. For example, if the waʻa needs to sail in the house Manu Malanai (SE) and the wind is pushing the waʻa one house further south, the waʻa will move in the house Nālani Malanai (SEbS). To maintain the course in the house Manu Malanai, the navigator must then point the waʻa one house north with an apparent heading in the house of Noio Malanai (SEbE) in order for the actual heading to be in the house of Manu Malanai (SE).
         </p>
-      </statement>
-    </example>
-  </subsection>
-  <subsection xml:id="subsec-vectors-force">
-    <title>vectors-force</title>
-    <p>
-      *****Add a section on force******
-    </p>
-  </subsection>
-  <exercises xml:id="exercises-vectors">
-    <exercise>
-      <statement>
-        <p>
-          
-        </p>
-      </statement>
-      <answer>
-        <p>
-          
-        </p>
-      </answer>
-    </exercise>
+      </introduction>
+    
+      <exercise>
+        <statement>
+          <p>
+            
+          </p>
+        </statement>
+      </exercise>
+    
+    </exercisegroup>
   </exercises>
 </section>
