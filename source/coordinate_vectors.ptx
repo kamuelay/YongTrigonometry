@@ -1,0 +1,1694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="coordinate_vectors">
+  <title>Coordinate Vectors</title>
+  <introduction>
+    <p>
+        In <xref ref="geometric_vectors"/>, we visualized vectors as directed line segments with magnitudes and direction. Now, we will explore vectors through a coordinate approach, where we express vectors in terms of their components along the coordinate axis.
+    </p>
+  </introduction>
+  <subsection xml:id="subsec-vectors-in-coordinates">
+    <title>Vectors in Coordinates</title>
+    <definition xml:id="def-component-form-of-a-vector">
+      <title>Component Form of a Vector</title>
+      <statement>
+        <p>
+          A vector <m>\mathbf{v}</m> with initial point <m>P(x_1,y_1)</m> and terminal point <m>Q(x_2,y_2)</m> can be expressed in various ways. One common representation is as the directed line segment from point <m>P</m> to point <m>Q</m>, denoted as <m>\overrightarrow{PQ}</m>. Alternatively, we can describe it using the changes in the <m>x-</m> and <m>y-</m> coordinates between points <m>P</m> and <m>Q</m>. These changes are referred to as the <term>horizontal component</term><idx><h>vectors</h><h>horizontal component</h></idx> and <term>vertical component</term><idx><h>vectors</h><h>vertical component</h></idx> of the vector, denoted as <m>v_x</m> and <m>v_y</m> respectively. Mathematically, these representations are all equivalent:
+          <md>
+            <mrow>\mathbf{v}\amp = \overrightarrow{PQ}</mrow>
+            <mrow>\amp = \langle x_2-x_1,y_2-y_1\rangle</mrow>
+            <mrow>\amp = \langle v_x,v_y\rangle</mrow>
+          </md>
+          as illustrated in the following figure.
+        </p>
+        <image xml:id="fig-vector-components">
+          <latex-image>
+            \begin{tikzpicture}[scale=0.67]
+            \draw[stealth-stealth] (-1,0)--(15,0) node[right]{\(x\)};
+            \draw[stealth-stealth] (0,-1)--(0,10) node[above]{\(y\)};
+            \draw[line width=2pt,blue,-stealth](1,3) -- (11,9) node[black,midway,above]{\(\mathbf{v}\)};
+            \node[above] at (1,3) {\(P\)};
+            \node[above] at (11,9) {\(Q\)};
+            \draw[dashed] (1,3)--(1,0) node[below]{\(x_1\)};
+            \draw[dashed] (11,9)--(11,0) node[below]{\(x_2\)};
+            \draw[dashed] (11,3)--(0,3) node[left]{\(y_1\)};
+            \draw[dashed] (11,9)--(0,9) node[left]{\(y_2\)};
+            \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](1,3) -- (11,3) node[black,midway,yshift=-0.6cm] { \(v_x=x_2-x_1\)};
+            \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=0.4pt](11,3) -- (11,9) node[black,midway,xshift=2.25cm] { \(v_y=y_2-y_1\)};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </statement>
+    </definition>
+    <remark>
+      <title>Notation</title>
+      <p>
+        To avoid confusion with the notation for a point and an interval, we use the symbol <m>\langle v_1,v_2\rangle</m> for an ordered pair that represents a vector in <term>component form</term><idx><h>component form</h></idx>. Lowercase letters are used to represent the components.
+      </p>
+    </remark>
+    <definition xml:id="def-position-vector">
+      <title>Position Vector</title>
+      <statement>
+        <p>
+          A vector, <m>\mathbf{v}</m> with an initial point at <m>(0,0)</m> and terminal point at <m>(a,b)</m> is called the <term>position vector</term><idx><h>vectors</h><h>position vector</h></idx> and can be written as
+          <me>\mathbf{v}=\langle a-0,b-0\rangle=\langle a,b\rangle</me>.
+        </p>
+      </statement>
+    </definition>
+    <remark>
+      <p>
+        The position vector represents the terminal point of any vector <m>\mathbf{v}</m> when its initial point is at the origin. Essentially, it is <m>\mathbf{v}</m> translated so that its initial side starts at the origin. This translation does not change the magnitude or direction, making the two vectors equivalent. Thus, we can refer to both vectors as <m>\mathbf{v}</m>. In other words, the terminal point of a vector starting at the origin is defined by its horizontal and vertical components.
+      </p>
+    </remark>
+    <example>
+      <statement>
+        <p>
+          Find the position vector of the vector that goes from <m>P(2,-1)</m> to <m>Q(5,3)</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          From <xref ref="def-component-form-of-a-vector"/>, our original vector can be written as:
+          <me>
+            \mathbf{v}=\overrightarrow{PQ}=\langle5-2,3-(-1)\rangle=\langle3,4\rangle
+          </me>.
+          Then by <xref ref="def-position-vector"/>, the position vector is:
+          <me>
+            \mathbf{v}=\langle3,4\rangle
+          </me>.
+          This vector starts at the origin with 3 as its horizontal component and 4 as its vertical component, as illustrated in the figure below.
+        </p>
+        <image xml:id="fig-position-vector" width="50%">
+          <latex-image>
+            \begin{tikzpicture}[scale=1]
+            \draw[thin,gray!40] (-1,-2) grid (6,5);
+            \draw[stealth-stealth] (-1,0)--(6,0) node[right]{\(x\)};
+            \draw[stealth-stealth] (0,-2)--(0,5) node[above]{\(y\)};
+            \draw[line width=2pt,blue,-stealth](2,-1) -- (5,3) node[black,midway,left]{\(\mathbf{v}=\langle3,4\rangle\)};
+            \draw[line width=2pt,blue,-stealth](0,0) -- (3,4) node[black,midway,left]{\(\mathbf{v}=\langle3,4\rangle\)};
+            \node[below] at (2,-1) {\(P(2,-1)\)};
+            \node[above] at (5,3) {\(Q(5,3)\)};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </solution>
+    </example>
+    <definition xml:id="def-zero-vector">
+      <title>Zero Vector</title>
+      <statement>
+        <p>
+          The <term>zero vector</term><idx><h>zero vector</h></idx> is the vector <m>\mathbf{0}=\langle0,0\rangle</m>
+        </p>
+      </statement>
+    </definition>
+    <definition xml:id="def-magnitude">
+      <title>Magnitude of a Vector</title>
+      <statement>
+        <p>
+          Given a vector <m>\mathbf{v}=\langle v_x,v_y\rangle</m>, the <term>magnitude</term><idx><h>vectors</h><h>magnitude</h></idx> or <term>length</term><idx><h>vectors</h><h>length</h></idx> is
+          <me>
+            \|\mathbf{v}\|=\sqrt{v_x^2+v_y^2}
+          </me>
+        </p>
+      </statement>
+    </definition>
+    <remark xml:id="remark-vector-magnitude-pythagorean-theorem">
+      <p>
+        This formula is derived from the Pythagorean Theorem or the distance formula where the square of the magnitude  equals the square of the horizontal component plus the square of the vertical component:
+        <me>
+          \|\mathbf{v}\|^2=v_x^2+v_y^2
+        </me>
+      </p>
+      <p>
+        This relationship can be visually understood using the Pythagorean Theorem, as illustrated in the following figure.
+      </p>
+      <image xml:id="fig-magnitude" width="75%">
+        <latex-image>
+          \begin{tikzpicture}[scale=0.75]
+          \draw[thin,gray!40] (-1,-1) grid (11,8);
+          \draw[stealth-stealth] (-1,0)--(11,0) node[right]{\(x\)};
+          \draw[stealth-stealth] (0,-1)--(0,8) node[above]{\(y\)};
+          \draw[line width=2pt,blue,-stealth](2,3) -- (9,7) node[black,midway,below right]{\(\mathbf{v}=\langle v_x,v_y\rangle\)};
+          \draw[dashed] (2,3) -- (9,3);
+          \draw[dashed] (9,3) -- (9,7);
+          \draw (8.5,3) -- (8.5,3.5) -- (9,3.5);
+          \draw [decorate,decoration={brace,amplitude=20pt,mirror},xshift=0.4pt,yshift=0.4pt](2,3) -- (9,3) node[black,midway,yshift=-1cm] { \(v_x\)};
+          \draw [decorate,decoration={brace,amplitude=20pt,mirror},xshift=0.4pt,yshift=0.4pt](9,3) -- (9,7) node[black,midway,xshift=1.25cm] { \(v_y\)};
+          \draw [decorate,decoration={brace,amplitude=20pt,mirror},xshift=0.4pt,yshift=0.4pt](9,7) -- (2,3) node[black,midway,yshift=1cm,xshift=-0.75cm] { \(\|\mathbf{v}\|\)};
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </remark>
+    <example xml:id="ex_magnitude">
+      <introduction>
+        <p>
+          Find the magnitude of each vector.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>\mathbf{u}=\langle10,-5\rangle</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <me>
+              \|\mathbf{u}\|=\sqrt{10^2+(-5)^2}=\sqrt{125}=\sqrt{25\cdot5}=\sqrt{25}\cdot\sqrt{5}=5\sqrt{5}
+            </me>
+          </p>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\mathbf{v}=\langle-2,7\rangle</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <me>
+              \|\mathbf{v}\|=\sqrt{(-2)^2+7^2}=\sqrt{4+49}=\sqrt{53}
+            </me>
+          </p>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\mathbf{w}=\langle\frac{12}{13},\frac{5}{13}\rangle</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <me>
+              \|\mathbf{w}\|=\sqrt{\left(\frac{12}{13}\right)^2+\left(\frac{5}{13}\right)^2}=\sqrt{\frac{144}{169}+\frac{25}{169}}=\sqrt{\frac{169}{169}}=1
+            </me>
+          </p>
+        </solution>
+      </task>
+    </example>
+    <definition xml:id="def-unit-vector">
+      <title>Unit Vector</title>
+      <statement>
+        <p>
+          A vector <m>\mathbf{u}</m> with magnitude 1, <m>\|\mathbf{u}\|=1</m>, is called a <term>unit vector</term><idx><h>vectors</h><h>unit vector</h></idx>
+        </p>
+      </statement>
+    </definition>
+    <definition xml:id="def-algebraic-operations-of-vectors">
+      <title>Algebraic operations of vectors</title>
+      <statement>
+        <p>
+          If <m>\mathbf{u}=\langle u_x,u_y\rangle</m>, <m>\mathbf{v}=\langle v_x,v_y\rangle</m>, and <m>c</m> is a scalar, then
+          <md>
+            <mrow>\mathbf{u}+\mathbf{v}\amp = \langle u_x+v_x,u_y+v_y\rangle</mrow>
+            <mrow>\mathbf{u}-\mathbf{v}\amp = \langle u_x-v_x,u_y-v_y\rangle</mrow>
+            <mrow>c\mathbf{u}\amp = \langle cu_x,cu_y\rangle</mrow>
+          </md>
+        </p>
+      </statement>
+    </definition>
+    <example>
+      <introduction>
+        <p>
+          Let <m>\mathbf{u}=\langle 5, 1\rangle</m> and <m>\mathbf{v}=\langle 4, 6\rangle</m>. Compute the following:
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>\mathbf{u}+\mathbf{v}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\mathbf{u}+\mathbf{v}=\langle 5, 1\rangle+\langle 4, 6\rangle=\langle 5+4,1+6\rangle=\langle 9,7\rangle</m>
+          </p>
+          <image xml:id="fig-algebraic-operations-vectors-u_v">
+            <latex-image>
+              \begin{tikzpicture}
+              \draw[thin,gray!40] (-2,-2) grid (13,11);
+              \draw[line width=2pt,blue,-stealth](1,1) -- (6,2) node[black,sloped,midway,above]{\(\mathbf{u}\)};
+              \draw[line width=2pt,blue,-stealth](6,2)--(10,8) node[black,sloped,midway,above]{\(\mathbf{v}\)};
+              \draw[line width=2pt,blue,-stealth](1,1)--(10,8) node[black,sloped,midway,above]{\(\mathbf{u}+\mathbf{v}\)};
+              \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](1,0) -- (6,0) node[black,midway,yshift=-0.6cm] { \(5\)};
+              \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](6,0) -- (10,0) node[black,midway,yshift=-0.6cm] { \(4\)};
+              \draw [decorate,decoration={brace,amplitude=10pt},xshift=0.4pt,yshift=-2cm](1,11) -- (10,11) node[black,midway,yshift=0.6cm] { \(9\)};
+              \draw [decorate,decoration={brace,amplitude=10pt},xshift=-0.4pt,yshift=0.4pt](0,1) -- (0,8) node[black,midway,xshift=-0.6cm] { \(7\)};
+              \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=-0.4pt,yshift=0.4pt](11,1) -- (11,2) node[black,midway,xshift=0.6cm] { \(1\)};
+              \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=-0.4pt,yshift=0.4pt](11,2) -- (11,8) node[black,midway,xshift=0.6cm] { \(6\)};
+              \draw[dashed] (1,0)--(1,1);
+              \draw[dashed] (6,0)--(6,2);
+              \draw[dashed] (10,0)--(10,8);
+              \draw[dashed] (10,8)--(11,8);
+              \draw[dashed] (1,1)--(11,1);
+              \draw[dashed] (6,2)--(11,2);
+              \draw[dashed] (0,1)--(1,1);
+              \draw[dashed] (0,8)--(10,8);
+              \draw[dashed] (1,1)--(1,9);
+              \draw[dashed] (10,8)--(10,9);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\mathbf{u}-\mathbf{v}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>\mathbf{u}-\mathbf{v}=\langle 5, 1\rangle-\langle 4, 6\rangle=\langle 5-4,1-6\rangle=\langle 1,-5\rangle</m>
+          </p>
+          <image xml:id="fig-algebraic-operations-vectors-u-v">
+            <latex-image>
+              \begin{tikzpicture}
+              \draw[thin,gray!40] (-2,-7) grid (9,5);
+              \draw[line width=2pt,blue,-stealth](1,1) -- (6,2) node[black,sloped,midway,below]{\(\mathbf{u}\)};
+              \draw[line width=2pt,blue,-stealth](6,2)--(2,-4) node[black,sloped,midway,above]{-\(\mathbf{v}\)};
+              \draw[line width=2pt,blue,-stealth](1,1)--(2,-4) node[black,sloped,midway,above]{\(\mathbf{u}-\mathbf{v}\)};
+              \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](1,-5) -- (2,-5) node[black,midway,yshift=-0.6cm] { \(1\)};
+              \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](2,-5) -- (6,-5) node[black,midway,yshift=-0.6cm] { \(4\)};
+              \draw [decorate,decoration={brace,amplitude=10pt},xshift=0.4pt,yshift=-2cm](1,5) -- (6,5) node[black,midway,yshift=0.6cm] { \(5\)};
+              \draw [decorate,decoration={brace,amplitude=10pt},xshift=-0.4pt,yshift=0.4pt](0,-4) -- (0,1) node[black,midway,xshift=-0.6cm] { \(5\)};
+              \draw [decorate,decoration={brace,amplitude=10pt},xshift=-0.4pt,yshift=0.4pt](0,1) -- (0,2) node[black,midway,xshift=-0.6cm] { \(1\)};
+              \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=-0.4pt,yshift=0.4pt](7,-4) -- (7,2) node[black,midway,xshift=0.6cm] { \(6\)};
+              \draw[dashed] (0,1)--(1,1);
+              \draw[dashed] (0,2)--(6,2);
+              \draw[dashed] (1,1)--(1,3);
+              \draw[dashed] (6,2)--(6,3);
+              \draw[dashed] (6,2)--(7,2);
+              \draw[dashed] (6,2)--(6,-5);
+              \draw[dashed] (2,-4)--(7,-4);
+              \draw[dashed] (2,-4)--(2,-5);
+              \draw[dashed] (2,-4)--(0,-4);
+              \draw[dashed] (1,1)--(1,-5);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>3\mathbf{u}</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>3\mathbf{u}=3\langle 5,1\rangle=\langle 3\cdot5,3\cdot1\rangle=\langle 15,3\rangle</m>
+          </p>
+          <image xml:id="fig-algebraic-operations-vectors-3u" width="95%">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.5]
+              \draw[thin,gray!40] (-5,-7) grid (14,3);
+              \draw[line width=2pt,blue,-stealth](1,1) -- (6,2) node[black,sloped,midway,above]{\(\mathbf{u}\)};
+              \draw[line width=2pt,blue,-stealth](-4,-4)--(11,-1) node[black,sloped,midway,below]{\(\mathbf{3u}\)};
+              \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](1,0) -- (6,0) node[black,midway,yshift=-0.6cm] { \(5\)};
+              \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](-4,-5) -- (11,-5) node[black,midway,yshift=-0.6cm] { \(15\)};
+              \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=-0.4pt,yshift=0.4pt](12,-4) -- (12,-1) node[black,midway,xshift=0.6cm] { \(3\)};
+              \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=-0.4pt,yshift=0.4pt](7,1) -- (7,2) node[black,midway,xshift=0.6cm] { \(1\)};
+              \draw[dashed] (1,0)--(1,1);
+              \draw[dashed] (6,0)--(6,2);
+              \draw[dashed] (1,1)--(7,1);
+              \draw[dashed] (6,2)--(7,2);
+              \draw[dashed] (-4,-4)--(-4,-5);
+              \draw[dashed] (-4,-4)--(12,-4);
+              \draw[dashed] (11,-1)--(12,-1);
+              \draw[dashed] (11,-5)--(11,-1);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </solution>
+      </task>
+    </example>
+  </subsection>
+  <subsection xml:id="subsec-properties-of-vectors">
+    <title>Properties of Addition, Length, and Scalar Multiplication</title>
+    <definition xml:id="def-properties-of-vectors">
+      <title>Properties of Vectors</title>
+      <statement>
+        <p>
+          If <m>\mathbf{u}</m>, <m>\mathbf{v}</m>, and <m>\mathbf{w}</m> are vectors, <m>\mathbf{0}</m> is the zero vector, and <m>c</m> and <m>d</m> are scalars, then
+        </p>
+        <p>
+          <em>Vector Addition</em>
+          <ul>
+            <li>
+              <p>
+                <m>\mathbf{u}+\mathbf{v}=\mathbf{v}+\mathbf{u}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\mathbf{u}+(\mathbf{v}+\mathbf{w})=(\mathbf{u}+\mathbf{v})+\mathbf{w}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\mathbf{u}+\mathbf{0}=\mathbf{u}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\mathbf{u}+(-\mathbf{u})=\mathbf{0}</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+        <p>
+          <em>Length of a Vector</em>
+          <ul>
+            <li>
+              <p>
+                <m>\|c\mathbf{u}\|=|c|\|\mathbf{u}\|</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+        <p>
+          <em>Scalar Multiplication</em>
+          <ul>
+            <li>
+              <p>
+                <m>c(\mathbf{u}+\mathbf{v})=c\mathbf{u}+c\mathbf{v}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>(c+d)\mathbf{u}=c\mathbf{u}+d\mathbf{u}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>(cd)\mathbf{u}=c(d\mathbf{u})=d(c\mathbf{u})</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>1\mathbf{u}=\mathbf{u}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>0\mathbf{u}=\mathbf{0}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>c\mathbf{0}=\mathbf{0}</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </definition>
+  </subsection>
+  <subsection xml:id="subsec-finding-unit-vector">
+    <title>Finding a Unit Vector</title>
+    <p>
+      Sometimes it is useful to look at problems involving vectors in terms of a vector in the same direction, but with a magnitude of one. Recall that a unit vector <m>\mathbf{u}</m> is a vector whose length is one, <m>\|\mathbf{u}\|=1</m>. To find a unit vector in the same direction, you will need to divide that vector by its length or magnitude.
+    </p>
+    <definition xml:id="def-unit-vector-same-direction">
+      <title>Unit Vector That Has the Same Direction as <m>\mathbf{v}</m></title>
+      <statement>
+        <p>
+          Let <m>\mathbf{v}</m> be any vector. The vector
+          <me>
+            \mathbf{u}=\frac{\mathbf{v}}{\|\mathbf{v}\|}
+          </me>
+          is a <term>unit vector</term><idx><h>unit vector</h><h>same direction as <m>\mathbf{v}</m></h></idx> that has the same direction as <m>\mathbf{v}</m>.
+        </p>
+      </statement>
+    </definition>
+    <example>
+      <statement>
+        <p>
+          Find the unit vector that has the same direction as <m>\mathbf{v}=\langle10,-5\rangle</m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          From <xref ref="ex_magnitude">Example</xref>, we know <m>\|\mathbf{v}\|=5\sqrt{5}</m>. Then
+          <md>
+            <mrow> \mathbf{u} \amp = \frac{\mathbf{v}}{\|\mathbf{v}\|} </mrow>
+            <mrow> \amp = \frac{\langle10,-5\rangle}{5\sqrt{5}} </mrow>
+            <mrow> \amp = \left\langle\frac{10}{5\sqrt{5}},-\frac{5}{5\sqrt{5}}\right\rangle </mrow>
+            <mrow> \amp = \left\langle\frac{2}{\sqrt{5}},-\frac{1}{\sqrt{5}}\right\rangle </mrow>
+            <mrow> \amp = \left\langle\frac{2\sqrt{5}}{5},-\frac{\sqrt{5}}{5}\right\rangle </mrow>
+          </md>
+        </p>
+        <p>
+          We can verify that this is in fact a unit vector by computing the magnitude:
+          <md>
+            <mrow> \|\mathbf{u}\| \amp = \left\|\left\langle\frac{2\sqrt{5}}{5},-\frac{\sqrt{5}}{5}\right\rangle\right\| </mrow>
+            <mrow> \amp = \sqrt{\left(\frac{2\sqrt{5}}{5}\right)^2+\left(-\frac{\sqrt{5}}{5}\right)^2} </mrow>
+            <mrow> \amp = \sqrt{\frac{4\cdot5}{25}+\frac{5}{25}} </mrow>
+            <mrow> \amp = \sqrt{\frac{25}{25}} </mrow>
+            <mrow> \amp = 1 </mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+    <p>
+      Two useful unit vectors are <m>\mathbf{i}</m> and <m>\mathbf{j}</m>. The vector <m>\mathbf{i}</m> represents the unit vector whose direction is along the positive <m>x</m>-axis and the vector <m>\mathbf{j}</m> represents the unit vector whose direction is along the positive <m>y</m>-axis.
+    </p>
+    <definition xml:id="def-i-j-vectors">
+      <title><m>\mathbf{i}</m> and <m>\mathbf{j}</m></title>
+      <statement>
+        <p>
+          The unit vectors <m>\mathbf{i}</m> and <m>\mathbf{j}</m> are defined as
+          <me>
+            \mathbf{i}=\langle1,0\rangle,\quad\mathbf{j}=\langle0,1\rangle
+          </me>.
+        </p>
+      </statement>
+    </definition>
+    <p>
+      We can now represent any vector using the unit vectors <m>\mathbf{i}</m> and <m>\mathbf{j}</m>.
+    </p>
+    <definition xml:id="def-vector-horizontal-vertical-components">
+      <title>Horizontal and Vertical Components of a Vector</title>
+      <statement>
+        <p>
+          Let <m>\mathbf{v}</m> be any vector. Then we can express <m>\mathbf{v}</m> in terms of its <term>horizontal</term> and <term>vertical components</term><idx><h>vectors</h><h>components of</h></idx>
+          <me>
+            \mathbf{v}=\langle v_x,v_y\rangle=v_x\mathbf{i}+v_y\mathbf{j}
+          </me>
+        </p>
+      </statement>
+    </definition>
+  </subsection>
+  <subsection xml:id="subsec-vector-components-and-direction">
+    <title>Vector Components and Direction</title>
+    <p>
+      Recall that a vector is composed of a direction and magnitude. Earlier in this section we learned how to calculate the magnitude. Now we will discuss how to calculate the direction.
+    </p>
+    <definition xml:base="def-direction">
+      <statement>
+        <p>
+          Let <m>\mathbf{v}=\langle v_x,v_y\rangle</m> be a vector. The angle <m>\theta</m> represents the <term>direction</term><idx><h>vectors</h><h>direction</h></idx> of <m>\mathbf{v}</m> and is the smallest positive angle in standard position formed by the positive <m>x</m>-axis and <m>\mathbf{v}</m> (<m>0^{\circ}\leq\theta\leq360^{\circ}</m>).
+        </p>
+      </statement>
+    </definition>
+    <remark xml:id="remark-finding-vector-direction">
+      <title>Finding Direction of a Vector</title>
+      <p>
+        Recall that <m>\tan\theta=\frac{v_y}{v_x}</m>, so
+        <me>
+          \theta=\tan^{-1}\left(\frac{v_y}{v_x}\right)
+        </me>
+        where <m>-90^{\circ} \lt \theta \lt 90^{\circ}</m>.
+      </p>
+      <p>
+        To find the direction (<m>\theta</m>), first draw the vector. If <m>v_x=0</m> or <m>v_y=0</m>, then use the drawing to find <m>\theta</m>. If <m>v_x\neq0</m> and <m>v_y\neq0</m>, then note the quadrant where <m>\theta</m> lies in.
+      </p>
+      <p>
+        <ul>
+          <li>
+            <p>
+              If <m>\theta</m> is in Quadrant I, then <m>\theta=\tan^{-1}\left(\frac{v_y}{v_x}\right)</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>\theta</m> is in Quadrant II or III, then <m>\theta=\tan^{-1}\left(\frac{v_y}{v_x}\right)+180^{\circ}</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>\theta</m> is in Quadrant IV, then <m>\theta=\tan^{-1}\left(\frac{v_y}{v_x}\right)+360^{\circ}</m>.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </remark>
+    <p>
+      We now have all the information needed to write a vector.
+    </p>
+    <definition xml:id="def-horizontal-vertical-components-from-magnitude-direction">
+      <title>Finding Horizontal and Vertical Components of Vectors from Magnitude and Direction</title>
+      <statement>
+        <p>
+          For vector <m>\mathbf{v}</m> with magnitude <m>\|\mathbf{v}\|</m> and direction <m>\theta</m>, we can use Right Triangle Trigonometry to solve for the horizontal and vertical components, denoted as <m>v_x</m> and <m>v_y</m>, respectively:
+          <me>
+            v_x=\|\mathbf{v}\|\cos\theta, \quad v_y=\|\mathbf{v}\|\sin\theta
+          </me>
+        </p>
+        <p>
+          This allows us to express <m>\mathbf{v}</m> as
+          <me>
+            \mathbf{v}=\|\mathbf{v}\|\cos\theta\mathbf{i}+\|\mathbf{v}\|\sin\theta\mathbf{j}=\langle\|\mathbf{v}\|\cos\theta,\|\mathbf{v}\|\sin\theta\rangle
+          </me>
+        </p>
+        <image xml:id="fig-vector-components-angle">
+          <latex-image>
+            \begin{tikzpicture}[scale=0.75]
+            \draw[stealth-stealth] (-1,0)--(13,0) node[right]{\(x\)};
+            \draw[stealth-stealth] (0,-1)--(0,7) node[above]{\(y\)};
+            \draw[line width=2pt,blue,-stealth](0,0) -- (10,6) node[black,midway,below]{\(\mathbf{v}\)};
+            \draw (0,0) -- (0:1.2cm) arc (0:atan2(6,10):1.2cm) node at (15:1.6cm) {\(\theta\)} -- cycle;
+            \draw[dashed] (10,6)--(10,0);
+            \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](0,0) -- (10,0) node[black,midway,yshift=-0.6cm] { \(a=\|\mathbf{v}\|\cos\theta\)};
+            \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=0.4pt](10,0) -- (10,6) node[black,midway,xshift=1.35cm] { \(b=\|\mathbf{v}\|\sin\theta\)};
+            \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](10,6) -- (0,0) node[black,midway,yshift=0.6cm,xshift=-0.4cm] { \(\|\mathbf{v}\|\)};
+            \draw (9.1,0) -- (9.1,0.9) -- (10,0.9);
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </statement>
+    </definition>
+  </subsection>
+  <subsection xml:id="subsec-velocity">
+    <title>Velocity</title>
+    <p>
+      Vectors can be used to represent the velocity of a moving canoe. These <term>velocity vectors</term><idx><h>vectors</h><h>velocity</h></idx> have a direction and magnitude.
+    </p>
+    <example>
+      <statement>
+        <p>
+          Wind is blowing from the house Nā Leo Hoʻolua (N<m>22.5^{\circ}</m>W) at 10 knots. Write the wind velocity as a vector <m>\mathbf{v}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          First, we note that since the velocity is 10 knots, we have <m>\|\mathbf{v}\|=10</m>. Next, we need to find the direction. Since <m>\theta</m> is measured from the positive <m>x</m>-axis, by <xref ref="def-horizontal-vertical-components-from-magnitude-direction"/> we see that
+          <me>
+            \theta=90^{\circ}+22.5^{\circ}=112.5^{\circ}
+          </me>
+        </p>
+        <p>
+          To find the vector, will need the horizontal and vertical components:
+          <md>
+            <mrow>v_x =\amp \|\mathbf{v}\|\cos\theta=10\cos112.5^{\circ}\approx-3.8</mrow>
+            <mrow>v_y =\amp \|\mathbf{v}\|\sin\theta=10\sin112.5^{\circ}\approx9.2</mrow>
+          </md>
+        </p>
+        <p>
+          Thus
+          <me>
+            \mathbf{v}\approx-3.8\mathbf{i}+9.2\mathbf{j}=\langle-3.8,9.2\rangle
+          </me>
+        </p>
+        <image xml:id="fig-exampl-vector-velocity" width="50%">
+          <latex-image>
+            \begin{tikzpicture}[scale=0.5]
+            \draw[stealth-stealth] (-5,0)--(3,0) node[right]{\(x\)};
+            \draw[stealth-stealth] (0,-1)--(0,10) node[above]{\(y\)};
+            \draw[-stealth, line width=2pt,blue] (0,0) -- (112.5:10) node[midway,below,xshift=-3]{\(\mathbf{v}\)};
+            \draw[-stealth, line width=1.25pt] (0:2) arc (0:112.5:2) node[midway, right,xshift=0.1cm,yshift=2] {\(\theta=112.5^{\circ}\)};
+            \draw[-stealth, line width=1.25pt] (90:3) arc (90:112.5:3) node[midway, above,yshift=0.2cm,xshift=-0.05cm] {\(22.5^{\circ}\)};
+            \draw[-stealth, line width=2pt,blue] (0,0) -- (-3.82683432365,0) node[midway,below,xshift=-3,yshift=-2]{\(3.8\)};
+            \draw[-stealth, line width=2pt,blue] (-3.82683432365,0) -- (-3.82683432365,9.23879532511) node[midway,left,xshift=-3]{\(9.2\)};
+            \draw (-3.02683432365,0) -- (-3.02683432365,0.8) -- (-3.82683432365,0.8);
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </solution>
+    </example>
+    <example xml:id="example-speed-with-current-drift">
+      <title>Calculating Canoe Velocity with Current Drift</title>
+      <introduction>
+        <p>
+          The vaka Marumaru Atua<idx><h>canoe</h><h>Marumaru Atua</h></idx> sets sail on a northward voyage from Rarotonga to Hawaiʻi, maintaining a steady speed of 5 knots through the water. However, a 1-knot current flows in the direction of Lā Kona (a heading of 260 degrees). This current's influence resembles walking on a moving treadmill, where forward progress is limited despite moving legs. Similarly, Marumaru Atua navigates while the water, in the form of a current, also moves. In sailing, the direction and speed at which the current is pushing the vaka are referred to as <term>set</term><idx><h>set</h></idx> and <term>drift</term><idx><h>drift</h></idx>, respectively. 
+        </p>
+        <p>
+          The actual velocity of Marumaru Atua is the resultant of the canoe's velocity and the current's velocity. This resultant velocity vector denotes the canoe's speed and direction relative to fixed objects on Earth, influenced by the current's impact on Marumaru. The magnitude and direction of this velocity vector are represented by the <term>speed over ground (SOG)</term><idx><h>speed over ground (SOG)</h></idx> and <term>course over ground (COG)</term>,<idx><h>course over ground (COG)</h></idx> respectively. SOG represents the speed of the canoe relative to fixed objects, accounting for both the canoe's speed through the water and the current's speed and direction. COG indicates the direction of the canoe's motion over the Earth's surface.
+        </p>
+        <p>
+          Understanding the difference between the velocity over water and the velocity relative to fixed objects illustrates how set and drift show how the current influences the vaka's course and speed over ground. Voyagers need to account for set and drift when navigating to ensure they reach their intended destination accurately and safely.
+        </p>
+        <image xml:id="fig-marumaru-currents">
+          <latex-image>
+            \begin{tikzpicture}
+            \draw[thin,gray!40] (-8,-2) grid (8,6);
+            \draw[line width=2pt,black,-stealth](0,0) -- (0,5);
+            \draw[line width=1pt,blue,-stealth]([shift=(0:2)]0,0) -- ([shift=(0:2)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(30:4)]0,0) -- ([shift=(30:4)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(50:3)]0,0) -- ([shift=(50:3)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(30:7)]0,0) -- ([shift=(30:7)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(20:8)]0,0) -- ([shift=(20:8)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(10:4)]0,0) -- ([shift=(10:4)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(5:7)]0,0) -- ([shift=(5:7)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(15:6)]0,0) -- ([shift=(15:6)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(10:4)]0,0) -- ([shift=(10:4)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(-10:6)]0,0) -- ([shift=(-10:6)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(70:5)]0,0) -- ([shift=(70:5)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(40:6)]0,0) -- ([shift=(40:6)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(60:4.5)]0,0) -- ([shift=(60:4.5)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(35:8)]0,0) -- ([shift=(35:8)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(-85:1)]0,0) -- ([shift=(-85:1)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(-15:3.5)]0,0) -- ([shift=(-15:3.5)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(120:5)]0,0) -- ([shift=(120:5)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(100:4)]0,0) -- ([shift=(100:4)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(140:2)]0,0) -- ([shift=(140:2)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(135:6)]0,0) -- ([shift=(135:6)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(140:7.5)]0,0) -- ([shift=(140:7.5)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(150:4)]0,0) -- ([shift=(150:4)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(155:6.5)]0,0) -- ([shift=(155:6.5)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(115:3)]0,0) -- ([shift=(115:3)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(140:5)]0,0) -- ([shift=(140:5)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(165:5.5)]0,0) -- ([shift=(165:5.5)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(170:2.5)]0,0) -- ([shift=(170:2.5)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(180:6.25)]0,0) -- ([shift=(180:6.25)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(175:4.5)]0,0) -- ([shift=(175:4.5)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(190:5)]0,0) -- ([shift=(190:5)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(190:1)]0,0) -- ([shift=(190:1)]190:1);
+            \draw[line width=1pt,blue,-stealth]([shift=(200:3)]0,0) -- ([shift=(200:3)]190:1);
+            \draw pic at (0,-0) {waa-top={waacolor}{0}{0.1}};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            Express Marumaru Atua's velocity vector, represented as <m>\mathbf{v}_m</m>, and the velocity vector of the current, denoted as <m>\mathbf{v}_c</m>, in terms of their horizontal and vertical components. Round your answer to two decimal places.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            First, we draw the velocity vectors for Marumaru Atua and the current:
+          </p>
+          <image xml:id="fig-marumaru-current-vectors" width="60%">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.6]
+              \draw[thin,gray!40] (-4,-2) grid (4,6);
+              \draw[-stealth] (0,0) -- (0,6) node[above] {N};
+              \draw[-stealth] (0,0) -- (0,-2) node[below] {S};
+              \draw[-stealth] (0,0) -- (4,0) node[right] {E};
+              \draw[-stealth] (0,0) -- (-4,0) node[left] {W};
+              \draw[line width=2pt,black,-stealth](0,0) -- (0,5) node[midway,right] {\(\mathbf{v}_m\)};
+              \draw[line width=2pt,blue,-stealth](0,0) -- (190:1) node[midway,below] {\(\mathbf{v}_c\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+          <p>
+            Since Marumaru Atua is sailing north at 5 knots, the velocity is:
+            <me>
+              \mathbf{v}_m=\langle0,5\rangle.
+            </me>
+          </p>
+          <p>
+            To find the vector for the current, we need to know <m>t</m>, the angle of the velocity vector in standard position (see <xref ref="def-standard-position"/>). We begin by drawing the heading angle of <m>260^{\circ}</m> and its reference angle, <m>t'</m>.
+          </p>
+          <image xml:id="fig-marumaru-heading-reference-angle" width="60%">
+            <shortdescription>Illustration of the heading angle and its reference angle</shortdescription>
+            <latex-image>
+              \begin{tikzpicture}
+              \draw[stealth-stealth] (-3.25,0)--(3.25,0) node[right]{$x$};
+              \draw[stealth-stealth] (0,-3.25)--(0,3.25) node[above]{$y$};
+              \filldraw[blue] (3,0) circle(1pt);
+              \filldraw[blue] (190:3.2) circle(1pt);
+              \draw[line width=2pt,blue] (0,0) -- (3,0);
+              \draw[line width=2pt,blue] (0,0) -- (190:3.2);
+              \draw[-stealth, line width=1.25pt] (90:2.7) arc (90:-170:2.7) node[midway,
+              right,xshift=0.05,yshift=-0.2] {\(260^{\circ}\)};
+              \draw[-stealth, line width=1.25pt] (180:2.2) arc (180:190:2.2) node[midway,
+              right,xshift=0.05,yshift=-0.2] {\(t'\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+          <p>
+            We can see from the figure that <m>260^{\circ}+t'=270^{\circ}</m>, thus we get our reference angle as
+            <me>
+              t'=10^{\circ}
+            </me>.
+          </p>
+          <p>
+            We now draw our angle, <m>t</m>, in standard position and the reference angle, <m>t'</m>:
+          </p>
+          <image xml:id="fig-marumaru-standard-angle" width="60%">
+            <shortdescription>Illustration of the angle t in standard position and the reference angle t'</shortdescription>
+            <latex-image>
+              \begin{tikzpicture}
+              \draw[stealth-stealth] (-3.25,0)--(3.25,0) node[right]{$x$};
+              \draw[stealth-stealth] (0,-3.25)--(0,3.25) node[above]{$y$};
+              \filldraw[blue] (3,0) circle(1pt);
+              \filldraw[blue] (190:3.2) circle(1pt);
+              \draw[line width=2pt,blue] (0,0) -- (3,0);
+              \draw[line width=2pt,blue] (0,0) -- (190:3.2);
+              \draw[-stealth, line width=1.25pt] (0:2.7) arc (0:190:2.7) node[midway,
+              above] {\(t\)};
+              \draw[-stealth, line width=1.25pt] (180:2.2) arc (180:190:2.2) node[
+              below] {\(10^{\circ}\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+          <p>
+            From <xref ref="rem-calculate-angle-given-quad-reference-angle"/>, we have
+            <me>
+              t=180^{\circ}+10^{\circ}=190^{\circ}
+            </me>.
+          </p>
+          <p>
+            Thus, by <xref ref="def-horizontal-vertical-components-from-magnitude-direction"/> the velocity for the current is
+            <me>
+              \mathbf{v}_c=\langle1\cdot\cos190^{\circ},1\cdot\sin190^{\circ}\rangle\approx\langle-0.98,-0.17\rangle.
+            </me>
+          </p>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Find <m>\mathbf{v}_g</m>, the velocity of Marumaru Atua relative to fixed objects on the ground.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The velocity relative to fixed objects on the ground is the sum of the two vectors:
+            <md>
+              <mrow> \mathbf{v}_g=\mathbf{v}_m+\mathbf{v}_c \amp = \langle0,5\rangle+\langle-0.98,-0.17\rangle </mrow>
+              <mrow> \amp = \langle-0.98,5-0.17\rangle </mrow>
+              <mrow> \amp = \langle-0.98,4.83\rangle </mrow>
+            </md>
+          </p>
+          <p>
+            This can visually demonstrated in the figure below
+          </p>
+          <image xml:id="fig-marumaru-sog" width="60%">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.6]
+              \draw[thin,gray!40] (-4,-2) grid (4,6);
+              \draw[-stealth] (0,0) -- (0,6) node[above] {N};
+              \draw[-stealth] (0,0) -- (0,-2) node[below] {S};
+              \draw[-stealth] (0,0) -- (4,0) node[right] {E};
+              \draw[-stealth] (0,0) -- (-4,0) node[left] {W};
+              \draw[line width=2pt,black,-stealth](0,0) -- (0,5) node[midway,right] {\(\mathbf{v}_m\)};
+              \draw[line width=2pt,blue,-stealth]([shift=(90:5)]0,0) -- ([shift=(90:5)]190:1) node[midway,above] {\(\mathbf{v}_c\)};
+              \draw[line width=2pt,black,-stealth](0,0) -- ([shift=(90:5)]190:1) node[midway,left] {\(\mathbf{v}_g\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Find the speed over ground (SOG) and the course over ground (COG) of Marumaru Atua, rounded to one decimal place.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The actual speed of Marumaru Atua is simply the magnitude of the velocity over ground:
+            <me>
+              \|\mathbf{v}_g\|=\|\langle-0.98,4.83\rangle\|=\sqrt{(-0.98)^2+(4.83^2)}\approx4.9\mbox{ knots}.
+            </me>
+            Thus, although the vaka sails through the water at 5 knots, its forward progress is slightly slower with a speed over ground at 4.9 knots.
+          </p>
+          <p>
+            To find the course over ground, we will use <xref ref="remark-finding-vector-direction"/> to find direction of the velocity:
+            <me>
+              \theta=\tan^{-1}\frac{v_y}{v_x}=\tan^{-1}\frac{4.83}{-0.98}\approx-78.5^{\circ}
+            </me>.
+            Since our velocity vector is in Quadrant II, our course over ground is
+            <me>
+              -78.5^{\circ}+180^{\circ}=101.5^{\circ}
+            </me>.
+          </p>
+        </solution>
+      </task>
+    </example>
+  </subsection>
+  <exercises xml:id="exercises-vectors">
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          Draw the vector, <m>\mathbf{v}</m>.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>3\mathbf{i}-2\mathbf{j}</m>
+          </p>
+        </statement>
+        <answer>
+          <image xml:id="fig-plot-vector1">
+            <latex-image>
+              \begin{tikzpicture}
+              \draw[thin,gray!40] (-1,-1) grid (5,5);
+              \draw[line width=2pt,blue,-stealth](0,2) -- (3,0);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>-4\mathbf{i}+\mathbf{j}</m>
+          </p>
+        </statement>
+        <answer>
+          <image  xml:id="fig-plot-vector2">
+            <latex-image>
+              \begin{tikzpicture}
+              \draw[thin,gray!40] (-1,-1) grid (5,5);
+              \draw[line width=2pt,blue,-stealth](4,0) -- (0,1);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>2\mathbf{i}+4\mathbf{j}</m>
+          </p>
+        </statement>
+        <answer>
+          <image xml:id="fig-plot-vector3">
+            <latex-image>
+              \begin{tikzpicture}
+              \draw[thin,gray!40] (-1,-1) grid (5,5);
+              \draw[line width=2pt,blue,-stealth](0,0) -- (2,4);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>-3\mathbf{j}</m>
+          </p>
+        </statement>
+        <answer>
+          <image xml:id="fig-plot-vector4">
+            <latex-image>
+              \begin{tikzpicture}
+              \draw[thin,gray!40] (-1,-1) grid (5,5);
+              \draw[line width=2pt,blue,-stealth](0,3) -- (0,0);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\langle-3,0\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <image xml:id="fig-plot-vector5">
+            <latex-image>
+              \begin{tikzpicture}
+              \draw[thin,gray!40] (-1,-1) grid (5,5);
+              \draw[line width=2pt,blue,-stealth](3,2) -- (0,2);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\langle1,2\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <image xml:id="fig-plot-vector6">
+            <latex-image>
+              \begin{tikzpicture}
+              \draw[thin,gray!40] (-1,-1) grid (5,5);
+              \draw[line width=2pt,blue,-stealth](2,1) -- (3,3);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\langle4,-4\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <image xml:id="fig-plot-vector7">
+            <latex-image>
+              \begin{tikzpicture}
+              \draw[thin,gray!40] (-1,-1) grid (5,5);
+              \draw[line width=2pt,blue,-stealth](0,4) -- (4,0);
+              \end{tikzpicture} 
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\langle-2,3\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <image xml:id="fig-plot-vector8">
+            <latex-image>
+              \begin{tikzpicture}
+              \draw[thin,gray!40] (-1,-1) grid (5,5);
+              \draw[line width=2pt,blue,-stealth](3,0) -- (1,3);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          For each of the following, find the vector with initial point at <m>P</m> and terminal point at <m>Q</m>. Express your answer in form <m>\langle a,b\rangle</m>.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <image xml:id="fig-exercise-PQ1">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.5]
+              \draw[thin,gray!40] (-5,-5) grid (5,5);
+              \draw[-stealth] (-5,0) -- (5,0) node[below] {\(x\)};
+              \draw[-stealth] (0,-5) -- (0,5) node[left] {\(y\)};
+              \filldraw (3,-2) circle(1.5pt) node[right] {\(P\)};
+              \filldraw (-3,-4) circle(1.5pt) node[left] {\(Q\)};
+              \draw[line width=2pt,blue,-stealth](3,-2) -- (-3,-4);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </statement>
+        <answer>
+          <p>
+            <m>\langle6,-2\rangle</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <image xml:id="fig-exercise-PQ2">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.5]
+              \draw[thin,gray!40] (-5,-5) grid (5,5);
+              \draw[-stealth] (-5,0) -- (5,0) node[below] {\(x\)};
+              \draw[-stealth] (0,-5) -- (0,5) node[left] {\(y\)};
+              \filldraw (-4,2) circle(1.5pt) node[left] {\(P\)};
+              \filldraw (0,-3) circle(1.5pt) node[right] {\(Q\)};
+              \draw[line width=2pt,blue,-stealth](-4,2) -- (0,-3);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </statement>
+        <answer>
+          <p>
+            <m>\langle4,-5\rangle</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <image xml:id="fig-exercise-PQ3">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.5]
+              \draw[thin,gray!40] (-5,-5) grid (5,5);
+              \draw[-stealth] (-5,0) -- (5,0) node[below] {\(x\)};
+              \draw[-stealth] (0,-5) -- (0,5) node[left] {\(y\)};
+              \filldraw (-2,4) circle(1.5pt) node[left] {\(P\)};
+              \filldraw (2,0) circle(1.5pt) node[below] {\(Q\)};
+              \draw[line width=2pt,blue,-stealth](-2,4) -- (2,0);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </statement>
+        <answer>
+          <p>
+            <m>\langle4,-4\rangle</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <image xml:id="fig-exercise-PQ4">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.5]
+              \draw[thin,gray!40] (-5,-5) grid (5,5);
+              \draw[-stealth] (-5,0) -- (5,0) node[below] {\(x\)};
+              \draw[-stealth] (0,-5) -- (0,5) node[left] {\(y\)};
+              \filldraw (1,2) circle(1.5pt) node[right] {\(P\)};
+              \filldraw (-2,3) circle(1.5pt) node[left] {\(Q\)};
+              \draw[line width=2pt,blue,-stealth](1,2) -- (-2,3);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </statement>
+        <answer>
+          <p>
+            <m>\langle-3,1\rangle</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>P=(4,-6)</m>, <m>Q=(10,1)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\langle6,7\rangle</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>P=(-8,-5)</m>, <m>Q=(5,8)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\langle13,13\rangle</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>P=(2,0)</m>, <m>Q=(-7,-3)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\langle-9,-3\rangle</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>P=(1,6)</m>, <m>Q=(-4,-2)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\langle-5,-8\rangle</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>P=(-6,4)</m>, <m>Q=(7,-9)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\langle13,-13\rangle</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>P=(-1,5)</m>, <m>Q=(3,-8)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\langle4,-13\rangle</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>P=(9,-1)</m>, <m>Q=(-10,10)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\langle-19,11\rangle</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>P=(-7,6)</m>, <m>Q=(4,-3)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\langle11,-9\rangle</m>
+          </p>
+        </answer>
+      </exercise>
+    
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          Express each vector in terms of the unit vectors <m>\mathbf{i}</m> and <m>\mathbf{j}</m>.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>\langle-1,4\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>-\mathbf{i}+4\mathbf{j}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\langle2,-1\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>2\mathbf{i}-\mathbf{j}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\langle2,5\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>2\mathbf{i}+5\mathbf{j}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\langle3,3\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>3\mathbf{i}+3\mathbf{j}</m>
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          Express each vector in the form <m>\langle a,b\rangle</m>.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>-4\mathbf{i}-2\mathbf{j}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\langle-4,-2\rangle</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{i}-3\mathbf{j}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\langle1,-3\rangle</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>-2\mathbf{i}+\mathbf{j}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\langle-2,1\rangle</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>4\mathbf{i}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\langle4,0\rangle</m>
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          For given vectors <m>\mathbf{u}</m> and <m>\mathbf{v}</m>, find <m>2\mathbf{u}</m>, <m>\mathbf{u}+\mathbf{v}</m>, <m>\mathbf{u}-\mathbf{v}</m>, and <m>3\mathbf{u}+2\mathbf{v}</m>.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{u}=\langle1,2\rangle</m>, <m>\mathbf{v}=\langle2,0\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>2\mathbf{u}=\langle2,4\rangle</m>, <m>\mathbf{u}+\mathbf{v}=\langle3,2\rangle</m>, <m>\mathbf{u}-\mathbf{v}=\langle-1,2\rangle</m>, <m>3\mathbf{u}+2\mathbf{v}=\langle7,6\rangle</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{u}=\langle5,1\rangle</m>, <m>\mathbf{v}=\langle-3,-2\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>2\mathbf{u}=\langle10,2\rangle</m>, <m>\mathbf{u}+\mathbf{v}=\langle2,-1\rangle</m>, <m>\mathbf{u}-\mathbf{v}=\langle8,3\rangle</m>, <m>3\mathbf{u}+2\mathbf{v}=\langle9,-1\rangle</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{u}=\langle-2,4\rangle</m>, <m>\mathbf{v}=\langle0,4\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>2\mathbf{u}=\langle-4,8\rangle</m>, <m>\mathbf{u}+\mathbf{v}=\langle-2,8\rangle</m>, <m>\mathbf{u}-\mathbf{v}=\langle-2,0\rangle</m>, <m>3\mathbf{u}+2\mathbf{v}=\langle-6,20\rangle</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{u}=\langle-1,-5\rangle</m>, <m>\mathbf{v}=\langle1,2\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>2\mathbf{u}=\langle-2,-10\rangle</m>, <m>\mathbf{u}+\mathbf{v}=\langle0,-3\rangle</m>, <m>\mathbf{u}-\mathbf{v}=\langle-2,-7\rangle</m>, <m>3\mathbf{u}+2\mathbf{v}=\langle-1,-11\rangle</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{u}=\langle3,-1\rangle</m>, <m>\mathbf{v}=\langle-4,4\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>2\mathbf{u}=\langle6,-2\rangle</m>, <m>\mathbf{u}+\mathbf{v}=\langle-1,3\rangle</m>, <m>\mathbf{u}-\mathbf{v}=\langle7,-5\rangle</m>, <m>3\mathbf{u}+2\mathbf{v}=\langle1,5\rangle</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{u}=\langle-2,-2\rangle</m>, <m>\mathbf{v}=\langle1,3\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>2\mathbf{u}=\langle-4,-4\rangle</m>, <m>\mathbf{u}+\mathbf{v}=\langle-1,1\rangle</m>, <m>\mathbf{u}-\mathbf{v}=\langle-3,-5\rangle</m>, <m>3\mathbf{u}+2\mathbf{v}=\langle-4,0\rangle</m>
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          A fundamental property in Euclidean geometry is the <term>Triangle Inequality</term><idx><h>triangle inequality</h></idx>, which states that for any triangle, the sum of the lengths of any two sides of a triangle is greater than or equal to the length of the remaining side. This property can be illustrated using vectors, where combining vectors <m>\mathbf{u}</m> and <m>\mathbf{v}</m> results in a triangle with the third side represented by <m>\mathbf{u}+\mathbf{v}</m>, as shown in <xref ref="fig-vector-addition-triangle"/>. The Triangle Inequality is expressed as <m>\|\mathbf{u}\|+\|\mathbf{v}\|\geq\|\mathbf{u}+\mathbf{v}\|</m>
+        </p>
+        <p>
+          To demonstrate the Triangle Inequality with given vectors <m>\mathbf{u}</m> and <m>\mathbf{v}</m>, calculate the following magnitudes rounded to the nearest tenth: <m>\|\mathbf{u}\|</m>, <m>\|\mathbf{v}\|</m>, <m>\|\mathbf{u}\|+\|\mathbf{v}\|</m>, and <m>\|\mathbf{u}+\mathbf{v}\|</m>. Note that to calculate <m>\|\mathbf{u}+\mathbf{v}\|</m>, you must first find the vector <m>\mathbf{u}+\mathbf{v}</m>
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{u}=2\mathbf{i}-2\mathbf{j}</m>, <m>\mathbf{v}=3\mathbf{i}+4\mathbf{j}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\|\mathbf{u}\|=2.8</m>, <m>\|\mathbf{v}\|=5</m>, <m>\|\mathbf{u}\|+\|\mathbf{v}\|=7.8</m>, <m>\|\mathbf{u}+\mathbf{v}\|=5.4</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{u}=5\mathbf{i}-\mathbf{j}</m>, <m>\mathbf{v}=-3\mathbf{i}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\|\mathbf{u}\|=5.1</m>, <m>\|\mathbf{v}\|=3</m>, <m>\|\mathbf{u}\|+\|\mathbf{v}\|=8.1</m>, <m>\|\mathbf{u}+\mathbf{v}\|=2.2</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{u}=\langle-2,4\rangle</m>, <m>\mathbf{v}=\langle3,-4\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\|\mathbf{u}\|=4.5</m>, <m>\|\mathbf{v}\|=5</m>, <m>\|\mathbf{u}\|+\|\mathbf{v}\|=9.5</m>, <m>\|\mathbf{u}+\mathbf{v}\|=1</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{u}=\langle0,2\rangle</m>, <m>\mathbf{v}=\langle1,3\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\|\mathbf{u}\|=2</m>, <m>\|\mathbf{v}\|=3.2</m>, <m>\|\mathbf{u}+\mathbf{v}\|=5.2</m>, <m>\|\mathbf{u}\|+\|\mathbf{v}\|=5.1</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{u}=\langle-4,-1\rangle</m>, <m>\mathbf{v}=\langle4,-3\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\|\mathbf{u}\|=4.1</m>, <m>\|\mathbf{v}\|=5</m>, <m>\|\mathbf{u}\|+\|\mathbf{v}\|=9.1</m>, <m>\|\mathbf{u}+\mathbf{v}\|=4</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{u}=\langle2,1\rangle</m>, <m>\mathbf{v}=\langle4,2\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\|\mathbf{u}\|=2.2</m>, <m>\|\mathbf{v}\|=4.5</m>, <m>\|\mathbf{u}\|+\|\mathbf{v}\|=6.7</m>, <m>\|\mathbf{u}+\mathbf{v}\|=6.7</m>
+          </p>
+        </answer>
+      </exercise>      
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          Given the vector <m>\mathbf{v}</m>, find the unit vector <m>\mathbf{u}</m> in the same direction. Verify that <m>\|\mathbf{u}\|=1</m>.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{v}=-\mathbf{i}+6\mathbf{j}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\mathbf{u}=-\frac{1}{\sqrt{37}}\mathbf{i}+\frac{6}{\sqrt{37}}\mathbf{j}</m>; <m>\|\mathbf{u}\|=1</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{v}=4\mathbf{i}-3\mathbf{j}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\mathbf{u}=\frac{4}{5}\mathbf{i}-\frac{3}{5}\mathbf{j}</m>; <m>\|\mathbf{u}\|=1</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{v}=\langle2,-5\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\mathbf{u}=\left\langle\frac{2}{\sqrt{29}},-\frac{5}{\sqrt{29}}\right\rangle</m>; <m>\|\mathbf{u}\|=1</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{v}=\langle3,-2\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\mathbf{u}=\left\langle\frac{3}{\sqrt{13}},-\frac{2}{\sqrt{13}}\right\rangle</m>; <m>\|\mathbf{u}\|=1</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{v}=\langle0,-4\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\mathbf{u}=\left\langle0,-1\right\rangle</m>; <m>\|\mathbf{u}\|=1</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{v}=\langle5,1\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\mathbf{u}=\left\langle\frac{5}{\sqrt{26}},\frac{1}{\sqrt{26}}\right\rangle</m>; <m>\|\mathbf{u}\|=1</m>
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          For each problem, the magnitude and direction of vector <m>\mathbf{v}</m> are given. Find the horizontal and vertical components of the vector, <m> v_x </m> and <m> v_y </m>, respectively, and write the answer in the form <m> \mathbf{v} = v_x \mathbf{i} + v_y \mathbf{j} </m>.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>\|\mathbf{v}\|=2</m>; <m>\theta=135^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m> \mathbf{v} = -\sqrt{2} \mathbf{i} + \sqrt{2} \mathbf{j} </m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\|\mathbf{v}\|=6</m>; <m>\theta=300^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m> \mathbf{v} = 3 \mathbf{i} - 3\sqrt{3} \mathbf{j} </m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\|\mathbf{v}\|=4</m>; <m>\theta=210^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m> \mathbf{v} = -2\sqrt{3} \mathbf{i} - 2 \mathbf{j} </m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\|\mathbf{v}\|=3</m>; <m>\theta=30^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m> \mathbf{v} = \frac{3\sqrt{3}}{2} \mathbf{i} + \frac{3}{2} \mathbf{j} </m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\|\mathbf{v}\|=5</m>; <m>\theta=120^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m> \mathbf{v} = -\frac{5}{2} \mathbf{i} + \frac{5\sqrt{3}}{2} \mathbf{j} </m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\|\mathbf{v}\|=2</m>; <m>\theta=315
+^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m> \mathbf{v} = \sqrt{2} \mathbf{i} - \sqrt{2} \mathbf{j} </m>
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          Find the magnitude and direction angle of vector <m>\mathbf{v}</m>. Round the answers to one decimal place and express angles in degrees.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{v}=2\mathbf{i}+2\mathbf{j}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\|\mathbf{v}\|=2.8</m>; <m>\theta=45^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{v}=-3\mathbf{i}+7\mathbf{j}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\|\mathbf{v}\|=7.6</m>; <m>\theta=113.2^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{v}=\langle4,-1\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\|\mathbf{v}\|=4.1</m>; <m>\theta=346.0^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{v}=\langle3,4\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\|\mathbf{v}\|=5</m>; <m>\theta=53.1^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{v}=\langle0,-3\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\|\mathbf{v}\|=3</m>; <m>\theta=270^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{v}=\langle-\sqrt{3},-1\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\|\mathbf{v}\|=2</m>; <m>\theta=210^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+
+
+    <exercise>
+      <title>Leeway</title>
+      <statement>
+        <p>
+          When a waʻa sails on the ocean, it rarely moves precisely in the direction it's pointed. One reason for this is that crosswind can push the waʻa off its course. The angle of displacement between the apparent heading of the waʻa and the direction the waʻa is actually traveling through the water is referred to as <term>leeway</term>.<idx><h>leeway</h></idx> Using vector addition, we can determine where the waʻa will actually travel. However, on the waʻa, the navigator can determine the leeway by observing the angle from the wake behind the waʻa and the apparent direction the waʻa is pointed towards.
+        </p>
+        <p>
+          In order to compensate for the wind, the navigator must steer the waʻa into the wind by the same angle as the leeway angle. For example, if the waʻa needs to sail in the house Manu Malanai (SE) and the wind is pushing the waʻa one house further south, the waʻa will move in the house Nālani Malanai (SEbS). To maintain the course in the house Manu Malanai, the navigator must then point the waʻa one house north with an apparent heading in the house of Noio Malanai (SEbE) in order for the actual heading to be in the house of Manu Malanai (SE).
+        </p>
+        <image xml:id="fig-leeway">
+          <latex-image>
+            \begin{tikzpicture}
+            \draw[thin,gray!40] (-7,-7) grid (7,7);
+            \draw[line width=1pt,-stealth,dashed](-6,5) -- (6,-5) node[black,pos=0.75,above,sloped]{Apparent Heading of Wa`a};
+            \draw[line width=1pt,blue,-stealth,decorate,decoration=snake](0,0) -- (-3,6) node[black,above right,rotate=-63.4]{ Wake of Wa`a};
+            \draw[line width=1pt,blue,dashed,-stealth](0,0) -- (3,-6) node[black,pos=0.65,below,sloped,xshift=25]{Actual Heading of Wa`a};
+            \draw[-stealth,line width=2pt](3,1) -- (0,0) node[black,sloped,midway,above]{Wind};
+            \draw[-stealth,line width=2pt](6,-5) -- (3,-6) node[black,sloped,midway,above]{Leeway};
+            \draw[-stealth,line width=2pt](-3,6) -- (-6,5) node[black,sloped,midway,above]{Wind};
+            \draw pic at (0,0) {waa-top={waacolor}{230.194428908}{0.15}};
+            \draw[line width=2pt] (116.565051177:2) arc (116.565051177:140.194428908:2) node[midway,rotate=-53.7461622626,left] { Angle of Leeway};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+        <p>
+          If the apparent heading is represented by the vector <m>\langle6,-5\rangle</m> and the leeway is represented by the vector <m>\langle-3,-1\rangle</m>, calculate the vector for the actual heading.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\langle3,-6\rangle</m>
+        </p>
+      </answer>
+    </exercise>
+  </exercises>
+</section>
