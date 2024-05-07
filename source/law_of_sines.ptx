@@ -246,8 +246,8 @@
         <p>
           In this triangle, we know the values of two angles and the side between them, so we have an Angle-Side-Angle (ASA) triangle. We know that <m>A+B+C=180^{\circ}</m>. So <m>80^{\circ}+60^{\circ}+C=140^{\circ}+C=180^{\circ}</m> so <m>C=40^{\circ}</m>. To solve for <m>a</m>, we will use the Law of Sines. Either form for the Law of Sines can be used to solve this problem, but since we are solving for a side, it would be easier and require fewer steps if we use the second form for the Law of Sines.
           <md>
-            <mrow>\frac{a}{\sin A}\amp =\amp \frac{c}{\sin C}</mrow>
-            <mrow>\frac{a}{\sin 80^{\circ}}\amp =\amp \frac{1,000}{\sin 40^{\circ}}</mrow>
+            <mrow>\frac{a}{\sin A} =\amp \frac{c}{\sin C}</mrow>
+            <mrow>\frac{a}{\sin 80^{\circ}} =\amp \frac{1,000}{\sin 40^{\circ}}</mrow>
           </md>
         </p>
         <p>
@@ -1562,7 +1562,7 @@
         </answer>
       </task>
     </exercise>
-    <exercise>
+    <!-- <exercise>
       <statement>
         <p>
           In Cook Island Maori mythology, Paikea<idx><h>canoe</h><h>Paikea</h></idx> was a skilled navigator, credited with leading his people safely across the ocean. In tuned with the natural world around him, Paikea turned to a whale who helped guide him and his people to the Cook Islands. The vaka motu Paikea, named after the navigator, 
@@ -1577,13 +1577,13 @@
             \begin{tikzpicture}
             \node[above left] at (0,0) {Aotearoa};
             \node[above right] at (14.37,8.39) {Rarotonga};
-            \draw[line width=1pt] (0,0) -- (9.37,8.39) node[midway,sloped,above] {apparent heading};
-            \draw[line width=1pt] (0,0) -- (14.37,8.39) node[midway,sloped,below] {actual course};
-            \draw[line width=1pt,-stealth] (9.37,8.39) -- (14.37,8.39) node[midway,above] {current};
+            \draw[line width=1pt] (0,0) - (9.37,8.39) node[midway,sloped,above] {apparent heading};
+            \draw[line width=1pt] (0,0) - (14.37,8.39) node[midway,sloped,below] {actual course};
+            \draw[line width=1pt,-stealth] (9.37,8.39) - (14.37,8.39) node[midway,above] {current};
             \draw (1.4899834559,1.33414740608) arc (41.841611573:30.2787437773:2) node[midway,right,xshift=0.1,yshift=5] {\(A\)};
             \draw (12.87,8.39) arc (180:210.278743777:1.5) node[midway,left,xshift=0.1] {\(B\)};
             \draw (10.37,8.39) arc (0:-138.158388427:1) node[midway,left,xshift=0.1,yshift=-5] {\(C\)};
-            \draw (0,0) -- (5,0);
+            \draw (0,0) - (5,0);
             \draw (2,0) arc (0:41.841611573:2) node[midway,right,xshift=0.1] {\(41.8^{\circ}\)};
             \draw pic at (48.158388427:-1) {waa-top={waacolor}{-48.158388427}{0.1}};
             \end{tikzpicture}
@@ -1602,9 +1602,9 @@
             \node[left] at (0,0) {\(A\)};
             \node[above right] at (14.37,8.39) {\(B=41.8^{\circ}\)};
             \node[above left] at (9.37,8.39) {\(C\)};
-            \draw[line width=1pt] (0,0) -- (9.37,8.39) node[midway,sloped,above] {\(b=5\)};
-            \draw[line width=1pt] (0,0) -- (14.37,8.39) node[midway,sloped,below] {\(c\)};
-            \draw[line width=1pt] (9.37,8.39) -- (14.37,8.39) node[midway,above] {\(a=2\)};
+            \draw[line width=1pt] (0,0) - (9.37,8.39) node[midway,sloped,above] {\(b=5\)};
+            \draw[line width=1pt] (0,0) - (14.37,8.39) node[midway,sloped,below] {\(c\)};
+            \draw[line width=1pt] (9.37,8.39) - (14.37,8.39) node[midway,above] {\(a=2\)};
             \end{tikzpicture}
           </latex-image>
         </image>
@@ -1614,6 +1614,6 @@
           
         </p>
       </answer>
-    </exercise>
+    </exercise> -->
   </exercises>
 </section>
