@@ -1,0 +1,1326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="geometric_vectors">
+  <title>Geometric Vectors</title>
+  <introduction>
+    <p>
+      Hōkūleʻa's inaugural voyage from Hawaiʻi to Tahiti ignited a cultural resurgence in Hawaiʻi. By showcasing the effectiveness of traditional navigation techniques learned from Micronesia, it soon became clear there was a need for constructing a double-hulled voyaging canoe using traditional methods and native materials. This canoe, named Hawaiʻiloa,<idx><h>canoe</h><h>Hawaiʻiloa</h></idx> aimed to recover knowledge and skilled associated with traditional canoe building in Hawaiʻi.
+    </p>
+    <p>
+      However, during the years 1989-1990, an exhaustive search across Hawaiʻi revealed a significant challenge: the lack of accessible koa trees of sufficient size for constructing a canoe of this size. The search then expanded beyond Hawaiʻi. This decision was guided by historical evidence indicating that storms had transported large trees from the Pacific Coast of North America to islands like Hawaiʻi, where they were traditionally used for canoe construction. As a result, the search extended to North America in pursuit of suitable materials.
+    </p>
+    <p>
+      Two trees, each 200 feet high and over 400 years old, were discovered on Shelikof Island in Soda Bay, Prince of Wales Island, west of Ketchikan, Alaska. After conducting traditional tree-cutting ceremonies rooted in Hawaiian and Tlingit traditions to seek permission, both trees were felled to be used for constructing the canoe. The logs then embarked on a 2,235-nautical-mile journey to Hawaiʻi, following a heading of <m>256^{\circ}</m>. This journey is an example of a <term>vector</term>,<idx><h>vectors</h></idx> — a quantity possessing both <term>magnitude</term><idx><h>vectors</h><h>magnitude</h></idx> and <term>direction</term>.<idx><h>vectors</h><h>direction</h></idx>
+    </p>
+    <image xml:id="fig-hawaiiloa-vector" width="85%">
+      <latex-image>
+        \begin{tikzpicture}[scale=3]
+        \draw[-stealth,line width=2] (0,0) -- (194:2.235);
+        \node[above right] at (0,0) {Alaska};
+        \node[below left] at (194:2.234) {Hawai`i};
+        \end{tikzpicture}
+      </latex-image>
+    </image>
+    <p>
+      In physics, vectors are often represented with arrows, denoting their direction, while the length of the arrow signifies the vector's magnitude. Vectors play a fundamental role describing various things in the world around us. For example, movement of objects requires a magnitude and direction, the force exerted on an object requires the magnitude force used and the direction of the force. In this section, we will learn how to express vectors, both geometrically and analytically as well as the various properties of vectors.
+    </p>
+  </introduction>
+  <subsection xml:id="subsec-geometric-vectors">
+    <title>Geometric Vectors</title>
+    <definition xml:id="def-geometric-vectors">
+      <statement>
+        <p>
+          The vector whose path begins at the point <m>P</m> and ends at the point <m>Q</m> is written as <m>\overrightarrow{PQ}</m>, where the arrow on top indicates the direction. The point <m>P</m> is called the <term>initial point</term><idx><h>vectors</h><h>initial point</h></idx> and the point <m>Q</m> is called the <term>terminal point</term><idx><h>vectors</h><h>terminal point</h></idx> of the vector <m>\overrightarrow{PQ}</m>. The <term>magnitude</term><idx><h>vectors</h><h>magnitude</h></idx> of <m>\overrightarrow{PQ}</m> is the length or distance and is written as <m>\|\overrightarrow{PQ}\|</m>. We can also think of <m>\overrightarrow{PQ}</m> as the <term>displacement</term>.<idx><h>vectors</h><h>displacement</h></idx> The <term>direction</term><idx><h>vectors</h><h>direction</h></idx> of <m>\overrightarrow{PQ}</m> is from <m>P</m> to <m>Q</m>.
+        </p>
+      </statement>
+    </definition>
+    <remark>
+      <title>Notation</title>
+      <p>
+        Another way to write a vector is with a lowercase, bold faced letter (with or without an arrow), <m>\mathbf{v}</m> or <m>{\overrightarrow{\mathbf{v}}}</m>. Typically, if you are writing a vector by hand, you will want to use the arrow, since it is difficult to tell if you are writing in bold or not.
+      </p>
+    </remark>
+    <remark>
+      <title>Magnitude of Vectors</title>
+      <p>
+        Since the magnitude of a vector is its length, we can use the distance formula to calculate it. Therefore, if <m>\overrightarrow{PQ}</m> is the vector with initial point <m>P=(P_x,P_y)</m> and terminal point <m>Q=(Q_x,Q_y)</m>, we have:
+        <me>
+          \|\overrightarrow{PQ}\|=\sqrt{(Q_x-P_x)^2+(Q_y-P_y)^2}=\sqrt{5^2+4^2}=\sqrt{41}
+        </me>.        
+      </p>
+    </remark>
+    <example>
+      <introduction>
+        <p>
+          Let <m>\mathbf{v}</m> be the vector with initial point <m>P=(-2,-1)</m> and terminal point <m>Q=(3,3)</m>.
+        </p>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            Draw the vector <m>\mathbf{v}</m>.
+          </p>
+        </statement>
+        <solution>
+          <image xml:id="fig-example-draw-PQ" width="60%">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.7]
+              \draw[thin,gray!40] (-5,-5) grid (5,5);
+              \draw[-stealth] (-5,0) -- (5,0) node[below] {\(x\)};
+              \draw[-stealth] (0,-5) -- (0,5) node[left] {\(y\)};
+              \filldraw (-2,-1) circle(1.5pt) node[below] {\(P(-2,-1)\)};
+              \filldraw (3,3) circle(1.5pt) node[above] {\(Q(3,3)\)};
+              \draw[line width=2pt,blue,-stealth](-2,-1) -- (3,3) node[midway,above] {\(\mathbf{v}\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Calculate the magnitude of <m>\mathbf{v}</m>, <m>\|\mathbf{v}\|</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The magnitude of a vector is the length of the vector. From the distance formula, we have
+            <me>
+              \|\mathbf{v}\|=\sqrt{(3-(-2))^2+(3-(-1))^2}
+            </me>
+            
+          </p>
+        </solution>
+      </task>
+    </example>
+    <definition xml:id="def-zero-vector-coordinates">
+      <title>Zero Vector</title>
+      <statement>
+        <p>
+          The <term>zero vector</term>,<idx><h>zero vector</h></idx> written as <m>\mathbf{0}</m> or <m>{\overrightarrow{\mathbf{0}}}</m>, is a vector with zero magnitude, meaning it has no displacement and it has no direction.
+        </p>
+      </statement>
+    </definition>
+  </subsection>
+  <subsection xml:id="subsec-geometric-equivalent-vectors">
+    <title>Equivalent Vectors</title>
+    <definition xml:id="def-equalent-vectors">
+      <title>Equivalent Vectors</title>
+      <statement>
+        <p>
+          It is important to note that a vector only requires a magnitude and direction, but it does not have a unique location. Thus, as long as the magnitude and direction aren't changed, a vector may be <term>translated</term><idx><h>vectors</h><h>translation</h></idx> or moved from one place to another. As a result, if two vectors <m>\mathbf{u}</m> and <m>\mathbf{v}</m> have the same direction and the same magnitude, then they are <term>equivalent</term>, <idx><h>vectors</h><h>equivalent</h></idx> or <term>equal</term>, <idx><h>vectors</h><h>equal</h></idx>, written as:
+          <me>
+            \mathbf{u}=\mathbf{v}
+          </me>.
+        </p>
+      </statement>
+    </definition>
+    <example>
+      <statement>
+        <p>
+          Seven canoes, reconstructed versions of the traditional double-hulled Polynesian voyaging vessels, were constructed in Aotearoa. These vessels, collectively referred to as Vaka Moana<idx><h>canoe</h><h>Vaka Moana</h></idx> (canoes of the ocean), were individually named Marumaru Atua<idx><h>canoe</h><h>Marumaru Atua</h></idx> (Cook Islands), Gaualofa<idx><h>canoe</h><h>Gaualofa</h></idx> (Samoa), Te Matau a Māui<idx><h>canoe</h><h>Te Matau a Māui</h></idx> (Aotearoa), Faʻafaite<idx><h>canoe</h><h>Faʻafaite</h></idx> (Tahiti), Hinemoana<idx><h>canoe</h><h>Hinemoana</h></idx> (Aotearoa), Haunui<idx><h>canoe</h><h>Haunui</h></idx> (Aotearoa), and Uto Ni Yalo<idx><h>canoe</h><h>Uto Ni Yalo</h></idx> (Fiji). In 2011-2012, these sister canoes embarked on a voyage collectively titled Te Mana o Te Moana (The Spirit of the Ocean), covering a combined distance of 200,000 nautical miles through open waters. On average, each vaka traveled 120 nautical miles per day. Suppose one day, the vaka sailed northeast in the house Manu. The resulting vectors from each vaka are equivalent, as they all traveled in the same direction (NE) with the same magnitude (120 nm). This is depicted in the figure below.
+        </p>
+        <image xml:id="fig-equivalent-vectors-vaka-moana">
+          <latex-image>
+            \begin{tikzpicture}
+            \draw[thin,gray!40] (-8,-4) grid (8,5);
+            \draw[line width=2pt,blue,-stealth](-5,-3) -- (-2,0) node[black,sloped,midway,above]{Marumaru Atua};
+            \draw[line width=2pt,blue,-stealth](-7,-1)--(-4,2) node[black,sloped,midway,above]{Gaualofa};
+            \draw[line width=2pt,blue,-stealth](-1,-2)--(2,1) node[black,sloped,midway,above]{Te Matau a Māui};
+            \draw[line width=2pt,blue,-stealth](2,-3)--(5,0) node[black,sloped,midway,above]{Fa`afaite};
+            \draw[line width=2pt,blue,-stealth](-3,1)--(0,4) node[black,sloped,midway,above]{Haunui};
+            \draw[line width=2pt,blue,-stealth](0,1)--(3,4) node[black,sloped,midway,above]{Hinemoana};
+            \draw[line width=2pt,blue,-stealth](4,0)--(7,3) node[black,sloped,midway,above]{Uto Ni Yalo};
+            \draw pic at (-5,-3) {waa-side={waacolor}{45}{0.1}};
+            \draw pic at (-7,-1) {waa-side={waacolor}{45}{0.1}};
+            \draw pic at (-1,-2) {waa-side={waacolor}{45}{0.1}};
+            \draw pic at (2,-3) {waa-side={waacolor}{45}{0.1}};
+            \draw pic at (-3,1) {waa-side={waacolor}{45}{0.1}};
+            \draw pic at (0,1) {waa-side={waacolor}{45}{0.1}};
+            \draw pic at (4,0) {waa-side={waacolor}{45}{0.1}};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </statement>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Show that vectors <m>\overrightarrow{PQ}</m> and <m>\overrightarrow{RS}</m>, shown in the figure below, are equivalent.
+        </p>
+        <image xml:id="fig-example-equivalent-vectors" width="60%">
+          <latex-image>
+            \begin{tikzpicture}[scale=0.7]
+            \draw[thin,gray!40] (-5,-1) grid (5,7);
+            \draw[-stealth] (-5,0) -- (5,0) node[below] {\(x\)};
+            \draw[-stealth] (0,-1) -- (0,7) node[left] {\(y\)};
+            \filldraw (0,0) circle(1.5pt) node[below] {\(P(0,0)\)};
+            \filldraw (-2,3) circle(1.5pt) node[above] {\(Q(-2,3)\)};
+            \draw[line width=2pt,blue,-stealth](0,0) -- (-2,3) node[midway,above right] {\(\overrightarrow{PQ}\)};
+            \filldraw (3,2) circle(1.5pt) node[below] {\(R(3,2)\)};
+            \filldraw (1,5) circle(1.5pt) node[above] {\(S(1,5)\)};
+            \draw[line width=2pt,blue,-stealth](3,2) -- (1,5) node[midway,above right] {\(\overrightarrow{RS}\)};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </statement>
+      <solution>
+        <p>
+          To show that two vectors are equivalent, we need to show they have the same magnitude and same direction. We will first calculate the magnitude of each vector.
+        </p>
+        <p>
+          <md>
+            <mrow> \|\overrightarrow{PQ}\|\amp =\sqrt{(-2-0)^2+(3-0)^2}=\sqrt{13} </mrow>
+            <mrow> \|\overrightarrow{RS}\|\amp =\sqrt{(1-3)^2+(5-2)^2}=\sqrt{13} </mrow>
+          </md>
+        </p>
+        <p>
+          To determine the direction of each vector, we will look at their slopes. The slope of <m>\overrightarrow{PQ}</m> is:
+          <me>
+            \frac{\mbox{change in }y}{\mbox{change in }x}=\frac{3-0}{-2-0}=-\frac{3}{2}
+          </me>
+          and the slope of <m>\overrightarrow{RS}</m> is:
+          <me>
+            \frac{\mbox{change in }y}{\mbox{change in }x}=\frac{5-2}{1-3}=-\frac{3}{2}
+          </me>
+        </p>
+        <p>
+          Since <m>\overrightarrow{PQ}</m> and <m>\overrightarrow{RS}</m> have the same magnitude and slope, we can conclude that they are equivalent.
+        </p>
+      </solution>
+    </example>
+  </subsection>
+  <subsection xml:id="subsec-vector-addition">
+    <title>Vector Addition</title>
+    <p>
+      If you stand in Tahiti and face Hawaiʻi, you would be looking in the house Haka Hoʻolua or north by west (NbW). When the Hōkūleʻa<idx><h>canoe</h><h>Hōkūleʻa</h></idx> sails from Tahiti back home to Hawaiʻi, it doesn't head directly towards Hawaiʻi in the house Haka Hoʻolua. Instead, Hōkūleʻa initially sails north. Once the navigator determines that Hōkūleʻa has reached the latitude of Hawaiʻi, approximately <m>20^{\circ}</m> N, the waʻa then changes course to head westward towards home. This navigation technique is known as <term>latitude sailing</term>,<idx><h>latitude sailing</h></idx> where knowing the latitude is crucial. The navigator can determine the latitude by measuring the altitude of Hokupaʻa (North Star), observing the altitude of stars as they cross the meridian, or watching for pairs of stars that rise or set together.
+    </p>
+    <p>
+      We can represent the location of Tahiti as <m>P</m> and the location of Hawaiʻi as <m>Q</m>. Then, Hōkūleʻa's northward path can be represented by the vector <m>\overrightarrow{PQ}</m>, and its westward path by the vector <m>\overrightarrow{QR}</m>. The resulting displacement is equivalent to sailing directly from Tahiti to Hawaiʻi, represented by <m>\overrightarrow{PR}</m>. See <xref ref="fig_adding-vectors">Figure</xref>. We refer to the vector <m>\overrightarrow{PR}</m> as the <term>sum</term> of the vectors <m>\overrightarrow{PQ}</m> and <m>\overrightarrow{QR}</m>, written as:
+      <me>
+        \overrightarrow{PQ}+\overrightarrow{QR}=\overrightarrow{PR}
+      </me>.
+    </p>
+    <figure xml:id="fig_adding-vectors">
+      <caption>Combining the northward and westward vectors, similar to the navigation technique of latitude sailing, results in the direct vector from Tahiti to Hawaiʻi.</caption>
+      <image xml:id="fig-vector-addition-latitude-sailing" width="50%">
+        <latex-image>
+          \begin{tikzpicture}
+          \draw[line width=2pt,blue,-stealth](0,0) -- (0,8) node[black,midway,right]{\(\overrightarrow{PQ}\)};
+          \draw[line width=2pt,blue,-stealth](0,8) -- (-3,8) node[black,midway,above]{\(\overrightarrow{QR}\)};
+          \draw[line width=2pt,blue,-stealth](0,0) -- (-3,8) node[black,midway,left,xshift=-4]{\(\overrightarrow{PR}=\overrightarrow{PQ}+\overrightarrow{QR}\)};
+          \node[below] at (0,0) {\(P\)};
+          \node[left] at (-3,8) {\(Q\)};
+          \node[xshift=1cm] at (0,0) {Tahiti};
+          \node[above,xshift=-1.25cm] at (-3,8) {Hawai`i};
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </figure>
+    <definition xml:id="def-sum-of-vectors">
+      <title>Vector Addition</title>
+      <statement>
+        <p>
+          Vector addition is the process of combining two or more vectors to produce a <term>resultant vector</term><idx><h>vectors</h><h>resultant</h></idx>. To find the <term>sum</term><idx><h>sum</h><h>of vectors</h></idx><idx><h>addition</h><h>of vectors</h></idx> of vectors <m>\mathbf{u}</m> and <m>\mathbf{v}</m>, we place the initial point of the second vector with the terminal point of the first vector. The vector formed from the initial point of the first vector to the terminal point of the second vector represents the sum of the two vectors, denoted by <m>\mathbf{u}+\mathbf{v}</m>. Since vectors can be translated, any two vectors can be added by shifting one vector's starting point to the endpoint of another vector. Notice that adding the vector <m>\mathbf{v}</m> to <m>\mathbf{u}</m> produces the same result as adding <m>\mathbf{u}</m> to <m>\mathbf{v}</m>, as demonstrated below. Thus, we have:
+          <me>\mathbf{u}+\mathbf{v}=\mathbf{v}+\mathbf{u}</me>.
+        </p>
+        <figure xml:id="fig-vector-addition-triangle">
+          <caption>The vectors <m>\mathbf{u}</m> and <m>\mathbf{v}</m> can be combined to obtain <m>\mathbf{u+v}</m> and <m>\mathbf{v+u}</m>, resulting in the same resultant vector. The arrangement resembles a parallelogram, demonstrating the commutative property of vector addition.</caption>
+          <image xml:id="fig-vector-addition">
+            <latex-image>
+              \begin{tikzpicture}
+              \draw[thin,gray!40] (1,1) grid (14,9);
+              \draw[line width=2pt,blue,-stealth](2,2) -- (5,7) node[black,sloped,midway,above]{\(\mathbf{u}\)};
+              \draw[line width=2pt,blue,-stealth](2,2) -- (10,3) node[black,sloped,midway,below]{\(\mathbf{v}\)};
+              \draw[dashed,line width=2pt,blue,-stealth](5,7) -- (13,8) node[black,sloped,midway,above]{\(\mathbf{v}\)};
+              \draw[dashed,line width=2pt,blue,-stealth](10,3) -- (13,8) node[black,sloped,midway,below]{\(\mathbf{u}\)};
+              \draw[line width=2pt,blue,-stealth](2,2) -- (13,8) node[black,sloped,midway,below]{\(\mathbf{v}+\mathbf{u}\)};
+              \draw[line width=2pt,blue,-stealth](2,2) -- (13,8) node[black,sloped,midway,above]{\(\mathbf{u}+\mathbf{v}\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </figure>
+      </statement>
+    </definition>
+    <example>
+      <statement>
+        <p>
+          Let <m>\mathbf{u}</m> be a vector whose initial point is at <m>(3,5)</m> and terminal point at <m>(-2,4)</m> and <m>\mathbf{v}</m> be a vector whose initial point is at <m>(0,-1)</m> and terminal point at <m>(6,-2)</m>. Draw the vector <m>\mathbf{u}+\mathbf{v}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We will begin by drawing the vectors <m>\mathbf{u}</m> and <m>\mathbf{v}</m>:
+        </p>
+        <image xml:id="fig-example-draw-sum-vectors1" width="70%">
+          <latex-image>
+            \begin{tikzpicture}[scale=0.5]
+            \draw[thin,gray!40] (-6,-3) grid (6,6);
+            \draw[-stealth] (-6,0) -- (6,0) node[below] {\(x\)};
+            \draw[-stealth] (0,-3) -- (0,6) node[left] {\(y\)};
+            \draw[line width=2pt,blue,-stealth](3,5) -- (-2,4) node[midway,above] {\(\mathbf{u}\)};
+            \draw[line width=2pt,red,-stealth](0,-1) -- (6,-2) node[midway,below] {\(\mathbf{v}\)};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+        <p>
+          To find <m>\mathbf{u}+\mathbf{v}</m>, we will translate vector <m>\mathbf{v}</m> so that its initial point coincides with the terminal point of <m>\mathbf{u}</m>, which is at <m>(-2,4)</m>. The translated vector will have the smae magnitude and direction as <m>\mathbf{v}</m>:
+        </p>
+        <image xml:id="fig-example-draw-sum-vectors2" width="70%">
+          <latex-image>
+            \begin{tikzpicture}[scale=0.5]
+            \draw[thin,gray!40] (-6,-3) grid (6,6);
+            \draw[-stealth] (-6,0) -- (6,0) node[below] {\(x\)};
+            \draw[-stealth] (0,-3) -- (0,6) node[left] {\(y\)};
+            \draw[line width=2pt,blue,-stealth](3,5) -- (-2,4) node[midway,above] {\(\mathbf{u}\)};
+            \draw[line width=2pt,red,-stealth](0,-1) -- (6,-2) node[midway,below] {\(\mathbf{v}\)};
+            \draw[line width=0.75pt,red,dashed](0,-1) -- (-2,4);
+            \draw[line width=0.75pt,red,dashed](6,-2) -- (4,3);
+            \draw[line width=2pt,red,-stealth](-2,4) -- (4,3) node[midway,below] {\(\mathbf{v}\)};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+        <p>
+          The sum of the two vectors is the vector starting from the initial point of <m>\mathbf{u}</m> and ending at the terminal point of <m>\mathbf{v}</m>, in this case from <m>(3,5)</m> to <m>(4,3)</m>. This resultant vector is <m>\mathbf{u}+\mathbf{v}</m>:
+        </p>
+        <image xml:id="fig-example-draw-sum-vectors3" width="70%">
+          <latex-image>
+            \begin{tikzpicture}[scale=0.5]
+            \draw[thin,gray!40] (-6,-3) grid (6,6);
+            \draw[-stealth] (-6,0) -- (6,0) node[below] {\(x\)};
+            \draw[-stealth] (0,-3) -- (0,6) node[left] {\(y\)};
+            \draw[line width=2pt,blue,-stealth](3,5) -- (-2,4) node[midway,above] {\(\mathbf{u}\)};
+            \draw[line width=2pt,red,-stealth](-2,4) -- (4,3) node[midway,below] {\(\mathbf{v}\)};
+            \draw[line width=2pt,black,-stealth](3,5) -- (4,3) node[midway,right] {\(\mathbf{u}+\mathbf{v}\)};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </solution>
+    </example>
+  </subsection>
+  <subsection xml:id="subsec-multiplying-vectors-by-scalar">
+    <title>Multiplying Vectors by a Scalar</title>
+    <p>
+      When a waʻa sails for two days at 5 knots, it covers a distance of 240 miles. This distance traveled is known as the <term>magnitude</term><idx><h>magnitude</h></idx> of the vector and is represented by a real number, which we refer to as a <term>scalar</term>.<idx><h>scalar</h></idx>
+    </p>
+    <p>
+      The magnitude of the vector representing a waʻa's path for two days will be twice that of the vector representing the path sailed for only one day. We can now define scalar multiplication of vectors.
+    </p>
+    <definition xml:id="def-scalar-multiplication-vectors">
+      <title>Scalar Multiplication of Vectors</title>
+      <statement>
+        <p>
+          If <m>c</m> is a scalar (real number) and <m>\mathbf{v}</m> is a vector, then the <term>scalar multiple</term><idx><h>scalar multiplication</h></idx> <m>c\mathbf{v}</m> has magnitude equal to the absolute value of <m>c</m> times the magnitude of <m>\mathbf{v}</m>, <m>|c|\|\mathbf{v}\|</m>. Additionally:
+          <ul>
+            <li>
+              <p>
+                If <m>c\gt0</m>, the scalar multiple has the same direction as <m>\mathbf{v}</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                If <m>c\lt 0</m>, the scalar multiple has the opposite direction as <m>\mathbf{v}</m>.
+              </p>
+            </li>
+          </ul>
+        </p>
+        <p>
+          If <m>c=0</m> or <m>\mathbf{v}=\mathbf{0}</m>, then <m>c\mathbf{v}=\mathbf{0}</m>.
+        </p>
+      </statement>
+    </definition>
+    <example>
+      <title>Scalar Multiplication</title>
+      <p>
+        To demonstrate scalar multiplication, consider a vector <m>\mathbf{v}</m> representing the displacement of a canoe. Let's say <m>\mathbf{v}</m> is a vector with magnitude 100 miles, pointing northeast. We can visualize this vector as representing the journey of a canoe from one point to another.
+      </p>
+      <p>
+        Now, let's explore scalar multiplication applied to this vector:
+        <ul>
+          <li>
+            <p>
+              <m> 1 \cdot \mathbf{v} </m>: This represents the same direction and magnitude as <m> \mathbf{v} </m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m> \frac{1}{2} \mathbf{v} </m>: This represents half the magnitude of <m> \mathbf{v} </m>, so it would have a magnitude of 50 miles, still pointing northeast.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m> -\mathbf{v} </m>: This represents the opposite direction of <m> \mathbf{v} </m>, so it would have the same magnitude of 100 miles but pointing southwest instead.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m> 2\mathbf{v} </m>: This represents doubling the magnitude of <m> \mathbf{v} </m>, so it would have a magnitude of 200 miles, still pointing northeast.
+            </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        The figure below illustrates the original vector <m>\mathbf{v}</m> and the resulting vectors <m>1 \cdot \mathbf{v}</m>, <m> \frac{1}{2} \mathbf{v} </m>, <m> -\mathbf{v} </m>, and <m> 2\mathbf{v} </m>.
+      </p>
+      <image xml:id="fig-scalar-multiples">
+        <latex-image>
+          \begin{tikzpicture}[scale=0.75]
+          \draw[thin,gray!40] (-8,-4) grid (8,4);
+          \draw[line width=2pt,blue,-stealth](-5,-3) -- (-2,-1) node[black,sloped,midway,above]{\(\mathbf{v}\)};
+          \draw[line width=2pt,blue,-stealth](-7,1)--(-4,3) node[black,sloped,midway,above]{\(1\mathbf{v}\)};
+          \draw[line width=2pt,blue,-stealth](3,3)--(0,1) node[black,sloped,midway,above]{\(-\mathbf{v}\)};
+          \draw[line width=2pt,blue,-stealth](1,-3)--(7,1) node[black,sloped,midway,above]{\(2\mathbf{v}\)};
+          \draw[line width=2pt,blue,-stealth](-3,2)--(-1.5,3) node[black,sloped,midway,above]{\(\frac{1}{2}\mathbf{v}\)};
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </example>
+  </subsection>
+  <subsection xml:id="subsec-vector-subtraction">
+    <title>Vector Subtraction</title>
+    <definition xml:id="def-vector-subtraction">
+      <title>Vector Subtraction</title><idx><h>subtraction</h><h>of vectors</h></idx>
+      <statement>
+        <p>
+          Vector <term>subtraction</term> is defined as the sum of one vector with the negative of another vector. In other words, <m>\mathbf{u}-\mathbf{v}=\mathbf{u}+(-\mathbf{v})</m>.
+        </p>
+      </statement>
+    </definition>
+    <example>
+      <statement>
+        <p>
+          Given vectors <m>\mathbf{u}</m> and <m>\mathbf{v}</m>, shown in the figure below, find <m>\mathbf{u}-\mathbf{v}</m>.
+        </p>
+        <image xml:id="fig-example-vector-subtraction1" width="70%">
+          <latex-image>
+            \begin{tikzpicture}[scale=0.5]
+            \draw[thin,gray!40] (-6,-3) grid (6,6);
+            \draw[-stealth] (-6,0) -- (6,0) node[below] {\(x\)};
+            \draw[-stealth] (0,-3) -- (0,6) node[left] {\(y\)};
+            \draw[line width=2pt,blue,-stealth](2,3) -- (-4,1) node[midway,below right] {\(\mathbf{u}\)};
+            \draw[line width=2pt,red,-stealth](5,5) -- (0,-2) node[midway,above left] {\(\mathbf{v}\)};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </statement>
+      <solution>
+        <p>
+          By <xref ref="def-vector-subtraction"/>, finding <m>\mathbf{u}-\mathbf{v}</m> is equivalent to finding <m>\mathbf{u}+(-\mathbf{v})</m> so we first need to find <m>-\mathbf{v}</m>. We do this by flipping vector <m>\mathbf{v}</m> so that it points in the opposite direction (from <m>(0,-2)</m> to <m>(5,5)</m>):
+        </p>
+        <image xml:id="fig-example-vector-subtraction2" width="70%">
+          <latex-image>
+            \begin{tikzpicture}[scale=0.5]
+            \draw[thin,gray!40] (-6,-3) grid (6,9);
+            \draw[-stealth] (-6,0) -- (6,0) node[below] {\(x\)};
+            \draw[-stealth] (0,-3) -- (0,9) node[left] {\(y\)};
+            \draw[line width=2pt,blue,-stealth](2,3) -- (-4,1) node[midway,below right] {\(\mathbf{u}\)};
+            \draw[line width=2pt,red,-stealth](0,-2) -- (5,5) node[midway,above left] {\(-\mathbf{v}\)};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+        <p>
+          To add <m>\mathbf{u}</m> and <m>-\mathbf{v}</m>, we will place the initial point of <m>-\mathbf{v}</m> at the terminal point of vector <m>\mathbf{u}</m>. This is at the point <m>(-4,1)</m>.
+        </p>
+        <image xml:id="fig-example-vector-subtraction3" width="70%">
+          <latex-image>
+            \begin{tikzpicture}[scale=0.5]
+            \draw[thin,gray!40] (-6,-3) grid (6,9);
+            \draw[-stealth] (-6,0) -- (6,0) node[below] {\(x\)};
+            \draw[-stealth] (0,-3) -- (0,9) node[left] {\(y\)};
+            \draw[line width=2pt,blue,-stealth](2,3) -- (-4,1) node[midway,below right] {\(\mathbf{u}\)};
+            \draw[line width=2pt,red,-stealth](0,-2) -- (5,5) node[midway,above left] {\(-\mathbf{v}\)};
+            \draw[line width=0.75pt,red,dashed](0,-2) -- (-4,1);
+            \draw[line width=0.75pt,red,dashed](5,5) -- (1,8);
+            \draw[line width=2pt,red,-stealth](-4,1) -- (1,8) node[midway,above left] {\(-\mathbf{v}\)};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+        <p>
+          The resulting vector from the initial point on <m>\mathbf{u}</m> to the terminal point on <m>-\mathbf{v}</m> is the vector <m>\mathbf{u}-\mathbf{v}</m>.
+        </p>
+        <image xml:id="fig-example-vector-subtraction4" width="70%">
+          <latex-image>
+            \begin{tikzpicture}[scale=0.5]
+            \draw[thin,gray!40] (-6,-3) grid (6,9);
+            \draw[-stealth] (-6,0) -- (6,0) node[below] {\(x\)};
+            \draw[-stealth] (0,-3) -- (0,9) node[left] {\(y\)};
+            \draw[line width=2pt,blue,-stealth](2,3) -- (-4,1) node[midway,below right] {\(\mathbf{u}\)};
+            \draw[line width=2pt,red,-stealth](-4,1) -- (1,8) node[midway,above left] {\(-\mathbf{v}\)};
+            \draw[line width=2pt,black,-stealth](2,3) -- (1,8) node[midway,above right] {\(\mathbf{u}-\mathbf{v}\)};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </solution>
+    </example>
+  </subsection>
+  <subsection xml:id="subsec-geometric-vector-velocity">
+    <title>Velocity</title>
+    <p>
+      Vectors can represent various physical objects. For instance, the velocity of a moving waʻa (canoe) is depicted by a vector. This velocity vector indicates the direction of motion and the speed of the waʻa. It is called the <term>velocity vector</term><idx><h>vectors</h><h>velocity</h></idx> and can also describe other physical phenomena such as wind and currents.
+    </p>
+    <example>
+      <title>Apparent Wind</title>
+      <statement>
+        <p>
+          Standing on the deck of a moving canoe, you'll feel the wind against your face. This sensation, known as <term>true wind</term><idx><h>true wind</h></idx><idx><h>wind</h><h>true wind</h></idx>, is not solely caused by the wind moving over the water. It's also influenced by <term>headwind</term><idx><h>headwind</h></idx><idx><h>wind</h><h>headwind</h></idx>, which results from your motion through the air. Headwind can be likened to the wind resistance felt when extending your hand out of a moving car window on a still day. Mathematically, headwind is the negative of the canoe's velocity vector.
+        </p>
+        <p>
+          The velocity of the <term>apparent wind</term><idx><h>apparent wind</h></idx><idx><h>wind</h><h>apparent wind</h></idx> is determined by adding the velocities of headwind and true wind. If the true wind comes from the bow (front) of the canoe, the apparent wind increases. Conversely, if the true wind comes from the stern (back), the apparent wind decreases. For instance, sailing at 5 knots into a true wind of 5 knots would result in an apparent wind of 10 knots, as shown in the figure below. 
+        </p>
+        <image xml:id="fig-apparent-heading-increase">
+          <latex-image>
+            \begin{tikzpicture}
+            \draw[line width=2pt,red,-stealth](0,4.5) -- (2.5,4.5) node[black,midway,above]{\(\mathbf{v}\)};
+            \draw[line width=2pt,blue,-stealth](2.5,3) -- (0,3) node[black,midway,above]{\(-\mathbf{v}\)};
+            \draw[line width=2pt,blue,-stealth](5,1.5) -- (2.5,1.5) node[black,midway,above]{\(\mathbf{w}\)};
+            \draw[line width=2pt,blue,-stealth](5,0) -- (0,0) node[black,midway,above]{\((-\mathbf{v})+\mathbf{w}\)};
+            \node[right] at (6,5) {Velocity of Canoe};
+            \node[right] at (6,4.5) {5 knots};
+            \node[right] at (6,3.5) {Velocity of headwind};
+            \node[right] at (6,3) {-5 knots};
+            \node[right] at (6,2) {Velocity of True Wind};
+            \node[right] at (6,1.5) {-5 knots};
+            \node[right] at (6,0.5) {Velocity of Apparent Wind};
+            \node[right] at (6,0) {-5-5=-10 knots};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+        <p>
+          However, sailing at 5 knots with the true wind also blowing at 5 knots from behind would result in a zero apparent wind, as you'd be moving at the same velocity as the wind, with no wind moving past you. This is shown in the folloiwng figure.
+        </p>
+        <image xml:id="fig-apparent-heading-decrease">
+          <latex-image>
+            \begin{tikzpicture}
+            \draw[line width=2pt,red,-stealth](0,4.5) -- (2.5,4.5) node[black,midway,above]{\(\mathbf{v}\)};
+            \draw[line width=2pt,blue,-stealth](2.5,3) -- (0,3) node[black,midway,above]{\(-\mathbf{v}\)};
+            \draw[line width=2pt,blue,-stealth](2.5,1.5) -- (5,1.5) node[black,midway,above]{\(\mathbf{w}\)};
+            \filldraw (2.5,0) circle(2pt) node[black,above]{\((-\mathbf{v})+\mathbf{w}\)};
+            \node[right] at (6,5) {Velocity of Canoe};
+            \node[right] at (6,4.5) {5 knots};
+            \node[right] at (6,3.5) {Velocity of headwind};
+            \node[right] at (6,3) {-5 knots};
+            \node[right] at (6,2) {Velocity of True Wind};
+            \node[right] at (6,1.5) {5 knots};
+            \node[right] at (6,0.5) {Velocity of Apparent Wind};
+            \node[right] at (6,0) {-5+5=0 knots};
+            \end{tikzpicture}
+          </latex-image>
+          
+        </image>
+        <p>
+          Understanding the apparent wind is crucial for sail trimming and optimizing energy from the wind. Navigators must also consider apparent wind's impact on the canoe's speed and course.
+        </p>
+      </statement>
+    </example>
+    <example>
+      <title>Apparent Wind</title>
+      <statement>
+        <p>
+          The waʻa Mānaiakalani is sailing off the shore of Lahaina at a speed of 5 knots. According to the weather report, the true wind is moving at 15 knots. By turning your face into the wind so that you can feel the wind blowing evening past both sides of your face, you can determine the direction of the apparent wind, which you measure to <m>50^{\circ}</m> to the left of your course. What is the magnitude of the apparent wind?
+        </p>
+        <image xml:id="fig-apparent-wind-example-wind" width="60%">
+          <latex-image>
+            \begin{tikzpicture}[scale=0.4]
+            \draw[line width=2pt,blue,-stealth](0,5) -- (0,0) node[midway, right] {Headwind};
+            \draw[line width=2pt,blue,-stealth]({90+50}:17.7) -- (0,0) node[midway,below left] {Apparent Wind};
+            \draw[line width=2pt,blue,-stealth]({90+50}:17.7) -- (0,5) node[midway,above right] {True Wind};
+            \draw pic at (0,0) {waa1-top={waacolor}{0}{0.15}};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </statement>
+      <solution>
+        <p>
+          We have the following triangle:
+        </p>
+        <image xml:id="fig-apparent-wind-example-triangle" width="60%">
+          <latex-image>
+            \begin{tikzpicture}[scale=0.4]
+            \draw[line width=2pt,-stealth](0,5) -- (0,0) node[midway, right] {5};
+            \draw[line width=2pt,-stealth]({90+50}:17.7) -- (0,0) node[midway,below left] { \(a\)};
+            \draw[line width=2pt,-stealth]({90+50}:17.7) -- (0,5) node[midway,above right] {15};
+            \node[left] at ({90+50}:17.7) {\(B\)};
+            \node[right] at (0,5) {\(A\)};
+            \draw[line width=2pt] (90:1) arc (90:{90+50}:1) node[midway,above] {\(50^{\circ}\)};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+        <p>
+          We can analyze this scenario using the Law of Sines. Given that the known angle is <m>50^{\circ}</m> and the side opposite to it is 15 knots (the true wind), and the side adjacent to it is 5 knots (the canoe's speed), we have a Side-Side-Angle (SSA) triangle situation, specifically Case 4, which results in only one possible triangle.
+        </p>
+        <p>
+          First, we find angle <m>B</m> using the Law of Sines:
+          <me>
+            \frac{\sin50^{\circ}}{15}=\frac{\sin B}{5}
+          </me>.
+          From this, we get:
+          <me>
+            B=\sin^{-1}\left(\frac{5\sin50^{\circ}}{15})\right)\approx14.8^{\circ}
+          </me>.
+        </p>
+        <p>
+          Now, we can now calculate angle <m>A</m>:
+          <me>
+            A=180^{\circ}-50^{\circ}-14.8^{\circ}=115.2^{\circ}
+          </me>.
+        </p>
+        <p>
+          Next, to determine the magnitude of the apparent wind, we find side <m>a</m> using the Law of Sines:
+          <me>
+            \frac{a}{\sin 115.2^{\circ}}=\frac{15}{\sin70^{\circ}}
+          </me>
+          Therefore,
+          <me>
+            a=\sin 115.2^{\circ}\cdot\frac{15}{\sin70^{\circ}}\approx17.7
+          </me>
+          Thus, the magnitude of the apparent wind is approximately 17.7 knots.
+        </p>
+      </solution>
+    </example>
+  </subsection>
+  <exercises xml:id="exercises-vectors">
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          Draw the vector with initial point <m>P</m> and terminal point <m>Q</m>.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>P=(2,-3)</m>; <m>Q=(1,4)</m>
+          </p>
+        </statement>
+        <answer>
+          <image xml:id="fig-exercise-draw-PQ1">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.5]
+              \draw[thin,gray!40] (-5,-5) grid (5,5);
+              \draw[-stealth] (-5,0) -- (5,0) node[below] {\(x\)};
+              \draw[-stealth] (0,-5) -- (0,5) node[left] {\(y\)};
+              \filldraw (2,-3) circle(1.5pt) node[right] {\(P\)};
+              \filldraw (1,4) circle(1.5pt) node[left] {\(Q\)};
+              \draw[line width=2pt,blue,-stealth](2,-3) -- (1,4);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>P=(0,-2)</m>; <m>Q=(3,3)</m>
+          </p>
+        </statement>
+        <answer>
+          <image xml:id="fig-exercise-draw-PQ2">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.5]
+              \draw[thin,gray!40] (-5,-5) grid (5,5);
+              \draw[-stealth] (-5,0) -- (5,0) node[below] {\(x\)};
+              \draw[-stealth] (0,-5) -- (0,5) node[left] {\(y\)};
+              \filldraw (0,-2) circle(1.5pt) node[below] {\(P\)};
+              \filldraw (3,3) circle(1.5pt) node[above] {\(Q\)};
+              \draw[line width=2pt,blue,-stealth](0,-2) -- (3,3);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>P=(3,-1)</m>; <m>Q=(4,-3)</m>
+          </p>
+        </statement>
+        <answer>
+          <image xml:id="fig-exercise-draw-PQ3">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.5]
+              \draw[thin,gray!40] (-5,-5) grid (5,5);
+              \draw[-stealth] (-5,0) -- (5,0) node[below] {\(x\)};
+              \draw[-stealth] (0,-5) -- (0,5) node[left] {\(y\)};
+              \filldraw (3,-1) circle(1.5pt) node[above] {\(P\)};
+              \filldraw (4,-3) circle(1.5pt) node[below] {\(Q\)};
+              \draw[line width=2pt,blue,-stealth](3,-1) -- (4,-3);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>P=(2,1)</m>; <m>Q=(-3,4)</m>
+          </p>
+        </statement>
+        <answer>
+          <image xml:id="fig-exercise-draw-PQ4">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.5]
+              \draw[thin,gray!40] (-5,-5) grid (5,5);
+              \draw[-stealth] (-5,0) -- (5,0) node[below] {\(x\)};
+              \draw[-stealth] (0,-5) -- (0,5) node[left] {\(y\)};
+              \filldraw (2,1) circle(1.5pt) node[right] {\(P\)};
+              \filldraw (-3,4) circle(1.5pt) node[left] {\(Q\)};
+              \draw[line width=2pt,blue,-stealth](2,1) -- (-3,4);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>P=(-4,0)</m>; <m>Q=(3,-2)</m>
+          </p>
+        </statement>
+        <answer>
+          <image xml:id="fig-exercise-draw-PQ5">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.5]
+              \draw[thin,gray!40] (-5,-5) grid (5,5);
+              \draw[-stealth] (-5,0) -- (5,0) node[below] {\(x\)};
+              \draw[-stealth] (0,-5) -- (0,5) node[left] {\(y\)};
+              \filldraw (-4,0) circle(1.5pt) node[above] {\(P\)};
+              \filldraw (3,-2) circle(1.5pt) node[right] {\(Q\)};
+              \draw[line width=2pt,blue,-stealth](-4,0) -- (3,-2);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>P=(4,3)</m>; <m>Q=(-1,0)</m>
+          </p>
+        </statement>
+        <answer>
+          <image xml:id="fig-exercise-draw-PQ6">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.5]
+              \draw[thin,gray!40] (-5,-5) grid (5,5);
+              \draw[-stealth] (-5,0) -- (5,0) node[below] {\(x\)};
+              \draw[-stealth] (0,-5) -- (0,5) node[left] {\(y\)};
+              \filldraw (4,3) circle(1.5pt) node[right] {\(P\)};
+              \filldraw (-1,0) circle(1.5pt) node[left] {\(Q\)};
+              \draw[line width=2pt,blue,-stealth](4,3) -- (-1,0);
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          Given the vector <m>\overrightarrow{PQ}</m> with initial point <m>P</m> and terminal point <m>Q</m>, compute the magnitude <m>\|\overrightarrow{PQ}\|</m>.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <image xml:id="fig-exercise-vector-magnitude1">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.5]
+              \draw[thin,gray!40] (-6,-3) grid (6,6);
+              \draw[-stealth] (-6,0) -- (6,0) node[below] {\(x\)};
+              \draw[-stealth] (0,-3) -- (0,6) node[left] {\(y\)};
+              \filldraw (-3,-1) circle(1.5pt) node[below] {\(P(-3,-1)\)};
+              \filldraw (2,3) circle(1.5pt) node[above] {\(Q(2,3)\)};
+              \draw[line width=2pt,blue,-stealth](-3,-1) -- (2,3) node[midway,above left] {\(\mathbf{u}\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </statement>
+        <answer>
+          <p>
+            <m>\sqrt{41}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <image xml:id="fig-exercise-vector-magnitude2">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.5]
+              \draw[thin,gray!40] (-6,-3) grid (6,6);
+              \draw[-stealth] (-6,0) -- (6,0) node[below] {\(x\)};
+              \draw[-stealth] (0,-3) -- (0,6) node[left] {\(y\)};
+              \filldraw (0,4) circle(1.5pt) node[above] {\(P(0,4)\)};
+              \filldraw (5,-2) circle(1.5pt) node[below left] {\(Q(5,-2)\)};
+              \draw[line width=2pt,blue,-stealth](0,4) -- (5,-2) node[midway,above right] {\(\mathbf{u}\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </statement>
+        <answer>
+          <p>
+            <m>\sqrt{61}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>P=(2,-4)</m>; <m>Q=(3,2)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\sqrt{37}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>P=(-2,2)</m>; <m>Q=(0,1)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\sqrt{5}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>P=(-3,5)</m>; <m>Q=(4,1)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\sqrt{65}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>P=(-1,-5)</m>; <m>Q=(-4,0)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\sqrt{34}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>P=(5,4)</m>; <m>Q=(1,3)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\sqrt{17}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>P=(-5,-1)</m>; <m>Q=(0,-3)</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\sqrt{29}</m>
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          Determine if the given vectors <m>\mathbf{u}</m> and <m>\mathbf{v}</m> are equivalent.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <image xml:id="fig-equivalent-vectors-u-v1">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.5]
+              \draw[thin,gray!40] (-3,-2) grid (7,7);
+              \draw[line width=2pt,blue,-stealth](1,4) -- (5,5) node[midway,above left] {\(\mathbf{u}\)};
+              \draw[line width=2pt,blue,-stealth](0,-1) -- (4,1) node[midway,above left] {\(\mathbf{v}\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </statement>
+        <solution>
+          <p>
+            Not Equivalent
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <image xml:id="fig-equivalent-vectors-u-v2">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.5]
+              \draw[thin,gray!40] (-3,-2) grid (7,7);
+              \draw[line width=2pt,blue,-stealth](3,2) -- (6,5) node[midway,above left] {\(\mathbf{u}\)};
+              \draw[line width=2pt,blue,-stealth](0,-1) -- (3,2) node[midway,above left] {\(\mathbf{v}\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </statement>
+        <solution>
+          <p>
+            Equivalent
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <image xml:id="fig-equivalent-vectors-u-v3">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.5]
+              \draw[thin,gray!40] (-3,-2) grid (7,7);
+              \draw[line width=2pt,blue,-stealth](1,2) -- (4,5) node[midway,above left] {\(\mathbf{u}\)};
+              \draw[line width=2pt,blue,-stealth](5,3) -- (2,0) node[midway,above left] {\(\mathbf{v}\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </statement>
+        <solution>
+          <p>
+            Not Equivalent
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <image xml:id="fig-equivalent-vectors-u-v4">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.5]
+              \draw[thin,gray!40] (-3,-2) grid (7,7);
+              \draw[line width=2pt,blue,-stealth](0,4) -- (3,0) node[midway,above right] {\(\mathbf{u}\)};
+              \draw[line width=2pt,blue,-stealth](2,5) -- (5,1) node[midway,above right] {\(\mathbf{v}\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </statement>
+        <solution>
+          <p>
+            Equivalent
+          </p>
+        </solution>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{u}</m> has initial point at <m>(-1,1)</m> and terminal point at <m>(3,-4)</m>; <m>\mathbf{v}</m> has initial point at <m>(0,2)</m> and terminal point at <m>(4,-3)</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Equivalent
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{u}</m> has initial point at <m>(2,1)</m> and terminal point at <m>(-3,2)</m>; <m>\mathbf{v}</m> has initial point at <m>(1,-4)</m> and terminal point at <m>(6,-3)</m>;.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Not Equivalent
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{u}</m> has initial point at <m>(2,0)</m> and terminal point at <m>(4,4)</m>; <m>\mathbf{v}</m> has initial point at <m>(3,-2)</m> and terminal point at <m>(-4,1)</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Not Equivalent
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{u}</m> has initial point at <m>(2,4)</m> and terminal point at <m>(0,-3)</m>; <m>\mathbf{v}</m> has initial point at <m>(1,2)</m> and terminal point at <m>(-1,-5)</m>.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            Equivalent
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          Use the vectors <m>\mathbf{u}</m> and <m>\mathbf{v}</m>, shown below, to graph the following vectors:
+        </p>
+        <image xml:id="fig-vectors-u-v" width="60%">
+          <latex-image>
+            \begin{tikzpicture}
+            \draw[thin,gray!40] (-4,-1) grid (4,4);
+            \draw[line width=2pt,blue,-stealth](-3,1) -- (-1,3) node[midway,above left] {\(\mathbf{u}\)};
+            \draw[line width=2pt,blue,-stealth](3,0) -- (1,3) node[midway,above right] {\(\mathbf{v}\)};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>2\mathbf{v}</m>
+          </p>
+        </statement>
+        <answer>
+          <image xml:id="fig-vector-2v">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.5]
+              \draw[thin,gray!40] (-5,-1) grid (5,7);
+              \draw[line width=2pt,blue,-stealth](3,0) -- (-1,6) node[midway,above right] {\(2\mathbf{v}\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3\mathbf{u}</m>
+          </p>
+        </statement>
+        <answer>
+          <image xml:id="fig-vector-3u">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.5]
+              \draw[thin,gray!40] (-5,-1) grid (5,7);
+              \draw[line width=2pt,blue,-stealth](-4,0) -- (2,6) node[midway,above left] {\(3\mathbf{u}\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\frac{1}{2}\mathbf{u}</m>
+          </p>
+        </statement>
+        <answer>
+          <image xml:id="fig-vector-half-u">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.5]
+              \draw[thin,gray!40] (-5,-1) grid (5,7);
+              \draw[line width=2pt,blue,-stealth](2,1) -- (3,2) node[midway,above left] {\(\frac{1}{2}\mathbf{u}\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>-\mathbf{v}</m>
+          </p>
+        </statement>
+        <answer>
+          <image xml:id="fig-vector-neg-v">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.5]
+              \draw[thin,gray!40] (-5,-1) grid (5,7);
+              \draw[line width=2pt,blue,-stealth](1,4) -- (3,1) node[midway,above right] {\(-\mathbf{v}\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{u}+\mathbf{v}</m>
+          </p>
+        </statement>
+        <answer>
+          <image xml:id="fig-vector-u-plus-v">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.5]
+              \draw[thin,gray!40] (-5,-1) grid (5,7);
+              \draw[line width=2pt,blue,-stealth](-1,0) -- (1,2) node[midway,above left] {\(\mathbf{u}\)};
+              \draw[line width=2pt,blue,-stealth](1,2) -- (-1,5) node[midway,above right] {\(\mathbf{v}\)};
+              \draw[line width=2pt,blue,-stealth](-1,0) -- (-1,5) node[midway,above left] {\(\mathbf{u}+\mathbf{v}\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{u}-\mathbf{v}</m>
+          </p>
+        </statement>
+        <answer>
+          <image xml:id="fig-vector-u-minus-v">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.5]
+              \draw[thin,gray!40] (-5,-1) grid (5,7);
+              \draw[line width=2pt,blue,-stealth](-3,3) -- (-1,5) node[midway,above left] {\(\mathbf{u}\)};
+              \draw[line width=2pt,blue,-stealth](-1,5) -- (1,2) node[midway,above right] {\(-\mathbf{v}\)};
+              \draw[line width=2pt,blue,-stealth](-3,3) -- (1,2) node[midway,below left] {\(\mathbf{u}-\mathbf{v}\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{v}-\mathbf{u}</m>
+          </p>
+        </statement>
+        <answer>
+          <image xml:id="fig-vector-v-minus-u">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.5]
+              \draw[thin,gray!40] (-5,-1) grid (5,7);
+              \draw[line width=2pt,blue,-stealth](4,1) -- (2,4) node[midway,above right] {\(\mathbf{v}\)};
+              \draw[line width=2pt,blue,-stealth](2,4) -- (0,2) node[midway,above left] {\(-\mathbf{u}\)};
+              \draw[line width=2pt,blue,-stealth](4,1) -- (0,2) node[midway,below left] {\(\mathbf{v}-\mathbf{u}\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>3\mathbf{u}-\mathbf{v}</m>
+          </p>
+        </statement>
+        <answer>
+          <image xml:id="fig-vector-3u-minus-v">
+            <latex-image>
+              \begin{tikzpicture}[scale=0.5]
+              \draw[thin,gray!40] (-5,-1) grid (5,7);
+              \draw[line width=2pt,blue,-stealth](-4,0) -- (2,6) node[midway,above left] {\(3\mathbf{u}\)};
+              \draw[line width=2pt,blue,-stealth](2,6) -- (4,3) node[midway,above right] {\(-\mathbf{v}\)};
+              \draw[line width=2pt,blue,-stealth](-4,0) -- (4,3) node[midway,below right] {\(3\mathbf{u}-\mathbf{v}\)};
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup>
+      <introduction>
+        <p>
+          Changes in the speed of the true wind can alter the apparent wind. In each scenario below, a canoe sails at 5 knots, with the true wind blowing perpendicular to the canoe, as depicted in the figure. Calculate both the direction, <m>\theta</m>, and magnitude of the apparent wind for the given true wind speed, rounded to one decimal. Since this forms a right triangle, we use the formula:
+          <me>
+            \theta=\tan^{-1}\frac{\mbox{true wind}}{\mbox{headwind}}
+          </me>.
+        </p>
+        <image xml:id="fig-exercise-apparent-wind-effects-of-true-wind">
+          <latex-image>
+            \begin{tikzpicture}
+            \draw[line width=2pt,blue,-stealth](0,5) -- (0,0) node[midway, right] {Headwind};
+            \draw[line width=2pt,blue,-stealth](-10,5) -- (0,0) node[midway,below left] {Apparent Wind};
+            \draw[line width=2pt,blue,-stealth](-10,5) -- (0,5) node[midway,above] {True Wind};
+            \draw (0,4.25) -- (-0.75,4.25) -- (-0.75,5);
+            \draw pic at (0,-1) {waa1-top={waacolor}{0}{0.15}};
+            \draw[line width=2pt] (90:1) arc (90:{90+63.43}:1) node[midway,above] {\(\theta\)};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            True Wind: 5 knots
+          </p>
+          <image xml:id="fig-exercise-apparent-wind-effects-of-true-wind5" width="75%">
+            <latex-image>
+                \begin{tikzpicture}[scale=1.25]
+                \draw[line width=2pt,blue,-stealth](0,5) -- (0,0) node[midway, right] {5 knots};
+                \draw[line width=2pt,blue,-stealth](-5,5) -- (0,0) node[midway,below left] {Apparent Wind};
+                \draw[line width=2pt,blue,-stealth](-5,5) -- (0,5) node[midway,above] {5 knots};
+                \draw (0,4.25) -- (-0.75,4.25) -- (-0.75,5);
+                \draw[line width=2pt] (90:1) arc (90:{90+45}:1) node[midway,above] {\(\theta\)};
+                \end{tikzpicture}
+              </latex-image>
+            </image>
+        </statement>
+        <answer>
+          <p>
+            <m>45^{\circ}</m>; 7.1 knots
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            True Wind: 10 knots
+          </p>
+          <image xml:id="fig-exercise-apparent-wind-effects-of-true-wind10">
+            <latex-image>
+                \begin{tikzpicture}
+                \draw[line width=2pt,blue,-stealth](0,5) -- (0,0) node[midway, right] {5 knots};
+                \draw[line width=2pt,blue,-stealth](-10,5) -- (0,0) node[midway,below left] {Apparent Wind};
+                \draw[line width=2pt,blue,-stealth](-10,5) -- (0,5) node[midway,above] {5 knots};
+                \draw (0,4.25) -- (-0.75,4.25) -- (-0.75,5);
+                \draw[line width=2pt] (90:1) arc (90:{90+63.435}:1) node[midway,above] {\(\theta\)};
+                \end{tikzpicture}
+              </latex-image>
+            </image>
+        </statement>
+        <answer>
+          <p>
+            <m>63.4^{\circ}</m>; 11.2 knots
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            True Wind: 15 knots
+          </p>
+          <image xml:id="fig-exercise-apparent-wind-effects-of-true-wind15">
+            <latex-image>
+                \begin{tikzpicture}
+                \draw[line width=2pt,blue,-stealth](0,5) -- (0,0) node[midway, right] {5 knots};
+                \draw[line width=2pt,blue,-stealth](-15,5) -- (0,0) node[midway,below left] {Apparent Wind};
+                \draw[line width=2pt,blue,-stealth](-15,5) -- (0,5) node[midway,above] {15 knots};
+                \draw (0,4.25) -- (-0.75,4.25) -- (-0.75,5);
+                \draw[line width=2pt] (90:1) arc (90:{90+71.565}:1) node[midway,above] {\(\theta\)};
+                \end{tikzpicture}
+              </latex-image>
+            </image>
+        </statement>
+        <answer>
+          <p>
+            <m>71.6^{\circ}</m>; 15.8 knots
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            How does the apparent wind changes as the true wind increases?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            As the true wind increases, the angle and magnitude of the apparent wind increases.
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup>
+      <introduction>
+        <p>
+          In addition to changes in the speed of the true wind, the apparent wind can be affected by changes in the speed of the canoe. In each scenario below, true wind blow perpendicular to the canoe at 10 knots, as depicted in the figure. Calculate both the direction, <m>\theta</m>, and magnitude of the apparent wind for the given speed of the canoe, rounded to one decimal.
+        </p>
+        <image xml:id="fig-exercise-apparent-wind-effects-of-canoe-speed">
+          <latex-image>
+            \begin{tikzpicture}
+            \draw[line width=2pt,blue,-stealth](0,5) -- (0,0) node[midway, right] {Headwind};
+            \draw[line width=2pt,blue,-stealth](-10,5) -- (0,0) node[midway,below left] {Apparent Wind};
+            \draw[line width=2pt,blue,-stealth](-10,5) -- (0,5) node[midway,above] {True Wind};
+            \draw (0,4.25) -- (-0.75,4.25) -- (-0.75,5);
+            \draw pic at (0,-1) {waa1-top={waacolor}{0}{0.15}};
+            \draw[line width=2pt] (90:1) arc (90:{90+63.43}:1) node[midway,above] {\(\theta\)};
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            Canoe Speed: 3 knots
+          </p>
+          <image xml:id="fig-exercise-apparent-wind-effects-of-canoe-speed3">
+            <latex-image>
+              \begin{tikzpicture}
+              \draw[line width=2pt,blue,-stealth](0,3) -- (0,0) node[midway, right] {3 knots};
+              \draw[line width=2pt,blue,-stealth](-10,3) -- (0,0) node[midway,below left] {Apparent Wind};
+              \draw[line width=2pt,blue,-stealth](-10,3) -- (0,3) node[midway,above] {10 knots};
+              \draw (0,2.25) -- (-0.75,2.25) -- (-0.75,3);
+              \draw[line width=2pt] (90:1) arc (90:{90+73.3}:1) node[midway,above] {\(\theta\)};
+              \end{tikzpicture}
+              </latex-image>
+            </image>
+        </statement>
+        <answer>
+          <p>
+            <m>73.3^{\circ}</m>; 10.4 knots
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Canoe Speed: 6 knots
+          </p>
+          <image xml:id="fig-exercise-apparent-wind-effects-of-canoe-speed5">
+            <latex-image>
+                \begin{tikzpicture}
+                \draw[line width=2pt,blue,-stealth](0,6) -- (0,0) node[midway, right] {5 knots};
+                \draw[line width=2pt,blue,-stealth](-10,6) -- (0,0) node[midway,below left] {Apparent Wind};
+                \draw[line width=2pt,blue,-stealth](-10,6) -- (0,6) node[midway,above] {10 knots};
+                \draw (0,5.25) -- (-0.75,5.25) -- (-0.75,6);
+                \draw[line width=2pt] (90:1) arc (90:{90+59.036}:1) node[midway,above] {\(\theta\)};
+                \end{tikzpicture}
+              </latex-image>
+            </image>
+        </statement>
+        <answer>
+          <p>
+            <m>59.0^{\circ}</m>; 11.7 knots
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Canoe Speed: 9 knots
+          </p>
+          <image xml:id="fig-exercise-apparent-wind-effects-of-canoe-speed7">
+            <latex-image>
+                \begin{tikzpicture}
+                \draw[line width=2pt,blue,-stealth](0,9) -- (0,0) node[midway, right] {7 knots};
+                \draw[line width=2pt,blue,-stealth](-10,9) -- (0,0) node[midway,below left] {Apparent Wind};
+                \draw[line width=2pt,blue,-stealth](-10,9) -- (0,9) node[midway,above] {10 knots};
+                \draw (0,8.25) -- (-0.75,8.25) -- (-0.75,9);
+                \draw[line width=2pt] (90:1) arc (90:{90+48}:1) node[midway,above] {\(\theta\)};
+                \end{tikzpicture}
+              </latex-image>
+            </image>
+        </statement>
+        <answer>
+          <p>
+            <m>48.0^{\circ}</m>; 13.5 knots
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            How does the apparent wind changes as the true wind increases?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            As the speed of the canoe increases, the angle decreases and the magniude of the apparent wind increases.
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+  </exercises>
+</section>
