@@ -115,9 +115,12 @@
       <title>Vector Addition</title>
       <statement>
         <p>
-          Vector addition is the process of combining two or more vectors to produce a resultant vector. To find the <term>sum</term><idx><h>sum</h><h>of vectors</h></idx><idx><h>addition</h><h>of vectors</h></idx> of vectors <m>\mathbf{u}</m> and <m>\mathbf{v}</m>, we place the initial point of the second vector with the terminal point of the first vector. The vector formed from the initial point of the first vector to the terminal point of the second vector represents the sum of the two vectors, denoted by <m>\mathbf{u}+\mathbf{v}</m>. Since vectors can be translated, any two vectors can be added by shifting one vector's starting point to the endpoint of another vector. Notice that adding the vector <m>\mathbf{v}</m> to <m>\mathbf{u}</m> produces the same result as adding <m>\mathbf{u}</m> to <m>\mathbf{v}</m>, as demonstrated below. Thus, we have:
+          Vector addition is the process of combining two or more vectors to produce a <term>resultant vector</term><idx><h>vectors</h><h>resultant</h></idx>. To find the <term>sum</term><idx><h>sum</h><h>of vectors</h></idx><idx><h>addition</h><h>of vectors</h></idx> of vectors <m>\mathbf{u}</m> and <m>\mathbf{v}</m>, we place the initial point of the second vector with the terminal point of the first vector. The vector formed from the initial point of the first vector to the terminal point of the second vector represents the sum of the two vectors, denoted by <m>\mathbf{u}+\mathbf{v}</m>. Since vectors can be translated, any two vectors can be added by shifting one vector's starting point to the endpoint of another vector. Notice that adding the vector <m>\mathbf{v}</m> to <m>\mathbf{u}</m> produces the same result as adding <m>\mathbf{u}</m> to <m>\mathbf{v}</m>, as demonstrated below. Thus, we have:
           <me>\mathbf{u}+\mathbf{v}=\mathbf{v}+\mathbf{u}</me>.
         </p>
+        <figure xml:id="fig-vector-addition-triangle">
+          <caption>The vectors <m>\mathbf{u}</m> and <m>\mathbf{v}</m> can be combined to obtain <m>\mathbf{u+v}</m> and <m>\mathbf{v+u}</m>, resulting in the same resultant vector. The arrangement resembles a parallelogram, demonstrating the commutative property of vector addition.</caption>
+        </figure>
         <image xml:id="fig-vector-addition">
           <latex-image>
             \begin{tikzpicture}
@@ -1718,70 +1721,404 @@
         </answer>
       </exercise>
     </exercisegroup>
-    <exercisegroup>
+    <exercisegroup cols="2">
       <introduction>
         <p>
-          perform the operation given u, v... 2v, u+v, ...
+          For given vectors <m>\mathbf{u}</m> and <m>\mathbf{v}</m>, find <m>2\mathbf{u}</m>, <m>\mathbf{u}+\mathbf{v}</m>, <m>\mathbf{u}-\mathbf{v}</m>, and <m>3\mathbf{u}+2\mathbf{v}</m>.
         </p>
       </introduction>
       <exercise>
         <statement>
           <p>
-            
+            <m>\mathbf{u}=\langle1,2\rangle</m>, <m>\mathbf{v}=\langle2,0\rangle</m>
           </p>
         </statement>
+        <answer>
+          <p>
+            <m>2\mathbf{u}=\langle2,4\rangle</m>, <m>\mathbf{u}+\mathbf{v}=\langle3,2\rangle</m>, <m>\mathbf{u}-\mathbf{v}=\langle-1,2\rangle</m>, <m>3\mathbf{u}+2\mathbf{v}=\langle7,6\rangle</m>
+          </p>
+        </answer>
       </exercise>
-    
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{u}=\langle5,1\rangle</m>, <m>\mathbf{v}=\langle-3,-2\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>2\mathbf{u}=\langle10,2\rangle</m>, <m>\mathbf{u}+\mathbf{v}=\langle2,-1\rangle</m>, <m>\mathbf{u}-\mathbf{v}=\langle8,3\rangle</m>, <m>3\mathbf{u}+2\mathbf{v}=\langle9,-1\rangle</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{u}=\langle-2,4\rangle</m>, <m>\mathbf{v}=\langle0,4\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>2\mathbf{u}=\langle-4,8\rangle</m>, <m>\mathbf{u}+\mathbf{v}=\langle-2,8\rangle</m>, <m>\mathbf{u}-\mathbf{v}=\langle-2,0\rangle</m>, <m>3\mathbf{u}+2\mathbf{v}=\langle-6,20\rangle</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{u}=\langle-1,-5\rangle</m>, <m>\mathbf{v}=\langle1,2\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>2\mathbf{u}=\langle-2,-10\rangle</m>, <m>\mathbf{u}+\mathbf{v}=\langle0,-3\rangle</m>, <m>\mathbf{u}-\mathbf{v}=\langle-2,-7\rangle</m>, <m>3\mathbf{u}+2\mathbf{v}=\langle-1,-11\rangle</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{u}=\langle3,-1\rangle</m>, <m>\mathbf{v}=\langle-4,4\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>2\mathbf{u}=\langle6,-2\rangle</m>, <m>\mathbf{u}+\mathbf{v}=\langle-1,3\rangle</m>, <m>\mathbf{u}-\mathbf{v}=\langle7,-5\rangle</m>, <m>3\mathbf{u}+2\mathbf{v}=\langle1,5\rangle</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{u}=\langle-2,-2\rangle</m>, <m>\mathbf{v}=\langle1,3\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>2\mathbf{u}=\langle-4,-4\rangle</m>, <m>\mathbf{u}+\mathbf{v}=\langle-1,1\rangle</m>, <m>\mathbf{u}-\mathbf{v}=\langle-3,-5\rangle</m>, <m>3\mathbf{u}+2\mathbf{v}=\langle-4,0\rangle</m>
+          </p>
+        </answer>
+      </exercise>
     </exercisegroup>
-    <exercisegroup>
+    <exercisegroup cols="2">
       <introduction>
         <p>
-          Find the magnitude...
+          A fundamental property in Euclidean geometry is the <term>Triangle Inequality</term><idx><h>triangle inequality</h></idx>, which states that for any triangle, the sum of the lengths of any two sides of a triangle is greater than or equal to the length of the remaining side. This property can be illustrated using vectors, where combining vectors <m>\mathbf{u}</m> and <m>\mathbf{v}</m> results in a triangle with the third side represented by <m>\mathbf{u}+\mathbf{v}</m>, as shown in <xref ref="fig-vector-addition-triangle"/>. The Triangle Inequality is expressed as <m>\|\mathbf{u}\|+\|\mathbf{v}\|\geq\|\mathbf{u}+\mathbf{v}\|</m>
+        </p>
+        <p>
+          To demonstrate the Triangle Inequality with given vectors <m>\mathbf{u}</m> and <m>\mathbf{v}</m>, calculate the following magnitudes rounded to the nearest tenth: <m>\|\mathbf{u}\|</m>, <m>\|\mathbf{v}\|</m>, <m>\|\mathbf{u}\|+\|\mathbf{v}\|</m>, and <m>\|\mathbf{u}+\mathbf{v}\|</m>. Note that to calculate <m>\|\mathbf{u}+\mathbf{v}\|</m>, you must first find the vector <m>\mathbf{u}+\mathbf{v}</m>
         </p>
       </introduction>
-    
       <exercise>
         <statement>
           <p>
-            
+            <m>\mathbf{u}=2\mathbf{i}-2\mathbf{j}</m>, <m>\mathbf{v}=3\mathbf{i}+4\mathbf{j}</m>
           </p>
         </statement>
+        <answer>
+          <p>
+            <m>\|\mathbf{u}\|=2.8</m>, <m>\|\mathbf{v}\|=5</m>, <m>\|\mathbf{u}\|+\|\mathbf{v}\|=7.8</m>, <m>\|\mathbf{u}+\mathbf{v}\|=5.4</m>
+          </p>
+        </answer>
       </exercise>
-    
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{u}=5\mathbf{i}-\mathbf{j}</m>, <m>\mathbf{v}=-3\mathbf{i}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\|\mathbf{u}\|=5.1</m>, <m>\|\mathbf{v}\|=3</m>, <m>\|\mathbf{u}\|+\|\mathbf{v}\|=8.1</m>, <m>\|\mathbf{u}+\mathbf{v}\|=2.2</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{u}=\langle-2,4\rangle</m>, <m>\mathbf{v}=\langle3,-4\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\|\mathbf{u}\|=4.5</m>, <m>\|\mathbf{v}\|=5</m>, <m>\|\mathbf{u}\|+\|\mathbf{v}\|=9.5</m>, <m>\|\mathbf{u}+\mathbf{v}\|=1</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{u}=\langle0,2\rangle</m>, <m>\mathbf{v}=\langle1,3\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\|\mathbf{u}\|=2</m>, <m>\|\mathbf{v}\|=3.2</m>, <m>\|\mathbf{u}+\mathbf{v}\|=5.2</m>, <m>\|\mathbf{u}\|+\|\mathbf{v}\|=5.1</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{u}=\langle-4,-1\rangle</m>, <m>\mathbf{v}=\langle4,-3\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\|\mathbf{u}\|=4.1</m>, <m>\|\mathbf{v}\|=5</m>, <m>\|\mathbf{u}\|+\|\mathbf{v}\|=9.1</m>, <m>\|\mathbf{u}+\mathbf{v}\|=4</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{u}=\langle2,1\rangle</m>, <m>\mathbf{v}=\langle4,2\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\|\mathbf{u}\|=2.2</m>, <m>\|\mathbf{v}\|=4.5</m>, <m>\|\mathbf{u}\|+\|\mathbf{v}\|=6.7</m>, <m>\|\mathbf{u}+\mathbf{v}\|=6.7</m>
+          </p>
+        </answer>
+      </exercise>      
     </exercisegroup>
-    <exercisegroup>
-    
+    <exercisegroup cols="2">
       <introduction>
         <p>
-          Find the unit vector...
+          Given the vector <m>\mathbf{v}</m>, find the unit vector <m>\mathbf{u}</m> in the same direction. Verify that <m>\|\mathbf{u}\|=1</m>.
         </p>
       </introduction>
-    
       <exercise>
         <statement>
           <p>
-            
+            <m>\mathbf{v}=-\mathbf{i}+6\mathbf{j}</m>
           </p>
         </statement>
+        <answer>
+          <p>
+            <m>\mathbf{u}=-\frac{1}{\sqrt{37}}\mathbf{i}+\frac{6}{\sqrt{37}}\mathbf{j}</m>; <m>\|\mathbf{u}\|=1</m>
+          </p>
+        </answer>
       </exercise>
-    
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{v}=4\mathbf{i}-3\mathbf{j}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\mathbf{u}=\frac{4}{5}\mathbf{i}-\frac{3}{5}\mathbf{j}</m>; <m>\|\mathbf{u}\|=1</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{v}=\langle2,-5\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\mathbf{u}=\left\langle\frac{2}{\sqrt{29}},-\frac{5}{\sqrt{29}}\right\rangle</m>; <m>\|\mathbf{u}\|=1</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{v}=\langle3,-2\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\mathbf{u}=\left\langle\frac{3}{\sqrt{13}},-\frac{2}{\sqrt{13}}\right\rangle</m>; <m>\|\mathbf{u}\|=1</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{v}=\langle0,-4\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\mathbf{u}=\left\langle0,-1\right\rangle</m>; <m>\|\mathbf{u}\|=1</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{v}=\langle5,1\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\mathbf{u}=\left\langle\frac{5}{\sqrt{26}},\frac{1}{\sqrt{26}}\right\rangle</m>; <m>\|\mathbf{u}\|=1</m>
+          </p>
+        </answer>
+      </exercise>
     </exercisegroup>
-    <exercisegroup>
-    
+    <exercisegroup cols="2">
       <introduction>
         <p>
-          Find the horiztonal and vertical components givens direction and magnitude...
+          For each problem, the magnitude and direction of vector <m>\mathbf{v}</m> are given. Find the horizontal and vertical components of the vector, <m> v_x </m> and <m> v_y </m>, respectively, and write the answer in the form <m> \mathbf{v} = v_x \mathbf{i} + v_y \mathbf{j} </m>.
         </p>
       </introduction>
-    
       <exercise>
         <statement>
           <p>
-            
+            <m>\|\mathbf{v}\|=2</m>; <m>\theta=135^{\circ}</m>
           </p>
         </statement>
+        <answer>
+          <p>
+            <m> \mathbf{v} = -\sqrt{2} \mathbf{i} + \sqrt{2} \mathbf{j} </m>
+          </p>
+        </answer>
       </exercise>
-    
+      <exercise>
+        <statement>
+          <p>
+            <m>\|\mathbf{v}\|=6</m>; <m>\theta=300^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m> \mathbf{v} = 3 \mathbf{i} - 3\sqrt{3} \mathbf{j} </m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\|\mathbf{v}\|=4</m>; <m>\theta=210^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m> \mathbf{v} = -2\sqrt{3} \mathbf{i} - 2 \mathbf{j} </m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\|\mathbf{v}\|=3</m>; <m>\theta=30^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m> \mathbf{v} = \frac{3\sqrt{3}}{2} \mathbf{i} + \frac{3}{2} \mathbf{j} </m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\|\mathbf{v}\|=5</m>; <m>\theta=120^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m> \mathbf{v} = -\frac{5}{2} \mathbf{i} + \frac{5\sqrt{3}}{2} \mathbf{j} </m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\|\mathbf{v}\|=2</m>; <m>\theta=315
+^{\circ}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m> \mathbf{v} = \sqrt{2} \mathbf{i} - \sqrt{2} \mathbf{j} </m>
+          </p>
+        </answer>
+      </exercise>
+    </exercisegroup>
+    <exercisegroup cols="2">
+      <introduction>
+        <p>
+          Find the magnitude and direction angle of vector <m>\mathbf{v}</m>. Round the answers to one decimal place and express angles in degrees.
+        </p>
+      </introduction>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{v}=2\mathbf{i}+2\mathbf{j}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\|\mathbf{v}\|=2.8</m>; <m>\theta=45^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{v}=-3\mathbf{i}+7\mathbf{j}</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\|\mathbf{v}\|=7.6</m>; <m>\theta=113.2^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{v}=\langle4,-1\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\|\mathbf{v}\|=4.1</m>; <m>\theta=346.0^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{v}=\langle3,4\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\|\mathbf{v}\|=5</m>; <m>\theta=53.1^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{v}=\langle0,-3\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\|\mathbf{v}\|=3</m>; <m>\theta=270^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            <m>\mathbf{v}=\langle-\sqrt{3},-1\rangle</m>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>\|\mathbf{v}\|=2</m>; <m>\theta=210^{\circ}</m>
+          </p>
+        </answer>
+      </exercise>
     </exercisegroup>
 
 
