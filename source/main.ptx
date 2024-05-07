@@ -257,10 +257,10 @@
   <book>
     <title>Trigonometry Through Wayfinding and Navigation Across the Pacific</title>
 
-    <!-- <xi:include href="./front_matter.ptx" />
+    <xi:include href="./front_matter.ptx" />
     <xi:include href="./trigonometric_functions.ptx" />
     <xi:include href="./graphs_of_the_trigonometric_functions.ptx"/>
-    <xi:include href="./analytic_trigonometry.ptx"/> -->
+    <xi:include href="./analytic_trigonometry.ptx"/>
     <xi:include href="./applications_of_trigonometry.ptx"/>
     <xi:include href="./back_matter.ptx"/>
 
