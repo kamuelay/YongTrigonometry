@@ -25,7 +25,7 @@
             \begin{tikzpicture}[scale=0.67]
             \draw[stealth-stealth] (-1,0)--(15,0) node[right]{\(x\)};
             \draw[stealth-stealth] (0,-1)--(0,10) node[above]{\(y\)};
-            \draw[line width=2pt,blue,-stealth](1,3) -- (11,9) node[black,midway,above]{\(\mathbf{v}\)};
+            \draw[line width=2pt,blue,-stealth](1,3) -- (11,9) node[black,midway,above left]{\(\mathbf{v}\)};
             \node[above] at (1,3) {\(P\)};
             \node[above] at (11,9) {\(Q\)};
             \draw[dashed] (1,3)--(1,0) node[below]{\(x_1\)};
@@ -33,7 +33,7 @@
             \draw[dashed] (11,3)--(0,3) node[left]{\(y_1\)};
             \draw[dashed] (11,9)--(0,9) node[left]{\(y_2\)};
             \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](1,3) -- (11,3) node[black,midway,yshift=-0.6cm] { \(v_x=x_2-x_1\)};
-            \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=0.4pt](11,3) -- (11,9) node[black,midway,xshift=2.25cm] { \(v_y=y_2-y_1\)};
+            \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=0.4pt](11,3) -- (11,9) node[black,midway,xshift=1.5cm] { \(v_y=y_2-y_1\)};
             \end{tikzpicture}
           </latex-image>
         </image>
