@@ -40,12 +40,132 @@
       </p>
     </remark>
     <remark>
-      <title>Magnitude of Vectors</title>
+      <title>Calculating Magnitude and Direction with Initial and Terminal Points</title>
       <p>
-        Since the magnitude of a vector is its length, we can use the distance formula to calculate it. Therefore, if <m>\overrightarrow{PQ}</m> is the vector with initial point <m>P=(P_x,P_y)</m> and terminal point <m>Q=(Q_x,Q_y)</m>, we have:
+        Let <m>\overrightarrow{PQ}</m> be the vector with initial point <m>P=(p_x,p_y)</m> and terminal point <m>Q=(q_x,q_y)</m>. The <term>magnitude</term> is a length and we can use the distance formula to calculate it:
         <me>
-          \|\overrightarrow{PQ}\|=\sqrt{(Q_x-P_x)^2+(Q_y-P_y)^2}=\sqrt{5^2+4^2}=\sqrt{41}
-        </me>.        
+          \|\overrightarrow{PQ}\|=\sqrt{(q_x-p_x)^2+(q_y-p_y)^2}
+        </me>.
+      </p>
+      <p>
+        To find the <term>direction</term> (<m>\theta</m>), we will first examine the slope between the initial and terminal points. The slope formula gives us:
+        <me>
+          \mbox{slope}=\frac{\mbox{rise}}{\mbox{run}}=\frac{q_y-p_y}{q_x-p_x}
+        </me>
+      </p>
+      <p>
+        This is shown in the figure below.
+      </p>
+      <image xml:id="fig-vector-geometric-magnitude-direction">
+        <latex-image>
+          \begin{tikzpicture}[scale=0.67]
+          \draw[stealth-stealth] (-1,0)--(15,0) node[right]{\(x\)};
+          \draw[stealth-stealth] (0,-1)--(0,10) node[above]{\(y\)};
+          \draw[line width=2pt,blue,-stealth](1,3) -- (11,9) node[black,midway,above left]{\(\overrightarrow{PQ}\)};
+          \node[above] at (1,3) {\(P\)};
+          \node[above] at (11,9) {\(Q\)};
+          \draw[dashed] (1,3)--(1,0) node[below]{\(p_x\)};
+          \draw[dashed] (11,9)--(11,0) node[below]{\(q_x\)};
+          \draw[dashed] (11,3)--(0,3) node[left]{\(p_y\)};
+          \draw[dashed] (11,9)--(0,9) node[left]{\(q_y\)};
+          \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](1,3) -- (11,3) node[black,midway,yshift=-0.6cm] { run\(=q_x-p_x\)};
+          \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=0.4pt](11,3) -- (11,9) node[black,midway,xshift=1.5cm] { rise\(=q_y-p_y\)};
+          \draw[line width=2pt] (2,3) arc (0:30.97:1) node[pos=0.05,above right] {\(\theta\)};
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+      <p>
+        If rise=0 or run=0, then use the figure to find <m>\theta</m>. If rise<m>\neq0</m> and run<m>\neq0</m>, then by Right Triangle Trigonometry, we have:
+        <me>
+          \tan\theta=\frac{\mbox{rise}}{\mbox{run}}=\frac{q_y-p_y}{q_x-p_x}
+        </me>.
+      </p>
+      <p>
+        Solving for our angle:
+        <me>
+          \theta=\tan^{-1}\left(\frac{\mbox{rise}}{\mbox{run}}\right)=\tan^{-1}\left(\frac{q_y-p_y}{q_x-p_x}\right)
+        </me>
+        where <m>-90^{\circ} \lt \theta \lt 90^{\circ}</m>.
+      </p>
+      <p>
+        Noting the quadrant where <m>\theta</m> lies in, we get:
+      </p>
+      <p>
+        <ul>
+          <li>
+            <p>
+              If <m>\theta</m> is in Quadrant I, then <m>\theta=\tan^{-1}\left(\frac{q_y-p_y}{q_x-p_x}\right)</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>\theta</m> is in Quadrant II or III, then <m>\theta=\tan^{-1}\left(\frac{q_y-p_y}{q_x-p_x}\right)+180^{\circ}</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>\theta</m> is in Quadrant IV, then <m>\theta=\tan^{-1}\left(\frac{q_y-p_y}{q_x-p_x}\right)+360^{\circ}</m>.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </remark>
+    <remark>
+      <title>Calculating Magnitude and Direction with Initial and Terminal Points</title>
+      <p>
+        Let <m>\mathbf{v}</m> be the vector shown in the figure below. Here, the change in the <m>x-</m>direction, known as the <em>run</em>, is denoted by <m>\triagle x</m>, and the change in the <m>y</m>-direction, known as the <em>rise</em>, is denoted by <m>\triangle y</m>. These changes can be determined by counting the distance on the graph.
+      </p>
+      <image xml:id="fig-vector-geometric-graph-magnitude-direction">
+        <latex-image>
+          \begin{tikzpicture}[scale=0.67]
+          \draw[thin,gray!40] (-1,-1) grid (15,10);
+          \draw[stealth-stealth] (-1,0)--(15,0) node[right]{\(x\)};
+          \draw[stealth-stealth] (0,-1)--(0,10) node[above]{\(y\)};
+          \draw[line width=2pt,blue,-stealth](1,3) -- (11,9) node[black,midway,above left]{\(\mathbf{v}\)};
+          \draw[dashed] (11,3)--(11,9);
+          \draw[dashed] (1,3)--(11,3);
+          \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=-0.4pt](1,3) -- (11,3) node[black,midway,yshift=-0.6cm] { run\(=\triangle x\)};
+          \draw [decorate,decoration={brace,amplitude=10pt,mirror},xshift=0.4pt,yshift=0.4pt](11,3) -- (11,9) node[black,midway,xshift=1.5cm] { rise\(=\triangle y\)};
+          \draw[line width=2pt] (2,3) arc (0:30.97:1) node[pos=0.05,above right] {\(\theta\)};
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+      <p>
+        The <term>magnitude</term> is the length of the hypotenuse of the triangle formed. Thus, by the Pythagorean Theorem, 
+      </p>
+      <p>
+        <me>
+          \|\mathbf{v}\|=\sqrt{(\triangle x)^2+(\triangle y)^2}
+        </me>.
+      </p>
+      <p>
+        To find the <term>direction</term> (<m>\theta</m>), first check if <m>\mathbf{v}</m> is parallel to either the <m>x</m>- or <m>y</m>-axis. If it is, then use the graph to determine the direction. If it is not, then by Right Triangle Trigonometry, we have:
+        <me>
+          \theta=\tan^{-1}\left(\frac{\mbox{rise}}{\mbox{run}}\right)=\tan^{-1}\left(\frac{\triangle y}{\triangle x}\right)
+        </me>
+        where <m>-90^{\circ} \lt \theta \lt 90^{\circ}</m>.
+      </p>
+      <p>
+        Noting the quadrant where <m>\theta</m> lies in, we get:
+      </p>
+      <p>
+        <ul>
+          <li>
+            <p>
+              If <m>\theta</m> is in Quadrant I, then <m>\theta=\tan^{-1}\left(\frac{\triangle y}{\triangle x}\right)</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>\theta</m> is in Quadrant II or III, then <m>\theta=\tan^{-1}\left(\frac{\triangle y}{\triangle x}\right)+180^{\circ}</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              If <m>\theta</m> is in Quadrant IV, then <m>\theta=\tan^{-1}\left(\frac{\triangle y}{\triangle x}\right)+360^{\circ}</m>.
+            </p>
+          </li>
+        </ul>
       </p>
     </remark>
     <example>
@@ -88,6 +208,21 @@
               \|\mathbf{v}\|=\sqrt{(3-(-2))^2+(3-(-1))^2}
             </me>
             
+          </p>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Calculate the direction of <m>\mathbf{v}</m>, <m>\theta</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            To find the direction, we have:
+            <me>
+              \theta=\tan^{-1}\left(\frac{3-(-1)}{3-(-2)}\right)=\tan^{-1}\left(\frac{4}{5}\right)\approx38.7^{\circ}
+            </me>.
           </p>
         </solution>
       </task>
@@ -184,7 +319,7 @@
           </me>
         </p>
         <p>
-          Since <m>\overrightarrow{PQ}</m> and <m>\overrightarrow{RS}</m> have the same magnitude and slope, we can conclude that they are equivalent.
+          Given that both vectors <m>\overrightarrow{PQ}</m> and <m>\overrightarrow{RS}</m>  have the same slopes and are directed upwards and to the left, it follows that they have the same direction. Therefore, since they have the same magnitude and direction, we can conclude that <m>\overrightarrow{PQ}</m> and <m>\overrightarrow{RS}</m> are equivalent.
         </p>
       </solution>
     </example>
@@ -714,7 +849,7 @@
     <exercisegroup cols="2">
       <introduction>
         <p>
-          Given the vector <m>\overrightarrow{PQ}</m> with initial point <m>P</m> and terminal point <m>Q</m>, compute the magnitude <m>\|\overrightarrow{PQ}\|</m>.
+          Given the vector <m>\overrightarrow{PQ}</m>, where <m>P</m> is the initial point and <m>Q</m> is the terminal point, compute the magnitude <m>\|\overrightarrow{PQ}\|</m> and the direction <m>\theta</m>. Express the direction in degrees, rounded to one decimal place.
         </p>
       </introduction>
       <exercise>
@@ -727,14 +862,14 @@
               \draw[-stealth] (0,-3) -- (0,6) node[left] {\(y\)};
               \filldraw (-3,-1) circle(1.5pt) node[below] {\(P(-3,-1)\)};
               \filldraw (2,3) circle(1.5pt) node[above] {\(Q(2,3)\)};
-              \draw[line width=2pt,blue,-stealth](-3,-1) -- (2,3) node[midway,above left] {\(\mathbf{u}\)};
+              \draw[line width=2pt,blue,-stealth](-3,-1) -- (2,3) node[midway,above left] {\(\overrightarrow{PQ}\)};
               \end{tikzpicture}
             </latex-image>
           </image>
         </statement>
         <answer>
           <p>
-            <m>\sqrt{41}</m>
+            <m>\sqrt{41}</m>, <m>38.7^{\circ}</m>
           </p>
         </answer>
       </exercise>
@@ -748,14 +883,14 @@
               \draw[-stealth] (0,-3) -- (0,6) node[left] {\(y\)};
               \filldraw (0,4) circle(1.5pt) node[above] {\(P(0,4)\)};
               \filldraw (5,-2) circle(1.5pt) node[below left] {\(Q(5,-2)\)};
-              \draw[line width=2pt,blue,-stealth](0,4) -- (5,-2) node[midway,above right] {\(\mathbf{u}\)};
+              \draw[line width=2pt,blue,-stealth](0,4) -- (5,-2) node[midway,above right] {\(\overrightarrow{PQ}\)};
               \end{tikzpicture}
             </latex-image>
           </image>
         </statement>
         <answer>
           <p>
-            <m>\sqrt{61}</m>
+            <m>\sqrt{61}</m>, <m>309.8^{\circ}</m>
           </p>
         </answer>
       </exercise>
@@ -767,7 +902,7 @@
         </statement>
         <answer>
           <p>
-            <m>\sqrt{37}</m>
+            <m>\sqrt{37}</m>, <m>80.5^{\circ}</m>
           </p>
         </answer>
       </exercise>
@@ -779,7 +914,7 @@
         </statement>
         <answer>
           <p>
-            <m>\sqrt{5}</m>
+            <m>\sqrt{5}</m>, <m>333.4^{\circ}</m>
           </p>
         </answer>
       </exercise>
@@ -791,7 +926,7 @@
         </statement>
         <answer>
           <p>
-            <m>\sqrt{65}</m>
+            <m>\sqrt{65}</m>, <m>330.3^{\circ}</m>
           </p>
         </answer>
       </exercise>
@@ -803,7 +938,7 @@
         </statement>
         <answer>
           <p>
-            <m>\sqrt{34}</m>
+            <m>\sqrt{34}</m>, <m>121.0^{\circ}</m>
           </p>
         </answer>
       </exercise>
@@ -815,7 +950,7 @@
         </statement>
         <answer>
           <p>
-            <m>\sqrt{17}</m>
+            <m>\sqrt{17}</m>, <m>194.0^{\circ}</m>
           </p>
         </answer>
       </exercise>
@@ -827,7 +962,7 @@
         </statement>
         <answer>
           <p>
-            <m>\sqrt{29}</m>
+            <m>\sqrt{29}</m>, <m>338.2^{\circ}</m>
           </p>
         </answer>
       </exercise>
