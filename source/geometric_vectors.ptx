@@ -113,7 +113,7 @@
     <remark>
       <title>Calculating Magnitude and Direction with Initial and Terminal Points</title>
       <p>
-        Let <m>\mathbf{v}</m> be the vector shown in the figure below. Here, the change in the <m>x-</m>direction, known as the <em>run</em>, is denoted by <m>\triagle x</m>, and the change in the <m>y</m>-direction, known as the <em>rise</em>, is denoted by <m>\triangle y</m>. These changes can be determined by counting the distance on the graph.
+        Let <m>\mathbf{v}</m> be the vector shown in the figure below. Here, the change in the <m>x-</m>direction, known as the <em>run</em>, is denoted by <m>\triangle x</m>, and the change in the <m>y</m>-direction, known as the <em>rise</em>, is denoted by <m>\triangle y</m>. These changes can be determined by counting the distance on the graph.
       </p>
       <image xml:id="fig-vector-geometric-graph-magnitude-direction">
         <latex-image>

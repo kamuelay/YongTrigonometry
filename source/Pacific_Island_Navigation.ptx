@@ -3,7 +3,7 @@
   <title>Pacific Island Navigation</title>
     <introduction>
   <p>
-    Pacific Islanders have been navigating across long distances in the Pacific for centuries, even before the use of magnetic compasses or modern instruments. They relied on observations of celestial bodies, such as stars and the sun, as well as natural elements like ocean patterns, winds, bird behaviors, and other environmental cues to determine their position relative to known landmarks such as islands, reefs, and continents. Over time, much of this traditional navigational knowledge was lost in many parts of the Pacific. However, some islands, particularly in Micronesia and on Taumako Island in the Solomon Islands, managed to preserve the art and science of traditional navigation. These places continued to uphold the practice, teaching new generations to build ocean-going canoes and develop navigational skills based on profound knowledge of the natural world.
+    For centuries, voyagers have navigated vast distances across the Pacific, long before the use of magnetic compasses or modern instruments. They relied on observations of celestial bodies, such as stars and the sun, as well as natural elements like ocean patterns, winds, bird behaviors, and other environmental cues to determine their position relative to known landmarks such as islands, reefs, and continents. Over time, much of this traditional navigational knowledge was lost in many parts of the Pacific. However, some islands, particularly in Micronesia and on Taumako Island in the Solomon Islands, managed to preserve the art and science of traditional navigation. These places continued to uphold the practice, teaching new generations to build ocean-going canoes and develop navigational skills based on profound knowledge of the natural world.
   </p>
     </introduction>
   <subsection xml:id="subsec-Micronesia">
@@ -13,14 +13,14 @@
       Navigators in Micronesia utilize the <em>paafu</em><idx><h>Star Compass</h><h>paafu</h></idx><idx>paafu</idx> mat or map (shown in <xref ref="paafu-mat">Figure</xref>). It is often misunderstood and misinterpreted as a Star <q>Compass</q> due to its use of stars and constellations for direction finding. However, paafu serves a different purpose and is not equivalent to the cardinal directionality marked by compasses (North, South, East, and West). Instead, it is a learning and teaching tool designed to teach the locational positions of islands, locales, or canoes relative to other places. This is achieved by observing the rising and setting points of stars and constellations, which act as markers for different locations.
     </p>
     <figure xml:id="paafu-mat">
-      <caption>Paafu mat or map - Photo courtesy of Kānehūnāmoku Voyaging Academy</caption>
+      <caption>Paafu mat or map - Photo courtesy of Kānehūnāmoku Voyaging Academy.</caption>
       <image source="paafu-mat.jpg"/>
     </figure>
     <p>
-      A constellation is a cluster of stars whose shapes and meanings reflect and carry cultural significance. In modern society, a well-known cluster of stars in the southern hemisphere, shaped like a cruciform, is commonly referred to as the <q>Southern Cross.</q> However, for the Polowatese and other islanders from the Central Carolines region in the western Pacific islands, this same constellation resembles the triggerfish, and so it is named accordingly.
+      A constellation is a cluster of stars whose shapes and meanings reflect and carry cultural significance. In modern society, a well-known cluster of stars in the southern hemisphere, shaped like a cruciform, is commonly referred to as the <q>Southern Cross.</q> However, for the people of Polowat and others from the Central Carolines region in the western Pacific, this same constellation resembles the triggerfish and is named accordingly.
     </p>
     <p>
-      In the Central Carolines, the general location in the celestial sky where stars appear to rise after sundown is referred to as <q><em>tan</em>.</q> This term is often mistakenly translated as <q>east</q> due to the modern association of stars (like the sun) with <q>rising</q> in the east. However, it's important to note that <q>tan</q> means <q>rising</q> and not <q>eastward.</q>
+      In the Central Carolines, the general location in the celestial sky where stars appear to rise after sundown is referred to as <q><em>tan</em>.</q> This term is often mistakenly translated as <q>east</q> due to the modern association of stars (like the sun) with <q>rising</q> in the east. However, it is important to note that <q>tan</q> means <q>rising</q> and not <q>eastward.</q>
     </p>
     <figure xml:id="paafu">
       <caption>The paafu, or Micronesian Star Compass. Stars are identified using the Polowat dialect of the Chuukese language as it is used by members of the Weriyeng School of navigation.</caption>
@@ -138,7 +138,7 @@
       In the paafu <q>map</q> shown in <xref ref="paafu">Figure</xref>, a canoe is placed at the center, and the star called Mailap (Altair) marks due east. The time and location when Mailap rises are referred to as <q>Tan Mailap</q> (rising Mailap), while the time and place it sets are referred to as <q>Tolon Mailap</q> (setting Mailap). The map's orientation places east, or the rising points of the navigation or paafu stars, at the top of the circle, and west, or the setting points of these stars, at the bottom of the circle. As a map, paafu uses the rising and setting points of stars to mark places around a given locale, which is placed at the center of the circle. <xref ref="tab_paafu">Table</xref> displays the star and constellation names, provided in both Polowat and according to the International Astronomical Union, listed in the order of their rising during the third week of March in Polowat.
     </p>
     <table xml:id="tab_paafu">
-      <title>Star and constellation names in Polowat</title>
+      <title>Star and constellation names in Polowat.</title>
       <tabular>
         <row bottom="minor">
           <cell></cell>
@@ -179,7 +179,7 @@
         <row>
           <cell>Machemeas [Matche-may-ess] </cell>
           <cell> Crux or S. Cross at <m>45^{\circ}</m> <fn>
-            The <q>Tan</q> prefix is not used for this position, because it is no longer rising
+            The <q>Tan</q> prefix is not used for this position, because it is no longer rising.
             </fn></cell>
         </row>
         <row>
@@ -216,7 +216,7 @@
         </row>
         <row>
           <cell>Tan Ukinik [Icky Nick] </cell>
-          <cell> Cassioepea</cell>
+          <cell> Cassiopeia</cell>
         </row>
               <row bottom="minor">
           <cell></cell>
@@ -225,7 +225,7 @@
       </tabular>
     </table>
     <p>
-      Paafu can also be used to identify the direction in which moving objects, such as canoes, or creatures like birds, fish, and humans, are heading or coming from. This version of paafu utilizes the Polowat dialect of the Chuukese language, as used by members of the Weriyeng School of navigation.
+      Paafu can also be used to identify the direction in which moving objects, such as canoes, or creatures such as birds, fish, and humans, are heading or coming from. This version of paafu utilizes the Polowat dialect of the Chuukese language, as used by members of the Weriyeng School of navigation.
     </p>
     
 
@@ -237,7 +237,7 @@
       With the aim of reviving wayfinding in Hawaiʻi, Nainoa Thompson journeyed to the island of Satawal in the Federated States of Micronesia to learn from master navigator Mau Piailug, affectionately known as Papa Mau. Using this knowledge, Thompson adopted the paafu method, leading to the creation of the Hawaiian Star Compass<idx><h>Star Compass</h><h>Hawaiian</h></idx>, also referred to as the <em>Kūkuluokalani</em><idx><h>Kūkuluokalani</h></idx> (<xref ref="star-compass-32-compass-rose">Figure</xref>).
     </p>
   <p>
-    In the star compass, featuring the figure of an ʻiwa or great frigatebird at its center, Thompson divides the visual horizon into 32 equidistant points around a circle, referred to as houses. Each house in the Hawaiian Star Compass represents a specific space on the horizon (<m>11.25^{\circ}</m>) where celestial bodies such as the sun, stars, moon, and planets rise and set. In the same way that we use addresses to locate homes, each celestial body has its own address represented by these houses.
+    In the star compass, featuring the figure of an ʻiwa or great frigatebird at its center, Thompson divides the visual horizon into 32 equidistant points around a circle, referred to as houses. Each house in the Hawaiian Star Compass represents a distinct segment of the horizon—an arc of <m>11.25^{\circ}</m>—where celestial bodies such as the sun, stars, moon, and planets rise and set. In the same way that we use addresses to locate homes, each celestial body has its own address represented by these houses.
   </p>
   <figure xml:id="star-compass-32-compass-rose">
     <caption>Hawaiian Star Compass, also known as the Kūkuluokalani.</caption>
@@ -537,7 +537,7 @@
     </tabular>
   </table>
   <p>
-    Celestial bodies move along parallel paths across the sky from East to West, rising and setting in the same house, remaining in its hemisphere. For example, if a star arrives in the Koʻolau (northeastern) quadrant in the star house ʻĀina, it will arc overhead, staying in the northern hemisphere, and enter the horizon in the same house it arrived in, ʻĀina, but in the Hoʻolua (northwestern) quadrant (see <xref ref="fig_celestial-sphere"/>). Similarly, if a star arrives in the Malanai (southeastern) quadrant in the house Lā, it will remain in the southern hemisphere as it arcs overhead and enters the horizon in the house Lā in the Kona (southwestern) quadrant.
+    Celestial bodies move along parallel paths across the sky from East to West, rising and setting in the same house, remaining in the same hemisphere. For example, if a star arrives in the Koʻolau (northeast) quadrant in the star house ʻĀina, it will arc overhead, staying in the northern hemisphere, and enter the horizon in the same house it arrived in, ʻĀina, but in the Hoʻolua (northwest) quadrant (see <xref ref="fig_celestial-sphere"/>). Similarly, if a star arrives in the Malanai (southeast) quadrant in the house Lā, it will remain in the southern hemisphere as it arcs overhead and enters the horizon in the house Lā in the Kona (southwest) quadrant.
   </p>
   <figure xml:id="fig_celestial-sphere">
     <caption>
