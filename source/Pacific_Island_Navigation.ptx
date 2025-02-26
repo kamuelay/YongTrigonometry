@@ -553,7 +553,7 @@
   </p>
 
   <p>
-    The canoe itself can serve as a compass, as shown in <xref ref="compass-bearings-on-canoe"/>. From the navigator's seat on either corner of the stern (back) of the deck, you can observe features like the rising sun and mark its position on the Star Compass located on the canoe. It's essential to note that the locations of the houses on this Star Compass are in relation to the canoe, not to a fixed map. For instance, only when the canoe is pointed towards the north will Hikina (East) be the house to the right. Depending on the canoe's orientation, at other times, Hikina may appear several houses further up the deck.
+    The canoe itself can serve as a compass, as shown in <xref ref="compass-bearings-on-canoe"/>. From the navigator's seat on either corner of the stern (back) of the deck, we can observe features such as the rising sun and mark their positions on the Star Compass located on the canoe. It is important to note that the locations of the houses on this Star Compass are in relation to the canoe, not to a fixed map. For instance, only when the canoe is pointed towards the north will Hikina (East) be the house to the right. Depending on the canoe's orientation, at other times, Hikina may appear several houses further up the deck.
   </p>
   <figure xml:id="compass-bearings-on-canoe">
     <caption>The deck of a canoe can be used as a compass to help crew and navigators.</caption>
@@ -834,7 +834,7 @@
       </sidebyside>
       <sidebyside>
         <figure xml:id="samoan-star-compass-32-compass-rose"><idx><h>Star Compass</h><h>S&#257;moan</h></idx>
-          <caption>S&#257;moan.</caption>
+          <caption>S&#257;moa.</caption>
           <image xml:id="fig-samoan-star-compass-32-compass-rose">
             <latex-image>
       \begin{tikzpicture}[x=5.3cm,y=5.3cm,cap=round]
@@ -1047,7 +1047,7 @@
     <exercisegroup cols="2">
       <introduction>
         <p>
-          For each direction, identify the Hawaiian names of the corresponding house and quadrant in the Hawaiian Star Compass
+          For each direction, identify the Hawaiian names of the corresponding house and quadrant in the Hawaiian Star Compass.
         </p>
       </introduction>
       <exercise>
@@ -1174,7 +1174,7 @@
     <exercisegroup cols="2">
       <introduction>
         <p>
-          Identify the corresponding point on the 32-wind compass for each house on the Hawaiian Star Compass
+          Identify the corresponding point on the 32-wind compass for each house on the Hawaiian Star Compass.
         </p>
       </introduction>
       <exercise>
@@ -1301,7 +1301,7 @@
     <exercise>
       <statement>
         <p>
-          The winter solstice in the southern hemisphere occurs around June 22. It is the time when the sun is at its lowest elevation in the sky, resulting in the shortest daylight of the year. During the winter solstice, the sun rises from its northernmost position, ʻĀina Koʻolau. In what house does the sun set during the winter solstice in the southern hemisphere?
+          The winter solstice in the southern hemisphere occurs around June 22. It is the time when the sun is at its lowest elevation in the sky, resulting in the shortest daylight of the year. During the winter solstice, the sun rises from its northernmost position, ʻĀina Koʻolau. In which house does the sun set during the winter solstice in the southern hemisphere?
         </p>
       </statement>
       <answer>
@@ -1325,7 +1325,7 @@
     <exercise>
       <statement>
         <p>
-          Wind is coming from Nā Leo Kona. In what direction is the wind blowing?
+          Wind is coming from Nā Leo Kona. In which direction is the wind blowing?
         </p>
       </statement>
       <answer>
@@ -1337,7 +1337,7 @@
     <exercise>
       <statement>
         <p>
-          Current is coming from Noio Hoʻolua. In what direction is the current heading?
+          Current is coming from Noio Hoʻolua. In which direction is the current heading?
         </p>
       </statement>
       <answer>
