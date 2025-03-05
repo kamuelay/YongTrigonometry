@@ -282,7 +282,7 @@
           <idx>
             <h>quadrantal angle</h>
           </idx> if the terminal side lies on <m>x</m>-axis or <m>
-          y</m>-axis. The two axes divide the plane into four <term>quadrants</term>.<idx><h>quadrants</h></idx> In the Cartesian plane, the four quadrants are Quadrant I, II, III, and IV. The corresponding quadrants of Star Compass are Ko&#699;olau (NE), Ho&#699;olua (NW), Kona (SE), and Malanai (SW).
+          y</m>-axis. The two axes divide the plane into four <term>quadrants</term>.<idx><h>quadrants</h></idx> In the Cartesian plane, the four quadrants are Quadrant I, II, III, and IV. The corresponding quadrants of Star Compass are Koʻolau (NE), Hoʻolua (NW), Kona (SE), and Malanai (SW).
         </p>
         <image xml:id="fig-quadrants-star-compass" width="50%">
           <latex-image>
@@ -334,7 +334,7 @@
         </statement>
         <solution>
           <p>
-            Since <m>90^{\circ}\lt 140^{\circ}\lt 180^{\circ}</m>, <m>140^{\circ}</m> lies in Quadrant II, or Manu Ho&#699;olua.
+            Since <m>90^{\circ}\lt 140^{\circ}\lt 180^{\circ}</m>, <m>140^{\circ}</m> lies in Quadrant II, or Manu Hoʻolua.
           </p>
         </solution>
       </task>
@@ -362,7 +362,7 @@
           <p>
             Since <m>923^{\circ}>360^{\circ}</m> we begin by subtracting <m>2\times360^{\circ}</m>
             <me>923^{\circ}-2\times360^{\circ}=203^{\circ}.</me>
-            So <m>203^{\circ}</m> and <m>923^{\circ }</m> are coterminal. Since <m>180^{\circ}\lt 203^{\circ}\lt 270^{\circ}</m>, <m>923^{\circ}</m> lies in Quadrant III or &#699;&#256;ina Kona.
+            So <m>203^{\circ}</m> and <m>923^{\circ }</m> are coterminal. Since <m>180^{\circ}\lt 203^{\circ}\lt 270^{\circ}</m>, <m>923^{\circ}</m> lies in Quadrant III or ʻĀina Kona.
           </p>
         </solution>
       </task>
@@ -554,10 +554,10 @@
         </image>
       </figure>
       <p>
-        In astronomy and navigation, the position of a celestial body as it rises or sets on the horizon can be measured using the <term>azimuth</term><idx>azimuth</idx>, which indicates the direction of the celestial body relative to an observer's position. Similar to heading, azimuth starts from the north and increases clockwise.
+        In astronomy and navigation, the <term>azimuth</term><idx>azimuth</idx> is the angular measurement of the direction of a celestial body relative to an observer's position, typically measured from the north and increasing clockwise along the horizon. The azimuth helps determine the position of celestial bodies relative to the observer's location, measured along the horizon.
       </p>
       <p>
-        In navigation, <q>heading</q> typically denotes the direction an object like a canoe or wind is pointed, whereas <q>azimuth</q> pertains to the angular measurement of celestial bodies on the horizontal plane. Both <q>heading</q> and <q>azimuth</q> measure angles in degrees, beginning from north and progressing clockwise. Unless specified otherwise to use the heading or azimuth angle (in which case, refer to <xref ref="star-compass-with-heading-angles">Figure</xref>), this book will use <xref ref="star-compass-with-angles">Figure</xref> for the angles of the Star Compass.
+        In navigation, <q>heading</q> typically refers to the direction in which an object, such as a canoe or wind, is pointed. In contrast, <q>azimuth</q> pertains to the angular measurement of celestial bodies relative to the horizon. Both <q>heading</q> and <q>azimuth</q> measure angles in degrees, starting from north and progressing clockwise. Unless specified otherwise, this book uses <xref ref="star-compass-with-angles">Figure</xref> for the angles of the Star Compass; for heading or azimuth angles, refer to <xref ref="star-compass-with-heading-angles">Figure</xref>.
       </p>
     </remark>
   </subsection>
@@ -1461,7 +1461,7 @@
       </exercise>
       <exercise>
         <statement>
-          <p>Between &#699;Āina and Noio (<m>28.175^{\circ}</m>) </p>
+          <p>Between ʻĀina and Noio (<m>28.175^{\circ}</m>) </p>
         </statement>
         <answer>
           <p><m>28^{\circ}10'30''</m></p>
@@ -2567,7 +2567,7 @@
         <task>
           <statement>
             <p>
-              What is the azimuth of the Sun? Remember, the azimuth is the angular measurement from North, measuredclockwise.
+              What is the azimuth of the Sun on May 22? Remember, the azimuth is the angular measurement from North, measuredclockwise.
             </p>
           </statement>
           <answer>
@@ -2608,7 +2608,7 @@
         <task>
           <statement>
             <p>
-              If the canoe is sailing with the rising sun on the port side (left) and the navigator measures the angle between the direction of the canoe and the sun as being <m>90^{\circ}</m>, what is the heading of the canoe?
+              If the canoe is sailing with the rising Sun on the port side (the left side of the canoe when facing forward), and the navigator measures the angle between the direction of the canoe and the Sun as <m>90^{\circ}</m>, what is the heading of the canoe? Recall that heading is the angle measured clockwise from North.
             </p>
           </statement>
           <answer>
@@ -2631,57 +2631,40 @@
         </task>
     </exercise>
     <exercise>
-      <statement>
+      <introduction>
         <p>
-          Swells are one of the most consistent navigational tools used to keep on a course because they can remain constant over time. On 27 May 2023, while sailing on the vaka Paikea from Rarotonga to Apia, you finished your shift and are ready to take a nap. Before you lay down, you take note that the canoe has a heading of <m>310^{\circ}</m> and the swells are coming from the southwest (Manu Kona) and hitting the canoe at <m>5^{\circ}</m> above directly left of the canoe. When you wake, you noticed the swells are now hitting the canoe from <m>25^{\circ}</m> to the left of your heading. You are aware that the swells couldn't have changed this fast and conclude that while you were asleep, the canoe changed its heading. Assuming the swell was constant, determine your new heading.
+          Swells are one of the most consistent navigational tools used to keep on a course because they can remain constant over time. On 27 May 2023, while sailing on the vaka Paikea from Rarotonga to Apia, you finished your watch (your assigned shift) and are ready to take a nap. Before you lie down, you take note that the canoe has a heading of <m>310^{\circ}</m> and the swells are coming from the southwest (Manu Kona) and hitting the canoe at <m>5^{\circ}</m> above directly left of the canoe.
         </p>
-      </statement>
-      <hint>
-        <p>
-          <ol>
-            <li>
-              <p>
-                Start by drawing a diagram that represents the heading of the canoe before the nap. Mark the initial heading as <m>^{\circ}</m>>.
-              </p>
-            </li>
-            <li>
-              <p>
-                Next, draw the direction of the swells with respect to the canoe on the same diagram. The swells are coming from the southeast (Manu Kona) and hitting the canoe at <m>^{\circ}</m>> above straight from the left of the canoe.
-              </p>
-            </li>
-            <li>
-              <p>
-                Now, draw another diagram of the swells and the canoe, but this time, represent the swells hitting the canoe from <m>^{\circ}</m>> to the left of straight in front (Nā Leo Hoʻolua).
-              </p>
-            </li>
-            <li>
-              <p>
-                Observe that the swells couldn't have changed direction so fast while you were asleep. Thus, the change in the direction of the swells must be due to the canoe changing its heading.
-              </p>
-            </li>
-            <li>
-              <p>
-                Use the relationship between the angle of the swell and the angle between the swell and the canoe to determine the angle by which the canoe's heading changed.
-              </p>
-            </li>
-            <li>
-              <p>
-                Finally, update the initial heading of 310 degrees with the angle of change to find the new heading of the canoe after the nap.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </hint>
-      <answer>
-        <p>
-          <m>250^{\circ}</m>
-        </p>
-      </answer>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            What is the heading of the swell?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>225^{\circ}</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            When you wake, you noticed the swells are now hitting the canoe from <m>25^{\circ}</m> to the left of your heading. You are aware that the swells could not have changed this fast and conclude that while you were asleep, the canoe changed its heading. Assuming the swell was constant, determine your new heading.
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <m>250^{\circ}</m>
+          </p>
+        </answer>
+      </task>
     </exercise>
     <exercise>
       <statement>
         <p>
-          After spending 6 weeks in Samoa, vaka Paikea is making his way back from Apia to Rarotonga. On July 14, 2023, the canoe is sailing with a heading of <m>50^{\circ}</m>, and the wind is coming to the canoe from <m>60^{\circ}</m> to the right of the your heading. What is the heading and house from which the wind is coming?
+          After spending six weeks in Samoa, vaka Paikea is making his way back from Apia to Rarotonga. On July 14, 2023, the canoe is sailing with a heading of <m>50^{\circ}</m>, and the wind is coming to the canoe from <m>60^{\circ}</m> to the right of the heading. What is the heading and house from which the wind is coming?
         </p>
       </statement>
       <answer>
