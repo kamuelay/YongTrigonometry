@@ -1683,7 +1683,7 @@
         </statement>
         <answer>
           <p>
-            <m>\theta=\frac{83\pi}{45}</m> ʻĀina Koʻolau </p>
+            <m>\theta=\frac{83\pi}{45}</m> ʻĀina Malanai </p>
         </answer>
       </exercise>
     </exercisegroup>
@@ -1819,6 +1819,7 @@
               \filldraw[blue] (1,0) circle(1pt);
               \filldraw[blue] (800:1.2) circle(1pt);
               \draw[blue] (0,0) -- (1,0);
+              \draw[blue] (0,0) -- (800:1.2);
               \draw [-stealth,domain=0:13.962634016,variable=\t,smooth,samples=75]
               plot ({\t r}: {0.1+0.05*\t});
               \end{tikzpicture}
@@ -2118,7 +2119,7 @@
         </answer>
       </exercise>
     </exercisegroup>
-    <exercisegroup cols="4">
+    <exercisegroup cols="3">
       <introduction>
         <p>
           Determine whether the two given angles in standard position are coterminal.
@@ -2144,7 +2145,7 @@
         </statement>
         <answer>
           <p>
-            Yes
+            No
           </p>
         </answer>
       </exercise>
@@ -2156,7 +2157,7 @@
         </statement>
         <answer>
           <p>
-            No
+            Yes
           </p>
         </answer>
       </exercise>
@@ -2200,7 +2201,7 @@
     <exercisegroup cols="3">
       <introduction>
         <p>
-          Find an angle between <m>0^{\circ}</m> and <m>360^{\circ}</m> that is coterminal with the given angle
+          Find an angle between <m>0^{\circ}</m> and <m>360^{\circ}</m> that is coterminal with the given angle.
         </p>
       </introduction>
       <exercise>
@@ -2315,7 +2316,7 @@
             <ol>
               <li>
                 <p>
-                  <m>2.0944</m> m; </p>
+                  <m>10.4720</m> m; </p>
               </li>
               <li>
                 <p>
@@ -2372,14 +2373,14 @@
     <exercisegroup>
       <introduction>
         <p>
-          At the start of this section, you learned that the <term>latitude</term> <idx><h>latitude</h></idx> of a place is the angle between a line drawn from the center of the earth to that point and the equatorial plane. If the radius of the Earth is 3,959 miles, calculate the arc length, <m>s</m>, along the surface of the earth for each value of <m>\theta</m>:
+          At the start of this section, we learned that the <term>latitude</term> <idx><h>latitude</h></idx> of a place is the angle between a line drawn from the center of the earth to that point and the equatorial plane. If the radius of the Earth is 3,959 miles, calculate the arc length, <m>s</m>, along the surface of the earth for each value of <m>\theta</m>.
         </p>
         <image width="75%" source="fig-globe" />
       </introduction>
       <exercise>
         <statement>
           <p>
-            <m>\theta=1^{\circ}</m> of latitude (in miles, rounded to 2 decimals)
+            <m>\theta=1^{\circ}</m> of latitude (in miles, rounded to 2 decimals).
           </p>
         </statement>
         <answer>
@@ -2390,7 +2391,7 @@
       <exercise>
         <statement>
           <p>
-            <m>\theta=1'</m> of latitude (in miles, rounded to 2 decimals). A <em>nautical mile</em>, <idx><h>nautical mile</h></idx> frequently used in navigation, is slightly longer than a mile on land. One nautical mile was historically defined to be the arc length corresponding to one minute of latitude. Check your answer with the value of one nautical mile.
+            <m>\theta=1'</m> of latitude (in miles, rounded to 2 decimals). A <em>nautical mile</em>, <idx><h>nautical mile</h></idx> frequently used in navigation, is slightly longer than a mile on land. One nautical mile was historically defined to be the arc length corresponding to one minute of latitude. Compare your result with the accepted value of one nautical mile.
           </p>
         </statement>
         <answer>
@@ -2402,7 +2403,7 @@
       <exercise>
         <statement>
           <p>
-            <m>\theta=1''</m> of latitude (in feet, rounded to the nearest integer).
+            <m>\theta=1''</m> of latitude (in feet, rounded to the nearest integer). Note that 1 mile is equivalent to 5,280 feet.
           </p>
         </statement>
         <answer>
@@ -2415,7 +2416,7 @@
     <exercise>
       <introduction>
         <p>
-          The <em>oeoe</em>, or Hawaiian bullroarer, is made by drilling holes into a kamani seed or coconut shell, then threading a long string through the holes to secure it. When the oeoe is swung by the string, a whistling sound is produced, similar to the sound of the  wind on the top of mountains. If a girl is swinging an oeoe at the end of 3 foot long rope at a rate of 180 revolutions per minute, calculate 
+          The <em>oeoe</em>, or Hawaiian bullroarer, is made by drilling holes into a kamani seed or coconut shell, then threading a long string through the holes to secure it. When the oeoe is swung by the string, a whistling sound is produced, similar to the sound of the  wind on the top of mountains. If a girl is swinging an oeoe at the end of 3 foot long rope at a rate of 180 revolutions per minute, calculate:
         </p>
       </introduction>
       <task>
@@ -2445,7 +2446,7 @@
     <exercise>
       <introduction>
         <p>
-          Earth completes one rotation around the Sun approximately every 365.25 days. We will assume the orbit is a circle, and that the Earth is  <m>92.9</m> million miles from the Sun.
+          The Earth completes one revolution around the Sun approximately every 365.25 days. We will assume the orbit is a circle, and that the Earth is <m>92.9</m> million miles from the Sun.
         </p>
       </introduction>
       <task>
@@ -2456,7 +2457,7 @@
         </statement>
         <hint>
           <p>
-            First determine the angle or proportion of a rotation that Earth travels in one day, then calculate the arc length of Earth's orbit.
+            First determine the angle or proportion of a revolution that Earth travels in one day, then calculate the arc length of Earth's orbit.
           </p>
         </hint>
         <answer>
@@ -2478,7 +2479,7 @@
       <task>
         <statement>
           <p>
-            How far does the Earth travel in one rotation around the sun, expressed as millions of miles?
+            How far does the Earth travel in one revolution around the sun, expressed as millions of miles?
           </p>
         </statement>
         <answer>
@@ -2501,7 +2502,7 @@
     <exercise>
       <statement>
         <p>
-          As the the moon orbits the Earth, different parts of its surface become illuminated by the Sun which we call moon phases. <idx><h>moon phases</h></idx> The moon completes one rotation about Earth in
+          As the moon orbits the Earth, different parts of its surface become illuminated by the Sun, which we call moon phases. <idx><h>moon phases</h></idx> The moon completes one revolution about the Earth in
           approximately 27.3 days. If we assume its orbit is circular and the moon is 239,000 miles from Earth, calculate the linear speed of the moon, expressed as miles per hour.
         </p>
       </statement>
@@ -2512,12 +2513,12 @@
     <exercise>
       <statement>
         <p>
-          At <m>17.7^{\circ}</m> S latitude, the city of Nadi, Fiji is <m>6,071</m> km from the Earth's axis of rotation. In 24 hours, Nadi will have traveled one rotation around Earth or <m>2\pi\cdot(6, 071)</m> km. The city of Port Vila, Vanuatu lies 967 km directly to the west of Nadi, Fiji. As the Earth rotates, how many minutes sooner will the people of Nadi see the Sun rise than the people in Port Vila, rounded to one decimal?
+          At <m>17.7^{\circ}</m> S latitude, the city of Nadi, Fiji is <m>6,071</m> km from the Earth's axis of rotation. In 24 hours, Nadi will have traveled one revolution around Earth or <m>2\pi\cdot(6, 071)</m> km. The city of Port Vila, Vanuatu lies 967 km directly to the west of Nadi, Fiji. As the Earth rotates, how many minutes sooner will the people in Nadi see the Sun rise than the people in Port Vila, rounded to one decimal?
         </p>
       </statement>
       <hint>
         <p>
-          The proportion of distance between the two cities to the distance traveled in one rotation is the same as the proportion of the time it takes to see the sun between the two cities to time it takes to complete one rotation.
+          The proportion of distance between the two cities to the distance traveled in one rotation is the same as the proportion of the time it takes to see the sun between the two cities to time it takes to complete one revolution.
         </p>
       </hint>
       <answer>
@@ -2527,7 +2528,7 @@
     <exercise>
       <introduction>
         <p>
-          In <xref ref="example-sail-into-wind">Example</xref>, we learned that wa‘a cannot sail directly into the wind. For each of the following wa‘a and distance traveled, determine the area of the sector that cannot be sailed? Recall that 1 house = <m>11.25^{\circ}</m>. Round your answer  to the nearest square mile.  
+          In <xref ref="example-sail-into-wind">Example</xref>, we learned that wa‘a cannot sail directly into the wind. For each of the following canoes and distance traveled, determine the area of the sector that cannot be sailed? Recall that 1 house = <m>11.25^{\circ}</m>. Round your answer  to the nearest square mile.  
         </p>
       </introduction>
       <task>
@@ -2560,13 +2561,13 @@
             The position of the rising or setting sun changes throughout the year. <term>Solar declination</term><idx><h>solar declination</h></idx><idx><h>declination</h><h>solar</h></idx> (denoted as <m>\delta</m>) is the angle between the direction where the Sun rises (or sets) and due east (or due west) on the horizon. It represents how far north or south the Sun is from the celestial equator, projected onto the Earth's equatorial plane. Solar declinations to the north are positive, while those to the south are negative. At the Equinoxes (around March 20th and September 22nd), the solar declination is <m>0^{\circ}</m> (<m>\delta=0^{\circ}</m>), as the Sun is directly above the equator. During the December solstice, around December 22, the Sun rises from its most southern position, 23.5 degrees south of due east (<m>\delta=-23.5^{\circ}</m>), and during the June solstice, around June 22, the Sun rises from its most northern position, 23.5 degrees north of due east (<m>\delta=23.5^{\circ}</m>).
           </p>
           <p>
-            A navigator can use their knowledge of the rising sun to help orient themselves. For example, on May 22, the solar declination is <m>\delta=20^{\circ}16'</m>. If the navigator identifies where the Sun rises on the equinox, she can measure <m>20^{\circ}16'</m> south to identify East and can then orient herself accordingly.
+            A navigator can use their knowledge of the rising sun to help orient themselves. For example, on May 22, the solar declination is <m>\delta=20^{\circ}16'</m>. If the navigator identifies where the Sun rises on the horizon during the Equinox, she can measure <m>20^{\circ}16'</m> south of that point to identify East and then orient herself accordingly.
           </p>
         </introduction>
         <task>
           <statement>
             <p>
-              What is the azimuth of the sun?
+              What is the azimuth of the Sun? Remember, the azimuth is the angular measurement from North, measuredclockwise.
             </p>
           </statement>
           <answer>
