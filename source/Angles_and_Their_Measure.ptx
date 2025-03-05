@@ -11,7 +11,7 @@
         \draw[line width=2pt] (0,0) -- (1.1,0) node[right,xshift=0.1] {Horizon};
         \draw[line width=2pt] (0,0) -- (30:1.2);
         \draw[line width=2pt] (0:0.3) arc (0:30:0.3) node[midway, right,xshift=0.05,yshift=2.7]
-        {Angle of H\={o}k\={u}pa`a};
+        {Angle of Hōkūpa`a};
         \node [black,scale=1.5] at (30:1.25) {\(\bigstar\)};
         \node [yellow] at (30:1.25) {\(\bigstar\)};
         \node at (1.27,0.63) {Hokupa`a};
@@ -90,7 +90,7 @@
           % draw the unit circle
           \draw[thick] (0cm,0cm) circle(1cm);
           \draw[left] (0:0.98) node{\large HIKINA};
-          \draw[left] (90:0.98) node[rotate=90] {\large `\={A}KAU};
+          \draw[left] (90:0.98) node[rotate=90] {\large `ĀKAU};
           \draw[right] (180:0.98cm) node{\large KOMOHANA};
           \draw[left] (270:0.98) node[rotate=-90] {\large HEMA};
           \foreach \x in {5.625,16.875,...,90} {
@@ -118,36 +118,36 @@
           \draw (\x:1.2cm) node[rotate=\x] {$\x^\circ$};
           }
           \foreach \x/\xtext in {
-          11.25/L\={a},
-          22.5/`\={A}ina,
+          11.25/Lā,
+          22.5/`Āina,
           33.75/Noio,
           45/Manu,
-          56.25/N\={a}lani,
-          67.5/N\={a} Leo,
+          56.25/Nālani,
+          67.5/Nā Leo,
           78.75/Haka,
           281.25/Haka,
-          292.5/N\={a} Leo,
-          303.75/N\={a}lani,
+          292.5/Nā Leo,
+          303.75/Nālani,
           315/Manu,
           326.25/Noio,
-          337.5/`\={A}ina,
-          348.75/L\={a}
+          337.5/`Āina,
+          348.75/Lā
           }
           \draw[left] (\x:0.98) node[rotate=\x] {\xtext};
           \foreach \x/\xtext in {
           101.25/Haka,
-          112.5/N\={a} Leo,
-          123.75/N\={a}lani,
+          112.5/Nā Leo,
+          123.75/Nālani,
           135/Manu,
           146.25/Noio,
-          157.5/`\={A}ina,
-          168.75/L\={a},
-          191.25/L\={a},
-          202.5/`\={A}ina,
+          157.5/`Āina,
+          168.75/Lā,
+          191.25/Lā,
+          202.5/`Āina,
           213.75/Noio,
           225/Manu,
-          236.25/N\={a}lani,
-          247.5/N\={a} Leo,
+          236.25/Nālani,
+          247.5/Nā Leo,
           258.75/Haka
           }
           \draw[right] (\x:0.98) node[rotate=180+\x] {\xtext};
@@ -455,7 +455,7 @@
             % draw the unit circle
             \draw[thick] (0cm,0cm) circle(1cm);
             \draw[left] (0:0.98) node{\large HIKINA};
-            \draw[left] (90:0.98) node[rotate=90] {\large `\={A}KAU};
+            \draw[left] (90:0.98) node[rotate=90] {\large `ĀKAU};
             \draw[right] (180:0.98cm) node{\large KOMOHANA};
             \draw[left] (270:0.98) node[rotate=-90] {\large HEMA};
             \foreach \x in {5.625,16.875,...,90} {
@@ -515,36 +515,36 @@
               }
               \draw[left] (\x:1.05) node[rotate=180+\x] {\xtext};
             \foreach \x/\xtext in {
-            11.25/L\={a},
-            22.5/`\={A}ina,
+            11.25/Lā,
+            22.5/`Āina,
             33.75/Noio,
             45/Manu,
-            56.25/N\={a}lani,
-            67.5/N\={a} Leo,
+            56.25/Nālani,
+            67.5/Nā Leo,
             78.75/Haka,
             281.25/Haka,
-            292.5/N\={a} Leo,
-            303.75/N\={a}lani,
+            292.5/Nā Leo,
+            303.75/Nālani,
             315/Manu,
             326.25/Noio,
-            337.5/`\={A}ina,
-            348.75/L\={a}
+            337.5/`Āina,
+            348.75/Lā
             }
             \draw[left] (\x:0.98) node[rotate=\x] {\xtext};
             \foreach \x/\xtext in {
             101.25/Haka,
-            112.5/N\={a} Leo,
-            123.75/N\={a}lani,
+            112.5/Nā Leo,
+            123.75/Nālani,
             135/Manu,
             146.25/Noio,
-            157.5/`\={A}ina,
-            168.75/L\={a},
-            191.25/L\={a},
-            202.5/`\={A}ina,
+            157.5/`Āina,
+            168.75/Lā,
+            191.25/Lā,
+            202.5/`Āina,
             213.75/Noio,
             225/Manu,
-            236.25/N\={a}lani,
-            247.5/N\={a} Leo,
+            236.25/Nālani,
+            247.5/Nā Leo,
             258.75/Haka
             }
             \draw[right] (\x:0.98) node[rotate=180+\x] {\xtext};
@@ -1129,11 +1129,9 @@
           </idx>
           <idx>
             <h>linear speed</h>
-          </idx> Suppose an object moves along a circle with radius <m>
-          r</m> and <m>\theta</m> (measured in radians) is the angle transversed in time <m>t</m>.
-          Let <m>s</m> be the distance the object traveled in time <m>t</m>. Then the <term>linear
-          speed</term>, <m>v</m>, of the object is given by <me>
-            v=\frac{s}{t}
+          </idx> Suppose an object moves along a circle with radius <m>r</m>, and let <m>\theta</m> (measured in radians) be the angle traversed in time <m>t</m>. Let <m>s</m> be the distance the object traveled in time <m>t</m>. Then the <term>linear speed</term>, <m>v</m>, of the object is given by
+          <me>
+            v=\frac{s}{t}.
           </me>
         </p>
       </statement>
@@ -1148,20 +1146,20 @@
           </idx>
           <idx>
             <h>angular speed</h>
-          </idx> Suppose an object moves along a circle. Let <m>\theta</m> (measured in radians) be the angle transversed by the object in time <m>t</m>. The <term>angular speed</term>, <m>\omega</m>, of the object is given by
-          <me>\omega=\frac{\theta}{t}</me>
+          </idx> Suppose an object moves along a circle. Let <m>\theta</m> (measured in radians) be the angle traversed by the object in time <m>t</m>. The <term>angular speed</term>, <m>\omega</m>, of the object is given by
+          <me>\omega=\frac{\theta}{t}.</me>
         </p>
       </statement>
     </definition>
     <p>
       Notice that we can rearrange the angular speed to get <m>\theta=\omega t</m>. Since <m>s</m> is an arc length, we have <m>s=r\theta</m>, and thus we can write the linear speed as 
-      <me>v=\frac{s}{t}=\frac{r\theta}{t}=\frac{r\omega t}{t}=r\omega</me>
+      <me>v=\frac{s}{t}=\frac{r\theta}{t}=\frac{r\omega t}{t}=r\omega.</me>
     </p>
     <definition xml:id="def_linear-speed">
       <title>Linear Speed</title>
       <statement>
         <p>
-          <idx><h>speed</h><h>linear</h></idx><idx><h>linear speed</h></idx> Suppose an object moves along a circle with radius <m>r</m> and an angular speed <m>\omega</m> (measured in radians per unit time). Then the <term>linear speed</term>, <m>v</m>, of the object is given by <me>v=r\omega</me>
+          <idx><h>speed</h><h>linear</h></idx><idx><h>linear speed</h></idx> Suppose an object moves along a circle with radius <m>r</m> and an angular speed <m>\omega</m> (measured in radians per unit time). Then the <term>linear speed</term>, <m>v</m>, of the object is given by <me>v=r\omega.</me>
         </p>
       </statement>
     </definition>
@@ -1189,7 +1187,7 @@
           </latex-image>
         </image>
         <p>
-          One method a waʻa uses to change direction is with the <em>hoe uli</em>, or the steering paddle. When a sharp turn is needed for maneuvers such as tacking, the steersperson will turn the handle of the hoe uli in a circular motion, as a lever to scoop the paddle in the water and change the heading of a vessel. This move called <em>une</em> (prounced oo-NAY although it is often mispronounced as oo-NEE) literally translates to <q>lever.</q>
+          One method a waʻa uses to change direction is with the <em>hoe uli</em>, or the steering paddle. When a sharp turn is needed for maneuvers such as tacking, the steersperson will turn the handle of the hoe uli in a circular motion, as a lever to scoop the paddle in the water and change the heading of a vessel. This move, called <em>une</em> (pronounced <q>oo-neh,</q> though it is often mispronounced as <q>oo-nee</q>), literally translates to <q>lever.</q>
         </p>
         <figure xml:id="vide-une">
           <caption>
@@ -1209,11 +1207,11 @@
         </statement>
         <solution>
           <p>
-            We are given the angular speed is <m>\omega=25</m> revolutions per minute. To convert our angular speed to radians per minute, we use the fact that one revolution is <m>2\pi</m> radians to get 
+            We are given that the angular speed is <m>\omega=25</m> revolutions per minute. To convert our angular speed to radians per minute, we use the fact that one revolution is <m>2\pi</m> radians to get 
             <me>
-              \omega=25\frac{\mbox{revolution} }{\mbox{minute} }=25\frac{\mbox{rev}}{\mbox{minute} }\cdot2\pi\frac{\mbox{radians} }{\mbox{revolution}}=50\pi\frac{\mbox{radians} }{\mbox{minute} }
+              \omega=25\frac{\mbox{revolution} }{\mbox{minute} }=25\frac{\mbox{revolution}}{\mbox{minute} }\cdot2\pi\frac{\mbox{radians} }{\mbox{revolution}}=50\pi\frac{\mbox{radians} }{\mbox{minute} }.
             </me>
-            Thus the hoe uli is moving at an angular speed of <m>50\pi</m> radians per second.
+            Thus the hoe uli is moving at an angular speed of <m>50\pi</m> radians per minute.
           </p>
         </solution>
       </task>
@@ -1227,7 +1225,7 @@
           <p>
             Since the radius is <m>r=2</m> ft and the angular speed is <m>50\pi</m> radians per minute, we can use <xref ref="def_linear-speed">Definition</xref> to calculate the linear speed
             <me>
-              v=r\omega=2\mbox{ft} \cdot50\pi\frac{\mbox{rad} }{\mbox{min}}\cdot\frac{\mbox{mile} }{5280\mbox{ft} }\cdot\frac{60\mbox{min} }{\mbox{hr}}\approx3.57\frac{\mbox{miles} }{\mbox{hour} }
+              v=r\omega=2\mbox{ft} \cdot50\pi\frac{\mbox{radians} }{\mbox{min}}\cdot\frac{\mbox{mile} }{5280\mbox{ft} }\cdot\frac{60\mbox{min} }{\mbox{hr}}\approx3.57\frac{\mbox{miles} }{\mbox{hour} }.
             </me>
             Thus the steersperson is moving the hoe uli at a linear speed of 3.57 mph.
           </p>
@@ -1420,7 +1418,7 @@
             % draw the unit circle
             \draw[thick] (0:1cm) arc (0:90:1cm);
             \draw[left] (0:0.98) node[rotate=0] {\large HIKINA};
-            \draw[left] (90:0.98) node[rotate=90] {\large `\={A}KAU};
+            \draw[left] (90:0.98) node[rotate=90] {\large `ĀKAU};
             \foreach \x in {5.625,16.875,...,90} {
             % lines from center to point
             \draw[gray] (0cm,0cm) -- (\x:1cm);% node[fill=white,left,sloped] {$\x^\circ$};
@@ -1432,12 +1430,12 @@
             \draw (\x:1.125cm) node[rotate=\x] {$\x^\circ$};
             }
             \foreach \x/\xtext in {
-            11.25/L\={a},
-            22.5/`\={A}ina,
+            11.25/Lā,
+            22.5/`Āina,
             33.75/Noio,
             45/Manu,
-            56.25/N\={a}lani,
-            67.5/N\={a} Leo,
+            56.25/Nālani,
+            67.5/Nā Leo,
             78.75/Haka
             }
             \draw[left] (\x:0.98) node[rotate=\x] {\xtext};
@@ -1463,10 +1461,10 @@
       </exercise>
       <exercise>
         <statement>
-          <p>Between &#699;&#256;ina and Noio (<m>28.175^{\circ}</m>) </p>
+          <p>Between &#699;Āina and Noio (<m>28.175^{\circ}</m>) </p>
         </statement>
         <answer>
-          <p><m>28^{\circ}7'30''</m></p>
+          <p><m>28^{\circ}10'30''</m></p>
         </answer>
       </exercise>
       <exercise>
@@ -1492,7 +1490,7 @@
         </statement>
         <answer>
           <p>
-            <m>\theta=258^{\circ}23'24''</m> Haka Malanai </p>
+            <m>\theta=258^{\circ}23'24''</m> Haka Kona </p>
         </answer>
       </exercise>
       <exercise>
@@ -1514,7 +1512,7 @@
         </statement>
         <answer>
           <p>
-            <m>\theta=244^{\circ}57'59''</m> Nā Leo Kona </p>
+            <m>\theta=244^{\circ}58'48''</m> Nā Leo Kona </p>
         </answer>
       </exercise>
       <exercise>
@@ -1524,8 +1522,7 @@
           </p>
         </statement>
         <answer>
-          <p>
-            <m>\theta=93^{\circ}57'6''</m> Haka Hoʻolua </p>
+          <p><m>\theta=93^{\circ}57'0''</m> ʻĀkau</p>
         </answer>
       </exercise>
       <exercise>
@@ -1547,7 +1544,7 @@
         </statement>
         <answer>
           <p>
-            <m>\theta=162^{\circ}59'56''</m> Manu Hoʻolua </p>
+            <m>\theta=162^{\circ}31'12''</m> ʻĀina Hoʻolua </p>
         </answer>
       </exercise>
       <exercise>
@@ -1558,7 +1555,7 @@
         </statement>
         <answer>
           <p>
-            <m>\theta=328^{\circ}12'9''</m> Noio Malanai </p>
+            <m>\theta=328^{\circ}12'36''</m> Noio Malanai </p>
         </answer>
       </exercise>
       <exercise>
@@ -1569,7 +1566,7 @@
         </statement>
         <answer>
           <p>
-            <m>\theta=48^{\circ}7'17''</m> Manu Koʻolau </p>
+            <m>\theta=48^{\circ}7'12''</m> Manu Koʻolau </p>
         </answer>
       </exercise>
       <exercise>
@@ -1580,14 +1577,14 @@
         </statement>
         <answer>
           <p>
-            <m>\theta=241^{\circ}16'15''</m> Nā Lani Kona </p>
+            <m>\theta=241^{\circ}16'12''</m> Nā Lani Kona </p>
         </answer>
       </exercise>
     </exercisegroup>
     <exercisegroup cols="2">
       <introduction>
         <p>
-          Convert the given angle <m>\theta</m> to radians and identify the house and quadrant on the Hawaiian Star Compass. Keep your answers in terms of <m>\pi</m>.
+          Convert the given angle <m>\theta</m> to radians, and identify the house and quadrant on the Hawaiian Star Compass. Express your answers in terms of <m>\pi</m>.
         </p>
       </introduction>
       <exercise>
