@@ -3,10 +3,10 @@
   <title>Graphs of the Sine and Cosine Functions</title>
   <introduction>
     <p>
-      Sunrise and sunset are vital markers for navigational orientation and course corrections. During sunrise, you can determine the direction and observe the origin of wind and waves. As the sun rises higher, steering by the sun becomes impractical, and you must instead depend on swells to keep your course. At sunset, you can reassess your position and take note of any changes in wind and swell patterns. Although the general pattern is for the sun to rise in the east and set in the west, its exact position on the horizon, known as <term>solar declination</term>,<idx><h>solar declination</h></idx><idx><h>declination</h><h>solar</h></idx> varies throughout the year.
+      Sunrise and sunset are vital markers for navigational orientation and course corrections. During sunrise, we can determine the direction of wind and waves and observe their origin. As the sun rises higher, steering by the sun becomes impractical, and we must instead depend on swells to keep our course. At sunset, we can reassess your position and take note of any changes in wind and swell patterns. Although the general pattern is for the sun to rise in the east and set in the west, its exact position on the horizon, known as <term>solar declination</term>,<idx><h>solar declination</h></idx><idx><h>declination</h><h>solar</h></idx> varies throughout the year.
     </p>
     <p>
-      To understand why the position changes, we must first learn about Earth's <term>axial tilt</term>, <idx><h>axial tilt</h></idx> which represents the angle between the Earth's rotational axis and its orbital plane around the Sun. To conceptualize this tilt, envision a pole passing through the Earth's center, extending from the North to South Pole, with the Earth revolving around this axis. Each complete rotation of the Earth on this axis corresponds to one day. As the Earth travels along its orbit around the Sun with a constant tilt, the orientation of the Earth's axial tilt causes either the North Pole or the South Pole to tilt toward the Sun. This tilt varies depending on the Earth's location in its orbit relative to the Sun.
+      To understand why the position changes, we must first learn about Earth's <term>axial tilt</term>, <idx><h>axial tilt</h></idx> which represents the angle between the Earth's rotational axis and its orbital plane around the Sun. To conceptualize this tilt, envision a pole passing through the Earth's center, extending from the North to the South Pole, with the Earth revolving around this axis. Each complete rotation of the Earth on this axis corresponds to one day. As the Earth travels along its orbit around the Sun with a constant tilt of the axis, the orientation of the Earth's axial tilt causes either the North Pole or the South Pole to tilt toward the Sun. This tilt varies depending on the Earth's location in its orbit relative to the Sun.
     </p>
     <p>
       During the equinoxes, which mark the transition from winter to spring and from summer to fall, the Earth's axis is not tilted towards or away from the Sun. Consequently, on these days, the Sun rises due east and sets due west, and the duration of day and night is approximately equal.
@@ -28,7 +28,7 @@
       Following the summer solstice, the Southern Hemisphere begins tilting away from the Sun, causing the Sun's rising position to gradually shift northward each day. This movement continues until the next fall equinox, completing the annual cycle.
     </p>
     <figure>
-        <caption>Illustration shows the relative positions and timing of solstice, equinox and seasons in relation to the Earth's orbit around the Sun and the axial tilt. During the June solstice, the northern hemisphere is tilted towards the Sun, while the southern hemisphere is tilted away. Conversely, during the December solstice, the southern hemisphere is tilted towards the Sun, and the northern hemisphere is tilted away. During the March and September equinoxes, the Earth's axis is perpendicular to the line connecting the Earth to the Sun, causing the Sun to appear directly above the equator. As a result, day and night are approximately equal in length all over the world.</caption>
+        <caption>The illustration shows the relative positions and timing of solstice, equinox and seasons in relation to the Earth's orbit around the Sun and the axial tilt. During the June solstice, the northern hemisphere is tilted towards the Sun, while the southern hemisphere is tilted away. Conversely, during the December solstice, the southern hemisphere is tilted towards the Sun, and the northern hemisphere is tilted away. During the March and September equinoxes, the Earth's axis is perpendicular to the line connecting the Earth to the Sun, causing the Sun to appear directly above the equator. As a result, day and night are approximately equal in length all over the world.</caption>
         <image source="planets-seasons"/>
     </figure>
     <p>
@@ -41,7 +41,7 @@
   <subsection xml:id="subsec-domain-range-sine-cosine-functions">
     <title>Domain and Range of Sine and Cosine</title>
     <p>
-      The domains for <m>\sin(\theta)</m> and <m>\cos(\theta)</m> consist of the set of the inputs of the functions. Since any angle <m>\theta</m> can be input into sine and cosine and still have these functions defined, the domain for both sine and coseine is all real numbers. Recall that in <xref ref="unit_circle">Section</xref>, if <m>P(x,y)</m> is any point on the unit circle that corresponds to the angle <m>\theta</m>, we defined <m>\sin\theta=y</m> and <m>\cos\theta=x</m>. Given the constraints on the unit circle, <m>-1\leq x\leq1</m> and <m>-1\leq y\leq1</m>, and thus
+      The domains for <m>\sin(\theta)</m> and <m>\cos(\theta)</m> consist of the set of the inputs for the functions. Since any angle <m>\theta</m> can be input into sine and cosine and still have these functions defined, the domain for both sine and cosine is all real numbers. Recall that in <xref ref="unit_circle">Section</xref>, if <m>P(x,y)</m> is any point on the unit circle that corresponds to the angle <m>\theta</m>, we defined <m>\sin\theta=y</m> and <m>\cos\theta=x</m>. Given the constraints on the unit circle, <m>-1\leq x\leq1</m> and <m>-1\leq y\leq1</m>, and thus
       <me>-1\leq \sin\theta\leq1, \quad \mbox{and} \quad -1\leq \cos\theta\leq1</me>.
       Since the range of a function consists of all its outputs, we conclude that the range of both the sine and cosine functions spans all real numbers between -1 and 1.
     </p>
@@ -116,23 +116,22 @@
       </p>
     </convention>
     <p>
-      The sine function, as discussed in <xref ref="subsec_periodic-functions"/>, is a periodic functions with period <m>2\pi</m>. To graph <m>y=\sin x</m>, we can focus on the interval <m>[0,2\pi]</m>. By plotting this interval, we can then repeat the values over the entire domain to complete the remaining graph.
+      The sine function, as discussed in <xref ref="subsec_periodic-functions"/>, is a periodic functions with period <m>2\pi</m>. To graph <m>y=\sin x</m>, we can focus on the interval <m>[0,2\pi]</m>. By plotting the points on the graph over this interval, we can then repeat the values over the entire domain to complete the graph.
     </p>
     <p>
-      Recall from <xref ref="def-of-trig-functions">Definition</xref> that on the unit circle, <m>\sin \theta</m> is defined to be the <m>y</m>-value of the terminal point <m>P(x,y)</m> on the unit circle associated with the angle <m>\theta</m>. As the angle increases from <m>0</m> to <m>\frac{\pi}{2}</m>, the <m>y</m>-value also increases from <m>0</m> to <m>1</m>. When the angle continues from <m>\frac{\pi}{2}</m> to <m>\frac{3\pi}{2}</m>, the <m>y</m>-value decreases from <m>1</m> to <m>-1</m>. Finally, as the angle approaches <m>2\pi</m>, the <m>y</m>-value increases to <m>0</m>. This behavior is shown in <xref ref="sine-graph-animation">Figure</xref>.
+      Recall from <xref ref="def-of-trig-functions">Definition</xref> that on the unit circle, <m>\sin \theta</m> is defined to be the <m>y</m>-value of the terminal point <m>P(x,y)</m> on the unit circle associated with the angle <m>\theta</m>. As the angle increases from <m>0</m> to <m>\frac{\pi}{2}</m>, the <m>y</m>-value also increases from <m>0</m> to <m>1</m>. When the angle continues from <m>\frac{\pi}{2}</m> to <m>\frac{3\pi}{2}</m>, the <m>y</m>-value decreases from <m>1</m> to <m>-1</m>. "Finally, as the angle increases from <m>\frac{3\pi}{2}</m> to <m>2\pi</m>, the <m>y</m>-value increases from <m>-1</m> to <m>0</m>. This behavior is shown in <xref ref="sine-graph-animation">Figure</xref>.
     </p>
     <figure xml:id="sine-graph-animation">
       <caption>
-        As <m>\theta</m> moves from <m>0^{\circ}</m> to <m>360^{\circ}</m>, this figure plots the values of <m>y = \sin \theta</m>. Move the slider for <m>\theta</m> to see how changing the angle affects <m>\sin\theta</m>. Note that while we will generally be using radians when graphing trigonometric functions, this figure uses degrees to help visualize the angle. For example, you may not be aware that <m>2</m> radians (<m>\approx114.6^{\circ}</m>) lies in Quadrant II.
+        As <m>\theta</m> moves from <m>0^{\circ}</m> to <m>360^{\circ}</m>, this figure plots the values of <m>y = \sin \theta</m>. Move the slider for <m>\theta</m> to see how changing the angle affects <m>\sin\theta</m>. Note that while we will generally be using radians when graphing trigonometric functions, this figure uses degrees to help visualize the angle. For example, we may not be aware that <m>2</m> radians (<m>\approx114.6^{\circ}</m>) lies in Quadrant II.
       </caption>
       <interactive geogebra="cjtfbek8" aspect="1.75:0.75" label="geogebra-sine-animation"/>
     </figure>
     <p>
-      Next we recall known values for the sine function listed on <xref ref="tab_sine-graph-values">Table</xref>. 
+      Next we recall known values for the sine function listed in <xref ref="tab_sine-graph-values">Table</xref>. 
     </p>
     <table xml:id="tab_sine-graph-values">
-      <title>Values for 
-        <m>y=\sin x</m>
+      <title>Values for <m>y=\sin x</m>.
       </title>
       <tabular halign="center">
         <row bottom="major">
@@ -161,11 +160,11 @@
         </row>
         <row>
           <cell><m>\frac{\pi}{4}</m></cell>
-          <cell><m>\frac{\sqrt{2}}{2}</m></cell>
-          <cell right="major"><m>\left(\frac{\pi}{4},\frac{\sqrt{2}}{2}\right)</m></cell>
+          <cell><m>\frac{1}{\sqrt{2}}</m></cell>
+          <cell right="major"><m>\left(\frac{\pi}{4},\frac{1}{\sqrt{2}}\right)</m></cell>
           <cell><m>\frac{5\pi}{4}</m></cell>
-          <cell><m>-\frac{\sqrt{2}}{2}</m></cell>
-          <cell><m>\left(\frac{5\pi}{4},-\frac{\sqrt{2}}{2}\right)</m></cell>
+          <cell><m>-\frac{1}{\sqrt{2}}</m></cell>
+          <cell><m>\left(\frac{5\pi}{4},-\frac{1}{\sqrt{2}}\right)</m></cell>
         </row>
         <row>
           <cell><m>\frac{\pi}{3}</m></cell>
@@ -222,7 +221,7 @@
     </p>
     <figure xml:id="sin-points-labeled">
       <caption>
-        The values in <xref ref="tab_sine-graph-values">Table</xref>  plotted on a graph with a smooth curve connecting the points to make the curve for <m>y=\sin(x)</m>.
+        The values in <xref ref="tab_sine-graph-values">Table</xref>  plotted with a smooth curve connecting the points to make the graph for <m>y=\sin(x)</m>.
       </caption>
       <image xml:id="fig-sin-points-labeled">
         <!-- <description><p></p></description> -->
@@ -254,7 +253,7 @@
       Since the graph in <xref ref="sin-points-labeled">Figure</xref> represents one period, we can now complete the graph of <m>y=\sin x</m> by extending the pattern in both directions to obtain <xref ref="sin-graph-extended">Figure</xref>.
     </p>
     <figure xml:id="sin-graph-extended">
-      <caption>The plot for <m>y=\sin(x)</m>.</caption>
+      <caption>The graph for <m>y=\sin(x)</m>.</caption>
       <image xml:id="fig-sin-graph-extended">
         <latex-image>
           \begin{tikzpicture}
@@ -275,7 +274,7 @@
       </image>
     </figure>
     <p>
-      Notice the graph of the sine function's symmetry with respect to the origin, a characteristic supported in <xref ref="subsec_even-odd-trig-functions">Section</xref>, where we learned that sine is an odd function.
+      Notice the sine function's symmetry with respect to the origin, a characteristic supported in <xref ref="subsec_even-odd-trig-functions">Section</xref>, where we learned that sine is an odd function.
     </p>
   </subsection>
   <subsection xml:id="subsec-graphing-cosine-function">
@@ -291,7 +290,7 @@
       By plotting points for <m>y=\cos x</m> and using the fact that the cosine function is periodic, we obtain the graph for cosine over the entire domain. This is shown in <xref ref="cos-graph-extended">Figure</xref>.
     </p>
     <figure xml:id="cos-graph-extended">
-      <caption>The plot for <m>y=\cos(x)</m>.</caption>
+      <caption>The graph for <m>y=\cos(x)</m>.</caption>
       <image xml:id="fig-cos-graph-extended">
         <latex-image>
           \begin{tikzpicture}
@@ -348,74 +347,74 @@
     </definition>
     <example>
       <title>Vertical Shifts</title>
-      <statement>
-        <p>Graph each function</p>
+      <introduction>
         <p>
-          <ol>
-            <li>
-              <p><m>y=\sin(x)+2</m></p>
-            </li>
-            <li>
-              <p><m>y=\cos(x)-1</m></p>
-            </li>
-          </ol>
+          Graph the functions
         </p>
-      </statement>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>y=\sin(x)+2</m>
+          </p>
+        </statement>
+        <solution>
+          <figure xml:id="sin-vshift">
+            <caption>The graph of <m>y=\sin(x)+2</m> is the same as the graph of <m>y=\sin(x)</m> but shifted up by 2 units.</caption>
+            <image xml:id="fig-sin-vshift">
+              <latex-image>
+                \begin{tikzpicture}
+                \begin{axis}[
+                axis lines=middle,clip=false,
+                xmin=-2*pi-0.5,xmax=3*pi+0.5,ymin=-1.2,ymax=3.2,
+                ytick={-1,1,2,3},
+                minor ytick={-0.5,0.5,1.5,2.5},
+                xtick={-2*pi,-pi,0,pi,2*pi,3*pi},
+                xticklabels={\(-2\pi\),\(-\pi\),\(0\),\(\pi\),\(2\pi\),\(3\pi\)},
+                xticklabel style={black},
+                xlabel=\(x\),
+                ylabel=\(y\)]
+                \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt,opacity=0.5]{sin(deg(x))}node[right,pos=1]{\(y=\sin x\)};
+                \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,red,line width=1pt]{2+sin(deg(x))}node[right,pos=1]{\(y=\sin(x)+2\)};
+                \addplot [dashed,red,fill=red!90!black,opacity=0.5] coordinates {(-2*pi,2) (3*pi,2)};
+                \end{axis}
+                \end{tikzpicture}
+              </latex-image>
+            </image>
+          </figure>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>y=\cos(x)-1</m>
+          </p>
+        </statement>
+      </task>
       <solution>
-        <p>
-          <ol>
-            <li>
-              <figure xml:id="sin-vshift">
-                <caption>The graph of <m>y=\sin(x)+2</m> is the same as the graph of <m>y=\sin(x)</m> but shifted up by 2 units.</caption>
-                <image xml:id="fig-sin-vshift">
-                  <latex-image>
-                    \begin{tikzpicture}
-                    \begin{axis}[
-                    axis lines=middle,clip=false,
-                    xmin=-2*pi-0.5,xmax=3*pi+0.5,ymin=-1.2,ymax=3.2,
-                    ytick={-1,1,2,3},
-                    minor ytick={-0.5,0.5,1.5,2.5},
-                    xtick={-2*pi,-pi,0,pi,2*pi,3*pi},
-                    xticklabels={\(-2\pi\),\(-\pi\),\(0\),\(\pi\),\(2\pi\),\(3\pi\)},
-                    xticklabel style={black},
-                    xlabel=\(x\),
-                    ylabel=\(y\)]
-                    \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt,opacity=0.5]{sin(deg(x))}node[right,pos=1]{\(y=\sin x\)};
-                    \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,red,line width=1pt]{2+sin(deg(x))}node[right,pos=1]{\(y=\sin(x)+2\)};
-                    \addplot [dashed,red,fill=red!90!black,opacity=0.5] coordinates {(-2*pi,2) (3*pi,2)};
-                    \end{axis}
-                    \end{tikzpicture}
-                  </latex-image>
-                </image>
-              </figure>
-            </li>
-            <li>
-              <figure xml:id="cos-vshift">
-                <caption>The graph of <m>y=\cos(x)-1</m> is the same as the graph of <m>y=\cos(x)</m> but shifted down by 1 unit.</caption>
-                <image xml:id="fig-cos-vshift">
-                  <latex-image>
-                    \begin{tikzpicture}
-                    \begin{axis}[
-                    axis lines=middle,clip=false,
-                    xmin=-2*pi-0.5,xmax=3*pi+0.5,ymin=-2.2,ymax=1.2,
-                    ytick={-2,-1,1},
-                    minor ytick={-1.5,-0.5,0.5},
-                    xtick={-2*pi,-pi,0,pi,2*pi,3*pi},
-                    xticklabels={\(-2\pi\),\(-\pi\),\(0\),\(\pi\),\(2\pi\),\(3\pi\)},
-                    xticklabel style={black},
-                    xlabel=\(x\),
-                    ylabel=\(y\)]
-                    \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt,opacity=0.5]{cos(deg(x))}node[right,pos=1]{\(y=\cos x\)};
-                    \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,red,line width=1pt]{-1+cos(deg(x))}node[right,pos=1]{\(y=\cos(x)-1\)};
-                    \addplot [dashed,red,fill=red!90!black,opacity=0.5] coordinates {(-2*pi,-1) (3*pi,-1)};
-                    \end{axis}
-                    \end{tikzpicture}
-                  </latex-image>
-                </image>
-              </figure>
-            </li>
-          </ol>
-        </p>
+        <figure xml:id="cos-vshift">
+          <caption>The graph of <m>y=\cos(x)-1</m> is the same as the graph of <m>y=\cos(x)</m> but shifted down by 1 unit.</caption>
+          <image xml:id="fig-cos-vshift">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[
+              axis lines=middle,clip=false,
+              xmin=-2*pi-0.5,xmax=3*pi+0.5,ymin=-2.2,ymax=1.2,
+              ytick={-2,-1,1},
+              minor ytick={-1.5,-0.5,0.5},
+              xtick={-2*pi,-pi,0,pi,2*pi,3*pi},
+              xticklabels={\(-2\pi\),\(-\pi\),\(0\),\(\pi\),\(2\pi\),\(3\pi\)},
+              xticklabel style={black},
+              xlabel=\(x\),
+              ylabel=\(y\)]
+              \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt,opacity=0.5]{cos(deg(x))}node[right,pos=1]{\(y=\cos x\)};
+              \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,red,line width=1pt]{-1+cos(deg(x))}node[right,pos=1]{\(y=\cos(x)-1\)};
+              \addplot [dashed,red,fill=red!90!black,opacity=0.5] coordinates {(-2*pi,-1) (3*pi,-1)};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+        </figure>
       </solution>
     </example>
     <p>
@@ -426,13 +425,9 @@
       <statement>
         <p>
           The functions
-        </p>
-        <p>
           <me>
             y=-\sin x \quad \mbox{and} \quad y=-\cos x
           </me>
-        </p>
-        <p>
           represent the graphs of <m>y = \sin(x)</m> and <m>y = \cos(x)</m> with a <term>reflection about the <m>x</m>-axis</term>,<idx><h>reflection</h><h>about <m>x</m>-axis</h></idx> respectively.
         </p>
       </statement>
@@ -444,7 +439,7 @@
       </statement>
       <solution>
         <figure xml:id="cos-x-axis-reflect">
-          <caption>The graph <m>y = -\cos(x)</m> is obtained by multiplying every <m>y-</m>value of the <m>y = \cos(x)</m> graph by <m>-1</m>. This transformation reflects all points across the x-axis, turning positive values negative and negative values positive.</caption>
+          <caption>The graph <m>y = -\cos(x)</m> is obtained by multiplying every <m>y</m>-value of the <m>y = \cos(x)</m> graph by <m>-1</m>. This transformation reflects all points across the x-axis, turning positive values negative and negative values positive.</caption>
           <image xml:id="fig-cos-x-axis-reflect">
             <latex-image>
               \begin{tikzpicture}
@@ -489,12 +484,12 @@
     <example>
       <title>Reflections about the <m>y</m>-axis</title>
       <statement>
-        <p>Graph <m>y=\sin(-x)+1</m></p>
+        <p>Graph <m>y=\sin(-x)+1</m>.</p>
       </statement>
       <solution>
         <figure xml:id="sin-y-axis-reflect">
           <caption>
-            The graph <m>y = \sin(-x) + 1</m> is obtained by reflecting the graph of <m>y = \sin(x)</m> about the <m>y</m>-axis and then vertically shifting it upward by <m>1</m>. This transformation turns positive values of <m>x</m> negative and negative values positive, and increases every <m>y</m>-value by <m>1</m>.
+            The graph <m>y = \sin(-x) + 1</m> is obtained by reflecting the graph of <m>y = \sin(x)</m> about the <m>y</m>-axis and then vertically shifting it upward by <m>1</m>. This transformation turns positive values of <m>x</m> negative and negative values of <m>x</m> positive, and increases every <m>y</m>-value by <m>1</m>.
           </caption>
           <image xml:id="fig-sin-y-axis-reflect">
             <latex-image>
@@ -522,7 +517,7 @@
     <example xml:id="ex_vert-stretch-compression">
       <title>Vertical Stretches and Compressions</title>
       <statement>
-        <p>Graph each function</p>
+        <p>Graph each function:</p>
         <p>
           <ol>
             <li>
@@ -563,44 +558,44 @@
     </example>
 
     <p>
-      The factor multiplied at the front of the cosine function plays a crucial role in stretching and compressing the graph. This factor is known as the <term>amplitude</term>, measuring the maximum vertical distance from the midline to the peak or trough of a sinusoidal wave. In <xref ref="ex_vert-stretch-compression">Example</xref>, the amplitude of <m>y=2\cos(x)</m> is 2, indicating a <term>vertical stretch</term><idx><h>vertical stretch</h></idx> by a factor of 2 compared to the standard cosine function. Conversely, for <m>y=\frac{1}{2}\cos(x)</m>, the amplitude is <m>\frac{1}{2}</m>, which represented a <term>vertical compression</term><idx><h>vertical compression</h></idx> by a factor of <m>\frac{1}{2}</m>.
+      The factor multiplied at the front of the cosine function plays a crucial role in stretching and compressing the graph. This factor is known as the <term>amplitude</term>, measuring the maximum vertical distance from the midline to the peak or trough of a sinusoidal wave. In <xref ref="ex_vert-stretch-compression">Example</xref>, the amplitude of <m>y=2\cos(x)</m> is 2, indicating a <term>vertical stretch</term><idx><h>vertical stretch</h></idx> by a factor of 2 compared to the standard cosine function. Conversely, for <m>y=\frac{1}{2}\cos(x)</m>, the amplitude is <m>\frac{1}{2}</m>, representing a <term>vertical compression</term><idx><h>vertical compression</h></idx> by a factor of <m>\frac{1}{2}</m>.
     </p>
 
     <definition xml:id="def-amplitude">
       <title>Amplitude</title>
       <statement>
         <p>
-          For a sinusoidal function, the <term>amplitude</term>, <idx><h>amplitude</h></idx>, denoted as <m>|A|</m>, is the height of the function, representing half the distance between its maximum and minimum values:
+          For a sinusoidal function, the <term>amplitude</term>, <idx><h>amplitude</h></idx> denoted as <m>|A|</m>, is the height of the function, representing half the distance between its maximum and minimum values:
         </p>
         <p>
           <me>
-            |A| = \text{amplitude} = \frac{\text{maximum} - \text{minimum}}{2}
-          </me>.
+            |A| = \text{amplitude} = \frac{\text{maximum} - \text{minimum}}{2}.
+          </me>
         </p>
         <p>
           In other words, the amplitude is the vertical distance from the midline to the maximum or minimum value of the function. The <term>midline</term><idx><h>midline</h></idx> is a horizontal line representing the average value of the function. It can be calculated by:
           <me>
-            y = \frac{\text{maximum} + \text{minimum}}{2}
-          </me>.
-          For a graph centered about the <m>x</m>-axis, the amplitude is simply the maximum value of the function.
+            y = \frac{\text{maximum} + \text{minimum}}{2}.
+          </me>
+          For a graph oscillating symmetrically about the <m>x</m>-axis, the amplitude is simply the maximum value of the function.
         </p>
         <p>
           In general, for
-          <me>y = A \cdot \sin(x) \quad \mbox{or} \quad y = A \cdot \cos(x)</me>,
+          <me>y = A \cdot \sin(x) \quad \mbox{or} \quad y = A \cdot \cos(x),</me>
           the amplitude is given by <m>|A|</m>. This absolute value ensures that amplitude is always a positive value, representing the magnitude of the vertical stretching or compression.
         </p>
       </statement>
     </definition>
     <definition xml:id="def-sin-cos-vert-stretch-compress">
-      <title>Vertical Strech/Compression</title>
+      <title>Vertical Stretch/Compression</title>
       <statement>
         <p>
           The functions
           <me>y=A\sin x\quad\mbox{and}\quad y=A\cos x </me>
-          represents a sine and consine function, respectively with an amplitude of <m>|A|</m>. The amplitude determines the vertical stretch or compression of the graph. 
+          represents a sine and cosine function, respectively, with an amplitude of <m>|A|</m>. The amplitude determines the vertical stretch or compression of the graph. 
         </p>
         <p>
-          If <m>|A| \gt 1</m>, the graph undergoes a vertical stretch, making the peaks and troughs higher.
+          If <m>|A| \gt 1</m>, the graph undergoes a vertical stretch, increasing the distance between the peaks and troughs.
         </p>
         <p>
           If <m>0 \lt |A| \lt 1</m>, the graph undergoes a vertical compression, reducing the distance between the peaks and troughs.
@@ -646,11 +641,11 @@
     </p>
     <p>
       <me>
-        y=\sin Bx \quad \mbox{and} \quad y=\cos Bx
+        y=\sin Bx \quad \mbox{and} \quad y=\cos Bx.
       </me>
     </p>
     <p>
-      You may recall from algebra that for functions of the form <m>y=f(Bx)</m>, a key factor emerges: when <m>|B| \gt 1</m>, the graph undergoes horizontal compression by a factor of <m>\frac{1}{|B|}</m>; conversely, when <m>0 \lt |B| \lt 1</m>, the graph is horizontally stretched by a factor of <m>\frac{1}{|B|}</m>. Given that sine and cosine complete one period in <m>2\pi</m>, the horizontal stretching or compressing of a period will be by a factor of <m>\frac{1}{|B|}</m>.
+      Recall from algebra that for functions of the form <m>y=f(Bx)</m>, a key factor emerges: when <m>|B| \gt 1</m>, the graph undergoes horizontal compression by a factor of <m>\frac{1}{|B|}</m>; conversely, when <m>0 \lt |B| \lt 1</m>, the graph is horizontally stretched by a factor of <m>\frac{1}{|B|}</m>. Given that the period of sine and cosine is <m>2\pi</m>, the horizontal stretching or compressing of a period will be by a factor of <m>\frac{1}{|B|}</m>.
     </p>
     <definition xml:id="def-period">
       <title>Period</title>
@@ -662,7 +657,7 @@
           </me>
           the <term>period</term><idx><h>period</h></idx> is defined as
           <me>
-            \mbox{period}=\frac{2\pi}{|B|}
+            \mbox{period}=\frac{2\pi}{|B|}.
           </me>
         </p>
         <p>
@@ -671,7 +666,7 @@
       </statement>
     </definition>
     <definition xml:id="def-sin-cos-horizontal-stretch-compress">
-      <title>Horizontal Strech/Compression</title>
+      <title>Horizontal Stretch/Compression</title>
       <statement>
         <p>
           The graphs functions
@@ -710,38 +705,23 @@
           <ol>
             <li>
               <p>
-                The period for <m>y=\sin(2x)</m> is
-              </p>
-              <p>
-                <me>
-                  \mbox{period}=\frac{2\pi}{2}=\pi
-                </me>
+                The period for <m>y=\sin(2x)</m> is <m>\frac{2\pi}{2}=\pi</m>.
               </p>
             </li>
             <li>
               <p>
-                The period for <m>y=\sin\left(\frac{1}{2}x\right)</m> is
-              </p>
-              <p>
-                <me>
-                  \mbox{period}=\frac{2\pi}{\frac{1}{2}}=2\pi\cdot\frac{2}{1}=4\pi
-                </me>
+                The period for <m>y=\sin\left(\frac{1}{2}x\right)</m> is <m>\frac{2\pi}{\frac{1}{2}}=2\pi\cdot\frac{2}{1}=4\pi</m>.
               </p>
             </li>
             <li>
               <p>
-                The period for <m>y=\sin\left(\frac{1}{3}x\right)</m> is
-              </p>
-              <p>
-                <me>
-                  \mbox{period}=\frac{2\pi}{\frac{1}{3}}=2\pi\cdot\frac{3}{1}=6\pi
-                </me>
+                The period for <m>y=\sin\left(\frac{1}{3}x\right)</m> is <m>\frac{2\pi}{\frac{1}{3}}=2\pi\cdot\frac{3}{1}=6\pi</m>.
               </p>
             </li>
           </ol>
         </p>
         <figure xml:id="sin-period">
-          <caption>One period each of <m>y=\sin(2x)</m>, <m>y=\sin\left(\frac{1}{2}x\right)</m>, and <m>y=\sin\left(\frac{1}{3}x\right)</m> compared to the standard <m>y=\sin(x)</m> graph. Observe the distinct effects of horizontal compression (when <m>B=2</m>, reducing the period to <m>\frac{\pi}{2}</m>) and stretching (when <m>B=\frac{1}{2}</m> and <m>B=\frac{1}{3}</m>, increasing the period to <m>4\pi</m> and <m>6\pi</m>, respectively).</caption>
+          <caption>One period of each of <m>y=\sin(2x)</m>, <m>y=\sin\left(\frac{1}{2}x\right)</m>, and <m>y=\sin\left(\frac{1}{3}x\right)</m> compared to one period of the graph of <m>y=\sin(x)</m>. Observe the distinct effects of horizontal compression (when <m>B=2</m>, reducing the period to <m>\pi</m>) and stretching (when <m>B=\frac{1}{2}</m> and <m>B=\frac{1}{3}</m>, increasing the period to <m>4\pi</m> and <m>6\pi</m>, respectively).</caption>
           <image xml:id="fig-sin-period">
             <latex-image>
               \begin{tikzpicture}
@@ -768,7 +748,7 @@
     </example>
 
     <p>
-      Our final transformation involves functions of the form <m>y = f(x - c)</m>. When <m>c \gt 0</m>, the graph of <m>y = f(x)</m> is shifted <m>c</m> units to the right; when <m>c \lt 0</m>, it is shifted <m>|c|</m> units to the left.
+      Our final transformation involves functions of the form <m>y = f(x - c)</m>. When <m>c \gt 0</m>, the graph of <m>y = f(x)</m> is shifted by <m>c</m> units to the right; when <m>c \lt 0</m>, it is shifted <m>|c|</m> units to the left.
     </p>
     <definition>
       <title>Phase Shift</title>
@@ -814,138 +794,138 @@
     </remark>
     <example>
       <title>Phase Shift</title>
-      <statement>
-        <p>Identify the period and phase shift of each function, and graph the function</p>
+      <introduction>
         <p>
-          <ol>
-            <li>
-              <p><m>y=\cos(x-\pi)</m></p>
-            </li>
-            <li>
-              <p><m>y=\sin\left(\frac{\pi}{6}(x+2)\right)</m></p>
-            </li>
-          </ol>
+          Identify the period and phase shift of each function, and graph the function.
         </p>
-      </statement>
-      <solution>
-        <p>
-          <ol>
-            <li>
-              <p>
-                Since this equation is of the form <m>y=\cos(Bx-E)</m>, we have <m>B=1</m> and <m>E=\pi</m>. Therefore,
-              </p>
-              <p>
-                <me>\mbox{period}=\frac{2\pi}{|B|}=\frac{2\pi}{1}=2\pi</me>
-              </p>
-              <p>
-                and
-              </p>
-              <p>
-                <me>\mbox{phase shift}=\frac{E}{B}=\frac{\pi}{1}=\pi \mbox{ (positive value indicates a shift to the right)}.</me>
-              </p>
-              <p>
-                A positive value for the phase shift indicates a shift to the right. It's important to note that, given <m>B=1</m>, the phase shift is simply <m>E=\pi</m>.
-              </p>
-              <figure xml:id="cos-phase-shift">
-                <caption>The graph of <m>y=\cos(x-\pi)</m> is the graph of <m>y=\cos x</m> with a phase shift of <m>\pi</m> units to the right.</caption>
-                <image xml:id="fig-cos-phase-shift">
-                  <latex-image>
-                    \begin{tikzpicture}
-                    \begin{axis}[
-                    axis lines=middle,clip=false,
-                    xmin=-2*pi-0.5,xmax=4*pi+0.5,ymin=-1.5,ymax=1.5,
-                    ytick={-1,1},
-                    minor ytick={-0.5,0.5},
-                    xtick={-2*pi,-pi,0,pi,2*pi,3*pi,4*pi},
-                    xticklabels={\(-2\pi\),\(-\pi\),\(0\),\(\pi\),\(2\pi\),\(3\pi\),\(4\pi\)},
-                    xticklabel style={black},
-                    xlabel=\(x\),
-                    ylabel=\(y\)]
-                    \addplot[domain=-2*pi-0.5:4*pi+0.5,samples=200,blue,line width=1pt,opacity=0.5]{cos(deg(x))}node[below,pos=0.18]{\(y=\cos x\)};
-                    \addplot[domain=-2*pi-0.5:4*pi+0.5,samples=200,red,line width=1pt]{cos(deg(x-pi))}node[below,pos=0.65]{\(y=\cos (x-\pi)\)};
-                    \addplot [-stealth,dashed,black] coordinates {(0,1) (pi,1)}node[above,pos=0.5]{\(\pi\)};
-                    \end{axis}
-                    \end{tikzpicture}
-                  </latex-image>
-                </image>
-              </figure>
-            </li>
-            <li>
-              <p>
-                Since the given equation is in the form <m>y = \sin\left(\frac{\pi}{6}(x + 2)\right)</m>, we can identify <m>B = \frac{\pi}{6}</m> and <m>C = -2</m>. Consequently,
-              </p>
-              <p>
-                <me>\mbox{period}=\frac{2\pi}{|B|}=\frac{2\pi}{\frac{\pi}{6}}=2\pi\cdot\frac{6}{\pi}=12</me>
-              </p>
-              <p>
-                and
-              </p>
-              <p>
-                <me>\mbox{phase shift}=C=-2.</me>
-              </p>
-              <p>
-                The negative sign indicates a phase shift to the left by 2 units.
-              </p>
-              <p>
-                To graph <m>y=\sin\left(\frac{\pi}{6}(x+2)\right)</m>, begin by graphing the sine function <m>y=\sin\left(\frac{\pi}{6}x\right)</m> with a period of 12. Then, apply a phase shift of 2 units to the left on the resulting graph.
-              </p>
-              <figure xml:id="sin-phase-shift1">
-                <caption>The graph of <m>y=\sin\left(\frac{\pi}{6}x\right)</m> represents the sine function <m>y=\sin x</m> with a horizontal stretch, resulting in a period of 12.</caption>
-                <image xml:id="fig-sin-phase-shift1">
-                  <latex-image>
-                    \begin{tikzpicture}
-                    \begin{axis}[
-                    axis lines=middle,clip=false,
-                    xmin=-6-0.5,xmax=12+0.5,ymin=-1.5,ymax=2.2,
-                    ytick={-1,1},
-                    minor ytick={-0.5,0.5},
-                    xtick={-6,-4,...,12},
-                    %xticklabels={\(-2\pi\),\(-\pi\),\(0\),\(\pi\),\(2\pi\),\(3\pi\),\(4\pi\)},
-                    minor xtick={-5,-3,...,11},
-                    xticklabel style={black},
-                    xlabel=\(x\),
-                    ylabel=\(y\)]
-                    \addplot[domain=-6-0.5:12+0.5,samples=200,blue,line width=1pt,opacity=0.5]{sin(deg(x))}node[above,pos=0.1]{\(y=\sin x\)};
-                    \addplot[domain=-6-0.5:12+0.5,samples=200,red,line width=1pt]{sin(deg(pi/6*x))}node[below,pos=0.16]{\(y=\sin \left(\frac{\pi}{6}x\right)\)};
-                    \addplot [dashed,blue,opacity=0.5] coordinates {(0,1.2) (2*pi,1.2)}node[above,pos=0.5]{period=\(2\pi\approx6.28\)};
-                    \addplot [dashed,blue,opacity=0.5] coordinates {(0,0) (0,1.2)};
-                    \addplot [dashed,blue,opacity=0.5] coordinates {(2*pi,1.2) (2*pi,0)};
-                    \addplot [dashed,red] coordinates {(0,-1.2) (12,-1.2)}node[below,pos=0.5]{period=\(12\)};
-                    \addplot [dashed,red] coordinates {(0,-0) (0,-1.2)};
-                    \addplot [dashed,red] coordinates {(12,-1.2) (12,0)};
-                    \end{axis}
-                    \end{tikzpicture}
-                  </latex-image>
-                </image>
-              </figure>
-              <figure xml:id="sin-phase-shift2">
-                <caption>Shifting the graph of <m>y=\sin\left(\frac{\pi}{6}x\right)</m> 2 units to the left results in the graph of <m>y=\sin\left(\frac{\pi}{6}(x+2)\right)</m>.</caption>
-                <image xml:id="fig-sin-phase-shift2">
-                  <latex-image>
-                    \begin{tikzpicture}
-                    \begin{axis}[
-                    axis lines=middle,clip=false,
-                    xmin=-6-0.5,xmax=12+0.5,ymin=-1.5,ymax=1.5,
-                    ytick={-1,1},
-                    minor ytick={-0.5,0.5},
-                    xtick={-6,-4,...,12},
-                    %xticklabels={\(-2\pi\),\(-\pi\),\(0\),\(\pi\),\(2\pi\),\(3\pi\),\(4\pi\)},
-                    minor xtick={-5,-3,...,11},
-                    xticklabel style={black},
-                    xlabel=\(x\),
-                    ylabel=\(y\)]
-                    \addplot[domain=-6-0.5:12+0.5,samples=200,red,line width=1pt,opacity=0.5]{sin(deg(pi/6*x))}node[below,pos=0.16]{\(y=\sin \left(\frac{\pi}{6}x\right)\)};
-                    \addplot[domain=-6-0.5:12+0.5,samples=200,blue,line width=1pt]{sin(deg(pi/6*(x+2)))}node[below,pos=0.7]{\(y=\sin \left(\frac{\pi}{6}(x+2)\right)\)};
-                    \addplot [stealth-,dashed,black] coordinates {(3,1) (1,1)}node[above,pos=0.5]{\(2\)};
-                    \end{axis}
-                    \end{tikzpicture}
-                  </latex-image>
-                </image>
-              </figure>
-            </li>
-          </ol>
-        </p>
-      </solution>
+      </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>y=\cos(x-\pi)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Since this equation is of the form <m>y=\cos(Bx-E)</m>, we have <m>B=1</m> and <m>E=\pi</m>. Therefore,
+          </p>
+          <p>
+            <me>\mbox{period}=\frac{2\pi}{|B|}=\frac{2\pi}{1}=2\pi</me>
+          </p>
+          <p>
+            and
+          </p>
+          <p>
+            <me>\mbox{phase shift}=\frac{E}{B}=\frac{\pi}{1}=\pi.</me>
+          </p>
+          <p>
+            A positive value for the phase shift indicates a shift to the right. It's important to note that, given <m>B=1</m>, the phase shift is simply <m>E=\pi</m>.
+          </p>
+          <figure xml:id="cos-phase-shift">
+            <caption>The graph of <m>y=\cos(x-\pi)</m> is the graph of <m>y=\cos x</m> with a phase shift of <m>\pi</m> units to the right.</caption>
+            <image xml:id="fig-cos-phase-shift">
+              <latex-image>
+                \begin{tikzpicture}
+                \begin{axis}[
+                axis lines=middle,clip=false,
+                xmin=-2*pi-0.5,xmax=4*pi+0.5,ymin=-1.5,ymax=1.5,
+                ytick={-1,1},
+                minor ytick={-0.5,0.5},
+                xtick={-2*pi,-pi,0,pi,2*pi,3*pi,4*pi},
+                xticklabels={\(-2\pi\),\(-\pi\),\(0\),\(\pi\),\(2\pi\),\(3\pi\),\(4\pi\)},
+                xticklabel style={black},
+                xlabel=\(x\),
+                ylabel=\(y\)]
+                \addplot[domain=-2*pi-0.5:4*pi+0.5,samples=200,blue,line width=1pt,opacity=0.5]{cos(deg(x))}node[below,pos=0.18]{\(y=\cos x\)};
+                \addplot[domain=-2*pi-0.5:4*pi+0.5,samples=200,red,line width=1pt]{cos(deg(x-pi))}node[below,pos=0.65]{\(y=\cos (x-\pi)\)};
+                \addplot [-stealth,dashed,black] coordinates {(0,1) (pi,1)}node[above,pos=0.5]{\(\pi\)};
+                \end{axis}
+                \end{tikzpicture}
+              </latex-image>
+            </image>
+          </figure>
+        </solution>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>y=\sin\left(\frac{\pi}{6}(x+2)\right)</m>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Since the given equation is in the form <m>y = \sin\left(\frac{\pi}{6}(x + 2)\right)</m>, we can identify <m>B = \frac{\pi}{6}</m> and <m>C = -2</m>. Consequently,
+          </p>
+          <p>
+            <me>\mbox{period}=\frac{2\pi}{|B|}=\frac{2\pi}{\frac{\pi}{6}}=2\pi\cdot\frac{6}{\pi}=12</me>
+          </p>
+          <p>
+            and
+          </p>
+          <p>
+            <me>\mbox{phase shift}=C=-2.</me>
+          </p>
+          <p>
+            The negative sign indicates a phase shift to the left by 2 units.
+          </p>
+          <p>
+            To graph <m>y=\sin\left(\frac{\pi}{6}(x+2)\right)</m>, begin by graphing the sine function <m>y=\sin\left(\frac{\pi}{6}x\right)</m> with a period of 12. Then, apply a phase shift of 2 units to the left on the resulting graph.
+          </p>
+          <figure xml:id="sin-phase-shift1">
+            <caption>The graph of <m>y=\sin\left(\frac{\pi}{6}x\right)</m> represents the sine function <m>y=\sin x</m> with a horizontal stretch, resulting in a period of 12.</caption>
+            <image xml:id="fig-sin-phase-shift1">
+              <latex-image>
+                \begin{tikzpicture}
+                \begin{axis}[
+                axis lines=middle,clip=false,
+                xmin=-6-0.5,xmax=12+0.5,ymin=-1.5,ymax=2.2,
+                ytick={-1,1},
+                minor ytick={-0.5,0.5},
+                xtick={-6,-4,...,12},
+                %xticklabels={\(-2\pi\),\(-\pi\),\(0\),\(\pi\),\(2\pi\),\(3\pi\),\(4\pi\)},
+                minor xtick={-5,-3,...,11},
+                xticklabel style={black},
+                xlabel=\(x\),
+                ylabel=\(y\)]
+                \addplot[domain=-6-0.5:12+0.5,samples=200,blue,line width=1pt,opacity=0.5]{sin(deg(x))}node[above,pos=0.1]{\(y=\sin x\)};
+                \addplot[domain=-6-0.5:12+0.5,samples=200,red,line width=1pt]{sin(deg(pi/6*x))}node[below,pos=0.16]{\(y=\sin \left(\frac{\pi}{6}x\right)\)};
+                \addplot [dashed,blue,opacity=0.5] coordinates {(0,1.2) (2*pi,1.2)}node[above,pos=0.5]{period=\(2\pi\approx6.28\)};
+                \addplot [dashed,blue,opacity=0.5] coordinates {(0,0) (0,1.2)};
+                \addplot [dashed,blue,opacity=0.5] coordinates {(2*pi,1.2) (2*pi,0)};
+                \addplot [dashed,red] coordinates {(0,-1.2) (12,-1.2)}node[below,pos=0.5]{period=\(12\)};
+                \addplot [dashed,red] coordinates {(0,-0) (0,-1.2)};
+                \addplot [dashed,red] coordinates {(12,-1.2) (12,0)};
+                \end{axis}
+                \end{tikzpicture}
+              </latex-image>
+            </image>
+          </figure>
+          <figure xml:id="sin-phase-shift2">
+            <caption>Shifting the graph of <m>y=\sin\left(\frac{\pi}{6}x\right)</m> by two units to the left results in the graph of <m>y=\sin\left(\frac{\pi}{6}(x+2)\right)</m>.</caption>
+            <image xml:id="fig-sin-phase-shift2">
+              <latex-image>
+                \begin{tikzpicture}
+                \begin{axis}[
+                axis lines=middle,clip=false,
+                xmin=-6-0.5,xmax=12+0.5,ymin=-1.5,ymax=1.5,
+                ytick={-1,1},
+                minor ytick={-0.5,0.5},
+                xtick={-6,-4,...,12},
+                %xticklabels={\(-2\pi\),\(-\pi\),\(0\),\(\pi\),\(2\pi\),\(3\pi\),\(4\pi\)},
+                minor xtick={-5,-3,...,11},
+                xticklabel style={black},
+                xlabel=\(x\),
+                ylabel=\(y\)]
+                \addplot[domain=-6-0.5:12+0.5,samples=200,red,line width=1pt,opacity=0.5]{sin(deg(pi/6*x))}node[below,pos=0.16]{\(y=\sin \left(\frac{\pi}{6}x\right)\)};
+                \addplot[domain=-6-0.5:12+0.5,samples=200,blue,line width=1pt]{sin(deg(pi/6*(x+2)))}node[below,pos=0.7]{\(y=\sin \left(\frac{\pi}{6}(x+2)\right)\)};
+                \addplot [stealth-,dashed,black] coordinates {(3,1) (1,1)}node[above,pos=0.5]{\(2\)};
+                \end{axis}
+                \end{tikzpicture}
+              </latex-image>
+            </image>
+          </figure>
+        </solution>
+      </task>
     </example>
     
     <p>
@@ -956,7 +936,7 @@
       <p>
         When dealing with functions in the form
         <me>
-          y=A\cdot\sin(B(x-C))+D \quad \mbox{and} \quad y=A\cdot\cos(B(x-C))+D
+          y=A\sin(B(x-C))+D \quad \mbox{and} \quad y=A\cos(B(x-C))+D
         </me>
         we can express the transformations as follows:
       </p>
@@ -964,7 +944,7 @@
         <ul>
           <li>
             <p>
-              Amplitude and Vertical Compression/Stretch: <m>|A|</m>
+              Amplitude and Vertical Stretch/Compression: <m>|A|</m>
             </p>
             <p>
               <ul>
@@ -1072,9 +1052,9 @@
       <p>
         For functions of the form
         <me>
-          y=A\cdot\sin(Bx-E)+D \quad \mbox{and} \quad y=A\cdot\cos(Bx-E)+D
+          y=A\sin(Bx-E)+D \quad \mbox{and} \quad y=A\cos(Bx-E)+D
         </me>
-        the transformations are the same as above, except for the phase shift where you replace <m>C</m> with <m>\frac{E}{B}</m>. If <m>\frac{E}{B} \lt0</m> the phase shift is to the right, and if <m>\frac{E}{B} \gt 0</m> it is to the left.
+        the transformations are the same as above, except for the phase shift where we replace <m>C</m> with <m>\frac{E}{B}</m>.
       </p>
     </remark>
     <p>
@@ -1082,7 +1062,7 @@
     </p>
     <figure xml:id="sinusoidal-transformation">
       <caption>
-        Manipulate the graphs of sine and cosine by adjusting the sliders for <m>A</m>, <m>B</m>, <m>C</m>, and <m>D</m>. Observe the effects on amplitude, period, phase and vertical shifts, as well as reflections about the <m>x</m>- and <m>y</m>-axes. Additionally, you can toggle between the sine and cosine graphs by selecting the corresponding function.
+        Manipulate the graphs of sine and cosine by adjusting the sliders for <m>A</m>, <m>B</m>, <m>C</m>, and <m>D</m>. Observe the effects on amplitude, period, phase and vertical shifts, as well as reflections about the <m>x</m>- and <m>y</m>-axes. Additionally, we can toggle between the sine and cosine graphs by selecting the corresponding function.
       </caption>
       <interactive geogebra="u75zdnr8" aspect="1.75:0.75" label="geogebra-sinusoidal-transformation-animation"/>
     </figure>
@@ -1311,7 +1291,7 @@
               xticklabel style={black},
               xlabel=\(x\),
               ylabel=\(y\)]
-              \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt]{-4*cos(deg(x))-2}node[above,pos=0.6]{\(y = -4 \cos(x) - 2\)};
+              \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt]{-4*cos(deg(x))-2}node[above,pos=0.6,xshift=15]{\(y = -4 \cos(x) - 2\)};
               \end{axis}
               \end{tikzpicture}
             </latex-image>
@@ -1395,7 +1375,7 @@
               xticklabel style={black},
               xlabel=\(x\),
               ylabel=\(y\)]
-              \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt]{2*sin(deg(x))-4}node[above,pos=0.5]{\(y = 2 \sin(x) - 4\)};
+              \addplot[stealth-stealth,domain=-2*pi-0.5:3*pi+0.5,samples=200,blue,line width=1pt]{2*sin(deg(x))-4}node[above,pos=0.5,xshift=30]{\(y = 2 \sin(x) - 4\)};
               \end{axis}
               \end{tikzpicture}
             </latex-image>
@@ -1550,7 +1530,7 @@
               ytick={-4,-3,...,4},
               minor ytick={-3.5,-2.5,...,3.5},
               xtick={-2*pi,-pi,0,pi,2*pi,3*pi},
-              minor xtick={-3*pi/2,-pi/2,pi/2,3*pi/2,5*pi/2},
+              minor xtick={-2*pi,-7*pi/4,...,3*pi},
               xticklabels={\(-2\pi\),\(-\pi\),\(0\),\(\pi\),\(2\pi\),\(3\pi\)},
               xticklabel style={black},
               xlabel=\(x\),
@@ -1613,12 +1593,12 @@
               ytick={-1.25,-0.75,...,1.25},
               minor ytick={-1.5,-1,...,1.5},
               yticklabels={\(-\frac{5}{4}\),\(-\frac{3}{4}\),\(-\frac{1}{4}\),\(\frac{1}{4}\),\(\frac{3}{4}\),\(\frac{5}{4}\)},
-              xtick={-6,-2,...,12},
-              minor xtick={-5,-3,...,11},
+              xtick={-6,-3,...,12},
+              minor xtick={-6,-5,...,11},
               xticklabel style={black},
               xlabel=\(x\),
               ylabel=\(y\)]
-              \addplot[stealth-stealth,domain=-6.5:12.5,samples=200,blue,line width=1pt]{5/4*cos(deg(pi/3*x))}node[below,pos=0.5]{\(y = \frac{5}{4} \cos\left(\frac{\pi}{3}x\right)\)};
+              \addplot[stealth-stealth,domain=-6.5:12.5,samples=200,blue,line width=1pt]{5/4*cos(deg(pi/3*x))}node[below,pos=0.5,xshift=5]{\(y = \frac{5}{4} \cos\left(\frac{\pi}{3}x\right)\)};
               \end{axis}
               \end{tikzpicture}
             </latex-image>
@@ -1947,7 +1927,7 @@
         <answer>
           <p>
             Amplitude: <m>2</m>;
-            Period: <m>1</m>;
+            Period: <m>4</m>;
             Phase Shift: <m>0.5</m>;
             Vertical Shift: <m>0</m>
           </p>
@@ -1964,7 +1944,7 @@
               xticklabel style={black},
               xlabel=\(x\),
               ylabel=\(y\)]
-              \addplot[stealth-stealth,domain=-3.5:8.5,samples=200,blue,line width=1pt]{-2*cos(deg(pi/2*(x-0.5)))}node[above,pos=0.5]{\(y = -2 \cos\left(\frac{\pi}{2}\left(x - \frac{1}{2}\right)\right)\)};
+              \addplot[stealth-stealth,domain=-3.5:8.5,samples=200,blue,line width=1pt]{-2*cos(deg(pi/2*(x-0.5)))}node[above,pos=0.5,xshift=30]{\(y = -2 \cos\left(\frac{\pi}{2}\left(x - \frac{1}{2}\right)\right)\)};
               \end{axis}
               \end{tikzpicture}
             </latex-image>
@@ -1998,7 +1978,7 @@
               xticklabel style={black},
               xlabel=\(x\),
               ylabel=\(y\)]
-              \addplot[stealth-stealth,domain=-2*pi/3-0.5:pi+0.5,samples=200,blue,line width=1pt]{2*sin(deg(3*x-pi))}node[below,pos=0.17]{\(y = 2 \sin\left(3x - \pi\right)\)};
+              \addplot[stealth-stealth,domain=-2*pi/3-0.5:pi+0.5,samples=200,blue,line width=1pt]{2*sin(deg(3*x-pi))}node[below,pos=0.5,xshift=35]{\(y = 2 \sin\left(3x - \pi\right)\)};
               \end{axis}
               \end{tikzpicture}
             </latex-image>
@@ -2013,7 +1993,7 @@
         </statement>
         <answer>
           <p>
-            Amplitude: <m>2</m>;
+            Amplitude: <m>3</m>;
             Period: <m>\pi</m>;
             Phase Shift: <m>-\frac{\pi}{6}</m>;
             Vertical Shift: <m>0</m>
@@ -2032,7 +2012,7 @@
               xticklabel style={black},
               xlabel=\(x\),
               ylabel=\(y\)]
-              \addplot[stealth-stealth,domain=-pi-0.5:pi+0.5,samples=200,blue,line width=1pt]{-3*cos(deg(2*x+pi/3))}node[above,pos=0.64]{\(y = -3 \cos\left(2x + \frac{\pi}{3}\right)\)};
+              \addplot[stealth-stealth,domain=-pi-0.5:pi+0.5,samples=200,blue,line width=1pt]{-3*cos(deg(2*x+pi/3))}node[above,pos=0.64,xshift=25]{\(y = -3 \cos\left(2x + \frac{\pi}{3}\right)\)};
               \end{axis}
               \end{tikzpicture}
             </latex-image>
@@ -2042,7 +2022,7 @@
       <exercise>
         <statement>
           <p>
-            <m>y = \frac{1}{2} \sin\left(\pi(x - 1)+\frac{3}{2}\right)</m>
+            <m>y = \frac{1}{2} \sin\left(\pi(x - 1)\right)+\frac{3}{2}</m>
           </p>
         </statement>
         <answer>
@@ -2080,7 +2060,7 @@
         </statement>
         <answer>
           <p>
-            Amplitude: <m>\frac{1}{2}</m>;
+            Amplitude: <m>3</m>;
             Period: <m>8</m>;
             Phase Shift: <m>-2</m>;
             Vertical Shift: <m>-2</m>
@@ -2098,7 +2078,7 @@
               xticklabel style={black},
               xlabel=\(x\),
               ylabel=\(y\)]
-              \addplot[stealth-stealth,domain=-3.5:13.5,samples=200,blue,line width=1pt]{3*cos(deg(pi/4*(x+2)))-2}node[above,pos=0.55]{\(y = 3 \cos\left(\frac{\pi}{4}(x + 2)\right)-2\)};
+              \addplot[stealth-stealth,domain=-3.5:13.5,samples=200,blue,line width=1pt]{3*cos(deg(pi/4*(x+2)))-2}node[above,pos=0.55,xshift=15]{\(y = 3 \cos\left(\frac{\pi}{4}(x + 2)\right)-2\)};
               \end{axis}
               \end{tikzpicture}
             </latex-image>
@@ -2114,7 +2094,7 @@
         <answer>
           <p>
             Amplitude: <m>\frac{2}{3}</m>;
-            Period: <m>8</m>;
+            Period: <m>2</m>;
             Phase Shift: <m>\frac{\pi}{6}</m>;
             Vertical Shift: <m>\frac{2}{3}</m>
           </p>
@@ -2360,14 +2340,14 @@
         </statement>
         <answer>
           <p>
-            <m>\delta=-20.8^{\circ}</m>
+            <m>\delta=-20.78^{\circ}</m>
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            What are significant about March 22nd, June 21st, September 21st, and December 21st?
+            What is significant about March 22nd, June 21st, September 21st, and December 21st?
           </p>
         </statement>
         <answer>
@@ -2404,7 +2384,7 @@
       <title>Rough Seas</title>
       <introduction>
         <p>
-          <term>Wave heights</term>,<idx><h>wave height</h></idx> defined as the vertical distance between the crest and the trough of a wave, can vary in the open ocean. However, the height of the wave alone does not necessarily indicate a calm or choppy sailing conditions. Another important factor is the <term>wave period</term><idx><h>period</h><h>wave</h></idx><idx><h>wave period</h></idx>, representing the time between waves, which affects the smoothness of sailing. For each given equation, where <m>w(t)</m> is the number of feet the wave is above the mean sea level at <m>t</m> seconds, calculate: a) the wave heigh; b) the wave period; c) Plot the wave height for two periods.
+          <term>Wave heights</term>,<idx><h>wave height</h></idx> defined as the vertical distance between the crest and the trough of a wave, can vary in the open ocean. However, the height of the wave alone does not necessarily indicate calm or choppy sailing conditions. Another important factor is the <term>wave period</term><idx><h>period</h><h>wave</h></idx><idx><h>wave period</h></idx>, representing the time between waves, which affects the smoothness of sailing. For each given equation, where <m>w(t)</m> is the number of feet the wave is above the mean sea level at <m>t</m> seconds, calculate: a) the wave height; b) the wave period; and plot the wave for two periods.
         </p>
         <image xml:id="exer-waa-wave">
           <latex-image>
@@ -2444,9 +2424,11 @@
               axis lines=middle,clip=false,
               xmin=0,xmax=40,ymin=-10,ymax=10,
               xticklabel style={black},
+              xtick={0,8,...,40},
+              minor xtick={0,4,...,40},
               xlabel=\(t\),
               ylabel=\(w\)]
-              \addplot[stealth-stealth,domain=0:40,samples=200,blue,line width=1pt,]{4*cos(deg(pi/8*x))};
+              \addplot[stealth-stealth,domain=0:40,samples=200,blue,line width=1pt,]{9*cos(deg(pi/8*x))};
               \end{axis}
               \end{tikzpicture}
             </latex-image>
@@ -2470,6 +2452,8 @@
               axis lines=middle,clip=false,
               xmin=0,xmax=40,ymin=-10,ymax=10,
               xticklabel style={black},
+              xtick={0,8,...,40},
+              minor xtick={0,4,...,40},
               xlabel=\(t\),
               ylabel=\(w\)]
               \addplot[stealth-stealth,domain=0:40,samples=200,blue,line width=1pt,]{9*cos(deg(pi/8*x))};
@@ -2487,7 +2471,7 @@
         </statement>
         <answer>
           <p>
-            a) <m>18</m> feet; b) <m>8</m> seconds
+            a) <m>8</m> feet; b) <m>8</m> seconds
           </p>
           <image xml:id="exer-wave-heigh-period-3">
             <latex-image>
@@ -2496,6 +2480,8 @@
               axis lines=middle,clip=false,
               xmin=0,xmax=40,ymin=-10,ymax=10,
               xticklabel style={black},
+              xtick={0,8,...,40},
+              minor xtick={0,4,...,40},
               xlabel=\(t\),
               ylabel=\(w\)]
               \addplot[stealth-stealth,domain=0:40,samples=200,blue,line width=1pt,]{4*cos(deg(pi/4*x))};
@@ -2523,7 +2509,7 @@
   <references xml:id="refs-graphs-sin-cos">
     <biblio type="bibtex" xml:id="Dixon">
       <author>A. E. Dixon and J. D. Leslie</author>
-      <title>Solar Energy Conversio</title>
+      <title>Solar Energy Conversion</title>
       <publisher>Pergamon</publisher>
       <year>1979</year>
     </biblio>
