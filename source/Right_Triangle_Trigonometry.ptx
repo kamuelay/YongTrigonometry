@@ -606,17 +606,10 @@
   <subsection>
     <title>Using a Calculator</title>
     <p>
-      Sometimes you may encounter an angle other than the special angles described above.
-      In this case, you will have to use a calculator.
+      Sometimes we may encounter an angle other than the special angles described above. In this case, we will have to use a calculator.
     </p>
     <p>
-      <em>First, be sure that your angle is either in degrees or radians,
-      depending on the problem</em>,
-      refer to your calculator's manual for instructions.
-      Most calculators will have a special button for the sine,
-      cosine, and tangent functions.
-      Depending on your calculator,
-      you may see the following keys for
+      <em>First, ensure that the angle is either in degrees or radians, depending on the problem</em>. Refer to your calculator's manual for instructions. Most calculators have dedicated buttons for the sine, cosine, and tangent functions. Depending on your calculator, you may see the following keys
     </p>
     <tabular>
       <row>
@@ -647,30 +640,18 @@
       </row>
     </tabular>
     <p>
-      To calculate cosecant, secant, and cotangent,
-      you will need to use the identity
+      To calculate cosecant, secant, and cotangent, we will need to use the identities
       <md>
-        <mrow>\csc\theta \amp = \frac{1}{\sin\theta}, \amp \sec\theta \amp = \frac{1}{\cos\theta}, \amp \cot\theta \amp = \frac{1}{\tan\theta}</mrow>
+        <mrow>\csc\theta \amp = \frac{1}{\sin\theta}, \amp \sec\theta \amp = \frac{1}{\cos\theta}, \amp \cot\theta \amp = \frac{1}{\tan\theta}.</mrow>
       </md>
     </p>
     <p>
-      Answers produced by calculators are
-      <em>estimates</em>
-      and you should pay close attention to see if the question is asking for the exact solution or a decimal approximation.
-      For example,
-      if you need to calculate
-      <m>\sin45^{\circ}=\frac{\sqrt{2}}{2}</m>,
-      the calculator may give the answer as
-      <m>\sin45^{\circ}\approx0.70710678</m>,
-      which is a decimal approximation since the actual solution goes on forever.
-      <em>Unless stated otherwise, answers in the book should be exact</em>, e.g.
-      <m>\frac{\sqrt{2}}{2}</m>
-      and not 0.70710678.
+      Answers produced by calculators are <em>estimates</em> and we should pay close attention to see if the question is asking for the exact solution or a decimal approximation. For example, if we need to calculate <m>\sin45^{\circ}=\frac{1}{\sqrt{2}}</m>, the calculator may give the answer as <m>\sin45^{\circ}\approx0.70710678</m>, which is a decimal approximation since the actual value is an irrational number with infinitely many decimal places. <em>Unless stated otherwise, answers in the book should be exact</em>, e.g. <m>\frac{1}{\sqrt{2}}</m> and not 0.70710678.
     </p>
     <example>
       <introduction>
         <p>
-          Use a calculator to evaluate
+          Use a calculator to evaluate:
         </p>
       </introduction>
       <task>
@@ -730,18 +711,14 @@
         </statement>
         <solution>
           <p>
-            Since this problem uses radians,
-            we must change the mode on our calculator then Input:
-            <em>COS</em>
-            (5); Output:
-            <m>0.2837</m>.
+            Since this problem uses radians, we must change the mode on our calculator then Input: <em>COS</em> (5); Output: <m>0.2837</m>.
           </p>
         </solution>
       </task>
     </example>
     <remark>
       <p>
-        Observe that <m>\cos5^{\circ}\neq\cos5\mbox{ rad}</m>. This emphasizes the significance of verifying whether your calculator is in degree or radian mode.
+        Observe that <m>\cos5^{\circ}\neq\cos5\mbox{ rad}</m>. This emphasizes the significance of verifying whether the calculator is in degree or radian mode.
       </p>
     </remark>
   </subsection>
@@ -762,13 +739,13 @@
     <p>
       Consider the following right triangle where side <m>a</m> is opposite angle <m>\alpha</m>, side <m>b</m> is opposite angle <m>\beta</m>, and side <m>c</m> is the hypotenuse. Since <m>\alpha</m> and <m>\beta</m> are complementary angles, we have
       <me>
-        \alpha+\beta=90^{\circ}
+        \alpha+\beta=90^{\circ}.
       </me>
     </p>
     <p>
       Additionally, by the Pythagorean Theorem, we have
       <me>
-        a^2+b^2=c^2
+        a^2+b^2=c^2.
       </me>
     </p>
     <definition>
@@ -788,7 +765,7 @@
       <p>
         In solving a right triangle, the following relationships are useful:
         <me>
-          \alpha+\beta=90^{\circ}, \qquad a^2+b^2=c^2
+          \alpha+\beta=90^{\circ}, \qquad a^2+b^2=c^2.
         </me>
       </p>
     </remark>
@@ -812,31 +789,31 @@
       </statement>
       <solution>
         <p>
-          Given that this is a right triangle, we already know one angle is <m>90^{\circ}</m>, and we have an additional angle of<m>50^{\circ}</m> along with an adjacent side length of 16. To solve this triangle, we need to determine the values of sides <m>a</m>, <m>c</m>, and <m>\beta</m>. We begin by finding the measure of angle <m>\beta</m>. Since <m>50^{\circ}+\beta=90^{\circ}</m> we have
+          Given that this is a right triangle, we already know one angle is <m>90^{\circ}</m>, and we have an additional angle of <m>50^{\circ}</m> along with an adjacent side length of 16. To solve this triangle, we need to determine the values of sides <m>a</m>, <m>c</m>, and <m>\beta</m>. We begin by finding the measure of angle <m>\beta</m>. Since <m>50^{\circ}+\beta=90^{\circ}</m> we have
           <me>
-            \beta=90^{\circ}-50^{\circ}=40^{\circ}
+            \beta=90^{\circ}-50^{\circ}=40^{\circ}.
           </me>
         </p>
         <p>
           Next, we will solve for side <m>a</m>. Using the angle <m>50^{\circ}</m>, where the adjacent side is 16 and side <m>a</m> is the side opposite to the angle, we can apply the tangent function, which  relates the opposite and adjacent sides:
           <me>
-            \tan50^{\circ}=\frac{a}{16}
+            \tan50^{\circ}=\frac{a}{16}.
           </me>
           Multiplying both sides by 16 we get
           <me>
-            a=16\cdot\tan50^{\circ}\approx19.07
+            a=16\cdot\tan50^{\circ}\approx19.07.
           </me>
         </p>
         <p>
           Using the Pythagorean Theorem, we get
           <me>
-            c^2=16^2+19.07^2\approx619.66
+            c^2=16^2+19.07^2\approx619.66.
           </me>
         </p>
         <p>
           Thus
           <me>
-            c\approx\sqrt{619.66}\approx24.89
+            c\approx\sqrt{619.66}\approx24.89.
           </me>
         </p>
       </solution>
@@ -848,7 +825,7 @@
       <title>Deviation</title>
       <statement>
         <p>
-          We are now ready to calculate the deviation example proposed at the start of this section. In an average day of sailing, a waʻa sails for 120 nautical miles (NM). If Hikianalia is supposed to sail in the direction of Hikina (East), but currents have deviated her course by one house so she actually sailed in the house Lā, how far off the course has Hikianalia deviated?
+          We are now ready to calculate the deviation example proposed at the start of this section. In an average day of sailing, a waʻa sails 120 nautical miles (NM). If Hikianalia is supposed to sail in the direction of Hikina (East), but currents have deviated her course by one house so she actually sailed in the house Lā, how far off the course has Hikianalia deviated?
         </p>
         <p></p>
         <image xml:id="deviation-example" width="100%">
@@ -890,11 +867,11 @@
           Since we know the hypotenuse of the triangle and want to find the side opposite of the angle,
           we will use the sine function:
           <me>
-            \sin11.25^{\circ}=\frac{\mbox{opposite} }{\mbox{hypotenuse} }=\frac{y}{120\mbox{ NM} }
+            \sin11.25^{\circ}=\frac{\mbox{opposite} }{\mbox{hypotenuse} }=\frac{y}{120\mbox{ NM} };
           </me>
           multiplying both sides by 120, we get
           <me>
-            y=120\cdot\sin11.25^{\circ}\mbox{ NM} \approx23.4\mbox{ NM}
+            y=120\cdot\sin11.25^{\circ}\mbox{ NM} \approx23.4\mbox{ NM}.
           </me>
         </p>
         <p>
@@ -944,8 +921,8 @@
         <p>
           Since we know the desired angle of pitch of the solar panel and the length of the panel, we can set up the following equation
           <md>
-            <mrow>\sin21^{\circ}\amp =\amp \frac{\mbox{opposite} }{\mbox{hypotenuse} }=\frac{\mbox{height} }{65\mbox{ in} }</mrow>
-            <mrow>\mbox{height} \amp =\amp 65\mbox{ in} \cdot\sin21^{\circ}\approx23.3\mbox{ in}</mrow>
+            <mrow>\sin21^{\circ} =\amp \frac{\mbox{opposite} }{\mbox{hypotenuse} }=\frac{\mbox{height} }{65\mbox{ in} };</mrow>
+            <mrow>\mbox{height} =\amp 65\mbox{ in} \cdot\sin21^{\circ}\approx23.3\mbox{ in}.</mrow>
           </md>
         </p>
         <p>
@@ -1004,8 +981,8 @@
         </statement>
         <answer>
           <p>
-          <m>\sin\theta=\frac{5\sqrt{74}}{74}</m>,
-          <m>\cos\theta=\frac{7\sqrt{74}}{74}</m>,
+          <m>\sin\theta=\frac{5}{\sqrt{74}}</m>,
+          <m>\cos\theta=\frac{7}{\sqrt{74}}</m>,
           <m>\tan\theta=\frac{5}{7}</m>,
           <m>\csc\theta=\frac{\sqrt{74}}{5}</m>,
           <m>\sec\theta=\frac{\sqrt{74}}{7}</m>,
@@ -1029,8 +1006,8 @@
         </statement>
         <answer>
           <p>
-          <m>\sin\theta=\frac{3\sqrt{13}}{13}</m>,
-          <m>\cos\theta=\frac{2\sqrt{13}}{13}</m>,
+          <m>\sin\theta=\frac{3}{\sqrt{13}}</m>,
+          <m>\cos\theta=\frac{2}{\sqrt{13}}</m>,
           <m>\tan\theta=\frac{3}{2}</m>,
           <m>\csc\theta=\frac{\sqrt{13}}{3}</m>,
           <m>\sec\theta=\frac{\sqrt{13}}{2}</m>,
@@ -1079,8 +1056,8 @@
         </statement>
         <answer>
           <p>
-          <m>\sin\theta=\frac{2\sqrt{5}}{5}</m>,
-          <m>\cos\theta=\frac{\sqrt{5}}{5}</m>,
+          <m>\sin\theta=\frac{2}{\sqrt{5}}</m>,
+          <m>\cos\theta=\frac{1}{\sqrt{5}}</m>,
           <m>\tan\theta=2</m>,
           <m>\csc\theta=\frac{\sqrt{5}}{2}</m>,
           <m>\sec\theta=\sqrt{5}</m>,
@@ -1104,8 +1081,8 @@
         </statement>
         <answer>
           <p>
-          <m>\sin\theta=\frac{\sqrt{2}}{2}</m>,
-          <m>\cos\theta=\frac{\sqrt{2}}{2}</m>,
+          <m>\sin\theta=\frac{1}{\sqrt{2}}</m>,
+          <m>\cos\theta=\frac{1}{\sqrt{2}}</m>,
           <m>\tan\theta=1</m>,
           <m>\csc\theta=\sqrt{2}</m>,
           <m>\sec\theta=\sqrt{2}</m>,
@@ -1129,12 +1106,12 @@
         </statement>
         <answer>
           <p>
-          <m>\sin\theta=\frac{\sqrt{15}}{5}</m>,
-          <m>\cos\theta=\frac{\sqrt{10}}{5}</m>,
+          <m>\sin\theta=\frac{\sqrt{3}}{\sqrt{5}}</m>,
+          <m>\cos\theta=\frac{2}{\sqrt{10}}</m>,
           <m>\tan\theta=\frac{\sqrt{6}}{2}</m>,
-          <m>\csc\theta=\frac{\sqrt{15}}{3}</m>,
+          <m>\csc\theta=\frac{\sqrt{10}}{\sqrt{6}}</m>,
           <m>\sec\theta=\frac{\sqrt{10}}{2}</m>,
-          <m>\cot\theta=\frac{\sqrt{6}}{3}</m>
+          <m>\cot\theta=\frac{2}{\sqrt{6}}</m>
           </p>
         </answer>
       </exercise>
@@ -1154,8 +1131,8 @@
         </statement>
         <answer>
           <p>
-          <m>\sin\theta=\frac{2\sqrt{13}}{13}</m>,
-          <m>\cos\theta=\frac{3\sqrt{13}}{13}</m>,
+          <m>\sin\theta=\frac{2}{\sqrt{13}}</m>,
+          <m>\cos\theta=\frac{3}{\sqrt{13}}</m>,
           <m>\tan\theta=\frac{2}{3}</m>,
           <m>\csc\theta=\frac{\sqrt{13}}{2}</m>,
           <m>\sec\theta=\frac{\sqrt{13}}{3}</m>,
@@ -1168,7 +1145,7 @@
     <exercisegroup cols="2">
       <introduction>
         <p>
-          For each of the following problems, calculate
+          For each of the following problems, calculate:
           <ol>
             <li>
               <m>\cos\alpha</m> and <m>\sin\beta</m>;
@@ -1177,7 +1154,7 @@
               <m>\tan\alpha</m> and <m>\cot\beta</m>;
             </li>
             <li>
-              <m>\csc\alpha</m> and <m>\sec\beta</m>
+              <m>\csc\alpha</m> and <m>\sec\beta</m>.
             </li>
           </ol>
         </p>
@@ -1201,13 +1178,13 @@
           <p>
           <ol>
             <li>
-              <m>\cos\alpha=\sin\beta=\frac{5\sqrt{34}}{34}</m>;
+              <m>\cos\alpha=\sin\beta=\frac{5}{\sqrt{34}}</m>;
             </li>
             <li>
               <m>\tan\alpha=\cot\beta=\frac{3}{5}</m>;
             </li>
             <li>
-              <m>\csc\alpha=\sec\beta=\frac{\sqrt{34}}{3}</m>
+              <m>\csc\alpha=\sec\beta=\frac{\sqrt{34}}{3}</m>.
             </li>
           </ol>
           </p>
@@ -1232,15 +1209,13 @@
           <p>
           <ol>
             <li>
-              <m>\cos\alpha=\sin\beta=\frac{7}{8}</m>
-              ;
+              <m>\cos\alpha=\sin\beta=\frac{7}{8}</m>;
             </li>
             <li>
-              <m>\tan\alpha=\cot\beta=\frac{\sqrt{15}}{7}</m>
-              ;
+              <m>\tan\alpha=\cot\beta=\frac{\sqrt{15}}{7}</m>;
             </li>
             <li>
-              <m>\csc\alpha=\sec\beta=\frac{8\sqrt{15}}{15}</m>
+              <m>\csc\alpha=\sec\beta=\frac{8}{\sqrt{15}}</m>.
             </li>
           </ol>
           </p>
@@ -1251,8 +1226,7 @@
     <exercisegroup cols="3">
       <introduction>
         <p>
-          Use the Cofunction Identities to determine the value of
-          <m>\theta</m>
+          Use the Cofunction Identities to determine the value of <m>\theta</m>.
         </p>
       </introduction>
       <exercise>
@@ -1287,7 +1261,7 @@
         </statement>
         <answer>
           <p>
-            <m>\theta=62^{\circ}</m>
+            <m>\theta=38^{\circ}</m>
           </p>
         </answer>
       </exercise>
@@ -1333,21 +1307,21 @@
     <exercisegroup xml:id="ques-deviation" cols="2">
       <introduction>
         <p>
-          In <xref ref="ex-deviation">Example</xref>, we determined that when a wa‘a sails for one day (120 nautical miles) and deviates from its course by 1 House, the resulting deviation from the reference course is <m>23.4</m> NM. Now, calculate the deviations (<m>x</m>) for the remaining 7 angles. Round your answer to the nearest tenth of a nautical mile. Remember that one house corresponds to <m>11.25^{\circ}</m>.
+          In <xref ref="ex-deviation">Example</xref>, we determined that when a wa‘a sails for one day (120 nautical miles) and deviates from its course by 1 house, the resulting deviation from the reference course is <m>23.4</m> NM. Now, calculate the deviations (<m>x</m>) for the remaining 7 angles. Round your answer to the nearest tenth of a nautical mile. Remember that one house corresponds to <m>11.25^{\circ}</m>.
         </p>
         <image xml:id="fig-deviation-x" width="100%">
           <latex-image>
             \begin{tikzpicture}[scale=7]
             \draw[line width=1pt,-stealth] (0,0) -- (0:1.2cm) node[pos=0.8,sloped,below] {\(x_8\)};
-            \draw[line width=1pt,-stealth] (0,0) -- (11.25:1.2cm) node[right] {7 Houses};
-            \draw[line width=1pt,-stealth] (0,0) -- (22.5:1.2cm) node[right] {6 Houses};
-            \draw[line width=1pt,-stealth] (0,0) -- (33.75:1.2cm) node[right] {5 Houses};
-            \draw[line width=1pt,-stealth] (0,0) -- (45:1.2cm) node[right] {4 Houses};
-            \draw[line width=1pt,-stealth] (0,0) -- (56.65:1.2cm) node[right] {3 Houses};
-            \draw[line width=1pt,-stealth] (0,0) -- (67.5:1.2cm) node[right] {2 Houses};
-            \draw[line width=1pt,-stealth] (0,0) -- (78.75:1.2cm) node[above right] {1 House};
+            \draw[line width=1pt,-stealth] (0,0) -- (11.25:1.2cm) node[right] {7 houses};
+            \draw[line width=1pt,-stealth] (0,0) -- (22.5:1.2cm) node[right] {6 houses};
+            \draw[line width=1pt,-stealth] (0,0) -- (33.75:1.2cm) node[right] {5 houses};
+            \draw[line width=1pt,-stealth] (0,0) -- (45:1.2cm) node[right] {4 houses};
+            \draw[line width=1pt,-stealth] (0,0) -- (56.65:1.2cm) node[right] {3 houses};
+            \draw[line width=1pt,-stealth] (0,0) -- (67.5:1.2cm) node[right] {2 houses};
+            \draw[line width=1pt,-stealth] (0,0) -- (78.75:1.2cm) node[above right] {1 house};
             \draw[line width=1pt,-stealth] (0,0) -- (90:1.2cm) node[midway,sloped,above] {Reference Course, 120 NM};
-            \node[right] at (0:1.2cm) {8 Houses};
+            \node[right] at (0:1.2cm) {8 houses};
             \draw[dashed] (0,0.234108386419) -- (1.17694233648,0.234108386419)
             node[pos=0.8,above] {\(x_7\)};
             \draw[dashed] (0,0.459220118838) -- (1.10865543901,0.459220118838)
@@ -1370,7 +1344,7 @@
       <exercise>
         <statement>
           <p>
-            2 Houses (<m>11.25^{\circ}\times2=22.5^{\circ}</m>);
+            2 houses (<m>11.25^{\circ}\times2=22.5^{\circ}</m>);
             <m>x_2</m>
           </p>
         </statement>
@@ -1383,7 +1357,7 @@
       <exercise>
         <statement>
           <p>
-            3 Houses (<m>11.25^{\circ}\times3=33.75^{\circ}</m>);
+            3 houses (<m>11.25^{\circ}\times3=33.75^{\circ}</m>);
             <m>x_3</m>
           </p>
         </statement>
@@ -1396,20 +1370,20 @@
       <exercise>
         <statement>
           <p>
-            4 Houses (<m>11.25^{\circ}\times4=45^{\circ}</m>);
+            4 houses (<m>11.25^{\circ}\times4=45^{\circ}</m>);
             <m>x_4</m>
           </p>
         </statement>
         <answer>
           <p>
-            <m>x_4=84.5</m> NM
+            <m>x_4=84.9</m> NM
           </p>
         </answer>
       </exercise>
       <exercise>
         <statement>
           <p>
-            5 Houses (<m>11.25^{\circ}\times5=56.25^{\circ}</m>);
+            5 houses (<m>11.25^{\circ}\times5=56.25^{\circ}</m>);
             <m>x_5</m>
           </p>
         </statement>
@@ -1422,7 +1396,7 @@
       <exercise>
         <statement>
           <p>
-            6 Houses (<m>11.25^{\circ}\times6=67.5^{\circ}</m>);
+            6 houses (<m>11.25^{\circ}\times6=67.5^{\circ}</m>);
           <m>x_6</m>
           </p>
         </statement>
@@ -1435,7 +1409,7 @@
       <exercise>
         <statement>
           <p>
-            7 Houses (<m>11.25^{\circ}\times7=78.75^{\circ}</m>);
+            7 houses (<m>11.25^{\circ}\times7=78.75^{\circ}</m>);
           <m>x_7</m>
           </p>
         </statement>
@@ -1448,7 +1422,7 @@
       <exercise>
         <statement>
           <p>
-            8 Houses (<m>11.25^{\circ}\times8=90^{\circ}</m>);
+            8 houses (<m>11.25^{\circ}\times8=90^{\circ}</m>);
           <m>x_8</m>
           </p>
         </statement>
@@ -1469,13 +1443,13 @@
         <latex-image>
           \begin{tikzpicture}[scale=7]
           \draw[line width=1pt,-stealth] (0,0) -- (0:1.2cm) node[midway,sloped,below] {120 NM};
-          \draw[line width=1pt,-stealth] (0,0) -- (11.25:1.2cm) node[right] {7 House};
-          \draw[line width=1pt,-stealth] (0,0) -- (22.5:1.2cm) node[right] {6 Houses};
-          \draw[line width=1pt,-stealth] (0,0) -- (33.75:1.2cm) node[right] {5 Houses};
-          \draw[line width=1pt,-stealth] (0,0) -- (45:1.2cm) node[right] {4 Houses};
-          \draw[line width=1pt,-stealth] (0,0) -- (56.65:1.2cm) node[right] {3 Houses};
-          \draw[line width=1pt,-stealth] (0,0) -- (67.5:1.2cm) node[right] {2 Houses};
-          \draw[line width=1pt,-stealth] (0,0) -- (78.75:1.2cm) node[right] {1 House};
+          \draw[line width=1pt,-stealth] (0,0) -- (11.25:1.2cm) node[right] {7 house};
+          \draw[line width=1pt,-stealth] (0,0) -- (22.5:1.2cm) node[right] {6 houses};
+          \draw[line width=1pt,-stealth] (0,0) -- (33.75:1.2cm) node[right] {5 houses};
+          \draw[line width=1pt,-stealth] (0,0) -- (45:1.2cm) node[right] {4 houses};
+          \draw[line width=1pt,-stealth] (0,0) -- (56.65:1.2cm) node[right] {3 houses};
+          \draw[line width=1pt,-stealth] (0,0) -- (67.5:1.2cm) node[right] {2 houses};
+          \draw[line width=1pt,-stealth] (0,0) -- (78.75:1.2cm) node[right] {1 house};
           \draw[line width=1pt,-stealth] (0,0) -- (90:1.2cm) node[midway,sloped,above] {Reference Course, 120 NM};
           \draw[dashed] (1.17694233648,0) -- (1.17694233648,0.234108386419)
           node[midway,right] {\(y_7\)};
@@ -1498,7 +1472,7 @@
     <exercise>
       <statement>
         <p>
-          1 House (<m>11.25^{\circ}\times1=11.25^{\circ}</m>);
+          1 house (<m>11.25^{\circ}\times1=11.25^{\circ}</m>);
           <m>y_1</m>
         </p>
       </statement>
@@ -1511,7 +1485,7 @@
     <exercise>
       <statement>
         <p>
-          2 Houses (<m>11.25^{\circ}\times2=22.5^{\circ}</m>);
+          2 houses (<m>11.25^{\circ}\times2=22.5^{\circ}</m>);
           <m>y_2</m>
         </p>
       </statement>
@@ -1524,7 +1498,7 @@
     <exercise>
       <statement>
         <p>
-          3 Houses (<m>11.25^{\circ}\times3=33.75^{\circ}</m>);
+          3 houses (<m>11.25^{\circ}\times3=33.75^{\circ}</m>);
           <m>y_3</m>
         </p>
       </statement>
@@ -1537,20 +1511,20 @@
     <exercise>
       <statement>
         <p>
-          4 Houses (<m>11.25^{\circ}\times4=45^{\circ}</m>);
+          4 houses (<m>11.25^{\circ}\times4=45^{\circ}</m>);
           <m>y_4</m>
         </p>
       </statement>
       <answer>
         <p>
-          <m>y_4=84.5</m> NM
+          <m>y_4=84.9</m> NM
         </p>
       </answer>
     </exercise>
     <exercise>
       <statement>
         <p>
-          5 Houses (<m>11.25^{\circ}\times5=56.25^{\circ}</m>);
+          5 houses (<m>11.25^{\circ}\times5=56.25^{\circ}</m>);
           <m>y_5</m>
         </p>
       </statement>
@@ -1563,7 +1537,7 @@
     <exercise>
       <statement>
         <p>
-          6 Houses (<m>11.25^{\circ}\times6=67.5^{\circ}</m>);
+          6 houses (<m>11.25^{\circ}\times6=67.5^{\circ}</m>);
           <m>y_6</m>
         </p>
       </statement>
@@ -1576,7 +1550,7 @@
     <exercise>
       <statement>
         <p>
-          7 Houses (<m>11.25^{\circ}\times7=78.75^{\circ}</m>);
+          7 houses (<m>11.25^{\circ}\times7=78.75^{\circ}</m>);
           <m>y_7</m>
         </p>
       </statement>
@@ -1590,7 +1564,7 @@
     <exercisegroup cols="2">
       <introduction>
         <p>
-          One way to determine your bearing on a canoe is by observing and comparing the positions of celestial and other markers relative to your canoe. To facilitate this, you can mark the locations of the Star Compass on the opposite railings from the navigator's seat in the back corner of the canoe. However, since the Star Compass is circular and the canoe is rectangular, accurately placing the markings can be challenging. 
+          One way to determine our bearing on a canoe is by observing and comparing the positions of celestial and other markers relative to our canoe. To facilitate this, we can mark the locations of the Star Compass on the opposite railings from the navigator's seat in the back corner of the canoe. However, since the Star Compass is circular and the canoe is rectangular, accurately placing the markings can be challenging. 
         </p>
         <image xml:id="fig-star-compass-railing" width="30%">
           <latex-image>
@@ -1664,7 +1638,7 @@
         </statement>
         <answer>
           <p>
-            <m>y_3=10.69</m> ft
+            <m>y_3=10.690</m> ft
           </p>
         </answer>
       </exercise>
@@ -1822,8 +1796,8 @@
         </statement>
         <answer>
           <p>
-            <m>a=3.06</m>,
-            <m>b=2.57</m>,
+            <m>a=2.57</m>,
+            <m>b=3.06</m>,
             <m>\alpha=40^{\circ}</m>
           </p>
         </answer>
@@ -1877,7 +1851,7 @@
         <image xml:id="fig-waa-right-triangle-distance-traveled" width="50%">
           <latex-image>
             \begin{tikzpicture}[x=7cm,y=7cm]
-            \draw[line width=2pt,-stealth] (0,0) -- (123.75:1.2) node[midway,left,xshift=-0.2cm] {120 mi};
+            \draw[line width=2pt,-stealth] (0,0) -- (123.75:1.2) node[midway,left,xshift=-0.2cm] {120 NM};
             \draw[line width=2pt,dashed] (0,0.997763534763) -- (-0.666684279624,0.997763534763) node[midway,above,yshift=0.1cm] {west};
             \draw[line width=2pt, dashed] (0,0) -- (0,0.997763534763) node[midway,right,xshift=0.1cm] {north};
             \draw ([shift=(90:0.2cm)]0,0) arc (90:123.75:0.2cm) node[midway,above,xshift=-6,yshift=16] {\(\theta\)};
@@ -1911,7 +1885,7 @@
           </idx>
         </p>
         <p>
-          Certain beaches undergo seasonal changes in wave direction. Some experience waves from one direction in one season and from another direction in the next, while those predominantly receiving waves from a single direction might accumulate sand in specific areas.
+          Certain beaches undergo seasonal changes in wave direction. Some experience waves from one direction in one season and from another direction in the next, while those receiving waves predominantly from a single direction might accumulate sand in specific areas.
         </p>
         <p>
           Calculate how far along the shore a single grain of sand moves after a wave breaks at a <m>60^{\circ}</m> angle and travels onto the shore for 10 ft before receding back into the ocean.
@@ -1965,15 +1939,15 @@
       <introduction>
         <p>
           Between 2013 and 2017, Hōkūleʻa completed a global circumnavigation with a mission
-          <em>mālama honua</em> - <q>care for Island Earth</q> and to foster a sense of <em>ʻohana</em> (<q>family</q>) for all people and places. This remarkable voyage spanned 40,000 nautical miles and made stops at over 150 ports across 18 nations.
+          <em>mālama honua</em> - <q>care for our Earth</q> and to foster a sense of <em>ʻohana</em> (<q>family</q>) for all people and places. This remarkable voyage spanned 40,000 nautical miles and made stops at over 150 ports across 18 nations.
         </p>
         <p>
-          Throughout this voyage, Earth's rotation occurs around an axis that extends from the North Pole to the South Pole. The rotation imparts an angular speed and linear velocity to every point on Earth. Assuming Earth completes one rotation within 24 hours and treating Earth as a perfect sphere with a radius of <m>R=4,000</m> miles, we can calculate the following parameters for each of the Mālama Honua voyage's ports, given their latitudes (<m>\phi</m>):
+          Throughout this voyage, Earth's rotation occurs around an axis that extends from the North Pole to the South Pole. The rotation imparts an angular speed and linear velocity to every point on Earth. Assuming Earth completes one rotation within 24 hours and treating Earth as a perfect sphere with a radius of <m>R=4,000</m> miles, we can calculate the following parameters for each of the Mālama Honua Voyage's ports, given their latitudes (<m>\phi</m>).
         </p>
         <p>
           <ol>
             <li>
-              Calculate <m>r</m>, the distance from the port to Earth's Axis of Rotation (in miles, rounded to one decimal place).
+              Calculate <m>r</m>, the distance from the port to Earth's axis of rotation (in miles, rounded to one decimal place).
             </li>
             <li>
               Calculate <m>\omega</m>, the angular velocity (in radians per hour, rounded to four decimal places).
@@ -2009,7 +1983,7 @@
           <p>
             <ol>
               <li>
-                <m>r=3,8765.4</m>
+                <m>r=3,765.4</m>
                 miles;
               </li>
               <li>
@@ -2084,7 +2058,7 @@
           <p>
             <ol>
               <li>
-                <m>r=32,65.8</m>
+                <m>r=3,265.8</m>
                 miles;
               </li>
               <li>
@@ -2261,7 +2235,7 @@
           <p>
             <ol>
               <li>
-                <m>r=3,792.7</m>
+                <m>r=2,885.2</m>
                 miles;
               </li>
               <li>
