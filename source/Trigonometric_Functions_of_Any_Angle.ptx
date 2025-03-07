@@ -613,10 +613,10 @@
         \begin{tikzpicture}[scale=1.5]
         \draw[stealth-stealth] (-2,0)--(2,0) node[right]{\(x\)};
         \draw[stealth-stealth] (0,-2)--(0,2) node[above]{\(y\)};
-        \node at (1,1) [ align=center] {I \\ \\ \(t=t'=\frac{a\pi}{b}\)};
-        \node at (-1,1) [ align=center]{II \\ \\ \(t=\frac{(b-a)\pi}{b}\)};
-        \node at (-1,-1) [ align=center] {III \\ \\ \(t=\frac{(b+a)\pi}{b}\)};
-        \node at (1,-1) [ align=center] {IV \\ \\ \(t=\frac{(2b-a)\pi}{b}\)};
+        \node at (1,1) [ align=center] {\(t=t'=\frac{a\pi}{b}\)};
+        \node at (-1,1) [ align=center]{\(t=\frac{(b-a)\pi}{b}\)};
+        \node at (-1,-1) [ align=center] {\(t=\frac{(b+a)\pi}{b}\)};
+        \node at (1,-1) [ align=center] {\(t=\frac{(2b-a)\pi}{b}\)};
         \end{tikzpicture}
         </latex-image>
       </image>
@@ -640,10 +640,10 @@
             \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
             \draw (0,0) circle (1); 
             \filldraw[blue] (1,0) circle(1pt); 
-            \filldraw[blue] (60:1) circle(1pt); 
+            \filldraw[blue] (30:1) circle(1pt); 
             \draw[line width=2pt,blue] (0,0) -- (1,0); 
-            \draw[line width=2pt,blue] (0,0) -- (60:1); 
-            \draw[-stealth] (0:0.4) arc (0:60:0.4) node[midway, right,xshift=0.05] {\(\frac{\pi}{6}\)};
+            \draw[line width=2pt,blue] (0,0) -- (30:1); 
+            \draw[-stealth] (0:0.4) arc (0:30:0.4) node[midway, right,xshift=0.05] {\(\frac{\pi}{6}\)};
             \end{tikzpicture} 
           </latex-image>
         </image>
@@ -656,7 +656,7 @@
         </statement>
         <solution>
           <p>
-            In Quadrant II, the associated angle is <m>t=\pi-\frac{\pi}{6}=\frac{6\pi}{6}-\frac{\pi}{6}=\frac{5\pi}{6}</m>
+            In Quadrant II, the associated angle is <m>t=\pi-\frac{\pi}{6}=\frac{6\pi}{6}-\frac{\pi}{6}=\frac{5\pi}{6}</m>.
           </p>
           <image xml:id="fig-angle-pi6-q2" width="50%">
             <latex-image>
@@ -668,15 +668,15 @@
               \filldraw[blue] (150:1) circle(1pt); \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); 
               \draw[line width=2pt,blue] (0,0) -- (1,0); 
               \draw[line width=2pt,blue] (0,0) -- (150:1); 
-              \draw[-stealth] (0:0.4) arc (0:150:0.4) node[midway, right,xshift=0.2] {\(\frac{5\pi}{6}\)}; 
-              \draw[-stealth] (180:0.4) arc (180:150:0.4) node[midway, left,xshift=-0.25,yshift=0.1] {\(\frac{\pi}{6}\)};
+              \draw[-stealth] (0:0.4) arc (0:150:0.4) node[midway, right,xshift=5] {\(\frac{5\pi}{6}\)}; 
+              \draw[-stealth] (180:0.4) arc (180:150:0.4) node[midway, left,xshift=-3,yshift=2.5] {\(\frac{\pi}{6}\)};
               \end{tikzpicture} 
             </latex-image>
           </image>
         </solution>
         <solution>
           <p>
-            Since <m>t'=\frac{\pi}{6}=\frac{1\pi}{6}</m>, then <m>t'=\frac{(6-1)\pi}{6}=\frac{5\pi}{6}</m>
+            Since <m>t'=\frac{\pi}{6}=\frac{1\pi}{6}</m>, then <m>t'=\frac{(6-1)\pi}{6}=\frac{5\pi}{6}</m>.
           </p> 
         </solution>
       </task>
@@ -689,7 +689,7 @@
         <solution>
           <p>
             In Quadrant III, the associated angle is
-            <m>t=\pi+\frac{\pi}{6}=\frac{6\pi}{6}+\frac{\pi}{6}=\frac{7\pi}{6}</m>
+            <m>t=\pi+\frac{\pi}{6}=\frac{6\pi}{6}+\frac{\pi}{6}=\frac{7\pi}{6}</m>.
           </p>
           <image xml:id="fig-angle-pi6-q3" width="50%">
             <latex-image>
@@ -701,15 +701,15 @@
               \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); 
               \draw[line width=2pt,blue] (0,0) -- (1,0); 
               \draw[line width=2pt,blue] (0,0) -- (210:1); 
-              \draw[-stealth] (0:0.3) arc (0:210:0.3) node[midway, left,xshift=-0.1] {\(\frac{7\pi}{6}\)}; 
-              \draw[-stealth] (180:0.6) arc (180:210:0.6) node[midway, left,xshift=-0.1,yshift=-0.1] {\(\frac{\pi}{6}\)};
-              \end{tikzpicture} 
+              \draw[-stealth] (0:0.3) arc (0:210:0.3) node[midway, left,xshift=-4] {\(\frac{7\pi}{6}\)}; 
+              \draw[-stealth] (180:0.6) arc (180:210:0.6) node[midway, left,xshift=-1.5,yshift=-2.5] {\(\frac{\pi}{6}\)};
+              \end{tikzpicture}
             </latex-image>
           </image>
         </solution>
         <solution>
           <p>
-            <m>t'=\frac{(6+1)\pi}{6}=\frac{7\pi}{6}</m>
+            <m>t'=\frac{(6+1)\pi}{6}=\frac{7\pi}{6}</m>.
           </p>
         </solution>
       </task>
@@ -722,7 +722,7 @@
         <solution>
           <p>
             In Quadrant IV, the associated angle is
-            <m>t=2\pi-\frac{\pi}{6}=\frac{12\pi}{6}-\frac{\pi}{6}=\frac{11\pi}{6}</m>
+            <m>t=2\pi-\frac{\pi}{6}=\frac{12\pi}{6}-\frac{\pi}{6}=\frac{11\pi}{6}</m>.
           </p>
           <image xml:id="fig-angle-pi6-q4" width="50%">
             <latex-image> 
@@ -734,7 +734,7 @@
               \filldraw[blue] (330:1) circle(1pt); 
               \draw[line width=2pt,blue] (0,0) -- (1,0); 
               \draw[line width=2pt,blue] (0,0) -- (330:1); 
-              \draw[-stealth] (0:0.3) arc (0:330:0.3) node[midway, left,xshift=0.1,yshift=0.2] {\(\frac{11\pi}{6}\)}; 
+              \draw[-stealth] (0:0.3) arc (0:330:0.3) node[midway, left,xshift=1,yshift=5] {\(\frac{11\pi}{6}\)}; 
               \draw[-stealth] (360:0.6) arc (360:330:0.6) node[midway, right,xshift=0.1,yshift=-0.1] {\(\frac{\pi}{6}\)};
               \end{tikzpicture} 
             </latex-image>
@@ -742,7 +742,7 @@
         </solution>
         <solution>
           <p>
-            <m>t'=\frac{(2\cdot6-1)\pi}{6}=\frac{11\pi}{6}</m>
+            <m>t'=\frac{(2\cdot6-1)\pi}{6}=\frac{11\pi}{6}</m>.
           </p>
         </solution>
       </task>
@@ -775,11 +775,11 @@
         </statement>
         <solution>
           <p>
-            In Quadrant II, the associated angle is <m>t=180^{\circ}-45^{\circ}=135^{\circ}</m>
+            In Quadrant II, the associated angle is <m>t=180^{\circ}-45^{\circ}=135^{\circ}</m>.
           </p>
           <image xml:id="fig-angle-45-q2" width="50%">
-            <latex-image> 
-              \begin{tikzpicture}[scale=1.75]
+            <latex-image>
+            \begin{tikzpicture}[scale=1.75]
               \draw[stealth-stealth] (-1.25,0)--(1.25,0) node[right]{\(x\)}; 
               \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[above]{\(y\)}; 
               \draw (0,0) circle (1); \filldraw[blue] (1,0) circle(1pt); 
@@ -787,9 +787,9 @@
               \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0); 
               \draw[line width=2pt,blue] (0,0) -- (1,0); 
               \draw[line width=2pt,blue] (0,0) -- (135:1); 
-              \draw[-stealth] (0:0.4) arc (0:135:0.4) node[midway, right,xshift=0.1] {\(135^{\circ}\)}; 
+              \draw[-stealth] (0:0.4) arc (0:135:0.4) node[midway, right,xshift=6] {\(135^{\circ}\)}; 
               \draw[-stealth] (180:0.4) arc (180:135:0.4) node[midway, left,xshift=-0.0,yshift=0.1] {\(45^{\circ}\)};
-              \end{tikzpicture} 
+              \end{tikzpicture}
             </latex-image>
           </image>
         </solution>
@@ -802,7 +802,7 @@
         </statement>
         <solution>
           <p>
-            In Quadrant III, the associated angle is <m>t=180^{\circ}+45^{\circ}=225^{\circ}</m>
+            In Quadrant III, the associated angle is <m>t=180^{\circ}+45^{\circ}=225^{\circ}</m>.
           </p>
           <image xml:id="fig-angle-45-q3" width="50%">
             <latex-image> \begin{tikzpicture}[scale=1.75]
@@ -829,7 +829,7 @@
         </statement>
         <solution>
           <p>
-            In Quadrant IV, the associated angle is <m>t=360^{\circ}-45^{\circ}=315^{\circ}</m>
+            In Quadrant IV, the associated angle is <m>t=360^{\circ}-45^{\circ}=315^{\circ}</m>.
           </p>
           <image xml:id="fig-angle-45-q4" width="50%">
             <latex-image> 
@@ -853,8 +853,7 @@
   <subsection xml:id="subsec_evaluating-using-reference-angles">
     <title>Evaluating Trigonometric Functions Using Reference Angles</title>
     <p>
-      To evaluate trigonometric functions in any quadrant using reference angles, we begin with an angle, <m>\theta</m>,
-      that lies in Quadrant II. When evaluating <m>\sin\theta</m> and <m>\cos\theta.</m>, we begin by plotting <m>\theta</m> in standard position and then proceed to determine and draw its corresponding reference angle, <m>\theta'.</m>
+      To evaluate trigonometric functions in any quadrant using reference angles, we begin with an angle, <m>\theta</m>, that lies in Quadrant II. When evaluating <m>\sin\theta</m> and <m>\cos\theta</m>, we begin by plotting <m>\theta</m> in standard position and then proceed to determine and draw its corresponding reference angle, <m>\theta'.</m>
     </p>
     <image xml:id="fig-using-ref-angles" width="75%">
       <latex-image>
@@ -865,8 +864,8 @@
         \filldraw[blue] (1,0) circle(1pt);
         \filldraw[blue] (150:1) circle(1pt) node [left] {\(P\)};
         \draw[blue] (0,0) -- (1,0);
-        \draw[blue] (0,0) -- (150:1) node[midway,above] {\(r\)};
-        \draw[-stealth] (0:0.4) arc (0:150:0.4) node[midway, right,xshift=0.2] {\(\theta\)};
+        \draw[blue] (0,0) -- (150:1) node[midway,above,yshift=2] {\(r\)};
+        \draw[-stealth] (0:0.4) arc (0:150:0.4) node[midway, right,xshift=14] {\(\theta\)};
         \draw[-stealth] (180:0.4) arc (180:150:0.4) node[midway, left,xshift=-0.1] {\(\theta'\)};
         \end{tikzpicture}
       </latex-image>
@@ -874,12 +873,11 @@
     <p>
       By definition we know that
       <me>
-        \sin\theta=\frac{y}{r};\qquad\cos\theta=\frac{x}{r}
+        \sin\theta=\frac{y}{r};\qquad\cos\theta=\frac{x}{r}.
       </me>
     </p>
     <p>
-      Next, we draw the reference angle,
-      <m>\theta'</m> in standard position
+      Next, we draw the reference angle, <m>\theta'</m>, in standard position.
     </p>
     <image xml:id="fig-using-ref-angles2" width="95%">
       <latex-image>
@@ -923,11 +921,11 @@
       </me>
     </p>
     <p>
-      You may have noticed that we have two similar triangles, differing only in their <m>x</m>-coordinates have opposite values. Consequently, the values of each trigonometric function for the two triangles will match, except for a potential distinction in signs. The sign of each function can be deduced by referring to <xref ref="tab_trig-signs">Table</xref>. This approach is applicable across all quadrants. To sum up, we now outline the steps for utilizing reference angles to evaluate trigonometric functions.
+      You may have noticed that we have two similar triangles, differing only in their <m>x</m>-coordinates have opposite values. Consequently, the values of each trigonometric function for the two triangles will match, except for a potential difference in signs. The sign of each function can be deduced by referring to <xref ref="tab_trig-signs">Table</xref>. This approach is applicable across all quadrants. To sum up, we now outline the steps for utilizing reference angles to evaluate trigonometric functions.
     </p>
     <remark><title>Steps for Evaluating Trigonometric Functions Using Reference Angles</title>
     <p>
-      The values of a trigonometric function for a specific angle are equivalent to the values of the same trigonometric function for the reference angle, with a potential distinction in sign. To compute the value of a trigonometric function for any angle, use the following steps
+      The values of a trigonometric function for a specific angle are equivalent to the values of the same trigonometric function for the reference angle, with a potential difference in sign. To compute the value of a trigonometric function for any angle, use the following steps
       <ol>
         <li>
           <p>
@@ -955,7 +953,7 @@
     <example>
       <introduction>
         <p>
-          Use the reference angle associated with the given angle to find the exact value of
+          Use the reference angle associated with the given angle to find the exact value of:
         </p>
       </introduction>
       <task>
@@ -972,7 +970,7 @@
             <ol>
               <li>
                 <p>
-                  First we draw the angle
+                  First we draw the angle <m>\theta=210^{\circ}</m>.
                 </p>
                 <image xml:id="exmp-6trig-ref-ang-210" width="75%">
                   <latex-image> 
@@ -983,7 +981,7 @@
                     \filldraw[blue] (210:1) circle(1pt) node [left] {\(P\)}; 
                     \draw[blue] (0,0) -- (1,0); 
                     \draw[blue] (0,0) -- (210:1) node[midway,below] {\(r\)}; 
-                    \draw[-stealth] (0:0.2) arc (0:210:0.2) node[midway, right,xshift=0.2] {\(\theta\)}; 
+                    \draw[-stealth] (0:0.2) arc (0:210:0.2) node[midway, right,xshift=12] {\(\theta=210^{\circ}\)}; 
                     \draw[-stealth] (180:0.4) arc (180:210:0.4) node[midway, left,xshift=-0.1] {\(\theta'\)};
                     \end{tikzpicture} 
                   </latex-image>
@@ -993,20 +991,20 @@
                 <p>
                   The reference angle is
                   <me>
-                    \theta'=210^{\circ}-180^{\circ}=30^{\circ}
+                    \theta'=210^{\circ}-180^{\circ}=30^{\circ}.
                   </me>
                 </p>
               </li>
               <li>
                 <p>
-                  <m>\cos30^{\circ}=\frac{\sqrt{3}}{2}</m>
+                  <m>\cos30^{\circ}=\frac{\sqrt{3}}{2}</m>.
                 </p>
               </li>
               <li>
                 <p>
                   Since <m>210^{\circ}</m> lies in Quadrant III, we know that <m>\cos\theta\lt 0</m>, so
                   <me>
-                    \cos210^{\circ}=-\frac{\sqrt{3}}{2}
+                    \cos210^{\circ}=-\frac{\sqrt{3}}{2}.
                   </me>
                 </p>
               </li>
@@ -1028,7 +1026,7 @@
             <ol>
             <li>
               <p>
-                First we draw the angle
+                First we draw the angle <m>\theta=\frac{7\pi}{4}</m>.
               </p>
               <image xml:id="exmp-6trig-ref-ang-7pi4" width="75%">
                 <latex-image>
@@ -1040,7 +1038,7 @@
                   \filldraw[blue] (315:1) circle(1pt) node [right] {\(P\)}; 
                   \draw[blue] (0,0) -- (1,0); 
                   \draw[blue] (0,0) -- (315:1) node[midway,below] {\(r\)}; 
-                  \draw[-stealth] (0:0.4) arc (0:315:0.4) node[midway, left,xshift=-0.1] {\(\theta\)}; 
+                  \draw[-stealth] (0:0.4) arc (0:315:0.4) node[midway, left,xshift=4,yshift=6] {\(\theta=\frac{7\pi}{4}\)}; 
                   \draw[-stealth] (360:0.4) arc (360:315:0.4) node[midway, right,xshift=0.1] {\(\theta'\)};
                   \end{tikzpicture} 
                 </latex-image>
@@ -1050,20 +1048,20 @@
               <p>
                 The reference angle is
                 <me>
-                  2\pi-\frac{7\pi}{4}=\frac{8\pi}{4}-\frac{7\pi}{4}=\frac{\pi}{4}
+                  2\pi-\frac{7\pi}{4}=\frac{8\pi}{4}-\frac{7\pi}{4}=\frac{\pi}{4}.
                 </me>
               </p>
             </li>
             <li>
               <p>
-                <m>\tan\frac{\pi}{4}=1</m>
+                <m>\tan\frac{\pi}{4}=1</m>.
               </p>
             </li>
             <li>
               <p>
                 Since <m>\frac{7\pi}{4}</m> lies in Quadrant IV, we know that <m>\tan\theta\lt 0</m>, so
                 <me>
-                  \tan\frac{7\pi}{4}=-1
+                  \tan\frac{7\pi}{4}=-1.
                 </me>
               </p>
             </li>
@@ -1075,7 +1073,7 @@
     <example xml:id="ex-1_5-20pi3">
       <statement>
         <p>
-          Calculate <m>\sin\theta</m> and <m>\cos\theta</m> if <m>\theta=\frac{20\pi}{3}</m>
+          Calculate <m>\sin\theta</m> and <m>\cos\theta</m> if <m>\theta=\frac{20\pi}{3}</m>.
         </p>
       </statement>
       <solution>
@@ -1083,7 +1081,7 @@
           <ol>
             <li>
               <p>
-                First we draw the angle
+                First we draw the angle <m>\theta=\frac{20\pi}{3}</m>.
               </p>
               <figure xml:id="exmp-trig-20pi3">
                 <caption>The angle <m>\theta=\frac{20\pi}{3}</m> makes three rotations before ending in Quadrant II.</caption>
@@ -1111,24 +1109,23 @@
                 To obtain the reference angle,
                 we first subtract multiples of <m>2\pi</m> from <m>\theta</m> to obtain a coterminal angle between <m>0</m> and <m>2\pi</m>:
                 <md>
-                  <mrow>\frac{20\pi}{3}-2\pi\amp =\amp \frac{20\pi}{3}-\frac{6\pi}{3}=\frac{14\pi}{3}</mrow>
-                  <mrow>\frac{20\pi}{3}-4\pi\amp =\amp \frac{20\pi}{3}-\frac{12\pi}{3}=\frac{8\pi}{3}</mrow>
-                  <mrow>\frac{20\pi}{3}-6\pi\amp =\amp \frac{20\pi}{3}-\frac{18\pi}{3}=\frac{2\pi}{3}</mrow>
+                  <mrow>\frac{20\pi}{3}-2\pi =\amp \frac{20\pi}{3}-\frac{6\pi}{3}=\frac{14\pi}{3},</mrow>
+                  <mrow>\frac{20\pi}{3}-4\pi =\amp \frac{20\pi}{3}-\frac{12\pi}{3}=\frac{8\pi}{3},</mrow>
+                  <mrow>\frac{20\pi}{3}-6\pi =\amp \frac{20\pi}{3}-\frac{18\pi}{3}=\frac{2\pi}{3}.</mrow>
                 </md>
-                From <xref ref="example_find-ref-angles">Example</xref>,
-                the reference angle for <m>\frac{2\pi}{3}</m> is <m>\theta'=\frac{\pi}{3}</m>
+                From <xref ref="example_find-ref-angles">Example</xref>, the reference angle for <m>\frac{2\pi}{3}</m> is <m>\theta'=\frac{\pi}{3}</m>.
               </p>
             </li>
             <li>
               <p>
-                <m>\sin\frac{\pi}{3}=\frac{\sqrt{3}}{2}</m> and <m>\cos\frac{\pi}{3}=\frac{1}{2}</m>
+                <m>\sin\frac{\pi}{3}=\frac{\sqrt{3}}{2}</m> and <m>\cos\frac{\pi}{3}=\frac{1}{2}</m>.
               </p>
             </li>
             <li>
               <p>
                 Since <m>\frac{20\pi}{3}</m> lies in Quadrant II, we know that <m>\sin\theta>0</m> and <m>\cos\theta\lt 0</m>, so
                 <me>
-                  \sin\frac{20\pi}{3}=\frac{\sqrt{3}}{2}; \qquad \cos\frac{20\pi}{3}=-\frac{1}{2}
+                  \sin\frac{20\pi}{3}=\frac{\sqrt{3}}{2}; \qquad \cos\frac{20\pi}{3}=-\frac{1}{2}.
                 </me>
               </p>
             </li>
@@ -1140,26 +1137,25 @@
   <subsection xml:id="subsec_periodic-functions">
     <title>Periodic Functions</title>
     <p>
-      In <xref ref="exmp-trig-20pi3">Figure</xref> of <xref ref="ex-1_5-20pi3">Example</xref>, point <m>P</m> corresponds to the angle <m>\frac{20\pi}{3}.</m> To determine the reference angle, we subtracted multiples of <m>2\pi.</m>
-      Each iteration of <m>2\pi</m> retraces the unit circle back to the point <m>P</m>, resulting in a coterminal angle. Therefore
+      In <xref ref="exmp-trig-20pi3">Figure</xref> of <xref ref="ex-1_5-20pi3">Example</xref>, point <m>P</m> corresponds to the angle <m>\frac{20\pi}{3}.</m> To determine the reference angle, we subtracted multiples of <m>2\pi.</m> Each iteration of <m>2\pi</m> retraces the unit circle back to the point <m>P</m>, resulting in a coterminal angle. Therefore
       <me>
-        \sin\frac{2\pi}{3}=\sin\frac{8\pi}{3}=\sin\frac{14\pi}{3}=\sin\frac{20\pi}{3}
+        \sin\frac{2\pi}{3}=\sin\frac{8\pi}{3}=\sin\frac{14\pi}{3}=\sin\frac{20\pi}{3}.
       </me>
     </p>
     <p>
       Rewriting the angles we get
       <me>
-        \sin\left(\frac{2\pi}{3}+0\cdot2\pi\right)=\sin\left(\frac{2\pi}{3}+1\cdot2\pi\right)=\sin\left(\frac{2\pi}{3}+2\cdot2\pi\right)=\sin\left(\frac{2\pi}{3}+3\cdot2\pi\right)
+        \sin\left(\frac{2\pi}{3}+0\cdot2\pi\right)=\sin\left(\frac{2\pi}{3}+1\cdot2\pi\right)=\sin\left(\frac{2\pi}{3}+2\cdot2\pi\right)=\sin\left(\frac{2\pi}{3}+3\cdot2\pi\right).
       </me>
     </p>
     <p>
       Similarly,
       <me>
-        \cos\left(\frac{2\pi}{3}+0\cdot2\pi\right)=\cos\left(\frac{2\pi}{3}+1\cdot2\pi\right)=\cos\left(\frac{2\pi}{3}+2\cdot2\pi\right)=\cos\left(\frac{2\pi}{3}+3\cdot2\pi\right)
+        \cos\left(\frac{2\pi}{3}+0\cdot2\pi\right)=\cos\left(\frac{2\pi}{3}+1\cdot2\pi\right)=\cos\left(\frac{2\pi}{3}+2\cdot2\pi\right)=\cos\left(\frac{2\pi}{3}+3\cdot2\pi\right).
       </me>
     </p>
     <p>
-      In general, consider an angle <m>\theta</m> measured in radians and its corresponding point <m>P</m> on the unit circle. Adding or subtracting integer multiples of <m>2\pi</m> to <m>\theta</m> will lead to a point on the unit circle that aligns with <m>P</m>. Thus, the values of sine and cosine for all angles corresponding to point <m>P</m> are equivalent. This leads us to the following periodic properties.
+      In general, consider an angle <m>\theta</m> measured in radians and its corresponding point <m>P</m> on the unit circle. Adding or subtracting integer multiples of <m>2\pi</m> to <m>\theta</m> will lead to the same point <m>P</m> on the unit circle. Thus, the values of sine and cosine for all angles corresponding to point <m>P</m> are equivalent. This leads us to the following periodic properties.
     </p>
       <definition xml:id="def-Periodic-Properties-sincos"><title>Periodic Properties</title><idx><h>periodic properties</h></idx>
         <statement>
@@ -1171,8 +1167,7 @@
           </p>
         </statement>
       </definition>
-      <p>Functions like these that repeats its values in regular cycles are called
-            <em>periodic functions</em>.</p>
+      <p>Functions such as these that repeat their values in regular cycles are called <em>periodic functions</em>.</p>
     <definition>
       <statement>
         <p>
@@ -1191,8 +1186,8 @@
       <statement>
         <p>
           <md>
-            <mrow>\sin(\theta+2\pi)\amp =\sin\theta \amp  \cos(\theta+2\pi)\amp =\cos\theta \amp  \tan(\theta+\pi)\amp =\tan\theta</mrow>
-            <mrow>\csc(\theta+2\pi)\amp =\csc\theta \amp  \sec(\theta+2\pi)\amp =\sec\theta \amp  \cot(\theta+\pi)\amp =\cot\theta</mrow>
+            <mrow>\sin(\theta+2\pi)\amp =\sin\theta, \amp  \cos(\theta+2\pi)\amp =\cos\theta, \amp  \tan(\theta+\pi)\amp =\tan\theta,</mrow>
+            <mrow>\csc(\theta+2\pi)\amp =\csc\theta, \amp  \sec(\theta+2\pi)\amp =\sec\theta, \amp  \cot(\theta+\pi)\amp =\cot\theta.</mrow>
           </md>
         </p>
       </statement>
@@ -1204,7 +1199,7 @@
       The Trigonometric Identities and reference angles give us the values of trigonometric functions in <xref  ref="tab_trig-table">Table</xref>.
     </p>
     <table xml:id="tab_trig-table">
-      <title>Values of the six trigonometric functions for common angles</title>
+      <title>Values of the six trigonometric functions for common angles (Undefined values are abbreviated as “undef”).</title>
       <tabular>
         <row bottom="minor">
           <cell></cell>
@@ -1261,9 +1256,9 @@
           <cell><m>\dfrac{\pi}{6}</m></cell>
           <cell><m>\dfrac{1}{2}</m></cell>
           <cell><m>\dfrac{\sqrt{3}}{2}</m></cell>
-          <cell><m>\dfrac{\sqrt{3}}{3}</m></cell>
+          <cell><m>\dfrac{1}{\sqrt{3}}</m></cell>
           <cell>2</cell>
-          <cell><m>\dfrac{2\sqrt{3}}{3}</m></cell>
+          <cell><m>\dfrac{2}{\sqrt{3}}</m></cell>
           <cell><m>\sqrt{3}</m></cell>
         </row>
         <row bottom="minor">
@@ -1279,8 +1274,8 @@
         <row>
           <cell><m>45^{\circ}</m></cell>
           <cell><m>\dfrac{\pi}{4}</m></cell>
-          <cell><m>\dfrac{\sqrt{2}}{2}</m></cell>
-          <cell><m>\dfrac{\sqrt{2}}{2}</m></cell>
+          <cell><m>\dfrac{1}{\sqrt{2}}</m></cell>
+          <cell><m>\dfrac{1}{\sqrt{2}}</m></cell>
           <cell>1</cell>
           <cell><m>\sqrt{2}</m></cell>
           <cell><m>\sqrt{2}</m></cell>
@@ -1302,9 +1297,9 @@
           <cell><m>\dfrac{\sqrt{3}}{2}</m></cell>
           <cell><m>\dfrac{1}{2}</m></cell>
           <cell><m>\sqrt{3}</m></cell>
-          <cell><m>\dfrac{2\sqrt{3}}{3}</m></cell>
+          <cell><m>\dfrac{2}{\sqrt{3}}</m></cell>
           <cell>2</cell>
-          <cell><m>\dfrac{\sqrt{3}}{3}</m></cell>
+          <cell><m>\dfrac{1}{\sqrt{3}}</m></cell>
         </row>
         <row bottom="minor">
           <cell></cell>
@@ -1342,9 +1337,9 @@
           <cell><m>\dfrac{\sqrt{3}}{2}</m></cell>
           <cell><m>-\dfrac{1}{2}</m></cell>
           <cell><m>-\sqrt{3}</m></cell>
-          <cell><m>\dfrac{2\sqrt{3}}{3}</m></cell>
+          <cell><m>\dfrac{2}{\sqrt{3}}</m></cell>
           <cell><m>-2</m></cell>
-          <cell><m>-\dfrac{\sqrt{3}}{3}</m></cell>
+          <cell><m>-\dfrac{1}{\sqrt{3}}</m></cell>
         </row>
         <row bottom="minor">
           <cell></cell>
@@ -1359,8 +1354,8 @@
         <row>
           <cell><m>135^{\circ}</m></cell>
           <cell><m>\dfrac{3\pi}{4}</m></cell>
-          <cell><m>\dfrac{\sqrt{2}}{2}</m></cell>
-          <cell><m>-\dfrac{\sqrt{2}}{2}</m></cell>
+          <cell><m>\dfrac{1}{\sqrt{2}}</m></cell>
+          <cell><m>-\dfrac{1}{\sqrt{2}}</m></cell>
           <cell><m>-1</m></cell>
           <cell><m>\sqrt{2}</m></cell>
           <cell><m>-\sqrt{2}</m></cell>
@@ -1381,9 +1376,9 @@
           <cell><m>\dfrac{5\pi}{6}</m></cell>
           <cell><m>\dfrac{1}{2}</m></cell>
           <cell><m>-\dfrac{\sqrt{3}}{2}</m></cell>
-          <cell><m>-\dfrac{\sqrt{3}}{3}</m></cell>
+          <cell><m>-\dfrac{1}{\sqrt{3}}</m></cell>
           <cell>2</cell>
-          <cell><m>-\dfrac{2\sqrt{3}}{3}</m></cell>
+          <cell><m>-\dfrac{2}{\sqrt{3}}</m></cell>
           <cell><m>-\sqrt{3}</m></cell>
         </row>
         <row bottom="minor">
@@ -1421,9 +1416,9 @@
           <cell><m>\dfrac{7\pi}{6}</m></cell>
           <cell><m>-\dfrac{1}{2}</m></cell>
           <cell><m>-\dfrac{\sqrt{3}}{2}</m></cell>
-          <cell><m>\dfrac{\sqrt{3}}{3}</m></cell>
+          <cell><m>\dfrac{1}{\sqrt{3}}</m></cell>
           <cell><m>-2</m></cell>
-          <cell><m>-\dfrac{2\sqrt{3}}{3}</m></cell>
+          <cell><m>-\dfrac{2}{\sqrt{3}}</m></cell>
           <cell><m>\sqrt{3}</m></cell>
         </row>
         <row bottom="minor">
@@ -1439,8 +1434,8 @@
         <row>
           <cell><m>225^{\circ}</m></cell>
           <cell><m>\dfrac{5\pi}{4}</m></cell>
-          <cell><m>-\dfrac{\sqrt{2}}{2}</m></cell>
-          <cell><m>-\dfrac{\sqrt{2}}{2}</m></cell>
+          <cell><m>-\dfrac{1}{\sqrt{2}}</m></cell>
+          <cell><m>-\dfrac{1}{\sqrt{2}}</m></cell>
           <cell>1</cell>
           <cell><m>-\sqrt{2}</m></cell>
           <cell><m>-\sqrt{2}</m></cell>
@@ -1462,9 +1457,9 @@
           <cell><m>-\dfrac{\sqrt{3}}{2}</m></cell>
           <cell><m>-\dfrac{1}{2}</m></cell>
           <cell><m>\sqrt{3}</m></cell>
-          <cell><m>-\dfrac{2\sqrt{3}}{3}</m></cell>
+          <cell><m>-\dfrac{2}{\sqrt{3}}</m></cell>
           <cell><m>-2</m></cell>
-          <cell><m>\dfrac{\sqrt{3}}{3}</m></cell>
+          <cell><m>\dfrac{1}{\sqrt{3}}</m></cell>
         </row>
         <row bottom="minor">
           <cell></cell>
@@ -1502,9 +1497,9 @@
           <cell><m>-\dfrac{\sqrt{3}}{2}</m></cell>
           <cell><m>\dfrac{1}{2}</m></cell>
           <cell><m>-\sqrt{3}</m></cell>
-          <cell><m>-\dfrac{2\sqrt{3}}{3}</m></cell>
+          <cell><m>-\dfrac{2}{\sqrt{3}}</m></cell>
           <cell>2</cell>
-          <cell><m>-\dfrac{\sqrt{3}}{3}</m></cell>
+          <cell><m>-\dfrac{1}{\sqrt{3}}</m></cell>
         </row>
         <row bottom="minor">
           <cell></cell>
@@ -1519,8 +1514,8 @@
         <row>
           <cell><m>315^{\circ}</m></cell>
           <cell><m>\dfrac{7\pi}{4}</m></cell>
-          <cell><m>-\dfrac{\sqrt{2}}{2}</m></cell>
-          <cell><m>\dfrac{\sqrt{2}}{2}</m></cell>
+          <cell><m>-\dfrac{1}{\sqrt{2}}</m></cell>
+          <cell><m>\dfrac{1}{\sqrt{2}}</m></cell>
           <cell><m>-1</m></cell>
           <cell><m>-\sqrt{2}</m></cell>
           <cell><m>\sqrt{2}</m></cell>
@@ -1541,9 +1536,9 @@
           <cell><m>\dfrac{11\pi}{6}</m></cell>
           <cell><m>-\dfrac{1}{2}</m></cell>
           <cell><m>\dfrac{\sqrt{3}}{2}</m></cell>
-          <cell><m>-\dfrac{\sqrt{3}}{3}</m></cell>
+          <cell><m>-\dfrac{1}{\sqrt{3}}</m></cell>
           <cell><m>-2</m></cell>
-          <cell><m>\dfrac{2\sqrt{3}}{3}</m></cell>
+          <cell><m>\dfrac{2}{\sqrt{3}}</m></cell>
           <cell><m>-\sqrt{3}</m></cell>
         </row>
         <row bottom="minor">
@@ -1560,8 +1555,7 @@
     </table>
     <remark><title>Table Made Easy</title>
     <p>
-      <xref ref="tab_trig-table">Table</xref> may seem intimidating but if you recognize the symmetry about <m>90^{\circ}</m>, <m>180^{\circ}</m>, and <m>270^{\circ}</m>, you will only need to focus on the values for the first quadrant
-      (<xref ref="tab_basic-trig-Q1">Table</xref>). In fact, you need only produce the values of sine in Quadrant I. Use the Cofunction Identities (<xref ref="def_cofunction-identities"/>) to find the values of cosine. Next, apply the trigonometric identity to find <m>\tan\theta=\sin\theta/\cos\theta.</m> Finally, use the the Reciprocal Identities (<xref ref="def_reciprocal-identities"/>) to produce <m>\csc\theta,</m> <m>\sec\theta,</m> and <m>\cot\theta.</m>
+      <xref ref="tab_trig-table">Table</xref> may seem intimidating but if we recognize the symmetry about <m>90^{\circ}</m>, <m>180^{\circ}</m>, and <m>270^{\circ}</m>, we will only need to focus on the values for the first quadrant (<xref ref="tab_basic-trig-Q1">Table</xref>). In fact, we need only produce the values of sine in Quadrant I. Use the Cofunction Identities (<xref ref="def_cofunction-identities"/>) to find the values of cosine. Next, apply the trigonometric identity to find <m>\tan\theta=\sin\theta/\cos\theta.</m> Finally, use the the Reciprocal Identities (<xref ref="def_reciprocal-identities"/>) to produce <m>\csc\theta,</m> <m>\sec\theta,</m> and <m>\cot\theta.</m>
     </p>
     </remark>
   </subsection>
@@ -1604,8 +1598,8 @@
         \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[above]{\(y\)};
         \draw (0,0) circle (1);
         \draw[line width=2pt] (0,0) -- (45:1) node[midway,above,yshift=0.2] {\(r\)};
-        \draw[line width=2pt] (0,0) -- (0.707106781187,0) node[midway,below,yshift=-0.1] {\(x=\cos \theta\)};
-        \draw[line width=2pt] (0.707106781187,0) -- (0.707106781187,0.707106781187) node[midway,right,yshift=-0.2] {\(y=\sin \theta\)};
+        \draw[line width=2pt] (0,0) -- (0.707106781187,0) node[midway,below,yshift=-0.1] {\(x\)};
+        \draw[line width=2pt] (0.707106781187,0) -- (0.707106781187,0.707106781187) node[midway,right,yshift=-0.2] {\(y\)};
         \filldraw[black] (45:1) circle(1pt) node[above right] {\(P(x,y)\)};
         \draw ([shift=(0:0.25)]0,0) arc (0:45:0.25) node[midway,right,xshift=0.1] {\(\theta\)};
         \draw (0.557106781187,0) -- (0.557106781187,0.15) -- (0.707106781187,0.15);
@@ -1613,9 +1607,9 @@
         </latex-image>
       </image>
       <p>
-        If the point <m>P(x,y)</m> is a point on the circle with radius <m>r</m>, then the formula for the circle is
+        Let <m>P(x,y)</m> be a point on the circle with radius <m>r</m>. The equation of the circle is
         <me>
-          x^2+y^2=r^2
+          x^2+y^2=r^2.
         </me>
       </p>
       <p>
@@ -1635,31 +1629,31 @@
       </statement>
       <solution>
         <p>
-          Substituting our value of <m>\cos\theta</m> into the Pythagorean Identity,
+          Substituting our value of <m>\cos\theta</m> into the Pythagorean identity, we obtain:
           <md>
             <mrow>\sin^2\theta+\cos^2\theta\amp = 1</mrow>
             <mrow>\sin^2\theta+\left(\frac{3}{5}\right)^2\amp = 1</mrow>
             <mrow>\sin^2\theta+\frac{9}{25}\amp = 1</mrow>
             <mrow>\sin^2\theta\amp = 1-\frac{9}{25}</mrow>
-            <mrow>\sin^2\theta\amp = \frac{16}{25}</mrow>
+            <mrow>\sin^2\theta\amp = \frac{16}{25}.</mrow>
           </md>
         </p>
         <p>
           Taking the square root of both sides,
           <me>
-            \sin\theta=\pm\sqrt{\frac{16}{25}}=\pm\frac{4}{5}
+            \sin\theta=\pm\sqrt{\frac{16}{25}}=\pm\frac{4}{5}.
           </me>
         </p>
         <p>
           Since <m>\theta</m> is in Quadrant II, we have <m>\sin\theta\lt 0</m>. Thus we choose the negative answer to get
           <me>
-            \sin\theta=-\frac{4}{5}
+            \sin\theta=-\frac{4}{5}.
           </me>
         </p>
         <p>
           Next we use the Quotient Identity to get
           <me>
-            \tan\theta=\frac{\sin\theta}{\cos\theta}=\frac{-\frac{4}{5}}{\frac{3}{5}}=-\frac{4}{5}\cdot\frac{5}{3}=-\frac{4}{3}
+            \tan\theta=\frac{\sin\theta}{\cos\theta}=\frac{-\frac{4}{5}}{\frac{3}{5}}=-\frac{4}{5}\cdot\frac{5}{3}=-\frac{4}{3}.
           </me>
         </p>
       </solution>
@@ -1676,16 +1670,16 @@
       <idx>
         <h>odd-even identities</h>
       </idx>
-      The cosine and secant functions are <term>even</term>
+      The cosine and secant functions are <term>even</term>.
       <md>
-        <mrow>\cos(-\theta)\amp =\cos\theta \amp  \sec(-\theta)\amp =\sec\theta</mrow>
+        <mrow>\cos(-\theta)\amp =\cos\theta, \amp  \sec(-\theta)\amp =\sec\theta.</mrow>
       </md>
     </p>
     <p>
-      The sine, cosecant, tangent, and cotangent functions are <term>odd</term>
+      The sine, cosecant, tangent, and cotangent functions are <term>odd</term>.
       <md>
-        <mrow>\sin(-\theta)\amp =-\sin\theta \amp  \csc(-\theta)\amp =-\csc(\theta)</mrow>
-        <mrow>\tan(-\theta)\amp =-\tan\theta \amp  \cot(-\theta)\amp =-\cot(\theta)</mrow>
+        <mrow>\sin(-\theta)\amp =-\sin\theta, \amp  \csc(-\theta)\amp =-\csc(\theta),</mrow>
+        <mrow>\tan(-\theta)\amp =-\tan\theta, \amp  \cot(-\theta)\amp =-\cot(\theta).</mrow>
       </md>
     </p>
     </statement>
@@ -1701,8 +1695,8 @@
         \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[above]{\(y\)};
         \draw (0,0) circle (1);
         \node at (-0.1,-0.1) {0};
-        \draw[line width=2pt,blue] (0,0) -- (1,0) node[black,below,xshift=-0.2]{1};
-        \draw[line width=2pt,blue] (0,0) -- (40:1) node[black,right,xshift=0.2]{\(P=(x.y)\)};
+        \draw[line width=2pt,blue] (0,0) -- (1,0) node[black,below,xshift=7]{1};
+        \draw[line width=2pt,blue] (0,0) -- (40:1) node[black,right,xshift=0.2]{\(P=(x,y)\)};
         \draw[line width=2pt,blue] (0,0) -- (-40:1) node[black,right,xshift=0.2]{\(Q=(x,-y)\)};
         \filldraw (-40:1) circle(1pt);
         \filldraw (40:1) circle(1pt);
@@ -1715,13 +1709,13 @@
       <p>
         Using the <xref ref="def_6-trig-functions-unit-circle"/> for the six trigonometric functions we have
         <md>
-          <mrow>\sin\theta\amp =y, \amp \sin(-\theta)\amp =-y, \amp \cos\theta\amp =x, \amp \cos(-\theta)\amp =x</mrow>
+          <mrow>\sin\theta\amp =y, \amp \sin(-\theta)\amp =-y, \amp \cos\theta\amp =x, \amp \cos(-\theta)\amp =x.</mrow>
         </md>
       </p>
       <p>
         So
         <md>
-          <mrow>\sin(-\theta)\amp =-y=-\sin\theta,\amp  \cos(-\theta)\amp =x=\cos\theta</mrow>
+          <mrow>\sin(-\theta)\amp =-y=-\sin\theta,\amp  \cos(-\theta)\amp =x=\cos\theta.</mrow>
         </md>
       </p>
       <p>
@@ -1740,7 +1734,7 @@
     <example>
       <introduction>
         <p>
-          Use the even-odd properties of trigonometric functions to determine the exact value of
+          Use the even-odd properties of trigonometric functions to determine the exact value of:
         </p>
       </introduction>
       <task>
@@ -1751,7 +1745,7 @@
         </statement>
         <solution>
           <p>
-            Since cosecant is an odd function, the cosecant of a negative angle is the opposite sign of the cosecant of the positive angle. Thus, <m>\csc(-30^{\circ})=-\csc30^{\circ}=-2</m>
+            Since cosecant is an odd function, the cosecant of a negative angle has the opposite sign of the cosecant of the positive angle. Thus, <m>\csc(-30^{\circ})=-\csc30^{\circ}=-2</m>.
           </p>
         </solution>
       </task>
@@ -2713,6 +2707,34 @@
         <m>2</m>
       </p>
     </answer>
+  </exercise>
+</exercisegroup>
+<exercisegroup>
+  <introduction>
+    <p>
+      In <xref ref="rem-calculate-angle-given-quad-reference-angle">Remark</xref>, we learned that if the reference angle is given in radians and has the form <m>t'=\frac{a\pi}{b}</m>, then the corresponding angle in standard position, <m>t</m>, can be determined using an equation.
+    </p>
+  </introduction>
+  <exercise>
+    <statement>
+      <p>
+        Prove that if <m>t</m> is in Quadrant II, then <me>t=\frac{(b-a)\pi}{b}</me>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Prove that if <m>t</m> is in Quadrant III, then <me>t=\frac{(b+a)\pi}{b}</me>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        Prove that if <m>t</m> is in Quadrant IV, then <me>t=\frac{2(b-a)\pi}{b}</me>.
+      </p>
+    </statement>
   </exercise>
 </exercisegroup>
 <exercisegroup cols="4">
