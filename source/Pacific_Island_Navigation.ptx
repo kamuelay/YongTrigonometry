@@ -276,20 +276,20 @@
         \draw[gray] (\x:1.1 ) -- (\x:1 );
         }
         \foreach \x/\xtext in {
-        11.25/LĀ,
+        11.25/Lā,
         22.5/`Āina,
         33.75/Noio,
         45/Manu,
-        56.25/NĀlani,
-        67.5/NĀ Leo,
+        56.25/Nālani,
+        67.5/Nā Leo,
         78.75/Haka,
         281.25/Haka,
-        292.5/NĀ Leo,
-        303.75/NĀlani,
+        292.5/Nā Leo,
+        303.75/Nālani,
         315/Manu,
         326.25/Noio,
         337.5/`Āina,
-        348.75/LĀ
+        348.75/Lā
         }
         \draw[left] (\x:0.98 ) node[rotate=\x] {\xtext};
         \foreach \x/\xtext in {
@@ -311,18 +311,18 @@
         \draw[right] (\x:1.12 ) node[rotate=\x] {\xtext};
         \foreach \x/\xtext in {
         101.25/Haka,
-        112.5/NĀ Leo,
-        123.75/NĀlani,
+        112.5/Nā Leo,
+        123.75/Nālani,
         135/Manu,
         146.25/Noio,
         157.5/`Āina,
-        168.75/LĀ,
-        191.25/LĀ,
+        168.75/Lā,
+        191.25/Lā,
         202.5/`Āina,
         213.75/Noio,
         225/Manu,
-        236.25/NĀlani,
-        247.5/NĀ Leo,
+        236.25/Nālani,
+        247.5/Nā Leo,
         258.75/Haka
         }
         \draw[right] (\x:0.98 ) node[rotate=180+\x] {\xtext};
@@ -726,36 +726,36 @@
       \draw[gray] (\x:1.1 ) -- (\x:1 );
       }
       \foreach \x/\xtext in {
-      11.25/RĀ,
-      22.5/KĀina,
+      11.25/Rā,
+      22.5/Kāina,
       33.75/Ngoio,
       45/Manu,
-      56.25/NgĀ Rangi,
-      67.5/NgĀ Reo,
+      56.25/Ngā Rangi,
+      67.5/Ngā Reo,
       78.75/Haka,
       281.25/Haka,
-      292.5/NgĀ Reo,
-      303.75/NgĀ Rangi,
+      292.5/Ngā Reo,
+      303.75/Ngā Rangi,
       315/Manu,
       326.25/Ngoio,
-      337.5/KĀina,
-      348.75/RĀ
+      337.5/Kāina,
+      348.75/Rā
       }
       \draw[left] (\x:0.98 ) node[rotate=\x] {\xtext};
       \foreach \x/\xtext in {
       101.25/Haka,
-      112.5/NgĀ Reo,
-      123.75/NgĀ Rangi,
+      112.5/Ngā Reo,
+      123.75/Ngā Rangi,
       135/Manu,
       146.25/Ngoio,
-      157.5/KĀina,
-      168.75/RĀ,
-      191.25/RĀ,
-      202.5/KĀina,
+      157.5/Kāina,
+      168.75/Rā,
+      191.25/Rā,
+      202.5/Kāina,
       213.75/Ngoio,
       225/Manu,
-      236.25/NgĀ Rangi,
-      247.5/NgĀ Reo,
+      236.25/Ngā Rangi,
+      247.5/Ngā Reo,
       258.75/Haka
       }
       \draw[right] (\x:0.98 ) node[rotate=180+\x] {\xtext};
@@ -764,8 +764,8 @@
       </latex-image>
           </image>
         </figure>
-        <figure xml:id="maori-star-compass-32-compass-rose"><idx><h>Star Compass</h><h>MĀori</h></idx>
-          <caption>MĀori.</caption>
+        <figure xml:id="maori-star-compass-32-compass-rose"><idx><h>Star Compass</h><h>Māori</h></idx>
+          <caption>Māori.</caption>
           <image xml:id="fig-maori-star-compass-32-compass-rose">
             <latex-image>
       \begin{tikzpicture}[x=5.3cm,y=5.3cm,cap=round]
@@ -793,36 +793,36 @@
       \draw[gray] (\x:1.1 ) -- (\x:1 );
       }
       \foreach \x/\xtext in {
-      11.25/RĀ,
-      22.5/KĀina,
+      11.25/Rā,
+      22.5/Kāina,
       33.75/Ngoi,
       45/Manu,
-      56.25/NgĀ Rangi,
-      67.5/NgĀ Reo,
+      56.25/Ngā Rangi,
+      67.5/Ngā Reo,
       78.75/Haka,
       281.25/Haka,
-      292.5/NgĀ Reo,
-      303.75/NgĀ Rangi,
+      292.5/Ngā Reo,
+      303.75/Ngā Rangi,
       315/Manu,
       326.25/Ngoi,
-      337.5/KĀina,
-      348.75/RĀ
+      337.5/Kāina,
+      348.75/Rā
       }
       \draw[left] (\x:0.98 ) node[rotate=\x] {\xtext};
       \foreach \x/\xtext in {
       101.25/Haka,
-      112.5/NgĀ Reo,
-      123.75/NgĀ Rangi,
+      112.5/Ngā Reo,
+      123.75/Ngā Rangi,
       135/Manu,
       146.25/Ngoi,
-      157.5/KĀina,
-      168.75/RĀ,
-      191.25/RĀ,
-      202.5/KĀina,
+      157.5/Kāina,
+      168.75/Rā,
+      191.25/Rā,
+      202.5/Kāina,
       213.75/Ngoi,
       225/Manu,
-      236.25/NgĀ Rangi,
-      247.5/NgĀ Reo,
+      236.25/Ngā Rangi,
+      247.5/Ngā Reo,
       258.75/Haka
       }
       \draw[right] (\x:0.98 ) node[rotate=180+\x] {\xtext};
@@ -833,8 +833,8 @@
         </figure>
       </sidebyside>
       <sidebyside>
-        <figure xml:id="samoan-star-compass-32-compass-rose"><idx><h>Star Compass</h><h>SĀmoan</h></idx>
-          <caption>SĀmoa.</caption>
+        <figure xml:id="samoan-star-compass-32-compass-rose"><idx><h>Star Compass</h><h>Sāmoan</h></idx>
+          <caption>Sāmoa.</caption>
           <image xml:id="fig-samoan-star-compass-32-compass-rose">
             <latex-image>
       \begin{tikzpicture}[x=5.3cm,y=5.3cm,cap=round]
@@ -862,7 +862,7 @@
       \draw[gray] (\x:1.1 ) -- (\x:1 );
       }
       \foreach \x/\xtext in {
-      11.25/LĀ,
+      11.25/Lā,
       22.5/Āiga,
       33.75/Gogo,
       45/Manu,
@@ -875,7 +875,7 @@
       315/Manu,
       326.25/Gogo,
       337.5/Āiga,
-      348.75/LĀ
+      348.75/Lā
       }
       \draw[left] (\x:0.98 ) node[rotate=\x] {\xtext};
       \foreach \x/\xtext in {
@@ -885,8 +885,8 @@
       135/Manu,
       146.25/Gogo,
       157.5/Āiga,
-      168.75/LĀ,
-      191.25/LĀ,
+      168.75/Lā,
+      191.25/Lā,
       202.5/Āiga,
       213.75/Gogo,
       225/Manu,
