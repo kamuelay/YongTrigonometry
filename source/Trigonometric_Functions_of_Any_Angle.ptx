@@ -7,7 +7,7 @@
     </p>
   </introduction>
   <subsection>
-    <title>Determine the Signs of the Trigonometric Functions Based on its Quadrant</title>
+    <title>Determine the Signs of the Trigonometric Functions Based on the Quadrant</title>
     <p>
       Let <m>P(x,y)</m> be a point on the circle. The signs of the six trigonometric functions vary depending on the quadrant in which <m>P(x,y)</m> lies in.
     </p>
@@ -32,24 +32,24 @@
     <example>
       <statement>
         <p>
-          Let <m>P(x,y)</m> is in Quadrant II. Determine the signs for each of the six trigonometric functions.
+          Let <m>P(x,y)</m> be in Quadrant II. Determine the sign for each of the six trigonometric functions.
         </p>
       </statement>
       <solution>
         <p>
-          Since we are in Quadrant II, <m>x\lt 0</m> and <m>y>0</m>. Note that <m>r>0</m>. Then we have
+          Since <m>P(x,y)</m> is in Quadrant II, <m>x\lt 0</m> and <m>y>0</m>. Note that <m>r>0</m>. Then we have
           <md>
-            <mrow>\sin\theta\amp =\frac{y}{r}=\frac{(+)}{(+)}=(+) \amp  \cos\theta\amp =\frac{x}{r}=\frac{(-)}{(+)}=(-) \amp  \tan\theta\amp =\frac{y}{x}=\frac{(+)}{(-)}=(-)</mrow>
-            <mrow>\csc\theta\amp =\frac{r}{y}=\frac{(+)}{(+)}=(+) \amp  \sec\theta\amp =\frac{r}{x}=\frac{(+)}{(-)}=(-) \amp  \cot\theta\amp =\frac{x}{y}=\frac{(-)}{(+)}=(-)</mrow>
+            <mrow>\sin\theta\amp =\frac{y}{r}=\frac{(+)}{(+)}=(+), \amp  \cos\theta\amp =\frac{x}{r}=\frac{(-)}{(+)}=(-), \amp  \tan\theta\amp =\frac{y}{x}=\frac{(+)}{(-)}=(-),</mrow>
+            <mrow>\csc\theta\amp =\frac{r}{y}=\frac{(+)}{(+)}=(+), \amp  \sec\theta\amp =\frac{r}{x}=\frac{(+)}{(-)}=(-), \amp  \cot\theta\amp =\frac{x}{y}=\frac{(-)}{(+)}=(-).</mrow>
           </md>
         </p>
       </solution>
     </example>
     <p>
-      You can check the remaining quadrants using a similar approach. <xref ref="tab_trig-signs">Table</xref> and <xref ref="fig-trig-signs">Figure</xref> provide a list of the signs of the six trigonometric functions for each quadrant.
+      We can check the remaining quadrants using a similar approach. <xref ref="tab_trig-signs">Table</xref> and <xref ref="fig-trig-signs">Figure</xref> provide a list of the signs of the six trigonometric functions for each quadrant.
     </p>
     <table xml:id="tab_trig-signs">
-      <title>Signs of the trigonometric functions</title>
+      <title>Signs of the trigonometric functions.</title>
       <tabular>
         <row bottom="minor">
           <cell></cell>
@@ -73,18 +73,18 @@
         </row>
         <row>
           <cell>II</cell>
-          <cell>sin, csc</cell>
-          <cell>cos, sec, tan, cot</cell>
+          <cell>sin<m>\theta</m>, csc<m>\theta</m></cell>
+          <cell>cos<m>\theta</m>, sec<m>\theta</m>, tan<m>\theta</m>, cot<m>\theta</m></cell>
         </row>
         <row>
           <cell>III</cell>
-          <cell>tan, cot</cell>
-          <cell>sin, csc, cos, sec</cell>
+          <cell>tan<m>\theta</m>, cot<m>\theta</m></cell>
+          <cell>sin<m>\theta</m>, csc<m>\theta</m>, cos<m>\theta</m>, sec<m>\theta</m></cell>
         </row>
         <row>
           <cell>IV</cell>
-          <cell>cos, sec</cell>
-          <cell>sin, csc, tan, cot</cell>
+          <cell>cos<m>\theta</m>, sec<m>\theta</m></cell>
+          <cell>sin<m>\theta</m>, csc<m>\theta</m>, tan<m>\theta</m>, cot<m>\theta</m></cell>
         </row>
         <row bottom="minor">
           <cell></cell>
@@ -94,7 +94,7 @@
       </tabular>
     </table>
     <figure xml:id="fig-trig-signs">
-      <caption>Signs of trigonometric functions</caption>
+      <caption>Signs of trigonometric functions.</caption>
       <sidebyside>
         <image xml:id="fig-trig-signs-sin" width="100%">
           <latex-image>
@@ -145,7 +145,7 @@
       </statement>
       <solution>
         <p>
-          Since <m>\sin\theta\lt 0</m>, then <m>\theta</m> is either in Quadrant III or IV. However, we also have <m>\cos\theta>0</m> which means that <m>\theta</m> is either in Quadrant I or IV. Thus the only quadrant that satisfied both conditions is Quadrant IV.
+          Since <m>\sin\theta\lt 0</m>, then <m>\theta</m> is either in Quadrant III or IV. However, we also have <m>\cos\theta>0</m> which means that <m>\theta</m> is either in Quadrant I or IV. Thus the only quadrant that satisfies both conditions is Quadrant IV.
         </p>
       </solution>
     </example>
@@ -159,8 +159,7 @@
         </li>
         <li>
           <p>
-            <q><em>A</em>ll <em>S</em>tudents
-            <em>T</em>ake <em>C</em>alculus</q>
+            <q><em>A</em>ll <em>S</em>tudents <em>T</em>ake <em>C</em>alculus</q>
           </p>
         </li>
       </ul>
@@ -191,15 +190,15 @@
         <p>
           Since <m>\sin\theta\lt 0</m> and <m>\cos\theta\lt 0</m>, we refer to <xref ref="tab_trig-signs">Table</xref> and see that <m>\theta</m> is in Quadrant III. From <xref ref="tab_trig-signs">Table</xref> we know  <m>\tan\theta>0</m>, <m>\csc\theta\lt 0</m>, <m>\sec\theta\lt 0</m>, <m>\cot\theta>0</m>. From the Quotient Identity (<xref ref="def_quotient-identities"/>), we have
           <me>
-            \tan\theta=\frac{\sin\theta}{\cos\theta}=\frac{\frac{12}{13}}{\frac{5}{13}}=\frac{12}{5}
+            \tan\theta=\frac{\sin\theta}{\cos\theta}=\frac{\frac{12}{13}}{\frac{5}{13}}=\frac{12}{5}.
           </me>
         </p>
         <p>
           Next, using the Reciprocal Identities (<xref ref="def_reciprocal-identities"/>), we get
           <md>
-            <mrow>\csc\theta\amp =\frac{1}{\sin\theta}=\frac{1}{-\frac{12}{13}}=-\frac{13}{12}\\
-              \sec\theta\amp =\frac{1}{\cos\theta}=\frac{1}{-\frac{5}{13}}=-\frac{13}{5}\\
-              \cot\theta\amp =\frac{1}{\tan\theta}=\frac{1}{\frac{12}{5}}=\frac{5}{12}</mrow>
+            <mrow>\csc\theta\amp =\frac{1}{\sin\theta}=\frac{1}{-\frac{12}{13}}=-\frac{13}{12},\\
+              \sec\theta\amp =\frac{1}{\cos\theta}=\frac{1}{-\frac{5}{13}}=-\frac{13}{5},\\
+              \cot\theta\amp =\frac{1}{\tan\theta}=\frac{1}{\frac{12}{5}}=\frac{5}{12}.</mrow>
           </md>
         </p>
       </solution>
@@ -215,25 +214,25 @@
         <p>
           Let <m>t</m> be a real number. A <term>reference angle</term>,
               <idx><h>reference angle</h></idx>
-          <m>t'</m>, is the acute angle (<m>\lt 90^{\circ}</m>) formed by the terminal side of angle <m>t</m> and the <m>x</m>-axis. In other words, it is the shortest distance along the unit circle measured between the terminal side and the <m>x</m>-axis. Angles in Quadrant I are their own reference angles.
+          <m>t'</m>, is the acute angle (<m>\lt 90^{\circ}</m>) formed by the terminal side of angle <m>t</m> and the <m>x</m>-axis. In other words, it is the shortest arc length along the unit circle measured between the terminal side and the <m>x</m>-axis. Angles in Quadrant I are their own reference angles.
         </p>
       </statement>
     </definition>
     <remark>
     <title>Calculating the reference angle</title>
       <p>
-        To calculate the reference angle <m>tʻ</m> for a given angle <m>t</m>:
+        To calculate the reference angle <m>t'</m> for a given angle <m>t</m>:
       </p>
       <p>
       <ul>
         <li>
           <p>
-            In radians, if <m>t>2\pi</m> or if <m>t\lt 0</m>, add or subtract multiples of <m>2\pi</m> to obtain a coterminal angle between <m>0</m> and <m>2\pi</m>. Then, find the reference angle.
+            In radians, if <m>t\gt 2\pi</m> or if <m>t\lt 0</m>, add or subtract multiples of <m>2\pi</m> to obtain a coterminal angle between <m>0</m> and <m>2\pi</m>. Then, find the reference angle.
           </p>
         </li>
         <li>
           <p>
-            In degrees, if <m>t>360^{\circ}</m> or <m>t\lt 0^{\circ}</m>, add or subtract multiples of <m>360^{\circ}</m> to obtain a coterminal angle between <m>0^{\circ}</m> and <m>360^{\circ}</m>. Then, find the reference angle.
+            In degrees, if <m>t\gt 360^{\circ}</m> or <m>t\lt 0^{\circ}</m>, add or subtract multiples of <m>360^{\circ}</m> to obtain a coterminal angle between <m>0^{\circ}</m> and <m>360^{\circ}</m>. Then, find the reference angle.
           </p>
         </li>
       </ul>
@@ -274,10 +273,12 @@
               \draw[stealth-stealth] (0,-1.25)--(0,1.25) node[above]{\(y\)};
               \draw (0,0) circle (1);
               \filldraw[blue] (1,0) circle(1pt);
-              \filldraw[blue] (60:1) circle(1pt);
+              \filldraw[blue] (120:1) circle(1pt);
+              \draw[line width=2pt,blue, dashed] (0,0) -- (-1,0);
               \draw[line width=2pt,blue] (0,0) -- (1,0);
-              \draw[line width=2pt,blue] (0,0) -- (60:1);
-              \draw[-stealth] (0:0.4) arc (0:60:0.4) node[midway, right,xshift=0.05] {\(t=t'\)};
+              \draw[line width=2pt,blue] (0,0) -- (120:1);
+              \draw[-stealth] (0:0.3) arc (0:120:0.3) node[midway, left,xshift=-0.1] {\(t\)};
+              \draw[-stealth] (180:0.6) arc (180:120:0.6) node[midway, left,xshift=-0.1] {\(t'\)};
               \end{tikzpicture}
             </latex-image>
           </image>
@@ -335,7 +336,7 @@
     <example xml:id="example_find-ref-angles">
       <introduction>
         <p>
-          Find the reference angle for each value of <m>t</m>
+          Find the reference angle for each value of <m>t</m>.
         </p>
       </introduction>
       <task>
@@ -360,7 +361,7 @@
         <solution>
           <p>
             The angle <m>t=\frac{\pi}{3}</m> is in the first quadrant and so it is its own reference angle:
-            <m>t=t'=\frac{\pi}{3}</m>
+            <m>t=t'=\frac{\pi}{3}</m>.
           </p>
         </solution>
       </task>
@@ -388,7 +389,7 @@
         </statement>
         <solution>
           <p>
-            From the figure, we see that the shortest distance to the <m>x</m>-axis is in the direction of <m>\pi</m>.
+            From the figure, we see that the shortest arc length to the <m>x</m>-axis is in the direction of <m>\pi</m>.
             We see that <m>t'+\frac{3\pi}{4}=\pi</m> so <m>t'=\pi-\frac{3\pi}{4}=\frac{\pi}{4}</m>.
           </p>
         </solution>
@@ -448,7 +449,7 @@
         </statement>
         <solution>
           <p>
-            From the figure we see the shortest distance to the <m>x</m>-axis is towards <m>180^{\circ}</m>. We observe that <m>240^{\circ}-t'=180^{\circ}</m> so <m>t'=240^{\circ}-180^{\circ}=60^{\circ}</m>
+            From the figure we see that the shortest arc length to the <m>x</m>-axis is towards <m>180^{\circ}</m>. We observe that <m>240^{\circ}-t'=180^{\circ}</m> so <m>t'=240^{\circ}-180^{\circ}=60^{\circ}</m>.
           </p>
         </solution>
       </task>
@@ -474,7 +475,7 @@
         </statement>
         <solution>
           <p>
-            From the figure, we see the shortest distance to the <m>x</m>-axis is towards <m>2\pi</m>. We observe that <m>t'+\frac{11\pi}{6}=2\pi</m> so <m>t'=2\pi-\frac{11\pi}{6}=\frac{\pi}{6}</m>.
+            From the figure, we see that the shortest arc length to the <m>x</m>-axis is towards <m>2\pi</m>. We observe that <m>t'+\frac{11\pi}{6}=2\pi</m> so <m>t'=2\pi-\frac{11\pi}{6}=\frac{\pi}{6}</m>.
           </p>
         </solution>
       </task>
@@ -501,14 +502,14 @@
         </statement>
         <solution>
           <p>
-            From the figure, we see the shortest distance to the <m>x</m>-axis is towards <m>\pi</m>. We observe that <m>t'+\frac{2\pi}{3}=\pi</m> so <m>t'=\pi-\frac{2\pi}{3}=\frac{\pi}{3}</m>.
+            From the figure, we see that the shortest arc length to the <m>x</m>-axis is towards <m>\pi</m>. We observe that <m>t'+\frac{2\pi}{3}=\pi</m> so <m>t'=\pi-\frac{2\pi}{3}=\frac{\pi}{3}</m>.
           </p>
         </solution>
       </task>
     </example>
     <remark xml:id="rem-calculate-angle-given-quad-reference-angle"><title>Calculate an angle in standard position given its quadrant and reference angle</title>
       <p>
-        To calculate an angle in standard position, <m>t</m>, given the quadrant that <m>t</m> lies in and the reference angle <m>t'</m>,
+        We calculate an angle in standard position, <m>t</m>, given the quadrant that <m>t</m> lies in and the reference angle <m>t'</m>.
       </p>
       <sbsgroup>
         <sidebyside widths="17% 33% 17% 33%" valign="top">
@@ -605,17 +606,17 @@
         </sidebyside>
       </sbsgroup>
       <p>
-        For radians only: If the reference angle (in radians) is of the form <m>t'=\frac{a\pi}{b}</m>, then the associated angle in standard position, <m>t</m>, can be calculated by
+        For radians only: If the reference angle (in radians) is of the form <m>t'=\frac{a\pi}{b}</m>, then the associated angle in standard position, <m>t</m>, can be calculated by:
       </p>
       <image xml:id="reference-angle-radians" width="75%">
         <latex-image>
-        \begin{tikzpicture}[scale=1.25]
+        \begin{tikzpicture}[scale=1.5]
         \draw[stealth-stealth] (-2,0)--(2,0) node[right]{\(x\)};
         \draw[stealth-stealth] (0,-2)--(0,2) node[above]{\(y\)};
-        \node at (1,1) [ align=center] {I \\ \(t=t'=\frac{a\pi}{b}\)};
-        \node at (-1,1) [ align=center]{II \\ \(t=\frac{(b-a)\pi}{b}\)};
-        \node at (-1,-1) [ align=center] {III \\ \(t=\frac{(b+a)\pi}{b}\)};
-        \node at (1,-1) [ align=center] {IV \\ \(t=\frac{(2b-a)\pi}{b}\)};
+        \node at (1,1) [ align=center] {I \\ \\ \(t=t'=\frac{a\pi}{b}\)};
+        \node at (-1,1) [ align=center]{II \\ \\ \(t=\frac{(b-a)\pi}{b}\)};
+        \node at (-1,-1) [ align=center] {III \\ \\ \(t=\frac{(b+a)\pi}{b}\)};
+        \node at (1,-1) [ align=center] {IV \\ \\ \(t=\frac{(2b-a)\pi}{b}\)};
         \end{tikzpicture}
         </latex-image>
       </image>
@@ -624,7 +625,7 @@
     <title>Calculate an angle given its reference angle and quadrant </title>
     <introduction>
       <p>
-        Given a reference angle, <m>t</m>, compute the associated angle in standard position for Quadrant II, III, and IV.
+        Given a reference angle, <m>t</m>, compute the associated angle in standard position for Quadrants II, III, and IV.
       </p>
     </introduction>
     <task>
