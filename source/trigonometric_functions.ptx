@@ -5,5 +5,5 @@
   <xi:include  href="angles_and_their_measure.ptx"/>
   <xi:include  href="unit_circle.ptx"/>
   <xi:include  href="right_triangle_trigonometry.ptx"/>
-  <xi:include  href="trigonometric_functions_of_any_angles.ptx"/>
+  <xi:include  href="trigonometric_functions_of_any_angle.ptx"/>
 </chapter>
