@@ -13,17 +13,17 @@
     </p>
     <p>
       <me>
-        \tan x = \frac{\sin x}{\cos x}
+        \tan x = \frac{\sin x}{\cos x}.
       </me>
     </p>
     <p>
-      Issues arise when the denominator is zero, i.e., when <m>\cos x=0</m>. This leads to undefined points at <m>x=\ldots, -\frac{3\pi}{2}, -\frac{\pi}{2}, \frac{\pi}{2}, \frac{3\pi}{2}, \frac{5\pi}{2}, \ldots</m>. In general, any angle of the form <m>n\frac{\pi}{2}</m>, where <m>n</m> is an odd integer, should be excluded from the domain since tangent is undefined at these values.
+      <m>\tan x</m> is undefined when the denominator is zero, that is, when <m>\cos x=0</m>. This leads to undefined points at <m>x=\ldots, -\frac{3\pi}{2}, -\frac{\pi}{2}, \frac{\pi}{2}, \frac{3\pi}{2}, \frac{5\pi}{2}, \ldots</m>. In general, any angle of the form <m>n\frac{\pi}{2}</m>, where <m>n</m> is an odd integer, should be excluded from the domain since tangent is undefined at these values.
     </p>
     <p>
       Similarly, we defined the cotangent function as
     </p>
     <p>
-      <me>\cot x=\frac{\cos x}{\sin x}</me>
+      <me>\cot x=\frac{\cos x}{\sin x}.</me>
     </p>
     <p>
       The denominator becomes zero when <m>\sin x=0</m>, corresponding to <m>x=\ldots,-\pi,0,\pi,2\pi,\ldots</m>. In general, <m>\cot x</m> is undefined for angles of the form <m>n\pi</m>, where <m>n</m> is an integer. These angles should be excluded from the domain of cotangent.
@@ -31,10 +31,10 @@
     <remark>
       <title>Domains for Tangent and Cotangent</title>
       <p>
-        The domains for tangent and cotangent functions are given in <xref ref="tab_tan-cot-domain"/>
+        The domains for tangent and cotangent functions are given in <xref ref="tab_tan-cot-domain"/>.
       </p>
       <table xml:id="tab_tan-cot-domain">
-        <title>Domains of the tangent and cotangent functions</title>
+        <title>Domains of the tangent and cotangent functions.</title>
         <tabular>
           <row bottom="minor">
             <cell></cell>
@@ -50,7 +50,7 @@
           </row>
           <row>
             <cell><m>\tan\theta</m></cell>
-            <cell>All real numbers except odd multiples of <m>\frac{\pi}{2}</m> (<m>90^{\circ}</m>)</cell>
+            <cell>All real numbers except odd integer multiples of <m>\frac{\pi}{2}</m> (<m>90^{\circ}</m>)</cell>
           </row>
           <row bottom="minor">
             <cell></cell>
@@ -77,37 +77,37 @@
       Multiplying both sides by <m>x</m>, we obtain:
     </p>
     <p>
-      <me>y = ax</me>
+      <me>y = ax.</me>
     </p>
     <p>
       Squaring both sides yields:
     </p>
     <p>
-      <me>y^2 = a^2x^2</me>
+      <me>y^2 = a^2x^2.</me>
     </p>
     <p>
       Substituting into the Pythagorean Identity (<xref ref="def_pythagorean-identity"/>), we have:
     </p>
     <p>
-      <me>1 = x^2 + y^2 = x^2 + a^2x^2 = x^2(1 + a^2)</me>
+      <me>1 = x^2 + y^2 = x^2 + a^2x^2 = x^2(1 + a^2).</me>
     </p>
     <p>
       Dividing both sides by <m>1 + a^2</m> and taking the square root gives:
     </p>
     <p>
-      <me>x = \pm\frac{1}{\sqrt{1 + a^2}}</me>
+      <me>x = \pm\frac{1}{\sqrt{1 + a^2}}.</me>
     </p>
     <p>
       Similarly, we obtain:
     </p>
     <p>
-      <me>y = \pm\frac{a}{\sqrt{1 + a^2}}</me>
+      <me>y = \pm\frac{a}{\sqrt{1 + a^2}}.</me>
     </p>
     <p>
       Thus, we conclude:
     </p>
     <p>
-      <me>\tan\theta = \frac{y}{x} = \frac{\frac{a}{\sqrt{1 + a^2}}}{\frac{1}{\sqrt{1 + a^2}}} = a</me>
+      <me>\tan\theta = \frac{y}{x} = \frac{\frac{a}{\sqrt{1 + a^2}}}{\frac{1}{\sqrt{1 + a^2}}} = a.</me>
     </p>
     <p>
       In other words, since <m>a</m> can be any real number and <m>\tan\theta = a</m>, the range of the tangent function consists of all real numbers. A similar method can be used to show that the range of the cotangent function is also the set of all real numbers.
@@ -115,10 +115,10 @@
     <remark>
       <title>Ranges for Tangent and Cotangent</title>
       <p>
-        The ranges for tangent and cotangent functions are given in <xref ref="tab_tan-cot-range"/>
+        The ranges for tangent and cotangent functions are given in <xref ref="tab_tan-cot-range"/>.
       </p>
       <table xml:id="tab_tan-cot-range">
-        <title>Ranges of the tangent and cotangent functions</title>
+        <title>Ranges of the tangent and cotangent functions.</title>
         <tabular>
           <row bottom="minor">
             <cell></cell>
@@ -133,7 +133,7 @@
             <cell></cell>
           </row>
           <row>
-            <cell><m>\tan\theta</m></cell>
+            <cell><m>\tan x</m></cell>
             <cell>All real numbers</cell>
           </row>
           <row bottom="minor">
@@ -141,7 +141,7 @@
             <cell></cell>
           </row>
           <row>
-            <cell><m>\cot\theta</m></cell>
+            <cell><m>\cot x</m></cell>
             <cell>All real numbers</cell>
           </row>
           <row bottom="minor">
@@ -155,26 +155,26 @@
   <subsection xml:id="subsec-domain-cosecant-secant-functions">
     <title>Domains of the Cosecant and Secant Functions</title>
     <p>
-      Consider the Reciprocal Identity for the cosecant function (<xref ref="def_reciprocal-identities"/>):
+      Consider the Reciprocal Identity defining the cosecant function (<xref ref="def_reciprocal-identities"/>):
     </p>
     <p>
-      <me>\csc x=\frac{1}{\sin x}</me>
+      <me>\csc x=\frac{1}{\sin x}.</me>
     </p>
     <p>
-      When <m>\sin x=0</m>, corresponding to <m>x=\ldots,-\pi,0,\pi,2\pi,\ldots</m>, the denominator becomes zero. In general, <m>\csc x</m> is undefined for angles of the form <m>n\pi</m>, where <m>n</m> is an integer, and these values should be excluded from the domain.
+      When <m>\sin x=0</m>, corresponding to <m>x=\ldots,-\pi,0,\pi,2\pi,\ldots</m>, the denominator becomes zero. Therefore, <m>\csc x</m> is undefined for angles of the form <m>n\pi</m>, where <m>n</m> is an integer, and these values should be excluded from the domain.
     </p>
     <p>
-      Similarly, since the cosecant function is defined as
+      Similarly, since the secant function is defined as
       <me>\sec x=\frac{1}{\cos x}</me>
-      we see that <m>\sec x</m> is undefined when <m>\cos x=0</m>. This occurs at <m>x=\ldots, -\frac{3\pi}{2}, -\frac{\pi}{2}, \frac{\pi}{2}, \frac{3\pi}{2}, \frac{5\pi}{2}, \ldots</m>, and thus any angle of the general form <m>n\frac{\pi}{2}</m>, where <m>n</m> is an odd integer, should be excluded from the domain of <m>\sec x</m>.
+      we see that <m>\sec x</m> is undefined when <m>\cos x=0</m>. This occurs at <m>x=\ldots, -\frac{3\pi}{2}, -\frac{\pi}{2}, \frac{\pi}{2}, \frac{3\pi}{2}, \frac{5\pi}{2}, \ldots</m>, and thus any angle of the form <m>n\frac{\pi}{2}</m>, where <m>n</m> is an odd integer, should be excluded from the domain of <m>\sec x</m>.
     </p>
     <remark>
       <title>Domains for Cosecant and Secant</title>
       <p>
-        The domains for cosecant and secant functions are given in <xref ref="tab_csc-sec-domain"/>
+        The domains for cosecant and secant functions are given in <xref ref="tab_csc-sec-domain"/>.
       </p>
       <table xml:id="tab_csc-sec-domain">
-        <title>Domains of the trigonometric functions</title>
+        <title>Domains of the trigonometric functions.</title>
         <tabular>
           <row bottom="minor">
             <cell></cell>
@@ -189,7 +189,7 @@
             <cell></cell>
           </row>
           <row>
-            <cell><m>\csc\theta</m></cell>
+            <cell><m>\csc x</m></cell>
             <cell>All real numbers except integer multiples of <m>\pi</m> (<m>180^{\circ}</m>)</cell>
           </row>
           <row bottom="minor">
@@ -197,8 +197,8 @@
             <cell></cell>
           </row>
           <row>
-            <cell><m>\sec\theta</m></cell>
-            <cell>All real numbers except integer multiples of <m>\frac{\pi}{2}</m> (<m>90^{\circ}</m>)</cell>
+            <cell><m>\sec x</m></cell>
+            <cell>All real numbers except odd integer multiples of <m>\frac{\pi}{2}</m> (<m>90^{\circ}</m>)</cell>
           </row>
           <row bottom="minor">
             <cell></cell>
@@ -211,8 +211,8 @@
   <subsection xml:id="subsec-range-cosecant-secant-functions">
     <title>Ranges of the Cosecant and Secant Functions</title>
     <p>
-      If the angle is not an integer multiple of <m>\pi</m>, i.e. <m>x\neq n\pi</m>, where <m>n</m> is an integer, then the Reciprocal Identity allows us to define cosecant as
-      <me>\csc x=\frac{1}{\sin x}</me>.
+      If the angle is not an integer multiple of <m>\pi</m>, i.e. <m>x\neq n\pi</m>, where <m>n</m> is an integer, then cosecant is defined by the Reciprocal Identity as
+      <me>\csc x=\frac{1}{\sin x}.</me>
       In <xref ref="subsec-domain-range-sine-cosine-functions"/>, we learned that the function <m>y=\sin x</m> has a range of
       <me>-1\leq \sin x\leq1</me>.
       Therefore, taking the reciprocal of the range of sine, we get
