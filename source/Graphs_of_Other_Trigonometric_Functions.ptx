@@ -220,17 +220,17 @@
       In other words, the range of the cosecant function is all real numbers less than or equal to <m>-1</m> or greater than or equal to <m>1</m>.
     </p>
     <p>
-      Similarly, since <m>-1\leq \cos x\leq1</m>, we can get the range for the secant funcation as
+      Similarly, since <m>-1\leq \cos x\leq1</m>, we can get the range for the secant function as
       <me>\sec x\leq-1\mbox{ or }\sec x\geq1</me>
       or all real numbers less than or equal to <m>-1</m> or greater than or equal to <m>1</m>.
     </p>
     <remark>
       <title>Ranges for Cosecant and Secant</title>
       <p>
-        The ranges for cosecant and secant functions are given in <xref ref="tab_csc-sec-range"/>
+        The ranges for cosecant and secant functions are given in <xref ref="tab_csc-sec-range"/>.
       </p>
       <table xml:id="tab_csc-sec-range">
-        <title>Ranges of the cosecant and secant functions</title>
+        <title>Ranges of the cosecant and secant functions.</title>
         <tabular>
           <row bottom="minor">
             <cell></cell>
@@ -245,16 +245,16 @@
             <cell></cell>
           </row>
           <row>
-            <cell><m>\csc\theta</m></cell>
-            <cell>All real numbers greater than or equal to <m>1</m> or less than or equal to <m>-1</m></cell>
+            <cell><m>\csc x</m></cell>
+            <cell>All real numbers less than or equal to <m>-1</m> or greater than or equal to <m>1</m></cell>
           </row>
           <row bottom="minor">
             <cell></cell>
             <cell></cell>
           </row>
           <row>
-            <cell><m>\sec\theta</m></cell>
-            <cell>All real numbers greater than or equal to <m>1</m> or less than or equal to <m>-1</m></cell>
+            <cell><m>\sec x</m></cell>
+            <cell>All real numbers less than or equal to <m>-1</m> or greater than or equal to <m>1</m></cell>
           </row>
           <row bottom="minor">
             <cell></cell>
@@ -267,19 +267,19 @@
   <subsection xml:id="subsec-tangent-function">
     <title>The Tangent Function</title>
     <p>
-      In <xref ref="subsec_periodic-functions"/>, we learned that the tangent function is periodic with a period of <m>\pi</m>. To graph <m>y = \tan x</m>, we focus on plotting one period and then repeat those values to complete the graph.
+      In <xref ref="subsec_periodic-functions"/>, we learned that the tangent function is periodic with a period of <m>\pi</m>. To graph <m>y = \tan x</m>, we focus on plotting the graph for one period and then repeating those values to complete the graph.
     </p>
     <p>
-      We also know that the domain of tangent includes all real numbers except any angle of the form <m>n\frac{\pi}{2}</m>, where <m>n</m> is an odd integer. These values are excluded since tangent is undefined there. In fact, any line of the form <m>x=n\frac{\pi}{2}</m> (e.g. <m>x=-\frac{\pi}{2}</m> and <m>x=\frac{\pi}{2}</m>) is a <term>vertical asymptote</term><idx><h>vertical asymptote</h></idx> 
+      We also know that the domain of tangent includes all real numbers except angles of the form <m>n\frac{\pi}{2}</m>, where <m>n</m> is an odd integer. These values are excluded since tangent is undefined for these angles. In fact, any line of the form <m>x=n\frac{\pi}{2}</m>, where <m>n</m> is an odd integer (e.g., <m>x=\frac{\pi}{2}</m> and <m>x=\frac{3\pi}{2}</m>), is a <term>vertical asymptote</term><idx><h>vertical asymptote</h></idx>.
     </p>
     <p>
-      Knowing the location of the vertical asymptotes, we choose the interval <m>\left(-\frac{\pi}{2},\frac{\pi}{2}\right)</m> to plot our points for tangent. This interval has a length of <m>\pi</m> (one period), allowing us to repeat the values to complete the graph of tangent over the entire domain.
+      Knowing the location of the vertical asymptotes, we choose the interval <m>\left(-\frac{\pi}{2},\frac{\pi}{2}\right)</m> to plot our points for tangent. This interval has a length of <m>\pi</m> (one period), allowing us to repeat the values to complete the graph of tangent over its entire domain.
     </p>
     <p>
-      Recall from <xref ref="def-of-trig-functions">Definition</xref> that on the unit circle, the expression <m>\tan\theta=\frac{y}{x}</m> denotes the ratio of the <m>y</m>-coordinate to the <m>x</m>-coordinate of a point <m>P(x, y)</m> associated with an angle <m>\theta</m>. This ratio changes dynamically as <m>\theta</m> varies from zero to <m>\frac{\pi}{2}</m>.
+      Recall from <xref ref="def-of-trig-functions">Definition</xref> that on the unit circle, the expression <m>\tan\theta=\frac{y}{x}</m> denotes the ratio of the <m>y</m>-coordinate to the <m>x</m>-coordinate of a point <m>P(x, y)</m> associated with an angle <m>\theta</m>. This ratio changes as <m>\theta</m> varies from zero to <m>\frac{\pi}{2}</m>.
     </p>
     <p>
-      As <m>\theta</m> approaches zero, the <m>y</m>-value tends to zero, and <m>x</m> approaches 1, resulting in <m>\tan\theta</m> being a small fraction. Conversely, as <m>\theta</m> approaches <m>\frac{\pi}{2}</m>, the <m>y</m>-value approaches 1, while <m>x</m> becomes extremely small and near zero. This causes <m>\tan\theta</m> to evaluate as a fraction divided by a very small number, producing a large number. A similar effect occurs when <m>\theta</m> is between <m>-\frac{\pi}{2}</m> and zero, except <m>\tan\theta</m> is negative in this range. This behavior is shown in <xref ref="tangent-graph-animation">Figure</xref>.
+      As <m>\theta</m> approaches zero, the <m>y</m>-value tends to zero, and <m>x</m> approaches 1, resulting in <m>\tan\theta</m> being a small fraction. Conversely, as <m>\theta</m> approaches <m>\frac{\pi}{2}</m>, the <m>y</m>-value approaches 1, while <m>x</m> becomes extremely small and approaches zero. This causes <m>\tan\theta</m> to be evaluated as a fraction with a very small number in the denominator, producing a large number. A similar effect occurs when <m>\theta</m> is between <m>-\frac{\pi}{2}</m> and zero, except <m>\tan\theta</m> is negative in this range. This behavior is shown in <xref ref="tangent-graph-animation">Figure</xref>.
     </p>
     <figure xml:id="tangent-graph-animation">
       <caption>
@@ -291,9 +291,7 @@
       Next we recall values of tangent for known angles, which are listed in <xref ref="tab_tan-graph-values">Table</xref> and plotted in <xref ref="tan-points-labeled">Figure</xref>. 
     </p>
     <table xml:id="tab_tan-graph-values">
-      <title>Values for 
-        <m>y=\tan x</m>
-      </title>
+      <title>Values for <m>y=\tan x</m>.</title>
       <tabular halign="center">
         <row bottom="major">
           <cell><m>x</m></cell>
@@ -312,8 +310,8 @@
         </row>
         <row>
           <cell><m>-\frac{\pi}{6}</m></cell>
-          <cell><m>-\frac{\sqrt{3}}{3}</m></cell>
-          <cell><m>\left(-\frac{\pi}{6},-\frac{\sqrt{3}}{3}\right)</m></cell>
+          <cell><m>-\frac{1}{\sqrt{3}}</m></cell>
+          <cell><m>\left(-\frac{\pi}{6},-\frac{1}{\sqrt{3}}\right)</m></cell>
         </row>
         <row>
           <cell><m>0</m></cell>
@@ -322,8 +320,8 @@
         </row>
         <row>
           <cell><m>\frac{\pi}{6}</m></cell>
-          <cell><m>\frac{\sqrt{3}}{3}</m></cell>
-          <cell><m>\left(\frac{\pi}{6},\frac{\sqrt{3}}{3}\right)</m></cell>
+          <cell><m>\frac{1}{\sqrt{3}}</m></cell>
+          <cell><m>\left(\frac{\pi}{6},\frac{1}{\sqrt{3}}\right)</m></cell>
         </row>
         <row>
           <cell><m>\frac{\pi}{4}</m></cell>
