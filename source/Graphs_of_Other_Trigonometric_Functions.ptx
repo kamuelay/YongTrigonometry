@@ -343,7 +343,7 @@
 
     <figure xml:id="tan-points-labeled">
       <caption>
-        The values in <xref ref="tab_tan-graph-values">Table</xref>  plotted on a graph with a smooth curve connecting the points to make the curve for <m>y=\tan(x)</m>.
+        The values in <xref ref="tab_tan-graph-values">Table</xref>  plotted with a smooth curve connecting the points to make the graph for <m>y=\tan(x)</m>.
       </caption>
       <image xml:id="fig-tan-points-labeled">
         <latex-image>
@@ -352,7 +352,7 @@
           axis lines=middle,clip=false,
           xmin=-pi/2-0.5,xmax=pi/2+0.5,ymin=-2.2,ymax=2.2,
           ytick={-sqrt(3),-1,-sqrt(3)/3,sqrt(3)/3,1,sqrt(3)},
-          yticklabels={\(-\sqrt{3}\),\(-1\),\(-\frac{\sqrt{3}}{3}\),\(\frac{\sqrt{3}}{3}\),\(1\),\(\sqrt{3}\)},
+          yticklabels={\(-\sqrt{3}\),\(-1\),\(-\frac{1}{\sqrt{3}}\),\(\frac{1}{\sqrt{3}}\),\(1\),\(\sqrt{3}\)},
           xtick={-pi/2,-pi/3,-pi/4,-pi/6,0,pi/6,pi/4,pi/3,pi/2},
           minor xtick={-3*pi/2,-pi/2,pi/2,3*pi/2,5*pi/2},
           xticklabels={\(-\frac{\pi}{2}\),\(-\frac{\pi}{3}\),\(-\frac{\pi}{4}\),\(-\frac{\pi}{6}\),\(0\),\(\frac{\pi}{6}\),\(\frac{\pi}{4}\),\(\frac{\pi}{3}\),\(\frac{\pi}{2}\)},
@@ -374,7 +374,7 @@
       Since the graph in <xref ref="tan-points-labeled"/> represents one period, we can complete the graph of <m>y=\tan x</m> by extending the pattern in both directions to obtain <xref ref="tan-graph-extended"/>.
     </p>
     <figure xml:id="tan-graph-extended">
-      <caption>The plot for <m>y=\tan(x)</m></caption>
+      <caption>The graph for <m>y=\tan(x)</m>.</caption>
       <image xml:id="fig-tan-graph-extended">
         <latex-image>
           \begin{tikzpicture}
@@ -407,7 +407,7 @@
   <subsection xml:id="subsec-cotangent-function">
     <title>The Cotangent Function</title>
     <p>
-      The domain of the cotangent function is defined for all angles except those of the form <m>n\pi</m>, where <m>n</m> is an integer. These excluded values correspond to vertical asymptotes. In fact, any line of the form <m>x = n\pi</m>, where <m>n</m> is an integer, serves as a vertical asymptote. Additionally, as we learned in <xref ref="subsec_periodic-functions"/>, the cotangent function has a period of <m>\pi</m>. We can construct a plot for it in a manner similar to how we constructed the tangent function, as illustrated in <xref ref="cotangent-graph-animation"/>.
+      The domain of the cotangent function contains all angles except those of the form <m>n\pi</m>, where <m>n</m> is an integer. These excluded values correspond to vertical asymptotes. In fact, any line of the form <m>x = n\pi</m>, where <m>n</m> is an integer, serves as a vertical asymptote. Additionally, as we learned in <xref ref="subsec_periodic-functions"/>, the cotangent function has a period of <m>\pi</m>. We can construct a plot for it in a manner similar to how we constructed the tangent function, as illustrated in <xref ref="cotangent-graph-animation"/>.
     </p>
     <figure xml:id="cotangent-graph-animation">
       <caption>
@@ -416,10 +416,10 @@
       <interactive geogebra="mhzmakps" aspect="1.75:0.75" label="geogebra-cotangent-animation"/>
     </figure>
     <p>
-      Plotting points for <m>y=\cot x</m> and using the fact that the cotangent function is periodic, we obtain the graph for cotangent in <xref ref="cot-graph-extended"/>
+      Plotting points for <m>y=\cot x</m> and using the fact that the cotangent function is periodic, we obtain the graph for cotangent in <xref ref="cot-graph-extended"/>.
     </p>
     <figure xml:id="cot-graph-extended">
-      <caption>The plot for <m>y=\cot(x)</m>.</caption>
+      <caption>The graph for <m>y=\cot(x)</m>.</caption>
       <image xml:id="fig-cot-graph-extended">
         <latex-image>
           \begin{tikzpicture}
@@ -458,19 +458,17 @@
       The cosecant function has vertical asymptotes at points <m>n\pi</m>, where <m>n</m> is an integer, corresponding to the values where the function is undefined. These points are the same ones excluded from the domain of <m>\csc x</m>. As discussed in <xref ref="subsec_periodic-functions"/>, the cosecant function has a period of <m>2\pi</m>. Given this, we choose to examine its behavior within one period, specifically from <m>0</m> to <m>2\pi</m>, since this interval spans one complete period of the cosecant function.
     </p>
     <p>
-      Consider the Reciprocal Identity for the cosecant function (<xref ref="def_reciprocal-identities"/>):
+      Consider the Reciprocal Identity defining the cosecant function (<xref ref="def_reciprocal-identities"/>):
       <me>\csc x=\frac{1}{\sin x}</me>.
-      As <m>x</m> approaches zero, sine decreases to zero, making cosecant approach positive infinity. Increasing <m>x</m> towards <m>\frac{\pi}{2}</m>,  <m>\sin(x)</m> increases to <m>1</m>, and cosecant decreases to <m>1</m>. As <m>x</m> moves from <m>\frac{\pi}{2}</m> to <m>\pi</m>, sine approaches zero, causing <m>\csc(x)</m> to approach infinity.
+      As <m>x</m> approaches zero, <m>\sin x</m> decreases to zero, making <m>\csc x</m> approach positive infinity. Increasing <m>x</m> towards <m>\frac{\pi}{2}</m>, <m>\sin(x)</m> increases to <m>1</m>, and cosecant decreases to <m>1</m>. As <m>x</m> increases from <m>\frac{\pi}{2}</m> to <m>\pi</m>, <m>\sin x</m> approaches zero, causing <m>\csc(x)</m> to approach infinity.
     </p>
     <p>
-      Similarly, for <m>x\gt\pi</m> nearing <m>\pi</m>, <m>\sin(x)</m> becomes a small, negative number near zero, resulting in <m>\csc(x)</m> approaching negative infinity. 
-      As <m>x</m> increases to <m>\frac{3\pi}{2}</m>, <m>\sin(x)</m> decreases to <m>-1</m>, and <m>\csc(x)</m> increases to <m>-1</m>. 
-      Finally, from <m>\frac{3\pi}{2}</m> to <m>2\pi</m>, <m>\sin(x)</m> approaches a small negative number, causing cosecant to approach negative infinity.
+      Similarly, for <m>x\gt\pi</m> but nearing <m>\pi</m>, <m>\sin(x)</m> becomes a small, negative number near zero, resulting in <m>\csc(x)</m> approaching negative infinity. As <m>x</m> increases to <m>\frac{3\pi}{2}</m>, <m>\sin(x)</m> decreases to <m>-1</m>, and <m>\csc(x)</m> increases to <m>-1</m>. Finally, as <m>x</m> increases from <m>\frac{3\pi}{2}</m> to <m>2\pi</m>, <m>\sin(x)</m> approaches zero from the negative side, causing cosecant to approach negative infinity.
       This behavior is shown in <xref ref="cosecant-graph-animation"/>.
     </p>
     <figure xml:id="cosecant-graph-animation">
       <caption>
-        As <m>\theta</m> moves from <m>0^{\circ}</m> to <m>360^{\circ}</m>, this figure plots the values of <m>y=\sin x</m> and <m>y = \csc \theta</m>. Move the slider for <m>\theta</m> to see how changing the angle affects <m>\csc\theta</m>. Note that while we will generally be using radians when graphing trigonometric functions, this figure uses degrees to help visualize the angle.
+        As <m>\theta</m> moves from <m>0^{\circ}</m> to <m>360^{\circ}</m>, this figure plots the values of <m>y=\sin \theta</m> and <m>y = \csc \theta</m>. Move the slider for <m>\theta</m> to see how changing the angle affects <m>\csc\theta</m>. Note that while we will generally be using radians when graphing trigonometric functions, this figure uses degrees to help visualize the angle.
       </caption>
       <interactive geogebra="b4zc4xwu" aspect="1.75:0.75"  label="geogebra-cosecant-animation"/>
     </figure>
@@ -478,8 +476,7 @@
       Next we recall values of sine and cosecant for known angles, which are listed in <xref ref="tab_csc-graph-values">Table</xref> and plotted in <xref ref="csc-points-labeled">Figure</xref>. 
     </p>
     <table xml:id="tab_csc-graph-values">
-      <title>Values for 
-        <m>y=\csc x</m>
+      <title>Values for <m>y=\csc x</m>.
       </title>
       <tabular halign="center">
         <row bottom="major">
@@ -508,19 +505,19 @@
         </row>
         <row>
           <cell><m>\frac{\pi}{4}</m></cell>
-          <cell><m>\frac{\sqrt{2}}{2}</m></cell>
+          <cell><m>\frac{1}{\sqrt{2}}</m></cell>
           <cell right="major"><m>\sqrt{2}</m></cell>
           <cell><m>\frac{5\pi}{4}</m></cell>
-          <cell><m>-\frac{\sqrt{2}}{2}</m></cell>
+          <cell><m>-\frac{1}{\sqrt{2}}</m></cell>
           <cell><m>-\sqrt{2}</m></cell>
         </row>
         <row>
           <cell><m>\frac{\pi}{3}</m></cell>
           <cell><m>\frac{\sqrt{3}}{2}</m></cell>
-          <cell right="major"><m>\frac{2\sqrt{3}}{3}</m></cell>
+          <cell right="major"><m>\frac{2}{\sqrt{3}}</m></cell>
            <cell><m>\frac{4\pi}{3}</m></cell>
           <cell><m>-\frac{\sqrt{3}}{2}</m></cell>
-          <cell><m>-\frac{2\sqrt{3}}{3}</m></cell>
+          <cell><m>-\frac{2}{\sqrt{3}}</m></cell>
         </row>
         <row>
           <cell><m>\frac{\pi}{2}</m></cell>
@@ -533,17 +530,17 @@
         <row>
           <cell><m>\frac{2\pi}{3}</m></cell>
           <cell><m>\frac{\sqrt{3}}{2}</m></cell>
-          <cell right="major"><m>\frac{2\sqrt{3}}{3}</m></cell>
+          <cell right="major"><m>\frac{2}{\sqrt{3}}</m></cell>
           <cell><m>\frac{5\pi}{3}</m></cell>
           <cell><m>-\frac{\sqrt{3}}{2}</m></cell>
-          <cell><m>-\frac{2\sqrt{3}}{3}</m></cell>
+          <cell><m>-\frac{2}{\sqrt{3}}</m></cell>
         </row>
         <row>
           <cell><m>\frac{3\pi}{4}</m></cell>
-          <cell><m>\frac{\sqrt{2}}{2}</m></cell>
+          <cell><m>\frac{1}{\sqrt{2}}</m></cell>
           <cell right="major"><m>\sqrt{2}</m></cell>
           <cell><m>\frac{7\pi}{4}</m></cell>
-          <cell><m>-\frac{\sqrt{2}}{2}</m></cell>
+          <cell><m>-\frac{1}{\sqrt{2}}</m></cell>
           <cell><m>-\sqrt{2}</m></cell>
         </row>
         <row>
@@ -566,7 +563,7 @@
     </table>
     <figure xml:id="csc-points-labeled">
       <caption>
-        The values in <xref ref="tab_csc-graph-values">Table</xref>  plotted on a graph with a smooth curve connecting the points to make the curve for <m>y=\csc(x)</m>.
+        The values in <xref ref="tab_csc-graph-values">Table</xref> plotted with a smooth curve connecting the points to make the graph for <m>y=\csc(x)</m>.
       </caption>
       <image xml:id="fig-csc-points-labeled">
         <latex-image>
@@ -574,7 +571,7 @@
           \begin{axis}[
           axis lines=middle,clip=false,
           xmin=-0.5,xmax=2*pi+0.5,ymin=-5.2,ymax=5.2,
-          ytick={0,1,...,4},
+          ytick={-4,-3,...,4},
           xtick={pi/4,pi/2,...,2*pi},
           xticklabels={\(\frac{\pi}{4}\),\(\frac{\pi}{2}\),\(\frac{3\pi}{4}\),\(\pi\),\(\frac{5\pi}{4}\),\(\frac{3\pi}{2}\),\(\frac{7\pi}{4}\),\(2\pi\)},
           xticklabel style={black},
@@ -599,32 +596,32 @@
       Since the graph in <xref ref="csc-points-labeled"/> represents one period, we can complete the graph of <m>y=\csc x</m> by extending the pattern in both directions to obtain <xref ref="csc-graph-extended"/>.
     </p>
     <figure xml:id="csc-graph-extended">
-      <caption>The plot for <m>y=\sin(x)</m> and <m>y=\csc(x)</m>.</caption>
+      <caption>The graph for <m>y=\sin(x)</m> and <m>y=\csc(x)</m>.</caption>
       <image xml:id="fig-csc-graph-extended">
         <latex-image>
           \begin{tikzpicture}
           \begin{axis}[
           axis lines=middle,clip=false,
-          xmin=-2*pi-0.5,xmax=4*pi+0.5,ymin=-5.3,ymax=5.3,
+          xmin=-2*pi-0.5,xmax=4*pi+0.5,ymin=-4.3,ymax=4.3,
           xtick={-3*pi/2,-pi/2,...,7*pi/2},
           xticklabels={\(-\frac{3\pi}{2}\),\(-\frac{\pi}{2}\),\(\frac{\pi}{2}\),\(\frac{3\pi}{2}\),\(\frac{5\pi}{2}\),\(\frac{7\pi}{2}\)},
           xticklabel style={black},
           xlabel=\(x\),
           ylabel=\(y\)]
           \addplot[stealth-stealth,domain=-2*pi-0.2:4*pi+0.2,samples=200,red,line width=1pt]{sin(deg(x))}node[right,pos=0.8,yshift=7]{\(y =\sin(x)\)};
-          \addplot[stealth-stealth,domain=-2*pi+0.2:-pi-0.2,samples=200,blue,line width=1pt]{1/sin(deg(x))};
-          \addplot[stealth-stealth,domain=-pi+0.2:0-0.2,samples=200,blue,line width=1pt]{1/sin(deg(x))};
-          \addplot[stealth-stealth,domain=0+0.2:pi-0.2,samples=200,blue,line width=1pt]{1/sin(deg(x))};
-          \addplot[stealth-stealth,domain=pi+0.2:2*pi-0.2,samples=200,blue,line width=1pt]{1/sin(deg(x))};
-          \addplot[stealth-stealth,domain=2*pi+0.2:3*pi-0.2,samples=200,blue,line width=1pt]{1/sin(deg(x))}node[right,pos=1]{\(y =\csc(x)\)};
-          \addplot[stealth-stealth,domain=3*pi+0.2:4*pi-0.2,samples=200,blue,line width=1pt]{1/sin(deg(x))};
-          \draw [dashed,red] (-2*pi,-5.2) -- (-2*pi,5.2) node[below,pos=0]{$x=-2\pi$};
-          \draw [dashed,red] (-pi,-5.2) -- (-pi,5.2) node[above,pos=1]{$x=-\pi$};
-          \draw [dashed,red] (0,-5.2) -- (0,5.2) node[below,pos=0]{$x=0$};
-          \draw [dashed,red] (pi,-5.2) -- (pi,5.2) node[above,pos=1]{$x=\pi$};
-          \draw [dashed,red] (2*pi,-5.2) -- (2*pi,5.2) node[below,pos=0]{$x=2\pi$};
-          \draw [dashed,red] (3*pi,-5.2) -- (3*pi,5.2) node[above,pos=1]{$x=3\pi$};
-          \draw [dashed,red] (4*pi,-5.2) -- (4*pi,5.2) node[below,pos=0]{$x=4\pi$};
+          \addplot[stealth-stealth,domain=-2*pi+0.25:-pi-0.25,samples=200,blue,line width=1pt]{1/sin(deg(x))};
+          \addplot[stealth-stealth,domain=-pi+0.25:0-0.25,samples=200,blue,line width=1pt]{1/sin(deg(x))};
+          \addplot[stealth-stealth,domain=0+0.25:pi-0.25,samples=200,blue,line width=1pt]{1/sin(deg(x))};
+          \addplot[stealth-stealth,domain=pi+0.25:2*pi-0.25,samples=200,blue,line width=1pt]{1/sin(deg(x))};
+          \addplot[stealth-stealth,domain=2*pi+0.25:3*pi-0.25,samples=200,blue,line width=1pt]{1/sin(deg(x))}node[right,pos=1]{\(y =\csc(x)\)};
+          \addplot[stealth-stealth,domain=3*pi+0.25:4*pi-0.25,samples=200,blue,line width=1pt]{1/sin(deg(x))};
+          \draw [dashed,red] (-2*pi,-4.2) -- (-2*pi,4.2) node[below,pos=0]{$x=-2\pi$};
+          \draw [dashed,red] (-pi,-4.2) -- (-pi,4.2) node[above,pos=1]{$x=-\pi$};
+          \draw [dashed,red] (0,-4.2) -- (0,4.2) node[below,pos=0]{$x=0$};
+          \draw [dashed,red] (pi,-4.2) -- (pi,4.2) node[above,pos=1]{$x=\pi$};
+          \draw [dashed,red] (2*pi,-4.2) -- (2*pi,4.2) node[below,pos=0]{$x=2\pi$};
+          \draw [dashed,red] (3*pi,-4.2) -- (3*pi,4.2) node[above,pos=1]{$x=3\pi$};
+          \draw [dashed,red] (4*pi,-4.2) -- (4*pi,4.2) node[below,pos=0]{$x=4\pi$};
           \end{axis}
           \end{tikzpicture}
         </latex-image>
@@ -637,11 +634,11 @@
   <subsection xml:id="subsec-secant-function">
     <title>The Secant Function</title>
     <p>
-      As discussed earlier in this section, the secant function has a domain for all real numbers except angles of <m>n\frac{\pi}{2}</m>, where <m>n</m> is an integer. These excluded values correspond to the vertical asymptotes of the secant function. With a period of <m>2\pi</m>, we can focus on the interval <m>0</m> to <m>2\pi</m>. The construction of the secant function plot follows a similar approach to that used for the cosecant function, as illustrated in <xref ref="secant-graph-animation"/>.
+      As discussed earlier in this section, the secant function has a domain of all real numbers except angles of the form <m>n\frac{\pi}{2}</m>, where <m>n</m> is an odd integer. These excluded values correspond to the vertical asymptotes of the secant function. With a period of <m>2\pi</m>, we can focus on the interval <m>0</m> to <m>2\pi</m>. The construction of the secant function graph follows a similar approach to the one used for the cosecant function, as illustrated in <xref ref="secant-graph-animation"/>.
     </p>
     <figure xml:id="secant-graph-animation">
       <caption>
-        As <m>\theta</m> moves from <m>0^{\circ}</m> to <m>360^{\circ}</m>, this figure plots the values of <m>y=\cos x</m> and <m>y = \sec \theta</m>. Move the slider for <m>\theta</m> to see how changing the angle affects <m>\sec\theta</m>. Note that while we will generally be using radians when graphing trigonometric functions, this figure uses degrees to help visualize the angle.
+        As <m>\theta</m> moves from <m>0^{\circ}</m> to <m>360^{\circ}</m>, this figure plots the values of <m>y=\cos \theta</m> and <m>y = \sec \theta</m>. Move the slider for <m>\theta</m> to see how changing the angle affects <m>\sec\theta</m>. Note that while we will generally be using radians when graphing trigonometric functions, this figure uses degrees to help visualize the angle.
       </caption>
       <interactive geogebra="dpng7xuu" aspect="1.75:0.75" label="geogebra-secant-animation"/>
     </figure>
@@ -649,7 +646,7 @@
       Plotting points for <m>y=\sec x</m> and using the fact that the secant function is periodic, we obtain the graph for secant in <xref ref="sec-graph-extended"/>.
     </p>
     <figure xml:id="sec-graph-extended">
-      <caption>The plot for <m>y=\cos(x)</m> and <m>y=\sec(x)</m>.</caption>
+      <caption>The graph for <m>y=\cos(x)</m> and <m>y=\sec(x)</m>.</caption>
       <image xml:id="fig-sec-graph-extended">
         <latex-image>
           \begin{tikzpicture}
@@ -696,10 +693,10 @@
         <p>
           For functions of the form
           <me>
-              y = A \cdot \tan(B(x - C)) + D, \quad y = A \cdot \cot(B(x - C)) + D,
+              y = A \tan(B(x - C)) + D, \quad y = A \cot(B(x - C)) + D,
           </me>
           <me>
-            \quad y = A \cdot \csc(B(x - C)) + D, \quad \mbox{and} \quad y = A \cdot \sec(B(x - C)) + D
+            \quad y = A \csc(B(x - C)) + D, \quad \mbox{and} \quad y = A \sec(B(x - C)) + D
         </me>,
           we can express the transformations as follows:
       </p>
@@ -707,7 +704,7 @@
         <ul>
           <li>
             <p>
-              Vertical Compression/Stretch: <m>|A|</m>
+              Vertical Stretch/Compression: <m>|A|</m>
             </p>
             <p>
               <ul>
@@ -803,16 +800,16 @@
               <ul>
                 <li>
                   <p>
-                    For tangent and cotangent, vertical asymptotes occur at 
-                    <me>x = C + \frac{\pi}{|B|}n</me>,
+                    For cotangent and cosecant, vertical asymptotes occur at 
+                    <me>x = C + n\frac{\pi}{|B|}</me>,
                     where <m>n</m> is an integer.
                   </p>
                 </li>
                 <li>
                   <p>
-                    For cosecant and secant, vertical asymptotes occur at
-                    <me>x = C + \frac{\pi}{2|B|}n</me>, 
-                    where <m>n</m> is an integer.
+                    For tangent and secant, vertical asymptotes occur at
+                    <me>x = C + n\frac{\pi}{2|B|}</me>, 
+                    where <m>n</m> is an odd integer.
                   </p>
                 </li>
               </ul>
@@ -827,27 +824,27 @@
       <p>
         For functions of the form
         <me>
-          y = A \cdot \tan(Bx - E) + D, \quad y = A \cdot \cot(Bx - E) + D,
+          y = A \tan(Bx - E) + D, \quad y = A \cot(Bx - E) + D,
       </me>
       <me>
-        \quad y = A \cdot \csc(Bx - E) + D, \quad \mbox{and} \quad y = A \cdot \sec(Bx - E) + D
+        \quad y = A \csc(Bx - E) + D, \quad \mbox{and} \quad y = A \sec(Bx - E) + D
     </me>,
-        the transformations are the same as above, except for the phase shift and vertical asymptotes where you replace <m>C</m> with <m>\frac{E}{B}</m>. If <m>\frac{E}{B} \lt0</m> the phase shift is to the right, and if <m>\frac{E}{B} \gt 0</m> it is to the left. 
+        the transformations are the same as above, except for the phase shift and vertical asymptotes where we replace <m>C</m> with <m>\frac{E}{B}</m>. If <m>\frac{E}{B} \gt0</m> the phase shift is to the right, and if <m>\frac{E}{B} \lt 0</m> it is to the left. 
       </p>
       <p>
         <ul>
           <li>
             <p>
-              For tangent and cotangent, vertical asymptotes occur at 
-              <me>x = \frac{E}{B} + \frac{\pi}{|B|}n</me>,
+              For cotangent and cosecant, vertical asymptotes occur at 
+              <me>x = \frac{E}{B} + n\frac{\pi}{|B|}</me>,
               where <m>n</m> is an integer.
             </p>
           </li>
           <li>
             <p>
-              For cosecant and secant, vertical asymptotes occur at
-              <me>x = \frac{E}{B} + \frac{\pi}{2|B|}n</me>, 
-              where <m>n</m> is an integer.
+              For secant and tangent, vertical asymptotes occur at
+              <me>x = \frac{E}{B} + n\frac{\pi}{2|B|}</me>, 
+              where <m>n</m> is an odd integer.
             </p>
           </li>
         </ul>
@@ -857,7 +854,7 @@
       <title>Vertical Stretch/Compression and Reflection about the <m>x</m>-axis</title>
       <statement>
         <p>
-          Graph each function
+          Graph one period for each function.
         </p>
         <p>
           <ol>
@@ -879,7 +876,7 @@
       <solution>
 
         <figure xml:id="tan-stretch">
-          <caption>The transformations of the tangent function graph, starting with a baseline of <m>y=\tan(x)</m> along with graphs with a vertical stretch, a vertical compression, and a reflection about the <m>x</m>-axis.</caption>
+          <caption>The transformations of the tangent function graph, starting with the graph of <m>y=\tan(x)</m> along with graphs with a vertical stretch, a vertical compression, and a reflection about the <m>x</m>-axis.</caption>
           <image xml:id="fig-tan-stretch">
             <latex-image>
               \begin{tikzpicture}
@@ -889,6 +886,7 @@
               xtick={-pi/4,pi/4},
               xticklabels={\(-\frac{\pi}{4}\),\(\frac{\pi}{4}\)},
               xticklabel style={black},
+              ytick={-2,-1,...,2},
               xlabel=\(x\),
               ylabel=\(y\)]
               \addplot[stealth-stealth,domain=-pi/2+0.3:pi/2-0.28,samples=200,black,line width=1pt]{tan(deg(x))}node[above,pos=1]{$y=\tan(x)$};
@@ -899,8 +897,6 @@
               \draw [dashed,black] (pi/2,-3.3) -- (pi/2,3.3) node[below,pos=0]{$x=\frac{\pi}{2}$};
               \end{axis}
               \end{tikzpicture}
-
-
             </latex-image>
           </image>
         </figure>
@@ -931,24 +927,21 @@
         <p>
           <ol>
             <li>
-              <p>The period for <m>y=\cot(x)</m> is <m>\pi</m></p>
+              <p>The period for <m>y=\cot(x)</m> is <m>\pi</m>.</p>
             </li>
             <li>
-              <p>The period for <m>y=\cot(2x)</m> is</p>
-              <p><me>\mbox{period}=\frac{\pi}{|2|}=\frac{\pi}{2}</me></p>
+              <p>The period for <m>y=\cot(2x)</m> is <m>\frac{\pi}{|2|}=\frac{\pi}{2}</m>.</p>
             </li>
             <li>
-              <p>The period for <m>y=\cot\left(\frac{1}{2}x\right)</m> is</p>
-              <p><me>\mbox{period}=\frac{\pi}{\left|\frac{1}{2}\right|}=2\pi</me></p>
+              <p>The period for <m>y=\cot\left(\frac{1}{2}x\right)</m> is <m>\frac{\pi}{\left|\frac{1}{2}\right|}=2\pi</m>.</p>
             </li>
             <li>
-              <p>The period for <m>y=\cot(-x)</m> is </p>
-              <p><me>\mbox{period}=\frac{\pi}{|-1|}=\pi</me></p>
+              <p>The period for <m>y=\cot(-x)</m> is <m>\frac{\pi}{|-1|}=\pi</m>.</p>
             </li>
           </ol>
         </p>
         <figure xml:id="cot-stretch">
-          <caption>The transformations of the cotangent function graph, starting with a baseline of <m>y=\cot(x)</m> along with graphs with a horizontal stretch, a horizontal compression, and a reflection about the <m>y</m>-axis.</caption>
+          <caption>The transformations of the cotangent function graph, starting with the graph of <m>y=\cot(x)</m> along with graphs with a horizontal stretch, a horizontal compression, and a reflection about the <m>y</m>-axis.</caption>
           <image xml:id="fig-cot-stretch">
             <latex-image>
               \begin{tikzpicture}
@@ -984,7 +977,7 @@
       </statement>
       <solution>
         <figure xml:id="csc-shift">
-          <caption>The graphs of <m>y=\csc\left(x-\frac{\pi}{2}\right)+2</m> and <m>y=\sin\left(x-\frac{\pi}{2}\right)+2</m> start with the plots of <m>y=\csc(x)</m> and <m>y=\sin(x)</m> and add a phase shift of <m>\frac{\pi}{2}</m> to the right and a vertical shift up by <m>2</m>.</caption>
+<caption>The graphs of <m>y=\csc\left(x-\frac{\pi}{2}\right)+2</m> and <m>y=\sin\left(x-\frac{\pi}{2}\right)+2</m> are derived from the graphs of <m>y=\csc(x)</m> and <m>y=\sin(x)</m> by applying a phase shift of <m>\frac{\pi}{2}</m> to the right and a vertical shift up by <m>2</m>.</caption>
           <image xml:id="fig-csc-shift">
             <latex-image>
               \begin{tikzpicture}
@@ -1006,7 +999,7 @@
               \draw [dashed,blue,draw opacity=0.25] (0,-5.2) -- (0,7.2);
               \draw [dashed,blue,draw opacity=0.25] (pi,-5.2) -- (pi,7.2);
               \draw [dashed,blue,draw opacity=0.25] (2*pi,-5.2) -- (2*pi,7.2);
-              \addplot[stealth-stealth,domain=-2*pi-0.2:2*pi+0.2,samples=200,red,line width=0.5pt,draw opacity=0.25]{sin(deg(x-pi/2))+2}node[right,pos=0.85]{\(y =\sin\left(x-\frac{\pi}{2}\right)\)};
+              \addplot[stealth-stealth,domain=-2*pi-0.2:2*pi+0.2,samples=200,red,line width=0.5pt,draw opacity=0.25]{sin(deg(x-pi/2))+2}node[right,pos=0.85]{\(y =\sin\left(x-\frac{\pi}{2}\right)+2\)};
               \addplot[stealth-stealth,domain=-2*pi-0.2:-3*pi/2-0.145,samples=200,red,line width=1pt]{1/sin(deg(x-pi/2))+2};
               \addplot[stealth-stealth,domain=-3*pi/2+0.2:-pi/2-0.2,samples=200,red,line width=1pt]{1/sin(deg(x-pi/2))+2};
               \addplot[stealth-stealth,domain=-pi/2+0.145:pi/2-0.145,samples=200,red,line width=1pt]{1/sin(deg(x-pi/2))+2};
@@ -1028,13 +1021,13 @@
     </p>
     <figure xml:id="tangent-cotangent-transformation-animation">
       <caption>
-        Manipulate the graphs of tangent and cotangent by adjusting the sliders for <m>A</m>, <m>B</m>, <m>C</m>, and <m>D</m>. Observe the effects on period, phase and vertical shifts, as well as reflections about the <m>x</m>- and <m>y</m>-axes. Additionally, you can toggle between the tangent and cotangent graphs by selecting the corresponding function.
+        Manipulate the graphs of tangent and cotangent by adjusting the sliders for <m>A</m>, <m>B</m>, <m>C</m>, and <m>D</m>. Observe the effects on period, phase and vertical shifts, as well as reflections about the <m>x</m>- and <m>y</m>-axes. Additionally, toggle between the tangent and cotangent graphs by selecting the corresponding function.
       </caption>
       <interactive geogebra="p3vf25da" aspect="1.75:0.75" label="geogebra-tangent-cotangent-transformation-animation"/>
     </figure>
     <figure xml:id="cosecant-secant-transformation-animation">
       <caption>
-        Manipulate the graphs of cosecant and secant by adjusting the sliders for <m>A</m>, <m>B</m>, <m>C</m>, and <m>D</m>. Observe the effects on period, phase and vertical shifts, as well as reflections about the <m>x</m>- and <m>y</m>-axes. Additionally, you can toggle between the cosecant and secant graphs by selecting the corresponding function.
+        Manipulate the graphs of cosecant and secant by adjusting the sliders for <m>A</m>, <m>B</m>, <m>C</m>, and <m>D</m>. Observe the effects on period, phase and vertical shifts, as well as reflections about the <m>x</m>- and <m>y</m>-axes. Additionally, toggle between the cosecant and secant graphs by selecting the corresponding function.
       </caption>
       <interactive geogebra="p7awsjqv" aspect="1.75:0.75" label="geogebra-cosecant-secant-transformation-animation"/>
     </figure>
@@ -1477,7 +1470,7 @@
   <exercisegroup cols="2">
     <introduction>
       <p>
-        Determine the period for each function, and sketch the graph.
+        For each function, determine the period and sketch the graph.
       </p>
     </introduction>
     <exercise>
@@ -1763,7 +1756,7 @@
   <exercisegroup cols="2">
     <introduction>
       <p>
-        Match the given function to one of the graphs below.
+        Match each given function to one of the graphs below.
       </p>
       <sidebyside>
         <image xml:id="exer-other-match-graph1">
@@ -2592,7 +2585,7 @@
       </statement>
       <answer>
         <p>
-          <m>6.00</m> NM
+          <m>3.00</m> NM
         </p>
       </answer>
     </exercise>
@@ -2679,7 +2672,7 @@
       </statement>
       <answer>
         <p>
-          <m>3</m> NM, when Faʻafaite is directly north of the observer (<m>\theta=0</m>)
+          <m>3</m> NM, when Faʻafaite is directly north of the observer (<m>\theta=0</m>).
         </p>
       </answer>
     </exercise>
