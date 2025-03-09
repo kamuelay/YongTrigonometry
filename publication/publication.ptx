@@ -10,6 +10,10 @@
     <latex>
         <fonts>
             <main regular="CMU Serif" />
+            <!--
+            For Hawaiian fonts: Download: https://www.1001fonts.com/cmu-font.html
+            Then move the cmunrm.ttf from the downloaded folder into Font Book (on the Mac)
+            --> 
         </fonts>
     </latex>
     <!-- <common>
