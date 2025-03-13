@@ -3,10 +3,10 @@
   <title>Sinusoidal Curve Fitting and Graphical Analysis</title>
   <introduction>
     <p>
-      In this chapter, we have learned that sinusoidal patterns exist in various aspects throughout our world. One example is the moon, which undergoes phases oscillating from no illumination, to waxing (increasing illumination), reaching a fully lit moon, and then waning (decreasing illumination) until it completes its cycle with no illumination again. Indigenous cultures across the world have deeply connected with these lunar cycles, shaping cultural practices aligned with the moon's phases. For example, the Māori of New Zealand and the Hopi Tribe in northeastern Arizona, USA, both time activities like planting and harvesting specific plants for each moon cycle based on generations of lunar observations.
+      In this chapter, we learn that sinusoidal patterns exist in various aspects throughout our world. One example is the moon, which undergoes phases oscillating from no illumination, to waxing (increasing illumination), reaching a fully lit moon, and then waning (decreasing illumination) until it completes its cycle with no illumination again. Indigenous cultures across the world have deeply connected with these lunar cycles, shaping cultural practices aligned with the moon's phases. For example, the Māori of New Zealand and the Hopi Tribe in northeastern Arizona, USA, both time activities such as planting and harvesting specific plants for each moon cycle based on generations of lunar observations.
     </p>
     <p>
-      In <xref ref="graphs_of_the_sine_and_cosine_functions"/>, we graphed sinusoidal functions and determined their values at any given time. The ability to formulate a sinusoidal equation modeling the moon's phases allows us to predict the moon's phase on any date. In this section, we will explore the process of developing sinusoidal functions based on provided information. This will enable us to model real-world phenomena using real data.
+      In <xref ref="graphs_of_the_sine_and_cosine_functions"/>, we graphed sinusoidal functions and determined their values for any given input value. The ability to formulate a sinusoidal equation modeling the moon's phases allows us to predict the moon's phase on any date. In this section, we will explore the process of developing sinusoidal functions based on provided information. This will enable us to model real-world phenomena using real data.
     </p>
   </introduction>
   <subsection xml:id="subsec-finding-sinusoidal-equations-from-characteristics">
@@ -14,15 +14,15 @@
     <p>
       To begin finding sinusoidal equations of the form
       <me>
-        y=A\cdot\sin(B(x-C))+D \quad \mbox{and} \quad y=A\cdot\cos(B(x-C))+D
+        y=A\sin(B(x-C))+D \quad \mbox{and} \quad y=A\cos(B(x-C))+D
       </me>
-      we will refer to the characteristics of the sine and cosine functions described in ("sine-cosine-transformations") and given below to help us determine the parameter values for <m>A</m>, <m>B</m>, <m>C</m>, and <m>D</m>.
+      we will use the characteristics of sine and cosine functions, as described in <xref ref="sine-cosine-transformations"/> and summarized below, to determine the values of <m>A</m>, <m>B</m>, <m>C</m>, and <m>D</m>.
     </p>
     <p>
       <ul>
         <li>
           <p>
-            Amplitude and Vertical Compression/Stretch: <m>|A|</m>
+            Amplitude and Vertical Stretch/Compression: <m>|A|</m>
           </p>
           <p>
             <ul>
@@ -135,7 +135,7 @@
         <p>
           To determine an equation of the form
           <me>
-            f(x)=A\cdot\sin(B(x-C))+D
+            f(x)=A\sin(B(x-C))+D
           </me>
           we first examine the information that we are given: amplitude of 2, period of 8, phase shift of <m>\frac{\pi}{3}</m>, and vertical shift of 4.
         </p>
@@ -156,7 +156,7 @@
           </me>.
           Solving for <m>|B|</m>, we get
           <me>
-            |B|=\frac{2\pi}{8}=\frac{\pi}{4}
+            |B|=\frac{2\pi}{8}=\frac{\pi}{4}.
           </me>
           Since there is no reflection about the <m>y</m>-axis, we have that <m>B</m> must be positive:
           <me>
@@ -215,10 +215,10 @@
       </statement>
       <solution>
         <p>
-          The characteristics of the cosine start its maximum when <m>x=0</m>, decrease to its minimum at <m>x=\pi</m>, and then increase before completing one period at <m>2\pi</m>. This graph starts at 0 when <m>x=0</m>, then increases to its maximum at <m>x=\frac{\pi}{2}</m>, and then follows the characteristics of the cosine graph. This represents a phase shift to the right. There no reflections about the <m>x</m>-axis or <m>y</m>-axis. We will find the equation of a function with characteristics of a phase shift to the right.
+          The cosine function has its maximum when <m>x=0</m>, decreases to its minimum at <m>x=\pi</m>, and then increases before completing one period at <m>2\pi</m>. This graph starts at 0 when <m>x=0</m>, then increases to its maximum at <m>x=\frac{\pi}{2}</m>, and then has the shape of the cosine function starting at <m>x=0</m>. This represents a phase shift to the right. There no reflections about the <m>x</m>-axis or <m>y</m>-axis. We will find the equation of a function with characteristics of a phase shift to the right.
         </p>
         <p>
-          <em>Amplitude (<m>A</m>)</em>: Since the amplitude of the cosine function will be the same as the amplitude of the sine function, which is 1, we have  <m>|A| = 1</m>. Since there is no reflection about the <m>x</m>-axis, we choose to positive value to get <m>A = 1</m>.
+          <em>Amplitude (<m>A</m>)</em>: Since the amplitude of the cosine function will be the same as the amplitude of the sine function, which is 1, we have  <m>|A| = 1</m>. Since there is no reflection about the <m>x</m>-axis, we choose the positive value to get <m>A = 1</m>.
         </p>
         <p>
           <em>Vertical Shift (D)</em>: The vertical shift of the cosine function will be the same as that of the sine function, which is 0. So, we have <m>D = 0</m>.
@@ -253,7 +253,7 @@
           </latex-image>
         </image>
         <p>
-          <em>Phase Shift (C)</em>: From the graph, the cosine function will have a phase shift of <m>\frac{\pi}{2}</m> radians to the right compared to the sine function. This is because the cosine function reaches its maximum value at <m>x = 0</m>, while the sine function reaches its maximum at <m>x = \frac{\pi}{2}</m>. So, we have <m>C = \frac{\pi}{2}</m>.
+          <em>Phase Shift (C)</em>: From the graph, the cosine function will have a phase shift of <m>\frac{\pi}{2}</m> radians to the right to match the graph of the sine function. This is because the cosine function reaches its maximum value at <m>x = 0</m>, while the sine function reaches its maximum at <m>x = \frac{\pi}{2}</m>. So, we have <m>C = \frac{\pi}{2}</m>.
         </p>
         <p>
           Therefore, the equation of the cosine function that fits the graph of <m>y = \sin(x)</m> is:
@@ -265,20 +265,20 @@
     </example>
     <remark>
       <p>
-        Since this graph is also the graph of <m>y=\sin(x)</m>, we get
+        Since this graph is the graph of <m>y=\sin(x)</m>, we get
         <me>
           \sin(x)=\cos\left(x-\frac{\pi}{2}\right)
         </me>.
       </p>
       <p>
-        This solution demonstrates that any sine function can also be written as a cosine function, with an appropriate phase shift. In this case, the phase shift of <m>\frac{\pi}{2}</m> radians to the right converts the sine function to its corresponding cosine function.
+        This solution demonstrates that any sine function can be written as a cosine function with an appropriate phase shift. In this case, the phase shift of <m>\frac{\pi}{2}</m> radians to the right transforms the cosine function into its corresponding sine function.
       </p>
     </remark>
     <example xml:id="example-sinusoidal-eqn-from-graph">
       <title>Finding an Equation of a Sine Function Using its Graphs</title>
       <introduction>
         <p>
-          Find an equation that represents the following graph of the form
+          Given the graph below, find an equation that represents the graph in the following forms:
         </p>
         <image xml:id="example-eqn-from-graph">
           <latex-image>
@@ -301,7 +301,7 @@
       <task>
         <statement>
           <p>
-            <me>f(x)=A\sin(B(x-C))+D</me>
+            <me>f(x)=A\sin(B(x-C))+D.</me>
           </p>
         </statement>
         <solution>
@@ -354,7 +354,7 @@
       <task>
         <statement>
           <p>
-            <me>g(x)=A\cos(B(x-C))+D</me>
+            <me>g(x)=A\cos(B(x-C))+D.</me>
           </p>
         </statement>
         <solution>
