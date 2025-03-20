@@ -1417,15 +1417,15 @@
       <exercise>
         <statement>
           <p>
-            What patterns do you observe when comparing the graphs of daylight hours for pairs of islands across different latitudes? Additionally, how does the variation in daylight hours change as latitude moves from closer to the equator to further away?
+            What patterns do you observe when comparing the graphs of daylight hours for pairs of islands across different latitudes? Additionally, how does the variation in daylight hours change with increasing latitude, that is, as one moves away from the equator?
           </p>
         </statement>
         <answer>
           <p>
-            Antipodal islands exhibit mirrored patterns in daylight hours, where one island experiences longer days while the other experiences shorter days. This is due to their opposite positions relative to the equator.
+            The islands exhibit mirrored patterns in daylight hours, where one island experiences longer days while the other experiences shorter days. This is due to their opposite positions relative to the equator.
           </p>
           <p>
-            As latitude increases (moving away from the equator), the variation in daylight hours also increases. Islands closer to the equator experience less variation in daylight hours throughout the year, while islands further away from the equator experience more significant changes in daylight hours between seasons.
+            As latitude increases (moving away from the equator), the variation in daylight hours also increases. Islands closer to the equator experience less variation in daylight hours throughout the year, while islands further away from the equator experience more changes in daylight hours between seasons.
           </p>
         </answer>
       </exercise>
@@ -1434,7 +1434,7 @@
     <exercisegroup>
       <introduction>
         <p>
-          The islands of Oʻahu and Rarotonga are located at similar distances from the equator. However, they experience different climates due to their locations relative to the equator. Oʻahu is situated at a latitude of 21.3 degrees north, and Rarotonga is located at a latitude of 21.2 degrees south. The table below gives the average monthly temperatures (in °C) for each island. Use the data in the table to answer the following questions. Source: <url href="http://www.worldclimate.com"></url>, retrieved on 18 March, 2024.
+          The islands of Oʻahu and Rarotonga are located at similar distances from the equator. However, they experience different climates due to their locations relative to the equator. Oʻahu is at 21.26° North, directly mirrored by Rarotonga at 21.26° South. The table below gives the average monthly temperatures (in °C) for each island. Use the data in the table to answer the following questions. Source: <url href="http://www.worldclimate.com"></url>, retrieved on 18 March, 2024.
         </p>
         <tabular halign="center">
           <row bottom="major">
