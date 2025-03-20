@@ -18,8 +18,8 @@
           </idx>
           is a circle whose radius is 1 and whose center is at the origin of a coordinate plane (or <m>xy</m>-plane). The equation for the unit circle is
           <me>
-            x^2+y^2=1.
-          </me>
+            x^2+y^2=1
+          </me>.
         </p>
       </statement>
     </definition>

@@ -156,12 +156,12 @@
           </me>.
           Solving for <m>|B|</m>, we get
           <me>
-            |B|=\frac{2\pi}{8}=\frac{\pi}{4}.
-          </me>
+            |B|=\frac{2\pi}{8}=\frac{\pi}{4}
+          </me>.
           Since there is no reflection about the <m>y</m>-axis, we have that <m>B</m> must be positive:
           <me>
-            B=\frac{\pi}{4}.
-          </me>
+            B=\frac{\pi}{4}
+          </me>.
         </p>
         <p>
           Finally, since <m>C</m> and <m>D</m> represent the phase shift and vertical shift, respectively, we get
@@ -301,7 +301,7 @@
       <task>
         <statement>
           <p>
-            <me>f(x)=A\sin(B(x-C))+D.</me>
+            <me>f(x)=A\sin(B(x-C))+D</me>.
           </p>
         </statement>
         <solution>
@@ -321,15 +321,15 @@
           <p>
             <em>Period (<m>B</m>)</em>: The period of a function is the length of one full repetition (or cycle). We can identify the period on the graph by measuring the horizontal distance between corresponding points where the graph completes a cycle. In this case, we'll use two corresponding peaks at <m>x = 10</m> and <m>x = 50</m> to obtain:
             <me>
-              \mbox{period }=50-10=40.
-            </me>
+              \mbox{period }=50-10=40
+            </me>.
             Note that other points on the graph, such as the minimum values or the points where the graph crosses the midline, could also be used to determine the period.
           </p>
           <p>
             Since <xref ref="def-period"/> defines a period as <m>\frac{2\pi}{|B|}</m>, we have:
             <me>
-              40=\frac{2\pi}{|B|}.
-            </me>
+              40=\frac{2\pi}{|B|}
+            </me>.
             Thus,
             <me>
               |B|=\frac{2\pi}{40}=\frac{\pi}{20}
@@ -346,15 +346,15 @@
           <p>
             Thus, the graph can be described by the following sine function:
             <me>
-              f(x)=8\sin\left(\frac{\pi}{20}x\right)+8.
-            </me>
+              f(x)=8\sin\left(\frac{\pi}{20}x\right)+8
+            </me>.
           </p>
         </solution>
       </task>
       <task>
         <statement>
           <p>
-            <me>g(x)=A\cos(B(x-C))+D.</me>
+            <me>g(x)=A\cos(B(x-C))+D</me>.
           </p>
         </statement>
         <solution>
@@ -375,7 +375,7 @@
             <me>
               g(x)=8\cos\left(\frac{\pi}{20}\left(x\right)\right)+8
             </me>
-            and overlap this graph with the given graph  .
+            and overlap this graph with the given graph.
           </p>
           <image xml:id="example-eqn-from-graph-cos-phase-shift">
             <latex-image>

@@ -569,19 +569,19 @@
         </p>
         <p>
           <me>
-            |A| = \text{amplitude} = \frac{\text{maximum} - \text{minimum}}{2}.
-          </me>
+            |A| = \text{amplitude} = \frac{\text{maximum} - \text{minimum}}{2}
+          </me>.
         </p>
         <p>
           In other words, the amplitude is the vertical distance from the midline to the maximum or minimum value of the function. The <term>midline</term><idx><h>midline</h></idx> is a horizontal line representing the average value of the function. It can be calculated by:
           <me>
-            y = \frac{\text{maximum} + \text{minimum}}{2}.
-          </me>
+            y = \frac{\text{maximum} + \text{minimum}}{2}
+          </me>.
           For a graph oscillating symmetrically about the <m>x</m>-axis, the amplitude is simply the maximum value of the function.
         </p>
         <p>
           In general, for
-          <me>y = A \cdot \sin(x) \quad \mbox{or} \quad y = A \cdot \cos(x),</me>
+          <me>y = A \cdot \sin(x) \quad \mbox{or} \quad y = A \cdot \cos(x)</me>,
           the amplitude is given by <m>|A|</m>. This absolute value ensures that amplitude is always a positive value, representing the magnitude of the vertical stretching or compression.
         </p>
       </statement>
@@ -641,8 +641,8 @@
     </p>
     <p>
       <me>
-        y=\sin Bx \quad \mbox{and} \quad y=\cos Bx.
-      </me>
+        y=\sin Bx \quad \mbox{and} \quad y=\cos Bx
+      </me>.
     </p>
     <p>
       Recall from algebra that for functions of the form <m>y=f(Bx)</m>, a key factor emerges: when <m>|B| \gt 1</m>, the graph undergoes horizontal compression by a factor of <m>\frac{1}{|B|}</m>; conversely, when <m>0 \lt |B| \lt 1</m>, the graph is horizontally stretched by a factor of <m>\frac{1}{|B|}</m>. Given that the period of sine and cosine is <m>2\pi</m>, the horizontal stretching or compressing of a period will be by a factor of <m>\frac{1}{|B|}</m>.
@@ -657,8 +657,8 @@
           </me>
           the <term>period</term><idx><h>period</h></idx> is defined as
           <me>
-            \mbox{period}=\frac{2\pi}{|B|}.
-          </me>
+            \mbox{period}=\frac{2\pi}{|B|}
+          </me>.
         </p>
         <p>
           Thus, if <m>|B|\gt 1</m>, the period is compressed; if <m>0\lt |B|\lt 1</m>, the period is stretched.
@@ -771,16 +771,16 @@
       </p>
       <p>
         <men xml:id="eqn-phase-shift2">
-          y = \sin(Bx - E) \quad \mbox{and} \quad y = \cos(Bx - E).
-        </men>
+          y = \sin(Bx - E) \quad \mbox{and} \quad y = \cos(Bx - E)
+        </men>.
       </p>
       <p>
         There is a subtle yet important difference between <xref ref="eqn-phase-shift1"/> and <xref ref="eqn-phase-shift2"/>. In <xref ref="eqn-phase-shift1"/>, the term <m>B</m>, affecting the period, is multiplied by both <m>x</m> and <m>C</m>, the phase shift. In <xref ref="eqn-phase-shift2"/>, <m>B</m> is only multiplied by <m>x</m>. We can rewrite <xref ref="eqn-phase-shift2"/> by factoring out <m>B</m> as
       </p>
       <p>
         <me>
-          y = \sin\left(B\left(x - \frac{E}{B}\right)\right) \quad \mbox{and} \quad y = \cos\left(B\left(x - \frac{E}{B}\right)\right).
-        </me>
+          y = \sin\left(B\left(x - \frac{E}{B}\right)\right) \quad \mbox{and} \quad y = \cos\left(B\left(x - \frac{E}{B}\right)\right)
+        </me>.
       </p>
       <p>
         This form aligns with <xref ref="eqn-phase-shift1"/>. Therefore, for equations of the form
@@ -816,7 +816,7 @@
             and
           </p>
           <p>
-            <me>\mbox{phase shift}=\frac{E}{B}=\frac{\pi}{1}=\pi.</me>
+            <me>\mbox{phase shift}=\frac{E}{B}=\frac{\pi}{1}=\pi</me>.
           </p>
           <p>
             A positive value for the phase shift indicates a shift to the right. It's important to note that, given <m>B=1</m>, the phase shift is simply <m>E=\pi</m>.
@@ -863,7 +863,7 @@
             and
           </p>
           <p>
-            <me>\mbox{phase shift}=C=-2.</me>
+            <me>\mbox{phase shift}=C=-2</me>.
           </p>
           <p>
             The negative sign indicates a phase shift to the left by 2 units.

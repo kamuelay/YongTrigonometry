@@ -179,8 +179,8 @@
         <p>
           First we will convert <m>0.625^{\circ}</m> to minutes using the conversion <m>1^{\circ}=60'</m>,
           <me>
-            0.625^{\circ}=0.625^{\circ}\cdot\frac{60'}{1^{\circ}}=37.5'.
-          </me>
+            0.625^{\circ}=0.625^{\circ}\cdot\frac{60'}{1^{\circ}}=37.5'
+          </me>.
         </p>
         <p>
           Since <m>1'=60''</m>, we can convert <m>0.5'</m> to seconds: <m>\displaystyle 0.5'=0.5'\cdot\frac{60''}{1'}=30''</m>.
@@ -231,7 +231,7 @@
           We will first convert <m>24'</m> and <m>45''</m> to degrees. 
           <me>24'=24\cdot1'=24\cdot\left(\frac{1}{60}\right)^{\circ}=0.4^{\circ}</me>
           and
-          <me>45''=45\cdot1''=45\cdot\left(\frac{1}{3600}\right)^{\circ}=0.0125^{\circ}.</me>
+          <me>45''=45\cdot1''=45\cdot\left(\frac{1}{3600}\right)^{\circ}=0.0125^{\circ}</me>.
         </p>
         <p>
           So <m>263^{\circ}24'45''=263^{\circ}+24'+45''=263^{\circ}+0.4^{\circ}+0.0125=263.4125^{\circ}</m>.
@@ -347,7 +347,7 @@
         <solution>
           <p>
             Since <m>-770^{\circ}\lt 0^{\circ}</m>, we first add <m>3\times360</m> to <m>-770^{\circ}</m> to obtain an angle <m>0^{\circ}</m> and <m>360^{\circ}</m>, 
-            <me>-770^{\circ}+3\times360^{\circ}=310^{\circ}.</me>
+            <me>-770^{\circ}+3\times360^{\circ}=310^{\circ}</me>.
             So <m>310^{\circ}</m> and <m>-770^{\circ}</m> are coterminal. Since <m>270^{\circ}\lt 310^{\circ}\lt 360^{\circ}</m>, <m>310^{\circ}</m> lies in Quadrant IV, or Manu Malanai.
           </p>
         </solution>
@@ -361,7 +361,7 @@
         <solution>
           <p>
             Since <m>923^{\circ}>360^{\circ}</m> we begin by subtracting <m>2\times360^{\circ}</m>
-            <me>923^{\circ}-2\times360^{\circ}=203^{\circ}.</me>
+            <me>923^{\circ}-2\times360^{\circ}=203^{\circ}</me>.
             So <m>203^{\circ}</m> and <m>923^{\circ }</m> are coterminal. Since <m>180^{\circ}\lt 203^{\circ}\lt 270^{\circ}</m>, <m>923^{\circ}</m> lies in Quadrant III or ʻĀina Kona.
           </p>
         </solution>
@@ -576,8 +576,8 @@
             <h>of angles</h>
           </idx> of a central angle in a circle is the ratio of the length of the arc on the circle subtended by the angle to the radius. If <m>r</m> is the radius of the circle, <m>\theta</m> is the angle, and <m>s</m> is the arc length, then we have the following 
           <me>
-            \theta=\frac{s}{r}.
-          </me>
+            \theta=\frac{s}{r}
+          </me>.
         </p>
         <p>A radian is abbreviated by <term>rad</term>.</p>
         <image xml:id="fig-one-rad" width="67%">
@@ -676,8 +676,8 @@
       <p>
         If a circle with radius 1 is drawn, it has <m>360^{\circ}</m>, and the full arc length is the circumference, which is <m>2\pi</m>. Therefore,the relationship between degrees and radians is:
         <me>360^{\circ}=2\pi \mbox{ radian} , \mbox{or } 180^{\circ}=\pi\mbox{ radian}</me>
-        <me>1\mbox{ radian} =\frac{180^{\circ}}{\pi},</me>
-        <me>1^{\circ}=\frac{\pi}{180}\mbox{ radian}.</me>
+        <me>1\mbox{ radian} =\frac{180^{\circ}}{\pi}</me>,
+        <me>1^{\circ}=\frac{\pi}{180}\mbox{ radian}</me>.
       </p>
     </remark>
     <remark>
@@ -923,7 +923,7 @@
           <idx>
             <h>arc length</h>
           </idx> In a circle of radius <m>r</m>, the <em>arc length</em>, <m>s</m>, subtended by a central angle (in radians), <m>\theta</m>, is
-          <me>s=r\theta.</me>
+          <me>s=r\theta</me>.
         </p>
         <p>
           If <m>\theta</m> is given in degrees, then <m>\displaystyle s=2\pi
@@ -963,8 +963,8 @@
         <p>
           To find the distance, we use <xref ref="thm_arc-length">Theorem</xref> to find the arc length:
           <me>
-            s=2\pi r\cdot\left(\frac{\theta}{360^{\circ}}\right)\approx2\pi\cdot(3,960\mbox{ miles})\frac{19.3833^{\circ}}{360^{\circ}}\approx1,340\mbox{ miles}.
-          </me>
+            s=2\pi r\cdot\left(\frac{\theta}{360^{\circ}}\right)\approx2\pi\cdot(3,960\mbox{ miles})\frac{19.3833^{\circ}}{360^{\circ}}\approx1,340\mbox{ miles}
+          </me>.
         </p>
         <p>
           So the distance between Kiritimati and Molokaʻi is approximately 1,340 miles.
@@ -1045,7 +1045,7 @@
           Given a circle of radius <m>r</m> and a central angle <m>\theta</m>, the arc length and area of the sector formed by <m>\theta</m> can be expressed as the proportion of the angle to the full circle multiplied by the circumference and area of the circle, respectively.
           <me>s=\mbox{(proportion of circle)} \cdot\mbox{(circumference)}=\left(\frac{\theta}{360^{\circ}}\right)\cdot(2\pi r)</me>
           and
-          <me>A=\mbox{(proportion of circle)} \cdot\mbox{(area of circle)}=\left(\frac{\theta}{360^{\circ}}\right)\cdot\left(\pi r^2\right).</me>
+          <me>A=\mbox{(proportion of circle)} \cdot\mbox{(area of circle)}=\left(\frac{\theta}{360^{\circ}}\right)\cdot\left(\pi r^2\right)</me>.
         </p>
       </statement>
     </theorem>
@@ -1093,7 +1093,7 @@
       <solution>
         <p>
           The angle is <m>\theta=2\cdot67^{\circ}=134^{\circ}</m> and the radius is <m>r=50</m> miles. So the area is given by
-          <me>A=\frac{\theta}{360^{\circ}}\pi\cdot r^2=\frac{134^{\circ}}{360^{\circ}}\pi\cdot 50^2\approx2,923\mbox{ square miles}.</me>
+          <me>A=\frac{\theta}{360^{\circ}}\pi\cdot r^2=\frac{134^{\circ}}{360^{\circ}}\pi\cdot 50^2\approx2,923\mbox{ square miles}</me>.
         </p>
       </solution>
     </example>
@@ -1131,8 +1131,8 @@
             <h>linear speed</h>
           </idx> Suppose an object moves along a circle with radius <m>r</m>, and let <m>\theta</m> (measured in radians) be the angle traversed in time <m>t</m>. Let <m>s</m> be the distance the object traveled in time <m>t</m>. Then the <term>linear speed</term>, <m>v</m>, of the object is given by
           <me>
-            v=\frac{s}{t}.
-          </me>
+            v=\frac{s}{t}
+          </me>.
         </p>
       </statement>
     </definition>
@@ -1147,19 +1147,19 @@
           <idx>
             <h>angular speed</h>
           </idx> Suppose an object moves along a circle. Let <m>\theta</m> (measured in radians) be the angle traversed by the object in time <m>t</m>. The <term>angular speed</term>, <m>\omega</m>, of the object is given by
-          <me>\omega=\frac{\theta}{t}.</me>
+          <me>\omega=\frac{\theta}{t}</me>.
         </p>
       </statement>
     </definition>
     <p>
       Notice that we can rearrange the angular speed to get <m>\theta=\omega t</m>. Since <m>s</m> is an arc length, we have <m>s=r\theta</m>, and thus we can write the linear speed as 
-      <me>v=\frac{s}{t}=\frac{r\theta}{t}=\frac{r\omega t}{t}=r\omega.</me>
+      <me>v=\frac{s}{t}=\frac{r\theta}{t}=\frac{r\omega t}{t}=r\omega</me>.
     </p>
     <definition xml:id="def_linear-speed">
       <title>Linear Speed</title>
       <statement>
         <p>
-          <idx><h>speed</h><h>linear</h></idx><idx><h>linear speed</h></idx> Suppose an object moves along a circle with radius <m>r</m> and an angular speed <m>\omega</m> (measured in radians per unit time). Then the <term>linear speed</term>, <m>v</m>, of the object is given by <me>v=r\omega.</me>
+          <idx><h>speed</h><h>linear</h></idx><idx><h>linear speed</h></idx> Suppose an object moves along a circle with radius <m>r</m> and an angular speed <m>\omega</m> (measured in radians per unit time). Then the <term>linear speed</term>, <m>v</m>, of the object is given by <me>v=r\omega</me>.
         </p>
       </statement>
     </definition>
@@ -1209,8 +1209,8 @@
           <p>
             We are given that the angular speed is <m>\omega=25</m> revolutions per minute. To convert our angular speed to radians per minute, we use the fact that one revolution is <m>2\pi</m> radians to get 
             <me>
-              \omega=25\frac{\mbox{revolution} }{\mbox{minute} }=25\frac{\mbox{revolution}}{\mbox{minute} }\cdot2\pi\frac{\mbox{radians} }{\mbox{revolution}}=50\pi\frac{\mbox{radians} }{\mbox{minute} }.
-            </me>
+              \omega=25\frac{\mbox{revolution} }{\mbox{minute} }=25\frac{\mbox{revolution}}{\mbox{minute} }\cdot2\pi\frac{\mbox{radians} }{\mbox{revolution}}=50\pi\frac{\mbox{radians} }{\mbox{minute} }
+            </me>.
             Thus the hoe uli is moving at an angular speed of <m>50\pi</m> radians per minute.
           </p>
         </solution>
@@ -1225,8 +1225,8 @@
           <p>
             Since the radius is <m>r=2</m> ft and the angular speed is <m>50\pi</m> radians per minute, we can use <xref ref="def_linear-speed">Definition</xref> to calculate the linear speed
             <me>
-              v=r\omega=2\mbox{ft} \cdot50\pi\frac{\mbox{radians} }{\mbox{min}}\cdot\frac{\mbox{mile} }{5280\mbox{ft} }\cdot\frac{60\mbox{min} }{\mbox{hr}}\approx3.57\frac{\mbox{miles} }{\mbox{hour} }.
-            </me>
+              v=r\omega=2\mbox{ft} \cdot50\pi\frac{\mbox{radians} }{\mbox{min}}\cdot\frac{\mbox{mile} }{5280\mbox{ft} }\cdot\frac{60\mbox{min} }{\mbox{hr}}\approx3.57\frac{\mbox{miles} }{\mbox{hour} }
+            </me>.
             Thus the steersperson is moving the hoe uli at a linear speed of 3.57 mph.
           </p>
         </solution>

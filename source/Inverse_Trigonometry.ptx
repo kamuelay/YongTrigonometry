@@ -345,7 +345,7 @@
           <row>
             <cell><m>\sec^{-1}x</m></cell>
             <cell><m>(-\infty,-1]\cup[1,\infty)</m></cell>
-            <cell><m>[0,\frac{\pi}{2}\right)\cup\left(\frac{\pi}{2},\pi]</m></cell>
+            <cell><m>\left[0,\frac{\pi}{2}\right)\cup\left(\frac{\pi}{2},\pi\right]</m></cell>
           </row>
           <row>
             <cell><m>\cot^{-1}x</m></cell>
@@ -410,12 +410,12 @@
   <subsection>
     <title>Approximations of Inverse Trigonometric Functions</title>
     <p>
-      To evaluate inverse trigonometric functions that do not have special angles, we will need to use a calculator.
+      To evaluate inverse trigonometric functions that do not have special angles as values, we will need to use a calculator.
     </p>
     <remark>
       <title>Using a Calculator</title>
       <p>
-        Using a calculator for inverse trigonometric functions: Most calculators will have a special key for the inverse sine, cosine, and tangent functions. Depending on your calculator, you may see the following keys for inverse the inverse trigonometric functions
+        Using a calculator for inverse trigonometric functions: Most calculators will have a special key for the inverse sine, inverse cosine, and inverse tangent functions. Depending on the calculator, we may see the following keys for the inverse trigonometric functions:
       </p>
       <tabular>
         <row bottom="minor">
@@ -439,7 +439,7 @@
         Often, the inverse trigonometry key can be found by first pressing <kbd>2nd</kbd> or <kbd>SHIFT</kbd>, followed by the trigonometry function key. For example, to get the <kbd>SIN^-1</kbd> key, press <kbd>2nd</kbd><kbd>SIN</kbd> or <kbd>SHIFT</kbd><kbd>SIN</kbd>.
       </p>
       <p>
-        Many calculators do not have specific keys for the inverse cosecant, secant, and cotangent functions. Instead, you can the Reciprocal Identities (<xref ref="def_reciprocal-identities"/>) to get 
+        Many calculators do not have specific keys for the inverse cosecant, inverse secant, and inverse cotangent functions. Instead, we can use the Reciprocal Identities (<xref ref="def_reciprocal-identities"/>) to get:
       </p>
       <tabular>
         <row bottom="minor">
@@ -475,10 +475,10 @@
         </statement>
         <solution>
           <p>
-            First verify the mode of the calculator is in radians. Then, press the following keys <kbd>COS^-1</kbd><kbd>(</kbd><kbd>(-)</kbd><kbd>0.39</kbd><kbd>)</kbd><kbd>ENTER</kbd> to get
+            First verify that the mode of the calculator is in radians. Then, press the following keys <kbd>COS^-1</kbd><kbd>(</kbd><kbd>(-)</kbd><kbd>0.39</kbd><kbd>)</kbd><kbd>ENTER</kbd> to get
             <me>
               \cos^{-1}(-0.39)\approx1.9714279195
-            </me>
+            </me>.
             If your calculator does not have the <kbd>COS^-1</kbd> key, then use the appropriate key(s) for inverse cosine, such as <kbd>INV</kbd><kbd>COS</kbd>, <kbd>ARCCOS</kbd>, or <kbd>ACOS</kbd>.
           </p>
           <p>

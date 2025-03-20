@@ -190,8 +190,8 @@
         <p>
           Since <m>\sin\theta\lt 0</m> and <m>\cos\theta\lt 0</m>, we refer to <xref ref="tab_trig-signs">Table</xref> and see that <m>\theta</m> is in Quadrant III. From <xref ref="tab_trig-signs">Table</xref> we know  <m>\tan\theta>0</m>, <m>\csc\theta\lt 0</m>, <m>\sec\theta\lt 0</m>, <m>\cot\theta>0</m>. From the Quotient Identity (<xref ref="def_quotient-identities"/>), we have
           <me>
-            \tan\theta=\frac{\sin\theta}{\cos\theta}=\frac{\frac{12}{13}}{\frac{5}{13}}=\frac{12}{5}.
-          </me>
+            \tan\theta=\frac{\sin\theta}{\cos\theta}=\frac{\frac{12}{13}}{\frac{5}{13}}=\frac{12}{5}
+          </me>.
         </p>
         <p>
           Next, using the Reciprocal Identities (<xref ref="def_reciprocal-identities"/>), we get
@@ -873,8 +873,8 @@
     <p>
       By definition we know that
       <me>
-        \sin\theta=\frac{y}{r};\qquad\cos\theta=\frac{x}{r}.
-      </me>
+        \sin\theta=\frac{y}{r};\qquad\cos\theta=\frac{x}{r}
+      </me>.
     </p>
     <p>
       Next, we draw the reference angle, <m>\theta'</m>, in standard position.
@@ -903,22 +903,22 @@
     <p>
       We now have
       <me>
-        \sin\theta'=\frac{y'}{r};\qquad\cos\theta'=\frac{x'}{r}.
-      </me>
+        \sin\theta'=\frac{y'}{r};\qquad\cos\theta'=\frac{x'}{r}
+      </me>.
     </p>
     <p>
       Notice that the <m>y</m>-coordinates for <m>P</m> and <m>P'</m> share the same value,
       thus <m>y=y'</m> and we get
       <me>
-        \sin\theta=\sin\theta'.
-      </me>
+        \sin\theta=\sin\theta'
+      </me>.
     </p>
     <p>
       Similarly, we can see that the <m>x</m>-coordinates of <m>P</m> and <m>P'</m> have opposite values,
       thus <m>x=-x'</m> and
       <me>
-        \cos\theta=-\cos\theta'.
-      </me>
+        \cos\theta=-\cos\theta'
+      </me>.
     </p>
     <p>
       You may have noticed that we have two similar triangles, differing only in their <m>x</m>-coordinates have opposite values. Consequently, the values of each trigonometric function for the two triangles will match, except for a potential difference in signs. The sign of each function can be deduced by referring to <xref ref="tab_trig-signs">Table</xref>. This approach is applicable across all quadrants. To sum up, we now outline the steps for utilizing reference angles to evaluate trigonometric functions.
@@ -991,8 +991,8 @@
                 <p>
                   The reference angle is
                   <me>
-                    \theta'=210^{\circ}-180^{\circ}=30^{\circ}.
-                  </me>
+                    \theta'=210^{\circ}-180^{\circ}=30^{\circ}
+                  </me>.
                 </p>
               </li>
               <li>
@@ -1004,8 +1004,8 @@
                 <p>
                   Since <m>210^{\circ}</m> lies in Quadrant III, we know that <m>\cos\theta\lt 0</m>, so
                   <me>
-                    \cos210^{\circ}=-\frac{\sqrt{3}}{2}.
-                  </me>
+                    \cos210^{\circ}=-\frac{\sqrt{3}}{2}
+                  </me>.
                 </p>
               </li>
             </ol>
@@ -1048,8 +1048,8 @@
               <p>
                 The reference angle is
                 <me>
-                  2\pi-\frac{7\pi}{4}=\frac{8\pi}{4}-\frac{7\pi}{4}=\frac{\pi}{4}.
-                </me>
+                  2\pi-\frac{7\pi}{4}=\frac{8\pi}{4}-\frac{7\pi}{4}=\frac{\pi}{4}
+                </me>.
               </p>
             </li>
             <li>
@@ -1061,8 +1061,8 @@
               <p>
                 Since <m>\frac{7\pi}{4}</m> lies in Quadrant IV, we know that <m>\tan\theta\lt 0</m>, so
                 <me>
-                  \tan\frac{7\pi}{4}=-1.
-                </me>
+                  \tan\frac{7\pi}{4}=-1
+.                </me>
               </p>
             </li>
           </ol>
@@ -1125,8 +1125,8 @@
               <p>
                 Since <m>\frac{20\pi}{3}</m> lies in Quadrant II, we know that <m>\sin\theta>0</m> and <m>\cos\theta\lt 0</m>, so
                 <me>
-                  \sin\frac{20\pi}{3}=\frac{\sqrt{3}}{2}; \qquad \cos\frac{20\pi}{3}=-\frac{1}{2}.
-                </me>
+                  \sin\frac{20\pi}{3}=\frac{\sqrt{3}}{2}; \qquad \cos\frac{20\pi}{3}=-\frac{1}{2}
+                </me>.
               </p>
             </li>
           </ol>
@@ -1139,20 +1139,20 @@
     <p>
       In <xref ref="exmp-trig-20pi3">Figure</xref> of <xref ref="ex-1_5-20pi3">Example</xref>, point <m>P</m> corresponds to the angle <m>\frac{20\pi}{3}.</m> To determine the reference angle, we subtracted multiples of <m>2\pi.</m> Each iteration of <m>2\pi</m> retraces the unit circle back to the point <m>P</m>, resulting in a coterminal angle. Therefore
       <me>
-        \sin\frac{2\pi}{3}=\sin\frac{8\pi}{3}=\sin\frac{14\pi}{3}=\sin\frac{20\pi}{3}.
-      </me>
+        \sin\frac{2\pi}{3}=\sin\frac{8\pi}{3}=\sin\frac{14\pi}{3}=\sin\frac{20\pi}{3}
+      </me>.
     </p>
     <p>
       Rewriting the angles we get
       <me>
-        \sin\left(\frac{2\pi}{3}+0\cdot2\pi\right)=\sin\left(\frac{2\pi}{3}+1\cdot2\pi\right)=\sin\left(\frac{2\pi}{3}+2\cdot2\pi\right)=\sin\left(\frac{2\pi}{3}+3\cdot2\pi\right).
-      </me>
+        \sin\left(\frac{2\pi}{3}+0\cdot2\pi\right)=\sin\left(\frac{2\pi}{3}+1\cdot2\pi\right)=\sin\left(\frac{2\pi}{3}+2\cdot2\pi\right)=\sin\left(\frac{2\pi}{3}+3\cdot2\pi\right)
+      </me>.
     </p>
     <p>
       Similarly,
       <me>
-        \cos\left(\frac{2\pi}{3}+0\cdot2\pi\right)=\cos\left(\frac{2\pi}{3}+1\cdot2\pi\right)=\cos\left(\frac{2\pi}{3}+2\cdot2\pi\right)=\cos\left(\frac{2\pi}{3}+3\cdot2\pi\right).
-      </me>
+        \cos\left(\frac{2\pi}{3}+0\cdot2\pi\right)=\cos\left(\frac{2\pi}{3}+1\cdot2\pi\right)=\cos\left(\frac{2\pi}{3}+2\cdot2\pi\right)=\cos\left(\frac{2\pi}{3}+3\cdot2\pi\right)
+      </me>.
     </p>
     <p>
       In general, consider an angle <m>\theta</m> measured in radians and its corresponding point <m>P</m> on the unit circle. Adding or subtracting integer multiples of <m>2\pi</m> to <m>\theta</m> will lead to the same point <m>P</m> on the unit circle. Thus, the values of sine and cosine for all angles corresponding to point <m>P</m> are equivalent. This leads us to the following periodic properties.
@@ -1609,8 +1609,8 @@
       <p>
         Let <m>P(x,y)</m> be a point on the circle with radius <m>r</m>. The equation of the circle is
         <me>
-          x^2+y^2=r^2.
-        </me>
+          x^2+y^2=r^2
+        </me>.
       </p>
       <p>
         By definition <m>\frac{x}{r}=\cos\theta</m> and <m>\frac{y}{r}=\sin\theta</m>.
@@ -1641,20 +1641,20 @@
         <p>
           Taking the square root of both sides,
           <me>
-            \sin\theta=\pm\sqrt{\frac{16}{25}}=\pm\frac{4}{5}.
-          </me>
+            \sin\theta=\pm\sqrt{\frac{16}{25}}=\pm\frac{4}{5}
+          </me>.
         </p>
         <p>
           Since <m>\theta</m> is in Quadrant II, we have <m>\sin\theta\lt 0</m>. Thus we choose the negative answer to get
           <me>
-            \sin\theta=-\frac{4}{5}.
-          </me>
+            \sin\theta=-\frac{4}{5}
+          </me>.
         </p>
         <p>
           Next we use the Quotient Identity to get
           <me>
-            \tan\theta=\frac{\sin\theta}{\cos\theta}=\frac{-\frac{4}{5}}{\frac{3}{5}}=-\frac{4}{5}\cdot\frac{5}{3}=-\frac{4}{3}.
-          </me>
+            \tan\theta=\frac{\sin\theta}{\cos\theta}=\frac{-\frac{4}{5}}{\frac{3}{5}}=-\frac{4}{5}\cdot\frac{5}{3}=-\frac{4}{3}
+          </me>.
         </p>
       </solution>
     </example>
