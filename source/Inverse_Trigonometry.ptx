@@ -72,8 +72,8 @@
     <p>
       You may notice that for our given angle, <m>\theta</m>, we have the opposite side of length 6.2 m and the adjacent side of length 14.8 m, which are both related to the tangent function:
       <me>
-        \tan\theta=\frac{6.2}{14.8}.
-      </me>
+        \tan\theta=\frac{6.2}{14.8}
+      </me>.
     </p>
     <p>
       Until now, the angles for the trigonometric problems we encountered were given. However, to solve for the angle <m>\theta</m>, we cannot simply divide by the letters <q>tan</q>, since it is part of the tangent function, which takes an angle as input and provides a ratio of sides as output. To find the angle <m>\theta</m>, we need to use the inverse tangent function, <q>tan^{-1}</q>, which takes the ratio of sides as input and gives the angle as output. To find the angle <m>\theta</m>, we need to use the inverse function, which takes the ratio of sides as input and provides an angle as output. In this section, we will explore inverse trigonometric functions, including their properties and usage.
@@ -375,8 +375,8 @@
           <p>
             Let <m>\theta=\cos^{-1}\left(\frac{1}{2}\right)</m>. Evaluating the problem  is the same as determining the angle, <m>\theta</m>, for which
             <me>
-              \cos\theta=\frac{1}{2}.
-            </me>
+              \cos\theta=\frac{1}{2}
+            </me>.
             Although there are infinitely many values of <m>\theta</m> that satisfy the equation, such as <m>\theta=\frac{\pi}{3}</m> and <m>\theta=\frac{5\pi}{3}</m>, there is only one value that lies in the interval <m>[0,\pi]</m>. Thus, <m>\cos^{-1}\left(\frac{1}{2}\right)=\frac{\pi}{3}</m>.
           </p>
         </solution>
@@ -587,15 +587,15 @@
         <p>
           Since we were able to write <m>\tan\theta=\frac{575}{1,108}</m>, we can use a calculator or other technology to evaluate the inverse tangent to find our angle:
           <me>
-            \theta=\tan^{-1}\left(\frac{575}{1,108}\right)\approx27.4^{\circ}.
-          </me>
+            \theta=\tan^{-1}\left(\frac{575}{1,108}\right)\approx27.4^{\circ}
+          </me>.
           Because this angle is in Quadrant III, we find its value on the Unit Circle by adding <m>180^{\circ}+27.4^{\circ}=207.4^{\circ}</m>. Next we refer to the Star Compass with angles (<xref ref="star-compass-with-angles"/>) to conclude we will need to sail towards the House ʻĀina Kona.
         </p>
         <p>
           To determine the distance, <m>d</m>, we use the Pythagorean Theorem:
           <me>
-            d=\sqrt{575^2+1,108^2}\approx1,248 \mbox{NM}.
-          </me>
+            d=\sqrt{575^2+1,108^2}\approx1,248 \mbox{NM}
+          </me>.
           Finally, we note that since (speed) = (distance)/(duration), we can rearrange the terms to get (duration) = (distance)/(speed). If we travel at 5 knots (5 NM/hr), we can calculate the duration as
           <md>
             <mrow>
@@ -685,20 +685,20 @@
               <p>
                 Since we know the adjacent side and hypotenuse of this triangle, we can use cosine:
                 <me>
-                  \cos\theta_1=\frac{R}{R+h}=\frac{20,911,171}{20,911,171+9}=\frac{20,911,171}{20,911,180}.
-                </me>
+                  \cos\theta_1=\frac{R}{R+h}=\frac{20,911,171}{20,911,171+9}=\frac{20,911,171}{20,911,180}
+                </me>.
                 To solve for <m>\theta_1</m>, we use the inverse cosine
                 <me>
-                  \theta_1=\cos^{-1}\left(\frac{20,911,171}{20,911,180}\right)\approx0.053^{\circ}.
-                </me>
+                  \theta_1=\cos^{-1}\left(\frac{20,911,171}{20,911,180}\right)\approx0.053^{\circ}
+                </me>.
                 Now we are ready to calculate the arc length, <m>s_1</m>:
                 <me>
-                  s_1=2\pi\cdot\frac{0.053^{\circ}}{360^{\circ}}\cdot20,911,171\mbox{ feet}\approx19,343\mbox{ feet}.
-                </me>
+                  s_1=2\pi\cdot\frac{0.053^{\circ}}{360^{\circ}}\cdot20,911,171\mbox{ feet}\approx19,343\mbox{ feet}
+                </me>.
                 Converting to miles we get
                 <me>
-                  s_1\approx19,401\mbox{ feet}\cdot\frac{1\mbox{ mile}}{5,280\mbox{ feet}}\approx3.7\mbox{miles}.
-                </me>
+                  s_1\approx19,401\mbox{ feet}\cdot\frac{1\mbox{ mile}}{5,280\mbox{ feet}}\approx3.7\mbox{miles}
+                </me>.
                 So the horizon is 3.7 miles from the navigator.
               </p>
             </li>
@@ -1063,8 +1063,8 @@
           <p>
             Evaluating <m>\cos\left(\tan^{-1}\frac{4}{3}\right)</m> is equivalent to evaluating 
             <me>
-              \cos\theta=\frac{\mbox{adjacent}}{\mbox{hypotenuse}}=\frac{3}{r},
-            </me>
+              \cos\theta=\frac{\mbox{adjacent}}{\mbox{hypotenuse}}=\frac{3}{r}
+            </me>,
             where <m>r=\sqrt{x^2+y^2}=\sqrt{3^2+4^2}=\sqrt{9+16}=\sqrt{25}=5</m>. So,
             <me>
               \cos\left(\tan^{-1}\frac{4}{3}\right)=\cos\theta=\frac{3}{5}
@@ -1104,8 +1104,8 @@
           <p>
             Evaluating <m>\sin\left(\cos^{-1}\left(-\frac{3}{8}\right)\right)</m> is equivalent to evaluating 
             <me>
-              \sin\theta=\frac{\mbox{opposite}}{\mbox{hypotenuse}}=\frac{y}{8},
-            </me>
+              \sin\theta=\frac{\mbox{opposite}}{\mbox{hypotenuse}}=\frac{y}{8}
+            </me>,
             where 
             <md>
               <mrow>r^2 \amp = x^2+y^2</mrow>
