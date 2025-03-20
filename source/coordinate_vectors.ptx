@@ -688,8 +688,8 @@
           <p>
             Since Marumaru Atua is sailing north at 5 knots, the velocity is:
             <me>
-              \mathbf{v}_m=\langle0,5\rangle.
-            </me>
+              \mathbf{v}_m=\langle0,5\rangle
+            </me>.
           </p>
           <p>
             To find the vector for the current, we need to know <m>t</m>, the angle of the velocity vector in standard position (see <xref ref="def-standard-position"/>). We begin by drawing the heading angle of <m>260^{\circ}</m> and its reference angle, <m>t'</m>.
@@ -746,8 +746,8 @@
           <p>
             Thus, by <xref ref="def-horizontal-vertical-components-from-magnitude-direction"/> the velocity for the current is
             <me>
-              \mathbf{v}_c=\langle1\cdot\cos190^{\circ},1\cdot\sin190^{\circ}\rangle\approx\langle-0.98,-0.17\rangle.
-            </me>
+              \mathbf{v}_c=\langle1\cdot\cos190^{\circ},1\cdot\sin190^{\circ}\rangle\approx\langle-0.98,-0.17\rangle
+            </me>.
           </p>
         </solution>
       </task>
@@ -795,8 +795,8 @@
           <p>
             The actual speed of Marumaru Atua is simply the magnitude of the velocity over ground:
             <me>
-              \|\mathbf{v}_g\|=\|\langle-0.98,4.83\rangle\|=\sqrt{(-0.98)^2+(4.83^2)}\approx4.9\mbox{ knots}.
-            </me>
+              \|\mathbf{v}_g\|=\|\langle-0.98,4.83\rangle\|=\sqrt{(-0.98)^2+(4.83^2)}\approx4.9\mbox{ knots}
+            </me>.
             Thus, although the vaka sails through the water at 5 knots, its forward progress is slightly slower with a speed over ground at 4.9 knots.
           </p>
           <p>
