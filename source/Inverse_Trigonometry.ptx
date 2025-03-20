@@ -9,31 +9,31 @@
       Even in poor visibility, when the crew may not see the swells, they can feel them. Parts of the vaka (canoe) lift and lower as the swells pass beneath. Skilled navigators use these movements to maintain course, even without directly seeing the waves.
     </p>
     <p>
-      The side-to-side rocking motion of the canoe is known as <term>roll</term><idx><h>roll</h></idx>. This motion occurs when a swell approaches from either the port (left) or starboard (right) side, causing the vaka to initially lift the corresponding hull (port or starboard), followed by the opposite hull, depending on the direction of the swell.
+      The lateral (side-to-side) rocking motion of a double-hull canoe is known as <term>roll</term><idx><h>roll</h></idx>. This motion occurs when a swell approaches from either the port (left) or starboard (right) side, causing the vaka to initially lift the corresponding hull (port or starboard), followed by the opposite hull, depending on the direction of the swell.
     </p>
     <p>
       When a swell approaches from the bow (front) of the canoe, it lifts the front, causing the canoe to tilt backward before tilting forward. This motion is known as <term>pitch.</term><idx><h>pitch</h></idx> Conversely, if the swell comes from the stern (back), the canoe tilts forward and then backward.
     </p>
     <p>
-      When a swell approaches the canoe from an angle that is not perpendicular to any side, a combination of pitch and roll occurs. The specific motion experienced depends on the precise angle of the swell. For instance, if the swell comes from an angle and lifts the starboard bow (front right), it may subsequently lift the port bow, followed by the starboard stern, and finally the port stern. However, with a slightly different angle, the sequence may change as well. After lifting the starboard bow, it could lead to the starboard stern being lifted next, followed by the port bow, and finally the port stern. This twisting motion is referred to as a <term>corkscrew</term><idx><h>corkscrew</h></idx> effect due to its combination of motions.
+      When a swell approaches the canoe from an angle that is not perpendicular to any side, a combination of pitch and roll occurs. The specific motion experienced depends on the precise angle of the swell. For instance, if the swell comes from an angle and lifts the starboard bow (front right), it may subsequently lift the port bow, followed by the starboard stern, and finally the port stern. However, with a slightly different angle, the sequence may change. After lifting the starboard bow, it could lead to the starboard stern being lifted next, followed by the port bow, and finally the port stern. This twisting motion is referred to as a <term>corkscrew</term><idx><h>corkscrew</h></idx> effect due to its combination of motions.
     </p>
     <p>
-      The video in <xref ref="video-swell-movement"/> demonstrates how the vaka Paikea moves as swells pass under the hulls. A change in vaka motion can indicate either a change in the canoe's direction or a shift in the direction of ocean swells. In such cases, the crew must assess the situation and, when conditions allow, utilize celestial markers, such as the rising and setting of stars, to determine the direction of the swells.
+      The video in <xref ref="video-swell-movement"/> demonstrates how vaka Paikea moves as swells pass under the hulls. A change in vaka motion can indicate either a change in the canoe's direction or a shift in the direction of ocean swells. In such cases, the crew must assess the situation and, when conditions allow, utilize celestial markers, such as the rising and setting of stars, to determine the direction of the swells.
     </p>
     <figure xml:id="video-swell-movement">
       <caption>
-        As swells pass under the vaka Paikea, the canoe pitches, rolls, and corkscrews, depending on the angle of the swell. A navigator can use these movements to keep a straight course.
+        As swells pass under vaka Paikea, the canoe pitches, rolls, and corkscrews, depending on the angle of the swell. A navigator can use these movements to keep a straight course.
       </caption>
       <video youtube="fUTlW9RWGLA" label="youtube-swell-movement"/>
     </figure>
     <p>
-      As the vaka Paikea sails north in the Cook Islands from Rarotonga to Aitutaki with a heading of <m>0^{\circ}</m>, the swells are approaching the vaka from the southwest and moving towards the northeast. Referring to <xref ref="star-compass-with-heading-angles"/>, which provides heading angles, we observe that the swells have a heading ranging between <m>0^{\circ}</m> (north) and <m>90^{\circ}</m> (east).
+      As vaka Paikea sails north in the Cook Islands from Rarotonga to Aitutaki with a heading of <m>0^{\circ}</m>, the swells are approaching the vaka from the southwest and moving towards the northeast. Referring to <xref ref="star-compass-with-heading-angles"/>, which provides heading angles, we observe that the swells have a heading ranging between <m>0^{\circ}</m> (north) and <m>90^{\circ}</m> (east).
     </p> 
     <p>
-      Additional observations of the crew reveal the swells hit Paikea in the following order: 1) port stern (back left); 2) starboard stern (back right); 3) port bow (front left); and 4) starboard bow (front right), as shown in <xref ref="waa-currents"/>. If Paikea is 14.8 m (50 ft) in length and 6.2 m (20 ft) in width, what is the possible range of headings from which the swells may be approaching?
+      Additional observations of the crew reveal that the swells hit Paikea in the following order: 1) port stern (back left); 2) starboard stern (back right); 3) port bow (front left); and 4) starboard bow (front right), as shown in <xref ref="waa-currents"/>. If Paikea is 14.8 m (50 ft) in length and 6.2 m (20 ft) in width, what is the possible range of headings from which the swells may be approaching?
     </p>
     <figure xml:id="waa-currents">
-      <caption>Swells moving towards the northeast pass under the vaka Paikea heading.</caption>
+      <caption>Swells moving towards the northeast pass under vaka Paikea heading.</caption>
       <image xml:id="fig-waa-currents" width="80%">
         <latex-image>
           \begin{tikzpicture}[x=4cm,y=4cm]
@@ -56,7 +56,7 @@
     To determine the range of headings, we start by considering one boundary, which occurs when the swells are moving directly north with a heading of <m>0^{\circ}</m>. To identify the other boundary, we want to find the angle at which the swell intersects both the starboard stern and port bow simultaneously as it passes beneath the vaka. Essentially, we want to find the angle that diagonally traverses the canoe from one corner to another. To simplify this, we represent the vaka as a rectangle and create a triangle by connecting the corners. The angle, denoted as <m>\theta</m>, is formed between the side adjacent to the 14.8 m length of the canoe and the diagonal. This angle corresponds to the heading of the swells, as shown in <xref ref="waa-currents-dimensions"/>.
    </p>
     <figure xml:id="waa-currents-dimensions">
-      <caption>The deck of the vaka Paikea can be simplified to a rectangle, and its diagonal represents the threshold between different sequences of motions as swells pass. The angle <m>\theta</m> corresponds to the heading of the swells.</caption>
+      <caption>The deck of vaka Paikea can be simplified to a rectangle, and its diagonal represents the threshold between different sequences of motions as swells pass. The angle <m>\theta</m> corresponds to the heading of the swells.</caption>
       <image xml:id="fig-waa-currents-dimensions" width="33%">
         <latex-image>
           \begin{tikzpicture}[scale=0.5]
@@ -72,32 +72,32 @@
     <p>
       You may notice that for our given angle, <m>\theta</m>, we have the opposite side of length 6.2 m and the adjacent side of length 14.8 m, which are both related to the tangent function:
       <me>
-        \tan\theta=\frac{14.8}{6.2}
+        \tan\theta=\frac{6.2}{14.8}.
       </me>
     </p>
     <p>
-      Until now, the angles for the trigonometric problems we encountered were given. However, to solve for the angle <m>\theta</m>, we cannot simply divide by <q>tan</q> since it is part of the tangent function, which takes an angle as input and provides a ratio of sides as output. To find the angle <m>\theta</m>, we need to use the inverse function, which takes the ratio of sides as input and provides an angle as output. In this section, we will explore inverse trigonometric functions, including their properties and usage.
+      Until now, the angles for the trigonometric problems we encountered were given. However, to solve for the angle <m>\theta</m>, we cannot simply divide by the letters <q>tan</q>, since it is part of the tangent function, which takes an angle as input and provides a ratio of sides as output. To find the angle <m>\theta</m>, we need to use the inverse tangent function, <q>tan^{-1}</q>, which takes the ratio of sides as input and gives the angle as output. To find the angle <m>\theta</m>, we need to use the inverse function, which takes the ratio of sides as input and provides an angle as output. In this section, we will explore inverse trigonometric functions, including their properties and usage.
     </p>
   </introduction>
 
   <subsection xml:id="subsec_inverse-trig-functions">
     <title>Inverse Trigonometric Functions</title>
     <p>
-      Recall from algebra that for a function <m>f</m> and its inverse function <m>f^{-1}</m> we have
+      Recall from algebra that for a function <m>f</m> and its inverse function <m>f^{-1}</m> we have:
       <ol>
         <li>
           <p>
-            The Domain of <m>f^{-1}=</m> Range of <m>f</m>
+            The Domain of <m>f^{-1}=</m> Range of <m>f</m>;
           </p>
         </li>
         <li>
           <p>
-            The Range of <m>f^{-1}=</m> Domain of <m>f</m>
+            The Range of <m>f^{-1}=</m> Domain of <m>f</m>;
           </p>
         </li>
         <li>
           <p>
-            If <m>f(a)=b</m> then <m>f^{-1}(b)=a</m>
+            If <m>f(a)=b</m> then <m>f^{-1}(b)=a</m>.
           </p>
         </li>
       </ol>
@@ -105,20 +105,19 @@
     <p>
       In terms of trigonometric functions, for example,
       if <m>f(x)=\sin x</m> then <m>f^{-1}(x)=\sin^{-1}x</m>.
-      Now consider <m>\sin\left(\frac{\pi}{4}\right)=\frac{\sqrt{2}}{2}</m>,
-      then <m>\frac{\pi}{4}=\sin^{-1}\left(\frac{\sqrt{2}}{2}\right)</m>. 
+      Now consider <m>\sin\left(\frac{\pi}{4}\right)=\frac{1}{\sqrt{2}}</m>,
+      then <m>\frac{\pi}{4}=\sin^{-1}\left(\frac{1}{\sqrt{2}}\right)</m>. 
     </p>
     <remark><title>Be Careful</title>
       <p>
-        Do not confuse the inverse trigonometric notations with an exponent, in other words, <m>\sin^{-1}x\neq\frac{1}{\sin x}</m>. To avoid this, we will use parentheses around the trigonometric function to denote the power of negative one: <m>(\sin x)^{-1}</m>.
+        Do not confuse the inverse trigonometric notation with an exponent, in other words, <m>\sin^{-1}x\neq\frac{1}{\sin x}</m>. To avoid this, we will use parentheses around the trigonometric function to denote the power of negative one: <m>(\sin x)^{-1}</m>.
       </p>
     </remark>
     <p>
-      Also recall from algebra that for a function, <m>f</m>, to have an inverse, <m>f^{-1}</m>, it must be one-to-one,meaning no horizontal line intersects the graph more than once. Since this is not true for trigonometric functions, they do not have inverses. We need functions to be one-to-one because both <m>\sin\frac{\pi}{4}=\frac{\sqrt{2}}{2}</m> and <m>\sin\frac{3\pi}{4}=\frac{\sqrt{2}}{2}</m> but if we took the inverse of sine,
-      would we wouldn't know to use <m>\sin^{-1}\left(\frac{\sqrt{2}}{2}\right)=\frac{\pi}{4}</m> or <m>\sin^{-1}\left(\frac{\sqrt{2}}{2}\right)=\frac{3\pi}{4}</m>. To avoid this confusion and to ensure the function is one-to-one, we can put restrictions on the domains of each trigonometric function so they attain all the values in the range only once, making the function one-to-one, and thus have an inverse (see <xref ref="sine-not-one-to-one"/>).
+      Also recall from algebra that for a function, <m>f</m>, to have an inverse, <m>f^{-1}</m>, it must be one-to-one, meaning no horizontal line intersects the graph more than once. Since this is not true for trigonometric functions, they do not have inverses. We need functions to be one-to-one because both <m>\sin\frac{\pi}{4}=\frac{1}{\sqrt{2}}</m> and <m>\sin\frac{3\pi}{4}=\frac{1}{\sqrt{2}}</m> but if we took the inverse of sine, we wouldn't know whether to use <m>\sin^{-1}\left(\frac{1}{\sqrt{2}}\right)=\frac{\pi}{4}</m> or <m>\sin^{-1}\left(\frac{1}{\sqrt{2}}\right)=\frac{3\pi}{4}</m>. To avoid this confusion and to ensure the function is one-to-one, we can put restrictions on the domains of each trigonometric function so they attain all the values in the range only once, making the restricted function one-to-one, and thus having an inverse (see <xref ref="sine-not-one-to-one"/>).
     </p>
     <figure xml:id="sine-not-one-to-one">
-      <caption>The graph of <m>f(x)=\sin x</m> does not pass the horizontal line test and is not one-to-one. If we restrict the graph to <m>-\frac{\pi}{2}\leq x\leq\frac{\pi}{2}</m> so that each value in the range <m>[-1,1]</m> is attained only once, then the function is one-to-one and has an inverse.</caption>
+      <caption>The graph of <m>f(x)=\sin x</m> does not pass the horizontal line test and is not one-to-one. If we restrict the graph to <m>-\frac{\pi}{2}\leq x\leq\frac{\pi}{2}</m> so that each value in the range <m>[-1,1]</m> is attained only once, then the restricted function is one-to-one and has an inverse.</caption>
       <image xml:id="fig-sine-not-one-to-one" width="80%">
         <latex-image>
         \begin{tikzpicture}
@@ -254,7 +253,7 @@
       </sidebyside>
     </figure>
     <p>
-      With these new restrictions on the domains, we now have trigonometric functions that are one-to-one and so we can  define their inverse functions:
+      With these restrictions on the domains, we now have trigonometric functions that are one-to-one and so we can  define their inverse functions:
     </p>
     <definition xml:id="def-inverse-sin">
       <title>Inverse Sine</title>
@@ -284,7 +283,7 @@
       <title>Inverse Tangent</title>
       <statement>
         <p>
-          The <em>inverse tangent function</em><idx><h>inverse tangent</h></idx>
+          The <term>inverse tangent function</term><idx><h>inverse tangent</h></idx>
           is symbolized by
           <md>
             <mrow>y=\tan^{-1}x \amp \amp  \mbox{and means}  \amp \amp  x=\tan y.</mrow>
@@ -299,9 +298,9 @@
         <p>
           Inverse cosecant, inverse secant, and inverse cotangent functions are not as common as the other trigonometric functions and we will just summarize them.
           <md>
-            <mrow>y=\csc^{-1}x \amp \amp  \mbox{means}  \amp \amp  x=\csc y</mrow>
-            <mrow>y=\sec^{-1}x \amp \amp  \mbox{means}  \amp \amp  x=\sec y</mrow>
-            <mrow>y=\cot^{-1}x \amp \amp  \mbox{means}  \amp \amp  x=\cot y</mrow>
+            <mrow>y=\csc^{-1}x \amp \amp  \mbox{means}  \amp \amp  x=\csc y,</mrow>
+            <mrow>y=\sec^{-1}x \amp \amp  \mbox{means}  \amp \amp  x=\sec y,</mrow>
+            <mrow>y=\cot^{-1}x \amp \amp  \mbox{means}  \amp \amp  x=\cot y.</mrow>
           </md>
         </p>
       </statement>
@@ -310,7 +309,7 @@
       <title>Domain and Range for Inverse Trigonometric Functions</title>
       <statement>
         <p>
-          The domain and range for each function is
+          The domain and range for each function is:
         </p>
         <tabular>
           <row>
@@ -324,32 +323,32 @@
             <cell></cell>
           </row>
           <row>
-            <cell><m>\sin^{-1}</m></cell>
+            <cell><m>\sin^{-1}x</m></cell>
             <cell><m>[-1,1]</m></cell>
             <cell><m>\left[-\frac{\pi}{2},\frac{\pi}{2}\right]</m></cell>
           </row>
           <row>
-            <cell><m>\cos^{-1}</m></cell>
+            <cell><m>\cos^{-1}x</m></cell>
             <cell><m>[-1,1]</m></cell>
             <cell><m>[0,\pi]</m></cell>
           </row>
           <row>
-            <cell><m>\tan^{-1}</m></cell>
-            <cell><m>[-\infty,\infty]</m></cell>
+            <cell><m>\tan^{-1}x</m></cell>
+            <cell><m>(-\infty,\infty)</m></cell>
             <cell><m>\left(-\frac{\pi}{2},\frac{\pi}{2}\right)</m></cell>
           </row>
           <row>
-            <cell><m>\csc^{-1}</m></cell>
+            <cell><m>\csc^{-1}x</m></cell>
             <cell><m>(-\infty,-1]\cup[1,\infty)</m></cell>
-            <cell><m>\left[-\frac{\pi}{2},\frac{\pi}{2}\right],y\neq0</m></cell>
+            <cell><m>\left[-\frac{\pi}{2},0\right)\cup\left(0,\frac{\pi}{2}\right]</m></cell>
           </row>
           <row>
-            <cell><m>\sec^{-1}</m></cell>
+            <cell><m>\sec^{-1}x</m></cell>
             <cell><m>(-\infty,-1]\cup[1,\infty)</m></cell>
-            <cell><m>[0,\pi],y\neq\frac{\pi}{2}</m></cell>
+            <cell><m>[0,\frac{\pi}{2}\right)\cup\left(\frac{\pi}{2},\pi]</m></cell>
           </row>
           <row>
-            <cell><m>\cot^{-1}</m></cell>
+            <cell><m>\cot^{-1}x</m></cell>
             <cell><m>(-\infty,\infty)</m></cell>
             <cell><m>(0,\pi)</m></cell>
           </row>
@@ -363,7 +362,7 @@
       <title>Evaluating Inverse Trigonometric Functions</title>
       <introduction>
         <p>
-          Find the exact value
+          Find the exact value of:
         </p>
       </introduction>
       <task>
@@ -374,35 +373,35 @@
         </statement>
         <solution>
           <p>
-            Let <m>\theta=\cos^{-1}\left(\frac{1}{2}\right)</m>. Then evaluating the problem  is the same as determining the angle, <m>\theta</m>, for which
+            Let <m>\theta=\cos^{-1}\left(\frac{1}{2}\right)</m>. Evaluating the problem  is the same as determining the angle, <m>\theta</m>, for which
             <me>
               \cos\theta=\frac{1}{2}.
             </me>
-            Although there are infinite values of <m>\theta</m> that satisfy the equation, such as <m>\theta=\frac{\pi}{3}</m> and <m>\theta=\frac{5\pi}{3}</m>, there is only one value that lies in the interval <m>[0,\pi]</m>. Thus, <m>\cos^{-1}\left(\frac{1}{2}\right)=\frac{\pi}{3}</m>.
+            Although there are infinitely many values of <m>\theta</m> that satisfy the equation, such as <m>\theta=\frac{\pi}{3}</m> and <m>\theta=\frac{5\pi}{3}</m>, there is only one value that lies in the interval <m>[0,\pi]</m>. Thus, <m>\cos^{-1}\left(\frac{1}{2}\right)=\frac{\pi}{3}</m>.
           </p>
         </solution>
       </task>
       <task>
         <statement>
           <p>
-            <m>\tan^{-1}\sqrt{3}</m>
+            <m>\tan^{-1}(\sqrt{3})</m>
           </p>
         </statement>
         <solution>
           <p>
-            Let <m>\theta=\tan^{-1}\sqrt{3}</m>. Then we must find <m>\theta</m> that satisfies <m>\tan\theta=\sqrt{3}</m> as well as satisfies the range of <m>\tan^{-1}</m>. Because <m>\tan\frac{\pi}{3}=\sqrt{3}</m> and <m>-\frac{\pi}{2}\lt\frac{\pi}{3}\lt\frac{\pi}{2}</m>, we conclude that <m>\tan^{-1}\sqrt{3}=\frac{\pi}{3}</m>.
+            Let <m>\theta=\tan^{-1}(\sqrt{3})</m>. We must find <m>\theta</m> that satisfies <m>\tan\theta=\sqrt{3}</m> while also ensuring <m>\theta</m> is within the range of the inverse tangent function. Because <m>\tan\frac{\pi}{3}=\sqrt{3}</m> and <m>-\frac{\pi}{2}\lt\frac{\pi}{3}\lt\frac{\pi}{2}</m>, we conclude that <m>\tan^{-1}(\sqrt{3})=\frac{\pi}{3}</m>.
           </p>
         </solution>
       </task>
       <task>
         <statement>
           <p>
-            <m>\sin^{-1}\left(-\frac{\sqrt{2}}{2}\right)</m>
+            <m>\sin^{-1}\left(-\frac{1}{\sqrt{2}}\right)</m>
           </p>
         </statement>
         <solution>
           <p>
-            The angle, <m>\theta</m>, in the interval <m>[-\frac{\pi}{2},\frac{\pi}{2}]</m> that satisfies <m>\sin\theta=-\frac{\sqrt{2}}{2}</m> is <m>\theta=\sin^{-1}\left(-\frac{\sqrt{2}}{2}\right)=-\frac{\pi}{4}</m>.
+            The angle, <m>\theta</m>, in the interval <m>[-\frac{\pi}{2},\frac{\pi}{2}]</m> that satisfies <m>\sin\theta=-\frac{1}{\sqrt{2}}</m> is <m>\theta=\sin^{-1}\left(-\frac{1}{\sqrt{2}}\right)=-\frac{\pi}{4}</m>.
           </p>
         </solution>
       </task>
@@ -1213,7 +1212,7 @@
       <exercise>
         <statement>
           <p>
-            <m>\cos^{-1}\left(-\frac{\sqrt{2}}{2}\right)</m>
+            <m>\cos^{-1}\left(-\frac{1}{\sqrt{2}}\right)</m>
           </p>
         </statement>
         <answer>
@@ -1225,7 +1224,7 @@
       <exercise>
         <statement>
           <p>
-            <m>\sin^{-1}\left(\frac{\sqrt{2}}{2}\right)</m>
+            <m>\sin^{-1}\left(\frac{1}{\sqrt{2}}\right)</m>
           </p>
         </statement>
         <answer>
@@ -1273,7 +1272,7 @@
       <exercise>
         <statement>
           <p>
-            <m>\cos^{-1}\left(\frac{\sqrt{2}}{2}\right)</m>
+            <m>\cos^{-1}\left(\frac{1}{\sqrt{2}}\right)</m>
           </p>
         </statement>
         <answer>
