@@ -306,29 +306,29 @@
         </statement>
         <solution>
           <p>
-            The characteristics of the sine function start at the origin, increase to its maximum when <m>x=\frac{\pi}{2}</m>, decrease to its minimum at <m>x=\frac{3\pi}{2}</m>, and then increase again before completing one period at <m>2\pi</m>. In the given graph, the function starts at 8 when <m>x=0</m>, then increases to its maximum value of 16 at <m>x=10</m>, following the characteristics of the sine graph, before completing one period at <m>x=40</m>. This indicates a vertical shift, a vertical stretch, and a horizontal stretching of the period. There are no reflections about the <m>x</m>-axis or <m>y</m>-axis. Therefore, we need to find the equation of a function with these characteristics. 
+            The sine function starts at the origin, increases to its maximum when <m>x=\frac{\pi}{2}</m>, decreases to its minimum at <m>x=\frac{3\pi}{2}</m>, and then increases again before completing one period at <m>2\pi</m>. In the given graph, the function has a value of 8 when <m>x=0</m>, then increases to its maximum value of 16 at <m>x=10</m>, decreases to its minimum value of 0 at <m>x=30</m>, and then increases again before completing one period at <m>x=40</m>. This indicates a vertical shift, a vertical stretch, and a horizontal stretch of the period. There are no reflections about the <m>x</m>-axis or <m>y</m>-axis. Therefore, we need to find the equation of a function with these characteristics."
           </p>
           <p>
-            <em>Amplitude (<m>A</m>)</em>: Recall from <xref ref="def-amplitude"/> that the amplitude is defined as half the difference between the maximum and minimum values of the function. Here, the maximum value is 16 and the minimum value is 0, so the amplitude is:
+            <em>Amplitude (<m>A</m>)</em>: Recall from <xref ref="def-amplitude"/> that the amplitude is defined as half of the difference between the maximum and minimum values of the function. Here, the maximum value is 16 and the minimum value is 0, so the amplitude is:
             <me>|A| = \frac{16 - 0}{2} = 8</me>.
           </p>
           <p>
-            Since there are no reflections about the <m>x</m>-axis, we use the postive value to get <m>A = 8</m>.
+            Since there are no reflections about the <m>x</m>-axis, we use the positive value to get <m>A = 8</m>.
           </p>
           <p>
-            <em>Vertical Shift (<m>D</m>)</em>: The midline, calculated as <me>y=\frac{\mbox{max}+\mbox{min}}{2}=\frac{16+0}{2}=8</me>, represents the vertical shift of the graph. Therefore, <me>D=8</me>.
+            <em>Vertical Shift (<m>D</m>)</em>: The midline, calculated as <me>y=\frac{\mbox{maximum}+\mbox{minimum}}{2}=\frac{16+0}{2}=8</me>, represents the vertical shift of the graph. Therefore, <me>D=8</me>.
           </p>
           <p>
-            <em>Period (<m>B</m>)</em>: The period of a function is the length of one cycle. You can identify the period on the graph by measuring the horizontal distance between corresponding points where the graph completes a cycle. In this case, we'll use two corresponding peaks at <m>x = 10</m> and <m>x = 50</m> to obtain:
+            <em>Period (<m>B</m>)</em>: The period of a function is the length of one full repetition (or cycle). We can identify the period on the graph by measuring the horizontal distance between corresponding points where the graph completes a cycle. In this case, we'll use two corresponding peaks at <m>x = 10</m> and <m>x = 50</m> to obtain:
             <me>
               \mbox{period }=50-10=40.
             </me>
-            Note that other points on the graph, such as the minimum values or where the graph crosses the midline, could also be used to determine the period.
+            Note that other points on the graph, such as the minimum values or the points where the graph crosses the midline, could also be used to determine the period.
           </p>
           <p>
             Since <xref ref="def-period"/> defines a period as <m>\frac{2\pi}{|B|}</m>, we have:
             <me>
-              40=\frac{2\pi}{|B|}
+              40=\frac{2\pi}{|B|}.
             </me>
             Thus,
             <me>
@@ -339,14 +339,14 @@
             Since there are no reflections about the <m>y</m>-axis, we get <m>B = \frac{\pi}{20}</m>.
           </p>
           <p>
-            <em>Phase Shift (<m>C</m>)</em>: The phase shift of the graph refers to its horizontal translation. The characteristics of a sine function typically start at <m>x = 0</m> on the midline, increase to the maximum, decrease, pass the midline to the minimum, and then complete a cycle back at the midline. Since this graph follows these characteristics without any horizontal translation, there is no phase shift. Therefore, <m>C = 0</m>.
+            <em>Phase Shift (<m>C</m>)</em>: The phase shift of the graph refers to its horizontal translation. The cycle of a sine function typically starts at <m>x = 0</m> on the midline, increases to the maximum, decreases, passes the midline to the minimum, and then completes a cycle back at the midline. Since this graph follows these characteristics without any horizontal translation, there is no phase shift. Therefore, <m>C = 0</m>.
           </p>
           <p>
           </p>
           <p>
             Thus, the graph can be described by the following sine function:
             <me>
-              f(x)=8\sin\left(\frac{\pi}{20}x\right)+8
+              f(x)=8\sin\left(\frac{\pi}{20}x\right)+8.
             </me>
           </p>
         </solution>
@@ -359,7 +359,7 @@
         </statement>
         <solution>
           <p>
-            Since the cosine function starts at the maximum value when <m>x=0</m> before decreasing to its minimum and then increasing to complete one period, the graph provides several options for phase shifts. By selecting a peak and determining the direction and value of the phase shift needed for the cosine function to reach that peak, we can align it with the desired position. For example, if we choose the peak at <m>x=-30</m>, the cosine function will shift 30 units to the left. Similarly, for peaks at <m>x=10</m> or <m>x=50</m>, the cosine function would need to shift 10 or 50 units, respectively, to the right. Since the peak at <m>x=10</m> aligns closely with the peak of the original cosine function when <m>x=0</m>, we opt for this phase shift. Additionally, similar to the graph of the sine function, there is a vertical shift, a vertical stretch, and a horizontal stretch, with no reflections about the <m>y</m>-axis or the <m>x</m>-axis.
+            Since the cosine function has its maximum value when <m>x=0</m> before decreasing to its minimum and then increasing to complete one period, the graph provides several options for phase shifts. By selecting a peak and determining the direction and value of the phase shift needed for the cosine function to reach that peak, we can align it with the given graph. For example, if we choose the peak at <m>x=-30</m>, the cosine function will shift 30 units to the left. Similarly, for peaks at <m>x=10</m> or <m>x=50</m>, the cosine function would need to shift 10 or 50 units, respectively, to the right. Since the peak at <m>x=10</m> is the closest to the peak of the original cosine function when <m>x=0</m>, we opt for this phase shift. Additionally, as the graph of the sine function, there is a vertical shift, a vertical stretch, and a horizontal stretch, with no reflections about the <m>y</m>-axis or the <m>x</m>-axis.
           </p>
           <p>
             <em>Amplitude (<m>A</m>)</em>: The amplitude of a cosine function is the same as that of the corresponding sine function. Thus, <m>|A| = 8</m>. Since there are no reflections about the <m>x</m>-axis, we use the positive value to get <m>A = 8</m>.
@@ -375,7 +375,7 @@
             <me>
               g(x)=8\cos\left(\frac{\pi}{20}\left(x\right)\right)+8
             </me>
-            and overlap this graph with the graph of the original.
+            and overlap this graph with the given graph  .
           </p>
           <image xml:id="example-eqn-from-graph-cos-phase-shift">
             <latex-image>
@@ -389,8 +389,8 @@
               xticklabel style={black},
               xlabel=\(x\),
               ylabel=\(y\)]
-              \addplot[domain=-40:80,samples=200,blue,line width=1pt]{8*sin(deg(2*pi/40*x))+8};
-              \addplot[domain=-40:80,samples=200,red,line width=1pt]{8*cos(deg(2*pi/40*x))+8};
+              \addplot[domain=-40:80,samples=200,blue,line width=1pt]{8*sin(deg(2*pi/40*x))+8}node[right,pos=0.08,yshift=13,xshift=-20]{$y=8\sin\left(\frac{\pi}{20}(x)\right)+8$};
+              \addplot[domain=-40:80,samples=200,red,line width=1pt]{8*cos(deg(2*pi/40*x))+8}node[right,pos=0.67,yshift=13,xshift=-20]{$y=8\cos\left(\frac{\pi}{20}(x)\right)+8$};
               \end{axis}
               \end{tikzpicture}
             </latex-image>
@@ -418,7 +418,7 @@
 
         </p>
         <p>
-          The total sunlight duration in Munda, on the island of New Georgia in the Solomon Islands in 2025, is plotted in <xref ref="fig-ex-munda-daylight"/>. On the 21st of June 2025 (the 172nd day of the year), which is the shortest day of the year in Munda, the total sunlight duration is 11 hours, 38 minutes, and 15 seconds (approximately 11.64 hours). Conversely, on the 22nd of December 2025 (the 356th day of the year), which is the longest day of the year, the total sunlight duration is 12 hours, 36 minutes, and 28 seconds (approximately 12.61 hours). Find a function of the form <m>y=A\cos(B(x-C))+D</m> to model the total hours of daylight in Munda in 2025, assuming that one period represents one year or 365 days.
+          The total sunlight duration in Munda, on the island of New Georgia in the Solomon Islands in 2025, is plotted in <xref ref="fig-ex-munda-daylight"/>. On the 21st of June 2025 (the 172nd day of the year), which is the shortest day of the year in Munda, the total sunlight duration is 11 hours, 38 minutes, and 17 seconds (approximately 11.64 hours). Conversely, on the 22nd of December 2025 (the 356th day of the year), which is the longest day of the year, the total sunlight duration is 12 hours, 36 minutes, and 44 seconds (approximately 12.61 hours). Find a function of the form <m>y=A\cos(B(x-C))+D</m> to model the total hours of daylight in Munda in 2025, assuming that one period represents one year or 365 days.
         </p>
         <figure xml:id="fig-ex-munda-daylight">
           <caption>Hours of daylight in Munda, Solomon Islands. Source: NOAA Solar Calculator.</caption>
@@ -444,9 +444,9 @@
       </statement>
       <solution>
         <p>
-          <em>Amplitdue (<m>A</m>)</em>: From the definition of amplitude (<xref ref="def-amplitude"/>),
+          <em>Amplitude (<m>A</m>)</em>: From the definition of amplitude (<xref ref="def-amplitude"/>),
           <me>
-            |A| = \frac{\text{max} - \text{min}}{2} = \frac{12.61 - 11.64}{2} = 0.485
+            |A| = \frac{\text{maximum} - \text{minimum}}{2} = \frac{12.61 - 11.64}{2} = 0.485
           </me>.
           Assuming no reflections about the <m>x</m>-axis, we have:
           <me>
@@ -466,7 +466,7 @@
         <p>
           <em>Vertical Shift (<m>D</m>)</em>: The value of the midline represents the average duration of daylight, which is the vertical shift:
           <me>
-            D = \frac{\text{max} + \text{min}}{2} = \frac{12.61 + 11.64}{2} = 12.125
+            D = \frac{\text{maximum} + \text{minimum}}{2} = \frac{12.61 + 11.64}{2} = 12.125
           </me>.
         </p>
         <p>
@@ -483,7 +483,7 @@
       </p>
     </remark>
     <example xml:id="example-temp-christchurch">
-      <title>Modeling the Temperate in Christchurch</title>
+      <title>Modeling the Temperature in Christchurch</title>
       <statement>
         <p>
           Another effect of axial tilt besides daylight hours is temperature, which is also periodic. The average monthly temperature for Christchurch, New Zealand is given in <xref ref="tab_christchurch-temperature"/> (Source: National Institute of Water and Atmospheric Research (NIWA). Retrieved 18 March 2024). Find a sinusoidal function of the form <m>y = A \cos(B(x - C)) + D</m> to model the average monthly temperature of Christchurch.
@@ -577,12 +577,12 @@
           </latex-image>
         </image>
         <p>
-          Examining the plot of the data points, we see this looks like the graph of a cosine function with no reflections about the <m>x</m>-axis or <m>y</m>-axis.
+          Examining the plot of the data points, we see this looks like the graph of a cosine function with no reflections about the <m>x</m>-axis or the <m>y</m>-axis.
         </p>
         <p>
           <em>Amplitude (<m>A</m>)</em>: The amplitude is
           <me>
-            |A|=\frac{\mbox{max}-\mbox{min}}{2}=\frac{17.5-6.6}{2}=5.45
+            |A|=\frac{\mbox{maximum}-\mbox{minimum}}{2}=\frac{17.5-6.6}{2}=5.45
           </me>.
           Since there are no reflections about the <m>x</m>-axis, we get <m>A=5.45</m>
         </p>
@@ -591,9 +591,9 @@
           <me>B=\frac{2\pi}{12}=\frac{\pi}{6}</me>.
         </p>
         <p>
-          <em>Vertical Shift (<m>D</m>)</em>: The vertical shift is the value of the average data:
+          <em>Vertical Shift (<m>D</m>)</em>: The vertical shift is the average of the maximum and minimum values of the data, which corresponds to the midline of the graph:
           <me>
-            D=\frac{\mbox{max}+\mbox{min}}{2}=\frac{17.5+6.6}{2}=12.05
+            D=\frac{\mbox{maximum}+\mbox{minimum}}{2}=\frac{17.5+6.6}{2}=12.05
           </me>.
         </p>
         <p>
@@ -647,23 +647,23 @@
           </li>
           <li>
             <p>
-              Determine the characteristics of the data, including vertical and horizontal stretching, phase shifts, vertical shifts, and reflections about the <m>x</m>-axis or <m>y</m>-axis.
+              Determine the characteristics of the data, including vertical and horizontal stretching, phase shifts, vertical shifts, and reflections about the <m>x</m>-axis or the <m>y</m>-axis.
             </p>
           </li>
           <li>
             <p>
               <em>Amplitude</em>: Calculate the amplitude using the formula
               <me>
-                |A|=\frac{\mbox{max}-\mbox{min}}{2}
+                |A|=\frac{\mbox{maximum}-\mbox{minimum}}{2}
               </me>.
               Use the positive value if there is no reflection about the <m>x</m>-axis, and use the negative value if there is a reflection.
             </p>
           </li>
           <li>
             <p>
-              <em>Vertical Shift</em>: Determine the vertical shift which is the average value of the data, using the formula
+              <em>Vertical Shift (<m>D</m>)</em>: The vertical shift is the average of the maximum and minimum values of the data, which corresponds to the midline of the graph. We can calculate the vertical shift using the formula:
               <me>
-                D=\frac{\mbox{max}+\mbox{min}}{2}
+                D=\frac{\mbox{maximum}+\mbox{minimum}}{2}
               </me>.
             </p>
           </li>
@@ -678,7 +678,7 @@
           </li>
           <li>
             <p>
-              <em>Phase Shift</em>: Determine the phase shift by comparing points from the data to those on the sine and cosine function, such as maximum and minimum values as well as those values at the midline. This information will give you the phase shift, <m>C</m>.
+              <em>Phase Shift</em>: Determine the phase shift, <m>C</m>, by calculating the distance between points from the data and their corresponding points on the sine or cosine function, such as the maximum, minimum, or values on the midline.
             </p>
           </li>
         </ol>
@@ -771,7 +771,7 @@
   <subsection xml:id="subsec-finding-sinusoidal-equations-with-technology">
     <title>Finding Sinusoidal Equations with Technology</title>
     <p>
-      Some graphing utilities, such as the TI-83 calculator or <url href="https://www.desmos.com/calculator" visual="Desmos Graphing Calculator">Desmos Graphing Calculator</url>, have functions that allow you to find a sinusoidal best-fit function given data. While some devices can find the best-fit for both sine and cosine functions, others only calculate the best-fit line for sine. For example, the TI-83 uses the <kbd>SinReg</kbd> function to calculate the sine function.
+      Some graphing utilities, such as the TI-83 calculator or <url href="https://www.desmos.com/calculator" visual="Desmos Graphing Calculator">Desmos Graphing Calculator</url>, have functions that allow us to find a sinusoidal best-fit function given data. While some devices can find the best-fit for both sine and cosine functions, others calculate the best-fit line only for sine. For example, the TI-83 uses the <kbd>SinReg</kbd> function to calculate the sine function.
     </p>
     <example>
       <title>Finding the Sinusoidal Equation using Desmos</title>
@@ -785,7 +785,7 @@
           <ol>
             <li>
               <p>
-                Open a new table in the Desmos Graphing Calculator by either typing <q>table</q> in a blank expression line or clicking the Add Item menu in the upper left corner and selecting Table.
+                Open a new table in the Desmos Graphing Calculator by either typing <q>table</q> in a blank expression line or by clicking the Add Item menu in the upper left corner and selecting Table.
               </p>
             </li>
             <li>
@@ -795,7 +795,7 @@
             </li>
             <li>
               <p>
-                Use the Zoom Fit icon (a magnifying glass with a + symbol) at the bottom left corner of the table to automatically adjust the graph settings window to best display your data.
+                Use the Zoom Fit icon (a magnifying glass with a + symbol) at the bottom left corner of the table to automatically adjust the graph settings window to best display the data.
               </p>
             </li>
             <li>
@@ -805,16 +805,16 @@
             </li>
             <li>
               <p>
-                The parameters for the best-fit function will be returned: <m>A=5.2141</m>, <m>B=0.534145</m>, <m>C=1.19926</m>, <m>D=12.1509</m>. Thus, the best-fit cosine function is:
+                The parameters for the best-fit function will be returned: <m>A=5.21412</m>, <m>B=0.534145</m>, <m>C=1.19926</m>, <m>D=12.1509</m>. Thus, the best-fit cosine function is:
                 <me>
-                  y = 5.2141 \cos(0.534145(x - 1.19926)) + 12.1509
+                  y = 5.21412 \cos(0.534145(x - 1.19926)) + 12.1509
                 </me>.
               </p>
             </li>
           </ol>
         </p>
         <p>
-          <xref ref="fig-desmos-christchurch-temp"/> displays an interactive Desmos Graphing Calculator with the completed table and the line of best fit plotted together.
+          <xref ref="fig-desmos-christchurch-temp"/> displays an interactive Desmos Graphing Calculator with the completed table and the curve of best fit plotted together.
         </p>
         <figure xml:id="fig-desmos-christchurch-temp"><caption>Given data points in a table, Desmos can create a sinusoidal function to model the data.</caption><interactive desmos="30ampt5obd" aspect="0.67:1.0" label="desmos-christchurch-temp"/></figure>
       </solution>
@@ -903,7 +903,7 @@
       <exercise>
         <statement>
           <p>
-            Amplitude =<m>\frac{1}{2}</m>; Period  <m>=2\pi</m>; Phase Shift <m>=\frac{\pi}{4}</m>.
+            Amplitude: <m>\frac{1}{2}</m>; Period: <m>2\pi</m>; Phase Shift: <m>\frac{\pi}{4}</m>.
           </p>
         </statement>
         <answer>
@@ -927,7 +927,7 @@
       <exercise>
         <statement>
           <p>
-            Amplitude: <m>2</m>, Period: <m>\frac{3\pi}{2}</m>; Phase Shift <m>=\frac{\pi}{3}</m>; Vertical Shift = <m>-1</m>.
+            Amplitude: <m>2</m>, Period: <m>\frac{3\pi}{2}</m>; Phase Shift: <m>\frac{\pi}{3}</m>; Vertical Shift: <m>-1</m>.
           </p>
         </statement>
         <answer>
@@ -939,7 +939,7 @@
       <exercise>
         <statement>
           <p>
-            Amplitude = 2, Period = <m>20</m>; Phase Shift <m>=-\frac{\pi}{4}</m>; Vertical Shift = 3.
+            Amplitude: <m>2</m>, Period: <m>20</m>; Phase Shift: <m>-\frac{\pi}{4}</m>; Vertical Shift: 3.
           </p>
         </statement>
         <answer>
@@ -958,7 +958,7 @@
       <exercise>
         <statement>
           <p>
-            Amplitude = 1.8; Period = <m>2\pi</m>.
+            Amplitude: 1.8; Period: <m>2\pi</m>.
           </p>
         </statement>
         <answer>
@@ -970,7 +970,7 @@
       <exercise>
         <statement>
           <p>
-            Amplitude = 2.5; Period = <m>\frac{\pi}{4}</m>.
+            Amplitude: 2.5; Period: <m>\frac{\pi}{4}</m>.
           </p>
         </statement>
         <answer>
@@ -982,7 +982,7 @@
       <exercise>
         <statement>
           <p>
-            Amplitude = 2; Period <m>=\frac{7\pi}{4}</m>; Reflection in the <m>x</m>-axis.
+            Amplitude: 2; Period: <m>\frac{7\pi}{4}</m>; Reflection in the <m>x</m>-axis.
           </p>
         </statement>
         <answer>
@@ -994,7 +994,7 @@
       <exercise>
         <statement>
           <p>
-            Amplitude = 1.5; Period <m>=\frac{4\pi}{5}</m>; Reflection in the <m>x</m>-axis.
+            Amplitude: 1.5; Period: <m>\frac{4\pi}{5}</m>; Reflection in the <m>x</m>-axis.
           </p>
         </statement>
         <answer>
@@ -1006,7 +1006,7 @@
       <exercise>
         <statement>
           <p>
-            Amplitude = 4; Period <m>=\frac{5\pi}{3}</m>; Vertical Shift = -3.
+            Amplitude: 4; Period: <m>\frac{5\pi}{3}</m>; Vertical Shift: -3.
           </p>
         </statement>
         <answer>
@@ -1018,7 +1018,7 @@
       <exercise>
         <statement>
           <p>
-            Amplitude = 3.5; Period <m>=\frac{4\pi}{3}</m>; Vertical Shift = 2.
+            Amplitude: 3.5; Period: <m>\frac{4\pi}{3}</m>; Vertical Shift: 2.
           </p>
         </statement>
         <answer>
@@ -1030,7 +1030,7 @@
       <exercise>
         <statement>
           <p>
-            Amplitude = 3; Period = <m>\frac{3\pi}{2}</m>; Phase Shift <m>=\frac{\pi}{6}</m>.
+            Amplitude: 3; Period: <m>\frac{3\pi}{2}</m>; Phase Shift: <m>\frac{\pi}{6}</m>.
           </p>
         </statement>
         <answer>
@@ -1042,7 +1042,7 @@
       <exercise>
         <statement>
           <p>
-            Amplitude = 2.5; Period = <m>\frac{\pi}{3}</m>; Phase Shift <m>=\frac{\pi}{4}</m>.
+            Amplitude: 2.5; Period: <m>\frac{\pi}{3}</m>; Phase Shift: <m>\frac{\pi}{4}</m>.
           </p>
         </statement>
         <answer>
@@ -1054,7 +1054,7 @@
       <exercise>
         <statement>
           <p>
-            Amplitude = 2; Period = <m>3\pi</m>; Phase Shift <m>=-\frac{\pi}{2}</m>; Vertical Shift = 2.
+            Amplitude: 2; Period: <m>3\pi</m>; Phase Shift: <m>-\frac{\pi}{2}</m>; Vertical Shift: 2.
           </p>
         </statement>
         <answer>
@@ -1066,7 +1066,7 @@
       <exercise>
         <statement>
           <p>
-            Amplitude = 1.2; Period = <m>\frac{5\pi}{2}</m>; Phase Shift <m>=-\frac{\pi}{3}</m>; Vertical Shift = 3.
+            Amplitude: 1.2; Period: <m>\frac{5\pi}{2}</m>; Phase Shift: <m>-\frac{\pi}{3}</m>; Vertical Shift: 3.
           </p>
         </statement>
         <answer>
@@ -1079,7 +1079,7 @@
     <exercisegroup cols="2">
       <introduction>
         <p>
-          For each given graph, identify the amplitude, period, phase shift, and vertical shift. Write an equation that represents these characteristics of the form <m>y=A\sin(B(x-C))+D</m>.
+          For each given graph, identify the amplitude, period, phase shift, and vertical shift, and write an equation of the form <m>y=A\sin(B(x-C))+D</m> that represents these characteristics.
         </p>
       </introduction>
       <exercise>
@@ -1384,10 +1384,10 @@
             Kauaʻi, situated at 22.1° North latitude in Hawaiʻi, has its longest day, lasting 13.48 hours, on 20 June 2025 (the 171st day of the year), and its shortest day, lasting 10.78 hours, on 21 December 2025 (the 355th day of the year).
           </p>
           <p>
-            Mangai, located at 21.9° South latitude in the Cook Islands, experiences its longest day, lasting 13.47 hours, on 21 December 2025 (the 355th day of the year), and its shortest day, lasting 10.79 hours, on 20 June 2025 (the 171st day of the year).
+            Mangaia, located at 21.9° South latitude in the Cook Islands, experiences its longest day, lasting 13.47 hours, on 21 December 2025 (the 355th day of the year), and its shortest day, lasting 10.79 hours, on 20 June 2025 (the 171st day of the year).
           </p>
           <p>
-            It's noteworthy that Kauaʻi and Mangai are situated east of the International Date Line, causing them to experience the winter and summer solstice one day earlier than islands located west of the International Date Line.
+            It's noteworthy that Kauaʻi and Mangaia are situated east of the International Date Line, causing them to experience the winter and summer solstice one day earlier than islands located west of the International Date Line.
           </p>
           <image xml:id="kauai-mangaia-daylight">
             <latex-image>
@@ -1545,7 +1545,7 @@
       <introduction>
         <p>
           Use the table below, which gives the average monthly temperatures (in Celsius) at various latitudes in the South Pacific, to answer the following questions. Express your answers in the form <m>y=A\sin(B(x-C))+D</m>. Source: Data for Apia, Suva, Nukuʻalofa, and Rapa Nui obtained from <url href="http://www.worldclimate.com"></url>, retrieved on 18 March 2024; Data for Whangārei and Dunedin obtained from <url href="https://niwa.co.nz/education-and-training/schools/resources/climate/meanairtemp"
-          visual="National Institute of Water and Atmospheric Research (NIWA)">National Institute of Water and Atmospheric Research (NIWA)</url>, retrieved on 18 March 2024.
+          visual="National Institute of Water and Atmospheric Research (NIWA)"> National Institute of Water and Atmospheric Research (NIWA)</url>, retrieved on 18 March 2024.
         </p>
         <tabular halign="center">
           <row>
@@ -1697,7 +1697,7 @@
         <task>
           <statement>
             <p>
-              Suva, Fiji (8.1°S)
+              Suva, Fiji (18.1°S)
             </p>
           </statement>
           <answer>
@@ -1776,7 +1776,7 @@
         <task>
           <statement>
             <p>
-              Suva, Fiji (8.1°S)
+              Suva, Fiji (18.1°S)
             </p>
           </statement>
           <answer>
