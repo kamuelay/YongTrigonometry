@@ -166,8 +166,8 @@
         <p>
           Therefore, the general solution to the equation is:
           <me>
-            x = 0+2k\pi = 2k\pi,
-          </me>
+            x = 0+2k\pi = 2k\pi
+          </me>,
           where <m>k</m> is any integer.
         </p>
       </solution>
