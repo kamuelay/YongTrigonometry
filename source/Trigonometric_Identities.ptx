@@ -8,7 +8,7 @@
   <subsection xml:id="subsec-fundamental-trig-identities">
     <title>Fundamental Trigonometric Identities</title>
     <p>
-      An <term>identity</term> in mathematics is an equation that remains true for every valid values of its variables. We begin by reviewing some of the basic trigonometric identities from <xref ref="trigonometric_functions"/>, collectively known as the fundamental trigonometric identities.
+      An <term>identity</term> in mathematics is an equation that remains true for all valid values of its variables. We begin by reviewing some of the basic trigonometric identities from <xref ref="trigonometric_functions"/>, collectively known as the fundamental trigonometric identities.
     </p>
     <definition xml:id="def-fundamental-trig-identities">
       <statement>
@@ -16,7 +16,7 @@
           <idx>
             <h>fundamental trigonometric identities</h>
           </idx>
-          The <term>fundamental trigonometric identities</term> are
+          The <term>fundamental trigonometric identities</term> are:
         </p>
         <p>
           <ol>
@@ -49,16 +49,16 @@
             </li>
             <li>
               <p>
-                <term>Odd-Even Identities</term> (<xref ref="def-even-odd-trig"/>)
+                <term>Even-Odd Identities</term> (<xref ref="def-even-odd-trig"/>)
               </p>
               <p>
-                The cosine and secant functions are <term>even</term>
+                The cosine and secant functions are <term>even</term>.
                 <md>
                   <mrow>\cos(-\theta)\amp =\cos\theta \amp  \sec(-\theta)\amp =\sec\theta</mrow>
                 </md>
               </p>
               <p>
-                The sine, cosecant, tangent, and cotangent functions are <term>odd</term>
+                The sine, cosecant, tangent, and cotangent functions are <term>odd</term>.
                 <md>
                   <mrow>\sin(-\theta)\amp =-\sin\theta \amp  \csc(-\theta)\amp =-\csc(\theta)</mrow>
                   <mrow>\tan(-\theta)\amp =-\tan\theta \amp  \cot(-\theta)\amp =-\cot(\theta)</mrow>
@@ -88,26 +88,26 @@
     <example>
       <statement>
         <p>
-          Simplify <me>\tan^2(x)\cdot\csc^2(x)</me>
+          Simplify <me>\tan^2(x)\cdot\csc^2(x)</me>.
         </p>
       </statement>
       <solution>
         <p>
-          We can simplify this expression by writing each function in terms of sine and cosine functions
-          <me>\tan^2(x)\cdot\csc^2(x)=\frac{\sin^2(x)}{\cos^2(x)}\cdot\frac{1}{\sin^2(x)}=\frac{1}{\cos^2(x)}=\sec^2(x)</me>
+          We can simplify this expression by writing each function in terms of sine and cosine functions:
+          <me>\tan^2(x)\cdot\csc^2(x)=\frac{\sin^2(x)}{\cos^2(x)}\cdot\frac{1}{\sin^2(x)}=\frac{1}{\cos^2(x)}=\sec^2(x)</me>.
         </p>
       </solution>
     </example>
     <example>
       <statement>
         <p>
-          Simplify <me>\sin^2(x)(\cot^2(x) - 1)</me>
+          Simplify <me>\sin^2(x)(\cot^2(x) - 1)</me>.
         </p>
       </statement>
       <solution>
         <p>
           We can simplify this expression by first using the Pythagorean Identity and then using the Reciprocal Identity:
-          <me>\sin^2(x)(\cot^2(x) - 1) = \sin^2(x)(-\csc^2(x)) = \sin^2(x)\left(-\frac{1}{\sin^2(x)}\right) = -1</me>
+          <me>\sin^2(x)(\cot^2(x) - 1) = \sin^2(x)(-\csc^2(x)) = \sin^2(x)\left(-\frac{1}{\sin^2(x)}\right) = -1</me>.
         </p>
       </solution>
     </example>
@@ -131,7 +131,7 @@
           </li>
           <li>
             <p>
-              Transform the expression using techniques such as trigonometric identities, rewriting in terms of sine and cosine functions, factoring, common denominator, or multiplying numerator and denominator by the same term.
+              Transform the expression using techniques such as trigonometric identities, rewriting in terms of sine and cosine functions, factoring, common denominator, or multiplying the numerator and denominator by the same term.
             </p>
           </li>
           <li>
@@ -141,7 +141,7 @@
           </li>
           <li>
             <p>
-              If you have trouble making one side resemble the other, try manipulating both sides separately, and make them match to reach the same result.
+              If it is difficult to make one side equal the other, try manipulating both sides separately and make them match to reach the same result.
             </p>
           </li>
         </ol>
@@ -157,7 +157,7 @@
           Verify the identity
           <me>
             \frac{\sin(x)}{\tan(x)}=\cos(x)
-          </me>
+          </me>.
         </p>
       </statement>
       <solution>
@@ -187,12 +187,12 @@
             <mrow> \amp = \cos^2(x)\cdot\left(\cos^2(x)+\sin^2(x)\right) </mrow>
             <mrow> \amp = \cos^2(x)\cdot1 </mrow>
             <mrow> \amp = \cos^2(x) </mrow>
-          </md>
+          </md>.
         </p>
       </solution>
     </example>
     <example>
-      <title>Verify the Identity by Odd-Even Properties</title>
+      <title>Verify the Identity by Even-Odd Properties</title>
       <statement>
         <p>
           Verify the identity
@@ -203,10 +203,10 @@
       </statement>
       <solution>
         <p>
-          By the Odd-Even Properties, we have <m>\sin(-x)=-\sin(x)</m> and <m>\cos(-x)=\cos(x)</m>. Thus,
+          By the Even-Odd Properties, we have <m>\sin(-x)=-\sin(x)</m> and <m>\cos(-x)=\cos(x)</m>. Thus,
           <me>
             \frac{\cos(x)-\sin(x)}{\cos(-x)+\sin(-x)}=\frac{\cos(x)-\sin(x)}{\cos(x)-\sin(x)}=1
-          </me>
+          </me>.
         </p>
       </solution>
     </example>
@@ -217,8 +217,7 @@
           Verify the identity
           <me>
             \frac{\sin(x)}{\sin(x)+\cos(x)}=\frac{1}{1+\cot(x)}
-          </me>
-          
+          </me>.
         </p>
       </statement>
       <solution>
@@ -228,7 +227,7 @@
             <mrow> \frac{\sin(x)}{\sin(x)+\cos(x)}\cdot\frac{\frac{1}{\sin(x)}}{\frac{1}{\sin(x)}} \amp = \frac{\cancel{\sin(x)}\cdot\frac{1}{\cancel{\sin(x)}}}{\cancel{\sin(x)}\cdot\frac{1}{\cancel{\sin(x)}}+\cos(x)\cdot\frac{1}{\sin(x)}} </mrow>
             <mrow> \amp = \frac{1}{1+\frac{\cos(x)}{\sin(x)}} </mrow>
             <mrow> \amp =\frac{1}{1+\cot(x)} </mrow>
-          </md>
+          </md>.
         </p>
       </solution>
     </example>
@@ -244,7 +243,7 @@
       </statement>
       <solution>
         <p>
-          We begin by simplifying the right-hand side of the equation
+          We begin by simplifying the right-hand side of the equation:
           <md>
             <mrow>(\csc x-\cot x)^2 \amp = \csc^2x-2\csc x\cot x+\cot^2x </mrow>
             <mrow> \amp = \csc^2x+\cot^2x-2\csc x\cot x </mrow>
@@ -253,7 +252,7 @@
           </md>.
         </p>
         <p>
-          Next, we will manipulate the left-hand side of the equation to get it to look like <m>\csc^2x+\cot^2x-2\frac{\cos x}{\sin^2 x}</m>.
+          Next, we will manipulate the left-hand side of the equation to simplify it into <m>\csc^2x+\cot^2x-2\frac{\cos x}{\sin^2 x}</m>.
           <md>
             <mrow> \frac{1-\cos x}{1+\cos x} \amp = \frac{(1-\cos x)(1-\cos x)}{(1+\cos x)(1-\cos x)} </mrow>
             <mrow> \amp = \frac{1-2\cos x+\cos^2x}{1-\cos^2x} </mrow>
@@ -263,7 +262,7 @@
           </md>.
         </p>
         <p>
-          Thus, since the left-hand side and the right-hand side of the equation can both be manipulated to <m>\csc^2x+\cot^2x-2\frac{\cos x}{\sin^2 x}</m>, we have established the identity.
+          Thus, since the left-hand side and the right-hand side of the equation can both be manipulated to equal <m>\csc^2x+\cot^2x-2\frac{\cos x}{\sin^2 x}</m>, we have established the identity.
         </p>
       </solution>
     </example>
@@ -475,7 +474,7 @@
       <exercise>
         <statement>
           <p>
-            <m>1-\frac{\cos^2 t}{1+\sin t}=\sin t</m>
+            <m>\frac{\tan^2 t}{\sec t+1}=\frac{1-\cos t}{\cos t}</m>
           </p>
         </statement>
       </exercise>
