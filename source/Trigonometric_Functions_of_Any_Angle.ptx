@@ -40,8 +40,8 @@
           Since <m>P(x,y)</m> is in Quadrant II, <m>x\lt 0</m> and <m>y>0</m>. Note that <m>r>0</m>. Then we have
           <md>
             <mrow>\sin\theta\amp =\frac{y}{r}=\frac{(+)}{(+)}=(+), \amp  \cos\theta\amp =\frac{x}{r}=\frac{(-)}{(+)}=(-), \amp  \tan\theta\amp =\frac{y}{x}=\frac{(+)}{(-)}=(-),</mrow>
-            <mrow>\csc\theta\amp =\frac{r}{y}=\frac{(+)}{(+)}=(+), \amp  \sec\theta\amp =\frac{r}{x}=\frac{(+)}{(-)}=(-), \amp  \cot\theta\amp =\frac{x}{y}=\frac{(-)}{(+)}=(-).</mrow>
-          </md>
+            <mrow>\csc\theta\amp =\frac{r}{y}=\frac{(+)}{(+)}=(+), \amp  \sec\theta\amp =\frac{r}{x}=\frac{(+)}{(-)}=(-), \amp  \cot\theta\amp =\frac{x}{y}=\frac{(-)}{(+)}=(-)</mrow>
+          </md>.
         </p>
       </solution>
     </example>
@@ -198,8 +198,8 @@
           <md>
             <mrow>\csc\theta\amp =\frac{1}{\sin\theta}=\frac{1}{-\frac{12}{13}}=-\frac{13}{12},\\
               \sec\theta\amp =\frac{1}{\cos\theta}=\frac{1}{-\frac{5}{13}}=-\frac{13}{5},\\
-              \cot\theta\amp =\frac{1}{\tan\theta}=\frac{1}{\frac{12}{5}}=\frac{5}{12}.</mrow>
-          </md>
+              \cot\theta\amp =\frac{1}{\tan\theta}=\frac{1}{\frac{12}{5}}=\frac{5}{12}</mrow>
+          </md>.
         </p>
       </solution>
     </example>
@@ -1111,8 +1111,8 @@
                 <md>
                   <mrow>\frac{20\pi}{3}-2\pi =\amp \frac{20\pi}{3}-\frac{6\pi}{3}=\frac{14\pi}{3},</mrow>
                   <mrow>\frac{20\pi}{3}-4\pi =\amp \frac{20\pi}{3}-\frac{12\pi}{3}=\frac{8\pi}{3},</mrow>
-                  <mrow>\frac{20\pi}{3}-6\pi =\amp \frac{20\pi}{3}-\frac{18\pi}{3}=\frac{2\pi}{3}.</mrow>
-                </md>
+                  <mrow>\frac{20\pi}{3}-6\pi =\amp \frac{20\pi}{3}-\frac{18\pi}{3}=\frac{2\pi}{3}</mrow>
+                </md>.
                 From <xref ref="example_find-ref-angles">Example</xref>, the reference angle for <m>\frac{2\pi}{3}</m> is <m>\theta'=\frac{\pi}{3}</m>.
               </p>
             </li>
@@ -1187,8 +1187,8 @@
         <p>
           <md>
             <mrow>\sin(\theta+2\pi)\amp =\sin\theta, \amp  \cos(\theta+2\pi)\amp =\cos\theta, \amp  \tan(\theta+\pi)\amp =\tan\theta,</mrow>
-            <mrow>\csc(\theta+2\pi)\amp =\csc\theta, \amp  \sec(\theta+2\pi)\amp =\sec\theta, \amp  \cot(\theta+\pi)\amp =\cot\theta.</mrow>
-          </md>
+            <mrow>\csc(\theta+2\pi)\amp =\csc\theta, \amp  \sec(\theta+2\pi)\amp =\sec\theta, \amp  \cot(\theta+\pi)\amp =\cot\theta</mrow>
+          </md>.
         </p>
       </statement>
     </definition>
@@ -1635,8 +1635,8 @@
             <mrow>\sin^2\theta+\left(\frac{3}{5}\right)^2\amp = 1</mrow>
             <mrow>\sin^2\theta+\frac{9}{25}\amp = 1</mrow>
             <mrow>\sin^2\theta\amp = 1-\frac{9}{25}</mrow>
-            <mrow>\sin^2\theta\amp = \frac{16}{25}.</mrow>
-          </md>
+            <mrow>\sin^2\theta\amp = \frac{16}{25}</mrow>
+          </md>.
         </p>
         <p>
           Taking the square root of both sides,
@@ -1672,15 +1672,15 @@
       </idx>
       The cosine and secant functions are <term>even</term>.
       <md>
-        <mrow>\cos(-\theta)\amp =\cos\theta, \amp  \sec(-\theta)\amp =\sec\theta.</mrow>
-      </md>
+        <mrow>\cos(-\theta)\amp =\cos\theta, \amp  \sec(-\theta)\amp =\sec\theta</mrow>
+      </md>.
     </p>
     <p>
       The sine, cosecant, tangent, and cotangent functions are <term>odd</term>.
       <md>
         <mrow>\sin(-\theta)\amp =-\sin\theta, \amp  \csc(-\theta)\amp =-\csc(\theta),</mrow>
-        <mrow>\tan(-\theta)\amp =-\tan\theta, \amp  \cot(-\theta)\amp =-\cot(\theta).</mrow>
-      </md>
+        <mrow>\tan(-\theta)\amp =-\tan\theta, \amp  \cot(-\theta)\amp =-\cot(\theta)</mrow>
+      </md>.
     </p>
     </statement>
     </definition>
@@ -1709,14 +1709,14 @@
       <p>
         Using the <xref ref="def_6-trig-functions-unit-circle"/> for the six trigonometric functions we have
         <md>
-          <mrow>\sin\theta\amp =y, \amp \sin(-\theta)\amp =-y, \amp \cos\theta\amp =x, \amp \cos(-\theta)\amp =x.</mrow>
-        </md>
+          <mrow>\sin\theta\amp =y, \amp \sin(-\theta)\amp =-y, \amp \cos\theta\amp =x, \amp \cos(-\theta)\amp =x</mrow>
+        </md>.
       </p>
       <p>
         So
         <md>
-          <mrow>\sin(-\theta)\amp =-y=-\sin\theta,\amp  \cos(-\theta)\amp =x=\cos\theta.</mrow>
-        </md>
+          <mrow>\sin(-\theta)\amp =-y=-\sin\theta,\amp  \cos(-\theta)\amp =x=\cos\theta</mrow>
+        </md>.
       </p>
       <p>
         Thus we conclude that sine is an odd function and cosine is an even function. Next, using the Quotient (<xref ref="def_quotient-identities"/>) and Reciprocal Identities (<xref ref="def_reciprocal-identities"/>) we get
@@ -1724,8 +1724,8 @@
           <mrow>\tan(-\theta)\amp =\frac{\sin(-\theta)}{\cos(-\theta)}=\frac{-\sin\theta}{\cos\theta}=-\tan\theta,</mrow>
           <mrow>\cot(-\theta)\amp =\frac{1}{\tan(-\theta)}=\frac{1}{-\tan\theta}=-\cot\theta,</mrow>
           <mrow>\csc(-\theta)\amp =\frac{1}{\sin(-\theta)}=\frac{1}{-\sin\theta}=-\csc\theta,</mrow>
-          <mrow>\sec(-\theta)\amp =\frac{1}{\cos(-\theta)}=\frac{1}{-\cos\theta}=\sec\theta.</mrow>
-        </md>
+          <mrow>\sec(-\theta)\amp =\frac{1}{\cos(-\theta)}=\frac{1}{-\cos\theta}=\sec\theta</mrow>
+        </md>.
       </p>
       <p>
         Thus tangent, cotangent, cosecant are odd functions and secant is an even function.

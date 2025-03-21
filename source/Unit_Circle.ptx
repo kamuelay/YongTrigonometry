@@ -103,8 +103,8 @@
           Let <m>t</m> be any real number and let <m>P(x,y)</m> be the terminal point on the unit circle corresponding with <m>t</m>. Then
           <md>
             <mrow>\sin t\amp =y \amp  \cos t\amp =x \amp  \tan t\amp =\frac{y}{x},~(x\neq0)</mrow>
-            <mrow>\csc t\amp =\frac{1}{y},~(y\neq0) \amp  \sec t\amp =\frac{1}{x},~(x\neq0) \amp  \cot t\amp =\frac{x}{y},~(y\neq0).</mrow>
-          </md>
+            <mrow>\csc t\amp =\frac{1}{y},~(y\neq0) \amp  \sec t\amp =\frac{1}{x},~(x\neq0) \amp  \cot t\amp =\frac{x}{y},~(y\neq0)</mrow>
+          </md>.
         </p>
         <image xml:id="fig-def-trig-function-unit-circle" width="75%">
           <latex-image>
@@ -138,8 +138,8 @@
           <md>
             <mrow> \sin \theta\amp =y=-\frac{1}{2},\amp \csc \theta\amp =\frac{1}{y}=\frac{1}{-\frac{1}{2}}=-2,</mrow>
             <mrow> \cos \theta\amp =x=\frac{\sqrt{3}}{2}, \amp \sec \theta\amp =\frac{1}{x}=\frac{1}{\frac{\sqrt{3}}{2}}=\frac{2}{\sqrt{3}},</mrow>
-            <mrow> \tan \theta\amp =\frac{y}{x}=\frac{-\frac{1}{2}}{\frac{\sqrt{3}}{2}}=-\frac{1}{\sqrt{3}},\amp \cot \theta\amp =\frac{x}{y}=\frac{\frac{\sqrt{3}}{2}}{-\frac{1}{2}}=-\sqrt{3}.</mrow>
-          </md>
+            <mrow> \tan \theta\amp =\frac{y}{x}=\frac{-\frac{1}{2}}{\frac{\sqrt{3}}{2}}=-\frac{1}{\sqrt{3}},\amp \cot \theta\amp =\frac{x}{y}=\frac{\frac{\sqrt{3}}{2}}{-\frac{1}{2}}=-\sqrt{3}</mrow>
+          </md>.
         </p>
       </solution>
     </example>
@@ -158,8 +158,8 @@
           <term>six trigonometric functions</term> become
           <md>
             <mrow>\sin \theta\amp =y \amp  \cos \theta\amp =x \amp  \tan \theta\amp =\frac{y}{x},~(x\neq0)</mrow>
-            <mrow>\csc \theta\amp =\frac{1}{y},~(y\neq0) \amp  \sec \theta\amp =\frac{1}{x},~(x\neq0) \amp  \cot \theta\amp =\frac{x}{y},~(y\neq0).</mrow>
-          </md>
+            <mrow>\csc \theta\amp =\frac{1}{y},~(y\neq0) \amp  \sec \theta\amp =\frac{1}{x},~(x\neq0) \amp  \cot \theta\amp =\frac{x}{y},~(y\neq0)</mrow>
+          </md>.
         </p>
       </statement>
     </definition>
@@ -195,8 +195,8 @@
             <md>
               <mrow>\sin 0\amp =\sin 0^{\circ}=0, \amp \csc 0\amp =\csc  0^{\circ}=\mbox{undefined},</mrow>
               <mrow>\cos 0\amp =\cos 0^{\circ}=1, \amp \sec 0\amp =\sec  0^{\circ}=1,</mrow>
-              <mrow>\tan 0\amp =\tan 0^{\circ}=0, \amp \cot 0 \amp =\cot  0^{\circ}=\mbox{undefined}.</mrow>
-            </md>
+              <mrow>\tan 0\amp =\tan 0^{\circ}=0, \amp \cot 0 \amp =\cot  0^{\circ}=\mbox{undefined}</mrow>
+            </md>.
           </p>
         </solution>
       </task>
@@ -228,8 +228,8 @@
             <md>
               <mrow>\sin \frac{3\pi}{2}\amp =\sin 270^{\circ}=-1, \amp \csc \frac{3\pi}{2}\amp =\csc  270^{\circ}=-1,</mrow>
               <mrow>\cos \frac{3\pi}{2}\amp =\cos 270^{\circ}=0, \amp  \sec \frac{3\pi}{2}\amp =\sec  270^{\circ}=\mbox{undefined},</mrow>
-              <mrow>\tan \frac{3\pi}{2}\amp =\tan 270^{\circ}=\mbox{undefined}, \amp \cot \frac{3\pi}{2}\amp =\cot  270^{\circ}=0.</mrow>
-            </md>
+              <mrow>\tan \frac{3\pi}{2}\amp =\tan 270^{\circ}=\mbox{undefined}, \amp \cot \frac{3\pi}{2}\amp =\cot  270^{\circ}=0</mrow>
+            </md>.
           </p>
         </solution>
       </task>
@@ -265,8 +265,8 @@
             Since <m>x=-1</m> and <m>y=0</m> we have
             <md>
               <mrow>\sin 5\pi\amp =0, \amp  \cos 5\pi\amp =-1, \amp  \tan 5\pi\amp =0,</mrow>
-              <mrow>\csc 5\pi\amp =\mbox{undefined}, \amp  \sec 5\pi\amp =-1, \amp  \cot 5\pi\amp =\mbox{undefined}. </mrow>
-            </md>
+              <mrow>\csc 5\pi\amp =\mbox{undefined}, \amp  \sec 5\pi\amp =-1, \amp  \cot 5\pi\amp =\mbox{undefined}</mrow>
+            </md>.
           </p>
         </solution>
       </task>
@@ -306,16 +306,16 @@
             <mrow>2x^2\amp = 1</mrow>
             <mrow>x^2\amp = \frac{1}{2}</mrow>
             <mrow>x\amp = \frac{1}{\sqrt{2}}</mrow>
-            <mrow>y\amp = \frac{1}{\sqrt{2}} \amp(\mbox{since } y=x).</mrow>
-          </md>
+            <mrow>y\amp = \frac{1}{\sqrt{2}} \amp(\mbox{since } y=x)</mrow>
+          </md>.
         </p>
         <p>
           Then
           <md>
             <mrow> \sin 45^{\circ} \amp=\frac{1}{\sqrt{2}}, \amp \csc  45^{\circ}=\frac{1}{\frac{1}{\sqrt{2}}}\amp=\sqrt{2},</mrow>
             <mrow> \cos 45^{\circ} \amp=\frac{1}{\sqrt{2}}, \amp \sec  45^{\circ}=\frac{1}{\frac{1}{\sqrt{2}}}\amp=\sqrt{2},</mrow>
-            <mrow> \tan 45^{\circ} \amp=\frac{\frac{1}{\sqrt{2}}}{\frac{1}{\sqrt{2}}}=1, \amp \cot  45^{\circ}=\frac{\frac{1}{\sqrt{2}}}{\frac{1}{\sqrt{2}}}\amp=1.</mrow>
-          </md>
+            <mrow> \tan 45^{\circ} \amp=\frac{\frac{1}{\sqrt{2}}}{\frac{1}{\sqrt{2}}}=1, \amp \cot  45^{\circ}=\frac{\frac{1}{\sqrt{2}}}{\frac{1}{\sqrt{2}}}\amp=1</mrow>
+          </md>.
         </p>
       </solution>
     </example>
@@ -389,8 +389,8 @@
             <mrow>x^2+\left(\frac{1}{2}\right)^2\amp = 1</mrow>
             <mrow>x^2+\frac{1}{4}\amp = 1</mrow>
             <mrow>x^2\amp = \frac{3}{4}</mrow>
-            <mrow>x\amp = \frac{\sqrt{3}}{2},</mrow>
-          </md>
+            <mrow>x\amp = \frac{\sqrt{3}}{2}</mrow>
+          </md>,
         </p>
         <p>
           giving us the following triangle.
@@ -416,8 +416,8 @@
           <md>
             <mrow>\sin 30^{\circ}\amp =\frac{1}{2}, \amp  \csc  30^{\circ}\amp =\frac{1}{\frac{1}{2}}=2,</mrow>
             <mrow>\cos 30^{\circ}\amp =\frac{\sqrt{3}}{2}, \amp \sec  30^{\circ}\amp =\frac{1}{\frac{\sqrt{3}}{2}}=\frac{2}{\sqrt{3}},</mrow>
-            <mrow>\tan 30^{\circ}\amp =\frac{\frac{1}{2}}{\frac{\sqrt{3}}{2}}=\frac{1}{\sqrt{3}}, \amp  \cot  30^{\circ}\amp =\frac{\frac{\sqrt{3}}{2}}{\frac{1}{2}}=\sqrt{3}.</mrow>
-          </md>
+            <mrow>\tan 30^{\circ}\amp =\frac{\frac{1}{2}}{\frac{\sqrt{3}}{2}}=\frac{1}{\sqrt{3}}, \amp  \cot  30^{\circ}\amp =\frac{\frac{\sqrt{3}}{2}}{\frac{1}{2}}=\sqrt{3}</mrow>
+          </md>.
         </p>
       </solution>
     </example>
@@ -988,8 +988,8 @@
           For an angle <m>\theta</m> in standard position, let <m>P(x,y)</m> be the point on the terminal side of  <m>\theta</m> that is also on the circle <m>x^2+y^2=r^2</m>. Then
           <md>
             <mrow>\sin \theta\amp =\frac{y}{r} \amp  \cos \theta\amp =\frac{x}{r} \amp  \tan \theta\amp =\frac{y}{x},~(x\neq0)</mrow>
-            <mrow>\csc \theta\amp =\frac{r}{y},~(y\neq0) \amp  \sec \theta\amp =\frac{r}{x},~(x\neq0) \amp  \cot \theta\amp =\frac{x}{y},~(y\neq0).</mrow>
-          </md>
+            <mrow>\csc \theta\amp =\frac{r}{y},~(y\neq0) \amp  \sec \theta\amp =\frac{r}{x},~(x\neq0) \amp  \cot \theta\amp =\frac{x}{y},~(y\neq0)</mrow>
+          </md>.
         </p>
       </statement>
     </theorem>

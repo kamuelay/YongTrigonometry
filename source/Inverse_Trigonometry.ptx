@@ -1182,7 +1182,7 @@
     <exercisegroup cols="3">
       <introduction>
         <p>
-          Determine the exact value of each expression, expressed in radians.
+          Determine the exact value of each expression in radians.
         </p>
       </introduction>
       <exercise>
@@ -1320,7 +1320,7 @@
       <exercise>
         <statement>
           <p>
-            <m>\tan^{-1}\left(\frac{\sqrt{3}}{3}\right)</m>
+            <m>\tan^{-1}\left(\frac{1}{\sqrt{3}}\right)</m>
           </p>
         </statement>
         <answer>
@@ -1825,7 +1825,7 @@
         </statement>
         <answer>
           <p>
-            <m>-\frac{\sqrt{3}}{3}</m>
+            <m>-\frac{1}{\sqrt{3}}</m>
           </p>
         </answer>
       </exercise>
@@ -1849,7 +1849,7 @@
         </statement>
         <answer>
           <p>
-            <m>\frac{2\sqrt{3}}{3}</m>
+            <m>\frac{2}{\sqrt{3}}</m>
           </p>
         </answer>
       </exercise>
@@ -1904,7 +1904,7 @@
         </statement>
         <answer>
           <p>
-            <m>\frac{7\sqrt{46}}{46}</m>
+            <m>\frac{7}{\sqrt{46}}</m>
           </p>
         </answer>
       </exercise>
@@ -1940,7 +1940,7 @@
         </statement>
         <answer>
           <p>
-            <m>-\frac{\sqrt{8}}{8}</m>
+            <m>-\frac{1}{\sqrt{8}}</m>
           </p>
         </answer>
       </exercise>
@@ -1952,16 +1952,10 @@
         </statement>
         <answer>
           <p>
-            <m>-\frac{2\sqrt{21}}{21}</m>
+            <m>-\frac{2}{\sqrt{21}}</m>
           </p>
         </answer>
       </exercise>
-
-
-
-
-
-
       <exercise>
         <statement>
           <p>
@@ -1970,7 +1964,7 @@
         </statement>
         <answer>
           <p>
-            <m>\frac{8\sqrt{17}}{17}</m>
+            <m>\frac{8}{\sqrt{17}}</m>
           </p>
         </answer>
       </exercise>
@@ -1982,7 +1976,7 @@
         </statement>
         <answer>
           <p>
-            <m>\frac{3\sqrt{2}}{4}</m>
+            <m>\frac{5}{\sqrt{21}}</m>
           </p>
         </answer>
       </exercise>
@@ -2001,7 +1995,7 @@
         </statement>
         <answer>
           <p>
-            <m>\frac{\sqrt{x^2+1}}{x^2+1}</m>
+            <m>\frac{1}{\sqrt{x^2+1}}</m>
           </p>
         </answer>
       </exercise>
@@ -2025,7 +2019,7 @@
         </statement>
         <answer>
           <p>
-            <m>\frac{\sqrt{1-x^2}}{1-x^2}</m>
+            <m>\frac{1}{\sqrt{1-x^2}}</m>
           </p>
         </answer>
       </exercise>
@@ -2161,13 +2155,13 @@
       <title>Sunrise on Mauna Kea</title>
       <introduction>
         <p>
-          The summit of Mauna Kea is the highest point in Hawaiʻi and sits 13,803 ft above the sea level. If you stand at the summit, you will be able to see the sun rise before someone standing at the sea level just north or south of Mauna Kea (at the same latitude). In fact, you will see the sunrise at the same time as someone at sea level sailing in a waʻa to the east of Mauna Kea. Assume the radius of the earth is 20,917,655 feet.
+          The summit of Mauna Kea is the highest point in Hawaiʻi and sits 13,803 ft above the sea level. If we stand at the summit, we will be able to see the sun rise before someone standing at the sea level just north or south of Mauna Kea (at the same latitude). In fact, we will see the sunrise at the same time as someone at sea level sailing in a waʻa to the east of Mauna Kea. Assume the radius of Earth is 20,917,655 feet.
         </p>
       </introduction>
       <task>
         <statement>
           <p>
-            How far is the horizon when someone 5 ft tall stands at sea level to watch the sun rise? Round your answer to the nearest tenth of a mile.
+            How far is the horizon when someone 5 ft tall stands at sea level to watch the sun rise? Round the answer to the nearest tenth of a mile.
           </p>
         </statement>
         <answer>
@@ -2179,7 +2173,7 @@
       <task>
         <statement>
           <p>
-            How far is the horizon when someone 5 ft tall stands on the summit to watch the sunrise? Round your answer to the nearest tenth of a mile.
+            How far is the horizon when someone 5 ft tall stands on the summit to watch the sunrise? Round the answer to the nearest tenth of a mile.
           </p>
         </statement>
         <answer>
@@ -2191,12 +2185,12 @@
       <task>
         <statement>
           <p>
-            How much faster would someone 5 ft tall standing on the top of the mountain see the sunrise than someone 5 ft tall standing at sea level? Express your answer in minutes, rounded to one decimal place.
+            How much faster would someone 5 ft tall standing on the top of the mountain see the sunrise than someone 5 ft tall standing at sea level? Express the answer in minutes, rounded to one decimal place.
           </p>
         </statement>
         <hint>
           <p>
-            The ratio of the distance to the horizon (your previous answers) to the circumference of the Earth (<m>2\pi R</m>) is equal to the ratio of the time it takes to see the sunrise to the 24 hours (1,440 minutes) in Earth's rotation. Compute the time it takes to see the sunrise from the top of the mountain and the shore, then calculate the difference.
+            The ratio of the distance to the horizon (the previous answers) to the circumference of the Earth (<m>2\pi R</m>) is equal to the ratio of the time it takes to see the sunrise to the 24 hours (1,440 minutes) of Earth's rotation. Compute the time it takes to see the sunrise from the top of the mountain and the shore, then calculate the difference.
           </p>
         </hint>
         <answer>
@@ -2207,10 +2201,10 @@
       </task>
     </exercise>
     <exercise>
-      <title>Maui Capturing the Sun</title>
+      <title>Māui Capturing the Sun</title>
       <introduction>
         <p>
-          According to moʻolelo, or legend, the sun traveled very fast across the sky, leaving people with days so short there was not enough time to carry on with their daily lives. Determined to slow the sun, the demigod Maui climbed to the summit of Haleakalā, which stands at 10,023 feet, to snare the sun. Assume the radius of the Earth at Haleakalā is the same as Mauna Kea at 20,917,655 feet.
+          According to moʻolelo, or legend, the sun traveled very fast across the sky, leaving people with days so short there was not enough time to carry on with their daily lives. Determined to slow the sun, the demigod Māui climbed to the summit of Haleakalā, which stands at 10,023 feet, to snare the sun. Assume the radius of the Earth at Haleakalā is the same as at Mauna Kea, 20,917,655 feet.
         </p>
         <image xml:id="exer-maui-sun">
           <latex-image>
@@ -2236,24 +2230,24 @@
       <task>
         <statement>
           <p>
-            How far is the horizon when Maui stands at the summit? Assume Maui's eyes are 5 ft from the ground. Round your answer to the nearest tenth of a mile.
+            How far is the horizon when Māui stands at the summit? Assume Māui's eyes are 7 ft from the ground. Round your answer to the nearest tenth of a mile.
           </p>
         </statement>
         <answer>
           <p>
-            122.6 miles
+            122.7 miles
           </p>
         </answer>
       </task>
       <task>
         <statement>
           <p>
-            How much faster would Maui see the sun emerge over the horizon than someone 5 ft tall and standing at the seashore? Espress your answer in minutes, rounded to one decimal place.
+            How much sooner would Māui see the sun emerge over the horizon compared to someone whose eyes are 7 feet above sea level? Express your answer in minutes, rounded to one decimal place.
           </p>
         </statement>
         <answer>
           <p>
-            6.9 minutes
+            7.1 minutes
           </p>
         </answer>
       </task>

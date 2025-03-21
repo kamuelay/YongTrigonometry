@@ -957,8 +957,8 @@
             <mrow>\theta\amp = 21^{\circ}08'-1^{\circ}45'</mrow>
             <mrow>\amp = 19^{\circ}23'</mrow>
             <mrow>\amp = 19^{\circ}+\frac{23}{60}^{\circ}</mrow>
-            <mrow>\amp \approx 19.3833^{\circ}.</mrow>
-          </md>
+            <mrow>\amp \approx 19.3833^{\circ}</mrow>
+          </md>.
         </p>
         <p>
           To find the distance, we use <xref ref="thm_arc-length">Theorem</xref> to find the arc length:
@@ -1026,8 +1026,8 @@
             <h>of a sector</h>
           </idx> The <term>area of the sector</term> of a circle of radius <m>r</m> formed by a central angle of <m>\theta</m> is <md>
             <mrow>A\amp =\frac{\theta}{360^{\circ}}\cdot\pi\cdot r^2,\mbox{ when \(\theta\) is in degrees}</mrow>
-            <mrow>A\amp =\frac{1}{2}r^2\theta,\mbox{ when \(\theta\) is in radians}.</mrow>
-          </md>
+            <mrow>A\amp =\frac{1}{2}r^2\theta,\mbox{ when \(\theta\) is in radians}</mrow>
+          </md>.
         </p>
       </statement>
     </definition>

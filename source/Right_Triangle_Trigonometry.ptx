@@ -53,8 +53,8 @@
         \amp \tan\theta\amp =\frac{\mbox{opposite} }{\mbox{adjacent} },</mrow>
         <mrow>\csc\theta\amp =\frac{\mbox{hypotenuse} }{\mbox{opposite} },
         \amp \sec\theta\amp =\frac{\mbox{hypotenuse} }{\mbox{adjacent} },
-        \amp \cot\theta\amp =\frac{\mbox{adjacent} }{\mbox{opposite} }.</mrow>
-      </md>
+        \amp \cot\theta\amp =\frac{\mbox{adjacent} }{\mbox{opposite} }</mrow>
+      </md>.
     </p>
     <p>
       A common mnemonic for remembering these relationships is SOHCAHTOA, formed from the first letters of
@@ -84,8 +84,8 @@
             </idx>
             <md>
               <mrow>\sin\theta\amp =\dfrac{1}{\csc\theta}, \amp  \cos\theta\amp =\dfrac{1}{\sec\theta}, \amp  \tan\theta\amp =\dfrac{1}{\cot\theta},</mrow>
-              <mrow>\csc\theta\amp =\dfrac{1}{\sin\theta}, \amp  \sec\theta\amp =\dfrac{1}{\cos\theta}, \amp  \cot\theta\amp =\dfrac{1}{\tan\theta}.</mrow>
-            </md>
+              <mrow>\csc\theta\amp =\dfrac{1}{\sin\theta}, \amp  \sec\theta\amp =\dfrac{1}{\cos\theta}, \amp  \cot\theta\amp =\dfrac{1}{\tan\theta}</mrow>
+            </md>.
           </p>
         </statement>
       </definition>
@@ -98,8 +98,8 @@
             <h>quotient identities</h>
           </idx>
           <md>
-            <mrow>\tan\theta \amp =\dfrac{\sin\theta}{\cos\theta}, \amp  \cot\theta\amp =\dfrac{\cos\theta}{\sin\theta}.</mrow>
-          </md>
+            <mrow>\tan\theta \amp =\dfrac{\sin\theta}{\cos\theta}, \amp  \cot\theta\amp =\dfrac{\cos\theta}{\sin\theta}</mrow>
+          </md>.
         </p>
       </statement>
     </definition>
@@ -125,8 +125,8 @@
           By the definition of the trigonometric ratios, we have
           <md>
             <mrow>\sin\theta\amp =\frac{3}{5}, \amp \cos\theta\amp =\frac{4}{5}, \amp \tan\theta\amp =\frac{3}{4},</mrow>
-            <mrow>\csc\theta\amp =\frac{5}{3}, \amp \sec\theta\amp =\frac{5}{4}, \amp \cot\theta\amp =\frac{4}{3}.</mrow>
-          </md>
+            <mrow>\csc\theta\amp =\frac{5}{3}, \amp \sec\theta\amp =\frac{5}{4}, \amp \cot\theta\amp =\frac{4}{3}</mrow>
+          </md>.
         </p>
       </solution>
     </example>
@@ -160,8 +160,8 @@
           Then by the definition of the trigonometric ratios, we have
           <md>
             <mrow>\sin\theta\amp =\frac{5}{\sqrt{29}}, \amp \cos\theta\amp =\frac{2}{\sqrt{29}}, \amp \tan\theta\amp =\frac{5}{2},</mrow>
-            <mrow>\csc\theta\amp =\frac{\sqrt{29}}{5}, \amp \sec\theta\amp =\frac{\sqrt{29}}{2}, \amp \cot\theta\amp =\frac{2}{5}.</mrow>
-          </md>
+            <mrow>\csc\theta\amp =\frac{\sqrt{29}}{5}, \amp \sec\theta\amp =\frac{\sqrt{29}}{2}, \amp \cot\theta\amp =\frac{2}{5}</mrow>
+          </md>.
         </p>
       </solution>
     </example>
@@ -423,8 +423,8 @@
       because of this relationship between these functions and their complementary angles. We can obtain similar relationships for all trigonometric functions:
       <md>
         <mrow>\sin\alpha=\frac{a}{c}\amp =\cos\beta, \amp  \cos\alpha=\frac{b}{c}\amp =\sin\beta, \amp  \tan\alpha=\frac{a}{b}\amp =\cot\beta,</mrow>
-        <mrow>\csc\alpha=\frac{c}{a}\amp =\sec\beta, \amp  \sec\alpha=\frac{c}{b}\amp =\csc\beta, \amp  \cot\alpha=\frac{b}{a}\amp =\tan\beta.</mrow>
-      </md>
+        <mrow>\csc\alpha=\frac{c}{a}\amp =\sec\beta, \amp  \sec\alpha=\frac{c}{b}\amp =\csc\beta, \amp  \cot\alpha=\frac{b}{a}\amp =\tan\beta</mrow>
+      </md>.
     </p>
     <p>
       Since <m>\alpha</m> and <m>\beta</m> are complementary angles, <m>\alpha+\beta=90^{\circ}</m>. Rearranging, we get <m>\beta=90^{\circ}-\alpha</m>. Substituting this into our cofunctions and replacing <m>\alpha</m> with <m>\theta</m>, we get our <term>cofunction identities</term>.
@@ -439,15 +439,15 @@
       in degrees are
       <md>
         <mrow>\sin\theta\amp =\cos(90^{\circ}-\theta), \amp  \cos\theta\amp =\sin(90^{\circ}-\theta), \amp  \tan\theta\amp =\cot(90^{\circ}-\theta),</mrow>
-        <mrow>\csc\theta\amp =\sec(90^{\circ}-\theta), \amp  \sec\theta\amp =\csc(90^{\circ}-\theta), \amp  \cot\theta\amp =\tan(90^{\circ}-\theta).</mrow>
-      </md>
+        <mrow>\csc\theta\amp =\sec(90^{\circ}-\theta), \amp  \sec\theta\amp =\csc(90^{\circ}-\theta), \amp  \cot\theta\amp =\tan(90^{\circ}-\theta)</mrow>
+      </md>.
     </p>
     <p>
       The cofunction identities in radians are
       <md>
         <mrow>\sin\theta\amp =\cos\left(\frac{\pi}{2}-\theta\right), \amp  \cos\theta\amp =\sin\left(\frac{\pi}{2}-\theta\right), \amp  \tan\theta\amp =\cot\left(\frac{\pi}{2}-\theta\right),</mrow>
-        <mrow>\csc\theta\amp =\sec\left(\frac{\pi}{2}-\theta\right), \amp  \sec\theta\amp =\csc\left(\frac{\pi}{2}-\theta\right), \amp  \cot\theta\amp =\tan\left(\frac{\pi}{2}-\theta\right).</mrow>
-      </md>
+        <mrow>\csc\theta\amp =\sec\left(\frac{\pi}{2}-\theta\right), \amp  \sec\theta\amp =\csc\left(\frac{\pi}{2}-\theta\right), \amp  \cot\theta\amp =\tan\left(\frac{\pi}{2}-\theta\right)</mrow>
+      </md>.
     </p>
     </statement>
     </definition>
@@ -458,8 +458,8 @@
           <md>
             <mrow>\sin0^{\circ}\amp =\cos(90^{\circ}-0^{\circ})=\cos90^{\circ},\amp \sin30^{\circ}\amp =\cos(90^{\circ}-30^{\circ})=\cos60^{\circ},</mrow>
             <mrow>\sin45^{\circ}\amp =\cos(90^{\circ}-45^{\circ})=\cos45^{\circ},\amp \sin60^{\circ}\amp =\cos(90^{\circ}-60^{\circ})=\cos30^{\circ},</mrow>
-            <mrow>\sin90^{\circ}\amp=\cos(90^{\circ}-90^{\circ})=\cos0^{\circ}.</mrow>
-          </md>
+            <mrow>\sin90^{\circ}\amp=\cos(90^{\circ}-90^{\circ})=\cos0^{\circ}</mrow>
+          </md>.
         </p>
       </statement>
     </example>
@@ -642,8 +642,8 @@
     <p>
       To calculate cosecant, secant, and cotangent, we will need to use the identities
       <md>
-        <mrow>\csc\theta \amp = \frac{1}{\sin\theta}, \amp \sec\theta \amp = \frac{1}{\cos\theta}, \amp \cot\theta \amp = \frac{1}{\tan\theta}.</mrow>
-      </md>
+        <mrow>\csc\theta \amp = \frac{1}{\sin\theta}, \amp \sec\theta \amp = \frac{1}{\cos\theta}, \amp \cot\theta \amp = \frac{1}{\tan\theta}</mrow>
+      </md>.
     </p>
     <p>
       Answers produced by calculators are <em>estimates</em> and we should pay close attention to see if the question is asking for the exact solution or a decimal approximation. For example, if we need to calculate <m>\sin45^{\circ}=\frac{1}{\sqrt{2}}</m>, the calculator may give the answer as <m>\sin45^{\circ}\approx0.70710678</m>, which is a decimal approximation since the actual value is an irrational number with infinitely many decimal places. <em>Unless stated otherwise, answers in the book should be exact</em>, e.g. <m>\frac{1}{\sqrt{2}}</m> and not 0.70710678.
@@ -922,8 +922,8 @@
           Since we know the desired angle of pitch of the solar panel and the length of the panel, we can set up the following equation
           <md>
             <mrow>\sin21^{\circ} =\amp \frac{\mbox{opposite} }{\mbox{hypotenuse} }=\frac{\mbox{height} }{65\mbox{ in} };</mrow>
-            <mrow>\mbox{height} =\amp 65\mbox{ in} \cdot\sin21^{\circ}\approx23.3\mbox{ in}.</mrow>
-          </md>
+            <mrow>\mbox{height} =\amp 65\mbox{ in} \cdot\sin21^{\circ}\approx23.3\mbox{ in}</mrow>
+          </md>.
         </p>
         <p>
           Thus, when installing a solar panel in Hawai‘i, the top of the solar panel should be positioned 23.3 inches above the bottom to optimize energy output.
