@@ -121,7 +121,7 @@
     <example>
       <statement>
         <p>
-          Solve <m>\cos^2\theta=\frac{1}{2}</m> where <m>0\leq\theta\lt2\pi</m> on the interval <m>0\leq\theta\lt2\pi</m>.
+          Solve <m>\cos^2\theta=\frac{1}{2}</m> on the interval <m>0\leq\theta\lt2\pi</m>.
         </p>
       </statement>
       <solution>
@@ -129,11 +129,11 @@
           We will first solve for <m>\cos\theta</m>. We begin by taking the square root of both sides of the equation and simplify:
           <md>
             <mrow> \sqrt{\cos^2\theta} \amp = \pm\sqrt{\frac{1}{2}} </mrow>
-            <mrow> \cos\theta \amp \pm\frac{1}{\sqrt{2}}=\pm\frac{\sqrt{2}}{2}</mrow>
+            <mrow> \cos\theta \amp \pm\frac{1}{\sqrt{2}}</mrow>
           </md>
         </p>
         <p>
-          From <xref ref="tab_trig-table"/>, when <m>\cos\theta=\frac{\sqrt{2}}{2}</m>, we have <m>\theta=\frac{\pi}{4}</m> or <m>\theta=\frac{7\pi}{4}</m>; and when <m>\cos\theta=-\frac{\sqrt{2}}{2}</m>, we have <m>\theta=\frac{3\pi}{4}</m> or <m>\theta=\frac{5\pi}{4}</m>.
+          From <xref ref="tab_trig-table"/>, when <m>\cos\theta=\frac{1}{\sqrt{2}}</m>, we have <m>\theta=\frac{\pi}{4}</m> or <m>\theta=\frac{7\pi}{4}</m>; and when <m>\cos\theta=-\frac{1}{\sqrt{2}}</m>, we have <m>\theta=\frac{3\pi}{4}</m> or <m>\theta=\frac{5\pi}{4}</m>.
         </p>
         <p>
           Thus, our solutions are:
@@ -183,7 +183,7 @@
           <md>
             <mrow> 2\cos\theta\sin\theta+\sqrt{3}\cos\theta \amp = 0 </mrow>
             <mrow> \cos\theta(2\sin\theta+\sqrt{3}) \amp = 0 </mrow>
-          </md>
+          </md>.
           Thus we get two equations: <m>\cos\theta=0</m> and <m>2\sin\theta+\sqrt{3}=0</m>.
         </p>
         <p>
@@ -195,7 +195,7 @@
             <mrow> 2\sin\theta+\sqrt{3} \amp = 0 </mrow>
             <mrow> 2\sin\theta \amp = -\sqrt{3} </mrow>
             <mrow> \sin\theta \amp = -\frac{\sqrt{3}}{2} </mrow>
-          </md>
+          </md>.
           Thus we get <m>\theta=\frac{4\pi}{3}</m> or <m>\theta=\frac{5\pi}{3}</m>.
         </p>
         <p>
@@ -213,7 +213,7 @@
     <example>
       <statement>
         <p>
-          Use a calculator to solve <m>3\tan\theta=2</m> on the interval <m>0\leq\theta\lt2\pi</m>. Express your answer in radians, rounded to two decimals.
+          Use a calculator to solve <m>3\tan\theta=2</m> on the interval <m>0\leq\theta\lt2\pi</m>. Express the answer in radians, rounded to two decimals.
         </p>
       </statement>
       <solution>
@@ -225,8 +225,8 @@
           Next, we take the inverse tangent and use a calculator to obtain
           <me>
             \theta=\tan^{-1}\left(\frac{2}{3}\right)\approx0.588002603548
-          </me>
-          Rounding to two decimals, we get <m>\theta=0.59</m> radians, which is in Quadrant I since <m>0\lt0.59\lt\frac{\pi}{2}</m>. Another Quadrant where <m>\tan\theta=\frac{2}{3}</m> is in Quadrant III. Using the methods in <xref ref="subsec-reference-angle"/> we get the other angle: <m>\theta=0.59+\pi</m>.
+          </me>.
+          Rounding to two decimals, we get <m>\theta=0.59</m> radians, which is in Quadrant I since <m>0\lt0.59\lt\frac{\pi}{2}</m>. Another angle where <m>\tan\theta=\frac{2}{3}</m> is in Quadrant III. Using the methods in <xref ref="subsec-reference-angle"/> we get the other angle: <m>\theta=0.59+\pi</m>.
         </p>
       </solution>
     </example>
@@ -301,7 +301,7 @@
       <exercise>
         <statement>
           <p>
-            <m>\cos\theta=\frac{\sqrt{2}}{2}</m>
+            <m>\cos\theta=\frac{1}{\sqrt{2}}</m>
           </p>
         </statement>
         <answer>
@@ -393,7 +393,7 @@
       <exercise>
         <statement>
           <p>
-            <m>\sin\theta=-\frac{\sqrt{2}}{2}</m>
+            <m>\sin\theta=-\frac{1}{\sqrt{2}}</m>
           </p>
         </statement>
         <answer>
@@ -422,7 +422,7 @@
         </statement>
         <answer>
           <p>
-            <m>\frac{\pi}{4}+k\pi</m>; <m>-\frac{3\pi}{4}</m>,  <m>\frac{\pi}{4}</m>,  <m>\frac{5\pi}{4}</m>, <m>\frac{9\pi}{4}</m>, <m>\frac{13\pi}{4}</m>, <m>\frac{17\pi}{4}</m>
+            <m>\frac{3\pi}{4}+k\pi</m>; <m>-\frac{5\pi}{4}</m>,  <m>-\frac{\pi}{4}</m>,  <m>\frac{3\pi}{4}</m>, <m>\frac{7\pi}{4}</m>, <m>\frac{11\pi}{4}</m>, <m>\frac{15\pi}{4}</m>
           </p>
         </answer>
       </exercise>
@@ -434,7 +434,7 @@
         </statement>
         <answer>
           <p>
-            <m>\frac{5\pi}{6}+k\pi</m>, <m>\frac{11\pi}{6}+k\pi</m>; <m>-\frac{\pi}{6}</m>, <m>\frac{5\pi}{6}</m>, <m>\frac{11\pi}{6}</m>, <m>\frac{17\pi}{6}</m>, <m>\frac{23\pi}{6}</m>, <m>\frac{29\pi}{6}</m>
+            <m>\frac{5\pi}{6}+k\pi</m>; <m>-\frac{\pi}{6}</m>, <m>\frac{5\pi}{6}</m>, <m>\frac{11\pi}{6}</m>, <m>\frac{17\pi}{6}</m>, <m>\frac{23\pi}{6}</m>, <m>\frac{29\pi}{6}</m>
           </p>
         </answer>
       </exercise>
@@ -527,7 +527,7 @@
       <exercise>
         <statement>
           <p>
-            <m>4\tan^2\theta - 1 = 0</m>
+            <m>\tan^2\theta - 1 = 0</m>
           </p>
         </statement>
         <answer>
