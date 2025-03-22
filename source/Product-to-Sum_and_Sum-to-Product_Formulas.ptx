@@ -32,13 +32,13 @@
           <mrow> +\cos(\alpha-\beta)\amp = \cos\alpha\cos\beta+\sin\alpha\sin\beta </mrow>
           <mrow>\hline </mrow>
           <mrow> \cos(\alpha+\beta)+\cos(\alpha-\beta) \amp = 2\cos\alpha\cos\beta </mrow>
-        </md>
+        </md>.
       </p>
       <p>
         Dividing both sides by 2, we get
         <me>
           \frac{1}{2}[\cos(\alpha+\beta)+\cos(\alpha-\beta)]=\cos\alpha\cos\beta
-        </me>
+        </me>.
       </p>
       <p>
         Next, we add the addition and subtraction formulas for sine:
@@ -47,13 +47,13 @@
           <mrow> +\sin(\alpha-\beta)\amp = \sin\alpha\cos\beta-\cos\alpha\sin\beta </mrow>
           <mrow>\hline </mrow>
           <mrow> \sin(\alpha+\beta)+\sin(\alpha-\beta) \amp = 2\sin\alpha\cos\beta </mrow>
-        </md>
+        </md>.
       </p>
       <p>
         Dividing both sides by 2, we get
         <me>
           \frac{1}{2}[\sin(\alpha+\beta)+\sin(\alpha-\beta)]=\sin\alpha\cos\beta
-        </me>
+        </me>.
       </p>
       <p>
         Next, we subtract the addition and subtraction formulas for sine:
@@ -61,14 +61,14 @@
           <mrow> \sin(\alpha+\beta)\amp = \sin\alpha\cos\beta+\cos\alpha\sin\beta </mrow>
           <mrow> -\sin(\alpha-\beta)\amp = \sin\alpha\cos\beta-\cos\alpha\sin\beta </mrow>
           <mrow>\hline </mrow>
-          <mrow> \sin(\alpha+\beta)-\sin(\alpha-\beta) \amp = 2\sin\beta\cos\alpha </mrow>
-        </md>
+          <mrow> \sin(\alpha+\beta)-\sin(\alpha-\beta) \amp = 2\cos\alpha\sin\beta </mrow>
+        </md>.
       </p>
       <p>
         Dividing both sides by 2, we get
         <me>
-          \frac{1}{2}[\sin(\alpha+\beta)-\sin(\alpha-\beta)]=\sin\beta\cos\alpha
-        </me>
+          \frac{1}{2}[\sin(\alpha+\beta)-\sin(\alpha-\beta)]=\cos\alpha\sin\beta
+        </me>.
       </p>
       <p>
         Finally, we subtract the addition and subtraction formulas for cosine:
@@ -77,13 +77,13 @@
           <mrow> -\cos(\alpha+\beta)\amp = \cos\alpha\cos\beta-\sin\alpha\sin\beta </mrow>
           <mrow>\hline </mrow>
           <mrow> \cos(\alpha-\beta)-\cos(\alpha+\beta) \amp = 2\sin\alpha\sin\beta </mrow>
-        </md>
+        </md>.
       </p>
       <p>
         Dividing both sides by 2, we get
         <me>
           \frac{1}{2}[\cos(\alpha-\beta)-\cos(\alpha+\beta)]=\sin\alpha\sin\beta
-        </me>
+        </me>.
       </p>
     </proof>
     <example>
@@ -98,7 +98,7 @@
           <md>
             <mrow>\cos(2x)\cos(5x)\amp = \frac{1}{2}[\cos(2x+5x)+\cos(2x-5x)]</mrow>
             <mrow>\amp = \frac{1}{2}[\cos(7x)+\cos(-3x)]</mrow>
-          </md>
+          </md>.
         </p>
         <p>
           This satisfies the requirement of expressing the product of <m>\cos(2x)\cos(5x)</m> as a sum or difference of sine and cosine with no products. However, we can simplify it further.
@@ -107,7 +107,7 @@
           Since cosine is an even function, <m>\cos(-3x) = \cos(3x)</m>. Thus, we can simplify the expression to:
           <me>
             \cos(2x)\cos(5x)=\frac{1}{2}[\cos(7x)+\cos(3x)]
-          </me>
+          </me>.
         </p>
       </solution>
     </example>
@@ -122,15 +122,15 @@
           Using the formula we get
           <md>
             <mrow>\sin(6\theta)\cos(4\theta) \amp = \frac{1}{2}[\sin(6\theta+4\theta)+\sin(6\theta-4\theta)]</mrow>
-            <mrow>\amp = \frac{1}{2}[\sin(10\theta)+\cos(2\theta)]</mrow>
-          </md>
+            <mrow>\amp = \frac{1}{2}[\sin(10\theta)+\sin(2\theta)]</mrow>
+          </md>.
         </p>
       </solution>
     </example>
     <remark>
       <title>Negative Angles</title>
       <p>
-        In the previous example, both forms <m>\cos(2x)\cos(5x) = \frac{1}{2}[\cos(7x)+\cos(-3x)]</m> and <m>\cos(2x)\cos(5x) = \frac{1}{2}[\cos(7x)+\cos(3x)]</m> are valid representations of the answer. However, it is more common to write the first form (where the angles are positive) because it simplifies the expression and aligns with standard conventions for representing trigonometric identities. Positive angles are often preferred for clarity and consistency in mathematical notation. Negative angles can be transformed into positive angles using the even-odd properties of trigonometric functions (<xref ref="def-even-odd-trig"/>).
+        In the previous example, both forms <m>\cos(2x)\cos(5x) = \frac{1}{2}[\cos(7x)+\cos(-3x)]</m> and <m>\cos(2x)\cos(5x) = \frac{1}{2}[\cos(7x)+\cos(3x)]</m> are valid representations of the answer. However, it is more common to write the form where the angles are positive because it simplifies the expression and aligns with standard conventions for representing trigonometric identities. Positive angles are often preferred for clarity and consistency in mathematical notation. Negative angles can be transformed into positive angles using the even-odd properties of trigonometric functions (<xref ref="def-even-odd-trig"/>).
       </p>
     </remark>
   </subsection>
@@ -160,7 +160,7 @@
         and
         <me>
           \alpha-\beta=\frac{u+v}{2}-\frac{u-v}{2}=\frac{2v}{2}=v
-        </me>
+        </me>.
       </p>
       <p>
         Substituting these values for <m>\alpha</m>,
@@ -171,10 +171,10 @@
           <mrow>\cos\left(\frac{u+v}{2}\right)\sin\left(\frac{u-v}{2}\right)\amp = \frac{1}{2}[\sin(u)-\sin(v)]</mrow>
           <mrow>\cos\left(\frac{u+v}{2}\right)\cos\left(\frac{u-v}{2}\right)\amp = \frac{1}{2}[\cos(u)+\cos(v)]</mrow>
           <mrow>\sin\left(\frac{u+v}{2}\right)\sin\left(\frac{u-v}{2}\right)\amp = \frac{1}{2}[\cos(v)-\cos(u)]</mrow>
-        </md>
+        </md>.
       </p>
       <p>
-        Multiplying both sides by 2 and substituting <m>u</m> with <m>\alpha</m> and <m>v</m> with <m>\beta</m>, we arrive at the Sum-to-Product Formula, where we negate the last equation.
+        Multiplying both sides by 2 and substituting <m>u</m> with <m>\alpha</m> and <m>v</m> with <m>\beta</m>, we arrive at the Sum-to-Product Formulas, where we negate the last equation.
       </p>
     </proof>
     <example>
@@ -190,7 +190,7 @@
             <mrow>\sin(8x)+\sin(2x) \amp = 2\sin\left(\frac{8x+2x}{2}\right)\cos\left(\frac{8x-2x}{2}\right) </mrow>
             <mrow>\amp = 2\sin\left(\frac{10x}{2}\right)\cos\left(\frac{6x}{2}\right) </mrow>
             <mrow>\amp = 2\sin\left(5x\right)\cos\left(3x\right) </mrow>
-          </md>
+          </md>.
         </p>
       </solution>
     </example>
@@ -208,7 +208,7 @@
             <mrow>\amp = -2\sin\left(\frac{8t}{2}\right)\sin\left(\frac{-2t}{2}\right) </mrow>
             <mrow>\amp = -2\sin\left(4t\right)\sin\left(-t\right) </mrow>
             <mrow>\amp = 2\sin\left(4t\right)\sin\left(t\right) </mrow>
-          </md>
+          </md>.
         </p>
       </solution>
     </example>
@@ -265,7 +265,7 @@
         </statement>
         <answer>
           <p>
-            <m>\frac{1}{2}[\cos(15\theta)-\cos(3\theta)]</m>
+            <m>\frac{1}{2}[\sin(15\theta)-\sin(3\theta)]</m>
           </p>
         </answer>
       </exercise>
@@ -356,7 +356,7 @@
         </statement>
         <answer>
           <p>
-            <m>2\cos\left(\frac{11\theta}{2}\right)\sin\left(-\frac{3\theta}{2}\right)=-2\cos\left(\frac{11\theta}{2}\right)\sin\left(\frac{3\theta}{2}\right)</m>
+            <m>2\cos\left(-\frac{3\theta}{2}\right)\sin\left(\frac{11\theta}{2}\right)=2\cos\left(\frac{3\theta}{2}\right)\sin\left(\frac{11\theta}{2}\right)</m>
           </p>
         </answer>
       </exercise>
@@ -368,7 +368,7 @@
         </statement>
         <answer>
           <p>
-            <m>2\cos\left(\frac{7x}{2}\right)\sin\left(-\frac{x}{2}\right)=-2\cos\left(\frac{7x}{2}\right)\sin\left(\frac{x}{2}\right)</m>
+            <m>2\cos\left(-\frac{x}{2}\right)\sin\left(\frac{7x}{2}\right)=2\cos\left(\frac{x}{2}\right)\sin\left(\frac{7x}{2}\right)</m>
           </p>
         </answer>
       </exercise>
@@ -447,7 +447,7 @@
         </statement>
         <answer>
           <p>
-            <m>\frac{\sqrt{3}}{4}-\frac{1}{4}</m>
+            <m>\frac{\sqrt{3}}{4}+\frac{1}{4}</m>
           </p>
         </answer>
       </exercise>
