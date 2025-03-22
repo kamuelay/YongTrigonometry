@@ -3,7 +3,7 @@
   <title>Double-Angle and Half-Angle Formulas</title>
   <introduction>
     <p>
-      Suppose we want to accurately position the Hawaiian Star Compass on the Unit Circle. In <xref ref="star-compass-32-compass-rose"/>,the house for Manu is located at halfway between Hikina and ʻĀkau, resulting in an angle of <m>45^{\circ}</m>. By applying right triangle trigonometry, we can determine the exact coordinates of Manu as <m>\left(\cos(45^{\circ}), \sin(45^{\circ})\right) = \left(\frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2}\right)</m>. However, as we move to the house of ʻĀina, located halfway between Manu and Hikina, we encounter a problem. The angle for ʻĀina is <m>22.5^{\circ}</m>, which is not explicitly listed listed in <xref ref="tab_trig-table"/>. Therefore, we must resort to a calculator for numerical approximations.
+      Suppose we want to accurately position the Hawaiian Star Compass on the Unit Circle. In <xref ref="star-compass-32-compass-rose"/>, the house for Manu is located halfway between Hikina and ʻĀkau, resulting in an angle of <m>45^{\circ}</m>. By applying right triangle trigonometry, we can determine the exact coordinates of Manu as <m>\left(\cos(45^{\circ}), \sin(45^{\circ})\right) = \left(\frac{1}{\sqrt{2}}   , \frac{1}{\sqrt{2}}   \right)</m>. However, as we move to the house of ʻĀina, located halfway between Manu and Hikina, we encounter a problem. The angle for ʻĀina is <m>22.5^{\circ}</m>, which is not explicitly listed in <xref ref="tab_trig-table"/>. Therefore, we must resort to a calculator for numerical approximations.
      </p>
      <image xml:id="fig-quad1-Koolau-manu-aina-angles" width="80%">
       <latex-image>
@@ -19,7 +19,7 @@
         \draw[left] (90:0.98) node[rotate=90] {\large `\={A}KAU};
         \draw (0:1.05) node[right] {$\left(\cos0^{\circ},\sin0^{\circ}\right)=(1,0)$};
         \draw (22.5:1.05) node[right] {$\left(\cos22.5^{\circ},\sin22.5^{\circ}\right)=(?,?)$};
-        \draw (45:1.05) node[right] {$\left(\cos45^{\circ},\sin45^{\circ}\right)=\left(\frac{\sqrt{2}}{2},\frac{\sqrt{2}}{2}\right)$};
+        \draw (45:1.05) node[right] {$\left(\cos45^{\circ},\sin45^{\circ}\right)=\left(\frac{1}{\sqrt{2}}   ,\frac{1}{\sqrt{2}}   \right)$};
         \draw (90:1.05) node[right] {$\left(\cos90^{\circ},\sin90^{\circ}\right)=(0,1)$};
         \foreach \x/\xtext in {
         22.5/{`\={A}ina, $22.5^{\circ}$},
@@ -30,7 +30,7 @@
       </latex-image>
     </image>
     <p>
-    In this section, we will learn about the double and half-angle formulas for trigonometry. These formulas allow us to determine exact trigonometric function values for angles that are double or half of known values. This will enable us to use our existing knowledge of trigonometric functions at <m>45^{\circ}</m> and apply the half-angle formulas to obtain exact values at <m>22.5^{\circ}</m>.
+    In this section, we will learn about the double and half-angle formulas for trigonometry. These formulas allow us to determine exact trigonometric function values for angles that are double or half of the common angles. This will enable us to use our existing knowledge of trigonometric functions at <m>45^{\circ}</m> and apply the half-angle formulas to obtain exact values at <m>22.5^{\circ}</m>.
     </p>
   </introduction>
   <subsection>
@@ -39,7 +39,7 @@
       Recall the addition formula for sine:
       <men xml:id="eq_double-angle1">
         \sin (\alpha+\beta)=\sin \alpha \cos \beta + \cos \alpha \sin \beta
-      </men>
+      </men>.
     </p>
     <p>
       Consider the case when the two angles are equal. We will call this angle <m>\theta</m>, so let <m>\alpha=\theta</m> and <m>\beta=\theta</m>.
@@ -47,7 +47,7 @@
       <md>
         <mrow>\sin(\theta+\theta)\amp = \sin \theta \cos \theta + \cos \theta \sin \theta</mrow>
         <mrow>\sin (2\theta)\amp = 2\sin \theta \cos \theta</mrow>
-      </md>
+      </md>.
     </p>
     <p>
       Thus we obtain a formula for sine of twice the angle <m>\theta</m>.
@@ -71,13 +71,13 @@
     </p>
     <remark>
       <p>
-        Notice that there are three variations of the double-angle formula for cosine. All three equations give the correct answer; however, one version may be more convenient depending on the given information. For example, if you are given the value of <m>\sin\theta</m>, it may be easier to select the version that solely involves <m>\sin\theta</m> and does not include <m>\cos\theta</m>.
+        Notice that there are three variations of the double-angle formula for cosine. All three equations give the correct answer, however, one version may be more convenient depending on the given information. For example, if we are given the value of <m>\sin\theta</m>, it may be easier to select the version that solely involves <m>\sin\theta</m> and does not include <m>\cos\theta</m>.
       </p>
     </remark>
     <example xml:id="ex_double-angle">
       <introduction>
         <p>
-          Given <m>\sin\theta=-\frac{5}{13}</m> and <m>\theta</m> lies in Quadrant III, find the exact value of
+          Given <m>\sin\theta=-\frac{5}{13}</m> and <m>\theta</m> lies in Quadrant III, find the exact value of:
         </p>
       </introduction>
       <task>
@@ -110,7 +110,7 @@
               <mrow>x^2+25\amp = 169</mrow>
               <mrow>x^2\amp = 144</mrow>
               <mrow>x\amp = 12</mrow>
-            </md>
+            </md>.
           </p>
           <p>
             Thus we have
@@ -126,7 +126,7 @@
             With this new information, we can use the double-angle formula to find <m>\sin(2\theta)</m>:
             <me>
               \sin(2\theta)=2\sin\theta\cos\theta=2\left(-\frac{5}{13}\right)\left(-\frac{12}{13}\right)=\frac{120}{169}
-            </me>
+            </me>.
           </p>
         </solution>
       </task>
@@ -138,17 +138,17 @@
         </statement>
         <solution>
           <p>
-            To compute <m>\cos2\theta</m>, notice there are three different formulas: <m>\cos2\theta=\cos^\theta-\sin^2\theta</m>, <m>\cos2\theta=1-2\sin^2\theta</m>, or <m>\cos2\theta=2\cos^2\theta-1</m>. Using any of the three equations will give us the correct answer. However, given that we know <m>\sin\theta=-\frac{5}{13}</m>, it may be easier to use <m>\cos2\theta=1-2\sin^2\theta</m>, since the other two equations require us to know <m>\cos\theta</m>.
+            To compute <m>\cos2\theta</m>, notice there are three different formulas: <m>\cos2\theta=\cos^2\theta-\sin^2\theta</m>, <m>\cos2\theta=1-2\sin^2\theta</m>, or <m>\cos2\theta=2\cos^2\theta-1</m>. Using any of the three equations will give us the correct answer. However, given that we know <m>\sin\theta=-\frac{5}{13}</m>, it may be easier to use <m>\cos2\theta=1-2\sin^2\theta</m>, since the other two equations require us to know <m>\cos\theta</m>.
           </p>
           <p>
-            Without having to draw the triangle, we could get
+            Without having to draw the triangle, we get
             <md>
               <mrow> \cos2\theta \amp= 1-2\sin^2\theta </mrow>
               <mrow> \amp = 1-2\left(-\frac{5}{13}\right)^2 </mrow>
               <mrow> \amp = 1-2\left(\frac{25}{169}\right) </mrow>
               <mrow> \amp = \frac{169}{169}-\frac{50}{169} </mrow>
               <mrow> \amp = \frac{119}{169} </mrow>
-            </md>
+            </md>.
           </p>
         </solution>
       </task>
@@ -168,7 +168,7 @@
               <mrow> \amp = \frac{\frac{10}{12}}{\frac{119}{144}} </mrow>
               <mrow> \amp = \frac{10}{12}\cdot\frac{144}{119}</mrow>
               <mrow> \amp = \frac{120}{119} </mrow>
-            </md>
+            </md>.
           </p>
         </solution>
       </task>
@@ -236,7 +236,7 @@
     <example>
       <statement>
         <p>
-          Write <m>\cos(3\theta)</m> in terms of <m>\sin\theta</m>.
+          Write <m>\sin(3\theta)</m> in terms of <m>\sin\theta</m>.
         </p>
       </statement>
       <solution>
@@ -250,7 +250,7 @@
             <mrow>\amp =3\sin\theta(1-\sin^2\theta)-\sin^3\theta\amp \amp \mbox{Pythagorean Identity}</mrow>
             <mrow>\amp =3\sin\theta-3\sin^3\theta-\sin^3\theta</mrow>
             <mrow>\amp =3\sin\theta-4\sin^3\theta</mrow>
-          </md>
+          </md>.
         </p>
       </solution>
     </example>
@@ -258,7 +258,7 @@
   <subsection>
     <title>Reducing Powers Formulas</title>
     <p>
-      You may notice that the double-angle formula for cosine expresses a trigonometric function in terms of the square of another trigonometric function. By rearranging the terms, we can derive formulas for reducing the powers of sine, cosine, and tangent expressions with even powers to terms involving only cosine. These formulas are particularly useful in calculus.
+      The double-angle formula for cosine expresses a trigonometric function in terms of the square of another trigonometric function. By rearranging the terms, we can derive formulas for reducing the powers of sine, cosine, and tangent in expressions with even powers to terms involving only cosine. These formulas are particularly useful in calculus.
     </p>
     <definition xml:id="def-formula-reducing-powers">
       <title>Formulas for Reducing Powers</title><idx><h>reducing powers formulas</h></idx>
@@ -278,10 +278,10 @@
     </definition>
     <proof>
       <p>
-        To prove the first formula, solve for <m>\sin^2\theta</m> in the double-angle formula: <m>\cos2\theta=1-2\sin^2\theta</m>. The second formula is obtained similarly by solving for <m>\cos^2\theta</m> in the formula: <m>\cos2\theta=2\cos^2\theta-1</m>. The first two formula can be used to obtain the third formula:
+        To prove the first formula, solve for <m>\sin^2\theta</m> in the double-angle formula: <m>\cos2\theta=1-2\sin^2\theta</m>. The second formula is obtained similarly by solving for <m>\cos^2\theta</m> in the formula <m>\cos2\theta=2\cos^2\theta-1</m>. The first two formulas can be used to obtain the third formula:
         <me>
           \tan^2\theta=\frac{\sin^2\theta}{\cos^2\theta}=\frac{\dfrac{1-\cos(2\theta)}{2}}{\dfrac{1+\cos(2\theta)}{2}}=\frac{1-\cos(2\theta)}{1+\cos(2\theta)}
-        </me>
+        </me>.
       </p>
     </proof>
     <example>
@@ -301,7 +301,7 @@
             <mrow>\amp =\frac{1}{4}\left(1-2\cos(2\theta)+\frac{1}{2}+\frac{\cos(4\theta)}{2}\right)</mrow>
             <mrow>\amp =\frac{1}{4}\left(\frac{3}{2}-\frac{4}{2}\cos(2\theta)+\frac{1}{2}\cos(4\theta)\right)</mrow>
             <mrow>\amp =\frac{1}{8}\left(3-4\cos(2\theta)+\cos(4\theta)\right)</mrow>
-          </md>
+          </md>.
         </p>
       </solution>
     </example>
@@ -328,31 +328,31 @@
     </definition>
     <proof>
       <p>
-        We take the square root on both sides of the Formulas for Reducing Powers (<xref ref="def-formula-reducing-powers"/>) and halve the angle (<m>\theta</m> becomes <m>\frac{\theta}{2}</m> and <m>2\theta</m> becomes <m>\theta</m>) to arrive at our formulas.
+        We take the square root of both sides of the Formulas for Reducing Powers (<xref ref="def-formula-reducing-powers"/>) and halve the angle (<m>\theta</m> becomes <m>\frac{\theta}{2}</m> and <m>2\theta</m> becomes <m>\theta</m>) to arrive at our formulas.
       </p>
     </proof>
     <example>
       <title>Locating ʻĀina</title>
       <statement>
         <p>
-          We are now ready to revisit the problem posed at the start of this section when we were asked to determine the exact coordinates of the house ʻĀina on the Unit Circle.
+          We are now ready to revisit the problem posed at the start of this section where we were asked to determine the exact coordinates of the house ʻĀina on the Unit Circle.
         </p>
       </statement>
       <solution>
         <p>
           We know the coordinates are at
           <me>
-            (\cos22.5^{\circ},\sin22.5^{\circ})
+            (\cos22.5^{\circ}, \sin22.5^{\circ})
           </me>.
-          To find the exact value of <m>\cos22.5^{\circ}</m>, we will use the half-angle formula:
+          To determine the exact value of <m>\cos 22.5^{\circ}</m>, we use the half-angle formula along with the known value <m>\cos 45^{\circ} =\frac{1}{\sqrt{2}} =\frac{\sqrt{2}}{2}</m>:
           <md>
             <mrow> \cos22.5^{\circ} \amp = \cos\left(\frac{45}{2}\right)^{\circ} </mrow>
             <mrow> \amp = \sqrt{\frac{1+\cos45^{\circ}}{2}} </mrow>
-            <mrow> \amp = \sqrt{\frac{1+\frac{\sqrt{2}}{2}}{2}} </mrow>
-            <mrow> \amp = \sqrt{\frac{\frac{2}{2}+\frac{\sqrt{2}}{2}}{2}} </mrow>
+            <mrow> \amp = \sqrt{\frac{1+\frac{\sqrt{2}}{2}}{2}}</mrow>
+            <mrow> \amp = \sqrt{\frac{\frac{2}{2}+\frac{\sqrt{2}}{2}}{4}} </mrow>
             <mrow> \amp = \sqrt{\frac{2+\sqrt{2}}{4}} </mrow>
-            <mrow> \amp = \frac{1}{2}\cdot\sqrt{2+\sqrt{2}}</mrow>
-          </md>
+            <mrow> \amp = \frac{1}{2}\sqrt{2+\sqrt{2}}</mrow>
+          </md>.
           Since the half-angle formula has <m>\pm</m>, we check the quadrant. In this case, our angle is <m>22.5^{\circ}</m>, which is in Quadrant I. Therefore, we choose the positive value.
         </p>
         <p>
@@ -363,7 +363,7 @@
     <example xml:id="ex_half-angle">
       <introduction>
         <p>
-          Given <m>\sin\theta=-\frac{5}{13}</m> and <m>\theta</m> lies in Quadrant III, find the exact value of
+          Given <m>\sin\theta=-\frac{5}{13}</m> and <m>\theta</m> lies in Quadrant III, find the exact value of:
         </p>
       </introduction>
       <task>
@@ -374,17 +374,13 @@
         </statement>
         <solution>
           <p>
-            Notice the Half-Angle Formulas all require us to know <m>\cos\theta</m>. Since the given information describes the same triangle in <xref ref="ex_double-angle"/>, we refer to that problem to get <m>\cos\theta=-\frac{12}{13}</m>.
+            Notice the Half-Angle Formulas all require us to know <m>\cos\theta</m>. Since the given information describes the same triangle as in <xref ref="ex_double-angle"/>, we refer to that problem to get <m>\cos\theta=-\frac{12}{13}</m>.
           </p>
           <p>
-            Next, since <m>\theta</m> is in Quadrant III, <m>180^{\circ}\lt \theta\lt 270^{\circ}</m>,
-            so dividing by 2 gives us <m>\frac{180^{\circ}}{2}\lt \frac{\theta}{2}\lt \frac{270^{\circ}}{2}</m> or <m>90^{\circ}\lt \frac{\theta}{2}\lt 135^{\circ}</m>.
-            Therefore, we conclude that <m>\frac{\theta}{2}</m> lies in Quadrant II.
+            Next, since <m>\theta</m> is in Quadrant III, <m>180^{\circ}\lt \theta\lt 270^{\circ}</m>, dividing by 2 gives us <m>\frac{180^{\circ}}{2}\lt \frac{\theta}{2}\lt \frac{270^{\circ}}{2}</m> or <m>90^{\circ}\lt \frac{\theta}{2}\lt 135^{\circ}</m>. Therefore, we conclude that <m>\frac{\theta}{2}</m> lies in Quadrant II.
           </p>
           <p>
-            To calculate <m>\sin\frac{\theta}{2}</m>,
-            we first note that because <m>\frac{\theta}{2}</m> lies in Quadrant II,
-            <m>\sin\frac{\theta}{2}>0</m> so we will choose the positive (+) sign in the Half-Angle Formula:
+            To calculate <m>\sin\frac{\theta}{2}</m>, we first note that because <m>\frac{\theta}{2}</m> lies in Quadrant II, <m>\sin\frac{\theta}{2}>0</m> so we will choose the positive (+) sign in the Half-Angle Formula:
             <md>
               <mrow>\sin\frac{\theta}{2}\amp = \sqrt{\frac{1-\cos\theta}{2}}</mrow>
               <mrow>\amp = \sqrt{\frac{1-\left(-\frac{12}{13}\right)}{2}}</mrow>
@@ -392,7 +388,7 @@
               <mrow>\amp = \sqrt{\frac{\frac{13}{13}+\frac{12}{13}}{2}}</mrow>
               <mrow>\amp = \sqrt{\frac{\frac{25}{13}}{2}}</mrow>
               <mrow>\amp = \sqrt{\frac{25}{26}}</mrow>
-            </md>
+            </md>.
           </p>
         </solution>
       </task>
@@ -413,7 +409,7 @@
               <mrow>\amp = -\sqrt{\frac{\frac{13}{13}-\frac{12}{13}}{2}}</mrow>
               <mrow>\amp = -\sqrt{\frac{\frac{1}{13}}{2}}</mrow>
               <mrow>\amp = -\sqrt{\frac{1}{26}}</mrow>
-            </md>
+            </md>.
           </p>
         </solution>
       </task>
@@ -436,13 +432,13 @@
               <mrow>\amp = -\sqrt{\frac{25}{13}\cdot\frac{13}{1}}</mrow>
               <mrow>\amp = -\sqrt{25}</mrow>
               <mrow>\amp = -5</mrow>
-            </md>
+            </md>.
           </p>
         </solution>
       </task>
     </example>
     <p>
-      We can derive another formula for <m>\tan\frac{\theta}{2}</m> that does not involve <m>\pm</m>:
+      We can derive another formula for <m>\tan\frac{\theta}{2}</m> that does not involve <m>\pm</m>.
     </p>
     <definition xml:id="def-half-angle-formula-tangent">
       <title>Half-Angle Formulas for Tangent</title><idx><h>half-angle formulas</h><h>for tangent</h></idx>
@@ -462,26 +458,26 @@
         </me>
         and applying the double-angle formula to:
         <me>
-          \sin\theta=\sin2\cdot\frac{\theta}{2}=2\sin\frac{\theta}{2}\cos\frac{\theta}{2}
-        </me>
+          \sin\theta=\sin\left(2\cdot\frac{\theta}{2}\right)=2\sin\frac{\theta}{2}\cos\frac{\theta}{2}
+        </me>.
       </p>
       <p>
-        Dividing the two preceding results
+        By dividing the two preceding results we get
         <me>
           \frac{1-\cos\theta}{\sin\theta}=\frac{2\sin^2\left(\frac{\theta}{2}\right)}{2\sin\frac{\theta}{2}\cos\frac{\theta}{2}}=\frac{\sin\frac{\theta}{2}}{\cos\frac{\theta}{2}}=\tan\frac{\theta}{2}
-        </me>
+        </me>.
       </p>
       <p>
         Thus
         <me>
           \tan\frac{\theta}{2}=\frac{1-\cos\theta}{\sin\theta}
-        </me>
+        </me>.
       </p>
       <p>
         Similarly, it can be shown that
         <me>
           \tan\frac{\theta}{2}=\frac{\sin\theta}{1+\cos\theta}
-        </me>
+        </me>.
       </p>
     </proof>
     <example>
@@ -494,16 +490,14 @@
         <p>
           <me>
             \tan\frac{\theta}{2}=\frac{1-\cos\theta}{\sin\theta}=\frac{1-\left(-\frac{12}{13}\right)}{-\frac{5}{13}}=\frac{\frac{25}{13}}{-\frac{5}{13}}=\frac{25}{13}\cdot\left(-\frac{13}{5}\right)=-5
-          </me>
+          </me>.
         </p>
       </solution>
     </example>
     <p>
-      Note: We obtained the same result for <m>\tan\frac{\theta}{2}</m> as we did in <xref ref="ex_half-angle">Example</xref>. In this example, we did not have to determine if <m>\tan\frac{\theta}{2}</m> was positive or negative, however, we do need to know the values of both <m>\sin\theta</m> and <m>\cos\theta</m>.
+      Note: We obtained the same result for <m>\tan\frac{\theta}{2}</m> as we did in <xref ref="ex_half-angle">Example</xref>. In this example, we did not have to determine whether <m>\tan\frac{\theta}{2}</m> was positive or negative, however, we need to know the values of both <m>\sin\theta</m> and <m>\cos\theta</m>.
     </p>
   </subsection>
-
-  
 
   <exercises xml:id="exercises-double-angle-half-angle">
     <exercisegroup cols="2">
@@ -555,7 +549,7 @@
         </statement>
         <answer>
           <p>
-            <m>\frac{1}{2}\cdot\sqrt{2-\sqrt{2}}</m>
+            <m>\frac{1}{2}\sqrt{2-\sqrt{2}}</m>
           </p>
         </answer>
       </exercise>
@@ -567,7 +561,7 @@
         </statement>
         <answer>
           <p>
-            <m>\sqrt{3-2\sqrt{2}}=\sqrt{2}-1</m>
+            <m>\sqrt{2}-1</m>
           </p>
         </answer>
       </exercise>
@@ -603,7 +597,7 @@
         </statement>
         <answer>
           <p>
-            <m>\sqrt{3+2\sqrt{2}}=\sqrt{2}+1</m>
+            <m>\sqrt{2}+1</m>
           </p>
         </answer>
       </exercise>
@@ -1081,7 +1075,7 @@
         </statement>
         <answer>
           <p>
-            <m>\sqrt{\frac{16}{17}}</m>
+            <m>-\sqrt{\frac{16}{17}}</m>
           </p>
         </answer>
       </exercise>
@@ -1098,7 +1092,6 @@
         </answer>
       </exercise>
     </exercisegroup>
-
 
     <exercisegroup cols="2">
       <introduction>
@@ -1126,7 +1119,7 @@
         </statement>
         <answer>
           <p>
-            <m>\frac{\sqrt{5}}{2}</m>
+            <m>-\frac{\sqrt{5}}{2}</m>
           </p>
         </answer>
       </exercise>
@@ -1162,7 +1155,7 @@
         </statement>
         <answer>
           <p>
-            <m>-4\sqrt{5}</m>
+            <m>4\sqrt{5}</m>
           </p>
         </answer>
       </exercise>
@@ -1313,7 +1306,7 @@
         </statement>
         <answer>
           <p>
-            <m>\sqrt{\frac{2 + \sqrt{3}}{4}}</m>
+            <m>\frac{1}{2}\sqrt{2 + \sqrt{3}}</m>
           </p>
         </answer>
       </exercise>
@@ -1337,7 +1330,7 @@
         </statement>
         <answer>
           <p>
-            <m>\frac{\sqrt{2+\sqrt{3}}}{2}</m>
+            <m>\frac{1}{2}\sqrt{2+\sqrt{3}}</m>
           </p>
         </answer>
       </exercise>
@@ -1349,7 +1342,7 @@
         </statement>
         <answer>
           <p>
-            <m>\cos\frac{\pi}{8} = \sqrt{\frac{\sqrt{2} + 2}{4}}</m>
+            <m>\sqrt{\frac{\sqrt{2}+1}{2\sqrt{2}}}=\frac{1}{2}\sqrt{\sqrt{2} + 2}</m>
           </p>
         </answer>
       </exercise>
@@ -1361,7 +1354,7 @@
         </statement>
         <answer>
           <p>
-            <m>\tan\frac{11\pi}{12} = -\sqrt{2} + 1</m>
+            <m>-2+\sqrt{3}</m>
           </p>
         </answer>
       </exercise>
@@ -1373,7 +1366,7 @@
         </statement>
         <answer>
           <p>
-            <m>\sin\frac{7\pi}{12} = \frac{\sqrt{2} - 1}{2}</m>
+            <m>\frac{1}{2}\sqrt{2+\sqrt{3}}</m>
           </p>
         </answer>
       </exercise>
@@ -1385,7 +1378,7 @@
         </statement>
         <answer>
           <p>
-            <m>\cos\frac{3\pi}{8} = \sqrt{\frac{\sqrt{2} + 2}{4}}</m>
+            <m>\sqrt{\frac{\sqrt{2}-1}{2\sqrt{2}}}=\frac{1}{2}\sqrt{-\sqrt{2} + 2}</m>
           </p>
         </answer>
       </exercise>
