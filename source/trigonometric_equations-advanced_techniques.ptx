@@ -24,7 +24,7 @@
             <mrow> -2\cos^2x+3\cos x-1 \amp =0 </mrow>
             <mrow> 2\cos^2x-3\cos x+1 \amp =0 </mrow>
             <mrow> (2\cos x-1)(\cos x-1) \amp =0 </mrow>
-          </md>
+          </md>.
           Thus <m>\cos x=\frac{1}{2}</m> or <m>\cos x=1</m>.
         </p>
         <p>
@@ -34,7 +34,7 @@
     </example>
     <remark>
       <p>
-        If you are having trouble factoring trigonometric functions, try substituting a simpler term and then factor. For example, consider the expression <m>2\cos^2x-3\cos x+1</m> in the previous example. If factoring this expression directly is not clear, you can use the substitution <m>A=\cos x</m>. This transforms the expression into <m>2A^2-3A+1</m>, which may be easier to factorize. Once factored, you can substitute <m>\cos x</m> back in for <m>A</m> to obtain the final solution.
+        If factoring trigonometric functions is difficult, we can try substituting a simpler term and then factor. For example, consider the expression <m>2\cos^2x-3\cos x+1</m> in the previous example. If factoring this expression directly is not clear, we can use the substitution <m>A=\cos x</m>. This transforms the expression into <m>2A^2-3A+1</m>, which may be easier to factor. Once factored, we can substitute <m>\cos x</m> back in for <m>A</m> to obtain the final solution.
       </p>
     </remark>
     <example>
@@ -49,8 +49,8 @@
           <md>
             <mrow> \sin(2\theta)+\cos\theta \amp = 0 </mrow>
             <mrow> 2\sin\theta\cos\theta+\cos\theta \amp = 0 </mrow>
-          </md>
-          Then we factor our <m>cos\theta</m> from all the terms:
+          </md>.
+          Then we factor <m>\cos\theta</m> from the terms:
           <me> \cos\theta(2\sin\theta+1) = 0 </me>.
           Thus we get
           <me>
@@ -61,10 +61,10 @@
           When <m>\cos\theta=0</m> we get <m>\theta=\frac{\pi}{2}, \frac{3\pi}{2}</m>.
         </p>
         <p>
-          When <m>2\sin\theta+1=0</m>, it is equivalent to when <m>\sin\theta=-\frac{1}{2}</m>, thus we get <m>\theta=\frac{7\pi}{6}, \frac{11\pi}{6}</m>.
+          When <m>2\sin\theta+1=0</m>, <m>\sin\theta=-\frac{1}{2}</m>, thus <m>\theta=\frac{7\pi}{6}, \frac{11\pi}{6}</m>.
         </p>
         <p>
-          Combining these, our solutions are
+          Combining these, the solutions are
           <me>
             \theta=\frac{\pi}{2}, \frac{3\pi}{2}, \frac{7\pi}{6}, \frac{11\pi}{6}
           </me>.
@@ -87,14 +87,14 @@
             <mrow> 2\cos(2\theta)-\sqrt{3} \amp = 0 </mrow>
             <mrow> 2\cos(2\theta) \amp = \sqrt{3} </mrow>
             <mrow> \cos(2\theta) \amp = \frac{\sqrt{3}}{2} </mrow>
-          </md>
+          </md>.
         </p>
         <p>
           Since <m>\cos(2\theta)</m> equals <m>\frac{\sqrt{3}}{2}</m> for angles <m>\frac{\pi}{6}</m> and <m>\frac{11\pi}{6}</m>, the general solutions for <m>2\theta</m> are
           <me>
             2\theta=\frac{\pi}{6}+2k\pi\quad\mbox{or}\quad2\theta=\frac{11\pi}{6}+2k\pi
           </me>
-          for some integer <m>k</m>.
+          for any integer <m>k</m>.
         </p>
         <p>
           Note that we have only solved for <m>2\theta</m>. Dividing both sides by 2 to find <m>\theta</m>, we obtain:
@@ -103,7 +103,7 @@
           </me>.
         </p>
         <p>
-          Our restriction <m>0\leq\theta\lt2\pi</m> gives us the following solutions:
+          The restriction <m>0\leq\theta\lt2\pi</m> gives us the following solutions:
           <me>
             \frac{\pi}{12}, \frac{11\pi}{12}, \frac{13\pi}{12}, \frac{23\pi}{12}
           </me>.
@@ -112,13 +112,13 @@
     </example>
     <remark>
       <p>
-        In this example, our angle was a double-angle: <m>2\theta</m>. When dealing with multiple-angle trigonometric functions, such as <m>\cos(2\theta)</m>, it's essential to understand their graphical behavior. According to <xref ref="def-sin-cos-horizontal-stretch-compress"/>, the graph of <m>\cos(2\theta)</m> undergoes a horizontal compression by a factor of 2, and its period is now <m>\frac{2\pi}{2}=\pi</m>. Since we are asked to find solutions on the interval <m>0\leq\theta\lt2\pi</m>, we will need to consider two periods. Thus, we have four solutions (2 solutions for each period):
+        In this example, our angle was a double-angle: <m>2\theta</m>. When dealing with multiple-angle trigonometric functions, such as <m>\cos(2\theta)</m>, it's essential to understand their graphical behavior. According to <xref ref="def-sin-cos-horizontal-stretch-compress"/>, the graph of <m>\cos(2\theta)</m> undergoes a horizontal compression by a factor of 2, and its period is <m>\frac{2\pi}{2}=\pi</m>. Since we are asked to find solutions on the interval <m>0\leq\theta\lt2\pi</m>, we will need to consider two periods. Thus, we have four solutions (2 solutions for each period):
         <me>
           \frac{\pi}{12}, \frac{11\pi}{12}, \frac{13\pi}{12}, \frac{23\pi}{12}
         </me>.
       </p>
       <p>
-        In general, if our trigonometric function has an angle <m>k\theta</m>, for some number <m>k</m>, we will need to consider the effect of this multiple angle on the period and number of solutions, ensuring that we adjust our solutions accordingly to cover all possible solutions within the given interval.
+        In general, if the trigonometric function has an angle <m>k\theta</m>, for some number <m>k</m>, we will need to consider the effect of this multiple angle on the period and number of solutions, ensuring that we adjust our solutions accordingly to cover all possible solutions within the given interval.
       </p>
     </remark>
     <example>
@@ -134,14 +134,14 @@
             <mrow> 3\tan\frac{\theta}{2}-\sqrt{3} \amp = 0 </mrow>
             <mrow> 3\tan\frac{\theta}{2} \amp = \sqrt{3} </mrow>
             <mrow> \tan\frac{\theta}{2} \amp = \frac{\sqrt{3}}{3} </mrow>
-          </md>
+          </md>.
         </p>
         <p>
           Since <m>\tan\frac{\theta}{2}</m> equals <m>\frac{\sqrt{3}}{3}</m> for angles <m>\frac{\pi}{6}</m> and <m>\frac{7\pi}{6}</m>, the general solutions for <m>\frac{\theta}{2}</m> are
           <me>
             \frac{\theta}{2}=\frac{\pi}{6}+k\pi\quad\mbox{and}\quad\frac{\theta}{2}=\frac{7\pi}{6}+k\pi
           </me>
-          for some integer <m>k</m>.
+          for any integer <m>k</m>.
         </p>
         <p>
           Solving for <m>\theta</m>, we multiply both sides by 2 to obtain:
@@ -150,7 +150,7 @@
           </me>.
         </p>
         <p>
-          Considering our restriction <m>0\leq\theta\lt2\pi</m>, we only have one solution:
+          Considering our restriction <m>0\leq\theta\lt2\pi</m>, we have only one solution:
           <me>
             \theta=\frac{\pi}{3}
           </me>.
@@ -159,19 +159,19 @@
     </example>
     <remark>
       <p>
-        In this example, our angle was <m>\frac{\theta}{2}</m>, which stretches the graph of the tangent function. When we have an angle of the form <m>\frac{\theta}{2}</m>, it effectively stretches the period of the tangent function by a factor of 2. Thus, for the given interval, we only have half a period to consider instead of the full period.
+        In this example, the angle was <m>\frac{\theta}{2}</m>, which stretches the graph of the tangent function. When we have an angle of the form <m>\frac{\theta}{2}</m>, it stretches the period of the tangent function by a factor of 2. Thus, for the given interval, we have only half a period to consider instead of the full period.
       </p>
     </remark>
   </subsection>
   <subsection xml:id="subsec-solving-trig-eq-with-graphing-utility">
     <title>Solving a Trigonometric Equation with a Graphing Utility</title>
     <p>
-      Sometimes we will encounters equations where an exact solution is not possible. However, we may be able to get an approximation to the solution by graphing the equation.
+      Sometimes we will encounter equations where an exact solution is not possible. However, we may be able to get an approximation to the solution by graphing the equation.
     </p>
     <example>
       <statement>
         <p>
-          Use a graphing utility to find the solutions to the equation <m>\sin x+\cos x=\frac{1}{2}x</m>. Express your answers in radians, rounded to two decimals.
+          Use a graphing utility to find the solutions to the equation <m>\sin x+\cos x=\frac{1}{2}x</m>. Express the answers in radians, rounded to two decimals.
         </p>
       </statement>
       <solution>
@@ -186,10 +186,10 @@
         </p>
         <figure xml:id="fig-desmos-solving-trig-eqn-graphing"><caption>Plotting <m>y_1=\sin x+\cos x</m> and <m>\quad y_2=\frac{1}{2}x</m>, corresponding to the left-hand and right-hand sides of the equation, respectively.</caption><interactive desmos="lwruylxia2" aspect="1.0:0.4" label="desmos-solving-trig-eqn-graphing"/></figure>
         <p>
-          Next, you may need to zoom in or out to better visualize the behavior of the curves. To find their intersection points, calculators often have a <kbd>TRACE</kbd> or <kbd>INTERSECT</kbd> button or command. In <url href="https://www.desmos.com/calculator" visual="Desmos Graphing Calculator">Desmos Graphing Calculator</url> you can click on either curve, and the points of intersection will be highlighted. Hovering your cursor over the intersection will display the coordinates of that point.
+          Next, we may need to zoom in or out to better visualize the behavior of the curves. To find their intersection points, calculators often have a <kbd>TRACE</kbd> or <kbd>INTERSECT</kbd> button or command. In <url href="https://www.desmos.com/calculator" visual="Desmos Graphing Calculator">Desmos Graphing Calculator</url> we can click on either curve, and the points of intersection will be highlighted. Hovering the cursor over the intersection will display the coordinates of that point.
         </p>
         <p>
-          The equation <m>\sin x + \cos x = \frac{1}{2}x</m> has three solutions, which correspond to the points of intersection between the curves <m>y_1 = \sin x + \cos x</m> and <m>y_2 = \frac{1}{2}x</m>. The <m>x</m>-values of these intersections are:
+          The equation <m>\sin x + \cos x = \frac{1}{2}x</m> has three solutions, which correspond to the points of intersection between the curves <m>y_1 = \sin x + \cos x</m> and <m>y_2 = \frac{1}{2}x</m>. The <m>x</m>-values of these intersections are
           <me>
             x=-2.68, -1.24, 1.71
           </me>.
@@ -328,7 +328,7 @@
         </statement>
         <answer>
           <p>
-            <m>\frac{\pi}{18}, \frac{5\pi}{18}, \frac{13\pi}{18}, \frac{17\pi}{18}, \frac{25\pi}{18}, \frac{29\pi}{18},</m>
+            <m>\frac{\pi}{18}, \frac{5\pi}{18}, \frac{13\pi}{18}, \frac{17\pi}{18}, \frac{25\pi}{18}, \frac{29\pi}{18}</m>
           </p>
         </answer>
       </exercise>
@@ -372,7 +372,7 @@
         </statement>
         <answer>
           <p>
-            <m>\frac{\pi}{9}, \frac{2\pi}{9}, \frac{7\pi}{9}, \frac{8\pi}{9}, \frac{13\pi}{9}, \frac{14\pi}{9}, </m>
+            <m>\frac{\pi}{9}, \frac{2\pi}{9}, \frac{7\pi}{9}, \frac{8\pi}{9}, \frac{13\pi}{9}, \frac{14\pi}{9}</m>
           </p>
         </answer>
       </exercise>
