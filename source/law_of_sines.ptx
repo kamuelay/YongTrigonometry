@@ -3,25 +3,27 @@
   <title>The Law of Sines</title>
   <introduction>
     <p>
-      Recall <xref ref="exmp-gift-for-mau"/> in <xref ref="inverse_trigonometry"/> where Alingano Maisu<idx><h>canoe</h><h>Alingano Maisu</h></idx> is sailing to her new home in Satawal. For the first leg of the voyage, we calculated that to sail from Johnston Atoll to Majuro, you would need to head towards House ʻĀina Kona (<m>27.4^{\circ}</m>). However, in reality, currents can push the waʻa off course. Let's consider a scenario where a current of 1 knot is flowing in the direction of the house Komohana (West). If we were to face Majuro and sail straight, the current would push us to the west of our destination. To ensure we arrive at Majuro, our apparent heading will need to be adjusted accordingly, as illustrated below.
+      Recall <xref ref="exmp-gift-for-mau"/> in <xref ref="inverse_trigonometry"/> where Alingano Maisu<idx><h>canoe</h><h>Alingano Maisu</h></idx> is sailing to her new home in Satawal. For the first leg of the voyage, we calculated that to sail from Johnston Atoll to Majuro, we would need to head towards House ʻĀina Kona (<m>27.4^{\circ}</m>). However, in reality, currents can push the waʻa off course. Let's consider a scenario where a current of 1 knot is flowing in the direction of the house Komohana (West). If we were to face Majuro and sail straight, the current would push us to the west of our destination. To ensure we arrive at Majuro, our apparent heading will need to be adjusted accordingly, as illustrated below.
     </p>
     <image xml:id="fig-maisu-currents">
       <latex-image>
-        \begin{tikzpicture}\node[below left, yshift=0.2cm] at (-11,-5.75) {Majuro};
+        \begin{tikzpicture}
+        \node[below left, yshift=0.2cm] at (-11,-5.75) {Majuro};
         \node[below] at (1,-0.5) {Johnston Atoll};
         \draw[line width=1pt] (0,0) -- (-11,-5.75) node[midway,sloped,above,yshift=0.1cm] {actual course};
         \draw[line width=1pt] (0,0) -- (-8.5,-5.75) node[midway,sloped,below,yshift=-0.1cm] {apparent heading};
         \draw[line width=1pt,stealth-] (-11,-5.75) -- (-8.5,-5.75) node[midway,below,yshift=-0.1cm] {current};
         \draw[dashed] (-3,0) -- (0,0);
         \draw ([shift=(180:2)]0,0) arc (180:207.597295869:2) node[midway,right,xshift=-28,yshift=-1] {\(27.4^{\circ}\)};
-        \draw ([shift=(207.597295869:2)]0,0) arc (207.597295869:214.07719528:2) node[midway,right,xshift=-1,yshift=-8] {\(C\)};
+        \draw ([shift=(207.597295869:1.5)]0,0) arc (207.597295869:214.07719528:1.5) node[midway,right,xshift=-1,yshift=-8] {\(C\)};
         \draw ([shift=(207.597295869:-1cm)]0,0) pic {waa1-top={waacolor}{117.597295869}{0.1}};
         \draw (-9,-5.75) arc (180:34.0771952801:0.5) node[midway,above,xshift=5,yshift=2] {\(B\)};
-        \draw (-10.25,-5.75) arc (0:27.5972958686:0.75) node[midway,right,xshift=2,yshift=2] {\(A\)};\end{tikzpicture}
+        \draw (-10.25,-5.75) arc (0:27.5972958686:0.75) node[midway,right,xshift=2,yshift=2] {\(A\)};
+        \end{tikzpicture}
       </latex-image>
     </image>
     <p>
-      Now, suppose we sail at 5 knots. What heading should we aim for to compensate for a 2-knot current? We note that by alternate interior angles, <m>A=27.4^{\circ}</m>. Let's represent this situation with a triangle where the sides represent speed of the waʻa and the current, allowing us to disregard the distance traveled.
+      Now, suppose we sail at 5 knots. What heading should we aim for to compensate for a 1-knot current? We note that by alternate interior angles, <m>A=27.4^{\circ}</m>. Let's represent this situation with a triangle where the sides represent speed of the waʻa and the current, allowing us to disregard the distance traveled.
     </p>
     <image xml:id="fig-maisu-triangle">
       <latex-image>
@@ -62,7 +64,7 @@
                   </li>
                   <li>
                     <p>
-                      <em>Side-Angle-Angle (SAA)</em>: One side and two consecutive angles are known.
+                      <em>Side-Angle-Angle (SAA)</em>: Two angles and a side that is not between them are known.
                     </p>
                     <image xml:id="fig-triangle-side-angle-angle">
                       <latex-image>
@@ -138,7 +140,7 @@
       </ol>
     </p>
     <p>
-      In this section, we explore techniques for solving triangles when provided with one side and two angles (ASA or SAA) and when given two sides along with the angle between them (SSA). Triangles falling under the categories of SAS and SSS will be discussed in more detail in the <xref ref="law_of_cosines"/>.
+      In this section, we explore techniques for solving triangles when provided with one side and two angles (ASA or SAA) and when given two sides along with the angle not between them (SSA). Triangles falling under the categories of SAS and SSS will be discussed in more detail in the <xref ref="law_of_cosines"/>.
     </p>
   </introduction>
   <subsection xml:id="subsec-law-of-sines">
@@ -153,14 +155,14 @@
           In triangle <m>ABC</m>, we have
           <me>
             \frac{\sin A}{a}=\frac{\sin B}{b}=\frac{\sin C}{c}
-          </me>
+          </me>.
           which may also be written in the form
           <me>
             \frac{a}{\sin A}=\frac{b}{\sin B}=\frac{c}{\sin C}
-          </me>
+          </me>.
         </p>
         <p>
-          The first form is more convenient when you are trying to find an angle and the second form is more convenient when you are trying to find a side.
+          The first form is more convenient when we are trying to find an angle and the second form is more convenient when we are trying to find a side.
         </p>
       </statement>
     </theorem>
@@ -183,28 +185,28 @@
         </latex-image>
       </image>
       <p>
-        Using the right triangles, we have <m>\sin A=\frac{h}{b}</m> and <m>\sin B=\frac{h}{a}</m>. Solving both equations for <m>h</m>, we get <m>h=b\sin A</m> and <m>h=a\sin B</m>. Since these equations both equal <m>h</m>, we can now set them equal to each other.
+        Using the right triangles, we have <m>\sin A=\frac{h}{b}</m> and <m>\sin B=\frac{h}{a}</m>. Solving both equations for <m>h</m>, we get <m>h=b\sin A</m> and <m>h=a\sin B</m>. Since these equations both equal <m>h</m>, we can set them equal to each other:
         <me>
           b\sin A = a\sin B
-        </me>
+        </me>.
       </p>
       <p>
         Dividing both sides by <m>ab</m>, we get
         <me>
           \frac{\sin A}{a}=\frac{\sin B}{b}
-        </me>
+        </me>.
       </p>
       <p>
-        Using the same method, we can get
+        Using the same method, we can get:
         <me>
           \frac{\sin A}{a}=\frac{\sin C}{c}\mbox{ and } \frac{\sin B}{b}=\frac{\sin C}{c}
-        </me>
+        </me>.
       </p>
       <p>
         Putting these together, we get
         <me>
           \frac{\sin A}{a}=\frac{\sin B}{b}=\frac{\sin C}{c}
-        </me>
+        </me>.
       </p>
     </proof>
     <remark>
@@ -212,7 +214,7 @@
         When solving triangles, it is often useful to use the fact that the sum of the angles in a triangle equals <m>180^{\circ}</m>. That is,
       <me>
         A+B+C=180^{\circ}
-      </me>
+      </me>.
       </p>
     </remark>
   </subsection>
@@ -222,7 +224,7 @@
       <title>Using Law of Sines (ASA)</title>
       <statement>
         <p>
-          The waʻa Kānehūnāmoku<idx><h>canoe</h><h>Kānehūnāmoku</h></idx> is returning from an afternoon sail from training students in the ways of sailing. Two observers stand 1,000 feet apart on the shore at Kāne'ohe Bay spot Kānehūnāmoku. Observer <m>A</m> determines that the angle between the waʻa and Observer <m>B</m> is <m>80^{\circ}</m> while Observer <m>B</m> determines that the angle between the waʻa and Observer <m>A</m> is <m>60^{\circ}</m>. How far is Kānehūnāmoku from each observer and what is the angle formed by the two observers (round your answer to the nearest foot)?
+          The waʻa Kānehūnāmoku<idx><h>canoe</h><h>Kānehūnāmoku</h></idx> is returning from a morning sail, training students in the ways of sailing. Two observers standing 1,000 feet apart on the shore at Kāneʻohe Bay spot Kānehūnāmoku. Observer <m>A</m> determines that the angle between the waʻa and Observer <m>B</m> is <m>80^{\circ}</m> while Observer <m>B</m> determines that the angle between the waʻa and Observer <m>A</m> is <m>60^{\circ}</m>. How far is Kānehūnāmoku from each observer and what is the angle formed by the two observers (round the answer to the nearest foot)?
         </p>
         <image xml:id="fig-example-using-law-of-sines-asa" width="80%">
           <latex-image>
@@ -257,22 +259,22 @@
           </me>.
         </p>
         <p>
-          To solve for <m>b</m>, we have two options to use for the Law of Sines
+          To solve for <m>b</m>, we have two options to use for the Law of Sines:
           <me>
             \frac{b}{\sin B}=\frac{a}{\sin A}\qquad\mbox{or} \qquad\frac{b}{\sin B}=\frac{c}{\sin C}
-          </me>
+          </me>.
         </p>
         <p>
           Because our answer for <m>a</m> was rounded, using the first option may lead to rounding errors so it is best to use the second option because it has known values that we were originally given in the problem (<m>c=1,000</m>). Thus we will use
           <me>
             \frac{b}{\sin B}=\frac{c}{\sin C}
-          </me>
+          </me>.
         </p>
         <p>
           So we get
           <me>
             b=\frac{c\sin B}{\sin C}=\frac{1,000\sin 60^{\circ}}{\sin 40^{\circ}}\approx1,347\mbox{ ft}
-          </me>
+          </me>.
         </p>
         <p>
           Thus Kānehūnāmoku is 1,347 feet from Observer A and 1,532 feet from Observer B, and the angle between the two observers is <m>40^{\circ}</m>.
@@ -286,7 +288,7 @@
       <title>Using Law of Sines (SAA)</title>
       <statement>
         <p>
-          For the triangle shown below with <m>A=120^{\circ}</m>, <m>C=20^{\circ}</m>, and <m>a=5</m>, find the remaining sides. Round your answer to two decimal places.
+          For the triangle shown below with <m>A=120^{\circ}</m>, <m>C=20^{\circ}</m>, and <m>a=5</m>, find the remaining sides. Round the answer to two decimal places.
         </p>
         <image xml:id="fig-example-using-law-of-sines-saa" width="80%">
           <latex-image>
@@ -305,13 +307,13 @@
       </statement>
       <solution>
         <p>
-          In this triangle, we know the values of one side and two consecutive angles, so we have a Side-Angle-Angle (SAA) triangle. The third angle can be calculated by subtracting the known angles from <m>180^{\circ}</m>.
+          In this triangle, we know the values of two angles and the side between them, so we have a Side-Angle-Angle (SAA) triangle. The third angle can be calculated by subtracting the known angles from <m>180^{\circ}</m>:
           <me>
             B=180^{\circ}-A-C=180^{\circ}-120^{\circ}-20^{\circ}=40^{\circ}
-          </me>
+          </me>.
         </p>
         <p>
-          Using the first form of the Law of Sines
+          By using the first form of the Law of Sines
           <me>
             \frac{b}{\sin B}=\frac{a}{\sin A}\qquad\mbox{and} \qquad\frac{c}{\sin C}=\frac{a}{\sin A}
           </me>
@@ -322,8 +324,7 @@
           and
           <me>
             c=\frac{a\sin C}{\sin A}=\frac{5\sin20^{\circ}}{\sin120^{\circ}}\approx1.97
-          </me>
-          
+          </me>.
         </p>
       </solution>
     </example>
@@ -337,7 +338,7 @@
       <title>The Ambiguous Case</title><idx><h>ambiguous case</h></idx>
       <statement>
         <p>
-          Consider a triangle where <m>a</m>, <m>b</m>, and <m>A</m> are given. The altitude is <m>h=b\sin A</m>. Then we have the following possibilities
+          Consider a triangle where <m>a</m>, <m>b</m>, and <m>A</m> are given. The altitude is <m>h=b\sin A</m>. We have the following possibilities:
         </p>
         <p>
           <ol>
@@ -384,7 +385,7 @@
             </li>
             <li>
               <p>
-                <m>A</m> is acute and <m>h=b\sin A\lt a\lt b</m>:  <em>Two triangles</em> (<m>\Delta ACB_1</m> and <m>\Delta ACB_2</m>)
+                <m>A</m> is acute and <m>h=b\sin A\lt a\lt b</m>:  <em>Two triangles</em> (<m>\Delta AB_1C_1</m> and <m>\Delta AB_2C_2</m>)
               </p>
               <image xml:id="fig-ssa-case3">
                 <latex-image>
@@ -414,7 +415,7 @@
                     \draw[blue,line width=1] (0,0) -- (4,3) node[midway,left,xshift=-4,yshift=3] {\(b\)};
                     \draw[blue] (0.75,0) arc (0:36.8698976458:0.75);
                     \node[blue,below] at (0,0) {\(A\)};
-                    \node[blue,above] at (4,3) {\(C\)};
+                    \node[blue,above] at (4,3) {\(C_1\)};
                     \draw (3.75,0) -- (3.75,0.25) -- (4,0.25);
                     \draw[dashed] (4,0) -- (4,3) node[midway,right] {\(h\)};
                     \draw[blue,line width=1] (4,3) -- (6,0) node[midway,right] {\(a_1\)};
@@ -430,7 +431,7 @@
                     \draw[blue,line width=1] (0,0) -- (4,3) node[midway,left,xshift=-4,yshift=3] {\(b\)};
                     \draw[blue] (0.75,0) arc (0:36.8698976458:0.75);
                     \node[blue,below] at (0,0) {\(A\)};
-                    \node[blue,above] at (4,3) {\(C\)};
+                    \node[blue,above] at (4,3) {\(C_2\)};
                     \draw (3.75,0) -- (3.75,0.25) -- (4,0.25);
                     \draw[dashed] (4,0) -- (4,3) node[midway,right] {\(h\)};
                     \draw[blue,line width=1] (4,3) -- (2,0) node[midway,right] {\(a_2\)};
@@ -506,10 +507,10 @@
     <remark>
       <title>Generalizing the Ambiguous Case</title>
       <p>
-        Not every time you encounter a SSA triangle will you be given the angle <m>A</m> and sides <m>a</m> and <m>b</m>. Sometimes you may be given angle <m>B</m> and sides <m>a</m> and <m>b</m>. In these cases, you cannot use the equations and inequalities listed above to identify how many triangles you will get.
+        Not every time we encounter a SSA triangle will we be given the angle <m>A</m> and sides <m>a</m> and <m>b</m>. Sometimes we may be given angle <m>B</m> and sides <m>a</m> and <m>b</m>. In these cases, we cannot use the equations and inequalities listed above to identify how many triangles we will get.
       </p>
       <p>
-        To generalize the ambiguous case of SSA, we are given a triangle with 
+        To generalize the ambiguous case of SSA, we are given a triangle with:
       </p>
       <sidebyside>
         <p>
@@ -598,7 +599,7 @@
       <title>Using Law of Sines (SSA) one-solution</title>
       <statement>
         <p>
-          We can now return to the example at the start of the section where the Alingano Maisu must account for a current and we had the following triangle
+          We can now return to the example at the start of the section where the Alingano Maisu must account for a current and we had the following triangle:
         </p>
         <image  xml:id="fig-ssa-maisu">
           <latex-image>
@@ -613,7 +614,7 @@
           </latex-image>
         </image>
         <p>
-          What house do we need to head in order to account for current?
+          Which house do we need to sail into to account for the current?
         </p>
       </statement>
       <solution>
@@ -628,16 +629,16 @@
           we get
           <me>
             \sin C=c\cdot\frac{\sin A}{a}\approx1\cdot\frac{\sin 27.4^{\circ}}{5}\approx0.092
-          </me>
+          </me>.
         </p>
         <p>
           Taking the inverse sine we get
           <me>
-            C=\sin^{-1}0.092\approx5.8^{\circ}
-          </me>
+            C=\sin^{-1}0.092\approx5.3^{\circ}
+          </me>.
         </p>
         <p>
-          Now that we know the value of <m>C</m>, we will need to add that to the heading that we determined in the last section (<m>207.4^{\circ}</m>) to get <m>5.8^{\circ}+207.4^{\circ}=213.2^{\circ}</m>. Next we refer to the Star Compass with angles (<xref ref="star-compass-with-angles"/>) to conclude we will need to sail towards the House Noio Kona.
+          Now that we know the value of <m>C</m>, we will need to add that to the heading that we determined in the last section (<m>207.4^{\circ}</m>) to get <m>5.3^{\circ}+207.4^{\circ}=212.7^{\circ}</m>. Next we refer to the Star Compass with angles (<xref ref="star-compass-with-angles"/>) to conclude we will need to sail towards the House Noio Kona.
         </p>
       </solution>
     </example>
@@ -650,7 +651,7 @@
       </statement>
       <solution>
         <p>
-          The altitude of the triangle is <m>h=b\sin C=6\sin70^{\circ}\approx5.64</m>. Since <m>C</m> is an acute angle and the altitude (<m>h\approx5.64</m>) is greater than the side opposite of the angle (<m>c=5)</m>, then we have Case 1 of <xref ref="tab_SSA">Table</xref>, thus is no triangle.
+          The altitude of the triangle is <m>h=b\sin C=6\sin70^{\circ}\approx5.64</m>. Since <m>C</m> is an acute angle and the altitude (<m>h\approx5.64</m>) is greater than the side opposite of the angle (<m>c=5)</m>, we have Case 1 of <xref ref="tab_SSA">Table</xref>, thus there is no triangle.
         </p>
         <image xml:id="fig-example-ssa-no-solution" width="50%">
           <latex-image>
@@ -680,7 +681,7 @@
       </statement>
       <solution>
         <p>
-          The altitude of the triangle is <m>h=b\sin A=7\sin40^{\circ}\approx4.50</m>. Since <m>A</m> is an acute angle and the altitude (<m>h\approx4.50</m>) is less than the opposite side (<m>a=6</m>) which is less than the adjacent side (<m>b=7)</m>. This satisfies Case 3 of <xref ref="tab_SSA">Table</xref>, thus there are two triangles.
+          The altitude of the triangle is <m>h=b\sin A=7\sin40^{\circ}\approx4.50</m>. Since <m>A</m> is an acute angle and the altitude (<m>h\approx4.50</m>) is less than the opposite side (<m>a=6</m>) which is less than the adjacent side (<m>b=7)</m>, this satisfies Case 3 of <xref ref="tab_SSA">Table</xref>, thus there are two triangles.
         </p>
         <image xml:id="fig-example-ssa-2-triangles">
           <latex-image>
@@ -707,20 +708,20 @@
           we get
           <me>
             \sin B=\frac{b\sin A}{a}=\frac{7\sin40^{\circ}}{6}\approx0.75
-          </me>
+          </me>.
         </p>
         <p>
-          Here we have that <m>\sin B</m> is positive and we know that sine is positive in Quadrant I and II so our value for <m>B</m> may be between <m>0^{\circ}</m> and <m>180^{\circ}</m>. Taking the inverse sine we get our first angle
+          Here we have that <m>\sin B</m> is positive and we know that sine is positive in Quadrant I and II so our value for <m>B</m> is between <m>0^{\circ}</m> and <m>180^{\circ}</m>. Taking the inverse sine we get our first angle
           <me>
             B_1=\sin^{-1}(0.75)\approx48.58^{\circ}
-          </me>
+          </me>,
           which is in Quadrant I. To calculate the angle in Quadrant II, we subtract the reference angle from <m>180^{\circ}</m> to get
           <me>
             B_2=180^{\circ}-B_1=180^{\circ}-48.58^{\circ}=131.42^{\circ}
-          </me>
+          </me>.
         </p>
         <p>
-          So we now have two triangles: <m>AB_1C</m> and <m>AB_2C</m>.
+          So we now have two triangles: <m>AB_1C_1</m> and <m>AB_2C_2</m>.
         </p>
         <image xml:id="fig-example-ssa-2-trianglesa">
           <latex-image>
@@ -742,41 +743,41 @@
             \draw[blue,line width=1] (0,0) -- (5.36,5) node[midway,left,xshift=-4,yshift=3] {\(b\)};
             \draw[blue] (0.75,0) arc (0:43:0.75);
             \node[blue,left] at (0,0) {\(A\)};
-            \node[blue,above] at (5.36,5) {\(C_1\)};
+            \node[blue,above] at (5.36,5) {\(C_2\)};
             \draw[blue,line width=1] (5.36,5) -- (1.39,0) node[midway,right,xshift=4] {\(a_2\)};
             \node[blue,right,xshift=4] at (1.39,0) {\(B_2\)};
             \end{tikzpicture}
           </latex-image>
         </image>
         <p>
-          To solve triangle <m>AB_1C</m>, be begin by finding <m>C_1</m>
+          To solve triangle <m>AB_1C_1</m>, be begin by finding <m>C_1</m>:
           <me>
             C_1\approx180^{\circ}-A-B_1=180^{\circ}-40^{\circ}-48.58^{\circ}=91.42^{\circ}
-          </me>
+          </me>.
         </p>
         <p>
           To find the side <m>c_1</m>, we use the second form for the Law of Sines
           <me>
-            \frac{c_1}{\sin C}=\frac{a}{\sin A}
-          </me>
+            \frac{c_1}{\sin C_1}=\frac{a}{\sin A}
+          </me>.
         </p>
         <p>
           Thus
           <me>
             c_1=\frac{a\sin C_1}{\sin A}\approx\frac{6\sin48.58^{\circ}}{\sin40^{\circ}}\approx9.33
-          </me>
+          </me>.
         </p>
         <p>
-          To solve triangle <m>AB_2C</m>, we begin by finding <m>C_2</m>
+          To solve triangle <m>AB_2C_2</m>, we begin by finding <m>C_2</m>
           <me>
             C_2\approx180^{\circ}-A-B_2=180^{\circ}-40^{\circ}-131.42^{\circ}=8.58^{\circ}
-          </me>
+          </me>.
         </p>
         <p>
           To find the side <m>c_2</m>, we use the second form for the Law of Sines to get
           <me>
             c_2=\frac{a\sin C_2}{\sin A}\approx\frac{6\sin8.58^{\circ}}{\sin40^{\circ}}\approx1.39
-          </me>
+          </me>.
         </p>
       </solution>
     </example>
@@ -784,7 +785,7 @@
   <subsection xml:id="subsec-area-of-an-oblique-triangle">
     <title>Area of an oblique triangle</title>
     <p>
-      After heavy use, you determine it's time to replace the peʻa<idx><h>peʻa</h></idx> (sail) of your waʻa. Before you buy the new peʻa, you need to determine its area. We know the length of the ʻōpeʻa<idx><h>ʻōpeʻa</h></idx> (spar) is <m>b=18</m> feet, the length of the paepae<idx><h>paepae</h></idx> (boom) is <m>a=15</m> feet, and the tack or the angle between them is <m>C=44^{\circ}</m>. What is the area of the peʻa?
+      After heavy use, we determine it's time to replace the peʻa<idx><h>peʻa</h></idx> (sail) of our waʻa. Before we buy the new peʻa, we need to determine its area. We know the length of the ʻōpeʻa<idx><h>ʻōpeʻa</h></idx> (spar) is <m>b=18</m> feet, the length of the paepae<idx><h>paepae</h></idx> (boom) is <m>a=15</m> feet, and the tack or the angle between them is <m>C=44^{\circ}</m>. What is the area of the peʻa?
     </p>
     <image xml:id="fig-area-of-sail1">
       <latex-image>
@@ -815,12 +816,12 @@
       <title>Area of a Triangle</title><idx><h>area</h><h>of a triangle</h></idx>
       <statement>
         <p>
-          Given two sides of a triangle and their included side, the area of the triangle is given by
+          Given two sides of a triangle and their included angle, the area of the triangle is given by:
           <md>
             <mrow> \mbox{Area} \amp = \frac{1}{2}ab\sin C</mrow>
             <mrow> \amp = \frac{1}{2}ac\sin B </mrow>
             <mrow> \amp = \frac{1}{2}bc\sin A </mrow>
-          </md>
+          </md>.
         </p>
         <p>
           In other words, the area of a triangle equals one half of the product of two sides and the sine of their included angle.
@@ -875,41 +876,41 @@
     </definition>
     <proof>
       <p>
-        Recall the area of any triangle is <m>\mbox{Area} =\frac{1}{2}bh</m> where <m>b</m> is the base and <m>h</m> is the height of a triangle. In a right triangle, the height is the length of one side. However, in an oblique triangle, the height is not immediately known.
+        Recall that the area of any triangle is <m>\mbox{Area} =\frac{1}{2}bh</m> where <m>b</m> is the base and <m>h</m> is the height of a triangle. In a right triangle, the height is the length of one side. However, in an oblique triangle, the height is not immediately known.
       </p>
       <p>
         If the angle <m>C</m> is acute, then using the property that
         <me>
           \sin C=\frac{\mbox{opposite} }{\mbox{adjacent} }=\frac{h}{a}
-        </me>
-        the height is then given by
+        </me>,
+        the height is given by
         <me>
           h=a\sin C
-        </me>
+        </me>.
       </p>
       <p>
-        If the angle <m>C</m> is obtuse, then we use the reference angle for <m>C</m>, <m>180^{\circ}-C</m> to get
+        If the angle <m>C</m> is obtuse, we use the reference angle for <m>C</m>, <m>180^{\circ}-C</m> to get
         <me>
           h=a\sin(180^{\circ}-C)
-        </me>
+        </me>.
       </p>
       <p>
         By the difference formula we get <m>\sin(180^{\circ}-C)=\sin C</m> and thus
         <me>
           h=a\sin C
-        </me>
+        </me>.
       </p>
       <p>
         In a right triangle, <m>C=90^{\circ}</m> and since <m>\sin90^{\circ}=1</m>, we can also write
         <me>
           h=a\sin C=a\sin90^{\circ}=a\cdot1=a
-        </me>
+        </me>.
       </p>
       <p>
         Thus regardless of the triangle, we get
         <me>
           \mbox{Area} =\frac{1}{2}(\mbox{base} )(\mbox{height} )=\frac{1}{2}b(a\sin C)=\frac{1}{2}ab\sin C
-        </me>
+        </me>.
       </p>
       <p>
         The other formulas are obtained using a similar method.
@@ -919,7 +920,7 @@
       <title>Area of a sail</title>
       <statement>
         <p>
-          We can now calculate the area of the sail
+          We can now calculate the area of the sail.
         </p>
         <image xml:id="fig-area-of-sail2">
           <latex-image>
@@ -933,12 +934,12 @@
             \draw[color=black] (2.3,0.7373995981953629) node {\(C=44^{\circ}\)};
             \draw [fill=black] (1.392697828416115,6.47402083893756) circle (2.5pt) node[right,xshift=2] {\(A\)};
             \draw [fill=black] (-2,4) circle (2.5pt) node[left,xshift=-2] {\(B\)};
-            \draw[color=black] (2.1,4.25) node {`\={o}pe&#699;a};
+            \draw[color=black] (2.1,4.25) node {`\={o}pe`a};
             \draw[color=black] (2.1,3.6219610448614343) node {\(b=18\)};
             \draw[color=black] (-0.36948367777314706,5.515302534951133) node {\(c\)};
             \draw[color=black] (-0.9,2.1) node {\(a=15\)};
             \draw[color=black] (-1.5,2.5) node {paepae};
-            \draw[color=black] (0,3.5) node {pe&#699;a};
+            \draw[color=black] (0,3.5) node {pe`a};
             \draw[color=black] (1.1,1.5) node {tack};
             \end{tikzpicture}
           </latex-image>
@@ -961,7 +962,7 @@
     <exercisegroup cols="2">
       <introduction>
         <p>
-          Use the Law of Sines to solve each triangle. Express angless in degrees, rounded to one decimal and sides rounded to two decimals.
+          Use the Law of Sines to solve each triangle. Express angles in degrees rounded to one decimal and sides rounded to two decimals.
         </p>
       </introduction>
       <exercise>
@@ -1008,7 +1009,7 @@
         </statement>
         <answer>
           <p>
-            <m>b\approx15.10</m>, <m>c\approx17.73</m>, <m>C=85^{\circ}</m>
+            <m>b\approx15.10</m>, <m>c\approx17.37</m>, <m>C=85^{\circ}</m>
           </p>
         </answer>
       </exercise>
@@ -1068,19 +1069,19 @@
           <image xml:id="exer-law-sines-5" width="75%">
             <latex-image>
               \begin{tikzpicture}[scale=0.4]
-              \draw (0,0) -- (10.05,0) node[midway,below] {\(b\)}; 
+              \draw (0,0) -- (10.89,0) node[midway,below] {\(b\)}; 
               \draw (0,0) -- (50:14) node[midway,above left] {\(c=14\)}; 
-              \draw (50:14) -- (10.05,0) node[midway,above right] {\(a\)};
+              \draw (50:14) -- (10.89,0) node[midway,above right] {\(a\)};
               \node[above] at (50:14) {\(B\)}; 
               \draw (1,0) arc (0:50:1) node[midway,right,xshift=2,yshift=2] {\(A=50^{\circ}\)}; 
-              \draw (9.05,0) arc (180:100:1) node[midway,left,xshift=-1,yshift=8] {\(C=80^{\circ}\)};
+              \draw (9.89,0) arc (180:100:1) node[midway,left,xshift=-1,yshift=8] {\(C=80^{\circ}\)};
               \end{tikzpicture}
             </latex-image>
           </image>
         </statement>
         <answer>
           <p>
-            <m>a\approx10.89</m>, <m>b\approx10.05</m>, <m>B=50^{\circ}</m>
+            <m>a\approx10.89</m>, <m>b\approx10.89</m>, <m>B=50^{\circ}</m>
           </p>
         </answer>
       </exercise>
@@ -1112,7 +1113,7 @@
     <exercisegroup cols="2">
       <introduction>
         <p>
-          Use the Law of Sines to solve each triangle. Express angless in degrees, rounded to one decimal and sides rounded to two decimals.
+          Use the Law of Sines to solve each triangle. Express angles in degrees rounded to one decimal and sides rounded to two decimals.
         </p>
       </introduction>
       <exercise>
@@ -1310,7 +1311,7 @@
         </statement>
         <answer>
           <p>
-            Case 3; two triangles; <m>c_1\approx16.55</m>, <m>A_1\approx51.2^{\circ}</m>, <m>C_1\approx82.8^{\circ}</m>; <m>c_2\approx16.55</m>, <m>A_2\approx36.8^{\circ}</m>, <m>C_2\approx97.2^{\circ}</m>
+            Case 3; two triangles; <m>c_1\approx16.55</m>, <m>A_1\approx51.2^{\circ}</m>, <m>C_1\approx82.8^{\circ}</m>; <m>c_2\approx1.51</m>, <m>A_2\approx128.8^{\circ}</m>, <m>C_2\approx5.2^{\circ}</m>
           </p>
         </answer>
       </exercise>
@@ -1322,7 +1323,7 @@
         </statement>
         <answer>
           <p>
-            Case 2; one triangle; <m>b=1</m>, <m>B=30^{\circ}</m>, <m>C=90^{\circ}</m>
+            Case 2; one right triangle; <m>b=1</m>, <m>B=30^{\circ}</m>, <m>C=90^{\circ}</m>
           </p>
         </answer>
       </exercise>
@@ -1334,7 +1335,7 @@
         </statement>
         <answer>
           <p>
-            Case 3; two triangles; <m>b_1\approx9.63</m>, <m>A_1\approx44.4^{\circ}</m>, <m>B_1\approx105.6^{\circ}</m>; <m>b_2\approx6.96</m>, <m>A_2\approx75.6^{\circ}</m>, <m>B_2\approx74.4^{\circ}</m>
+            Case 3; two triangles; <m>b_1\approx9.63</m>, <m>A_1\approx44.4^{\circ}</m>, <m>B_1\approx105.6^{\circ}</m>; <m>b_2\approx2.49</m>, <m>A_2\approx135.6^{\circ}</m>, <m>B_2\approx14.4^{\circ}</m>
           </p>
         </answer>
       </exercise>
@@ -1358,7 +1359,7 @@
         </statement>
         <answer>
           <p>
-            Case 2; one triangle; <m>c\approx6.93</m>, <m>B=90^{\circ}</m>, <m>C=60^{\circ}</m>
+            Case 2; one right triangle; <m>c\approx6.93</m>, <m>B=90^{\circ}</m>, <m>C=60^{\circ}</m>
           </p>
         </answer>
       </exercise>
@@ -1517,7 +1518,7 @@
     <exercise>
       <introduction>
         <p>
-          A waʻa is sailing in the direction Hikina (east) at 5 knots and spots an island in the house Lā Koʻolau (<m>11.25^{\circ}</m> above due east). 6 hours later (30 nm) the navigator measures the island in the house Manu Hoʻolua (<m>45^{\circ}</m> above due west).
+          A waʻa is sailing in the direction Hikina (east) at 5 knots and spots an island in the house Lā Koʻolau (<m>11.25^{\circ}</m> above due east). Six hours later (30 nm) the navigator measures the island in the house Manu Hoʻolua (<m>45^{\circ}</m> above due west).
         </p>
       </introduction>
       <task>
@@ -1528,7 +1529,7 @@
         </statement>
         <answer>
           <p>
-            124 nm
+            26 nm
           </p>
         </answer>
       </task>
@@ -1540,7 +1541,7 @@
         </statement>
         <answer>
           <p>
-            26 nm
+            7 nm
           </p>
         </answer>
       </task>
