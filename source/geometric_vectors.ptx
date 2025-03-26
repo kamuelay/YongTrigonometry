@@ -3,13 +3,13 @@
   <title>Geometric Vectors</title>
   <introduction>
     <p>
-      Hōkūleʻa's inaugural voyage from Hawaiʻi to Tahiti ignited a cultural resurgence in Hawaiʻi. By showcasing the effectiveness of traditional navigation techniques learned from Micronesia, it soon became clear there was a need for constructing a double-hulled voyaging canoe using traditional methods and native materials. This canoe, named Hawaiʻiloa,<idx><h>canoe</h><h>Hawaiʻiloa</h></idx> aimed to recover knowledge and skilled associated with traditional canoe building in Hawaiʻi.
+      Hōkūleʻa's inaugural voyage from Hawaiʻi to Tahiti in 1976 sparked a cultural resurgence in Hawaiʻi. By showcasing the effectiveness of traditional navigation techniques learned from Micronesia, it soon became clear that there was a need for constructing a waʻa kaulua<idx><h>waʻa kaulua</h></idx> (double-hulled voyaging canoe) using traditional methods and native materials. This canoe, named Hawaiʻiloa,<idx><h>canoe</h><h>Hawaiʻiloa</h></idx> aimed to recover knowledge and skills associated with traditional canoe building in Hawaiʻi.
     </p>
     <p>
       However, during the years 1989-1990, an exhaustive search across Hawaiʻi revealed a significant challenge: the lack of accessible koa trees of sufficient size for constructing a canoe of this size. The search then expanded beyond Hawaiʻi. This decision was guided by historical evidence indicating that storms had transported large trees from the Pacific Coast of North America to islands like Hawaiʻi, where they were traditionally used for canoe construction. As a result, the search extended to North America in pursuit of suitable materials.
     </p>
     <p>
-      Two trees, each 200 feet high and over 400 years old, were discovered on Shelikof Island in Soda Bay, Prince of Wales Island, west of Ketchikan, Alaska. After conducting traditional tree-cutting ceremonies rooted in Hawaiian and Tlingit traditions to seek permission, both trees were felled to be used for constructing the canoe. The logs then embarked on a 2,235-nautical-mile journey to Hawaiʻi, following a heading of <m>256^{\circ}</m>. This journey is an example of a <term>vector</term>,<idx><h>vectors</h></idx> — a quantity possessing both <term>magnitude</term><idx><h>vectors</h><h>magnitude</h></idx> and <term>direction</term>.<idx><h>vectors</h><h>direction</h></idx>
+      Two trees, each 200 feet high and over 400 years old, were discovered on Shelikof Island in Soda Bay, Prince of Wales Island, west of Ketchikan, Alaska. After conducting traditional tree-cutting ceremonies rooted in Hawaiian and Tlingit traditions to seek permission, both trees were felled to be used for constructing the canoe. The logs then embarked on a 2,235-nautical-mile journey to Hawaiʻi, following a heading of <m>256^{\circ}</m>. This journey is an example of a <term>vector</term>,<idx><h>vectors</h></idx> a quantity possessing both <term>magnitude</term><idx><h>vectors</h><h>magnitude</h></idx> and <term>direction</term>.<idx><h>vectors</h><h>direction</h></idx>
     </p>
     <image xml:id="fig-hawaiiloa-vector" width="85%">
       <latex-image>
@@ -21,7 +21,7 @@
       </latex-image>
     </image>
     <p>
-      In physics, vectors are often represented with arrows, denoting their direction, while the length of the arrow signifies the vector's magnitude. Vectors play a fundamental role describing various things in the world around us. For example, movement of objects requires a magnitude and direction, the force exerted on an object requires the magnitude force used and the direction of the force. In this section, we will learn how to express vectors, both geometrically and analytically as well as the various properties of vectors.
+      In physics, vectors are often represented with arrows, denoting their direction, while the length of the arrow signifies the vector's magnitude. Vectors play a fundamental role in describing various things in the world around us. For example, movement of objects requires a magnitude and direction, the force exerted on an object requires the magnitude of the force used and the direction of the force. In this section, we will learn how to express vectors, both geometrically and analytically as well as the various properties of vectors.
     </p>
   </introduction>
   <subsection xml:id="subsec-geometric-vectors">
@@ -29,14 +29,19 @@
     <definition xml:id="def-geometric-vectors">
       <statement>
         <p>
-          The vector whose path begins at the point <m>P</m> and ends at the point <m>Q</m> is written as <m>\overrightarrow{PQ}</m>, where the arrow on top indicates the direction. The point <m>P</m> is called the <term>initial point</term><idx><h>vectors</h><h>initial point</h></idx> and the point <m>Q</m> is called the <term>terminal point</term><idx><h>vectors</h><h>terminal point</h></idx> of the vector <m>\overrightarrow{PQ}</m>. The <term>magnitude</term><idx><h>vectors</h><h>magnitude</h></idx> of <m>\overrightarrow{PQ}</m> is the length or distance and is written as <m>\|\overrightarrow{PQ}\|</m>. We can also think of <m>\overrightarrow{PQ}</m> as the <term>displacement</term>.<idx><h>vectors</h><h>displacement</h></idx> The <term>direction</term><idx><h>vectors</h><h>direction</h></idx> of <m>\overrightarrow{PQ}</m> is from <m>P</m> to <m>Q</m>.
+          A vector is a quantity that has both magnitude and direction. The vector <m>\overrightarrow{PQ}</m> represents the directed segment from point <m>P</m> to point <m>Q</m>. The point <m>P</m> is called the <term>initial point</term><idx><h>vectors</h><h>initial point</h></idx>, and the point <m>Q</m> is called the <term>terminal point</term><idx><h>vectors</h><h>terminal point</h></idx>. The magnitude of <m>\overrightarrow{PQ}</m>, denoted as <m>|\overrightarrow{PQ}|</m>, is the distance between <m>P</m> and <m>Q</m>. The direction of <m>\overrightarrow{PQ}</m> is from <m>P</m> to <m>Q</m>.
         </p>
       </statement>
     </definition>
     <remark>
+      <p>
+        In physical contexts, <m>\overrightarrow{PQ}</m> can also be interpreted as the <term>displacement vector</term>, representing the change in position from <m>P</m> to <m>Q</m>.<idx><h>vectors</h><h>displacement</h></idx><idx><h>displacement</h></idx>
+      </p>
+    </remark>
+    <remark>
       <title>Notation</title>
       <p>
-        Another way to write a vector is with a lowercase, bold faced letter (with or without an arrow), <m>\mathbf{v}</m> or <m>{\overrightarrow{\mathbf{v}}}</m>. Typically, if you are writing a vector by hand, you will want to use the arrow, since it is difficult to tell if you are writing in bold or not.
+        Another way to write a vector is with a lowercase boldface letter, with or without an arrow: <m>\mathbf{v}</m> or <m>\overrightarrow{\mathbf{v}}</m>. Typically, if we are writing a vector by hand, we will want to use the arrow, since it is difficult to tell if you are writing in bold or not.
       </p>
     </remark>
     <remark>
@@ -48,10 +53,10 @@
         </me>.
       </p>
       <p>
-        To find the <term>direction</term> (<m>\theta</m>), we will first examine the slope between the initial and terminal points. The slope formula gives us:
+        To determine the <term>direction</term> (<m>\theta</m>) of a vector, we first examine the slope between the initial and terminal points. The direction of a vector is the smallest positive angle in standard position formed by the positive <m>x</m>-axis and <m>\overrightarrow{PQ}</m> (<m>0^{\circ} \leq \theta \leq 360^{\circ}</m>), measured counterclockwise from the axis. Using the slope formula, we can calculate:
         <me>
           \mbox{slope}=\frac{\mbox{rise}}{\mbox{run}}=\frac{q_y-p_y}{q_x-p_x}
-        </me>
+        </me>.
       </p>
       <p>
         This is shown in the figure below.
@@ -81,14 +86,7 @@
         </me>.
       </p>
       <p>
-        Solving for our angle:
-        <me>
-          \theta=\tan^{-1}\left(\frac{\mbox{rise}}{\mbox{run}}\right)=\tan^{-1}\left(\frac{q_y-p_y}{q_x-p_x}\right)
-        </me>
-        where <m>-90^{\circ} \lt \theta \lt 90^{\circ}</m>.
-      </p>
-      <p>
-        Noting the quadrant where <m>\theta</m> lies in, we get:
+        Since <m>-90^{\circ} \lt \tan^{-1}\left(\frac{q_y-p_y}{q_x-p_x}\right) \lt 90^{\circ}</m>, we note the quadrant where <m>\theta</m> lies in and get:
       </p>
       <p>
         <ul>

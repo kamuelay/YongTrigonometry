@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <backmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="back_matter">
-    <!-- <xi:include href="./bibliography.ptx" /> -->
-    <!-- <glossary> -->
-      <!-- <title>Glossary</title> -->
-    <!-- </glossary> -->
+    <xi:include href="./bibliography.ptx" />
+    <appendix xml:id="appendix-canoes">
+      <title>An Introduction to the Canoes in This Book</title>
+      <p>
+        Alingano Maisu, Faʻafaite, Gaualofa, Haunui, Hawaiʻiloa, Hinemoana, Hōkūleʻa, Kānehūnāmoku, Marumaru Atua, Paikea, Te Matau a Māui, Uto Ni Yalo, Vaka Moana
+      </p>
+    
+      
+    </appendix>
     <glossary>
       <title>Glossary (Math)</title>
       <gi>
@@ -24,13 +29,19 @@
       <gi>
         <title>heading</title>
         <p>
-          definition
+          The direction in which a canoe is pointed or moving, with true north corresponding to <m>0^{\circ}</m> and positive angles measured in a clockwise direction.
         </p>
       </gi>
       <gi>
         <title>latitude sailing</title>
         <p>
-          definition
+          A navigational technique in which a canoe sails north or south to reach the latitude of its destination before turning east or west. Because stars move in an arc from east to west, they do not provide a precise measure of longitude. However, their positions and movements shift with latitude. By tracking these changes, navigators can determine when they have reached the correct latitude, allowing them to adjust course toward their destination.
+        </p>
+      </gi>
+      <gi>
+        <title>waʻa kaulua</title>
+        <p>
+          A double-hulled voyaging canoe used by Native Hawaiians for long-distance sailing, traditionally navigated using wayfinding techniques, without the aid of modern instruments.
         </p>
       </gi>
 

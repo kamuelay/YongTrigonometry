@@ -2532,13 +2532,13 @@
         </latex-image>
       </image>
       <p>
-        An observer on Rangiroa spots the Faʻafaite, a double-hulled voyaging canoe from Tahiti, sailing off the north coast of the atoll, maintaining a distance of three nautical miles from the shore and traveling east. Let <m>\theta</m> represent the angle formed between the line from the observer to the vaʻa and a line extending due north from the observer, measured in radians. The angle <m>\theta</m> is negative if the vaʻa is to the left of the observer and positive when to the right, as shown in the figure above. The distance (in nautical miles), denoted by <m>d(\theta)</m> from Faʻafaite to the observer is given by the function
+        An observer on Rangiroa spots the Faʻafaite<idx><h>canoe</h><h>Faʻafaite</h></idx>, a double-hulled voyaging canoe from Tahiti, sailing off the north coast of the atoll, maintaining a distance of 1.5 kilometers from the shore and traveling east. Let <m>\theta</m> represent the angle formed between the line from the observer to the vaʻa and a line extending due north from the observer, measured in radians. The angle <m>\theta</m> is negative if the vaʻa is to the left of the observer and positive when to the right, as shown in the figure above. The distance (in kilometers), denoted by <m>d(\theta)</m> from Faʻafaite to the observer is given by the function
         <me>
-          d(\theta)=3\sec(\theta)
+          d(\theta)=1.5\sec(\theta)
         </me>.
       </p> 
       <p>
-        In each of the following questions, calculate the distance from the observer to Faʻafaite, <m>d(\theta)</m>, in nautical miles, for the given angle <m>\theta</m>. Round your answer to two decimal places.
+        In each of the following questions, calculate the distance from the observer to Faʻafaite, <m>d(\theta)</m>, in kilometers, for the given angle <m>\theta</m>. Round your answer to two decimal places.
       </p>
     </introduction>
     <exercise>
@@ -2549,7 +2549,7 @@
       </statement>
       <answer>
         <p>
-          <m>6.00</m> NM
+          <m>3.00</m> km
         </p>
       </answer>
     </exercise>
@@ -2561,7 +2561,7 @@
       </statement>
       <answer>
         <p>
-          <m>4.24</m> NM
+          <m>2.12</m> km
         </p>
       </answer>
     </exercise>
@@ -2573,7 +2573,7 @@
       </statement>
       <answer>
         <p>
-          <m>3.46</m> NM
+          <m>1.73</m> km
         </p>
       </answer>
     </exercise>
@@ -2585,7 +2585,7 @@
       </statement>
       <answer>
         <p>
-          <m>3.00</m> NM
+          <m>1.50</m> km
         </p>
       </answer>
     </exercise>
@@ -2597,7 +2597,7 @@
       </statement>
       <answer>
         <p>
-          <m>3.46</m> NM
+          <m>1.73</m> km
         </p>
       </answer>
     </exercise>
@@ -2609,7 +2609,7 @@
       </statement>
       <answer>
         <p>
-          <m>4.24</m> NM
+          <m>2.12</m> km
         </p>
       </answer>
     </exercise>
@@ -2621,7 +2621,7 @@
       </statement>
       <answer>
         <p>
-          <m>6.00</m> NM
+          <m>3.00</m> km
         </p>
       </answer>
     </exercise>
@@ -2637,15 +2637,15 @@
             \begin{tikzpicture}
             \begin{axis}[
             axis lines=middle,clip=false,
-            xmin=-pi/3-0.1,xmax=pi/3+0.1,ymin=-0.2,ymax=6.25,
-            ytick={1,2,3,4,5,6},
-            minor ytick={0.5,1.5,...,6},
+            xmin=-pi/3-0.1,xmax=pi/3+0.1,ymin=-0.2,ymax=4.25,
+            ytick={1,2,3,4},
+            minor ytick={0.5,1.5,...,4},
             xtick={-pi/3,-pi/4,-pi/6,pi/6,pi/4,pi/3},
             xticklabels={\(-\frac{\pi}{3}\),\(-\frac{\pi}{4}\),\(-\frac{\pi}{6}\),\(\frac{\pi}{6}\),\(\frac{\pi}{4}\),\(\frac{\pi}{3}\)},
             xticklabel style={black},
             xlabel=\(\theta\),
             ylabel=\(d\)]
-              \addplot[stealth-stealth,domain=-pi/3:pi/3,samples=200,blue,line width=1pt]{3*sec(deg(x))}node[right,pos=0.6]{\(d(x)=3\sec(x)\)};
+              \addplot[stealth-stealth,domain=-pi/3:pi/3,samples=200,blue,line width=1pt]{1.5*sec(deg(x))}node[right,pos=0.5,yshift=-12]{\(d(x)=1.5\sec(x)\)};
             \end{axis}
             \end{tikzpicture}
           </latex-image>
@@ -2660,7 +2660,7 @@
       </statement>
       <answer>
         <p>
-          As <m>\theta</m> approaches <m>\frac{\pi}{2}</m>, the function <m>d(\theta)=3\sec(\theta)</m> approaches positive infinity.
+          As <m>\theta</m> approaches <m>\frac{\pi}{2}</m>, the function <m>d(\theta)=1.5\sec(\theta)</m> approaches positive infinity.
         </p>
       </answer>
     </exercise>
@@ -2672,7 +2672,7 @@
       </statement>
       <answer>
         <p>
-          <m>3</m> NM, when Faʻafaite is directly north of the observer (<m>\theta=0</m>).
+          <m>1.5</m> km, when Faʻafaite is directly north of the observer (<m>\theta=0</m>).
         </p>
       </answer>
     </exercise>
