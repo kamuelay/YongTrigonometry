@@ -9,7 +9,7 @@
       Before embarking on a voyage, navigators know relative positions of islands to the canoes at the start, along their route, and at the end. As the journey unfolds, the navigator's perspective from the stationary canoe will figuratively <q>move islands</q> in their mental map of the voyage. This dynamic process, known as <term>etak</term><idx><h>etak</h></idx>, allows navigators to gauge their progress and anticipate their destination even before sighting land.
     </p>
     <p>
-      For example, consider the voyage from Polowat to Guam. Initially, Chuuk Lagoon lies due east in Tan Mailap (see <xref ref="paafu"/>). However, as the journey progresses, Chuuk Lagoon gradually shifts southeastward, aligning with Tan Tumur at approximately <m>42.5^{\circ}</m> south of east at then end of the voyage at Guam. This process of moving islands is illustrated in <xref ref="video-etak"/>.
+      For example, consider the voyage from Polowat to Guam. Initially, Chuuk Lagoon lies due east in Tan Mailap (see <xref ref="paafu"/>). However, as the journey progresses, Chuuk Lagoon gradually shifts southeastward, aligning with Tan Tumur at approximately <m>42.5^{\circ}</m> south of east at the end of the voyage at Guam. This process of moving islands is illustrated in <xref ref="video-etak"/>.
     </p>
     <figure xml:id="video-etak">
       <caption>
@@ -18,12 +18,12 @@
       <video youtube="e68QeM5XvhA" label="youtube-etak"/>
     </figure>
     <p>
-      Suppose the navigator is 200 nautical miles into their journey. What is <m>\theta</m>, the angle the navigator moved Chuuk Lagoon relative to due east? Assume Chuuk is 143 nm east of Polowat and the angle formed between Chuuk Lagoon, Polowat, and Guam is <m>124.5^{\circ}</m>. We can then illustrate what is happening below:
+      Suppose the navigator is 200 nautical miles into their journey. What is <m>\theta</m>, the angle the navigator moved Chuuk Lagoon relative to due east? Assume Chuuk is 143 nm east of Polowat and the angle formed between Chuuk Lagoon, Polowat, and Guam is <m>124.5^{\circ}</m>. We can illustrate what is happening below:
     </p>
     <image xml:id="fig-etak-intro" width="75%">
       <latex-image>
         \begin{tikzpicture}[scale=1.75]
-        \draw[dashed] (0,0) -- (1.43,0) node[pos=0,below left] {Polowat}; 
+        \draw[dashed] (0,0) -- (1.43,0) node[pos=0,below left] {Polowat};
         \draw[dashed] (0,0) -- (124.5:4.47) node[pos=1,above] {Guam}; 
         \draw[dashed] (1.43,0) -- (124.5:4.47) node[pos=0,below right] {Chuuk Lagoon};
         \draw[line width=1.5] (0,0) -- (1.43,0) node[midway,below] {143 nm};
@@ -37,7 +37,7 @@
       </latex-image>
     </image>
     <p>
-      Since the line from Polowat to Chuuk Lagoon and the line due east from the canoe's current position are parallel, the angle that Chuuk Lagoon has shifted below east is equivalent to the angle formed from Polowat to Chuuk Lagoon to the canoe by the <term>alternate interior angles</term> of parallel lines in geometry. This is shown in the figure below, where the lines in blue change, depending on the position of the canoe, but the distance between Polowat and Chuuk Lagoon, represented in black, remains the same.
+      Since the line from Polowat to Chuuk Lagoon and the line due east from the canoe's current position are parallel, the angle <m>\theta</m> that Chuuk Lagoon has shifted below east is equivalent to the angle formed from Polowat to Chuuk Lagoon to the canoe by the <term>alternate interior angles</term> of parallel lines in geometry. This is shown in the figure below, where the lines in blue change, depending on the position of the canoe, but the distance between Polowat and Chuuk Lagoon, represented in black, remains the same.
     </p>
     <image xml:id="fig-etak-intro-triangle" width="75%">
       <latex-image>
@@ -49,11 +49,14 @@
         \draw[-stealth] (124.5:2) -- (1.5,{2*sin(124.5)}) node[pos=1,right] {East};
         \draw[blue] ({2*cos(124.5)+0.4},{2*sin(124.5)}) arc (0:-32.7:0.4) node[midway,right] {\(\theta\)};
         \draw[blue] (1.03,0) arc (180:147.3:0.4) node[midway,left] {\(\theta\)};
+        \node at (1.73,-0.1) {Chuuk Lagoon};
+        \node at (-0.2,-0.1) {Polowat};
+        \node at (-1.1,1.74) {Canoe};
         \end{tikzpicture}
       </latex-image>
     </image>
     <p>
-      This now creates a triangle where two sides (the distances between Chuuk Lagoon and Polowat, and between Polowat and the canoe) and the included angle (from Chuuk Lagoon to Polowat to the canoe) are known. This triangular configuration is a side-angle-side (SAS) scenario. Unfortunately, we cannot apply the Law of Sines to solve this oblique triangle. In this section, we learn the principles of the Law of Cosines and how to utilize it to solve triangles that are side-side-side (SSS) and side-angle-side (SAS), as well as calculating the areas of triangles with only their sides given.
+      This now creates a triangle where two sides (the distances between Chuuk Lagoon and Polowat, and between Polowat and the canoe) and the included angle (from Chuuk Lagoon to Polowat to the canoe) are known. This triangular configuration is a side-angle-side (SAS) scenario. Unfortunately, we cannot apply the Law of Sines to solve this oblique triangle. In this section, we learn the principles of the Law of Cosines and how to use it to solve triangles that are side-side-side (SSS) and side-angle-side (SAS), as well as calculating the areas of triangles with only their sides given.
     </p>
   </introduction>
   <subsection xml:id="subsec-law-of-cosines">
@@ -67,7 +70,7 @@
             <mrow>a^2\amp = b^2+c^2-2bc\cos A</mrow>
             <mrow>b^2\amp = a^2+c^2-2ac\cos B</mrow>
             <mrow>c^2\amp = a^2+b^2-2ab\cos C</mrow>
-          </md>
+          </md>.
         </p>
         <image xml:id="fig-law-of-cosines" width="75%">
           <latex-image>
@@ -91,7 +94,7 @@
     </p>
     <proof>
       <p>
-        To prove the first part, we will place a triangle with <m>A</m> at the origin and <m>C</m> on the <m>x</m>-axis, as shown below.
+        To prove the first part, we will place a triangle with <m>A</m> at the origin and <m>B</m> on the <m>x</m>-axis, as shown below.
       </p>
       <image xml:id="fig-law-of-cosines-proof">
         <latex-image>
@@ -113,7 +116,7 @@
         </latex-image>
       </image>
       <p>
-        Using right triangle trigonometry, the coordinate of <m>C</m> can be written as <m>(b\cos A,b\sin A)</m>. Using the Pythagorean Theorem, we get
+        Using right triangle trigonometry, the coordinates of <m>C</m> can be written as <m>(b\cos A,b\sin A)</m>. Using the Pythagorean Theorem, we get
         <md>
           <mrow>a^2\amp = (b\cos A-c)^2+(b\sin A)^2</mrow>
           <mrow>\amp = b^2\cos^2A-2bc\cos A+c^2+b^2\sin^2A</mrow>
@@ -121,7 +124,7 @@
           <mrow>\amp = b^2(1)+c^2-2bc\cos A</mrow>
           <mrow>\amp = b^2+c^2-2bc\cos A</mrow>
         </md>
-        where we used the identity <m>\cos^2A+\sin^2=1</m>. The other two parts of the Law of Cosines can be proved using a similar argument.
+        where we used the identity <m>\cos^2A+\sin^2A=1</m>. The other two parts of the Law of Cosines can be proved using a similar argument.
       </p>
     </proof>
   </subsection>
@@ -146,13 +149,16 @@
             \draw[-stealth] (124.5:2) -- (1.5,{2*sin(124.5)}) node[pos=1,right] {East};
             \draw[blue] ({2*cos(124.5)+0.4},{2*sin(124.5)}) arc (0:-32.7:0.4) node[midway,right] {\(\theta\)};
             \draw[blue] (1.03,0) arc (180:147.3:0.4) node[midway,left] {\(\theta\)};
+            \node at (1.73,-0.1) {Chuuk Lagoon};
+            \node at (-0.2,-0.1) {Polowat};
+            \node at (-1.1,1.74) {Canoe};
             \end{tikzpicture}
           </latex-image>
         </image>
       </statement>
       <solution>
         <p>
-          Since the Law of Cosines states that the square of one side equals the sum of the squares of the other two sides, minus twice their product times the cosine of their included angle we get
+          Since the Law of Cosines states that the square of one side equals the sum of the squares of the other two sides minus twice their product times the cosine of their included angle, we get:
           <me>
             d^2=200^2+143^2-2\cdot200\cdot143\cos124.5^{\circ}
           </me>.
@@ -170,7 +176,7 @@
           <me>
             \sin\theta=200\cdot\frac{\sin124.5^{\circ}}{304.71}
           </me>.
-          Finally, solving for <m>\theta</m> take the inverse sine of both sides to get:
+          Finally, to solve for <m>\theta</m> take the inverse sine of both sides to get:
           <me>
             \theta=\sin^{-1}\left(200\cdot\frac{\sin124.5^{\circ}}{304.71}\right)\approx32.7^{\circ}
           </me>.
@@ -192,11 +198,11 @@
           </li>
           <li>
             <p>
-              To find the second angle, you may use either the Law of Cosines or Law of Sines.
+              To find the second angle, use either the Law of Cosines or Law of Sines.
               <ul>
                 <li>
                   <p>
-                    Using the Law of Sines may offer a simpler method for finding the angle. Be cautious of the SSA triangle (side-side-angle), which uses the ambiguous case. Refer to <xref ref="tab_SSA"/> to determine which case you have. If you encounter Case 3 (two triangles), check if the angle you need to find is acute (<m>\lt90^{\circ}</m>) or obtuse (<m>\gt90^{\circ}</m>). If it's obtuse, subtract the angle found using the Law of Sines from <m>180^{\circ}</m>.
+                    Using the Law of Sines may offer a simpler method for finding the angle. Be cautious of the SSA triangle (side-side-angle), which uses the ambiguous case. Refer to <xref ref="tab_SSA"/> to identify the applicable case. If we encounter Case 3 (two triangles), check if the angle we need to find is acute (<m>\lt90^{\circ}</m>) or obtuse (<m>\gt90^{\circ}</m>). If it's obtuse, subtract the angle found using the Law of Sines from <m>180^{\circ}</m>.
                   </p>
                 </li>
                 <li>
@@ -208,7 +214,7 @@
             </p>
           </li>
           <li>
-              <p>Utilize the fact that the sum of the three angles in a triangle equals <m>180^{\circ}</m> to find the third angle.</p>
+              <p>Use the fact that the sum of the three angles in a triangle equals <m>180^{\circ}</m> to find the third angle.</p>
           </li>
         </ol>
       </p>
@@ -239,7 +245,7 @@
         <p>
           To find <m>A</m>, we begin by using the Law of Cosines:
           <me>
-            a^2=b^2+c^2-2ab\cos A
+            a^2=b^2+c^2-2bc\cos A
           </me>.
         </p>
         <p>
@@ -277,18 +283,18 @@
     <remark>
       <title>Steps for solving SSS triangles</title>
       <p>
-        When solving SSS triangles, the process is similar to that of solving SAS triangles, with a slight variation. Instead of solving for a side in Step 1, you solve for an angle. Steps 2 and 3 remain the same:
+        When solving SSS triangles, the process is similar to that of solving SAS triangles, with a slight variation. Instead of solving for a side in Step 1, we solve for an angle. Steps 2 and 3 remain the same:
         <ol>
           <li>
               <p>Use the Law of Cosines to solve for the first angle.</p>
           </li>
           <li>
             <p>
-              To find the second angle, you may use either the Law of Cosines or Law of Sines.
+              To find the second angle, use either the Law of Cosines or Law of Sines.
               <ul>
                 <li>
                   <p>
-                    Using the Law of Sines may provide a simpler method for finding the angle. Be cautious of the SSA triangle (side-side-angle), which can lead to the ambiguous case. Refer to Table SSA to determine your case. If you encounter Case 3 (two triangles), verify if the angle you need to find is acute (<m>\lt90^{\circ}</m>) or obtuse (<m>\gt90^{\circ}</m>). For obtuse angles, subtract the angle found using the Law of Sines from <m>180^{\circ}</m>.
+                    Using the Law of Sines may provide a simpler method for finding the angle. Be cautious of the SSA triangle (side-side-angle), which can lead to the ambiguous case. Refer to <xref ref="tab_SSA">Table</xref> to determine our case. If we encounter Case 3 (two triangles), verify if the angle we need to find is acute (<m>\lt90^{\circ}</m>) or obtuse (<m>\gt90^{\circ}</m>). For obtuse angles, subtract the angle found using the Law of Sines from <m>180^{\circ}</m>.
                   </p>
                 </li>
                 <li>
@@ -301,7 +307,7 @@
           </li>
           <li>
             <p>
-              Utilize the fact that the sum of the three angles in a triangle equals <m>180^{\circ}</m> to find the third angle.
+              Use the fact that the sum of the three angles in a triangle equals <m>180^{\circ}</m> to find the third angle.
             </p>
           </li>
         </ol>
@@ -311,7 +317,7 @@
   <subsection>
     <title>Area of an oblique triangle</title>
     <p>
-      The Greek mathematician, Heron of Alexandria, derived a formula for the area of a triangle when all three sides are given. Although a more modern derivation for this formula involves the Law of Cosines, it is still known as Heron's Formula.
+      The Greek mathematician Heron of Alexandria derived a formula for the area of a triangle when all three sides are given. Although a more modern derivation for this formula involves the Law of Cosines, it is still known as Heron's Formula.
     </p>
     <theorem>
       <title>Heron's Formula</title><idx><h>area</h><h>of a triangle</h></idx><idx><h>Heron's formula</h></idx>
@@ -325,11 +331,79 @@
         </p>
       </statement>
     </theorem>
+    <proof>
+      <p>
+        We begin by solving for <m>\cos C</m> in the Law of Cosines:
+        <md>
+          <mrow>c^2 =\amp a^2+b^2-2ab\cos C</mrow>
+          <mrow>\cos C =\amp \frac{a^2+b^2-c^2}{2ab} </mrow>
+        </md>.
+      </p>
+      <p>
+        Using this and the difference of squares, we get:
+        <md>
+          <mrow>1+\cos C = \amp 1+\frac{a^2+b^2-c^2}{2ab} </mrow>
+          <mrow>= \amp \frac{2ab+a^2+b^2-c^2}{2ab} </mrow>
+          <mrow>= \amp \frac{(a^2+2ab+b^2)-c^2}{2ab} </mrow>
+          <mrow>= \amp \frac{(a+b)^2-c^2}{2ab} </mrow>
+          <mrow>= \amp \frac{((a+b)+c)((a+b)-c)}{2ab} </mrow>
+          <mrow>= \amp \frac{(a+b+c)(a+b-c)}{2ab} </mrow>
+          <mrow>= \amp \frac{2s\cdot2(s-c)}{2ab} </mrow>
+          <mrow>= \amp \frac{2s(s-c)}{ab} </mrow>
+        </md>,
+        where the last step comes from the fact that <m>2s=a+b+c</m> and
+        <me>
+          2(s-c)=2\left(\frac{a+b+c}{2}-c\right)=a+b+c-2c=a+b-c
+        </me>.
+      </p>
+      <p>
+        Similarly, we have:
+        <md>
+          <mrow>1-\cos C = \amp 1-\frac{a^2+b^2-c^2}{2ab} </mrow>
+          <mrow>= \amp \frac{2ab-a^2-b^2+c^2}{2ab} </mrow>
+          <mrow>= \amp \frac{c^2-(a^2-2ab+b^2)}{2ab} </mrow>
+          <mrow>= \amp \frac{c^2-(a-b)^2}{2ab} </mrow>
+          <mrow>= \amp \frac{(c+(a-b))(c-(a-b))}{2ab} </mrow>
+          <mrow>= \amp \frac{(a+c-b)(b+c-a)}{2ab} </mrow>
+          <mrow>= \amp \frac{2(s-b)(s-a)}{ab} </mrow>
+        </md>,
+        where the last step comes from the fact that
+        <me>
+          2(s-b)=2\left(\frac{a+b+c}{2}-b\right)=a+b+c-2b=a+c-b
+        </me>
+        and
+        <me>
+          2(s-a)=2\left(\frac{a+b+c}{2}-a\right)=a+b+c-2a=b+c-a
+        </me>.
+      </p>
+      
+      <p>
+        Next, we use <xref ref="def-area-of-triangle"/> for the area of a triangle:
+        <me>
+          \mbox{Area}=\frac{1}{2}ab\sin C
+        </me>.
+        Squaring both sides of the equation we get:
+        <md>
+          <mrow>(\mbox{Area})^2 =\amp \frac{1}{4}a^2b^2\sin^2C</mrow>
+          <mrow> =\amp \frac{1}{4}a^2b^2(1-\cos^2C)</mrow>
+          <mrow> =\amp \frac{1}{4}a^2b^2(1+\cos C)(1-\cos C)</mrow>
+          <mrow> =\amp \frac{1}{4}a^2b^2\left(\frac{2s(s-c)}{ab}\right)\left(\frac{2(s-b)(s-a)}{ab}\right)</mrow>
+          <mrow> =\amp s(s-a)(s-b)(s-c)</mrow>
+        </md>.
+        Taking the square root of both sides of the equation gives us Heron's Formula:
+        <me>
+          \mbox{Area}=\sqrt{s(s-a)(s-b)(s-c)}
+        </me>.
+      </p>
+      <p>
+        Note that our proof differs from Heron's original proof.
+      </p>
+    </proof>
     <example>
       <title>Polynesian Triangle</title>
       <statement>
         <p>
-          The Polynesian Triangle is an expanse in the Pacific Ocean comprising over 1,000 islands collectively known as Polynesia. Positioned at its northern corner are the Hawaiian Islands, while Aotearoa marks the southwestern corner, and Rapa Nui lies at the southeastern corner. Historically, the first settlers are believed to have arrived at Ka Lae, Hawaiʻi; Hokianga, Aotearoa; and Anakena, Rapa Nui, respectively. The distances between these pivotal locations are as follows: 6,850 km separates Ka Lae, Hawai`i from Hokianga, Aotearoa; 7,250 km span between Hokianga, Aotearoa and Anakena, Rapa Nui; and 7,150 km separate Rapa Nui from Ka Lae, Hawaiʻi. What is the area of the Polynesian Triangle, rounded to the nearest square mile?
+          The Polynesian Triangle is an expanse in the Pacific Ocean comprising over 1,000 islands collectively known as Polynesia. Positioned at its northern corner are the Hawaiian Islands, while Aotearoa marks the southwestern corner, and Rapa Nui lies at the southeastern corner. Historically, the first settlers are believed to have arrived at Ka Lae, Hawaiʻi; Hokianga, Aotearoa; and Anakena, Rapa Nui, respectively. The distances between these pivotal locations are as follows: 6,850 km separates Ka Lae, Hawai`i from Hokianga, Aotearoa; 7,250 km span between Hokianga, Aotearoa and Anakena, Rapa Nui; and 7,150 km separate Rapa Nui from Ka Lae, Hawaiʻi. What is the area of the Polynesian Triangle, rounded to the nearest square kilometer?
         </p>
         <image xml:id="fig-polynesian-triangle">
           <latex-image>
@@ -349,14 +423,14 @@
           Using Heron's Formula, we begin by calculating the semiperimeter
           <me>
             s=\frac{1}{2}(6,850+7,250+7,150)=10,625
-          </me>
+          </me>.
         </p>
         <p>
-          Then the area created by the Polynesian Triangle is
+          Then the area created by the Polynesian Triangle is:
           <md>
             <mrow> \mbox{Area} \amp = \sqrt{10,625(10,625-6,850)(10,625-7,250)(10,625-7,150)} </mrow>
             <mrow> \amp \approx 21,688,886\mbox{km} ^2 </mrow>
-          </md>
+          </md>.
         </p>
       </solution>
     </example>
@@ -365,7 +439,7 @@
     <exercisegroup cols="2">
       <introduction>
         <p>
-          Use the Law of Coines to solve each triangle. Express angless in degrees, rounded to one decimal and sides rounded to two decimals.
+          Use the Law of Cosines to solve each triangle. Express angles in degrees rounded to one decimal and sides rounded to two decimals.
         </p>
       </introduction>
       <exercise>
@@ -379,10 +453,12 @@
               \draw (0,0) -- (7.13,0) node[midway,below] {\(a\)}; 
               \draw (0,0) -- (52.5:10) node[midway,above left] {\(c=10\)}; 
               \draw (52.5:10) -- (7.13,0) node[midway,above right] {\(b=8\)};
-              \node[above] at (45:10.76) {\(A=45^{\circ}\)}; 
+              \node[above,xshift=3] at (45:10.76) {\(A=45^{\circ}\)}; 
               \draw (52.5:9) arc ({180+52.5}:{360-82.5}:1);
-              \draw (1,0) arc (0:52.5:1) node[midway,right,xshift=2,yshift=2] {\(B\)}; 
-              \draw (6.13,0) arc (180:{180-82.5}:1) node[midway,left,xshift=-6,yshift=2] {\(C\)};
+              \draw (1,0) arc (0:52.5:1); 
+              \draw (6.13,0) arc (180:{180-82.5}:1);
+              \node[right] at (7.13,0) {\(C\)};
+              \node[left] at (0,0) {\(B\)};
               \end{tikzpicture}
             </latex-image>
           </image>
@@ -401,9 +477,9 @@
           <image xml:id="exer-law-cosines-2">
             <latex-image>
               \begin{tikzpicture}[scale=0.4]
-              \draw (0,0) -- (6,0) node[midway,below] {\(a\)}; 
+              \draw (0,0) -- (6,0) node[midway,below] {\(a=6\)}; 
               \draw (0,0) -- (60:9) node[midway,above left] {\(c=9\)}; 
-              \draw (60:9) -- (6,0) node[midway,above right] {\(b=8\)};
+              \draw (60:9) -- (6,0) node[midway,above right] {\(b\)};
               \node[above] at (60:9) {\(A\)}; 
               \draw (60:8) arc ({180+60}:{360-79.1}:1);
               \draw (1,0) arc (0:60:1) node[midway,right,xshift=0,yshift=2] {\(B=60^{\circ}\)}; 
@@ -458,7 +534,7 @@
               \draw (50:14) -- (10,0) node[midway,above right] {\(b\)};
               \node[above] at (50:14) {\(A\)}; 
               \draw (50:13) arc ({180+50}:{360-84.7}:1);
-              \draw (1,0) arc (0:50:1) node[midway,right,xshift=0,yshift=2] {\(B=40^{\circ}\)}; 
+              \draw (1,0) arc (0:50:1) node[midway,right,xshift=0,yshift=2] {\(B=50^{\circ}\)}; 
               \draw (9,0) arc (180:{180-84.7}:1);
               \node[right] at (10,0) {\(C\)};
               \end{tikzpicture}
@@ -521,7 +597,7 @@
         </statement>
         <answer>
           <p>
-            <m>A\approx41.1^{\circ}</m>, <m>B\approx58.7^{\circ}</m>, <m>C\approx80.3^{\circ}</m>
+            <m>A\approx41.1^{\circ}</m>, <m>B\approx58.7^{\circ}</m>, <m>C\approx80.2^{\circ}</m> (Rounded values may cause a slight discrepancy)
           </p>
         </answer>
       </exercise>
@@ -583,7 +659,7 @@
     <exercisegroup cols="2">
       <introduction>
         <p>
-          Use the Law of Coines to solve each triangle. Express angless in degrees, rounded to one decimal and sides rounded to two decimals.
+          Use the Law of Cosines to solve each triangle. Express angles in degrees rounded to one decimal and sides rounded to two decimals.
         </p>
       </introduction>
       <exercise>
@@ -654,7 +730,7 @@
         </statement>
         <answer>
           <p>
-            <m>b\approx16.76</m>, <m>A\approx47.2^{\circ}</m>, <m>C\approx77.8^{\circ}</m>
+            <m>b\approx16.76</m>, <m>A\approx47.2^{\circ}</m>, <m>C\approx77.8^{\circ}</m> (Rounded values may cause a slight discrepancy)
           </p>
         </answer>
       </exercise>
@@ -666,7 +742,7 @@
         </statement>
         <answer>
           <p>
-            <m>A\approx33.6^{\circ}</m>, <m>B\approx62.2^{\circ}</m>, <m>C\approx84.3^{\circ}</m>
+            <m>A\approx33.6^{\circ}</m>, <m>B\approx62.2^{\circ}</m>, <m>C\approx84.2^{\circ}</m>  (Rounded values may cause a slight discrepancy)
           </p>
         </answer>
       </exercise>
@@ -726,7 +802,7 @@
         </statement>
         <answer>
           <p>
-            <m>A\approx25.1^{\circ}</m>, <m>B\approx28.1^{\circ}</m>, <m>C\approx126.9^{\circ}</m>
+            <m>A\approx25.1^{\circ}</m>, <m>B\approx28.1^{\circ}</m>, <m>C\approx126.8^{\circ}</m> (Rounded values may cause a slight discrepancy)
           </p>
         </answer>
       </exercise>
@@ -836,106 +912,59 @@
     <exercise>
       <introduction>
         <p>
-          The Fijian canoe Uto Ni Yalo<idx><h>canoe</h><h>Uto Ni Yalo</h></idx> embarks on a voyage from Fiji to Tonga, a distance of 412 nautical miles, positioned in the House Lā; Malanai (<m>16.81^{\circ}</m>). However, adverse weather conditions force a deviation from their original course. After sailing for one day, covering 120 nautical miles, the canoe finds itself 2 houses (<m>22.5^{\circ}</m>) off course. Assessing the situation, the navigator determines a direct route to Tonga is now viable.
+          The Fijian canoe Uto Ni Yalo<idx><h>canoe</h><h>Uto Ni Yalo</h></idx> embarks on a voyage from Fiji to Tonga, covering 400 nautical miles with a heading of <m>117^{\circ}</m> (in the house ʻĀina Malanai). After traveling 100 nautical miles, adverse weather conditions force a deviation of two houses (<m>22.5^{\circ}</m>) off the original course. After one day and 120 additional nautical miles, the navigator determines that a direct route to Tonga is now viable.
         </p>
         <image xml:id="fig-fiji-tonga-intro">
           <latex-image>
             \begin{tikzpicture}[scale=2]
-            \node[left] at (0,0) {Fiji};
-            \draw (0,0) -- (-16.81:4.12) node[midway, above,xshift=5] {412};
-            \draw (0,0) -- (-39.31:1.2) node[midway, below,xshift=-8] {120};
-            \draw[dashed] (-39.31:1.2) -- (-16.81:4.12) node[midway,below] {\(d\)};
-            \node[right] at (-16.81:4.12) {Tonga};
-            \draw pic at (-39.31:1.2) {waa-top={waacolor}{230.69}{0.1}};
-            \draw (-16.81:0.5) arc (-16.81:-39.31:0.5) node[midway,right,xshift=6,yshift=-8] {\(22.5^{\circ}\)};
-            \draw[dashed] (-39.31:1.2) -- (-39.31:2);
-            \draw (-39.31:1.7) arc (-39.31:-8.14:0.5) node[midway,right] {\(\theta\)};
+            \node[left] at (153:1) {Fiji};
+            \draw (0,0) -- (153:1) node[midway,above,xshift=5] {100};
+            \draw[dashed] (0,0) -- (-27:3) node[midway, above,xshift=5] {300};
+            \draw (0,0) -- (-49.5:1.2) node[midway, below,xshift=-8] {120};
+            \draw (-49.5:1.2) -- (-27:3) node[midway,below] {\(d\)};
+            \node[right] at (-27:3) {Tonga};
+            \draw pic at (-49.5:1.2) {waa-top={waacolor}{230.69}{0.1}};
+            \draw (-27:0.5) arc (-27:-49.5:0.5) node[right,yshift=15,xshift=5] {\(22.5^{\circ}\)};
+            \draw[dashed] (-49.5:1.2) -- (-49.5:2);
+            \draw (-49.5:1.7) arc (-49.5:-12.9:0.5) node[midway,right] {\(\theta\)};
             \end{tikzpicture}
+
           </latex-image>
         </image>
       </introduction>
-      <!-- <solution>
-        <p>
-          This forms a side-angle-side triangle, where we know two sides and the angle between them. Let's denote the angle between Tonga, Fiji, and the canoe as <m>A</m>, the angle between Fiji, the canoe, and Tonga as <m>B</m>, and the angle between Fiji, Tonga, and the canoe as <m>C</m>. Additionally, the side between the canoe and Tonga is denoted as <m>a</m>, the side between Fiji and Tonga as <m>b = 412</m>, and the side between Fiji and the canoe as <m>c = 120</m>. This is illustrated below:
-        </p>
-        <image xml:id="fig-fiji-tonga-example">
-          <latex-image>
-            \begin{tikzpicture}[scale=2]
-            \node[left] at (0,0) {\(A\)};
-            \draw (0,0) - (-16.81:4.12) node[midway, above,xshift=15] {\(b=412\)};
-            \draw (0,0) - (-39.31:1.2) node[midway, below,xshift=-15] {\(c=120\)};
-            \draw (-39.31:1.2) - (-16.81:4.12) node[midway,below] {\(a\)};
-            \node[right] at (-16.81:4.12) {\(C\)};
-            \draw (-16.81:0.5) arc (-16.81:-39.31:0.5) node[midway,right,xshift=6,yshift=-8] {\(22.5^{\circ}\)};
-            \node[below left] at (-39.31:1.2) {\(B\)};
-            \draw[dashed] (-39.31:1.2) - (-39.31:2);
-            \end{tikzpicture}
-          </latex-image>
-        </image>
-        <p>
-          The distance to Tonga can be found using the Law of Cosines
-          <md>
-            <mrow>a^2\amp = b^2+c^2-2bc\cos A</mrow>
-            <mrow>\amp = 412^2+120^2-2\cdot412\cdot120\cos22.5^{\circ}</mrow>
-            <mrow>\amp \approx 92,790.79</mrow>
-          </md>
-        </p>
-        <p>
-          Taking the square root of both sides we get
-          <me>
-            a\approx\sqrt{92,790.79}\approx304.62
-          </me>
-        </p>
-        <p>
-          Thus they are approximately 305 nm  from their destination.
-        </p>
-        <p>
-          To determine the angle needed to adjust their course, we will first find <m>B</m> and subtract that from <m>180^{\circ}</m>. We can use either the Law of Sines or the Law of Cosines. If we use the Law of Sines
-          <me>
-            \frac{\sin A}{a}=\frac{\sin B}{b}
-          </me>
-          we know <m>a\approx304.62</m>, <m>b=412</m>, and <m>A=22.5^{\circ}</m>. Notice this is Case 3 of <xref ref="tab_SSA"/> for Law of Sines where we get two triangles, one triangle where <m>B\lt90^{\circ}</m> and one where <m>B\gt90^{\circ}</m>. Since we already know what the triangle looks like, we want the measure for <m>B\gt90^{\circ}</m>. However, to avoid this ambiguous case, we can simply use the Law of Cosines
-          <me>
-            b^2=a^2+c^2-2ac\cos B
-          </me>.
-        </p>
-        <p>
-          Rearranging we have
-          <me>
-            \cos B=\frac{a^2+c^2-b^2}{2ac}\approx\frac{304.62^2+120^2-412^2}{2\cdot304.62\cdot120}\approx-0.8556
-          </me>.
-        </p>
-        <p>
-          So,
-          <me>
-            B\approx\cos^{-1}(-0.8556)\approx148.83^{\circ}
-          </me>.
-        </p>
-        <p>
-          Thus the angle Uto Ni Yalo needs to turn to adjust its course is <m>180^{\circ}-148.83^{\circ}=31.17^{\circ}</m> to the left.
-        </p>
-      </solution> -->
       <task>
         <statement>
           <p>
-            At this point what is the remaining distance to Tonga, rounded to the nearest nautical mile?
+            At this point, what is the remaining distance to Tonga, <m>d</m>, rounded to the nearest nautical mile?
           </p>
         </statement>
         <answer>
           <p>
-            305 NM
+            195 NM
           </p>
         </answer>
       </task>
       <task>
         <statement>
           <p>
-            What adjustment angle, <m>\theta</m>, rounded to the nearest tenth of a degree, is required to navigate towards their destination?
+            What adjustment angle, <m>\theta</m>, rounded to the nearest tenth of a degree, is needed to navigate to their destination?
           </p>
         </statement>
         <answer>
           <p>
-            <m>31.2^{\circ}</m>
+            <m>36.1^{\circ}</m>
+          </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p>
+            What was the total distance of the voyage from Fiji to Tonga, rounded to the nearest nautical mile?
+          </p>
+        </statement>
+        <answer>
+          <p>
+            415 NM
           </p>
         </answer>
       </task>
