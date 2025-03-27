@@ -3,7 +3,8 @@
   <title>Coordinate Vectors</title>
   <introduction>
     <p>
-        In <xref ref="geometric_vectors"/>, we visualized vectors as directed line segments with magnitudes and direction. Now, we will explore vectors through a coordinate approach, where we express vectors in terms of their components along the coordinate axis.
+        In <xref ref="geometric_vectors"/>, we visualized vectors as directed line segments with magnitudes and direction. Now, we will explore vectors through a coordinate approach, where we express vectors in terms of their components along the coordinate axes
+        .
     </p>
   </introduction>
   <subsection xml:id="subsec-vectors-in-coordinates">
@@ -49,14 +50,14 @@
       <title>Position Vector</title>
       <statement>
         <p>
-          A vector, <m>\mathbf{v}</m> with an initial point at <m>(0,0)</m> and terminal point at <m>(a,b)</m> is called the <term>position vector</term><idx><h>vectors</h><h>position vector</h></idx> and can be written as
+          A vector <m>\mathbf{v}</m> with initial point at <m>(0,0)</m> and terminal point at <m>(a,b)</m> is called the <term>position vector</term><idx><h>vectors</h><h>position vector</h></idx> and can be written as
           <me>\mathbf{v}=\langle a-0,b-0\rangle=\langle a,b\rangle</me>.
         </p>
       </statement>
     </definition>
     <remark>
       <p>
-        The position vector represents the terminal point of any vector <m>\mathbf{v}</m> when its initial point is at the origin. Essentially, it is <m>\mathbf{v}</m> translated so that its initial side starts at the origin. This translation does not change the magnitude or direction, making the two vectors equivalent. Thus, we can refer to both vectors as <m>\mathbf{v}</m>. In other words, the terminal point of a vector starting at the origin is defined by its horizontal and vertical components.
+        The position vector represents the terminal point of any vector <m>\mathbf{v}</m> when its initial point is at the origin. Essentially, it is <m>\mathbf{v}</m> translated so that its initial point is at the origin. This translation does not change the magnitude or direction, making the two vectors equivalent. Thus, we can refer to both vectors as <m>\mathbf{v}</m>. In other words, the terminal point of a vector starting at the origin is defined by its horizontal and vertical components.
       </p>
     </remark>
     <example>
@@ -104,10 +105,10 @@
       <title>Magnitude of a Vector</title>
       <statement>
         <p>
-          Given a vector <m>\mathbf{v}=\langle v_x,v_y\rangle</m>, the <term>magnitude</term><idx><h>vectors</h><h>magnitude</h></idx> or <term>length</term><idx><h>vectors</h><h>length</h></idx> is
+          Given a vector <m>\mathbf{v}=\langle v_x,v_y\rangle</m>, its <term>magnitude</term><idx><h>vectors</h><h>magnitude</h></idx> or <term>length</term><idx><h>vectors</h><h>length</h></idx> is
           <me>
             \|\mathbf{v}\|=\sqrt{v_x^2+v_y^2}
-          </me>
+          </me>.
         </p>
       </statement>
     </definition>
@@ -116,7 +117,7 @@
         This formula is derived from the Pythagorean Theorem or the distance formula where the square of the magnitude  equals the square of the horizontal component plus the square of the vertical component:
         <me>
           \|\mathbf{v}\|^2=v_x^2+v_y^2
-        </me>
+        </me>.
       </p>
       <p>
         This relationship can be visually understood using the Pythagorean Theorem, as illustrated in the following figure.
@@ -204,7 +205,7 @@
             <mrow>\mathbf{u}+\mathbf{v}\amp = \langle u_x+v_x,u_y+v_y\rangle</mrow>
             <mrow>\mathbf{u}-\mathbf{v}\amp = \langle u_x-v_x,u_y-v_y\rangle</mrow>
             <mrow>c\mathbf{u}\amp = \langle cu_x,cu_y\rangle</mrow>
-          </md>
+          </md>.
         </p>
       </statement>
     </definition>
@@ -331,7 +332,7 @@
       <title>Properties of Vectors</title>
       <statement>
         <p>
-          If <m>\mathbf{u}</m>, <m>\mathbf{v}</m>, and <m>\mathbf{w}</m> are vectors, <m>\mathbf{0}</m> is the zero vector, and <m>c</m> and <m>d</m> are scalars, then
+          If <m>\mathbf{u}</m>, <m>\mathbf{v}</m>, and <m>\mathbf{w}</m> are vectors, <m>\mathbf{0}</m> is the zero vector, and <m>c</m> and <m>d</m> are scalars, then:
         </p>
         <p>
           <em>Vector Addition</em>
@@ -409,7 +410,7 @@
   <subsection xml:id="subsec-finding-unit-vector">
     <title>Finding a Unit Vector</title>
     <p>
-      Sometimes it is useful to look at problems involving vectors in terms of a vector in the same direction, but with a magnitude of one. Recall that a unit vector <m>\mathbf{u}</m> is a vector whose length is one, <m>\|\mathbf{u}\|=1</m>. To find a unit vector in the same direction, you will need to divide that vector by its length or magnitude.
+      Sometimes it is useful to look at problems involving vectors in terms of a vector in the same direction, but with a magnitude of one. Recall that a unit vector <m>\mathbf{u}</m> is a vector whose length is one, <m>\|\mathbf{u}\|=1</m>. To find a unit vector in the same direction, we will need to multiply that vector by the reciprocal of its length or magnitude.
     </p>
     <definition xml:id="def-unit-vector-same-direction">
       <title>Unit Vector That Has the Same Direction as <m>\mathbf{v}</m></title>
@@ -426,7 +427,7 @@
     <example>
       <statement>
         <p>
-          Find the unit vector that has the same direction as <m>\mathbf{v}=\langle10,-5\rangle</m>
+          Find the unit vector that has the same direction as <m>\mathbf{v}=\langle10,-5\rangle</m>.
         </p>
       </statement>
       <solution>
@@ -437,18 +438,16 @@
             <mrow> \amp = \frac{\langle10,-5\rangle}{5\sqrt{5}} </mrow>
             <mrow> \amp = \left\langle\frac{10}{5\sqrt{5}},-\frac{5}{5\sqrt{5}}\right\rangle </mrow>
             <mrow> \amp = \left\langle\frac{2}{\sqrt{5}},-\frac{1}{\sqrt{5}}\right\rangle </mrow>
-            <mrow> \amp = \left\langle\frac{2\sqrt{5}}{5},-\frac{\sqrt{5}}{5}\right\rangle </mrow>
-          </md>
+          </md>.
         </p>
         <p>
           We can verify that this is in fact a unit vector by computing the magnitude:
           <md>
-            <mrow> \|\mathbf{u}\| \amp = \left\|\left\langle\frac{2\sqrt{5}}{5},-\frac{\sqrt{5}}{5}\right\rangle\right\| </mrow>
-            <mrow> \amp = \sqrt{\left(\frac{2\sqrt{5}}{5}\right)^2+\left(-\frac{\sqrt{5}}{5}\right)^2} </mrow>
-            <mrow> \amp = \sqrt{\frac{4\cdot5}{25}+\frac{5}{25}} </mrow>
-            <mrow> \amp = \sqrt{\frac{25}{25}} </mrow>
+            <mrow> \|\mathbf{u}\| \amp = \left\|\left\langle\frac{2}{\sqrt{5}},-\frac{1}{\sqrt{5}}\right\rangle\right\| </mrow>
+            <mrow> \amp = \sqrt{\left(\frac{2}{\sqrt{5}}\right)^2+\left(-\frac{1}{\sqrt{5}}\right)^2} </mrow>
+            <mrow> \amp = \sqrt{\frac{4}{5}+\frac{1}{5}} </mrow>
             <mrow> \amp = 1 </mrow>
-          </md>
+          </md>.
         </p>
       </solution>
     </example>
@@ -473,10 +472,10 @@
       <title>Horizontal and Vertical Components of a Vector</title>
       <statement>
         <p>
-          Let <m>\mathbf{v}</m> be any vector. Then we can express <m>\mathbf{v}</m> in terms of its <term>horizontal</term> and <term>vertical components</term><idx><h>vectors</h><h>components of</h></idx>
+          Let <m>\mathbf{v}</m> be any vector. We can express <m>\mathbf{v}</m> in terms of its <term>horizontal</term> and <term>vertical components</term><idx><h>vectors</h><h>components of</h></idx>:
           <me>
             \mathbf{v}=\langle v_x,v_y\rangle=v_x\mathbf{i}+v_y\mathbf{j}
-          </me>
+          </me>.
         </p>
       </statement>
     </definition>
@@ -489,21 +488,18 @@
     <definition xml:base="def-direction">
       <statement>
         <p>
-          Let <m>\mathbf{v}=\langle v_x,v_y\rangle</m> be a vector. The angle <m>\theta</m> represents the <term>direction</term><idx><h>vectors</h><h>direction</h></idx> of <m>\mathbf{v}</m> and is the smallest positive angle in standard position formed by the positive <m>x</m>-axis and <m>\mathbf{v}</m> (<m>0^{\circ}\leq\theta\leq360^{\circ}</m>).
+          Let <m>\mathbf{v}=\langle v_x,v_y\rangle</m> be a vector. The angle <m>\theta</m> represents the <term>direction</term><idx><h>vectors</h><h>direction</h></idx> of <m>\mathbf{v}</m> and is the smallest positive angle in standard position formed by the positive <m>x</m>-axis and <m>\mathbf{v}</m> (<m>0^{\circ}\leq\theta\lt360^{\circ}</m>).
         </p>
       </statement>
     </definition>
     <remark xml:id="remark-finding-vector-direction">
       <title>Finding Direction of a Vector</title>
       <p>
-        Recall that <m>\tan\theta=\frac{v_y}{v_x}</m>, so
+        Recall that 
         <me>
-          \theta=\tan^{-1}\left(\frac{v_y}{v_x}\right)
-        </me>
-        where <m>-90^{\circ} \lt \theta \lt 90^{\circ}</m>.
-      </p>
-      <p>
-        To find the direction (<m>\theta</m>), first draw the vector. If <m>v_x=0</m> or <m>v_y=0</m>, then use the drawing to find <m>\theta</m>. If <m>v_x\neq0</m> and <m>v_y\neq0</m>, then note the quadrant where <m>\theta</m> lies in.
+          \tan\theta=\frac{v_y}{v_x}
+        </me>.
+        Since <m>-90^{\circ} \lt \tan^{-1} \left( \frac{v_y}{v_x} \right) \lt 90^{\circ}</m>, the inverse tangent function returns an angle in Quadrants I or IV. To determine the correct direction <m>\theta</m>, consider the quadrant in which the vector lies and make the appropriate adjustments:
       </p>
       <p>
         <ul>
@@ -535,13 +531,13 @@
           For vector <m>\mathbf{v}</m> with magnitude <m>\|\mathbf{v}\|</m> and direction <m>\theta</m>, we can use Right Triangle Trigonometry to solve for the horizontal and vertical components, denoted as <m>v_x</m> and <m>v_y</m>, respectively:
           <me>
             v_x=\|\mathbf{v}\|\cos\theta, \quad v_y=\|\mathbf{v}\|\sin\theta
-          </me>
+          </me>.
         </p>
         <p>
-          This allows us to express <m>\mathbf{v}</m> as
+          This allows us to express <m>\mathbf{v}</m> as:
           <me>
             \mathbf{v}=\|\mathbf{v}\|\cos\theta\mathbf{i}+\|\mathbf{v}\|\sin\theta\mathbf{j}=\langle\|\mathbf{v}\|\cos\theta,\|\mathbf{v}\|\sin\theta\rangle
-          </me>
+          </me>.
         </p>
         <image xml:id="fig-vector-components-angle">
           <latex-image>
@@ -577,20 +573,20 @@
           First, we note that since the velocity is 10 knots, we have <m>\|\mathbf{v}\|=10</m>. Next, we need to find the direction. Since <m>\theta</m> is measured from the positive <m>x</m>-axis, by <xref ref="def-horizontal-vertical-components-from-magnitude-direction"/> we see that
           <me>
             \theta=90^{\circ}+22.5^{\circ}=112.5^{\circ}
-          </me>
+          </me>.
         </p>
         <p>
           To find the vector, will need the horizontal and vertical components:
           <md>
             <mrow>v_x =\amp \|\mathbf{v}\|\cos\theta=10\cos112.5^{\circ}\approx-3.8</mrow>
             <mrow>v_y =\amp \|\mathbf{v}\|\sin\theta=10\sin112.5^{\circ}\approx9.2</mrow>
-          </md>
+          </md>.
         </p>
         <p>
           Thus
           <me>
             \mathbf{v}\approx-3.8\mathbf{i}+9.2\mathbf{j}=\langle-3.8,9.2\rangle
-          </me>
+          </me>.
         </p>
         <image xml:id="fig-exampl-vector-velocity" width="50%">
           <latex-image>
@@ -612,13 +608,13 @@
       <title>Calculating Canoe Velocity with Current Drift</title>
       <introduction>
         <p>
-          The vaka Marumaru Atua<idx><h>canoe</h><h>Marumaru Atua</h></idx> sets sail on a northward voyage from Rarotonga to Hawaiʻi, maintaining a steady speed of 5 knots through the water. However, a 1-knot current flows in the direction of Lā Kona (a heading of 260 degrees). This current's influence resembles walking on a moving treadmill, where forward progress is limited despite moving legs. Similarly, Marumaru Atua navigates while the water, in the form of a current, also moves. In sailing, the direction and speed at which the current is pushing the vaka are referred to as <term>set</term><idx><h>set</h></idx> and <term>drift</term><idx><h>drift</h></idx>, respectively. 
+          The vaka Marumaru Atua<idx><h>canoe</h><h>Marumaru Atua</h></idx> sets sail on a northward voyage from Rarotonga to Hawaiʻi, maintaining a steady speed of 5 knots through the water. However, a 1-knot current flows in the direction of Lā Kona (a heading of 260 degrees). This current’s influence is like walking across a moving floor—no matter how steadily the vaka sails north, the entire ocean beneath it is shifting, altering its actual path. Similarly, Marumaru Atua navigates while the water, in the form of a current, also moves. In sailing, the direction and speed at which the current is pushing the vaka are referred to as <term>set</term><idx><h>set</h></idx> and <term>drift</term><idx><h>drift</h></idx>, respectively. 
         </p>
         <p>
-          The actual velocity of Marumaru Atua is the resultant of the canoe's velocity and the current's velocity. This resultant velocity vector denotes the canoe's speed and direction relative to fixed objects on Earth, influenced by the current's impact on Marumaru. The magnitude and direction of this velocity vector are represented by the <term>speed over ground (SOG)</term><idx><h>speed over ground (SOG)</h></idx> and <term>course over ground (COG)</term>,<idx><h>course over ground (COG)</h></idx> respectively. SOG represents the speed of the canoe relative to fixed objects, accounting for both the canoe's speed through the water and the current's speed and direction. COG indicates the direction of the canoe's motion over the Earth's surface.
+          The actual velocity of Marumaru Atua is the resultant of the vaka's velocity and the current's velocity. This resultant velocity vector denotes the vaka's speed and direction relative to fixed objects on Earth, influenced by the current's impact on Marumaru Atua. The magnitude and direction of this velocity vector are represented by the <term>speed over ground (SOG)</term><idx><h>speed over ground (SOG)</h></idx> and <term>course over ground (COG)</term>,<idx><h>course over ground (COG)</h></idx> respectively. SOG represents the speed of the vaka relative to fixed objects, accounting for both the vaka's speed through the water and the current's speed and direction. COG indicates the direction of the vaka's motion over the Earth's surface.
         </p>
         <p>
-          Understanding the difference between the velocity over water and the velocity relative to fixed objects illustrates how set and drift show how the current influences the vaka's course and speed over ground. Voyagers need to account for set and drift when navigating to ensure they reach their intended destination accurately and safely.
+          Understanding the difference between the velocity over water and the velocity relative to fixed objects illustrates the influence set and drift have on the vaka's course and speed over ground. Voyagers need to account for set and drift when navigating to ensure they reach their intended destination accurately and safely.
         </p>
         <image xml:id="fig-marumaru-currents">
           <latex-image>
@@ -665,7 +661,7 @@
       <task>
         <statement>
           <p>
-            Express Marumaru Atua's velocity vector, represented as <m>\mathbf{v}_m</m>, and the velocity vector of the current, denoted as <m>\mathbf{v}_c</m>, in terms of their horizontal and vertical components. Round your answer to two decimal places.
+            Express Marumaru Atua's velocity vector, represented as <m>\mathbf{v}_m</m>, and the velocity vector of the current, denoted as <m>\mathbf{v}_c</m>, in terms of their horizontal and vertical components. Round the answer to two decimal places.
           </p>
         </statement>
         <solution>
@@ -746,7 +742,7 @@
           <p>
             Thus, by <xref ref="def-horizontal-vertical-components-from-magnitude-direction"/> the velocity for the current is
             <me>
-              \mathbf{v}_c=\langle1\cdot\cos190^{\circ},1\cdot\sin190^{\circ}\rangle\approx\langle-0.98,-0.17\rangle
+              \mathbf{v}_c=\langle1\cos190^{\circ},1\sin190^{\circ}\rangle\approx\langle-0.98,-0.17\rangle
             </me>.
           </p>
         </solution>
@@ -764,10 +760,10 @@
               <mrow> \mathbf{v}_g=\mathbf{v}_m+\mathbf{v}_c \amp = \langle0,5\rangle+\langle-0.98,-0.17\rangle </mrow>
               <mrow> \amp = \langle-0.98,5-0.17\rangle </mrow>
               <mrow> \amp = \langle-0.98,4.83\rangle </mrow>
-            </md>
+            </md>.
           </p>
           <p>
-            This can visually demonstrated in the figure below
+            This is visually demonstrated in the figure below:
           </p>
           <image xml:id="fig-marumaru-sog" width="60%">
             <latex-image>
@@ -802,11 +798,11 @@
           <p>
             To find the course over ground, we will use <xref ref="remark-finding-vector-direction"/> to find direction of the velocity:
             <me>
-              \theta=\tan^{-1}\frac{v_y}{v_x}=\tan^{-1}\frac{4.83}{-0.98}\approx-78.5^{\circ}
+              \tan^{-1}\frac{v_y}{v_x}=\tan^{-1}\frac{4.83}{-0.98}\approx-78.5^{\circ}
             </me>.
             Since our velocity vector is in Quadrant II, our course over ground is
             <me>
-              -78.5^{\circ}+180^{\circ}=101.5^{\circ}
+              \theta=-78.5^{\circ}+180^{\circ}=101.5^{\circ}
             </me>.
           </p>
         </solution>
@@ -817,7 +813,7 @@
     <exercisegroup cols="2">
       <introduction>
         <p>
-          Draw the vector, <m>\mathbf{v}</m>.
+          Draw the vector represented by the given components.
         </p>
       </introduction>
       <exercise>
@@ -980,7 +976,7 @@
         </statement>
         <answer>
           <p>
-            <m>\langle6,-2\rangle</m>
+            <m>\langle-6,-2\rangle</m>
           </p>
         </answer>
       </exercise>
@@ -1337,10 +1333,10 @@
     <exercisegroup cols="2">
       <introduction>
         <p>
-          A fundamental property in Euclidean geometry is the <term>Triangle Inequality</term><idx><h>triangle inequality</h></idx>, which states that for any triangle, the sum of the lengths of any two sides of a triangle is greater than or equal to the length of the remaining side. This property can be illustrated using vectors, where combining vectors <m>\mathbf{u}</m> and <m>\mathbf{v}</m> results in a triangle with the third side represented by <m>\mathbf{u}+\mathbf{v}</m>, as shown in <xref ref="fig-vector-addition-triangle"/>. The Triangle Inequality is expressed as <m>\|\mathbf{u}\|+\|\mathbf{v}\|\geq\|\mathbf{u}+\mathbf{v}\|</m>
+          A fundamental property in Euclidean geometry is the <term>Triangle Inequality</term><idx><h>triangle inequality</h></idx>, which states that for any triangle, the sum of the lengths of any two sides of a triangle is greater than or equal to the length of the remaining side. This property can be illustrated using vectors, where combining vectors <m>\mathbf{u}</m> and <m>\mathbf{v}</m> results in a triangle with the third side represented by <m>\mathbf{u}+\mathbf{v}</m>, as shown in <xref ref="fig-vector-addition-triangle"/>. The Triangle Inequality is expressed as <m>\|\mathbf{u}\|+\|\mathbf{v}\|\geq\|\mathbf{u}+\mathbf{v}\|</m>.
         </p>
         <p>
-          To demonstrate the Triangle Inequality with given vectors <m>\mathbf{u}</m> and <m>\mathbf{v}</m>, calculate the following magnitudes rounded to the nearest tenth: <m>\|\mathbf{u}\|</m>, <m>\|\mathbf{v}\|</m>, <m>\|\mathbf{u}\|+\|\mathbf{v}\|</m>, and <m>\|\mathbf{u}+\mathbf{v}\|</m>. Note that to calculate <m>\|\mathbf{u}+\mathbf{v}\|</m>, you must first find the vector <m>\mathbf{u}+\mathbf{v}</m>
+          To demonstrate the Triangle Inequality with given vectors <m>\mathbf{u}</m> and <m>\mathbf{v}</m>, calculate the following magnitudes rounded to the nearest tenth: <m>\|\mathbf{u}\|</m>, <m>\|\mathbf{v}\|</m>, <m>\|\mathbf{u}\|+\|\mathbf{v}\|</m>, and <m>\|\mathbf{u}+\mathbf{v}\|</m>. Note that to calculate <m>\|\mathbf{u}+\mathbf{v}\|</m>, first find the vector <m>\mathbf{u}+\mathbf{v}</m>
         </p>
       </introduction>
       <exercise>
@@ -1387,7 +1383,7 @@
         </statement>
         <answer>
           <p>
-            <m>\|\mathbf{u}\|=2</m>, <m>\|\mathbf{v}\|=3.2</m>, <m>\|\mathbf{u}+\mathbf{v}\|=5.2</m>, <m>\|\mathbf{u}\|+\|\mathbf{v}\|=5.1</m>
+            <m>\|\mathbf{u}\|=2</m>, <m>\|\mathbf{v}\|=3.2</m>, <m>\|\mathbf{u}+\mathbf{v}\|=5.1</m>, <m>\|\mathbf{u}\|+\|\mathbf{v}\|=5.2</m>
           </p>
         </answer>
       </exercise>
@@ -1498,7 +1494,7 @@
     <exercisegroup cols="2">
       <introduction>
         <p>
-          For each problem, the magnitude and direction of vector <m>\mathbf{v}</m> are given. Find the horizontal and vertical components of the vector, <m> v_x </m> and <m> v_y </m>, respectively, and write the answer in the form <m> \mathbf{v} = v_x \mathbf{i} + v_y \mathbf{j} </m>.
+          For each problem, the magnitude and direction of vector <m>\mathbf{v}</m> are given. Find the horizontal and vertical components of the vector, <m> v_x </m> and <m> v_y </m>, respectively, and write the vector in the form <m> \mathbf{v} = v_x \mathbf{i} + v_y \mathbf{j} </m>.
         </p>
       </introduction>
       <exercise>
@@ -1660,10 +1656,10 @@
       <title>Leeway</title>
       <statement>
         <p>
-          When a waʻa sails on the ocean, it rarely moves precisely in the direction it's pointed. One reason for this is that crosswind can push the waʻa off its course. The angle of displacement between the apparent heading of the waʻa and the direction the waʻa is actually traveling through the water is referred to as <term>leeway</term>.<idx><h>leeway</h></idx> Using vector addition, we can determine where the waʻa will actually travel. However, on the waʻa, the navigator can determine the leeway by observing the angle from the wake behind the waʻa and the apparent direction the waʻa is pointed towards.
+          When a waʻa sails on the ocean, it rarely moves precisely in the direction it's pointed. One reason for this is that crosswind can push the waʻa off its course. The angle of displacement between the apparent heading of the waʻa and the direction the waʻa is actually traveling through the water is referred to as <term>leeway</term>.<idx><h>leeway</h></idx> Using vector addition, we can determine where the waʻa will actually travel. However, on the waʻa, the navigator can determine the leeway by observing the angle between the wake behind the waʻa and the apparent direction the waʻa is pointed towards.
         </p>
         <p>
-          In order to compensate for the wind, the navigator must steer the waʻa into the wind by the same angle as the leeway angle. For example, if the waʻa needs to sail in the house Manu Malanai (SE) and the wind is pushing the waʻa one house further south, the waʻa will move in the house Nālani Malanai (SEbS). To maintain the course in the house Manu Malanai, the navigator must then point the waʻa one house north with an apparent heading in the house of Noio Malanai (SEbE) in order for the actual heading to be in the house of Manu Malanai (SE).
+          In order to compensate for the wind, the navigator must steer the waʻa into the wind by the same angle as the leeway angle. For example, if the waʻa needs to sail in the house Manu Malanai and the wind is pushing the waʻa one house further south, the waʻa will move in the house Nālani Malanai. To maintain the course in the house Manu Malanai, the navigator must then point the waʻa one house north with an apparent heading in the house of Noio Malanai in order for the actual heading to be in the house of Manu Malanai.
         </p>
         <image xml:id="fig-leeway">
           <latex-image>

@@ -385,7 +385,7 @@
             </li>
             <li>
               <p>
-                <m>A</m> is acute and <m>h=b\sin A\lt a\lt b</m>:  <em>Two triangles</em> (<m>\Delta AB_1C_1</m> and <m>\Delta AB_2C_2</m>)
+                <m>A</m> is acute and <m>h=b\sin A\lt a\lt b</m>:  <em>Two triangles</em> (<m>\triangle AB_1C_1</m> and <m>\triangle AB_2C_2</m>)
               </p>
               <image xml:id="fig-ssa-case3">
                 <latex-image>

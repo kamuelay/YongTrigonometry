@@ -158,7 +158,7 @@
         </md>.
       </p>
       <p>
-        Note that since <m>OP</m>, <m>OQ</m>, <m>OA</m>, and <m>OB</m> are line segments from the center to points on the unit circle, they are congruent and have length of 1. Also note that <m>\angle POQ=\angle AOB=\alpha-\beta</m>. Since two sides and the included angle of <m>\Delta OPQ</m> and <m>\Delta OAB</m> are congruent, we can conclude by the Side-Angle-Side Theorem (SAS) in geometry that the two triangles are congruent. Thus, corresponding sides have the same lengths, giving us <m>d(P,Q)=d(A,B)</m>. Substituting our results for <m>d(P,Q)</m> and <m>d(A,B)</m> we get
+        Note that since <m>OP</m>, <m>OQ</m>, <m>OA</m>, and <m>OB</m> are line segments from the center to points on the unit circle, they are congruent and have length of 1. Also note that <m>\angle POQ=\angle AOB=\alpha-\beta</m>. Since two sides and the included angle of <m>\triangle OPQ</m> and <m>\triangle OAB</m> are congruent, we can conclude by the Side-Angle-Side Theorem (SAS) in geometry that the two triangles are congruent. Thus, corresponding sides have the same lengths, giving us <m>d(P,Q)=d(A,B)</m>. Substituting our results for <m>d(P,Q)</m> and <m>d(A,B)</m> we get
         <md>
           <mrow>d(P,Q)\amp = d(A,B)</mrow>
           <mrow>\sqrt{2-2\cos\alpha\cos\beta-2\sin\alpha\sin\beta}\amp = \sqrt{2-2\cos(\alpha-\beta)}</mrow>
