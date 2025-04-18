@@ -554,11 +554,17 @@
         </image>
       </figure>
       <p>
-        In astronomy and navigation, the <term>azimuth</term><idx>azimuth</idx> is the angular measurement of the direction of a celestial body relative to an observer's position, typically measured from the north and increasing clockwise along the horizon. The azimuth helps determine the position of celestial bodies relative to the observer's location, measured along the horizon.
-      </p>
+        In astronomy and navigation, the <term>azimuth</term><idx>azimuth</idx> and <term>altitude</term><idx>altitude</idx> are used to determine the position of celestial bodies relative to the observer's location. The azimuth refers to the angular measurement of the direction of a celestial body, typically measured from north and increasing clockwise along the horizon. The altitude of a celestial body is its angle above the horizon, measured in degrees. The <term>zenith</term><idx>zenith</idx> is the point directly overhead an observer, and a celestial body located at the zenith has an altitude of <m>90^\circ</m>. See <xref ref="fig-globe-azimuth"/>.        
+      </p>      
       <p>
         In navigation, <q>heading</q> typically refers to the direction in which an object, such as a canoe or wind, is pointed. In contrast, <q>azimuth</q> pertains to the angular measurement of celestial bodies relative to the horizon. Both <q>heading</q> and <q>azimuth</q> measure angles in degrees, starting from north and progressing clockwise. Unless specified otherwise, this book uses <xref ref="star-compass-with-angles">Figure</xref> for the angles of the Star Compass; for heading or azimuth angles, refer to <xref ref="star-compass-with-heading-angles">Figure</xref>.
       </p>
+      <figure xml:id="fig-globe-azimuth">
+        <caption>The azimuth is the angle measured along the horizon from north to the star's projection, and the altitude is the angle from the horizon up to the star. Together, these angles determine the star's location relative to the observer.</caption>
+        <image source="globe-azimuth.svg">
+          <shortdescription>The celestial sphere, illustrating the horizon, zenith, and how a star’s position is measured using azimuth and altitude.</shortdescription>
+        </image>
+      </figure>
     </remark>
   </subsection>
   <subsection>
