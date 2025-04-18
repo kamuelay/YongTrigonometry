@@ -561,7 +561,7 @@
       </p>
       <figure xml:id="fig-globe-azimuth">
         <caption>The azimuth is the angle measured along the horizon from north to the star's projection, and the altitude is the angle from the horizon up to the star. Together, these angles determine the star's location relative to the observer.</caption>
-        <image source="globe-azimuth.svg">
+        <image source="globe-azimuth">
           <shortdescription>The celestial sphere, illustrating the horizon, zenith, and how a star’s position is measured using azimuth and altitude.</shortdescription>
         </image>
       </figure>
