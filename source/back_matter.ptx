@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <backmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="back_matter">
     <xi:include href="./bibliography.ptx" />
-    <appendix xml:id="appendix-canoes">
-      <title>An Introduction to the Canoes in This Book</title>
-      <p>
-        Alingano Maisu, Faʻafaite, Gaualofa, Haunui, Hawaiʻiloa, Hinemoana, Hōkūleʻa, Kānehūnāmoku, Mānaiakalani, Marumaru Atua, Paikea, Te Matau a Māui, Uto Ni Yalo, Vaka Moana
-      </p>
-    
-      
-    </appendix>
+    <xi:include href="./appendix_canoes.ptx" />
     <glossary>
       <title>Glossary (Math)</title>
       <gi>
