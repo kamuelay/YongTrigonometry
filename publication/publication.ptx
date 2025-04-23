@@ -24,6 +24,7 @@
         <knowl example="no" />
         <knowl example-solution="no" />
         <knowl proof="no" />
+        <baseurl href="https://www.kamuelayong.com/trigonometry"/>
         <!-- below makes webwork files dynamic in exercises-->
         <webwork divisional="dynamic" />
     </html> 

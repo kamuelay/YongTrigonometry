@@ -283,7 +283,7 @@
     </p>
     <figure xml:id="tangent-graph-animation">
       <caption>
-        As <m>\theta</m> moves from <m>-90^{\circ}</m> to <m>90^{\circ}</m>, this figure plots the values of <m>y = \tan \theta</m>. Move the slider for <m>\theta</m> to see how changing the angle affects <m>\tan\theta</m>. Note that while we will generally be using radians when graphing trigonometric functions, this figure uses degrees to help visualize the angle.
+        As <m>\theta</m> moves from <m>-90^{\circ}</m> to <m>90^{\circ}</m>, this figure plots the values of <m>y = \tan \theta</m>. Move the slider for <m>\theta</m> to see how changing the angle affects <m>\tan\theta</m>. Note that while we will generally be using radians when graphing trigonometric functions, this figure uses degrees to help visualize the angle. If you are viewing the PDF or a printed copy, you can scan the QR code or follow the “Standalone” link to explore the interactive version online.
       </caption>
       <interactive geogebra="uwxqym67" aspect="1.75:0.75" label="geogebra-tangent-animation"/>
     </figure>
@@ -411,7 +411,7 @@
     </p>
     <figure xml:id="cotangent-graph-animation">
       <caption>
-        As <m>\theta</m> moves from <m>0^{\circ}</m> to <m>180^{\circ}</m>, this figure plots the values of <m>y = \cot \theta</m>. Move the slider for <m>\theta</m> to see how changing the angle affects <m>\cot\theta</m>. Note that while we will generally be using radians when graphing trigonometric functions, this figure uses degrees to help visualize the angle.
+        As <m>\theta</m> moves from <m>0^{\circ}</m> to <m>180^{\circ}</m>, this figure plots the values of <m>y = \cot \theta</m>. Move the slider for <m>\theta</m> to see how changing the angle affects <m>\cot\theta</m>. Note that while we will generally be using radians when graphing trigonometric functions, this figure uses degrees to help visualize the angle. If you are viewing the PDF or a printed copy, you can scan the QR code or follow the “Standalone” link to explore the interactive version online.
       </caption>
       <interactive geogebra="mhzmakps" aspect="1.75:0.75" label="geogebra-cotangent-animation"/>
     </figure>
@@ -468,7 +468,7 @@
     </p>
     <figure xml:id="cosecant-graph-animation">
       <caption>
-        As <m>\theta</m> moves from <m>0^{\circ}</m> to <m>360^{\circ}</m>, this figure plots the values of <m>y=\sin \theta</m> and <m>y = \csc \theta</m>. Move the slider for <m>\theta</m> to see how changing the angle affects <m>\csc\theta</m>. Note that while we will generally be using radians when graphing trigonometric functions, this figure uses degrees to help visualize the angle.
+        As <m>\theta</m> moves from <m>0^{\circ}</m> to <m>360^{\circ}</m>, this figure plots the values of <m>y=\sin \theta</m> and <m>y = \csc \theta</m>. Move the slider for <m>\theta</m> to see how changing the angle affects <m>\csc\theta</m>. Note that while we will generally be using radians when graphing trigonometric functions, this figure uses degrees to help visualize the angle. If you are viewing the PDF or a printed copy, you can scan the QR code or follow the “Standalone” link to explore the interactive version online.
       </caption>
       <interactive geogebra="b4zc4xwu" aspect="1.75:0.75"  label="geogebra-cosecant-animation"/>
     </figure>
@@ -638,7 +638,7 @@
     </p>
     <figure xml:id="secant-graph-animation">
       <caption>
-        As <m>\theta</m> moves from <m>0^{\circ}</m> to <m>360^{\circ}</m>, this figure plots the values of <m>y=\cos \theta</m> and <m>y = \sec \theta</m>. Move the slider for <m>\theta</m> to see how changing the angle affects <m>\sec\theta</m>. Note that while we will generally be using radians when graphing trigonometric functions, this figure uses degrees to help visualize the angle.
+        As <m>\theta</m> moves from <m>0^{\circ}</m> to <m>360^{\circ}</m>, this figure plots the values of <m>y=\cos \theta</m> and <m>y = \sec \theta</m>. Move the slider for <m>\theta</m> to see how changing the angle affects <m>\sec\theta</m>. Note that while we will generally be using radians when graphing trigonometric functions, this figure uses degrees to help visualize the angle. If you are viewing the PDF or a printed copy, you can scan the QR code or follow the “Standalone” link to explore the interactive version online.
       </caption>
       <interactive geogebra="dpng7xuu" aspect="1.75:0.75" label="geogebra-secant-animation"/>
     </figure>
@@ -1021,13 +1021,13 @@
     </p>
     <figure xml:id="tangent-cotangent-transformation-animation">
       <caption>
-        Manipulate the graphs of tangent and cotangent by adjusting the sliders for <m>A</m>, <m>B</m>, <m>C</m>, and <m>D</m>. Observe the effects on period, phase and vertical shifts, as well as reflections about the <m>x</m>- and <m>y</m>-axes. Additionally, toggle between the tangent and cotangent graphs by selecting the corresponding function.
+        Manipulate the graphs of tangent and cotangent by adjusting the sliders for <m>A</m>, <m>B</m>, <m>C</m>, and <m>D</m>. Observe the effects on period, phase and vertical shifts, as well as reflections about the <m>x</m>- and <m>y</m>-axes. Additionally, toggle between the tangent and cotangent graphs by selecting the corresponding function. If you are viewing the PDF or a printed copy, you can scan the QR code or follow the “Standalone” link to explore the interactive version online.
       </caption>
       <interactive geogebra="p3vf25da" aspect="1.75:0.75" label="geogebra-tangent-cotangent-transformation-animation"/>
     </figure>
     <figure xml:id="cosecant-secant-transformation-animation">
       <caption>
-        Manipulate the graphs of cosecant and secant by adjusting the sliders for <m>A</m>, <m>B</m>, <m>C</m>, and <m>D</m>. Observe the effects on period, phase and vertical shifts, as well as reflections about the <m>x</m>- and <m>y</m>-axes. Additionally, toggle between the cosecant and secant graphs by selecting the corresponding function.
+        Manipulate the graphs of cosecant and secant by adjusting the sliders for <m>A</m>, <m>B</m>, <m>C</m>, and <m>D</m>. Observe the effects on period, phase and vertical shifts, as well as reflections about the <m>x</m>- and <m>y</m>-axes. Additionally, toggle between the cosecant and secant graphs by selecting the corresponding function. If you are viewing the PDF or a printed copy, you can scan the QR code or follow the “Standalone” link to explore the interactive version online.
       </caption>
       <interactive geogebra="p7awsjqv" aspect="1.75:0.75" label="geogebra-cosecant-secant-transformation-animation"/>
     </figure>

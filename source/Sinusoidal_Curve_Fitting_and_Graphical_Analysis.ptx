@@ -816,7 +816,12 @@
         <p>
           <xref ref="fig-desmos-christchurch-temp"/> displays an interactive Desmos Graphing Calculator with the completed table and the curve of best fit plotted together.
         </p>
-        <figure xml:id="fig-desmos-christchurch-temp"><caption>Given data points in a table, Desmos can create a sinusoidal function to model the data.</caption><interactive desmos="30ampt5obd" aspect="0.67:1.0" label="desmos-christchurch-temp"/></figure>
+        <figure xml:id="fig-desmos-christchurch-temp">
+          <caption>
+            Given data points in a table, Desmos can create a sinusoidal function to model the data. If you are viewing the PDF or a printed copy, you can scan the QR code or follow the “Standalone” link to explore the interactive version online.
+          </caption>
+          <interactive desmos="wq6d4ahb84" aspect="0.67:1.0" label="desmos-christchurch-temp"/>
+        </figure>
       </solution>
     </example>
   </subsection>

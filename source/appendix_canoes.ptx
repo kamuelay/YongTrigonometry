@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <appendix xml:id="appendix-canoes">
 <title>An Introduction to the Canoes in This Book</title>
-<p>
-    Here we will introduce the canoes ffeatured in this book.
-</p>
+<introduction>
+    <p>
+        Here we will introduce the canoes ffeatured in this book.
+    </p>
+</introduction>
 <section xml:id="sec-alingano-maisu">
     <title>Alingano Maisu</title>
     <p>

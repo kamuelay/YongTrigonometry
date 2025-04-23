@@ -541,7 +541,7 @@
   </p>
   <figure xml:id="fig_celestial-sphere">
     <caption>
-      In the celestial sphere, stars rise in the east, arc across the sky, and set in the west. Each star will both rise and set in the same house.
+      In the celestial sphere, stars rise in the east, arc across the sky, and set in the west. Each star will both rise and set in the same house. If you are viewing the PDF or a printed copy, you can scan the QR code or follow the “Standalone” link to explore the interactive version online.
     </caption>
     <interactive geogebra="nmjdg3kb" aspect="1.75:1" label="geogebra-celestial-sphere"/>
     <!-- <interactive xml:id="geogebra-celestial-sphere" platform="geogebra" width="100%" aspect="1.75:1">
