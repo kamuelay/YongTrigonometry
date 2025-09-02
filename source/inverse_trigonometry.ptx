@@ -668,7 +668,7 @@
                 </latex-image>
               </image>
               <p>
-                Here <m>h=9</m> ft, represents the height of the navigator's eye above sea level, <m>R=20,911,171</m> ft is the radius of the earth at Rapa Nui, and <m>s_1</m> is the arc length or distance along the surface of the earth from the navigator to the horizon. We have written the distances in feet since the height of the navigator is in feet. Recall from <xref ref="thm_arc-length"/> the formula for finding the arc length is <m>s_1=2\pi R\cdot\left(\frac{\theta_1}{360}\right)</m>. Since we know <m>R</m>, we only need to find <m>\theta_1</m>. Notice the right triangle.
+                Here <m>h=9</m> ft, represents the height of the navigator's eye above sea level, <m>R=20,911,171</m> ft is the radius of the earth at Rapa Nui, and <m>s_1</m> is the arc length or distance along the surface of the earth from the navigator to the horizon. We have written the distances in feet since the height of the navigator is in feet. Recall from <xref ref="thm_arc-length"/> the formula for finding the arc length is <m>s_1=2\pi R\cdot\left(\frac{\theta_1}{360^{\circ}}\right)</m>. Since we know <m>R</m>, we only need to find <m>\theta_1</m>. Notice the right triangle.
               </p>
               <image xml:id="fig-finding-land-triangle-person" width="80%">
                 <latex-image>
