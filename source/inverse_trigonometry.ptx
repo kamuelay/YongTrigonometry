@@ -747,7 +747,7 @@
               <p>
                 The angle is then given by
                 <md>
-                  <mrow>\theta_1\amp = \cos^{-1}\left(\frac{R}{R+H}\right)</mrow>
+                  <mrow>\theta_2\amp = \cos^{-1}\left(\frac{R}{R+H}\right)</mrow>
                   <mrow>\amp = \cos^{-1}\left(\frac{20,911,171}{20,911,173+1,665}\right)</mrow>
                   <mrow>\amp = \cos^{-1}\left(\frac{20,911,171}{20,912,836}\right)</mrow>
                   <mrow>\amp \approx 0.723^{\circ}</mrow>
