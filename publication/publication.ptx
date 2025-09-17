@@ -19,8 +19,9 @@
     <!-- <common>
         <watermark scale="0.22">DRAFT 2023-08-10</watermark>
     </common> -->
+    
     <html>
-        <analytics google-gst="G-6JP58041KD" />
+        <analytics google-gst="G-6JP58041KD" statcounter-project="13167487" statcounter-security="75bcc7c4"/>
         <knowl example="no" />
         <knowl example-solution="no" />
         <knowl proof="no" />
