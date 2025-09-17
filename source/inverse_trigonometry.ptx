@@ -981,7 +981,7 @@
         </statement>
         <solution>
           <p>
-            Note that <m>\frac{5\pi}{7}</m> is not in the interval <m>\left[-\frac{\pi}{2},\frac{\pi}{2}\right]</m>. In order to evaluate the expression, we first need to find an angle, <m>\theta</m>, such that <m>-\frac{\pi}{2}\leq\theta\leq\frac{\pi}{2}</m> and <m>\sin\frac{5\pi}{7}=\sin\theta</m>. Since <m>\frac{\pi}{2}&lt;\frac{5\pi}{7}&lt;\pi</m>, <m>\frac{5\pi}{7}</m> is in Quadrant II. Recall from <xref ref="unit_circle"/> that our reference angle is <m>\theta=\pi-\frac{5\pi}{7}=\frac{2\pi}{7}</m>.
+            Note that <m>\frac{5\pi}{7}</m> is not in the interval <m>\left[-\frac{\pi}{2},\frac{\pi}{2}\right]</m>. In order to evaluate the expression, we first need to find an angle, <m>\theta</m>, such that <m>-\frac{\pi}{2}\leq\theta\leq\frac{\pi}{2}</m> and <m>\sin\frac{5\pi}{7}=\sin\theta</m>. Since <m>\frac{\pi}{2}\lt\frac{5\pi}{7}\lt\pi</m>, <m>\frac{5\pi}{7}</m> is in Quadrant II. Recall from <xref ref="unit_circle"/> that our reference angle is <m>\theta=\pi-\frac{5\pi}{7}=\frac{2\pi}{7}</m>.
           </p>
           <image xml:id="examp-composite-inverse-sin-sin">
             <latex-image>
@@ -1039,7 +1039,7 @@
         </statement>
         <solution>
           <p>
-            Let <m>\theta</m> be an angle in the range of the inverse tangent, that is, let <m>\theta</m> be in the interval <m>\left(-\frac{\pi}{2},\frac{\pi}{2}\right)</m> such that <m>\theta=\tan^{-1}\left(\frac{4}{3}\right)</m>. This equation is equivalent to <m>\tan\theta=\frac{4}{3}</m>. Since <m>\tan\theta>0</m>, we know that <m>\theta</m> must be in Quadrant I <m>\left(0&lt;\theta&lt;\frac{\pi}{2}\right)</m>. Let <m>(x,y)</m> be a point on the terminal side of <m>\theta</m>. Then by the trigonometric ratios,
+            Let <m>\theta</m> be an angle in the range of the inverse tangent, that is, let <m>\theta</m> be in the interval <m>\left(-\frac{\pi}{2},\frac{\pi}{2}\right)</m> such that <m>\theta=\tan^{-1}\left(\frac{4}{3}\right)</m>. This equation is equivalent to <m>\tan\theta=\frac{4}{3}</m>. Since <m>\tan\theta>0</m>, we know that <m>\theta</m> must be in Quadrant I <m>\left(0\lt\theta\lt\frac{\pi}{2}\right)</m>. Let <m>(x,y)</m> be a point on the terminal side of <m>\theta</m>. Then by the trigonometric ratios,
             <me>
               \tan\theta=\frac{\mbox{opposite}}{\mbox{adjacent}}=\frac{y}{x}
             </me>
@@ -1080,7 +1080,7 @@
         </statement>
         <solution>
           <p>
-            Let <m>\theta</m> be an angle in the range of the inverse cosine, that is, let <m>\theta</m> be in the interval <m>\left[0,\pi\right]</m> such that <m>\theta=\cos^{-1}\left(-\frac{3}{8}\right)</m>. This equation is equivalent to <m>\cos\theta=-\frac{3}{8}</m>. Since <m>\cos\theta&lt;0</m>, we know that <m>\theta</m> must be in Quadrant II <m>\left(\frac{\pi}{2}\lt\theta\lt\pi\right)</m>. Let <m>(x,y)</m> be a point on the terminal side of <m>\theta</m>. Then by the trigonometric ratios,
+            Let <m>\theta</m> be an angle in the range of the inverse cosine, that is, let <m>\theta</m> be in the interval <m>\left[0,\pi\right]</m> such that <m>\theta=\cos^{-1}\left(-\frac{3}{8}\right)</m>. This equation is equivalent to <m>\cos\theta=-\frac{3}{8}</m>. Since <m>\cos\theta\lt0</m>, we know that <m>\theta</m> must be in Quadrant II <m>\left(\frac{\pi}{2}\lt\theta\lt\pi\right)</m>. Let <m>(x,y)</m> be a point on the terminal side of <m>\theta</m>. Then by the trigonometric ratios,
             <me>
               \cos\theta=\frac{\mbox{adjacent}}{\mbox{hypotenuse}}=\frac{x}{r}
             </me>.
