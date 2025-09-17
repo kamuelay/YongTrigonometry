@@ -56,21 +56,25 @@
 
   <dedication>
     <p>
-      For my family
+      To my wife, Tasha, and my two sons, Kamu and Kaua, you are my greatest source of inspiration and joy.
+    </p>
+    <p>
+      This book is also dedicated to all the children across the Pacific, with the hope that you find mathematics more relevant, meaningful, and exciting, and that you see yourselves reflected in its beauty and power.
     </p>
   </dedication>
 
   <acknowledgement>
     <p>
-      This project is partially supported by NSF grant #1853533 and the University of Hawaiʻi System. 
-      Additionally, I would like to thank BarbaraJean Kahawaii and Dr. Walter Kahumoku, III for their patience, encouragement, and sharing their knowledge. 
-      Bonnie Kahapea and the crew of Kānehūnāmoku Voyaging Academy;
-      Kala Baybayan Tanaka and the crew from Hui o Waʻa Kaulua;
-      Peia Patai and the crew from Te Puna Marama;
-      the crew of Nā Kālai Waʻa;
-      the Friends of Hōkūleʻa and Hawaiʻiloa.
-      Carina Chernisky and UHWO OER committee. 
-      I truly valued the discussions I have had with Vicente Diaz, Linda Furuto, Kekai Lee, and so many more. 
+      I would like to express my deepest gratitude to my family for their patience and understanding during the many hours devoted to this book that could have been spent with them.
+    </p>
+    <p>
+      This project is partially supported by NSF grant #1853533 and the University of Hawaiʻi System.
+    </p>
+    <p>
+      I extend my heartfelt thanks to BarbaraJean Kahawaii and Dr. Walter Kahumoku, III for their patience, encouragement, and for generously sharing their knowledge. I am also grateful to Bonnie Kahapea and the crew of Kānehūnāmoku Voyaging Academy; Kala Baybayan Tanaka and the crew of Hui o Waʻa Kaulua; Peia Patai and the crew of Te Puna Marama; the crew of Nā Kālai Waʻa; and the Friends of Hōkūleʻa and Hawaiʻiloa, whose wisdom and experiences deeply enriched this work.
+    </p>
+    <p>
+      Mahalo to Carina Chernisky and the UHWO OER committee for their support, and to Vicente Diaz, Linda Furuto, Kekai Lee, Kaiwi Hāmākua-Mākuʻe, and so many others for the engaging and thought-provoking conversations that shaped this project.
     </p>
   </acknowledgement>
 
@@ -78,9 +82,26 @@
     <!-- You should be a little careful about what you put here -->
     <!-- Avoid elements that should have a number, for example  -->
     <p>
-      About this book: This book integrates navigation into trigonometry curriculum.
+      This textbook is not only a trigonometry book; it is also a book about voyaging. My hope is that you will come to see trigonometry not as a collection of abstract formulas, but as a way of explaining the world around us. The chapters that follow are meant to show how peoples across the Pacific have navigated the ocean for generations, using the very mathematical principles you are about to learn.
+    </p>
+    <p>
+      Although I am from Hawaiʻi, I have made a conscious effort to include examples from across the Pacific so that students from diverse backgrounds can see themselves and their cultures represented in these pages. By weaving together mathematics and culture, my aim is to make trigonometry not only more relevant but also more meaningful and exciting.
+    </p>
+    <p>
+      This textbook was written with you, the student, at its center. Each chapter introduces core mathematical concepts and pairs them with culturally grounded examples to emphasize both understanding and application. Worked examples, practice problems, and explorations are included to help you build confidence in trigonometry and develop a problem-solving mindset.
+    </p>
+    <p>
+      My own journey into the world of waʻa (canoes) began while writing this book. Not being from a voyaging family, I sought out authentic partnerships with experts and practitioners to ensure that I approached this knowledge with respect, accuracy, and sensitivity. In many ways, this book reflects my journey of learning alongside yours.
+    </p>
+    <p>
+      I also believe that education should be accessible to all. To support that belief, this book is freely available both as a web version and as a downloadable PDF so that cost is never a barrier to learning.
+    </p>
+    <p>
+      I invite you to approach these pages as both a resource and a voyage. May they challenge you to think critically, encourage you to see connections between mathematics and the world around you, and inspire you to carry forward the wisdom of those who navigated before us.
     </p>
   </preface>
+
+  <xi:include href="./core_standards.ptx" />
   
   <!-- You can have more than one preface. -->
   <preface xml:id="pdf-book">
@@ -92,11 +113,5 @@
     </p>
 
   </preface>
-
-  <xi:include href="./core_standards.ptx" />
-
-  
-
-
 
 </frontmatter>
