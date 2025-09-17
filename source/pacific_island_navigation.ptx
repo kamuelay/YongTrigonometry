@@ -913,7 +913,6 @@
   <exercises xml:id="pacific-island-exercises">
     <exercise>
       <statement>
-
         <p>
         Who developed the Hawaiian Star Compass?
       </p>
@@ -937,13 +936,13 @@
       </p>
       </answer>
     </exercise>
-    <exercise>
+    <exercisegroup cols="2">
       <introduction>
         <p>
           According to the Hawaiian Star Compass, what is the name for
         </p>
       </introduction>
-      <task>
+      <exercise>
         <statement>
           <p>
             North
@@ -954,8 +953,8 @@
             ʻĀkau
           </p>
         </answer>
-      </task>
-      <task>
+      </exercise>
+      <exercise>
         <statement>
           <p>
             East
@@ -966,8 +965,8 @@
             Hikina
           </p>
         </answer>
-      </task>
-      <task>
+      </exercise>
+      <exercise>
         <statement>
           <p>
             South
@@ -978,8 +977,8 @@
             Hema
           </p>
         </answer>
-      </task>
-      <task>
+      </exercise>
+      <exercise>
         <statement>
           <p>
             West
@@ -990,15 +989,15 @@
             Komohana
           </p>
         </answer>
-      </task>
-    </exercise>
-    <exercise>
+      </exercise>    
+    </exercisegroup>
+    <exercisegroup cols="2">
       <introduction>
         <p>
           What is the Hawaiian name for winds in the
         </p>
       </introduction>
-      <task>
+      <exercise>
         <statement>
           <p>
             Northeast quadrant
@@ -1009,8 +1008,8 @@
             Koʻolau
           </p>
         </answer>
-      </task>
-      <task>
+      </exercise>
+      <exercise>
         <statement>
           <p>
             Southeast quadrant
@@ -1021,8 +1020,8 @@
             Malanai
           </p>
         </answer>
-      </task>
-      <task>
+      </exercise>
+      <exercise>
         <statement>
           <p>
             Southwest quadrant
@@ -1033,8 +1032,8 @@
             Kona
           </p>
         </answer>
-      </task>
-      <task>
+      </exercise>
+      <exercise>
         <statement>
           <p>
             Northwest quadrant
@@ -1045,8 +1044,8 @@
             Hoʻolua
           </p>
         </answer>
-      </task>
-    </exercise>
+      </exercise>
+    </exercisegroup>
     <exercisegroup cols="2">
       <introduction>
         <p>
