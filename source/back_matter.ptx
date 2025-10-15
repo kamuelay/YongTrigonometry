@@ -3,7 +3,7 @@
     <xi:include href="./bibliography.ptx" />
     <xi:include href="./appendix_canoes.ptx" />
     <glossary>
-      <title>Glossary (Math)</title>
+      <title>Glossary (Mathematics</title>
       <gi>
         <title>amplitude</title>
         <p>
@@ -18,7 +18,7 @@
       </gi>
     </glossary>
     <glossary>
-      <title>Glossary (Canoe and Wayfinding)</title>
+      <title>Glossary (Canoe and Voyaging)</title>
       <gi>
         <title>heading</title>
         <p>
