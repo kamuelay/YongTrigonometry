@@ -17,10 +17,10 @@
       <image source="paafu-mat.jpg"/>
     </figure>
     <p>
-      A constellation is a cluster of stars whose shapes and meanings reflect and carry cultural significance. In modern society, a well-known cluster of stars in the southern hemisphere, shaped like a cruciform, is commonly referred to as the <q>Southern Cross.</q> However, for the people of Polowat and others from the Central Carolines region in the western Pacific, this same constellation resembles the triggerfish and is named accordingly.
+      A constellation is a cluster of stars whose shapes and meanings reflect and carry cultural significance. In modern society, a well-known cluster of stars in the southern hemisphere, shaped like a cruciform, is commonly referred to as the <q>Southern Cross.</q> However, for the people of Polowat and others from the Central Carolines region in the western Pacific, this constellation resembles the triggerfish and is named accordingly.
     </p>
     <p>
-      In the Central Carolines, the general location in the celestial sky where stars appear to rise after sundown is referred to as <q><em>tan</em>.</q> This term is often mistakenly translated as <q>east</q> due to the modern association of stars (like the sun) with <q>rising</q> in the east. However, it is important to note that <q>tan</q> means <q>rising</q> and not <q>eastward.</q>
+      In the Central Carolines, the general location in the celestial sky where stars appear to rise after sundown is referred to as <q><em>tan</em>.</q> This term is often mistakenly translated as <q>east</q> due to the modern association of stars (such as the sun) with <q>rising</q> in the east. However, it is important to note that <q>tan</q> means <q>rising</q> and not <q>eastward.</q>
     </p>
     <figure xml:id="paafu">
       <caption>The paafu, or Micronesian Star Compass. Stars are identified using the Polowat dialect of the Chuukese language as it is used by members of the Weriyeng School of navigation.</caption>
@@ -177,10 +177,10 @@
           <cell> Crux or Southern Cross at Rising</cell>
         </row>
         <row>
-          <cell>Machemeas [Matche-may-ess] </cell>
-          <cell> Crux or S. Cross at <m>45^{\circ}</m> <fn>
+          <cell>Machemeas [Matche-may-ess]<fn>
             The <q>Tan</q> prefix is not used for this position, because it is no longer rising.
             </fn></cell>
+          <cell> Crux or Southern Cross at <m>45^{\circ}</m></cell>
         </row>
         <row>
           <cell>Tan Welo [Well-Ah] </cell>
@@ -349,10 +349,10 @@
     </image>
   </figure>
   <p>
-    The four cardinal points align with particular houses. Stars rise from the horizon called <em>Hikina</em> (<q>To Arrive</q>) or East and set on the horizon called <em>Komohana</em> (<q>To Enter</q>) or West. If you face Komohana (West) with your back towards Hikina (East), your right will point towards <em>ʻĀkau</em> (<q>Right</q>) or North, and your left will point towards <em>Hema</em> (<q>Left</q>) or South. The Hawaiian Star Compass is oriented with North at the top.
+    The four cardinal points align with particular houses. Stars rise from the horizon called <em>Hikina</em> (<q>To Arrive</q>) or East and set on the horizon called <em>Komohana</em> (<q>To Enter</q>) or West. If we face Komohana (West) with our back towards Hikina (East), our right will point towards <em>ʻĀkau</em> (<q>Right</q>) or North, and our left will point towards <em>Hema</em> (<q>Left</q>) or South. The Hawaiian Star Compass is oriented with North at the top.
   </p>
   <p>
-    The star compass is divided into four quadrants, each named after winds in Hawaiʻi. <em>Koʻolau</em> is the Northeast quadrant named for the trade winds; <em>Hoʻolua</em> is the Northwest quadrant, <em>Kona</em> is the Southwest quadrant; and <em>Malanai</em> is the Southeast quadrant.
+    The star compass is divided into four quadrants, each named after winds in Hawaiʻi. <em>Koʻolau</em> is the Northeast quadrant named for the trade winds; <em>Hoʻolua</em> is the Northwest quadrant; <em>Kona</em> is the Southwest quadrant; and <em>Malanai</em> is the Southeast quadrant.
   </p>
   <p>
     Each house on the star compass is given a name. The corresponding houses in the east and west share the same name. Starting from the east or west and moving northwards and southwards, the first house on either side of Hikina (East) and Komohana (West) is called <em>Lā</em> (Sun). It is followed by <em>ʻĀina</em> (Land), <em>Noio</em> (Tern), <em>Manu</em> (Bird), <em>Nālani</em> (Heavens), <em>Nā Leo</em> (Voices), and <em>Haka</em> (Empty). The 32 houses in the Hawaiian Star Compass correspond to the points of the 32-wind compass rose (<xref ref="tab_compass">Table</xref>).
@@ -939,7 +939,7 @@
     <exercisegroup cols="2">
       <introduction>
         <p>
-          According to the Hawaiian Star Compass, what is the name for
+          According to the Hawaiian Star Compass, what is the name for:
         </p>
       </introduction>
       <exercise>
@@ -994,7 +994,7 @@
     <exercisegroup cols="2">
       <introduction>
         <p>
-          What is the Hawaiian name for winds in the
+          What is the Hawaiian name for winds in the:
         </p>
       </introduction>
       <exercise>
