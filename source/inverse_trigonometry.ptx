@@ -71,9 +71,9 @@
     </figure>
     <p>
       You may notice that for our given angle, <m>\theta</m>, we have the opposite side of length 6.2 m and the adjacent side of length 14.8 m, which are both related to the tangent function:
-      <me>
+      <md>
         \tan\theta=\frac{6.2}{14.8}
-      </me>.
+      </md>.
     </p>
     <p>
       Until now, the angles for the trigonometric problems we encountered were given. However, to solve for the angle <m>\theta</m>, we cannot simply divide by the letters <q>tan</q>, since it is part of the tangent function, which takes an angle as input and provides a ratio of sides as output. To find the angle <m>\theta</m>, we need to use the inverse tangent function, <q>tan^{-1}</q>, which takes the ratio of sides as input and gives the angle as output. To find the angle <m>\theta</m>, we need to use the inverse function, which takes the ratio of sides as input and provides an angle as output. In this section, we will explore inverse trigonometric functions, including their properties and usage.
@@ -374,9 +374,9 @@
         <solution>
           <p>
             Let <m>\theta=\cos^{-1}\left(\frac{1}{2}\right)</m>. Evaluating the problem  is the same as determining the angle, <m>\theta</m>, for which
-            <me>
+            <md>
               \cos\theta=\frac{1}{2}
-            </me>.
+            </md>.
             Although there are infinitely many values of <m>\theta</m> that satisfy the equation, such as <m>\theta=\frac{\pi}{3}</m> and <m>\theta=\frac{5\pi}{3}</m>, there is only one value that lies in the interval <m>[0,\pi]</m>. Thus, <m>\cos^{-1}\left(\frac{1}{2}\right)=\frac{\pi}{3}</m>.
           </p>
         </solution>
@@ -476,9 +476,9 @@
         <solution>
           <p>
             First verify the mode of the calculator is in radians. Then, press the following keys <kbd>COS^-1</kbd><kbd>(</kbd><kbd>(-)</kbd><kbd>0.39</kbd><kbd>)</kbd><kbd>ENTER</kbd> to get
-            <me>
+            <md>
               \cos^{-1}(-0.39)\approx1.9714279195
-            </me>.
+            </md>.
             If the calculator does not have the <kbd>COS^-1</kbd> key, then use the appropriate key(s) for inverse cosine, such as <kbd>INV</kbd><kbd>COS</kbd>, <kbd>ARCCOS</kbd>, or <kbd>ACOS</kbd>.
           </p>
           <p>
@@ -495,9 +495,9 @@
         <solution>
           <p>
             First verify the mode of the calculator is in radians. Then, using the appropriate key for inverse tangent, press the following keys <kbd>TAN^-1</kbd><kbd>(</kbd><kbd>12</kbd><kbd>)</kbd><kbd>ENTER</kbd> to get
-            <me>
+            <md>
               \tan^{-1}(12)\approx1.48765509491
-            </me>.
+            </md>.
           </p>
         </solution>
       </task>
@@ -510,9 +510,9 @@
         <solution>
           <p>
             First verify the mode of the calculator is in radians. Then, using the appropriate key for inverse sine, press the following keys <kbd>SIN^-1</kbd><kbd>(</kbd><kbd>0.8</kbd><kbd>)</kbd><kbd>ENTER</kbd> to get
-            <me>
+            <md>
               \sin^{-1}(0.8)\approx0.927295218002
-            </me>.
+            </md>.
           </p>
         </solution>
       </task>
@@ -532,17 +532,17 @@
           To find the other boundary, we want to determine the angle at which the swell simultaneously intersects both the starboard stern and port bow as it passes beneath the vaka. This angle, denoted as <m>\theta</m>, is formed between the side adjacent to the 14.8 m length of the canoe and the diagonal. Using the tangent function we have:
         </p>
         <p>
-          <me>
+          <md>
               \tan\theta = \frac{6.2}{14.8}
-          </me>.
+          </md>.
       </p>
       <p>
         Solving for <m>\theta</m> using the inverse tangent function we get:
     </p>
         <p>
-          <me>
+          <md>
             \tan^{-1}\left(\frac{6.2}{14.8}\right)\approx22.73^{\circ}
-          </me>.
+          </md>.
         </p>
         <p>
           Therefore, the possible range of headings from which the swells may be approaching is between <m>0^{\circ}</m> (directly north) and approximately <m>22.73^{\circ}</m>.
@@ -578,24 +578,24 @@
         </image>
         <p>
           We will use the tangent function because we are given the side opposite to <m>\theta</m> (575 NM) and the side adjacent to <m>\theta</m> (1,108 NM) and express it as
-          <me>
+          <md>
             \tan\theta=\frac{575}{1,108}
-          </me>.
+          </md>.
         </p>
       </statement>
       <solution>
         <p>
           Since we were able to write <m>\tan\theta=\frac{575}{1,108}</m>, we can use a calculator or other technology to evaluate the inverse tangent to find our angle:
-          <me>
+          <md>
             \theta=\tan^{-1}\left(\frac{575}{1,108}\right)\approx27.4^{\circ}
-          </me>.
+          </md>.
           Because this angle is in Quadrant III, we find its value on the Unit Circle by adding <m>180^{\circ}+27.4^{\circ}=207.4^{\circ}</m>. Next we refer to the Star Compass with angles (<xref ref="star-compass-with-angles"/>) to conclude we will need to sail towards the House ʻĀina Kona.
         </p>
         <p>
           To determine the distance, <m>d</m>, we use the Pythagorean Theorem:
-          <me>
+          <md>
             d=\sqrt{575^2+1,108^2}\approx1,248.3 \mbox{NM}
-          </me>.
+          </md>.
           Finally, we note that since (speed) = (distance)/(duration), we can rearrange the terms to get (duration) = (distance)/(speed). If we travel at 5 knots (5 NM/hr), we can calculate the duration as
           <md>
             <mrow>
@@ -684,21 +684,21 @@
               </image>
               <p>
                 Since we know the adjacent side and hypotenuse of this triangle, we can use cosine:
-                <me>
+                <md>
                   \cos\theta_1=\frac{R}{R+h}=\frac{20,911,171}{20,911,171+9}=\frac{20,911,171}{20,911,180}
-                </me>.
+                </md>.
                 To solve for <m>\theta_1</m>, we use the inverse cosine:
-                <me>
+                <md>
                   \theta_1=\cos^{-1}\left(\frac{20,911,171}{20,911,180}\right)\approx0.053^{\circ}
-                </me>.
+                </md>.
                 Now we are ready to calculate the arc length, <m>s_1</m>:
-                <me>
+                <md>
                   s_1=2\pi\cdot\frac{0.053^{\circ}}{360^{\circ}}\cdot20,911,171\mbox{ feet}\approx19,343\mbox{ feet}
-                </me>.
+                </md>.
                 Converting to miles we get
-                <me>
+                <md>
                   s_1\approx19,401\mbox{ feet}\cdot\frac{1\mbox{ mile}}{5,280\mbox{ feet}}\approx3.7 \mbox{ miles}
-                </me>.
+                </md>.
                 So the horizon is 3.7 miles from the navigator.
               </p>
             </li>
@@ -753,9 +753,9 @@
                   <mrow>\amp \approx 0.723^{\circ}</mrow>
                 </md>.
                 We conclude that the distance from Maʻunga Terevaka to the horizon is
-                <me>
+                <md>
                   s_2=2\pi\cdot\frac{0.723^{\circ}}{360^{\circ}}\cdot(20,911,171\mbox{ feet})\cdot\frac{1\mbox{ mile}}{5,280\mbox{ feet}}\approx50.0\mbox{ miles}
-                </me>.
+                </md>.
                 Therefore, the total distance between the navigator and Maʻunga Terevaka is <m>s_1+s_2=3.7+50.0=53.7</m> miles. Note that this is the distance when the island may first be seen, however, weather conditions may reduce visibility.
               </p>
             </li>
@@ -937,9 +937,9 @@
         <solution>
           <p>
             Since <m>\frac{\pi}{8}</m> is in the interval <m>[0,\pi]</m>, then from the properties of compositions of inverse functions, we get 
-            <me>
+            <md>
               \cos^{-1}\left(\cos\frac{\pi}{8}\right)=\frac{\pi}{8}
-            </me>.
+            </md>.
           </p>
         </solution>
       </task>
@@ -952,9 +952,9 @@
         <solution>
           <p>
             Since <m>7</m> is in the interval <m>(-\infty,\infty)</m>,
-            <me>
+            <md>
               \tan(\tan^{-1}(7))=7
-            </me>.
+            </md>.
           </p>
         </solution>
       </task>
@@ -967,9 +967,9 @@
         <solution>
           <p>
             Since <m>-\frac{\pi}{7}</m> is in the interval <m>\left[-\frac{\pi}{2},\frac{\pi}{2}\right]</m>,
-            <me>
+            <md>
               \sin^{-1}\left(\sin\left(-\frac{\pi}{7}\right)\right)=-\frac{\pi}{7}
-            </me>.
+            </md>.
           </p>
         </solution>
       </task>
@@ -999,9 +999,9 @@
           </image>
           <p>
             Since <m>\frac{2\pi}{7}</m> is in the interval <m>\left[-\frac{\pi}{2},\frac{\pi}{2}\right]</m>,
-          <me>
+          <md>
             \sin^{-1}\left(\sin\frac{5\pi}{7}\right)=\sin^{-1}\left(\sin\frac{2\pi}{7}\right)=\frac{2\pi}{7}
-          </me>.
+          </md>.
           </p>  
         </solution>
       </task>
@@ -1014,9 +1014,9 @@
         <solution>
           <p>
             Since <m>-0.283</m> is in the interval <m>[-1,1]</m>, 
-            <me>
+            <md>
               \cos(\cos^{-1}(-0.283))=-0.283
-            </me>.
+            </md>.
           </p>
         </solution>
       </task>
@@ -1040,9 +1040,9 @@
         <solution>
           <p>
             Let <m>\theta</m> be an angle in the range of the inverse tangent, that is, let <m>\theta</m> be in the interval <m>\left(-\frac{\pi}{2},\frac{\pi}{2}\right)</m> such that <m>\theta=\tan^{-1}\left(\frac{4}{3}\right)</m>. This equation is equivalent to <m>\tan\theta=\frac{4}{3}</m>. Since <m>\tan\theta>0</m>, we know that <m>\theta</m> must be in Quadrant I <m>\left(0\lt\theta\lt\frac{\pi}{2}\right)</m>. Let <m>(x,y)</m> be a point on the terminal side of <m>\theta</m>. Then by the trigonometric ratios,
-            <me>
+            <md>
               \tan\theta=\frac{\mbox{opposite}}{\mbox{adjacent}}=\frac{y}{x}
-            </me>
+            </md>
             Since we have <m>\tan\theta=\frac{4}{3}</m>, we let <m>x=3</m> and <m>y=4</m>, as shown in the figure below.
           </p>
           <image xml:id="examp-composite-cos-inverse-tan">
@@ -1062,13 +1062,13 @@
           </image>
           <p>
             Evaluating <m>\cos\left(\tan^{-1}\left(\frac{4}{3}\right)\right)</m> is equivalent to evaluating 
-            <me>
+            <md>
               \cos\theta=\frac{\mbox{adjacent}}{\mbox{hypotenuse}}=\frac{3}{r}
-            </me>,
+            </md>,
             where <m>r=\sqrt{x^2+y^2}=\sqrt{3^2+4^2}=\sqrt{9+16}=\sqrt{25}=5</m>. So,
-            <me>
+            <md>
               \cos\left(\tan^{-1}\left(\frac{4}{3}\right)\right)=\cos\theta=\frac{3}{5}
-            </me>.
+            </md>.
           </p>
         </solution>
       </task>
@@ -1081,9 +1081,9 @@
         <solution>
           <p>
             Let <m>\theta</m> be an angle in the range of the inverse cosine, that is, let <m>\theta</m> be in the interval <m>\left[0,\pi\right]</m> such that <m>\theta=\cos^{-1}\left(-\frac{3}{8}\right)</m>. This equation is equivalent to <m>\cos\theta=-\frac{3}{8}</m>. Since <m>\cos\theta\lt0</m>, we know that <m>\theta</m> must be in Quadrant II <m>\left(\frac{\pi}{2}\lt\theta\lt\pi\right)</m>. Let <m>(x,y)</m> be a point on the terminal side of <m>\theta</m>. Then by the trigonometric ratios,
-            <me>
+            <md>
               \cos\theta=\frac{\mbox{adjacent}}{\mbox{hypotenuse}}=\frac{x}{r}
-            </me>.
+            </md>.
             Since we have <m>\cos\theta=-\frac{3}{8}</m>, we get <m>\frac{x}{r}=-\frac{3}{8}</m> which gives us either <m>x=-3</m> and <m>r=8</m> or <m>x=3</m> and <m>r=-8</m>. Since <m>\theta</m> is in Quadrant II, we know that <m>x</m> is negative, thus <m>x=-3</m> and <m>r=8</m>, as shown in the figure below.
           </p>
           <image xml:id="examp-composite-sin-inverse-cos">
@@ -1103,9 +1103,9 @@
           </image>
           <p>
             Evaluating <m>\sin\left(\cos^{-1}\left(-\frac{3}{8}\right)\right)</m> is equivalent to evaluating 
-            <me>
+            <md>
               \sin\theta=\frac{\mbox{opposite}}{\mbox{hypotenuse}}=\frac{y}{8}
-            </me>,
+            </md>,
             where 
             <md>
               <mrow>r^2 \amp = x^2+y^2</mrow>
@@ -1114,9 +1114,9 @@
               <mrow>y^2 \amp = 55</mrow>
             </md>.
             Thus <m>y=\sqrt{55}</m>. So,
-            <me>
+            <md>
               \sin\left(\cos^{-1}\left(\frac{-3}{8}\right)\right)=\sin\theta=\frac{\sqrt{55}}{8}
-            </me>.
+            </md>.
             Note that <m>\sin\theta</m> is positive, since sine is positive in Quadrant II.
           </p>
         </solution>

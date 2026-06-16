@@ -51,11 +51,11 @@
             <mrow> 2\sin\theta\cos\theta+\cos\theta \amp = 0 </mrow>
           </md>.
           Then we factor <m>\cos\theta</m> from the terms:
-          <me> \cos\theta(2\sin\theta+1) = 0 </me>.
+          <md> \cos\theta(2\sin\theta+1) = 0 </md>.
           Thus we get
-          <me>
+          <md>
             \cos\theta=0\quad\mbox{or}\quad2\sin\theta+1=0
-          </me>.
+          </md>.
         </p>
         <p>
           When <m>\cos\theta=0</m> we get <m>\theta=\frac{\pi}{2}, \frac{3\pi}{2}</m>.
@@ -65,9 +65,9 @@
         </p>
         <p>
           Combining these, the solutions are
-          <me>
+          <md>
             \theta=\frac{\pi}{2}, \frac{3\pi}{2}, \frac{7\pi}{6}, \frac{11\pi}{6}
-          </me>.
+          </md>.
         </p>
       </solution>
     </example>
@@ -91,31 +91,31 @@
         </p>
         <p>
           Since <m>\cos(2\theta)</m> equals <m>\frac{\sqrt{3}}{2}</m> for angles <m>\frac{\pi}{6}</m> and <m>\frac{11\pi}{6}</m>, the general solutions for <m>2\theta</m> are
-          <me>
+          <md>
             2\theta=\frac{\pi}{6}+2k\pi\quad\mbox{or}\quad2\theta=\frac{11\pi}{6}+2k\pi
-          </me>
+          </md>
           for any integer <m>k</m>.
         </p>
         <p>
           Note that we have only solved for <m>2\theta</m>. Dividing both sides by 2 to find <m>\theta</m>, we obtain:
-          <me>
+          <md>
             \theta=\frac{\pi}{12}+k\pi\quad\mbox{or}\quad\theta=\frac{11\pi}{12}+k\pi
-          </me>.
+          </md>.
         </p>
         <p>
           The restriction <m>0\leq\theta\lt2\pi</m> gives us the following solutions:
-          <me>
+          <md>
             \frac{\pi}{12}, \frac{11\pi}{12}, \frac{13\pi}{12}, \frac{23\pi}{12}
-          </me>.
+          </md>.
         </p>
       </solution>
     </example>
     <remark>
       <p>
         In this example, our angle was a double-angle: <m>2\theta</m>. When dealing with multiple-angle trigonometric functions, such as <m>\cos(2\theta)</m>, it's essential to understand their graphical behavior. According to <xref ref="def-sin-cos-horizontal-stretch-compress"/>, the graph of <m>\cos(2\theta)</m> undergoes a horizontal compression by a factor of 2, and its period is <m>\frac{2\pi}{2}=\pi</m>. Since we are asked to find solutions on the interval <m>0\leq\theta\lt2\pi</m>, we will need to consider two periods. Thus, we have four solutions (2 solutions for each period):
-        <me>
+        <md>
           \frac{\pi}{12}, \frac{11\pi}{12}, \frac{13\pi}{12}, \frac{23\pi}{12}
-        </me>.
+        </md>.
       </p>
       <p>
         In general, if the trigonometric function has an angle <m>k\theta</m>, for some number <m>k</m>, we will need to consider the effect of this multiple angle on the period and number of solutions, ensuring that we adjust our solutions accordingly to cover all possible solutions within the given interval.
@@ -138,22 +138,22 @@
         </p>
         <p>
           Since <m>\tan\frac{\theta}{2}</m> equals <m>\frac{\sqrt{3}}{3}</m> for angles <m>\frac{\pi}{6}</m> and <m>\frac{7\pi}{6}</m>, the general solutions for <m>\frac{\theta}{2}</m> are
-          <me>
+          <md>
             \frac{\theta}{2}=\frac{\pi}{6}+k\pi\quad\mbox{and}\quad\frac{\theta}{2}=\frac{7\pi}{6}+k\pi
-          </me>
+          </md>
           for any integer <m>k</m>.
         </p>
         <p>
           Solving for <m>\theta</m>, we multiply both sides by 2 to obtain:
-          <me>
+          <md>
             \theta=\frac{\pi}{3}+2k\pi\quad\mbox{and}\quad\theta=\frac{7\pi}{3}+2k\pi
-          </me>.
+          </md>.
         </p>
         <p>
           Considering our restriction <m>0\leq\theta\lt2\pi</m>, we have only one solution:
-          <me>
+          <md>
             \theta=\frac{\pi}{3}
-          </me>.
+          </md>.
         </p>
       </solution>
     </example>
@@ -177,9 +177,9 @@
       <solution>
         <p>
           To find the solution to <m>\sin x + \cos x = \frac{1}{2}x</m>, we graph the left-hand side and the right-hand side of the equation and identify their intersections. Let <m>y_1</m> represent the curve for the left-hand side and <m>y_2</m> represent the curve for the right-hand side:
-          <me>
+          <md>
             y_1=\sin x+\cos x, \quad y_2=\frac{1}{2}x
-          </me>.
+          </md>.
         </p>
         <p>
           Use a graphing utility to plot <m>y_1</m> and <m>y_2</m>.
@@ -195,9 +195,9 @@
         </p>
         <p>
           The equation <m>\sin x + \cos x = \frac{1}{2}x</m> has three solutions, which correspond to the points of intersection between the curves <m>y_1 = \sin x + \cos x</m> and <m>y_2 = \frac{1}{2}x</m>. The <m>x</m>-values of these intersections are
-          <me>
+          <md>
             x=-2.68, -1.24, 1.71
-          </me>.
+          </md>.
         </p>
       </solution>
     </example>

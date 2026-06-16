@@ -51,7 +51,7 @@
       <statement>
         <p>
           A vector <m>\mathbf{v}</m> with initial point at <m>(0,0)</m> and terminal point at <m>(a,b)</m> is called the <term>position vector</term><idx><h>vectors</h><h>position vector</h></idx> and can be written as
-          <me>\mathbf{v}=\langle a-0,b-0\rangle=\langle a,b\rangle</me>.
+          <md>\mathbf{v}=\langle a-0,b-0\rangle=\langle a,b\rangle</md>.
         </p>
       </statement>
     </definition>
@@ -69,13 +69,13 @@
       <solution>
         <p>
           From <xref ref="def-component-form-of-a-vector"/>, our original vector can be written as:
-          <me>
+          <md>
             \mathbf{v}=\overrightarrow{PQ}=\langle5-2,3-(-1)\rangle=\langle3,4\rangle
-          </me>.
+          </md>.
           Then by <xref ref="def-position-vector"/>, the position vector is:
-          <me>
+          <md>
             \mathbf{v}=\langle3,4\rangle
-          </me>.
+          </md>.
           This vector starts at the origin with 3 as its horizontal component and 4 as its vertical component, as illustrated in the figure below.
         </p>
         <image xml:id="fig-position-vector" width="50%">
@@ -106,18 +106,18 @@
       <statement>
         <p>
           Given a vector <m>\mathbf{v}=\langle v_x,v_y\rangle</m>, its <term>magnitude</term><idx><h>vectors</h><h>magnitude</h></idx> or <term>length</term><idx><h>vectors</h><h>length</h></idx> is
-          <me>
+          <md>
             \|\mathbf{v}\|=\sqrt{v_x^2+v_y^2}
-          </me>.
+          </md>.
         </p>
       </statement>
     </definition>
     <remark xml:id="remark-vector-magnitude-pythagorean-theorem">
       <p>
         This formula is derived from the Pythagorean Theorem or the distance formula where the square of the magnitude  equals the square of the horizontal component plus the square of the vertical component:
-        <me>
+        <md>
           \|\mathbf{v}\|^2=v_x^2+v_y^2
-        </me>.
+        </md>.
       </p>
       <p>
         This relationship can be visually understood using the Pythagorean Theorem, as illustrated in the following figure.
@@ -153,9 +153,9 @@
         </statement>
         <solution>
           <p>
-            <me>
+            <md>
               \|\mathbf{u}\|=\sqrt{10^2+(-5)^2}=\sqrt{125}=\sqrt{25\cdot5}=\sqrt{25}\cdot\sqrt{5}=5\sqrt{5}
-            </me>
+            </md>
           </p>
         </solution>
       </task>
@@ -167,9 +167,9 @@
         </statement>
         <solution>
           <p>
-            <me>
+            <md>
               \|\mathbf{v}\|=\sqrt{(-2)^2+7^2}=\sqrt{4+49}=\sqrt{53}
-            </me>
+            </md>
           </p>
         </solution>
       </task>
@@ -181,9 +181,9 @@
         </statement>
         <solution>
           <p>
-            <me>
+            <md>
               \|\mathbf{w}\|=\sqrt{\left(\frac{12}{13}\right)^2+\left(\frac{5}{13}\right)^2}=\sqrt{\frac{144}{169}+\frac{25}{169}}=\sqrt{\frac{169}{169}}=1
-            </me>
+            </md>
           </p>
         </solution>
       </task>
@@ -417,9 +417,9 @@
       <statement>
         <p>
           Let <m>\mathbf{v}</m> be any vector. The vector
-          <me>
+          <md>
             \mathbf{u}=\frac{\mathbf{v}}{\|\mathbf{v}\|}
-          </me>
+          </md>
           is a <term>unit vector</term><idx><h>unit vector</h><h>same direction as <m>\mathbf{v}</m></h></idx> that has the same direction as <m>\mathbf{v}</m>.
         </p>
       </statement>
@@ -459,9 +459,9 @@
       <statement>
         <p>
           The unit vectors <m>\mathbf{i}</m> and <m>\mathbf{j}</m> are defined as
-          <me>
+          <md>
             \mathbf{i}=\langle1,0\rangle,\quad\mathbf{j}=\langle0,1\rangle
-          </me>.
+          </md>.
         </p>
       </statement>
     </definition>
@@ -473,9 +473,9 @@
       <statement>
         <p>
           Let <m>\mathbf{v}</m> be any vector. We can express <m>\mathbf{v}</m> in terms of its <term>horizontal</term> and <term>vertical components</term><idx><h>vectors</h><h>components of</h></idx>:
-          <me>
+          <md>
             \mathbf{v}=\langle v_x,v_y\rangle=v_x\mathbf{i}+v_y\mathbf{j}
-          </me>.
+          </md>.
         </p>
       </statement>
     </definition>
@@ -496,9 +496,9 @@
       <title>Finding Direction of a Vector</title>
       <p>
         Recall that 
-        <me>
+        <md>
           \tan\theta=\frac{v_y}{v_x}
-        </me>.
+        </md>.
         Since <m>-90^{\circ} \lt \tan^{-1} \left( \frac{v_y}{v_x} \right) \lt 90^{\circ}</m>, the inverse tangent function returns an angle in Quadrants I or IV. To determine the correct direction <m>\theta</m>, consider the quadrant in which the vector lies and make the appropriate adjustments:
       </p>
       <p>
@@ -529,15 +529,15 @@
       <statement>
         <p>
           For vector <m>\mathbf{v}</m> with magnitude <m>\|\mathbf{v}\|</m> and direction <m>\theta</m>, we can use Right Triangle Trigonometry to solve for the horizontal and vertical components, denoted as <m>v_x</m> and <m>v_y</m>, respectively:
-          <me>
+          <md>
             v_x=\|\mathbf{v}\|\cos\theta, \quad v_y=\|\mathbf{v}\|\sin\theta
-          </me>.
+          </md>.
         </p>
         <p>
           This allows us to express <m>\mathbf{v}</m> as:
-          <me>
+          <md>
             \mathbf{v}=\|\mathbf{v}\|\cos\theta\mathbf{i}+\|\mathbf{v}\|\sin\theta\mathbf{j}=\langle\|\mathbf{v}\|\cos\theta,\|\mathbf{v}\|\sin\theta\rangle
-          </me>.
+          </md>.
         </p>
         <image xml:id="fig-vector-components-angle">
           <latex-image>
@@ -571,9 +571,9 @@
       <solution>
         <p>
           First, we note that since the velocity is 10 knots, we have <m>\|\mathbf{v}\|=10</m>. Next, we need to find the direction. Since <m>\theta</m> is measured from the positive <m>x</m>-axis, by <xref ref="def-horizontal-vertical-components-from-magnitude-direction"/> we see that
-          <me>
+          <md>
             \theta=90^{\circ}+22.5^{\circ}=112.5^{\circ}
-          </me>.
+          </md>.
         </p>
         <p>
           To find the vector, will need the horizontal and vertical components:
@@ -584,9 +584,9 @@
         </p>
         <p>
           Thus
-          <me>
+          <md>
             \mathbf{v}\approx-3.8\mathbf{i}+9.2\mathbf{j}=\langle-3.8,9.2\rangle
-          </me>.
+          </md>.
         </p>
         <image xml:id="fig-exampl-vector-velocity" width="50%">
           <latex-image>
@@ -683,9 +683,9 @@
           </image>
           <p>
             Since Marumaru Atua is sailing north at 5 knots, the velocity is:
-            <me>
+            <md>
               \mathbf{v}_m=\langle0,5\rangle
-            </me>.
+            </md>.
           </p>
           <p>
             To find the vector for the current, we need to know <m>t</m>, the angle of the velocity vector in standard position (see <xref ref="def-standard-position"/>). We begin by drawing the heading angle of <m>260^{\circ}</m> and its reference angle, <m>t'</m>.
@@ -709,9 +709,9 @@
           </image>
           <p>
             We can see from the figure that <m>260^{\circ}+t'=270^{\circ}</m>, thus we get our reference angle as
-            <me>
+            <md>
               t'=10^{\circ}
-            </me>.
+            </md>.
           </p>
           <p>
             We now draw our angle, <m>t</m>, in standard position and the reference angle, <m>t'</m>:
@@ -735,15 +735,15 @@
           </image>
           <p>
             From <xref ref="rem-calculate-angle-given-quad-reference-angle"/>, we have
-            <me>
+            <md>
               t=180^{\circ}+10^{\circ}=190^{\circ}
-            </me>.
+            </md>.
           </p>
           <p>
             Thus, by <xref ref="def-horizontal-vertical-components-from-magnitude-direction"/> the velocity for the current is
-            <me>
+            <md>
               \mathbf{v}_c=\langle1\cos190^{\circ},1\sin190^{\circ}\rangle\approx\langle-0.98,-0.17\rangle
-            </me>.
+            </md>.
           </p>
         </solution>
       </task>
@@ -790,20 +790,20 @@
         <solution>
           <p>
             The actual speed of Marumaru Atua is simply the magnitude of the velocity over ground:
-            <me>
+            <md>
               \|\mathbf{v}_g\|=\|\langle-0.98,4.83\rangle\|=\sqrt{(-0.98)^2+(4.83^2)}\approx4.9\mbox{ knots}
-            </me>.
+            </md>.
             Thus, although the vaka sails through the water at 5 knots, its forward progress is slightly slower with a speed over ground at 4.9 knots.
           </p>
           <p>
             To find the course over ground, we will use <xref ref="remark-finding-vector-direction"/> to find direction of the velocity:
-            <me>
+            <md>
               \tan^{-1}\frac{v_y}{v_x}=\tan^{-1}\frac{4.83}{-0.98}\approx-78.5^{\circ}
-            </me>.
+            </md>.
             Since our velocity vector is in Quadrant II, our course over ground is
-            <me>
+            <md>
               \theta=-78.5^{\circ}+180^{\circ}=101.5^{\circ}
-            </me>.
+            </md>.
           </p>
         </solution>
       </task>

@@ -37,9 +37,9 @@
       <p>
         Given a point <m>P</m> with polar coordinates <m>(r,\theta)</m>,
         the rectangular coordinates <m>(x,y)</m> of <m>P</m> are given by
-        <me>
+        <md>
           x=r\cos\theta y=r\sin\theta
-        </me>
+        </md>
       </p>
     </statement>
   </theorem>
@@ -49,9 +49,9 @@
       <p>
         Given a point <m>P</m> with rectangular coordinates <m>(x,y)</m>,
         the polar coordinates <m>(r,\theta)</m> of <m>P</m> are found by
-        <me>
+        <md>
           r^2=x^2+y^2 \tan\theta=\frac{y}{x},\mbox{~if~} x\neq0
-        </me>
+        </md>
       </p>
     </statement>
   </theorem>

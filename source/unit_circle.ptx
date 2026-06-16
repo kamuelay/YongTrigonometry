@@ -17,9 +17,9 @@
             <h>unit circle</h>
           </idx>
           is a circle whose radius is 1 and whose center is at the origin of a coordinate plane (or <m>xy</m>-plane). The equation for the unit circle is
-          <me>
+          <md>
             x^2+y^2=1
-          </me>.
+          </md>.
         </p>
       </statement>
     </definition>
@@ -242,13 +242,13 @@
         <solution>
           <p>
             Since <m>\theta=5\pi>2\pi</m>, our angle is greater than one full rotation of a circle. We first subtract <m>\theta</m> by one rotation, <m>2\pi</m>, to get
-            <me>
+            <md>
               5\pi-2\pi-=3\pi
-            </me>
+            </md>
             Once again, since we have completed more than one full rotation, we can repeat the previous step:
-            <me>
+            <md>
               3\pi-2\pi=\pi
-            </me>
+            </md>
             The values of the six trigonometric functions when <m>\theta=5\pi</m> are equal to those when <m>\theta=\pi</m>. Notice that <m>5\pi</m> and <m>\pi</m> are <em>coterminal angles</em>, both ending at the point<m>P(-1,0)</m>.
           </p>
           <image xml:id="exmp-6trig-5pi" width="55%">

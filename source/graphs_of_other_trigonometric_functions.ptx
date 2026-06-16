@@ -12,9 +12,9 @@
       Recall the Quotient Identity for tangent (<xref ref="def_quotient-identities"/>):
     </p>
     <p>
-      <me>
+      <md>
         \tan x = \frac{\sin x}{\cos x}
-      </me>.
+      </md>.
     </p>
     <p>
       <m>\tan x</m> is undefined when the denominator is zero, that is, when <m>\cos x=0</m>. This leads to undefined points at <m>x=\ldots, -\frac{3\pi}{2}, -\frac{\pi}{2}, \frac{\pi}{2}, \frac{3\pi}{2}, \frac{5\pi}{2}, \ldots</m>. In general, any angle of the form <m>n\frac{\pi}{2}</m>, where <m>n</m> is an odd integer, should be excluded from the domain since tangent is undefined at these values.
@@ -23,7 +23,7 @@
       Similarly, we defined the cotangent function as
     </p>
     <p>
-      <me>\cot x=\frac{\cos x}{\sin x}</me>.
+      <md>\cot x=\frac{\cos x}{\sin x}</md>.
     </p>
     <p>
       The denominator becomes zero when <m>\sin x=0</m>, corresponding to <m>x=\ldots,-\pi,0,\pi,2\pi,\ldots</m>. In general, <m>\cot x</m> is undefined for angles of the form <m>n\pi</m>, where <m>n</m> is an integer. These angles should be excluded from the domain of cotangent.
@@ -77,37 +77,37 @@
       Multiplying both sides by <m>x</m>, we obtain:
     </p>
     <p>
-      <me>y = ax</me>.
+      <md>y = ax</md>.
     </p>
     <p>
       Squaring both sides yields:
     </p>
     <p>
-      <me>y^2 = a^2x^2</me>.
+      <md>y^2 = a^2x^2</md>.
     </p>
     <p>
       Substituting into the Pythagorean Identity (<xref ref="def_pythagorean-identity"/>), we have:
     </p>
     <p>
-      <me>1 = x^2 + y^2 = x^2 + a^2x^2 = x^2(1 + a^2)</me>.
+      <md>1 = x^2 + y^2 = x^2 + a^2x^2 = x^2(1 + a^2)</md>.
     </p>
     <p>
       Dividing both sides by <m>1 + a^2</m> and taking the square root gives:
     </p>
     <p>
-      <me>x = \pm\frac{1}{\sqrt{1 + a^2}}</me>.
+      <md>x = \pm\frac{1}{\sqrt{1 + a^2}}</md>.
     </p>
     <p>
       Similarly, we obtain:
     </p>
     <p>
-      <me>y = \pm\frac{a}{\sqrt{1 + a^2}}</me>.
+      <md>y = \pm\frac{a}{\sqrt{1 + a^2}}</md>.
     </p>
     <p>
       Thus, we conclude:
     </p>
     <p>
-      <me>\tan\theta = \frac{y}{x} = \frac{\frac{a}{\sqrt{1 + a^2}}}{\frac{1}{\sqrt{1 + a^2}}} = a</me>.
+      <md>\tan\theta = \frac{y}{x} = \frac{\frac{a}{\sqrt{1 + a^2}}}{\frac{1}{\sqrt{1 + a^2}}} = a</md>.
     </p>
     <p>
       In other words, since <m>a</m> can be any real number and <m>\tan\theta = a</m>, the range of the tangent function consists of all real numbers. A similar method can be used to show that the range of the cotangent function is also the set of all real numbers.
@@ -158,14 +158,14 @@
       Consider the Reciprocal Identity defining the cosecant function (<xref ref="def_reciprocal-identities"/>):
     </p>
     <p>
-      <me>\csc x=\frac{1}{\sin x}</me>.
+      <md>\csc x=\frac{1}{\sin x}</md>.
     </p>
     <p>
       When <m>\sin x=0</m>, corresponding to <m>x=\ldots,-\pi,0,\pi,2\pi,\ldots</m>, the denominator becomes zero. Therefore, <m>\csc x</m> is undefined for angles of the form <m>n\pi</m>, where <m>n</m> is an integer, and these values should be excluded from the domain.
     </p>
     <p>
       Similarly, since the secant function is defined as
-      <me>\sec x=\frac{1}{\cos x}</me>
+      <md>\sec x=\frac{1}{\cos x}</md>
       we see that <m>\sec x</m> is undefined when <m>\cos x=0</m>. This occurs at <m>x=\ldots, -\frac{3\pi}{2}, -\frac{\pi}{2}, \frac{\pi}{2}, \frac{3\pi}{2}, \frac{5\pi}{2}, \ldots</m>, and thus any angle of the form <m>n\frac{\pi}{2}</m>, where <m>n</m> is an odd integer, should be excluded from the domain of <m>\sec x</m>.
     </p>
     <remark>
@@ -212,16 +212,16 @@
     <title>Ranges of the Cosecant and Secant Functions</title>
     <p>
       If the angle is not an integer multiple of <m>\pi</m>, i.e. <m>x\neq n\pi</m>, where <m>n</m> is an integer, then cosecant is defined by the Reciprocal Identity as
-      <me>\csc x=\frac{1}{\sin x}</me>.
+      <md>\csc x=\frac{1}{\sin x}</md>.
       In <xref ref="subsec-domain-range-sine-cosine-functions"/>, we learned that the function <m>y=\sin x</m> has a range of
-      <me>-1\leq \sin x\leq1</me>.
+      <md>-1\leq \sin x\leq1</md>.
       Therefore, taking the reciprocal of the range of sine, we get
-      <me>\csc x\leq-1\mbox{ or }\csc x\geq1</me>.
+      <md>\csc x\leq-1\mbox{ or }\csc x\geq1</md>.
       In other words, the range of the cosecant function is all real numbers less than or equal to <m>-1</m> or greater than or equal to <m>1</m>.
     </p>
     <p>
       Similarly, since <m>-1\leq \cos x\leq1</m>, we can get the range for the secant function as
-      <me>\sec x\leq-1\mbox{ or }\sec x\geq1</me>
+      <md>\sec x\leq-1\mbox{ or }\sec x\geq1</md>
       or all real numbers less than or equal to <m>-1</m> or greater than or equal to <m>1</m>.
     </p>
     <remark>
@@ -459,7 +459,7 @@
     </p>
     <p>
       Consider the Reciprocal Identity defining the cosecant function (<xref ref="def_reciprocal-identities"/>):
-      <me>\csc x=\frac{1}{\sin x}</me>.
+      <md>\csc x=\frac{1}{\sin x}</md>.
       As <m>x</m> approaches zero, <m>\sin x</m> decreases to zero, making <m>\csc x</m> approach positive infinity. Increasing <m>x</m> towards <m>\frac{\pi}{2}</m>, <m>\sin(x)</m> increases to <m>1</m>, and cosecant decreases to <m>1</m>. As <m>x</m> increases from <m>\frac{\pi}{2}</m> to <m>\pi</m>, <m>\sin x</m> approaches zero, causing <m>\csc(x)</m> to approach infinity.
     </p>
     <p>
@@ -692,12 +692,12 @@
       <statement>
         <p>
           For functions of the form
-          <me>
+          <md>
               y = A \tan(B(x - C)) + D, \quad y = A \cot(B(x - C)) + D
-          </me>,
-          <me>
+          </md>,
+          <md>
             \quad y = A \csc(B(x - C)) + D, \quad \mbox{and} \quad y = A \sec(B(x - C)) + D
-        </me>,
+        </md>,
           we can express the transformations as follows:
       </p>
       <p>
@@ -801,14 +801,14 @@
                 <li>
                   <p>
                     For cotangent and cosecant, vertical asymptotes occur at 
-                    <me>x = C + n\frac{\pi}{|B|}</me>,
+                    <md>x = C + n\frac{\pi}{|B|}</md>,
                     where <m>n</m> is an integer.
                   </p>
                 </li>
                 <li>
                   <p>
                     For tangent and secant, vertical asymptotes occur at
-                    <me>x = C + n\frac{\pi}{2|B|}</me>, 
+                    <md>x = C + n\frac{\pi}{2|B|}</md>, 
                     where <m>n</m> is an odd integer.
                   </p>
                 </li>
@@ -823,12 +823,12 @@
       <title>Other Forms of Transformations</title>
       <p>
         For functions of the form
-        <me>
+        <md>
           y = A \tan(Bx - E) + D, \quad y = A \cot(Bx - E) + D
-      </me>,
-      <me>
+      </md>,
+      <md>
         \quad y = A \csc(Bx - E) + D, \quad \mbox{and} \quad y = A \sec(Bx - E) + D
-    </me>,
+    </md>,
         the transformations are the same as above, except for the phase shift and vertical asymptotes where we replace <m>C</m> with <m>\frac{E}{B}</m>. If <m>\frac{E}{B} \gt0</m> the phase shift is to the right, and if <m>\frac{E}{B} \lt 0</m> it is to the left. 
       </p>
       <p>
@@ -836,14 +836,14 @@
           <li>
             <p>
               For cotangent and cosecant, vertical asymptotes occur at 
-              <me>x = \frac{E}{B} + n\frac{\pi}{|B|}</me>,
+              <md>x = \frac{E}{B} + n\frac{\pi}{|B|}</md>,
               where <m>n</m> is an integer.
             </p>
           </li>
           <li>
             <p>
               For secant and tangent, vertical asymptotes occur at
-              <me>x = \frac{E}{B} + n\frac{\pi}{2|B|}</me>, 
+              <md>x = \frac{E}{B} + n\frac{\pi}{2|B|}</md>, 
               where <m>n</m> is an odd integer.
             </p>
           </li>
@@ -2424,7 +2424,7 @@
     <introduction>
       <p>
         When navigating the open ocean, maintaining a straight course poses challenges due to limited visual markers. One technique involves the steersperson using the positions of shadows cast by objects on the canoe—such as crew members, railings, and sails—to keep them fixed on the deck, ensuring a straight trajectory. However, if the canoe veers off course, the changing position of the canoe relative to the sun leads to a shift in the shadows. Observing these shadow movements allows the steersperson to make course corrections. It's important to note that this method is effective only over a short duration, as the sun's continuous movement across the sky causes ongoing changes in shadow positions. To illustrate the limitations over extended periods, consider the example of the Samoan double-hulled voyaging vaʻa, Gaualofa, with a 14-meter-high mast. The length of the shadow is modeled by
-        <me>l(t)=14\left|\cot\left(\frac{\pi}{12}t\right)\right|</me>,
+        <md>l(t)=14\left|\cot\left(\frac{\pi}{12}t\right)\right|</md>,
         where <m>l</m> is the shadow length in meters and <m>t</m> represents the hours since 6 am (assuming sunrise at 6 am and sunset at 6 pm). In each of the following questions, calculate the length of the shadow, rounded to the nearest tenth of a meter, for the given time.
       </p>
     </introduction>
@@ -2533,9 +2533,9 @@
       </image>
       <p>
         An observer on Rangiroa spots the Faʻafaite<idx><h>canoe</h><h>Faʻafaite</h></idx>, a double-hulled voyaging canoe from Tahiti, sailing off the north coast of the atoll, maintaining a distance of 1.5 kilometers from the shore and traveling east. Let <m>\theta</m> represent the angle formed between the line from the observer to the vaʻa and a line extending due north from the observer, measured in radians. The angle <m>\theta</m> is negative if the vaʻa is to the left of the observer and positive when to the right, as shown in the figure above. The distance (in kilometers), denoted by <m>d(\theta)</m> from Faʻafaite to the observer is given by the function
-        <me>
+        <md>
           d(\theta)=1.5\sec(\theta)
-        </me>.
+        </md>.
       </p> 
       <p>
         In each of the following questions, calculate the distance from the observer to Faʻafaite, <m>d(\theta)</m>, in kilometers, for the given angle <m>\theta</m>. Round your answer to two decimal places.

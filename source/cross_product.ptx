@@ -18,9 +18,9 @@
         then the <term>cross product</term>
             <idx><h>cross product</h></idx>
         of <m>\mathbf{u}</m> and <m>\mathbf{v}</m> is defined to be the vector
-        <me>
+        <md>
           \mathbf{u}\times\mathbf{v}=\langle a_2b_3-a_3b_2,a_3b_1-a_1b_3,a_1b_2-a_2b_1\rangle
-        </me>
+        </md>
       </p>
     </statement>
   </definition>

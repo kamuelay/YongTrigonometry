@@ -88,26 +88,26 @@
     <example>
       <statement>
         <p>
-          Simplify <me>\tan^2(x)\cdot\csc^2(x)</me>.
+          Simplify <md>\tan^2(x)\cdot\csc^2(x)</md>.
         </p>
       </statement>
       <solution>
         <p>
           We can simplify this expression by writing each function in terms of sine and cosine functions:
-          <me>\tan^2(x)\cdot\csc^2(x)=\frac{\sin^2(x)}{\cos^2(x)}\cdot\frac{1}{\sin^2(x)}=\frac{1}{\cos^2(x)}=\sec^2(x)</me>.
+          <md>\tan^2(x)\cdot\csc^2(x)=\frac{\sin^2(x)}{\cos^2(x)}\cdot\frac{1}{\sin^2(x)}=\frac{1}{\cos^2(x)}=\sec^2(x)</md>.
         </p>
       </solution>
     </example>
     <example>
       <statement>
         <p>
-          Simplify <me>\sin^2(x)(\cot^2(x) - 1)</me>.
+          Simplify <md>\sin^2(x)(\cot^2(x) - 1)</md>.
         </p>
       </statement>
       <solution>
         <p>
           We can simplify this expression by first using the Pythagorean Identity and then using the Reciprocal Identity:
-          <me>\sin^2(x)(\cot^2(x) - 1) = \sin^2(x)(-\csc^2(x)) = \sin^2(x)\left(-\frac{1}{\sin^2(x)}\right) = -1</me>.
+          <md>\sin^2(x)(\cot^2(x) - 1) = \sin^2(x)(-\csc^2(x)) = \sin^2(x)\left(-\frac{1}{\sin^2(x)}\right) = -1</md>.
         </p>
       </solution>
     </example>
@@ -155,17 +155,17 @@
       <statement>
         <p>
           Verify the identity
-          <me>
+          <md>
             \frac{\sin(x)}{\tan(x)}=\cos(x)
-          </me>.
+          </md>.
         </p>
       </statement>
       <solution>
         <p>
           We use the Quotient Identity to rewrite <m>\tan(x)</m> in terms of <m>\sin(x)</m> and <m>\cos(x)</m>:
-          <me>
+          <md>
             \frac{\sin(x)}{\tan(x)}=\dfrac{\sin(x)}{\frac{\sin(x)}{\cos(x)}}=\cancel{\sin(x)}\cdot\frac{\cos(x)}{\cancel{\sin(x)}}=\cos(x)
-          </me>.
+          </md>.
         </p>
       </solution>
     </example>
@@ -174,9 +174,9 @@
       <statement>
         <p>
           Verify the identity
-          <me>
+          <md>
             \cos^4(x)+\sin^2(x)\cos^2(x)=\cos^2(x)
-          </me>.
+          </md>.
         </p>
       </statement>
       <solution>
@@ -196,17 +196,17 @@
       <statement>
         <p>
           Verify the identity
-          <me>
+          <md>
             \frac{\cos(x)-\sin(x)}{\cos(-x)+\sin(-x)}=1
-          </me>
+          </md>
         </p>
       </statement>
       <solution>
         <p>
           By the Even-Odd Properties, we have <m>\sin(-x)=-\sin(x)</m> and <m>\cos(-x)=\cos(x)</m>. Thus,
-          <me>
+          <md>
             \frac{\cos(x)-\sin(x)}{\cos(-x)+\sin(-x)}=\frac{\cos(x)-\sin(x)}{\cos(x)-\sin(x)}=1
-          </me>.
+          </md>.
         </p>
       </solution>
     </example>
@@ -215,9 +215,9 @@
       <statement>
         <p>
           Verify the identity
-          <me>
+          <md>
             \frac{\sin(x)}{\sin(x)+\cos(x)}=\frac{1}{1+\cot(x)}
-          </me>.
+          </md>.
         </p>
       </statement>
       <solution>
@@ -236,9 +236,9 @@
       <statement>
         <p>
           Verify the identity
-          <me>
+          <md>
             \frac{1-\cos x}{1+\cos x}=(\csc x-\cot x)^2
-          </me>.
+          </md>.
         </p>
       </statement>
       <solution>

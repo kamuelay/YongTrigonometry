@@ -4,9 +4,9 @@
   <introduction>
     <p>
       In <xref ref="right_triangle_trigonometry"/>, we used right triangles to determine the deviation of a waʻa (canoe) from its course based on the angle of deviation. If a waʻa sails for 120 nautical miles (NM), we were able to calculate the deviation from its course using right triangles to get the equation:
-      <me>
+      <md>
         \mbox{deviation} = (120\mbox{ NM})\cdot\sin(\theta)
-      </me>.        
+      </md>.        
     </p>
     <image xml:id="deviation-add-formula-intro" width="100%">
       <latex-image>
@@ -24,9 +24,9 @@
     </image>
     <p>
       Before setting sail, a voyager studies a table listing the deviation distances corresponding to different houses of deviation. It's crucial to understand that while adding angles may yield a third angle, adding their corresponding deviations will not accurately determine the total deviation. In other words:
-      <me>
+      <md>
         \sin(\alpha) + \sin(\beta) \neq \sin(\alpha + \beta)
-      </me>
+      </md>
       for certain angles of deviation <m>\alpha</m> and <m>\beta</m>.
     </p>
     <p>
@@ -55,9 +55,9 @@
     </image>
     <p>
       However,
-      <me>
+      <md>
         120 \sin(1 \mbox{ house}) + 120 \sin(2 \mbox{ houses}) \approx 23.4 + 45.9 \mbox{ NM} \approx 69.3 \mbox{ NM}
-      </me>,
+      </md>,
       which differs from the actual deviation of 66.7 NM when deviating by 3 houses.  
     </p>
     <p>
@@ -83,9 +83,9 @@
     <proof xml:id="add-sub-formula-cos-proof">
       <p>
         First we will prove the Subtraction Formula for Cosine
-        <me>
+        <md>
           \cos(\alpha-\beta)=\cos\alpha\cos\beta+\sin\alpha\sin\beta
-        </me>.
+        </md>.
       </p>
       <p>
         We begin by considering two points on the unit circle. Point <m>P</m> is at an angle of <m>\beta</m> in standard position with coordinates <m>(\cos\beta,\sin\beta)</m> and point <m>Q</m> is at an angle of <m>\alpha</m> in standard position with coordinates <m>(\cos\alpha,\sin\alpha)</m>.
@@ -168,9 +168,9 @@
       </p>
       <p>
         Dividing both sides by -2 we arrive at the Subtraction Formula for Cosine
-        <me>
+        <md>
           \cos\alpha\cos\beta+\sin\alpha\sin\beta=\cos(\alpha-\beta)
-        </me>.
+        </md>.
       </p>
       <p>
         To prove the Addition Formula for Cosine, replace <m>\beta</m> with <m>-\beta</m> in the Subtraction Formula and use the Even and Odd Trigonometric Properties (<xref ref="def-even-odd-trig"/>) where <m>\sin(-\beta)=-\sin\beta</m> and <m>\cos(-\beta)=\cos\beta</m> to get
@@ -225,9 +225,9 @@
       <solution>
         <p>
           Notice this expression is the Addition Formula for Cosine with <m>\alpha=25^{\circ}</m> and <m>\beta=35^{\circ}</m>. So
-          <me>
+          <md>
             \cos25^{\circ}\cos35^{\circ}-\sin25^{\circ}\sin35^{\circ}=\cos(25^{\circ}+35^{\circ})=\cos60^{\circ}=\frac{1}{2}
-          </me>.
+          </md>.
         </p>
       </solution>
     </example>
@@ -261,9 +261,9 @@
       <solution>
         <p>
           The Addition Formula for Sine gives us
-          <me>
+          <md>
             \sin(\alpha+\beta)=\sin\alpha\cos\beta+\cos\alpha\sin\beta
-          </me>.
+          </md>.
         </p>
         <p>
           At this moment, we do not know the exact values of <m>\cos\alpha</m> and <m>\sin\beta</m> but we can compute them.
@@ -310,9 +310,9 @@
         </p>
         <p>
           Thus we get
-          <me>
+          <md>
             \cos\alpha=\frac{5}{13}
-          </me>.
+          </md>.
           Similarly,
           <md>
             <mrow>(-3)^2+y^2\amp = 5^2</mrow>
@@ -323,9 +323,9 @@
         </p>
         <p>
           Thus we get
-          <me>
+          <md>
             \sin\beta=\frac{4}{5}
-          </me>.
+          </md>.
         </p>
         <p>
           We now have all the information needed to proceed.
@@ -454,9 +454,9 @@
       <statement>
         <p>
           Prove the Addition Formula for Sine
-          <me>
+          <md>
             \sin(\alpha+\beta)=\sin\alpha\cos\beta+\cos\alpha\sin\beta
-          </me>.
+          </md>.
         </p>
       </statement>
       <solution>
@@ -483,27 +483,27 @@
     <title>Sums of Sines and Cosines</title>
     <p>
       Sometimes we may come across functions of the form
-      <me>a\sin x+b\cos x</me>.
+      <md>a\sin x+b\cos x</md>.
       It can often be useful to rewrite this expression as a single trigonometric function.
     </p>
     <definition xml:id="def-sums-of-sin-cos"><idx><h>sums of sines and cosines</h></idx>
       <statement>
         <p>
           For any real numbers <m>a</m> and <m>b</m>, let <m>\theta</m> be an angle in standard position where <m>P(a,b)</m> is a point on the terminal side of <m>\theta</m>. Then
-          <me>a \sin x + b \cos x = \sqrt{a^2 + b^2} \sin(x + \theta)</me>.
+          <md>a \sin x + b \cos x = \sqrt{a^2 + b^2} \sin(x + \theta)</md>.
         </p>
       </statement>
     </definition>
     <proof>
       <p>
         We begin by considering the triangle formed by angle <m>\theta</m> and point <m>P(a,b)</m>, shown in <xref ref="fig-sums-of-sines-cosines-proof"/>. By the Pythagorean Theorem, the hypotenuse of this triangle, with base <m>a</m> and height <m>b</m>, is <m>\sqrt{a^2+b^2}</m>. According to <xref ref="def_trig-ratios"/>, we have
-        <me>
+        <md>
           \cos\theta=\frac{a}{\sqrt{a^2+b^2}}, \quad \sin\theta=\frac{b}{\sqrt{a^2+b^2}}
-        </me>
+        </md>
         or equivalently:
-        <me>
+        <md>
           a = \sqrt{a^2+b^2}\cos\theta, \quad b= \sqrt{a^2+b^2}\sin\theta
-        </me>.
+        </md>.
       </p>
       <figure xml:id="fig-sums-of-sines-cosines-proof">
         <caption>A triangle is formed by angle <m>\theta</m> and point <m>P(a,b)</m>.</caption>
@@ -536,22 +536,22 @@
       <statement>
         <p>
           Express
-          <me>
+          <md>
             -\frac{\sqrt{3}}{2}\sin x+\frac{1}{2}\cos x
-          </me>
+          </md>
           in terms of sine only.
         </p>
       </statement>
       <solution>
         <p>
           To express the given expression in terms of sine only, we will use <xref ref="def-sums-of-sin-cos"/>. Considering the point <m>P(a,b)=\left( -\frac{\sqrt{3}}{2},\frac{1}{2}\right)</m>, which lies in Quadrant II, we determine the angle <m>\theta</m>. Using either <xref ref="tab_trig-table"/> or inverse trigonometric methods where
-          <me>
+          <md>
             \tan\theta=\frac{b}{a}=\frac{\frac{1}{2}}{-\frac{\sqrt{3}}{2}}=-\frac{1}{\sqrt{3}}
-          </me>,
+          </md>,
           we find
-          <me>
+          <md>
             \theta=150^{\circ}
-          </me>.
+          </md>.
         </p>
         <p>
           Therefore, by <xref ref="def-sums-of-sin-cos"/>, we have:

@@ -121,9 +121,9 @@
         <p>
           If <m>\mathbf{u}=\langle u_1,u_2\rangle</m> and <m>\mathbf{v}=\langle v_1,v_2\rangle</m> are vectors,
           then their <term>dot product</term>,<idx><h>dot product</h></idx> written <m>\mathbf{u}\cdot\mathbf{v}</m>, is defined as
-          <me>
+          <md>
             \mathbf{u}\cdot\mathbf{v}=u_1v_1+u_2v_2
-          </me>
+          </md>
         </p>
         <p>
           In other words, we compute the dot product by multiplying the corresponding components of the two vectors and adding the results.
@@ -189,9 +189,9 @@
       <statement>
         <p>
           If <m>\theta</m> is the angle between two nonzero vectors <m>\mathbf{u}</m> and <m>\mathbf{v}</m>, then
-          <me>
+          <md>
             \cos\theta=\frac{\mathbf{u}\cdot\mathbf{v}}{\|\mathbf{u}\|\|\mathbf{v}\|}
-          </me>
+          </md>
         </p>
       </statement>
     </definition>

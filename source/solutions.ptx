@@ -13,9 +13,9 @@
             <m>\omega=180</m> revolutions per minute.
             To convert our angular speed to radians per minute,
             we use the fact that one revolution is <m>2\pi</m> radians to get
-            <me>
+            <md>
               \omega=180\frac{\mbox{revolution} }{\mbox{minute} }=180\frac{\mbox{rev} }{\mbox{minute} }\cdot2\pi\frac{\mbox{radians} }{\mbox{revolution} }=360\pi\frac{\mbox{radians} }{\mbox{minute} }
-            </me>
+            </md>
             Thus the oeoe is moving at an angular speed of <m>360\pi</m> radians per second.
           </p>
         </li>
@@ -23,9 +23,9 @@
           <p>
             Since the radius is <m>r=3</m> ft and the angular speed is
             <m>\omega=180</m> is measure in radians per minute we can <xref ref="def_linear-speed">Definition</xref> to calculate the linear speed
-            <me>
+            <md>
               v=r\omega=3\mbox{ft} \cdot360\pi\frac{\mbox{rad} }{\mbox{min} }\cdot\frac{\mbox{mile} }{5280\mbox{ft} }\cdot\frac{60\mbox{min} }{\mbox{hr} }\approx38.56\frac{\mbox{miles} }{\mbox{hour} }
-            </me>
+            </md>
             Thus the girl swinging the oeoe is moving shell at a linear speed of 38.56 mph.
           </p>
         </li>
@@ -239,9 +239,9 @@
           <p>
             Since <m>\theta=\frac{7\pi}{3}>2\pi</m>,
             we find the coterminal angle by subtracting by <m>2\pi</m>:
-            <me>
+            <md>
               \frac{7\pi}{3}-2\pi=\frac{7\pi}{3}-\frac{6\pi}{3}=\frac{\pi}{3}
-            </me>
+            </md>
             Therefore, the values of the six trigonometric functions are equivalent to when <m>\theta=\frac{\pi}{3}</m>:
             <md>
               <mrow>\sin \frac{7\pi}{3}\amp =\frac{\sqrt{3}}{2}, \amp  \cos \frac{7\pi}{3}\amp =\frac{1}{2}, \amp  \tan \frac{7\pi}{3}\amp =\sqrt{3},</mrow>
@@ -253,9 +253,9 @@
           <p>
             Since <m>\theta=480^{\circ}>360^{\circ}</m>,
             we find the coterminal angle by subtracting by <m>360^{\circ}</m>:
-            <me>
+            <md>
               480^{\circ}-360^{\circ}=120^{\circ}
-            </me>
+            </md>
             Therefore, the values of the six trigonometric functions are equivalent to when <m>\theta=120^{\circ}</m>:
             <md>
               <mrow>\sin 480^{\circ}\amp =\frac{\sqrt{3}}{2}, \amp  \cos 480^{\circ}\amp =-\frac{1}{2}, \amp  \tan 480^{\circ}\amp =-\sqrt{3},</mrow>
@@ -303,15 +303,15 @@
       The since we want to find the adjacent side to the known angle of
       <m>60^{\circ}</m> and we are given the hypotenuse,
       the trigonometric function that we will use is cosine:
-      <me>
+      <md>
         \cos60^{\circ}=\frac{\mbox{adjacent} }{\mbox{hypotenuse} }=\frac{x}{10}
-      </me>
+      </md>
     </p>
     <p>
       Multiplying both sides by 10 and using the fact that <m>\cos60^{\circ}=\frac{1}{2}</m>,
-      <me>
+      <md>
         x=10\cdot\cos60^{\circ}=10\cdot\frac{1}{2}=5\mbox{ ft}
-      </me>
+      </md>
     </p>
   </solution>
   <solution>
@@ -326,29 +326,29 @@
       we first determine which trigonometric function to use.
       Since we need to use the side adjacent to our angle and the hypotenuse,
       we will use cosine:
-      <me>
+      <md>
         \cos33.75^{\circ}=\frac{y}{120\mbox{ NM} }
-      </me>
+      </md>
     </p>
     <p>
       So
-      <me>
+      <md>
         y=120\cdot\cos33.75^{\circ}\mbox{ NM} \approx99.8\mbox{ NM}
-      </me>
+      </md>
     </p>
     <p>
       Let <m>x</m> be the distance traveled west.
       Since we need to use the side opposite to our angle and the hypotenuse,
       we will use sine:
-      <me>
+      <md>
         \sin33.75^{\circ}=\frac{x}{120\mbox{ NM} }
-      </me>
+      </md>
     </p>
     <p>
       So
-      <me>
+      <md>
         x=120\cdot\sin33.75^{\circ}\mbox{ NM} \approx66.7\mbox{ NM}
-      </me>
+      </md>
     </p>
   </solution>
   <p>
@@ -390,9 +390,9 @@
     <p>
       Since we were able to write <m>\tan\theta=\frac{839}{937}</m>,
       we can use a calculator or other technology to evaluate the inverse tangent to find our angle:
-      <me>
+      <md>
         \theta=\tan^{-1}\left(\frac{839}{937}\right)\approx41.8^{\circ}
-      </me>.
+      </md>.
     </p>
     <p>
       Next we refer to the Star Compass with angles
@@ -403,18 +403,18 @@
     <p>
       To determine the distance, <m>d</m>,
       we use the Pythagorean Theorem:
-      <me>
+      <md>
         d=\sqrt{937^2+839^2}\approx1,257.7 \mbox{NM}
-      </me>.
+      </md>.
     </p>
     <p>
       Finally, we note that since (speed) = (distance)/(duration),
       we can rearrange the terms to get (duration) = (distance)/(speed).
       If we travel at 5 knots (5 NM/hr),
       we can calculate the duration as
-      <me>
+      <md>
         \mbox{duration} =\frac{1,257.7\mbox{ NM} }{5\mbox{ kt} }=\frac{1,257.7\mbox{ NM} }{5\mbox{ NM/hr} }=251.4\mbox{ hours} =251.4\mbox{ hours} \cdot\frac{\mbox{day} }{24\mbox{ hours} }\approx10.5\mbox{ days}
-      </me>
+      </md>
     </p>
   </solution>
 </chapter>

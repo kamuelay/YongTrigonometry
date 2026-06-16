@@ -114,19 +114,19 @@
           </p>
           <p>
             Thus we have
-            <me>
+            <md>
               \cos\theta=\frac{\mbox{adjacent}}{\mbox{hypotenuse}}=-\frac{12}{13}
-            </me>
+            </md>
             and
-            <me>
+            <md>
               \tan\theta=\frac{\mbox{opposite}}{\mbox{adjacent}}=\frac{5}{12}
-            </me>.
+            </md>.
           </p>
           <p>
             With this new information, we can use the double-angle formula to find <m>\sin(2\theta)</m>:
-            <me>
+            <md>
               \sin(2\theta)=2\sin\theta\cos\theta=2\left(-\frac{5}{13}\right)\left(-\frac{12}{13}\right)=\frac{120}{169}
-            </me>.
+            </md>.
           </p>
         </solution>
       </task>
@@ -182,9 +182,9 @@
       <solution>
         <p>
           To compute <m>\cos2\theta</m>, notice there are three different formulas: <m>\cos2\theta=\cos^\theta-\sin^2\theta</m>, <m>\cos2\theta=1-2\sin^2\theta</m>, or <m>\cos2\theta=2\cos^2\theta-1</m>. Using any of the three equations will give us the correct answer, however, if we look at the information we are given, we know that <m>\cos\theta=-\frac{4}{5}</m> so it may be easier to use <m>\cos2\theta=2\cos^2\theta-1</m> since the first two equations require us to know <m>\sin\theta</m>. Thus
-          <me>
+          <md>
             \cos2\theta=2\cos^2\theta-1=2\left(-\frac{4}{5}\right)^2-1=2\left(\frac{16}{25}\right)-1=\frac{32}{25}-\frac{25}{25}=\frac{7}{25}
-          </me>
+          </md>
         </p>
         <p>
           To compute <m>\sin2\theta</m>, <m>\tan2\theta</m>, or using the other equations for <m>\cos2\theta</m>, we will need to compute <m>\sin\theta</m> and <m>\tan\theta</m>. To do this, we will draw the triangle formed from <m>\cos\theta=-\frac{4}{5}</m> where <m>-\frac{\pi}{2}\lt \theta\lt \pi</m>.
@@ -213,23 +213,23 @@
         </p>
         <p>
           Using the right triangle, we can now find an expression for
-          <me>
+          <md>
             \sin\theta=\frac{\mbox{opposite} }{\mbox{hypotenuse} }=\frac{3}{5}
-          </me>
+          </md>
           and
-          <me>
+          <md>
             \tan\theta=\frac{\mbox{opposite} }{\mbox{adjacent} }=\frac{3}{-4}=-\frac{3}{4}
-          </me>
+          </md>
         </p>
         <p>
           Using the Double-Angle Formula, we get
-          <me>
+          <md>
             \sin2\theta=2\sin\theta\cos\theta=2\left(\frac{3}{5}\right)\left(-\frac{4}{5}\right)=-\frac{24}{25}
-          </me>
+          </md>
           and
-          <me>
+          <md>
             \tan2\theta=\frac{2\tan\theta}{1-\tan^2\theta}=\frac{2\left(-\frac{3}{4}\right)}{1-\left(-\frac{3}{4}\right)^2}=\frac{-\frac{6}{4}}{1-\frac{9}{16}}=\frac{-\frac{6}{4}}{\frac{16}{16}-\frac{9}{16}}=\frac{-\frac{6}{4}}{\frac{7}{16}}=-\frac{6}{4}\cdot\frac{16}{7}=-\frac{24}{7}
-          </me>
+          </md>
         </p>
       </solution>
     </example> -->
@@ -264,24 +264,24 @@
       <title>Formulas for Reducing Powers</title><idx><h>reducing powers formulas</h></idx>
       <statement>
         <p>
-          <me>
+          <md>
             \sin^2\theta=\frac{1-\cos(2\theta)}{2}
-          </me>
-          <me>
+          </md>
+          <md>
             \cos^2\theta=\frac{1+\cos(2\theta)}{2}
-          </me>
-          <me>
+          </md>
+          <md>
             \tan^2\theta=\frac{1-\cos(2\theta)}{1+\cos(2\theta)}
-          </me>
+          </md>
         </p>
       </statement>
     </definition>
     <proof>
       <p>
         To prove the first formula, solve for <m>\sin^2\theta</m> in the double-angle formula: <m>\cos2\theta=1-2\sin^2\theta</m>. The second formula is obtained similarly by solving for <m>\cos^2\theta</m> in the formula <m>\cos2\theta=2\cos^2\theta-1</m>. The first two formulas can be used to obtain the third formula:
-        <me>
+        <md>
           \tan^2\theta=\frac{\sin^2\theta}{\cos^2\theta}=\frac{\dfrac{1-\cos(2\theta)}{2}}{\dfrac{1+\cos(2\theta)}{2}}=\frac{1-\cos(2\theta)}{1+\cos(2\theta)}
-        </me>.
+        </md>.
       </p>
     </proof>
     <example>
@@ -341,9 +341,9 @@
       <solution>
         <p>
           We know the coordinates are at
-          <me>
+          <md>
             (\cos22.5^{\circ}, \sin22.5^{\circ})
-          </me>.
+          </md>.
           To determine the exact value of <m>\cos 22.5^{\circ}</m>, we use the half-angle formula along with the known value <m>\cos 45^{\circ} =\frac{1}{\sqrt{2}} =\frac{\sqrt{2}}{2}</m>:
           <md>
             <mrow> \cos22.5^{\circ} \amp = \cos\left(\frac{45}{2}\right)^{\circ} </mrow>
@@ -444,40 +444,40 @@
       <title>Half-Angle Formulas for Tangent</title><idx><h>half-angle formulas</h><h>for tangent</h></idx>
       <statement>
         <p>
-          <me>
+          <md>
             \tan\frac{\theta}{2}=\pm\sqrt{\frac{1-\cos\theta}{1+\cos\theta}}=\frac{1-\cos\theta}{\sin\theta}=\frac{\sin\theta}{1+\cos\theta}
-          </me>
+          </md>
         </p>
       </statement>
     </definition>
     <proof>
       <p>
         We begin by first multiplying both sides of the Sine formula for Reducing Powers by 2 and halving the angle:
-        <me>
+        <md>
           1-\cos\theta=2\sin^2\left(\frac{\theta}{2}\right)
-        </me>
+        </md>
         and applying the double-angle formula to:
-        <me>
+        <md>
           \sin\theta=\sin\left(2\cdot\frac{\theta}{2}\right)=2\sin\frac{\theta}{2}\cos\frac{\theta}{2}
-        </me>.
+        </md>.
       </p>
       <p>
         By dividing the two preceding results we get
-        <me>
+        <md>
           \frac{1-\cos\theta}{\sin\theta}=\frac{2\sin^2\left(\frac{\theta}{2}\right)}{2\sin\frac{\theta}{2}\cos\frac{\theta}{2}}=\frac{\sin\frac{\theta}{2}}{\cos\frac{\theta}{2}}=\tan\frac{\theta}{2}
-        </me>.
+        </md>.
       </p>
       <p>
         Thus
-        <me>
+        <md>
           \tan\frac{\theta}{2}=\frac{1-\cos\theta}{\sin\theta}
-        </me>.
+        </md>.
       </p>
       <p>
         Similarly, it can be shown that
-        <me>
+        <md>
           \tan\frac{\theta}{2}=\frac{\sin\theta}{1+\cos\theta}
-        </me>.
+        </md>.
       </p>
     </proof>
     <example>
@@ -488,9 +488,9 @@
       </statement>
       <solution>
         <p>
-          <me>
+          <md>
             \tan\frac{\theta}{2}=\frac{1-\cos\theta}{\sin\theta}=\frac{1-\left(-\frac{12}{13}\right)}{-\frac{5}{13}}=\frac{\frac{25}{13}}{-\frac{5}{13}}=\frac{25}{13}\cdot\left(-\frac{13}{5}\right)=-5
-          </me>.
+          </md>.
         </p>
       </solution>
     </example>
@@ -606,21 +606,21 @@
       <statement>
         <p>
           Use the Addition Formula, <m>\cos(\alpha+\beta)=\cos\alpha\cos\beta-\sin\alpha\sin\beta</m>, to prove the double angle formula for cosine:
-          <me>\cos2\theta=\cos^2\theta-\sin^2\theta</me>.
+          <md>\cos2\theta=\cos^2\theta-\sin^2\theta</md>.
         </p>
       </statement>
     </exercise>
     <exercise xml:id="exer-prove-double-angle-cos2">
       <statement>
         <p>
-          Use the Pythagorean Identity (<m>\sin^2\theta+\cos^2\theta=1</m>) and the result from <xref ref="exer-prove-double-angle-cos1"/> to prove <me>\cos2\theta=1-2\sin^2\theta</me>.
+          Use the Pythagorean Identity (<m>\sin^2\theta+\cos^2\theta=1</m>) and the result from <xref ref="exer-prove-double-angle-cos1"/> to prove <md>\cos2\theta=1-2\sin^2\theta</md>.
         </p>
       </statement>
     </exercise>
     <exercise xml:id="exer-prove-double-angle-cos3">
       <statement>
         <p>
-          Use the Pythagorean Identity (<m>\sin^2\theta+\cos^2\theta=1</m>) and the result from <xref ref="exer-prove-double-angle-cos1"/> to prove <me>\cos2\theta=2\cos^2\theta-1</me>.
+          Use the Pythagorean Identity (<m>\sin^2\theta+\cos^2\theta=1</m>) and the result from <xref ref="exer-prove-double-angle-cos1"/> to prove <md>\cos2\theta=2\cos^2\theta-1</md>.
         </p>
       </statement>
     </exercise>
@@ -628,7 +628,7 @@
       <statement>
         <p>
           Use the addition formula, <m>\tan(\alpha+\beta)=\frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}</m>, to prove the double angle formula for tangent:
-          <me>\tan2\theta=\frac{2\tan\theta}{1-\tan^2\theta}</me>.
+          <md>\tan2\theta=\frac{2\tan\theta}{1-\tan^2\theta}</md>.
         </p>
       </statement>
     </exercise>

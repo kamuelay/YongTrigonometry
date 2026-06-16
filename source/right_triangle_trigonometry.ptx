@@ -152,9 +152,9 @@
       <solution>
         <p>
           Notice that <m>\theta</m> is in a different position. Here, the adjacent side is three and the opposite side is five. If we let <m>h</m> denote the hypotenuse, then we can use the Pythagorean Theorem to get
-          <me>
+          <md>
             h=\sqrt{5^2+2^2}=\sqrt{29}
-          </me>.
+          </md>.
         </p>
         <p>
           Then by the definition of the trigonometric ratios, we have
@@ -404,15 +404,15 @@
     </image>
     <p>
       Consider the right triangle in the figure above, where angles <m>\alpha</m> and <m>\beta</m> are complementary angles. Side <m>a</m> is opposite of angle <m>\alpha</m>, and side <m>b</m> is opposite of angle <m>\beta</m>.  Notice that we can also describe side <m>b</m> as adjacent to angle <m>\alpha</m> and side <m>a</m> as adjacent to angle <m>\beta</m>. Therefore,
-      <me>
+      <md>
         \sin\alpha=\dfrac{\mbox{opposite} }{\mbox{hypotenuse} }=\dfrac{a}{c}\mbox{~and~} \cos\beta=\dfrac{\mbox{adjacent} }{\mbox{hypotenuse} }=\dfrac{a}{c}
-      </me>.
+      </md>.
     </p>
     <p>
       Thus we can conclude that
-      <me>
+      <md>
         \sin\alpha=\frac{a}{c}=\cos\beta
-      </me>.
+      </md>.
     </p>
     <p>
       Sine and cosine are called
@@ -738,15 +738,15 @@
     </image>
     <p>
       Consider the following right triangle where side <m>a</m> is opposite angle <m>\alpha</m>, side <m>b</m> is opposite angle <m>\beta</m>, and side <m>c</m> is the hypotenuse. Since <m>\alpha</m> and <m>\beta</m> are complementary angles, we have
-      <me>
+      <md>
         \alpha+\beta=90^{\circ}
-      </me>.
+      </md>.
     </p>
     <p>
       Additionally, by the Pythagorean Theorem, we have
-      <me>
+      <md>
         a^2+b^2=c^2
-      </me>.
+      </md>.
     </p>
     <definition>
       <statement>
@@ -764,9 +764,9 @@
       <title>Solving Right Triangles</title>
       <p>
         In solving a right triangle, the following relationships are useful:
-        <me>
+        <md>
           \alpha+\beta=90^{\circ}, \qquad a^2+b^2=c^2
-        </me>.
+        </md>.
       </p>
     </remark>
     <example>
@@ -790,31 +790,31 @@
       <solution>
         <p>
           Given that this is a right triangle, we already know one angle is <m>90^{\circ}</m>, and we have an additional angle of <m>50^{\circ}</m> along with an adjacent side length of 16. To solve this triangle, we need to determine the values of sides <m>a</m>, <m>c</m>, and <m>\beta</m>. We begin by finding the measure of angle <m>\beta</m>. Since <m>50^{\circ}+\beta=90^{\circ}</m> we have
-          <me>
+          <md>
             \beta=90^{\circ}-50^{\circ}=40^{\circ}
-          </me>.
+          </md>.
         </p>
         <p>
           Next, we will solve for side <m>a</m>. Using the angle <m>50^{\circ}</m>, where the adjacent side is 16 and side <m>a</m> is the side opposite to the angle, we can apply the tangent function, which  relates the opposite and adjacent sides:
-          <me>
+          <md>
             \tan50^{\circ}=\frac{a}{16}
-          </me>.
+          </md>.
           Multiplying both sides by 16 we get
-          <me>
+          <md>
             a=16\cdot\tan50^{\circ}\approx19.07
-          </me>.
+          </md>.
         </p>
         <p>
           Using the Pythagorean Theorem, we get
-          <me>
+          <md>
             c^2=16^2+19.07^2\approx619.66
-          </me>.
+          </md>.
         </p>
         <p>
           Thus
-          <me>
+          <md>
             c\approx\sqrt{619.66}\approx24.89
-          </me>.
+          </md>.
         </p>
       </solution>
     </example>
@@ -866,13 +866,13 @@
         <p>
           Since we know the hypotenuse of the triangle and want to find the side opposite of the angle,
           we will use the sine function:
-          <me>
+          <md>
             \sin11.25^{\circ}=\frac{\mbox{opposite} }{\mbox{hypotenuse} }=\frac{y}{120\mbox{ NM} }
-          </me>;
+          </md>;
           multiplying both sides by 120, we get
-          <me>
+          <md>
             y=120\cdot\sin11.25^{\circ}\mbox{ NM} \approx23.4\mbox{ NM}
-          </me>.
+          </md>.
         </p>
         <p>
           So Hikianalia has deviated 23.4 nautical miles north from the reference course.

@@ -42,7 +42,7 @@
     <title>Domain and Range of Sine and Cosine</title>
     <p>
       The domains for <m>\sin(\theta)</m> and <m>\cos(\theta)</m> consist of the set of the inputs for the functions. Since any angle <m>\theta</m> can be input into sine and cosine and still have these functions defined, the domain for both sine and cosine is all real numbers. Recall that in <xref ref="unit_circle">Section</xref>, if <m>P(x,y)</m> is any point on the unit circle that corresponds to the angle <m>\theta</m>, we defined <m>\sin\theta=y</m> and <m>\cos\theta=x</m>. Given the constraints on the unit circle, <m>-1\leq x\leq1</m> and <m>-1\leq y\leq1</m>, and thus
-      <me>-1\leq \sin\theta\leq1, \quad \mbox{and} \quad -1\leq \cos\theta\leq1</me>.
+      <md>-1\leq \sin\theta\leq1, \quad \mbox{and} \quad -1\leq \cos\theta\leq1</md>.
       Since the range of a function consists of all its outputs, we conclude that the range of both the sine and cosine functions spans all real numbers between -1 and 1.
     </p>
     <remark>
@@ -331,16 +331,16 @@
       <statement>
         <p>
           The graphs of the functions
-          <me>
+          <md>
             y=\sin x+D \quad \mbox{and } \quad y=\cos x+D
-          </me>
+          </md>
           represent an <term>upward vertical shift</term><idx><h>vertical shift</h></idx> of the graphs <m>y = \sin(x)</m> and <m>y = \cos(x)</m> by <m>D</m> units, respectively.
         </p>
         <p>
           Similarly, the functions
-          <me>
+          <md>
             y=\sin x-D \quad \mbox{and } \quad y=\cos x-D
-          </me>
+          </md>
           depict the graphs of <m>y = \sin(x)</m> and <m>y = \cos(x)</m> with a <term>downward vertical shift</term> by <m>D</m> units, respectively.
         </p>
       </statement>
@@ -425,9 +425,9 @@
       <statement>
         <p>
           The functions
-          <me>
+          <md>
             y=-\sin x \quad \mbox{and} \quad y=-\cos x
-          </me>
+          </md>
           represent the graphs of <m>y = \sin(x)</m> and <m>y = \cos(x)</m> with a <term>reflection about the <m>x</m>-axis</term>,<idx><h>reflection</h><h>about <m>x</m>-axis</h></idx> respectively.
         </p>
       </statement>
@@ -472,9 +472,9 @@
           The functions
         </p>
         <p>
-          <me>
+          <md>
             y=\sin(-x) \quad \mbox{and} \quad y=\cos(-x)
-          </me>
+          </md>
         </p>
         <p>
           represent the graphs of <m>y = \sin(x)</m> and <m>y = \cos(x)</m> with a <term>reflection about the <m>y</m>-axis</term>,<idx><h>reflection</h><h>about <m>y</m>-axis</h></idx> respectively.
@@ -568,20 +568,20 @@
           For a sinusoidal function, the <term>amplitude</term>, <idx><h>amplitude</h></idx> denoted as <m>|A|</m>, is the height of the function, representing half the distance between its maximum and minimum values:
         </p>
         <p>
-          <me>
+          <md>
             |A| = \text{amplitude} = \frac{\text{maximum} - \text{minimum}}{2}
-          </me>.
+          </md>.
         </p>
         <p>
           In other words, the amplitude is the vertical distance from the midline to the maximum or minimum value of the function. The <term>midline</term><idx><h>midline</h></idx> is a horizontal line representing the average value of the function. It can be calculated by:
-          <me>
+          <md>
             y = \frac{\text{maximum} + \text{minimum}}{2}
-          </me>.
+          </md>.
           For a graph oscillating symmetrically about the <m>x</m>-axis, the amplitude is simply the maximum value of the function.
         </p>
         <p>
           In general, for
-          <me>y = A \cdot \sin(x) \quad \mbox{or} \quad y = A \cdot \cos(x)</me>,
+          <md>y = A \cdot \sin(x) \quad \mbox{or} \quad y = A \cdot \cos(x)</md>,
           the amplitude is given by <m>|A|</m>. This absolute value ensures that amplitude is always a positive value, representing the magnitude of the vertical stretching or compression.
         </p>
       </statement>
@@ -591,7 +591,7 @@
       <statement>
         <p>
           The functions
-          <me>y=A\sin x\quad\mbox{and}\quad y=A\cos x </me>
+          <md>y=A\sin x\quad\mbox{and}\quad y=A\cos x </md>
           represents a sine and cosine function, respectively, with an amplitude of <m>|A|</m>. The amplitude determines the vertical stretch or compression of the graph. 
         </p>
         <p>
@@ -640,9 +640,9 @@
       Next we will look at functions of the form
     </p>
     <p>
-      <me>
+      <md>
         y=\sin Bx \quad \mbox{and} \quad y=\cos Bx
-      </me>.
+      </md>.
     </p>
     <p>
       Recall from algebra that for functions of the form <m>y=f(Bx)</m>, a key factor emerges: when <m>|B| \gt 1</m>, the graph undergoes horizontal compression by a factor of <m>\frac{1}{|B|}</m>; conversely, when <m>0 \lt |B| \lt 1</m>, the graph is horizontally stretched by a factor of <m>\frac{1}{|B|}</m>. Given that the period of sine and cosine is <m>2\pi</m>, the horizontal stretching or compressing of a period will be by a factor of <m>\frac{1}{|B|}</m>.
@@ -652,13 +652,13 @@
       <statement>
         <p>
           For sine and cosine functions of the form
-          <me>
+          <md>
             y=\sin Bx \quad \mbox{and} \quad y=\cos Bx
-          </me>
+          </md>
           the <term>period</term><idx><h>period</h></idx> is defined as
-          <me>
+          <md>
             \mbox{period}=\frac{2\pi}{|B|}
-          </me>.
+          </md>.
         </p>
         <p>
           Thus, if <m>|B|\gt 1</m>, the period is compressed; if <m>0\lt |B|\lt 1</m>, the period is stretched.
@@ -670,7 +670,7 @@
       <statement>
         <p>
           The graphs functions
-          <me>y=\sin Bx \quad \mbox{and} \quad y=\cos Bx</me>,
+          <md>y=\sin Bx \quad \mbox{and} \quad y=\cos Bx</md>,
           undergo a horizontal stretch or compression by a value of <m>\frac{1}{|B|}</m>.
       </p>
       <p>
@@ -778,17 +778,17 @@
         There is a subtle yet important difference between <xref ref="eqn-phase-shift1"/> and <xref ref="eqn-phase-shift2"/>. In <xref ref="eqn-phase-shift1"/>, the term <m>B</m>, affecting the period, is multiplied by both <m>x</m> and <m>C</m>, the phase shift. In <xref ref="eqn-phase-shift2"/>, <m>B</m> is only multiplied by <m>x</m>. We can rewrite <xref ref="eqn-phase-shift2"/> by factoring out <m>B</m> as
       </p>
       <p>
-        <me>
+        <md>
           y = \sin\left(B\left(x - \frac{E}{B}\right)\right) \quad \mbox{and} \quad y = \cos\left(B\left(x - \frac{E}{B}\right)\right)
-        </me>.
+        </md>.
       </p>
       <p>
         This form aligns with <xref ref="eqn-phase-shift1"/>. Therefore, for equations of the form
       </p>
       <p>
-        <me>
+        <md>
           y = \sin(Bx - E) \quad \mbox{and} \quad y = \cos(Bx - E)
-        </me>
+        </md>
         the phase shift is <m>\frac{E}{B}</m> units.
       </p>
     </remark>
@@ -810,13 +810,13 @@
             Since this equation is of the form <m>y=\cos(Bx-E)</m>, we have <m>B=1</m> and <m>E=\pi</m>. Therefore,
           </p>
           <p>
-            <me>\mbox{period}=\frac{2\pi}{|B|}=\frac{2\pi}{1}=2\pi</me>
+            <md>\mbox{period}=\frac{2\pi}{|B|}=\frac{2\pi}{1}=2\pi</md>
           </p>
           <p>
             and
           </p>
           <p>
-            <me>\mbox{phase shift}=\frac{E}{B}=\frac{\pi}{1}=\pi</me>.
+            <md>\mbox{phase shift}=\frac{E}{B}=\frac{\pi}{1}=\pi</md>.
           </p>
           <p>
             A positive value for the phase shift indicates a shift to the right. It's important to note that, given <m>B=1</m>, the phase shift is simply <m>E=\pi</m>.
@@ -857,13 +857,13 @@
             Since the given equation is in the form <m>y = \sin\left(\frac{\pi}{6}(x + 2)\right)</m>, we can identify <m>B = \frac{\pi}{6}</m> and <m>C = -2</m>. Consequently,
           </p>
           <p>
-            <me>\mbox{period}=\frac{2\pi}{|B|}=\frac{2\pi}{\frac{\pi}{6}}=2\pi\cdot\frac{6}{\pi}=12</me>
+            <md>\mbox{period}=\frac{2\pi}{|B|}=\frac{2\pi}{\frac{\pi}{6}}=2\pi\cdot\frac{6}{\pi}=12</md>
           </p>
           <p>
             and
           </p>
           <p>
-            <me>\mbox{phase shift}=C=-2</me>.
+            <md>\mbox{phase shift}=C=-2</md>.
           </p>
           <p>
             The negative sign indicates a phase shift to the left by 2 units.
@@ -935,9 +935,9 @@
       <title>Transformations of Sine and Cosine</title>
       <p>
         When dealing with functions in the form
-        <me>
+        <md>
           y=A\sin(B(x-C))+D \quad \mbox{and} \quad y=A\cos(B(x-C))+D
-        </me>
+        </md>
         we can express the transformations as follows:
       </p>
       <p>
@@ -1051,9 +1051,9 @@
       <title>Transformations of the form <m>y=A\cdot\sin(Bx-E)+D</m> and <m>y=A\cdot\cos(Bx-E)+D</m></title>
       <p>
         For functions of the form
-        <me>
+        <md>
           y=A\sin(Bx-E)+D \quad \mbox{and} \quad y=A\cos(Bx-E)+D
-        </me>
+        </md>
         the transformations are the same as above, except for the phase shift where we replace <m>C</m> with <m>\frac{E}{B}</m>.
       </p>
     </remark>
@@ -2241,7 +2241,7 @@
         </p>
         <p>
           To approximate the solar declination angle <m>\delta</m> in degrees, we can use the following equation derived in <xref ref="Dixon"/>
-          <me>\delta=-23.45^{\circ}\cdot\cos\left(\frac{360}{365}\cdot(N+10)\right)</me>
+          <md>\delta=-23.45^{\circ}\cdot\cos\left(\frac{360}{365}\cdot(N+10)\right)</md>
           where <m>N</m> represents the day of the year, with January 1 denoted as <m>N=1</m>, and December 31 as <m>N=365</m>.
         </p>
         <p>

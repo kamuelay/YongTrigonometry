@@ -13,9 +13,9 @@
     <title>Finding Sinusoidal Equations from Characteristics</title>
     <p>
       To begin finding sinusoidal equations of the form
-      <me>
+      <md>
         y=A\sin(B(x-C))+D \quad \mbox{and} \quad y=A\cos(B(x-C))+D
-      </me>
+      </md>
       we will use the characteristics of sine and cosine functions, as described in <xref ref="sine-cosine-transformations"/> and summarized below, to determine the values of <m>A</m>, <m>B</m>, <m>C</m>, and <m>D</m>.
     </p>
     <p>
@@ -134,46 +134,46 @@
       <solution>
         <p>
           To determine an equation of the form
-          <me>
+          <md>
             f(x)=A\sin(B(x-C))+D
-          </me>
+          </md>
           we first examine the information that we are given: amplitude of 2, period of 8, phase shift of <m>\frac{\pi}{3}</m>, and vertical shift of 4.
         </p>
         <p>
           Since <m>|A|</m> represents the value of the amplitude, we get
-          <me>
+          <md>
             |A|=2
-          </me>.
+          </md>.
           Thus we either have <m>A=2</m> or <m>A=-2</m>. Since we are not given a reflection about the <m>x</m>-axis, we can conclude that <m>A</m> is not negative, thus
-          <me>
+          <md>
             A=2
-          </me>.
+          </md>.
         </p>
         <p>
           Next, since the period of a sine function is given by <m>\frac{2\pi}{|B|}</m>, we get
-          <me>
+          <md>
             \frac{2\pi}{|B|}=8
-          </me>.
+          </md>.
           Solving for <m>|B|</m>, we get
-          <me>
+          <md>
             |B|=\frac{2\pi}{8}=\frac{\pi}{4}
-          </me>.
+          </md>.
           Since there is no reflection about the <m>y</m>-axis, we have that <m>B</m> must be positive:
-          <me>
+          <md>
             B=\frac{\pi}{4}
-          </me>.
+          </md>.
         </p>
         <p>
           Finally, since <m>C</m> and <m>D</m> represent the phase shift and vertical shift, respectively, we get
-          <me>
+          <md>
             C=\frac{\pi}{3},\quad D=4
-          </me>.
+          </md>.
         </p>
         <p>
           Combining these, the sine function becomes:
-          <me>
+          <md>
             f(x)=2\sin\left(\frac{\pi}{4}\left(x-\frac{\pi}{3}\right)\right)+4
-          </me>.
+          </md>.
         </p>
       </solution>
     </example>
@@ -228,9 +228,9 @@
         </p>
         <p>
           Therefore, we have
-          <me>
+          <md>
             y=1\cos(1x)+0=\cos(x)
-          </me>.
+          </md>.
           Overlapping the graph of <m>y=\cos(x)</m> onto the original graph will help us determine the phase shift.
         </p>
         <image xml:id="fig-example-cos-sin-graph-overlap">
@@ -257,18 +257,18 @@
         </p>
         <p>
           Therefore, the equation of the cosine function that fits the graph of <m>y = \sin(x)</m> is:
-          <me>
+          <md>
             y = \cos\left(x - \frac{\pi}{2}\right)
-          </me>
+          </md>
         </p>
       </solution>
     </example>
     <remark>
       <p>
         Since this graph is the graph of <m>y=\sin(x)</m>, we get
-        <me>
+        <md>
           \sin(x)=\cos\left(x-\frac{\pi}{2}\right)
-        </me>.
+        </md>.
       </p>
       <p>
         This solution demonstrates that any sine function can be written as a cosine function with an appropriate phase shift. In this case, the phase shift of <m>\frac{\pi}{2}</m> radians to the right transforms the cosine function into its corresponding sine function.
@@ -301,7 +301,7 @@
       <task>
         <statement>
           <p>
-            <me>f(x)=A\sin(B(x-C))+D</me>.
+            <md>f(x)=A\sin(B(x-C))+D</md>.
           </p>
         </statement>
         <solution>
@@ -310,30 +310,30 @@
           </p>
           <p>
             <em>Amplitude (<m>A</m>)</em>: Recall from <xref ref="def-amplitude"/> that the amplitude is defined as half of the difference between the maximum and minimum values of the function. Here, the maximum value is 16 and the minimum value is 0, so the amplitude is:
-            <me>|A| = \frac{16 - 0}{2} = 8</me>.
+            <md>|A| = \frac{16 - 0}{2} = 8</md>.
           </p>
           <p>
             Since there are no reflections about the <m>x</m>-axis, we use the positive value to get <m>A = 8</m>.
           </p>
           <p>
-            <em>Vertical Shift (<m>D</m>)</em>: The midline, calculated as <me>y=\frac{\mbox{maximum}+\mbox{minimum}}{2}=\frac{16+0}{2}=8</me>, represents the vertical shift of the graph. Therefore, <me>D=8</me>.
+            <em>Vertical Shift (<m>D</m>)</em>: The midline, calculated as <md>y=\frac{\mbox{maximum}+\mbox{minimum}}{2}=\frac{16+0}{2}=8</md>, represents the vertical shift of the graph. Therefore, <md>D=8</md>.
           </p>
           <p>
             <em>Period (<m>B</m>)</em>: The period of a function is the length of one full repetition (or cycle). We can identify the period on the graph by measuring the horizontal distance between corresponding points where the graph completes a cycle. In this case, we'll use two corresponding peaks at <m>x = 10</m> and <m>x = 50</m> to obtain:
-            <me>
+            <md>
               \mbox{period }=50-10=40
-            </me>.
+            </md>.
             Note that other points on the graph, such as the minimum values or the points where the graph crosses the midline, could also be used to determine the period.
           </p>
           <p>
             Since <xref ref="def-period"/> defines a period as <m>\frac{2\pi}{|B|}</m>, we have:
-            <me>
+            <md>
               40=\frac{2\pi}{|B|}
-            </me>.
+            </md>.
             Thus,
-            <me>
+            <md>
               |B|=\frac{2\pi}{40}=\frac{\pi}{20}
-            </me>.
+            </md>.
           </p>
           <p>
             Since there are no reflections about the <m>y</m>-axis, we get <m>B = \frac{\pi}{20}</m>.
@@ -345,16 +345,16 @@
           </p>
           <p>
             Thus, the graph can be described by the following sine function:
-            <me>
+            <md>
               f(x)=8\sin\left(\frac{\pi}{20}x\right)+8
-            </me>.
+            </md>.
           </p>
         </solution>
       </task>
       <task>
         <statement>
           <p>
-            <me>g(x)=A\cos(B(x-C))+D</me>.
+            <md>g(x)=A\cos(B(x-C))+D</md>.
           </p>
         </statement>
         <solution>
@@ -372,9 +372,9 @@
           </p>
           <p>
             Before we examine the phase shift, let's summarize what we found so far:
-            <me>
+            <md>
               g(x)=8\cos\left(\frac{\pi}{20}\left(x\right)\right)+8
-            </me>
+            </md>
             and overlap this graph with the given graph.
           </p>
           <image xml:id="example-eqn-from-graph-cos-phase-shift">
@@ -400,9 +400,9 @@
           </p>
           <p>
             We can now describe the graph with the following cosine function:
-            <me>
+            <md>
               g(x)=8\cos\left(\frac{\pi}{20}\left(x-10\right)\right)+8
-            </me>.
+            </md>.
           </p>
         </solution>
       </task>
@@ -445,35 +445,35 @@
       <solution>
         <p>
           <em>Amplitude (<m>A</m>)</em>: From the definition of amplitude (<xref ref="def-amplitude"/>),
-          <me>
+          <md>
             |A| = \frac{\text{maximum} - \text{minimum}}{2} = \frac{12.61 - 11.64}{2} = 0.485
-          </me>.
+          </md>.
           Assuming no reflections about the <m>x</m>-axis, we have:
-          <me>
+          <md>
             A=0.485
-          </me>.
+          </md>.
         </p>
         <p>
           <em>Period (<m>B</m>)</em>: We assume a period of one year or 365 days. Additionally, we can assume no reflections about the <m>y</m>-axis, leading to a positive value for <m>B</m>. Thus we have <m>\frac{2\pi}{B}=365</m> or
-          <me>
+          <md>
             B=\frac{2\pi}{365}\approx0.0172
-          </me>.
+          </md>.
         </p>
         <p>
           <em>Phase Shift (<m>C</m>)</em>: The characteristic of a cosine function is that at <m>x=0</m>, the function is at its maximum value. However, in this case, the maximum value occurs on Day 356. This represents a phase shift to the right by 356 days, thus:
-          <me>C=356</me>.
+          <md>C=356</md>.
         </p>
         <p>
           <em>Vertical Shift (<m>D</m>)</em>: The value of the midline represents the average duration of daylight, which is the vertical shift:
-          <me>
+          <md>
             D = \frac{\text{maximum} + \text{minimum}}{2} = \frac{12.61 + 11.64}{2} = 12.125
-          </me>.
+          </md>.
         </p>
         <p>
           Therefore, the equation of our function is
-          <me>
+          <md>
             y = 0.485\cos(0.0172(x - 356)) + 12.125
-          </me>.
+          </md>.
         </p>
       </solution>
     </example>
@@ -581,29 +581,29 @@
         </p>
         <p>
           <em>Amplitude (<m>A</m>)</em>: The amplitude is
-          <me>
+          <md>
             |A|=\frac{\mbox{maximum}-\mbox{minimum}}{2}=\frac{17.5-6.6}{2}=5.45
-          </me>.
+          </md>.
           Since there are no reflections about the <m>x</m>-axis, we get <m>A=5.45</m>
         </p>
         <p>
           <em>Period (B)</em>: Since the temperatures repeat every 12 months, the period is 12 and so <m>\frac{2\pi}{|B|}=12</m>. Since there are no reflections about the <m>y</m>-axis, we keep the positive value to obtain
-          <me>B=\frac{2\pi}{12}=\frac{\pi}{6}</me>.
+          <md>B=\frac{2\pi}{12}=\frac{\pi}{6}</md>.
         </p>
         <p>
           <em>Vertical Shift (<m>D</m>)</em>: The vertical shift is the average of the maximum and minimum values of the data, which corresponds to the midline of the graph:
-          <me>
+          <md>
             D=\frac{\mbox{maximum}+\mbox{minimum}}{2}=\frac{17.5+6.6}{2}=12.05
-          </me>.
+          </md>.
         </p>
         <p>
           <em>Phase Shift (<m>C</m>)</em>: The maximum temperature in the data occurs in January (<m>x=1</m>). However, since the graph of cosine reaches its maximum value at <m>x=0</m>, we have a phase shift of 1 to the right to align the peak with the maximum temperature data point. Thus, <m>C=1</m>.
         </p>
         <p>
           Our function now becomes
-          <me>
+          <md>
             y=5.45\cos\left(\frac{\pi}{6}\left(x-1\right)\right)+12.05
-          </me>.
+          </md>.
         </p>
         <p>
           Finally, we plot our function and the data together.
@@ -653,26 +653,26 @@
           <li>
             <p>
               <em>Amplitude</em>: Calculate the amplitude using the formula
-              <me>
+              <md>
                 |A|=\frac{\mbox{maximum}-\mbox{minimum}}{2}
-              </me>.
+              </md>.
               Use the positive value if there is no reflection about the <m>x</m>-axis, and use the negative value if there is a reflection.
             </p>
           </li>
           <li>
             <p>
               <em>Vertical Shift (<m>D</m>)</em>: The vertical shift is the average of the maximum and minimum values of the data, which corresponds to the midline of the graph. We can calculate the vertical shift using the formula:
-              <me>
+              <md>
                 D=\frac{\mbox{maximum}+\mbox{minimum}}{2}
-              </me>.
+              </md>.
             </p>
           </li>
           <li>
             <p>
               <em>Period</em>: Calculate the period from the data, then find
-              <me>
+              <md>
                 |B|=\frac{2\pi}{\mbox{period}}
-              </me>.
+              </md>.
               Use the positive value if there is no reflection about the <m>y</m>-axis, and use the negative value if there is a reflection.
             </p>
           </li>
@@ -690,9 +690,9 @@
       <statement>
         <p>
           According to the Astronomical Almanac, the average moon cycle is about 29.53059 days, that is, it takes approximately 29 days, 12 hours, 44 minutes, and 2.9 seconds for the moon to complete its cycle. Across the Pacific, from Chamorro, to Samoan, to Māori, and Tahitian culture, traditional practices including navigation as well as planting and fishing are tied to the moon phases. Develop a cosine function of the form
-          <me>
+          <md>
             f(x)=A\cos(B(x-C))+D
-          </me>
+          </md>
           to determine the percent of the moon that is illuminated as a function of time, where Day 0, representing the start of the moon cycle is the new moon with <m>0\%</m> illuminated, increasing until <m>100\%</m> of the moon is illuminated, and then decreasing back to <m>0%</m> illuminated, completing the cycle after 29.53059 days. Using the function you developed, determine what percent of the moon is illuminated (rounded to the nearest tenth of a percent) on Day 100, that is 100 days after the initial new moon.
         </p>
       </statement>
@@ -721,31 +721,31 @@
         </image>
         <p>
           From the definition of amplitude (<xref ref="def-amplitude"/>),
-          <me>
+          <md>
             |A|=\frac{100-0}{2}=50
-          </me>.
+          </md>.
         </p>
         <p>
           The characteristic of a cosine function is that at <m>x=0</m> the function is at its maximum value, before decreasing to its minimum value, and then back up to its maximum, completing one period. This curve, however, begins at its minimum value, increases to its maximum, before decreasing to its minimum. This change in pattern represents a reflection about the <m>x</m>-axis, thus the value for <m>A</m> is negative, giving us
-          <me>
+          <md>
             A=-50
-          </me>.
+          </md>.
         </p>
         <p>
           Next, we know that the moon's cycle, or period is 29.53059 days. Therefore, we have
-          <me>
+          <md>
             \frac{2\pi}{|B|}=29.53059
-          </me>
+          </md>
           which leads to
-          <me>
+          <md>
             |B|=\frac{2\pi}{29.53059}
-          </me>.
+          </md>.
         </p>
         <p>
           Since there is no reflection about the y-axis, <m>B</m> is positive, resulting in
-          <me>
+          <md>
             B=\frac{2\pi}{29.53059}
-          </me>.
+          </md>.
         </p>
         <p>
           There is no phase shift (<m>C=0</m>) since the curve follows the characteristics of the cosine equation.
@@ -755,15 +755,15 @@
         </p>
         <p>
           Therefore, the equation of the function is
-          <me>
+          <md>
             f(x)=-50\cos\left(\frac{2\pi}{29.53059}x\right)+50
-          </me>.
+          </md>.
         </p>
         <p>
           To determine the moon phase 100 days after the initial new moon, we evaluate our function at <m>x=100</m>:
-          <me>
+          <md>
             f(100)=-50\cos\left(\frac{2\pi}{29.53059}\cdot100\right)+50=87.8\%
-          </me>.
+          </md>.
         </p>
       </solution>
     </example> -->
@@ -806,9 +806,9 @@
             <li>
               <p>
                 The parameters for the best-fit function will be returned: <m>A=5.21412</m>, <m>B=0.534145</m>, <m>C=1.19926</m>, <m>D=12.1509</m>. Thus, the best-fit cosine function is:
-                <me>
+                <md>
                   y = 5.21412 \cos(0.534145(x - 1.19926)) + 12.1509
-                </me>.
+                </md>.
               </p>
             </li>
           </ol>

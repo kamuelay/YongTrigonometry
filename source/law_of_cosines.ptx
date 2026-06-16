@@ -159,27 +159,27 @@
       <solution>
         <p>
           Since the Law of Cosines states that the square of one side equals the sum of the squares of the other two sides minus twice their product times the cosine of their included angle, we get:
-          <me>
+          <md>
             d^2=200^2+143^2-2\cdot200\cdot143\cos124.5^{\circ}
-          </me>.
+          </md>.
           Taking the square root we get:
-          <me>
+          <md>
             d=\sqrt{200^2+143^2-2\cdot200\cdot143\cos124.5^{\circ}}\approx304.71
-          </me>.
+          </md>.
         </p>
         <p>
           Now, to find the angle <m>\theta</m>, we can use either the Law of Sines or the Law of Cosines. If we opt for the Law of Sines, we already know side <m>d = 304.71</m>, the side between Polowat and Chuuk Lagoon at 143 nm, and the angle between the canoe, Polowat, and Chuuk Lagoon at <m>124.5^{\circ}</m>. This combination results in a side-side-angle (SSA) triangle. Given that our angle is obtuse (<m>124.5^{\circ}</m>) and the side opposite it is greater than the side adjacent to the angle (i.e., <m>304.71 \gt 143</m>), we fall under Case 6 of <xref ref="tab_SSA"/>, which gives us one triangle. We will choose the Law of Sines since it requires fewer steps to isolate the angle <m>\theta</m>:
-          <me>
+          <md>
             \frac{\sin124.5^{\circ}}{304.71}=\frac{\sin\theta}{200}
-          </me>.
+          </md>.
           Isolating <m>\sin\theta</m>:
-          <me>
+          <md>
             \sin\theta=200\cdot\frac{\sin124.5^{\circ}}{304.71}
-          </me>.
+          </md>.
           Finally, to solve for <m>\theta</m> take the inverse sine of both sides to get:
-          <me>
+          <md>
             \theta=\sin^{-1}\left(200\cdot\frac{\sin124.5^{\circ}}{304.71}\right)\approx32.7^{\circ}
-          </me>.
+          </md>.
         </p>
         <p>
           Thus, 200 nm into their voyage, the navigator has moved Chuuk Lagoon <m>32.7^{\circ}</m> south of due east to Tan Harapwel.
@@ -244,39 +244,39 @@
       <solution>
         <p>
           To find <m>A</m>, we begin by using the Law of Cosines:
-          <me>
+          <md>
             a^2=b^2+c^2-2bc\cos A
-          </me>.
+          </md>.
         </p>
         <p>
           Isolating the term with angle <m>A</m> we get
-          <me>
+          <md>
             \cos A=\frac{b^2+c^2-a^2}{2bc}=\frac{7^2+3^2-5^2}{2\cdot7\cdot3}=\frac{33}{42}
-          </me>.
+          </md>.
         </p>
         <p>
           Taking the inverse cosine we get
-          <me>
+          <md>
             A=\cos^{-1}\left(\frac{33}{42}\right)\approx38.2^{\circ}
-          </me>.
+          </md>.
         </p>
         <p>
           To find <m>B</m>, we can use either the Law of Sines or Law of Cosines. However, to avoid the ambiguous case with the Law of Sines, we will continue with the Law of Cosines and get:
-          <me>
+          <md>
             \cos B=\frac{a^2+c^2-b^2}{2ac}=\frac{5^2+3^2-7^2}{2\cdot5\cdot3}=-\frac{15}{30}=-\frac{1}{2}
-          </me>.
+          </md>.
         </p>
         <p>
           Taking the inverse cosine we get
-          <me>
+          <md>
             B=\cos^{-1}\left(-\frac{1}{2}\right)=120^{\circ}
-          </me>.
+          </md>.
         </p>
         <p>
           To find the last angle, <m>C</m>, we can use the fact that the angles in a triangle sum to <m>180^{\circ}</m>:
-          <me>
+          <md>
             C=180^{\circ}-A-B\approx180^{\circ}-38.2^{\circ}-120^{\circ}=21.8^{\circ}
-          </me>.
+          </md>.
         </p>
       </solution>
     </example>
@@ -324,9 +324,9 @@
       <statement>
         <p>
           The area of a triangle with sides <m>a</m>, <m>b</m>, and <m>c</m> is
-          <me>
+          <md>
             \mbox{Area} =\sqrt{s(s-a)(s-b)(s-c)}
-          </me>
+          </md>
           where <m>s=\frac{1}{2}(a+b+c)</m> is half the perimeter of the triangle, also known as the <term>semiperimeter</term>.<idx><h>semiperimeter</h></idx>
         </p>
       </statement>
@@ -352,9 +352,9 @@
           <mrow>= \amp \frac{2s(s-c)}{ab} </mrow>
         </md>,
         where the last step comes from the fact that <m>2s=a+b+c</m> and
-        <me>
+        <md>
           2(s-c)=2\left(\frac{a+b+c}{2}-c\right)=a+b+c-2c=a+b-c
-        </me>.
+        </md>.
       </p>
       <p>
         Similarly, we have:
@@ -368,20 +368,20 @@
           <mrow>= \amp \frac{2(s-b)(s-a)}{ab} </mrow>
         </md>,
         where the last step comes from the fact that
-        <me>
+        <md>
           2(s-b)=2\left(\frac{a+b+c}{2}-b\right)=a+b+c-2b=a+c-b
-        </me>
+        </md>
         and
-        <me>
+        <md>
           2(s-a)=2\left(\frac{a+b+c}{2}-a\right)=a+b+c-2a=b+c-a
-        </me>.
+        </md>.
       </p>
       
       <p>
         Next, we use <xref ref="def-area-of-triangle"/> for the area of a triangle:
-        <me>
+        <md>
           \mbox{Area}=\frac{1}{2}ab\sin C
-        </me>.
+        </md>.
         Squaring both sides of the equation we get:
         <md>
           <mrow>(\mbox{Area})^2 =\amp \frac{1}{4}a^2b^2\sin^2C</mrow>
@@ -391,9 +391,9 @@
           <mrow> =\amp s(s-a)(s-b)(s-c)</mrow>
         </md>.
         Taking the square root of both sides of the equation gives us Heron's Formula:
-        <me>
+        <md>
           \mbox{Area}=\sqrt{s(s-a)(s-b)(s-c)}
-        </me>.
+        </md>.
       </p>
       <p>
         Note that our proof differs from Heron's original proof.
@@ -421,9 +421,9 @@
       <solution>
         <p>
           Using Heron's Formula, we begin by calculating the semiperimeter
-          <me>
+          <md>
             s=\frac{1}{2}(6,850+7,250+7,150)=10,625
-          </me>.
+          </md>.
         </p>
         <p>
           Then the area created by the Polynesian Triangle is:

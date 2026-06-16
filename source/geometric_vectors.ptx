@@ -65,11 +65,11 @@
       </p>
       <p>
         The magnitude of the vector is the length of the segment from <m>P</m> to <m>Q</m>, which can be calculated using the distance formula:
-        <me> \|\overrightarrow{PQ}\| = \sqrt{(q_x - p_x)^2 + (q_y - p_y)^2} = \sqrt{(\triangle x)^2 + (\triangle y)^2} </me>.
+        <md> \|\overrightarrow{PQ}\| = \sqrt{(q_x - p_x)^2 + (q_y - p_y)^2} = \sqrt{(\triangle x)^2 + (\triangle y)^2} </md>.
       </p>
       <p>
         To determine the direction (<m>\theta</m>) of the vector, we use the slope: 
-        <me> \mbox{slope} = \frac{q_y - p_y}{q_x - p_x} = \frac{\triangle y}{\triangle x} </me>.
+        <md> \mbox{slope} = \frac{q_y - p_y}{q_x - p_x} = \frac{\triangle y}{\triangle x} </md>.
       </p>
       <p>
         This is illustrated in the figure below.
@@ -94,7 +94,7 @@
       </image>
       <p>
         If rise = 0 or run = 0, use the figure to determine <m>\theta</m>. By Right Triangle Trigonometry, the tangent of the direction angle is:
-        <me> \tan\theta = \frac{\triangle y}{\triangle x} </me>.
+        <md> \tan\theta = \frac{\triangle y}{\triangle x} </md>.
       </p>
       <p>
         Since <m>-90^{\circ} \lt \tan^{-1} \left( \frac{\triangle y}{\triangle x} \right) \lt 90^{\circ}</m>, the inverse tangent function returns an angle in Quadrants I or IV. To determine the correct direction <m>\theta</m>, consider the quadrant in which the vector lies and make the appropriate adjustments:
@@ -155,9 +155,9 @@
         <solution>
           <p>
             The magnitude of a vector is the length of the vector. From the distance formula, we have
-            <me>
+            <md>
               \|\mathbf{v}\|=\sqrt{(3-(-2))^2+(3-(-1))^2}
-            </me>.            
+            </md>.            
           </p>
         </solution>
       </task>
@@ -170,9 +170,9 @@
         <solution>
           <p>
             To find the direction, we have:
-            <me>
+            <md>
               \theta=\tan^{-1}\left(\frac{3-(-1)}{3-(-2)}\right)=\tan^{-1}\left(\frac{4}{5}\right)\approx38.7^{\circ}
-            </me>.
+            </md>.
           </p>
         </solution>
       </task>
@@ -193,9 +193,9 @@
       <statement>
         <p>
           It is important to note that a vector only requires a magnitude and direction, but it does not have a unique location. Thus, as long as the magnitude and direction aren't changed, a vector may be <term>translated</term><idx><h>vectors</h><h>translation</h></idx> or moved from one place to another. As a result, if two vectors <m>\mathbf{u}</m> and <m>\mathbf{v}</m> have the same direction and the same magnitude, then they are <term>equivalent</term>, <idx><h>vectors</h><h>equivalent</h></idx> or <term>equal</term>, <idx><h>vectors</h><h>equal</h></idx> written as:
-          <me>
+          <md>
             \mathbf{u}=\mathbf{v}
-          </me>.
+          </md>.
         </p>
       </statement>
     </definition>
@@ -260,13 +260,13 @@
         </p>
         <p>
           To determine the direction of each vector, we will look at their slopes. The slope of <m>\overrightarrow{PQ}</m> is
-          <me>
+          <md>
             \frac{\mbox{change in }y}{\mbox{change in }x}=\frac{3-0}{-2-0}=-\frac{3}{2}
-          </me>,
+          </md>,
           and the slope of <m>\overrightarrow{RS}</m> is
-          <me>
+          <md>
             \frac{\mbox{change in }y}{\mbox{change in }x}=\frac{5-2}{1-3}=-\frac{3}{2}
-          </me>.
+          </md>.
         </p>
         <p>
           Given that both vectors <m>\overrightarrow{PQ}</m> and <m>\overrightarrow{RS}</m>  have the same slopes and are directed upwards and to the left, it follows that they have the same direction. Therefore, since they have the same magnitude and direction, we can conclude that <m>\overrightarrow{PQ}</m> and <m>\overrightarrow{RS}</m> are equivalent.
@@ -281,9 +281,9 @@
     </p>
     <p>
       We can represent the location of Tahiti as <m>T</m>, the location with the same latitude as Hawaiʻi and directly north of Tahiti as <m>L</m>, and the location of Hawaiʻi as <m>H</m>. Then, Hōkūleʻa's northward path can be represented by the vector <m>\overrightarrow{TL}</m>, and its westward path by the vector <m>\overrightarrow{LH}</m>. The total displacement is equivalent to sailing directly from Tahiti to Hawaiʻi, represented by <m>\overrightarrow{TH}</m>. See <xref ref="fig_adding-vectors">Figure</xref>. We refer to the vector <m>\overrightarrow{TH}</m> as the <term>sum</term> of the vectors <m>\overrightarrow{TL}</m> and <m>\overrightarrow{LH}</m>, written as
-      <me>
+      <md>
         \overrightarrow{TL}+\overrightarrow{LH}=\overrightarrow{TH}
-      </me>.
+      </md>.
     </p>
     <figure xml:id="fig_adding-vectors">
       <caption>Combining the northward and westward vectors, similar to the navigation technique of latitude sailing, results in the direct vector from Tahiti to Hawaiʻi.</caption>
@@ -307,7 +307,7 @@
       <statement>
         <p>
           Vector addition is the process of combining two or more vectors to produce a <term>resultant vector</term><idx><h>vectors</h><h>resultant</h></idx>. To find the <term>sum</term><idx><h>sum</h><h>of vectors</h></idx><idx><h>addition</h><h>of vectors</h></idx> of vectors <m>\mathbf{u}</m> and <m>\mathbf{v}</m>, we place the initial point of the second vector at the terminal point of the first vector. The vector formed from the initial point of the first vector to the terminal point of the second vector represents the sum of the two vectors, denoted by <m>\mathbf{u}+\mathbf{v}</m>. Since vectors can be translated, any two vectors can be added by shifting one vector's starting point to the endpoint of the other vector. Notice that adding vector <m>\mathbf{v}</m> to vector <m>\mathbf{u}</m> produces the same result as adding <m>\mathbf{u}</m> to <m>\mathbf{v}</m>, as demonstrated below. Thus, we have
-          <me>\mathbf{u}+\mathbf{v}=\mathbf{v}+\mathbf{u}</me>.
+          <md>\mathbf{u}+\mathbf{v}=\mathbf{v}+\mathbf{u}</md>.
         </p>
         <figure xml:id="fig-vector-addition-triangle">
           <caption>The vectors <m>\mathbf{u}</m> and <m>\mathbf{v}</m> can be added to obtain <m>\mathbf{u+v}</m> and <m>\mathbf{v+u}</m>, resulting in the same resultant vector. The arrangement is a parallelogram, demonstrating the commutative property of vector addition.</caption>
@@ -675,29 +675,29 @@
         </p>
         <p>
           First, we find angle <m>B</m> using the Law of Sines:
-          <me>
+          <md>
             \frac{\sin50^{\circ}}{15}=\frac{\sin B}{5}
-          </me>.
+          </md>.
           From this, we get:
-          <me>
+          <md>
             B=\sin^{-1}\left(\frac{5\sin50^{\circ}}{15})\right)\approx14.8^{\circ}
-          </me>.
+          </md>.
         </p>
         <p>
           Now, we can now calculate angle <m>A</m>:
-          <me>
+          <md>
             A=180^{\circ}-50^{\circ}-14.8^{\circ}=115.2^{\circ}
-          </me>.
+          </md>.
         </p>
         <p>
           Next, to determine the magnitude of the apparent wind, we find side <m>a</m> using the Law of Sines:
-          <me>
+          <md>
             \frac{a}{\sin 115.2^{\circ}}=\frac{15}{\sin50^{\circ}}
-          </me>.
+          </md>.
           Therefore,
-          <me>
+          <md>
             a=\sin 115.2^{\circ}\cdot\frac{15}{\sin50^{\circ}}\approx17.7
-          </me>.
+          </md>.
           Thus, the magnitude of the apparent wind is approximately 17.7 knots.
         </p>
       </solution>
@@ -1249,9 +1249,9 @@
       <introduction>
         <p>
           Changes in the speed of the true wind can alter the apparent wind. In each scenario below, a canoe sails at 5 knots, with the true wind blowing perpendicular to the canoe, as depicted in the figure. Calculate both the direction, <m>\theta</m>, and magnitude of the apparent wind for the given true wind speed, rounded to one decimal. Since this forms a right triangle, we use the formula:
-          <me>
+          <md>
             \theta=\tan^{-1}\frac{\mbox{true wind}}{\mbox{headwind}}
-          </me>.
+          </md>.
         </p>
         <image xml:id="fig-exercise-apparent-wind-effects-of-true-wind">
           <latex-image>

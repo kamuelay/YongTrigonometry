@@ -36,9 +36,9 @@
       </p>
       <p>
         Dividing both sides by 2, we get
-        <me>
+        <md>
           \frac{1}{2}[\cos(\alpha+\beta)+\cos(\alpha-\beta)]=\cos\alpha\cos\beta
-        </me>.
+        </md>.
       </p>
       <p>
         Next, we add the addition and subtraction formulas for sine:
@@ -51,9 +51,9 @@
       </p>
       <p>
         Dividing both sides by 2, we get
-        <me>
+        <md>
           \frac{1}{2}[\sin(\alpha+\beta)+\sin(\alpha-\beta)]=\sin\alpha\cos\beta
-        </me>.
+        </md>.
       </p>
       <p>
         Next, we subtract the addition and subtraction formulas for sine:
@@ -66,9 +66,9 @@
       </p>
       <p>
         Dividing both sides by 2, we get
-        <me>
+        <md>
           \frac{1}{2}[\sin(\alpha+\beta)-\sin(\alpha-\beta)]=\cos\alpha\sin\beta
-        </me>.
+        </md>.
       </p>
       <p>
         Finally, we subtract the addition and subtraction formulas for cosine:
@@ -81,9 +81,9 @@
       </p>
       <p>
         Dividing both sides by 2, we get
-        <me>
+        <md>
           \frac{1}{2}[\cos(\alpha-\beta)-\cos(\alpha+\beta)]=\sin\alpha\sin\beta
-        </me>.
+        </md>.
       </p>
     </proof>
     <example>
@@ -105,9 +105,9 @@
         </p>
         <p>
           Since cosine is an even function, <m>\cos(-3x) = \cos(3x)</m>. Thus, we can simplify the expression to:
-          <me>
+          <md>
             \cos(2x)\cos(5x)=\frac{1}{2}[\cos(7x)+\cos(3x)]
-          </me>.
+          </md>.
         </p>
       </solution>
     </example>
@@ -154,13 +154,13 @@
       <p>
         We first let <m>\alpha=\frac{u+v}{2}</m> and <m>\beta=\frac{u-v}{2}</m>.
         Then
-        <me>
+        <md>
           \alpha+\beta=\frac{u+v}{2}+\frac{u-v}{2}=\frac{2u}{2}=u
-        </me>
+        </md>
         and
-        <me>
+        <md>
           \alpha-\beta=\frac{u+v}{2}-\frac{u-v}{2}=\frac{2v}{2}=v
-        </me>.
+        </md>.
       </p>
       <p>
         Substituting these values for <m>\alpha</m>,

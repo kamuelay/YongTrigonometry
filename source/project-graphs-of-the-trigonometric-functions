@@ -25,29 +25,29 @@
         A right triangle is formed with the central angle <m>\theta_h</m> by extending a line from the observer to the horizon and the center of the Earth. The trigonometric relation is given by:
         </p>
         
-        <me> \cos\theta_h = \frac{R}{R+h} </me>
+        <md> \cos\theta_h = \frac{R}{R+h} </md>
         
         <p>
         Where <m>R</m> is the radius of the Earth and <m>h</m> is the height of the observer. Using inverse trigonometry, we obtain the expression for <m>\theta_h</m>:
         </p>
         
-        <me> \theta_h = \cos^{-1}\left(\frac{R}{R+h}\right) </me>
+        <md> \theta_h = \cos^{-1}\left(\frac{R}{R+h}\right) </md>
         
         <p>
         The distance from the horizon to a person, denoted by <m>s_h</m>, represents the <em>arc length</em> subtended by the central angle <m>\theta_h</m>. If our angle <m>\theta_h</m> is in degrees, <xref ref="thm_arc-length"/> states the arc length is
-        <me>s_h=2\pi R\cdot\left(\frac{\theta_h}{360}\right)=2\pi R\cdot\frac{\cos^{-1}\left(\frac{R}{R+h}\right)}{360}.</me>
+        <md>s_h=2\pi R\cdot\left(\frac{\theta_h}{360}\right)=2\pi R\cdot\frac{\cos^{-1}\left(\frac{R}{R+h}\right)}{360}.</md>
         </p>
         <p>
         Given the radius of Earth at O`ahu, <m>R=20,916,466</m> feet, we can use the conversion factor that <m>1</m> mile is <m>5,280</m> feet to determine <m>s_h</m> for an observer whose eyes are at a height of <m>h=5</m> feet above sea level:
         </p>
         
-        <me> s_h = \frac{\cos^{-1}\left(\frac{R}{R+h}\right)}{360^{\circ}} \cdot \frac{2\pi R}{5280} </me>
+        <md> s_h = \frac{\cos^{-1}\left(\frac{R}{R+h}\right)}{360^{\circ}} \cdot \frac{2\pi R}{5280} </md>
         
         <p>
         For a mountain with height <m>H</m>, the distance in miles between the summit of the mountain and the horizon is given by:
         </p>
         
-        <me> s_H = \frac{\cos^{-1}\left(\frac{R}{R+H}\right)}{360^{\circ}} \cdot \frac{2\pi R}{5280} </me>
+        <md> s_H = \frac{\cos^{-1}\left(\frac{R}{R+H}\right)}{360^{\circ}} \cdot \frac{2\pi R}{5280} </md>
         
         <p>
         The furthest point a person can see the mountain is when the mountain aligns with the horizon, given by <m>s_h+s_H</m>.
@@ -101,7 +101,7 @@
               At 3,150 feet tall, Konahuanui is the highest point in the Ko`olau Mountains on O`ahu. If someone climbs to the summit, their eyes will be at a height of <m>h=3,155</m> feet above sea level. Calculate the new distance from the observer to the horizon, <m>s_h</m>:
             </p>
         
-            <me> s_h = \frac{\cos^{-1}\left(\frac{R}{R+h}\right)}{360^{\circ}}\cdot \frac{2\pi R}{5280} </me>
+            <md> s_h = \frac{\cos^{-1}\left(\frac{R}{R+h}\right)}{360^{\circ}}\cdot \frac{2\pi R}{5280} </md>
         
             <p>
               and determine if an observer at the summit of Konahuanui will be able to see each of the mountains mentioned earlier.
@@ -125,7 +125,7 @@
 
 <p>To determine the time difference <m>t</m> (in minutes) between an observer on the summit witnessing the sunrise and someone at sea level, you can use the formula:</p>
 
-<me>\frac{s_H}{2\pi R} = \frac{t}{1,440\ \text{min}}</me>
+<md>\frac{s_H}{2\pi R} = \frac{t}{1,440\ \text{min}}</md>
 
 <p>For each of the previously mentioned mountains, determine how much sooner someone standing at the summit will witness the sunrise compared to someone at sea level:</p>
 
@@ -202,11 +202,11 @@ I want my students to determine if you can see each of the following mountains f
                 </p>
       
                 <p>
-                  Define <me>h</me> as the height of the observer, <me>R</me> as the radius of the Earth, and <me>θ<sub>h</sub></me> as the angle to the horizon.
+                  Define <md>h</md> as the height of the observer, <md>R</md> as the radius of the Earth, and <md>θ<sub>h</sub></md> as the angle to the horizon.
                 </p>
         
                 <p>
-                  Use inverse cosine to solve for <me>θ<sub>h</sub></me> and calculate the distance to the horizon, <me>s<sub>h</sub> = (θ<sub>h</sub> / 360) * 2πR</me>.
+                  Use inverse cosine to solve for <md>θ<sub>h</sub></md> and calculate the distance to the horizon, <md>s<sub>h</sub> = (θ<sub>h</sub> / 360) * 2πR</md>.
                 </p>
       
     
@@ -227,11 +227,11 @@ I want my students to determine if you can see each of the following mountains f
                 </p>
 
                 <p>
-                  State that if the actual distance (<me>d<sub>h</sub></me>) from Oʻahu to the mountain is less than the sum of the distances to the horizon and mountain (<me>s<sub>h</sub> + s<sub>m</sub></me>), then the mountain is visible from Oʻahu.
+                  State that if the actual distance (<md>d<sub>h</sub></md>) from Oʻahu to the mountain is less than the sum of the distances to the horizon and mountain (<md>s<sub>h</sub> + s<sub>m</sub></md>), then the mountain is visible from Oʻahu.
                 </p>
                 
                 <p>
-                  Provide the heights (<me>H</me>) and distances (<me>d</me>) for each mountain to be analyzed.
+                  Provide the heights (<md>H</md>) and distances (<md>d</md>) for each mountain to be analyzed.
                 </p>
           <p>
             <emph render="italic">Analysis of Visibility from Konahuanui:</emph>
@@ -246,11 +246,11 @@ I want my students to determine if you can see each of the following mountains f
                 </p>
                 
                 <p>
-                  Instruct students to recalculate the distance to the horizon (<me>s<sub>h</sub></me>) using the new observer height (3,150+5 ft).
+                  Instruct students to recalculate the distance to the horizon (<md>s<sub>h</sub></md>) using the new observer height (3,150+5 ft).
                 </p>
                 
                 <p>
-                  Provide the new distances (<me>d</me>) to each mountain from Konahuanui for analysis.
+                  Provide the new distances (<md>d</md>) to each mountain from Konahuanui for analysis.
                 </p>
                 
           <p>

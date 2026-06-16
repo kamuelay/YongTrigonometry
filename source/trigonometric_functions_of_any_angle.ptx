@@ -189,9 +189,9 @@
       <solution>
         <p>
           Since <m>\sin\theta\lt 0</m> and <m>\cos\theta\lt 0</m>, we refer to <xref ref="tab_trig-signs">Table</xref> and see that <m>\theta</m> is in Quadrant III. From <xref ref="tab_trig-signs">Table</xref> we know  <m>\tan\theta>0</m>, <m>\csc\theta\lt 0</m>, <m>\sec\theta\lt 0</m>, <m>\cot\theta>0</m>. From the Quotient Identity (<xref ref="def_quotient-identities"/>), we have
-          <me>
+          <md>
             \tan\theta=\frac{\sin\theta}{\cos\theta}=\frac{\frac{12}{13}}{\frac{5}{13}}=\frac{12}{5}
-          </me>.
+          </md>.
         </p>
         <p>
           Next, using the Reciprocal Identities (<xref ref="def_reciprocal-identities"/>), we get
@@ -872,9 +872,9 @@
     </image>
     <p>
       By definition we know that
-      <me>
+      <md>
         \sin\theta=\frac{y}{r};\qquad\cos\theta=\frac{x}{r}
-      </me>.
+      </md>.
     </p>
     <p>
       Next, we draw the reference angle, <m>\theta'</m>, in standard position.
@@ -902,23 +902,23 @@
     </image>
     <p>
       We now have
-      <me>
+      <md>
         \sin\theta'=\frac{y'}{r};\qquad\cos\theta'=\frac{x'}{r}
-      </me>.
+      </md>.
     </p>
     <p>
       Notice that the <m>y</m>-coordinates for <m>P</m> and <m>P'</m> share the same value,
       thus <m>y=y'</m> and we get
-      <me>
+      <md>
         \sin\theta=\sin\theta'
-      </me>.
+      </md>.
     </p>
     <p>
       Similarly, we can see that the <m>x</m>-coordinates of <m>P</m> and <m>P'</m> have opposite values,
       thus <m>x=-x'</m> and
-      <me>
+      <md>
         \cos\theta=-\cos\theta'
-      </me>.
+      </md>.
     </p>
     <p>
       You may have noticed that we have two similar triangles, differing only in their <m>x</m>-coordinates have opposite values. Consequently, the values of each trigonometric function for the two triangles will match, except for a potential difference in signs. The sign of each function can be deduced by referring to <xref ref="tab_trig-signs">Table</xref>. This approach is applicable across all quadrants. To sum up, we now outline the steps for utilizing reference angles to evaluate trigonometric functions.
@@ -990,9 +990,9 @@
               <li>
                 <p>
                   The reference angle is
-                  <me>
+                  <md>
                     \theta'=210^{\circ}-180^{\circ}=30^{\circ}
-                  </me>.
+                  </md>.
                 </p>
               </li>
               <li>
@@ -1003,9 +1003,9 @@
               <li>
                 <p>
                   Since <m>210^{\circ}</m> lies in Quadrant III, we know that <m>\cos\theta\lt 0</m>, so
-                  <me>
+                  <md>
                     \cos210^{\circ}=-\frac{\sqrt{3}}{2}
-                  </me>.
+                  </md>.
                 </p>
               </li>
             </ol>
@@ -1047,9 +1047,9 @@
             <li>
               <p>
                 The reference angle is
-                <me>
+                <md>
                   2\pi-\frac{7\pi}{4}=\frac{8\pi}{4}-\frac{7\pi}{4}=\frac{\pi}{4}
-                </me>.
+                </md>.
               </p>
             </li>
             <li>
@@ -1060,9 +1060,9 @@
             <li>
               <p>
                 Since <m>\frac{7\pi}{4}</m> lies in Quadrant IV, we know that <m>\tan\theta\lt 0</m>, so
-                <me>
+                <md>
                   \tan\frac{7\pi}{4}=-1
-.                </me>
+.                </md>
               </p>
             </li>
           </ol>
@@ -1124,9 +1124,9 @@
             <li>
               <p>
                 Since <m>\frac{20\pi}{3}</m> lies in Quadrant II, we know that <m>\sin\theta>0</m> and <m>\cos\theta\lt 0</m>, so
-                <me>
+                <md>
                   \sin\frac{20\pi}{3}=\frac{\sqrt{3}}{2}; \qquad \cos\frac{20\pi}{3}=-\frac{1}{2}
-                </me>.
+                </md>.
               </p>
             </li>
           </ol>
@@ -1138,21 +1138,21 @@
     <title>Periodic Functions</title>
     <p>
       In <xref ref="exmp-trig-20pi3">Figure</xref> of <xref ref="ex-1_5-20pi3">Example</xref>, point <m>P</m> corresponds to the angle <m>\frac{20\pi}{3}.</m> To determine the reference angle, we subtracted multiples of <m>2\pi.</m> Each iteration of <m>2\pi</m> retraces the unit circle back to the point <m>P</m>, resulting in a coterminal angle. Therefore
-      <me>
+      <md>
         \sin\frac{2\pi}{3}=\sin\frac{8\pi}{3}=\sin\frac{14\pi}{3}=\sin\frac{20\pi}{3}
-      </me>.
+      </md>.
     </p>
     <p>
       Rewriting the angles we get
-      <me>
+      <md>
         \sin\left(\frac{2\pi}{3}+0\cdot2\pi\right)=\sin\left(\frac{2\pi}{3}+1\cdot2\pi\right)=\sin\left(\frac{2\pi}{3}+2\cdot2\pi\right)=\sin\left(\frac{2\pi}{3}+3\cdot2\pi\right)
-      </me>.
+      </md>.
     </p>
     <p>
       Similarly,
-      <me>
+      <md>
         \cos\left(\frac{2\pi}{3}+0\cdot2\pi\right)=\cos\left(\frac{2\pi}{3}+1\cdot2\pi\right)=\cos\left(\frac{2\pi}{3}+2\cdot2\pi\right)=\cos\left(\frac{2\pi}{3}+3\cdot2\pi\right)
-      </me>.
+      </md>.
     </p>
     <p>
       In general, consider an angle <m>\theta</m> measured in radians and its corresponding point <m>P</m> on the unit circle. Adding or subtracting integer multiples of <m>2\pi</m> to <m>\theta</m> will lead to the same point <m>P</m> on the unit circle. Thus, the values of sine and cosine for all angles corresponding to point <m>P</m> are equivalent. This leads us to the following periodic properties.
@@ -1172,9 +1172,9 @@
       <statement>
         <p>
           <idx><h>period functions</h></idx> A function <m>f</m> is called <term>periodic</term> if there exists a positive number <m>p</m> such that
-          <me>
+          <md>
             f(\theta+p)=f(\theta)
-          </me>
+          </md>
           for every <m>\theta.</m> The smallest number <m>p</m> is called the <term>period</term> of <m>f</m>.
         </p>
       </statement>
@@ -1608,16 +1608,16 @@
       </image>
       <p>
         Let <m>P(x,y)</m> be a point on the circle with radius <m>r</m>. The equation of the circle is
-        <me>
+        <md>
           x^2+y^2=r^2
-        </me>.
+        </md>.
       </p>
       <p>
         By definition <m>\frac{x}{r}=\cos\theta</m> and <m>\frac{y}{r}=\sin\theta</m>.
         Thus we have
-        <me>
+        <md>
           \sin^2\theta+\cos^2\theta=\left(\frac{y}{r}\right)^2+\left(\frac{x}{r}\right)^2=\frac{x^2+y^2}{r^2}=\frac{r^2}{r^2}=1
-        </me>
+        </md>
         which is our first Pythagorean Identity. The proofs of the remaining identities are left as exercises.
       </p>
     </proof>
@@ -1640,21 +1640,21 @@
         </p>
         <p>
           Taking the square root of both sides,
-          <me>
+          <md>
             \sin\theta=\pm\sqrt{\frac{16}{25}}=\pm\frac{4}{5}
-          </me>.
+          </md>.
         </p>
         <p>
           Since <m>\theta</m> is in Quadrant II, we have <m>\sin\theta\lt 0</m>. Thus we choose the negative answer to get
-          <me>
+          <md>
             \sin\theta=-\frac{4}{5}
-          </me>.
+          </md>.
         </p>
         <p>
           Next we use the Quotient Identity to get
-          <me>
+          <md>
             \tan\theta=\frac{\sin\theta}{\cos\theta}=\frac{-\frac{4}{5}}{\frac{3}{5}}=-\frac{4}{5}\cdot\frac{5}{3}=-\frac{4}{3}
-          </me>.
+          </md>.
         </p>
       </solution>
     </example>
@@ -2718,21 +2718,21 @@
   <exercise>
     <statement>
       <p>
-        Prove that if <m>t</m> is in Quadrant II, then <me>t=\frac{(b-a)\pi}{b}</me>.
+        Prove that if <m>t</m> is in Quadrant II, then <md>t=\frac{(b-a)\pi}{b}</md>.
       </p>
     </statement>
   </exercise>
   <exercise>
     <statement>
       <p>
-        Prove that if <m>t</m> is in Quadrant III, then <me>t=\frac{(b+a)\pi}{b}</me>.
+        Prove that if <m>t</m> is in Quadrant III, then <md>t=\frac{(b+a)\pi}{b}</md>.
       </p>
     </statement>
   </exercise>
   <exercise>
     <statement>
       <p>
-        Prove that if <m>t</m> is in Quadrant IV, then <me>t=\frac{2(b-a)\pi}{b}</me>.
+        Prove that if <m>t</m> is in Quadrant IV, then <md>t=\frac{2(b-a)\pi}{b}</md>.
       </p>
     </statement>
   </exercise>
