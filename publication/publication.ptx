@@ -22,6 +22,7 @@
     
     <html>
         <analytics google-gst="G-6JP58041KD" statcounter-project="13167487" statcounter-security="75bcc7c4"/>
+        <calculator model="geogebra-graphing" activecode="python" />
         <knowl example="no" />
         <knowl example-solution="no" />
         <knowl proof="no" />
