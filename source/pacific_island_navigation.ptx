@@ -735,8 +735,8 @@
       45/Manu,
       56.25/Ngā Rangi,
       67.5/Ngā Reo,
-      78.75/Haka,
-      281.25/Haka,
+      78.75/Vā,
+      281.25/Vā,
       292.5/Ngā Reo,
       303.75/Ngā Rangi,
       315/Manu,
@@ -746,7 +746,7 @@
       }
       \draw[left] (\x:0.98 ) node[rotate=\x] {\xtext};
       \foreach \x/\xtext in {
-      101.25/Haka,
+      101.25/Vā,
       112.5/Ngā Reo,
       123.75/Ngā Rangi,
       135/Manu,
@@ -759,7 +759,7 @@
       225/Manu,
       236.25/Ngā Rangi,
       247.5/Ngā Reo,
-      258.75/Haka
+      258.75/Vā
       }
       \draw[right] (\x:0.98 ) node[rotate=180+\x] {\xtext};
       \draw (0,0) pic {iwa={0.1}};
